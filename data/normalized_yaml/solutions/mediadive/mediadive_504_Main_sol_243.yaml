@@ -1,0 +1,70 @@
+preferred_term: Main sol. 243
+term:
+  id: mediadive.solution:504
+  label: Main sol. 243
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '250'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.8. Boil for 5 min, filter and readjust the pH to
+  7.3.
+
+  Natural sea water is stored in the dark for at least three weeks to "age". If natural
+  sea water is not available use artificial sea water.'

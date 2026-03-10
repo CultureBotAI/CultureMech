@@ -4,16 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: NiCl2 x 6 H2O solution (0.1% w/v)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -50,12 +40,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: FeSO4 x 7 H2O solution (0.1% w/v in 0.1 N H2SO4)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
 - preferred_term: Trypticase peptone (BD BBL)
   concentration:
     value: '2'
@@ -74,22 +58,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Complex component, Undefined component'
-- preferred_term: Mineral solution 1
-  concentration:
-    value: '37.5'
-    unit: G_PER_L
-- preferred_term: Mineral solution 2
-  concentration:
-    value: '37.5'
-    unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Vitamin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -316,11 +284,6 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -438,3 +401,65 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas; Added default concentration for ingredient:
     KOH solution; Added default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:05:00.839555+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 8 solution(s) from ingredients
+solutions:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: NiCl2 x 6 H2O solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: FeSO4 x 7 H2O solution (0.1% w/v in 0.1 N H2SO4)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: Mineral solution 1
+  term:
+    id: mediadive.solution:883
+    label: Mineral solution 1
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  notes: See mediadive_883_Mineral_solution_1.yaml for composition
+- preferred_term: Mineral solution 2
+  term:
+    id: mediadive.solution:4674
+    label: Mineral solution 2
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  notes: See mediadive_4674_Mineral_solution_2.yaml for composition
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'

@@ -4,17 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: CaCl2 solution (0.1 M)**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: MgSO4 solution (1 M)**
-  concentration:
-    value: '2.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component'
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -24,10 +13,6 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: 10xM9 solution*
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -94,3 +79,26 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:54.485282+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: CaCl2 solution (0.1 M)**
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: MgSO4 solution (1 M)**
+  composition: []
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component'
+- preferred_term: 10xM9 solution*
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L

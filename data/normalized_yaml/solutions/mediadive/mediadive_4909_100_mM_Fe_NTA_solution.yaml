@@ -1,0 +1,49 @@
+preferred_term: 100 mM Fe NTA solution
+term:
+  id: mediadive.solution:4909
+  label: 100 mM Fe NTA solution
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.64'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nitrilotriacetic acid trisodium salt monohydrate
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1930
+    label: Nitrilotriacetic acid trisodium salt monohydrate
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add NTA
+  and FeCl3 x 6H2O to the solution and bring volume to 100 ml with distilled water.
+  Adjust pH to 7.0 with NaOH. Filter-sterilize and store under a N2 atmosphere.
+
+  Comment:
+
+  100 mM Fe NTA solution can be replaced with Iron(III)citrate solution (see Medium
+  No. 1014, autoclaved and stored under N2).'

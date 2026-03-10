@@ -1,0 +1,156 @@
+preferred_term: Main sol. J1085
+term:
+  id: mediadive.solution:5155
+  label: Main sol. J1085
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.316699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.316699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.316699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.316699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.316699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.959693'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000959693'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '959.6928982725527'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sucrose
+  concentration:
+    value: '9.596928982725528'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '17.562380038387715'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '5.758157389635317'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '5.758157389635317'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly, adjust pH to 7.0 and autoclave under\
+  \ a N2 atmosphere. After cooling, aseptically and anaerobically add per liter the\
+  \ following sterile solutions from anaerobic stocks (autoclaved and stored under\
+  \ a N2 atmosphere or *filter-sterilized and stored under 80% N2 and 20% CO2 gas\
+  \ mixture): \nDispense the medium into culture vessels under a N2 atmosphere and\
+  \ seal with butyl rubber stoppers. Finally, add per litter the following solutions\
+  \ (autoclaved and stored under a N2 atmosphere): \n\nOriginal volume: 1042 mL"

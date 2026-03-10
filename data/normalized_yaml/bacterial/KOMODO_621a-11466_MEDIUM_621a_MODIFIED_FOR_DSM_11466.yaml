@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:621a_11466
     label: MEDIUM 621a MODIFIED FOR DSM 11466
-notes: 'Source: KOMODO ModelSEED | ID: 621a_11466 | DSMZ Medium: 621a (mediadive.medium:621a) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 621a_11466 | DSMZ Medium: 621a (mediadive.medium:621a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -67,10 +67,6 @@ ingredients:
     label: FeSO4 x 7 H2O
   concentration:
     value: '0.104211'
-    unit: G_PER_L
-- preferred_term: Metall salt sol. 44
-  concentration:
-    value: '50'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -146,4 +142,14 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 621
+- timestamp: '2026-03-09T08:04:39.305639+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 ph_value: 7.5
+solutions:
+- preferred_term: Metall salt sol. 44
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

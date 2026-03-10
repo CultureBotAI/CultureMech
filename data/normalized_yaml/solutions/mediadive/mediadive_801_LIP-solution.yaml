@@ -1,0 +1,54 @@
+preferred_term: LIP-solution
+term:
+  id: mediadive.solution:801
+  label: LIP-solution
+composition:
+- preferred_term: L-Leucine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:446
+    label: L-Leucine
+  chebi_term:
+    id: CHEBI:15603
+    label: L-leucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:447
+    label: L-Isoleucine
+  chebi_term:
+    id: CHEBI:17191
+    label: L-isoleucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:448
+    label: Pantothenate
+  chebi_term:
+    id: CHEBI:16454
+    label: pantothenate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: May be stored frozen without sterilization.

@@ -1,0 +1,151 @@
+preferred_term: Co-factors solution
+term:
+  id: mediadive.solution:1730
+  label: Co-factors solution
+composition:
+- preferred_term: Thiamine pyrophosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:778
+    label: Thiamine pyrophosphate
+  chebi_term:
+    id: CHEBI:18290
+    label: thiamine(1+) diphosphate chloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pyridoxal hydrochloride
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:338
+    label: Pyridoxal hydrochloride
+  chebi_term:
+    id: CHEBI:131529
+    label: pyridoxal hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxal phosphate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:780
+    label: Pyridoxal phosphate
+  chebi_term:
+    id: CHEBI:18405
+    label: pyridoxal 5'-phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ca-folinate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:781
+    label: Ca-folinate
+  chebi_term:
+    id: CHEBI:9532
+    label: thiamine(1+) diphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ß-NAD
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:782
+    label: ß-NAD
+  chebi_term:
+    id: CHEBI:9532
+    label: thiamine(1+) diphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Coenzyme A
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:783
+    label: Coenzyme A
+  chebi_term:
+    id: CHEBI:11814
+    label: 3-hydroxy-3-methylglutaryl-CoA
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: FAD
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:784
+    label: FAD
+  chebi_term:
+    id: CHEBI:16238
+    label: FAD
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Haemin
+  concentration:
+    value: '0.065'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:149
+    label: Haemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nicotinamide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:337
+    label: Nicotinamide
+  chebi_term:
+    id: CHEBI:17154
+    label: nicotinamide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Folic acid
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.0 with 1 N NaOH against indicator paper, filter
+  sterilize and store under 100% N2 gas atmosphere.

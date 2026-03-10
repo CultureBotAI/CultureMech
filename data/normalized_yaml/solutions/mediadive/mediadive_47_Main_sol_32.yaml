@@ -1,0 +1,116 @@
+preferred_term: Main sol. 32
+term:
+  id: mediadive.solution:47
+  label: Main sol. 32
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glycerol
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tris
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:73
+    label: Tris
+  chebi_term:
+    id: CHEBI:82282
+    label: tris(2,3-dibromopropyl) phosphate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NH4Cl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: if required
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: if required
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "For solid medium add: \nAdjust pH to 7.2 - 7.5."

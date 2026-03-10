@@ -1,0 +1,78 @@
+preferred_term: Main sol. 1075
+term:
+  id: mediadive.solution:2169
+  label: Main sol. 1075
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:316
+    label: Proteose peptone no. 3
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Soytone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:667
+    label: Soytone
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:952
+    label: Fe(III)-EDTA
+  chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.8.

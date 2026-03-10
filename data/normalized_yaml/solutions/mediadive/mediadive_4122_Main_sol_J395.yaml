@@ -1,0 +1,147 @@
+preferred_term: Main sol. J395
+term:
+  id: mediadive.solution:4122
+  label: Main sol. J395
+composition:
+- preferred_term: Na2SO4
+  concentration:
+    value: '2.79441'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.698603'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.299401'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '9.98004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1.69661'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0499002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium butyrate
+  concentration:
+    value: '1.1976'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1750
+    label: Sodium butyrate
+  chebi_term:
+    id: CHEBI:64103
+    label: sodium butyrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.299401'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '998.003992015968'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix ingredients, except sodium butyrate, NaHCO3 and Na2S x 9H2O,
+  and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave sodium
+  butyrate in 10 ml distilled water under a N2 atmosphere. Filter-sterilize 5% NaHCO3
+  and store under a N2-CO2 (4:1, v/v) atmosphere. Add the sterile sodium butyrate
+  and NaHCO3 solutions to the medium. Prior to inoculation, add a 5% Na2S x 9H2O solution
+  (anaerobically autoclaved) to the medium. Check final pH of the medium to be 7.2
+  - 7.4.
+
+
+  Original volume: 1002 mL'

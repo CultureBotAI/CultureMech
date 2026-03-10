@@ -1,0 +1,25 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4527
+  label: Solution C
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Filter-sterilize and store under a N2-CO2 (4:1, v/v) atmosphere.
+
+  To complete the medium, mix Solutions A, B and C under a N2-CO2 (4:1, v/v) atmosphere.
+  Reduce the medium with 0.3 g/L L-cysteine x HCl x H2O and 0.3 g/L Na2S x 9H2O from
+  sterile stock solutions (autoclaved and stored under a N2 atmosphere).
+
+
+  Original volume: 20 mL'

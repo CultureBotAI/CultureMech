@@ -1,0 +1,69 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:3200
+  label: Solution 1
+composition:
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '52.083333333333336'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Gelrite
+  concentration:
+    value: '8.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:987
+    label: Gelrite
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2
+  concentration:
+    value: '1.04167'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sea water
+  concentration:
+    value: '729.1666666666667'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '197.91666666666669'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.5, autoclave at 121°C for 20 min.
+
+
+  Original volume: 960 mL'

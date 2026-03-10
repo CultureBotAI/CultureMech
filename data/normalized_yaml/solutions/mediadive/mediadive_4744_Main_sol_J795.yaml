@@ -1,0 +1,25 @@
+preferred_term: Main sol. J795
+term:
+  id: mediadive.solution:4744
+  label: Main sol. J795
+composition:
+- preferred_term: Bacto m TGE broth
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1896
+    label: Bacto m TGE broth
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: For preparation of solid medium, add 15.0 g/L agar.

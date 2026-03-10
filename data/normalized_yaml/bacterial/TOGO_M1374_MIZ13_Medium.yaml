@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '0.83'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -24,7 +25,8 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -44,28 +46,11 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
-- preferred_term: Modified Wolfe's solution (see Medium [M641])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M1374
   term:
@@ -91,3 +76,32 @@ curation_history:
   date: '2026-02-03T11:20:47.453639'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:41.046969+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Wolfe's solution (see Medium [M641])
+  composition: []
+  notes: Cross-reference to Medium M641
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5% L-Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

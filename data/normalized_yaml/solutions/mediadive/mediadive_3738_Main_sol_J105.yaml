@@ -1,0 +1,41 @@
+preferred_term: Main sol. J105
+term:
+  id: mediadive.solution:3738
+  label: Main sol. J105
+composition:
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1104
+    label: Heart Infusion Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

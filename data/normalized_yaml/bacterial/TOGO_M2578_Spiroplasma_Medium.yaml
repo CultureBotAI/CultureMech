@@ -33,11 +33,6 @@ ingredients:
     value: '170'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Phenol red solution (0.1% soln.)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
 - preferred_term: TC Yeastolate (2% soln.) (BD 255772)
   concentration:
     value: '100'
@@ -61,10 +56,6 @@ ingredients:
 - preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
   concentration:
     value: '50'
-    unit: G_PER_L
-- preferred_term: Yeast Extract Solution
-  concentration:
-    value: '35'
     unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
@@ -110,3 +101,19 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:17.339897+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Phenol red solution (0.1% soln.)
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
+- preferred_term: Yeast Extract Solution
+  composition: []
+  concentration:
+    value: '35'
+    unit: G_PER_L

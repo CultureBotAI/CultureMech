@@ -1,0 +1,92 @@
+preferred_term: Main sol. 1008
+term:
+  id: mediadive.solution:2055
+  label: Main sol. 1008
+composition:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:30
+    label: Na-thioglycolate
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Charcoal-filtered, natural seawater
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2142
+    label: Charcoal-filtered, natural seawater
+- preferred_term: Distilled water
+  concentration:
+    value: '200'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients except thioglycolate and cellobiose, then
+  sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add thioglycolate
+  and adjust pH of medium to 7.5 with 10 N KOH. Dispense medium under 100% N2 gas
+  atmosphere into anoxic Hungate-type tubes or serum vials and autoclave at 121°C
+  for 15 min. Add cellobiose from a sterile anoxic stock solution prepared under 100%
+  N2 gas atmosphere and sterilized by filtration.
+
+  Note: Bottled seawater from Biomaris GmbH can be used instead of filtered seawater.'

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:17992
     label: sucrose
@@ -38,19 +40,6 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Major metals (see Medium [M969])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace metal 1 solution (see Medium [M969])
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: 0.5 M MES solution (pH 5.7)
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -85,5 +74,28 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.224275'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:54.182626+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Major metals (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace metal 1 solution (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: 0.5 M MES solution (pH 5.7)
+  composition: []
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'

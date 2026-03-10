@@ -1,0 +1,69 @@
+preferred_term: Main sol. 1580
+term:
+  id: mediadive.solution:3267
+  label: Main sol. 1580
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Mucin from porcine stomach Type III
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1433
+    label: Mucin from porcine stomach Type III
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+preparation_notes: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50
+  ml sheep blood.

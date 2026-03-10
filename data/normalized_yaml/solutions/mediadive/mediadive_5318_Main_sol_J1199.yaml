@@ -1,0 +1,112 @@
+preferred_term: Main sol. J1199
+term:
+  id: mediadive.solution:5318
+  label: Main sol. J1199
+composition:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.248756'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0248756'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '7.46269'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '447.76119402985074'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phosphates solution
+  concentration:
+    value: '49.75124378109453'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2026
+    label: Phosphates solution
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.21393'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.756219'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '497.5124378109453'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Adjust pH to 6.9. After autoclaving, aseptically add the phosphates\
+  \ solution to the medium. After inoculation, put several drops of toluene inside\
+  \ of lid of petri dishes. \nPhosphates solution: \nAdjust pH to 6.9.\n\nOriginal\
+  \ volume: 2010 mL"

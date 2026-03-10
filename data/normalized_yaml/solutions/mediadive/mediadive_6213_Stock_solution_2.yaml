@@ -1,0 +1,30 @@
+preferred_term: Stock solution 2
+term:
+  id: mediadive.solution:6213
+  label: Stock solution 2
+composition:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '28.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '27.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 500 mL'

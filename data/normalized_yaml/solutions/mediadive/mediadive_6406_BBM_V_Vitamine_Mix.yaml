@@ -1,0 +1,48 @@
+preferred_term: BBM + V Vitamine Mix
+term:
+  id: mediadive.solution:6406
+  label: BBM + V Vitamine Mix
+composition:
+- preferred_term: Thiamine
+  concentration:
+    value: '333.33333333333337'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:666
+    label: Thiamine
+  chebi_term:
+    id: CHEBI:26948
+    label: thiamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Biotine
+  concentration:
+    value: '333.33333333333337'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:899
+    label: Biotine
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Vitamine B12
+  concentration:
+    value: '25.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:900
+    label: Vitamine B12
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''30''>30</span>
+  ml with Milli Q water.
+
+  Filtrate sterile (pore size 0.22 µm) and aliquot.
+
+
+  Original volume: 30 mL'

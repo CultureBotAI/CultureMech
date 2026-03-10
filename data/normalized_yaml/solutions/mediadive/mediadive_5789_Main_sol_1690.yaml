@@ -1,0 +1,49 @@
+preferred_term: Main sol. 1690
+term:
+  id: mediadive.solution:5789
+  label: Main sol. 1690
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dilute stock solution with MilliQ water (1+19 v/v), add 4 g CaCO3
+  per litre.
+
+  Autoclave at 120 °C for 21 min.
+
+  Cool down to room temperature.
+
+  After autoclaving add sterile solutions:
+
+  Check pH 7.6-8.0
+
+  Complete medium can be stored at 4°C.
+
+  Incubate at 42°C without shaking. Activity and growth can be followed by measuring
+  the depletion of ammonium or the production of nitrite and/or nitrate. Higher ammonium
+  concentrations are inhibitive. For that reason our recommendation is follow nitrite
+  content. As soon as nitrite has been produced and is depleting again (to form nitrate)
+  another dose of ammonium can be added. Incubation time may be up to several weeks.
+  We checked the nitrite content (absence/presence) every 5-7 days and added ammonium
+  chloride about every 2-3 weeks. Don''t expose cultures to intense light.'

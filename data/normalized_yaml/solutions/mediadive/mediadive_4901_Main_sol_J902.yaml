@@ -1,0 +1,46 @@
+preferred_term: Main sol. J902
+term:
+  id: mediadive.solution:4901
+  label: Main sol. J902
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.242718'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.854368932038835'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '14.563106796116505'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components, adjust pH to 5.5 and autoclave. After cooling,\
+  \ add aseptically the following solutions (filter-sterilized): \nDistribute the\
+  \ medium into sterile culture vessels under a N2-CO2-O2 (76:19:5, v/v) gas mixture\
+  \ and seal with butyl rubber stoppers. Pressurize the culture vessels to 50 kPa\
+  \ with the same gas mixture.\n\nOriginal volume: 1030 mL"

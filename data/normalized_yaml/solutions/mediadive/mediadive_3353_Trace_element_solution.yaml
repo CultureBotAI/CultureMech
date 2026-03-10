@@ -1,0 +1,126 @@
+preferred_term: Trace element solution
+term:
+  id: mediadive.solution:3353
+  label: Trace element solution
+composition:
+- preferred_term: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:271
+    label: EDTA
+  chebi_term:
+    id: CHEBI:42191
+    label: EDTA(4-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:441
+    label: ZnSO4
+  chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnCl2
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:980
+    label: MnCl2
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuCl2 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:838
+    label: CuCl2 x 5 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: May be stored at 4°C in the dark

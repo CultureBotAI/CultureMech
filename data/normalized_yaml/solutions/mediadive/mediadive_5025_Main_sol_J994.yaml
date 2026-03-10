@@ -1,0 +1,169 @@
+preferred_term: Main sol. J994
+term:
+  id: mediadive.solution:5025
+  label: Main sol. J994
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '78.2779'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '5.87084'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '1.46771'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.978474'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.391389'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.391389'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '1.56556'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1817
+    label: Sodium acetate x 3 H2O
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000978474'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '880.6262230919765'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Disodium fumarate
+  concentration:
+    value: '39.138943248532286'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1076
+    label: Disodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '48.92367906066536'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '5.870841487279844'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '5.870841487279844'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly. Bring to a boil for a few seconds,\
+  \ cool down under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers\
+  \ and autoclave. After cooling, add the following solutions (autoclaved or *filter-sterilized):\
+  \ \nAseptically distribute the medium into culture vessels (e.g., 5 ml of the medium\
+  \ in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl\
+  \ rubber stoppers. Add per liter the following solutions from anaerobic stocks (autoclaved\
+  \ and stored under a N2 gas atmosphere): \nReadjust pH to 7.5, if necessary.\n\n\
+  Original volume: 1022 mL"

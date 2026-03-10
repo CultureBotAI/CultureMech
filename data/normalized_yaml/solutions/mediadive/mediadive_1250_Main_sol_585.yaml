@@ -1,0 +1,21 @@
+preferred_term: Main sol. 585
+term:
+  id: mediadive.solution:1250
+  label: Main sol. 585
+composition:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2125
+    label: OXOID Legionella CYE-Agar base
+preparation_notes: 'Dehydrated media preparations are available from media distributors.
+
+  We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
+
+  For solubilization of the lyophilized pellet use standard liquid media. Although
+  Legionellae do not grow in those media they are suitable for resuspension and transfer
+  onto agar plates.
+
+  Note: Alternatively use CYE-ACES AGAR'

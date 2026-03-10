@@ -1,0 +1,94 @@
+preferred_term: Main sol. 376
+term:
+  id: mediadive.solution:716
+  label: Main sol. 376
+composition:
+- preferred_term: Trypticase
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:74
+    label: Trypticase
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:30
+    label: Na-thioglycolate
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.3.
+
+  Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate and
+  sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three successive
+  days.'

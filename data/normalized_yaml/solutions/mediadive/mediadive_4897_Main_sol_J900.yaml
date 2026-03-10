@@ -1,0 +1,78 @@
+preferred_term: Main sol. J900
+term:
+  id: mediadive.solution:4897
+  label: Main sol. J900
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '500'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '420'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: For agar plates, increase pH of Tris-HCl buffer to 8.5.

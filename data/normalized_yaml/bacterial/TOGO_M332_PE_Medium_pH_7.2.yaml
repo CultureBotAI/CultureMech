@@ -3,11 +3,7 @@ original_name: PE Medium (pH 7.2)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: PE Medium (see Medium [M298])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M332
   term:
@@ -25,3 +21,14 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M332'
+- timestamp: '2026-03-09T08:04:15.672914+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: PE Medium (see Medium [M298])
+  composition: []
+  notes: Cross-reference to Medium M298
+  concentration:
+    value: '1'
+    unit: G_PER_L

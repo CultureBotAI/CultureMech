@@ -138,10 +138,6 @@ ingredients:
   concentration:
     value: '0.104211'
     unit: G_PER_L
-- preferred_term: Metall salt sol. 44
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -211,13 +207,14 @@ preparation_steps:
   description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: MIX
-  description: The percentage Artificial Sea Water (ASW) indicates the percentage ratio of distilled water
-    to artifical sea water (i.e. "medium 621a + 25ASW" = medium 621 made with 750 ml distilled water +
-    250 ml ASW). The pH is 7.2 - 7.4.
+  description: The percentage Artificial Sea Water (ASW) indicates the percentage
+    ratio of distilled water to artifical sea water (i.e. "medium 621a + 25ASW" =
+    medium 621 made with 750 ml distilled water + 250 ml ASW). The pH is 7.2 - 7.4.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other salts. Adjust pH to 7.2 with
-    KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
+    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
+    water.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).
@@ -232,3 +229,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:38.952053+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Metall salt sol. 44
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

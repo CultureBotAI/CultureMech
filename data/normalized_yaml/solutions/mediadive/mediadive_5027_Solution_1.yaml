@@ -1,0 +1,45 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:5027
+  label: Solution 1
+composition:
+- preferred_term: Sea water
+  concentration:
+    value: '679.6116504854369'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '48.54368932038835'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '252.4271844660194'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'For solid medium, add 5.0 g/L gelrite (Gellan Gum).
+
+
+  Original volume: 1030 mL'

@@ -1,0 +1,57 @@
+preferred_term: Solution 2
+term:
+  id: mediadive.solution:2180
+  label: Solution 2
+composition:
+- preferred_term: Horse serum
+  concentration:
+    value: '935.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:146
+    label: Horse serum
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.234'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fish-Sperm DNA
+  concentration:
+    value: '9.35'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:976
+    label: Fish-Sperm DNA
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '9.35'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.8.
+
+
+  Original volume: 20 mL'

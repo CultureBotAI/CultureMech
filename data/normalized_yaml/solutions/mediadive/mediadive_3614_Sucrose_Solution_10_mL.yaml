@@ -1,0 +1,24 @@
+preferred_term: Sucrose Solution (10 mL)
+term:
+  id: mediadive.solution:3614
+  label: Sucrose Solution (10 mL)
+composition:
+- preferred_term: Sucrose
+  concentration:
+    value: '2000'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Sterilize by autoclaving.
+
+  After autoclaving add 10 mL of the Sucrose solution to the Mineral Salts Solution
+  with Asparagine (final volume 1 L).
+
+
+  Original volume: 10 mL'

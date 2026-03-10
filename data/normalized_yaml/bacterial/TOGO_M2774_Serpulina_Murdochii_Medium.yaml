@@ -4,16 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: sterile 10% w/v NaHCO3 solution
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: sterile 30% w/v glucose solution
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
 - preferred_term: sterile bovine serum (heat inactivated at 56°C for 45 min)
   concentration:
     value: '0.7'
@@ -57,5 +47,22 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.396481'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:20.762864+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: sterile 10% w/v NaHCO3 solution
+  composition: []
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: sterile 30% w/v glucose solution
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'

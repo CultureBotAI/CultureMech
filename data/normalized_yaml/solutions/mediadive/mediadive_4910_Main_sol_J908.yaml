@@ -1,0 +1,159 @@
+preferred_term: Main sol. J908
+term:
+  id: mediadive.solution:4910
+  label: Main sol. J908
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.956023'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.478011'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '95.6023'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1.91205'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.478011'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0478011'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '19.120458891013385'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '7.1701720841300185'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate
+  concentration:
+    value: '3.8240917782026767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium succinate
+  concentration:
+    value: '1.9120458891013383'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:730
+    label: Sodium succinate
+  chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.560229445506693'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '956.0229445506692'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.0 with 1 M Na2CO3 or 1 M H2SO4. Mix ingredients,
+  except NaHCO3, Na2S x 9H2O, seven vitamins solution, acetate solution, succinate
+  solution and yeast extract solution, and autoclave under a N2-CO2 (80:20, v/v) atmosphere.
+  Separately autoclave acetate solution, succinate solution and yeast extract solution.
+  Filter-sterilize NaHCO3, Na2S x 9H2O. Aseptically and anaerobically add NaHCO3,
+  Na2S x 9H2O, seven vitamins solution, acetate solution, succinate solution and yeast
+  extract solution to the medium.
+
+
+  Original volume: 1046 mL'

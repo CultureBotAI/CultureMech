@@ -1,0 +1,98 @@
+preferred_term: Main sol. J19
+term:
+  id: mediadive.solution:3642
+  label: Main sol. J19
+composition:
+- preferred_term: Casein peptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  notes: ' tryptic digest'
+  term:
+    id: mediadive.compound:21
+    label: Casein peptone
+  chebi_term:
+    id: CHEBI:22652
+    label: ascorbic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Beef extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:85
+    label: Beef extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tween 80
+  concentration:
+    value: '0.999000999000999'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '999.0009990009991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.8.
+
+  After sterilization, aseptically add solutions of sodium ascorbate and L-cysteine
+  x HCl to final concentration of 1.0% and 0.05%, respectively. Heat medium not freshly
+  prepared in a steamer for 10 min before addition of the reducing substances.
+
+
+  Original volume: 1001 mL'

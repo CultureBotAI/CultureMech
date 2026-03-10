@@ -1,0 +1,57 @@
+preferred_term: Main sol. J273
+term:
+  id: mediadive.solution:3962
+  label: Main sol. J273
+composition:
+- preferred_term: Polypeptone
+  concentration:
+    value: '3.9604'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:442
+    label: Polypeptone
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.9802'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.2.
+
+
+  Original volume: 1010 mL'

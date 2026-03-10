@@ -4,29 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: CaCl2 solution (0.1 M)***
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
-- preferred_term: MgSO4 solution (1 M)***
-  concentration:
-    value: '2.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound'
-- preferred_term: Agar solution*
-  concentration:
-    value: '900'
-    unit: G_PER_L
-- preferred_term: 10xM9 solution**
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: distilled water
   concentration:
     value: '900'
@@ -89,11 +66,6 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-- preferred_term: Phenanthrene solution
-  notes: 'Role: Carbon source'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: dimethyl sulfoxide (DMSO)
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
@@ -126,3 +98,42 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Phenanthrene solution; Added
     default concentration for ingredient: dimethyl sulfoxide (DMSO)'
+- timestamp: '2026-03-09T08:04:37.094194+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: CaCl2 solution (0.1 M)***
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: MgSO4 solution (1 M)***
+  composition: []
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound'
+- preferred_term: Agar solution*
+  composition: []
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: 10xM9 solution**
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Phenanthrene solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Carbon source'

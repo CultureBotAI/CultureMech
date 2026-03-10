@@ -1,0 +1,164 @@
+preferred_term: Main sol. J707
+term:
+  id: mediadive.solution:4624
+  label: Main sol. J707
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.966184'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '6.8599'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Sodium lactate
+  concentration:
+    value: '6.71498'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1747
+    label: L-Sodium lactate
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.90338'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.04348'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.36715'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0869565'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Coenzyme M
+  concentration:
+    value: '0.1932367149758454'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1721
+    label: Coenzyme M
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: HEPES
+  concentration:
+    value: '5.75845'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000966184'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '966.183574879227'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '9.66183574879227'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '9.66183574879227'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Adjust pH to 7.2.\nAutoclave under a N2 gas atmosphere. After\
+  \ cooling, add the following sterile solutions (autoclaved or *filter-sterilized):\
+  \ \n\nOriginal volume: 1035 mL"

@@ -1,0 +1,18 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:3998
+  label: Solution A
+composition:
+- preferred_term: Na2HPO4-NaH2PO4 buffer
+  concentration:
+    value: '500.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1725
+    label: Na2HPO4-NaH2PO4 buffer
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 4 mL'

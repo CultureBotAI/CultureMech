@@ -1,0 +1,102 @@
+preferred_term: Main sol. 1269
+term:
+  id: mediadive.solution:2535
+  label: Main sol. 1269
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Proteose peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:208
+    label: Proteose peptone
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:97
+    label: Ferric ammonium citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Dipotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:940
+    label: Dipotassium Phosphate
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium Thiosulfate
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1126
+    label: Sodium Thiosulfate
+  chebi_term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust to pH 7.2.

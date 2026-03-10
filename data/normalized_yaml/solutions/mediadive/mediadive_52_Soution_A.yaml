@@ -1,0 +1,58 @@
+preferred_term: Soution A
+term:
+  id: mediadive.solution:52
+  label: Soution A
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.111111'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '22.2222'
+    unit: G_PER_L
+  notes: for solid medium; optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.0 with NaOH.
+
+
+  Original volume: 900 mL'

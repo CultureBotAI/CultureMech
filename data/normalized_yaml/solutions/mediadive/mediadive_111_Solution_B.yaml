@@ -1,0 +1,30 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:111
+  label: Solution B
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

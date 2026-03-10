@@ -1,0 +1,35 @@
+preferred_term: Acetate solution 98.0 g/L
+term:
+  id: mediadive.solution:2633
+  label: Acetate solution 98.0 g/L
+composition:
+- preferred_term: K-acetate
+  concentration:
+    value: '98'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:86
+    label: K-acetate
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter sterilize and gas with N2. For strains DSM 12141, DSM 12142,
+  DSM 11243 and DSM 12144, acetate may be replaced by Na-capronate (stock solution
+  2.76 g/100 ml).
+
+
+  Original volume: 100 mL'

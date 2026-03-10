@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,12 +17,14 @@ ingredients:
   concentration:
     value: '0.123'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NaCl
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,12 +32,14 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NH4Cl
   concentration:
     value: '0.107'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -42,7 +47,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -50,7 +56,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -58,19 +65,11 @@ ingredients:
   concentration:
     value: '1.38'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
-- preferred_term: Mineral solution (see below)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: sodium sulfide solution
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -84,15 +83,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10% (w/v) Peptone solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:
@@ -102,7 +92,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -110,12 +101,14 @@ ingredients:
   concentration:
     value: '24.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: H3BO3
   concentration:
     value: '31'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -123,27 +116,32 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '98.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '23.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '28.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '17.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: EDTA
   concentration:
     value: '3.7'
@@ -184,6 +182,36 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:45.514963'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sodium sulfide solution; Added default concentration
-    for ingredient: NaOH; Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: O2; Added default concentration for ingredient: KOH'
+  notes: 'Added default concentration for ingredient: sodium sulfide solution; Added
+    default concentration for ingredient: NaOH; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: O2; Added default concentration
+    for ingredient: KOH'
+- timestamp: '2026-03-09T08:05:00.388626+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution (see below)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: sodium sulfide solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 10% (w/v) Peptone solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

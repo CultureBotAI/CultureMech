@@ -1,0 +1,66 @@
+preferred_term: Main sol. 256
+term:
+  id: mediadive.solution:522
+  label: Main sol. 256
+composition:
+- preferred_term: Universal peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:341
+    label: Universal peptone
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 8.0.

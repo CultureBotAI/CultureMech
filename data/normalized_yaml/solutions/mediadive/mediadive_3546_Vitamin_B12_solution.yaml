@@ -1,0 +1,33 @@
+preferred_term: Vitamin B12 solution
+term:
+  id: mediadive.solution:3546
+  label: Vitamin B12 solution
+composition:
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:847
+    label: Cyanocobalamine
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'The solution was filter-sterilized and stored at 4°C in the dark.
+
+
+  Original volume: 50 mL'

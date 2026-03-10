@@ -1,0 +1,106 @@
+preferred_term: Main sol. J556
+term:
+  id: mediadive.solution:4370
+  label: Main sol. J556
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '0.0998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.0399202'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.0499002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0149701'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.0159681'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '991.0179640718562'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES buffer
+  concentration:
+    value: '4.99001996007984'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:461
+    label: HEPES buffer
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '0.5429141716566867'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components and autoclave. After cooling, add the following\
+  \ solutions (autoclaved or filter-sterilized) to the medium: \nDistribute the culture\
+  \ medium into culture tubes (leave >80% volume as a gas phase) and seal with butyl\
+  \ rubber stoppers.\nFinally, replace the gas phase with 20% methane and 5% CO2 in\
+  \ air (by volume).\n\nOriginal volume: 1002 mL"

@@ -1,0 +1,113 @@
+preferred_term: Main sol. J448
+term:
+  id: mediadive.solution:4196
+  label: Main sol. J448
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '3000'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Mg(NO3)2 x 6 H2O
+  concentration:
+    value: '254'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1763
+    label: Mg(NO3)2 x 6 H2O
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MES
+  concentration:
+    value: '195'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sulfur
+  concentration:
+    value: '1200'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Mix ingredients except sulfur, NaHCO3 and Na2S x 9H2O, adjust
+  pH to 6.5 and autoclave. Filter-sterilize 8% NaHCO3 solution and add to the medium.
+  Steam sulfur for 3 hr on each of 3 successive days. Separately autoclave 5% Na2S
+  x 9H2O solution under a N2 atmosphere. Aseptically distribute the medium into culture
+  vessels containing appropriate amount of sulfur (e.g., 20 ml culture medium in 120
+  ml serum bottle containing 0.24 g sulfur) under a H2-CO2 (4:1, v/v) gas mixture
+  and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S
+  x 9H2O solution and readjust pH to 6.5, if necessary. Pressurize the inoculated
+  bottles to 200 kPa H2-CO2 (4:1, v/v).
+
+
+  Original volume: 10 mL'

@@ -1,0 +1,58 @@
+preferred_term: Trace elements I
+term:
+  id: mediadive.solution:3077
+  label: Trace elements I
+composition:
+- preferred_term: CuSO4
+  concentration:
+    value: '0.0789'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:636
+    label: CuSO4
+  chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '1.69'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:14
+    label: MnSO4 x H2O
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '28.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare Trace elements I, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at 4°C
+
+
+  Original volume: 100 mL'

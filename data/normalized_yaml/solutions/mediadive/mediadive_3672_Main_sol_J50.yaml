@@ -1,0 +1,49 @@
+preferred_term: Main sol. J50
+term:
+  id: mediadive.solution:3672
+  label: Main sol. J50
+composition:
+- preferred_term: Oatmeal
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:471
+    label: Oatmeal
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '17.982'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '999.0009990009991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water for
+  20 min. Filter through cheesecloth. Bring volume back up to 1.0 L and add 1.0 ml
+  of Trace salt solution.
+
+  Adjust pH to 7.2.
+
+
+  Original volume: 1001 mL'

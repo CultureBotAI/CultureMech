@@ -1,0 +1,117 @@
+preferred_term: Main sol. J1217
+term:
+  id: mediadive.solution:5345
+  label: Main sol. J1217
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:85
+    label: Beef extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix components thoroughly and adjust pH to 6.0-6.5. For preparation
+  of solid medium, add per liter 20.0 g agar. Bring to a boil (and dissolve agar),
+  cool down and distribute the medium into culture vessels (e.g., 10 ml medium in
+  Balch type tubes) under a stream of N2, seal with butyl rubber stoppers and autoclave.

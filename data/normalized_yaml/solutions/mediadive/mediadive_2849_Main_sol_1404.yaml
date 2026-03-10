@@ -1,0 +1,152 @@
+preferred_term: Main sol. 1404
+term:
+  id: mediadive.solution:2849
+  label: Main sol. 1404
+composition:
+- preferred_term: HEPES
+  concentration:
+    value: '2.38'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:244
+    label: K2HPO4 x 3 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:247
+    label: Fe(NH4)2(SO4)2 x 6 H2O
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Prepare the medium without the vitamin solution. Adjust to pH 7.25.
+  Dispense the medium into Hungate tubes or serum bottles. Sterilize by autoclaving.
+  Before inoculation add the sterile vitamin solution.

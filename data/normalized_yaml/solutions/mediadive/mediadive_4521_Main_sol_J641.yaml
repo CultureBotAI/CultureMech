@@ -1,0 +1,97 @@
+preferred_term: Main sol. J641
+term:
+  id: mediadive.solution:4521
+  label: Main sol. J641
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '13.3333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0133333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Arginine
+  concentration:
+    value: '28.1333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:326
+    label: Arginine
+  chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Histidine
+  concentration:
+    value: '20.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:848
+    label: Histidine
+  chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Phytone peptone
+  concentration:
+    value: '26.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:125
+    label: Phytone peptone
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '53.3333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '6.66667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve components except Na2CO3 and L-cysteine x HCl x H2O in
+  distilled water and bring volume to 1.0 L. Adjust pH to 7.0. Bring to a boil and
+  cool down under a stream of a N2-CO2 (4:1, v/v) gas mixture. Add Na2CO3 and L-cysteine
+  x HCl x H2O to the medium and dispense into culture vessels under the same gas mixture.
+  Seal with butyl rubber stoppers and autoclave.
+
+
+  Original volume: 75 mL'

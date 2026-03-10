@@ -1,0 +1,33 @@
+preferred_term: ASW (Artificial Seawater)
+term:
+  id: mediadive.solution:6125
+  label: ASW (Artificial Seawater)
+composition:
+- preferred_term: Tricine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2349
+    label: Tricine
+  chebi_term:
+    id: CHEBI:39063
+    label: N-tris(hydroxymethyl)methylglycine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up to 1 litre with filtered natural sea water.  Adjust the\
+  \ pH to 7.6 – 7.8 with\r\n1N NaOH or 1N HCl. Autoclave at 15 psi.\nAlternatively\
+  \ use \"Ultramarine Synthetica\" sea salts 33.6 g and make up to 1 \r\nlitre  with\
+  \ distilled water.  Adjust pH as above"

@@ -1,0 +1,47 @@
+preferred_term: Vitamin mix
+term:
+  id: mediadive.solution:6180
+  label: Vitamin mix
+composition:
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '5.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:847
+    label: Cyanocobalamine
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Biotin
+  concentration:
+    value: '5.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'First make primary stocks of Cyanocobalamin and Biotin.
+
+  Dispense any excess primary stocks into 1 ml aliquots and freeze.
+
+
+  Original volume: 200 mL'

@@ -16,7 +16,8 @@ ingredients:
   concentration:
     value: '940'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -29,7 +30,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,12 +39,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: KH2PO4
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -50,7 +54,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -58,7 +63,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -66,8 +72,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -75,7 +81,8 @@ ingredients:
   concentration:
     value: '3.6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -84,10 +91,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace element solution (see Medium [M439])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -98,21 +101,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% NaHCO3 solution
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 15% MgCl2・6H2O solution
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '0.04'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined component'
 - preferred_term: 5% L--Cysteine・HCl・H2O
   concentration:
     value: '0.05'
@@ -142,5 +130,36 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.276037'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:25.516291+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution (see Medium [M439])
+  composition: []
+  notes: Cross-reference to Medium M439
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 15% MgCl2・6H2O solution
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'

@@ -1,0 +1,121 @@
+preferred_term: Main sol. 797
+term:
+  id: mediadive.solution:1626
+  label: Main sol. 797
+composition:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:128
+    label: Ground beef
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '962.4639076034649'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '24.06159769008662'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trypticase
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:74
+    label: Trypticase
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: if required
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix meat, water and NaOH, and bring to a boil with stirring. Cool\
+  \ to room temperature, skim fat off surface, and filter, retaining both meat particles\
+  \ and filtrate. To the filtrate add sufficient distilled water to restore volume\
+  \ to 1000 ml. To this filtrate add: \nBoil and cool medium under 80% N2, 10% H2,\
+  \ 10% CO2, and add: \nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml\
+  \ into tubes containing meat particles (use 1 part meat to 5 parts fluid) under\
+  \ the same gas phase.\n\nOriginal volume: 1039 mL"

@@ -1,0 +1,172 @@
+preferred_term: Main sol. 1084
+term:
+  id: mediadive.solution:2193
+  label: Main sol. 1084
+composition:
+- preferred_term: KCl
+  concentration:
+    value: '0.333007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.244858'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.195886'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '23.5064'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '9.99021'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.95886'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000489716'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.979432'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Methanol
+  concentration:
+    value: '12.4114'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '2.44858'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:227
+    label: 2-Mercaptoethanesulfonate
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '979.4319294809011'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except carbonate, sludge fluid, methanol,
+  coenzyme M, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+  mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+  into anoxic Hungate-type tubes or serum vials and autoclave. Add sludge fluid, methanol
+  (50% v/v solution), coenzyme M (sterilized by filtration), cysteine and sulfide
+  from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+  a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust
+  pH of complete medium to 6.0 - 6.5, if necessary.
+
+
+  Original volume: 1021 mL'

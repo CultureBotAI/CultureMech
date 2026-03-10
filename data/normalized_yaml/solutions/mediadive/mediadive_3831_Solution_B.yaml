@@ -1,0 +1,48 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:3831
+  label: Solution B
+composition:
+- preferred_term: Neopeptone
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:263
+    label: Neopeptone
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Gelatin
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1671
+    label: Gelatin
+  chebi_term:
+    id: CHEBI:5291
+    label: gelatin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through
+  a 0.22 ï¿½m filter (Millipore). Autoclave Solution B, then mix Solutions A and B,
+  and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez
+  Biologicals).
+
+
+  Original volume: 100 mL'

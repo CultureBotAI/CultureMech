@@ -1,0 +1,149 @@
+preferred_term: Sugar Stock Solution
+term:
+  id: mediadive.solution:5688
+  label: Sugar Stock Solution
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Fructose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:98
+    label: Fructose
+  chebi_term:
+    id: CHEBI:15824
+    label: D-fructose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sucrose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ribose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:168
+    label: Ribose
+  chebi_term:
+    id: CHEBI:16988
+    label: D-ribose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Xylose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1107
+    label: Xylose
+  chebi_term:
+    id: CHEBI:18222
+    label: xylose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pectin
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1108
+    label: Pectin
+  chebi_term:
+    id: CHEBI:17309
+    label: pectin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Starch
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine pyrophosphate
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:778
+    label: Thiamine pyrophosphate
+  chebi_term:
+    id: CHEBI:18290
+    label: thiamine(1+) diphosphate chloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

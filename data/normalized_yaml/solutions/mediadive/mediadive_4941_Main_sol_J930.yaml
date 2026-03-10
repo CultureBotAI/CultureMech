@@ -1,0 +1,45 @@
+preferred_term: Main sol. J930
+term:
+  id: mediadive.solution:4941
+  label: Main sol. J930
+composition:
+- preferred_term: Leibovitz's L-15 medium
+  concentration:
+    value: '909.090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1941
+    label: Leibovitz's L-15 medium
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '90.9090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '13.6364'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Filter-sterilize with 0.22 ï¿½m PES filter.
+
+
+  Original volume: 1100 mL'

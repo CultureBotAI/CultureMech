@@ -1,0 +1,105 @@
+preferred_term: Main sol. J974
+term:
+  id: mediadive.solution:4997
+  label: Main sol. J974
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '1017.39'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '43.4783'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '43.4783'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.73913'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1.73913'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.869565'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '43.47826086956522'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2CO3
+  concentration:
+    value: '869.5652173913043'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Add components to distilled water and bring volume to 900 ml.\
+  \ For preparation of solid medium, add 20.0 g/L agar. Autoclave and cool (to 50\
+  \ - 60C for agar medium). Then, add aseptically the following solutions (separately\
+  \ autoclaved): \n\nOriginal volume: 115 mL"

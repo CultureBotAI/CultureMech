@@ -1,0 +1,20 @@
+preferred_term: Main sol. 55
+term:
+  id: mediadive.solution:74
+  label: Main sol. 55
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: if required
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Autoclave solutions A and B separately, filter sterilize solution
+  C. Add 1.5% agar if necessary.

@@ -1,0 +1,31 @@
+preferred_term: Potato decoction
+term:
+  id: mediadive.solution:1595
+  label: Potato decoction
+composition:
+- preferred_term: Diced potato
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:728
+    label: Diced potato
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil for 30 min; filter out potato and return volume of liquid
+  to 1000 ml.

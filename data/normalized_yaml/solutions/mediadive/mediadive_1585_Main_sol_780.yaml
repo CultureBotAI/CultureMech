@@ -1,0 +1,26 @@
+preferred_term: Main sol. 780
+term:
+  id: mediadive.solution:1585
+  label: Main sol. 780
+composition:
+- preferred_term: Mycobactine J
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2139
+    label: Mycobactine J
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '4'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:788
+    label: Absolute ethanol
+preparation_notes: Reconstitute the contents of one vial of 2 mg Mycobactine J with
+  2 ml absolute ethanol (analytical grade). Shake carefully so that the product is
+  completely dissolved. Pour the contents of the bottle into 1 litre of medium 645
+  kept melted in a water bath at +56°C, taking care to pour out all of the product.
+  Rinse out the vial that contained the Mycobactine J with an additional 2 ml of absolute
+  ethanol and pour into the culture medium. Mix the Mycobactine J alcohol solution
+  and the culture medium very thoroughly.

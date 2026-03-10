@@ -1,0 +1,69 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:2955
+  label: Solution 1
+composition:
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '52.63157894736842'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '18.9474'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '926.3157894736842'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.5, autoclave at 121°C for 20 min.
+
+
+  Original volume: 950 mL'

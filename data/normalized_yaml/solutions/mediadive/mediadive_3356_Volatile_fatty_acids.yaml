@@ -1,0 +1,66 @@
+preferred_term: Volatile fatty acids
+term:
+  id: mediadive.solution:3356
+  label: Volatile fatty acids
+composition:
+- preferred_term: Acetic acid
+  concentration:
+    value: '661.833'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:380
+    label: Acetic acid
+  chebi_term:
+    id: CHEBI:15611
+    label: sarcosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Propionic acid
+  concentration:
+    value: '231.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:381
+    label: Propionic acid
+  chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: iso-Butyric acid
+  concentration:
+    value: '28.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:377
+    label: iso-Butyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '31.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '31.0333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 3 mL'

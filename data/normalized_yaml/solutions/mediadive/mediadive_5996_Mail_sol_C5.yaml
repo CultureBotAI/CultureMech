@@ -1,0 +1,34 @@
+preferred_term: Mail sol. C5
+term:
+  id: mediadive.solution:5996
+  label: Mail sol. C5
+composition:
+- preferred_term: Tricine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2349
+    label: Tricine
+  chebi_term:
+    id: CHEBI:39063
+    label: N-tris(hydroxymethyl)methylglycine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up to 1 Litre with filtered natural seawater. Adjust pH to\
+  \ 7.6 – 7.8 with 1M NaOH or\r\n1M HCl. Add approximately 1 grain of barley to each\
+  \ 25ml of prepared medium prior to\r\nautoclaving. Autoclave at 15 psi for 15 minutes.\n\
+  Alternatively, use: Distilled water to 1 Litre and “Ultramarine Synthetica” sea\
+  \ salts 33.60g"

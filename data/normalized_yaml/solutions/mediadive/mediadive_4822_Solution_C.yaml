@@ -1,0 +1,48 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4822
+  label: Solution C
+composition:
+- preferred_term: Crotonic acid
+  concentration:
+    value: '12.2857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:255
+    label: Crotonic acid
+  chebi_term:
+    id: CHEBI:17217
+    label: 2-butenoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '714.2857142857143'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '214.2857142857143'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Adjust pH to 7.0.\nAutoclave Solutions A, B and C separately.\
+  \ After cooling, aseptically and anaerobically combine the three solutions under\
+  \ a stream of N2-CO2 (80:20, v/v), then add the following solutions (filter-sterilized):\
+  \ \nDistribute the medium into culture vessels under the same gas mixture and seal\
+  \ with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025%\
+  \ L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O (use 5% solutions autoclaved and\
+  \ stored under a N2 atmosphere).\n\nOriginal volume: 140 mL"

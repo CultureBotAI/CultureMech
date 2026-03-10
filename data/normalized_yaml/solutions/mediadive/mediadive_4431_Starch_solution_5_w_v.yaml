@@ -1,0 +1,33 @@
+preferred_term: Starch solution 5%(w/v)
+term:
+  id: mediadive.solution:4431
+  label: Starch solution 5%(w/v)
+composition:
+- preferred_term: Starch
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Boil water, then, add starch and mix until dissolves thoroughly.
+
+
+  Original volume: 100 mL'

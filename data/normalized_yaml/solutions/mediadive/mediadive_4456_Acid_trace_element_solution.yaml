@@ -1,0 +1,102 @@
+preferred_term: Acid trace element solution
+term:
+  id: mediadive.solution:4456
+  label: Acid trace element solution
+composition:
+- preferred_term: HCl
+  concentration:
+    value: '9.900990099009901'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: H3BO3
+  concentration:
+    value: '0.0611881'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0606436'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl2 x 4 H2O
+  concentration:
+    value: '0.934158'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:260
+    label: FeCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0638614'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.0127327'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.0670297'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 1010 mL'

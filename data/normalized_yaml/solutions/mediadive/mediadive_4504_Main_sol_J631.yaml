@@ -1,0 +1,71 @@
+preferred_term: Main sol. J631
+term:
+  id: mediadive.solution:4504
+  label: Main sol. J631
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.0970874'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0970874'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '0.970874'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.194175'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '970.873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.0 - 7.5.
+
+  For preparation of solid medium, add 15.0 g/L agar.
+
+
+  Original volume: 1030 mL'

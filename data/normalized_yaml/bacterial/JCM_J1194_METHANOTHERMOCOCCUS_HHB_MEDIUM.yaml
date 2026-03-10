@@ -66,10 +66,6 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-- preferred_term: Selenite-tungstate solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -227,10 +223,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil and cool down under a H2-CO2 (4:1, v/v) gas
-    stream. Distribute the medium into culture vessels (e.g., 20 ml medium in 120 ml serum bottles) under
-    the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
-    anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. Bring to a boil and cool down under a H2-CO2
+    (4:1, v/v) gas stream. Distribute the medium into culture vessels (e.g., 20 ml
+    medium in 120 ml serum bottles) under the same gas mixture, seal with butyl rubber
+    stoppers and autoclave. After cooling, aseptically and anaerobically add per liter
+    the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20, v/v).
@@ -245,3 +242,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:11.839215+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Selenite-tungstate solution
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition

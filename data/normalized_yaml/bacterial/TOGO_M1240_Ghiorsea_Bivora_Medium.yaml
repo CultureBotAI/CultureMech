@@ -8,18 +8,11 @@ ingredients:
   concentration:
     value: '1.68'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Artificial saltwater (see Medium [M642])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Wolfe's mineral solution (see Medium [M257])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -48,7 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -56,7 +50,8 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -64,7 +59,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:15956
     label: biotin
@@ -85,7 +81,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -114,7 +111,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -122,7 +120,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -158,6 +157,23 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.731395'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: H2; Added default concentration
-    for ingredient: air'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    H2; Added default concentration for ingredient: air'
+- timestamp: '2026-03-09T08:05:01.593913+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Artificial saltwater (see Medium [M642])
+  composition: []
+  notes: Cross-reference to Medium M642
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Wolfe's mineral solution (see Medium [M257])
+  composition: []
+  notes: Cross-reference to Medium M257
+  concentration:
+    value: '1'
+    unit: G_PER_L

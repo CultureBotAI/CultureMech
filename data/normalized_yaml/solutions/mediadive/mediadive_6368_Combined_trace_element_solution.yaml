@@ -1,0 +1,105 @@
+preferred_term: Combined trace element solution*
+term:
+  id: mediadive.solution:6368
+  label: Combined trace element solution*
+composition:
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '4.36'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '3.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.8'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '1.667'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '2.222'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 4.0-4.5.
+
+  Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with distilled
+  water.'

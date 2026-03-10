@@ -1,0 +1,127 @@
+preferred_term: Main sol. 1634
+term:
+  id: mediadive.solution:3396
+  label: Main sol. 1634
+composition:
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.0284'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.0404'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.0802'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CAPS buffer
+  concentration:
+    value: '3.32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1471
+    label: CAPS buffer
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: if required; optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.0522528'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2
+  concentration:
+    value: '0.735075'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na acetate
+  concentration:
+    value: '0.328135'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:401
+    label: Na acetate
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 11.0 with NaOH.
+
+  Fill into screw-cap tubes, leaving 60% headspace.
+
+  Sparge medium with 100% N2 gas mixture to make it anoxic.
+
+  Autoclave at 121 °C for 20 min.
+
+  After autoclaving, cool down and add from sterile stock solutions while stirring:
+
+  Add 30% air.
+
+  Note: Some precipitate will form.'

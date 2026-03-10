@@ -3,16 +3,7 @@ original_name: Yeast Extract-Malt Extract Agar (ISP-2) (pH 8.5)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
-ingredients:
-- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Na2CO3 solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M936
   term:
@@ -34,3 +25,20 @@ curation_history:
   date: '2026-02-03T11:21:01.336589'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+- timestamp: '2026-03-09T08:04:42.411447+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
+  composition: []
+  notes: Cross-reference to Medium M35
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'

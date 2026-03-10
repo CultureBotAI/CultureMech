@@ -1,0 +1,44 @@
+preferred_term: Main sol. J1067
+term:
+  id: mediadive.solution:5132
+  label: Main sol. J1067
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '1.33333'
+    unit: G_PER_L
+  notes: ' Noble'
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.666666666666666'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Bottom layer:\nTop layer: \nAutoclave both layer solutions. Shortly\
+  \ after autoclaving, pipette the bottom layer into each culture vessel (typically\
+  \ 5 ml in 60 ml glass vials, use pipette tips that have been cut to enlarge the\
+  \ opening). The bottom layer is allowed to cool for at least 30 min to ensure its\
+  \ solidification.\nAfter cooling of the top layer solution, add per liter the following\
+  \ solutions (filter-sterilized): \nAdd the top layer solution in 5 to 6 times the\
+  \ volume of the bottom layer to the culture vessels containing the bottom layer\
+  \ (e.g., 25 to 30 ml in 60 ml glass vials with 5 ml of the bottom layer).\nThen,\
+  \ cap the culture vessels with silicone rubber stoppers, and replace the gas phase\
+  \ with a N2-CO2 (4:1, v/v) gas mixture.\nComment: The medium can be stored in culture\
+  \ vessels for a certain time by capping with butyl rubber stoppers, instead of silicon\
+  \ rubber stoppers and keeping anoxic in the vessels. Silicone rubber stopper is\
+  \ O2 permeable and creates a mircoaerophilic condition in the culture vessels.\n\
+  \nOriginal volume: 1125 mL"

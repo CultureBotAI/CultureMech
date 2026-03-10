@@ -1,0 +1,115 @@
+preferred_term: Main sol. 121
+term:
+  id: mediadive.solution:219
+  label: Main sol. 121
+composition:
+- preferred_term: Na-aspartate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:228
+    label: Na-aspartate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaH2PO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:229
+    label: NaH2PO4
+  chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together
+  in 1/10 vol. of water and sterilized separately.

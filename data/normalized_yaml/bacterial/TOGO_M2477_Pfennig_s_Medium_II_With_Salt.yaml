@@ -13,21 +13,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: 'Solution A:'
-  concentration:
-    value: '46'
-    unit: G_PER_L
 - preferred_term: Sol. 1
   concentration:
     value: '50'
-    unit: G_PER_L
-- preferred_term: 'Solution B:'
-  concentration:
-    value: '4'
-    unit: G_PER_L
-- preferred_term: 'Solution F:'
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: Na2CO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
@@ -47,18 +35,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 'Solution C:'
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: 'Solution D:'
-  concentration:
-    value: '450'
-    unit: G_PER_L
-- preferred_term: 'Solution E:'
-  concentration:
-    value: '25'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
   concentration:
@@ -239,10 +215,6 @@ ingredients:
   term:
     id: CHEBI:62947
     label: ammonium acetate
-- preferred_term: Trace element solution SL-10 B
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -406,4 +378,47 @@ curation_history:
     ingredient: CO2; Added default concentration for ingredient: Carbon dioxide gas;
     Added default concentration for ingredient: Nitrogen gas; Added default concentration
     for ingredient: H2SO4; Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:17.572206+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 'Solution A:'
+  composition: []
+  concentration:
+    value: '46'
+    unit: G_PER_L
+- preferred_term: 'Solution B:'
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: 'Solution F:'
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: 'Solution C:'
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: 'Solution D:'
+  composition: []
+  concentration:
+    value: '450'
+    unit: G_PER_L
+- preferred_term: 'Solution E:'
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Trace element solution SL-10 B
+  term:
+    id: mediadive.solution:2396
+    label: Trace element solution SL-10 B
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_2396_Trace_element_solution_SL-10_B.yaml for composition

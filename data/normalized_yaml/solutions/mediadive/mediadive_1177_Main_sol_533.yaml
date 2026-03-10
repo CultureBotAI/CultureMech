@@ -1,0 +1,105 @@
+preferred_term: Main sol. 533
+term:
+  id: mediadive.solution:1177
+  label: Main sol. 533
+composition:
+- preferred_term: NH4NO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:178
+    label: NH4NO3
+  chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 12 H2O
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:95
+    label: Na2HPO4 x 12 H2O
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: H2O
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:56
+    label: H2O
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'pH 7.0
+
+  Incubate (e.g., in a serum bottle) with a headspace of 5% (v/v) O2, 85% H2, 10%
+  CO2.'

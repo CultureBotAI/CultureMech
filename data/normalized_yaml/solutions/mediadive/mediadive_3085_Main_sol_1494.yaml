@@ -1,0 +1,49 @@
+preferred_term: Main sol. 1494
+term:
+  id: mediadive.solution:3085
+  label: Main sol. 1494
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Rabbit serum
+  concentration:
+    value: '50.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:464
+    label: Rabbit serum
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Add 10 ml rabbit serum, flush the medium with N2CO2, adjust the
+  pH to 6.9 and filter-sterilize the completed medium into tubes.
+
+  This recipe describes the preparation of 200 ml medium, which can be used for about
+  4 weeks when kept at 4°C.
+
+
+  Original volume: 200 mL'

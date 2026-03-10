@@ -1,0 +1,94 @@
+preferred_term: Main sol. 1874
+term:
+  id: mediadive.solution:6564
+  label: Main sol. 1874
+composition:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '63'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Proteose peptone
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:208
+    label: Proteose peptone
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:789
+    label: Ammonium Sulfate
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tris base
+  concentration:
+    value: '1.06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1698
+    label: Tris base
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '11.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:827
+    label: Brain heart infusion broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave at 121 °C for 15 min.
+
+  Add cysteine solution after cooling to approximately 65°C.
+
+  Store plates at 4°C for up to 1 week.'

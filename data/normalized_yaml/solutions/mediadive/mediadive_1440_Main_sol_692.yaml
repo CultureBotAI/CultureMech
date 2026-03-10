@@ -1,0 +1,146 @@
+preferred_term: Main sol. 692
+term:
+  id: mediadive.solution:1440
+  label: Main sol. 692
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '14.6771'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '9.78474'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.293542'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.489237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.00195695'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.489237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000489237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '3.91389'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Methanol
+  concentration:
+    value: '7.74951'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.978474'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '978.4735812133072'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients except carbonate, methanol and sulfide, then
+  sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve
+  carbonate and adjust pH to 9.0 - 9.2, then dispense medium under 100% N2 gas atmosphere
+  into anoxic Hungate-type tubes or serum vials and autoclave. Prior to inoculation
+  add methanol (50% v/v solution) and sulfide from anoxic stock solutions autoclaved
+  under 100% N2 gas. Adjust pH of complete medium to 9.2 - 9.4.
+
+
+  Original volume: 1022 mL'

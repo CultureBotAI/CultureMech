@@ -1,0 +1,119 @@
+preferred_term: Main sol. J1303
+term:
+  id: mediadive.solution:5460
+  label: Main sol. J1303
+composition:
+- preferred_term: PPLO broth
+  concentration:
+    value: '10.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:953
+    label: PPLO broth
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phenol red
+  concentration:
+    value: '1000.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:119
+    label: Phenol red
+  chebi_term:
+    id: CHEBI:31991
+    label: phenol red
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Hipolypepton
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2060
+    label: Hipolypepton
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '425.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bovine calf serum
+  concentration:
+    value: '25.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2061
+    label: Bovine calf serum
+- preferred_term: Urea
+  concentration:
+    value: '50.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:339
+    label: Urea
+  chebi_term:
+    id: CHEBI:15676
+    label: allantoin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Urea
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:339
+    label: Urea
+  chebi_term:
+    id: CHEBI:15676
+    label: allantoin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components, adjust pH to 6.0-6.2. After autoclaving and then\
+  \ cooling to 50-55C, aseptically add the following solutions (filter-sterilized).\
+  \ \n<i>1% Phenol red solution:</i>\nDissolve 1.0 g phenol red first in 10-20 ml\
+  \ of 0.1 N NaOH. Then adjust volume to 100 ml. After filter-sterilizing, store at\
+  \ 4C.\n<i>1% Urea - 4% yeast extract solution:</i> \nMix components, sterilize by\
+  \ filtration through a 0.22 ï¿½m filter and store at 4C.\nDispense the medium into\
+  \ sterilized plastic tubes (e.g., 5 ml medium in 15 ml of plastic tubes) and add\
+  \ 100-200 ï¿½l of culture solution. Incubate the cultures at 37C for 1-3 days. When\
+  \ the color of the medium turns from yellow to orange or red, subculture into the\
+  \ new medium. After color change, the strain can be stored at 4C for 1-2 weeks.\n\
+  \nOriginal volume: 200 mL"

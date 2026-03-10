@@ -1,0 +1,84 @@
+preferred_term: Main sol. J325
+term:
+  id: mediadive.solution:4043
+  label: Main sol. J325
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.04995'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SiO3
+  concentration:
+    value: '0.599401'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:823
+    label: Na2SiO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.849151'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.47752'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '899.1008991008991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Distribute medium into culture vessels (e.g., 20 ml of medium
+  in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture, seal with
+  butyl rubber stoppers, and autoclave. Adjust pH to 7.5, if necessary. Pressurize
+  the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+
+
+  Original volume: 1001 mL'

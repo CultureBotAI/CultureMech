@@ -4,12 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: 0.2% FeSO4・6H2O solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -82,10 +76,6 @@ ingredients:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace metal solution (see Medium [M805])
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -119,4 +109,22 @@ curation_history:
   date: '2026-02-03T11:21:01.629976'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:44.739702+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 0.2% FeSO4・6H2O solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Trace metal solution (see Medium [M805])
+  composition: []
+  notes: Cross-reference to Medium M805
+  concentration:
+    value: '2'
+    unit: G_PER_L

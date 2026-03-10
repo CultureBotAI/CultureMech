@@ -1,0 +1,45 @@
+preferred_term: Hemin solution
+term:
+  id: mediadive.solution:3992
+  label: Hemin solution
+composition:
+- preferred_term: Hemin chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1723
+    label: Hemin chloride
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Triethanolamine
+  concentration:
+    value: '40.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1724
+    label: Triethanolamine
+  chebi_term:
+    id: CHEBI:132755
+    label: triethanolammonium
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '960.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After filter-sterilizing, store at 4C.
+
+
+  Original volume: 100 mL'

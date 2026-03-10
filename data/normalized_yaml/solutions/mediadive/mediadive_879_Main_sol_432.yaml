@@ -1,0 +1,21 @@
+preferred_term: Main sol. 432
+term:
+  id: mediadive.solution:879
+  label: Main sol. 432
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Use medium no. 144 supplemented with 100 g/l of NaCl.
+
+  Sterilize glucose, yeast extract and sodium sulfide separately (autoclave under
+  nitrogen atmosphere).'

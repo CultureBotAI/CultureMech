@@ -69,10 +69,6 @@ ingredients:
   concentration:
     value: '0.104211'
     unit: G_PER_L
-- preferred_term: Metall salt sol. 44
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -147,3 +143,13 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 621
+- timestamp: '2026-03-09T08:04:39.752123+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Metall salt sol. 44
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

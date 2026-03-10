@@ -67,11 +67,6 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Na2CO3 solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M157
   term:
@@ -97,4 +92,15 @@ curation_history:
   date: '2026-02-03T11:20:48.217374'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+- timestamp: '2026-03-09T08:05:07.653849+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Na2CO3 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'

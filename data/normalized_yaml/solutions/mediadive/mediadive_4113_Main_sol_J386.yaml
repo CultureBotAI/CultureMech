@@ -1,0 +1,46 @@
+preferred_term: Main sol. J386
+term:
+  id: mediadive.solution:4113
+  label: Main sol. J386
+composition:
+- preferred_term: Middlebrook 7H10 agar
+  concentration:
+    value: '21.1111'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1748
+    label: Middlebrook 7H10 agar
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glycerol
+  concentration:
+    value: '5.555555555555555'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '994.4444444444445'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically
+  add 100 ml of Middlebrook OADC Enrichment (BD-BBL) and mix thoroughly.
+
+
+  Original volume: 900 mL'

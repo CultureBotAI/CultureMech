@@ -1,0 +1,71 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:4631
+  label: Solution A
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.525'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '0.5375'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '6.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components thoroughly. Distribute into culture vessels under
+  a N2 gas atmosphere (e.g., 45 ml in 100 ml serum bottle), seal with butyl rubber
+  stoppers and autoclave.
+
+
+  Original volume: 800 mL'

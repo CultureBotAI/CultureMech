@@ -54,21 +54,11 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-- preferred_term: Na2CO3 solution** (1.0 M)
-  concentration:
-    value: '60'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Gellan gum (if needed)
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
-- preferred_term: TAPS*
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -99,3 +89,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:33.300822+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Na2CO3 solution** (1.0 M)
+  composition: []
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: TAPS*
+  composition: []
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'

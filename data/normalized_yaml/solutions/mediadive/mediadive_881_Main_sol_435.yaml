@@ -1,0 +1,91 @@
+preferred_term: Main sol. 435
+term:
+  id: mediadive.solution:881
+  label: Main sol. 435
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:582
+    label: Activated charcoal
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '200'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.5.
+
+  Dissolve peptone, yeast extract and cysteine in 800 ml of distilled water. Adjust
+  pH to 6.5 with NaOH. Add agar and dissolve by heating.
+
+  Add 2 g/l activated charcoal to the agar base solution before autoclaving. After
+  autoclaving, cool to 45°C and add sterilized serum.'

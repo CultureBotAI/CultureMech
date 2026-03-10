@@ -1,0 +1,42 @@
+preferred_term: Stock solution 1
+term:
+  id: mediadive.solution:6212
+  label: Stock solution 1
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 6 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:173
+    label: CaCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 500 mL'

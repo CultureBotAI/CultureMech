@@ -1,0 +1,45 @@
+preferred_term: Rye-bran extract
+term:
+  id: mediadive.solution:4657
+  label: Rye-bran extract
+composition:
+- preferred_term: Rye-bran
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1880
+    label: Rye-bran
+- preferred_term: Malted wheat meal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1881
+    label: Malted wheat meal
+- preferred_term: Trypsin
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1882
+    label: Trypsin
+  chebi_term:
+    id: CHEBI:9765
+    label: trypsin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix components and incubate at 50C for 24 hr. Clarify the resulting
+  turbid liquid by centrifugation (500 x g, 15 min) followed by paper-filtration.

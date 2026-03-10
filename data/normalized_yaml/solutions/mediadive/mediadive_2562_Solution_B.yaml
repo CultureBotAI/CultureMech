@@ -1,0 +1,45 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:2562
+  label: Solution B
+composition:
+- preferred_term: Homo-PIPES
+  concentration:
+    value: '158'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1141
+    label: Homo-PIPES
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH of buffer to 5.5.
+
+
+  Original volume: 10 mL'

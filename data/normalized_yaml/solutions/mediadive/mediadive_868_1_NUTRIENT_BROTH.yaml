@@ -1,0 +1,42 @@
+preferred_term: 1. NUTRIENT BROTH
+term:
+  id: mediadive.solution:868
+  label: 1. NUTRIENT BROTH
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2
+    label: Meat extract
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.0.

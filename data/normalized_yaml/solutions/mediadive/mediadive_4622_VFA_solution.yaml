@@ -1,0 +1,58 @@
+preferred_term: VFA solution
+term:
+  id: mediadive.solution:4622
+  label: VFA solution
+composition:
+- preferred_term: Butyric acid
+  concentration:
+    value: '9.70873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:314
+    label: Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '9.70873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '9.70873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '970.8737864077669'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.7 - 6.8, and store in a tightly stoppered bottle
+  at 4C.
+
+
+  Original volume: 103 mL'

@@ -1,0 +1,30 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:193
+  label: Solution B
+composition:
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 20 mL'

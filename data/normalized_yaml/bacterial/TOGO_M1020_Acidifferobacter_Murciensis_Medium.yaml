@@ -85,10 +85,6 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-- preferred_term: Iron(II) sulfate solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -144,4 +140,14 @@ curation_history:
   date: '2026-02-03T11:20:45.487777'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:17.506476+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Iron(II) sulfate solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L

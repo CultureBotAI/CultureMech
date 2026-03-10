@@ -1,0 +1,127 @@
+preferred_term: Main sol. 1276
+term:
+  id: mediadive.solution:2554
+  label: Main sol. 1276
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nitrilotriacetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:499
+    label: Nitrilotriacetate
+  chebi_term:
+    id: CHEBI:25548
+    label: nitrilotriacetate(3-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaH2PO4 x 2 H2O
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:678
+    label: NaH2PO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaSO4 x 2 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:190
+    label: CaSO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III) citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:45
+    label: Fe(III) citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Before adding agar, heat to boiling. After cooling adjust pH to
+  pH 7.5. (pH drops strongly during heating).

@@ -1,0 +1,20 @@
+preferred_term: Trace element solution
+term:
+  id: mediadive.solution:4452
+  label: Trace element solution
+composition:
+- preferred_term: AlCl3 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:677
+    label: AlCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:26833
+    label: sulfur atom
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum.
+  When toluene is depleted, re-add the toluene solution (normally every 3 to 4 days,
+  until enough cell growth is seen).'

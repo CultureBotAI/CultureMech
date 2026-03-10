@@ -1,0 +1,31 @@
+preferred_term: N-acetylglucosamin- and pyruvate solution
+term:
+  id: mediadive.solution:5569
+  label: N-acetylglucosamin- and pyruvate solution
+composition:
+- preferred_term: N-Acetylglucosamine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:462
+    label: N-Acetylglucosamine
+  chebi_term:
+    id: CHEBI:506227
+    label: N-acetylglucosamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na-pyruvate
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:113
+    label: Na-pyruvate
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "N-Acetylglucosamin and pyruvate solution per 50 ml : \n\nOriginal\
+  \ volume: 50 mL"

@@ -4,16 +4,12 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +17,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -34,7 +31,8 @@ ingredients:
   concentration:
     value: '18'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
@@ -42,7 +40,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -50,20 +49,17 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound, Complex component'
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
+    Complex component'
 - preferred_term: L-Alanine
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:16977
     label: L-alanine
-- preferred_term: CaSO4 (saturated aq. solution)
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution'
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '0.3'
@@ -104,3 +100,20 @@ curation_history:
   date: '2026-02-03T11:20:56.261402'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:05:10.120903+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: CaSO4 (saturated aq. solution)
+  composition: []
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Solution'

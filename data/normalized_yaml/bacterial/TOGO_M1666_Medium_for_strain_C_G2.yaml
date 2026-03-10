@@ -72,26 +72,6 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
-- preferred_term: Trace element mixture*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite-tungstate solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin mixture***
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Bicarbonate solution (1.0 M)*****
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
@@ -333,4 +313,43 @@ curation_history:
   notes: 'Added default concentration for ingredient: yeast extract; Added default
     concentration for ingredient: Carbon dioxide gas; Added default concentration
     for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:30.461513+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element mixture*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite-tungstate solution**
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
+- preferred_term: Vitamin mixture***
+  term:
+    id: mediadive.solution:5209
+    label: Vitamin mixture
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5209_Vitamin_mixture.yaml for composition
+- preferred_term: Vitamin B12 solution****
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Bicarbonate solution (1.0 M)*****
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L

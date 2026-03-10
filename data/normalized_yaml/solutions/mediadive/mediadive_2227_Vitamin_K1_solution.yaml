@@ -1,0 +1,34 @@
+preferred_term: Vitamin K1 solution
+term:
+  id: mediadive.solution:2227
+  label: Vitamin K1 solution
+composition:
+- preferred_term: Vitamin K1
+  concentration:
+    value: '5.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:150
+    label: Vitamin K1
+  chebi_term:
+    id: CHEBI:18067
+    label: phylloquinone
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ethanol
+  concentration:
+    value: '19'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter
+  sterilize. Store refrigerated in a brown bottle.
+
+
+  Original volume: 20 mL'

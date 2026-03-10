@@ -1,0 +1,41 @@
+preferred_term: Main sol. J149
+term:
+  id: mediadive.solution:3797
+  label: Main sol. J149
+composition:
+- preferred_term: Tetramethyl ammonium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1649
+    label: Tetramethyl ammonium
+  chebi_term:
+    id: CHEBI:46020
+    label: tetramethylammonium
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback

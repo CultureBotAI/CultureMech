@@ -4,11 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Resazurin Solution (0.025%)
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Yeast Extract
   concentration:
     value: '5'
@@ -133,3 +128,14 @@ curation_history:
   date: '2026-02-03T11:20:55.791897'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:46.356178+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Resazurin Solution (0.025%)
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'

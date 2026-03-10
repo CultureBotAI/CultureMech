@@ -1,0 +1,91 @@
+preferred_term: Main sol. J1044
+term:
+  id: mediadive.solution:5104
+  label: Main sol. J1044
+composition:
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '3.72549'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:196
+    label: Na2B4O7 x 10 H2O
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '6.66667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '31.3725'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '68.6274'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '980.3921568627451'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '19.6078431372549'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix thoroughly and autoclave. After cooling, add the following\
+  \ solution (autoclaved). \n\nOriginal volume: 1020 mL"

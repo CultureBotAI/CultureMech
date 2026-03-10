@@ -1,0 +1,50 @@
+preferred_term: Main sol. 263
+term:
+  id: mediadive.solution:529
+  label: Main sol. 263
+composition:
+- preferred_term: Sucrose
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fig
+  concentration:
+    value: '1'
+    unit: VARIABLE
+  term:
+    id: mediadive.compound:2293
+    label: Fig
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Lemon
+  concentration:
+    value: '1'
+    unit: VARIABLE
+  term:
+    id: mediadive.compound:2091
+    label: Lemon
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave, cool to room temperature, and inoculate with about
+  50 ml Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged). '

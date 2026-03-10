@@ -1,0 +1,165 @@
+preferred_term: Main sol. 25
+term:
+  id: mediadive.solution:22
+  label: Main sol. 25
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Mannitol
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:6
+    label: Mannitol
+  chebi_term:
+    id: CHEBI:16899
+    label: D-mannitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na-gluconate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:41
+    label: Na-gluconate
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III) citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:45
+    label: Fe(III) citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Biotin
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium thiosulfate pentahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1092
+    label: Sodium thiosulfate pentahydrate
+  chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Adjust pH to 4.9, then add: \nSterilize in screw-capped bottles.\
+  \ Cool to room temperature; to each 100 ml medium add\r\n0.2 ml of a sterile 10%\
+  \ Na<sub>2</sub>S<sub>2</sub>0<sub>3 </sub>solution. Incubate in the light using\
+  \ a tungsten lamp"

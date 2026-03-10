@@ -1,0 +1,23 @@
+preferred_term: Substrate
+term:
+  id: mediadive.solution:4410
+  label: Substrate
+composition:
+- preferred_term: Sodium palmitate
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1813
+    label: Sodium palmitate
+  chebi_term:
+    id: CHEBI:234557
+    label: sodium palmitate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Autoclave in culture vessels.
+
+  To complete the medium, combine Solution A and substrate in the culture vessels
+  under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Finally,
+  reduce the medium with 0.01 volume of 5% Na2S x 9H2O solution (autoclaved and stored
+  under a N2 atmosphere).'

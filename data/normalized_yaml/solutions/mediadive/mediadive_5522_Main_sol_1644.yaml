@@ -1,0 +1,155 @@
+preferred_term: Main sol. 1644
+term:
+  id: mediadive.solution:5522
+  label: Main sol. 1644
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.788'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.268'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na3-citrate x 2 H2O
+  concentration:
+    value: '0.0045'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2155
+    label: Na3-citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:39035
+    label: TES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2-EDTA x 2 H2O
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:676
+    label: Na2-EDTA x 2 H2O
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '1.125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:244
+    label: K2HPO4 x 3 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fe(NH4)citrate
+  concentration:
+    value: '0.002256'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1203
+    label: Fe(NH4)citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with MilliQ water.
+
+  Autoclave at 121 °C for 20 min.
+
+  After cooling, add the following filter sterilized components.'

@@ -1,0 +1,175 @@
+preferred_term: Main sol. 716
+term:
+  id: mediadive.solution:1467
+  label: Main sol. 716
+composition:
+- preferred_term: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:244
+    label: K2HPO4 x 3 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.219342'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.219342'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0897308'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0598205'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.000199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '1.49551'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-Dithiothreitol
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:151
+    label: DL-Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '997.0089730807578'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except nitrate, carbonate, and dithiothreitol),
+  then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it
+  anoxic. Dispense medium under the same gas atmosphere into anoxic serum vials (e.g.,
+  10 ml medium in 25 ml Balch-type tubes) and autoclave. Before use, add nitrate from
+  a sterile anoxic stock solution prepared under 100% N2 gas and carbonate from a
+  sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Before
+  inoculation add dithiothreitol from an anoxic stock solution sterilized by filtration
+  under 100% N2 gas and adjust the pH of the medium to 7.2.
+
+  After growth has started pressurize vials to 0.5 bar overpressure with a sterile
+  80% H2 and 20% CO2 gas mixture.
+
+
+  Original volume: 1003 mL'

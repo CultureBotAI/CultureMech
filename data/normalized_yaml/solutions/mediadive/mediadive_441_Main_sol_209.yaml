@@ -1,0 +1,18 @@
+preferred_term: Main sol. 209
+term:
+  id: mediadive.solution:441
+  label: Main sol. 209
+composition:
+- preferred_term: Arginine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:326
+    label: Arginine
+  chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: To medium 78 add 0.5% (w/v) arginine.

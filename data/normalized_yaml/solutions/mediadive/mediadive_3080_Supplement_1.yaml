@@ -1,0 +1,36 @@
+preferred_term: Supplement 1
+term:
+  id: mediadive.solution:3080
+  label: Supplement 1
+composition:
+- preferred_term: Fe SO4 x 7 H2O
+  concentration:
+    value: '2.78015'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1418
+    label: Fe SO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HCl
+  concentration:
+    value: '0.3646'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'FeSO4 x 7H2O (10 mM) in HCl (10 mM)
+
+  Prepare Supplements 1, flush with nitrogen to make them anoxic, filter-sterilize
+  and store at -20°C
+
+
+  Original volume: 1 mL'

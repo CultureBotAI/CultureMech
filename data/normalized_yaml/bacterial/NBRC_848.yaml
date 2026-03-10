@@ -5,13 +5,6 @@ description: 848. NBRC 847.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: (NH4)2SO41.3gKH2PO40.28gMgSO4·7H2O0.25gCaCl2·2H2O0.07gFeCl3·6H2O0.02gMnCl2·4H2O1.8mgNa2B4O7·10H2O4.5mgZnSO4·7H2O0.22mgCuCl2·2H2O0.05mgNa2MoO4·2H2O0.03mgVOSO4·nH2O0.03mgCoSO4·7H2O0.01mgBacto
-    Yeast Extract (Difco)1gSulfur (powder)5gNa2S·9H2O0.5gResazurin1mgDistilled water1LMix ingredients
-    except yeast extract, sulfur and Na2S·9H2O, and autoclave under a N2atmosphere. Separately autoclave
-    yeast extract as a 10% solution and Na2S·9H2O as a 5% solution under a N2atmosphere.  Sulfur is autoclaved
-    for 60 min at 105℃ on each of 3 successive days. Aseptically and anaerobically add yeast extract and
-    sulfur to the medium. Prior to inoculation, add sterile Na2S·9H2O solution, and adjust pH to 4.5-5.0
-    with sterile 1 N H2SO4.
 - preferred_term: ''
   concentration:
     value: (NH4)2SO4
@@ -162,3 +155,17 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 847, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=847.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:44.713137+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: (NH4)2SO41.3gKH2PO40.28gMgSO4·7H2O0.25gCaCl2·2H2O0.07gFeCl3·6H2O0.02gMnCl2·4H2O1.8mgNa2B4O7·10H2O4.5mgZnSO4·7H2O0.22mgCuCl2·2H2O0.05mgNa2MoO4·2H2O0.03mgVOSO4·nH2O0.03mgCoSO4·7H2O0.01mgBacto
+    Yeast Extract (Difco)1gSulfur (powder)5gNa2S·9H2O0.5gResazurin1mgDistilled water1LMix
+    ingredients except yeast extract, sulfur and Na2S·9H2O, and autoclave under a
+    N2atmosphere. Separately autoclave yeast extract as a 10% solution and Na2S·9H2O
+    as a 5% solution under a N2atmosphere.  Sulfur is autoclaved for 60 min at 105℃
+    on each of 3 successive days. Aseptically and anaerobically add yeast extract
+    and sulfur to the medium. Prior to inoculation, add sterile Na2S·9H2O solution,
+    and adjust pH to 4.5-5.0 with sterile 1 N H2SO4.
+  composition: []

@@ -1,0 +1,104 @@
+preferred_term: Main sol. 920
+term:
+  id: mediadive.solution:1891
+  label: Main sol. 920
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Mannitol
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:6
+    label: Mannitol
+  chebi_term:
+    id: CHEBI:16899
+    label: D-mannitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MES buffer
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:835
+    label: MES buffer
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '4.81'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final
+  pH 6.7.

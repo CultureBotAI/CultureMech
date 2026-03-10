@@ -1,0 +1,69 @@
+preferred_term: Mail sol. C60
+term:
+  id: mediadive.solution:6051
+  label: Mail sol. C60
+composition:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '250'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Malt extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:116
+    label: Malt extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up the 75% seawater, heat, (do not bring to boil) then add\
+  \ and dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
+  \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for 15\
+  \ minutes."

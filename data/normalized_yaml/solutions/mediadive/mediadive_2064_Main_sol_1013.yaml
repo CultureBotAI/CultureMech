@@ -1,0 +1,27 @@
+preferred_term: Main sol. 1013
+term:
+  id: mediadive.solution:2064
+  label: Main sol. 1013
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '297.029702970297'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix ingredients and adjust pH of the final solution to 7.5 - 8.0.
+  Sterilize by autoclaving at 121°C for 20 min. Grow prey bacterium (DSM 15416) on
+  agar plates using medium 514. For 50 ml prey medium suspension use one agar plate
+  incubated for 24 hours and wash off grown cells in 3 - 5 ml medium. The prey medium
+  suspension should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells. Inoculate
+  the complete medium immediately after preparation and incubate the suspension with
+  shaking until a decrease in turbidity is visible.
+
+
+  Original volume: 1010 mL'

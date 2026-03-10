@@ -4,35 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '961.5'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Solution D
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Solution E
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution F
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Distilled water 960.00
   concentration:
     value: '960'
@@ -102,10 +73,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Selenite-tungstate solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -430,4 +397,71 @@ curation_history:
     default concentration for ingredient: Nitrogen gas; Added default concentration
     for ingredient: N2 gas; Added default concentration for ingredient: N2 gas; Added
     default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:04:28.589334+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 8 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '961.5'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: Solution D
+  term:
+    id: mediadive.solution:5313
+    label: Solution D
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_5313_Solution_D.yaml for composition
+- preferred_term: Solution E
+  term:
+    id: mediadive.solution:4959
+    label: Solution E
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_4959_Solution_E.yaml for composition
+- preferred_term: Solution F
+  term:
+    id: mediadive.solution:6293
+    label: Solution F
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6293_Solution_F.yaml for composition
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Selenite-tungstate solution
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition

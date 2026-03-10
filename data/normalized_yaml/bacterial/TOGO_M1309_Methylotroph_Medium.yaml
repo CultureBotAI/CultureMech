@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '970'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,12 +17,14 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.27'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -29,12 +32,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: NaNO3
   concentration:
     value: '0.42'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:63005
     label: ''
@@ -42,7 +47,8 @@ ingredients:
   concentration:
     value: '0.014'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -62,18 +68,6 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Trace element solution (see Medium [M278])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Se/W solution (see Medium [M278])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -82,21 +76,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10 mM CuCl2 solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-- preferred_term: 10 mM CeCl3 solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
 - preferred_term: Methanol
   concentration:
     value: '0.81'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:17790
     label: methanol
@@ -125,3 +110,38 @@ curation_history:
   date: '2026-02-03T11:20:47.116189'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:36.093081+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Se/W solution (see Medium [M278])
+  composition: []
+  notes: Cross-reference to Medium M278
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 10 mM CuCl2 solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: 10 mM CeCl3 solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'

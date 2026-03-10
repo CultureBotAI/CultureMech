@@ -1,0 +1,35 @@
+preferred_term: Main sol. 1610
+term:
+  id: mediadive.solution:3352
+  label: Main sol. 1610
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Dilute 20 ml of solution 1 to 700ml with distilled water.\nAdd\
+  \ 100mL of solution 5, 50 mL of solution 8, 20mL of solution 6 and 7 and 10 mL of\r\
+  \nsolution 3.\nAdd 1ml trace element solution.\nAdd 0.4 mL solution 2.\nAdd 0.1\
+  \ mL solution 4.\nAdd 1.0 mL solution 9.\nDisolve and bring to 1L.\nAdjust pH to\
+  \ 7.8 with HCl or NaOH.\r\nAutoclave medium.\nAfter autoclaving add 10mL per liter\
+  \ of filter sterilized methanol."

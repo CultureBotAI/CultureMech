@@ -1,0 +1,125 @@
+preferred_term: BBL Actinomyces broth (BBL 210920)
+term:
+  id: mediadive.solution:5679
+  label: BBL Actinomyces broth (BBL 210920)
+composition:
+- preferred_term: Potassium Phosphate
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:928
+    label: Potassium Phosphate
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:789
+    label: Ammonium Sulfate
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:793
+    label: Magnesium sulfate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:794
+    label: Calcium Chloride
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Infusion Broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:930
+    label: Infusion Broth
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Dextrose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:60
+    label: Dextrose
+  chebi_term:
+    id: CHEBI:17634
+    label: D-fructose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:531
+    label: Pancreatic digest of casein
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match

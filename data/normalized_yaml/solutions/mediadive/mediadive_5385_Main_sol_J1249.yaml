@@ -1,0 +1,165 @@
+preferred_term: Main sol. J1249
+term:
+  id: mediadive.solution:5385
+  label: Main sol. J1249
+composition:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Beef extract
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:85
+    label: Beef extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Malt extract
+  concentration:
+    value: '149.85'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:116
+    label: Malt extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Diammonium hydrogen citrate
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1663
+    label: Diammonium hydrogen citrate
+  chebi_term:
+    id: CHEBI:63076
+    label: diammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.18981'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1000
+    label: MnSO4 x n H2O
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.579421'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tween 80
+  concentration:
+    value: '0.999000999000999'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '999.0009990009991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After autoclaving, aseptically add 20 ml acetic acid (filter-sterilized).
+
+
+  Original volume: 1001 mL'

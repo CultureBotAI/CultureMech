@@ -1,0 +1,129 @@
+preferred_term: Main sol. 1058d
+term:
+  id: mediadive.solution:2143
+  label: Main sol. 1058d
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '119.76'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.49701'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.499002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KNO3
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0499002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.499002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '4.99002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.99002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '998.003992015968'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve sodium chloride, potassium hydrogenphosphate, ammonium
+  chloride and potassium nitrate, then sparge solution with 80% N2 and 20% CO2 gas
+  mixture for at least 30 - 45 min to remove dissolved oxygen. Dispense solution under
+  same gas atmosphere in vials suitable for anaerobic cultures (e.g. Balch-type tubes)
+  to 50% volume, close vials with butyl rubber septa and autoclave. Add trace elements,
+  calcium chloride, magnesium sulfate, thiosulfate, and vitamins from sterile anoxic
+  stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
+  stock solution prepared under 80% N2 and 20% CO2 gas mixture. Thiosulfate and vitamins
+  should be sterilized by filtration. Adjust pH of the complete medium to 7.5 - 7.8
+  using a sterile anoxic stock solution of sodium carbonate (5% w/v) prepared under
+  80% N2 and 20% CO2 gas atmosphere.
+
+  Note: Use at least 10% (v/v) as inoculum.
+
+
+  Original volume: 1002 mL'

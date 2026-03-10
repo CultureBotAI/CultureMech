@@ -1,0 +1,119 @@
+preferred_term: Main sol. 1511
+term:
+  id: mediadive.solution:3121
+  label: Main sol. 1511
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Prepare the liquid medium. Dispense the medium into culture vessels.\
+  \ Sterilize by autoclaving. Before inoculation add from sterile stock solutions:\
+  \ \nThe 8% NaHCO3 solution may be either filter sterilized or autoclaved. When the\
+  \ solution is autoclaved use tightly closed vessels that are filled to a maximum\
+  \ of 50% of the total volume.\nThe final pH of the medium should be adjusted to\
+  \ pH 7.6-8.0."

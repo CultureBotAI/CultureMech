@@ -1,0 +1,117 @@
+preferred_term: Main sol. 1019
+term:
+  id: mediadive.solution:2070
+  label: Main sol. 1019
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:173
+    label: CaCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(NH4)citrate
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1203
+    label: Fe(NH4)citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:272
+    label: MnSO4 x 4 H2O
+  chebi_term:
+    id: CHEBI:62982
+    label: ammonium dihydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 4 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:922
+    label: FeCl3 x 4 H2O
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'pH 7.1 (adjusted with NaOH if needed)
+
+  The medium may be solifidied with 17 g/l agar.'

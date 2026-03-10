@@ -1,0 +1,103 @@
+preferred_term: Main sol. J1148
+term:
+  id: mediadive.solution:5256
+  label: Main sol. J1148
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.0489237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.0733855'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0489237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '0.571429'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCO3
+  concentration:
+    value: '3.91389'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '978.4735812133072'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '19.569471624266143'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components and autoclave (CaCO3 will not fully dissolve).\
+  \ After cooling, add the following solutions to the medium (autoclaved or *filter-sterilized):\
+  \ \nComments: Typically, prepare the medium in glass bottles with plastic caps leaving\
+  \ an ample head space (e.g., 50 ml medium in 250 ml-Duran&reg; glass bottles). Cultivate\
+  \ in the dark without agitation. Check growth by phase-contrast microscopy. Also,\
+  \ it can be checked by measuring ammonium concentration. Once ammonium in the medium\
+  \ is depleted, it can be fed by the addition of another 50 mM NH4Cl solution (final\
+  \ 1.0 mM). The ammonium-feeding can be repeated several times. If the culture stops\
+  \ the ammonium oxidation or begins to grow even slower, nitrite may be accumulated\
+  \ up to a level causing growth inhibition in the culture (ca. 15 mM). If so, replace\
+  \ the medium as follows: spin down the culture (< 65,000 g for 15 min), remove the\
+  \ supernatant, and add fresh culture medium to the white pellet. Then, suspend the\
+  \ pellet and remove the suspension to a new glass bottle.\n\nOriginal volume: 1022\
+  \ mL"

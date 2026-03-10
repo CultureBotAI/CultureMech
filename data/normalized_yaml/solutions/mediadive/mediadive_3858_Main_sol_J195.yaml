@@ -1,0 +1,74 @@
+preferred_term: Main sol. J195
+term:
+  id: mediadive.solution:3858
+  label: Main sol. J195
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium dithionite
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1676
+    label: Sodium dithionite
+  chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sulfur
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Mix ingredients, except yeast extract, sodium dithionite and sulfur,
+  and adjust pH to 6.5. Autoclave, then cool under H2-CO2 (80:20) gas mixture. Separately
+  autoclave yeast extract as a 10% solution under a N2 atmosphere. Filter-sterilize
+  NaHCO3 as an 8% solution while gassing with N2. Steam sulfur for 3 hr on each of
+  3 successive days. Aseptically and anaerobically add the yeast extract and NaHCO3
+  solutions, and sulfur to the medium under a H2-CO2 (80:20) atmosphere. Readjust
+  pH to 6.5 by further gassing with H2-CO2 (80:20) gas mixture, if necessary. Prior
+  to inoculation, add filter-sterilized 2.5% sodium dithionite solution. Pressurize
+  inoculated bottles to 100 kPa H2-CO2 (80:20).

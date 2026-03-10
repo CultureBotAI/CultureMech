@@ -1,0 +1,21 @@
+preferred_term: Main sol. 465f
+term:
+  id: mediadive.solution:953
+  label: Main sol. 465f
+composition:
+- preferred_term: 3-Aminophenol
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2117
+    label: 3-Aminophenol
+  chebi_term:
+    id: CHEBI:28924
+    label: 3-aminophenol
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare mineral medium 465. Prepare a stock solution of 10 g/l
+  3-aminophenol by adding boiling water to the crystals, stir the solution, cool and
+  sterilize by filtration. Add 10 ml of this stock solution to 1 l of autoclaved and
+  cooled medium 465.

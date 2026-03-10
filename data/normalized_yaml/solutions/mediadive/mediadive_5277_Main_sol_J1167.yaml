@@ -1,0 +1,321 @@
+preferred_term: Main sol. J1167
+term:
+  id: mediadive.solution:5277
+  label: Main sol. J1167
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.111878'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.171513'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.246427'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '1.10892'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.246427'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0123213'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trace mineral solution
+  concentration:
+    value: '0.4928536224741252'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:897
+    label: Trace mineral solution
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.985707'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000246427'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '492.8536224741252'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '3.9428289797930014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.17249876786594381'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '0.0111336'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.121242'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.00689995'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '0.00172499'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '0.000287827'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00073928'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.000591424'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.000586496'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.000465254'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.000194677'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:107
+    label: Na2SeO3 x 5 H2O
+  chebi_term:
+    id: CHEBI:63940
+    label: sodium tungstate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.000126663'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '6.70281e-05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.000101035'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:39
+    label: CuCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '492.8536224741252'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Prepare medium under a N2 gas atmosphere. After autoclaving, aseptically\
+  \ and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):\
+  \ \nAdjust final pH of the medium to 6.5, if necessary.\nTrace mineral solution:\
+  \ \n\nOriginal volume: 2029 mL"

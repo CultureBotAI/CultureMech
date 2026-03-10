@@ -1,0 +1,60 @@
+preferred_term: Main sol. J1019
+term:
+  id: mediadive.solution:5065
+  label: Main sol. J1019
+composition:
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sulfur
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Mix components, except sulfur and NaHCO3, and autoclave. Steam
+  sulfur for 3 hr on each of 3 successive days. Filter-sterilize 8% (w/v) NaHCO3 solution
+  and add to the medium. Aseptically distribute the medium into culture vessels containing
+  appropriate amount of sulfur (e.g., 20 ml of the medium with 0.2 g sulfur in 100
+  ml serum bottle) and seal with butyl rubber stoppers. Replace gas phase with a H2-CO2
+  (4:1, v/v) gas mixture and check medium pH to be 6.0. Pressurize the inoculated
+  bottles to 200 kPa H2-CO2 (4:1, v/v).

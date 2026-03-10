@@ -59,10 +59,6 @@ ingredients:
   concentration:
     value: '0.000475285'
     unit: G_PER_L
-- preferred_term: Steric solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -255,16 +251,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
-    mixture. Distribute the medium into culture vessels (e.g., 10 ml in Balch tubes) under the same gas
-    mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved or *filter-sterilized and stored under a N2 gas
-    atmosphere; **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
+    (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g., 10 ml
+    in Balch tubes) under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, aseptically and anaerobically add per liter the following
+    solutions (autoclaved or *filter-sterilized and stored under a N2 gas atmosphere;
+    **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Heat the solution in a closed vial under a N2 atmosphere in a boiling water bath. Shake
-    until stearic acid is dissolved and autoclave. Add the solution to the medium while stearic acid is
-    dissolved. Re-melt if stearic acid is solidified.
+  description: Heat the solution in a closed vial under a N2 atmosphere in a boiling
+    water bath. Shake until stearic acid is dissolved and autoclave. Add the solution
+    to the medium while stearic acid is dissolved. Re-melt if stearic acid is solidified.
 applications:
 - Microbial cultivation
 curation_history:
@@ -272,3 +269,13 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1258'
+- timestamp: '2026-03-09T08:05:01.622943+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Steric solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

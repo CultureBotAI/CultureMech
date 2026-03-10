@@ -103,19 +103,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
-- preferred_term: Hipolypepton*
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace mineral solution**
-  concentration:
-    value: '9'
-    unit: G_PER_L
-- preferred_term: Trace vitamins***
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -335,3 +322,30 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH'
+- timestamp: '2026-03-09T08:04:51.626453+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trace mineral solution**
+  term:
+    id: mediadive.solution:5445
+    label: Trace mineral solution
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  notes: See mediadive_5445_Trace_mineral_solution.yaml for composition
+- preferred_term: Trace vitamins***
+  term:
+    id: mediadive.solution:5469
+    label: Trace vitamins
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5469_Trace_vitamins.yaml for composition

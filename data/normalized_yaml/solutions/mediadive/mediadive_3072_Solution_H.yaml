@@ -1,0 +1,107 @@
+preferred_term: Solution H
+term:
+  id: mediadive.solution:3072
+  label: Solution H
+composition:
+- preferred_term: Vitamine B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:900
+    label: Vitamine B12
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: D-(+)-biotin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1359
+    label: D-(+)-biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Folic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Folinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: calcium salt
+  term:
+    id: mediadive.compound:1360
+    label: Folinic acid
+  chebi_term:
+    id: CHEBI:15640
+    label: 5-formyltetrahydrofolic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinamide
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:337
+    label: Nicotinamide
+  chebi_term:
+    id: CHEBI:17154
+    label: nicotinamide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:616
+    label: Riboflavine
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare Solutions H, flush each with nitrogen to make them anoxic,
+  filter-sterilize and store at -20°C
+
+
+  Original volume: 100 mL'

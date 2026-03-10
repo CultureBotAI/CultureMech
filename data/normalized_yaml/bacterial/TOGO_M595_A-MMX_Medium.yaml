@@ -67,14 +67,6 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: Synthetic seawater (2 x) (see Medium [M236])
-  concentration:
-    value: '125'
-    unit: G_PER_L
-- preferred_term: Starch solution (see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -119,3 +111,19 @@ curation_history:
   date: '2026-02-03T11:20:59.632211'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:53.034021+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Synthetic seawater (2 x) (see Medium [M236])
+  composition: []
+  notes: Cross-reference to Medium M236
+  concentration:
+    value: '125'
+    unit: G_PER_L
+- preferred_term: Starch solution (see below)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L

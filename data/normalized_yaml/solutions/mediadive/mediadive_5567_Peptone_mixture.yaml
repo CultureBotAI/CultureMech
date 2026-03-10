@@ -1,0 +1,42 @@
+preferred_term: Peptone mixture
+term:
+  id: mediadive.solution:5567
+  label: Peptone mixture
+composition:
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:164
+    label: Tryptone peptone
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Casamino acids
+  concentration:
+    value: '32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:101
+    label: Casamino acids
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Peptone mixture per 50 ml: \n\nOriginal volume: 50 mL"

@@ -1,0 +1,46 @@
+preferred_term: Soil extract
+term:
+  id: mediadive.solution:5555
+  label: Soil extract
+composition:
+- preferred_term: air-dried garden soil
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2083
+    label: air-dried garden soil
+  chebi_term:
+    id: CHEBI:29864
+    label: mannitol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave soil suspension for one hour at 121°C. To obtain a clear
+  supernatant allow to settle and centrifuge. Adjust pH to 7.2.
+
+
+  Original volume: 200 mL'

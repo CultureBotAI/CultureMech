@@ -1,0 +1,143 @@
+preferred_term: Main sol. J1213
+term:
+  id: mediadive.solution:5337
+  label: Main sol. J1213
+composition:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Beef extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:85
+    label: Beef extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tween 80
+  concentration:
+    value: '0.999000999000999'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000999001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '889.1108891108892'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Rumen fluid
+  concentration:
+    value: '49.95004995004995'
+    unit: PERCENT_V_V
+  notes: ' clarified'
+  term:
+    id: mediadive.compound:145
+    label: Rumen fluid
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '9.990009990009991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly, bring to a boil and cool down under\
+  \ a stream of O2-free CO2. While gassing, add the following solutions and adjust\
+  \ pH to 7.2: \nDistribute the medium into culture vessels (e.g., 10 ml in Balch\
+  \ type tubes) under N2, seal with butyl rubber stoppers and autoclave.\n\nOriginal\
+  \ volume: 1001 mL"

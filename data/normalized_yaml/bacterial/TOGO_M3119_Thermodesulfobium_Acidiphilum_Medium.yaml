@@ -77,18 +77,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Trace element solution SL-10
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Wolin's vitamin solution (10x)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Neutralized sulfide solution 3% (w/v)
-  concentration:
-    value: '15'
-    unit: G_PER_L
 - preferred_term: CO2 gas
   notes: 'Properties: Gas'
   concentration:
@@ -327,4 +315,33 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:05:08.441252+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution SL-10
+  term:
+    id: mediadive.solution:4178
+    label: Trace element solution SL-10
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_4178_Trace_element_solution_SL-10.yaml for composition
+- preferred_term: Wolin's vitamin solution (10x)
+  term:
+    id: mediadive.solution:5980
+    label: Wolin's vitamin solution (10x)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5980_Wolin_s_vitamin_solution_10x.yaml for composition
+- preferred_term: Neutralized sulfide solution 3% (w/v)
+  term:
+    id: mediadive.solution:34
+    label: Neutralized sulfide solution 3% (w/v)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: See mediadive_34_Neutralized_sulfide_solution_3_w_v.yaml for composition

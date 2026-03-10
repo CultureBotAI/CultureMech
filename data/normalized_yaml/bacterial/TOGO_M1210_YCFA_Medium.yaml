@@ -73,29 +73,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Mineral solution I (see below)
-  concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: Mineral solution II (see below)
-  concentration:
-    value: '150'
-    unit: G_PER_L
 - preferred_term: VFA mix (see below)
   concentration:
     value: '6.2'
-    unit: G_PER_L
-- preferred_term: Hemin solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Vitamin solution I (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution II (see below)
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
@@ -341,3 +321,33 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:05.735463+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution I (see below)
+  composition: []
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Mineral solution II (see below)
+  composition: []
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Hemin solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin solution I (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution II (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

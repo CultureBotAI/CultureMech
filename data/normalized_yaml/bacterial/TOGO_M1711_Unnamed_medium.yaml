@@ -27,24 +27,6 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
-- preferred_term: Rifampicin solution (500 μg/ml)*
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
-- preferred_term: Kanamycin solution (500 μg/ml)*
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
-- preferred_term: Spectinomycin solution (500 μg/ml)*
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Solution, Complex
-    component'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -76,3 +58,29 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:02.948432+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Rifampicin solution (500 μg/ml)*
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
+    component'
+- preferred_term: Kanamycin solution (500 μg/ml)*
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
+    component'
+- preferred_term: Spectinomycin solution (500 μg/ml)*
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Solution, Complex
+    component'

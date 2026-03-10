@@ -1,0 +1,30 @@
+preferred_term: Lipoic acid solution
+term:
+  id: mediadive.solution:5550
+  label: Lipoic acid solution
+composition:
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.00559441'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:368
+    label: Lipoic acid
+  chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 100 mL'

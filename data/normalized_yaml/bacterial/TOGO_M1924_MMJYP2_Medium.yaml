@@ -41,10 +41,6 @@ ingredients:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: MJ synthetic seawater for MMJYP2 medium *
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -127,10 +123,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: Balch's trace mineral solution**
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -292,3 +284,18 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH'
+- timestamp: '2026-03-09T08:05:07.978277+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: MJ synthetic seawater for MMJYP2 medium *
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Balch's trace mineral solution**
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

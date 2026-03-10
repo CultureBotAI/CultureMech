@@ -1,0 +1,153 @@
+preferred_term: Main sol. 772
+term:
+  id: mediadive.solution:1576
+  label: Main sol. 772
+composition:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III) citrate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:45
+    label: Fe(III) citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 2 H2O
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:719
+    label: CuSO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:77
+    label: Thiamine-HCl x 2 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Thiamine hydrochloride may be replaced by 2 g/l yeast extract.
+  The pH of the medium is adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10
+  ml sterile methanol (filter sterilised, or autoclaved in crimp top sealed bottles)
+  is added to the sterilised medium.

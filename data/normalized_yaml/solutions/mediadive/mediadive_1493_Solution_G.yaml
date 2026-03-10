@@ -1,0 +1,30 @@
+preferred_term: Solution G
+term:
+  id: mediadive.solution:1493
+  label: Solution G
+composition:
+- preferred_term: Hexadecane
+  concentration:
+    value: '900.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:687
+    label: Hexadecane
+  chebi_term:
+    id: CHEBI:45296
+    label: hexadecane
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tetrachloroethene
+  concentration:
+    value: '100.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:688
+    label: Tetrachloroethene
+  chebi_term:
+    id: CHEBI:17300
+    label: tetrachloroethene
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 15 mL'

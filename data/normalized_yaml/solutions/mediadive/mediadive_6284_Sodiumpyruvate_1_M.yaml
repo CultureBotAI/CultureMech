@@ -1,0 +1,34 @@
+preferred_term: Sodiumpyruvate (1 M)
+term:
+  id: mediadive.solution:6284
+  label: Sodiumpyruvate (1 M)
+composition:
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '110'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve 5.5 g in 50 mL and filter it through 0.2 µm sterile filter
+  in a sterile falcon tube. Store at 4 °C
+
+
+  Original volume: 50 mL'

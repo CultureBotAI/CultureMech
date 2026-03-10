@@ -1,0 +1,138 @@
+preferred_term: Main sol. J1323
+term:
+  id: mediadive.solution:5484
+  label: Main sol. J1323
+composition:
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2SO4
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:382
+    label: K2SO4
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaSO4 x 2 H2O
+  concentration:
+    value: '0.515'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:190
+    label: CaSO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.058'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Al2(SO4)3 x 18 H2O
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2070
+    label: Al2(SO4)3 x 18 H2O
+  chebi_term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '1.344'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl4 x 6 H2O
+  concentration:
+    value: '0.023'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2071
+    label: MnCl4 x 6 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix components thoroughly, adjust pH 3.0 with H2SO4 and filter-sterilize.

@@ -1,0 +1,131 @@
+preferred_term: Mineral medium
+term:
+  id: mediadive.solution:4314
+  label: Mineral medium
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '27.7469'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.277469'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.88457'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.00110988'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '998.8901220865704'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.4439511653718091'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.5549389567147613'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '0.11098779134295228'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1784
+    label: Trace vitamins (see Medium No. 197)
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Decane
+  concentration:
+    value: '0.011098779134295227'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1785
+    label: Decane
+  chebi_term:
+    id: CHEBI:41808
+    label: decane
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05549389567147614'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium\
+  \ and cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute Mineral medium\
+  \ into culture vessels (e.g., 9.0 ml of the medium in tubes) under the same gas\
+  \ mixture, seal with Teflon-coated rubber stoppers and autoclave. After cooling,\
+  \ add the following components (per 9.0 ml Mineral medium) from sterile anoxic stock\
+  \ solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 901 mL"

@@ -1,0 +1,61 @@
+preferred_term: Main sol. J692
+term:
+  id: mediadive.solution:4599
+  label: Main sol. J692
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Autoclave Salt base solution under a H2-CO2 (4:1, v/v) gas mixture.
+  Separately autoclave yeast extract (as a 10% solution) under a N2 atmosphere and
+  add to the Salt base solution. Steam sulfur for 3 hr on each of 3 successive days.
+  Distribute the medium into culture vessels containing an appropriate amount of sulfur
+  (e.g., 20 ml medium and 0.02 g sulfur in 120 ml serum bottle) under a stream of
+  H2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Add Na2S x 9H2O from anaerobic,
+  sterile stock solution (5%, autoclaved under a N2 atmosphere) and readjust pH to
+  3.0. Pressurize the inoculated culture vessels to 100 kPa with the same gas mixture.

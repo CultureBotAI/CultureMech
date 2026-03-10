@@ -91,14 +91,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace elements
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -349,3 +341,24 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:42.323225+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Trace elements
+  term:
+    id: mediadive.solution:6183
+    label: Trace elements
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6183_Trace_elements.yaml for composition

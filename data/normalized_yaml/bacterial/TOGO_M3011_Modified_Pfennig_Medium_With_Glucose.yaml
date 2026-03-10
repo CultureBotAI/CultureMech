@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -29,7 +31,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -37,7 +40,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -45,7 +49,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
@@ -53,7 +58,8 @@ ingredients:
   concentration:
     value: '0.16'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -69,18 +75,11 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: Vitamin solution (see Medium [M940])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M940])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M3011
   term:
@@ -102,3 +101,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:38.293075+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution (see Medium [M940])
+  composition: []
+  notes: Cross-reference to Medium M940
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M940])
+  composition: []
+  notes: Cross-reference to Medium M940
+  concentration:
+    value: '1'
+    unit: G_PER_L

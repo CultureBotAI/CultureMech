@@ -1,0 +1,93 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:2943
+  label: Solution 1
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCO3
+  concentration:
+    value: '5.26316'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4 x H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:607
+    label: Na2HPO4 x H2O
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.526316'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Gelrite
+  concentration:
+    value: '9.47368'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:987
+    label: Gelrite
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '978.9473684210526'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 9.0 with NaOH, autoclave at 121°C for 20 min.
+
+
+  Original volume: 950 mL'

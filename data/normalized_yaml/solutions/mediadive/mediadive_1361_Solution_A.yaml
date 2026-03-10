@@ -1,0 +1,34 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1361
+  label: Solution A
+composition:
+- preferred_term: Benzothiazole
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2128
+    label: Benzothiazole
+  chebi_term:
+    id: CHEBI:45993
+    label: benzothiazole
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve 30.0 mg benzothiazole in 90 ml 10% NaOH, bring pH to
+  7.0 with concentrated HCl.
+
+
+  Original volume: 90 mL'

@@ -1,0 +1,232 @@
+preferred_term: Main sol. 143
+term:
+  id: mediadive.solution:248
+  label: Main sol. 143
+composition:
+- preferred_term: Crotonic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:255
+    label: Crotonic acid
+  chebi_term:
+    id: CHEBI:17217
+    label: 2-butenoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2HPO4
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:257
+    label: (NH4)2HPO4
+  chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0006'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnSO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:258
+    label: MnSO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:120
+    label: (NH4)6Mo7O24 x 4 H2O
+  chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Biotin
+  concentration:
+    value: 4e-05
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.0008'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2CO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:259
+    label: K2CO3
+  chebi_term:
+    id: CHEBI:131526
+    label: potassium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '997.0089730807578'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except potassium carbonate) and sparge medium
+  with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas
+  atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. An anoxic
+  stock solution of the potassium carbonate is autoclaved separately under 80% N2
+  and 20% CO2 gas mixture and thereafter added to the sterile medium. Adjust pH of
+  the complete medium to 6.8 - 7.0. Prior to inoculation add 10 - 20 mg/l sodium dithionite
+  from a 5% (w/v) stock solution that has been freshly prepared under 100% N2 gas
+  and sterilized by filtration to reduce the medium.
+
+
+  Original volume: 1003 mL'

@@ -1,0 +1,79 @@
+preferred_term: Trace salt mix 100x
+term:
+  id: mediadive.solution:5495
+  label: Trace salt mix 100x
+composition:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHSeO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: almost no effect on growth in CDMM, more important in MDM
+  term:
+    id: mediadive.compound:1035
+    label: NaHSeO3
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: steril filtration

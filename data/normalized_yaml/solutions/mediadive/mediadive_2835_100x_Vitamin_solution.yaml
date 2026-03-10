@@ -1,0 +1,101 @@
+preferred_term: 100x Vitamin solution
+term:
+  id: mediadive.solution:2835
+  label: 100x Vitamin solution
+composition:
+- preferred_term: Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cobalamine
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1256
+    label: Cobalamine
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:77
+    label: Thiamine-HCl x 2 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:637
+    label: Pyridoxine
+  chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Folic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

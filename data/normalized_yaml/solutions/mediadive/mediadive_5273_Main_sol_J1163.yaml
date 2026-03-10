@@ -1,0 +1,104 @@
+preferred_term: Main sol. J1163
+term:
+  id: mediadive.solution:5273
+  label: Main sol. J1163
+composition:
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1249
+    label: Trisodium citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaSO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:268
+    label: CaSO4
+  chebi_term:
+    id: CHEBI:31346
+    label: calcium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:739
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium lactate
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1392
+    label: Sodium lactate
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix components thoroughly and adjust pH to 7.2. Bring to a boil,
+  cool down and dispense the medium into culture vessels (e.g., 10 ml medium in Hungate
+  tubes) under a N2 gas stream, seal with butyl rubber stoppers and autoclave.

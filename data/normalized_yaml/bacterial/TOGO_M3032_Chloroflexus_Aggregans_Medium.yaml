@@ -58,11 +58,6 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
-- preferred_term: Fe(III) citrate solution (0.1 g in 100 ml)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
 - preferred_term: Na2HPO4·2H2O
   concentration:
     value: '0.1'
@@ -86,23 +81,11 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: SL-6 trace element solution (see Medium [M158])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Neutralized sulfide solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution CA
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -236,3 +219,33 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: 2 M H2SO4; Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:53.182773+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Fe(III) citrate solution (0.1 g in 100 ml)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
+- preferred_term: SL-6 trace element solution (see Medium [M158])
+  composition: []
+  notes: Cross-reference to Medium M158
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Neutralized sulfide solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution CA
+  term:
+    id: mediadive.solution:5560
+    label: Vitamin solution CA
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: See mediadive_5560_Vitamin_solution_CA.yaml for composition

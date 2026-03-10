@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:63005
     label: ''
@@ -30,14 +32,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -72,5 +66,22 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.469914'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:50.586996+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  composition: []
+  notes: Cross-reference to Medium M260
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

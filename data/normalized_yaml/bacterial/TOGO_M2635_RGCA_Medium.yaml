@@ -17,35 +17,11 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Solution 1
-  concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: Solution 2
-  concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: Solution 3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Solution 4
-  concentration:
-    value: '220'
-    unit: G_PER_L
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Solution 5
-  concentration:
-    value: '17'
-    unit: G_PER_L
-- preferred_term: Solution 6
-  concentration:
-    value: '66'
-    unit: G_PER_L
 - preferred_term: K2HPO4
   concentration:
     value: '1.5'
@@ -211,3 +187,56 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2 gas; Added default concentration
     for ingredient: CO2 gas; Added default concentration for ingredient: CO2 gas'
+- timestamp: '2026-03-09T08:04:57.245816+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: Solution 1
+  term:
+    id: mediadive.solution:6108
+    label: Solution 1
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: See mediadive_6108_Solution_1.yaml for composition
+- preferred_term: Solution 2
+  term:
+    id: mediadive.solution:6109
+    label: Solution 2
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: See mediadive_6109_Solution_2.yaml for composition
+- preferred_term: Solution 3
+  term:
+    id: mediadive.solution:6110
+    label: Solution 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6110_Solution_3.yaml for composition
+- preferred_term: Solution 4
+  term:
+    id: mediadive.solution:5181
+    label: Solution 4
+  concentration:
+    value: '220'
+    unit: G_PER_L
+  notes: See mediadive_5181_Solution_4.yaml for composition
+- preferred_term: Solution 5
+  term:
+    id: mediadive.solution:5183
+    label: Solution 5
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: See mediadive_5183_Solution_5.yaml for composition
+- preferred_term: Solution 6
+  term:
+    id: mediadive.solution:5184
+    label: Solution 6
+  concentration:
+    value: '66'
+    unit: G_PER_L
+  notes: See mediadive_5184_Solution_6.yaml for composition

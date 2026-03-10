@@ -1,0 +1,22 @@
+preferred_term: Solution 2
+term:
+  id: mediadive.solution:1527
+  label: Solution 2
+composition:
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Boil both solutions under a stream of nitrogen gas for few minutes\
+  \ and autoclave separately under anaerobic conditions at 121°C for 15 minutes. Mix\
+  \ aseptically after autoclaving under a stream of sterile nitrogen gas and adjust\
+  \ final pH to 7.8. Distribute in screw-capped bottles or tubes. \n\nOriginal volume:\
+  \ 500 mL"

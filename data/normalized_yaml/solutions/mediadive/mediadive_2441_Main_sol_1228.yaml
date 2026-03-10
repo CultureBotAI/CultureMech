@@ -1,0 +1,110 @@
+preferred_term: Main sol. 1228
+term:
+  id: mediadive.solution:2441
+  label: Main sol. 1228
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium thiosulfate pentahydrate
+  concentration:
+    value: '9.92744'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1092
+    label: Sodium thiosulfate pentahydrate
+  chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KSCN
+  concentration:
+    value: '0.9718'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:749
+    label: KSCN
+  chebi_term:
+    id: CHEBI:30951
+    label: potassium thiocyanate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube
+  or bottle) with a liquid to air ratio of about 1:10. pH after sterilization will
+  about 10.
+
+  After sterilization add from sterile stock solutions:
+
+  Incubate statically until growth occurs, then shake at 100 rpm.
+
+  (a white colloid will form which will rapidly dissolve after mixing)'

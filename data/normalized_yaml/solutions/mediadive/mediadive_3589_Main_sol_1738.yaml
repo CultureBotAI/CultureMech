@@ -1,0 +1,25 @@
+preferred_term: Main sol. 1738
+term:
+  id: mediadive.solution:3589
+  label: Main sol. 1738
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '914.3'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "The growth medium contains the following components (per liter):\
+  \ \nCombine the distilled water and Solutions 1,3,4 in an Erlenmeyer flask and dispense\
+  \ into glass serum bottles.\nFlush the headspace of the serum bottles with pure\
+  \ N2. Seal the serum bottles with butyl rubber stoppers and crimp seals. Using a\
+  \ syringe and needle, inject pure methane and oxygen to final headspace concentrations\
+  \ of 5-10% CH4 and 21% O2.\nAutoclave the serum bottles for 20 minutes at 121 °C.\n\
+  Upon cooling to room temperature, add Solutions 2 and 5 from a filter-sterilized\
+  \ stock solution.\nThe final pH of the medium should be 7.8 - 7.9."

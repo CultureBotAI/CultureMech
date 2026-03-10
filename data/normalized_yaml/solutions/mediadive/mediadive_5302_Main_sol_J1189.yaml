@@ -1,0 +1,78 @@
+preferred_term: Main sol. J1189
+term:
+  id: mediadive.solution:5302
+  label: Main sol. J1189
+composition:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1628
+    label: Marine agar 2216
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Casitone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Soytone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:667
+    label: Soytone
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Malt extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:116
+    label: Malt extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '990'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 9.0 with sterilized 10% Na2CO3 solution.

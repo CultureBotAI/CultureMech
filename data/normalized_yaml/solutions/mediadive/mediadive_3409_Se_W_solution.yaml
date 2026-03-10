@@ -1,0 +1,41 @@
+preferred_term: Se/W solution
+term:
+  id: mediadive.solution:3409
+  label: Se/W solution
+composition:
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:699
+    label: Na2SeO3
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2WO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:550
+    label: Na2WO4
+  chebi_term:
+    id: CHEBI:63940
+    label: sodium tungstate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

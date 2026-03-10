@@ -1,0 +1,22 @@
+preferred_term: Main sol. 993c
+term:
+  id: mediadive.solution:2027
+  label: Main sol. 993c
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare medium 993 supplemented with NaCl (10 %). pH should be
+  7.2.
+
+  Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
+  25 ml per dish.'

@@ -1,0 +1,79 @@
+preferred_term: Main sol. J45
+term:
+  id: mediadive.solution:3667
+  label: Main sol. J45
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:85
+    label: Beef extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: N-Z amine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' type A'
+  term:
+    id: mediadive.compound:1608
+    label: N-Z amine
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.3.

@@ -1,0 +1,44 @@
+preferred_term: MErds (Modified Føyns Erdschreiber Medium)
+term:
+  id: mediadive.solution:6045
+  label: MErds (Modified Føyns Erdschreiber Medium)
+composition:
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sea water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix  the  above  constituents  and  autoclave  at  15 psi for\
+  \  15  minutes.  It may  be \r\nnecessary to filter final medium to avoid problems\
+  \ with precipitate."

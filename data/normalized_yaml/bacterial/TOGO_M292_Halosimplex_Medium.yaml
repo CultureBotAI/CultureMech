@@ -73,10 +73,6 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
-- preferred_term: Trace metal solution (see below)
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -165,4 +161,14 @@ curation_history:
   date: '2026-02-03T11:20:56.849274'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-09T08:05:12.330705+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace metal solution (see below)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L

@@ -1,0 +1,94 @@
+preferred_term: Main sol. J1088
+term:
+  id: mediadive.solution:5158
+  label: Main sol. J1088
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.845771'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaH2PO4
+  concentration:
+    value: '0.746269'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:229
+    label: NaH2PO4
+  chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.199005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0696517'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '1.9900497512437811'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '14.9254'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '995.0248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After autoclaving, aseptically add filter-sterilized trace vitamins
+  solution and methanol.
+
+
+  Original volume: 1005 mL'

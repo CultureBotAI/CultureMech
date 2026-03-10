@@ -1,0 +1,60 @@
+preferred_term: Main sol. 1668
+term:
+  id: mediadive.solution:3459
+  label: Main sol. 1668
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'To make medium anoxic boil it, cool under N2CO2 gas atmosphere,
+  add 1 g/l L-cysteine hydrochloride and adjust pH to 6.8. Finally gas over with N2
+  . Dispense under N2CO2 into suitable vessels for anaerobic growth (serum bottles
+  or Hungate tubes sealed with rubber stoppers) and sterilize by autoclaving.
+
+
+  Original volume: 500 mL'

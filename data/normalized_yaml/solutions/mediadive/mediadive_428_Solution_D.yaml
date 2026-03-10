@@ -1,0 +1,30 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:428
+  label: Solution D
+composition:
+- preferred_term: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '48'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:908
+    label: AlK(SO4)2 x 12 H2O
+  chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 10 mL'

@@ -71,10 +71,6 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component'
-- preferred_term: Trace metal mix A5 + Co*
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.39'
@@ -149,3 +145,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:45.448959+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace metal mix A5 + Co*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

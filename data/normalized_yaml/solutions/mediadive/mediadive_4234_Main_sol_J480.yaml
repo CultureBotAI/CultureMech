@@ -1,0 +1,158 @@
+preferred_term: Main sol. J480
+term:
+  id: mediadive.solution:4234
+  label: Main sol. J480
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '29'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '18.9167'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '41.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '41.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '20.8333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '187.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '333.333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0833333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Dithiothreitol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:574
+    label: Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Mannitol
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:6
+    label: Mannitol
+  chebi_term:
+    id: CHEBI:16899
+    label: D-mannitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '41.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Casitone
+  concentration:
+    value: '41.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve components, except NaHCO3, dithiothreitol and mannitol,
+  in 900 ml distilled water and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately
+  autoclave 3% (w/v) dithiothreitol solution and 1 M mannitol solution under a N2
+  atmosphere. Add filter-sterilized 5% NaHCO3 [stored under a N2-CO2 (4:1, v/v) atmosphere]
+  to the medium. Prior to inoculation, add the sterile dithiothreitol and mannitol
+  solutions.
+
+
+  Original volume: 12 mL'

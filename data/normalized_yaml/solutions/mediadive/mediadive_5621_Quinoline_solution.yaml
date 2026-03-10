@@ -1,0 +1,30 @@
+preferred_term: Quinoline solution
+term:
+  id: mediadive.solution:5621
+  label: Quinoline solution
+composition:
+- preferred_term: Quinoline
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2107
+    label: Quinoline
+  chebi_term:
+    id: CHEBI:17362
+    label: quinoline
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Phosphate buffer
+  concentration:
+    value: '250.0'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:625
+    label: Phosphate buffer
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 200 mL'

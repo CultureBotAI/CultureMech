@@ -1,0 +1,35 @@
+preferred_term: Solution L
+term:
+  id: mediadive.solution:3076
+  label: Solution L
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Homogenize 42 g fresh baker yeast in 140 ml distilled water, incubate
+  for 24h at 56°C and centrifuge to harvest the supernatant. Adjust pH to 7 with NaOH,
+  make anoxic, filter-sterilize and store at -80°C
+
+
+  Original volume: 140 mL'

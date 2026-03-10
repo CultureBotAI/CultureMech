@@ -73,18 +73,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Sal Solution*
-  concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: Vitamin K1 solution**
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-- preferred_term: Hemin solution***
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -221,3 +209,29 @@ curation_history:
   date: '2026-02-03T11:20:58.168084'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:20.110735+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Sal Solution*
+  composition: []
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Vitamin K1 solution**
+  term:
+    id: mediadive.solution:2227
+    label: Vitamin K1 solution
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
+- preferred_term: Hemin solution***
+  term:
+    id: mediadive.solution:5229
+    label: Hemin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5229_Hemin_solution.yaml for composition

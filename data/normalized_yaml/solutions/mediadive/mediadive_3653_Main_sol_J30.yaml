@@ -1,0 +1,60 @@
+preferred_term: Main sol. J30
+term:
+  id: mediadive.solution:3653
+  label: Main sol. J30
+composition:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' peeled and cut'
+  term:
+    id: mediadive.compound:1606
+    label: Potato
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Boil potatoes for 20 min. Strain off the pieces of potatoes through
+  a fine sieve. Add glucose and agar, and boil until dissolved. Do not use new potatoes.
+
+  Adjust pH to 5.4-5.6.
+
+  Comment: Commercial Potato dextrose agar (BD-Difco or Oxoid) is also available.'

@@ -60,14 +60,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Haemin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Vitamin K1 solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: NaOH
   concentration:
     value: '1'
@@ -131,3 +123,24 @@ curation_history:
   date: '2026-02-03T11:20:54.054430'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:05:07.351588+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Haemin solution
+  term:
+    id: mediadive.solution:1628
+    label: Haemin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_1628_Haemin_solution.yaml for composition
+- preferred_term: Vitamin K1 solution
+  term:
+    id: mediadive.solution:2227
+    label: Vitamin K1 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition

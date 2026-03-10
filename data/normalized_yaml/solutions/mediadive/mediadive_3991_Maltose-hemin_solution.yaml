@@ -1,0 +1,45 @@
+preferred_term: Maltose-hemin solution
+term:
+  id: mediadive.solution:3991
+  label: Maltose-hemin solution
+composition:
+- preferred_term: Maltose
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '666.6666666666667'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize.
+
+
+  Original volume: 150 mL'

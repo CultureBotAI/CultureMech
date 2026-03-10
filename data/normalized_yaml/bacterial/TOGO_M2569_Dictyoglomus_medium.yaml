@@ -86,11 +86,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
-- preferred_term: Wolfe's Vitamin Solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Complex component'
 - preferred_term: Polypeptone Peptone (BD 211910)
   concentration:
     value: '2'
@@ -175,4 +170,15 @@ curation_history:
   date: '2026-02-03T11:20:54.564386'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Nitrogen'
+- timestamp: '2026-03-09T08:05:02.161344+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Wolfe's Vitamin Solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Complex component'

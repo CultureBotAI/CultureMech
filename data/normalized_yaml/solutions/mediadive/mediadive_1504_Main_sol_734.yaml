@@ -1,0 +1,195 @@
+preferred_term: Main sol. 734
+term:
+  id: mediadive.solution:1504
+  label: Main sol. 734
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.398804'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.149551'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:101
+    label: Casamino acids
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nutrient broth
+  concentration:
+    value: '1.99402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:269
+    label: Nutrient broth
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MOPS
+  concentration:
+    value: '2.09372'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:351
+    label: MOPS
+  chebi_term:
+    id: CHEBI:44115
+    label: 3-(N-morpholino)propanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-Dithiothreitol
+  concentration:
+    value: '0.159521'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:151
+    label: DL-Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '598.2053838484546'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except carbonate, MOPS buffer, vitamins
+  and DTT), bring medium to the boil, then cool to room temperature under 80% H2 and
+  20% CO2 gas mixture. Dispense under same gas atmosphere into anoxic Hungate-type
+  tubes or serum vials and autoclave. Add MOPS buffer adjusted to pH 7.2, vitamins
+  and DTT from anoxic stock solutions prepared under 100% N2 gas and sterilized by
+  filtration and carbonate from a sterile anoxic stock solution prepared under 80%
+  N2 and 20% CO2 gas mixture. Adjust pH of complete medium to 7.2, if necessary.
+
+
+  Original volume: 1003 mL'

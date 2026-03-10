@@ -1,0 +1,27 @@
+preferred_term: Main sol. 1598
+term:
+  id: mediadive.solution:3330
+  label: Main sol. 1598
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '880.6262230919765'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Dilute 100 ml NMS salt solution to 1 litre with distilled water\
+  \ and then add 1 ml of\r\n FeNaEDTA solution and 1 ml of the trace elements and\
+  \ autoclave. Also autoclave the\r\n phosphate buffer stock solution.\nAfter cooling\
+  \ of the autoclaved solutions, add 20ml phosphate buffer stock solution to\r\n the\
+  \ mineral solution.\nDispense 9ml distilled water into the growth vessels. Use sealed\
+  \ vessels it is\r\n appropriate to add 10% methane and 1% CO2 gas to the gas phase\
+  \ and autoclave.\nWhen the growth vessels is cool, 1.0 ml of the mineral medium\
+  \ and 0.1 ml\r\n 0.03 M Cerium-(III)-chlorid are added.\nAdjust pH to 3.5 with 1M\
+  \ HCL to obtain the final mineral medium before inoculate.\nThe cultures should\
+  \ be grown with shaking.\n\nOriginal volume: 1022 mL"

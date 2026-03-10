@@ -1,0 +1,82 @@
+preferred_term: Main sol. 828
+term:
+  id: mediadive.solution:1677
+  label: Main sol. 828
+composition:
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '64.35'
+    unit: G_PER_L
+  notes: 1M, pH 7
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-lactate
+  concentration:
+    value: '0.56'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:200
+    label: Na-lactate
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: if necessary
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '972.5'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust the pH to 7.0 - 7.2.
+
+  Filter sterilize the vitamin solution and add to the autoclaved medium.'

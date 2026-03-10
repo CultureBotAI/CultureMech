@@ -4,6 +4,7 @@ Media vector aggregator for deriving and extracting media embeddings.
 Aggregates ingredient and organism embeddings to create media-level vectors.
 """
 
+import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -29,14 +30,29 @@ class MediaEmbedding:
 class MediaVectorAggregator:
     """Aggregate node embeddings into media-level embeddings."""
 
-    def __init__(self, embeddings_dict: Dict[str, np.ndarray]):
+    def __init__(self, embeddings_dict: Dict[str, np.ndarray], solution_mapping_path: Optional[Path] = None):
         """
         Initialize aggregator with embeddings dictionary.
 
         Args:
             embeddings_dict: Dictionary mapping node IDs to embedding vectors
+            solution_mapping_path: Path to solution→CHEBI mapping JSON file
         """
         self.embeddings = embeddings_dict
+
+        # Load solution→CHEBI mapping from KG
+        self.solution_to_chebi = {}
+        if solution_mapping_path and solution_mapping_path.exists():
+            with open(solution_mapping_path) as f:
+                self.solution_to_chebi = json.load(f)
+            print(f"✓ Loaded {len(self.solution_to_chebi)} solution→CHEBI mappings from KG")
+        else:
+            # Try default location
+            default_path = Path("data/solution_to_chebi_mapping.json")
+            if default_path.exists():
+                with open(default_path) as f:
+                    self.solution_to_chebi = json.load(f)
+                print(f"✓ Loaded {len(self.solution_to_chebi)} solution→CHEBI mappings from KG (default path)")
 
     def aggregate_derived_embeddings(
         self, media_yamls: List[Path], min_coverage: float = 0.5
@@ -158,10 +174,39 @@ class MediaVectorAggregator:
         return media_embeddings
 
     def _extract_ingredient_ids(self, media_data: dict) -> List[str]:
-        """Extract CHEBI/FOODON/mediadive.ingredient IDs from ingredients."""
+        """
+        Extract CHEBI/FOODON/mediadive.ingredient IDs.
+
+        For solutions, uses KG-Microbe edges to map mediadive.solution → CHEBI.
+
+        Processes:
+        - ingredients[] array (for media files)
+        - composition[] array (for solution files)
+        - solutions[].composition[] arrays (for media with solutions)
+
+        This ensures both media ingredients and solution components are included.
+        """
         ingredient_ids = []
 
+        # Check if this is a solution file (solutions use 'term', media use 'media_term')
+        solution_term = media_data.get("term") or media_data.get("media_term", {}).get("term")
+        if solution_term and isinstance(solution_term, dict) and "id" in solution_term:
+            solution_id = solution_term["id"]
+            # If this is a solution, use KG mappings to get CHEBI ingredients
+            if solution_id.startswith("mediadive.solution:"):
+                chebi_ids = self.solution_to_chebi.get(solution_id, [])
+                if chebi_ids:
+                    ingredient_ids.extend(chebi_ids)
+                    # Return early - solutions use KG mappings, not YAML composition
+                    return ingredient_ids
+
+        # Extract from main ingredients (media files)
         ingredients = media_data.get("ingredients", [])
+
+        # Also check composition (for solution files without media_term)
+        if not ingredients:
+            ingredients = media_data.get("composition", [])
+
         for ing in ingredients:
             if not isinstance(ing, dict):
                 continue
@@ -184,6 +229,46 @@ class MediaVectorAggregator:
                     ingredient_id = self._find_mediadive_ingredient(chem_name)
                     if ingredient_id:
                         ingredient_ids.append(ingredient_id)
+
+        # Extract from solutions referenced in media
+        solutions = media_data.get("solutions", [])
+        for solution in solutions:
+            if not isinstance(solution, dict):
+                continue
+
+            # Try to get solution ID from term
+            if "term" in solution:
+                term = solution["term"]
+                if isinstance(term, dict) and "id" in term:
+                    solution_id = term["id"]
+                    # Use KG mappings to get CHEBI ingredients for this solution
+                    if solution_id.startswith("mediadive.solution:"):
+                        chebi_ids = self.solution_to_chebi.get(solution_id, [])
+                        ingredient_ids.extend(chebi_ids)
+                        continue
+
+            # Fallback: process composition within solution (for solutions without term ID)
+            composition = solution.get("composition", [])
+            for comp in composition:
+                if not isinstance(comp, dict):
+                    continue
+
+                # Extract term ID from solution ingredient
+                if "term" in comp:
+                    term = comp["term"]
+                    if isinstance(term, dict) and "id" in term:
+                        term_id = term["id"]
+                        if term_id.startswith(("CHEBI:", "FOODON:", "mediadive.ingredient:")):
+                            ingredient_ids.append(term_id)
+                            continue
+
+                # Fallback: extract from notes
+                if "notes" in comp and isinstance(comp["notes"], str):
+                    chem_name = self._extract_chemical_from_notes(comp["notes"])
+                    if chem_name:
+                        ingredient_id = self._find_mediadive_ingredient(chem_name)
+                        if ingredient_id:
+                            ingredient_ids.append(ingredient_id)
 
         return ingredient_ids
 
@@ -213,15 +298,16 @@ class MediaVectorAggregator:
 
     def _map_to_embedding_node_id(self, media_term_id: str) -> Optional[str]:
         """
-        Map media term ID to embedding node ID.
+        Map media/solution term ID to embedding node ID.
 
         Examples:
             mediadive.medium:123 -> mediadive.medium:123 (direct match)
+            mediadive.solution:456 -> mediadive.solution:456 (direct match)
             komodo.medium:123 -> None (not in embeddings)
             TOGO:123 -> None (not in embeddings)
         """
-        # MediaDive IDs are already in the correct format
-        if media_term_id.startswith("mediadive.medium:"):
+        # MediaDive medium and solution IDs are already in the correct format
+        if media_term_id.startswith(("mediadive.medium:", "mediadive.solution:")):
             return media_term_id
         return None
 

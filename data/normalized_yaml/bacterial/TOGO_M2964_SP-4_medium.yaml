@@ -44,11 +44,6 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Organic compound, Defined component, Solution'
-- preferred_term: Yeastolate (2% solution) (Difco)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Penicillin G (100,000 units/ml)
   concentration:
     value: '10'
@@ -59,16 +54,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent'
-- preferred_term: Fresh yeast extract (25% solution)
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Thallium acetate (1:50 solution)
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component'
 - preferred_term: CMRL 1066 tissue culture supplement- (10x)(with glutamine)
   concentration:
     value: '50'
@@ -91,3 +76,26 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:34.278763+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Yeastolate (2% solution) (Difco)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fresh yeast extract (25% solution)
+  composition: []
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Thallium acetate (1:50 solution)
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'

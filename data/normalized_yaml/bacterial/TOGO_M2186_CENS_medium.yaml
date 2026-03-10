@@ -95,14 +95,6 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
-- preferred_term: True Blue Trace Elements
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Chelated Iron Solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '250'
@@ -230,3 +222,24 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:48.418466+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: True Blue Trace Elements
+  term:
+    id: mediadive.solution:1533
+    label: True Blue Trace Elements
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_1533_True_Blue_Trace_Elements.yaml for composition
+- preferred_term: Chelated Iron Solution
+  term:
+    id: mediadive.solution:4790
+    label: Chelated iron solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_4790_Chelated_iron_solution.yaml for composition

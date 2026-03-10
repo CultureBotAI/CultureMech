@@ -1,0 +1,22 @@
+preferred_term: Sodium thiosulfate solution (available)
+term:
+  id: mediadive.solution:2224
+  label: Sodium thiosulfate solution (available)
+composition:
+- preferred_term: Na2S2O3
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:552
+    label: Na2S2O3
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: '50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or
+  110°C 20 min
+
+
+  Original volume: 100 mL'

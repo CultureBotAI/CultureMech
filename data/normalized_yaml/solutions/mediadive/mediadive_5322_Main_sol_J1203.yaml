@@ -1,0 +1,231 @@
+preferred_term: Main sol. J1203
+term:
+  id: mediadive.solution:5322
+  label: Main sol. J1203
+composition:
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.11976'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.189621'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: n-Butyric acid
+  concentration:
+    value: '0.3992015968063872'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:376
+    label: n-Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Butyric acid
+  concentration:
+    value: '0.3992015968063872'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:377
+    label: iso-Butyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-2-Methylbutyric acid
+  concentration:
+    value: '0.1996007984031936'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:223
+    label: DL-2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '0.1996007984031936'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '0.1996007984031936'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.998003992015968'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '2.49501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '998.003992015968'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except cysteine, carbonate and glucose),
+  adjust pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min to make it anoxic.
+  Add cysteine and carbonate, then equilibrate the medium with 100% CO2 gas to pH
+  7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes
+  or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution
+  prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of
+  complete medium to 7.0, if necessary.
+
+
+  Original volume: 1002 mL'

@@ -5,9 +5,6 @@ description: 1075. NBRC 1074.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4·7H2O0.2g20%
-    NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave NaCl and Na2CO3solutions
-    separately and add the solutions to the medium aseptically.
 - preferred_term: ''
   concentration:
     value: Glucose
@@ -61,3 +58,12 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1074, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1074.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:05:03.763180+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4·7H2O0.2g20%
+    NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave
+    NaCl and Na2CO3solutions separately and add the solutions to the medium aseptically.
+  composition: []

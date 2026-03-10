@@ -4,16 +4,12 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Resazurin solution (1%)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +17,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -31,7 +28,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -39,12 +37,14 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -52,7 +52,8 @@ ingredients:
   concentration:
     value: '0.77'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -68,7 +69,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -76,7 +78,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:17632
     label: nitrate
@@ -84,7 +87,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -92,12 +96,14 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -115,16 +121,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: Wolfe's mineral solution (see Medium [M257])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Na2S
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
@@ -160,5 +159,28 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.509167'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Na2S; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: Na2S; Added default concentration
+    for ingredient: N2'
+- timestamp: '2026-03-09T08:04:22.327769+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Resazurin solution (1%)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Wolfe's mineral solution (see Medium [M257])
+  composition: []
+  notes: Cross-reference to Medium M257
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

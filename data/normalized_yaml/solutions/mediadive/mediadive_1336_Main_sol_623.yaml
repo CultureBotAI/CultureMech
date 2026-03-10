@@ -1,0 +1,225 @@
+preferred_term: Main sol. 623
+term:
+  id: mediadive.solution:1336
+  label: Main sol. 623
+composition:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '12.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.42'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '2.38'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KBr
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:174
+    label: KBr
+  chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: SrCl2 x 6 H2O
+  concentration:
+    value: '0.057'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:176
+    label: SrCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Boric acid
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:618
+    label: Boric acid
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-meta silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:537
+    label: Na-meta silicate
+  chebi_term:
+    id: CHEBI:26833
+    label: sulfur atom
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaF
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:177
+    label: NaF
+  chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KNO3
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sulfur
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Prepare the medium under 100% N2 and adjust final pH to 6.5. The
+  medium, containing sulphur, is sterilized by steaming on three consecutive days
+  for 3 h. Reduce the medium with a sterile Na2S stock solution to give a final concentration
+  of 0.5 g/l.

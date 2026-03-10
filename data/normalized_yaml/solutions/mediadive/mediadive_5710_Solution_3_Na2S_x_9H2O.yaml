@@ -1,0 +1,34 @@
+preferred_term: Solution 3 Na2S x 9H2O
+term:
+  id: mediadive.solution:5710
+  label: Solution 3 Na2S x 9H2O
+composition:
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Degas water by bringing to a boil for a minute or two. Meanwhile,\
+  \ wash sulfide before\r\nweighing – using plastic-forceps, dip a small chunk into\
+  \ dd H2O and dry sulfide and\r\nforceps with lint-free wipes. Drop weighed sulfide\
+  \ chunk into the degassed water.\nAutoclave at 121 °C for 15 min.\nAdjust pH to\
+  \ 7.0.\n\nOriginal volume: 100 mL"

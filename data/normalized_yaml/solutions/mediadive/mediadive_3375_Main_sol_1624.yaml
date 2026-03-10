@@ -1,0 +1,76 @@
+preferred_term: Main sol. 1624
+term:
+  id: mediadive.solution:3375
+  label: Main sol. 1624
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.247191'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '33.7079'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'pH 5.0
+
+  pH is adjusted to 9.0 by adding 100 ml/l 1M sterilized NaHCO3 and 10 ml/l 1M sterilized
+  Na2CO3. 5 ml/l sterile methanol is added to the cooled medium. When preparing liquid
+  media cool the mineral salts solution, Na2CO3 solution and NaHCO3 solution to room
+  temperature before mixing. When preparing agar add 2.0 % agar to the mineral salts
+  solution and autoclave. Cool the Na2CO3 solution, NaHCO3 solution and agar to 50-55°C
+  before mixing.
+
+
+  Original volume: 890 mL'

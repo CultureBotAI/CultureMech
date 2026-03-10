@@ -1,0 +1,48 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:4345
+  label: Solution A
+composition:
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.49127'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.00124688'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '928.927680798005'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components, adjust pH to 7.2, bring to a boil for a few seconds
+  and cool down under a stream of a N2-CO2 (80:20) gas mixture. Distribute Solution
+  A into culture vessels (e.g., 8 ml per tube) under the same gas mixture, seal with
+  butyl rubber stoppers and autoclave.
+
+
+  Original volume: 802 mL'

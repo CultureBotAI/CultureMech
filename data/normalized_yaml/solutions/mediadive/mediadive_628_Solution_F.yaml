@@ -1,0 +1,30 @@
+preferred_term: Solution F
+term:
+  id: mediadive.solution:628
+  label: Solution F
+composition:
+- preferred_term: Butyl vinyl ether
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:391
+    label: Butyl vinyl ether
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '792'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 1 mL'

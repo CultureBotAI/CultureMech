@@ -1,0 +1,88 @@
+preferred_term: Main sol. 1556
+term:
+  id: mediadive.solution:3214
+  label: Main sol. 1556
+composition:
+- preferred_term: ACES
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:581
+    label: ACES
+  chebi_term:
+    id: CHEBI:39061
+    label: ACES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2 alpha-ketoglutarate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1412
+    label: Na2 alpha-ketoglutarate
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KOH
+  concentration:
+    value: '3.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:126
+    label: KOH
+  chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '550'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '150'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: TNM-FH Medium
+  concentration:
+    value: '300'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1413
+    label: TNM-FH Medium
+preparation_notes: "Cultivation of Liberibacter sp. \nadjust pH to 6.9, autoclave\
+  \ for 15 minutes and allow to cool.\nAdd aseptically \nFor preparation of agar plates\
+  \ add 15 g agar per liter of medium."

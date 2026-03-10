@@ -1,0 +1,203 @@
+preferred_term: Main sol. J1039
+term:
+  id: mediadive.solution:5095
+  label: Main sol. J1039
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.488759'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.391007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '0.391007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.391007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0488759'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00195503'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '5.8651'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:186
+    label: Brain heart infusion
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Proteose peptone
+  concentration:
+    value: '5.8651'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:208
+    label: Proteose peptone
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.95503'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.977517'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium formate
+  concentration:
+    value: '1.95503'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:437
+    label: Sodium formate
+  chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '3.91007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000977517'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '977.5171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '9.775171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '9.775171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components, except NaHCO3 and vitamin solution, and bring\
+  \ to a boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20, v/v) and add\
+  \ NaHCO3 to the medium. Dispense the medium into culture vessels under a stream\
+  \ of H2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave. Prior to\
+  \ inoculation, add per liter the following solutions (autoclaved or *filter-sterilized\
+  \ and stored under a N2 atmosphere). \n\nOriginal volume: 1023 mL"

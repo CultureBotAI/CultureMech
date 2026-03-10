@@ -8,18 +8,6 @@ ingredients:
   concentration:
     value: '912'
     unit: G_PER_L
-- preferred_term: dithiothreitol solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: glucose solution
-  concentration:
-    value: '19.98'
-    unit: G_PER_L
-- preferred_term: NaHCO3 solution
-  concentration:
-    value: '80'
-    unit: G_PER_L
 - preferred_term: distilled water
   concentration:
     value: '900'
@@ -96,18 +84,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium No. [480])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Se/W solution (see Medium [M312])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -289,3 +265,40 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:14.047511+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: dithiothreitol solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: glucose solution
+  composition: []
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+- preferred_term: NaHCO3 solution
+  composition: []
+  concentration:
+    value: '80'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium No. [480])
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Se/W solution (see Medium [M312])
+  composition: []
+  notes: Cross-reference to Medium M312
+  concentration:
+    value: '1'
+    unit: G_PER_L

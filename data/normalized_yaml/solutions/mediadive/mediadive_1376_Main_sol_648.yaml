@@ -1,0 +1,96 @@
+preferred_term: Main sol. 648
+term:
+  id: mediadive.solution:1376
+  label: Main sol. 648
+composition:
+- preferred_term: Marine Broth
+  concentration:
+    value: '18.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:545
+    label: Marine Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve DIFCO Marine Broth powder and resazurin, bring the medium
+  to a boil, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere.
+  Dispense the medium under the same gas atmosphere into anoxic Hungate-type tubes
+  or serum vials and autoclave. Complete the medium by adding glucose, cysteine, and
+  sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+  from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+  The pH of the complete medium should be around 6.6.

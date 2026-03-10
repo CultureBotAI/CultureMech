@@ -74,14 +74,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Wolfe's modified mineral solution*
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: VFA**
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -90,11 +82,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 0.1% Resazurin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Cellobiose
   concentration:
     value: '0.2'
@@ -113,14 +100,6 @@ ingredients:
   term:
     id: CHEBI:17268
     label: myo-inositol
-- preferred_term: Vitamin mixture***
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Cellulose****
-  concentration:
-    value: '200'
-    unit: G_PER_L
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
   concentration:
@@ -471,3 +450,37 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: N2 gas; Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:46.157626+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Wolfe's modified mineral solution*
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: VFA**
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 0.1% Resazurin solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Vitamin mixture***
+  term:
+    id: mediadive.solution:5209
+    label: Vitamin mixture
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5209_Vitamin_mixture.yaml for composition
+- preferred_term: Cellulose****
+  composition: []
+  concentration:
+    value: '200'
+    unit: G_PER_L

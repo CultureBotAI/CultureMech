@@ -1,0 +1,87 @@
+preferred_term: Main sol. 1385
+term:
+  id: mediadive.solution:2808
+  label: Main sol. 1385
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.26'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4HCO3
+  concentration:
+    value: '0.395'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:855
+    label: NH4HCO3
+  chebi_term:
+    id: CHEBI:184335
+    label: Ammonium bicarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO2
+  concentration:
+    value: '4.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1235
+    label: KNO2
+- preferred_term: Sodium formate
+  concentration:
+    value: '2.72'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:437
+    label: Sodium formate
+  chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium
+  into serum bottles. Inject 10 % CO2. Sterilize by autoclaving. Before inoculation
+  add from sterile stock solutions:'

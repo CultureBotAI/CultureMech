@@ -1,0 +1,18 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:1401
+  label: Solution C
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 20 mL'

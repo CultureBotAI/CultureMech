@@ -12,21 +12,12 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: CaCl2 solution
-  concentration:
-    value: '600'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined component'
-- preferred_term: MgCl2 solution
-  concentration:
-    value: '333'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
 - preferred_term: UPW
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
 media_term:
   preferred_term: TOGO Medium M3294
   term:
@@ -48,3 +39,21 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:13.648159+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: CaCl2 solution
+  composition: []
+  concentration:
+    value: '600'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: MgCl2 solution
+  composition: []
+  concentration:
+    value: '333'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'

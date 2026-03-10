@@ -1,0 +1,258 @@
+preferred_term: Solution 6
+term:
+  id: mediadive.solution:5184
+  label: Solution 6
+composition:
+- preferred_term: L-Alanine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:274
+    label: L-Alanine
+  chebi_term:
+    id: CHEBI:15570
+    label: D-alanine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Arginine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1327
+    label: L-Arginine
+  chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Asparagine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:829
+    label: L-Asparagine
+  chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Aspartic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1328
+    label: L-Aspartic acid
+  chebi_term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:374
+    label: L-Glutamic acid
+  chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:134
+    label: L-Glutamine
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glycine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:358
+    label: Glycine
+  chebi_term:
+    id: CHEBI:15428
+    label: glycine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Histidine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:132
+    label: L-Histidine
+  chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:447
+    label: L-Isoleucine
+  chebi_term:
+    id: CHEBI:17191
+    label: L-isoleucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Leucine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:446
+    label: L-Leucine
+  chebi_term:
+    id: CHEBI:15603
+    label: L-leucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Lysine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1973
+    label: L-Lysine
+  chebi_term:
+    id: CHEBI:18019
+    label: L-lysine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Methionine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1330
+    label: L-Methionine
+  chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1332
+    label: L-Phenylalanine
+  chebi_term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Proline
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1130
+    label: L-Proline
+  chebi_term:
+    id: CHEBI:16313
+    label: D-proline
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Serine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:133
+    label: L-Serine
+  chebi_term:
+    id: CHEBI:16523
+    label: D-serine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Threonine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:658
+    label: L-Threonine
+  chebi_term:
+    id: CHEBI:16398
+    label: D-threonine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:449
+    label: L-Tryptophan
+  chebi_term:
+    id: CHEBI:16296
+    label: D-tryptophan
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Tyrosine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1333
+    label: L-Tyrosine
+  chebi_term:
+    id: CHEBI:17895
+    label: L-tyrosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Valine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1334
+    label: L-Valine
+  chebi_term:
+    id: CHEBI:16414
+    label: L-valine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 400 mL'

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,8 +17,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -34,14 +35,6 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-- preferred_term: Modified Brock's salt base solution (see Medium [M156])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace mineral solution (see Medium [M447])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -96,5 +89,22 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.164955'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:25.775233+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Brock's salt base solution (see Medium [M156])
+  composition: []
+  notes: Cross-reference to Medium M156
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace mineral solution (see Medium [M447])
+  composition: []
+  notes: Cross-reference to Medium M447
+  concentration:
+    value: '10'
+    unit: G_PER_L

@@ -1,0 +1,143 @@
+preferred_term: Main sol. J144
+term:
+  id: mediadive.solution:3788
+  label: Main sol. J144
+composition:
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '12.3762'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1104
+    label: Heart Infusion Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.47525'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1644
+    label: Sodium thioglycolate
+  chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Asparagine
+  concentration:
+    value: '2.47525'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:829
+    label: L-Asparagine
+  chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glucose
+  concentration:
+    value: '1.9802'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.9900990099009901'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '930.6930693069307'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '26.435643564356436'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Rabbit serum
+  concentration:
+    value: '19.801980198019802'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:464
+    label: Rabbit serum
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Combine the above ingredients and bring to a boil in a round bottom\
+  \ flask while flushing with O2-free N2-H2-CO2 (85:10:5) gas mixture. Stopper anaerobically,\
+  \ wire or seal closed and autoclave at 121C for 20 min. After autoclaving, allow\
+  \ to cool, open without admitting oxygen and while flushing with gas, add the following\
+  \ ingredients which have been filter-sterilized ahead of time: \n\nOriginal volume:\
+  \ 101 mL"

@@ -72,10 +72,6 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
-- preferred_term: Allen’s trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
@@ -192,3 +188,13 @@ curation_history:
     concentration for ingredient: Na2S2O3 x 5 H2O; Added default concentration for
     ingredient: Trypticase peptone; Added default concentration for ingredient: 1
     N HCl'
+- timestamp: '2026-03-09T08:05:00.693186+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Allen’s trace element solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

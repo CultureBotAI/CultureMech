@@ -1,0 +1,90 @@
+preferred_term: Main sol. J709
+term:
+  id: mediadive.solution:4626
+  label: Main sol. J709
+composition:
+- preferred_term: D-Glucose
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glycerol
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.9505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ethanol
+  concentration:
+    value: '9.900990099009901'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '14.8515'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 1010 mL'

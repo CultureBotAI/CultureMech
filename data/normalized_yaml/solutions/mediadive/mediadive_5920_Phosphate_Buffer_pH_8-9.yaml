@@ -1,0 +1,33 @@
+preferred_term: Phosphate Buffer, pH 8-9
+term:
+  id: mediadive.solution:5920
+  label: Phosphate Buffer, pH 8-9
+composition:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '11.87'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After the disodium phosphate has been dissolved in distilled water,
+  pH should be between 8-9 without adjustment.
+
+  Autoclave at 121 °C for 15 min.'

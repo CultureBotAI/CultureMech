@@ -1,0 +1,35 @@
+preferred_term: Filtrate of Desulfurococcus kamchatkensis (DSM18924)
+term:
+  id: mediadive.solution:5717
+  label: Filtrate of Desulfurococcus kamchatkensis (DSM18924)
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Strain DSM 18924 was inoculated into anaerobic tube, containing\
+  \ 10ml of the medium\r\nmentioned above. Glucose (2g/l) and yeast extract (0,6g/l)\
+  \ were added as substrate.\r\nAfter 3 days of incubation culture was filtered throuth\
+  \ 0,22nm filter. Filtered culture\r\nbroth is used for the cultivation of the strain\
+  \ at a concentration of 1% as a source of\r\ngrowth factor\n\nOriginal volume: 10\
+  \ mL"

@@ -1,0 +1,54 @@
+preferred_term: Vitamine solution
+term:
+  id: mediadive.solution:3182
+  label: Vitamine solution
+composition:
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

@@ -1,0 +1,22 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:2400
+  label: Solution B
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve in 0.2 N H2SO4 and fill up to a volume of 100 ml. Filter
+  sterilize.
+
+
+  Original volume: 100 mL'

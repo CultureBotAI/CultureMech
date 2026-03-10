@@ -58,10 +58,6 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
-- preferred_term: Trace element solution SL-4 (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -88,10 +84,6 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
-- preferred_term: Trace element solution SL-6(see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -180,3 +172,18 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:24.380351+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution SL-4 (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace element solution SL-6(see below)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L

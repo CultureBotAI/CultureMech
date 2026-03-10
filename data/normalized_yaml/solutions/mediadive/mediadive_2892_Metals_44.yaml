@@ -1,0 +1,103 @@
+preferred_term: Metals "44"
+term:
+  id: mediadive.solution:2892
+  label: Metals "44"
+composition:
+- preferred_term: EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:271
+    label: EDTA
+  chebi_term:
+    id: CHEBI:42191
+    label: EDTA(4-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnSO4 x 7 H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:543
+    label: MnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:541
+    label: Co(NO3)2 x 6 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:196
+    label: Na2B4O7 x 10 H2O
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Note: Initially add a few drops of H2SO4 to the distilled water\
+  \ to retard\r\nprecipitation."

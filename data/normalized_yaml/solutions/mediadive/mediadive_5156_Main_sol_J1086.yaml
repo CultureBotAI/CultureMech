@@ -1,0 +1,70 @@
+preferred_term: Main sol. J1086
+term:
+  id: mediadive.solution:5156
+  label: Main sol. J1086
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.238095'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sucrose
+  concentration:
+    value: '1.90476'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '952.3809523809523'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MES
+  concentration:
+    value: '38.095238095238095'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly. For preparation of solid medium, add\
+  \ 15.0 g/L agar. After autoclaving and cooling (for solid medium, cooling to 55C),\
+  \ add the following solution (filter-sterilized): \nAseptically distribute the medium\
+  \ into culture vessels and replace the gas phase with a N2-CO2 (4:1, v/v) gas atmosphere.\n\
+  \nOriginal volume: 1050 mL"

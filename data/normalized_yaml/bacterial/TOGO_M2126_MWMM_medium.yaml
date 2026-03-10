@@ -64,18 +64,6 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Trace element solution*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Se/W solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution***
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: O2
   notes: 'Properties: Gas'
   concentration:
@@ -315,4 +303,33 @@ curation_history:
   notes: 'Added default concentration for ingredient: O2; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas'
+- timestamp: '2026-03-09T08:04:37.550237+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution*
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: Se/W solution**
+  term:
+    id: mediadive.solution:4826
+    label: Se/W solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_4826_Se_W_solution.yaml for composition
+- preferred_term: Vitamin solution***
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

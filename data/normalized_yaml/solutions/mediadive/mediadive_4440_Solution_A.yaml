@@ -1,0 +1,66 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:4440
+  label: Solution A
+composition:
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.586932'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.454042'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.941307'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '0.150609'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1817
+    label: Sodium acetate x 3 H2O
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '996.6777408637873'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 903 mL'

@@ -1,0 +1,25 @@
+preferred_term: Main sol. 1567
+term:
+  id: mediadive.solution:3248
+  label: Main sol. 1567
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Bring to 1 liter with distilled water.\nDilute 100 ml solution\
+  \ 1 to 1 litre with distilled water and then add 1 ml of solution 3,\r\n66 ml solution\
+  \ 5 and 0.4 ml of solution 6. Dispense the medium into the growth vessels.\r\nIf\
+  \ using sealed vessels it is appropriate to add 50% methane to the gas phase and\r\
+  \nautoclave at 121C (15psi) for 15 minutes. Autoclave the phosphate buffer separately.\r\
+  \nFilter sterilized the vitamin solution. When the growth medium is cool 1.0 ml/l\
+  \ vitamin\r\nsolution and 10 ml/l of the phosphate buffer are added - if too warm\
+  \ the phosphate will\r\nprecipitate. Liquid cultures should be grown with shaking."

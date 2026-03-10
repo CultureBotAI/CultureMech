@@ -1,0 +1,93 @@
+preferred_term: Main sol. J669
+term:
+  id: mediadive.solution:4558
+  label: Main sol. J669
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.276407'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.11846'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.0493583'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1644
+    label: Sodium thioglycolate
+  chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium tartrate
+  concentration:
+    value: '0.365252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1699
+    label: Sodium tartrate
+  chebi_term:
+    id: CHEBI:63017
+    label: sodium tartrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium succinate
+  concentration:
+    value: '0.365252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:730
+    label: Sodium succinate
+  chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.0493583'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '987.1668311944719'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.75 with NaOH.
+
+
+  Original volume: 1013 mL'

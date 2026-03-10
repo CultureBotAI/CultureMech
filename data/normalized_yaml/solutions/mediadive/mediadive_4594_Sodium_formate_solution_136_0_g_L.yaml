@@ -1,0 +1,30 @@
+preferred_term: Sodium formate solution 136.0 g/L
+term:
+  id: mediadive.solution:4594
+  label: Sodium formate solution 136.0 g/L
+composition:
+- preferred_term: Sodium formate
+  concentration:
+    value: '136'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:437
+    label: Sodium formate
+  chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

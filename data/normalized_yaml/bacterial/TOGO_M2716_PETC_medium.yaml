@@ -84,14 +84,6 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-- preferred_term: Trace Elements
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Wolfe's Vitamin Solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Reducing Agent
   concentration:
     value: '10'
@@ -179,11 +171,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -330,3 +317,27 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:32.740072+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Trace Elements
+  term:
+    id: mediadive.solution:6183
+    label: Trace elements
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6183_Trace_elements.yaml for composition
+- preferred_term: Wolfe's Vitamin Solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'

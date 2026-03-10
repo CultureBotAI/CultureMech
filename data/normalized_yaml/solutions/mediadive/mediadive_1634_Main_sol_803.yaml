@@ -1,0 +1,114 @@
+preferred_term: Main sol. 803
+term:
+  id: mediadive.solution:1634
+  label: Main sol. 803
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:97
+    label: Ferric ammonium citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:14
+    label: MnSO4 x H2O
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: pH 7.1.

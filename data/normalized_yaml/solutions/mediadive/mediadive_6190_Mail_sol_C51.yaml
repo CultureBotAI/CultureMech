@@ -1,0 +1,31 @@
+preferred_term: Mail sol. C51
+term:
+  id: mediadive.solution:6190
+  label: Mail sol. C51
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Make up to 1 litre with deionised water. Autoclave at 15 psi for
+  15 minutes.

@@ -1,0 +1,30 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4269
+  label: Solution B
+composition:
+- preferred_term: Sodium glutamate monohydrate
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1291
+    label: Sodium glutamate monohydrate
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

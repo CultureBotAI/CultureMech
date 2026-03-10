@@ -1,0 +1,17 @@
+preferred_term: Main sol. J302
+term:
+  id: mediadive.solution:4009
+  label: Main sol. J302
+composition:
+- preferred_term: Tween 80
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match

@@ -1,0 +1,114 @@
+preferred_term: Vitamin B solution
+term:
+  id: mediadive.solution:3919
+  label: Vitamin B solution
+composition:
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:845
+    label: Nicotinate
+  chebi_term:
+    id: CHEBI:32544
+    label: nicotinate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Myo-inositol
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:557
+    label: Myo-inositol
+  chebi_term:
+    id: CHEBI:17268
+    label: myo-inositol
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:518
+    label: Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Biotin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:879
+    label: D-Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 200 mL'

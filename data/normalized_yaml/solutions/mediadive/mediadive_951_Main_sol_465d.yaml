@@ -1,0 +1,32 @@
+preferred_term: Main sol. 465d
+term:
+  id: mediadive.solution:951
+  label: Main sol. 465d
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Benzylcyanide
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2166
+    label: Benzylcyanide
+  chebi_term:
+    id: CHEBI:25979
+    label: phenylacetonitrile
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare and autoclave medium 465 without ammonium sulfate. Add
+  120 mg/l benzylcyanide (not sterilized) to the incubation atmosphere or directly
+  to the medium.

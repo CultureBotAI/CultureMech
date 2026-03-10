@@ -65,10 +65,6 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
-- preferred_term: Trace salts solution*
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -120,4 +116,17 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:52.149828+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace salts solution*
+  term:
+    id: mediadive.solution:3683
+    label: Trace salts solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_3683_Trace_salts_solution.yaml for composition

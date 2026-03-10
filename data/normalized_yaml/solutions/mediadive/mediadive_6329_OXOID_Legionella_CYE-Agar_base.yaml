@@ -1,0 +1,17 @@
+preferred_term: OXOID Legionella CYE-Agar base
+term:
+  id: mediadive.solution:6329
+  label: OXOID Legionella CYE-Agar base
+composition:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2125
+    label: OXOID Legionella CYE-Agar base
+preparation_notes: 'Dehydrated media preparations are available from media distributors.
+
+  We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
+
+  Note: Alternatively use CYE-ACES AGAR'

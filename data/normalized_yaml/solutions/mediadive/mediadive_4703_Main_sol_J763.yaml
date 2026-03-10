@@ -1,0 +1,33 @@
+preferred_term: Main sol. J763
+term:
+  id: mediadive.solution:4703
+  label: Main sol. J763
+composition:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:99
+    label: Trypticase soy broth
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components thoroughly and autoclave. After cooling, adjust
+  pH to 8.5 - 9.0 with sterile 20% sodium carbonate solution (autoclaved).
+
+  For preparation of solid medium, add 20.0 g/L agar.'

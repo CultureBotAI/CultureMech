@@ -1,0 +1,68 @@
+preferred_term: Main sol. J1305
+term:
+  id: mediadive.solution:5463
+  label: Main sol. J1305
+composition:
+- preferred_term: Brucella Broth
+  concentration:
+    value: '27.451'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1136
+    label: Brucella Broth
+- preferred_term: Distilled water
+  concentration:
+    value: '784.3137254901961'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '196.07843137254903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitox
+  concentration:
+    value: '19.607843137254903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1138
+    label: Vitox
+- preferred_term: Skirrow supplement
+  concentration:
+    value: '3.9215686274509807'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1139
+    label: Skirrow supplement
+- preferred_term: Amphotericin B
+  concentration:
+    value: '980.3921568627452'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2063
+    label: Amphotericin B
+  chebi_term:
+    id: CHEBI:2682
+    label: amphotericin b
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Autoclave. After cooling to 50C and add aseptically 135 ï¿½l of\
+  \ conc. HCl (final conc. 0.05%). Then add aseptically the following solutions. \n\
+  For stable culture, incubate the microorganisms in 5 ml of above-mentioned broth\
+  \ in a polystyrene culture flask (25 cmz2 flask, canted neck, vent cap, AS ONE:\
+  \ Cat. No. 2-8589-01) at 37C under a 5% O2 and 12% CO2 atmosphere (with shaking\
+  \ at low speed; 50 rpm).\n\nOriginal volume: 102 mL"

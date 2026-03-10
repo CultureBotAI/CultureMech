@@ -5,17 +5,6 @@ description: 1261. NBRC 1257.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: KH2PO40.2gNH4Cl0.25gNaCl1gMgCl2·6H2O0.4gKCl0.5gCaCl2·2H2O0.15gNa2SO44gYeast extract1gResazurin1mgSodium
-    acetate2.73gTrace element mixture*1mlSelenite-tungstate solution**1mlBicarbonate solution***30mlSulfide
-    solution****1.5mlDistilled water970mlpH 6.8-7.0Mix ingredients except for bicarbonate and sulfide
-    solutions. Dispense the medium into suitable culture vessels under a stream of  nitrogen gas, seal
-    with butyl rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and anaerobically add other
-    ingredients using sterile syringes, and the N2/CO2(80/20) mixed gas is enclosed with the vessels.
-    Adjust pH to 6.8-7.0 using compact pH meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4·7H2O2100mgH3BO330mgMnCl2·4H2O100mgCoCl2·6H2O190mgNiCl2·6H2O24mgCuCl2·2H2O2mgZnSO4·7H2O144mgNa2MoO4·2H2O36mgDistilled
-    water987mlSterilized by autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3·5H2O6mgNa2WO4·2H2O8mgDistilled
-    water1LSterilized by autoclaving.***Bicarbonate solution (1.0 M)NaHCO38.4gDistilled water100mlSaturated
-    with CO2gas. Tightly sealed in bottles filled with CO2gas and then sterilized by autoclaving.****Sulfide
-    solution (1.0 M)Na2S·9H2O12gDistilled water50mlSterilized by filtration and stored under N2gas.
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -218,3 +207,23 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1257, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1257.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:19.615416+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KH2PO40.2gNH4Cl0.25gNaCl1gMgCl2·6H2O0.4gKCl0.5gCaCl2·2H2O0.15gNa2SO44gYeast
+    extract1gResazurin1mgSodium acetate2.73gTrace element mixture*1mlSelenite-tungstate
+    solution**1mlBicarbonate solution***30mlSulfide solution****1.5mlDistilled water970mlpH
+    6.8-7.0Mix ingredients except for bicarbonate and sulfide solutions. Dispense
+    the medium into suitable culture vessels under a stream of  nitrogen gas, seal
+    with butyl rubber stoppers, and autoclave at 121°C for 15 min. Aseptically and
+    anaerobically add other ingredients using sterile syringes, and the N2/CO2(80/20)
+    mixed gas is enclosed with the vessels. Adjust pH to 6.8-7.0 using compact pH
+    meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4·7H2O2100mgH3BO330mgMnCl2·4H2O100mgCoCl2·6H2O190mgNiCl2·6H2O24mgCuCl2·2H2O2mgZnSO4·7H2O144mgNa2MoO4·2H2O36mgDistilled
+    water987mlSterilized by autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3·5H2O6mgNa2WO4·2H2O8mgDistilled
+    water1LSterilized by autoclaving.***Bicarbonate solution (1.0 M)NaHCO38.4gDistilled
+    water100mlSaturated with CO2gas. Tightly sealed in bottles filled with CO2gas
+    and then sterilized by autoclaving.****Sulfide solution (1.0 M)Na2S·9H2O12gDistilled
+    water50mlSterilized by filtration and stored under N2gas.
+  composition: []

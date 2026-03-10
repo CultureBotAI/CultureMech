@@ -1,0 +1,68 @@
+preferred_term: Main sol. J536
+term:
+  id: mediadive.solution:4334
+  label: Main sol. J536
+composition:
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Dithionite
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1793
+    label: Dithionite
+  chebi_term:
+    id: CHEBI:42160
+    label: dithionite
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pyruvate
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1386
+    label: Pyruvate
+  chebi_term:
+    id: CHEBI:15361
+    label: pyruvate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Autoclave the basal solution under a N2 gas atmosphere. Separately
+  filter-sterilize the other solutions and add to the medium anaerobically and aseptically.
+  Prepare dithionite solution just before use.

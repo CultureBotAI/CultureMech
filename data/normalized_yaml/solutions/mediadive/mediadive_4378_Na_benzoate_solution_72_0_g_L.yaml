@@ -1,0 +1,30 @@
+preferred_term: Na benzoate solution 72.0 g/L
+term:
+  id: mediadive.solution:4378
+  label: Na benzoate solution 72.0 g/L
+composition:
+- preferred_term: Sodium benzoate
+  concentration:
+    value: '72'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1631
+    label: Sodium benzoate
+  chebi_term:
+    id: CHEBI:113455
+    label: sodium benzoate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

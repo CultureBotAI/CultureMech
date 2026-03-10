@@ -111,14 +111,6 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Mineral solution (see below)
-  concentration:
-    value: '38'
-    unit: G_PER_L
-- preferred_term: VFA solution (see Medium [M124])
-  concentration:
-    value: '3.1'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
@@ -197,3 +189,19 @@ curation_history:
   date: '2026-02-03T11:20:45.868397'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-09T08:04:28.836541+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution (see below)
+  composition: []
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: VFA solution (see Medium [M124])
+  composition: []
+  notes: Cross-reference to Medium M124
+  concentration:
+    value: '3.1'
+    unit: G_PER_L

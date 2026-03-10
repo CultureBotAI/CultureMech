@@ -1,0 +1,46 @@
+preferred_term: Vitamin K3 solution
+term:
+  id: mediadive.solution:5540
+  label: Vitamin K3 solution
+composition:
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2086
+    label: Vitamin K3
+  chebi_term:
+    id: CHEBI:28869
+    label: menadione
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+  in water and filter sterilize. Store refrigerated in a brown bottle.
+
+
+  Original volume: 100 mL'

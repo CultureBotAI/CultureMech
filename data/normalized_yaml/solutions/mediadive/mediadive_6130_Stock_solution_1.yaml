@@ -1,0 +1,29 @@
+preferred_term: Stock solution 1
+term:
+  id: mediadive.solution:6130
+  label: Stock solution 1
+composition:
+- preferred_term: EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:271
+    label: EDTA
+  chebi_term:
+    id: CHEBI:42191
+    label: EDTA(4-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: KOH
+  concentration:
+    value: '31'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:126
+    label: KOH
+  chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+    confidence: 1.0
+    match_type: exact_match

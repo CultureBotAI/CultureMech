@@ -1,0 +1,54 @@
+preferred_term: Solution I
+term:
+  id: mediadive.solution:3073
+  label: Solution I
+composition:
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2-Methylbutyric acid
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:480
+    label: 2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Valeric acid
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:224
+    label: Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:225
+    label: Isovaleric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare Solution I and store at -20°C

@@ -83,14 +83,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -102,17 +94,6 @@ ingredients:
     unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 10% Glucose solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Na2CO3 solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -142,3 +123,33 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl; Added default concentration
     for ingredient: N2; Added default concentration for ingredient: Na2CO3 solution'
+- timestamp: '2026-03-09T08:04:25.085300+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 10% Glucose solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Na2CO3 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'

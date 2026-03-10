@@ -1,0 +1,33 @@
+preferred_term: Supplement 4
+term:
+  id: mediadive.solution:3083
+  label: Supplement 4
+composition:
+- preferred_term: Cholesterol
+  concentration:
+    value: '1000.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2151
+    label: Cholesterol
+  chebi_term:
+    id: CHEBI:16113
+    label: cholesterol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ethanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C
+
+
+  Original volume: 1 mL'

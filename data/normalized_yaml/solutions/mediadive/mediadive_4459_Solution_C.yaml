@@ -1,0 +1,41 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4459
+  label: Solution C
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components, filter-sterilize and store under a N2-CO2 (4:1,
+  v/v) gas mixture.
+
+  To complete the medium, combine Solutions A, B, C and 1 ml Vitamin solution (see
+  below) aseptically under a stream of a N2-CO2 (4:1, v/v) gas mixture. Distribute
+  the medium into sterilized culture vessels under the same gas mixture and seal with
+  butyl rubber stoppers. Then, add 0.01 volume of 5% Na2S x 9H2O solution (autoclaved
+  under a N2 atmosphere). Check the final pH to be 7.0 - 7.2. Pressurize the inoculated
+  vessels to 70 kPa N2-CO2 (4:1, v/v) overpressure.
+
+
+  Original volume: 50 mL'

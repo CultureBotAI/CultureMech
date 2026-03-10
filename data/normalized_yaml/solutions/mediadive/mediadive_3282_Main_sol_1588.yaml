@@ -1,0 +1,92 @@
+preferred_term: Main sol. 1588
+term:
+  id: mediadive.solution:3282
+  label: Main sol. 1588
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2
+    label: Meat extract
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D(+)-Trehalose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1437
+    label: D(+)-Trehalose
+- preferred_term: Agar
+  concentration:
+    value: '19'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tap water
+  concentration:
+    value: '250'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve beef extract and peptone by heating in tap water, adjust
+  pH to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
+  for 20 min. Directly after autoclaving, add warm (55°C) sterile sea water. Liquid
+  medium without agar should be combined when cooled to room temperature.
+
+  Natural sea water is stored in the dark for at least three weeks to "age". If natural
+  sea water is not available use artificial sea water:'

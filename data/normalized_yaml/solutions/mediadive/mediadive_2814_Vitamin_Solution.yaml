@@ -1,0 +1,102 @@
+preferred_term: Vitamin Solution
+term:
+  id: mediadive.solution:2814
+  label: Vitamin Solution
+composition:
+- preferred_term: 4-Aminobenzoic Acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1237
+    label: 4-Aminobenzoic Acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1238
+    label: B12
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: D-(+)-biotin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1359
+    label: D-(+)-biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1512
+    label: Calcium D-(+)-pantothenate
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Pyridoxamine Dihydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1240
+    label: Pyridoxamine Dihydrochloride
+  chebi_term:
+    id: CHEBI:131532
+    label: pyridoxamine dihydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

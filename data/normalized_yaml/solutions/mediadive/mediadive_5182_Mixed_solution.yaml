@@ -1,0 +1,33 @@
+preferred_term: Mixed solution
+term:
+  id: mediadive.solution:5182
+  label: Mixed solution
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '56.8182'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '11.3636'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1644
+    label: Sodium thioglycolate
+  chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Add distilled water to bring final volume to 30 ml.
+
+
+  Original volume: 11 mL'

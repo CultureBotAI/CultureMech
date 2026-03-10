@@ -1,0 +1,23 @@
+preferred_term: NaH2PO4 solution
+term:
+  id: mediadive.solution:6535
+  label: NaH2PO4 solution
+composition:
+- preferred_term: NaH2PO4
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:229
+    label: NaH2PO4
+  chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with distilled water.
+
+  Filtrate (pore size 0.22 µm).
+
+  Sparge medium with 80% N2 and 20% CO2 gas mixture or 100% N2.'

@@ -3,16 +3,7 @@ original_name: Allochromatium Renukaii Medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: THIORHODOCOCCUS BHEEMLICUM MEDIUM (see Medium [M565])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: vitamin B12 solution
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
+ingredients: []
 media_term:
   preferred_term: TOGO Medium M574
   term:
@@ -34,3 +25,22 @@ curation_history:
   date: '2026-02-03T11:20:59.529614'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: vitamin B12 solution'
+- timestamp: '2026-03-09T08:04:15.305239+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: THIORHODOCOCCUS BHEEMLICUM MEDIUM (see Medium [M565])
+  composition: []
+  notes: Cross-reference to Medium M565
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: vitamin B12 solution
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition

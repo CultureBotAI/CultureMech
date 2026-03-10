@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,12 +22,14 @@ ingredients:
   concentration:
     value: '0.147'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.136'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -34,7 +37,8 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -42,8 +46,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -51,12 +55,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -68,14 +74,6 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -91,11 +89,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: 5% L--Cysteine・HCl・H2O
   concentration:
     value: '10'
@@ -135,6 +128,31 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.776941'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: Hydrogen gas; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
+    Added default concentration for ingredient: Hydrogen gas'
+- timestamp: '2026-03-09T08:04:13.431266+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'

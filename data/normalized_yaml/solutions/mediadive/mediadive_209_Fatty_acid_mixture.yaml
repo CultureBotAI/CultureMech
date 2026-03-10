@@ -1,0 +1,66 @@
+preferred_term: Fatty acid mixture
+term:
+  id: mediadive.solution:209
+  label: Fatty acid mixture
+composition:
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '23'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-2-Methylbutyric acid
+  concentration:
+    value: '27'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:223
+    label: DL-2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Valeric acid
+  concentration:
+    value: '27'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:224
+    label: Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '27'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:225
+    label: Isovaleric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '896'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.5 with concentrated NaOH.

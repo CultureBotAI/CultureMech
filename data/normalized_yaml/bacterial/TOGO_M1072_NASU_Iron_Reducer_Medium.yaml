@@ -48,18 +48,6 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: Modified Allen's trace metal solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Iron(III) citrate solution (see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -70,16 +58,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 130 mM FeCl2 solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 25 mM L--Cysteine・HCI solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -184,3 +162,36 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     NaOH'
+- timestamp: '2026-03-09T08:04:26.558435+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Allen's trace metal solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Iron(III) citrate solution (see below)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: 130 mM FeCl2 solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 25 mM L--Cysteine・HCI solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

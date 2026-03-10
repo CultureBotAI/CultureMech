@@ -1,0 +1,73 @@
+preferred_term: Main sol. 1830
+term:
+  id: mediadive.solution:6375
+  label: Main sol. 1830
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCO3
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: optional
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ethanol
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  notes: non-methylated
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Adjust pH to 6.8-7.0.
+
+  Autoclave at 121 °C for 15 min.
+
+  after autoclaving add sterile (autoclaved), non-methylated ethanol'

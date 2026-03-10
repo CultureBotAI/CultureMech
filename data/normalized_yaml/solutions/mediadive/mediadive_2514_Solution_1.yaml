@@ -1,0 +1,33 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:2514
+  label: Solution 1
+composition:
+- preferred_term: MES
+  concentration:
+    value: '3.96341'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '934.959349593496'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust to pH 5.5 with NaOH/KOH solution (see below).
+
+
+  Original volume: 492 mL'

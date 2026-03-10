@@ -1,0 +1,44 @@
+preferred_term: Main sol. 1514
+term:
+  id: mediadive.solution:3133
+  label: Main sol. 1514
+composition:
+- preferred_term: Grace's Insect Medium
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1382
+    label: Grace's Insect Medium
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Medium for maintenance of SF-9 cells (ACC 125) for cultivation\
+  \ of Rhabdochlamydiae. \nFilter-sterilize\nMaintenance conditions of SF-9 cells\
+  \ (see also DSMZ catalogue for ACC 125):\nSF-9 cells are cultivated at 25 - 29°C\
+  \ without the addition of CO2 in flasks (25 cm2) with tightly closed lids. When\
+  \ a confluent layer has formed, infection can be carried out.\nInfection with Rhabdochlamydiae:\n\
+  Exchange medium and add 500 – 1000 µl of EB stock solution (thawed quickly to 37°C).\r\
+  \nCentrifuge for 1 h onto the cell layer at 1600 rpm at 20°C.\nMaintenance/Passage\
+  \ of infected insect cell cultures:\nInfected cultures can be maintained e.g. in\
+  \ 25 cm2 flasks (e.g. Nunc flasks, VWR, 734-\r\n2081) at 27°C in an incubator (no\
+  \ special requirements concerning CO2 or light).\r\nIf the percentage of infected\
+  \ cells is still low (which might occur initially after inoculation\r\nof cultures\
+  \ with bacteria from a frozen stock) infected cultures may be maintained by\r\n\
+  weekly passage (1:5). Infection of yet uninfected cells by added bacteria or bacteria\r\
+  \nreleased from neighboring infected cells is facilitated by centrifugation (130\
+  \ x g, 15 min)\r\nof the culture flask.\r\nIn well-infected cultures host cell lysis\
+  \ will be visible (the bacteria cause host cell lysis\r\nwithin approximately 5-7\
+  \ days after invasion of host cells). To maintain such cultures,\r\nbacteria have\
+  \ to be transferred by adding culture supernatant (approximately 0.5-1 ml)\r\nto\
+  \ fresh culture flasks containing uninfected insect cells (approximately semi-confluent\r\
+  \nculture) each 7-10 days."

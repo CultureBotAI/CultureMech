@@ -1,0 +1,57 @@
+preferred_term: Main sol. 1131
+term:
+  id: mediadive.solution:2267
+  label: Main sol. 1131
+composition:
+- preferred_term: Sulfur
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Sparge medium with 100% N2 gas mixture for 10 min to make anoxic.
+
+  Adjust pH to 7.0 with NaOH.
+
+  Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min.
+
+  Dispense the medium (10 mL) into 100 mL serum bottles, containing 0,03g sulfur (powder)
+  under a stream of H2/CO2 (80:20) and seal with butyl rubber stoppers.
+
+  Autoclave at 121 °C for 20 min.
+
+  Prior to inoculation, add vitamins, NaNO3, and NaHCO3 (from filter sterilized stock
+  solutions under a N2 gas atmosphere) to the medium.
+
+
+  Original volume: 1010 mL'

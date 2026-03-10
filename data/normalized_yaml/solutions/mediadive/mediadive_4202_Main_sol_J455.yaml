@@ -1,0 +1,34 @@
+preferred_term: Main sol. J455
+term:
+  id: mediadive.solution:4202
+  label: Main sol. J455
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '56.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
+  to the medium. Check final pH to be about 10.0.
+
+
+  Original volume: 900 mL'

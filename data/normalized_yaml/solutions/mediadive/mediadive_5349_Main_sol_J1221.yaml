@@ -1,0 +1,86 @@
+preferred_term: Main sol. J1221
+term:
+  id: mediadive.solution:5349
+  label: Main sol. J1221
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.984252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.19685'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '0.246063'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES
+  concentration:
+    value: '1.968503937007874'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ammonium ferric citrate
+  concentration:
+    value: '0.00393701'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2007
+    label: Ammonium ferric citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '984.2519685039371'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly and autoclave. After cooling, add the\
+  \ following solutions (autoclaved) to the medium: \nAdjust pH to 6.8, if necessary.\
+  \ Cultivate with methane or methanol as a substrate as described below:\nMethane:\
+  \ Aseptically distribute the medium into sterile serum bottles (leave &; 80% gas\
+  \ phase by volume) and seal with rubber stoppers. Replace the gas phase with an\
+  \ air-methane gas mixture (75:25, v/v). Cultivate with shaking.\nMethanol: Aseptically\
+  \ distribute the medium into culture vessels (e.g., 20 ml in 60 ml serum bottles),\
+  \ supplement with 4.0 ml per liter filter-sterilized methanol and seal with rubber\
+  \ stoppers.\n\nOriginal volume: 1016 mL"

@@ -1,0 +1,48 @@
+preferred_term: Solution II
+term:
+  id: mediadive.solution:3717
+  label: Solution II
+composition:
+- preferred_term: Glycerol
+  concentration:
+    value: '28.301886792452834'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Malachite green
+  concentration:
+    value: '28.301886792452834'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:407
+    label: Malachite green
+  chebi_term:
+    id: CHEBI:44107
+    label: malachite green cation
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Whole egg
+  concentration:
+    value: '943.3962264150944'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1621
+    label: Whole egg
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Homogenize Solution II by stirring and filter through gauze. Mix
+  solutions I and II, and sterilize at 90C for 60 min.
+
+  Comment: Commercial 1% Ogawa medium (Eiken or Nissui) is also available.
+
+
+  Original volume: 212 mL'

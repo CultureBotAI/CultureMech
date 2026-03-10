@@ -1,0 +1,21 @@
+preferred_term: Mail sol. C73
+term:
+  id: mediadive.solution:6064
+  label: Mail sol. C73
+composition:
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Using aseptic technique, make up to 1 litre with sterile deionized\
+  \ water. It may be necessary\r\nto decant supernatant from precipitate in final\
+  \ medium.\nAlternatively, after autoclaving, it might be necessary to filter through\
+  \ 0.2 micron filter\r\n(removes precipitates etc)."

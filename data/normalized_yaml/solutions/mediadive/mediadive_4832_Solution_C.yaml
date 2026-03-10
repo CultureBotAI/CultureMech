@@ -1,0 +1,65 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4832
+  label: Solution C
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Maltose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cellobiose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Xylose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1107
+    label: Xylose
+  chebi_term:
+    id: CHEBI:18222
+    label: xylose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

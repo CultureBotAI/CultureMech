@@ -1,0 +1,90 @@
+preferred_term: Fatty acid mixture
+term:
+  id: mediadive.solution:604
+  label: Fatty acid mixture
+composition:
+- preferred_term: Acetic acid
+  concentration:
+    value: '548.3870967741935'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:380
+    label: Acetic acid
+  chebi_term:
+    id: CHEBI:15611
+    label: sarcosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Propionic acid
+  concentration:
+    value: '193.5483870967742'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:381
+    label: Propionic acid
+  chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: n-Butyric acid
+  concentration:
+    value: '129.03225806451613'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:376
+    label: n-Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '32.25806451612903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '32.25806451612903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Butyric acid
+  concentration:
+    value: '32.25806451612903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:377
+    label: iso-Butyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-2-Methylbutyric acid
+  concentration:
+    value: '32.25806451612903'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:223
+    label: DL-2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 31 mL'

@@ -1,0 +1,21 @@
+preferred_term: Mail sol. C4
+term:
+  id: mediadive.solution:5995
+  label: Mail sol. C4
+composition:
+- preferred_term: Tricine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2349
+    label: Tricine
+  chebi_term:
+    id: CHEBI:39063
+    label: N-tris(hydroxymethyl)methylglycine
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Make up to 1 Litre with filtered natural seawater. Adjust pH 7.6\
+  \ - 7.8 to with 1M NaOH or\r\n1M HCl, prior to autoclaving. Autoclave at 15 psi\
+  \ for 15 minutes.\nAlternatively, use: Distilled water to 1 Litre and “Ultramarine\
+  \ Synthetica” sea salts 33.60g"

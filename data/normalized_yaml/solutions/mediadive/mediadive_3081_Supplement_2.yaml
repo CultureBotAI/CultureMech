@@ -1,0 +1,37 @@
+preferred_term: Supplement 2
+term:
+  id: mediadive.solution:3081
+  label: Supplement 2
+composition:
+- preferred_term: Ascorbic acid
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:112
+    label: Ascorbic acid
+  chebi_term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Ascorbic acid (10%; w/v); in distilled water, neutralize with
+  NaOH
+
+  Prepare Supplements 2, flush with nitrogen to make them anoxic, filter-sterilize
+  and store at -20°C
+
+
+  Original volume: 2 mL'

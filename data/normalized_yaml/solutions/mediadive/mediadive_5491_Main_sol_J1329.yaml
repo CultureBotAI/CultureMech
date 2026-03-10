@@ -1,0 +1,29 @@
+preferred_term: Main sol. J1329
+term:
+  id: mediadive.solution:5491
+  label: Main sol. J1329
+composition:
+- preferred_term: Corn meal agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:702
+    label: Corn meal agar
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

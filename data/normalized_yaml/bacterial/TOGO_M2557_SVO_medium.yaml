@@ -91,19 +91,6 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
-- preferred_term: Vitamin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: NaOH solution
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -340,11 +327,6 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2557
   term:
@@ -368,3 +350,36 @@ curation_history:
   notes: 'Added default concentration for ingredient: NaOH solution; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH solution'
+- timestamp: '2026-03-09T08:04:27.668835+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: NaOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'

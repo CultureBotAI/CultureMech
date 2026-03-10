@@ -1,0 +1,44 @@
+preferred_term: Tungstate solution
+term:
+  id: mediadive.solution:4914
+  label: Tungstate solution
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:249
+    label: Na2WO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Comment: For strain JCM 17849, inoculate with a 10% inoculum.
+  When the cellular density increases, re-pressure the culture vessels to 150 kPa
+  with the same gas mixture.'

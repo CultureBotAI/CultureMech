@@ -1,0 +1,42 @@
+preferred_term: FeCl2/MnCl2 solution
+term:
+  id: mediadive.solution:5674
+  label: FeCl2/MnCl2 solution
+composition:
+- preferred_term: FeCl2 x 4 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:260
+    label: FeCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Prepare and sterilise separately

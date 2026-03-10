@@ -1,0 +1,33 @@
+preferred_term: modified NCL (New Cereal Leaf-­Prescott Liquid)
+term:
+  id: mediadive.solution:6210
+  label: modified NCL (New Cereal Leaf-­Prescott Liquid)
+composition:
+- preferred_term: Cereal leaves
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2361
+    label: Cereal leaves
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.\
+  \  Continue to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre\
+  \ with deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+  \ 15 minutes."

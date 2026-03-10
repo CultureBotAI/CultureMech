@@ -1,0 +1,32 @@
+preferred_term: Main sol. 1331
+term:
+  id: mediadive.solution:5693
+  label: Main sol. 1331
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1177
+    label: Defibrinated Blood
+preparation_notes: '1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water.
+  Heat to boiling to dissolve completely.
+
+  2. Sterilize by autoclaving for 15 min at 121°C.
+
+  3. Cool to 45°C. Add 5% sterile defibrinated sheep blood and mix well.
+
+  Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see below).'

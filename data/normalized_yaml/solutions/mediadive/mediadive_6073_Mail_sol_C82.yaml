@@ -1,0 +1,20 @@
+preferred_term: Mail sol. C82
+term:
+  id: mediadive.solution:6073
+  label: Mail sol. C82
+composition:
+- preferred_term: Rye grass
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2362
+    label: Rye grass
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue\
+  \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized\
+  \ water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."

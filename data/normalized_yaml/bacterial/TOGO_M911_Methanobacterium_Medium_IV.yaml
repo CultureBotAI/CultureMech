@@ -97,21 +97,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Sludge fluid (see below)
   concentration:
     value: '50'
-    unit: G_PER_L
-- preferred_term: Fatty acid mixture (see Medium [M258])
-  concentration:
-    value: '20'
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
@@ -128,17 +116,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 5% L--Cysteine・HCl・H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
 - preferred_term: yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
@@ -183,3 +160,39 @@ curation_history:
     Hydrogen gas; Added default concentration for ingredient: yeast extract; Added
     default concentration for ingredient: sludge; Added default concentration for
     ingredient: N2'
+- timestamp: '2026-03-09T08:04:52.942968+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fatty acid mixture (see Medium [M258])
+  composition: []
+  notes: Cross-reference to Medium M258
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'

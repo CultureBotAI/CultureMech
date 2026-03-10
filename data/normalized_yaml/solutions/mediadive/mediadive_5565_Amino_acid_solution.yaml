@@ -1,0 +1,42 @@
+preferred_term: Amino acid solution
+term:
+  id: mediadive.solution:5565
+  label: Amino acid solution
+composition:
+- preferred_term: L-Histidin
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:161
+    label: L-Histidin
+  chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Serin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:162
+    label: L-Serin
+  chebi_term:
+    id: CHEBI:16523
+    label: D-serine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamine
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:134
+    label: L-Glutamine
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Amino acid solution per 50 ml: \n\nOriginal volume: 50 mL"

@@ -1,0 +1,68 @@
+preferred_term: Main sol. 1238
+term:
+  id: mediadive.solution:2460
+  label: Main sol. 1238
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g
+  peptone and 50 g yeast extract in 1l distilled water, autoclaved), 2 ml 50 % glucose
+  (autoclaved) and 5 ml filter-sterilized riboflavin (0.2 mg ml-1) were added.

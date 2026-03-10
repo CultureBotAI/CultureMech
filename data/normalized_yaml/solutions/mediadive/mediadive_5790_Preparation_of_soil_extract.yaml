@@ -1,0 +1,25 @@
+preferred_term: Preparation of soil extract
+term:
+  id: mediadive.solution:5790
+  label: Preparation of soil extract
+composition:
+- preferred_term: Garden soil
+  concentration:
+    value: '428.57142857142856'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2159
+    label: Garden soil
+  chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
+  \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too much\
+  \ clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)\n\
+  Shake vigorously\nAutoclave for 1 h at 121 °C and let cool down\nAfter 24 h autoclave\
+  \ for a second time (for 1 h at 121 °C)\nRemove bigger particles and debris by centrifugation\n\
+  Filter through Whatmanfilter 595 (1/2, 320 mm) to remove residual particles\nFilter\
+  \ sterilize (PES membrane, pore size 0,22 µm)\nStore at 4°C – 10°C\n\nOriginal volume:\
+  \ 700 mL"

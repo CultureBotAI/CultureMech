@@ -1,0 +1,46 @@
+preferred_term: Pyrocatechol solution
+term:
+  id: mediadive.solution:5396
+  label: Pyrocatechol solution
+composition:
+- preferred_term: Pyrocatechol
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:439
+    label: Pyrocatechol
+  chebi_term:
+    id: CHEBI:18135
+    label: catechol
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HCl
+  concentration:
+    value: '6.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize. Use always freshly prepared solution prior to
+  inoculation.
+
+
+  Original volume: 10 mL'

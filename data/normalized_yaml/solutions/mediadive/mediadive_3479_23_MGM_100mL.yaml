@@ -1,0 +1,60 @@
+preferred_term: 23% MGM (100mL)
+term:
+  id: mediadive.solution:3479
+  label: 23% MGM (100mL)
+composition:
+- preferred_term: Salt water
+  concentration:
+    value: '766.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1508
+    label: Salt water
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '234.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Don''t use Difco Bacto-peptone, it was reported in 1988 to contain
+  bile salts that lyse halobacteria, this was still the case in 2001
+
+  Adjust pH to 7.5
+
+
+  Original volume: 100 mL'

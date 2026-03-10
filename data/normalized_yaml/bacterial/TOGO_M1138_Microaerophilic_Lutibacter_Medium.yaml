@@ -17,18 +17,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Artificial saltwater (see Medium [M642])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Wolfe's mineral solution (see Medium [M257])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -68,5 +56,29 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.115568'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Oxygen gas'
+- timestamp: '2026-03-09T08:04:31.992102+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Artificial saltwater (see Medium [M642])
+  composition: []
+  notes: Cross-reference to Medium M642
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Wolfe's mineral solution (see Medium [M257])
+  composition: []
+  notes: Cross-reference to Medium M257
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

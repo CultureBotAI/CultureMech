@@ -1,0 +1,43 @@
+preferred_term: Main sol. J860
+term:
+  id: mediadive.solution:4843
+  label: Main sol. J860
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '12.32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '920'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4
+  concentration:
+    value: '20'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Mix thoroughly, adjust pH to 2.3 with H2SO4 and autoclave. After
+  cooling, add the following solutions (filter-sterilized) to the medium: '

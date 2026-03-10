@@ -1,0 +1,137 @@
+preferred_term: Vitamin solution
+term:
+  id: mediadive.solution:2575
+  label: Vitamin solution
+composition:
+- preferred_term: Para-aminobenzoic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:844
+    label: Para-aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Folic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Biotin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:518
+    label: Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Thiamine hydrochloride
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1147
+    label: Thiamine hydrochloride
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:847
+    label: Cyanocobalamine
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:368
+    label: Lipoic acid
+  chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback

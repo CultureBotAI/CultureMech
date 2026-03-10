@@ -1,0 +1,30 @@
+preferred_term: Seawater
+term:
+  id: mediadive.solution:1801
+  label: Seawater
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 32 g seasalt in 1000 ml distilled water.

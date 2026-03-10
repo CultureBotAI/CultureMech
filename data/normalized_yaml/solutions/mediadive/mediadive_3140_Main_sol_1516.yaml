@@ -1,0 +1,25 @@
+preferred_term: Main sol. 1516
+term:
+  id: mediadive.solution:3140
+  label: Main sol. 1516
+composition:
+- preferred_term: Na2S x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1075
+    label: Na2S x H2O
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Prepare the liquid medium. Boil the medium in a water bath and\
+  \ cool under N2 to room temperature. Adjust to pH 5.8-6.2. Dispense the medium into\
+  \ Hungate tubes or serum bottles under gassing with N2. Sterilize by autoclaving.\
+  \ Before inoculation add from sterile stock solutions: \nPrepare the liquid medium.\
+  \ Boil the medium in a water bath and cool under N2 to room\r\ntemperature. Adjust\
+  \ to pH 5.8-6.2. Dispense the medium into Hungate tubes or serum\r\nbottles under\
+  \ gassing with N2. Sterilize by autoclaving. Before inoculation add from\r\nsterile\
+  \ stock solutions:"

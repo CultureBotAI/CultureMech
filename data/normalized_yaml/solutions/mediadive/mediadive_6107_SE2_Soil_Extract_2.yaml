@@ -1,0 +1,44 @@
+preferred_term: SE2 (Soil Extract 2)
+term:
+  id: mediadive.solution:6107
+  label: SE2 (Soil Extract 2)
+composition:
+- preferred_term: Soil
+  concentration:
+    value: '159.091'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2350
+    label: Soil
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Site selection for a good soil is very important and for most\
+  \ purposes a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid\
+  \ are those showing obvious \r\nsigns of man's activity and particular care should\
+  \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
+  \ may have been used.\nA rich loam with good crumb structure should be sought. \
+  \ Stones, roots and larger \r\ninvertebrates should be removed during an initial\
+  \ sieving through a 1 cm mesh.  The sieved soil should be spread to air dry and\
+  \ hand picked for smaller \r\ninvertebrates and roots.  It should be turned periodically\
+  \ and picked over again.  When dry it may be sieved through a finer mesh (2­4 mm)\
+  \ or stored as it is prior to\r\nuse.\nSoil is prepared as above.  105 g of air­dried\
+  \ sieved soil and 660 ml of deionized \r\nwater are placed in a 1 litre bottle and\
+  \ autoclaved once at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The\
+  \ contents of the bottle are left to settle (usually for \r\nat least a week) and\
+  \ then the supernatant is decanted and filtered.  The final pH\r\nshould be 7.0\
+  \ - 8.0.\n\nOriginal volume: 660 mL"

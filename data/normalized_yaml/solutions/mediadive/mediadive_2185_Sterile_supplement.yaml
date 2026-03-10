@@ -1,0 +1,45 @@
+preferred_term: Sterile supplement
+term:
+  id: mediadive.solution:2185
+  label: Sterile supplement
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Horse serum
+  concentration:
+    value: '952.3809523809524'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:146
+    label: Horse serum
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ampicillin
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:970
+    label: Ampicillin
+  chebi_term:
+    id: CHEBI:28971
+    label: ampicillin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Adjust pH to 7.0 + 0.2 and autoclave at 121°C for 15 minutes.
+
+
+  Original volume: 210 mL'

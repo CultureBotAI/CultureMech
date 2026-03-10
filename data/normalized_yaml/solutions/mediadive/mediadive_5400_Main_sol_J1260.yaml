@@ -1,0 +1,128 @@
+preferred_term: Main sol. J1260
+term:
+  id: mediadive.solution:5400
+  label: Main sol. J1260
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.390244'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.117073'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.097561'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2SO4
+  concentration:
+    value: '0.00390244'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:382
+    label: K2SO4
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '0.00292683'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '0.00487805'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.00487805'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '975.609756097561'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium Thiosulfate
+  concentration:
+    value: '9.75609756097561'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1126
+    label: Sodium Thiosulfate
+  chebi_term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.878048780487805'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly and autoclave under a microaerophilic\
+  \ atmosphere (1.0 - 3.0% O2 in N2). Aseptically add per liter the following solutions\
+  \ (filter-sterilized): \n\nOriginal volume: 1025 mL"

@@ -1,0 +1,61 @@
+preferred_term: Main sol. 800
+term:
+  id: mediadive.solution:1630
+  label: Main sol. 800
+composition:
+- preferred_term: Wilkins Chalgrene Anaerobe Broth
+  concentration:
+    value: '833.3333333333333'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2140
+    label: Wilkins Chalgrene Anaerobe Broth
+- preferred_term: 5-Aminovaleric acid
+  concentration:
+    value: '41.666666666666664'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:538
+    label: 5-Aminovaleric acid
+  chebi_term:
+    id: CHEBI:15887
+    label: 5-aminovalerate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fildes Enrichment
+  concentration:
+    value: '83.33333333333333'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:744
+    label: Fildes Enrichment
+- preferred_term: 3-Hydroxybenzoic acid
+  concentration:
+    value: '8.333333333333334'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:513
+    label: 3-Hydroxybenzoic acid
+  chebi_term:
+    id: CHEBI:30764
+    label: 3-hydroxybenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 3-Hydroxybenzoic acid
+  concentration:
+    value: '8.333333333333334'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:513
+    label: 3-Hydroxybenzoic acid
+  chebi_term:
+    id: CHEBI:30764
+    label: 3-hydroxybenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare\
+  \ it anaerobically under 80% N2 + 20% CO2 gas. After autoclaving and cooling to\
+  \ room temperature add per 10 ml the following sterile, anaerobic solutions: \n\
+  The pH of the completed medium should be 6.8 - 7.0. For growth an agar plates, Columbia\
+  \ sheep blood agar plates (BBL) may be used and incubated under an anaerobic atmosphere\
+  \ containig 5 - 10% CO2.\n\nOriginal volume: 12 mL"

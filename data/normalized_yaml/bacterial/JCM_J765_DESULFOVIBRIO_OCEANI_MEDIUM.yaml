@@ -73,18 +73,6 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium No. 403)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium No. 403)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403)
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -186,12 +174,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) atmosphere. After cooling,
-    add the following sterile solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    atmosphere. After cooling, add the following sterile solutions (autoclaved or
+    *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Finally, reduce the medium with the following solution (autoclaved and stored under a
-    N2 atmosphere):'
+  description: 'Finally, reduce the medium with the following solution (autoclaved
+    and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,3 +188,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J765'
+- timestamp: '2026-03-09T08:05:00.089855+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L

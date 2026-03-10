@@ -1,0 +1,19 @@
+preferred_term: 90g/L NaHCO3 solution
+term:
+  id: mediadive.solution:6536
+  label: 90g/L NaHCO3 solution
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '90'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Make up to <span class='amount' data-volume='1000'>1000</span>
+  ml with distilled water.

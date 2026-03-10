@@ -76,14 +76,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: 3 M HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -285,4 +277,25 @@ curation_history:
   notes: 'Added default concentration for ingredient: 3 M HCl; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Hydrogen gas'
+- timestamp: '2026-03-09T08:04:18.750344+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

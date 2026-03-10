@@ -4,10 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: CHOPPED MEAT MEDIUM (see Medium [M461])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: glucose
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
   term:
@@ -61,6 +57,17 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:58.903243'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: glucose; Added default concentration for ingredient:
-    cellobiose; Added default concentration for ingredient: soluble starch; Added default concentration
-    for ingredient: maltose'
+  notes: 'Added default concentration for ingredient: glucose; Added default concentration
+    for ingredient: cellobiose; Added default concentration for ingredient: soluble
+    starch; Added default concentration for ingredient: maltose'
+- timestamp: '2026-03-09T08:04:57.042916+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: CHOPPED MEAT MEDIUM (see Medium [M461])
+  composition: []
+  notes: Cross-reference to Medium M461
+  concentration:
+    value: '1'
+    unit: G_PER_L

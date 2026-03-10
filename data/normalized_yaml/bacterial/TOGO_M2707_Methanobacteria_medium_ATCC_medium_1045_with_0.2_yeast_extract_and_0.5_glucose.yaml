@@ -14,11 +14,6 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: Resazurin (0.025% solution)
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -27,26 +22,6 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Mineral Solution 2
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Mineral Solution 1
-  concentration:
-    value: '25'
-    unit: G_PER_L
-- preferred_term: Sodium Carbonate Solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Wolfe's Mineral Solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Wolfe's Vitamin Solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Cysteine-Sulfide Reducing Agent
   concentration:
     value: '20'
@@ -241,11 +216,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -330,14 +300,6 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
-- preferred_term: L-Cysteine . HCl solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Na2S . 9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -415,3 +377,64 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:15.402369+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 9 solution(s) from ingredients
+solutions:
+- preferred_term: Resazurin (0.025% solution)
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Mineral Solution 2
+  term:
+    id: mediadive.solution:4674
+    label: Mineral solution 2
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: See mediadive_4674_Mineral_solution_2.yaml for composition
+- preferred_term: Mineral Solution 1
+  term:
+    id: mediadive.solution:883
+    label: Mineral solution 1
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: See mediadive_883_Mineral_solution_1.yaml for composition
+- preferred_term: Sodium Carbonate Solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Wolfe's Mineral Solution
+  term:
+    id: mediadive.solution:3952
+    label: Wolfe's mineral solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_3952_Wolfe_s_mineral_solution.yaml for composition
+- preferred_term: Wolfe's Vitamin Solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: L-Cysteine . HCl solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2S . 9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

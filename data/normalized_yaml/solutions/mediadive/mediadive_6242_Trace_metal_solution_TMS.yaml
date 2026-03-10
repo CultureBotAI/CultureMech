@@ -1,0 +1,68 @@
+preferred_term: Trace metal solution (TMS)
+term:
+  id: mediadive.solution:6242
+  label: Trace metal solution (TMS)
+composition:
+- preferred_term: ZnCl2
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:120
+    label: (NH4)6Mo7O24 x 4 H2O
+  chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make  up  to 100  ml with distilled  water.  This solution is\
+  \  normally \r\ncloudy.  Acidify with a few drops of conc. HCl to give a clear solution.\n\
+  \nOriginal volume: 100 mL"

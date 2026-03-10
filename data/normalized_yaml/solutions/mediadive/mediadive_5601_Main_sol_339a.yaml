@@ -1,0 +1,89 @@
+preferred_term: Main sol. 339a
+term:
+  id: mediadive.solution:5601
+  label: Main sol. 339a
+composition:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2095
+    label: dehydrated Wilkins-Chalgren medium
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve 33.0 g/l dehydrated Wilkins-Chalgren medium (Oxoid CM0643)
+  in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring to the
+  boil and cool to room temperature while sparging with 80% N2 and 20% CO2 gas mixture.
+  Add L-cysteine-HCL x H2O (0.3 g/l), dispense the medium into anoxic Hungate-type
+  tubes or serum vials and autoclave. After autoclaving supplement medium with 5.0
+  g/l D-glucose added from a sterile anoxic stock solution sterilized by filtration.
+  Adjust pH of medium to 6.8 with a sterile anoxic stock solution of Na2CO3 (5% w/v)
+  prepared under 80% N2 and 20% CO2 gas atmosphere.
+
+  Note: In case resazurin is not colourless addition of 10 - 20 mg sodium dithionite
+  per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized)
+  can be used to completely reduce the medium.'

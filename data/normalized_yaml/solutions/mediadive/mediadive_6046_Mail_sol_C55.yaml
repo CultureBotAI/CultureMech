@@ -1,0 +1,21 @@
+preferred_term: Mail sol. C55
+term:
+  id: mediadive.solution:6046
+  label: Mail sol. C55
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "To make up to 1 litre with distilled water. First disperse trace\
+  \ elements in 800ml distilled water.\r\nAdd the other stock solutions and make up\
+  \ to 1 litre. Adjust pH to 6.8 with 1M NaOH or 1M\r\nHCl, prior to autoclaving.\
+  \ Autoclave at 15 psi for 15 minutes."

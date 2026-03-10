@@ -1,0 +1,17 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1639
+  label: Solution A
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match

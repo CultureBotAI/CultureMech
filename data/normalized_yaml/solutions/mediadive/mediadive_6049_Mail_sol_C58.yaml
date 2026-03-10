@@ -1,0 +1,15 @@
+preferred_term: Mail sol. C58
+term:
+  id: mediadive.solution:6049
+  label: Mail sol. C58
+composition:
+- preferred_term: Mineral water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2359
+    label: Mineral water
+preparation_notes: There are many proprietary brands of bottled mineral water. At
+  present the CCAP uses "Volvic". Dispense into suitable vessels and autoclave at
+  15 psi for 15 minutes.

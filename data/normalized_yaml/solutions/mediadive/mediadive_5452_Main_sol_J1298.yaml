@@ -1,0 +1,129 @@
+preferred_term: Main sol. J1298
+term:
+  id: mediadive.solution:5452
+  label: Main sol. J1298
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '11.5347'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.15054'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.293255'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.391007'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '977.5171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.932551319648094'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '19.550342130987293'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4
+  concentration:
+    value: '97.75171065493646'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3
+  concentration:
+    value: '9.775171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:552
+    label: Na2S2O3
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnO2
+  concentration:
+    value: '9.775171065493646'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2058
+    label: MnO2
+  chebi_term:
+    id: CHEBI:136511
+    label: manganese dioxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components and autoclave. After cooling, aseptically and anaerobically\
+  \ add per liter the following solutions (autoclaved or *filter-sterilized): \nAdjust\
+  \ pH to 7.5 by bubbling with a N2-CO2 (4:1, v/v) gas mixture.\n\nOriginal volume:\
+  \ 1023 mL"

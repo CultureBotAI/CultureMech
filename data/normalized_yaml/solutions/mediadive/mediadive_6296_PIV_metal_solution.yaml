@@ -1,0 +1,88 @@
+preferred_term: PIV metal solution
+term:
+  id: mediadive.solution:6296
+  label: PIV metal solution
+composition:
+- preferred_term: Na-EDTA
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:589
+    label: Na-EDTA
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '30.97'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '10.25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '4.16'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.33'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '20'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'To 900 ml of Milli Q water, add 750 mg of Na2EDTA, and dissolve
+  fully.
+
+  Add the following salts in the order and amounts indicated:
+
+  Adjust pH to 6.4.
+
+  Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with Milli
+  Q water.
+
+  Filtrate sterile (pore size 0.22 µm) and aliquot.'

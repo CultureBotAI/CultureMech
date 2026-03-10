@@ -1,0 +1,32 @@
+preferred_term: Mail sol. C68
+term:
+  id: mediadive.solution:6059
+  label: Mail sol. C68
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Add stock solutions to deionized water and make up to 1 litre.\
+  \ In suitable vessels thoroughly\r\ndisperse the agar in cold amoeba saline solution.\
+  \ Autoclave at 15 psi for 15 minutes."

@@ -4,22 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: CaCl2 x 2 H2O solution (0.1% w/v)
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: K2HPO4 x 3 H2O solution (0.1% w/v)
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Solution, Defined component'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -83,12 +67,6 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: FeCl3 solution (0.01% w/v in 0.2 N HCl)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
 - preferred_term: Yeast extract (BD Bacto)
   concentration:
     value: '1'
@@ -99,10 +77,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Vitamin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -230,3 +204,42 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     N2'
+- timestamp: '2026-03-09T08:04:16.305811+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: CaCl2 x 2 H2O solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: K2HPO4 x 3 H2O solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Solution, Defined component'
+- preferred_term: FeCl3 solution (0.01% w/v in 0.2 N HCl)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

@@ -1,0 +1,29 @@
+preferred_term: alpha-ketoglutamate solution (20mM)
+term:
+  id: mediadive.solution:6373
+  label: alpha-ketoglutamate solution (20mM)
+composition:
+- preferred_term: alpha-ketoglutamate
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:2384
+    label: alpha-ketoglutamate
+  chebi_term:
+    id: CHEBI:46756
+    label: HEPES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback

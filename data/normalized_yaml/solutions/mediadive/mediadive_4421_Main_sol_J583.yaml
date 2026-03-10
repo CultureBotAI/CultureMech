@@ -1,0 +1,54 @@
+preferred_term: Main sol. J583
+term:
+  id: mediadive.solution:4421
+  label: Main sol. J583
+composition:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1620
+    label: GAM broth
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Arginine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:326
+    label: Arginine
+  chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.0.

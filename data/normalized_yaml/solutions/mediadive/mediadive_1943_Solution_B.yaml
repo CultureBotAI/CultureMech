@@ -1,0 +1,42 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1943
+  label: Solution B
+composition:
+- preferred_term: CaCl2
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

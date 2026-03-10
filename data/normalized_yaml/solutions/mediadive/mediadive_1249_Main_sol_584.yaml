@@ -1,0 +1,24 @@
+preferred_term: Main sol. 584
+term:
+  id: mediadive.solution:1249
+  label: Main sol. 584
+composition:
+- preferred_term: Brucella agar
+  concentration:
+    value: '909.090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1854
+    label: Brucella agar
+- preferred_term: Sheep blood
+  concentration:
+    value: '90.9090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+preparation_notes: 'Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving,
+  then add 100 ml/l sheep blood.
+
+
+  Original volume: 1100 mL'

@@ -1,0 +1,31 @@
+preferred_term: Pyrrole-2-carboxylic acid solution
+term:
+  id: mediadive.solution:5622
+  label: Pyrrole-2-carboxylic acid solution
+composition:
+- preferred_term: Pyrrole-2-carboxylic acid
+  concentration:
+    value: '1111'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2108
+    label: Pyrrole-2-carboxylic acid
+  chebi_term:
+    id: CHEBI:36751
+    label: pyrrole-2-carboxylic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve 10 mol pyrrole-2-carboxylic acid per liter potassium phosphate
+  buffer (50 mM; pH 7.2) and sterilize the solution by membrane filtration.

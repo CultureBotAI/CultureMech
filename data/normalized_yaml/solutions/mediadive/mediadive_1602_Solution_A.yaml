@@ -1,0 +1,138 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1602
+  label: Solution A
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '14.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '3.53893'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.78059'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.384227'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.33367'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaBr
+  concentration:
+    value: '0.0505561'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:353
+    label: NaBr
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '0.0151668'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: SrCl2 x 6 H2O
+  concentration:
+    value: '0.00707786'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:176
+    label: SrCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KI
+  concentration:
+    value: '5.05561e-05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:354
+    label: KI
+  chebi_term:
+    id: CHEBI:138791
+    label: Asp-Lys-Ile
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000505561'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Double distilled water
+  concentration:
+    value: '990.8998988877654'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 989 mL'

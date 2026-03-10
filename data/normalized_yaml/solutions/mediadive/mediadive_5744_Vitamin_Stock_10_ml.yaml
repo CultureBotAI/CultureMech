@@ -1,0 +1,42 @@
+preferred_term: Vitamin Stock (10 ml)
+term:
+  id: mediadive.solution:5744
+  label: Vitamin Stock (10 ml)
+composition:
+- preferred_term: Para-aminobenzoic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:844
+    label: Para-aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Vitamin B12
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: D-Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:879
+    label: D-Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 10 mL'

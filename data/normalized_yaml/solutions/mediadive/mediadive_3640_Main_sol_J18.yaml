@@ -1,0 +1,69 @@
+preferred_term: Main sol. J18
+term:
+  id: mediadive.solution:3640
+  label: Main sol. J18
+composition:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast autolysate
+  concentration:
+    value: '4.9505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1603
+    label: Yeast autolysate
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate
+  concentration:
+    value: '11.8812'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glucose
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 5.1-5.3.
+
+
+  Original volume: 1010 mL'

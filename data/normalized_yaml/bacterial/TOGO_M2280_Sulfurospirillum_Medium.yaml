@@ -4,26 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: 'Solution A:'
-  concentration:
-    value: '900'
-    unit: G_PER_L
-- preferred_term: 'Solution B:'
-  concentration:
-    value: '30'
-    unit: G_PER_L
-- preferred_term: 'Solution C: Trace element solution SL-10'
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: 'Solution D:'
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: 'Solution E:'
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -267,4 +247,34 @@ curation_history:
     Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas;
     Added default concentration for ingredient: N2; Added default concentration for
     ingredient: N2; Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:38.465447+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 'Solution A:'
+  composition: []
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: 'Solution B:'
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: 'Solution C: Trace element solution SL-10'
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: 'Solution D:'
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: 'Solution E:'
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L

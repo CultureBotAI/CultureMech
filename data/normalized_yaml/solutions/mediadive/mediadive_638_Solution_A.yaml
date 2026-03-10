@@ -1,0 +1,52 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:638
+  label: Solution A
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.05761'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-vanillate
+  concentration:
+    value: '2.05761'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:393
+    label: Na-vanillate
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '637.8600823045267'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.9 before autoclaving.
+
+
+  Original volume: 972 mL'

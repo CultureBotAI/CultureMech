@@ -1,0 +1,29 @@
+preferred_term: 3-chloroacrylic acid solution
+term:
+  id: mediadive.solution:5618
+  label: 3-chloroacrylic acid solution
+composition:
+- preferred_term: 3-Chloroacrylic acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2104
+    label: 3-Chloroacrylic acid
+  chebi_term:
+    id: CHEBI:19982
+    label: 3-chloroacrylic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match

@@ -1,0 +1,78 @@
+preferred_term: Basal salts solution
+term:
+  id: mediadive.solution:4011
+  label: Basal salts solution
+composition:
+- preferred_term: Na3-EDTA
+  concentration:
+    value: '4.07921'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:194
+    label: Na3-EDTA
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x H2O
+  concentration:
+    value: '1.09901'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1735
+    label: FeSO4 x H2O
+  chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '24.4059'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '2.91089'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '23.1683'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 1010 mL'

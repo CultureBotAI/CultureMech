@@ -1,0 +1,91 @@
+preferred_term: Main sol. 849
+term:
+  id: mediadive.solution:1737
+  label: Main sol. 849
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '30'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:788
+    label: Absolute ethanol
+- preferred_term: Glacial acetic acid
+  concentration:
+    value: '30'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:787
+    label: Glacial acetic acid
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '940'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Both liquid and solid media are prepared by autoclaving the medium
+  without the addition of glacial acetic acid and absolute ethanol. Glacial acetic
+  acid and absolute ethanol are sterilised either by filtration (use Teflon filters)
+  or they may be autoclaved in completely closed screw cap glass bottles sealed with
+  a Teflon coated septum. A double layer system das not appear to be essential for
+  the growth of this organism, however, plates should be incubated in sealed containers
+  to keep the humidity high (> 90%).

@@ -1,0 +1,54 @@
+preferred_term: Se/W solution
+term:
+  id: mediadive.solution:4376
+  label: Se/W solution
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:699
+    label: Na2SeO3
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:249
+    label: Na2WO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

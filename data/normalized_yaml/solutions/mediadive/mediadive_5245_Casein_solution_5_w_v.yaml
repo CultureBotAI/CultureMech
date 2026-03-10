@@ -1,0 +1,35 @@
+preferred_term: Casein solution 5%(w/v)
+term:
+  id: mediadive.solution:5245
+  label: Casein solution 5%(w/v)
+composition:
+- preferred_term: Casein
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1381
+    label: Casein
+  chebi_term:
+    id: CHEBI:3448
+    label: Casein
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Suspend casein in distilled water and keep at 50C. Titrate pH
+  to 8.2 - 8.5 with 1 M NaOH solution, until pH is stabilized. Autoclave the solution
+  at 120C for 40 min in a closed bottle.
+
+
+  Original volume: 100 mL'

@@ -1,0 +1,31 @@
+preferred_term: ' Na2CO3 solution'
+term:
+  id: mediadive.solution:1783
+  label: ' Na2CO3 solution'
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '106'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve 106 g Na2CO3 in 1 liter of degassed H2O. Autoclave in
+  sealed serum bottles under CO2.

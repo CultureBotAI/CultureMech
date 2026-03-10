@@ -1,0 +1,25 @@
+preferred_term: Main sol. J655
+term:
+  id: mediadive.solution:4542
+  label: Main sol. J655
+composition:
+- preferred_term: GAM agar
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+  notes: ' modified'
+  term:
+    id: mediadive.compound:1843
+    label: GAM agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

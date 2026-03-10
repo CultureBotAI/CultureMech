@@ -19,10 +19,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-- preferred_term: Modified UBS solution (see Medium [M896])
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -32,16 +28,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 1.0 M FeSO4 solution (pH 2.0)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M897
   term:
@@ -67,3 +53,27 @@ curation_history:
   date: '2026-02-03T11:21:01.147362'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:19.136247+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Modified UBS solution (see Medium [M896])
+  composition: []
+  notes: Cross-reference to Medium M896
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: 1.0 M FeSO4 solution (pH 2.0)
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
+  composition: []
+  notes: Cross-reference to Medium M773
+  concentration:
+    value: '10'
+    unit: G_PER_L

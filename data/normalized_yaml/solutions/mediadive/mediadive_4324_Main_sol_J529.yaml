@@ -1,0 +1,31 @@
+preferred_term: Main sol. J529
+term:
+  id: mediadive.solution:4324
+  label: Main sol. J529
+composition:
+- preferred_term: Thioglycolate
+  concentration:
+    value: '29.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:287
+    label: Thioglycolate
+  chebi_term:
+    id: CHEBI:47869
+    label: thioglycolate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Comment: The medium is semisolid. For strain JCM 13596, prepare
+  the medium anaerobically (under N2).'

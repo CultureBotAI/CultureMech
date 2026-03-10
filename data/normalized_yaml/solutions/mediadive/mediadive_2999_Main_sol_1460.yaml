@@ -1,0 +1,131 @@
+preferred_term: Main sol. 1460
+term:
+  id: mediadive.solution:2999
+  label: Main sol. 1460
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '195'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2
+  concentration:
+    value: '32.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4
+  concentration:
+    value: '50.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaBr
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:353
+    label: NaBr
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Final pH 7.5
+
+  Add all the components together, except NaHCO3 which is added from a sterilized
+  stock solution when the autoclaved medium has cooled. Agar is added at a concentration
+  of 20 g/l for solid media.'

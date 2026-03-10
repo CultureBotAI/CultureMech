@@ -1,0 +1,22 @@
+preferred_term: PAS Ah Stock Solution 3
+term:
+  id: mediadive.solution:6223
+  label: PAS Ah Stock Solution 3
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '196.806'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''500''>500</span>
+  ml with MilliQ water.
+
+
+  Original volume: 501 mL'

@@ -11,10 +11,6 @@ media_term:
     label: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
 notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium863.pdf'
 ingredients:
-- preferred_term: Sodium carbonate solution
-  concentration:
-    value: '59.7638'
-    unit: G_PER_L
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -167,4 +163,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 863'
+- timestamp: '2026-03-09T08:04:22.046078+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Sodium carbonate solution
+  composition: []
+  concentration:
+    value: '59.7638'
+    unit: G_PER_L

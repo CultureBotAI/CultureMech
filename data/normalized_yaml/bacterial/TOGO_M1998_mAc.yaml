@@ -156,10 +156,6 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
-- preferred_term: P IV Metals solution*
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -237,4 +233,14 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:23.055124+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: P IV Metals solution*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L

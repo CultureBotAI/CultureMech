@@ -66,18 +66,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -183,20 +171,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After
-    cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    gas atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically, distribute the medium into culture vessels under the same
-    gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal with butyl rubber stoppers. Prior to use,
-    add per liter the following solution to reduce the medium (autoclaved and stored under N2):'
+  description: 'Aseptically and anaerobically, distribute the medium into culture
+    vessels under the same gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal
+    with butyl rubber stoppers. Prior to use, add per liter the following solution
+    to reduce the medium (autoclaved and stored under N2):'
 - step_number: 3
   action: MIX
   description: 'Comment:'
 - step_number: 4
   action: MIX
-  description: For cultivation of JCM 31104, use 1 M sodium lactate solution instead of 1 M glycerin solution
-    (final 10 mM).
+  description: For cultivation of JCM 31104, use 1 M sodium lactate solution instead
+    of 1 M glycerin solution (final 10 mM).
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +193,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1125'
+- timestamp: '2026-03-09T08:04:18.720492+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

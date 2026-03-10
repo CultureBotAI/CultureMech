@@ -5,13 +5,6 @@ description: 1340. NBRC 1339.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution (0.1
-    M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter autoclaving of agar
-    solution, aseptically mix 10xM9, MgSO4and CaCl2solutions. After cooling to 65°C, aseptically add phenanthrene
-    solution, mix by sonication for approximately 30 seconds and pour into the plates.*Agar solutionDissolve
-    15 g of agar in 900 ml of distilled water and sterilize by autoclaving.**10xM9 solutionKH2PO430gNa2HPO460gNH4Cl10gNaCl5gDistilled
-    water1LSterilize separately by autoclaving.***Dissolve in distilled water and sterilize by autoclaving.****Sterilized
-    by filtration. The use of DMSO-safe filters is recommended.
 - preferred_term: ''
   concentration:
     value: Agar solution*
@@ -64,3 +57,18 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1339, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1339.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:48.373313+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution
+    (0.1 M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter
+    autoclaving of agar solution, aseptically mix 10xM9, MgSO4and CaCl2solutions.
+    After cooling to 65°C, aseptically add phenanthrene solution, mix by sonication
+    for approximately 30 seconds and pour into the plates.*Agar solutionDissolve 15
+    g of agar in 900 ml of distilled water and sterilize by autoclaving.**10xM9 solutionKH2PO430gNa2HPO460gNH4Cl10gNaCl5gDistilled
+    water1LSterilize separately by autoclaving.***Dissolve in distilled water and
+    sterilize by autoclaving.****Sterilized by filtration. The use of DMSO-safe filters
+    is recommended.
+  composition: []

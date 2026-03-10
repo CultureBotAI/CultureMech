@@ -1,0 +1,19 @@
+preferred_term: Main sol. 443
+term:
+  id: mediadive.solution:5613
+  label: Main sol. 443
+composition:
+- preferred_term: Phenyl acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2100
+    label: Phenyl acetate
+  chebi_term:
+    id: CHEBI:18401
+    label: phenylacetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "To medium 442 add 0.05% phenylacetate as carbon source instead\
+  \ of toluene, sterilized\r\nby filtration."

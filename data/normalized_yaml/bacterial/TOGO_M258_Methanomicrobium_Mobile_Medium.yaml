@@ -110,14 +110,6 @@ ingredients:
   concentration:
     value: '300'
     unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Fatty acid mixture (see below)
   concentration:
     value: '20'
@@ -223,3 +215,20 @@ curation_history:
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: clarified rumen fluid;
     Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:13.602030+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

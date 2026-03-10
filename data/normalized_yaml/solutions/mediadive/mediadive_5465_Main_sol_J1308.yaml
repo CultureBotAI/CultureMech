@@ -1,0 +1,130 @@
+preferred_term: Main sol. J1308
+term:
+  id: mediadive.solution:5465
+  label: Main sol. J1308
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '2.28856'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '2.88557'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.497512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '845.771144278607'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '99.50248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(NH4)citrate
+  concentration:
+    value: '19.900497512437813'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1203
+    label: Fe(NH4)citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.950248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium lactate
+  concentration:
+    value: '19.900497512437813'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1392
+    label: Sodium lactate
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly, adjust pH to 6.8 and autoclave. After\
+  \ cooling, add the following solutions (autoclaved): \nAseptically distribute the\
+  \ medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) and seal with\
+  \ butyl rubber stoppers. Replace the gas phase with N2 containing 5-10% O2 (by volume).\n\
+  \nOriginal volume: 1005 mL"

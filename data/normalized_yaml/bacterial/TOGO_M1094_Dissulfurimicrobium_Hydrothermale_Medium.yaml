@@ -67,10 +67,6 @@ ingredients:
   term:
     id: CHEBI:14258
     label: ''
-- preferred_term: Trace elements solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Ferrihydrite suspension (see below)
   concentration:
     value: '200'
@@ -89,10 +85,6 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
@@ -295,4 +287,20 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2; Added default concentration
     for ingredient: CO2; Added default concentration for ingredient: Ferrihydrite'
+- timestamp: '2026-03-09T08:04:23.203612+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace elements solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

@@ -1,0 +1,124 @@
+preferred_term: Main sol. 845
+term:
+  id: mediadive.solution:1732
+  label: Main sol. 845
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '4.98504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Disodium succinate
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1189
+    label: Disodium succinate
+  chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '0.00199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '0.00199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:14
+    label: MnSO4 x H2O
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Catalase
+  concentration:
+    value: '0.9970089730807578'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:270
+    label: Catalase
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '997.0089730807578'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients except trace elements, vitamins and catalase,
+  adjust pH to 7.2 - 7.4, bring medium to the boil and cool to room temperature under
+  100% N2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+  tubes or serum vials and autoclave. To complete the medium add trace elements, vitamins
+  and catalase from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
+  Vitamins and catalase should be sterilized by filtration. After inoculation, inject
+  sterile air into the culture vessel up to about 20% of the total gas volume (i.e.,
+  4 parts N2 and 1 part air).
+
+
+  Original volume: 1003 mL'

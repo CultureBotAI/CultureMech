@@ -1,0 +1,42 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:2563
+  label: Solution C
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '0.109432'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nitrilotriacetate
+  concentration:
+    value: '0.458736'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:499
+    label: Nitrilotriacetate
+  chebi_term:
+    id: CHEBI:25548
+    label: nitrilotriacetate(3-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: TiCl3
+  concentration:
+    value: '6.34615'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1142
+    label: TiCl3
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 13 mL'

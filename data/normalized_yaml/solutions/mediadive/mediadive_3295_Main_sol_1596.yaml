@@ -1,0 +1,152 @@
+preferred_term: Main sol. 1596
+term:
+  id: mediadive.solution:3295
+  label: Main sol. 1596
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '2.99103'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '19.9402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '14.9551'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-formate
+  concentration:
+    value: '3.38983'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:144
+    label: Na-formate
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-acetate
+  concentration:
+    value: '0.159521'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:23
+    label: Na-acetate
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0199402'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.249252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '997.0089730807578'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve sodium chloride and hydrogenphosphate, then sparge solution
+  with 100% N2 gas for at least 30 - 45 min to make it anoxic. Add and dissolve hydrogencarbonate
+  and carbonate while gassing the head space only, then dispense under 100% N2 gas
+  atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+  add ammonium chloride, magnesium sulfate, trace elements, formate, acetate, yeast
+  extract, vitamins and sulfide from sterile anoxic stock solutions prepared under
+  100% N2 gas. Vitamins should be sterilized by filtration. The pH of the complete
+  medium should be 9.5.
+
+  Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
+  freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning.
+  For transfers use 5 - 10% inoculum.
+
+
+  Original volume: 1003 mL'

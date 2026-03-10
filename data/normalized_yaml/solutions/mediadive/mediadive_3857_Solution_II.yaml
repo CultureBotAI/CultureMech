@@ -1,0 +1,22 @@
+preferred_term: Solution II
+term:
+  id: mediadive.solution:3857
+  label: Solution II
+composition:
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Separately autoclave Solutions I and II. Mix aseptically and adjust
+  final pH to 7.7-7.8.
+
+
+  Original volume: 500 mL'

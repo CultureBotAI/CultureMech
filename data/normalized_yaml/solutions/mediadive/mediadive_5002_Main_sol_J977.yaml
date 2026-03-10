@@ -1,0 +1,57 @@
+preferred_term: Main sol. J977
+term:
+  id: mediadive.solution:5002
+  label: Main sol. J977
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.027'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HEPES
+  concentration:
+    value: '3.57'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '790'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl.
+  Distribute the medium into culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch
+  tubes), seal with butyl rubber stoppers and autoclave. After cooling, add the following
+  solution (per 900 ml, autoclaved): '

@@ -1,0 +1,104 @@
+preferred_term: Main sol. 1816
+term:
+  id: mediadive.solution:6326
+  label: Main sol. 1816
+composition:
+- preferred_term: Malt extract
+  concentration:
+    value: '36.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:116
+    label: Malt extract
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Desicatted Ox-bile
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2375
+    label: Desicatted Ox-bile
+- preferred_term: Tween 40
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:503
+    label: Tween 40
+  chebi_term:
+    id: CHEBI:53423
+    label: tween 40
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glycerol
+  concentration:
+    value: '2.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Olive oil
+  concentration:
+    value: '2.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1674
+    label: Olive oil
+- preferred_term: (-)-Chloramphenicol
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2191
+    label: (-)-Chloramphenicol
+  chebi_term:
+    id: CHEBI:17548
+    label: chloramphenicol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 500 mL'

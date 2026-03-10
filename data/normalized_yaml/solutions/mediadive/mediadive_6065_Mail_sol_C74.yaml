@@ -1,0 +1,21 @@
+preferred_term: Mail sol. C74
+term:
+  id: mediadive.solution:6065
+  label: Mail sol. C74
+composition:
+- preferred_term: Natural sea water
+  concentration:
+    value: '950'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Filter natural seawater and reduce to 95% using glass distilled\
+  \ water.  Autoclave.\nIngredients above should be autoclaved separately and added\
+  \ together cold using \r\naseptic techniques.  Sterilise for 15 minutes at 15 psi\
+  \ and use when cooled to room \r\ntemperature."

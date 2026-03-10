@@ -1,0 +1,20 @@
+preferred_term: Main sol. 1420
+term:
+  id: mediadive.solution:2900
+  label: Main sol. 1420
+composition:
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1.25e-06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "For solid media add 15.0 g agar to solution B\nAutoclave solution\
+  \ A and B separately and combine after cooling.\nPrepare the liquid medium. Before\
+  \ inoculation add from sterile stock solutions: \n\nOriginal volume: 1050 mL"

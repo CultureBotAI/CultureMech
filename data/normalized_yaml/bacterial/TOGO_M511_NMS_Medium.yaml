@@ -40,14 +40,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
-- preferred_term: Trace element solution (see below)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: 20 x Phosphate solution (see below)
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: methane--air (50:50)
   notes: 'Properties: Gas'
   concentration:
@@ -167,4 +159,19 @@ curation_history:
   date: '2026-02-03T11:20:59.156924'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: methane--air (50:50)'
+- timestamp: '2026-03-09T08:04:28.128493+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution (see below)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: 20 x Phosphate solution (see below)
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

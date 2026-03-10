@@ -1,0 +1,89 @@
+preferred_term: Main sol. 668
+term:
+  id: mediadive.solution:1410
+  label: Main sol. 668
+composition:
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin-free casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:654
+    label: Vitamin-free casamino acids
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na glutamate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:839
+    label: Na glutamate
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium glycerophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1697
+    label: Sodium glycerophosphate
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin B12
+  concentration:
+    value: 1e-06
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback

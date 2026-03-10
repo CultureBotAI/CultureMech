@@ -106,3 +106,7 @@ data/normalized_yaml/**/.DS_Store
 data/processed/
 dismech/
 data/embeddings/*.tsv.gz
+
+# KG-Microbe data files (too large for GitHub)
+data/kgm/merged-kg_edges.tsv
+data/kgm/merged-kg_nodes.tsv

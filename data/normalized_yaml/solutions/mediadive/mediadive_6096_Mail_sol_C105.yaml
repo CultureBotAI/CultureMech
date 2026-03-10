@@ -1,0 +1,20 @@
+preferred_term: Mail sol. C105
+term:
+  id: mediadive.solution:6096
+  label: Mail sol. C105
+composition:
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Dispense nutrient and vitamin solutions separately into 10 ml\
+  \ and 1 ml respectively \r\nand autoclave at 15 psi for 15 minutes.  Add an aliquot\
+  \ of each aseptically to 10\r\nlitres of sterilised seawater."

@@ -1,0 +1,82 @@
+preferred_term: Main sol. 429d
+term:
+  id: mediadive.solution:872
+  label: Main sol. 429d
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: FeCl3
+  concentration:
+    value: '0.3244'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:403
+    label: FeCl3
+  chebi_term:
+    id: CHEBI:30808
+    label: iron trichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:492
+    label: Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Dissolve Columbia agar base in 70% artificial seawater and add
+  additional 2 g agar per liter. Autoclave and mix solution with 4% horse or sheep
+  blood after cooling to 50°C. Add 1% glucose, 2 mM FeCl3 and 0.1% cysteine, mix well
+  and pour plates. Rehydrate pellets of freeze-dried ampoules in liquid medium 220
+  or 215.

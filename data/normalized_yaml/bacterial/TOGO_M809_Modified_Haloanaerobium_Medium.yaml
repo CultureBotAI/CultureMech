@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '8.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -26,7 +28,8 @@ ingredients:
   concentration:
     value: '75'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -34,7 +37,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -43,14 +47,6 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -64,20 +60,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10% Glucose solution
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Thioglycolate--ascorbate solution* (see below)
-  concentration:
-    value: '25'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '25'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -121,5 +109,33 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.682459'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+- timestamp: '2026-03-09T08:04:48.362147+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 10% Glucose solution
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Thioglycolate--ascorbate solution* (see below)
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L

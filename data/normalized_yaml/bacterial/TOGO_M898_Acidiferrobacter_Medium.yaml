@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '885'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,41 +17,26 @@ ingredients:
   concentration:
     value: '26.64'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Sulfur (powder)
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:14258
     label: ''
-- preferred_term: Modified UBS solution (see Medium [M896])
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 1.0 M FeSO4 solution (pH 2.0)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 100 mM Potassium tetrathionate solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M898
   term:
@@ -76,3 +62,33 @@ curation_history:
   date: '2026-02-03T11:21:01.150997'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:48.791389+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Modified UBS solution (see Medium [M896])
+  composition: []
+  notes: Cross-reference to Medium M896
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: 1.0 M FeSO4 solution (pH 2.0)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 100 mM Potassium tetrathionate solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
+  composition: []
+  notes: Cross-reference to Medium M773
+  concentration:
+    value: '10'
+    unit: G_PER_L

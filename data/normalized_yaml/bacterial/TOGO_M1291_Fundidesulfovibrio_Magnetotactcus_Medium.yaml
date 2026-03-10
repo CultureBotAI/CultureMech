@@ -50,10 +50,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Modified Wolfe's mineral solution (see Medium [M961])
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -65,19 +61,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
     Complex component'
-- preferred_term: 5% L-Cysteine·HCl·H2O solution (pH 7.0)
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: 10 mM Fe quinate solution* (see below)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium [M961])
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '50'
@@ -130,3 +113,31 @@ curation_history:
   date: '2026-02-03T11:20:47.013053'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:05:01.094125+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Wolfe's mineral solution (see Medium [M961])
+  composition: []
+  notes: Cross-reference to Medium M961
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: 5% L-Cysteine·HCl·H2O solution (pH 7.0)
+  composition: []
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: 10 mM Fe quinate solution* (see below)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M961])
+  composition: []
+  notes: Cross-reference to Medium M961
+  concentration:
+    value: '5'
+    unit: G_PER_L

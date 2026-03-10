@@ -1,0 +1,95 @@
+preferred_term: Main sol. 1145
+term:
+  id: mediadive.solution:2296
+  label: Main sol. 1145
+composition:
+- preferred_term: Double distilled water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Elemental sulphur
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:884
+    label: Elemental sulphur
+  chebi_term:
+    id: CHEBI:33403
+    label: elemental sulfur
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaS2O3 x 5 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1018
+    label: NaS2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.48'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Each of the solutions (A, B, and C) is prepared with anaerobic\
+  \ double distilled water.\nThe medium is prepared anaerobically under nitrogen gas\
+  \ and dispensed into Hungate tubes or serum bottle sealed with rubber septa. The\
+  \ medium to gas phase ratio should be about 1:10 (v:v). \r\nSterilise the medium\
+  \ by heating at 100° C for 3 hours on three consecutive days (e.g., in a water bath).\n\
+  Add  4% O2 for microaerophilic conditions."

@@ -1,0 +1,219 @@
+preferred_term: Main sol. 1406
+term:
+  id: mediadive.solution:2855
+  label: Main sol. 1406
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '151'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '84'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2SO4
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:382
+    label: K2SO4
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2WO4
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:550
+    label: Na2WO4
+  chebi_term:
+    id: CHEBI:63940
+    label: sodium tungstate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: H3BO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SeO4
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:375
+    label: Na2SeO4
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '36'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: after autoclaving
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: after autoclaving
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-lactate
+  concentration:
+    value: '1.1206'
+    unit: G_PER_L
+  notes: after autoclaving
+  term:
+    id: mediadive.compound:200
+    label: Na-lactate
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Arsenate
+  concentration:
+    value: '0.694595'
+    unit: G_PER_L
+  notes: after autoclaving
+  term:
+    id: mediadive.compound:1261
+    label: Arsenate
+  chebi_term:
+    id: CHEBI:29125
+    label: arsenate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cysteine HCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: after autoclaving
+  term:
+    id: mediadive.compound:1198
+    label: Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Prepare the liquid medium without the following. NaHCO3, yeast\
+  \ extract, Na-lactate,\r\narsenate. Adjust to pH 9.5. Boil the medium in a water\
+  \ bath and cool under N2. to room\r\ntemperature. Dispense the medium into Hungate\
+  \ tubes or serum bottles under gassing\r\nwith N2. Sterilize by autoclaving. Before\
+  \ inoculation add from sterile stock solutions:"

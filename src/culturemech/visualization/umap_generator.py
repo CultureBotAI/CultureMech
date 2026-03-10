@@ -11,7 +11,8 @@ from typing import Dict, List
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-from culturemech.embedding.aggregator import MediaEmbedding, MediaVectorAggregator
+from culturemech.embedding.aggregator import MediaEmbedding
+from culturemech.embedding.aggregator_yaml_source import MediaVectorAggregatorYAML
 from culturemech.embedding.dimensionality import reduce_to_2d
 from culturemech.embedding.loader import EmbeddingLoader
 
@@ -51,7 +52,7 @@ class UMAPVisualizationGenerator:
         print("\n[1/6] Loading embeddings...")
         embeddings = EmbeddingLoader.load_embeddings(
             embeddings_path=embeddings_path,
-            node_prefixes=["CHEBI", "NCBITaxon", "mediadive.medium", "FOODON", "mediadive.ingredient"],
+            node_prefixes=["CHEBI", "NCBITaxon", "mediadive.medium", "mediadive.solution", "FOODON", "mediadive.ingredient", "mediadive.compound"],
             cache_dir=cache_dir,
             force_reload=force_reload,
         )
@@ -63,7 +64,11 @@ class UMAPVisualizationGenerator:
 
         # Step 3: Generate derived embeddings
         print("\n[3/6] Aggregating derived embeddings...")
-        aggregator = MediaVectorAggregator(embeddings)
+        aggregator = MediaVectorAggregatorYAML(
+            embeddings,
+            solution_mapping_path=Path("data/solution_to_chebi_mapping.json"),
+            name_mapping_path=Path("data/chemical_name_to_chebi_mapping_enhanced.json")
+        )
         derived_embeddings = aggregator.aggregate_derived_embeddings(
             media_yamls, min_coverage=min_coverage
         )
@@ -99,11 +104,28 @@ class UMAPVisualizationGenerator:
         print("=" * 70)
 
     def _collect_media_yamls(self, media_dir: Path) -> List[Path]:
-        """Collect all media YAML files from directory tree."""
+        """
+        Collect all media and solution YAML files from directory tree.
+
+        Includes:
+        - Media files from category subdirectories (bacterial, fungal, etc.)
+        - Solution files from solutions/mediadive/ directory
+
+        Returns list with all YAML paths sorted by name.
+        """
         media_yamls = []
+
+        # Collect media from category directories
         for category_dir in media_dir.iterdir():
-            if category_dir.is_dir():
+            if category_dir.is_dir() and category_dir.name != "solutions":
                 media_yamls.extend(category_dir.glob("*.yaml"))
+
+        # Collect solutions from solutions directory
+        solutions_dir = media_dir / "solutions" / "mediadive"
+        if solutions_dir.exists():
+            media_yamls.extend(solutions_dir.glob("*.yaml"))
+            print(f"  + Found {len(list(solutions_dir.glob('*.yaml')))} solution files")
+
         return sorted(media_yamls)
 
     def _generate_html(
@@ -143,7 +165,7 @@ class UMAPVisualizationGenerator:
     def _build_plot_data(
         self, df, embeddings: Dict[str, MediaEmbedding], media_dir: Path
     ) -> List[dict]:
-        """Build plot data structure with metadata for each medium."""
+        """Build plot data structure with metadata for each medium/solution."""
         plot_data = []
 
         for _, row in df.iterrows():
@@ -153,12 +175,16 @@ class UMAPVisualizationGenerator:
             # Load YAML for metadata
             metadata = self._extract_metadata(medium_id, media_dir)
 
+            # Determine entity type (medium vs solution)
+            entity_type = metadata.get("entity_type", "medium")
+
             plot_data.append(
                 {
                     "id": medium_id,
                     "x": float(row["umap_x"]),
                     "y": float(row["umap_y"]),
                     "name": metadata.get("name", medium_id),
+                    "entity_type": entity_type,  # NEW: medium vs solution
                     "category": metadata.get("category", "unknown"),
                     "medium_type": metadata.get("medium_type", "unknown"),
                     "physical_state": metadata.get("physical_state", "unknown"),
@@ -173,10 +199,30 @@ class UMAPVisualizationGenerator:
         return plot_data
 
     def _extract_metadata(self, medium_id: str, media_dir: Path) -> dict:
-        """Extract metadata from media YAML file."""
-        # Find YAML file in category subdirectories
+        """Extract metadata from media or solution YAML file."""
+        # Check if this is a solution (starts with mediadive_)
+        if medium_id.startswith("mediadive_"):
+            # Look in solutions directory
+            solutions_dir = media_dir / "solutions" / "mediadive"
+            yaml_path = solutions_dir / f"{medium_id}.yaml"
+            if yaml_path.exists():
+                try:
+                    with open(yaml_path, "r") as f:
+                        data = yaml.safe_load(f)
+                        return {
+                            "name": data.get("preferred_term", medium_id),
+                            "entity_type": "solution",
+                            "category": "solution",
+                            "medium_type": "solution",
+                            "physical_state": "solution",
+                            "source_database": "mediadive",
+                        }
+                except Exception:
+                    pass
+
+        # Otherwise, find YAML file in category subdirectories (media)
         for category_dir in media_dir.iterdir():
-            if category_dir.is_dir():
+            if category_dir.is_dir() and category_dir.name != "solutions":
                 yaml_path = category_dir / f"{medium_id}.yaml"
                 if yaml_path.exists():
                     try:
@@ -184,6 +230,7 @@ class UMAPVisualizationGenerator:
                             data = yaml.safe_load(f)
                             return {
                                 "name": data.get("name", medium_id),
+                                "entity_type": "medium",
                                 "category": category_dir.name,
                                 "medium_type": data.get("medium_type", "unknown"),
                                 "physical_state": data.get("physical_state", "unknown"),
@@ -192,7 +239,7 @@ class UMAPVisualizationGenerator:
                     except Exception:
                         pass
 
-        return {}
+        return {"entity_type": "medium"}
 
     def _infer_source_database(self, media_data: dict) -> str:
         """Infer source database from media term ID."""

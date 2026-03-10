@@ -1,0 +1,68 @@
+preferred_term: Main sol. 1426
+term:
+  id: mediadive.solution:2920
+  label: Main sol. 1426
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "adjust pH to 5.5\nAdd to 1000 ml of medium after autoclaving:\
+  \ \nFor solid medium use purified agar (Oxoid LP0028) which has to be autoclaved\
+  \ separately."

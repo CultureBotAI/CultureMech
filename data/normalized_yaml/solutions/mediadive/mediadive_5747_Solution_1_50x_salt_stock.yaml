@@ -1,0 +1,43 @@
+preferred_term: Solution 1 (50x salt stock)
+term:
+  id: mediadive.solution:5747
+  label: Solution 1 (50x salt stock)
+composition:
+- preferred_term: MgSO4 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:679
+    label: MgSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:91245
+    label: copper(II) chloride pentahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve the ingredients listed above (in that order) in about
+  700 ml of distilled water, and then make up to 1 litre

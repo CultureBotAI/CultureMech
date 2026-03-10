@@ -1,0 +1,165 @@
+preferred_term: Main sol. J133
+term:
+  id: mediadive.solution:3773
+  label: Main sol. J133
+composition:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.91022'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.477555'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Hemin
+  concentration:
+    value: '0.9551098376313276'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:704
+    label: Hemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '0.477555'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cellobiose
+  concentration:
+    value: '0.477555'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Starch
+  concentration:
+    value: '0.477555'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '17.192'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.4775549188156638'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Toray silicone SH 5535
+  concentration:
+    value: '4.7755491881566385'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1638
+    label: Toray silicone SH 5535
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '9.551098376313277'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Ascorbic acid
+  concentration:
+    value: '1.9102196752626552'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:701
+    label: L-Ascorbic acid
+  chebi_term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2SO3
+  concentration:
+    value: '95.51098376313276'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:109
+    label: Na2SO3
+  chebi_term:
+    id: CHEBI:86477
+    label: sodium sulfite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '811.8433619866285'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.7-6.8.
+
+
+  Original volume: 1047 mL'

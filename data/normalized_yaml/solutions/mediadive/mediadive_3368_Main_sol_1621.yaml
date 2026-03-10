@@ -1,0 +1,41 @@
+preferred_term: Main sol. 1621
+term:
+  id: mediadive.solution:3368
+  label: Main sol. 1621
+composition:
+- preferred_term: Marine Broth
+  concentration:
+    value: '7.48'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:545
+    label: Marine Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '250'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

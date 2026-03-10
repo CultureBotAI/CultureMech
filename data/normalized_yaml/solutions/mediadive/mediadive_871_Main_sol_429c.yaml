@@ -1,0 +1,56 @@
+preferred_term: Main sol. 429c
+term:
+  id: mediadive.solution:871
+  label: Main sol. 429c
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:492
+    label: Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Mix autoclaved Columbia agar base solution with 4% horse or sheep
+  blood. After cooling to 50°C add 1% glucose and 0.1% cysteine, mix well and pour
+  plates. Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 215.

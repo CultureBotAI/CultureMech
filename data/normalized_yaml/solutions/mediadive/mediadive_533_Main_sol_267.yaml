@@ -1,0 +1,49 @@
+preferred_term: Main sol. 267
+term:
+  id: mediadive.solution:533
+  label: Main sol. 267
+composition:
+- preferred_term: Sugar beet molasses
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:346
+    label: Sugar beet molasses
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ginger
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:347
+    label: Ginger
+- preferred_term: Citric acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:348
+    label: Citric acid
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tap water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Inoculate with c. 20 ml of grains of "ginger beer plant".

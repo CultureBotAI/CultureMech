@@ -1,0 +1,175 @@
+preferred_term: Main sol. 110
+term:
+  id: mediadive.solution:184
+  label: Main sol. 110
+composition:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:128
+    label: Ground beef
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Casitone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: D-Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: add to make medium anoxic
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: if required
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Use lean beef or horse meat. Remove fat and connective tissue\
+  \ before grinding. Mix meat, water and NaOH, then boil for 15 min with stirring.\
+  \ Cool to room temperature, skim fat off surface, and filter, retaining both meat\
+  \ particles and filtrate. To the filtrate add water to a final volume of 1000 ml,\
+  \ and then add: \nTo make medium anoxic boil it, cool under 100% N2 gas atmosphere,\
+  \ add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under same\
+  \ gas atmosphere 7 ml medium into Hungate-type tubes (for strains demanding meat\
+  \ particles put those first into the tube (use 1 part meat particles to 4 or 5 parts\
+  \ fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0 g agar per 1000.0\
+  \ ml medium.\nIn some cases (as indicated in the catalogue) the addition of Haemin\
+  \ and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:\
+  \  and either  or "

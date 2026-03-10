@@ -1,0 +1,33 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:786
+  label: Solution E
+composition:
+- preferred_term: Na2S2O5
+  concentration:
+    value: '95'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:440
+    label: Na2S2O5
+  chebi_term:
+    id: CHEBI:114786
+    label: sodium disulfite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.5-8.0 with NaOH.
+
+
+  Original volume: 10 mL'

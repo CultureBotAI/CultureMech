@@ -1,0 +1,101 @@
+preferred_term: 'Stock B: Salt solution 200x (0,5 ml stock per 100 ml medium)'
+term:
+  id: mediadive.solution:5848
+  label: 'Stock B: Salt solution 200x (0,5 ml stock per 100 ml medium)'
+composition:
+- preferred_term: MgCl2 x 2 H2O
+  concentration:
+    value: '0.971'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:651
+    label: MgCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.273'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2
+  concentration:
+    value: '0.104'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:692
+    label: CoCl2
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '0.048'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1503
+    label: Na2 MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.035'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:699
+    label: Na2SeO3
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NiCl2 x 6 H2O
+  concentration:
+    value: '0.237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:40
+    label: NiCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.066'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:249
+    label: Na2WO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

@@ -1,0 +1,43 @@
+preferred_term: Main sol. J1207
+term:
+  id: mediadive.solution:5326
+  label: Main sol. J1207
+composition:
+- preferred_term: MgSO4
+  concentration:
+    value: '0.983284169124877'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.19665683382497542'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: N-Acetyl-D-glucosamine
+  concentration:
+    value: '9.83284169124877'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1669
+    label: N-Acetyl-D-glucosamine
+  chebi_term:
+    id: CHEBI:506227
+    label: N-acetylglucosamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix two media autoclaved separately. Aseptically add the following\
+  \ solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 1017 mL"

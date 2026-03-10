@@ -1,0 +1,143 @@
+preferred_term: Main sol. J1312
+term:
+  id: mediadive.solution:5472
+  label: Main sol. J1312
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '8.92857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '18.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '7.36607'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.892857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '4.46429'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '8.92857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '4.464285714285714'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '267.8571428571429'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Taurine
+  concentration:
+    value: '178.57142857142858'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2066
+    label: Taurine
+  chebi_term:
+    id: CHEBI:15891
+    label: taurine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '178.57142857142858'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium L-lactate
+  concentration:
+    value: '178.57142857142858'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1687
+    label: Sodium L-lactate
+  chebi_term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix ingredients, bring to a boil and cool down under a N2-CO2\
+  \ (4:1, v/v) gas stream and autoclave under the same gas mixture. After cooling,\
+  \ aseptically and anaerobically add per liter the following solutions (filter-sterilized):\
+  \ \nPrior to inoculation, aseptically and anaerobically add 0.01 volume of L-cysteine\
+  \ x HCl x H2O to the medium (3% solution, autoclaved and stored under a N2 atmosphere).\n\
+  \nOriginal volume: 112 mL"

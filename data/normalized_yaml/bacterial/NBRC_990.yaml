@@ -5,14 +5,6 @@ description: 990. NBRC 989.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Trypticase Peptone (BBL)2gBacto Yeast Extract (Difco)2g50% Sodium lactate25mlBiotin
-    solution*2mlK solution**10mlM solution***2.5mlC solution****2.5mlResazurin1mg15% Na2CO3solution20mlCysteine-HCl0.75gDistilled
-    water1LpH 7Mix ingredients except for Na2CO3and cysteine-HCl, dispense the medium into suitable culture
-    vessels under a stream of N2/CO2(80/20), seal with butyl rubber stoppers, and autoclave at 115℃ for
-    25 min. Aseptically and anaerobically add filter-sterile Na2CO3and cysteine-HCl solutions, and adjust
-    pH to 7.0 with 3 N HCl.*Biotin solutionBiotin5mgEthanol100ml**K solutionKH2PO490gNaCl90g(NH4)2SO490gDistilled
-    water1L***M solutionMnCl2·4H2O4gCoCl2·6H2O4gDistilled water1L****C solutionCaCl2·2H2O10.6gDistilled
-    water1L
 - preferred_term: ''
   concentration:
     value: Trypticase Peptone (BBL)
@@ -161,3 +153,18 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 989, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=989.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:22.623223+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trypticase Peptone (BBL)2gBacto Yeast Extract (Difco)2g50% Sodium
+    lactate25mlBiotin solution*2mlK solution**10mlM solution***2.5mlC solution****2.5mlResazurin1mg15%
+    Na2CO3solution20mlCysteine-HCl0.75gDistilled water1LpH 7Mix ingredients except
+    for Na2CO3and cysteine-HCl, dispense the medium into suitable culture vessels
+    under a stream of N2/CO2(80/20), seal with butyl rubber stoppers, and autoclave
+    at 115℃ for 25 min. Aseptically and anaerobically add filter-sterile Na2CO3and
+    cysteine-HCl solutions, and adjust pH to 7.0 with 3 N HCl.*Biotin solutionBiotin5mgEthanol100ml**K
+    solutionKH2PO490gNaCl90g(NH4)2SO490gDistilled water1L***M solutionMnCl2·4H2O4gCoCl2·6H2O4gDistilled
+    water1L****C solutionCaCl2·2H2O10.6gDistilled water1L
+  composition: []

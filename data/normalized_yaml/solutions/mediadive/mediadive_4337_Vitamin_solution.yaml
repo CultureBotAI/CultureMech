@@ -1,0 +1,90 @@
+preferred_term: Vitamin solution
+term:
+  id: mediadive.solution:4337
+  label: Vitamin solution
+composition:
+- preferred_term: Biotin
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-Calcium pantothenate
+  concentration:
+    value: '0.0065'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1720
+    label: DL-Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.0625'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Store in the dark at 4C.

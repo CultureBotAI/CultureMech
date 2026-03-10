@@ -1,0 +1,30 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:300
+  label: Solution E
+composition:
+- preferred_term: DL-Dithiothreitol
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:151
+    label: DL-Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 10 mL'

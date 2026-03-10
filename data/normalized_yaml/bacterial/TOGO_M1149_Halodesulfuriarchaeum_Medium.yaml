@@ -48,30 +48,6 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: 1 M NaHCO3 solution*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 1 M MgCl2 solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source'
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M1148])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
 - preferred_term: yeast extract
   concentration:
     value: '200'
@@ -110,4 +86,40 @@ curation_history:
   date: '2026-02-03T11:20:46.187269'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sodium formate'
+- timestamp: '2026-03-09T08:04:58.689549+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 1 M NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M MgCl2 solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M1148])
+  composition: []
+  notes: Cross-reference to Medium M1148
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'

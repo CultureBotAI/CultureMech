@@ -42,11 +42,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
     component'
-- preferred_term: Soil extract*
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
   preferred_term: TOGO Medium M1537
   term:
@@ -68,3 +63,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:36.354934+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Soil extract*
+  term:
+    id: mediadive.solution:5555
+    label: Soil extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5555_Soil_extract.yaml for composition

@@ -1,0 +1,30 @@
+preferred_term: Galactose stock solution (filter-sterilized)
+term:
+  id: mediadive.solution:4297
+  label: Galactose stock solution (filter-sterilized)
+composition:
+- preferred_term: Galactose
+  concentration:
+    value: '90.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:321
+    label: Galactose
+  chebi_term:
+    id: CHEBI:12936
+    label: D-galactose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 10 mL'

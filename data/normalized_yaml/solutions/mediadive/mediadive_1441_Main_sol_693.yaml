@@ -1,0 +1,30 @@
+preferred_term: Main sol. 693
+term:
+  id: mediadive.solution:1441
+  label: Main sol. 693
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Defibrinated sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1717
+    label: Defibrinated sheep blood
+preparation_notes: 'Columbia agar base supplemented with 5% defibrinated sheep blood.
+  Rehydrate pellets of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below).
+
+  ATTENTION: organisms, for which only M 693 is mentioned in the catalogue entry,
+  do not grow in one of the media listed below! Those are meant to rehydrate the freeze-dried
+  pellets, not for cultivation.'

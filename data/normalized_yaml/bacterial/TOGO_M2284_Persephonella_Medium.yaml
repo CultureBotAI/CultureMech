@@ -89,10 +89,6 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-- preferred_term: Trace element solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -236,4 +232,14 @@ curation_history:
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: CO2; Added default concentration for ingredient: O2; Added default
     concentration for ingredient: H2'
+- timestamp: '2026-03-09T08:04:29.229883+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

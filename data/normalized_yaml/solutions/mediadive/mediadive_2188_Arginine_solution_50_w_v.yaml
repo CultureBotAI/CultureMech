@@ -1,0 +1,34 @@
+preferred_term: Arginine solution 50%(w/v)
+term:
+  id: mediadive.solution:2188
+  label: Arginine solution 50%(w/v)
+composition:
+- preferred_term: L-Arginine x HCl
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:633
+    label: L-Arginine x HCl
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: '50 g L-Arginine hydrochloride plus distilled water to make up
+  to 100 ml.
+
+
+  Original volume: 100 mL'

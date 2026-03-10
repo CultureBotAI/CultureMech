@@ -1,0 +1,49 @@
+preferred_term: Main sol. 1488
+term:
+  id: mediadive.solution:3050
+  label: Main sol. 1488
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add
+  1 ml of solution 3, 1 ml of the trace elements, and 0.1 ml of solution 2. If solid
+  media is required add 1.5% agar. Autoclave the phosphate buffer separately. When
+  the growth medium is cool 10 ml/l of the phosphate buffer is added - if too warm
+  the phosphate will precipitate.
+
+  Add filter-sterilized methanol to produce 1% (final concentration).'

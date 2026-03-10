@@ -1,0 +1,33 @@
+preferred_term: Main sol. 277
+term:
+  id: mediadive.solution:545
+  label: Main sol. 277
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml
+  cherry extract, distribute in presterilized tubes and sterilize for 5 min at 120°C.
+
+  Final pH 3.8 - 4.6.'

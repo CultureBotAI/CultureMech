@@ -1,0 +1,45 @@
+preferred_term: CasAA mix 5x
+term:
+  id: mediadive.solution:5494
+  label: CasAA mix 5x
+composition:
+- preferred_term: Casamino acids
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:101
+    label: Casamino acids
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:449
+    label: L-Tryptophan
+  chebi_term:
+    id: CHEBI:16296
+    label: D-tryptophan
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'pH should be between 6-7, may depend on the casamino acid and
+  cysteine lot
+
+  steril filtration, store as batches at -20°C'

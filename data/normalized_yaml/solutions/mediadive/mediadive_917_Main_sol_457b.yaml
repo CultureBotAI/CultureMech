@@ -1,0 +1,22 @@
+preferred_term: Main sol. 457b
+term:
+  id: mediadive.solution:917
+  label: Main sol. 457b
+composition:
+- preferred_term: Tween 80
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "For DSM 7526, prepare medium 457 with 200 mg/l Tween 80. Prepare\
+  \ a solution of 2 g/l\r\nfluoranthene in acetone and filter sterilize using a cellulose\
+  \ filter membrane. Add 1 ml of\r\nthis stock solution to the sterilized culture\
+  \ flask. Let acetone evaporate. Add 20 ml\r\nmedium to the flask. Alternatively,\
+  \ the direct addition of about 1-2 mg fluoranthene to\r\nthe medium is possible."

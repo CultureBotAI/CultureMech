@@ -78,14 +78,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Menadione solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Fatty acid mixture (see Medium No. 266)
   term:
     id: CHEBI:35366
@@ -240,8 +232,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (9:1, v/v) gas mixture. After cooling,
-    aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (9:1, v/v)
+    gas mixture. After cooling, aseptically and anaerobically add the following solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.3, if necessary.
@@ -250,8 +243,9 @@ preparation_steps:
   description: 'Menadione solution:'
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave 100 mg menadione (vitamin K3) with 100 ml 5% NaHCO3 solution. Remove insoluble
-    residue by filtration. Store the solution under a N2-CO2 (8:2, v/v) gas mixture.
+  description: Autoclave 100 mg menadione (vitamin K3) with 100 ml 5% NaHCO3 solution.
+    Remove insoluble residue by filtration. Store the solution under a N2-CO2 (8:2,
+    v/v) gas mixture.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
@@ -266,3 +260,21 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:04.746691+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Menadione solution
+  term:
+    id: mediadive.solution:5549
+    label: Menadione solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5549_Menadione_solution.yaml for composition

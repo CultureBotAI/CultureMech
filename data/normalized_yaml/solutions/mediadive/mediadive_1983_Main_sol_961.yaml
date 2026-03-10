@@ -1,0 +1,63 @@
+preferred_term: Main sol. 961
+term:
+  id: mediadive.solution:1983
+  label: Main sol. 961
+composition:
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve resazurin in seawater, then sparge medium with 80% H2
+  and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
+  same gas atmosphere into serum vials (e.g., 20 ml medium per 100 ml bottle) and
+  autoclave. Add nitrate, yeast extract and sulfide from sterile anoxic stock solutions
+  prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.
+
+  After inoculation pressurize bottles to 2 bar overpressure with sterile 80% H2 and
+  20% CO2 gas mixture.
+
+  Note: Alternatively, aged filtered seawater can be used instead of synthetic seawater.'

@@ -1,0 +1,33 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:5638
+  label: Solution A
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '66.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'prepared under CO2 in an ice-bath, filter-sterilise
+
+
+  Original volume: 30 mL'

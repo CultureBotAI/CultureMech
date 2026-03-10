@@ -1,0 +1,30 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:363
+  label: Solution D
+composition:
+- preferred_term: m-Xylene
+  concentration:
+    value: '15.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:302
+    label: m-Xylene
+  chebi_term:
+    id: CHEBI:28488
+    label: m-xylene
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2,2,4,4,6,8,8-Heptamethylnonane
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:303
+    label: 2,2,4,4,6,8,8-Heptamethylnonane
+  chebi_term:
+    id: CHEBI:131383
+    label: 2,2,4,4,6,8,8-heptamethylnonane
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 20 mL'

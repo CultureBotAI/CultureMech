@@ -1,0 +1,43 @@
+preferred_term: Mail sol. C12
+term:
+  id: mediadive.solution:6003
+  label: Mail sol. C12
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '33.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tricine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2349
+    label: Tricine
+  chebi_term:
+    id: CHEBI:39063
+    label: N-tris(hydroxymethyl)methylglycine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up to 1 litre with deionized water and adjust pH to 7.6 -\
+  \ 7.8 with 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."

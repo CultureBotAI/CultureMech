@@ -1,0 +1,32 @@
+preferred_term: Main sol. 429b
+term:
+  id: mediadive.solution:870
+  label: Main sol. 429b
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix autoclaved Columbia agar base solution with 10% horse or sheep
+  blood, keep at 80°C for 10 min. Mix well and pour plates after cooling to 50°C.
+  Rehydrate pellets of freeze-dried ampoules in liquid medium 220, 215 or 1.

@@ -76,35 +76,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Trace element mixture*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite-tungstate solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin mixture***
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Bicarbonate solution (1.0 M)*****
-  concentration:
-    value: '30'
-    unit: G_PER_L
-- preferred_term: Sulfide solution******
-  concentration:
-    value: '24'
-    unit: G_PER_L
-- preferred_term: sodium lactate solution
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
   concentration:
@@ -377,4 +348,54 @@ curation_history:
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: N2'
+- timestamp: '2026-03-09T08:04:44.890867+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element mixture*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite-tungstate solution**
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
+- preferred_term: Vitamin mixture***
+  term:
+    id: mediadive.solution:5209
+    label: Vitamin mixture
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5209_Vitamin_mixture.yaml for composition
+- preferred_term: Vitamin B12 solution****
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Bicarbonate solution (1.0 M)*****
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Sulfide solution******
+  composition: []
+  concentration:
+    value: '24'
+    unit: G_PER_L
+- preferred_term: sodium lactate solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'

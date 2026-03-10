@@ -79,14 +79,6 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -97,31 +89,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 10% Yeast extract solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 1 M Maltose solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source'
-- preferred_term: Vitamin solution (see Medium [M560])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M1180
   term:
@@ -148,3 +115,51 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:05:03.039271+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+solutions:
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 10% Yeast extract solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 1 M Maltose solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+- preferred_term: Vitamin solution (see Medium [M560])
+  composition: []
+  notes: Cross-reference to Medium M560
+  concentration:
+    value: '1'
+    unit: G_PER_L

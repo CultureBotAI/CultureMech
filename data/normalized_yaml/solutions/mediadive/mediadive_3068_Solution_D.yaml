@@ -1,0 +1,144 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:3068
+  label: Solution D
+composition:
+- preferred_term: Pyridoxal hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:338
+    label: Pyridoxal hydrochloride
+  chebi_term:
+    id: CHEBI:131529
+    label: pyridoxal hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxal phosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:780
+    label: Pyridoxal phosphate
+  chebi_term:
+    id: CHEBI:18405
+    label: pyridoxal 5'-phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D
+  concentration:
+    value: '11.2'
+    unit: G_PER_L
+  notes: L-lactic acid, sodium salt
+  term:
+    id: mediadive.compound:1347
+    label: D
+  chebi_term:
+    id: CHEBI:140487
+    label: 5'-GGTTGGTGTGGTTGG-3'
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Hypoxanthine
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1348
+    label: Hypoxanthine
+  chebi_term:
+    id: CHEBI:17368
+    label: hypoxanthine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Uracil
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1349
+    label: Uracil
+  chebi_term:
+    id: CHEBI:17568
+    label: uracil
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Thymidine
+  concentration:
+    value: '0.048'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:455
+    label: Thymidine
+  chebi_term:
+    id: CHEBI:17748
+    label: thymidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: N-(2-acetamido)-2-aminoethanesulfonic acid
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1350
+    label: N-(2-acetamido)-2-aminoethanesulfonic acid
+  chebi_term:
+    id: CHEBI:39060
+    label: N-(2-acetamido)-2-aminoethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-carnitine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1351
+    label: DL-carnitine
+  chebi_term:
+    id: CHEBI:16347
+    label: L-carnitine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Putrescine 2 HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1352
+    label: Putrescine 2 HCl
+  chebi_term:
+    id: CHEBI:15603
+    label: L-leucine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phenol red
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:119
+    label: Phenol red
+  chebi_term:
+    id: CHEBI:31991
+    label: phenol red
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare Solutions D, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at -20°C
+
+
+  Original volume: 100 mL'

@@ -92,10 +92,6 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -106,15 +102,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10% Yeast extract solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -125,12 +112,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -170,3 +151,33 @@ curation_history:
     Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas;
     Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas'
+- timestamp: '2026-03-09T08:04:49.807925+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 10% Yeast extract solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'

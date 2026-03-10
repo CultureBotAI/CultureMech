@@ -1,0 +1,30 @@
+preferred_term: 1M Acetate solution 13.6 g/L
+term:
+  id: mediadive.solution:3417
+  label: 1M Acetate solution 13.6 g/L
+composition:
+- preferred_term: Sodium acetate trihydrate
+  concentration:
+    value: '13.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1954
+    label: Sodium acetate trihydrate
+  chebi_term:
+    id: CHEBI:32138
+    label: sodium acetate trihydrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH 7.0-7.2 and autoclave at 121°C for 15 min.

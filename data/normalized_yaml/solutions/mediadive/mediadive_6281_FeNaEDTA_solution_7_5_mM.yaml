@@ -1,0 +1,30 @@
+preferred_term: FeNaEDTA solution (7.5 mM)
+term:
+  id: mediadive.solution:6281
+  label: FeNaEDTA solution (7.5 mM)
+composition:
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.753'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1230
+    label: FeNa-EDTA
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.

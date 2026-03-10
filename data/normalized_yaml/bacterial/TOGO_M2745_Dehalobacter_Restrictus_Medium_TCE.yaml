@@ -4,39 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '860'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution D
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Solution E
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution F
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution G
-  concentration:
-    value: '15'
-    unit: G_PER_L
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '860'
@@ -257,14 +224,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Vitamin solution of medium 141
-  concentration:
-    value: '9'
-    unit: G_PER_L
-- preferred_term: Vitamin solution of medium 503
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
   concentration:
@@ -506,4 +465,81 @@ curation_history:
     ingredient: N2 gas; Added default concentration for ingredient: N2 gas; Added
     default concentration for ingredient: N2 gas; Added default concentration for
     ingredient: N2 gas'
+- timestamp: '2026-03-09T08:04:55.965415+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 10 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '860'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: Solution D
+  term:
+    id: mediadive.solution:5313
+    label: Solution D
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5313_Solution_D.yaml for composition
+- preferred_term: Solution E
+  term:
+    id: mediadive.solution:4959
+    label: Solution E
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_4959_Solution_E.yaml for composition
+- preferred_term: Solution F
+  term:
+    id: mediadive.solution:6293
+    label: Solution F
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6293_Solution_F.yaml for composition
+- preferred_term: Solution G
+  term:
+    id: mediadive.solution:3625
+    label: Solution G
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: See mediadive_3625_Solution_G.yaml for composition
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Vitamin solution of medium 141
+  composition: []
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: Vitamin solution of medium 503
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

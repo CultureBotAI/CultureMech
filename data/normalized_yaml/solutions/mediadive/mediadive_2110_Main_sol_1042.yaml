@@ -1,0 +1,130 @@
+preferred_term: Main sol. 1042
+term:
+  id: mediadive.solution:2110
+  label: Main sol. 1042
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '29.8507'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: VOSO4 x 5 H2O
+  concentration:
+    value: '4.97512e-05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:277
+    label: VOSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:87014
+    label: vanadyl sulfate hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000497512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.497512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-pyruvate
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:113
+    label: Na-pyruvate
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '995.0248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast
+  extract, pyruvate and vitamins), adjust pH to 7.0 and sparge medium with 100% N2
+  gas for 30 - 45 min to make it anoxic. Dispense the medium under same gas atmosphere
+  into Hungate-type tubes or serum vials and autoclave. Add ferrous sulfate, bicarbonate,
+  yeast extract, pyruvate and vitamins from sterile anoxic stock solutions prepared
+  under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
+  under 80% N2 and 20% CO2 gas atmosphere. Prepare the stock solution of ferrous sulfate
+  by dissolving 1% (w/v) FeSO4 x 7 H2O in 0.1 N H2SO4. The stock solutions of pyruvate
+  and vitamins should be sterilized by filtration. Adjust pH of the complete medium
+  to 6.8-7.0.
+
+  Note: It may be necessary to add 10-20 mg sodium dithionite per liter (e.g. from
+  5% (w/v) solution, freshly prepared under 100% N2 and filter-sterilized), if the
+  medium is not completely reduced after inoculation.
+
+
+  Original volume: 1005 mL'

@@ -1,0 +1,42 @@
+preferred_term: Main sol. 429a
+term:
+  id: mediadive.solution:869
+  label: Main sol. 429a
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:582
+    label: Activated charcoal
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Add 2 g/l activated charcoal to the columbia agar base solution
+  before autoclaving. Add 4% horse blood after cooling to 50°C. Swirl agar during
+  suspending. To prevent dry agar surface, spread about 1 ml of sterile medium or
+  water over the agar plates and briefly allow to soak into the agar before inoculation.
+  Incubate Neisseria strains in a humid microaerobic atmosphere. Rehydrate pellets
+  of freeze-dried ampoules in liquid medium 220, 215 or 1.

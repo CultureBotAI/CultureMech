@@ -1,0 +1,55 @@
+preferred_term: Main sol. 1079
+term:
+  id: mediadive.solution:2184
+  label: Main sol. 1079
+composition:
+- preferred_term: PPLO broth
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:953
+    label: PPLO broth
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phenol red
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:119
+    label: Phenol red
+  chebi_term:
+    id: CHEBI:31991
+    label: phenol red
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '670'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Add all components except sterile supplement; adjust pH to 7.6
+  + 0.2. Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.

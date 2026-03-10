@@ -1,0 +1,164 @@
+preferred_term: Main sol. 1555
+term:
+  id: mediadive.solution:3212
+  label: Main sol. 1555
+composition:
+- preferred_term: L-Aspartic acid
+  concentration:
+    value: '0.4485'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1328
+    label: L-Aspartic acid
+  chebi_term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:134
+    label: L-Glutamine
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Proline
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1130
+    label: L-Proline
+  chebi_term:
+    id: CHEBI:16313
+    label: D-proline
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:374
+    label: L-Glutamic acid
+  chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: alpha-ketoglutaric acid
+  concentration:
+    value: '0.4485'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1408
+    label: alpha-ketoglutaric acid
+  chebi_term:
+    id: CHEBI:30915
+    label: 2-oxoglutaric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '18.018'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '0.199985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptose-phosphate broth
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2163
+    label: Tryptose-phosphate broth
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: lipoprotein concentrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1410
+    label: lipoprotein concentrate
+  chebi_term:
+    id: CHEBI:17203
+    label: L-proline
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES
+  concentration:
+    value: '5.9575'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Prior to use in supplemented medium, L15C was diluted by the addition\
+  \ of 33 % water by volume.\nSupplemented L15C medium is used with \nThe pH is adjusted\
+  \ to pH 7.5 using 1 M NaOH.\n<b>Cultivation of IRE11 cells for infection with Rickettsia\
+  \ monacensis :</b>\nThis medium and the cultivation of tick cells is described in\
+  \ the \"Basic Tick Cell Culture Methods\" provided as pdf-file (see strain entry\
+  \ for DSM 29017: cultivation conditions) by Tim Kurtti & Uli Munderloh, University\
+  \ of Minnesota.\nL15C (Modified Leibovitzs' L15) used to culture host cells (IRE11).\
+  \ L15C medium is a modification of L15B medium, previously described in detail (Munderloh\
+  \ UG, Kurtti TJ. 1989. Formulation of medium for tick cell culture. Exp. Appl. Acarol.\
+  \ 7:219-29).\nAlterations were made to the following reagents: \n<b>Infection with\
+  \ Rickettsia monacensis or R. buchneri :</b> One 25 cm2 flask of well-grown cells\
+  \ is infected with 1 ml of the Rickettsia strain (quickly thawed from -80°C ) and\
+  \ centrifuged for 1 h onto the cell layer at 1600 rpm at 20°C . Incubate at 30°C\
+  \ with closed lid (without CO2) and look for bacteria and destroyed cells after\
+  \ 4-6 days ."

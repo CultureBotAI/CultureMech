@@ -1,0 +1,45 @@
+preferred_term: Phosphate solution
+term:
+  id: mediadive.solution:2378
+  label: Phosphate solution
+composition:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '124'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaH2PO4
+  concentration:
+    value: '15.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:229
+    label: NaH2PO4
+  chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Demineralized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1448
+    label: Demineralized water
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.2
+
+
+  Original volume: 20 mL'

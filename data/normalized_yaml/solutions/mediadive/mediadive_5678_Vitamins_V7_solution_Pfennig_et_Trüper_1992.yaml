@@ -1,0 +1,102 @@
+preferred_term: Vitamins V7 solution (Pfennig et Trüper, 1992)
+term:
+  id: mediadive.solution:5678
+  label: Vitamins V7 solution (Pfennig et Trüper, 1992)
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Biotine
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:899
+    label: Biotine
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: p-Aminobenzoate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:497
+    label: p-Aminobenzoate
+  chebi_term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:666
+    label: Thiamine
+  chebi_term:
+    id: CHEBI:26948
+    label: thiamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:448
+    label: Pantothenate
+  chebi_term:
+    id: CHEBI:16454
+    label: pantothenate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pyridoxamine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:498
+    label: Pyridoxamine
+  chebi_term:
+    id: CHEBI:131533
+    label: pyridoxamine(2+)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Vitamine B12
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:900
+    label: Vitamine B12
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:845
+    label: Nicotinate
+  chebi_term:
+    id: CHEBI:32544
+    label: nicotinate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Sterilized by filtration.

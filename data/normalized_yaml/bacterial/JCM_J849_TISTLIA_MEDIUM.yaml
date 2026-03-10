@@ -60,10 +60,6 @@ ingredients:
   concentration:
     value: '22.977'
     unit: G_PER_L
-- preferred_term: Zeikus trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -75,3 +71,13 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J849'
+- timestamp: '2026-03-09T08:04:11.315384+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Zeikus trace element solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

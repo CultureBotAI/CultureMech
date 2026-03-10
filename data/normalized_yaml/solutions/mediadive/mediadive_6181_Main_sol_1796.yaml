@@ -1,0 +1,25 @@
+preferred_term: Main sol. 1796
+term:
+  id: mediadive.solution:6181
+  label: Main sol. 1796
+composition:
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1249
+    label: Trisodium citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with MilliQ water.
+
+  Adjust pH to 7.0 with 1 N NaOH.
+
+  Autoclave at 121 °C for 20 min.
+
+  Store at room temperature.'

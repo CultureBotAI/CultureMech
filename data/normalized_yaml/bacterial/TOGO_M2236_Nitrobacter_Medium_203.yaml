@@ -10,30 +10,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Solution A
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Solution D
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Solution E
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Solution F
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: CaCl2
   concentration:
     value: '2'
@@ -179,3 +155,56 @@ curation_history:
   date: '2026-02-03T11:20:52.812533'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Solution F'
+- timestamp: '2026-03-09T08:05:05.778279+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: Solution D
+  term:
+    id: mediadive.solution:5313
+    label: Solution D
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5313_Solution_D.yaml for composition
+- preferred_term: Solution E
+  term:
+    id: mediadive.solution:4959
+    label: Solution E
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_4959_Solution_E.yaml for composition
+- preferred_term: Solution F
+  term:
+    id: mediadive.solution:6293
+    label: Solution F
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: See mediadive_6293_Solution_F.yaml for composition

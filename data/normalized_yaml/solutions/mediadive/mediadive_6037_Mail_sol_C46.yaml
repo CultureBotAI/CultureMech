@@ -1,0 +1,19 @@
+preferred_term: Mail sol. C46
+term:
+  id: mediadive.solution:6037
+  label: Mail sol. C46
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up to 1 litre with distilled water. pH is adjusted to 6.6.\
+  \  Autoclave at 15 psi for \r\n15 minutes."

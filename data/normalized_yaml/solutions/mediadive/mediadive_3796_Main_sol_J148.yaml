@@ -1,0 +1,44 @@
+preferred_term: Main sol. J148
+term:
+  id: mediadive.solution:3796
+  label: Main sol. J148
+composition:
+- preferred_term: Oatmeal
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:471
+    label: Oatmeal
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water
+  bath, stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add
+  agar and boil till dissolved.

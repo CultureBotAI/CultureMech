@@ -1,0 +1,174 @@
+preferred_term: Main sol. 1666
+term:
+  id: mediadive.solution:3457
+  label: Main sol. 1666
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.32'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Arabinose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1494
+    label: Arabinose
+  chebi_term:
+    id: CHEBI:17108
+    label: D-arabinose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Gluconic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1495
+    label: Gluconic acid
+  chebi_term:
+    id: CHEBI:33198
+    label: D-gluconic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MES
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeCl3
+  concentration:
+    value: '0.0067'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:403
+    label: FeCl3
+  chebi_term:
+    id: CHEBI:30808
+    label: iron trichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: CaCl2
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiCl2
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1037
+    label: NiCl2
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to pH 7.2

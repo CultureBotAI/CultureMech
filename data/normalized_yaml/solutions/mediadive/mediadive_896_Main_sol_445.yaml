@@ -1,0 +1,19 @@
+preferred_term: Main sol. 445
+term:
+  id: mediadive.solution:896
+  label: Main sol. 445
+composition:
+- preferred_term: Salicylate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2101
+    label: Salicylate
+  chebi_term:
+    id: CHEBI:30762
+    label: salicylate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: To medium 442 add 0.05% salicylate as carbon source instead of
+  toluene, sterilized by filtration.

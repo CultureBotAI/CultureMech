@@ -1,0 +1,36 @@
+preferred_term: Supplement 3
+term:
+  id: mediadive.solution:3082
+  label: Supplement 3
+composition:
+- preferred_term: Glutathione
+  concentration:
+    value: '153.66'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1819
+    label: Glutathione
+  chebi_term:
+    id: CHEBI:16856
+    label: glutathione
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Glutathion (0.5 M); in distilled water, neutralize with NaOH
+
+  Prepare Supplements 3, flush with nitrogen to make them anoxic, filter-sterilize
+  and store at -20°C
+
+
+  Original volume: 2 mL'

@@ -1,0 +1,29 @@
+preferred_term: Main sol. J768
+term:
+  id: mediadive.solution:4708
+  label: Main sol. J768
+composition:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1628
+    label: Marine agar 2216
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tween 20
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1891
+    label: Tween 20
+  chebi_term:
+    id: CHEBI:53424
+    label: tween 20
+    confidence: 1.0
+    match_type: exact_match

@@ -1,0 +1,22 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:39
+  label: Solution B
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare in a screw-cap bottle, bubble with N2 to replace air,
+  close tightly and autoclave.
+
+
+  Original volume: 135 mL'

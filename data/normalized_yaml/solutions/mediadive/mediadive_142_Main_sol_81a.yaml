@@ -1,0 +1,129 @@
+preferred_term: Main sol. 81a
+term:
+  id: mediadive.solution:142
+  label: Main sol. 81a
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.27498'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '2.86845'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0098912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.49456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaVO3 x H2O
+  concentration:
+    value: '0.0049456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:182
+    label: NaVO3 x H2O
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.49456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.049456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:97
+    label: Ferric ammonium citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '989.1196834817014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (ecxept bicarbonate, ferric ammonium citrate
+  and vitamins), then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+  30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2. Adjust
+  pH to 4.5 and dispense solution under air atmosphere into serum vials suitable for
+  anaerobic cultivation to 50% of volume. Close vials with butyl rubber septa to prevent
+  free exchange of oxygen with the external atmosphere and autoclave. Add ferric ammonium
+  citrate and vitamins from anoxic stock solutions sterilized by filtration and bicarbonate
+  from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
+  Adjust pH of the complete medium to 5.0, if necessary.
+
+  After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.
+
+  Note: Use at least 10% (v/v) as inoculum.
+
+
+  Original volume: 1011 mL'

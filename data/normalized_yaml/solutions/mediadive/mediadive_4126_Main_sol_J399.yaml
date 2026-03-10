@@ -1,0 +1,82 @@
+preferred_term: Main sol. J399
+term:
+  id: mediadive.solution:4126
+  label: Main sol. J399
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.197239'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.0591716'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium fumarate
+  concentration:
+    value: '0.571992'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1752
+    label: Sodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.433925'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.0493097'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '986.1932938856016'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.0. Prepare medium anaerobically under a N2 gas
+  atmosphere.
+
+
+  Original volume: 1014 mL'

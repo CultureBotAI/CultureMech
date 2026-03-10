@@ -23,11 +23,6 @@ ingredients:
     value: '180'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Phenol red solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Bacitracin
   concentration:
     value: '800'
@@ -38,10 +33,6 @@ ingredients:
     value: '800'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent'
-- preferred_term: Solution 1
-  concentration:
-    value: '557'
-    unit: G_PER_L
 - preferred_term: Water
   concentration:
     value: '1400'
@@ -61,10 +52,6 @@ ingredients:
     value: '16'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Hanks' balanced salt solution
-  concentration:
-    value: '2500'
-    unit: G_PER_L
 - preferred_term: Water
   concentration:
     value: '500'
@@ -165,3 +152,27 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:47.617472+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Phenol red solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Solution 1
+  term:
+    id: mediadive.solution:6108
+    label: Solution 1
+  concentration:
+    value: '557'
+    unit: G_PER_L
+  notes: See mediadive_6108_Solution_1.yaml for composition
+- preferred_term: Hanks' balanced salt solution
+  composition: []
+  concentration:
+    value: '2500'
+    unit: G_PER_L

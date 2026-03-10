@@ -1,0 +1,25 @@
+preferred_term: Hank's BSS
+term:
+  id: mediadive.solution:2183
+  label: Hank's BSS
+composition:
+- preferred_term: Water
+  concentration:
+    value: '900.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: '25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05
+  g MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2 added and
+  dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03 g KH2PO4 dissolved
+  in 25 ml distilled water) are autoclaved separately and then combined with 450 ml
+  sterile H2O.
+
+
+  Original volume: 500 mL'

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:17568
     label: uracil
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -51,10 +54,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: erythromycin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -67,7 +66,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:16236
     label: ethanol
@@ -104,3 +104,13 @@ curation_history:
   date: '2026-02-03T11:20:54.570682'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:23.666128+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: erythromycin solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

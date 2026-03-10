@@ -1,0 +1,43 @@
+preferred_term: Main sol. 1564
+term:
+  id: mediadive.solution:3236
+  label: Main sol. 1564
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: α-D-Glucose monohydrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2202
+    label: α-D-Glucose monohydrate
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Autoclave at 121 °C for 20 min.\nBefore inoculation add from sterile\
+  \ stock solutions: \nAdjust pH to 7.5 with 1 M HCl or 1 M NaHCO3"

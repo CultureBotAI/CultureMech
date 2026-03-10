@@ -1,0 +1,40 @@
+preferred_term: Mail sol. C97
+term:
+  id: mediadive.solution:6233
+  label: Mail sol. C97
+composition:
+- preferred_term: Nutrient agar
+  concentration:
+    value: '28'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2364
+    label: Nutrient agar
+- preferred_term: Natural sea water
+  concentration:
+    value: '200'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make  up  to 1  litre  with deionized  water.  Steam  for  30\
+  \  minutes,  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at\
+  \ 15 psi and  slope  (tubes) \r\nprior to cooling.\nAlternatively use \"Ultramarine\"\
+  \ Synthetica sea salts 17.5 g"

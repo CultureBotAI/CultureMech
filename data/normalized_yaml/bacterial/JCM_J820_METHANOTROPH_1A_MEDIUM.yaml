@@ -53,10 +53,6 @@ ingredients:
   concentration:
     value: '0.001998'
     unit: G_PER_L
-- preferred_term: Trace metal solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -102,9 +98,9 @@ preparation_steps:
   description: Adjust pH to 6.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Distribute the medium into culture vessels (leave >80% volume gas phase), seal with butyl
-    rubber stoppers and autoclave. After cooling, add filter-sterilized methane gas to make a final concentration
-    about 20% (v/v) methane in the gas phase.
+  description: Distribute the medium into culture vessels (leave >80% volume gas phase),
+    seal with butyl rubber stoppers and autoclave. After cooling, add filter-sterilized
+    methane gas to make a final concentration about 20% (v/v) methane in the gas phase.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +108,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J820'
+- timestamp: '2026-03-09T08:04:47.121277+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace metal solution
+  term:
+    id: mediadive.solution:6140
+    label: Trace metal solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6140_Trace_metal_solution.yaml for composition

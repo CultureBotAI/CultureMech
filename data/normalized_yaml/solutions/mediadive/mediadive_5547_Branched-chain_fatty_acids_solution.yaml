@@ -1,0 +1,66 @@
+preferred_term: Branched-chain fatty acids solution
+term:
+  id: mediadive.solution:5547
+  label: Branched-chain fatty acids solution
+composition:
+- preferred_term: Valeric acid
+  concentration:
+    value: '0.0727273'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:224
+    label: Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '0.0713287'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:225
+    label: Isovaleric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: alpha-Methylbutyric acid
+  concentration:
+    value: '0.0713287'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1543
+    label: alpha-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '0.0615385'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 100 mL'

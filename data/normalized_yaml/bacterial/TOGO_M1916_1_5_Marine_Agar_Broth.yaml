@@ -13,11 +13,6 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: Sea water*
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component, Complex component'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -49,3 +44,14 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:16.161098+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Sea water*
+  composition: []
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component, Complex component'

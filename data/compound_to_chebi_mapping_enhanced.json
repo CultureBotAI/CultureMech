@@ -1,0 +1,6620 @@
+{
+  "mediadive.compound:55": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaHCO3"
+  },
+  "mediadive.compound:4": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:510": {
+    "chebi_id": "CHEBI:26546",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Rhamnose"
+  },
+  "mediadive.compound:770": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:61": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KCl"
+  },
+  "mediadive.compound:42": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NH4Cl"
+  },
+  "mediadive.compound:10": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "K2HPO4"
+  },
+  "mediadive.compound:43": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaCl"
+  },
+  "mediadive.compound:79": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:8": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:7": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:11": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:40": {
+    "chebi_id": "CHEBI:36385",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:16": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:32": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2CO3"
+  },
+  "mediadive.compound:1852": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:383": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:54": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:110": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2SO4"
+  },
+  "mediadive.compound:12": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:265": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2300": {
+    "chebi_id": "CHEBI:42094",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2,4-Dihydroxybenzoic acid"
+  },
+  "mediadive.compound:112": {
+    "chebi_id": "CHEBI:29073",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ascorbic acid"
+  },
+  "mediadive.compound:30": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:34": {
+    "chebi_id": "CHEBI:64734",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2-EDTA"
+  },
+  "mediadive.compound:37": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "H3BO3"
+  },
+  "mediadive.compound:354": {
+    "chebi_id": "CHEBI:138791",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "KI"
+  },
+  "mediadive.compound:199": {
+    "chebi_id": "CHEBI:28017",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Starch"
+  },
+  "mediadive.compound:353": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:514": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:176": {
+    "chebi_id": "CHEBI:8346",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:23": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:124": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:515": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:211": {
+    "chebi_id": "CHEBI:17234",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Glucose"
+  },
+  "mediadive.compound:27": {
+    "chebi_id": "CHEBI:62946",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "(NH4)2SO4"
+  },
+  "mediadive.compound:82": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:516": {
+    "chebi_id": "CHEBI:15443",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Inulin"
+  },
+  "mediadive.compound:233": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2HPO4"
+  },
+  "mediadive.compound:101": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:18": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Vitamin B12"
+  },
+  "mediadive.compound:47": {
+    "chebi_id": "CHEBI:30753",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "p-Aminobenzoic acid"
+  },
+  "mediadive.compound:1359": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-(+)-biotin"
+  },
+  "mediadive.compound:139": {
+    "chebi_id": "CHEBI:15940",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nicotinic acid"
+  },
+  "mediadive.compound:518": {
+    "chebi_id": "CHEBI:31345",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Calcium pantothenate"
+  },
+  "mediadive.compound:519": {
+    "chebi_id": "CHEBI:30961",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxine hydrochloride"
+  },
+  "mediadive.compound:77": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:115": {
+    "chebi_id": "CHEBI:133341",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Choline chloride"
+  },
+  "mediadive.compound:151": {
+    "chebi_id": "CHEBI:18320",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Dithiothreitol"
+  },
+  "mediadive.compound:111": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:144": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:65": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:5": {
+    "chebi_id": "CHEBI:17234",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glucose"
+  },
+  "mediadive.compound:13": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CaCO3"
+  },
+  "mediadive.compound:116": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:3": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:520": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:84": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:109": {
+    "chebi_id": "CHEBI:86477",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2SO3"
+  },
+  "mediadive.compound:80": {
+    "chebi_id": "CHEBI:17909",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sulfur"
+  },
+  "mediadive.compound:117": {
+    "chebi_id": "CHEBI:86154",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Bromocresol purple"
+  },
+  "mediadive.compound:17": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1249": {
+    "chebi_id": "CHEBI:59640",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:119": {
+    "chebi_id": "CHEBI:31991",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Phenol red"
+  },
+  "mediadive.compound:95": {
+    "chebi_id": "CHEBI:44557",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:294": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:521": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:113": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:244": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:247": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:249": {
+    "chebi_id": "CHEBI:48843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:177": {
+    "chebi_id": "CHEBI:28741",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaF"
+  },
+  "mediadive.compound:524": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:191": {
+    "chebi_id": "CHEBI:17632",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:525": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:442": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:45": {
+    "chebi_id": "CHEBI:144421",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Fe(III) citrate"
+  },
+  "mediadive.compound:453": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MgCl2"
+  },
+  "mediadive.compound:81": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CaCl2"
+  },
+  "mediadive.compound:174": {
+    "chebi_id": "CHEBI:32030",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KBr"
+  },
+  "mediadive.compound:527": {
+    "chebi_id": "CHEBI:36383",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "SrCl2"
+  },
+  "mediadive.compound:528": {
+    "chebi_id": "CHEBI:17632",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(NH4)NO3"
+  },
+  "mediadive.compound:19": {
+    "chebi_id": "CHEBI:36218",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:530": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:286": {
+    "chebi_id": "CHEBI:75228",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:214": {
+    "chebi_id": "CHEBI:17057",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cellobiose"
+  },
+  "mediadive.compound:35": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:36": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:120": {
+    "chebi_id": "CHEBI:31440",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:121": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:38": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:534": {
+    "chebi_id": "CHEBI:168383",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Stearic acid"
+  },
+  "mediadive.compound:256": {
+    "chebi_id": "CHEBI:32145",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaOH"
+  },
+  "mediadive.compound:181": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:456": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:400": {
+    "chebi_id": "CHEBI:62968",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cellulose"
+  },
+  "mediadive.compound:136": {
+    "chebi_id": "CHEBI:17015",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Riboflavin"
+  },
+  "mediadive.compound:497": {
+    "chebi_id": "CHEBI:17836",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "p-Aminobenzoate"
+  },
+  "mediadive.compound:535": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thioctic acid"
+  },
+  "mediadive.compound:337": {
+    "chebi_id": "CHEBI:17154",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nicotinamide"
+  },
+  "mediadive.compound:46": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Biotin"
+  },
+  "mediadive.compound:138": {
+    "chebi_id": "CHEBI:27470",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Folic acid"
+  },
+  "mediadive.compound:149": {
+    "chebi_id": "CHEBI:50385",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Haemin"
+  },
+  "mediadive.compound:536": {
+    "chebi_id": "CHEBI:27418",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "1,4-Naphthoquinone"
+  },
+  "mediadive.compound:537": {
+    "chebi_id": "CHEBI:26833",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:122": {
+    "chebi_id": "CHEBI:26836",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "H2SO4"
+  },
+  "mediadive.compound:538": {
+    "chebi_id": "CHEBI:15887",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "5-Aminovaleric acid"
+  },
+  "mediadive.compound:189": {
+    "chebi_id": "CHEBI:44557",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nitrilotriacetic acid"
+  },
+  "mediadive.compound:14": {
+    "chebi_id": "CHEBI:31604",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:277": {
+    "chebi_id": "CHEBI:87014",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:9": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:64": {
+    "chebi_id": "CHEBI:49976",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "ZnCl2"
+  },
+  "mediadive.compound:164": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:541": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:730": {
+    "chebi_id": "CHEBI:63675",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium succinate"
+  },
+  "mediadive.compound:72": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glycerol"
+  },
+  "mediadive.compound:542": {
+    "chebi_id": "CHEBI:36336",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Naphthalene sulfonic acid"
+  },
+  "mediadive.compound:178": {
+    "chebi_id": "CHEBI:63038",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:543": {
+    "chebi_id": "CHEBI:32036",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:69": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:21": {
+    "chebi_id": "CHEBI:22652",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:546": {
+    "chebi_id": "CHEBI:17596",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Inosin"
+  },
+  "mediadive.compound:269": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:74": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:56": {
+    "chebi_id": "CHEBI:15377",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "H2O"
+  },
+  "mediadive.compound:235": {
+    "chebi_id": "CHEBI:30627",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MoO3"
+  },
+  "mediadive.compound:234": {
+    "chebi_id": "CHEBI:31440",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:550": {
+    "chebi_id": "CHEBI:63940",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2WO4"
+  },
+  "mediadive.compound:375": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:99": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:94": {
+    "chebi_id": "CHEBI:17634",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D(+)-Glucose"
+  },
+  "mediadive.compound:75": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:22": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tween 80"
+  },
+  "mediadive.compound:552": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:325": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MgSO4"
+  },
+  "mediadive.compound:271": {
+    "chebi_id": "CHEBI:42191",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "EDTA"
+  },
+  "mediadive.compound:97": {
+    "chebi_id": "CHEBI:31604",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ferric ammonium citrate"
+  },
+  "mediadive.compound:555": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:477": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:557": {
+    "chebi_id": "CHEBI:17268",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Myo-inositol"
+  },
+  "mediadive.compound:558": {
+    "chebi_id": "CHEBI:17154",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Niacinamide"
+  },
+  "mediadive.compound:276": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:560": {
+    "chebi_id": "CHEBI:17821",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thymine"
+  },
+  "mediadive.compound:559": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:171": {
+    "chebi_id": "CHEBI:17306",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Maltose"
+  },
+  "mediadive.compound:329": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:71": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:125": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:85": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1608": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:205": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:566": {
+    "chebi_id": "CHEBI:16296",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Tryptophan"
+  },
+  "mediadive.compound:565": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:595": {
+    "chebi_id": "CHEBI:75832",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "FeSO4"
+  },
+  "mediadive.compound:570": {
+    "chebi_id": "CHEBI:16737",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Creatinine"
+  },
+  "mediadive.compound:190": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:126": {
+    "chebi_id": "CHEBI:32035",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KOH"
+  },
+  "mediadive.compound:127": {
+    "chebi_id": "CHEBI:27226",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Uric acid"
+  },
+  "mediadive.compound:25": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Resazurin"
+  },
+  "mediadive.compound:572": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:574": {
+    "chebi_id": "CHEBI:18320",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Dithiothreitol"
+  },
+  "mediadive.compound:1207": {
+    "chebi_id": "CHEBI:49105",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Thiamine HCl"
+  },
+  "mediadive.compound:252": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(DL)-alpha-Lipoic acid"
+  },
+  "mediadive.compound:1512": {
+    "chebi_id": "CHEBI:30772",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2124": {
+    "chebi_id": "CHEBI:68329",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Syringic  acid"
+  },
+  "mediadive.compound:226": {
+    "chebi_id": "CHEBI:17790",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Methanol"
+  },
+  "mediadive.compound:575": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:268": {
+    "chebi_id": "CHEBI:31346",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CaSO4"
+  },
+  "mediadive.compound:285": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:576": {
+    "chebi_id": "CHEBI:30031",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Succinate"
+  },
+  "mediadive.compound:1157": {
+    "chebi_id": "CHEBI:91247",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "L-Cysteine HCl"
+  },
+  "mediadive.compound:128": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:260": {
+    "chebi_id": "CHEBI:86318",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:578": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:39": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:863": {
+    "chebi_id": "CHEBI:31605",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ferric citrate"
+  },
+  "mediadive.compound:229": {
+    "chebi_id": "CHEBI:37585",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaH2PO4"
+  },
+  "mediadive.compound:2075": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:316": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:108": {
+    "chebi_id": "CHEBI:17992",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sucrose"
+  },
+  "mediadive.compound:583": {
+    "chebi_id": "CHEBI:39061",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:295": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:150": {
+    "chebi_id": "CHEBI:18067",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Vitamin K1"
+  },
+  "mediadive.compound:201": {
+    "chebi_id": "CHEBI:16236",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ethanol"
+  },
+  "mediadive.compound:584": {
+    "chebi_id": "CHEBI:12936",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Galactose"
+  },
+  "mediadive.compound:398": {
+    "chebi_id": "CHEBI:39033",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2389": {
+    "chebi_id": "CHEBI:15377",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "water (distilled or tapwater)"
+  },
+  "mediadive.compound:204": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:589": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:196": {
+    "chebi_id": "CHEBI:86254",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:591": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:197": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:592": {
+    "chebi_id": "CHEBI:16148",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Heptadecane"
+  },
+  "mediadive.compound:418": {
+    "chebi_id": "CHEBI:86249",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1697": {
+    "chebi_id": "CHEBI:9754",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:596": {
+    "chebi_id": "CHEBI:1185531",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1490": {
+    "chebi_id": "CHEBI:104586",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(NH4)Cl"
+  },
+  "mediadive.compound:208": {
+    "chebi_id": "CHEBI:62946",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:132": {
+    "chebi_id": "CHEBI:15971",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Histidine"
+  },
+  "mediadive.compound:133": {
+    "chebi_id": "CHEBI:16523",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Serine"
+  },
+  "mediadive.compound:134": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Glutamine"
+  },
+  "mediadive.compound:135": {
+    "chebi_id": "CHEBI:46905",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pantothenic acid"
+  },
+  "mediadive.compound:368": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Lipoic acid"
+  },
+  "mediadive.compound:24": {
+    "chebi_id": "CHEBI:72699",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "(NH4)3 citrate"
+  },
+  "mediadive.compound:599": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:173": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:603": {
+    "chebi_id": "CHEBI:30812",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "FeCl2"
+  },
+  "mediadive.compound:604": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:471": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:232": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:607": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:33": {
+    "chebi_id": "CHEBI:15824",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Fructose"
+  },
+  "mediadive.compound:257": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:608": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:451": {
+    "chebi_id": "CHEBI:17268",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Inositol"
+  },
+  "mediadive.compound:610": {
+    "chebi_id": "CHEBI:17154",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Niacin"
+  },
+  "mediadive.compound:611": {
+    "chebi_id": "CHEBI:15354",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Choline"
+  },
+  "mediadive.compound:615": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:616": {
+    "chebi_id": "CHEBI:17015",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Riboflavine"
+  },
+  "mediadive.compound:1807": {
+    "chebi_id": "CHEBI:31345",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "D-Calcium pantothenate"
+  },
+  "mediadive.compound:618": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Boric acid"
+  },
+  "mediadive.compound:187": {
+    "chebi_id": "CHEBI:65327",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:620": {
+    "chebi_id": "CHEBI:17924",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Sorbitol"
+  },
+  "mediadive.compound:626": {
+    "chebi_id": "CHEBI:32583",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:380": {
+    "chebi_id": "CHEBI:15611",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Acetic acid"
+  },
+  "mediadive.compound:627": {
+    "chebi_id": "CHEBI:91243",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:628": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:839": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2126": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2127": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sodium carbonate"
+  },
+  "mediadive.compound:60": {
+    "chebi_id": "CHEBI:17634",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Dextrose"
+  },
+  "mediadive.compound:630": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:98": {
+    "chebi_id": "CHEBI:15824",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Fructose"
+  },
+  "mediadive.compound:327": {
+    "chebi_id": "CHEBI:72694",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(NH4)2 citrate"
+  },
+  "mediadive.compound:41": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:272": {
+    "chebi_id": "CHEBI:62982",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2128": {
+    "chebi_id": "CHEBI:45993",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Benzothiazole"
+  },
+  "mediadive.compound:403": {
+    "chebi_id": "CHEBI:30808",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "FeCl3"
+  },
+  "mediadive.compound:358": {
+    "chebi_id": "CHEBI:15428",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glycine"
+  },
+  "mediadive.compound:1329": {
+    "chebi_id": "CHEBI:53558",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "L-Lysine HCl"
+  },
+  "mediadive.compound:631": {
+    "chebi_id": "CHEBI:57305",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:632": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:633": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:635": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:792": {
+    "chebi_id": "CHEBI:32142",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium citrate"
+  },
+  "mediadive.compound:441": {
+    "chebi_id": "CHEBI:35176",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "ZnSO4"
+  },
+  "mediadive.compound:636": {
+    "chebi_id": "CHEBI:23414",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CuSO4"
+  },
+  "mediadive.compound:374": {
+    "chebi_id": "CHEBI:16015",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Glutamic acid"
+  },
+  "mediadive.compound:637": {
+    "chebi_id": "CHEBI:16709",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxine"
+  },
+  "mediadive.compound:407": {
+    "chebi_id": "CHEBI:44107",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Malachite green"
+  },
+  "mediadive.compound:638": {
+    "chebi_id": "CHEBI:16196",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Oleic acid"
+  },
+  "mediadive.compound:1681": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:270": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:545": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1386": {
+    "chebi_id": "CHEBI:15361",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pyruvate"
+  },
+  "mediadive.compound:322": {
+    "chebi_id": "CHEBI:17992",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:640": {
+    "chebi_id": "CHEBI:30796",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Malic acid"
+  },
+  "mediadive.compound:641": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:83": {
+    "chebi_id": "CHEBI:15741",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Succinic acid"
+  },
+  "mediadive.compound:2131": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:644": {
+    "chebi_id": "CHEBI:28675",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Dextrin"
+  },
+  "mediadive.compound:645": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:394": {
+    "chebi_id": "CHEBI:17716",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Lactose"
+  },
+  "mediadive.compound:646": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:73": {
+    "chebi_id": "CHEBI:82282",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Tris"
+  },
+  "mediadive.compound:1203": {
+    "chebi_id": "CHEBI:144421",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Fe(NH4)citrate"
+  },
+  "mediadive.compound:68": {
+    "chebi_id": "CHEBI:17883",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "HCl"
+  },
+  "mediadive.compound:650": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:651": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:266": {
+    "chebi_id": "CHEBI:31341",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ca(NO3)2"
+  },
+  "mediadive.compound:182": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:652": {
+    "chebi_id": "CHEBI:31695",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Indigocarmine"
+  },
+  "mediadive.compound:1189": {
+    "chebi_id": "CHEBI:63675",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Disodium succinate"
+  },
+  "mediadive.compound:654": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:657": {
+    "chebi_id": "CHEBI:5291",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Gelatine"
+  },
+  "mediadive.compound:658": {
+    "chebi_id": "CHEBI:16398",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Threonine"
+  },
+  "mediadive.compound:659": {
+    "chebi_id": "CHEBI:16354",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "N-methylhydantoin"
+  },
+  "mediadive.compound:2134": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2135": {
+    "chebi_id": "CHEBI:28017",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:662": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:666": {
+    "chebi_id": "CHEBI:26948",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thiamine"
+  },
+  "mediadive.compound:665": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:491": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:186": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:670": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:671": {
+    "chebi_id": "CHEBI:15356",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Cysteine"
+  },
+  "mediadive.compound:672": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:227": {
+    "chebi_id": "CHEBI:17905",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2-Mercaptoethanesulfonate"
+  },
+  "mediadive.compound:676": {
+    "chebi_id": "CHEBI:86254",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:677": {
+    "chebi_id": "CHEBI:26833",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:107": {
+    "chebi_id": "CHEBI:63940",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:301": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:678": {
+    "chebi_id": "CHEBI:63005",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:679": {
+    "chebi_id": "CHEBI:91245",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:680": {
+    "chebi_id": "CHEBI:228320",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "3,4,5-Trimethoxycinnamic acid"
+  },
+  "mediadive.compound:156": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:682": {
+    "chebi_id": "CHEBI:39745",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "(NH4)H2PO4"
+  },
+  "mediadive.compound:213": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:188": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2136": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:415": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:282": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2076": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:687": {
+    "chebi_id": "CHEBI:45296",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Hexadecane"
+  },
+  "mediadive.compound:688": {
+    "chebi_id": "CHEBI:17300",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tetrachloroethene"
+  },
+  "mediadive.compound:689": {
+    "chebi_id": "CHEBI:30114",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "AlCl3"
+  },
+  "mediadive.compound:371": {
+    "chebi_id": "CHEBI:42334",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "HEPES"
+  },
+  "mediadive.compound:351": {
+    "chebi_id": "CHEBI:44115",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MOPS"
+  },
+  "mediadive.compound:692": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "CoCl2"
+  },
+  "mediadive.compound:2137": {
+    "chebi_id": "CHEBI:25399",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cresol"
+  },
+  "mediadive.compound:222": {
+    "chebi_id": "CHEBI:16135",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Isobutyric acid"
+  },
+  "mediadive.compound:908": {
+    "chebi_id": "CHEBI:39033",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:192": {
+    "chebi_id": "CHEBI:17201",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glycyl-glycine"
+  },
+  "mediadive.compound:695": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:696": {
+    "chebi_id": "CHEBI:49976",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:275": {
+    "chebi_id": "CHEBI:31345",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:382": {
+    "chebi_id": "CHEBI:32036",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "K2SO4"
+  },
+  "mediadive.compound:507": {
+    "chebi_id": "CHEBI:75228",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:667": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:699": {
+    "chebi_id": "CHEBI:48843",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2SeO3"
+  },
+  "mediadive.compound:700": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:701": {
+    "chebi_id": "CHEBI:29073",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Ascorbic acid"
+  },
+  "mediadive.compound:704": {
+    "chebi_id": "CHEBI:50385",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Hemin"
+  },
+  "mediadive.compound:492": {
+    "chebi_id": "CHEBI:15356",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cysteine"
+  },
+  "mediadive.compound:702": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:706": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:710": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:198": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:423": {
+    "chebi_id": "CHEBI:63005",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:720": {
+    "chebi_id": "CHEBI:7070",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tetramethyl ammonium chloride"
+  },
+  "mediadive.compound:725": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:726": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:89": {
+    "chebi_id": "CHEBI:47622",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:728": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:731": {
+    "chebi_id": "CHEBI:32954",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sodium acetate"
+  },
+  "mediadive.compound:732": {
+    "chebi_id": "CHEBI:132112",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium thiosulphate"
+  },
+  "mediadive.compound:194": {
+    "chebi_id": "CHEBI:31345",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:736": {
+    "chebi_id": "CHEBI:44557",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2083": {
+    "chebi_id": "CHEBI:29864",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1021": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:739": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:422": {
+    "chebi_id": "CHEBI:18222",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Xylose"
+  },
+  "mediadive.compound:513": {
+    "chebi_id": "CHEBI:30764",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "3-Hydroxybenzoic acid"
+  },
+  "mediadive.compound:452": {
+    "chebi_id": "CHEBI:1185531",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:749": {
+    "chebi_id": "CHEBI:30951",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KSCN"
+  },
+  "mediadive.compound:750": {
+    "chebi_id": "CHEBI:17909",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sulphur"
+  },
+  "mediadive.compound:202": {
+    "chebi_id": "CHEBI:17710",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-mevalonic acid"
+  },
+  "mediadive.compound:273": {
+    "chebi_id": "CHEBI:16526",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Co(NO3)2"
+  },
+  "mediadive.compound:438": {
+    "chebi_id": "CHEBI:50144",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium pyruvate"
+  },
+  "mediadive.compound:753": {
+    "chebi_id": "CHEBI:3448",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:754": {
+    "chebi_id": "CHEBI:15377",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Water"
+  },
+  "mediadive.compound:757": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1819": {
+    "chebi_id": "CHEBI:16856",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glutathione"
+  },
+  "mediadive.compound:760": {
+    "chebi_id": "CHEBI:82664",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Iron powder"
+  },
+  "mediadive.compound:762": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:763": {
+    "chebi_id": "CHEBI:16919",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Creatine"
+  },
+  "mediadive.compound:200": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:766": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:224": {
+    "chebi_id": "CHEBI:17418",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Valeric acid"
+  },
+  "mediadive.compound:480": {
+    "chebi_id": "CHEBI:37070",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2-Methylbutyric acid"
+  },
+  "mediadive.compound:768": {
+    "chebi_id": "CHEBI:28484",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "3-Methylbutyric acid"
+  },
+  "mediadive.compound:430": {
+    "chebi_id": "CHEBI:30776",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Caproic acid"
+  },
+  "mediadive.compound:6": {
+    "chebi_id": "CHEBI:16899",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Mannitol"
+  },
+  "mediadive.compound:311": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2190": {
+    "chebi_id": "CHEBI:138560",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Air"
+  },
+  "mediadive.compound:2098": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:777": {
+    "chebi_id": "CHEBI:16551",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Trehalose"
+  },
+  "mediadive.compound:776": {
+    "chebi_id": "CHEBI:86318",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:207": {
+    "chebi_id": "CHEBI:32030",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:778": {
+    "chebi_id": "CHEBI:18290",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thiamine pyrophosphate"
+  },
+  "mediadive.compound:338": {
+    "chebi_id": "CHEBI:131529",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxal hydrochloride"
+  },
+  "mediadive.compound:780": {
+    "chebi_id": "CHEBI:18405",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxal phosphate"
+  },
+  "mediadive.compound:783": {
+    "chebi_id": "CHEBI:11814",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Coenzyme A"
+  },
+  "mediadive.compound:784": {
+    "chebi_id": "CHEBI:16238",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "FAD"
+  },
+  "mediadive.compound:781": {
+    "chebi_id": "CHEBI:9532",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:782": {
+    "chebi_id": "CHEBI:9532",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:789": {
+    "chebi_id": "CHEBI:62946",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium Sulfate"
+  },
+  "mediadive.compound:790": {
+    "chebi_id": "CHEBI:63036",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Monopotassium Phosphate"
+  },
+  "mediadive.compound:791": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Disodium Phosphate"
+  },
+  "mediadive.compound:793": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Magnesium sulfate"
+  },
+  "mediadive.compound:794": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Calcium Chloride"
+  },
+  "mediadive.compound:795": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Zinc Sulfate"
+  },
+  "mediadive.compound:796": {
+    "chebi_id": "CHEBI:23414",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Copper Sulfate"
+  },
+  "mediadive.compound:797": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:803": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:804": {
+    "chebi_id": "CHEBI:86249",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:254": {
+    "chebi_id": "CHEBI:86155",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Bromothymol blue"
+  },
+  "mediadive.compound:255": {
+    "chebi_id": "CHEBI:17217",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Crotonic acid"
+  },
+  "mediadive.compound:808": {
+    "chebi_id": "CHEBI:35697",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "trans-Cinnamic acid"
+  },
+  "mediadive.compound:379": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:810": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:370": {
+    "chebi_id": "CHEBI:81862",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KHCO3"
+  },
+  "mediadive.compound:811": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2MoO4"
+  },
+  "mediadive.compound:319": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MnSO4"
+  },
+  "mediadive.compound:2141": {
+    "chebi_id": "CHEBI:35195",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Surfactant"
+  },
+  "mediadive.compound:812": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:819": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:807": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:823": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:824": {
+    "chebi_id": "CHEBI:39005",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MES"
+  },
+  "mediadive.compound:825": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:826": {
+    "chebi_id": "CHEBI:65242",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaClO3"
+  },
+  "mediadive.compound:1513": {
+    "chebi_id": "CHEBI:131531",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxamine hydrochloride"
+  },
+  "mediadive.compound:140": {
+    "chebi_id": "CHEBI:17154",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nicotine amide"
+  },
+  "mediadive.compound:141": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "alpha-lipoic acid"
+  },
+  "mediadive.compound:829": {
+    "chebi_id": "CHEBI:17196",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Asparagine"
+  },
+  "mediadive.compound:827": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:464": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:223": {
+    "chebi_id": "CHEBI:37070",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-2-Methylbutyric acid"
+  },
+  "mediadive.compound:225": {
+    "chebi_id": "CHEBI:28484",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Isovaleric acid"
+  },
+  "mediadive.compound:835": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:838": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:216": {
+    "chebi_id": "CHEBI:91246",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:217": {
+    "chebi_id": "CHEBI:132762",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:218": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:840": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:844": {
+    "chebi_id": "CHEBI:30753",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Para-aminobenzoic acid"
+  },
+  "mediadive.compound:845": {
+    "chebi_id": "CHEBI:32544",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nicotinate"
+  },
+  "mediadive.compound:448": {
+    "chebi_id": "CHEBI:16454",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pantothenate"
+  },
+  "mediadive.compound:1307": {
+    "chebi_id": "CHEBI:18385",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thiamin"
+  },
+  "mediadive.compound:846": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:847": {
+    "chebi_id": "CHEBI:64734",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:848": {
+    "chebi_id": "CHEBI:15971",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Histidine"
+  },
+  "mediadive.compound:852": {
+    "chebi_id": "CHEBI:17544",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "(NH4)HCO3"
+  },
+  "mediadive.compound:855": {
+    "chebi_id": "CHEBI:184335",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:991": {
+    "chebi_id": "CHEBI:2511",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Agarose"
+  },
+  "mediadive.compound:857": {
+    "chebi_id": "CHEBI:36385",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:931": {
+    "chebi_id": "CHEBI:16830",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Methylamine"
+  },
+  "mediadive.compound:2079": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1744": {
+    "chebi_id": "CHEBI:132089",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium beta-glycerophosphate"
+  },
+  "mediadive.compound:867": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:869": {
+    "chebi_id": "CHEBI:495055",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cyclomaltoheptaose"
+  },
+  "mediadive.compound:870": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:871": {
+    "chebi_id": "CHEBI:31440",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:879": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Biotin"
+  },
+  "mediadive.compound:878": {
+    "chebi_id": "CHEBI:49105",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:880": {
+    "chebi_id": "CHEBI:30796",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Malic acid"
+  },
+  "mediadive.compound:882": {
+    "chebi_id": "CHEBI:63038",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium nitrate"
+  },
+  "mediadive.compound:884": {
+    "chebi_id": "CHEBI:33403",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Elemental sulphur"
+  },
+  "mediadive.compound:892": {
+    "chebi_id": "CHEBI:53472",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CuCl"
+  },
+  "mediadive.compound:890": {
+    "chebi_id": "CHEBI:17632",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:891": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1030": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:894": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:490": {
+    "chebi_id": "CHEBI:76208",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2S"
+  },
+  "mediadive.compound:258": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:63": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1265": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:903": {
+    "chebi_id": "CHEBI:132108",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:401": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:907": {
+    "chebi_id": "CHEBI:25548",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "NTA"
+  },
+  "mediadive.compound:910": {
+    "chebi_id": "CHEBI:132112",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:912": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:915": {
+    "chebi_id": "CHEBI:29255",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "HBO3"
+  },
+  "mediadive.compound:913": {
+    "chebi_id": "CHEBI:49976",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:914": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:916": {
+    "chebi_id": "CHEBI:15971",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Histidine"
+  },
+  "mediadive.compound:2143": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:923": {
+    "chebi_id": "CHEBI:30763",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "4-Hydroxybenzoic acid"
+  },
+  "mediadive.compound:1312": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:925": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:508": {
+    "chebi_id": "CHEBI:37166",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Xylan"
+  },
+  "mediadive.compound:2084": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:228": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:937": {
+    "chebi_id": "CHEBI:63076",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Diammonium Citrate"
+  },
+  "mediadive.compound:939": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Manganese Sulfate"
+  },
+  "mediadive.compound:940": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Dipotassium Phosphate"
+  },
+  "mediadive.compound:462": {
+    "chebi_id": "CHEBI:506227",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "N-Acetylglucosamine"
+  },
+  "mediadive.compound:935": {
+    "chebi_id": "CHEBI:59640",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:936": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:938": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:942": {
+    "chebi_id": "CHEBI:63076",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:943": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:944": {
+    "chebi_id": "CHEBI:52071",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Dextran"
+  },
+  "mediadive.compound:581": {
+    "chebi_id": "CHEBI:39061",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:291": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:950": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:951": {
+    "chebi_id": "CHEBI:41808",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "n-Decane"
+  },
+  "mediadive.compound:952": {
+    "chebi_id": "CHEBI:30729",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Fe(III)-EDTA"
+  },
+  "mediadive.compound:958": {
+    "chebi_id": "CHEBI:16991",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "DNA"
+  },
+  "mediadive.compound:339": {
+    "chebi_id": "CHEBI:15676",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Urea"
+  },
+  "mediadive.compound:953": {
+    "chebi_id": "CHEBI:16199",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:146": {
+    "chebi_id": "CHEBI:78018",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:970": {
+    "chebi_id": "CHEBI:28971",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ampicillin"
+  },
+  "mediadive.compound:473": {
+    "chebi_id": "CHEBI:16899",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Mannitol"
+  },
+  "mediadive.compound:1101": {
+    "chebi_id": "CHEBI:9754",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tris buffer"
+  },
+  "mediadive.compound:499": {
+    "chebi_id": "CHEBI:25548",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Nitrilotriacetate"
+  },
+  "mediadive.compound:1142": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:973": {
+    "chebi_id": "CHEBI:156045",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2-(N-Morpholino)ethanesulfonic acid"
+  },
+  "mediadive.compound:2085": {
+    "chebi_id": "CHEBI:16856",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Glutathione"
+  },
+  "mediadive.compound:230": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:976": {
+    "chebi_id": "CHEBI:16199",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2144": {
+    "chebi_id": "CHEBI:193555",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Isobutyramide"
+  },
+  "mediadive.compound:261": {
+    "chebi_id": "CHEBI:49553",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CuCl2"
+  },
+  "mediadive.compound:980": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:981": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:987": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Gelrite"
+  },
+  "mediadive.compound:1829": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:988": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:989": {
+    "chebi_id": "CHEBI:85146",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Carboxymethyl cellulose"
+  },
+  "mediadive.compound:990": {
+    "chebi_id": "CHEBI:2511",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:994": {
+    "chebi_id": "CHEBI:84997",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium gluconate"
+  },
+  "mediadive.compound:1002": {
+    "chebi_id": "CHEBI:36272",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "H2WO4"
+  },
+  "mediadive.compound:1000": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1005": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:461": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1018": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1606": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1026": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1092": {
+    "chebi_id": "CHEBI:32150",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium thiosulfate pentahydrate"
+  },
+  "mediadive.compound:1034": {
+    "chebi_id": "CHEBI:39066",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "BICINE buffer"
+  },
+  "mediadive.compound:1035": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1037": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NiCl2"
+  },
+  "mediadive.compound:1036": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:237": {
+    "chebi_id": "CHEBI:16015",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glutamic acid"
+  },
+  "mediadive.compound:1040": {
+    "chebi_id": "CHEBI:18290",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Co-carboxylase"
+  },
+  "mediadive.compound:1041": {
+    "chebi_id": "CHEBI:17439",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cyanocobalamin"
+  },
+  "mediadive.compound:1044": {
+    "chebi_id": "CHEBI:33403",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Elemental sulfur"
+  },
+  "mediadive.compound:1042": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1047": {
+    "chebi_id": "CHEBI:53258",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Trisodium citrate"
+  },
+  "mediadive.compound:240": {
+    "chebi_id": "CHEBI:30742",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ethylene glycol"
+  },
+  "mediadive.compound:1052": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1056": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:243": {
+    "chebi_id": "CHEBI:17148",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Putrescine"
+  },
+  "mediadive.compound:242": {
+    "chebi_id": "CHEBI:30066",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1065": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1448": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:245": {
+    "chebi_id": "CHEBI:24536",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Hexachlorocyclo-hexane"
+  },
+  "mediadive.compound:1070": {
+    "chebi_id": "CHEBI:33709",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Aminoacids"
+  },
+  "mediadive.compound:1075": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1076": {
+    "chebi_id": "CHEBI:115156",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Disodium fumarate"
+  },
+  "mediadive.compound:386": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1081": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1083": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1086": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1010": {
+    "chebi_id": "CHEBI:17924",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sorbitol"
+  },
+  "mediadive.compound:1091": {
+    "chebi_id": "CHEBI:91247",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cysteine-HCl"
+  },
+  "mediadive.compound:253": {
+    "chebi_id": "CHEBI:133341",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Trimethylammonium chloride"
+  },
+  "mediadive.compound:540": {
+    "chebi_id": "CHEBI:32816",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pyruvic acid"
+  },
+  "mediadive.compound:928": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Potassium Phosphate"
+  },
+  "mediadive.compound:1105": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium Chloride"
+  },
+  "mediadive.compound:381": {
+    "chebi_id": "CHEBI:30768",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Propionic acid"
+  },
+  "mediadive.compound:376": {
+    "chebi_id": "CHEBI:30772",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "n-Butyric acid"
+  },
+  "mediadive.compound:288": {
+    "chebi_id": "CHEBI:17418",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "n-Valeric acid"
+  },
+  "mediadive.compound:458": {
+    "chebi_id": "CHEBI:59640",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1104": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:954": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1112": {
+    "chebi_id": "CHEBI:18167",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1114": {
+    "chebi_id": "CHEBI:91247",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cysteine hydrochloride"
+  },
+  "mediadive.compound:259": {
+    "chebi_id": "CHEBI:131526",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "K2CO3"
+  },
+  "mediadive.compound:1418": {
+    "chebi_id": "CHEBI:63005",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:625": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:900": {
+    "chebi_id": "CHEBI:86254",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:58": {
+    "chebi_id": "CHEBI:142832",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ammonium acetate"
+  },
+  "mediadive.compound:1118": {
+    "chebi_id": "CHEBI:17561",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1122": {
+    "chebi_id": "CHEBI:17836",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "4-aminobenzoate"
+  },
+  "mediadive.compound:1514": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-6,8-thioctic acid"
+  },
+  "mediadive.compound:1123": {
+    "chebi_id": "CHEBI:27470",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1126": {
+    "chebi_id": "CHEBI:132112",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Sodium Thiosulfate"
+  },
+  "mediadive.compound:449": {
+    "chebi_id": "CHEBI:16296",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Tryptophan"
+  },
+  "mediadive.compound:1130": {
+    "chebi_id": "CHEBI:16313",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Proline"
+  },
+  "mediadive.compound:1128": {
+    "chebi_id": "CHEBI:17203",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1820": {
+    "chebi_id": "CHEBI:17578",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Toluene"
+  },
+  "mediadive.compound:440": {
+    "chebi_id": "CHEBI:114786",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na2S2O5"
+  },
+  "mediadive.compound:1141": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:263": {
+    "chebi_id": "CHEBI:53258",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1147": {
+    "chebi_id": "CHEBI:49105",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Thiamine hydrochloride"
+  },
+  "mediadive.compound:1158": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Gellan Gum"
+  },
+  "mediadive.compound:264": {
+    "chebi_id": "CHEBI:18012",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Fumaric acid"
+  },
+  "mediadive.compound:1160": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1161": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1162": {
+    "chebi_id": "CHEBI:16643",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Methionine"
+  },
+  "mediadive.compound:2161": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glutamine"
+  },
+  "mediadive.compound:86": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1181": {
+    "chebi_id": "CHEBI:41250",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Bis-Tris"
+  },
+  "mediadive.compound:1015": {
+    "chebi_id": "CHEBI:86463",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "AlK(SO4)2"
+  },
+  "mediadive.compound:267": {
+    "chebi_id": "CHEBI:16283",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Cystine"
+  },
+  "mediadive.compound:922": {
+    "chebi_id": "CHEBI:48843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1188": {
+    "chebi_id": "CHEBI:32954",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:274": {
+    "chebi_id": "CHEBI:15570",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Alanine"
+  },
+  "mediadive.compound:1198": {
+    "chebi_id": "CHEBI:91247",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cysteine HCl"
+  },
+  "mediadive.compound:1200": {
+    "chebi_id": "CHEBI:131371",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "FePO4"
+  },
+  "mediadive.compound:1201": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:719": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1216": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1217": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1503": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:278": {
+    "chebi_id": "CHEBI:194792",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Methylamine hydrochloride"
+  },
+  "mediadive.compound:1232": {
+    "chebi_id": "CHEBI:40957",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Bicine"
+  },
+  "mediadive.compound:437": {
+    "chebi_id": "CHEBI:62965",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium formate"
+  },
+  "mediadive.compound:1237": {
+    "chebi_id": "CHEBI:30753",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "4-Aminobenzoic Acid"
+  },
+  "mediadive.compound:1240": {
+    "chebi_id": "CHEBI:131532",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyridoxamine Dihydrochloride"
+  },
+  "mediadive.compound:1238": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1250": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1251": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1256": {
+    "chebi_id": "CHEBI:17015",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1258": {
+    "chebi_id": "CHEBI:15588",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Malate"
+  },
+  "mediadive.compound:1261": {
+    "chebi_id": "CHEBI:29125",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Arsenate"
+  },
+  "mediadive.compound:1263": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:899": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Biotine"
+  },
+  "mediadive.compound:1270": {
+    "chebi_id": "CHEBI:91249",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium Molybdate"
+  },
+  "mediadive.compound:1276": {
+    "chebi_id": "CHEBI:32583",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1279": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1286": {
+    "chebi_id": "CHEBI:27641",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cycloheximid"
+  },
+  "mediadive.compound:1283": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1289": {
+    "chebi_id": "CHEBI:18290",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Co Carboxylase"
+  },
+  "mediadive.compound:1291": {
+    "chebi_id": "CHEBI:86249",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1293": {
+    "chebi_id": "CHEBI:46502",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tungstate"
+  },
+  "mediadive.compound:479": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2138": {
+    "chebi_id": "CHEBI:17029",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Chitin"
+  },
+  "mediadive.compound:262": {
+    "chebi_id": "CHEBI:28260",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2148": {
+    "chebi_id": "CHEBI:76208",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Disodium sulfide"
+  },
+  "mediadive.compound:1309": {
+    "chebi_id": "CHEBI:30753",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "PABA"
+  },
+  "mediadive.compound:1315": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1316": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:431": {
+    "chebi_id": "CHEBI:17750",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Betaine"
+  },
+  "mediadive.compound:1954": {
+    "chebi_id": "CHEBI:32138",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium acetate trihydrate"
+  },
+  "mediadive.compound:2149": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium bicarbonate"
+  },
+  "mediadive.compound:1322": {
+    "chebi_id": "CHEBI:17925",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "alpha-D-Glucose"
+  },
+  "mediadive.compound:1323": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1325": {
+    "chebi_id": "CHEBI:7773015",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1327": {
+    "chebi_id": "CHEBI:16467",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Arginine"
+  },
+  "mediadive.compound:1328": {
+    "chebi_id": "CHEBI:17053",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Aspartic acid"
+  },
+  "mediadive.compound:447": {
+    "chebi_id": "CHEBI:17191",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Isoleucine"
+  },
+  "mediadive.compound:446": {
+    "chebi_id": "CHEBI:15603",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Leucine"
+  },
+  "mediadive.compound:1330": {
+    "chebi_id": "CHEBI:16643",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Methionine"
+  },
+  "mediadive.compound:1332": {
+    "chebi_id": "CHEBI:17295",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Phenylalanine"
+  },
+  "mediadive.compound:1333": {
+    "chebi_id": "CHEBI:17895",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Tyrosine"
+  },
+  "mediadive.compound:1334": {
+    "chebi_id": "CHEBI:16414",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Valine"
+  },
+  "mediadive.compound:1331": {
+    "chebi_id": "CHEBI:17115",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:348": {
+    "chebi_id": "CHEBI:53258",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Citric acid"
+  },
+  "mediadive.compound:1337": {
+    "chebi_id": "CHEBI:45931",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thiamin pyrophosphate"
+  },
+  "mediadive.compound:1338": {
+    "chebi_id": "CHEBI:15346",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Coenzym A"
+  },
+  "mediadive.compound:1339": {
+    "chebi_id": "CHEBI:16238",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Flavin adenine dinucleotide"
+  },
+  "mediadive.compound:506": {
+    "chebi_id": "CHEBI:17905",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2-Mercaptoethanesulfonic acid"
+  },
+  "mediadive.compound:1341": {
+    "chebi_id": "CHEBI:181907",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "N-acetylmuramic acid"
+  },
+  "mediadive.compound:1342": {
+    "chebi_id": "CHEBI:24298",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-glucuronic acid"
+  },
+  "mediadive.compound:1343": {
+    "chebi_id": "CHEBI:18024",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-galacturonic acid"
+  },
+  "mediadive.compound:1344": {
+    "chebi_id": "CHEBI:193132",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Formic acid"
+  },
+  "mediadive.compound:1340": {
+    "chebi_id": "CHEBI:15971",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1347": {
+    "chebi_id": "CHEBI:140487",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D"
+  },
+  "mediadive.compound:1348": {
+    "chebi_id": "CHEBI:17368",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Hypoxanthine"
+  },
+  "mediadive.compound:1349": {
+    "chebi_id": "CHEBI:17568",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Uracil"
+  },
+  "mediadive.compound:455": {
+    "chebi_id": "CHEBI:17748",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thymidine"
+  },
+  "mediadive.compound:1350": {
+    "chebi_id": "CHEBI:39060",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "N-(2-acetamido)-2-aminoethanesulfonic acid"
+  },
+  "mediadive.compound:1351": {
+    "chebi_id": "CHEBI:16347",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-carnitine"
+  },
+  "mediadive.compound:1352": {
+    "chebi_id": "CHEBI:15603",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1353": {
+    "chebi_id": "CHEBI:17306",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Maltose"
+  },
+  "mediadive.compound:1354": {
+    "chebi_id": "CHEBI:16024",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Mannose"
+  },
+  "mediadive.compound:1355": {
+    "chebi_id": "CHEBI:17108",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "D-Arabinose"
+  },
+  "mediadive.compound:1356": {
+    "chebi_id": "CHEBI:18287",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Fucose"
+  },
+  "mediadive.compound:1357": {
+    "chebi_id": "CHEBI:16551",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "D-Trehalose"
+  },
+  "mediadive.compound:1358": {
+    "chebi_id": "CHEBI:17992",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "D-Sucrose"
+  },
+  "mediadive.compound:356": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2150": {
+    "chebi_id": "CHEBI:16643",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1360": {
+    "chebi_id": "CHEBI:15640",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Folinic acid"
+  },
+  "mediadive.compound:1559": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-alpha-lipoic acid"
+  },
+  "mediadive.compound:1771": {
+    "chebi_id": "CHEBI:41218",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2-Mercaptoethanol"
+  },
+  "mediadive.compound:1362": {
+    "chebi_id": "CHEBI:75221",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaVO3"
+  },
+  "mediadive.compound:1361": {
+    "chebi_id": "CHEBI:36385",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2151": {
+    "chebi_id": "CHEBI:16113",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cholesterol"
+  },
+  "mediadive.compound:1371": {
+    "chebi_id": "CHEBI:46905",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Pantothenic acid"
+  },
+  "mediadive.compound:1375": {
+    "chebi_id": "CHEBI:32142",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium citrate dihydrate"
+  },
+  "mediadive.compound:2378": {
+    "chebi_id": "CHEBI:144434",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ferric citrate monohydrate"
+  },
+  "mediadive.compound:1379": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1381": {
+    "chebi_id": "CHEBI:3448",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1385": {
+    "chebi_id": "CHEBI:16004",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Lactate"
+  },
+  "mediadive.compound:1387": {
+    "chebi_id": "CHEBI:15361",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1392": {
+    "chebi_id": "CHEBI:75228",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium lactate"
+  },
+  "mediadive.compound:292": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1401": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1402": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2087": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:594": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1405": {
+    "chebi_id": "CHEBI:46756",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:57": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium chloride"
+  },
+  "mediadive.compound:59": {
+    "chebi_id": "CHEBI:17883",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:102": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1408": {
+    "chebi_id": "CHEBI:30915",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "alpha-ketoglutaric acid"
+  },
+  "mediadive.compound:2163": {
+    "chebi_id": "CHEBI:32145",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1410": {
+    "chebi_id": "CHEBI:17203",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1412": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1416": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1417": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2038": {
+    "chebi_id": "CHEBI:91261",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium malate"
+  },
+  "mediadive.compound:2202": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1423": {
+    "chebi_id": "CHEBI:32150",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1436": {
+    "chebi_id": "CHEBI:86218",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cresol red"
+  },
+  "mediadive.compound:106": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1438": {
+    "chebi_id": "CHEBI:17272",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1445": {
+    "chebi_id": "CHEBI:17053",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-aspartic acid"
+  },
+  "mediadive.compound:2153": {
+    "chebi_id": "CHEBI:17203",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1165": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1453": {
+    "chebi_id": "CHEBI:39035",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "TES"
+  },
+  "mediadive.compound:1456": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1460": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:377": {
+    "chebi_id": "CHEBI:16135",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "iso-Butyric acid"
+  },
+  "mediadive.compound:378": {
+    "chebi_id": "CHEBI:28484",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "iso-Valeric acid"
+  },
+  "mediadive.compound:1465": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1466": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1467": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:300": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1471": {
+    "chebi_id": "CHEBI:3312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1473": {
+    "chebi_id": "CHEBI:17790",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1481": {
+    "chebi_id": "CHEBI:30563",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "SiO2"
+  },
+  "mediadive.compound:1482": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:472": {
+    "chebi_id": "CHEBI:15588",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Malate"
+  },
+  "mediadive.compound:1489": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:283": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1494": {
+    "chebi_id": "CHEBI:17108",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Arabinose"
+  },
+  "mediadive.compound:1495": {
+    "chebi_id": "CHEBI:33198",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Gluconic acid"
+  },
+  "mediadive.compound:1504": {
+    "chebi_id": "CHEBI:18050",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1507": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1508": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1515": {
+    "chebi_id": "CHEBI:85146",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Carboxymethylcellulose"
+  },
+  "mediadive.compound:1524": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1527": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1528": {
+    "chebi_id": "CHEBI:39005",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1530": {
+    "chebi_id": "CHEBI:8150",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1532": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Calcium Carbonate"
+  },
+  "mediadive.compound:1533": {
+    "chebi_id": "CHEBI:15356",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cystein"
+  },
+  "mediadive.compound:1554": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1725": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1562": {
+    "chebi_id": "CHEBI:113455",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodiumbenzoate"
+  },
+  "mediadive.compound:1566": {
+    "chebi_id": "CHEBI:42334",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid"
+  },
+  "mediadive.compound:1720": {
+    "chebi_id": "CHEBI:31345",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "DL-Calcium pantothenate"
+  },
+  "mediadive.compound:1580": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1583": {
+    "chebi_id": "CHEBI:31795",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Magnesium sulfate heptahydrate"
+  },
+  "mediadive.compound:1584": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Calcium chloride dihydrate"
+  },
+  "mediadive.compound:1590": {
+    "chebi_id": "CHEBI:50144",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1593": {
+    "chebi_id": "CHEBI:16261",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Chitosan"
+  },
+  "mediadive.compound:330": {
+    "chebi_id": "CHEBI:17196",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Asparagine"
+  },
+  "mediadive.compound:405": {
+    "chebi_id": "CHEBI:17196",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Asparagin"
+  },
+  "mediadive.compound:1598": {
+    "chebi_id": "CHEBI:62964",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Magnesium acetate"
+  },
+  "mediadive.compound:1107": {
+    "chebi_id": "CHEBI:18222",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Xylose"
+  },
+  "mediadive.compound:105": {
+    "chebi_id": "CHEBI:53426",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:302": {
+    "chebi_id": "CHEBI:28488",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "m-Xylene"
+  },
+  "mediadive.compound:303": {
+    "chebi_id": "CHEBI:131383",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2,2,4,4,6,8,8-Heptamethylnonane"
+  },
+  "mediadive.compound:1603": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1604": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1609": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1610": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1614": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1616": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1617": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1618": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1619": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1620": {
+    "chebi_id": "CHEBI:50144",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1621": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1622": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1623": {
+    "chebi_id": "CHEBI:91261",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium L-malate"
+  },
+  "mediadive.compound:1624": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1628": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1631": {
+    "chebi_id": "CHEBI:113455",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium benzoate"
+  },
+  "mediadive.compound:1600": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:320": {
+    "chebi_id": "CHEBI:16634",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Raffinose"
+  },
+  "mediadive.compound:321": {
+    "chebi_id": "CHEBI:12936",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Galactose"
+  },
+  "mediadive.compound:1634": {
+    "chebi_id": "CHEBI:63940",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1638": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1639": {
+    "chebi_id": "CHEBI:37070",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "DL-alpha-Methyl butyric acid"
+  },
+  "mediadive.compound:1640": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:145": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1641": {
+    "chebi_id": "CHEBI:31695",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Indigo carmine"
+  },
+  "mediadive.compound:1642": {
+    "chebi_id": "CHEBI:91263",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium maleate"
+  },
+  "mediadive.compound:1643": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1644": {
+    "chebi_id": "CHEBI:86481",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium thioglycolate"
+  },
+  "mediadive.compound:1108": {
+    "chebi_id": "CHEBI:17309",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pectin"
+  },
+  "mediadive.compound:168": {
+    "chebi_id": "CHEBI:16988",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ribose"
+  },
+  "mediadive.compound:1648": {
+    "chebi_id": "CHEBI:17057",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1649": {
+    "chebi_id": "CHEBI:46020",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tetramethyl ammonium"
+  },
+  "mediadive.compound:1651": {
+    "chebi_id": "CHEBI:46020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1657": {
+    "chebi_id": "CHEBI:75456",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Glycerol monostearate"
+  },
+  "mediadive.compound:1658": {
+    "chebi_id": "CHEBI:53425",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tween 60"
+  },
+  "mediadive.compound:1656": {
+    "chebi_id": "CHEBI:53425",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1659": {
+    "chebi_id": "CHEBI:75456",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:287": {
+    "chebi_id": "CHEBI:47869",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thioglycolate"
+  },
+  "mediadive.compound:1660": {
+    "chebi_id": "CHEBI:47869",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1663": {
+    "chebi_id": "CHEBI:63076",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Diammonium hydrogen citrate"
+  },
+  "mediadive.compound:1666": {
+    "chebi_id": "CHEBI:17334",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Penicillin"
+  },
+  "mediadive.compound:1062": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1669": {
+    "chebi_id": "CHEBI:506227",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "N-Acetyl-D-glucosamine"
+  },
+  "mediadive.compound:1680": {
+    "chebi_id": "CHEBI:32142",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:705": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1671": {
+    "chebi_id": "CHEBI:5291",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Gelatin"
+  },
+  "mediadive.compound:1672": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1676": {
+    "chebi_id": "CHEBI:66870",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium dithionite"
+  },
+  "mediadive.compound:1677": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1678": {
+    "chebi_id": "CHEBI:28741",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1682": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1683": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1684": {
+    "chebi_id": "CHEBI:29073",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1685": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1686": {
+    "chebi_id": "CHEBI:64243",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Monosodium glutamate"
+  },
+  "mediadive.compound:1687": {
+    "chebi_id": "CHEBI:232798",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium L-lactate"
+  },
+  "mediadive.compound:1690": {
+    "chebi_id": "CHEBI:60720",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium silicate"
+  },
+  "mediadive.compound:1698": {
+    "chebi_id": "CHEBI:9754",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tris base"
+  },
+  "mediadive.compound:1699": {
+    "chebi_id": "CHEBI:63017",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium tartrate"
+  },
+  "mediadive.compound:180": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1705": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1707": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1708": {
+    "chebi_id": "CHEBI:34653",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Congo red"
+  },
+  "mediadive.compound:1711": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1543": {
+    "chebi_id": "CHEBI:37070",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "alpha-Methylbutyric acid"
+  },
+  "mediadive.compound:1721": {
+    "chebi_id": "CHEBI:17905",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Coenzyme M"
+  },
+  "mediadive.compound:1722": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1723": {
+    "chebi_id": "CHEBI:50385",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Hemin chloride"
+  },
+  "mediadive.compound:1724": {
+    "chebi_id": "CHEBI:132755",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Triethanolamine"
+  },
+  "mediadive.compound:1735": {
+    "chebi_id": "CHEBI:32142",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1740": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1692": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1742": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1143": {
+    "chebi_id": "CHEBI:18019",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1144": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1743": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1745": {
+    "chebi_id": "CHEBI:48607",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "LiCl"
+  },
+  "mediadive.compound:1230": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1747": {
+    "chebi_id": "CHEBI:75228",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "L-Sodium lactate"
+  },
+  "mediadive.compound:1748": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1607": {
+    "chebi_id": "CHEBI:50144",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1750": {
+    "chebi_id": "CHEBI:64103",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium butyrate"
+  },
+  "mediadive.compound:1751": {
+    "chebi_id": "CHEBI:30776",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Capronic acid"
+  },
+  "mediadive.compound:1752": {
+    "chebi_id": "CHEBI:115156",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium fumarate"
+  },
+  "mediadive.compound:421": {
+    "chebi_id": "CHEBI:17521",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Quinic acid"
+  },
+  "mediadive.compound:360": {
+    "chebi_id": "CHEBI:62064",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2,3-butanediol"
+  },
+  "mediadive.compound:1753": {
+    "chebi_id": "CHEBI:49976",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1754": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1756": {
+    "chebi_id": "CHEBI:91261",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "DL-Sodium malate"
+  },
+  "mediadive.compound:1757": {
+    "chebi_id": "CHEBI:18167",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1762": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:96": {
+    "chebi_id": "CHEBI:30961",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1763": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1764": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1768": {
+    "chebi_id": "CHEBI:86481",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium thioglycollate"
+  },
+  "mediadive.compound:1769": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1773": {
+    "chebi_id": "CHEBI:113451",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium ascorbate"
+  },
+  "mediadive.compound:1775": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1776": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1778": {
+    "chebi_id": "CHEBI:132106",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium propionate"
+  },
+  "mediadive.compound:314": {
+    "chebi_id": "CHEBI:30772",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Butyric acid"
+  },
+  "mediadive.compound:1785": {
+    "chebi_id": "CHEBI:41808",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Decane"
+  },
+  "mediadive.compound:1784": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1787": {
+    "chebi_id": "CHEBI:86202",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Chalcopyrite"
+  },
+  "mediadive.compound:1793": {
+    "chebi_id": "CHEBI:42160",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Dithionite"
+  },
+  "mediadive.compound:413": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1795": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1798": {
+    "chebi_id": "CHEBI:15846",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "beta-NAD"
+  },
+  "mediadive.compound:1800": {
+    "chebi_id": "CHEBI:26709",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaHSO3"
+  },
+  "mediadive.compound:531": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1799": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1801": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1810": {
+    "chebi_id": "CHEBI:91260",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1812": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1813": {
+    "chebi_id": "CHEBI:234557",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium palmitate"
+  },
+  "mediadive.compound:326": {
+    "chebi_id": "CHEBI:16467",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Arginine"
+  },
+  "mediadive.compound:1816": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1824": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1828": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1833": {
+    "chebi_id": "CHEBI:2511",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1571": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1845": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1846": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1847": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1849": {
+    "chebi_id": "CHEBI:9754",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tris(hydroxymethyl)aminomethane"
+  },
+  "mediadive.compound:1282": {
+    "chebi_id": "CHEBI:18248",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Iron"
+  },
+  "mediadive.compound:1859": {
+    "chebi_id": "CHEBI:82163",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "1,2-Dichloropropane"
+  },
+  "mediadive.compound:1855": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1856": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1858": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1860": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1861": {
+    "chebi_id": "CHEBI:16411",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Acetate"
+  },
+  "mediadive.compound:1862": {
+    "chebi_id": "CHEBI:16094",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Thiosulfate"
+  },
+  "mediadive.compound:1863": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1865": {
+    "chebi_id": "CHEBI:78870",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "NaNO2"
+  },
+  "mediadive.compound:1875": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1817": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1882": {
+    "chebi_id": "CHEBI:9765",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Trypsin"
+  },
+  "mediadive.compound:1883": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1885": {
+    "chebi_id": "CHEBI:144421",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Iron(III) citrate"
+  },
+  "mediadive.compound:1886": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1888": {
+    "chebi_id": "CHEBI:32150",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1890": {
+    "chebi_id": "CHEBI:28262",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Dimethyl sulfoxide"
+  },
+  "mediadive.compound:1891": {
+    "chebi_id": "CHEBI:53424",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tween 20"
+  },
+  "mediadive.compound:315": {
+    "chebi_id": "CHEBI:42355",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Erythromycin"
+  },
+  "mediadive.compound:1892": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:498": {
+    "chebi_id": "CHEBI:131533",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pyridoxamine"
+  },
+  "mediadive.compound:1893": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1551": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1895": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1897": {
+    "chebi_id": "CHEBI:86477",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium sulfite"
+  },
+  "mediadive.compound:1844": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1902": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1904": {
+    "chebi_id": "CHEBI:16602",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Trichloroethylene"
+  },
+  "mediadive.compound:1908": {
+    "chebi_id": "CHEBI:36018",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "1,1,2-Trichloroethane"
+  },
+  "mediadive.compound:1909": {
+    "chebi_id": "CHEBI:231499",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Titanium chloride"
+  },
+  "mediadive.compound:1910": {
+    "chebi_id": "CHEBI:28053",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Melibiose"
+  },
+  "mediadive.compound:1914": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1917": {
+    "chebi_id": "CHEBI:86466",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Potassium tetrathionate"
+  },
+  "mediadive.compound:1920": {
+    "chebi_id": "CHEBI:78020",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:104": {
+    "chebi_id": "CHEBI:16947",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(NH4) citrate"
+  },
+  "mediadive.compound:1921": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:787": {
+    "chebi_id": "CHEBI:16236",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1923": {
+    "chebi_id": "CHEBI:15361",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1924": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1930": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1933": {
+    "chebi_id": "CHEBI:46756",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1934": {
+    "chebi_id": "CHEBI:8346",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Potassium iodide"
+  },
+  "mediadive.compound:1938": {
+    "chebi_id": "CHEBI:17905",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1941": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1943": {
+    "chebi_id": "CHEBI:63005",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium nitrate"
+  },
+  "mediadive.compound:1946": {
+    "chebi_id": "CHEBI:17632",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1949": {
+    "chebi_id": "CHEBI:53311",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium alginate"
+  },
+  "mediadive.compound:1950": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1952": {
+    "chebi_id": "CHEBI:32029",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Potassium acetate"
+  },
+  "mediadive.compound:1953": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1955": {
+    "chebi_id": "CHEBI:75215",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1958": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:332": {
+    "chebi_id": "CHEBI:17879",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "p-Hydroxybenzoate"
+  },
+  "mediadive.compound:2089": {
+    "chebi_id": "CHEBI:41962",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Diethyl phosphonate"
+  },
+  "mediadive.compound:331": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:296": {
+    "chebi_id": "CHEBI:15882",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Phenol"
+  },
+  "mediadive.compound:1959": {
+    "chebi_id": "CHEBI:27941",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pullulan"
+  },
+  "mediadive.compound:1963": {
+    "chebi_id": "CHEBI:17754",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "glycerin"
+  },
+  "mediadive.compound:154": {
+    "chebi_id": "CHEBI:34887",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1973": {
+    "chebi_id": "CHEBI:18019",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Lysine"
+  },
+  "mediadive.compound:1975": {
+    "chebi_id": "CHEBI:18139",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Trimethylamine"
+  },
+  "mediadive.compound:1978": {
+    "chebi_id": "CHEBI:63317",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "BaCl2"
+  },
+  "mediadive.compound:1976": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1977": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2007": {
+    "chebi_id": "CHEBI:31604",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium ferric citrate"
+  },
+  "mediadive.compound:1981": {
+    "chebi_id": "CHEBI:71240",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium pyrophosphate"
+  },
+  "mediadive.compound:1982": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1545": {
+    "chebi_id": "CHEBI:30745",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Phenyl acetic acid"
+  },
+  "mediadive.compound:1547": {
+    "chebi_id": "CHEBI:18101",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "4-Hydroxyphenyl acetic acid"
+  },
+  "mediadive.compound:1546": {
+    "chebi_id": "CHEBI:48843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1548": {
+    "chebi_id": "CHEBI:32145",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1985": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:335": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1989": {
+    "chebi_id": "CHEBI:50144",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1992": {
+    "chebi_id": "CHEBI:16810",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2-Oxoglutarate"
+  },
+  "mediadive.compound:1997": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1999": {
+    "chebi_id": "CHEBI:9754",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2000": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2003": {
+    "chebi_id": "CHEBI:64734",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2005": {
+    "chebi_id": "CHEBI:73605",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "KF"
+  },
+  "mediadive.compound:340": {
+    "chebi_id": "CHEBI:44115",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Morpholinopropane sulfonic acid"
+  },
+  "mediadive.compound:341": {
+    "chebi_id": "CHEBI:85248",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2013": {
+    "chebi_id": "CHEBI:31440",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:432": {
+    "chebi_id": "CHEBI:16482",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Naphthalene"
+  },
+  "mediadive.compound:2017": {
+    "chebi_id": "CHEBI:16494",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:88": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:897": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2020": {
+    "chebi_id": "CHEBI:6109",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Kanamycin sulfate"
+  },
+  "mediadive.compound:2021": {
+    "chebi_id": "CHEBI:28077",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Rifampicin"
+  },
+  "mediadive.compound:2022": {
+    "chebi_id": "CHEBI:35458",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CeCl3"
+  },
+  "mediadive.compound:284": {
+    "chebi_id": "CHEBI:49105",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2024": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2293": {
+    "chebi_id": "CHEBI:17992",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2025": {
+    "chebi_id": "CHEBI:132100",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium octanoate"
+  },
+  "mediadive.compound:1611": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1732": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2029": {
+    "chebi_id": "CHEBI:6872",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Methylene blue"
+  },
+  "mediadive.compound:346": {
+    "chebi_id": "CHEBI:53258",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:349": {
+    "chebi_id": "CHEBI:35026",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Tea"
+  },
+  "mediadive.compound:485": {
+    "chebi_id": "CHEBI:32149",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2037": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2039": {
+    "chebi_id": "CHEBI:114126",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium caproate"
+  },
+  "mediadive.compound:439": {
+    "chebi_id": "CHEBI:18135",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyrocatechol"
+  },
+  "mediadive.compound:2041": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2043": {
+    "chebi_id": "CHEBI:132764",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Disodium oxalate"
+  },
+  "mediadive.compound:2042": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2048": {
+    "chebi_id": "CHEBI:17309",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Poly(3-hydroxybutyrate)"
+  },
+  "mediadive.compound:2049": {
+    "chebi_id": "CHEBI:17151",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Xylitol"
+  },
+  "mediadive.compound:2050": {
+    "chebi_id": "CHEBI:18287",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Fucose"
+  },
+  "mediadive.compound:2051": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2052": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2053": {
+    "chebi_id": "CHEBI:66870",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2057": {
+    "chebi_id": "CHEBI:192761",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ferrihydrite"
+  },
+  "mediadive.compound:2058": {
+    "chebi_id": "CHEBI:136511",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "MnO2"
+  },
+  "mediadive.compound:2063": {
+    "chebi_id": "CHEBI:2682",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Amphotericin B"
+  },
+  "mediadive.compound:2064": {
+    "chebi_id": "CHEBI:132103",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium perchlorate"
+  },
+  "mediadive.compound:2065": {
+    "chebi_id": "CHEBI:32954",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2066": {
+    "chebi_id": "CHEBI:15891",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Taurine"
+  },
+  "mediadive.compound:1853": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2069": {
+    "chebi_id": "CHEBI:82664",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Iron metal"
+  },
+  "mediadive.compound:2070": {
+    "chebi_id": "CHEBI:32583",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2071": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1031": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2154": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2155": {
+    "chebi_id": "CHEBI:39035",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2146": {
+    "chebi_id": "CHEBI:63005",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:355": {
+    "chebi_id": "CHEBI:16865",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "gamma-Aminobutyric acid"
+  },
+  "mediadive.compound:2086": {
+    "chebi_id": "CHEBI:28869",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Vitamin K3"
+  },
+  "mediadive.compound:1539": {
+    "chebi_id": "CHEBI:28869",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Menadione"
+  },
+  "mediadive.compound:175": {
+    "chebi_id": "CHEBI:91243",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:179": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2162": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:161": {
+    "chebi_id": "CHEBI:15971",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Histidin"
+  },
+  "mediadive.compound:162": {
+    "chebi_id": "CHEBI:16523",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "L-Serin"
+  },
+  "mediadive.compound:454": {
+    "chebi_id": "CHEBI:23673",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Diaminopimelic acid"
+  },
+  "mediadive.compound:2088": {
+    "chebi_id": "CHEBI:32158",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Streptomycin sulfate"
+  },
+  "mediadive.compound:2090": {
+    "chebi_id": "CHEBI:17544",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Bicarbonate"
+  },
+  "mediadive.compound:2092": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2095": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2096": {
+    "chebi_id": "CHEBI:16000",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Ethanolamine"
+  },
+  "mediadive.compound:2391": {
+    "chebi_id": "CHEBI:17521",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(-)-Quinic acid"
+  },
+  "mediadive.compound:2097": {
+    "chebi_id": "CHEBI:114954",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Sodium ferulate"
+  },
+  "mediadive.compound:2100": {
+    "chebi_id": "CHEBI:18401",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Phenyl acetate"
+  },
+  "mediadive.compound:425": {
+    "chebi_id": "CHEBI:16313",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Proline"
+  },
+  "mediadive.compound:2103": {
+    "chebi_id": "CHEBI:30793",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2-Chlorobenzoic acid"
+  },
+  "mediadive.compound:2104": {
+    "chebi_id": "CHEBI:19982",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "3-Chloroacrylic acid"
+  },
+  "mediadive.compound:359": {
+    "chebi_id": "CHEBI:17189",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Gentisic acid"
+  },
+  "mediadive.compound:2106": {
+    "chebi_id": "CHEBI:28145",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Dibenzofuran"
+  },
+  "mediadive.compound:2107": {
+    "chebi_id": "CHEBI:17362",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Quinoline"
+  },
+  "mediadive.compound:2108": {
+    "chebi_id": "CHEBI:36751",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Pyrrole-2-carboxylic acid"
+  },
+  "mediadive.compound:2109": {
+    "chebi_id": "CHEBI:16260",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2-Nitrophenol"
+  },
+  "mediadive.compound:2115": {
+    "chebi_id": "CHEBI:17642",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Pentachlorophenol"
+  },
+  "mediadive.compound:2118": {
+    "chebi_id": "CHEBI:38028",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Cyanuric acid"
+  },
+  "mediadive.compound:2121": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:805": {
+    "chebi_id": "CHEBI:231499",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Titanium(III) chloride"
+  },
+  "mediadive.compound:361": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:930": {
+    "chebi_id": "CHEBI:62946",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2093": {
+    "chebi_id": "CHEBI:8806",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2094": {
+    "chebi_id": "CHEBI:17561",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:362": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:984": {
+    "chebi_id": "CHEBI:18320",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DTT"
+  },
+  "mediadive.compound:983": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1444": {
+    "chebi_id": "CHEBI:31440",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1461": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1462": {
+    "chebi_id": "CHEBI:33118",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1463": {
+    "chebi_id": "CHEBI:64755",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:363": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:212": {
+    "chebi_id": "CHEBI:76209",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2157": {
+    "chebi_id": "CHEBI:30411",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Cobalamin"
+  },
+  "mediadive.compound:2159": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1573": {
+    "chebi_id": "CHEBI:63940",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1574": {
+    "chebi_id": "CHEBI:86360",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1585": {
+    "chebi_id": "CHEBI:15956",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1586": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1587": {
+    "chebi_id": "CHEBI:63940",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:365": {
+    "chebi_id": "CHEBI:31206",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:1596": {
+    "chebi_id": "CHEBI:36383",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2178": {
+    "chebi_id": "CHEBI:15978",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Glycerol (anhydrous)"
+  },
+  "mediadive.compound:2177": {
+    "chebi_id": "CHEBI:32312",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2331": {
+    "chebi_id": "CHEBI:39912",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "3,5-Dihydroxybenzoic acid"
+  },
+  "mediadive.compound:372": {
+    "chebi_id": "CHEBI:30845",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2-Furoic acid"
+  },
+  "mediadive.compound:2348": {
+    "chebi_id": "CHEBI:91241",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Ammonium oxalate"
+  },
+  "mediadive.compound:2152": {
+    "chebi_id": "CHEBI:17632",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2349": {
+    "chebi_id": "CHEBI:39063",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tricine"
+  },
+  "mediadive.compound:2358": {
+    "chebi_id": "CHEBI:176843",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2160": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2350": {
+    "chebi_id": "CHEBI:131527",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2351": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2352": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2353": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2354": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2355": {
+    "chebi_id": "CHEBI:35607",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Na3VO4"
+  },
+  "mediadive.compound:2356": {
+    "chebi_id": "CHEBI:35696",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2357": {
+    "chebi_id": "CHEBI:32596",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CaHPO4"
+  },
+  "mediadive.compound:2361": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2362": {
+    "chebi_id": "CHEBI:32588",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:653": {
+    "chebi_id": "CHEBI:86158",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2371": {
+    "chebi_id": "CHEBI:3311",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:391": {
+    "chebi_id": "CHEBI:64734",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2082": {
+    "chebi_id": "CHEBI:34683",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:503": {
+    "chebi_id": "CHEBI:53423",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Tween 40"
+  },
+  "mediadive.compound:2191": {
+    "chebi_id": "CHEBI:17548",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "(-)-Chloramphenicol"
+  },
+  "mediadive.compound:1627": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2384": {
+    "chebi_id": "CHEBI:46756",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2394": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2397": {
+    "chebi_id": "CHEBI:6731",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Melezitose"
+  },
+  "mediadive.compound:2398": {
+    "chebi_id": "CHEBI:17968",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2060": {
+    "chebi_id": "CHEBI:26710",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:143": {
+    "chebi_id": "CHEBI:78018",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:399": {
+    "chebi_id": "CHEBI:6636",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:402": {
+    "chebi_id": "CHEBI:17154",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Nicotinic acid amide"
+  },
+  "mediadive.compound:404": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:406": {
+    "chebi_id": "CHEBI:17196",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:15": {
+    "chebi_id": "CHEBI:15676",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "Allantoin"
+  },
+  "mediadive.compound:412": {
+    "chebi_id": "CHEBI:31225",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Antipyrine"
+  },
+  "mediadive.compound:414": {
+    "chebi_id": "CHEBI:91249",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "(NH4)2MoO4"
+  },
+  "mediadive.compound:416": {
+    "chebi_id": "CHEBI:17824",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Isopropyl alcohol"
+  },
+  "mediadive.compound:419": {
+    "chebi_id": "CHEBI:15671",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "L(+)-Tartaric acid"
+  },
+  "mediadive.compound:460": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:298": {
+    "chebi_id": "CHEBI:29377",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:467": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:469": {
+    "chebi_id": "CHEBI:16296",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "DL-Tryptophan"
+  },
+  "mediadive.compound:470": {
+    "chebi_id": "CHEBI:32599",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2110": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:724": {
+    "chebi_id": "CHEBI:2509",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:481": {
+    "chebi_id": "CHEBI:32139",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:482": {
+    "chebi_id": "CHEBI:53470",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "CoSO4"
+  },
+  "mediadive.compound:2101": {
+    "chebi_id": "CHEBI:30762",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Salicylate"
+  },
+  "mediadive.compound:2102": {
+    "chebi_id": "CHEBI:165232",
+    "confidence": 0.9,
+    "match_type": "synonym_match_ambiguous",
+    "source_name": "2,4-Dichlorophenoxyacetic acid"
+  },
+  "mediadive.compound:1113": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2105": {
+    "chebi_id": "CHEBI:17097",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Biphenyl"
+  },
+  "mediadive.compound:495": {
+    "chebi_id": "CHEBI:86254",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  },
+  "mediadive.compound:2113": {
+    "chebi_id": "CHEBI:33083",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Fluoranthene"
+  },
+  "mediadive.compound:2166": {
+    "chebi_id": "CHEBI:25979",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "Benzylcyanide"
+  },
+  "mediadive.compound:2117": {
+    "chebi_id": "CHEBI:28924",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "3-Aminophenol"
+  },
+  "mediadive.compound:2120": {
+    "chebi_id": "CHEBI:15930",
+    "confidence": 1.0,
+    "match_type": "exact_match",
+    "source_name": "2-chloro-4(ethylamino)-6-(isopropylamino)-1,3,5-triazine"
+  },
+  "mediadive.compound:501": {
+    "chebi_id": "CHEBI:42758",
+    "confidence": 0.7,
+    "match_type": "kg_fallback",
+    "source_name": ""
+  }
+}

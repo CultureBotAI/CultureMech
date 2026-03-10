@@ -1,0 +1,50 @@
+preferred_term: Main sol. J893
+term:
+  id: mediadive.solution:4886
+  label: Main sol. J893
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.926108374384237'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '9.852216748768473'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sulfur
+  concentration:
+    value: '0.985222'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Autoclave the base solution and the yeast extract solution separately.
+  Filter-sterilize the NaHCO3 solution and steam sulfur for 3 hr on each of 3 successive
+  3 days. Aseptically mix the three solutions and distribute into culture vessels
+  containing sulfur under a H2-CO2-O2 (80:20:2, v/v) gas stream and seal with butyl
+  rubber stoppers. Adjust pH to 6.0 with sterile 1 N H2SO4, if necessary. Pressurize
+  inoculated bottles to 100 kPa with the same gas mixture.
+
+
+  Original volume: 1015 mL'

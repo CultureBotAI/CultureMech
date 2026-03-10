@@ -1,0 +1,89 @@
+preferred_term: Trace element solution
+term:
+  id: mediadive.solution:1178
+  label: Trace element solution
+composition:
+- preferred_term: H2O
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:56
+    label: H2O
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MoO3
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:235
+    label: MoO3
+  chebi_term:
+    id: CHEBI:30627
+    label: molybdenum trioxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4 x 5 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:234
+    label: MnSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback

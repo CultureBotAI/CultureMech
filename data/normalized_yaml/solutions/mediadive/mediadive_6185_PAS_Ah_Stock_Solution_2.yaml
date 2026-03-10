@@ -1,0 +1,34 @@
+preferred_term: PAS Ah Stock Solution 2
+term:
+  id: mediadive.solution:6185
+  label: PAS Ah Stock Solution 2
+composition:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '71'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '68.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''500''>500</span>
+  ml with MilliQ water.
+
+
+  Original volume: 500 mL'

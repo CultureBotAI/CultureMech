@@ -1,0 +1,38 @@
+preferred_term: Main sol. 645a
+term:
+  id: mediadive.solution:1372
+  label: Main sol. 645a
+composition:
+- preferred_term: Middlebrook 7H10 agar
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1748
+    label: Middlebrook 7H10 agar
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: OADC Enrichment
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2129
+    label: OADC Enrichment
+- preferred_term: Haemin
+  concentration:
+    value: '60'
+    unit: MICROMOLAR
+  term:
+    id: mediadive.compound:149
+    label: Haemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722)
+  with 60 micromoles hemin. Hemin must be solubilized with 1N NAOH.

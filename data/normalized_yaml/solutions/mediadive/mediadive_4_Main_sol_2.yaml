@@ -1,0 +1,21 @@
+preferred_term: Main sol. 2
+term:
+  id: mediadive.solution:4
+  label: Main sol. 2
+composition:
+- preferred_term: Urea
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:339
+    label: Urea
+  chebi_term:
+    id: CHEBI:15676
+    label: allantoin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'To medium 1 add 20 g/l urea before autoclaving. Do not adjust
+  pH; pH raises to about 8 due to heat degraded urea.
+
+  For sporulation enhancement add 10 mg/l MnSO4 x H2O.'

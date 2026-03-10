@@ -1,0 +1,25 @@
+preferred_term: Main sol. J258
+term:
+  id: mediadive.solution:3944
+  label: Main sol. J258
+composition:
+- preferred_term: Malt extract agar
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1712
+    label: Malt extract agar
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Autoclave at 115C for 10 min.

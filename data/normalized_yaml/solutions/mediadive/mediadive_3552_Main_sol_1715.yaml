@@ -1,0 +1,26 @@
+preferred_term: Main sol. 1715
+term:
+  id: mediadive.solution:3552
+  label: Main sol. 1715
+composition:
+- preferred_term: GAM Broth mod. powder
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1564
+    label: GAM Broth mod. powder
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Suspend the dehydrated medium in deionized water, and heat do dissolve
+  the medium, sterilize by autoclaving at 115 °C for 15 minutes.

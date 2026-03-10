@@ -1,0 +1,37 @@
+preferred_term: Main sol. J677
+term:
+  id: mediadive.solution:4574
+  label: Main sol. J677
+composition:
+- preferred_term: Brucella agar
+  concentration:
+    value: '40.1869'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1854
+    label: Brucella agar
+- preferred_term: Horse blood
+  concentration:
+    value: '46.728971962616825'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '934.5794392523364'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 1070 mL'

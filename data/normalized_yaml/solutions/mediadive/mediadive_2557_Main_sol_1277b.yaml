@@ -1,0 +1,113 @@
+preferred_term: Main sol. 1277b
+term:
+  id: mediadive.solution:2557
+  label: Main sol. 1277b
+composition:
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O5
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:440
+    label: Na2S2O5
+  chebi_term:
+    id: CHEBI:114786
+    label: sodium disulfite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '953.3267130089374'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except carbonate, pyrosulfite and vitamins),
+  then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+  anoxic. Dispense medium under same gas atmosphere into Hungate-type tubes or serum
+  vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted to
+  pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration.
+  Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere and
+  sterilized by filtration and carbonate is added from a sterile stock solution prepared
+  under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium to 7.5 - 8.0.
+  Incubate without shaking.
+
+
+  Original volume: 1007 mL'

@@ -1,0 +1,31 @@
+preferred_term: Solution 2 NaHCO3
+term:
+  id: mediadive.solution:5709
+  label: Solution 2 NaHCO3
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Boil briefly and bubble with CO2 for 30 minutes and filter sterilize\
+  \ into a sterile, gas-tight\r\nscrew-cap bottle.\n\nOriginal volume: 300 mL"

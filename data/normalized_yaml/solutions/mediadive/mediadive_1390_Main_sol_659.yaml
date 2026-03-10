@@ -1,0 +1,123 @@
+preferred_term: Main sol. 659
+term:
+  id: mediadive.solution:1390
+  label: Main sol. 659
+composition:
+- preferred_term: Casein peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:21
+    label: Casein peptone
+  chebi_term:
+    id: CHEBI:22652
+    label: ascorbic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:75
+    label: Soy peptone
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Meat peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:646
+    label: Meat peptone
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ascorbic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:112
+    label: Ascorbic acid
+  chebi_term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2-ß-glycerolphosphate
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:647
+    label: Na2-ß-glycerolphosphate
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Lactose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:394
+    label: Lactose
+  chebi_term:
+    id: CHEBI:17716
+    label: lactose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1.2'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: After autoclaving add a lactose solution (sterilized by filtration)
+  up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15
+  ± 0.05.

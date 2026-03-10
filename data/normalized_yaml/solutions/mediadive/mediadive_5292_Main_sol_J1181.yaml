@@ -1,0 +1,46 @@
+preferred_term: Main sol. J1181
+term:
+  id: mediadive.solution:5292
+  label: Main sol. J1181
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.114155'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '5.707762557077626'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Cellobiose
+  concentration:
+    value: '34.24657534246575'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Add components and bring volume to 958 ml with distilled water.\
+  \ For preparation of solid medium, add 20 g/L agar (if necessary, use washed agar:\
+  \ see Medium No. 574). Autoclave. After cooling, add the following solutions (autoclaved\
+  \ or *filter-sterilized) to the medium. \nReadjust pH to 7.0 with a sterilized 10%\
+  \ Na2CO3 solution, if necessary.\n\nOriginal volume: 876 mL"

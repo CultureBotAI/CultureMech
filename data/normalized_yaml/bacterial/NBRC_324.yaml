@@ -5,9 +5,6 @@ description: 324. NBRC 323.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
-    water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions A and
-    B are separately sterilized by autoclaving and mixed.
 - preferred_term: ''
   concentration:
     value: Solution A*
@@ -50,3 +47,12 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 323, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=323.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:40.494438+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
+    water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions
+    A and B are separately sterilized by autoclaving and mixed.
+  composition: []

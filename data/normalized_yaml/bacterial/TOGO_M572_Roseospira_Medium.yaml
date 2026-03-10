@@ -71,15 +71,6 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-- preferred_term: Micronutrient solution (SL7) (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: vitamin B12 solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
 - preferred_term: NaHCO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -185,4 +176,22 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaHCO3; Added default concentration
     for ingredient: Na2S2O3'
+- timestamp: '2026-03-09T08:04:19.919949+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Micronutrient solution (SL7) (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: vitamin B12 solution
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition

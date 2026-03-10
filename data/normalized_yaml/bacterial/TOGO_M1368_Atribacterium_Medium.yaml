@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.107'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -32,7 +35,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -40,7 +44,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -48,14 +53,11 @@ ingredients:
   concentration:
     value: '1.38'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
-- preferred_term: Mineral solution (see Medium [M1029])
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -69,39 +71,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 1% Yeast extract solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: 5% Xylitol solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source'
-- preferred_term: 5% Fucose solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source'
-- preferred_term: Solution A (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -109,12 +84,14 @@ ingredients:
   concentration:
     value: '0.123'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.015'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
 media_term:
   preferred_term: TOGO Medium M1368
   term:
@@ -139,5 +116,52 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.419130'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+- timestamp: '2026-03-09T08:05:07.843593+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution (see Medium [M1029])
+  composition: []
+  notes: Cross-reference to Medium M1029
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: 1% Yeast extract solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: 5% Xylitol solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+- preferred_term: 5% Fucose solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+- preferred_term: Solution A (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '5'
+    unit: G_PER_L

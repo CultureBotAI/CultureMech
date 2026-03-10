@@ -1,0 +1,82 @@
+preferred_term: Main sol. 1205
+term:
+  id: mediadive.solution:2405
+  label: Main sol. 1205
+composition:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '13.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:99
+    label: Trypticase soy broth
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: DL-Dithiothreitol
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:151
+    label: DL-Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve ingredients except glucose and DTT, then sparge medium
+  with 100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to 7.2 with HCl, then
+  dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+  vials and autoclave at 121°C for 20 min. Add glucose and DTT from anoxic stock solutions
+  prepared under 100% N2 gas atmosphere and sterilized by filtration.

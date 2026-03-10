@@ -94,15 +94,6 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: Vitamin B12 (0.002%) solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
-- preferred_term: Trace element solution SL-12B*
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -262,4 +253,20 @@ curation_history:
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: H2SO4; Added default
     concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:16.907801+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Vitamin B12 (0.002%) solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
+- preferred_term: Trace element solution SL-12B*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

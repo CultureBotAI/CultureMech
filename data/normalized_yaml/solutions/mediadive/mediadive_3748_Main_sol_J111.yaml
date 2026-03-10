@@ -1,0 +1,13 @@
+preferred_term: Main sol. J111
+term:
+  id: mediadive.solution:3748
+  label: Main sol. J111
+composition:
+- preferred_term: MRS medium
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1626
+    label: MRS medium
+preparation_notes: Adjust pH to 5.5.

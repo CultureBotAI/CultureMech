@@ -1,0 +1,162 @@
+preferred_term: Main sol. J462
+term:
+  id: mediadive.solution:4209
+  label: Main sol. J462
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '3333.33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '666.667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KBr
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:174
+    label: KBr
+  chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '83.3333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '416.667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium lactate
+  concentration:
+    value: '375'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1392
+    label: Sodium lactate
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.166667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve components except NaHCO3, Vitamin solution, Thiamine
+  solution, Vitamin B12 solution, sodium lactate and Na2S x 9H2O in 900 ml distilled
+  water and adjust pH to 7.0. Bring to a boil and cool down under a N2-CO2 (4:1, v/v)
+  gas stream. Distribute the medium into culture vessels (e.g., 9 ml of the medium
+  in Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
+  stoppers and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere.
+  After cooling, add 1/9 volume of the sodium lactate solution, and filter-sterilized
+  8% NaHCO3 solution, Vitamin solution, Thiamine solution and Vitamin B12 solution
+  to the medium. Readjust pH to 7.0, if necessary. Prior to use, reduce the medium
+  with Na2S x 9H2O (3% solution, autoclaved and stocked under N2).
+
+
+  Original volume: 6 mL'

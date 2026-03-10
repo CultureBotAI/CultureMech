@@ -1,0 +1,78 @@
+preferred_term: Main sol. 1854
+term:
+  id: mediadive.solution:6469
+  label: Main sol. 1854
+composition:
+- preferred_term: Soy peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:75
+    label: Soy peptone
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:171
+    label: Maltose
+  chebi_term:
+    id: CHEBI:17306
+    label: maltose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:794
+    label: Calcium Chloride
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Magnesium sulfate heptahydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1583
+    label: Magnesium sulfate heptahydrate
+  chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HEPES
+  concentration:
+    value: '11.9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '8'
+    unit: MG_PER_L
+  term:
+    id: mediadive.compound:1230
+    label: FeNa-EDTA
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.2.

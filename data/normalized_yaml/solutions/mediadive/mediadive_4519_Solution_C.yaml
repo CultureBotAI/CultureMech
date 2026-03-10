@@ -1,0 +1,37 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4519
+  label: Solution C
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave Solutions A and B separately and filter-sterilize Solution
+  C. Combine the three solutions, distribute into culture vessels under a stream of
+  N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. Prior to inoculation, reduce
+  the medium with 0.05% L-cysteine x HCl x H2O (autoclaved as a 5% solution under
+  a N2 atmosphere).
+
+
+  Original volume: 100 mL'

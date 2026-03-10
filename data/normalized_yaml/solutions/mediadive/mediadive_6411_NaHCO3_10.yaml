@@ -1,0 +1,38 @@
+preferred_term: NaHCO3, 10%
+term:
+  id: mediadive.solution:6411
+  label: NaHCO3, 10%
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min,
+  then close tightly.
+
+  Autoclave in closed vessel under CO2 atmosphere.
+
+  Autoclave at 121 °C for 15 min.
+
+
+  Original volume: 50 mL'

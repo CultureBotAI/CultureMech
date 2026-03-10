@@ -1,0 +1,145 @@
+preferred_term: Main sol. 705
+term:
+  id: mediadive.solution:1456
+  label: Main sol. 705
+composition:
+- preferred_term: Ferric citrate
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:863
+    label: Ferric citrate
+  chebi_term:
+    id: CHEBI:31605
+    label: ferric citrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaCl
+  concentration:
+    value: '5.63107'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.970874'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.38835'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:244
+    label: K2HPO4 x 3 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.970874'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.94175'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.94175'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-acetate
+  concentration:
+    value: '0.776699'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:23
+    label: Na-acetate
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-lactate
+  concentration:
+    value: '1.16505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:200
+    label: Na-lactate
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '0.485437'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:227
+    label: 2-Mercaptoethanesulfonate
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '970.873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "First, dissolve ferric citrate in water by heating and adjust\
+  \ to pH 7.5 with NaOH, then add other\r\nmedium ingredients except acetate, lactate,\
+  \ and coenzyme M. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45\
+  \ min to make it anoxic. Dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic\
+  \ Hungate-type tubes or serum vials and autoclave. Add acetate, lactate, and coenzyme\
+  \ M from sterile anoxic stock solutions prepared under 100% N2 gas.\nPrior to inoculation\
+  \ the pH of the complete medium should be checked and adjusted to 7.5, if necessary.\n\
+  \nOriginal volume: 1030 mL"

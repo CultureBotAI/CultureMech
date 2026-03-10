@@ -4,26 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: 'Solution A:'
-  concentration:
-    value: '900'
-    unit: G_PER_L
-- preferred_term: 'Solution B:'
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: 'Solution C:'
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: 'Vitamin solution:'
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: benzene solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -69,14 +49,6 @@ ingredients:
   term:
     id: CHEBI:65242
     label: ''
-- preferred_term: Trace element solution SL-10
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite-Tungstate solution
-  concentration:
-    value: '4'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -426,4 +398,50 @@ curation_history:
     Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas;
     Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:55.347082+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 'Solution A:'
+  composition: []
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: 'Solution B:'
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: 'Solution C:'
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: 'Vitamin solution:'
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: benzene solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Trace element solution SL-10
+  term:
+    id: mediadive.solution:4178
+    label: Trace element solution SL-10
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_4178_Trace_element_solution_SL-10.yaml for composition
+- preferred_term: Selenite-Tungstate solution
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition

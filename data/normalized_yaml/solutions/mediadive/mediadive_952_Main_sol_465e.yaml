@@ -1,0 +1,15 @@
+preferred_term: Main sol. 465e
+term:
+  id: mediadive.solution:952
+  label: Main sol. 465e
+composition:
+- preferred_term: 2-Sulfobenzoic acid
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2116
+    label: 2-Sulfobenzoic acid
+preparation_notes: Prepare medium 465 supplemented with vitamin solution (see medium
+  462). Prepare a stock solution of 2-sulfobenzoic acid (20 mg/ml) and sterilize by
+  filtration. Add 50 ml of this stock solution to 1 l of the medium.

@@ -1,0 +1,42 @@
+preferred_term: Vitamin 3 Mix
+term:
+  id: mediadive.solution:5855
+  label: Vitamin 3 Mix
+composition:
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '10.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Biotin
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:879
+    label: D-Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Vitamin B12
+  concentration:
+    value: '2.5'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 100 mL'

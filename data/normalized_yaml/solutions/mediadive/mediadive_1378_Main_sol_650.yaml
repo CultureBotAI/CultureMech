@@ -1,0 +1,81 @@
+preferred_term: Main sol. 650
+term:
+  id: mediadive.solution:1378
+  label: Main sol. 650
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Pyruvate
+  concentration:
+    value: '1.741'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1386
+    label: Pyruvate
+  chebi_term:
+    id: CHEBI:15361
+    label: pyruvate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Adjust pH to 7.0.
+
+  Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM pyruvate after
+  autoclaving.'

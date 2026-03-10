@@ -5,17 +5,6 @@ description: 1170. NBRC 1169.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: NH4Cl0.33gKH2PO40.33gKCl0.33gCaCl2·2H2O0.33gMgCl2·6H2O0.33gMgSO4·7H2O4gNaCl250gCoenzyme
-    M0.142gBacto Yeast Extract (Difco)0.5gVitamin solution*10mlTrace elements solution**1mlTrimethylamine-HCl5gResazurin1mgNaHCO35gNa2S·9H2O0.5gDistilled
-    water1LMix ingredients except for vitamin solution, trimethylamine-HCl, NaHCO3and Na2S·9H2O, and autoclave
-    under a N2/CO2atmosphere (80/20).  Separately autoclave Na2S·9H2O solution as 5% solution under a
-    N2atmosphere.  Prior to inoculation, add the filter-sterile vitamin, 50% trimethylamine-HCl and 5%
-    NaHCO3solutions, and Na2S·9H2O. Adjust pH of the medium to 7.4 with filter-sterile 5% Na2CO3solution
-    (approximately final concentration of Na2CO3is 0.5 g/L).*Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
-    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L**Trace elements
-    solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals.
-    Final pH 7.0.
 - preferred_term: ''
   concentration:
     value: NH4Cl
@@ -212,3 +201,22 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1169, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1169.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:05:05.150331+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: NH4Cl0.33gKH2PO40.33gKCl0.33gCaCl2·2H2O0.33gMgCl2·6H2O0.33gMgSO4·7H2O4gNaCl250gCoenzyme
+    M0.142gBacto Yeast Extract (Difco)0.5gVitamin solution*10mlTrace elements solution**1mlTrimethylamine-HCl5gResazurin1mgNaHCO35gNa2S·9H2O0.5gDistilled
+    water1LMix ingredients except for vitamin solution, trimethylamine-HCl, NaHCO3and
+    Na2S·9H2O, and autoclave under a N2/CO2atmosphere (80/20).  Separately autoclave
+    Na2S·9H2O solution as 5% solution under a N2atmosphere.  Prior to inoculation,
+    add the filter-sterile vitamin, 50% trimethylamine-HCl and 5% NaHCO3solutions,
+    and Na2S·9H2O. Adjust pH of the medium to 7.4 with filter-sterile 5% Na2CO3solution
+    (approximately final concentration of Na2CO3is 0.5 g/L).*Vitamin solutionBiotin2mgFolic
+    acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic
+    acid1mgVitamin B120.01mgDistilled water1L**Trace elements solutionNitrilotriacetic
+    acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
+    then add minerals. Final pH 7.0.
+  composition: []

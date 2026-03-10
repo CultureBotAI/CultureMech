@@ -1,0 +1,31 @@
+preferred_term: 2-chlorobenzoic acid solution
+term:
+  id: mediadive.solution:5617
+  label: 2-chlorobenzoic acid solution
+composition:
+- preferred_term: 2-Chlorobenzoic acid
+  concentration:
+    value: '78.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2103
+    label: 2-Chlorobenzoic acid
+  chebi_term:
+    id: CHEBI:30793
+    label: 2-chlorobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve 78.3 g/l 2-chlorobenzoic acid in water by slow addition
+  of concentrated NaOH (pH should reach 7.4). Filter-sterilize the solution.

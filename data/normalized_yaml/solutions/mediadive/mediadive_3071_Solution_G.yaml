@@ -1,0 +1,22 @@
+preferred_term: Solution G
+term:
+  id: mediadive.solution:3071
+  label: Solution G
+composition:
+- preferred_term: Asialofetuin
+  concentration:
+    value: '100.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2150
+    label: Asialofetuin
+  chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare Solutions G, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at -20°C
+
+
+  Original volume: 10 mL'

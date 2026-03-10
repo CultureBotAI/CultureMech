@@ -1,0 +1,30 @@
+preferred_term: Solution G
+term:
+  id: mediadive.solution:629
+  label: Solution G
+composition:
+- preferred_term: L-α-Phosphatidylcholine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2082
+    label: L-α-Phosphatidylcholine
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Methanol
+  concentration:
+    value: '792'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 1 mL'

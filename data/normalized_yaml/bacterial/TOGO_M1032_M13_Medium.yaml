@@ -42,10 +42,6 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: Vitamin solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Hutner's basal salts (see below)
   concentration:
     value: '20'
@@ -161,10 +157,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Metals ''44'' (see Medium [M140])
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -207,3 +199,19 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:58.787124+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Metals ''44'' (see Medium [M140])
+  composition: []
+  notes: Cross-reference to Medium M140
+  concentration:
+    value: '50'
+    unit: G_PER_L

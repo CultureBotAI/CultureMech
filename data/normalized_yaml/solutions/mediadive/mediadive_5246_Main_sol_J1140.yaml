@@ -1,0 +1,33 @@
+preferred_term: Main sol. J1140
+term:
+  id: mediadive.solution:5246
+  label: Main sol. J1140
+composition:
+- preferred_term: Tryptone
+  concentration:
+    value: '14.749262536873156'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.966568338249754'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Aseptically combine the above described media and solutions.
+
+
+  Original volume: 1017 mL'

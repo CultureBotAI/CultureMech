@@ -1,0 +1,12 @@
+preferred_term: Main sol. 245
+term:
+  id: mediadive.solution:506
+  label: Main sol. 245
+composition:
+- preferred_term: Defibrinated sheep blood
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  term:
+    id: mediadive.compound:1717
+    label: Defibrinated sheep blood

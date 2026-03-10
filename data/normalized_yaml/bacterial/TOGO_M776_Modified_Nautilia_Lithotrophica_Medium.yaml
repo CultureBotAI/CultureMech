@@ -87,14 +87,6 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -105,26 +97,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% NaHCO3 solution*
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 3% Na2S・9H2O solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
-- preferred_term: 15% Sodium formate solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M776
   term:
@@ -151,3 +123,45 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:05:06.157759+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 3% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: 15% Sodium formate solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

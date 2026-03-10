@@ -1,0 +1,107 @@
+preferred_term: Mail sol. C44
+term:
+  id: mediadive.solution:6182
+  label: Mail sol. C44
+composition:
+- preferred_term: Sea Salt
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)Cl
+  concentration:
+    value: '1.5274'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1490
+    label: (NH4)Cl
+  chebi_term:
+    id: CHEBI:104586
+    label: tetrahexadecanoyl cardiolipin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium beta-glycerophosphate
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1744
+    label: Sodium beta-glycerophosphate
+  chebi_term:
+    id: CHEBI:132089
+    label: sodium glycerol 2-phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: H2SeO3
+  concentration:
+    value: '0.03004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:894
+    label: H2SeO3
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris base
+  concentration:
+    value: '0.6181'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1698
+    label: Tris base
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly\
+  \ top up to 100ml with DIW ensuring\r\nto check pH remains at 7.2.\nMake up to 1\
+  \ litre with deionised water. Adjust pH to 8.1-8.4 with 1M NaOH or 1M HCl prior\
+  \ to\r\nautoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave\
+  \ at 15 psi for 15 minutes."

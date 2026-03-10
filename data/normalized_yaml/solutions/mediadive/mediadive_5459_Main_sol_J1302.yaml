@@ -1,0 +1,118 @@
+preferred_term: Main sol. J1302
+term:
+  id: mediadive.solution:5459
+  label: Main sol. J1302
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.491642'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '0.983284'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '2.45821'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sea Salt
+  concentration:
+    value: '29.4985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:423
+    label: Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.983284169124877'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:699
+    label: Na2SeO3
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.196657'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000491642'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '983.284169124877'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium Thiosulfate
+  concentration:
+    value: '4.916420845624385'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1126
+    label: Sodium Thiosulfate
+  chebi_term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix components and adjust pH to 7.0. Dispense the medium into\
+  \ culture vessels under a N2 gas atmosphere (e.g., 10 ml medium in Hungate tubes),\
+  \ seal with butyl rubber stoppers and autoclave. After cooling, aseptically and\
+  \ anaerobicallly add per liter the following solutions (filter-sterilized): \n\n\
+  Original volume: 1017 mL"

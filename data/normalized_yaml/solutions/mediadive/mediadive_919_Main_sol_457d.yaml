@@ -1,0 +1,23 @@
+preferred_term: Main sol. 457d
+term:
+  id: mediadive.solution:919
+  label: Main sol. 457d
+composition:
+- preferred_term: Biphenyl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2105
+    label: Biphenyl
+  chebi_term:
+    id: CHEBI:17097
+    label: biphenyl
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare medium 457. Make a stock solution of 10 g/l biphenyl in
+  ethanol and filter sterilize it using a cellulose filter membrane. Add an aliquot
+  of this stock solution to a sterile flask so that the final concentration will be
+  0.25 g/l biphenyl, and let the ethanol evaporate. Add sterile medium to the crystal-layered
+  flask. Alternatively, add biphenyl crystals directly to the liquid medium or to
+  the lid of inversely incubated petri dishes containing 457-agar medium.

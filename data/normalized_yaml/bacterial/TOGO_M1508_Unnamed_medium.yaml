@@ -65,18 +65,6 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-- preferred_term: Vitamin mixture*
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Ferric quinate solution**
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: HMSS solution***
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -262,10 +250,6 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-- preferred_term: Metal 44 solution****
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -359,4 +343,35 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: KOH'
+- timestamp: '2026-03-09T08:05:11.533295+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Vitamin mixture*
+  term:
+    id: mediadive.solution:5209
+    label: Vitamin mixture
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: See mediadive_5209_Vitamin_mixture.yaml for composition
+- preferred_term: Ferric quinate solution**
+  term:
+    id: mediadive.solution:4559
+    label: Ferric quinate solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_4559_Ferric_quinate_solution.yaml for composition
+- preferred_term: HMSS solution***
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Metal 44 solution****
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

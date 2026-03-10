@@ -70,14 +70,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Mineral solution A (see below)
-  concentration:
-    value: '150'
-    unit: G_PER_L
-- preferred_term: Mineral solution B (see below)
-  concentration:
-    value: '150'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -183,3 +175,18 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: CO2'
+- timestamp: '2026-03-09T08:04:29.432923+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution A (see below)
+  composition: []
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Mineral solution B (see below)
+  composition: []
+  concentration:
+    value: '150'
+    unit: G_PER_L

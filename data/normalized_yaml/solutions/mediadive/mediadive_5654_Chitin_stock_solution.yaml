@@ -1,0 +1,51 @@
+preferred_term: Chitin stock solution
+term:
+  id: mediadive.solution:5654
+  label: Chitin stock solution
+composition:
+- preferred_term: Chitin
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2138
+    label: Chitin
+  chebi_term:
+    id: CHEBI:17029
+    label: chitin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HCl
+  concentration:
+    value: '74'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '833.3333333333334'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'The chitin solution is prepared as follows: mix 20 g chitin (practical
+  grade from crab shells) with 200 ml of 37% HCl (pre-cooled to 4°C) and stir for
+  1 hr at 4°C. Pour the suspension into 1 litre of distilled water (pre-cooled to
+  4°C) and filter through filter paper (Schleicher and Schüll Nr. 311853). Wash the
+  residue five times with 500 ml distilled water and resuspend in 1 litre of distilled
+  water. Neutralise the suspension with 10 ml of 5M KOH (final pH 6.5). Filter and
+  wash with 3 litres of distilled water to remove KCl.
+
+
+  Original volume: 1200 mL'

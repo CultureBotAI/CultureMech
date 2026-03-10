@@ -120,14 +120,6 @@ ingredients:
   concentration:
     value: '100'
     unit: MILLIMOLAR
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace mineral solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -274,11 +266,6 @@ ingredients:
   term:
     id: CHEBI:86463
     label: potassium aluminium sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M409
   term:
@@ -307,4 +294,26 @@ curation_history:
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: NaOH; Added default
     concentration for ingredient: KOH solution'
+- timestamp: '2026-03-09T08:04:49.142651+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace mineral solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'

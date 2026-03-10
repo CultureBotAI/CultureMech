@@ -1,0 +1,119 @@
+preferred_term: Vitamin mixture
+term:
+  id: mediadive.solution:3545
+  label: Vitamin mixture
+composition:
+- preferred_term: Na2HPO4-NaH2PO4 buffer
+  concentration:
+    value: '1820'
+    unit: G_PER_L
+  notes: 25 mM, pH 7.1
+  term:
+    id: mediadive.compound:1725
+    label: Na2HPO4-NaH2PO4 buffer
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: 4-Aminobenzoic Acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1237
+    label: 4-Aminobenzoic Acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-(+)-biotin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1359
+    label: D-(+)-biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1512
+    label: Calcium D-(+)-pantothenate
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Pyridoxal hydrochloride
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:338
+    label: Pyridoxal hydrochloride
+  chebi_term:
+    id: CHEBI:131529
+    label: pyridoxal hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-alpha-lipoic acid
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1559
+    label: DL-alpha-lipoic acid
+  chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Folic acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2-Mercaptoethanesulfonic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:506
+    label: 2-Mercaptoethanesulfonic acid
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'The solution was filter-sterilized and stored at 4°C in the dark.
+
+
+  Original volume: 100 mL'

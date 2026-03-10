@@ -1,0 +1,18 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:1150
+  label: Solution E
+composition:
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 1 mL'

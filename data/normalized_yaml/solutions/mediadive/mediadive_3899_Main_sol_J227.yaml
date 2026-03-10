@@ -1,0 +1,93 @@
+preferred_term: Main sol. J227
+term:
+  id: mediadive.solution:3899
+  label: Main sol. J227
+composition:
+- preferred_term: KNO3
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium glycerophosphate
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1697
+    label: Sodium glycerophosphate
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris base
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1698
+    label: Tris base
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tryptone
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '14.985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '999.0009990009991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.0.
+
+
+  Original volume: 1001 mL'

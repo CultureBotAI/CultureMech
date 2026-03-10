@@ -1,0 +1,130 @@
+preferred_term: Main sol. J1273
+term:
+  id: mediadive.solution:5415
+  label: Main sol. J1273
+composition:
+- preferred_term: NaNO3
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '259'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:952
+    label: Fe(III)-EDTA
+  chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Mn(II) x EDTA
+  concentration:
+    value: '332'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2051
+    label: Mn(II) x EDTA
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris(hydroxymethyl)aminomethane
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1849
+    label: Tris(hydroxymethyl)aminomethane
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: LB Broth
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: ' Lennox'
+  term:
+    id: mediadive.compound:2052
+    label: LB Broth
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components thoroughly, adjust pH to 8.0 with HCl and autoclave.
+
+  Comment: Artificial sea water (such as artificial sea water in Medium No. 1118)
+  can be used instead of natural sea water.'

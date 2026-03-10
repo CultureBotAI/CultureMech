@@ -15,18 +15,6 @@ ingredients:
     value: '0.3'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Solution A
-  concentration:
-    value: '862'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -125,18 +113,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M481])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Se/W solution (see Medium [M312])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -170,11 +146,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -214,3 +185,56 @@ curation_history:
     Nitrogen gas; Added default concentration for ingredient: N2; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas'
+- timestamp: '2026-03-09T08:04:18.672657+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '862'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M481])
+  composition: []
+  notes: Cross-reference to Medium M481
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Se/W solution (see Medium [M312])
+  composition: []
+  notes: Cross-reference to Medium M312
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'

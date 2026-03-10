@@ -1,0 +1,39 @@
+preferred_term: Main sol. 1512
+term:
+  id: mediadive.solution:3123
+  label: Main sol. 1512
+composition:
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Medium for maintenance of infected amoeba cultures\nCombine Solutions\
+  \ A, B and C and add \nMaintenance conditions:\nInfected amoeba cultures can be\
+  \ maintained e.g. in 25 cm2\r\nflasks (e.g. Nunc flasks,\r\nVWR, 734-2081, Thermo-Scientific,\
+  \ 156340) at 20-30°C in an incubator (no special\r\nrequirements concerning CO2\
+  \ or light).\nMaintenance/Passage of infected amoeba cultures:\nInfected Acanthamoeba\
+  \ cultures don’t have to be transferred to fresh culture flasks as\r\nfrequently\
+  \ as usually done for mammalian cell cultures. Amoeba cultures can be\r\nmaintained\
+  \ in the same flask for several weeks or months. However, if the cultures reach\r\
+  \na high cell density, medium should be exchanged. For that purpose amoebae are\r\
+  \ndetached from the surface of the flask by knocking at the culture flask (no trypsin\r\
+  \nrequired, amoebae are only weakly adherent compared to most mammalian cells) and\r\
+  \nthe medium (containing the majority of cells) is then completely removed. Fresh\
+  \ medium\r\nis added and the few remaining attached amoebae will continue to grow.\r\
+  \nAlternatively, cultures can also be passaged regularly (e.g. weekly) by transfer\
+  \ of a small\r\naliquot of a densely grown culture (after cell detachment, as described\
+  \ above) to a fresh\r\nflask containing medium. If cultures contain few attached\
+  \ cells, but high amounts of cell debris, medium should be\r\nexchanged without\
+  \ prior cell detachment. Cultures usually recover fast.\r\nDepending on the host\
+  \ cell strain, the bacteria may cause host cell lysis. To maintain\r\nsuch cultures,\
+  \ bacteria have to be transferred by adding culture supernatant\r\n(approximately\
+  \ 0.5 ml) to fresh culture flasks containing uninfected host cells\r\n(approximately\
+  \ semi-confluent culture) each 7-10 days."

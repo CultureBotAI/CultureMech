@@ -1,0 +1,54 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1253
+  label: Solution A
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ACES
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:581
+    label: ACES
+  chebi_term:
+    id: CHEBI:39061
+    label: ACES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Activated charcoal
+  concentration:
+    value: '4.08163'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:582
+    label: Activated charcoal
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add
+  the other components and dissolve by boiling. Autoclave at 121°C for 15 minutes.
+  Cool to 50 - 55°C.
+
+
+  Original volume: 490 mL'

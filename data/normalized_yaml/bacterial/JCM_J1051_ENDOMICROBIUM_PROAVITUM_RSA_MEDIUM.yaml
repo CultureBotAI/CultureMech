@@ -92,10 +92,6 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
-- preferred_term: Trace vitamins solution (see Medium No. 284)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Dithiothreitol
   term:
     id: CHEBI:18320
@@ -253,12 +249,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. Cool medium under a N2-CO2 (4:1, v/v) gas stream,
-    and add the following solutions (autoclaved or *filter-sterilized) anaerobically and aseptically:'
+  description: 'Mix components thoroughly and autoclave. Cool medium under a N2-CO2
+    (4:1, v/v) gas stream, and add the following solutions (autoclaved or *filter-sterilized)
+    anaerobically and aseptically:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Adjust pH to 7.1 - 7.2. Distribute the medium into culture vessels under the same gas
-    mixture and seal with butyl rubber stoppers. Finally, add per liter the following solution (filter-sterilized):'
+  description: 'Adjust pH to 7.1 - 7.2. Distribute the medium into culture vessels
+    under the same gas mixture and seal with butyl rubber stoppers. Finally, add per
+    liter the following solution (filter-sterilized):'
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
@@ -276,3 +274,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:51.756122+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace vitamins solution (see Medium No. 284)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

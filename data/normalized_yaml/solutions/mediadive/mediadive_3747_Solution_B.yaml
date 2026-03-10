@@ -1,0 +1,36 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:3747
+  label: Solution B
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 9.4 with 6% NaHCO3 solution.
+
+  After sterilization, mix axenically 900 ml of Solution A and 100 ml of Solution
+  B.
+
+
+  Original volume: 100 mL'

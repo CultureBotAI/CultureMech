@@ -5,9 +5,6 @@ description: 270. NBRC 268.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Soluble starch10gK2HPO4(anhydrous base)1gMgSO4·7H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace salts
-    solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should be 7.0 - 7.4*Trace salts
-    solutionFeSO4·7H2O0.1gMnCl2·4H2O0.1gZnSO4·7H2O0.1gDistilled water100ml
 - preferred_term: ''
   concentration:
     value: Soluble starch
@@ -70,3 +67,13 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 268, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=268.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:15.921431+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Soluble starch10gK2HPO4(anhydrous base)1gMgSO4·7H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace
+    salts solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should
+    be 7.0 - 7.4*Trace salts solutionFeSO4·7H2O0.1gMnCl2·4H2O0.1gZnSO4·7H2O0.1gDistilled
+    water100ml
+  composition: []

@@ -1,0 +1,56 @@
+preferred_term: Main sol. J392
+term:
+  id: mediadive.solution:4119
+  label: Main sol. J392
+composition:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1607
+    label: Marine broth 2216
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SiO3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:823
+    label: Na2SiO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
+  Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
+  add to the medium.

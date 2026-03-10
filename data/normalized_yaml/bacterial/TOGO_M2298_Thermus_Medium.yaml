@@ -96,10 +96,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Traceelements solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -194,3 +190,16 @@ curation_history:
   date: '2026-02-03T11:20:53.129214'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:13.345285+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Traceelements solution
+  term:
+    id: mediadive.solution:2099
+    label: Traceelements Solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_2099_Traceelements_Solution.yaml for composition

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -29,7 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -38,21 +41,18 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
-- preferred_term: Hipolypepton*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Distilled water
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -60,7 +60,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: K2HPO4
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -68,7 +69,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: NaHCO3
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -76,7 +78,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: Na2CO3
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -107,6 +110,17 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:50.300299'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaCl; Added default concentration for ingredient:
-    K2HPO4; Added default concentration for ingredient: NaHCO3; Added default concentration for ingredient:
-    Na2CO3'
+  notes: 'Added default concentration for ingredient: NaCl; Added default concentration
+    for ingredient: K2HPO4; Added default concentration for ingredient: NaHCO3; Added
+    default concentration for ingredient: Na2CO3'
+- timestamp: '2026-03-09T08:04:59.594673+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'

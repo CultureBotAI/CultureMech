@@ -60,14 +60,6 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Tomato juice solution (see below)
-  concentration:
-    value: '400'
-    unit: G_PER_L
-- preferred_term: Liver extract (see Medium [M6])
-  concentration:
-    value: '75'
-    unit: G_PER_L
 - preferred_term: distilled water
   concentration:
     value: '200'
@@ -115,3 +107,19 @@ curation_history:
   date: '2026-02-03T11:20:46.235392'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:05:01.648118+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Tomato juice solution (see below)
+  composition: []
+  concentration:
+    value: '400'
+    unit: G_PER_L
+- preferred_term: Liver extract (see Medium [M6])
+  composition: []
+  notes: Cross-reference to Medium M6
+  concentration:
+    value: '75'
+    unit: G_PER_L

@@ -1,0 +1,44 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:5316
+  label: Solution B
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '137.624'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2S4O6
+  concentration:
+    value: '14.9505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:386
+    label: K2S4O6
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '990.09900990099'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Adjust pH to 2.5 and filter-sterilize. Prepare the solution just\
+  \ prior to use.\nAseptically combine solution A and solution B (freshly prepared).\
+  \ Then, add the following solutions (autoclaved): \n\nOriginal volume: 101 mL"

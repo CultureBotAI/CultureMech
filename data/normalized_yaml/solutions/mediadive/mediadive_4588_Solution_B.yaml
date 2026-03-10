@@ -1,0 +1,24 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4588
+  label: Solution B
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.
+
+  To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium,
+  prepare double-strength Solution A and autoclave. Separately autoclave an equal
+  amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions
+  at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and
+  pour into petri dishes.'

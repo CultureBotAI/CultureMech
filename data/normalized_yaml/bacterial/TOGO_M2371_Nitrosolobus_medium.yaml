@@ -80,20 +80,6 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: Chelated Iron Solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: 0.5 M K2CO3 Solution
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Ferric (III) ammonium citrate*
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
 - preferred_term: DI water
   concentration:
     value: '100'
@@ -167,4 +153,29 @@ curation_history:
   date: '2026-02-03T11:20:53.489586'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 0.5 M K2CO3 Solution'
+- timestamp: '2026-03-09T08:04:39.317282+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Chelated Iron Solution
+  term:
+    id: mediadive.solution:4790
+    label: Chelated iron solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_4790_Chelated_iron_solution.yaml for composition
+- preferred_term: 0.5 M K2CO3 Solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Ferric (III) ammonium citrate*
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'

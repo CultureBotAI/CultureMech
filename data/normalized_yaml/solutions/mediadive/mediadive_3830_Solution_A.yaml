@@ -1,0 +1,127 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:3830
+  label: Solution A
+composition:
+- preferred_term: CMRL 1066
+  concentration:
+    value: '9.9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1680
+    label: CMRL 1066
+  chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: ' Fraction V'
+  term:
+    id: mediadive.compound:705
+    label: Bovine serum albumin
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1047
+    label: Trisodium citrate
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: N-Acetyl-D-glucosamine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1669
+    label: N-Acetyl-D-glucosamine
+  chebi_term:
+    id: CHEBI:506227
+    label: N-acetylglucosamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 500 mL'

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,10 +23,6 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: MDS salt water (see Medium [M578])
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Tris base
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
@@ -59,3 +56,14 @@ curation_history:
   date: '2026-02-03T11:21:01.344643'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris base'
+- timestamp: '2026-03-09T08:04:26.968063+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: MDS salt water (see Medium [M578])
+  composition: []
+  notes: Cross-reference to Medium M578
+  concentration:
+    value: '100'
+    unit: G_PER_L

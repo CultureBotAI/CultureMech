@@ -63,10 +63,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -174,3 +170,16 @@ curation_history:
   date: '2026-02-03T11:20:53.534049'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:37.523535+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

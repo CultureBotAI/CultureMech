@@ -1,0 +1,35 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:4959
+  label: Solution E
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2SO4
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:122
+    label: H2SO4
+  chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Separately autoclave Solutions A, B, C and E under a N2 atmosphere.
+  Filter-sterilize Solution D. After sterilization, combine all solutions and store
+  under a N2 atmosphere.
+
+
+  Original volume: 1 mL'

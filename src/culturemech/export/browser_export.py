@@ -112,12 +112,36 @@ class BrowserExporter:
         return ids
 
     def _extract_ingredient_names(self, recipe: dict) -> list[str]:
-        """Extract ingredient names."""
+        """
+        Extract ingredient names from both ingredients and solutions.
+
+        For solutions, includes:
+        - The solution name itself
+        - Names of ingredients within the solution (if composition is present)
+
+        This enables searching for media by solution components.
+        """
         names = []
+
+        # Extract from main ingredients
         for ing in recipe.get("ingredients", []):
             preferred_term = ing.get("preferred_term")
             if preferred_term:
                 names.append(preferred_term)
+
+        # Extract from solutions
+        for solution in recipe.get("solutions", []):
+            # Add the solution name
+            solution_name = solution.get("preferred_term")
+            if solution_name:
+                names.append(solution_name)
+
+            # Add ingredients within the solution (if composition is present)
+            for comp in solution.get("composition", []):
+                comp_name = comp.get("preferred_term")
+                if comp_name:
+                    names.append(comp_name)
+
         return names
 
     def _extract_sterilization_method(self, recipe: dict) -> Optional[str]:

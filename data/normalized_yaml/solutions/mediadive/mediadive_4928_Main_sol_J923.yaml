@@ -1,0 +1,74 @@
+preferred_term: Main sol. J923
+term:
+  id: mediadive.solution:4928
+  label: Main sol. J923
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '989.1196834817014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HOMOPIPES
+  concentration:
+    value: '0.04945598417408507'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1938
+    label: HOMOPIPES
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.04945598417408507'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Coenzyme M
+  concentration:
+    value: '0.04945598417408507'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1721
+    label: Coenzyme M
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.04945598417408507'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix components thoroughly and adjust pH to 5.0 with HCl. Bring\
+  \ to a boil for 5 min, then, cool down under a stream of a N2-CO2 (80:20, v/v) gas\
+  \ mixture. Distribute the medium into Balch-type culture tubes (5 ml each) under\
+  \ the same gas mixture, seal with thick blue butyl rubber stoppers and autoclave.\n\
+  To complete the medium, replace the gas phase with H2-CO2 (80:20, v/v) gas mixture,\
+  \ and add the following solutions to each of the culture tubes (containing 5 ml\
+  \ medium) from sterile anaerobic stocks (autoclaved or *filter-sterilized): \nCheck\
+  \ the final pH of the medium to be about 5.1. Pressurize inoculated tubes to 70\
+  \ kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1011 mL"

@@ -1,0 +1,165 @@
+preferred_term: Wolfe's Mineral Solution
+term:
+  id: mediadive.solution:2680
+  label: Wolfe's Mineral Solution
+composition:
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:189
+    label: Nitrilotriacetic acid
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnSO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:319
+    label: MnSO4
+  chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:81
+    label: CaCl2
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:692
+    label: CoCl2
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: ZnSO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:441
+    label: ZnSO4
+  chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CuSO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:636
+    label: CuSO4
+  chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1015
+    label: AlK(SO4)2
+  chebi_term:
+    id: CHEBI:86463
+    label: potassium aluminium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2MoO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:811
+    label: Na2MoO4
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'First dissolve nitrilotriacetic acid and adjust pH to 6.5 with
+  KOH, then add minerals.
+
+  Adjust to pH 8.0 with KOH and sterilize by autoclaving.'

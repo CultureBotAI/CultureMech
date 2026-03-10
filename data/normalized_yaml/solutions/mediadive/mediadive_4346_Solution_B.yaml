@@ -1,0 +1,42 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4346
+  label: Solution B
+composition:
+- preferred_term: Sodium oleate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1801
+    label: Sodium oleate
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave and store under a N2 atmosphere.
+
+  To complete the medium, combine 0.8 volume of Solution A, 0.1 volume of Solution
+  B and 0.1 volume of 3.5% NaHCO3 solution [filter-sterilized and stored under a N2-CO2
+  (80:20) gas mixture]. Reduce the medium with 0.3 g/L (final) L-cysteine x HCl x
+  H2O and 0.3 g/L (final) Na2S x 9H2O (autoclave and store 3% stock solutions under
+  a N2 atmosphere).
+
+  Comment: For strain JCM 13948, incubate with a 10% inoculum together with a 5% inoculum
+  of <I>Methanobacterium formicicum</I> NT (=JCM 10132).
+
+
+  Original volume: 100 mL'

@@ -1,0 +1,59 @@
+preferred_term: Main sol. J932
+term:
+  id: mediadive.solution:4943
+  label: Main sol. J932
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Polypeptone
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:442
+    label: Polypeptone
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tween 80
+  concentration:
+    value: '0.0296443'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '988.1422924901185'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components thoroughly and adjust pH to 6.0. Distribute the
+  medium into culture vessels under a N2 gas stream, seal with butyl rubber stoppers
+  and autoclave.
+
+
+  Original volume: 1012 mL'

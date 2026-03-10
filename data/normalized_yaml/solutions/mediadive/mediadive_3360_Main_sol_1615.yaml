@@ -1,0 +1,68 @@
+preferred_term: Main sol. 1615
+term:
+  id: mediadive.solution:3360
+  label: Main sol. 1615
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.246476'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.8203'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-aspartate
+  concentration:
+    value: '0.35414'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:228
+    label: Na-aspartate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Methionine
+  concentration:
+    value: '0.0074605'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1330
+    label: L-Methionine
+  chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "pH 7.0-7.2\nAfter sterilization add from sterile stock solutions:\n\
+  might result in colloid formation, especially when added into\r\nhot medium, but\
+  \ dissolves after vigorous shaking"

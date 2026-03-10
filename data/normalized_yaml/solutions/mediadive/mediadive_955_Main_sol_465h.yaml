@@ -1,0 +1,16 @@
+preferred_term: Main sol. 465h
+term:
+  id: mediadive.solution:955
+  label: Main sol. 465h
+composition:
+- preferred_term: 6-methylnicotinate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: adjust if required
+  term:
+    id: mediadive.compound:2119
+    label: 6-methylnicotinate
+preparation_notes: Supplement medium 465 with selenite, tungstate, 2.5 - 5 g/l 6-methylnicotinate
+  from a stock solution (autoclave separately) and 1 ml/l vitamin solution (see medium
+  461).

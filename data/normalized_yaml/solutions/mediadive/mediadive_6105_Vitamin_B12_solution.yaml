@@ -1,0 +1,22 @@
+preferred_term: Vitamin B12 solution
+term:
+  id: mediadive.solution:6105
+  label: Vitamin B12 solution
+composition:
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:847
+    label: Cyanocobalamine
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Take 1 ml of this solution and add 99 ml Deionised water. Filter
+  sterile.
+
+
+  Original volume: 100 mL'

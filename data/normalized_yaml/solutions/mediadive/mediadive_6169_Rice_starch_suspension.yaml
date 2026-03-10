@@ -1,0 +1,33 @@
+preferred_term: Rice starch suspension
+term:
+  id: mediadive.solution:6169
+  label: Rice starch suspension
+composition:
+- preferred_term: Rice starch
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2354
+    label: Rice starch
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Place dry  rice starch into a dry 50 ml bottle, and cap. Place\
+  \ 20 ml\r\ndeionised water into a separate bottle. Autoclave separately  at 15 \r\
+  \npsi for 15 minutes.  When cool, aseptically combine the contents of \r\nthe two\
+  \ bottles.  Mix thoroughly by shaking.\n\nOriginal volume: 20 mL"

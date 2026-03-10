@@ -1,0 +1,37 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:1256
+  label: Solution D
+composition:
+- preferred_term: Fe4(PO4)2
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:583
+    label: Fe4(PO4)2
+  chebi_term:
+    id: CHEBI:39061
+    label: ACES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare a fresh solution by heating to 50 - 55°C in a water-bath.
+  Filter-sterilize solution separately.
+
+  Please note: Soluble ferric pyrophosphate must be kept dry and in the dark. Do not
+  use if chemical looses its green colour and becomes brown or yellow.
+
+
+  Original volume: 10 mL'

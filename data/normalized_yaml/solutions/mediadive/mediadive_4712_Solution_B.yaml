@@ -1,0 +1,34 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4712
+  label: Solution B
+composition:
+- preferred_term: Betaine
+  concentration:
+    value: '200.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:431
+    label: Betaine
+  chebi_term:
+    id: CHEBI:17750
+    label: betaine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '510.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components thoroughly and filter-sterilize. Stock the solution
+  under a N2-CO2 (80:20, v/v) gas mixture.
+
+
+  Original volume: 50 mL'

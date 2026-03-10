@@ -1,0 +1,37 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:3622
+  label: Solution D
+composition:
+- preferred_term: Resazurin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet
+  tube for medium, connected to a glass outlet at the bottom of the vessel and has,
+  at the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+  dispensing of the medium into bottles. Cool to room temperature under an atmosphere
+  of N2/CO2 in an ice bath (10-15 min).
+
+
+  Original volume: 450 mL'

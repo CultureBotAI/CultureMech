@@ -108,22 +108,6 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
-- preferred_term: Trace element SL-10*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite-tungstate solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution***
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution****
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -320,4 +304,38 @@ curation_history:
   date: '2026-02-03T11:20:51.203146'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: nitrogen gas'
+- timestamp: '2026-03-09T08:04:40.439686+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element SL-10*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite-tungstate solution**
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
+- preferred_term: Vitamin solution***
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Vitamin B12 solution****
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition

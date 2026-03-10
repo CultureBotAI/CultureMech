@@ -1,0 +1,33 @@
+preferred_term: Cysteine hydrochloride solution (10%)
+term:
+  id: mediadive.solution:2487
+  label: Cysteine hydrochloride solution (10%)
+composition:
+- preferred_term: Cysteine hydrochloride
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1114
+    label: Cysteine hydrochloride
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter sterilize.
+
+
+  Original volume: 100 mL'

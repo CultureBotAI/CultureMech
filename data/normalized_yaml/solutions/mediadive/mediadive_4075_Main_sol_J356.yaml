@@ -1,0 +1,48 @@
+preferred_term: Main sol. J356
+term:
+  id: mediadive.solution:4075
+  label: Main sol. J356
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.4985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '1.4985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix ingredients, except NaHCO3, Na2S2O3 x 5H2O and Trace vitamins,
+  and autoclave. Filter-sterilize 8% (w/v) NaHCO3, 10% (w/v) Na2S2O3 x 5H2O and Trace
+  vitamins and add to the medium. Replace the gas phase with a N2-CO2-O2 (77:17:6,
+  v/v) gas mixture, and pressurize to 200 kPa.
+
+
+  Original volume: 1001 mL'

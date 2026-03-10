@@ -1,0 +1,125 @@
+preferred_term: Vitamin solution (double conc.)
+term:
+  id: mediadive.solution:3224
+  label: Vitamin solution (double conc.)
+composition:
+- preferred_term: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:616
+    label: Riboflavine
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:77
+    label: Thiamine-HCl x 2 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:337
+    label: Nicotinamide
+  chebi_term:
+    id: CHEBI:17154
+    label: nicotinamide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1807
+    label: D-Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback

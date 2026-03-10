@@ -1,0 +1,93 @@
+preferred_term: Main sol. J163
+term:
+  id: mediadive.solution:3816
+  label: Main sol. J163
+composition:
+- preferred_term: PPLO broth
+  concentration:
+    value: '20.8955'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:953
+    label: PPLO broth
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '4.97512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Phenol red
+  concentration:
+    value: '4.975124378109453'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:119
+    label: Phenol red
+  chebi_term:
+    id: CHEBI:31991
+    label: phenol red
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Horse serum
+  concentration:
+    value: '199.00497512437812'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:146
+    label: Horse serum
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Baker's yeast
+  concentration:
+    value: '99.50248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:17
+    label: Baker's yeast
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Penicillin
+  concentration:
+    value: '995024.8756218905'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1666
+    label: Penicillin
+  chebi_term:
+    id: CHEBI:17334
+    label: penicillin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '696.5174129353234'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.6.
+
+
+  Original volume: 1005 mL'

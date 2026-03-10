@@ -1,0 +1,34 @@
+preferred_term: Main sol. 514a
+term:
+  id: mediadive.solution:1135
+  label: Main sol. 514a
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: '1/2 strength medium 514. If using Difco Bacto Marine Broth use
+  18.7 g/l.
+
+  Final pH 7.6. The medium may be solidified by adding 15 g/l agar.'

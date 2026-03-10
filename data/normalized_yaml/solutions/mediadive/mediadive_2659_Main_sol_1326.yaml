@@ -1,0 +1,69 @@
+preferred_term: Main sol. 1326
+term:
+  id: mediadive.solution:2659
+  label: Main sol. 1326
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HEPES buffer
+  concentration:
+    value: '4.766'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:461
+    label: HEPES buffer
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:97
+    label: Ferric ammonium citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and
+  0.1ml of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium
+  may be solidified by adding 15 g/l agar.

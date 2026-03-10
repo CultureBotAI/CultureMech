@@ -1,0 +1,23 @@
+preferred_term: Main sol. 514b
+term:
+  id: mediadive.solution:1136
+  label: Main sol. 514b
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Use medium 514 to which is added NaCl at the concentration indicated
+  (i.e. "514 + 6% NaCl" indicates use medium 514 to which 60 g/l NaCl has been added;
+  see strain dependant modifications).
+
+  Final pH 7.6. The medium may be solidified by adding 15 - 20 g/l agar.'

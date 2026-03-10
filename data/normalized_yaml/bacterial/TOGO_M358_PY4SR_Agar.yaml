@@ -4,16 +4,13 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: PY4S AGAR (see Medium [M357])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: plant residue extract (see below)
   concentration:
     value: '50'
     unit: G_PER_L
 - preferred_term: water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Water
@@ -49,5 +46,16 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:58.312468'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: water; Added default concentration for ingredient:
-    rice straw'
+  notes: 'Added default concentration for ingredient: water; Added default concentration
+    for ingredient: rice straw'
+- timestamp: '2026-03-09T08:04:41.687951+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: PY4S AGAR (see Medium [M357])
+  composition: []
+  notes: Cross-reference to Medium M357
+  concentration:
+    value: '1'
+    unit: G_PER_L

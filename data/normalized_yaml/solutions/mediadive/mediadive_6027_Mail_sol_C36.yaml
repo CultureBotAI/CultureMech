@@ -1,0 +1,19 @@
+preferred_term: Mail sol. C36
+term:
+  id: mediadive.solution:6027
+  label: Mail sol. C36
+composition:
+- preferred_term: Natural sea water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: For f/10 medium for calcifying Emiliania, simply dilute all stock
+  solutions by 1/5th.

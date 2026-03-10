@@ -1,0 +1,65 @@
+preferred_term: Trace elements solution
+term:
+  id: mediadive.solution:6129
+  label: Trace elements solution
+composition:
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '8.82'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1.44'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MoO3
+  concentration:
+    value: '0.71'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:235
+    label: MoO3
+  chebi_term:
+    id: CHEBI:30627
+    label: molybdenum trioxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.49'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:541
+    label: Co(NO3)2 x 6 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback

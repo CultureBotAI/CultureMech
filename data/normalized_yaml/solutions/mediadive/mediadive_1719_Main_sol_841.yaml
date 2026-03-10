@@ -1,0 +1,18 @@
+preferred_term: Main sol. 841
+term:
+  id: mediadive.solution:1719
+  label: Main sol. 841
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Final pH of appr. 7.4 should be controlled sterile.

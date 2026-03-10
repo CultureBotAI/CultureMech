@@ -1,0 +1,45 @@
+preferred_term: Na-syringate solution (0.3 M)
+term:
+  id: mediadive.solution:6318
+  label: Na-syringate solution (0.3 M)
+composition:
+- preferred_term: Syringic  acid
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2124
+    label: Syringic  acid
+  chebi_term:
+    id: CHEBI:68329
+    label: syringic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Add syringic acid to 700 ml distilled water, add about 50 ml of
+  5 N NaOH and adjust the pH to about 7.5 to dissolve it. Then make up to a volume
+  of 1000 ml with water. Make the solution anoxic by sparging with 100% N2 gas, distribute
+  in anoxic serum vials and autoclave at 121°C.

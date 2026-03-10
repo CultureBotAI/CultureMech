@@ -1,0 +1,54 @@
+preferred_term: Amino acid solution (filter sterilized)
+term:
+  id: mediadive.solution:127
+  label: Amino acid solution (filter sterilized)
+composition:
+- preferred_term: L-Histidine
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:132
+    label: L-Histidine
+  chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Serine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:133
+    label: L-Serine
+  chebi_term:
+    id: CHEBI:16523
+    label: D-serine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamine
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:134
+    label: L-Glutamine
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

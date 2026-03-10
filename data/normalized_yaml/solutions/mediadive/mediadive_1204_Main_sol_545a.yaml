@@ -1,0 +1,18 @@
+preferred_term: Main sol. 545a
+term:
+  id: mediadive.solution:1204
+  label: Main sol. 545a
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '990'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dilute medium 545 1:10.

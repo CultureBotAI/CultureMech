@@ -67,44 +67,11 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: Trace elements solution (see Medium [M1094])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: 5% Na2S·9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Substrate solution (see below)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: 1.0 M MgSO4 solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component'
-- preferred_term: 1.0 M Sodium fumarate solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -136,3 +103,50 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: N2'
+- timestamp: '2026-03-09T08:05:03.992729+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+solutions:
+- preferred_term: Trace elements solution (see Medium [M1094])
+  composition: []
+  notes: Cross-reference to Medium M1094
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 5% Na2S·9H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Substrate solution (see below)
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: 1.0 M MgSO4 solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component'
+- preferred_term: 1.0 M Sodium fumarate solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'

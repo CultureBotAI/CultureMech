@@ -89,18 +89,6 @@ ingredients:
   term:
     id: CHEBI:39074
     label: MOPS
-- preferred_term: Calcium solution*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Chelated Fe solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution***
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -213,4 +201,27 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:59.965940+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Calcium solution*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Chelated Fe solution**
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution***
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

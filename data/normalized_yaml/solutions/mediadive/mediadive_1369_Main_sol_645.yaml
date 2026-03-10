@@ -1,0 +1,48 @@
+preferred_term: Main sol. 645
+term:
+  id: mediadive.solution:1369
+  label: Main sol. 645
+composition:
+- preferred_term: Bacto Middlebrook 7H10 agar
+  concentration:
+    value: '20.9945'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:635
+    label: Bacto Middlebrook 7H10 agar
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glycerol
+  concentration:
+    value: '5.524861878453039'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '994.475138121547'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
+  OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
+
+  If you can´t order the commercial media then prepare the media in this way:
+
+
+  Original volume: 905 mL'

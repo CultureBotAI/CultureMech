@@ -64,10 +64,6 @@ ingredients:
   concentration:
     value: '0.0984252'
     unit: G_PER_L
-- preferred_term: Vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
@@ -225,11 +221,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 9.0. Bring to a boil and cool under a N2 gas
-    stream. Distribute the medium into culture vessels (e.g., 10 ml of the medium in the Hungate tubes)
-    under a N2 atmosphere, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
-    anaerobically add per liter the following solutions (autoclaved or *filter-sterilized and stored under
-    a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 9.0. Bring to a boil and
+    cool under a N2 gas stream. Distribute the medium into culture vessels (e.g.,
+    10 ml of the medium in the Hungate tubes) under a N2 atmosphere, seal with butyl
+    rubber stoppers and autoclave. After cooling, aseptically and anaerobically add
+    per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under a N2 atmosphere):'
 - step_number: 2
   action: MIX
   description: 'Vitamin solution:'
@@ -240,3 +237,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1157'
+- timestamp: '2026-03-09T08:04:41.217389+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

@@ -1,0 +1,34 @@
+preferred_term: HEPES solution
+term:
+  id: mediadive.solution:5044
+  label: HEPES solution
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HEPES
+  concentration:
+    value: '119.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve NaOH in 300 ml distilled water. While stirring vigorously,
+  slowly add HEPES until completely dissolved. Fill up to 450 ml with distilled water.
+  If 1 ml of this solution is added to 100ml of the medium (containing all additive
+  but HEPES), pH should be around 7.6 at 30C. Otherwise, adjust pH of the HEPES solution
+  with 10 N NaOH or conc. HCl. Finally fill up to 500 ml with distilled water.

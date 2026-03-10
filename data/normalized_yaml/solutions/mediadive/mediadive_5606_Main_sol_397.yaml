@@ -1,0 +1,39 @@
+preferred_term: Main sol. 397
+term:
+  id: mediadive.solution:5606
+  label: Main sol. 397
+composition:
+- preferred_term: Sodium ferulate
+  concentration:
+    value: '10.718113612004288'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:2097
+    label: Sodium ferulate
+  chebi_term:
+    id: CHEBI:114954
+    label: sodium ferulate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Add and dissolve ingredients of solution A and sparge medium with
+  80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+  under the same gas atmosphere into anoxic Hungate-type tubes and autoclave. Solution
+  B is prepared under 80% N2 and 20% CO2 gas atmosphere and autoclaved. Solutions
+  E and F are autoclaved under 100% N2 gas atmosphere.
+
+  Solution D is prepared under 100% N2 gas and sterilized by filtration. To complete
+  the medium appropriate amounts of solutions B to F are added to the sterile solution
+  A in the sequence as indicated.
+
+  Note: Some cultures are shipped in semi-solid medium which stimulates growth at
+  the beginning. For agar stabs 3.00 g/l agar are added to the complete medium from
+  a sterile anoxic stock solution (2% w/v). Upon receipt add anoxically 1 - 2 ml of
+  the recommended freshly prepared liquid medium to the agar tube and incubate for
+  3 - 5 days . After incubation transfer 0.5 ml of the resulting cell suspension in
+  the liquid phase to tubes with liquid medium.
+
+  Add sodium ferulate to 10 mM final concentration from filter-sterilized anaerobic
+  stock solution.
+
+
+  Original volume: 933 mL'

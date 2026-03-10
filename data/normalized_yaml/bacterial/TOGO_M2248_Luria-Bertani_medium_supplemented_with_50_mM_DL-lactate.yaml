@@ -8,21 +8,18 @@ ingredients:
   concentration:
     value: '50'
     unit: MILLIMOLAR
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
 - preferred_term: Luria-Bertani medium
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: NaOH solution
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -35,7 +32,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -65,3 +63,14 @@ curation_history:
   date: '2026-02-03T11:20:52.877602'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH solution'
+- timestamp: '2026-03-09T08:04:14.787299+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: NaOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

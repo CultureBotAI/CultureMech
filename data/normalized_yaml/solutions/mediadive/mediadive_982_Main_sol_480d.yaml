@@ -1,0 +1,27 @@
+preferred_term: Main sol. 480d
+term:
+  id: mediadive.solution:982
+  label: Main sol. 480d
+composition:
+- preferred_term: Casitone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Use medium 480, but reduce the amount of Na acetate to 1.0 g/l
+  and add 3.0 g/l casitone. Prepare sulphide and vitamin stock solutions anaerobically.
+  Autoclave the sulphide solution but filter sterilise the vitamins. Prepare the medium
+  anaerobically under N2:CO2 80:20. Adjust the pH to 5.7 with HCl. Sterilise the medium
+  by heating for 3 hours on three successive days at 90-100°C. Add the vitamins and
+  sulphide to the sterilised medium before use. The final pH should be 5.7-6.0. Dr.
+  Bonch-Osmoloskaya supplied the information that the strain grows better on a peptone
+  originally available in Russia. This product is no longer available, but it appears
+  this product gave better growth than with highly purified products from Oxoid or
+  Difco.

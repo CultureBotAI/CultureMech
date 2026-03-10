@@ -101,14 +101,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Solution'
-- preferred_term: Vitamin solution* (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution* (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -309,4 +301,19 @@ curation_history:
   date: '2026-02-03T11:21:01.361976'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:52.382562+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Vitamin solution* (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution* (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

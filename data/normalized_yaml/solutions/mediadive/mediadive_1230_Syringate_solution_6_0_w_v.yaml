@@ -1,0 +1,23 @@
+preferred_term: Syringate solution 6.0 %(w/v)
+term:
+  id: mediadive.solution:1230
+  label: Syringate solution 6.0 %(w/v)
+composition:
+- preferred_term: Syringic  acid
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2124
+    label: Syringic  acid
+  chebi_term:
+    id: CHEBI:68329
+    label: syringic acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve syringic acid in distilled water and neutralize solution
+  with 2 N NaOH until a pH of 7.5 is reached. The final concentration of syringate
+  in the solution should be 6% w/v.
+
+
+  Original volume: 100 mL'

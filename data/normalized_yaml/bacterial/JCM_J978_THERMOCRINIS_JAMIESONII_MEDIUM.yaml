@@ -60,10 +60,6 @@ ingredients:
   concentration:
     value: '1.33333'
     unit: G_PER_L
-- preferred_term: Mineral solution (see Medium No. 976
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -88,14 +84,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.25 with NaOH. Distribute the medium into
-    culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a stream of N2, seal with
-    butyl rubber stoppers and autoclave. After cooling, aseptically add per liter the following solutions
-    (autoclaved or *filter-sterilized and stored anaerobically):'
+  description: 'Mix components thoroughly and adjust pH to 7.25 with NaOH. Distribute
+    the medium into culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes)
+    under a stream of N2, seal with butyl rubber stoppers and autoclave. After cooling,
+    aseptically add per liter the following solutions (autoclaved or *filter-sterilized
+    and stored anaerobically):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Before inoculation, add filter-sterilized O2 gas or air, at a final concentration of 2%
-    O2 in the gas phase.
+  description: Before inoculation, add filter-sterilized O2 gas or air, at a final
+    concentration of 2% O2 in the gas phase.
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +100,13 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J978'
+- timestamp: '2026-03-09T08:04:48.947663+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution (see Medium No. 976
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L

@@ -1,0 +1,31 @@
+preferred_term: Main sol. 993b
+term:
+  id: mediadive.solution:2026
+  label: Main sol. 993b
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare medium 993 supplemented with yeast extract (0.5 %) and
+  KCl (10%). pH of the medium should be 7.2.

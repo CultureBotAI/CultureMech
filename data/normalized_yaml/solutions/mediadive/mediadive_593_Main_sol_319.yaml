@@ -1,0 +1,161 @@
+preferred_term: Main sol. 319
+term:
+  id: mediadive.solution:593
+  label: Main sol. 319
+composition:
+- preferred_term: Casamino acids
+  concentration:
+    value: '1.97433'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:101
+    label: Casamino acids
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nutrient broth
+  concentration:
+    value: '1.97433'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:269
+    label: Nutrient broth
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.97433'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '3.94867'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:374
+    label: L-Glutamic acid
+  chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaCl
+  concentration:
+    value: '103.653'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.740375'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00197433'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000493583'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.493583'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '9.87167'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '3.65252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '987.1668311944719'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except cysteine, magnesium chloride, calcium
+  chloride and vitamins), bring medium to the boil, then cool to room temperature
+  under 100% N2 gas atmosphere. Thereafter, add and dissolve cysteine, adjust pH to
+  6.5 and dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+  vials and autoclave. After sterilization add magnesium chloride and calcium chloride
+  from sterile anoxic stock solutions autoclaved under 100% N2 gas and vitamins from
+  a filter-sterilized stock solution prepared under N2 gas.
+
+  Note: For agar medium add 20.00 g/l agar, 5.00 g/l CaCO3, and 2.00 g/l soluble starch.
+
+
+  Original volume: 1013 mL'

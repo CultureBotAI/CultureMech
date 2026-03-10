@@ -1,0 +1,80 @@
+preferred_term: Modified Hutner`s Basal Salts Solution
+term:
+  id: mediadive.solution:2891
+  label: Modified Hutner`s Basal Salts Solution
+composition:
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:189
+    label: Nitrilotriacetic acid
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '28.2857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '3.18095'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Ammonium Molybdate
+  concentration:
+    value: '0.00880952'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1270
+    label: Ammonium Molybdate
+  chebi_term:
+    id: CHEBI:91249
+    label: ammonium molybdate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0942857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Note: Dissolve and neutralize the nitrilotriacetic acid with KOH
+  (7.3 g); add the other ingredients and adjust the pH to 6.6 - 6.8 before bringing
+  the volume to 1.0 L with distilled water.'

@@ -42,17 +42,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
 media_term:
   preferred_term: TOGO Medium M1175
   term:
@@ -78,3 +67,21 @@ curation_history:
   date: '2026-02-03T11:20:46.346673'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:36.672478+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L-Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'

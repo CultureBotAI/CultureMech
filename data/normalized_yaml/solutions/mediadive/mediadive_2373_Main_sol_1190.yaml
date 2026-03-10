@@ -1,0 +1,32 @@
+preferred_term: Main sol. 1190
+term:
+  id: mediadive.solution:2373
+  label: Main sol. 1190
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '960'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve yeast extract in distilled water and add basal salts solution.
+  Adjust to desired pH with H2SO4. Dispense in suitable cultivation vessels and autoclave
+  at 121°C for 20 min. When cool, add filter sterilized ferrous sulfate solution.

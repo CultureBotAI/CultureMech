@@ -1,0 +1,21 @@
+preferred_term: Main sol. 1622
+term:
+  id: mediadive.solution:3370
+  label: Main sol. 1622
+composition:
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:18
+    label: Vitamin B12
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Adjust solutions A and B to pH 7.0±0.2, autoclave separately and
+  combine after cooling.
+
+  Add 1.0 ml sterile vitamin B12 solution (50 mg/l) per litre.'

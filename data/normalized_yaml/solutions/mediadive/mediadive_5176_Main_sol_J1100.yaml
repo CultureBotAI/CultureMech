@@ -1,0 +1,27 @@
+preferred_term: Main sol. J1100
+term:
+  id: mediadive.solution:5176
+  label: Main sol. J1100
+composition:
+- preferred_term: HEPES
+  concentration:
+    value: '85.7143'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:371
+    label: HEPES
+  chebi_term:
+    id: CHEBI:42334
+    label: 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'CTM medium basis:
+
+  Mix all ingredients in 1.0 L medium bottle. Add distilled water close to 1.0 L.
+  Adjust pH to 7.0 with 2 M KOH and fill up to 1.0 L. Autoclave at 121C for 40 min.
+  After autoclaving, seal medium bottle immediately in order to avoid oxygenation.
+  Cool down to around 70C. Add 30 ml filter-sterilized Mixed solution (see below)
+  to the autoclaved CTM medium basis for completing the CTM medium.
+
+
+  Original volume: 28 mL'

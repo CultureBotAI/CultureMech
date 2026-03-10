@@ -1,0 +1,31 @@
+preferred_term: Potato infusion
+term:
+  id: mediadive.solution:227
+  label: Potato infusion
+composition:
+- preferred_term: Water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1606
+    label: Potato
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1
+  hour. Pass through fine sieve. Avoid new potatoes.

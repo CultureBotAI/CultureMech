@@ -1,0 +1,21 @@
+preferred_term: L-Cysteine 10% w/v
+term:
+  id: mediadive.solution:6565
+  label: L-Cysteine 10% w/v
+composition:
+- preferred_term: L-Cysteine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Filtrate (pore size 0.22 µm).
+
+
+  Original volume: 100 mL'

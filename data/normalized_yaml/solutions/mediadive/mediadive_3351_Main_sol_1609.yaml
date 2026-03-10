@@ -1,0 +1,51 @@
+preferred_term: Main sol. 1609
+term:
+  id: mediadive.solution:3351
+  label: Main sol. 1609
+composition:
+- preferred_term: Bacto Heart Infusion Broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1460
+    label: Bacto Heart Infusion Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1177
+    label: Defibrinated Blood
+preparation_notes: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
+  at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
+  blood (horse or sheep), mix well and pour plates. pH: 7.2 ± 0.2'

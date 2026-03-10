@@ -1,0 +1,46 @@
+preferred_term: Titanium citrate solution
+term:
+  id: mediadive.solution:4797
+  label: Titanium citrate solution
+composition:
+- preferred_term: Titanium chloride
+  concentration:
+    value: '13.6364'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1909
+    label: Titanium chloride
+  chebi_term:
+    id: CHEBI:231499
+    label: titanium tetrachloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '53.4545'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1249
+    label: Trisodium citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components and centrifuge at 8,000 x g for 10 min. Filter-sterilize
+  the supernatant and store under a N2 atmosphere.
+
+
+  Original volume: 55 mL'

@@ -1,0 +1,19 @@
+preferred_term: Main sol. 446
+term:
+  id: mediadive.solution:897
+  label: Main sol. 446
+composition:
+- preferred_term: 2,4-Dichlorophenoxyacetic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2102
+    label: 2,4-Dichlorophenoxyacetic acid
+  chebi_term:
+    id: CHEBI:165232
+    label: 2,4-Dichlorophenoxyaceticacid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: To medium 442 add 0.05% 2,4-D as carbon source instead of toluene,
+  sterilized by filtration.

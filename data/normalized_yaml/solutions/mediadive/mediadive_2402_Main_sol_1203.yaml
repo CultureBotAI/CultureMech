@@ -1,0 +1,40 @@
+preferred_term: Main sol. 1203
+term:
+  id: mediadive.solution:2402
+  label: Main sol. 1203
+composition:
+- preferred_term: Fastidious Anaerobe Agar
+  concentration:
+    value: '45.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1077
+    label: Fastidious Anaerobe Agar
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: adjust if required
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
+  at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
+  horse blood, mix well and pour plates. pH: 7.2 ± 0.2'

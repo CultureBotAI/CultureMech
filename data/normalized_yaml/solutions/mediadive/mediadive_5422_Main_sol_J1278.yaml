@@ -1,0 +1,81 @@
+preferred_term: Main sol. J1278
+term:
+  id: mediadive.solution:5422
+  label: Main sol. J1278
+composition:
+- preferred_term: MES
+  concentration:
+    value: '1.8932'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.805825'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '1.32039'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '1.06796'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium fumarate
+  concentration:
+    value: '3.1068'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1752
+    label: Sodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '9.70873786407767'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly and adjust pH 6.2. Autoclave under a\
+  \ N2 atmosphere. After cooling, add the following solutions anaerobically and aseptically\
+  \ (autoclaved or *filter-sterilized and stored under a N2 atmosphere): \n\nOriginal\
+  \ volume: 1030 mL"

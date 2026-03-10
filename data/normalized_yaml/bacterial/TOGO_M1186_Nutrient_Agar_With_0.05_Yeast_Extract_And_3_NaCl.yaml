@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -17,10 +18,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Nutrient agar (see Medium [M65])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M1186
   term:
@@ -42,3 +39,14 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:30.850649+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Nutrient agar (see Medium [M65])
+  composition: []
+  notes: Cross-reference to Medium M65
+  concentration:
+    value: '1'
+    unit: G_PER_L

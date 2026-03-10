@@ -4,40 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '950'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '12.55'
-    unit: G_PER_L
-- preferred_term: Solution D
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution E
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution F
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: KCl solution (0.1% w/v)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '950'
@@ -73,10 +39,6 @@ ingredients:
   term:
     id: CHEBI:32954
     label: Na-acetate
-- preferred_term: Trace elements solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -239,17 +201,6 @@ ingredients:
     value: '7.2'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Nitrilotriacetate solution (0.5 M, neutralized with 10 N NaOH)
-  concentration:
-    value: '4.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: TiCl3 solution (15% w/v in HCl, RIEDEL-de HAEN)
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -414,4 +365,90 @@ curation_history:
     concentration for ingredient: N2 gas; Added default concentration for ingredient:
     N2 gas; Added default concentration for ingredient: N2 gas; Added default concentration
     for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:04:37.604220+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 11 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '950'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '12.55'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: Solution D
+  term:
+    id: mediadive.solution:5313
+    label: Solution D
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5313_Solution_D.yaml for composition
+- preferred_term: Solution E
+  term:
+    id: mediadive.solution:4959
+    label: Solution E
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_4959_Solution_E.yaml for composition
+- preferred_term: Solution F
+  term:
+    id: mediadive.solution:6293
+    label: Solution F
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6293_Solution_F.yaml for composition
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: KCl solution (0.1% w/v)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: Trace elements solution
+  term:
+    id: mediadive.solution:6129
+    label: Trace elements solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6129_Trace_elements_solution.yaml for composition
+- preferred_term: Nitrilotriacetate solution (0.5 M, neutralized with 10 N NaOH)
+  composition: []
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: TiCl3 solution (15% w/v in HCl, RIEDEL-de HAEN)
+  composition: []
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Solution, Inorganic compound'

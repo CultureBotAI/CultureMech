@@ -5,11 +5,6 @@ description: 882. NBRC 881.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween 80 solution**10mlSalts
-    solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and 15 g/L agar after the pH is adjusted for the
-    solid medium.*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled
-    water1L***Salts solutionMgSO4·7H2O40gMnSO4·4H2O2gFeSO4·7H2O2gNaCl2gDistilled water1LAdd a drop of
-    12 N HCl to 500 ml of the salts solution.
 - preferred_term: ''
   concentration:
     value: Glucose
@@ -73,3 +68,15 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 881, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=881.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:22.034678+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween
+    80 solution**10mlSalts solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and
+    15 g/L agar after the pH is adjusted for the solid medium.*Wako Pure Chemical
+    Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled water1L***Salts
+    solutionMgSO4·7H2O40gMnSO4·4H2O2gFeSO4·7H2O2gNaCl2gDistilled water1LAdd a drop
+    of 12 N HCl to 500 ml of the salts solution.
+  composition: []

@@ -1,0 +1,58 @@
+preferred_term: Main sol. J1042
+term:
+  id: mediadive.solution:5101
+  label: Main sol. J1042
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.99005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptone
+  concentration:
+    value: '1.99005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '4.97512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: PIPES
+  concentration:
+    value: '3.44279'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:398
+    label: PIPES
+  chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.0. Distribute the medium into culture vessels under
+  a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+
+
+  Original volume: 1005 mL'

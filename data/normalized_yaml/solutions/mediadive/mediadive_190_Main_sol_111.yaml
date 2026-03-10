@@ -1,0 +1,142 @@
+preferred_term: Main sol. 111
+term:
+  id: mediadive.solution:190
+  label: Main sol. 111
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '10.5263'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.842105'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.210526'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0210526'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnSO4 x 6 H2O
+  concentration:
+    value: '0.00210526'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:216
+    label: MnSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:91246
+    label: copper(II) sulfate hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4 x 6 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:217
+    label: ZnSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:132762
+    label: zinc sulfate hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 6 H2O
+  concentration:
+    value: '0.00421053'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:218
+    label: CuSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15.7895'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml
+  H2O) and mix after cooling.
+
+
+  Original volume: 950 mL'

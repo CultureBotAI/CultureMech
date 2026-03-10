@@ -1,0 +1,30 @@
+preferred_term: Folic acid solution
+term:
+  id: mediadive.solution:5545
+  label: Folic acid solution
+composition:
+- preferred_term: Folic acid
+  concentration:
+    value: '0.0013986'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 100 mL'

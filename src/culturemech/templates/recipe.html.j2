@@ -381,11 +381,17 @@
                 {% for solution in recipe.solutions %}
                 <div class="variant-card">
                     <div class="variant-title">{{ solution.preferred_term }}</div>
+                    {% if solution.term %}
+                    <p><strong>Solution ID:</strong> <a href="{{ resolve_curie(solution.term.id) if solution.term.id else '#' }}" target="_blank" rel="noopener">{{ solution.term.id }}</a></p>
+                    {% endif %}
                     {% if solution.concentration %}
                     <p><strong>Working Concentration:</strong> {{ solution.concentration.value }} {{ solution.concentration.unit }}</p>
                     {% endif %}
                     {% if solution.preparation_notes %}
                     <p><strong>Preparation:</strong> {{ solution.preparation_notes }}</p>
+                    {% endif %}
+                    {% if solution.notes %}
+                    <p><strong>Note:</strong> {{ solution.notes }}</p>
                     {% endif %}
                     {% if solution.composition %}
                     <table style="margin-top: 0.5rem;">
@@ -393,15 +399,27 @@
                             <tr>
                                 <th>Component</th>
                                 <th>Concentration</th>
+                                <th>Notes</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for comp in solution.composition %}
                             <tr>
-                                <td>{{ comp.preferred_term }}</td>
+                                <td>
+                                    {% if comp.term and comp.term.id %}
+                                    <a href="{{ resolve_curie(comp.term.id) }}" target="_blank" rel="noopener">{{ comp.preferred_term }}</a>
+                                    {% else %}
+                                    {{ comp.preferred_term }}
+                                    {% endif %}
+                                </td>
                                 <td>
                                     {% if comp.concentration %}
                                     {{ comp.concentration.value }} {{ comp.concentration.unit }}
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {% if comp.notes %}
+                                    {{ comp.notes }}
                                     {% endif %}
                                 </td>
                             </tr>

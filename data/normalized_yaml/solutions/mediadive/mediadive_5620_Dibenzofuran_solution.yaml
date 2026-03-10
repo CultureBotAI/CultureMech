@@ -1,0 +1,30 @@
+preferred_term: Dibenzofuran solution
+term:
+  id: mediadive.solution:5620
+  label: Dibenzofuran solution
+composition:
+- preferred_term: Dibenzofuran
+  concentration:
+    value: '8.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2106
+    label: Dibenzofuran
+  chebi_term:
+    id: CHEBI:28145
+    label: dibenzofuran
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Dimethyl sulfoxide
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1890
+    label: Dimethyl sulfoxide
+  chebi_term:
+    id: CHEBI:28262
+    label: dimethyl sulfoxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve 8.4 g/l dibenzofuran in DMSO (dimethylsulfoxide) and filtersterilize.

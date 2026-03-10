@@ -1,0 +1,31 @@
+preferred_term: Main sol. 756d
+term:
+  id: mediadive.solution:5652
+  label: Main sol. 756d
+composition:
+- preferred_term: NaNO2
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1865
+    label: NaNO2
+  chebi_term:
+    id: CHEBI:78870
+    label: sodium nitrite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '899'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium
+  to stand for 2 - 3 days so that pH can ajust itself to pH 7.4 - 7.6 .

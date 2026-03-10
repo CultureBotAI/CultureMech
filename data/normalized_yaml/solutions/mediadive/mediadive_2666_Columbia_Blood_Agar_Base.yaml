@@ -1,0 +1,72 @@
+preferred_term: Columbia Blood Agar Base
+term:
+  id: mediadive.solution:2666
+  label: Columbia Blood Agar Base
+composition:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptic Digest of beef heart
+  concentration:
+    value: '2.85714'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:662
+    label: Tryptic Digest of beef heart
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Corn starch
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:663
+    label: Corn starch
+- preferred_term: NaCl
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '14.2857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback

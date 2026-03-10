@@ -1,0 +1,49 @@
+preferred_term: Na-dithionite solution (5% w/v)
+term:
+  id: mediadive.solution:6262
+  label: Na-dithionite solution (5% w/v)
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '50.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O4
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:653
+    label: Na2S2O4
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '950.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Add 1 N NaOH to distilled water and make the solution anoxic by
+  sparging with 100% N2 gas. Then dissolve the Na-dithionite and filter-sterilize
+  the solution into anoxic Hungate tubes. The final pH of the solution should be between
+  9 and 10. Store the prepared solution in a dark and cool place. Prepare only small
+  amounts of stock solution, as Na-dithionite decomposes rapidly.
+
+
+  Original volume: 10 mL'

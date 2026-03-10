@@ -1,0 +1,78 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4442
+  label: Solution C
+composition:
+- preferred_term: NH4HCO3
+  concentration:
+    value: '6.98413'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:855
+    label: NH4HCO3
+  chebi_term:
+    id: CHEBI:184335
+    label: Ammonium bicarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '59.2063'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.1746'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '793.6507936507937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium acetate
+  concentration:
+    value: '158.73015873015873'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Prepare all solutions and autoclave under a N2 atmosphere. After\
+  \ cooling, combine the solutions and replace the gas phase with a N2-CO2 (4:1, v/v)\
+  \ gas mixture. Then, aseptically and anaerobically add the following autoclaved\
+  \ or *filter-sterilized solutions to the medium: \nCheck the final pH of the medium\
+  \ to be around 7.3.\nComment: JCM 14587 grows also in a modified medium with benzene\
+  \ and chlorate. For preparation of the modified medium, replace NaNO3 with 1.06\
+  \ g NaClO3(in 900 ml solution A). After combining all solutions (A, B and C), add\
+  \ 1.0 ml/L of 1.0 M sodium acetate solution (autoclaved), 25 ml/L of 20 mM benzene\
+  \ (water-saturated, autoclaved), and 1 ml/L of each of vitamin solution (see Medium\
+  \ No. 403, filter-sterilized), thiamine solution (see Medium No. 403, filter-sterilized)\
+  \ and vitamin B12 solution (see Medium No. 403, filter-sterilized) to the medium.\
+  \ Otherwise, prepare the modified medium as described above.\n\nOriginal volume:\
+  \ 63 mL"

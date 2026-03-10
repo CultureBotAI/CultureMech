@@ -1,0 +1,53 @@
+preferred_term: Main sol. 1723a
+term:
+  id: mediadive.solution:5983
+  label: Main sol. 1723a
+composition:
+- preferred_term: Artificial Sea Salt
+  concentration:
+    value: '12.4'
+    unit: G_PER_L
+  notes: ~ 18 mS/cm = ~ 12 psu at 25°C
+  term:
+    id: mediadive.compound:2146
+    label: Artificial Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaH2PO4 x H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:282
+    label: NaH2PO4 x H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Wheat Grains
+  term:
+    id: mediadive.compound:2346
+    label: Wheat Grains
+preparation_notes: "Make up to <span class='amount' data-volume='1000'>1000</span>\
+  \ ml with MilliQ water.\nAutoclave at 121 °C for 20 min.\nAfter cooling, add the\
+  \ following filter sterilized (0.2 µm) components to complete the\r\nmedium:\nThe\
+  \ strain is cultivated in 25 cm2 plastic tissue culture flasks with filter screw\
+  \ caps (T25, distributor: TPP, order number: 90026). The T25 flasks are routinely\
+  \ filled with 20 ml of culture. Each T25 culture is supplemented with a sterilized\
+  \ wheat grain as carbon source for ambient bacteria from the sampling site."

@@ -1,0 +1,21 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:5091
+  label: Solution B
+composition:
+- preferred_term: Na2HPO4-NaH2PO4 buffer
+  concentration:
+    value: '250.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1725
+    label: Na2HPO4-NaH2PO4 buffer
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix and filter-sterilize just before addition to the medium.
+
+
+  Original volume: 8 mL'

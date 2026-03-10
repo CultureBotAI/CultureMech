@@ -70,10 +70,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: RST trace elements (see Medium [M979])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -84,25 +80,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
-  concentration:
-    value: '37.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 1% Yeast extract solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: 1 M Sodium pyruvate solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
-- preferred_term: RST vitamin solution* (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -113,10 +90,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Reducing agent solution (see Medium [M522])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -223,3 +196,43 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:43.822389+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+solutions:
+- preferred_term: RST trace elements (see Medium [M979])
+  composition: []
+  notes: Cross-reference to Medium M979
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1% Yeast extract solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 1 M Sodium pyruvate solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
+- preferred_term: RST vitamin solution* (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Reducing agent solution (see Medium [M522])
+  composition: []
+  notes: Cross-reference to Medium M522
+  concentration:
+    value: '10'
+    unit: G_PER_L

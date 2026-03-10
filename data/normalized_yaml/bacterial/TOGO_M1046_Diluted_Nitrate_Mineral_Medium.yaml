@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '990'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,17 +17,20 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: KNO3
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:17632
     label: nitrate
@@ -38,24 +42,6 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Modified SL--4 trace element solution (see Medium [M1045])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Chelated iron solution (see Medium [M863])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: 0.2 M KH2PO4 solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 0.2 M Na2HPO4 solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: methane
   notes: 'Properties: Gas'
   concentration:
@@ -86,3 +72,32 @@ curation_history:
   date: '2026-02-03T11:20:45.638257'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: methane'
+- timestamp: '2026-03-09T08:05:13.154695+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Modified SL--4 trace element solution (see Medium [M1045])
+  composition: []
+  notes: Cross-reference to Medium M1045
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Chelated iron solution (see Medium [M863])
+  composition: []
+  notes: Cross-reference to Medium M863
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 0.2 M KH2PO4 solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 0.2 M Na2HPO4 solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'

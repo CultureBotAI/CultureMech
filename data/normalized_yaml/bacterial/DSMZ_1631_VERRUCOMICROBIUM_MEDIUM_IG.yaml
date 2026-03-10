@@ -75,10 +75,6 @@ ingredients:
   concentration:
     value: '0.104211'
     unit: G_PER_L
-- preferred_term: Metall salt sol. 44
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -148,12 +144,13 @@ preparation_steps:
   description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx. 10 drops/l medium
-    of 6 N KOH).
+  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx.
+    10 drops/l medium of 6 N KOH).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other salts. Adjust pH to 7.2 with
-    KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
+    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
+    water.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).
@@ -168,3 +165,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:00.978320+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Metall salt sol. 44
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

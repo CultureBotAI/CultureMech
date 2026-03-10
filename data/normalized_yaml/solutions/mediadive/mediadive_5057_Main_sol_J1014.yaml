@@ -1,0 +1,105 @@
+preferred_term: Main sol. J1014
+term:
+  id: mediadive.solution:5057
+  label: Main sol. J1014
+composition:
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.193986'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '2.9098'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.484966'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.242483'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.484966'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '872.9388942774005'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '9.699321047526674'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeCl2
+  concentration:
+    value: '9.699321047526674'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:603
+    label: FeCl2
+  chebi_term:
+    id: CHEBI:30812
+    label: iron dichloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly and adjust pH to 6.0. Autoclave under\
+  \ a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions anaerobically\
+  \ and aseptically (autoclaved or *filter-sterilized and store under a N2 atmosphere):\
+  \ \n\nOriginal volume: 1031 mL"

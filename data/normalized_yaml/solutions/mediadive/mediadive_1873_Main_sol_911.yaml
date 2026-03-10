@@ -1,0 +1,35 @@
+preferred_term: Main sol. 911
+term:
+  id: mediadive.solution:1873
+  label: Main sol. 911
+composition:
+- preferred_term: Glycerol
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto
+  Middelbrook OADC enrichment Difco (see below) under aseptic conditions and mix thoroughly.
+
+  Final pH at 25°C 6.6 ± 0.2.
+
+  Bacto Middelbrook OADC enrichment (Difco 212240): '

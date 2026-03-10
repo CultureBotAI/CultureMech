@@ -5,10 +5,6 @@ description: 336. NBRC 335.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: KNO30.5gSodium glycerophosphate0.1gTrace element solution*1mlTris (hydroxymethyl) aminomethane1gBacto
-    Tryptone (Difco)5gYeast extract5gAgar (if needed)15gSeawater**1LpH 7.0*Trace element solutionH3BO42.85gMnCl2·4H2O1.8gFeSO4·7H2O1.36gCuCl2·2H2O26.9mgZnCl220.8mgCoCl2·6H2O40.4mgNa2MoO4·2H2O25.2mgSodium
-    tartrate1.77gDistilled water1L**Filtered, aged seawater or artificial seawater (Daigo's Artificial
-    Seawater SP***).***Wako Pure Chemical Ind., Ltd., Osaka, Japan.
 - preferred_term: ''
   concentration:
     value: KNO3
@@ -76,3 +72,14 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 335, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=335.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:05:06.439406+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KNO30.5gSodium glycerophosphate0.1gTrace element solution*1mlTris
+    (hydroxymethyl) aminomethane1gBacto Tryptone (Difco)5gYeast extract5gAgar (if
+    needed)15gSeawater**1LpH 7.0*Trace element solutionH3BO42.85gMnCl2·4H2O1.8gFeSO4·7H2O1.36gCuCl2·2H2O26.9mgZnCl220.8mgCoCl2·6H2O40.4mgNa2MoO4·2H2O25.2mgSodium
+    tartrate1.77gDistilled water1L**Filtered, aged seawater or artificial seawater
+    (Daigo's Artificial Seawater SP***).***Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+  composition: []

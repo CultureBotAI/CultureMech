@@ -67,18 +67,6 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -187,15 +175,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. After cooling, replace the gas phase
-    with a N2-CO2 (4:1, v/v) gas mixture and add the following solutions from sterile anaerobic stocks
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave under a N2 atmosphere. After cooling,
+    replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture and add the following
+    solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into sterile culture vessels (e.g., 20 ml of the medium in 50 ml
-    serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal with sterile butyl rubber stoppers.
-    Adjust pH to 7.0, if necessary. Prior to use, add per liter the following solution from an anaerobic
-    stock (autoclaved):'
+  description: 'Distribute the medium into sterile culture vessels (e.g., 20 ml of
+    the medium in 50 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal
+    with sterile butyl rubber stoppers. Adjust pH to 7.0, if necessary. Prior to use,
+    add per liter the following solution from an anaerobic stock (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,3 +191,23 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J756'
+- timestamp: '2026-03-09T08:04:52.727349+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

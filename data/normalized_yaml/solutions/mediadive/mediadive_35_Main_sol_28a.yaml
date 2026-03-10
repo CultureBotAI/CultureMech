@@ -1,0 +1,42 @@
+preferred_term: Main sol. 28a
+term:
+  id: mediadive.solution:35
+  label: Main sol. 28a
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium Thiosulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1126
+    label: Sodium Thiosulfate
+  chebi_term:
+    id: CHEBI:132112
+    label: sodium thiosulfate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Incubate at 500 to 1000 lux light intensity.

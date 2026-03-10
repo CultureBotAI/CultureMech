@@ -1,0 +1,119 @@
+preferred_term: Main sol. 1107
+term:
+  id: mediadive.solution:5719
+  label: Main sol. 1107
+composition:
+- preferred_term: Na-L-lactate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:265
+    label: Na-L-lactate
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Haemin
+  concentration:
+    value: '8.333333333333334'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:149
+    label: Haemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cystein-HCl x 2 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:983
+    label: Cystein-HCl x 2 H2O
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: DTT
+  concentration:
+    value: '0.000771255'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:984
+    label: DTT
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na-formate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:144
+    label: Na-formate
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-fumarate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:143
+    label: Na-fumarate
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '41.666666666666664'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'To 10 ml of the dialister medium add aseptically:
+
+  Filter-sterilize all solutions and incubate them in oxygen-free atmosphere.
+
+
+  Original volume: 12 mL'

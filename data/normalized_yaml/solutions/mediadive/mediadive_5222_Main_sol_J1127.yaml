@@ -1,0 +1,41 @@
+preferred_term: Main sol. J1127
+term:
+  id: mediadive.solution:5222
+  label: Main sol. J1127
+composition:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1607
+    label: Marine broth 2216
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

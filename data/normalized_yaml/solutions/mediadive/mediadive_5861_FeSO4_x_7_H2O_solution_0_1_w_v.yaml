@@ -1,0 +1,31 @@
+preferred_term: FeSO4 x 7 H2O solution (0.1% w/v)
+term:
+  id: mediadive.solution:5861
+  label: FeSO4 x 7 H2O solution (0.1% w/v)
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2SO4
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:122
+    label: H2SO4
+  chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: The ferrous sulfate solution is not stable and should be freshly
+  prepared.

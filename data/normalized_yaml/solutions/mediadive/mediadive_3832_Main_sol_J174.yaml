@@ -1,0 +1,32 @@
+preferred_term: Main sol. J174
+term:
+  id: mediadive.solution:3832
+  label: Main sol. J174
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately
+  and steam sulfur for 3 hr on each of 3 successive days. Cultivate under air enriched
+  with 1-10% CO2.

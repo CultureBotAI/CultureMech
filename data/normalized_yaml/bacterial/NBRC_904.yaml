@@ -5,16 +5,6 @@ description: 904. NBRC 903.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: NaCl30gKCl0.33gNH4Cl0.25gMgCl2·6H2O2.8gMgSO4·7H2O3.4gFeSO4·7H2O0.025gK2HPO40.3gNaBr0.01gTrace
-    minerals*10mlVitamin solution**10mlBacto Yeast Extract (Difco)3gBacto Tryptone (Difco)3gPIPES6gSulfur
-    (powder)10gResazurin1mgNa2S·9H2O0.5gDistilled water1LMix ingredients except vitamin solution, sulfur
-    and Na2S·9H2O, and adjust pH to 7. Autoclave under a N2atmosphere. Filter-sterilize vitamin solution.
-    Sulfur is sterilized separately by autoclaving for 60 min at 105℃ on each of 3 successive days. Neutralize
-    Na2S·9H2O as 5% solution and autoclave under a N2atmosphere. Prior to inoculation, aseptically and
-    anaerobically add vitamin, sulfur and Na2S·9H2O.*Trace mineralsNitrilotriacetic acid1.5gMgSO4·7H2O3gMnSO4·xH2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.1gCaCl2·2H2O0.1gZnSO4·7H2O0.1gCuSO4·5H2O0.01gAlK(SO4)20.01gH3BO30.01gNa2MoO4·2H2O0.01gDistilled
-    water1LDissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to add
-    minerals. Adjust final pH to 7.0.** Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
-    acid5mgCa-pantothenate5mgVitamin B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled water1L
 - preferred_term: ''
   concentration:
     value: NaCl
@@ -223,3 +213,22 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 903, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=903.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:25.133107+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: NaCl30gKCl0.33gNH4Cl0.25gMgCl2·6H2O2.8gMgSO4·7H2O3.4gFeSO4·7H2O0.025gK2HPO40.3gNaBr0.01gTrace
+    minerals*10mlVitamin solution**10mlBacto Yeast Extract (Difco)3gBacto Tryptone
+    (Difco)3gPIPES6gSulfur (powder)10gResazurin1mgNa2S·9H2O0.5gDistilled water1LMix
+    ingredients except vitamin solution, sulfur and Na2S·9H2O, and adjust pH to 7.
+    Autoclave under a N2atmosphere. Filter-sterilize vitamin solution. Sulfur is sterilized
+    separately by autoclaving for 60 min at 105℃ on each of 3 successive days. Neutralize
+    Na2S·9H2O as 5% solution and autoclave under a N2atmosphere. Prior to inoculation,
+    aseptically and anaerobically add vitamin, sulfur and Na2S·9H2O.*Trace mineralsNitrilotriacetic
+    acid1.5gMgSO4·7H2O3gMnSO4·xH2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.1gCaCl2·2H2O0.1gZnSO4·7H2O0.1gCuSO4·5H2O0.01gAlK(SO4)20.01gH3BO30.01gNa2MoO4·2H2O0.01gDistilled
+    water1LDissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.** Vitamin solutionBiotin2mgFolic
+    acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgVitamin
+    B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled water1L
+  composition: []

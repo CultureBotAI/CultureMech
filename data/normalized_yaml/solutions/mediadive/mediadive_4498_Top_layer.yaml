@@ -1,0 +1,68 @@
+preferred_term: Top layer
+term:
+  id: mediadive.solution:4498
+  label: Top layer
+composition:
+- preferred_term: Trace minerals (see Medium No. 197
+  concentration:
+    value: '9.900990099009901'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1833
+    label: Trace minerals (see Medium No. 197
+  chebi_term:
+    id: CHEBI:2511
+    label: agarose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MES
+  concentration:
+    value: '1.93069'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.415842'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agarose
+  concentration:
+    value: '1.48515'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:991
+    label: Agarose
+  chebi_term:
+    id: CHEBI:2511
+    label: agarose
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Adjust pH to 6.2.
+
+  Autoclave both layer solutions. Shortly after autoclaving, pipette the bottom layer
+  into each culture vessel (typically 0.75 ml in 10 ml glass vials, use pipette tips
+  that have been cut to enlarge the opening). The bottom layer is allowed to cool
+  for at least 30 min to ensure its solidification. Cool the top layer to 35 - 40C,
+  add 1 ml Trace vitamins (see Medium No. 197) and adjust pH to 6.1 - 6.4 by bubbling
+  with sterile CO2 gas. Slowly overlay the top layer onto the solidified bottom layer
+  (3.75 ml in the 10 ml vial). Allow to solidify the top layer a minimum of 3 hr to
+  a maximum of overnight. To inoculate, 10 ï¿½l of the inoculum is drown into a pipette
+  tip and inject just above the bottom layer. Seal vials with butyl rubber stoppers
+  and replace the gas phase with a N2-CO2-O2 (8:1:1, v/v) gas mixture.
+
+
+  Original volume: 101 mL'

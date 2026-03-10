@@ -102,20 +102,8 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
-- preferred_term: Trace element solution SLA (see Medium [M352])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Vitamin solution VA (see Medium [M352])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Na2S·9H2O solution (see Medium [M3029])
   concentration:
     value: variable
     unit: VARIABLE
@@ -163,3 +151,26 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: Na2S·9H2O solution (see Medium [M3029])'
+- timestamp: '2026-03-09T08:04:18.004780+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution SLA (see Medium [M352])
+  composition: []
+  notes: Cross-reference to Medium M352
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution VA (see Medium [M352])
+  composition: []
+  notes: Cross-reference to Medium M352
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S·9H2O solution (see Medium [M3029])
+  composition: []
+  notes: Cross-reference to Medium M3029
+  concentration:
+    value: variable
+    unit: VARIABLE

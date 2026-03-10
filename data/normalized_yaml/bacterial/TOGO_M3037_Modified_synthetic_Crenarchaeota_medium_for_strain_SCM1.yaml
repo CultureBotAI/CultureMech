@@ -58,34 +58,6 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-- preferred_term: HEPES buffer*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: 1 M NaHCO3 buffer**
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: KH2PO4 solution***
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: FeNaEDTA solution****
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Trace element solution*****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NH4Cl solution******
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Sodium alpha-Ketoglutamate solution*******
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -303,3 +275,46 @@ curation_history:
     for ingredient: CoCl2·6H2O; Added default concentration for ingredient: NiCl2·6H2O;
     Added default concentration for ingredient: ZnSO4·7H2O; Added default concentration
     for ingredient: CuCl2·2H2O; Added default concentration for ingredient: HCl (35%)'
+- timestamp: '2026-03-09T08:04:41.425340+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
+solutions:
+- preferred_term: HEPES buffer*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 1 M NaHCO3 buffer**
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4 solution***
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FeNaEDTA solution****
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Trace element solution*****
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: NH4Cl solution******
+  composition: []
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium alpha-Ketoglutamate solution*******
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L

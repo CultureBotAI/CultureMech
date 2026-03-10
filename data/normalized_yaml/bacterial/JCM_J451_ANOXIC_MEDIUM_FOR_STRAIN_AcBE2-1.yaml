@@ -67,10 +67,6 @@ ingredients:
   concentration:
     value: '0.411822'
     unit: G_PER_L
-- preferred_term: 84 g/L NaHCO3 solution
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -207,18 +203,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: 'Use sodium acetate instead of 17 beta-estradiol donor. The former can be added prior to
-    autoclaving. After autoclaving and cooling under N2-CO2 (80:20, v/v), add the following components
-    to the medium:'
+  description: 'Use sodium acetate instead of 17 beta-estradiol donor. The former
+    can be added prior to autoclaving. After autoclaving and cooling under N2-CO2
+    (80:20, v/v), add the following components to the medium:'
 - step_number: 2
   action: MIX
-  description: The final pH of the medium should be about 7.2. All culture vessels with estradiol as substrate
-    are incubated at 28C in the dark for 8 - 10 days. The culture with estradiol should be briefly shaken
-    once a day.
+  description: The final pH of the medium should be about 7.2. All culture vessels
+    with estradiol as substrate are incubated at 28C in the dark for 8 - 10 days.
+    The culture with estradiol should be briefly shaken once a day.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -230,3 +226,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:33.253298+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: 84 g/L NaHCO3 solution
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L

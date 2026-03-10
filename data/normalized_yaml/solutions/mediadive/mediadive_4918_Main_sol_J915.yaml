@@ -1,0 +1,185 @@
+preferred_term: Main sol. J915
+term:
+  id: mediadive.solution:4918
+  label: Main sol. J915
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '16.0942'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '3.42493'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '2.68891'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.461237'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.382728'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.294406'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000392542'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '981.3542688910696'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agarose
+  concentration:
+    value: '1.96271'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:991
+    label: Agarose
+  chebi_term:
+    id: CHEBI:2511
+    label: agarose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1.7664376840039255'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.944062806673209'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '3.9254170755642788'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.306182531894014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4 x 5 H2O
+  concentration:
+    value: '2.4533856722276743'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1933
+    label: FeSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:46756
+    label: HEPES
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Adjust pH to 7.2.\nMix components thoroughly, except agar, and\
+  \ adjust pH to 7.0. Add agarose to the medium and autoclave under a N2 gas atmosphere.\
+  \ After cooling to 50C, add the following solutions to the medium aseptically and\
+  \ anaerobically (autoclaved or *filter-sterilized): \nKeep the medium temperature\
+  \ at 50C until the medium is distributed into sterile screw-capped test tubes as\
+  \ described below.\nAdjust pH to 7.0 - 7.2 with sterile HCl or NaOH solution. Then,\
+  \ aseptically and anaerobically, add the following solution (autoclaved): \nDispense\
+  \ the medium to sterile screw-capped test tubes (typically 12 ml medium into 125\
+  \ by 15 mm test tubes) under air and cap. Allow to stand until the medium is solidified\
+  \ and a O2-gradient formed (as evidenced by a pink upper oxic zone and a colorless\
+  \ lower anoxic zone). Inoculate cells just below the pink-colorless interface in\
+  \ the medium tube using a syringe.\n\nOriginal volume: 1019 mL"

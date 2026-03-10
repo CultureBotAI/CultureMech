@@ -1,0 +1,37 @@
+preferred_term: Ascorbate solution (1M)
+term:
+  id: mediadive.solution:3548
+  label: Ascorbate solution (1M)
+composition:
+- preferred_term: Ascorbic acid
+  concentration:
+    value: '176'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:112
+    label: Ascorbic acid
+  chebi_term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'In an ice bath ascorbic acid was dissolved in 80 mL anoxic H2Obidest
+  (autoclaved, cooled under N2 atmosphere) while flushing with N2. The pH was adjusted
+  to 7.0 with NaOH and the solution added up to 100 ml with anoxic H2Obidest. After
+  filter-sterilization the solution was stored under N2 atmosphere in a special flask
+  (which can be flushed with gas) at 4°C in the dark.
+
+
+  Original volume: 100 mL'

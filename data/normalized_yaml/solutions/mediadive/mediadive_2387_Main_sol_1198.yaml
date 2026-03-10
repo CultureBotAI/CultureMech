@@ -1,0 +1,46 @@
+preferred_term: Main sol. 1198
+term:
+  id: mediadive.solution:2387
+  label: Main sol. 1198
+composition:
+- preferred_term: IMDM-Medium
+  concentration:
+    value: '900.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1069
+    label: IMDM-Medium
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Aminoacids
+  concentration:
+    value: '10.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1070
+    label: Aminoacids
+  chebi_term:
+    id: CHEBI:33709
+    label: amino acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Cultivation of Vero B4 (ACC 33) cells \nFilter-sterilize (0.2\
+  \ µm) and keep no longer than 4 weeks. Store at room temperature to facilitate detection\
+  \ of contamination.\nPrepare a 25 cm2 flask and seed cells according to standard\
+  \ protocols (see DSMZ catalogue for ACC 33). Incubate at 37°C plus 5% CO2. When\
+  \ a confluent layer has formed, infection can be carried out.\nInfect cells with\
+  \ 1 ml of Rickettsia stock solution (thawed quickly to 37°C).\nCentrifuge for 1\
+  \ h onto the cell layer at 1600 rpm at 20°C.\nIncubate at 28°C. Up to 90% of Vero\
+  \ cells should be infected after 15 days. Specific PCRs can be performed to verify\
+  \ the presence of rickettsiae. Ultimately, in situ-hybridization can be used to\
+  \ visualize them.\n\nOriginal volume: 50 mL"

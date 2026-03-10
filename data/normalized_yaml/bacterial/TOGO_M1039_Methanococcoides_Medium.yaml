@@ -8,11 +8,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound, Simple component'
-- preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
+    Simple component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -43,5 +40,16 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:45.590466'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:38.453724+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
+  composition: []
+  notes: Cross-reference to Medium M257
+  concentration:
+    value: '1'
+    unit: G_PER_L

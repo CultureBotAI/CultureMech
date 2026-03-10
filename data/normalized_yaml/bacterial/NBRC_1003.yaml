@@ -5,10 +5,6 @@ description: 1003. NBRC 1002.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1LAdjust pH to 2.0 with H2SO4.Heterotrophic
-    growth on yeast extract:Add 10 mg/l of FeSO4·7H2O to the medium. After autoclaving, add yeast extract
-    from sterile stock solution to final concentration of 0.25 g/l.Autotrophic growth on ferrous sulfate:Add
-    13.9 g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4prior to autoclaving.
 - preferred_term: ''
   concentration:
     value: MgSO4·7H2O
@@ -50,3 +46,15 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1002, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1002.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:05:11.769433+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1LAdjust
+    pH to 2.0 with H2SO4.Heterotrophic growth on yeast extract:Add 10 mg/l of FeSO4·7H2O
+    to the medium. After autoclaving, add yeast extract from sterile stock solution
+    to final concentration of 0.25 g/l.Autotrophic growth on ferrous sulfate:Add 13.9
+    g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4prior to
+    autoclaving.
+  composition: []

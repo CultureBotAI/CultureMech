@@ -1,0 +1,29 @@
+preferred_term: Solution 7 (100 mM KNO3)
+term:
+  id: mediadive.solution:5753
+  label: Solution 7 (100 mM KNO3)
+composition:
+- preferred_term: KNO3
+  concentration:
+    value: '10.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

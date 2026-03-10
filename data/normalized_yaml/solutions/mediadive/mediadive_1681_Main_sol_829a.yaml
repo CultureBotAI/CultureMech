@@ -1,0 +1,138 @@
+preferred_term: Main sol. 829a
+term:
+  id: mediadive.solution:1681
+  label: Main sol. 829a
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '29.4118'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.147059'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
+  concentration:
+    value: '1.91176'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:766
+    label: MES [2-(N-morpholino) ethane sulfonic acid]
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.196078'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000490196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.45098'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '980.3921568627451'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except thiosulfate and sodium sulfide),
+  adjust pH to 6.0, boil medium for 1 min, then cool to room temperature under 80%
+  H2 and 20% CO2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+  tubes or serum vials to 30% of their volume and autoclave. Add sodium thiosulfate
+  from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.
+  Reduce medium with a sterile, neutralized solution of sodium sulfide prepared under
+  100% N2 gas . Adjust pH of complete medium to 6.0, if necessary.
+
+  After inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+  80% H2 and 20% CO2 gas mixture.
+
+
+  Original volume: 1020 mL'

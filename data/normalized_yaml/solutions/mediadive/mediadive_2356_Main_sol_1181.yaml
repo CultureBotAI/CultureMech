@@ -1,0 +1,96 @@
+preferred_term: Main sol. 1181
+term:
+  id: mediadive.solution:2356
+  label: Main sol. 1181
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 6 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:173
+    label: CaCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III)NH4-EDTA
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:627
+    label: Fe(III)NH4-EDTA
+  chebi_term:
+    id: CHEBI:91243
+    label: calcium chloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.272'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.717'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:95
+    label: Na2HPO4 x 12 H2O
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Dispense the medium into the culture vessels. For small volumes\
+  \ serum bottles or Hungate tubes may be used. The gas phase to liquid ratio should\
+  \ be about 1:10. Use a gas phase containing air, 20-30% methane and autoclave at\
+  \ 121°C for 15 minutes. When the growth medium is cool the phosphate buffer is added.\n\
+  Autoclave at 121°C for 15 min.\nAdd to the sterile medium from a filter sterilised\
+  \ phosphate buffer: \nLiquid cultures should be grown with shaking.\nFinal pH of\
+  \ the medium is 5.8."

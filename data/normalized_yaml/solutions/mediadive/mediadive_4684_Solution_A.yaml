@@ -1,0 +1,169 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:4684
+  label: Solution A
+composition:
+- preferred_term: Iron(III) citrate
+  concentration:
+    value: '333.333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1885
+    label: Iron(III) citrate
+  chebi_term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '27.7778'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '13.8889'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '11.1111'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '6.94444'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '5.55556'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '2.77778'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.0394444'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '37.7778'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1817
+    label: Sodium acetate x 3 H2O
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '833.3333333333334'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trace element solution (see Medium No. 187
+  concentration:
+    value: '27.77777777777778'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1886
+    label: Trace element solution (see Medium No. 187
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl2
+  concentration:
+    value: '13.88888888888889'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:603
+    label: FeCl2
+  chebi_term:
+    id: CHEBI:30812
+    label: iron dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Toluene
+  concentration:
+    value: '138.88888888888889'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1820
+    label: Toluene
+  chebi_term:
+    id: CHEBI:17578
+    label: toluene
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "First dissolve iron(III) citrate in 800 ml distilled water and\
+  \ adjust pH to 7.0 with 10 N NaOH. Then, add the remaining minerals, bring volume\
+  \ to 970 ml and autoclave under a N2 atmosphere. Add aseptically and anaerobically\
+  \ the following filter-sterilized solutions: \nDistribute the medium into sterile\
+  \ culture vessels (e.g., 50 ml per 120 ml bottle) under a N2-CO2 (4:1, v/v) gas\
+  \ mixture, and seal with sterile butyl rubber stoppers. Then add per 50 ml the following\
+  \ solutions from anaerobic stocks: \nCheck the final pH of the medium to be around\
+  \ 7.0.\n\nOriginal volume: 36 mL"

@@ -1,0 +1,30 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:665
+  label: Solution C
+composition:
+- preferred_term: Ethanol
+  concentration:
+    value: '90.9090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '909.090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 11 mL'

@@ -1,0 +1,13 @@
+preferred_term: Main sol. 535a
+term:
+  id: mediadive.solution:1182
+  label: Main sol. 535a
+composition:
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+preparation_notes: To medium 535 add 5% blood after cooling.

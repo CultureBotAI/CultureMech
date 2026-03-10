@@ -1,0 +1,60 @@
+preferred_term: Ferric EDTA solution
+term:
+  id: mediadive.solution:1642
+  label: Ferric EDTA solution
+composition:
+- preferred_term: Na-EDTA
+  concentration:
+    value: '17.9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:589
+    label: Na-EDTA
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '3.28'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '13.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: '1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled
+  water.
+
+  2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling with air
+  overnight, and store in a brown glass bottle.
+
+  3) Combine the two solutions and make up to 1 litre with distilled water.'

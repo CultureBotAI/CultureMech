@@ -1,0 +1,114 @@
+preferred_term: Main sol. J468
+term:
+  id: mediadive.solution:4216
+  label: Main sol. J468
+composition:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:124
+    label: Trypticase peptone
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium DL-lactate
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1086
+    label: Sodium DL-lactate
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1644
+    label: Sodium thioglycolate
+  chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:22
+    label: Tween 80
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Putrescine
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:243
+    label: Putrescine
+  chebi_term:
+    id: CHEBI:17148
+    label: putrescine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.5 with solid K2CO3.

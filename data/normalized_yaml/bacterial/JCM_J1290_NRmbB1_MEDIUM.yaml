@@ -60,10 +60,6 @@ ingredients:
   concentration:
     value: '0.00106496'
     unit: G_PER_L
-- preferred_term: Vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -172,10 +168,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except NaHCO3 and adjust pH to 6.5. Bring to a boil for 5-10 sec, then,
-    cool down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3 to the solution. Dispense the medium
-    into culture vessels under a stream of N2-CO2 (80:20, v/v), seal with butyl rubber stopper and autoclave.
-    After autoclaving, stand the medium overnight. Aseptically and anaerobically add per liter the following
+  description: 'Mix components except NaHCO3 and adjust pH to 6.5. Bring to a boil
+    for 5-10 sec, then, cool down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3
+    to the solution. Dispense the medium into culture vessels under a stream of N2-CO2
+    (80:20, v/v), seal with butyl rubber stopper and autoclave. After autoclaving,
+    stand the medium overnight. Aseptically and anaerobically add per liter the following
     solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
@@ -184,3 +181,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1290'
+- timestamp: '2026-03-09T08:05:08.024831+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

@@ -76,18 +76,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -98,43 +86,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% NaHCO3 solution*
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 10% Yeast extract solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: 5% Sodium thiosulfate solution
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 0.1 M Dithiothreitol solutuion*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Solution, Organic compound, Defined component'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Syringate solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: 2.5% Sodium dithionite solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -149,11 +100,6 @@ ingredients:
     value: '6'
     unit: G_PER_L
   notes: 'Properties: Simple component, Organic compound, Defined component'
-- preferred_term: 2N NaOH solution
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M3270
   term:
@@ -181,3 +127,79 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     2N NaOH solution'
+- timestamp: '2026-03-09T08:04:53.553865+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 12 solution(s) from ingredients
+solutions:
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 10% Yeast extract solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 5% Sodium thiosulfate solution
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 0.1 M Dithiothreitol solutuion*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Solution, Organic compound, Defined component'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Syringate solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 2.5% Sodium dithionite solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 2N NaOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

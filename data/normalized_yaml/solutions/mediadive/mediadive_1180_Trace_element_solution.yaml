@@ -1,0 +1,42 @@
+preferred_term: Trace element solution
+term:
+  id: mediadive.solution:1180
+  label: Trace element solution
+composition:
+- preferred_term: (NH4)2Ni(SO4)2
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:514
+    label: (NH4)2Ni(SO4)2
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2WO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:550
+    label: Na2WO4
+  chebi_term:
+    id: CHEBI:63940
+    label: sodium tungstate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SeO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:375
+    label: Na2SeO4
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'To 1000.0 ml trace element solution in medium 141 add:  '

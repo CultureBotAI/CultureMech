@@ -1,0 +1,72 @@
+preferred_term: Main sol. 1376
+term:
+  id: mediadive.solution:2780
+  label: Main sol. 1376
+composition:
+- preferred_term: KNO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KBr
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:174
+    label: KBr
+  chebi_term:
+    id: CHEBI:32030
+    label: potassium bromide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Prepare the medium without the vitamin solution and the phosphate
+  buffer. Dispense the medium into the growth vessels. If using sealed vessels it
+  is appropriate to add 50% methane to the gas phase and autoclave at 121°C for 15
+  minutes. Autoclave the phosphate buffer separately. When the growth medium is cool
+  add 0.1 ml/l of vitamin solution (filter sterilized) and 2 ml/l of the phosphate
+  buffer - if too warm the phosphate will precipitate. Liquid cultures should be grown
+  with shaking.

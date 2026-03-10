@@ -97,14 +97,6 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
-- preferred_term: SL-10 trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Wolfe’s vitamin solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -287,4 +279,19 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas'
+- timestamp: '2026-03-09T08:04:27.040843+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: SL-10 trace element solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Wolfe’s vitamin solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

@@ -1,0 +1,30 @@
+preferred_term: Methanol solution
+term:
+  id: mediadive.solution:4592
+  label: Methanol solution
+composition:
+- preferred_term: Methanol
+  concentration:
+    value: '43.84615384615384'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '961.5384615384615'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 52 mL'

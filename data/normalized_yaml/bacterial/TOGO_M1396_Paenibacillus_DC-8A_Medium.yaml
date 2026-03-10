@@ -64,20 +64,11 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Mineral solution (see below)
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10% (w/v) Xylose solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Carbon source'
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -130,4 +121,20 @@ curation_history:
   date: '2026-02-03T11:20:47.557808'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:11.456610+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Mineral solution (see below)
+  composition: []
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: 10% (w/v) Xylose solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'

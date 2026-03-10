@@ -11,14 +11,6 @@ media_term:
     label: PYVL MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1023'
 ingredients:
-- preferred_term: Salt Solution I
-  concentration:
-    value: '75'
-    unit: G_PER_L
-- preferred_term: Salt Solution II
-  concentration:
-    value: '75'
-    unit: G_PER_L
 - preferred_term: Trypticase peptone
   concentration:
     value: '9.96016'
@@ -104,8 +96,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber stopped tubes under
-    oxygen-free N2-CO2 (95:5).
+  description: Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber
+    stopped tubes under oxygen-free N2-CO2 (95:5).
 applications:
 - Microbial cultivation
 curation_history:
@@ -113,3 +105,24 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1023'
+- timestamp: '2026-03-09T08:04:35.792846+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Salt Solution I
+  term:
+    id: mediadive.solution:5691
+    label: Salt Solution I
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: See mediadive_5691_Salt_Solution_I.yaml for composition
+- preferred_term: Salt Solution II
+  term:
+    id: mediadive.solution:2571
+    label: Salt Solution II
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: See mediadive_2571_Salt_Solution_II.yaml for composition

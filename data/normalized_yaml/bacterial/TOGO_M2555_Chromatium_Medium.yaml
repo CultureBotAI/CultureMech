@@ -4,22 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution 1+2+3
-  concentration:
-    value: '120'
-    unit: G_PER_L
-- preferred_term: Solution 4
-  concentration:
-    value: '6'
-    unit: G_PER_L
-- preferred_term: Solution 1
-  concentration:
-    value: '80'
-    unit: G_PER_L
-- preferred_term: Solution 2+3
-  concentration:
-    value: '46'
-    unit: G_PER_L
 - preferred_term: CaCl2
   concentration:
     value: '0.8'
@@ -35,14 +19,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Solution 2
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Solution 3
-  concentration:
-    value: '900'
-    unit: G_PER_L
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -93,18 +69,6 @@ ingredients:
   term:
     id: CHEBI:113451
     label: sodium ascorbate
-- preferred_term: Heavy Metal Solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 Solution
-  concentration:
-    value: '3'
-    unit: G_PER_L
-- preferred_term: Vitamin Solution
-  concentration:
-    value: '15'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   concentration:
     value: '4.5'
@@ -169,10 +133,6 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Modified Hogland trace elements solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
 - preferred_term: Vitamin B12
   concentration:
     value: '2'
@@ -393,3 +353,76 @@ curation_history:
   date: '2026-02-03T11:20:54.407233'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:46.824844+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 10 solution(s) from ingredients
+solutions:
+- preferred_term: Solution 1+2+3
+  composition: []
+  concentration:
+    value: '120'
+    unit: G_PER_L
+- preferred_term: Solution 4
+  term:
+    id: mediadive.solution:5181
+    label: Solution 4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: See mediadive_5181_Solution_4.yaml for composition
+- preferred_term: Solution 1
+  term:
+    id: mediadive.solution:6108
+    label: Solution 1
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: See mediadive_6108_Solution_1.yaml for composition
+- preferred_term: Solution 2+3
+  composition: []
+  concentration:
+    value: '46'
+    unit: G_PER_L
+- preferred_term: Solution 2
+  term:
+    id: mediadive.solution:6109
+    label: Solution 2
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_6109_Solution_2.yaml for composition
+- preferred_term: Solution 3
+  term:
+    id: mediadive.solution:6110
+    label: Solution 3
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: See mediadive_6110_Solution_3.yaml for composition
+- preferred_term: Heavy Metal Solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 Solution
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Vitamin Solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Modified Hogland trace elements solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L

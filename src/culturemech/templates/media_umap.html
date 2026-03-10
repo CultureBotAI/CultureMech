@@ -142,6 +142,33 @@
             border-color: #667eea;
         }
 
+        .filter-container {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
         .stats {
             display: flex;
             gap: 20px;
@@ -205,6 +232,12 @@
                 <input type="text" id="search-derived" placeholder="Search media by name..." />
             </div>
 
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all" data-target="derived">All</button>
+                <button class="filter-btn" data-filter="medium" data-target="derived">Media Only</button>
+                <button class="filter-btn" data-filter="solution" data-target="derived">Solutions Only</button>
+            </div>
+
             <svg id="umap-derived" width="800" height="600"></svg>
 
             <div class="legend" id="legend-derived"></div>
@@ -230,6 +263,12 @@
                 <input type="text" id="search-direct" placeholder="Search media by name..." />
             </div>
 
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all" data-target="direct">All</button>
+                <button class="filter-btn" data-filter="medium" data-target="direct">Media Only</button>
+                <button class="filter-btn" data-filter="solution" data-target="direct">Solutions Only</button>
+            </div>
+
             <svg id="umap-direct" width="800" height="600"></svg>
 
             <div class="legend" id="legend-direct"></div>
@@ -243,10 +282,17 @@
         const derivedData = {{ derived_data_json | safe }};
         const directData = {{ direct_data_json | safe }};
 
+        // Color scheme by entity_type
+        const entityTypeColors = {
+            "medium": "#0066ff",      // Blue for media
+            "solution": "#ff8c00"     // Orange for solutions
+        };
+
         // Color scheme by category (more distinct, vibrant colors)
         const categoryColors = {
             "bacterial": "#0066ff",    // Bright blue
             "fungal": "#ff1493",       // Deep pink/magenta
+            "solution": "#ff8c00",     // Orange for solutions
             "archaea": "#ff4500",      // Orange red
             "algae": "#00cc44",        // Bright green
             "specialized": "#9933ff",  // Bright purple
@@ -302,15 +348,17 @@
                 .attr("cx", d => xScale(d.x))
                 .attr("cy", d => yScale(d.y))
                 .attr("r", 4)
-                .attr("fill", d => categoryColors[d.category] || categoryColors.unknown)
+                .attr("fill", d => entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown)
                 .attr("opacity", 0.5)
                 .attr("data-name", d => d.name.toLowerCase())
+                .attr("data-entity-type", d => d.entity_type)
                 .style("cursor", "pointer")
                 .on("mouseover", function(event, d) {
                     tooltip
                         .style("opacity", 1)
                         .html(`
                             <strong>${d.name}</strong><br/>
+                            Entity Type: ${d.entity_type}<br/>
                             Category: ${d.category}<br/>
                             Type: ${d.medium_type}<br/>
                             State: ${d.physical_state}<br/>
@@ -347,34 +395,69 @@
             // Update visible count
             d3.select(`#${visibleId}`).text(data.length);
 
-            // Build legend
-            const categoryCounts = d3.rollup(data, v => v.length, d => d.category);
+            // Build legend (by entity_type)
+            const entityTypeCounts = d3.rollup(data, v => v.length, d => d.entity_type);
             const legendContainer = d3.select(`#${legendId}`);
             legendContainer.html("");
 
-            Array.from(categoryCounts.entries())
+            Array.from(entityTypeCounts.entries())
                 .sort((a, b) => b[1] - a[1])
-                .forEach(([category, count]) => {
+                .forEach(([entityType, count]) => {
                     const item = legendContainer.append("div")
                         .attr("class", "legend-item");
 
                     item.append("div")
                         .attr("class", "legend-color")
-                        .style("background-color", categoryColors[category] || categoryColors.unknown);
+                        .style("background-color", entityTypeColors[entityType] || categoryColors.unknown);
 
                     item.append("span")
-                        .text(`${category} (${count})`);
+                        .text(`${entityType} (${count})`);
                 });
+
+            // Store circles and visible count ID for filter use
+            return { circles, visibleId };
         }
 
         // Render both plots
+        let derivedComponents, directComponents;
+
         if (derivedData.length > 0) {
-            renderUMAP(derivedData, "umap-derived", "search-derived", "derived-visible", "legend-derived");
+            derivedComponents = renderUMAP(derivedData, "umap-derived", "search-derived", "derived-visible", "legend-derived");
         }
 
         if (directData.length > 0) {
-            renderUMAP(directData, "umap-direct", "search-direct", "direct-visible", "legend-direct");
+            directComponents = renderUMAP(directData, "umap-direct", "search-direct", "direct-visible", "legend-direct");
         }
+
+        // Add filter button functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                const target = this.getAttribute('data-target');
+
+                // Update active state
+                this.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                // Get the relevant components
+                const components = target === 'derived' ? derivedComponents : directComponents;
+                if (!components) return;
+
+                const { circles, visibleId } = components;
+                let visibleCount = 0;
+
+                // Apply filter
+                circles.each(function(d) {
+                    const circle = d3.select(this);
+                    const isVisible = filter === 'all' || d.entity_type === filter;
+                    circle.style("opacity", isVisible ? 0.5 : 0.05);
+                    if (isVisible) visibleCount++;
+                });
+
+                // Update visible count
+                d3.select(`#${visibleId}`).text(visibleCount);
+            });
+        });
     </script>
 </body>
 </html>

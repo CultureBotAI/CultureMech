@@ -1,0 +1,90 @@
+preferred_term: Vitamin solution 1 = Vit 1
+term:
+  id: mediadive.solution:3482
+  label: Vitamin solution 1 = Vit 1
+composition:
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:47
+    label: p-Aminobenzoic acid
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Biotin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1512
+    label: Calcium D-(+)-pantothenate
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1513
+    label: Pyridoxamine hydrochloride
+  chebi_term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1147
+    label: Thiamine hydrochloride
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1041
+    label: Cyanocobalamin
+  chebi_term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: filter sterilized

@@ -1,0 +1,74 @@
+preferred_term: Main sol. 635
+term:
+  id: mediadive.solution:1356
+  label: Main sol. 635
+composition:
+- preferred_term: D-Glucose
+  concentration:
+    value: '1.98807'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tryptone
+  concentration:
+    value: '1.98807'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000497018'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.248509'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '964.2147117296223'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except cysteine and vitamins), sparge medium
+  with 100% N2 gas for 30 - 45 min to make it anoxic. Then add cysteine, adjust pH
+  to 7.0, dispense medium under the same gas atmosphere in anoxic Hungate-type tubes
+  or serum vials, and autoclave. After sterilization, add vitamins from a sterile
+  anoxic stock solution prepared under 100% N2 gas and sterilized by filtration. Check
+  the pH of the complete medium and adjust to 7.0 if necessary.
+
+
+  Original volume: 1006 mL'

@@ -1,0 +1,30 @@
+preferred_term: Main sol. 422
+term:
+  id: mediadive.solution:853
+  label: Main sol. 422
+composition:
+- preferred_term: Acetate
+  concentration:
+    value: '0.118088'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1861
+    label: Acetate
+  chebi_term:
+    id: CHEBI:16411
+    label: acetic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Thiosulfate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:1862
+    label: Thiosulfate
+  chebi_term:
+    id: CHEBI:16094
+    label: thiosulfate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Supplement medium 28 with 2 mmol acetate and 1 mmol thiosulfate.

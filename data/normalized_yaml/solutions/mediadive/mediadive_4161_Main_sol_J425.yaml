@@ -1,0 +1,74 @@
+preferred_term: Main sol. J425
+term:
+  id: mediadive.solution:4161
+  label: Main sol. J425
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '15.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Add components except acetate and APM salts solutions to distilled
+  water, bring volume to 1.0 L and adjust pH to 6.8. Distribute the medium into culture
+  vessels under a N2-CO2 (4:1, v/v) gas mixture, sparge with the same gas mixture
+  for 10 - 15 min, seal with butyl rubber stoppers and autoclave. Separately autoclave
+  acetate and APM salts solutions under a N2 gas atmosphere and add to the medium
+  anaerobically.
+
+
+  Original volume: 50 mL'

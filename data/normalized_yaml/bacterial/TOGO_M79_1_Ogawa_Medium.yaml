@@ -4,19 +4,12 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Solution I
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Solution II
-  concentration:
-    value: '212'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -24,7 +17,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -32,20 +26,17 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:64220
     label: monosodium glutamate
-- preferred_term: 2% Malachite green solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Selective agent, pH indicator; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Glycerol
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -75,3 +66,31 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:21.873268+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Solution I
+  term:
+    id: mediadive.solution:5335
+    label: Solution I
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5335_Solution_I.yaml for composition
+- preferred_term: Solution II
+  term:
+    id: mediadive.solution:5336
+    label: Solution II
+  concentration:
+    value: '212'
+    unit: G_PER_L
+  notes: See mediadive_5336_Solution_II.yaml for composition
+- preferred_term: 2% Malachite green solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Selective agent, pH indicator; Properties: Defined component, Organic
+    compound, Solution'

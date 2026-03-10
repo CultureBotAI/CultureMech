@@ -1,0 +1,19 @@
+preferred_term: NSW (Natural Seawater)
+term:
+  id: mediadive.solution:6202
+  label: NSW (Natural Seawater)
+composition:
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Filter natural seawater through GF/C filters and autoclave at 15
+  psi for 15 minutes.

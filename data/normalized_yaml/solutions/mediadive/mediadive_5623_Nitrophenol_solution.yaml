@@ -1,0 +1,31 @@
+preferred_term: Nitrophenol solution
+term:
+  id: mediadive.solution:5623
+  label: Nitrophenol solution
+composition:
+- preferred_term: 2-Nitrophenol
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2109
+    label: 2-Nitrophenol
+  chebi_term:
+    id: CHEBI:16260
+    label: 2-nitrophenol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Phosphate buffer
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:625
+    label: Phosphate buffer
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve 0.5 g o-nitrophenol per liter phosphate buffer (50 mM,
+  pH 7.5) and sterilize by filtration.

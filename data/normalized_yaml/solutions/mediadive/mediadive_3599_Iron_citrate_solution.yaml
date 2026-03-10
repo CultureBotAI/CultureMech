@@ -1,0 +1,41 @@
+preferred_term: Iron citrate solution
+term:
+  id: mediadive.solution:3599
+  label: Iron citrate solution
+composition:
+- preferred_term: Sodium citrate
+  concentration:
+    value: '2.94'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:792
+    label: Sodium citrate
+  chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

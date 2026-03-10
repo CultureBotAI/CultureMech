@@ -1,0 +1,30 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:1086
+  label: Solution D
+composition:
+- preferred_term: Na2SO3
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:109
+    label: Na2SO3
+  chebi_term:
+    id: CHEBI:86477
+    label: sodium sulfite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 10 mL'

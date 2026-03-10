@@ -1,0 +1,34 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:298
+  label: Solution C
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '802.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '198.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO4
+  stock solution to reach a pH of around 7.4.
+
+
+  Original volume: 20 mL'

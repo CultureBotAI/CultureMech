@@ -1,0 +1,69 @@
+preferred_term: Aromatic fatty acids solution
+term:
+  id: mediadive.solution:5113
+  label: Aromatic fatty acids solution
+composition:
+- preferred_term: Phenyl acetic acid
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1545
+    label: Phenyl acetic acid
+  chebi_term:
+    id: CHEBI:30745
+    label: phenylacetic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Phenyl propionic acid
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1546
+    label: Phenyl propionic acid
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: 4-Hydroxyphenyl acetic acid
+  concentration:
+    value: '0.76'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1547
+    label: 4-Hydroxyphenyl acetic acid
+  chebi_term:
+    id: CHEBI:18101
+    label: 4-hydroxyphenylacetic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 3-Indolyl acetic acid
+  concentration:
+    value: '0.88'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1548
+    label: 3-Indolyl acetic acid
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Autoclave and store under a N2 atmosphere.
+
+
+  Original volume: 100 mL'

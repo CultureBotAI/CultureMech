@@ -1,0 +1,45 @@
+preferred_term: Hemin solution
+term:
+  id: mediadive.solution:5229
+  label: Hemin solution
+composition:
+- preferred_term: KOH
+  concentration:
+    value: '11.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:126
+    label: KOH
+  chebi_term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ethanol
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Hemin
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:704
+    label: Hemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Adjust volume to 100 ml with distilled water.
+
+
+  Original volume: 25 mL'

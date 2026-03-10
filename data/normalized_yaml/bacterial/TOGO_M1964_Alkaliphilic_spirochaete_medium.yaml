@@ -81,18 +81,6 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
-- preferred_term: Vitamin solution*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace element solution**
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Bicarbonate solution***
-  concentration:
-    value: '200'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -378,3 +366,32 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:16.954404+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution*
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Trace element solution**
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: Bicarbonate solution***
+  term:
+    id: mediadive.solution:29
+    label: Bicarbonate solution
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: See mediadive_29_Bicarbonate_solution.yaml for composition

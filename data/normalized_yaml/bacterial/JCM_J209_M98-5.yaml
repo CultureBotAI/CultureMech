@@ -51,10 +51,6 @@ ingredients:
   concentration:
     value: '0.274725'
     unit: G_PER_L
-- preferred_term: Salts solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -153,3 +149,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J209'
+- timestamp: '2026-03-09T08:04:55.565123+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Salts solution
+  term:
+    id: mediadive.solution:4429
+    label: Salts solution
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: See mediadive_4429_Salts_solution.yaml for composition

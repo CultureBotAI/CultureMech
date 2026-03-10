@@ -1,0 +1,34 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:820
+  label: Solution B
+composition:
+- preferred_term: Gelatine
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:657
+    label: Gelatine
+  chebi_term:
+    id: CHEBI:5291
+    label: gelatin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15
+  minutes at 115°C.
+
+
+  Original volume: 200 mL'

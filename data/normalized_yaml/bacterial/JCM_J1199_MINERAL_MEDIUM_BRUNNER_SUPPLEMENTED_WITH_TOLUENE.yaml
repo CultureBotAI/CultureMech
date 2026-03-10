@@ -39,10 +39,6 @@ ingredients:
   concentration:
     value: '7.46269'
     unit: G_PER_L
-- preferred_term: Phosphates solution
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
@@ -172,8 +168,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.9. After autoclaving, aseptically add the phosphates solution to the medium.
-    After inoculation, put several drops of toluene inside of lid of petri dishes.
+  description: Adjust pH to 6.9. After autoclaving, aseptically add the phosphates
+    solution to the medium. After inoculation, put several drops of toluene inside
+    of lid of petri dishes.
 - step_number: 2
   action: MIX
   description: 'Phosphates solution:'
@@ -190,3 +187,13 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1199'
+- timestamp: '2026-03-09T08:04:17.545927+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Phosphates solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L

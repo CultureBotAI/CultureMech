@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
 - preferred_term: Agar (if necessary)
   concentration:
     value: '12'
@@ -40,14 +43,6 @@ ingredients:
     value: '0.3'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Solution A (see Medium [M1100])
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Solution B (see Medium [M1100])
-  concentration:
-    value: '8'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M1101
   term:
@@ -69,3 +64,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:19.216410+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Solution A (see Medium [M1100])
+  composition: []
+  notes: Cross-reference to Medium M1100
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Solution B (see Medium [M1100])
+  composition: []
+  notes: Cross-reference to Medium M1100
+  concentration:
+    value: '8'
+    unit: G_PER_L

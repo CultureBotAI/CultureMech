@@ -1,0 +1,53 @@
+preferred_term: Main sol. 1817
+term:
+  id: mediadive.solution:6327
+  label: Main sol. 1817
+composition:
+- preferred_term: Czapek-Dox liquid medium
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1610
+    label: Czapek-Dox liquid medium
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose or Cellulose MN 300
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1627
+    label: Cellobiose or Cellulose MN 300
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback

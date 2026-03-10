@@ -20,6 +20,8 @@ CURIE_RESOLVERS = {
     "NCIT": "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code={id}",
     "PMID": "https://pubmed.ncbi.nlm.nih.gov/{id}/",
     "DOI": "https://doi.org/{id}",
+    "mediadive.solution": "https://mediadive.dsmz.de/solution/{id}",
+    "mediadive.compound": "https://mediadive.dsmz.de/compound/{id}",
 }
 
 

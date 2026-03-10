@@ -87,10 +87,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -136,3 +132,14 @@ curation_history:
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas'
+- timestamp: '2026-03-09T08:04:32.325034+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  composition: []
+  notes: Cross-reference to Medium M260
+  concentration:
+    value: '100'
+    unit: G_PER_L

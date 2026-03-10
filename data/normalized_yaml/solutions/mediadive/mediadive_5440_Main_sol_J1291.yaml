@@ -1,0 +1,130 @@
+preferred_term: Main sol. J1291
+term:
+  id: mediadive.solution:5440
+  label: Main sol. J1291
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.47348'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.84872'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Urea
+  concentration:
+    value: '2.06287'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:339
+    label: Urea
+  chebi_term:
+    id: CHEBI:15676
+    label: allantoin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MOPS
+  concentration:
+    value: '9.82318'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:351
+    label: MOPS
+  chebi_term:
+    id: CHEBI:44115
+    label: 3-(N-morpholino)propanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.89391'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '2.84872'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1249
+    label: Trisodium citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.24558'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000982318'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '982.3182711198428'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose
+  concentration:
+    value: '7.858546168958743'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix components thoroughly and adjust pH to 7.2 with NaOH. Bring\
+  \ to a boil, then cool down and distribute into culture vessels under a N2 gas stream,\
+  \ seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and\
+  \ anaerobically add the following solution (autoclaved): \n\nOriginal volume: 1018\
+  \ mL"

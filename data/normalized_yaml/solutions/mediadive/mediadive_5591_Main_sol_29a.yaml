@@ -1,0 +1,52 @@
+preferred_term: Main sol. 29a
+term:
+  id: mediadive.solution:5591
+  label: Main sol. 29a
+composition:
+- preferred_term: Bicarbonate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:2090
+    label: Bicarbonate
+  chebi_term:
+    id: CHEBI:17544
+    label: hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: FeSO4
+  concentration:
+    value: '1.5191'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Acetate
+  concentration:
+    value: '0.118088'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1861
+    label: Acetate
+  chebi_term:
+    id: CHEBI:16411
+    label: acetic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Mix solution D, C and E. Bubble with CO2 in an ice bath under
+  sterile conditions.
+
+  Fill 50 ml in each bottle of solution A. Before using add 4 ml solution B and 0.1
+  ml solution F. To final medium add 10 mM bicarbonate, 10 mM FeSO4 and 2mM acetate.
+
+  Adjust pH to 6.8.
+
+  Fill in sterile, N2 gassed screw-cap tubes under N2 gas.
+
+  At 25C in light the incubation time is about 4 weeks.'

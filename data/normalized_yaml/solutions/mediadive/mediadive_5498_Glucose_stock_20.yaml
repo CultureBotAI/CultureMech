@@ -1,0 +1,22 @@
+preferred_term: Glucose stock 20%
+term:
+  id: mediadive.solution:5498
+  label: Glucose stock 20%
+composition:
+- preferred_term: alpha-D-Glucose
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: not required but growth enhancing
+  term:
+    id: mediadive.compound:1322
+    label: alpha-D-Glucose
+  chebi_term:
+    id: CHEBI:17925
+    label: alpha-D-glucose
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'steril filtration
+
+
+  Original volume: 500 mL'

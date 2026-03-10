@@ -1,0 +1,30 @@
+preferred_term: Mail sol. C100
+term:
+  id: mediadive.solution:6238
+  label: Mail sol. C100
+composition:
+- preferred_term: Soil
+  term:
+    id: mediadive.compound:2350
+    label: Soil
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)MgPO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2365
+    label: (NH4)MgPO4
+preparation_notes: "Put a layer about 1 cm deep of air-dried, sieved good calcareous\
+  \ garden loam into a\r\ntest tube or jar. (The use of mud from rivers or ponds is\
+  \ rarely satisfactory.)\r\nCarefully add deionised water to a depth of 7 to 10 cm,\
+  \ plug or cover, and steam\r\nfor one hour or autoclave for 15 minutes at 15 psi\
+  \ (longer for larger vessels) on\r\neach of 2 consecutive days; further sterilisation\
+  \ is not needed. Allow to stand for a\r\nfurther day before inoculating, when the\
+  \ pH should be between 7.0 - 8.0.\nS/W is  prepared  as  above,  but approximately\
+  \  0.01  g  ammonium  magnesium \r\nphosphate is placed into the base of the test\
+  \ tube before adding the soil and water."

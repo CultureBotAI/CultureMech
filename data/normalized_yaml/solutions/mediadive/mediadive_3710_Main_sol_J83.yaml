@@ -1,0 +1,29 @@
+preferred_term: Main sol. J83
+term:
+  id: mediadive.solution:3710
+  label: Main sol. J83
+composition:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1620
+    label: GAM broth
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

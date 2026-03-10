@@ -1,0 +1,53 @@
+preferred_term: Main sol. J919
+term:
+  id: mediadive.solution:4924
+  label: Main sol. J919
+composition:
+- preferred_term: Marine agar 2216
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1628
+    label: Marine agar 2216
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Potassium iodide
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1934
+    label: Potassium iodide
+  chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Starch
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

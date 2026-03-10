@@ -1,0 +1,30 @@
+preferred_term: Ferrous sulfate solution (27.8%)
+term:
+  id: mediadive.solution:2375
+  label: Ferrous sulfate solution (27.8%)
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '278'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 1.8 with H2SO4; sterilize by filtration.

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -32,7 +34,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:63005
     label: ''
@@ -40,7 +43,8 @@ ingredients:
   concentration:
     value: '0.37'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -48,7 +52,8 @@ ingredients:
   concentration:
     value: '0.37'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:63017
     label: sodium L-tartrate
@@ -60,18 +65,6 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Ferric quinate solution (see below)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Mineral salt solution (see Medium [M299])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -84,7 +77,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -92,12 +86,14 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
 - preferred_term: Quinic acid
   concentration:
     value: '0.19'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:26493
     label: quinic acid
@@ -126,3 +122,25 @@ curation_history:
   date: '2026-02-03T11:21:00.036228'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:42.496785+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ferric quinate solution (see below)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Mineral salt solution (see Medium [M299])
+  composition: []
+  notes: Cross-reference to Medium M299
+  concentration:
+    value: '1'
+    unit: G_PER_L

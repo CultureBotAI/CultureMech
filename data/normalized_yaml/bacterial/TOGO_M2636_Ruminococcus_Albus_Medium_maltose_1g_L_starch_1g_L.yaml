@@ -50,14 +50,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Mineral solution 1
-  concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: Mineral solution 2
-  concentration:
-    value: '40'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
   concentration:
@@ -239,3 +231,24 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2; Added default concentration
     for ingredient: N2'
+- timestamp: '2026-03-09T08:04:20.360173+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Mineral solution 1
+  term:
+    id: mediadive.solution:883
+    label: Mineral solution 1
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: See mediadive_883_Mineral_solution_1.yaml for composition
+- preferred_term: Mineral solution 2
+  term:
+    id: mediadive.solution:4674
+    label: Mineral solution 2
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: See mediadive_4674_Mineral_solution_2.yaml for composition

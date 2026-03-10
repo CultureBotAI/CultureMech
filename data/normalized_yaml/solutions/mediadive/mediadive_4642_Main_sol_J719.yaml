@@ -1,0 +1,71 @@
+preferred_term: Main sol. J719
+term:
+  id: mediadive.solution:4642
+  label: Main sol. J719
+composition:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1607
+    label: Marine broth 2216
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O, bring
+  to a boil and cool down under a steam of N2. Distribute the medium into culture
+  vessels under a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+  Separately autoclave 5% L-cysteine x HCl x H2O solution and 5% Na2S x 9H2O solution
+  under a N2 gas atmosphere. Prior to inoculation, aseptically and anaerobically add
+  L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium.

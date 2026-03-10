@@ -1,0 +1,33 @@
+preferred_term: Menadione solution
+term:
+  id: mediadive.solution:5549
+  label: Menadione solution
+composition:
+- preferred_term: Menadione
+  concentration:
+    value: '0.027972'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1539
+    label: Menadione
+  chebi_term:
+    id: CHEBI:28869
+    label: menadione
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Filtrate if insoluble residues remain.
+
+
+  Original volume: 100 mL'

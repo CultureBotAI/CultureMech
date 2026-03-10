@@ -104,18 +104,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: FeCl2 solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -240,4 +228,25 @@ curation_history:
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas'
+- timestamp: '2026-03-09T08:04:30.099776+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: FeCl2 solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

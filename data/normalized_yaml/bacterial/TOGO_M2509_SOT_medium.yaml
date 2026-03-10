@@ -80,10 +80,6 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
-- preferred_term: A5 solution
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
@@ -154,4 +150,17 @@ curation_history:
   date: '2026-02-03T11:20:54.026652'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-09T08:05:11.047983+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: A5 solution
+  term:
+    id: mediadive.solution:4987
+    label: A5 solution
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: See mediadive_4987_A5_solution.yaml for composition

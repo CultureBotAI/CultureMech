@@ -1,0 +1,74 @@
+preferred_term: Liquid medium (in 5ml tube)
+term:
+  id: mediadive.solution:1718
+  label: Liquid medium (in 5ml tube)
+composition:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:99
+    label: Trypticase soy broth
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Bovine serum
+  concentration:
+    value: '70.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2098
+    label: Bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Air
+  concentration:
+    value: '100.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2190
+    label: Air
+  chebi_term:
+    id: CHEBI:138560
+    label: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Incubate inoculated tubes in slanted position.
+
+  Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas mixture in Hungate
+  tubes (5 ml per tube).
+
+  After autoclaving and cooling add (per tube):
+
+
+  Original volume: 5 mL'

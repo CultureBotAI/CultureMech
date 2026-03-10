@@ -9,11 +9,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Seawater*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component, Complex component'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -41,3 +36,16 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1539'
+- timestamp: '2026-03-09T08:04:26.525536+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Seawater*
+  term:
+    id: mediadive.solution:1801
+    label: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_1801_Seawater.yaml for composition

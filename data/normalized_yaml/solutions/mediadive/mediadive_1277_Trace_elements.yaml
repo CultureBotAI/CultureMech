@@ -1,0 +1,113 @@
+preferred_term: Trace elements
+term:
+  id: mediadive.solution:1277
+  label: Trace elements
+composition:
+- preferred_term: H3BO3
+  concentration:
+    value: '2.85'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-tartrate
+  concentration:
+    value: '1.77'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:596
+    label: Na-tartrate
+  chebi_term:
+    id: CHEBI:1185531
+    label: Tris-HCl
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '0.0269'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:39
+    label: CuCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.0208'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:64
+    label: ZnCl2
+  chebi_term:
+    id: CHEBI:49976
+    label: zinc dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0404'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

@@ -1,0 +1,54 @@
+preferred_term: Main sol. 634b
+term:
+  id: mediadive.solution:1354
+  label: Main sol. 634b
+composition:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2126
+    label: dehydrated RCM medium
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sea salts
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2367
+    label: Sea salts
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or
+  MERCK) and SIGMA Sea Salts (30.0 g/l) in distilled water and add 0.5 ml/l Na-resazurin
+  solution (0.1% w/v). Bring to a boil and cool to room temperature while sparging
+  with 100% N2 gas. Dispense the medium under the same gas atmosphere into anoxic
+  Hungate-type tubes or serum vials and autoclave for 15 min at 121°C. Adjust the
+  pH of the complete medium to 6.8.

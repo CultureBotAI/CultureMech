@@ -1,0 +1,30 @@
+preferred_term: Main sol. 687
+term:
+  id: mediadive.solution:5646
+  label: Main sol. 687
+composition:
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1177
+    label: Defibrinated Blood
+preparation_notes: 'Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat
+  to boiling to dissolve completely.
+
+  Sterilize in autoclave for 15 min at 121°C.
+
+  Cool to 45°C. Add 5% sterile defibrinated blood and mix well.'

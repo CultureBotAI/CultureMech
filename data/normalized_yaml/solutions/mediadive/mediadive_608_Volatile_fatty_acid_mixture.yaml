@@ -1,0 +1,89 @@
+preferred_term: Volatile fatty acid mixture
+term:
+  id: mediadive.solution:608
+  label: Volatile fatty acid mixture
+composition:
+- preferred_term: Acetic acid
+  concentration:
+    value: '573.182'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:380
+    label: Acetic acid
+  chebi_term:
+    id: CHEBI:15611
+    label: sarcosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Propionic acid
+  concentration:
+    value: '192.145'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:381
+    label: Propionic acid
+  chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Butyric acid
+  concentration:
+    value: '129'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:314
+    label: Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '30.2827'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Butyric acid
+  concentration:
+    value: '30.6375'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:377
+    label: iso-Butyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-2-Methylbutyric acid
+  concentration:
+    value: '32.25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:223
+    label: DL-2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '30.0247'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match

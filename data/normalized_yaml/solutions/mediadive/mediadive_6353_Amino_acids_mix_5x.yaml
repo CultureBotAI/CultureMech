@@ -1,0 +1,94 @@
+preferred_term: Amino acids mix 5x
+term:
+  id: mediadive.solution:6353
+  label: Amino acids mix 5x
+composition:
+- preferred_term: L-Cysteine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:449
+    label: L-Tryptophan
+  chebi_term:
+    id: CHEBI:16296
+    label: D-tryptophan
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Leucine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:446
+    label: L-Leucine
+  chebi_term:
+    id: CHEBI:15603
+    label: L-leucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Valine
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1334
+    label: L-Valine
+  chebi_term:
+    id: CHEBI:16414
+    label: L-valine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Proline
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1130
+    label: L-Proline
+  chebi_term:
+    id: CHEBI:16313
+    label: D-proline
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:447
+    label: L-Isoleucine
+  chebi_term:
+    id: CHEBI:17191
+    label: L-isoleucine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Methionine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1330
+    label: L-Methionine
+  chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Adjust pH to 6.0-7.0.
+
+  Filtrate.
+
+  Store at -20°C'

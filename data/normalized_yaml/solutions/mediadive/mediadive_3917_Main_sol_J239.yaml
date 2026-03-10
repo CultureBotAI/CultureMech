@@ -1,0 +1,71 @@
+preferred_term: Main sol. J239
+term:
+  id: mediadive.solution:3917
+  label: Main sol. J239
+composition:
+- preferred_term: L-Asparagine
+  concentration:
+    value: '90.9091'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:829
+    label: L-Asparagine
+  chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glycerol
+  concentration:
+    value: '181.818'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: K2HPO4
+  concentration:
+    value: '90.9091'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Polypeptone
+  concentration:
+    value: '2727.27'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:442
+    label: Polypeptone
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '1363.64'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Add components, except vitamin B solution, to distilled water
+  and bring volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add
+  filter-sterilized vitamin B solution.
+
+
+  Original volume: 11 mL'

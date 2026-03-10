@@ -1,0 +1,96 @@
+preferred_term: Main sol. J314
+term:
+  id: mediadive.solution:4029
+  label: Main sol. J314
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '87.6339'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '19.4742'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '11.6845'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3
+  concentration:
+    value: '19.474196689386563'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:552
+    label: Na2S2O3
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '4.868549172346641'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.9737098344693281'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '973.7098344693281'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize Na2S2O3 solution and KNO3 solution, and separately
+  autoclave Trace elements solution and MgCl2 x 6H2O solution. Aseptically add Na2S2O3
+  solution, KNO3 solution, Trace elements solution and MgCl2 x 6H2O solution to the
+  medium.
+
+
+  Original volume: 1027 mL'

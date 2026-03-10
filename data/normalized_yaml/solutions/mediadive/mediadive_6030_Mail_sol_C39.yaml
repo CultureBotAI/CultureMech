@@ -1,0 +1,20 @@
+preferred_term: Mail sol. C39
+term:
+  id: mediadive.solution:6030
+  label: Mail sol. C39
+composition:
+- preferred_term: Horse serum
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:146
+    label: Horse serum
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Aseptically add stock solutions (2), (3) and (4) in above amounts\
+  \ to each test tube.\r\nIncubate at room temperature for 3 days to check sterility\
+  \ prior to use."

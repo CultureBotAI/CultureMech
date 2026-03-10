@@ -1,0 +1,33 @@
+preferred_term: Cysteine solutions
+term:
+  id: mediadive.solution:1784
+  label: Cysteine solutions
+composition:
+- preferred_term: Water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "To 50 ml of boiled and cooled distilled or deionized H2O add 5\
+  \ g of L-cysteine hydrochloride\r\n. Adjust pH to 10 with 3N NaOH and store under\
+  \ N2 in a serum bottle sealed with a butyl rubber stopper.\n\nOriginal volume: 50\
+  \ mL"

@@ -1,0 +1,42 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1806
+  label: Solution B
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2SO4
+  concentration:
+    value: '800.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:122
+    label: H2SO4
+  chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '200.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

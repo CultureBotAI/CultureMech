@@ -1,0 +1,23 @@
+preferred_term: Main sol. 547
+term:
+  id: mediadive.solution:1206
+  label: Main sol. 547
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'The pH should be between 7.0 and 7.4. Do not adjust if it is within
+  this range. Mix solutions I and II together. Add 20.0 g agar. Liquify agar by steaming
+  at 100°C for 10 to 20 min.
+
+
+  Original volume: 1001 mL'

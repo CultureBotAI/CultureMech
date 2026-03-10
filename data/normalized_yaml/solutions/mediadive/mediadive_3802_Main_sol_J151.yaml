@@ -1,0 +1,86 @@
+preferred_term: Main sol. J151
+term:
+  id: mediadive.solution:3802
+  label: Main sol. J151
+composition:
+- preferred_term: Citric acid
+  concentration:
+    value: '0.00495049'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:348
+    label: Citric acid
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bacto peptone
+  concentration:
+    value: '4.9505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '29.703'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000990099'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH
+  to 6.5 with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur for
+  3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and
+  autoclave under a N2 atmosphere. Aseptically and anaerobically add sterile sulfur
+  to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and readjust
+  pH to 6.5, if necessary.
+
+
+  Original volume: 1010 mL'

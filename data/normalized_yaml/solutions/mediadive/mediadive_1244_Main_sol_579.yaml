@@ -1,0 +1,102 @@
+preferred_term: Main sol. 579
+term:
+  id: mediadive.solution:1244
+  label: Main sol. 579
+composition:
+- preferred_term: Ferric citrate
+  concentration:
+    value: '13.5509'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:863
+    label: Ferric citrate
+  chebi_term:
+    id: CHEBI:31605
+    label: ferric citrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.48368'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaH2PO4
+  concentration:
+    value: '0.593472'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:229
+    label: NaH2PO4
+  chebi_term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.098912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-acetate
+  concentration:
+    value: '2.4728'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:23
+    label: Na-acetate
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.4728'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '989.1196834817014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'First dissolve ferric citrate in water by heating and adjust to
+  pH 6.0, then add other medium ingredients except bicarbonate and vitamins. Sparge
+  medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then
+  add and dissolve bicarbonate and adjust pH to 6.8. Thereafter, dispense medium under
+  80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+  and autoclave. Add vitamins to the sterile medium from an anoxic stock solution
+  prepared under 100% N2 gas and sterilized by filtration. Adjust pH of complete medium
+  to 6.7 - 7.0, if necessary.
+
+  Note: Use 5 - 10% (v/v) inoculum.
+
+
+  Original volume: 1011 mL'

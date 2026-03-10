@@ -1,0 +1,113 @@
+preferred_term: Marine trace elements solution
+term:
+  id: mediadive.solution:3884
+  label: Marine trace elements solution
+composition:
+- preferred_term: NaBr
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:353
+    label: NaBr
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: SrCl2 x 6 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:176
+    label: SrCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:8346
+    label: potassium iodide
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H3BO3
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:37
+    label: H3BO3
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KI
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:354
+    label: KI
+  chebi_term:
+    id: CHEBI:138791
+    label: Asp-Lys-Ile
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium silicate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1690
+    label: Sodium silicate
+  chebi_term:
+    id: CHEBI:60720
+    label: sodium silicate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaF
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:177
+    label: NaF
+  chebi_term:
+    id: CHEBI:28741
+    label: sodium fluoride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KNO3
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.46'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:95
+    label: Na2HPO4 x 12 H2O
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

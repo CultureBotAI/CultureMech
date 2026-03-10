@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -29,21 +31,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
 - preferred_term: Peptone
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Hunter's basal salts (see Medium [M644])
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
     unit: G_PER_L
 - preferred_term: agar
   notes: 'Role: Solidifying component'
@@ -78,3 +73,20 @@ curation_history:
   date: '2026-02-03T11:20:59.857777'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: agar'
+- timestamp: '2026-03-09T08:04:15.951633+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Hunter's basal salts (see Medium [M644])
+  composition: []
+  notes: Cross-reference to Medium M644
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '10'
+    unit: G_PER_L

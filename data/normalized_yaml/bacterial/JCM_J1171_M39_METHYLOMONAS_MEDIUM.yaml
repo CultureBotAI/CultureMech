@@ -46,14 +46,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamins solution
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CeCl3
   term:
     id: CHEBI:35458
@@ -246,12 +238,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0 g/L agarose. Autoclave
-    and, after cooling to 60C, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0
+    g/L agarose. Autoclave and, after cooling to 60C, add the following solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 6.5 - 7.0 with 0.2 N H2SO4 solution (autoclaved). Cultivate under an air containing
-    10% (v/v) methane in gas tight flasks or jars leaving &; 80% gas phase by volume.
+  description: Adjust pH to 6.5 - 7.0 with 0.2 N H2SO4 solution (autoclaved). Cultivate
+    under an air containing 10% (v/v) methane in gas tight flasks or jars leaving
+    &; 80% gas phase by volume.
 - step_number: 3
   action: MIX
   description: 'Trace element solution:'
@@ -268,3 +262,24 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1171'
+- timestamp: '2026-03-09T08:04:52.697757+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition
+- preferred_term: Vitamins solution
+  term:
+    id: mediadive.solution:5788
+    label: Vitamins solution
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: See mediadive_5788_Vitamins_solution.yaml for composition

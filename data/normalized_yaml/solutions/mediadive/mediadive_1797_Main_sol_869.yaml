@@ -1,0 +1,57 @@
+preferred_term: Main sol. 869
+term:
+  id: mediadive.solution:1797
+  label: Main sol. 869
+composition:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:99
+    label: Trypticase soy broth
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve dehydrated TSB medium and resazurin, bring to the boil
+  and cool to room temperature while sparging with 100% N2 gas. Adjust pH to 5.5,
+  dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+  and autoclave. Add glucose from a separately sterilized anoxic stock solution.

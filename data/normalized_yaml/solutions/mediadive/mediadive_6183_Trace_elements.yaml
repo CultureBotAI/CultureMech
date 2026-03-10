@@ -1,0 +1,140 @@
+preferred_term: Trace elements
+term:
+  id: mediadive.solution:6183
+  label: Trace elements
+composition:
+- preferred_term: Na2-EDTA x 2 H2O
+  concentration:
+    value: '4.36'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:676
+    label: Na2-EDTA x 2 H2O
+  chebi_term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '3.14'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:35
+    label: ZnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:38
+    label: CoCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:36
+    label: MnCl2 x 4 H2O
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2SeO3
+  concentration:
+    value: '3.004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:894
+    label: H2SeO3
+  chebi_term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NiSO4 x 6 H2O
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1030
+    label: NiSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na3VO4
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2355
+    label: Na3VO4
+  chebi_term:
+    id: CHEBI:35607
+    label: trisodium vanadate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2CrO4
+  concentration:
+    value: '1.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2356
+    label: K2CrO4
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "There are 11 chemicals. Prepare Primary stock solutions first.\r\
+  \nAdd first two chemicals separately in 500ml/dH2O, allowing each to completely\r\
+  \ndissolve before adding the primary stocks in order:\n\nOriginal volume: 500 mL"

@@ -1,0 +1,171 @@
+preferred_term: Main sol. 857
+term:
+  id: mediadive.solution:1749
+  label: Main sol. 857
+composition:
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:789
+    label: Ammonium Sulfate
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:790
+    label: Monopotassium Phosphate
+  chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:791
+    label: Disodium Phosphate
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:792
+    label: Sodium citrate
+  chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:793
+    label: Magnesium sulfate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:794
+    label: Calcium Chloride
+  chebi_term:
+    id: CHEBI:3312
+    label: calcium dichloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Zinc Sulfate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:795
+    label: Zinc Sulfate
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Copper Sulfate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:796
+    label: Copper Sulfate
+  chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:374
+    label: L-Glutamic acid
+  chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:97
+    label: Ferric ammonium citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:637
+    label: Pyridoxine
+  chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Biotin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C 6.6
+  ± 0.2.
+
+  To prepare one liter of final medium, suspend the amount of dehydrated powder indicated
+  under FORMULAE-Solution (and on the package label) in 900 ml distilled and deionized
+  water containing 2 ml glycerol and heat to boiling to dissolve completely. Sterilize
+  in the autoclave for 10 or 15 min at 15 Ibs pressure (121°C), per label copy. Cool
+  to 50-55°C.
+
+  Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.'

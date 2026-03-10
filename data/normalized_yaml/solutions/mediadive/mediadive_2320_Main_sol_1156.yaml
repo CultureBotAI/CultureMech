@@ -1,0 +1,109 @@
+preferred_term: Main sol. 1156
+term:
+  id: mediadive.solution:2320
+  label: Main sol. 1156
+composition:
+- preferred_term: H2O
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:56
+    label: H2O
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:181
+    label: Na2HPO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '65'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:173
+    label: CaCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "pH-value 7.2 (Adjust to 7.6 with 10% NaOH before sterilization)\n\
+  Culture bottles: 120-ml Serum bottles with 25 ml medium closed with butyl rubber\
+  \ serum caps and aluminium crimps\nGas supply: 2 vol.% CO2; 20 vol.% CH4; 78 vol.%\
+  \ air (Alternate cultivation method: instead of a methane-containing headspace,\
+  \ add 0.5% (w/v) methanol to the medium)\nCulture conditions: 30°C; shaking culture\
+  \ on rotary shaker (200 rpm)\nNotes: pH is critical, final pH must be between 6.5-7.5;\
+  \ \r\nsome insoluble phosphates may precipitate during medium preparation (should\
+  \ not be more than OD 0.005)."

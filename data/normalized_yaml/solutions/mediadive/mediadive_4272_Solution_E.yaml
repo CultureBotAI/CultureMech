@@ -1,0 +1,38 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:4272
+  label: Solution E
+composition:
+- preferred_term: Sodium dithionite
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1676
+    label: Sodium dithionite
+  chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components and filter-sterilize just before use.
+
+  Separately sterilize the above described solutions. Mix Solutions A, B, C and D,
+  distribute into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, and seal
+  with butyl rubber stoppers. Then, add Solution E and adjust pH to 7.2 - 7.8, if
+  necessary.
+
+
+  Original volume: 10 mL'

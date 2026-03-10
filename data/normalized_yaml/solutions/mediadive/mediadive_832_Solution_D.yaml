@@ -1,0 +1,33 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:832
+  label: Solution D
+composition:
+- preferred_term: Na-stearate
+  concentration:
+    value: '30.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:298
+    label: Na-stearate
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve stearate by heating in water bath.
+
+
+  Original volume: 20 mL'

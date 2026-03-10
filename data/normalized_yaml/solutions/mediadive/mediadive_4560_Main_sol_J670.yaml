@@ -1,0 +1,82 @@
+preferred_term: Main sol. J670
+term:
+  id: mediadive.solution:4560
+  label: Main sol. J670
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '1.89573'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Tryptone
+  concentration:
+    value: '1.89573'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.236967'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000473934'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '947.8672985781991'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '9.47867298578199'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1784
+    label: Trace vitamins (see Medium No. 197)
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix ingredients and distribute into culture vessels under a N2\
+  \ atmosphere, seal with butyl rubber stoppers, and autoclave. Separately autoclave\
+  \ or *filter-sterilize the following solutions under a N2 atmosphere and add to\
+  \ the medium (per liter): \nAdjust pH of the medium to 7.0 with sterile NaOH, if\
+  \ necessary.\n\nOriginal volume: 1055 mL"

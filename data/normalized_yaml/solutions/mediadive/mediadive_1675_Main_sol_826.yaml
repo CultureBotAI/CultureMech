@@ -1,0 +1,99 @@
+preferred_term: Main sol. 826
+term:
+  id: mediadive.solution:1675
+  label: Main sol. 826
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.48368'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4
+  concentration:
+    value: '0.593472'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.098912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-acetate
+  concentration:
+    value: '0.811078'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:23
+    label: Na-acetate
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.4728'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2-fumarate
+  concentration:
+    value: '7.91296'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:276
+    label: Na2-fumarate
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '989.1196834817014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except bicarbonate, fumarate and vitamins),
+  sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+  Add bicarbonate and equilibrate the medium with 80% N2 and 20% CO2 gas mixture to
+  reach a pH of 6.8, then dispense medium under the same gas atmosphere into anoxic
+  Hungate-type tubes or serum vials and autoclave. After autoclaving add fumarate
+  and vitamins from anoxic stock solutions prepared under 100% N2 gas atmosphere and
+  sterilized by filtration. Check medium pH and adjust to 6.8, if necessary.
+
+
+  Original volume: 1011 mL'

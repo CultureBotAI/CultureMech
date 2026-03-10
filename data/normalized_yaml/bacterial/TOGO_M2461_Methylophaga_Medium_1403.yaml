@@ -4,11 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: vitamin B12 solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
 - preferred_term: methanol
   concentration:
     value: '3'
@@ -18,14 +13,6 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
-- preferred_term: Solution T
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Mineral Salts Solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -88,10 +75,6 @@ ingredients:
   term:
     id: CHEBI:41250
     label: Bis-Tris
-- preferred_term: Wolfe’s Mineral Solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -275,3 +258,37 @@ curation_history:
   date: '2026-02-03T11:20:53.844039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:36.005367+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: vitamin B12 solution
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Solution T
+  term:
+    id: mediadive.solution:2679
+    label: Solution T
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_2679_Solution_T.yaml for composition
+- preferred_term: Mineral Salts Solution
+  term:
+    id: mediadive.solution:3221
+    label: Mineral salts solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_3221_Mineral_salts_solution.yaml for composition
+- preferred_term: Wolfe’s Mineral Solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

@@ -5,10 +5,6 @@ description: 972. NBRC 971.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: KH2PO44.4gNa2HPO44.8gNH4Cl1gMgSO4·7H2O0.5gSolution A*10mlSolution B**10mlDistilled water980mlAgar
-    (if needed)20gpH unadjustedSolution A and B are autoclaved separately and add to other autoclaved
-    ingredients after cooling.*Solution A.Ferric ammonium citrate5gCaCl20.5gDistilled water1L**Solution
-    B.Sucrose100gDistilled water1L
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -113,3 +109,14 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 971, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=971.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:17.322495+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KH2PO44.4gNa2HPO44.8gNH4Cl1gMgSO4·7H2O0.5gSolution A*10mlSolution
+    B**10mlDistilled water980mlAgar (if needed)20gpH unadjustedSolution A and B are
+    autoclaved separately and add to other autoclaved ingredients after cooling.*Solution
+    A.Ferric ammonium citrate5gCaCl20.5gDistilled water1L**Solution B.Sucrose100gDistilled
+    water1L
+  composition: []

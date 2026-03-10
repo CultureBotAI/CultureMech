@@ -1,0 +1,60 @@
+preferred_term: Main sol. 1279
+term:
+  id: mediadive.solution:2559
+  label: Main sol. 1279
+composition:
+- preferred_term: Brucella Broth
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1136
+    label: Brucella Broth
+- preferred_term: Demineralized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1448
+    label: Demineralized water
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '25.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitox
+  concentration:
+    value: '0.75'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1138
+    label: Vitox
+- preferred_term: Skirrow supplement
+  concentration:
+    value: '0.25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1139
+    label: Skirrow supplement
+- preferred_term: Amphotericin
+  concentration:
+    value: '0.25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1140
+    label: Amphotericin
+preparation_notes: "Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2,\
+  \ distribute in Hungate tubes to 8 ml and autoclave.\nAdd aseptically to each tube:\
+  \ \nAdd 1 ml of sterile air to each tube.\n\nOriginal volume: 80 mL"

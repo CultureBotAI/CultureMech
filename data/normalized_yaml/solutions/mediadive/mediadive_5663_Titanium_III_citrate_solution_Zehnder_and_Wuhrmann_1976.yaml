@@ -1,0 +1,34 @@
+preferred_term: Titanium (III) citrate solution (Zehnder and Wuhrmann 1976)
+term:
+  id: mediadive.solution:5663
+  label: Titanium (III) citrate solution (Zehnder and Wuhrmann 1976)
+composition:
+- preferred_term: Titanium(III) chloride
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:805
+    label: Titanium(III) chloride
+  chebi_term:
+    id: CHEBI:231499
+    label: titanium tetrachloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium citrate
+  concentration:
+    value: '2.5807'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:792
+    label: Sodium citrate
+  chebi_term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Neutralize pH with a saturated sodium carbonate solution and store
+  in a serum bottle under N2.
+
+
+  Original volume: 50 mL'

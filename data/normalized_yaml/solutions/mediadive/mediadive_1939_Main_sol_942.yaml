@@ -1,0 +1,47 @@
+preferred_term: Main sol. 942
+term:
+  id: mediadive.solution:1939
+  label: Main sol. 942
+composition:
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli
+  (e.g. DSM 498) in liquid culture, collect cells by centrifugation and resuspend
+  them in enough water to receive a thick but ready-to-pipet suspension. Autoclave.
+  Place three separate drops on one CaCl2-agar plate and streak every drop once to
+  receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate E. coli
+  lines/drops with myxobacteria.

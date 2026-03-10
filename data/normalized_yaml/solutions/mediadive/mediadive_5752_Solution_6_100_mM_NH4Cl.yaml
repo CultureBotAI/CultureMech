@@ -1,0 +1,29 @@
+preferred_term: Solution 6 (100 mM NH4Cl)
+term:
+  id: mediadive.solution:5752
+  label: Solution 6 (100 mM NH4Cl)
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '5.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

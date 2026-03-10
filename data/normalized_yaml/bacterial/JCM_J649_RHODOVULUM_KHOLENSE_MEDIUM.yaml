@@ -57,10 +57,6 @@ ingredients:
   concentration:
     value: '2.997'
     unit: G_PER_L
-- preferred_term: micronutrient solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -72,3 +68,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J649'
+- timestamp: '2026-03-09T08:04:21.179306+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: micronutrient solution
+  term:
+    id: mediadive.solution:6236
+    label: Micronutrient solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6236_Micronutrient_solution.yaml for composition

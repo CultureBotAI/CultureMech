@@ -37,7 +37,7 @@ class EmbeddingLoader:
             Dictionary mapping node IDs to embedding vectors (np.ndarray)
         """
         if node_prefixes is None:
-            node_prefixes = ["CHEBI", "NCBITaxon", "mediadive.medium", "FOODON", "mediadive.ingredient"]
+            node_prefixes = ["CHEBI", "NCBITaxon", "mediadive.medium", "mediadive.solution", "FOODON", "mediadive.ingredient", "mediadive.compound"]
 
         if cache_dir is None:
             cache_dir = Path(".umap_cache")

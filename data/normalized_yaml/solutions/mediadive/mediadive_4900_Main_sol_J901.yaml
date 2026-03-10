@@ -1,0 +1,51 @@
+preferred_term: Main sol. J901
+term:
+  id: mediadive.solution:4900
+  label: Main sol. J901
+composition:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:827
+    label: Brain heart infusion broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1927
+    label: Rabbit blood
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix ingredients except rabbit blood, autoclave and cool to about
+  50C. Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly
+  dispense into sterile petri dishes.

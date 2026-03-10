@@ -1,0 +1,18 @@
+preferred_term: Main sol. 569
+term:
+  id: mediadive.solution:1233
+  label: Main sol. 569
+composition:
+- preferred_term: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: To 1 l of medium 125 pH adjusted to 4.0-5.4 add 10 ml CH3OH.

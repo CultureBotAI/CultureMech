@@ -1,0 +1,44 @@
+preferred_term: Main sol. J248
+term:
+  id: mediadive.solution:3932
+  label: Main sol. J248
+composition:
+- preferred_term: Cow manure
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1707
+    label: Cow manure
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil
+  for 1 hr. Filter, first through cheesecloth and then paper. Make up volume to 1.0
+  L.

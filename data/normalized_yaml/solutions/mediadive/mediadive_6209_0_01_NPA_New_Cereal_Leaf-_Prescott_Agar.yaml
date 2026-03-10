@@ -1,0 +1,20 @@
+preferred_term: 0.01% NPA (New Cereal Leaf-­Prescott Agar)
+term:
+  id: mediadive.solution:6209
+  label: 0.01% NPA (New Cereal Leaf-­Prescott Agar)
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up 1 litre of New Cereal Leaf-­Prescott Liquid (NCL ­- see\
+  \ separate recipe), but\r\nuse only 0.1 g of cereal leaves.  Mix with 15 g of Bacteriological\
+  \ Agar (Oxoid L11).\r\nAutoclave at 15 psi for 15 minutes."

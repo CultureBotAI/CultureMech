@@ -1,0 +1,43 @@
+preferred_term: 83 mM TiNTA solution
+term:
+  id: mediadive.solution:4931
+  label: 83 mM TiNTA solution
+composition:
+- preferred_term: Tris base
+  concentration:
+    value: '553.8461538461538'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1698
+    label: Tris base
+  chebi_term:
+    id: CHEBI:9754
+    label: tris
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '369.2307692307692'
+    unit: PERCENT_V_V
+  notes: ' disodium salt'
+  term:
+    id: mediadive.compound:189
+    label: Nitrilotriacetic acid
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: TiCl3
+  concentration:
+    value: '42.30769230769231'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1142
+    label: TiCl3
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 13 mL'

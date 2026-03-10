@@ -78,15 +78,6 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-- preferred_term: Ferric citrate solution* (0.1%)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
-- preferred_term: Trace element solution SL7**
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -199,4 +190,23 @@ curation_history:
   date: '2026-02-03T11:20:50.136259'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:47.354821+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Ferric citrate solution* (0.1%)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
+- preferred_term: Trace element solution SL7**
+  term:
+    id: mediadive.solution:2739
+    label: Trace element solution SL7
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_2739_Trace_element_solution_SL7.yaml for composition

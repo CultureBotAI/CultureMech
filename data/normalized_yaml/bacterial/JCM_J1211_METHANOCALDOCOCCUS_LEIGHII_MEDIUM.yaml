@@ -67,10 +67,6 @@ ingredients:
   concentration:
     value: '0.0046798'
     unit: G_PER_L
-- preferred_term: Trace mineral solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Sodium acetate x 3 H2O
   concentration:
     value: '0.689655'
@@ -264,24 +260,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, except NaHCO3, and adjust pH to 6.0. Bring to a boil for 5-10 sec, cool
-    down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3 to the medium. Dispense the medium into
-    suitable culture vessels (e.g., 5 ml in Balch type tubes) under the same gas mixture, seal with butyl
-    rubber stoppers and autoclave. After cooling, add per liter the following solution (autoclaved and
-    stored under N2):'
+  description: 'Mix components, except NaHCO3, and adjust pH to 6.0. Bring to a boil
+    for 5-10 sec, cool down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3 to
+    the medium. Dispense the medium into suitable culture vessels (e.g., 5 ml in Balch
+    type tubes) under the same gas mixture, seal with butyl rubber stoppers and autoclave.
+    After cooling, add per liter the following solution (autoclaved and stored under
+    N2):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 3
   action: MIX
-  description: 'Comment: For growth by nitrogen-fixation, remove NH4Cl from the medium and cultivate under
-    a H2-N2-CO2 (60:20:20, v/v/v, 200 kPa) gas mixture.'
+  description: 'Comment: For growth by nitrogen-fixation, remove NH4Cl from the medium
+    and cultivate under a H2-N2-CO2 (60:20:20, v/v/v, 200 kPa) gas mixture.'
 - step_number: 4
   action: MIX
   description: 'Trace mineral solution:'
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve trisodium citrate and adjust pH to 6.5. Then proceed to add minerals.
+  description: Dissolve trisodium citrate and adjust pH to 6.5. Then proceed to add
+    minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -293,3 +291,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:34.333448+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace mineral solution
+  term:
+    id: mediadive.solution:5445
+    label: Trace mineral solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5445_Trace_mineral_solution.yaml for composition

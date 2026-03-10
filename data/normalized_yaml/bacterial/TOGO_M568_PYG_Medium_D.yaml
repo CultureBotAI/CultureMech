@@ -9,10 +9,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
-- preferred_term: PYG MEDIUM (B) (see Medium [M423])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -39,3 +35,14 @@ curation_history:
   date: '2026-02-03T11:20:59.492976'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:05:04.155741+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: PYG MEDIUM (B) (see Medium [M423])
+  composition: []
+  notes: Cross-reference to Medium M423
+  concentration:
+    value: '1'
+    unit: G_PER_L

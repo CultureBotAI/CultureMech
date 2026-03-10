@@ -1,0 +1,54 @@
+preferred_term: Acidic solution (HCl, pH 3; 100 ml)
+term:
+  id: mediadive.solution:5705
+  label: Acidic solution (HCl, pH 3; 100 ml)
+composition:
+- preferred_term: Thiamin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1307
+    label: Thiamin
+  chebi_term:
+    id: CHEBI:18385
+    label: thiamine(1+)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:518
+    label: Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: B12
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1238
+    label: B12
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

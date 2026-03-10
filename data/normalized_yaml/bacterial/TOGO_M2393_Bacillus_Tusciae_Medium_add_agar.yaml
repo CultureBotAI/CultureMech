@@ -84,10 +84,6 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Trace element solution SL-6
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -180,3 +176,16 @@ curation_history:
   date: '2026-02-03T11:20:53.600988'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2MoO4 x 2 H2O'
+- timestamp: '2026-03-09T08:04:53.377515+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution SL-6
+  term:
+    id: mediadive.solution:25
+    label: Trace element solution SL-6
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: See mediadive_25_Trace_element_solution_SL-6.yaml for composition

@@ -87,10 +87,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: Trace element solution (see Medium [M439])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -109,27 +105,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: 10% MgSO4・7H2O
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
-- preferred_term: 1 M Glucose solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
-- preferred_term: 10% Tryptone solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -140,12 +121,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
 media_term:
   preferred_term: TOGO Medium M1040
   term:
@@ -174,4 +149,40 @@ curation_history:
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
     Added default concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:14.382739+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution (see Medium [M439])
+  composition: []
+  notes: Cross-reference to Medium M439
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M Glucose solution
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 10% Tryptone solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'

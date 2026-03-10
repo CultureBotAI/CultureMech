@@ -1,0 +1,108 @@
+preferred_term: Mail sol. C18
+term:
+  id: mediadive.solution:6009
+  label: Mail sol. C18
+composition:
+- preferred_term: K2HPO4
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Citric acid
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:348
+    label: Citric acid
+  chebi_term:
+    id: CHEBI:53258
+    label: citric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ammonium ferric citrate
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2007
+    label: Ammonium ferric citrate
+  chebi_term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '25.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "This medium is standard BG11 but omitting NaNO3.\nMake up to 1\
+  \ litre with deionized water. Adjust pH to 7.1 with 1M NaOH or HCl. For agar add\r\
+  \n15.0 g per litre of Bacteriological Agar (Thermo Scientific&trade;\r\n Oxoid&trade;\
+  \ Agar No.1). Autoclave at\r\n15 psi for 15 minutes.\nDue to precipitation, larger\
+  \ volumes require stocks of citric acid and ammonium ferric citrate to be autoclaved\
+  \ separately in 100ml deionized water or alternatively they can be autoclaved separately\
+  \ in test tubes and added to sterile medium in the airflow cabinet."

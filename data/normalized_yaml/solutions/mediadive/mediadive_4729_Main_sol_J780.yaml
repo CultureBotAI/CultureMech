@@ -1,0 +1,17 @@
+preferred_term: Main sol. J780
+term:
+  id: mediadive.solution:4729
+  label: Main sol. J780
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match

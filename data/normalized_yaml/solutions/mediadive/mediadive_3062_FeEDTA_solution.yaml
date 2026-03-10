@@ -1,0 +1,41 @@
+preferred_term: FeEDTA solution
+term:
+  id: mediadive.solution:3062
+  label: FeEDTA solution
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '1.54'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-EDTA
+  concentration:
+    value: '2.06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:589
+    label: Na-EDTA
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

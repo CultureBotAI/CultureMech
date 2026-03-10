@@ -1,0 +1,57 @@
+preferred_term: Main sol. J1092
+term:
+  id: mediadive.solution:5163
+  label: Main sol. J1092
+composition:
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '9.523809523809524'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1784
+    label: Trace vitamins (see Medium No. 197)
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.19047619047619047'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium butyrate
+  concentration:
+    value: '19.047619047619047'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1750
+    label: Sodium butyrate
+  chebi_term:
+    id: CHEBI:64103
+    label: sodium butyrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '19.047619047619047'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Aseptically add per liter the following solutions (autoclaved\
+  \ or *filter-sterilized): \nDistribute the medium into culture vessels, replace\
+  \ the gas phase with N2 containing 5% O2 (by vol.), and seal with butyl rubber stoppers.\n\
+  \nOriginal volume: 1050 mL"

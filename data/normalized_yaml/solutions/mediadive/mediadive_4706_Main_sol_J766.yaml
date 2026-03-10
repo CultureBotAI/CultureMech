@@ -1,0 +1,93 @@
+preferred_term: Main sol. J766
+term:
+  id: mediadive.solution:4706
+  label: Main sol. J766
+composition:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.56863'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaNO3
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '980.3921568627451'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4HCO3
+  concentration:
+    value: '19.6078431372549'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:855
+    label: NH4HCO3
+  chebi_term:
+    id: CHEBI:184335
+    label: Ammonium bicarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components and adjust pH to 8.0 with NaOH. Distribute the\
+  \ medium into culture vessels, replace the gas phase with a N2 gas and autoclave.\
+  \ After cooling, aseptically and anaerobically add per liter the following solution\
+  \ (filter-sterilized): \n\nOriginal volume: 1020 mL"

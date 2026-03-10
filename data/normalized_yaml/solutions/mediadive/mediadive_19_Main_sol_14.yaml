@@ -1,0 +1,123 @@
+preferred_term: Main sol. 14
+term:
+  id: mediadive.solution:19
+  label: Main sol. 14
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.9456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '9.8912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '0.00098912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:519
+    label: Pyridoxine hydrochloride
+  chebi_term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na-thioglycolate
+  concentration:
+    value: '0.74184'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:30
+    label: Na-thioglycolate
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.00049456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Fructose
+  concentration:
+    value: '4.9456'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:33
+    label: D-Fructose
+  chebi_term:
+    id: CHEBI:15824
+    label: D-fructose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '14.8368'
+    unit: G_PER_L
+  notes: for solid medium; optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '989.1196834817014'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except carbonate and fructose) and sparge
+  medium with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium
+  under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  Add fructose from a sterile anoxic stock solution prepared under 100% N2 gas and
+  carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+  gas atmosphere. Adjust pH of complete medium to 8.0.
+
+
+  Original volume: 1011 mL'

@@ -1,0 +1,34 @@
+preferred_term: Trace elements II
+term:
+  id: mediadive.solution:3078
+  label: Trace elements II
+composition:
+- preferred_term: Na2SeO3
+  concentration:
+    value: '1.73'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:699
+    label: Na2SeO3
+  chebi_term:
+    id: CHEBI:48843
+    label: disodium selenite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare Trace elements II, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at 4°C
+
+
+  Original volume: 100 mL'

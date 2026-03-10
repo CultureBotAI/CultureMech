@@ -76,34 +76,6 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
-- preferred_term: Trace element mixture*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite-tungstate solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Bicarbonate solution***
-  concentration:
-    value: '30'
-    unit: G_PER_L
-- preferred_term: Vitamin solution****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution*****
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution******
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiosulfate solution*******
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -380,4 +352,59 @@ curation_history:
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: CO2 gas; Added default
     concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:05:05.882044+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element mixture*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite-tungstate solution**
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
+- preferred_term: Bicarbonate solution***
+  term:
+    id: mediadive.solution:29
+    label: Bicarbonate solution
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: See mediadive_29_Bicarbonate_solution.yaml for composition
+- preferred_term: Vitamin solution****
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Thiamine solution*****
+  term:
+    id: mediadive.solution:4133
+    label: Thiamine solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_4133_Thiamine_solution.yaml for composition
+- preferred_term: Vitamin B12 solution******
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Thiosulfate solution*******
+  composition: []
+  concentration:
+    value: '1.5'
+    unit: G_PER_L

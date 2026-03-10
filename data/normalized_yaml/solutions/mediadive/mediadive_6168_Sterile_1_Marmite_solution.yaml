@@ -1,0 +1,21 @@
+preferred_term: Sterile 1% "Marmite" solution
+term:
+  id: mediadive.solution:6168
+  label: Sterile 1% "Marmite" solution
+composition:
+- preferred_term: Marmite
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2353
+    label: Marmite
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sterilise by passing through 0.22 µm filter.
+
+
+  Original volume: 100 mL'

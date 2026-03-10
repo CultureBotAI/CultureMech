@@ -1,0 +1,78 @@
+preferred_term: Solution A
+term:
+  id: mediadive.solution:2211
+  label: Solution A
+composition:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:953
+    label: PPLO broth
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.142857'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1157
+    label: L-Cysteine HCl
+  chebi_term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Fish-Sperm DNA
+  concentration:
+    value: '0.285714'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:976
+    label: Fish-Sperm DNA
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phenol red
+  concentration:
+    value: '0.0285714'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:119
+    label: Phenol red
+  chebi_term:
+    id: CHEBI:31991
+    label: phenol red
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Urea
+  concentration:
+    value: '0.571429'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:339
+    label: Urea
+  chebi_term:
+    id: CHEBI:15676
+    label: allantoin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 700 mL'

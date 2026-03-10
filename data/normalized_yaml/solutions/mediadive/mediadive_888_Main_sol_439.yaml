@@ -1,0 +1,28 @@
+preferred_term: Main sol. 439
+term:
+  id: mediadive.solution:888
+  label: Main sol. 439
+composition:
+- preferred_term: Casman-Agar-Base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2099
+    label: Casman-Agar-Base
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+- preferred_term: Sheep blood
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+preparation_notes: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
+  water-lysed sheep blood.

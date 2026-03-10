@@ -1,0 +1,45 @@
+preferred_term: Meat filtrate
+term:
+  id: mediadive.solution:189
+  label: Meat filtrate
+composition:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:128
+    label: Ground beef
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '975'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Use lean beef or horse meat. Remove fat and connective tissue before
+  grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
+  room temperature, skim fat off surface, and filter, retaining both meat particles
+  and filtrate. To the filtrate add water to a final volume of 1000.0 ml.

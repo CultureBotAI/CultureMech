@@ -1,0 +1,56 @@
+preferred_term: Main sol. J1012
+term:
+  id: mediadive.solution:5054
+  label: Main sol. J1012
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.177778'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '888.8888888888888'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4
+  concentration:
+    value: '4.444444444444445'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly, adjust pH 2.5 with H2SO4 and autoclave.\
+  \ After cooling, add the following solution (filter-sterilized) to the medium: \n\
+  \nOriginal volume: 1125 mL"

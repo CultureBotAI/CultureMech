@@ -1,0 +1,56 @@
+preferred_term: Main sol. 821
+term:
+  id: mediadive.solution:1668
+  label: Main sol. 821
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Meat extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2
+    label: Meat extract
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Hexadecane
+  concentration:
+    value: '2'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:687
+    label: Hexadecane
+  chebi_term:
+    id: CHEBI:45296
+    label: hexadecane
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '810'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Sterilize the medium without the 4 times concentrated sea water.
+  Cool the artificial sea water and the medium to 60°C - 70°C after autoclaving and
+  mix. Hexadecane may be replaced by 1 g/l sodium acetate.

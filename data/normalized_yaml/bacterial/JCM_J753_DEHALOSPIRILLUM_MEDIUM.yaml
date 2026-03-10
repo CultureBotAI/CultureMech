@@ -94,10 +94,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium No. 403)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -206,12 +202,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except L-cysteine x HCl x H2O and FeSO4 x 7H2O. Bring to a boil for a few
-    seconds and cool down under a N2 atmosphere. While gassing with N2, add L-cysteine x HCl x H2O and
-    FeSO4 x 7H2O to the solution, distribute into culture vessels (e.g., 18 ml in 50 ml serum bottles)
-    under a N2 atmosphere, then, seal butyl rubber stoppers and autoclave. Aseptically and anaerobically
-    add per liter (final) the following sterile solutions (autoclaved or *filter-sterilized) from anaerobic
-    stocks:'
+  description: 'Mix components except L-cysteine x HCl x H2O and FeSO4 x 7H2O. Bring
+    to a boil for a few seconds and cool down under a N2 atmosphere. While gassing
+    with N2, add L-cysteine x HCl x H2O and FeSO4 x 7H2O to the solution, distribute
+    into culture vessels (e.g., 18 ml in 50 ml serum bottles) under a N2 atmosphere,
+    then, seal butyl rubber stoppers and autoclave. Aseptically and anaerobically
+    add per liter (final) the following sterile solutions (autoclaved or *filter-sterilized)
+    from anaerobic stocks:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of the medium to 7.3 - 7.7, if necessary.
@@ -222,3 +219,13 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J753'
+- timestamp: '2026-03-09T08:05:07.743728+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

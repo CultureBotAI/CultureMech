@@ -1,0 +1,41 @@
+preferred_term: Main sol. J1235
+term:
+  id: mediadive.solution:5368
+  label: Main sol. J1235
+composition:
+- preferred_term: R2A agar
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1844
+    label: R2A agar
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Disodium fumarate
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1076
+    label: Disodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

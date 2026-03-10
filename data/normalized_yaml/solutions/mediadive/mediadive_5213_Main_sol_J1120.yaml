@@ -1,0 +1,48 @@
+preferred_term: Main sol. J1120
+term:
+  id: mediadive.solution:5213
+  label: Main sol. J1120
+composition:
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.0996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:178
+    label: NH4NO3
+  chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.00996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '0.00249004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:952
+    label: Fe(III)-EDTA
+  chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Mix components, adjust pH to 8.0 with NaOH, then distribute the
+  medium into culture vessels (e.g., 20-50 ml per 120 ml serum bottles), seal with
+  butyl rubber stoppers and autoclave at 110C for 5 min. Allow to stand the autoclaved
+  medium overnight. Add ethane to the gas phase (10 to 50% of the gas phase by volume).
+
+
+  Original volume: 1004 mL'

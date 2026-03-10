@@ -1,0 +1,40 @@
+preferred_term: Mail sol. C61
+term:
+  id: mediadive.solution:6052
+  label: Mail sol. C61
+composition:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '250'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cerophyll
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2360
+    label: Cerophyll
+preparation_notes: "Bring 75% seawater to the boil, add the powdered cereal leaves\
+  \ and keep boiling \r\nfor  5 minutes.  Allow to cool and  restore  volume to 1\
+  \ litre with deionized water. \r\nFilter through Whatman GF/C paper.  Autoclave\
+  \ at 15 psi for 15 minutes."

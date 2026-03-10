@@ -1,0 +1,42 @@
+preferred_term: Standard mineral base
+term:
+  id: mediadive.solution:3798
+  label: Standard mineral base
+composition:
+- preferred_term: Na2HPO4-KH2PO4 buffer
+  concentration:
+    value: '37.735849056603776'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1651
+    label: Na2HPO4-KH2PO4 buffer
+  chebi_term:
+    id: CHEBI:46020
+    label: tetramethylammonium
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.943396'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '943.3962264150944'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 1060 mL'

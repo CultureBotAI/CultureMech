@@ -9,12 +9,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Modified Brock's salt base solution (see Medium [M156])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -46,3 +43,14 @@ curation_history:
   date: '2026-02-03T11:20:47.440440'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:17.938828+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Brock's salt base solution (see Medium [M156])
+  composition: []
+  notes: Cross-reference to Medium M156
+  concentration:
+    value: '1'
+    unit: G_PER_L

@@ -1,0 +1,38 @@
+preferred_term: Main sol. 1706
+term:
+  id: mediadive.solution:3532
+  label: Main sol. 1706
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:9
+    label: Na2MoO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Carbon source solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1552
+    label: Carbon source solution
+preparation_notes: 'For 1 l of medium combine 500 ml of solution I, 100 ml of solution
+  II and 400 ml of solution III and add the following additives:'

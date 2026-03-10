@@ -1,0 +1,33 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4276
+  label: Solution C
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '83.3333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize and store under a N2-CO2 (4:1, v/v) gas mixture.
+
+
+  Original volume: 30 mL'

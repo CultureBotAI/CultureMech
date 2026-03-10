@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,20 +17,17 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: Yeast extract*
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -37,7 +35,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -45,15 +44,11 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
-- preferred_term: Glucose*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Gelrite
   notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
   term:
@@ -63,7 +58,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -94,5 +90,23 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:48.036136'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Gelrite; Added default concentration for ingredient:
-    H2SO4'
+  notes: 'Added default concentration for ingredient: Gelrite; Added default concentration
+    for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:39.073724+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Yeast extract*
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'

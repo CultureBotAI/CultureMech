@@ -1,0 +1,220 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:3067
+  label: Solution C
+composition:
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1512
+    label: Calcium D-(+)-pantothenate
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Choline chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:115
+    label: Choline chloride
+  chebi_term:
+    id: CHEBI:133341
+    label: choline chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Myo-inositol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:557
+    label: Myo-inositol
+  chebi_term:
+    id: CHEBI:17268
+    label: myo-inositol
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1207
+    label: Thiamine HCl
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thiamin pyrophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1337
+    label: Thiamin pyrophosphate
+  chebi_term:
+    id: CHEBI:45931
+    label: thiamine(1+) diphosphate(1-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Coenzym A
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:1338
+    label: Coenzym A
+  chebi_term:
+    id: CHEBI:15346
+    label: coenzyme A
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Flavin adenine dinucleotide
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1339
+    label: Flavin adenine dinucleotide
+  chebi_term:
+    id: CHEBI:16238
+    label: FAD
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: ß-nicotinamide adenine dinucleotide
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1340
+    label: ß-nicotinamide adenine dinucleotide
+  chebi_term:
+    id: CHEBI:15971
+    label: L-histidine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: 2-Mercaptoethanesulfonic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:506
+    label: 2-Mercaptoethanesulfonic acid
+  chebi_term:
+    id: CHEBI:17905
+    label: coenzyme M
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: N-acetylmuramic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1341
+    label: N-acetylmuramic acid
+  chebi_term:
+    id: CHEBI:181907
+    label: (+)-N-Acetylmuramic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: N-Acetylglucosamine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:462
+    label: N-Acetylglucosamine
+  chebi_term:
+    id: CHEBI:506227
+    label: N-acetylglucosamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: D-glucuronic acid
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:1342
+    label: D-glucuronic acid
+  chebi_term:
+    id: CHEBI:24298
+    label: glucuronic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: D-galacturonic acid
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1343
+    label: D-galacturonic acid
+  chebi_term:
+    id: CHEBI:18024
+    label: D-galacturonic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Pyruvic acid
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:540
+    label: Pyruvic acid
+  chebi_term:
+    id: CHEBI:32816
+    label: pyruvic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Fumaric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: disodium salt
+  term:
+    id: mediadive.compound:264
+    label: Fumaric acid
+  chebi_term:
+    id: CHEBI:18012
+    label: fumaric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Formic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: sodium salt
+  term:
+    id: mediadive.compound:1344
+    label: Formic acid
+  chebi_term:
+    id: CHEBI:193132
+    label: formic acid-d2
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare Solutions C, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at -20°C
+
+
+  Original volume: 100 mL'

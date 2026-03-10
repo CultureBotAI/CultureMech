@@ -1,0 +1,66 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1932
+  label: Solution B
+composition:
+- preferred_term: KNO3
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MnSO4 x 7 H2O
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:543
+    label: MnSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tap water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 300 mL'

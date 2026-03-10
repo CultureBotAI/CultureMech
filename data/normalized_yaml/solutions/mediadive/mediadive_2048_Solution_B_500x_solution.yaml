@@ -1,0 +1,29 @@
+preferred_term: Solution B (500x solution)
+term:
+  id: mediadive.solution:2048
+  label: Solution B (500x solution)
+composition:
+- preferred_term: K2HPO4 x 3 H2O
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:244
+    label: K2HPO4 x 3 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

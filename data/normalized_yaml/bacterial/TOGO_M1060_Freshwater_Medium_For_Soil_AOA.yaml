@@ -52,39 +52,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: 1 M NaHCO3 solution*
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: 1 M NH4Cl solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: 1 M Sodium pyruvate solution*
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
-- preferred_term: 7.5 mM EDTA・Na・Fe(III) solution* (pH 7.0)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Modified trace element mixture (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution* (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: HEPES solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: HCl (25%)
   concentration:
     value: '12.5'
@@ -287,4 +254,49 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:31.072279+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: 1 M NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M NH4Cl solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: 1 M Sodium pyruvate solution*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 7.5 mM EDTA・Na・Fe(III) solution* (pH 7.0)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Modified trace element mixture (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution* (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

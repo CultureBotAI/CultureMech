@@ -8,22 +8,6 @@ ingredients:
   concentration:
     value: '906'
     unit: G_PER_L
-- preferred_term: sodium acetate solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: ferric citrate solution
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: NaHCO3 solution
-  concentration:
-    value: '31.25'
-    unit: G_PER_L
-- preferred_term: L--cysteine・HCl solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: L--cysteine・HCl
   concentration:
     value: '0.5'
@@ -113,30 +97,6 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
-- preferred_term: Trace element solution (see Medium [M439])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Riboflavin solution (see Medium [M463])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -247,3 +207,64 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     N2; Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:05:00.164701+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 10 solution(s) from ingredients
+solutions:
+- preferred_term: sodium acetate solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ferric citrate solution
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaHCO3 solution
+  composition: []
+  concentration:
+    value: '31.25'
+    unit: G_PER_L
+- preferred_term: L--cysteine・HCl solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M439])
+  composition: []
+  notes: Cross-reference to Medium M439
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Riboflavin solution (see Medium [M463])
+  composition: []
+  notes: Cross-reference to Medium M463
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L

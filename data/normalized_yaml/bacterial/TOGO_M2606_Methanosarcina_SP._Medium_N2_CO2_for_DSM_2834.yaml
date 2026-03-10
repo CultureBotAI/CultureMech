@@ -143,14 +143,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Complex component, Undefined component'
-- preferred_term: Modified Wolin's mineral solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Wolin's vitamin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -302,11 +294,6 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
-- preferred_term: KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -429,3 +416,30 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:11.887663+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Modified Wolin's mineral solution
+  term:
+    id: mediadive.solution:241
+    label: Modified Wolin's mineral solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_241_Modified_Wolin_s_mineral_solution.yaml for composition
+- preferred_term: Wolin's vitamin solution
+  term:
+    id: mediadive.solution:242
+    label: Wolin's vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_242_Wolin_s_vitamin_solution.yaml for composition
+- preferred_term: KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'

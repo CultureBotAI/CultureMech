@@ -1,0 +1,115 @@
+preferred_term: Main sol. 142
+term:
+  id: mediadive.solution:246
+  label: Main sol. 142
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '24.8756'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:27
+    label: (NH4)2SO4
+  chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '1.49254'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.41791'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bromothymol blue
+  concentration:
+    value: '0.0039801'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:254
+    label: Bromothymol blue
+  chebi_term:
+    id: CHEBI:86155
+    label: bromothymol blue
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.497512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3 x 5 H2O
+  concentration:
+    value: '4.97512'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:65
+    label: Na2S2O3 x 5 H2O
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '995.0248756218906'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except hydrogenphosphate, thiosulfate and
+  vitamins), adjust pH to 7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved separately
+  each in 10% of the final volume. Filter sterilize the vitamins solution. Adjust
+  pH of the complete medium to 7.2 with sterile 0.4% (w/v) Na2CO3 solution.  Acidification
+  of the medium during growth causes the pH indicator bromothymol blue to turn from
+  blue to yellow.
+
+  Note: Growth of most Thiomicrospira strains is more reliable if the medium is prepared
+  under a 80% N2 and 20% CO2 gas atmosphere to make it anoxic and then filled under
+  air atmosphere into Hungate-type tubes (5 ml per vial). The pH is adjusted with
+  a sterile stock solution of Na2CO3 (5% w/v) after autoclaving.
+
+
+  Original volume: 1005 mL'

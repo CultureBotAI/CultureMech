@@ -1,0 +1,54 @@
+preferred_term: Main sol. 310
+term:
+  id: mediadive.solution:575
+  label: Main sol. 310
+composition:
+- preferred_term: V-8 Juice
+  concentration:
+    value: '200'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:363
+    label: V-8 Juice
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:13
+    label: CaCO3
+  chebi_term:
+    id: CHEBI:3311
+    label: calcium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Fill up with distilled water to 1000.0 ml. Adjust pH to 7.2.

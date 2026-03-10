@@ -1,0 +1,117 @@
+preferred_term: ' Vitamin mix (pfennig & Lippert,1966)'
+term:
+  id: mediadive.solution:3031
+  label: ' Vitamin mix (pfennig & Lippert,1966)'
+composition:
+- preferred_term: Thiamin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1307
+    label: Thiamin
+  chebi_term:
+    id: CHEBI:18385
+    label: thiamine(1+)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:518
+    label: Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Biotin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:46
+    label: Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: PABA
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1309
+    label: PABA
+  chebi_term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:139
+    label: Nicotinic acid
+  chebi_term:
+    id: CHEBI:15940
+    label: nicotinic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Pyridoxine
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:637
+    label: Pyridoxine
+  chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Folic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:138
+    label: Folic acid
+  chebi_term:
+    id: CHEBI:27470
+    label: folic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: B12
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1238
+    label: B12
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "1: acidic solution (HCl, pH3; 100ml) \n2: basic solution (100ml\
+  \ 0.1N NaOH) \n3: Neutral solution in 100 ml demi water \n4: neutral solution in\
+  \ 100 ml demi water \nSterilize by filtration.\nMix 1:1:1:1 just after addition\
+  \ or add separatlely, each 1ml/L.\n\nOriginal volume: 400 mL"

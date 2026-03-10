@@ -73,18 +73,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: General salts solution (see below)
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: Trace minerals solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Iron stock solution (see below)
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -265,3 +253,23 @@ curation_history:
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: HCl'
+- timestamp: '2026-03-09T08:04:18.614307+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: General salts solution (see below)
+  composition: []
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Trace minerals solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Iron stock solution (see below)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L

@@ -89,10 +89,6 @@ ingredients:
     value: '0.031'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
-- preferred_term: SL--7 trace element solution (see Medium [M538])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -103,32 +99,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution*
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: 1.0 M Sodium pyruvate solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Thiamine solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Iron(III) citrate solution (see Medium [M1072])
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -147,11 +117,6 @@ ingredients:
   term:
     id: CHEBI:144421
     label: iron(III) citrate
-- preferred_term: 10 N NaOH solution
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M3271
   term:
@@ -179,3 +144,56 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     10 N NaOH solution'
+- timestamp: '2026-03-09T08:04:25.289674+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 8 solution(s) from ingredients
+solutions:
+- preferred_term: SL--7 trace element solution (see Medium [M538])
+  composition: []
+  notes: Cross-reference to Medium M538
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution*
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 1.0 M Sodium pyruvate solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Trace vitamins (see Medium [M190])
+  composition: []
+  notes: Cross-reference to Medium M190
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Iron(III) citrate solution (see Medium [M1072])
+  composition: []
+  notes: Cross-reference to Medium M1072
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: 10 N NaOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

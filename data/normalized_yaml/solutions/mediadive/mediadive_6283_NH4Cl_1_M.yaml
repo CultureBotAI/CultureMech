@@ -1,0 +1,35 @@
+preferred_term: NH4Cl (1 M)
+term:
+  id: mediadive.solution:6283
+  label: NH4Cl (1 M)
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '53.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve 2.67 g ammonium chloride in 50 mL Double distilled water.
+
+  Filtrate (0.2 µm).
+
+
+  Original volume: 50 mL'

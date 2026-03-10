@@ -110,10 +110,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -289,3 +285,16 @@ curation_history:
   date: '2026-02-03T11:20:53.105147'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-09T08:04:21.383747+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

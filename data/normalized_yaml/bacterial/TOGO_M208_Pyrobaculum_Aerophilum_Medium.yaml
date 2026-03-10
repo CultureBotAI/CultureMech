@@ -77,14 +77,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
-- preferred_term: Marine medium/Synthetic seawater mix solution (see below)
-  concentration:
-    value: '125'
-    unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -259,3 +251,19 @@ curation_history:
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: Oxygen gas'
+- timestamp: '2026-03-09T08:04:35.414824+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Marine medium/Synthetic seawater mix solution (see below)
+  composition: []
+  concentration:
+    value: '125'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L

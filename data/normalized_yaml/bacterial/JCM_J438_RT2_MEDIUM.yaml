@@ -71,10 +71,6 @@ ingredients:
   concentration:
     value: '2000'
     unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
@@ -139,4 +135,17 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:11.780583+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

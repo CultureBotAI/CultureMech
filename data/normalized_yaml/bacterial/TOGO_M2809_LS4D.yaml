@@ -69,11 +69,6 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Complex
     component, Solution'
-- preferred_term: Resazurin (0.1% solution)
-  concentration:
-    value: '640'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: NaOH
   concentration:
     value: '10'
@@ -190,11 +185,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
-- preferred_term: 1M KOH solution
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -263,11 +253,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: NaOH solution
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: 8% (wt/vol) Na2CO3
   concentration:
     value: '100'
@@ -311,4 +296,27 @@ curation_history:
   notes: 'Added default concentration for ingredient: 1M KOH solution; Added default
     concentration for ingredient: N2; Added default concentration for ingredient:
     NaOH solution; Added default concentration for ingredient: Nitrogen'
+- timestamp: '2026-03-09T08:04:45.376466+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Resazurin (0.1% solution)
+  composition: []
+  concentration:
+    value: '640'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: 1M KOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: NaOH solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

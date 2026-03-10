@@ -22,14 +22,6 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
-- preferred_term: Solution A
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -74,15 +66,7 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Solution C
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: Trace Mineral Supplement, Catalog No. MD-TMS
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: 'Co-enzyme M (mercaptoethanesulfonic acid) (100 X solution):'
   concentration:
     value: '10'
     unit: G_PER_L
@@ -116,12 +100,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: HCl solution
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Distilled Water
   concentration:
     value: '1'
@@ -343,4 +321,45 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     HCl solution; Added default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:05:03.630247+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+- preferred_term: 'Co-enzyme M (mercaptoethanesulfonic acid) (100 X solution):'
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: HCl solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'

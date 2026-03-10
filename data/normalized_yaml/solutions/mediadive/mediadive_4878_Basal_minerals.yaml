@@ -1,0 +1,143 @@
+preferred_term: Basal minerals
+term:
+  id: mediadive.solution:4878
+  label: Basal minerals
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '3518.52'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '555.556'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '296.296'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '37.037'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '185.1851851851852'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1784
+    label: Trace vitamins (see Medium No. 197)
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '18.51851851851852'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Selenite-tungstate solution (see Medium No. 431)
+  concentration:
+    value: '18.51851851851852'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1921
+    label: Selenite-tungstate solution (see Medium No. 431)
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4
+  concentration:
+    value: '18.51851851851852'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '3.703703703703704'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium butyrate
+  concentration:
+    value: '370.3703703703704'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1750
+    label: Sodium butyrate
+  chebi_term:
+    id: CHEBI:64103
+    label: sodium butyrate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '370.3703703703704'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Add components to distilled water and bring volume to 1.0 L. Autoclave\
+  \ and let it stand for three days. Decant the clear solution into another empty\
+  \ sterile bottle. Then, aseptically add per liter the following solutions (autoclaved\
+  \ or *filter-sterilized): \nDistribute the medium into culture vessels, replace\
+  \ the gas phase with N2 containing 5% O2 (by vol.) and close with butyl rubber stoppers.\n\
+  \nOriginal volume: 54 mL"

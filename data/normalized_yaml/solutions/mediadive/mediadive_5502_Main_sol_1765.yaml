@@ -1,0 +1,51 @@
+preferred_term: Main sol. 1765
+term:
+  id: mediadive.solution:5502
+  label: Main sol. 1765
+composition:
+- preferred_term: Potato
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1606
+    label: Potato
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Carrot
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1612
+    label: Carrot
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil the peeled and chopped potatoes and carrots for 45 minutes,
+  then filter through cheesecloth and complete the volume to 1000 ml using distilled
+  water and add agar.

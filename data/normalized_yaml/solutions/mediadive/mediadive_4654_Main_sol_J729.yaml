@@ -1,0 +1,43 @@
+preferred_term: Main sol. J729
+term:
+  id: mediadive.solution:4654
+  label: Main sol. J729
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '845'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2S4O6
+  concentration:
+    value: '25'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:386
+    label: K2S4O6
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Mix thoroughly, adjust pH to 2.5 with H2SO4 and autoclave. After
+  cooling, add the following solutions (filter-sterilized) to the medium: '

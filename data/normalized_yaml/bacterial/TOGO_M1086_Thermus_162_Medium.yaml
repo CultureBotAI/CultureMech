@@ -4,11 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: 0.01 M Iron(III) citrate solution
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -57,10 +52,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Nitsch's trace elements (see Medium [M266])
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -69,10 +60,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Phosphate solution (see Medium [M1085])
-  concentration:
-    value: '100'
-    unit: G_PER_L
 media_term:
   preferred_term: TOGO Medium M1086
   term:
@@ -98,3 +85,26 @@ curation_history:
   date: '2026-02-03T11:20:45.826390'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:05:08.827449+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: 0.01 M Iron(III) citrate solution
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Nitsch's trace elements (see Medium [M266])
+  composition: []
+  notes: Cross-reference to Medium M266
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Phosphate solution (see Medium [M1085])
+  composition: []
+  notes: Cross-reference to Medium M1085
+  concentration:
+    value: '100'
+    unit: G_PER_L

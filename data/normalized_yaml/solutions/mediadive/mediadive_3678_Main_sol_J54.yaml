@@ -1,0 +1,54 @@
+preferred_term: Main sol. J54
+term:
+  id: mediadive.solution:3678
+  label: Main sol. J54
+composition:
+- preferred_term: Potato
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  notes: ' peeled and cut'
+  term:
+    id: mediadive.compound:1606
+    label: Potato
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Carrot
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: ' peeled and cut'
+  term:
+    id: mediadive.compound:1612
+    label: Carrot
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Boil potatoes and carrots until cooked, filter through cheesecloth,
+  make up volume to 1.0 L and add agar.
+
+  pH unadjusted.'

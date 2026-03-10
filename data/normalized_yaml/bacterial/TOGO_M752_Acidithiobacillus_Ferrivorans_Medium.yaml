@@ -13,18 +13,6 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: UBS solution (see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Ni-Se-W solution (see Medium [M236])
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -34,17 +22,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 10 mM FeSO4 solution (pH 2.0)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: 0.1 M K2S4O6 solution
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -127,3 +104,38 @@ curation_history:
   date: '2026-02-03T11:21:00.375895'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:40.273488+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: UBS solution (see below)
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ni-Se-W solution (see Medium [M236])
+  composition: []
+  notes: Cross-reference to Medium M236
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 10 mM FeSO4 solution (pH 2.0)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 0.1 M K2S4O6 solution
+  composition: []
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

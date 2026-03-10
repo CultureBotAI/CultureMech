@@ -1,0 +1,81 @@
+preferred_term: Basal medium 2
+term:
+  id: mediadive.solution:5244
+  label: Basal medium 2
+composition:
+- preferred_term: Na2CO3
+  concentration:
+    value: '27142.9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '4285.71'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaCl
+  concentration:
+    value: '2285.71'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '285.714'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NH4Cl
+  concentration:
+    value: '571.4285714285714'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2
+  concentration:
+    value: '142.85714285714286'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Add components to distilled water and bring volume to 1.0 L. Check\
+  \ pH of the medium to be 9.9 - 10.0. Autoclave and let it stand for three days.\
+  \ Decant the clear solution into another empty sterile bottle. Aseptically add per\
+  \ liter the following solutions (autoclaved): \n\nOriginal volume: 7 mL"

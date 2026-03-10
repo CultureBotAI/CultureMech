@@ -5,15 +5,6 @@ description: 1311. NBRC 1308.
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: KH2PO40.136gNH4Cl0.54gMgCl2·6H2O3.05gCaCl2·2H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin
-    solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S·9H2O0.5gDistilled water1LMix
-    ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O, and autoclave under a N2/CO2atmosphere
-    (80/20).  Separately autoclave cysteine-HCl and Na2S·9H2O solutions as 5% solutions under a N2atmosphere.  Sterilize
-    vitamin solution by filtration. Prior to inoculation, add vitamin solution, cysteine-HCl and Na2S·9H2O.*Vitamin
-    solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic
-    acid1mgVitamin B120.01mgDistilled water1L**Trace elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals.
-    Final pH 7.0.
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -190,3 +181,20 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1308, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1308.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:05:00.459864+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KH2PO40.136gNH4Cl0.54gMgCl2·6H2O3.05gCaCl2·2H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin
+    solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S·9H2O0.5gDistilled
+    water1LMix ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O,
+    and autoclave under a N2/CO2atmosphere (80/20).  Separately autoclave cysteine-HCl
+    and Na2S·9H2O solutions as 5% solutions under a N2atmosphere.  Sterilize vitamin
+    solution by filtration. Prior to inoculation, add vitamin solution, cysteine-HCl
+    and Na2S·9H2O.*Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
+    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L**Trace
+    elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
+    then add minerals. Final pH 7.0.
+  composition: []

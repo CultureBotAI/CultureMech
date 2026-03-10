@@ -1,0 +1,36 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:4513
+  label: Solution C
+composition:
+- preferred_term: Methanol
+  concentration:
+    value: '79.54545454545455'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:226
+    label: Methanol
+  chebi_term:
+    id: CHEBI:17790
+    label: methanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaHCO3
+  concentration:
+    value: '681.8181818181818'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Autoclave Solutions A and B separately and autoclave Solution\
+  \ C in a closed tube or vial. After cooling, combine the three solutions under a\
+  \ stream of N2-CO2 (80:20, v/v), then add the following solutions (filter-sterilized):\
+  \ \nDistribute the medium into culture vessels under the same gas mixture and seal\
+  \ with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025%\
+  \ L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O (autoclaved as 5% solutions under\
+  \ a N2 atmosphere).\n\nOriginal volume: 44 mL"

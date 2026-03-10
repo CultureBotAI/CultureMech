@@ -1,0 +1,18 @@
+preferred_term: 10% N-Acetylglucosamine
+term:
+  id: mediadive.solution:5913
+  label: 10% N-Acetylglucosamine
+composition:
+- preferred_term: N-Acetylglucosamine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:462
+    label: N-Acetylglucosamine
+  chebi_term:
+    id: CHEBI:506227
+    label: N-acetylglucosamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'Original volume: 100 mL'

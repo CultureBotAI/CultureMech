@@ -1,0 +1,33 @@
+preferred_term: Cherry extract
+term:
+  id: mediadive.solution:5596
+  label: Cherry extract
+composition:
+- preferred_term: Pulp of sour stone cherries
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2092
+    label: Pulp of sour stone cherries
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Add 1 l water to 200.0 g pulp of sour stone cherries.
+
+  Heat to boiling and simmer gently for 2 h . Strain through cloth and sterilize at
+  110°C for 30 minutes .'

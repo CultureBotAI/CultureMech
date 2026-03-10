@@ -1,0 +1,80 @@
+preferred_term: Main sol. J728
+term:
+  id: mediadive.solution:4652
+  label: Main sol. J728
+composition:
+- preferred_term: K2SO4
+  concentration:
+    value: '0.87'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:382
+    label: K2SO4
+  chebi_term:
+    id: CHEBI:32036
+    label: potassium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '939'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glycerol
+  concentration:
+    value: '4'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: FeSO4
+  concentration:
+    value: '10'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:595
+    label: FeSO4
+  chebi_term:
+    id: CHEBI:75832
+    label: ferrous sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: ZnSO4
+  concentration:
+    value: '7'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:441
+    label: ZnSO4
+  chebi_term:
+    id: CHEBI:35176
+    label: zinc sulfate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Mix thoroughly, adjust to pH 5.5 with H2SO4 and autoclave under
+  a N2 atmosphere. After cooling, aseptically and anaerobically add the following
+  solutions (filter-sterilized) to the medium: '

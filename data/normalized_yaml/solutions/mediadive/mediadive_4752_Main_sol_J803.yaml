@@ -1,0 +1,50 @@
+preferred_term: Main sol. J803
+term:
+  id: mediadive.solution:4752
+  label: Main sol. J803
+composition:
+- preferred_term: MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1899
+    label: MRS broth
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tomato juice
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  notes: ' filtered'
+  term:
+    id: mediadive.compound:105
+    label: Tomato juice
+  chebi_term:
+    id: CHEBI:53426
+    label: tween 80
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 5.2.

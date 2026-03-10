@@ -39,14 +39,6 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
-- preferred_term: Balch's vitamin solution*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: MJ synthetic seawater**
-  concentration:
-    value: '990'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -246,10 +238,6 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
-- preferred_term: Balch's trace mineral solution***
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -411,3 +399,23 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Hydrogen gas; Added default concentration for ingredient:
     KOH'
+- timestamp: '2026-03-09T08:05:04.319115+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Balch's vitamin solution*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MJ synthetic seawater**
+  composition: []
+  concentration:
+    value: '990'
+    unit: G_PER_L
+- preferred_term: Balch's trace mineral solution***
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

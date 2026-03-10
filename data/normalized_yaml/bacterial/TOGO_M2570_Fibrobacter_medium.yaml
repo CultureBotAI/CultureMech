@@ -98,18 +98,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Vitamin Solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Trace Elements
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: VFA Solution
-  concentration:
-    value: '4.65'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
   concentration:
@@ -378,3 +366,32 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:27.856496+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin Solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Trace Elements
+  term:
+    id: mediadive.solution:6183
+    label: Trace elements
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6183_Trace_elements.yaml for composition
+- preferred_term: VFA Solution
+  term:
+    id: mediadive.solution:4622
+    label: VFA solution
+  concentration:
+    value: '4.65'
+    unit: G_PER_L
+  notes: See mediadive_4622_VFA_solution.yaml for composition

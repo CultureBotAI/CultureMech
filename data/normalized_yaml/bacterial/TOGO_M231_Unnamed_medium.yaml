@@ -50,14 +50,6 @@ ingredients:
     value: '30'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace salts solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -167,3 +159,18 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:48.901854+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Trace salts solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L

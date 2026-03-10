@@ -68,32 +68,11 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Salt solution (see Medium [M695])
-  concentration:
-    value: '40'
-    unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Rumen fluid, clarified (see Medium [M258])
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Hemin solution (see Medium [M470])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Vitamin K1 solution (see below)
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -142,3 +121,37 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2; Added default concentration
     for ingredient: N2'
+- timestamp: '2026-03-09T08:04:41.108445+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Salt solution (see Medium [M695])
+  composition: []
+  notes: Cross-reference to Medium M695
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: 5% L-Cysteine・HCl・H2O solution
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Rumen fluid, clarified (see Medium [M258])
+  composition: []
+  notes: Cross-reference to Medium M258
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Hemin solution (see Medium [M470])
+  composition: []
+  notes: Cross-reference to Medium M470
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin K1 solution (see below)
+  composition: []
+  concentration:
+    value: '0.2'
+    unit: G_PER_L

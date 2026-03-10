@@ -1,0 +1,37 @@
+preferred_term: Main sol. 1844
+term:
+  id: mediadive.solution:6445
+  label: Main sol. 1844
+composition:
+- preferred_term: MES Hydrat
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2394
+    label: MES Hydrat
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Crucial: prepare all solutions in either clean glassware (incubated
+  in 0.1 % HCl and washed with double distilled water) or GREINER PS container (201172).
+  Do not use container with rubber stoppers or septum.
+
+  Add 100 mL of 10x FW basal salt solution to 800 mL sterile double distilled water
+  just before use.
+
+  Add per litre of 1x FW basalt solution: 0.5 mL NH4Cl (1 M), 2 mL NaHCO3 (1 M), 1
+  mL FeNaEDTA (7.5 mM), 1 mL trace elements solution, 1.95 g MES Hydrat.
+
+  Adjust pH to the specific pH for each strain.
+
+  Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with double
+  distilled water.
+
+  Filtrate with 0.2 µm Nalgene® bottle-top sterile filter units (e.g. ThermoFischer
+  597-4520) in a clean and sterile glass bottle.
+
+  Aliquote medium in GREINER PS containers. Final medium can be stored at 4 °C in
+  the dark for weeks.'

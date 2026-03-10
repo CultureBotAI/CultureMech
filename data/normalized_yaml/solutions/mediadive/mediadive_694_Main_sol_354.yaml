@@ -1,0 +1,113 @@
+preferred_term: Main sol. 354
+term:
+  id: mediadive.solution:694
+  label: Main sol. 354
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.55087'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgSO4
+  concentration:
+    value: '0.148883'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:325
+    label: MgSO4
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Mg-citrate
+  concentration:
+    value: '0.372208'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:404
+    label: Mg-citrate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Asparagin
+  concentration:
+    value: '2.23325'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:405
+    label: L-Asparagin
+  chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Potato flour
+  concentration:
+    value: '18.6104'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:406
+    label: Potato flour
+  chebi_term:
+    id: CHEBI:17196
+    label: L-asparagine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Malachite green
+  concentration:
+    value: '0.248139'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:407
+    label: Malachite green
+  chebi_term:
+    id: CHEBI:44107
+    label: malachite green cation
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '372.20843672456573'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glycerol
+  concentration:
+    value: '7.444168734491315'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Fresh egg mixture
+  concentration:
+    value: '620.3473945409429'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:408
+    label: Fresh egg mixture
+preparation_notes: "Addition: \npH 7.0\nSterilize medium for 30 min at 121°C, cool\
+  \ to 30°C and add fresh egg mixture carefully to the medium.\n* You need for 1 l\
+  \ of egg mixture 20 - 25 fresh eggs (not older then 1 week). Clean the eggs, wipe\
+  \ away with 70% alcohol, open the eggs and homogenize the egg mixture carefully.\n\
+  \nOriginal volume: 1612 mL"

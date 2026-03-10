@@ -1,0 +1,36 @@
+preferred_term: NaHCO3 buffer (1M)
+term:
+  id: mediadive.solution:6282
+  label: NaHCO3 buffer (1M)
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '84'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use
+  a small beaker with stirring rod to dissolve) and sterilize by filtration (0.2 µm)
+  in the laminar flow hood. Store in a sterile 50 mL falcon tube at 4 °C. Avoid high
+  headspace to liquid ratios to ensure stable concentration.
+
+
+  Original volume: 50 mL'

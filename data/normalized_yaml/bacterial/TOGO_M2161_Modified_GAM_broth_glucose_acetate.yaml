@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -24,15 +25,11 @@ ingredients:
   concentration:
     value: '9.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: Nissui Modified GAM Broth*
-  concentration:
-    value: '41.7'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -63,3 +60,14 @@ curation_history:
   date: '2026-02-03T11:20:52.519472'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:46.311167+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Nissui Modified GAM Broth*
+  composition: []
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'

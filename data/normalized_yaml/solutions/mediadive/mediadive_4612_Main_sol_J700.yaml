@@ -1,0 +1,75 @@
+preferred_term: Main sol. J700
+term:
+  id: mediadive.solution:4612
+  label: Main sol. J700
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.246305'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaNO3
+  concentration:
+    value: '0.492611'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.985222'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '4.926108374384237'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '9.852216748768473'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly. Distribute the medium into culture\
+  \ vessels (e.g., 20 ml medium in 50 ml serum bottles) under a N2-CO2 (4:1, v/v)\
+  \ gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add\
+  \ per liter the following solutions (*filter-sterilized or autoclaved, and stored\
+  \ anaerobically) to the medium: \nPressurize the culture vessels to 200 kPa N2-CO2\
+  \ (4:1, v/v) . Check final pH to be 6.0-6.5.\nComment: MJ(-N) synthetic seawater\
+  \ can be replaced with commercially available synthetic seawater such as Jamarin\
+  \ S (Jamarin Laboratory). Addition of rumen fluid clarified (10.0 ml/L, see Medium\
+  \ No. 266) may stimulate growth. For strain JCM 15506, incubate with a 5-10% inoculum.\n\
+  \nOriginal volume: 1015 mL"

@@ -1,0 +1,46 @@
+preferred_term: Solution J
+term:
+  id: mediadive.solution:3074
+  label: Solution J
+composition:
+- preferred_term: DL-alpha-lipoic acid
+  concentration:
+    value: '1000.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1559
+    label: DL-alpha-lipoic acid
+  chebi_term:
+    id: CHEBI:16494
+    label: lipoic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: 2-Mercaptoethanol
+  concentration:
+    value: '100.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1771
+    label: 2-Mercaptoethanol
+  chebi_term:
+    id: CHEBI:41218
+    label: mercaptoethanol
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Ethanol
+  concentration:
+    value: '900.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol
+  (1:10); store at -20°C
+
+
+  Original volume: 1 mL'

@@ -1,0 +1,24 @@
+preferred_term: Main sol. 474
+term:
+  id: mediadive.solution:974
+  label: Main sol. 474
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare a suspension of 3.0 g poly-ß-hydroxybutyric acid (PHB)
+  in 100 ml distilled water, stir over night and sonicate until a white homogenous
+  suspension is obtained. Autoclave for 5 minutes at 121°C. Prepare double layer agar
+  plates. First layer: medium 457 with 16.0 g agar per l.
+
+  Second layer: medium 457 with agar, supplemented with 6.6 ml sterile PHB-suspension
+  per 100 ml.'

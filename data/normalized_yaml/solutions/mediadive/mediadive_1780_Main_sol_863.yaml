@@ -1,0 +1,49 @@
+preferred_term: Main sol. 863
+term:
+  id: mediadive.solution:1780
+  label: Main sol. 863
+composition:
+- preferred_term: Sodium carbonate solution
+  concentration:
+    value: '59.7638'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:797
+    label: Sodium carbonate solution
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '842.5196850393701'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '14.7638'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Anaerobically dispense liquid minimal medium in 10-ml portions\
+  \ into 100-ml serum vials under an atmosphere of N2/CO2 (80:20). Seal vials with\
+  \ butyl rubber stoppers secured with aluminium crimp seals. Sterilize by autoclaving\
+  \ for 15 minutes at 121°C. Prior to inoculation, pressurize bottles to 2 x 102 kPa\
+  \ with H2/CO2. For solidified plating medium, add the following components per liter\
+  \ of liquid minimal medium: \nAdd titanium(III) citrate solution to warm (60°C)\
+  \ agar medium after autoclaving. For preparation of solidified agar medium.\n\n\
+  Original volume: 1016 mL"

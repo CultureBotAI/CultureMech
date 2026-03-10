@@ -17,10 +17,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Trace metal 1 solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
@@ -45,34 +41,11 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 2% Yeast extract solution
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: 20 mM Sodium acetate
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 50 mM Coenzyme M solution
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Solution, Defined component'
-- preferred_term: 0.5 M HOMOPIPES solution* (pH 5.4)
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Solution, Organic compound, Defined component'
-- preferred_term: 83 mM TiNTA solution* (see below)
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
-- preferred_term: Vitamin solution* (see below)
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -213,11 +186,6 @@ ingredients:
   term:
     id: CHEBI:132766
     label: sodium nitrilotriacetate
-- preferred_term: 15% TiCl3 solution
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -333,4 +301,48 @@ curation_history:
     Nitrogen gas; Added default concentration for ingredient: Hydrogen gas; Added
     default concentration for ingredient: Carbon dioxide gas; Added default concentration
     for ingredient: Hydrogen gas; Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:43.388921+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 7 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace metal 1 solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 2% Yeast extract solution
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 50 mM Coenzyme M solution
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 0.5 M HOMOPIPES solution* (pH 5.4)
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Solution, Organic compound, Defined component'
+- preferred_term: 83 mM TiNTA solution* (see below)
+  composition: []
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Vitamin solution* (see below)
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: 15% TiCl3 solution
+  composition: []
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'

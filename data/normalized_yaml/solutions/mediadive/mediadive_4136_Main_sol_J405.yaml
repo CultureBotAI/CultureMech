@@ -1,0 +1,24 @@
+preferred_term: Main sol. J405
+term:
+  id: mediadive.solution:4136
+  label: Main sol. J405
+composition:
+- preferred_term: Sodium dithionite
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1676
+    label: Sodium dithionite
+  chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Use Medium No. 344. Prior to inoculation, add per liter the following
+  solution (freshly prepared and filter-sterilized):
+
+  Pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+
+
+  Original volume: 25 mL'

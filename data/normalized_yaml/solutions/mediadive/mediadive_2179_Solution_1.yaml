@@ -1,0 +1,33 @@
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:2179
+  label: Solution 1
+composition:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:953
+    label: PPLO broth
+  chebi_term:
+    id: CHEBI:16199
+    label: urea
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 6.5 and autoclave.
+
+
+  Original volume: 80 mL'

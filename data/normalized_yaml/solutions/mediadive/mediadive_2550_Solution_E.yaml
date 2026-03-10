@@ -1,0 +1,34 @@
+preferred_term: Solution E
+term:
+  id: mediadive.solution:2550
+  label: Solution E
+composition:
+- preferred_term: Toluene
+  concentration:
+    value: '580.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1820
+    label: Toluene
+  chebi_term:
+    id: CHEBI:17578
+    label: toluene
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sterile distilled water gassed with dinitrogen, 100.00 ml. Add
+  58 µl toluene.
+
+
+  Original volume: 100 mL'

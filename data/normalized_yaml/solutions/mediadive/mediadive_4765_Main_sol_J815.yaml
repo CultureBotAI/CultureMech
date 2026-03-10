@@ -1,0 +1,66 @@
+preferred_term: Main sol. J815
+term:
+  id: mediadive.solution:4765
+  label: Main sol. J815
+composition:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.0998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0998004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0199601'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '998.003992015968'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Phosphate buffer stock solution
+  concentration:
+    value: '1.996007984031936'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1900
+    label: Phosphate buffer stock solution
+preparation_notes: "Mix components and autoclave. After cooling, add the following\
+  \ solution (autoclaved) to the medium: \nTo complete medium, adjust pH to 3.0 with\
+  \ sterile 1 N HCl solution. Then, distribute 20 ml-aliquots of the medium into sterile\
+  \ 120 ml-serum bottles and seal with butyl rubber stoppers. Add 100 ml methane gas\
+  \ (filter-sterilized) into the head space of the culture bottle through a syringe.\n\
+  \nOriginal volume: 1002 mL"

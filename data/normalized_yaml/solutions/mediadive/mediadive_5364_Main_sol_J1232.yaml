@@ -1,0 +1,23 @@
+preferred_term: Main sol. J1232
+term:
+  id: mediadive.solution:5364
+  label: Main sol. J1232
+composition:
+- preferred_term: Sea water
+  concentration:
+    value: '909.0909090909091'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Aseptically combine. Cultivate with shaking (150 - 200 rpm) for
+  16 - 24 hr. Separate from the prey bacteria physically (e.g., centrifugation), if
+  necessary.
+
+
+  Original volume: 110 mL'

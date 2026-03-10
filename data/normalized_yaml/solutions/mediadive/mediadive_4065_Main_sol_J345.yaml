@@ -1,0 +1,29 @@
+preferred_term: Main sol. J345
+term:
+  id: mediadive.solution:4065
+  label: Main sol. J345
+composition:
+- preferred_term: Horikoshi-I medium
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1740
+    label: Horikoshi-I medium
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match

@@ -1,0 +1,58 @@
+preferred_term: Main sol. J574
+term:
+  id: mediadive.solution:4402
+  label: Main sol. J574
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.26745'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '1.1004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Add components and bring volume to 980 ml with distilled water.\
+  \ For preparation of solid medium, add 20 g/L agar (if necessary, use washed agar\
+  \ as described below). Autoclave, and after cooling, add the following solutions\
+  \ (filter-sterilized or *autoclaved) to the medium: \nReadjust pH to 7.0 - 7.5 with\
+  \ a sterilized 10% Na2CO3 solution, if necessary."

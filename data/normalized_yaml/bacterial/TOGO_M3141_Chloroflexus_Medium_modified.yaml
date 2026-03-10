@@ -4,10 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Neutralized sulfide solution
-  concentration:
-    value: '0.03'
-    unit: PERCENT_W_V
 - preferred_term: Distilled water
   concentration:
     value: '1050'
@@ -85,14 +81,6 @@ ingredients:
   term:
     id: CHEBI:17201
     label: Glycyl-glycine
-- preferred_term: Fe(III) citrate solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Trace element solution SL-6
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -238,3 +226,26 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas; Added default concentration
     for ingredient: 2 M H2SO4; Added default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-09T08:04:11.559278+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Neutralized sulfide solution
+  composition: []
+  concentration:
+    value: '0.03'
+    unit: PERCENT_W_V
+- preferred_term: Fe(III) citrate solution
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Trace element solution SL-6
+  term:
+    id: mediadive.solution:25
+    label: Trace element solution SL-6
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_25_Trace_element_solution_SL-6.yaml for composition

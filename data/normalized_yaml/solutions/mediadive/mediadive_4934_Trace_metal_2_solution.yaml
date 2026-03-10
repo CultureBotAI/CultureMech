@@ -1,0 +1,18 @@
+preferred_term: Trace metal 2 solution
+term:
+  id: mediadive.solution:4934
+  label: Trace metal 2 solution
+composition:
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '37.23'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Adjust pH to 7.0 with NaOH.

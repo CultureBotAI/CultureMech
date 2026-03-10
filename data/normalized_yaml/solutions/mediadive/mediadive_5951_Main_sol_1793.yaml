@@ -1,0 +1,42 @@
+preferred_term: Main sol. 1793
+term:
+  id: mediadive.solution:5951
+  label: Main sol. 1793
+composition:
+- preferred_term: MEM-Medium
+  concentration:
+    value: '823.7232289950576'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1377
+    label: MEM-Medium
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '164.74464579901152'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store
+  at room temperature to facilitate detection of contamination.
+
+  Prepare a 25 cm2 flask and seed cells according to standard protocols. Incubate
+  at 37°C plus 5% CO2. When a confluent layer has formed, infection can be carried
+  out.
+
+  Exchange medium with Infection Medium (as above with the addition of cycloheximide)
+  and add 500 - 1000 µl of EB stock solution (thawed quickly to 37°C).
+
+  Centrifuge for 1 h onto the cell layer at 1000 x g at >20°C.
+
+  Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions. Not all
+  Chlamydiae form well-visible inclusions, ultimately, immunofluorescence or in situ-hybridization
+  techniques are necessary to visualize inclusions.
+
+
+  Original volume: 607 mL'

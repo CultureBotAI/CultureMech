@@ -1,0 +1,45 @@
+preferred_term: Main sol. 191
+term:
+  id: mediadive.solution:318
+  label: Main sol. 191
+composition:
+- preferred_term: Corn meal
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2087
+    label: Corn meal
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
+  in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1 l.
+  Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes. pH
+  6.0.

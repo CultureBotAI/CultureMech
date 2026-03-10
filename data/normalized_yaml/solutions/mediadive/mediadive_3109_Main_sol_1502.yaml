@@ -1,0 +1,121 @@
+preferred_term: Main sol. 1502
+term:
+  id: mediadive.solution:3109
+  label: Main sol. 1502
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:95
+    label: Na2HPO4 x 12 H2O
+  chebi_term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:173
+    label: CaCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:952
+    label: Fe(III)-EDTA
+  chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: CuSO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:636
+    label: CuSO4
+  chebi_term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '9.45'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Adjust the pH with 1M NaOH or H2SO4 to 8.0-8.4 (after autoclaving\
+  \ and mixing all solutions the pH should be 8.0-8.4)\nDispense the medium into the\
+  \ culture vessels. For small volumes serum bottles or\r\nHungate tubes may be used.\
+  \ The gas phase to liquid ratio should be about 1:10. Use a\r\ngas phase containing\
+  \ air, 10-20% methane and 5-10% CO2 and autoclave at 121C for\r\n15 minutes. When\
+  \ the growth medium is cool the NaHCO3 is added.\r\nLiquid cultures should be grown\
+  \ with shaking.\nAdd to the sterile medium per liter from a 8% filter sterilised\
+  \ stock solution:"

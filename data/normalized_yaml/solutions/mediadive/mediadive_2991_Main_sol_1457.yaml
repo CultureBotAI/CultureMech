@@ -1,0 +1,29 @@
+preferred_term: Main sol. 1457
+term:
+  id: mediadive.solution:2991
+  label: Main sol. 1457
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '19.8807'
+    unit: G_PER_L
+  notes: for solid medium
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave solution A without the vitamin solution. Autoclave solution
+  B in half full, closed bottles. Autoclave solution C. Combine the sterile solutions
+  A, B, and C after cooling. Aseptically add 1.0 ml of the vitamin solution (filter
+  sterilized) to 1 litre of the sterile medium.
+
+  Adjust to pH 9.8. The medium may be solidified by adding 20 g/l agar, but care should
+  be taken that the temperature of the solutions to be mixed are about 50°C, otherwise
+  the agar will darken and degrade.
+
+
+  Original volume: 1006 mL'

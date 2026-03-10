@@ -1,0 +1,45 @@
+preferred_term: Thioglycolate-ascorbate solution
+term:
+  id: mediadive.solution:4728
+  label: Thioglycolate-ascorbate solution
+composition:
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1644
+    label: Sodium thioglycolate
+  chebi_term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium ascorbate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1773
+    label: Sodium ascorbate
+  chebi_term:
+    id: CHEBI:113451
+    label: sodium ascorbate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare just before use. Filter-sterilize.
+
+
+  Original volume: 25 mL'

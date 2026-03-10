@@ -5,17 +5,6 @@ description: 1021. NBRC 1020.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Ethanol0.46mlYeast extract0.1gKH2PO40.14gMgCl2·6H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gSodium
-    acetate0.82gVitamin solution*2mlTrace element solution**2mlSe/W solution***1mlResazurin solution****1mlNaHCO32.5gNa2S·9H2O0.3gCysteine-HCl0.3gDistilled
-    water1LFor vial cultures, dissolve all ingredients except for ethanol, vitamin solution, Na2S·9H2O
-    and cysteine-HCl, flush N2/CO2(80/20) and autoclave.  Concentrated Na2S·9H2O and cysteine-HCl solutions
-    are sterilized separately by autoclaving under a N2atmosphere in tightly closed vessels.  Add filter-sterilized
-    0.8 M ethanol and vitamin solutions, and autoclaved Na2S·9H2O and cysteine-HCl solutions . Inoculum
-    size 10-20%.*Vitamin solutionBiotin0.5mgFolic acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic
-    acid0.2mgCa-pantothenate0.5mgVitamin B122.7mgp-Aminobenzoic acid0.3mgLipoic acid0.4mgDistilled water1L**Trace
-    element solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O24mgCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O25mgH3BO310mgNa2MoO4·2H2O24mgNiCl2·6H2O0.12gDistilled
-    water1LFirst dissolve NTA in 200 ml of water and adjust the pH to 6.5 with KOH.***Se/W solutionNa2SeO34mgNa2WO44mgDistilled
-    water1L****Resazurin solutionResazurin1gDistilled water1L
 - preferred_term: ''
   concentration:
     value: Ethanol
@@ -222,3 +211,23 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1020, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1020.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:20.215686+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Ethanol0.46mlYeast extract0.1gKH2PO40.14gMgCl2·6H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gSodium
+    acetate0.82gVitamin solution*2mlTrace element solution**2mlSe/W solution***1mlResazurin
+    solution****1mlNaHCO32.5gNa2S·9H2O0.3gCysteine-HCl0.3gDistilled water1LFor vial
+    cultures, dissolve all ingredients except for ethanol, vitamin solution, Na2S·9H2O
+    and cysteine-HCl, flush N2/CO2(80/20) and autoclave.  Concentrated Na2S·9H2O and
+    cysteine-HCl solutions are sterilized separately by autoclaving under a N2atmosphere
+    in tightly closed vessels.  Add filter-sterilized 0.8 M ethanol and vitamin solutions,
+    and autoclaved Na2S·9H2O and cysteine-HCl solutions . Inoculum size 10-20%.*Vitamin
+    solutionBiotin0.5mgFolic acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic
+    acid0.2mgCa-pantothenate0.5mgVitamin B122.7mgp-Aminobenzoic acid0.3mgLipoic acid0.4mgDistilled
+    water1L**Trace element solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O24mgCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O25mgH3BO310mgNa2MoO4·2H2O24mgNiCl2·6H2O0.12gDistilled
+    water1LFirst dissolve NTA in 200 ml of water and adjust the pH to 6.5 with KOH.***Se/W
+    solutionNa2SeO34mgNa2WO44mgDistilled water1L****Resazurin solutionResazurin1gDistilled
+    water1L
+  composition: []

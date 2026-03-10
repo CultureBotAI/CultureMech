@@ -1,0 +1,45 @@
+preferred_term: Solution G
+term:
+  id: mediadive.solution:3625
+  label: Solution G
+composition:
+- preferred_term: Ammonium acetate
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:58
+    label: Ammonium acetate
+  chebi_term:
+    id: CHEBI:142832
+    label: chlorfenac-ammonium
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Magnesium acetate
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1598
+    label: Magnesium acetate
+  chebi_term:
+    id: CHEBI:62964
+    label: magnesium acetate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave at 121°C for 15 min.
+
+
+  Original volume: 100 mL'

@@ -1,0 +1,153 @@
+preferred_term: Main sol. 380
+term:
+  id: mediadive.solution:723
+  label: Main sol. 380
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.674603'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaNO3
+  concentration:
+    value: '0.119048'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L(+)-Tartaric acid
+  concentration:
+    value: '0.367063'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:419
+    label: L(+)-Tartaric acid
+  chebi_term:
+    id: CHEBI:15671
+    label: L-tartaric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Succinic acid
+  concentration:
+    value: '0.367063'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:83
+    label: Succinic acid
+  chebi_term:
+    id: CHEBI:15741
+    label: succinic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Na-acetate
+  concentration:
+    value: '0.0496032'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:23
+    label: Na-acetate
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0992064'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '1.28968'
+    unit: G_PER_L
+  notes: for semi-solid medium; optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000496032'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na-thioglycolate
+  concentration:
+    value: '0.0496032'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:30
+    label: Na-thioglycolate
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '992.063492063492'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Dissolve ingredients (except thioglycolate and vitamins) in the
+  order given and adjust pH to 6.75 with NaOH.
+
+  Preparation of liquid medium: Sparge medium with 100% N2 gas for 30 -45 min and
+  dispense under the same gas atmosphere into anoxic Hungate-type tubes to 50% of
+  their volume. Seal vials with screw caps and gas tight butyl rubber closures. Autoclave
+  at 121°C for 15 min. Before inoculation add thioglycolate and vitamins from stock
+  solutions prepared under 100% N2 gas and filter-sterilized. Then add sterile air
+  (with hypodermic syringe through the rubber closure) to a concentration of ca. 1%
+  (v/v) O2 in the vial (e.g., add 1 ml air to a Hungate-type tube of 16 ml total volume).
+
+  Preparation of semi solid medium: Supplement medium with agar, bring medium to the
+  boil and cool under 100% N2 gas atmosphere. Dispense under same gas atmosphere aliquots
+  of 10 ml semi-solid medium into Hungate-type tubes. Prior to inoculation add thioglycolate
+  from a 0.5% (w/v) stock solution, freshly prepared under 100% N2 gas and filter-sterilized.
+  Then add sterile air (with hypodermic syringe through the rubber closure) to a concentration
+  of ca. 1% (v/v) in the vial.
+
+  Note: Prior to inoculation media should be slightly pink in color. Strongly reduced
+  conditions will not support growth of microaerophilic Magnetospirillum species.
+  Use as inoculum 10% (v/v). Incubate tubes with medium without agitation in an inclined
+  position. During growth O2 will be consumed and the pH will increase. For cultivation
+  of magnetic cells we recommend preparation of liquid medium, while semi-solid medium
+  is more suitable for demonstration of microaerophilic band formation and storage.
+
+
+  Original volume: 1008 mL'

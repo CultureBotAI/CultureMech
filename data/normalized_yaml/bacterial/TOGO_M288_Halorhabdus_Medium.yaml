@@ -101,10 +101,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Trace metal solution (see below)
-  concentration:
-    value: '2'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -222,4 +218,14 @@ curation_history:
   date: '2026-02-03T11:20:56.763783'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:05:09.725259+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Trace metal solution (see below)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L

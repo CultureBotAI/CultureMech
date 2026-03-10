@@ -1,0 +1,22 @@
+preferred_term: Main sol. 646
+term:
+  id: mediadive.solution:1373
+  label: Main sol. 646
+composition:
+- preferred_term: Blood Agar Base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2130
+    label: Blood Agar Base
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1927
+    label: Rabbit blood
+preparation_notes: Prepare Blood Agar Base from Difco 0045 according to directions
+  on the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
+  defibrinated rabbit blood or sheep blood, mix well.

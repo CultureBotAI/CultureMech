@@ -57,10 +57,6 @@ ingredients:
   concentration:
     value: '1.72911'
     unit: G_PER_L
-- preferred_term: Selenite-tungstate solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -225,10 +221,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down under a N2-CO2 (4:1,
-    v/v) gas stream. Distribute the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles)
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
-    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down
+    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
+    (e.g., 20 ml medium in 60 ml serum bottles) under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -236,3 +233,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1160'
+- timestamp: '2026-03-09T08:05:00.993535+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Selenite-tungstate solution
+  term:
+    id: mediadive.solution:5543
+    label: Selenite-tungstate solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition

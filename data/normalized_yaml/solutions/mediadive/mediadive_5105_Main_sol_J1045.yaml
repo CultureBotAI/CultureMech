@@ -1,0 +1,154 @@
+preferred_term: Main sol. J1045
+term:
+  id: mediadive.solution:5105
+  label: Main sol. J1045
+composition:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '22.9084'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaCl
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Starch
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.398406'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Glucose
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.498008'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium pyrophosphate
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1981
+    label: Sodium pyrophosphate
+  chebi_term:
+    id: CHEBI:71240
+    label: sodium diphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Arginine
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1327
+    label: L-Arginine
+  chebi_term:
+    id: CHEBI:16467
+    label: L-arginine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Hemin
+  concentration:
+    value: '0.00996016'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:704
+    label: Hemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '996.01593625498'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Dithiothreitol
+  concentration:
+    value: '3.9840637450199203'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:574
+    label: Dithiothreitol
+  chebi_term:
+    id: CHEBI:18320
+    label: 1,4-dithiothreitol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix components, adjust pH 7.2 and autoclave. Cool medium under\
+  \ a N2-CO2 (4:1, v/v) gas stream and add anaerobically the following solution (filter-sterilized).\
+  \ \nAseptically and anaerobically distribute the medium into culture vessels under\
+  \ the same gas mixture and seal with butyl rubber stoppers. Readjust pH to 7.0 -\
+  \ 7.2.\n\nOriginal volume: 1004 mL"

@@ -82,14 +82,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Trace mineral solution (see below)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: FeSO4・7H2O solution (see below)
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.03'
@@ -108,10 +100,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Trace minerals (see Medium [M142])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: H2SO4
   concentration:
     value: '100'
@@ -157,3 +145,24 @@ curation_history:
   date: '2026-02-03T11:20:46.208378'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:04:57.126372+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Trace mineral solution (see below)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: FeSO4・7H2O solution (see below)
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  composition: []
+  notes: Cross-reference to Medium M142
+  concentration:
+    value: '1'
+    unit: G_PER_L

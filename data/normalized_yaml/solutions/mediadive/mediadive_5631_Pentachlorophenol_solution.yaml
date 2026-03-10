@@ -1,0 +1,31 @@
+preferred_term: Pentachlorophenol solution
+term:
+  id: mediadive.solution:5631
+  label: Pentachlorophenol solution
+composition:
+- preferred_term: Pentachlorophenol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2115
+    label: Pentachlorophenol
+  chebi_term:
+    id: CHEBI:17642
+    label: pentachlorophenol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve 1 g pentachlorophenol in 1 litre 0.01 M NaOH and sterilize
+  by filtration.

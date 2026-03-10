@@ -1,0 +1,101 @@
+preferred_term: Main sol. J461
+term:
+  id: mediadive.solution:4208
+  label: Main sol. J461
+composition:
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:128
+    label: Ground beef
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '975.609756097561'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '24.390243902439025'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Use lean beef or horse meat. Remove fat and connective tissue\
+  \ before grinding. Mix meat, water and NaOH, then boil for 15 min with stirring.\
+  \ Cool to room temperature, skim fat off surface and filter, retaining both meat\
+  \ particles and filtrate. Add water to the filtrate to a final volume of 1.0 L and\
+  \ then add the following: \nBoil, cool, add 0.5 g L-cysteine x HCl x H2O and adjust\
+  \ pH to 7.0. Dispense 7 ml into tubes containing meat particles (use 1 part meat\
+  \ particles to 4 or 5 parts fluid) under a N2 atmosphere and seal with butyl rubber\
+  \ stoppers. Autoclave at 121C for 30 min. For agar slants, use 15 g agar per 1.0\
+  \ L medium. Alternatively, commercially available Cooked Meat Medium may be used\
+  \ (Oxoid CM81; Merck 10928; Difco 0267-01-7). The medium should be supplemented\
+  \ with 5 g/L yeast extract, 5 g/L K2HPO4, 1 mg/L resazurin, and 0.5 g/L L-cysteine\
+  \ x HCl x H2O.\n\nOriginal volume: 1025 mL"

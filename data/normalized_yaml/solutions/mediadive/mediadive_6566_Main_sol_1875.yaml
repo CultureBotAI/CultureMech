@@ -1,0 +1,95 @@
+preferred_term: Main sol. 1875
+term:
+  id: mediadive.solution:6566
+  label: Main sol. 1875
+composition:
+- preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:766
+    label: MES [2-(N-morpholino) ethane sulfonic acid]
+  chebi_term:
+    id: CHEBI:85248
+    label: gellan gum
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Starch
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:199
+    label: Starch
+  chebi_term:
+    id: CHEBI:28017
+    label: starch
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D(+)-Glucose
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:94
+    label: D(+)-Glucose
+  chebi_term:
+    id: CHEBI:17634
+    label: D-fructose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glycerol
+  concentration:
+    value: '0.7'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '940'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to 7.2.
+
+  Agar und die restlichen Bestandteile getrennt autoklavieren (20 g Agar in 500 ml
+  dest. H2O + Rest der Zutaten in 440 ml dest. H2O)
+
+  Vitaminlösung erst nach dem Autoklavieren dazugeben'

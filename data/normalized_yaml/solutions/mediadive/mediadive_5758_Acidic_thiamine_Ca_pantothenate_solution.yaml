@@ -1,0 +1,42 @@
+preferred_term: Acidic thiamine / Ca pantothenate solution
+term:
+  id: mediadive.solution:5758
+  label: Acidic thiamine / Ca pantothenate solution
+composition:
+- preferred_term: Thiamine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:666
+    label: Thiamine
+  chebi_term:
+    id: CHEBI:26948
+    label: thiamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:518
+    label: Calcium pantothenate
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

@@ -1,0 +1,77 @@
+preferred_term: Sugar mix
+term:
+  id: mediadive.solution:1728
+  label: Sugar mix
+composition:
+- preferred_term: Cellobiose
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sucrose
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:108
+    label: Sucrose
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Maltose x H2O
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:776
+    label: Maltose x H2O
+  chebi_term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Trehalose
+  concentration:
+    value: '63.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:777
+    label: Trehalose
+  chebi_term:
+    id: CHEBI:16551
+    label: D-trehalose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Xylose
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:422
+    label: D-Xylose
+  chebi_term:
+    id: CHEBI:18222
+    label: xylose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

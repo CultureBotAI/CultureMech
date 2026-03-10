@@ -1,0 +1,45 @@
+preferred_term: Vitamine mixture
+term:
+  id: mediadive.solution:5497
+  label: Vitamine mixture
+composition:
+- preferred_term: D-Biotin
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:879
+    label: D-Biotin
+  chebi_term:
+    id: CHEBI:15956
+    label: biotin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1512
+    label: Calcium D-(+)-pantothenate
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Pyridoxine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:637
+    label: Pyridoxine
+  chebi_term:
+    id: CHEBI:16709
+    label: pyridoxine
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'steril filtration, store aliquots at -20°C
+
+
+  Original volume: 500 mL'

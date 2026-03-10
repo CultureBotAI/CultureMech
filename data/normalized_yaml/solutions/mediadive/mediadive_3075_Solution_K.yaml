@@ -1,0 +1,33 @@
+preferred_term: Solution K
+term:
+  id: mediadive.solution:3075
+  label: Solution K
+composition:
+- preferred_term: Hemin
+  concentration:
+    value: '0.13038'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:704
+    label: Hemin
+  chebi_term:
+    id: CHEBI:50385
+    label: hemin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '0.39997'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Hemin (0.2 mM) in NaOH (10 mM)
+
+
+  Original volume: 1 mL'

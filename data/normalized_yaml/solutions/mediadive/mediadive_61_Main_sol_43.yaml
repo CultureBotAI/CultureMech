@@ -1,0 +1,17 @@
+preferred_term: Main sol. 43
+term:
+  id: mediadive.solution:61
+  label: Main sol. 43
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match

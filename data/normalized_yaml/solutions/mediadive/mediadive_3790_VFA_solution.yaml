@@ -1,0 +1,71 @@
+preferred_term: VFA solution
+term:
+  id: mediadive.solution:3790
+  label: VFA solution
+composition:
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '4.901960784313726'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2-Methylbutyric acid
+  concentration:
+    value: '4.901960784313726'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:480
+    label: 2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '4.901960784313726'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:225
+    label: Isovaleric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Valeric acid
+  concentration:
+    value: '4.901960784313726'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:224
+    label: Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '980.3921568627452'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Add volatile fatty acids to about 70-80 ml of NaOH solution and
+  mix. Add NaOH solution to bring final volume to 100 ml. If not used the same day,
+  filter-sterilize and store at 4C.
+
+
+  Original volume: 102 mL'

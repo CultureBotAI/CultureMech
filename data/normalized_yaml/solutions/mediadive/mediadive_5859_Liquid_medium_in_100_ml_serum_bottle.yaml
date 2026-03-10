@@ -1,0 +1,72 @@
+preferred_term: Liquid medium (in 100 ml serum bottle)
+term:
+  id: mediadive.solution:5859
+  label: Liquid medium (in 100 ml serum bottle)
+composition:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:99
+    label: Trypticase soy broth
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Bovine serum
+  concentration:
+    value: '70.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2098
+    label: Bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Air
+  concentration:
+    value: '500.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2190
+    label: Air
+  chebi_term:
+    id: CHEBI:138560
+    label: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2
+  gas mixture in 100 ml serum bottles (10 ml per bottle).
+
+  After autoclaving and cooling add per bottle:
+
+
+  Original volume: 10 mL'

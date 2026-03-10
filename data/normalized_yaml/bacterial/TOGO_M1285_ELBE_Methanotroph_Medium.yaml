@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '992'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,17 +17,20 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.93'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: KCl
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -34,7 +38,8 @@ ingredients:
   concentration:
     value: '0.17'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:63005
     label: ''
@@ -43,22 +48,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Solution'
-- preferred_term: Phosphate buffer (see Medium [M560])
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium [M560])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: methane
   notes: 'Properties: Gas'
   concentration:
@@ -89,3 +78,32 @@ curation_history:
   date: '2026-02-03T11:20:46.975950'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: methane'
+- timestamp: '2026-03-09T08:04:13.080140+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: Phosphate buffer (see Medium [M560])
+  composition: []
+  notes: Cross-reference to Medium M560
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: FeCl2 solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  composition: []
+  notes: Cross-reference to Medium M180
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M560])
+  composition: []
+  notes: Cross-reference to Medium M560
+  concentration:
+    value: '1'
+    unit: G_PER_L

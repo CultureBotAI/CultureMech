@@ -1,0 +1,40 @@
+preferred_term: Amorphous Fe(OH)3
+term:
+  id: mediadive.solution:2411
+  label: Amorphous Fe(OH)3
+composition:
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '800.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:82
+    label: FeCl3 x 6 H2O
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaOH
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: adjust if required
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00
+  g/l) with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total
+  amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored
+  at room temperature overnight with surface covered with water. Thereafter, centrifuge
+  at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled
+  water. Resuspend the pellet in medium as described above. For storage autoclave
+  under 100% N2 atmosphere.
+
+
+  Original volume: 400 mL'

@@ -1,0 +1,59 @@
+preferred_term: Mail sol. C38
+term:
+  id: mediadive.solution:6164
+  label: Mail sol. C38
+composition:
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:187
+    label: NaNO3
+  chebi_term:
+    id: CHEBI:65327
+    label: D-xylose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaH2PO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:678
+    label: NaH2PO4 x 2 H2O
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2SiO3 x 9 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:903
+    label: Na2SiO3 x 9 H2O
+  chebi_term:
+    id: CHEBI:132108
+    label: sodium silicate nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Add while stirring:\nSilicate can react with glass, ensure this\
+  \ stock solution is stored in plastic\r\nbottles.\nMake up to 1 litre with filtered\
+  \ natural seawater. Adjust pH to 8.0 with 1M NaOH or\r\nHCl. Sterilise by autoclaving\
+  \ for 15 minutes at 15 psi and use when cooled to room\r\ntemperature.\nFor heterotrophic\
+  \ growth (in the dark) add either  0.5 g/l yeast extract and 5 g/l glucose or 0.5\
+  \ g/l yeast extract and 3 g/l sodium acetate."

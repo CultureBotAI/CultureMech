@@ -1,0 +1,49 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4351
+  label: Solution B
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '66.6667'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare the medium anaerobically under a N2 atmosphere.
+
+  To complete the medium, combine Solutions A and B under a N2 atmosphere. Prior to
+  inoculation, add 0.5 g/L (final) L-cysteine x HCl x H2O and 0.4 g/L (final) Na2S
+  x 9H2O from anaerobic and sterile stock solutions (5.0%).
+
+
+  Original volume: 300 mL'

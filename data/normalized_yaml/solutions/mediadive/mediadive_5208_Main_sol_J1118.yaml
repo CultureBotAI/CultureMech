@@ -1,0 +1,81 @@
+preferred_term: Main sol. J1118
+term:
+  id: mediadive.solution:5208
+  label: Main sol. J1118
+composition:
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.0976562'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:178
+    label: NH4NO3
+  chebi_term:
+    id: CHEBI:63038
+    label: ammonium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.00976562'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fe(III)-EDTA
+  concentration:
+    value: '0.00244141'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:952
+    label: Fe(III)-EDTA
+  chebi_term:
+    id: CHEBI:30729
+    label: ethylenediaminetetraacetatoferrate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: PIPES
+  concentration:
+    value: '14.6973'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:398
+    label: PIPES
+  chebi_term:
+    id: CHEBI:39033
+    label: PIPES
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '9.765625'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S2O3
+  concentration:
+    value: '9.765625'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:552
+    label: Na2S2O3
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components, adjust pH to 6.5 with NaOH, then distribute the\
+  \ medium into culture vessels (e.g., 50 ml per 120 ml serum bottles), seal with\
+  \ butyl rubber stoppers and autoclave at 110C for 5 min. After cooling, add per\
+  \ liter the following solutions (filter-sterilized): \n\nOriginal volume: 1024 mL"

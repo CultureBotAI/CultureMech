@@ -1,0 +1,30 @@
+preferred_term: Naphthalene solution
+term:
+  id: mediadive.solution:5261
+  label: Naphthalene solution
+composition:
+- preferred_term: Naphthalene
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:432
+    label: Naphthalene
+  chebi_term:
+    id: CHEBI:16482
+    label: naphthalene
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2,2,4,4,6,8,8-Heptamethylnonane
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:303
+    label: 2,2,4,4,6,8,8-Heptamethylnonane
+  chebi_term:
+    id: CHEBI:131383
+    label: 2,2,4,4,6,8,8-heptamethylnonane
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 100 mL'

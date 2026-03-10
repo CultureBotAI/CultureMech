@@ -1,0 +1,47 @@
+preferred_term: Solution C
+term:
+  id: mediadive.solution:1151
+  label: Solution C
+composition:
+- preferred_term: Stearic acid
+  concentration:
+    value: '32.7273'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:534
+    label: Stearic acid
+  chebi_term:
+    id: CHEBI:168383
+    label: Stearic acid(d3)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '57.27272727272727'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '909.090909090909'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Heat the suspension in a closed bottle (with 100% N2 gas atmosphere
+  in head space) in a boiling water bath. Shake until stearate has dissolved, then
+  autoclave. Stored stearate solution has to be remelted before use.
+
+
+  Original volume: 11 mL'

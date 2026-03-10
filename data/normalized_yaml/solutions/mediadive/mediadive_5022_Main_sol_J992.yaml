@@ -1,0 +1,83 @@
+preferred_term: Main sol. J992
+term:
+  id: mediadive.solution:5022
+  label: Main sol. J992
+composition:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.197824'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:8
+    label: MgSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KNO3
+  concentration:
+    value: '0.197824'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0296736'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '979.2284866468843'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4.945598417408506'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '4.945598417408506'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly. For preparation of agar medium, add\
+  \ 15.0 g/L agar. Autoclave and, after cooling to 60C, add the following solutions\
+  \ (filter-sterilized): \npH of the medium should be around 6.8. Cultivate under\
+  \ an air containing methane in gastight flasks or jars leaving &;80% gas phase by\
+  \ volume (20% methane for liquid cultures; 50% methane for agar plate cultures).\n\
+  \nOriginal volume: 1011 mL"

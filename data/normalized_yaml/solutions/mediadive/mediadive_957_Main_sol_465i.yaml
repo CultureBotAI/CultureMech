@@ -1,0 +1,23 @@
+preferred_term: Main sol. 465i
+term:
+  id: mediadive.solution:957
+  label: Main sol. 465i
+composition:
+- preferred_term: 2-chloro-4(ethylamino)-6-(isopropylamino)-1,3,5-triazine
+  concentration:
+    value: '100'
+    unit: MG_PER_L
+  notes: adjust if required
+  term:
+    id: mediadive.compound:2120
+    label: 2-chloro-4(ethylamino)-6-(isopropylamino)-1,3,5-triazine
+  chebi_term:
+    id: CHEBI:15930
+    label: atrazine
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Suspend atrazine (2-chloro-4(ethylamino)-6-(isopropylamino)-1,3,5-triazine)
+  in methanol (10 mg/ml). Shortly sonicate to reduce particle size. Add stock suspension
+  to medium 465 without nitrogen source (omit ammonium sulphate and calcium nitrate),
+  replace calcium nitrate by calcium chloride) but with 1 g/l glucose as the carbon
+  source. Final concentration of atrazine is 50-100 mg/l.

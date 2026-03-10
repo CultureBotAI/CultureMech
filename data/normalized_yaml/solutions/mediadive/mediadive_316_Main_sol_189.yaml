@@ -1,0 +1,43 @@
+preferred_term: Main sol. 189
+term:
+  id: mediadive.solution:316
+  label: Main sol. 189
+composition:
+- preferred_term: Oat flakes
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:292
+    label: Oat flakes
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil oat flakes in water for 10 min; fill up to 1 l and add agar.
+  Autoclave 20 min at 121°C. Shake before pouring. pH 6.0.

@@ -1,0 +1,42 @@
+preferred_term: Main sol. J1314
+term:
+  id: mediadive.solution:5474
+  label: Main sol. J1314
+composition:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1620
+    label: GAM broth
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.0.

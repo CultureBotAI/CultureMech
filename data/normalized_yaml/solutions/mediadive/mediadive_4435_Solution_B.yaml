@@ -1,0 +1,35 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:4435
+  label: Solution B
+composition:
+- preferred_term: Agar
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'After autoclaving Solutions A and B separately and cooling to
+  50C, aseptically mix both solutions and dispense into sterile test tubes or petri
+  dishes.
+
+
+  Original volume: 500 mL'

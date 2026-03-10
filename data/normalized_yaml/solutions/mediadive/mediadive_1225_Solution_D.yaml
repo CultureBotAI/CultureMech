@@ -1,0 +1,19 @@
+preferred_term: Solution D
+term:
+  id: mediadive.solution:1225
+  label: Solution D
+composition:
+- preferred_term: Na-thiosulfate
+  concentration:
+    value: '1667'
+    unit: G_PER_L
+  notes: 5% w/v solution
+  term:
+    id: mediadive.compound:572
+    label: Na-thiosulfate
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 2 mL'

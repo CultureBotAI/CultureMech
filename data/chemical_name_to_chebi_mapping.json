@@ -1,0 +1,645 @@
+{
+  "Ascorbic acid": [
+    "CHEBI:22652"
+  ],
+  "D-Glucose": [
+    "CHEBI:42758"
+  ],
+  "Vitamin B12": [
+    "CHEBI:176843"
+  ],
+  "D-(+)-biotin": [
+    "CHEBI:15956"
+  ],
+  "Nicotinic acid": [
+    "CHEBI:15940"
+  ],
+  "Calcium pantothenate": [
+    "CHEBI:31345"
+  ],
+  "Pyridoxine hydrochloride": [
+    "CHEBI:30961"
+  ],
+  "Choline chloride": [
+    "CHEBI:133341"
+  ],
+  "Glucose": [
+    "CHEBI:42758"
+  ],
+  "Agar": [
+    "CHEBI:2509"
+  ],
+  "Sulfur": [
+    "CHEBI:26833"
+  ],
+  "Cellobiose": [
+    "CHEBI:17057"
+  ],
+  "Riboflavin": [
+    "CHEBI:17015"
+  ],
+  "Nicotinamide": [
+    "CHEBI:17154"
+  ],
+  "Biotin": [
+    "CHEBI:15956"
+  ],
+  "Folic acid": [
+    "CHEBI:27470"
+  ],
+  "1,4-Naphthoquinone": [
+    "CHEBI:27418"
+  ],
+  "Nitrilotriacetic acid": [
+    "CHEBI:44557"
+  ],
+  "Sodium succinate": [
+    "CHEBI:63675"
+  ],
+  "Glycerol": [
+    "CHEBI:15978",
+    "CHEBI:75456"
+  ],
+  "Tween 80": [
+    "CHEBI:53426"
+  ],
+  "EDTA": [
+    "CHEBI:64755",
+    "CHEBI:64734"
+  ],
+  "Ferric ammonium citrate": [
+    "CHEBI:31604"
+  ],
+  "Myo-inositol": [
+    "CHEBI:17268"
+  ],
+  "Maltose": [
+    "CHEBI:18167"
+  ],
+  "Resazurin": [
+    "CHEBI:8806"
+  ],
+  "Methanol": [
+    "CHEBI:17790"
+  ],
+  "Succinate": [
+    "CHEBI:26806"
+  ],
+  "Sucrose": [
+    "CHEBI:17992"
+  ],
+  "ACES": [
+    "CHEBI:39061"
+  ],
+  "Ethanol": [
+    "CHEBI:17790",
+    "CHEBI:16236"
+  ],
+  "D-Galactose": [
+    "CHEBI:12936"
+  ],
+  "PIPES": [
+    "CHEBI:39033"
+  ],
+  "Heptadecane": [
+    "CHEBI:16148"
+  ],
+  "Tris HCl": [
+    "CHEBI:1185531"
+  ],
+  "L-Histidine": [
+    "CHEBI:15971"
+  ],
+  "L-Serine": [
+    "CHEBI:17115"
+  ],
+  "L-Glutamine": [
+    "CHEBI:18050"
+  ],
+  "Pantothenic acid": [
+    "CHEBI:7916"
+  ],
+  "Lipoic acid": [
+    "CHEBI:16494"
+  ],
+  "Na-butyrate": [
+    "CHEBI:17968"
+  ],
+  "D-Fructose": [
+    "CHEBI:48095"
+  ],
+  "Inositol": [
+    "CHEBI:24848"
+  ],
+  "D-Calcium pantothenate": [
+    "CHEBI:31345"
+  ],
+  "D-Sorbitol": [
+    "CHEBI:17924"
+  ],
+  "Acetic acid": [
+    "CHEBI:15366"
+  ],
+  "Sodium carbonate": [
+    "CHEBI:29377"
+  ],
+  "Glycine": [
+    "CHEBI:57305"
+  ],
+  "Sodium citrate": [
+    "CHEBI:32142"
+  ],
+  "L-Glutamic acid": [
+    "CHEBI:16015"
+  ],
+  "Pyridoxine": [
+    "CHEBI:16709"
+  ],
+  "Pyruvate": [
+    "CHEBI:15361"
+  ],
+  "Malic acid": [
+    "CHEBI:6650"
+  ],
+  "Succinic acid": [
+    "CHEBI:15741"
+  ],
+  "Dextrin": [
+    "CHEBI:28675"
+  ],
+  "Lactose": [
+    "CHEBI:36218"
+  ],
+  "Tris": [
+    "CHEBI:9754"
+  ],
+  "Indigocarmine": [
+    "CHEBI:31695"
+  ],
+  "Disodium succinate": [
+    "CHEBI:63675"
+  ],
+  "Distilled water": [
+    "CHEBI:15377"
+  ],
+  "L-Threonine": [
+    "CHEBI:16857"
+  ],
+  "Corn starch": [
+    "CHEBI:28017"
+  ],
+  "Thiamine": [
+    "CHEBI:26948"
+  ],
+  "Soytone": [
+    "CHEBI:8150"
+  ],
+  "L-Cysteine": [
+    "CHEBI:17561"
+  ],
+  "Na-propionate": [
+    "CHEBI:17272"
+  ],
+  "Hexadecane": [
+    "CHEBI:45296"
+  ],
+  "Tetrachloroethene": [
+    "CHEBI:17300"
+  ],
+  "HEPES": [
+    "CHEBI:46756"
+  ],
+  "MOPS": [
+    "CHEBI:39074"
+  ],
+  "Isobutyric acid": [
+    "CHEBI:16135"
+  ],
+  "L-Ascorbic acid": [
+    "CHEBI:29073"
+  ],
+  "Hemin": [
+    "CHEBI:50385"
+  ],
+  "Sodium acetate": [
+    "CHEBI:32954"
+  ],
+  "D-Xylose": [
+    "CHEBI:65327"
+  ],
+  "Tris-HCl": [
+    "CHEBI:1185531"
+  ],
+  "HCl": [
+    "CHEBI:1185531"
+  ],
+  "DL-mevalonic acid": [
+    "CHEBI:25351"
+  ],
+  "Sodium pyruvate": [
+    "CHEBI:50144"
+  ],
+  "Glutathione": [
+    "CHEBI:16856"
+  ],
+  "Creatine": [
+    "CHEBI:16919"
+  ],
+  "Valeric acid": [
+    "CHEBI:17418"
+  ],
+  "2-Methylbutyric acid": [
+    "CHEBI:37070"
+  ],
+  "Mannitol": [
+    "CHEBI:29864"
+  ],
+  "Coenzyme A": [
+    "CHEBI:15346"
+  ],
+  "FAD": [
+    "CHEBI:16238"
+  ],
+  "Ammonium Sulfate": [
+    "CHEBI:62946"
+  ],
+  "Magnesium sulfate": [
+    "CHEBI:32599"
+  ],
+  "Calcium Chloride": [
+    "CHEBI:86158"
+  ],
+  "Zinc Sulfate": [
+    "CHEBI:35176"
+  ],
+  "Crotonic acid": [
+    "CHEBI:41131"
+  ],
+  "trans-Cinnamic acid": [
+    "CHEBI:35697"
+  ],
+  "Na-crotonate": [
+    "CHEBI:35899"
+  ],
+  "Na2SiO3": [
+    "CHEBI:1344098"
+  ],
+  "MES": [
+    "CHEBI:39010"
+  ],
+  "L-Asparagine": [
+    "CHEBI:17196"
+  ],
+  "Isovaleric acid": [
+    "CHEBI:28484"
+  ],
+  "Nicotinate": [
+    "CHEBI:10716816"
+  ],
+  "Histidine": [
+    "CHEBI:27570"
+  ],
+  "Agarose": [
+    "CHEBI:2511"
+  ],
+  "Methylamine": [
+    "CHEBI:16830"
+  ],
+  "D-Biotin": [
+    "CHEBI:15956"
+  ],
+  "DL-Malic acid": [
+    "CHEBI:6650"
+  ],
+  "NTA": [
+    "CHEBI:31440"
+  ],
+  "DL-Histidine": [
+    "CHEBI:27570"
+  ],
+  "Charcoal-filtered, natural seawater": [
+    "CHEBI:15377"
+  ],
+  "Xylan": [
+    "CHEBI:37166"
+  ],
+  "Diammonium Citrate": [
+    "CHEBI:63076"
+  ],
+  "N-Acetylglucosamine": [
+    "CHEBI:59640"
+  ],
+  "Dextran": [
+    "CHEBI:52071"
+  ],
+  "n-Decane": [
+    "CHEBI:41808"
+  ],
+  "Urea": [
+    "CHEBI:16199"
+  ],
+  "Fish-Sperm DNA": [
+    "CHEBI:16991"
+  ],
+  "D-Mannitol": [
+    "CHEBI:16899"
+  ],
+  "MnCl2": [
+    "CHEBI:7773015"
+  ],
+  "Carboxymethyl cellulose": [
+    "CHEBI:85146"
+  ],
+  "Sodium gluconate": [
+    "CHEBI:84997"
+  ],
+  "Na-ampicillin": [
+    "CHEBI:28971"
+  ],
+  "Glutamic acid": [
+    "CHEBI:18237"
+  ],
+  "Disodium fumarate": [
+    "CHEBI:115156"
+  ],
+  "Na gluconate": [
+    "CHEBI:24265"
+  ],
+  "Sorbitol": [
+    "CHEBI:30911"
+  ],
+  "Trimethylammonium chloride": [
+    "CHEBI:31206"
+  ],
+  "Propionic acid": [
+    "CHEBI:30768"
+  ],
+  "n-Butyric acid": [
+    "CHEBI:30772"
+  ],
+  "n-Valeric acid": [
+    "CHEBI:17418"
+  ],
+  "Ammonium acetate": [
+    "CHEBI:62947"
+  ],
+  "L-Tryptophan": [
+    "CHEBI:16828"
+  ],
+  "L-Proline": [
+    "CHEBI:17203"
+  ],
+  "Toluene": [
+    "CHEBI:17578"
+  ],
+  "Fumaric acid": [
+    "CHEBI:18012"
+  ],
+  "DL-Methionine": [
+    "CHEBI:16811"
+  ],
+  "L-Cystine": [
+    "CHEBI:16283"
+  ],
+  "L-Alanine": [
+    "CHEBI:16977"
+  ],
+  "Methylamine hydrochloride": [
+    "CHEBI:59337"
+  ],
+  "Sodium formate": [
+    "CHEBI:62965"
+  ],
+  "Pyridoxamine Dihydrochloride": [
+    "CHEBI:131532"
+  ],
+  "Malate": [
+    "CHEBI:25115"
+  ],
+  "Biotine": [
+    "CHEBI:15956"
+  ],
+  "Ammonium Molybdate": [
+    "CHEBI:91249"
+  ],
+  "Betaine": [
+    "CHEBI:17750"
+  ],
+  "Sodium acetate trihydrate": [
+    "CHEBI:32138"
+  ],
+  "L-Arginine": [
+    "CHEBI:16467"
+  ],
+  "L-Aspartic acid": [
+    "CHEBI:17053"
+  ],
+  "L-Isoleucine": [
+    "CHEBI:17191"
+  ],
+  "L-Leucine": [
+    "CHEBI:15603"
+  ],
+  "L-Methionine": [
+    "CHEBI:16643"
+  ],
+  "L-Phenylalanine": [
+    "CHEBI:17295"
+  ],
+  "L-Tyrosine": [
+    "CHEBI:17895"
+  ],
+  "L-Valine": [
+    "CHEBI:16414"
+  ],
+  "Citric acid": [
+    "CHEBI:53258"
+  ],
+  "D": [
+    "CHEBI:32588"
+  ],
+  "Uracil": [
+    "CHEBI:17568"
+  ],
+  "L-Fucose": [
+    "CHEBI:18287"
+  ],
+  "Casein": [
+    "CHEBI:3448"
+  ],
+  "Sodium lactate": [
+    "CHEBI:75228"
+  ],
+  "Ammonium chloride": [
+    "CHEBI:31206"
+  ],
+  "Bacto Soytone": [
+    "CHEBI:8150"
+  ],
+  "TES": [
+    "CHEBI:39035"
+  ],
+  "iso-Butyric acid": [
+    "CHEBI:16135"
+  ],
+  "iso-Valeric acid": [
+    "CHEBI:503742",
+    "CHEBI:17418"
+  ],
+  "DL-Malate": [
+    "CHEBI:15589"
+  ],
+  "DL-Calcium pantothenate": [
+    "CHEBI:31345"
+  ],
+  "Calcium chloride dihydrate": [
+    "CHEBI:86158"
+  ],
+  "L-Asparagin": [
+    "CHEBI:17196"
+  ],
+  "Magnesium acetate": [
+    "CHEBI:62964"
+  ],
+  "Xylose": [
+    "CHEBI:18222"
+  ],
+  "Sodium benzoate": [
+    "CHEBI:113455"
+  ],
+  "Raffinose": [
+    "CHEBI:16634"
+  ],
+  "Galactose": [
+    "CHEBI:28260"
+  ],
+  "Sodium maleate": [
+    "CHEBI:91263"
+  ],
+  "Sodium thioglycolate": [
+    "CHEBI:86481"
+  ],
+  "Tetramethyl ammonium": [
+    "CHEBI:46020"
+  ],
+  "Tween 60": [
+    "CHEBI:53425"
+  ],
+  "Thioglycolate": [
+    "CHEBI:47869"
+  ],
+  "N-Acetyl-D-glucosamine": [
+    "CHEBI:8006"
+  ],
+  "Gelatin": [
+    "CHEBI:5291"
+  ],
+  "Sodium dithionite": [
+    "CHEBI:66870"
+  ],
+  "Monosodium glutamate": [
+    "CHEBI:64220"
+  ],
+  "Sodium L-lactate": [
+    "CHEBI:232798"
+  ],
+  "Sodium silicate": [
+    "CHEBI:60720"
+  ],
+  "Tris base": [
+    "CHEBI:9754"
+  ],
+  "Sodium tartrate": [
+    "CHEBI:63017"
+  ],
+  "Coenzyme M": [
+    "CHEBI:17905"
+  ],
+  "Hemin chloride": [
+    "CHEBI:50385"
+  ],
+  "Triethanolamine": [
+    "CHEBI:28621"
+  ],
+  "L-Sodium lactate": [
+    "CHEBI:867561"
+  ],
+  "Sodium butyrate": [
+    "CHEBI:64103"
+  ],
+  "Sodium fumarate": [
+    "CHEBI:115156"
+  ],
+  "Quinic acid": [
+    "CHEBI:26493"
+  ],
+  "Sodium ascorbate": [
+    "CHEBI:113451"
+  ],
+  "Butyric acid": [
+    "CHEBI:30772"
+  ],
+  "Decane": [
+    "CHEBI:41808"
+  ],
+  "Chalcopyrite": [
+    "CHEBI:86202"
+  ],
+  "Sodium palmitate": [
+    "CHEBI:234557"
+  ],
+  "Dimethyl sulfoxide": [
+    "CHEBI:28262"
+  ],
+  "Tween 20": [
+    "CHEBI:9784"
+  ],
+  "Pyridoxamine": [
+    "CHEBI:16410"
+  ],
+  "Melibiose": [
+    "CHEBI:28053"
+  ],
+  "Sodium nitrate": [
+    "CHEBI:63005"
+  ],
+  "Potassium acetate": [
+    "CHEBI:32029"
+  ],
+  "Pullulan": [
+    "CHEBI:27941"
+  ],
+  "L-Lysine": [
+    "CHEBI:18019"
+  ],
+  "Phenyl acetic acid": [
+    "CHEBI:30745"
+  ],
+  "Phenyl propionic acid": [
+    "CHEBI:501520"
+  ],
+  "4-Hydroxyphenyl acetic acid": [
+    "CHEBI:18101"
+  ],
+  "2-Oxoglutarate": [
+    "CHEBI:16810"
+  ],
+  "Sodium octanoate": [
+    "CHEBI:132100"
+  ],
+  "Methylene blue": [
+    "CHEBI:6872"
+  ],
+  "Pyrocatechol": [
+    "CHEBI:18135"
+  ],
+  "Disodium oxalate": [
+    "CHEBI:132764"
+  ],
+  "Ferrihydrite": [
+    "CHEBI:192761"
+  ],
+  "Na-3-hydroxybutyrate": [
+    "CHEBI:37054"
+  ]
+}

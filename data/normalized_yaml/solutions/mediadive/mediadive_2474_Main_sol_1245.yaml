@@ -1,0 +1,223 @@
+preferred_term: Main sol. 1245
+term:
+  id: mediadive.solution:2474
+  label: Main sol. 1245
+composition:
+- preferred_term: Proteose peptone no. 2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:458
+    label: Proteose peptone no. 2
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1104
+    label: Heart Infusion Broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Potassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: dibasic
+  term:
+    id: mediadive.compound:928
+    label: Potassium Phosphate
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1105
+    label: Sodium Chloride
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:793
+    label: Magnesium sulfate
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Acetic acid
+  concentration:
+    value: '1.6'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:380
+    label: Acetic acid
+  chebi_term:
+    id: CHEBI:15611
+    label: sarcosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Propionic acid
+  concentration:
+    value: '0.6'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:381
+    label: Propionic acid
+  chebi_term:
+    id: CHEBI:30768
+    label: propionic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: n-Butyric acid
+  concentration:
+    value: '0.4'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:376
+    label: n-Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '0.1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '0.1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:225
+    label: Isovaleric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '0.1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: 2-Methylbutyric acid
+  concentration:
+    value: '0.1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:480
+    label: 2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Vitamin K1
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:150
+    label: Vitamin K1
+  chebi_term:
+    id: CHEBI:18067
+    label: phylloquinone
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  notes: inactivated
+  term:
+    id: mediadive.compound:954
+    label: Fetal bovine serum
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)\n\
+  The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME ENRICHMENT\
+  \ BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment Broth (OTEB)\
+  \ 10 tubes / pkg\nIntended Use: OTEB is an enriched medium for the isolation, cultivation\
+  \ and maintenance of Treponemes found as part of the oral flora.\nOTEB is a complex\
+  \ peptone-yeast extract medium containing volatile fatty acids and serum for a source\
+  \ of long chain fatty acids. Volatile fatty acids and serum are necessary nutrients\
+  \ for recovery of Treponemes from the oral flora. Inoculation of the medium can\
+  \ be done using a gassing cannula or inside an anaerobic chamber. This medium is\
+  \ prepared, stored and dispensed under oxygen-free conditions to prevent the formation\
+  \ of oxidized products prior to use.\nFinal pH 7.0 +/- 0.2 at 25 degrees C.\nFinal\
+  \ volume 7.0 ml +/- 0.7."

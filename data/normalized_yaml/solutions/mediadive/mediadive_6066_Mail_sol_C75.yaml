@@ -1,0 +1,13 @@
+preferred_term: Mail sol. C75
+term:
+  id: mediadive.solution:6066
+  label: Mail sol. C75
+composition:
+- preferred_term: Complan
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2363
+    label: Complan
+preparation_notes: Autoclave at 15 psi for 15 minutes.

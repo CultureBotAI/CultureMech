@@ -126,19 +126,6 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Vitamin solution*
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Trace elements solution**
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Na2CO3 solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
   concentration:
@@ -367,4 +354,31 @@ curation_history:
   notes: 'Added default concentration for ingredient: Na2CO3 solution; Added default
     concentration for ingredient: Carbon dioxide gas; Added default concentration
     for ingredient: Nitrogen gas; Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:05:10.245170+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Vitamin solution*
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition
+- preferred_term: Trace elements solution**
+  term:
+    id: mediadive.solution:6129
+    label: Trace elements solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6129_Trace_elements_solution.yaml for composition
+- preferred_term: Na2CO3 solution
+  composition: []
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'

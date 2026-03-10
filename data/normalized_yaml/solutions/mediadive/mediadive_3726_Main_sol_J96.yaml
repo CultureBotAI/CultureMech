@@ -1,0 +1,83 @@
+preferred_term: Main sol. J96
+term:
+  id: mediadive.solution:3726
+  label: Main sol. J96
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '15.2284'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.03046'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '3.04569'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Acetic acid
+  concentration:
+    value: '65.98984771573603'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:380
+    label: Acetic acid
+  chebi_term:
+    id: CHEBI:15611
+    label: sarcosine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Ethanol
+  concentration:
+    value: '20.304568527918782'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:201
+    label: Ethanol
+  chebi_term:
+    id: CHEBI:16236
+    label: ethanol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '913.7055837563452'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix ingredients, except acetic acid and ethanol, and autoclave.
+  Aseptically add acetic acid and ethanol to the medium. Unadjusted pH will be about
+  2.9.
+
+
+  Original volume: 985 mL'

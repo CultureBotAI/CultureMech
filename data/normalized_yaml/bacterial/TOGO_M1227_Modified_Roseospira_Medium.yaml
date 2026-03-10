@@ -9,16 +9,12 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: vitamin B12 solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Solution, Organic compound'
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -26,7 +22,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
@@ -36,7 +33,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -44,12 +42,14 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -57,7 +57,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -65,14 +66,11 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
-- preferred_term: Micronutrient solution (SL7) (see Medium [M572])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -82,7 +80,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: Na2S・9H2O
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'
   concentration:
     value: variable
     unit: VARIABLE
@@ -118,5 +117,24 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.650454'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaHCO3; Added default concentration for ingredient:
-    Na2S・9H2O; Added default concentration for ingredient: Na2S2O3'
+  notes: 'Added default concentration for ingredient: NaHCO3; Added default concentration
+    for ingredient: Na2S・9H2O; Added default concentration for ingredient: Na2S2O3'
+- timestamp: '2026-03-09T08:04:25.365221+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: vitamin B12 solution
+  term:
+    id: mediadive.solution:6105
+    label: Vitamin B12 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+- preferred_term: Micronutrient solution (SL7) (see Medium [M572])
+  composition: []
+  notes: Cross-reference to Medium M572
+  concentration:
+    value: '1'
+    unit: G_PER_L

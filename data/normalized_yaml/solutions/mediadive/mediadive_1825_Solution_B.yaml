@@ -1,0 +1,33 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1825
+  label: Solution B
+composition:
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:12
+    label: FeSO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2SO4
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:122
+    label: H2SO4
+  chebi_term:
+    id: CHEBI:26836
+    label: sulfuric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'The pH of this solution should be 1.2.
+
+
+  Original volume: 50 mL'

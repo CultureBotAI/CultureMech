@@ -1,0 +1,32 @@
+preferred_term: Main sol. J691
+term:
+  id: mediadive.solution:4597
+  label: Main sol. J691
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: Autoclave Salt base solution and yeast extract (as a 10% solution)
+  separately and combine after cooling. Steam sulfur for 3 hr on each of 3 successive
+  days.

@@ -1,0 +1,53 @@
+preferred_term: Main sol. J505
+term:
+  id: mediadive.solution:4280
+  label: Main sol. J505
+composition:
+- preferred_term: Mueller Hinton II agar
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1775
+    label: Mueller Hinton II agar
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:72
+    label: Glycerol
+  chebi_term:
+    id: CHEBI:15978
+    label: glycerol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback

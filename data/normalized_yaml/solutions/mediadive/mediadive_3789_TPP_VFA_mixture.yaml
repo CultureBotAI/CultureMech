@@ -1,0 +1,33 @@
+preferred_term: TPP/VFA mixture
+term:
+  id: mediadive.solution:3789
+  label: TPP/VFA mixture
+composition:
+- preferred_term: Thiamine pyrophosphate
+  concentration:
+    value: '136.36363636363637'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:778
+    label: Thiamine pyrophosphate
+  chebi_term:
+    id: CHEBI:18290
+    label: thiamine(1+) diphosphate chloride
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '763.6363636363636'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix together and filter-sterilize. Store at -20C.
+
+
+  Original volume: 11 mL'

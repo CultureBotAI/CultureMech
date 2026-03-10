@@ -67,12 +67,6 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
-- preferred_term: Dimethyl sulfoxide**
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Defined component,
-    Simple component'
 - preferred_term: Agarose (Electrophoresis grade,  if needed)
   concentration:
     value: '5'
@@ -83,10 +77,6 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source'
-- preferred_term: Modified Hunter's vitamin-free mineral base*
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
     value: '950'
@@ -138,10 +128,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Mofified metals 44***
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -247,3 +233,25 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: HCl'
+- timestamp: '2026-03-09T08:04:19.532157+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+solutions:
+- preferred_term: Dimethyl sulfoxide**
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Modified Hunter's vitamin-free mineral base*
+  composition: []
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Mofified metals 44***
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L

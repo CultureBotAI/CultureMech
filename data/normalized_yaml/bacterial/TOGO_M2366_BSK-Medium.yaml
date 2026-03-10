@@ -4,22 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: 'Solution A:'
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-- preferred_term: 'Solution B:'
-  concentration:
-    value: '200'
-    unit: G_PER_L
-- preferred_term: 'Solution C:'
-  concentration:
-    value: '143'
-    unit: G_PER_L
-- preferred_term: 'Solution D:'
-  concentration:
-    value: '86'
-    unit: G_PER_L
 - preferred_term: Aqua bidest. filter-sterilized
   concentration:
     value: '900'
@@ -159,3 +143,28 @@ curation_history:
   date: '2026-02-03T11:20:53.456414'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:15.069199+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+solutions:
+- preferred_term: 'Solution A:'
+  composition: []
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: 'Solution B:'
+  composition: []
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: 'Solution C:'
+  composition: []
+  concentration:
+    value: '143'
+    unit: G_PER_L
+- preferred_term: 'Solution D:'
+  composition: []
+  concentration:
+    value: '86'
+    unit: G_PER_L

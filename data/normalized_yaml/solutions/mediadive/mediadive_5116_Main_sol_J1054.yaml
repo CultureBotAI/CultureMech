@@ -1,0 +1,50 @@
+preferred_term: Main sol. J1054
+term:
+  id: mediadive.solution:5116
+  label: Main sol. J1054
+composition:
+- preferred_term: Maize meal
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1985
+    label: Maize meal
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Small dried sardine
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1986
+    label: Small dried sardine
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Boil maize meal and dried sardine with 500 ml of distilled water
+  for 20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.

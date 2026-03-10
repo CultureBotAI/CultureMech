@@ -1,0 +1,23 @@
+preferred_term: Main sol. 1680a
+term:
+  id: mediadive.solution:6390
+  label: Main sol. 1680a
+composition:
+- preferred_term: Artificial Sea Salt
+  concentration:
+    value: '8.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2146
+    label: Artificial Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with MilliQ water.
+
+  Autoclave at 121 °C for 20 min.
+
+  After cooling add the following filter sterilized component under sterile conditions:'

@@ -1,0 +1,104 @@
+preferred_term: Main sol. 394
+term:
+  id: mediadive.solution:805
+  label: Main sol. 394
+composition:
+- preferred_term: Tryptone
+  concentration:
+    value: '23.3645'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '7.00935'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris-HCl
+  concentration:
+    value: '18.69158878504673'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:452
+    label: Tris-HCl
+  chebi_term:
+    id: CHEBI:1185531
+    label: Tris-HCl
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '934.5794392523364'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2
+  concentration:
+    value: '0.47605'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:453
+    label: MgCl2
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Diaminopimelic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:454
+    label: Diaminopimelic acid
+  chebi_term:
+    id: CHEBI:23673
+    label: 2,6-diaminopimelic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Thymidine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:455
+    label: Thymidine
+  chebi_term:
+    id: CHEBI:17748
+    label: thymidine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Autoclave, cool, and then add: \nMagnesium chloride should be\
+  \ sterilized separately by autoclaving, and the other ingredients should be sterilized\
+  \ separately by filtration.\n\nOriginal volume: 1070 mL"

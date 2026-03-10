@@ -1,0 +1,193 @@
+preferred_term: Main sol. J1125
+term:
+  id: mediadive.solution:5219
+  label: Main sol. J1125
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.19685'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.246063'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KCl
+  concentration:
+    value: '0.295276'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '1.37795'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000984252'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '944.8818897637796'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '29.52755905511811'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.4606299212598426'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.984251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin solution (see Medium No. 403)
+  concentration:
+    value: '0.984251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1855
+    label: Vitamin solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Thiamine solution (see Medium No. 403)
+  concentration:
+    value: '0.984251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1856
+    label: Thiamine solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  concentration:
+    value: '0.984251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1845
+    label: Vitamin B12 solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.984251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: glycerin
+  concentration:
+    value: '9.84251968503937'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1963
+    label: glycerin
+  chebi_term:
+    id: CHEBI:17754
+    label: glycerol
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '4.921259842519685'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)\
+  \ gas atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):\
+  \ \nAseptically and anaerobically, distribute the medium into culture vessels under\
+  \ the same gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal with butyl\
+  \ rubber stoppers. Prior to use, add per liter the following solution to reduce\
+  \ the medium (autoclaved and stored under N2): \nComment:\nFor cultivation of JCM\
+  \ 31104, use 1 M sodium lactate solution instead of 1 M glycerin solution (final\
+  \ 10 mM).\n\nOriginal volume: 1016 mL"

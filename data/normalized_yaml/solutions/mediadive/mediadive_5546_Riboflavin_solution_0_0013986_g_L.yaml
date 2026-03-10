@@ -1,0 +1,30 @@
+preferred_term: Riboflavin solution 0.0013986 g/L
+term:
+  id: mediadive.solution:5546
+  label: Riboflavin solution 0.0013986 g/L
+composition:
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0013986'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:136
+    label: Riboflavin
+  chebi_term:
+    id: CHEBI:17015
+    label: riboflavin
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'

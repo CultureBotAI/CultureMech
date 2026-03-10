@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,12 +31,14 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -42,7 +46,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -50,12 +55,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Sulfur (powder)
   concentration:
     value: '0.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:14258
     label: ''
@@ -63,23 +70,16 @@ ingredients:
   concentration:
     value: '0.53'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
 - preferred_term: Sodium acetate・3H2O
   concentration:
     value: '0.68'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
-- preferred_term: Acid trace element solution (see Medium [M609])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Alkaline trace element solution (see Medium [M609])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Resazurin
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -96,15 +96,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 8% NaHCO3 solution
-  concentration:
-    value: '12.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Vitamin solution (see Medium [M609])
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -115,11 +106,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
 media_term:
   preferred_term: TOGO Medium M1152
   term:
@@ -144,6 +130,43 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.201104'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Resazurin; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Resazurin; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
+    Added default concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:41.323502+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 5 solution(s) from ingredients
+solutions:
+- preferred_term: Acid trace element solution (see Medium [M609])
+  composition: []
+  notes: Cross-reference to Medium M609
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Alkaline trace element solution (see Medium [M609])
+  composition: []
+  notes: Cross-reference to Medium M609
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution
+  composition: []
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Vitamin solution (see Medium [M609])
+  composition: []
+  notes: Cross-reference to Medium M609
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  composition: []
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
+    compound'

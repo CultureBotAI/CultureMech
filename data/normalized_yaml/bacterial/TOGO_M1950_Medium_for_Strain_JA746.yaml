@@ -4,21 +4,11 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Ferric citrate solution* (0.1%)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Vitamin B12 (0.002% (w/v))
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
-- preferred_term: NaHCO3 solution (10% w/v)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -122,10 +112,6 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
-- preferred_term: Trace element solution SL7**
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -237,4 +223,29 @@ curation_history:
   date: '2026-02-03T11:20:51.000548'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: nitrogen gas'
+- timestamp: '2026-03-09T08:04:28.864807+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Ferric citrate solution* (0.1%)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: NaHCO3 solution (10% w/v)
+  composition: []
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+- preferred_term: Trace element solution SL7**
+  term:
+    id: mediadive.solution:2739
+    label: Trace element solution SL7
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_2739_Trace_element_solution_SL7.yaml for composition

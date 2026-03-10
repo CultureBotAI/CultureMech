@@ -67,10 +67,6 @@ ingredients:
   concentration:
     value: '0.39604'
     unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -172,13 +168,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave under a N2-CO2 (4:1,
-    v/v) gas mixture. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave
+    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml
-    medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
-    Then, add per liter the following solution (autoclaved and stored under N2):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    (e.g., 20 ml medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture
+    and seal with butyl rubber stoppers. Then, add per liter the following solution
+    (autoclaved and stored under N2):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.6, if necessary.
@@ -189,3 +187,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1155'
+- timestamp: '2026-03-09T08:04:23.782250+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

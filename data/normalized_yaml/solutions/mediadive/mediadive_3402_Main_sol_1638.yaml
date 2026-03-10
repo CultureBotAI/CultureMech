@@ -1,0 +1,13 @@
+preferred_term: Main sol. 1638
+term:
+  id: mediadive.solution:3402
+  label: Main sol. 1638
+composition:
+- preferred_term: MEM-Medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1377
+    label: MEM-Medium
+preparation_notes: Cultivation of cell lines like DH82 (canine macrophage; ATCC CRL-10389)

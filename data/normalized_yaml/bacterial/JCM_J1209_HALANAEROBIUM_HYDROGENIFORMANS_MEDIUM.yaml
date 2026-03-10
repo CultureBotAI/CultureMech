@@ -31,10 +31,6 @@ ingredients:
   concentration:
     value: '6.1165'
     unit: G_PER_L
-- preferred_term: Basal salts solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -189,17 +185,19 @@ preparation_steps:
   description: 'Solution B:'
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Autoclave solutions A and B, separately, under a N2 gas atmosphere. After cooling, combine
-    both solutions and add the following solution (autoclaved and stored under N2):'
+  description: 'Autoclave solutions A and B, separately, under a N2 gas atmosphere.
+    After cooling, combine both solutions and add the following solution (autoclaved
+    and stored under N2):'
 - step_number: 4
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically, distribute the medium into culture vessels (e.g., 10 ml
-    in Balch type tubes) under a N2 gas stream and seal with butyl rubber stoppers. Finally, add per liter
-    the following solutions (autoclaved and stored under N2):'
+  description: 'Aseptically and anaerobically, distribute the medium into culture
+    vessels (e.g., 10 ml in Balch type tubes) under a N2 gas stream and seal with
+    butyl rubber stoppers. Finally, add per liter the following solutions (autoclaved
+    and stored under N2):'
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -211,3 +209,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:40.571592+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Basal salts solution
+  term:
+    id: mediadive.solution:4011
+    label: Basal salts solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_4011_Basal_salts_solution.yaml for composition

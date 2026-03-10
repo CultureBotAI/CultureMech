@@ -1,0 +1,34 @@
+preferred_term: Main sol. 634
+term:
+  id: mediadive.solution:1352
+  label: Main sol. 634
+composition:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2126
+    label: dehydrated RCM medium
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Dissolve dehydrated RCM medium (available from BD-BBL, OXOID or
+  MERCK) in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring
+  to the boil and cool to room temperature while sparging with 100% N2 gas. Dispense
+  medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and
+  autoclave.

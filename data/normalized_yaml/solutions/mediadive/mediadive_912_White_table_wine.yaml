@@ -1,0 +1,21 @@
+preferred_term: White table wine
+term:
+  id: mediadive.solution:912
+  label: White table wine
+composition:
+- preferred_term: White wine
+  concentration:
+    value: '700.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1113
+    label: White wine
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter-sterilize and add to autoclaved basal medium.
+
+
+  Original volume: 200 mL'

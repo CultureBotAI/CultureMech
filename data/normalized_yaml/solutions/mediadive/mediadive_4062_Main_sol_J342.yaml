@@ -1,0 +1,29 @@
+preferred_term: Main sol. J342
+term:
+  id: mediadive.solution:4062
+  label: Main sol. J342
+composition:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:827
+    label: Brain heart infusion broth
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback

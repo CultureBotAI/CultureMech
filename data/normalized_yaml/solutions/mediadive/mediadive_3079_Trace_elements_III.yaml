@@ -1,0 +1,70 @@
+preferred_term: Trace elements III
+term:
+  id: mediadive.solution:3079
+  label: Trace elements III
+composition:
+- preferred_term: NiSO4 x 6 H2O
+  concentration:
+    value: '0.131'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1030
+    label: NiSO4 x 6 H2O
+  chebi_term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: SnCl2 x 2 H2O
+  concentration:
+    value: '0.118'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1361
+    label: SnCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaVO3
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1362
+    label: NaVO3
+  chebi_term:
+    id: CHEBI:75221
+    label: sodium metavanadate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '12.4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:120
+    label: (NH4)6Mo7O24 x 4 H2O
+  chebi_term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:68
+    label: HCl
+  chebi_term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Prepare Trace elements III, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at 4°C
+
+
+  Original volume: 100 mL'

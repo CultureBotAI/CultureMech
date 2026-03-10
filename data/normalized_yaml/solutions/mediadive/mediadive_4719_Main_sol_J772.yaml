@@ -1,0 +1,204 @@
+preferred_term: Main sol. J772
+term:
+  id: mediadive.solution:4719
+  label: Main sol. J772
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '18.9753'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2SO4
+  concentration:
+    value: '3.79507'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:110
+    label: Na2SO4
+  chebi_term:
+    id: CHEBI:32149
+    label: sodium sulfate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '2.8463'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: KCl
+  concentration:
+    value: '0.474383'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:61
+    label: KCl
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.142315'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:7
+    label: CaCl2 x 2 H2O
+  chebi_term:
+    id: CHEBI:176843
+    label: vitamin B12
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.237192'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.189753'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000948767'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '948.7666034155598'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin solution (see Medium No. 403)
+  concentration:
+    value: '0.9487666034155597'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1855
+    label: Vitamin solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Thiamine solution (see Medium No. 403)
+  concentration:
+    value: '0.9487666034155597'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1856
+    label: Thiamine solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Vitamin B12 solution (see Medium No. 403)
+  concentration:
+    value: '0.9487666034155597'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1845
+    label: Vitamin B12 solution (see Medium No. 403)
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Riboflavin solution (see Medium No. 462)
+  concentration:
+    value: '0.9487666034155597'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1893
+    label: Riboflavin solution (see Medium No. 462)
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium fumarate
+  concentration:
+    value: '9.487666034155598'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1752
+    label: Sodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '28.46299810246679'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '7.590132827324478'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Mix components thoroughly, bring to a boil and cool down under\
+  \ a H2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels (e.g.,\
+  \ 10 ml of the medium in Balch tubes) under the same gas mixture, seal with butyl\
+  \ rubber stoppers and autoclave. After cooling, add per liter the following solutions\
+  \ from anaerobic stocks (autoclaved or *filter-sterilized): \nReadjust pH of the\
+  \ medium to 7.2 - 7.4, if necessary. Pressurize the inoculated culture vessels to\
+  \ 200 kPa H2-CO2 (4:1, v/v).\n\nOriginal volume: 1054 mL"

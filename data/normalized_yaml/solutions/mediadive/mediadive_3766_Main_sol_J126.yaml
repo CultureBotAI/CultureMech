@@ -1,0 +1,13 @@
+preferred_term: Main sol. J126
+term:
+  id: mediadive.solution:3766
+  label: Main sol. J126
+composition:
+- preferred_term: Methanol-utilizing bacteria medium B
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1633
+    label: Methanol-utilizing bacteria medium B
+preparation_notes: Adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.

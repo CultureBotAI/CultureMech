@@ -1,0 +1,18 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1694
+  label: Solution B
+composition:
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:275
+    label: Potassium phosphate buffer
+  chebi_term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 10 mL'

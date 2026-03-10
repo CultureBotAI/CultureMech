@@ -1,0 +1,26 @@
+preferred_term: Main sol. 765
+term:
+  id: mediadive.solution:1555
+  label: Main sol. 765
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '619.047619047619'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare the medium by mixing 250 ml of solution A (without vitamins
+  added) with 650 ml distilled water. Gas with air:CO2 (95:5 v/v), and fill the medium
+  into serum bottles so that the gas to liquid ratio is about 5:1 (v/v). Gas the serum
+  bottles with air:CO2 (95:5 v/v), seal the bottles as for anaerobic work and autoclave.
+  To the cooled medium add (using a syringe) 10ml NaHCO3/ 90ml medium and 0.5ml sterile
+  vitamin solution to 100ml of the resulting medium. Final pH 7.9.
+
+
+  Original volume: 1050 mL'

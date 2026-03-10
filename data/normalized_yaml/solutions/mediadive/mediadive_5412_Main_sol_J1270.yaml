@@ -1,0 +1,34 @@
+preferred_term: Main sol. J1270
+term:
+  id: mediadive.solution:5412
+  label: Main sol. J1270
+composition:
+- preferred_term: Columbia blood agar base
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2046
+    label: Columbia blood agar base
+- preferred_term: Sheep blood
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix ingredients except horse blood, autoclave and cool to about
+  70C. Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for
+  15 minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.

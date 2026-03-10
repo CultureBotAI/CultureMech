@@ -1,0 +1,143 @@
+preferred_term: Main sol. 1600
+term:
+  id: mediadive.solution:3336
+  label: Main sol. 1600
+composition:
+- preferred_term: L-15 powder
+  concentration:
+    value: '2.793296089385475'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2153
+    label: L-15 powder
+  chebi_term:
+    id: CHEBI:17203
+    label: L-proline
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: DL-aspartic acid
+  concentration:
+    value: '0.835196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1445
+    label: DL-aspartic acid
+  chebi_term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '1.39665'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:374
+    label: L-Glutamic acid
+  chebi_term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Glutamine
+  concentration:
+    value: '0.29228'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:134
+    label: L-Glutamine
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Proline
+  concentration:
+    value: '0.837989'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1130
+    label: L-Proline
+  chebi_term:
+    id: CHEBI:16313
+    label: D-proline
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: alpha-ketoglutaric acid
+  concentration:
+    value: '0.835196'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1408
+    label: alpha-ketoglutaric acid
+  chebi_term:
+    id: CHEBI:30915
+    label: 2-oxoglutaric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: D-Glucose
+  concentration:
+    value: '6.25419'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:211
+    label: D-Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Demineralized water
+  concentration:
+    value: '966.4804469273743'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1448
+    label: Demineralized water
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Demineralized water
+  concentration:
+    value: '69.83240223463687'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1448
+    label: Demineralized water
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '13.966480446927374'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1165
+    label: Tryptose-phosphate
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: FBS
+  concentration:
+    value: '6.983240223463687'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1450
+    label: FBS
+- preferred_term: cholesterol lipid concentrate
+  concentration:
+    value: '558.659217877095'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1451
+    label: cholesterol lipid concentrate
+preparation_notes: "2x concentrated stock:\nAdjust pH to 6.8 with NaOH.\nFill up to\
+  \ 346ml with demineralized water and filter sterilize through 0.2µm filter\nAliquot\
+  \ 17.3ml into 50ml tubes and store at -20°C.\nWhen ready to use add: \nFilter sterilize\
+  \ each tube through 0.2µm filter.\n\nOriginal volume: 358 mL"

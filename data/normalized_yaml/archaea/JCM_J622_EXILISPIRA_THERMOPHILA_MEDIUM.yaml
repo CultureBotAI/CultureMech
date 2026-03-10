@@ -53,10 +53,6 @@ ingredients:
   concentration:
     value: '2.17391'
     unit: G_PER_L
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -169,9 +165,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.8. Distribute the medium into culture vessels (e.g.,
-    18 ml in 50 ml serum bottle) under a stream of a N2-CO2 (80:20, v/v) gas mixture, seal with butyl
-    rubber stoppers and autoclave.
+  description: Mix components and adjust pH to 6.8. Distribute the medium into culture
+    vessels (e.g., 18 ml in 50 ml serum bottle) under a stream of a N2-CO2 (80:20,
+    v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
   description: Mix components and autoclave under a N2 atmosphere.
@@ -180,8 +176,9 @@ preparation_steps:
   description: Autoclave under a N2 atmosphere.
 - step_number: 4
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically combine Solutions A, B and C in the culture vessels. Then,
-    add (per liter) the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically combine Solutions A, B and C in the
+    culture vessels. Then, add (per liter) the following solutions (autoclaved and
+    stored under a N2 atmosphere):'
 - step_number: 5
   action: MIX
   description: 'Comment: For strain JCM 14728, incubate with a 5% inoculum.'
@@ -192,3 +189,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J622'
+- timestamp: '2026-03-09T08:05:14.918548+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Trace element solution
+  term:
+    id: mediadive.solution:6187
+    label: Trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6187_Trace_element_solution.yaml for composition

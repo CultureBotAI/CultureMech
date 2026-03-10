@@ -1,0 +1,59 @@
+preferred_term: Main sol. 301
+term:
+  id: mediadive.solution:568
+  label: Main sol. 301
+composition:
+- preferred_term: Wilkins-Chalgren-Anaerobe-Broth
+  concentration:
+    value: '952.3809523809523'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2093
+    label: Wilkins-Chalgren-Anaerobe-Broth
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: L-Cysteine
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:671
+    label: L-Cysteine
+  chebi_term:
+    id: CHEBI:15356
+    label: cysteine
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sterile serum
+  concentration:
+    value: '47.61904761904761'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2094
+    label: Sterile serum
+  chebi_term:
+    id: CHEBI:17561
+    label: L-cysteine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3
+  g/l of L-cysteine and 1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen
+  gas. To the autoclaved medium add 50 ml/l of sterile serum (horse, bovine or lamb).
+
+
+  Original volume: 1050 mL'

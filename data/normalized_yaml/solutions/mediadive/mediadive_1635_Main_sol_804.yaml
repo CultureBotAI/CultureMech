@@ -1,0 +1,43 @@
+preferred_term: Main sol. 804
+term:
+  id: mediadive.solution:1635
+  label: Main sol. 804
+composition:
+- preferred_term: Mueller-Hinton broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:748
+    label: Mueller-Hinton broth
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X
+  + V factors).
+
+  NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.
+
+  Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make up to 25 ml
+  with dist. water, filter sterilize.'

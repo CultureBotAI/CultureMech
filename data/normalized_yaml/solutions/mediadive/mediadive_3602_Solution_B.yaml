@@ -1,0 +1,31 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:3602
+  label: Solution B
+composition:
+- preferred_term: KH2PO4
+  concentration:
+    value: '5.44'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:11
+    label: KH2PO4
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4
+  concentration:
+    value: '5.69'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:233
+    label: Na2HPO4
+  chebi_term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve the ingredients listed above (in that order) in about
+  700 ml of distilled water, and then make up to 1 litre

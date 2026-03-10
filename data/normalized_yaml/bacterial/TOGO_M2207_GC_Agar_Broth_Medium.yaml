@@ -8,14 +8,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: Solution A
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '500'
-    unit: G_PER_L
 - preferred_term: Sodium Chloride
   concentration:
     value: '5'
@@ -92,3 +84,24 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:32.201430+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition

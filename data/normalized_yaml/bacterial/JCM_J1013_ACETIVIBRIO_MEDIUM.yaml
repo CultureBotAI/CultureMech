@@ -11,10 +11,6 @@ media_term:
     label: ACETIVIBRIO MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1013'
 ingredients:
-- preferred_term: Vitamin solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -162,15 +158,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Basal medium supplemented with Trace element solution SL-10 and Selenite-tungstate
-    solution under 100% N2 gas. Separately autoclave sucrose and yeast extract, and add to the medium.
-    Filter-sterilize Vitamin solution and NaHCO3 solution, and add to the medium. Distribute the medium
-    into culture vessels under 100% N2 gas and seal with butyl rubber stoppers. Before inoculation, reduce
-    the medium with 5% Na2S x 9H2O solution (autoclaved under N2 gas). Readjust pH to 7.7 - 7.9, if necessary.
+  description: Autoclave Basal medium supplemented with Trace element solution SL-10
+    and Selenite-tungstate solution under 100% N2 gas. Separately autoclave sucrose
+    and yeast extract, and add to the medium. Filter-sterilize Vitamin solution and
+    NaHCO3 solution, and add to the medium. Distribute the medium into culture vessels
+    under 100% N2 gas and seal with butyl rubber stoppers. Before inoculation, reduce
+    the medium with 5% Na2S x 9H2O solution (autoclaved under N2 gas). Readjust pH
+    to 7.7 - 7.9, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,3 +176,16 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1013'
+- timestamp: '2026-03-09T08:05:09.947926+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: Vitamin solution
+  term:
+    id: mediadive.solution:6241
+    label: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_6241_Vitamin_solution.yaml for composition

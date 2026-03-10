@@ -1,0 +1,16 @@
+preferred_term: Main sol. 465a
+term:
+  id: mediadive.solution:948
+  label: Main sol. 465a
+composition:
+- preferred_term: '[1,1′-Biphenyl]-2-ol'
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2114
+    label: '[1,1′-Biphenyl]-2-ol'
+preparation_notes: Prepare medium 465. Dissolve 2-hydroxybiphenyl in ethanol (50 g/l)
+  and filter sterilize. Pipette a volume of this stock solution into a sterile culture
+  vessel so that the final concentration of 2-hydroxybiphenyl will be 0.5 g/l medium.
+  Let the ethanol evaporate under sterile conditions. Add medium 465.

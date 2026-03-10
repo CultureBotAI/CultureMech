@@ -1,0 +1,106 @@
+preferred_term: Main sol. J954
+term:
+  id: mediadive.solution:4976
+  label: Main sol. J954
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.993049'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Fish peptone
+  concentration:
+    value: '0.248262'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1950
+    label: Fish peptone
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium formate
+  concentration:
+    value: '0.248262'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:437
+    label: Sodium formate
+  chebi_term:
+    id: CHEBI:62965
+    label: sodium formate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.248262'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:731
+    label: Sodium acetate
+  chebi_term:
+    id: CHEBI:32954
+    label: sodium acetate
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Sodium lactate
+  concentration:
+    value: '0.248262'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1392
+    label: Sodium lactate
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.248262'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:438
+    label: Sodium pyruvate
+  chebi_term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '231.3803376365442'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.26745'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:42
+    label: NH4Cl
+  chebi_term:
+    id: CHEBI:31206
+    label: ammonium chloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components thoroughly and adjust pH to 7.0. For preparation\
+  \ of solid medium, add 20.0 g/L agar. (if necessary, use washed agar as described\
+  \ in the recipe of Medium No. 574). Autoclave and, after cooling, add the following\
+  \ solutions (*filter-sterilized or autoclaved) to the medium. \n\nOriginal volume:\
+  \ 1007 mL"

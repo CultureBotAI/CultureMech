@@ -1,0 +1,44 @@
+preferred_term: Main sol. 609
+term:
+  id: mediadive.solution:1308
+  label: Main sol. 609
+composition:
+- preferred_term: Oatmeal
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:471
+    label: Oatmeal
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Adjust pH to 7.2. Cook or steam 20.0 g in 1000.0 ml distilled water
+  for 20 min. Filter through cheese cloth. Add 18.0 g agar and make up to 1000.0 ml.
+  Add 1 ml of trace salts solution (see below).

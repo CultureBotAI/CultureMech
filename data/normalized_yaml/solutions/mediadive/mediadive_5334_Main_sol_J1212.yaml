@@ -1,0 +1,109 @@
+preferred_term: Main sol. J1212
+term:
+  id: mediadive.solution:5334
+  label: Main sol. J1212
+composition:
+- preferred_term: Rumen fluid
+  concentration:
+    value: '49.01960784313725'
+    unit: PERCENT_V_V
+  notes: ' clarified'
+  term:
+    id: mediadive.compound:145
+    label: Rumen fluid
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.45098'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Casitone
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:84
+    label: Casitone
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: NaHCO3
+  concentration:
+    value: '5.88235'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Resazurin
+  concentration:
+    value: '0.000980392'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '637.2549019607843'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Cellobiose
+  concentration:
+    value: '19.6078431372549'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: "Mix components, except L-cysteine x HCl x H2O, and heat the medium\
+  \ to 60C with stirring. Bubble the medium with O2-free CO2 vigorously, then add\
+  \ L-cysteine x HCl x H2O to reduce the medium. Dispense the medium into culture\
+  \ vessels (e.g., 10 ml in Balch type tubes) under a stream of CO2, seal with butyl\
+  \ rubber stoppers and autoclave. Aseptically and anaerobically add per liter the\
+  \ following solution (autoclaved and stored under a N2 atmosphere): \n\nOriginal\
+  \ volume: 1020 mL"

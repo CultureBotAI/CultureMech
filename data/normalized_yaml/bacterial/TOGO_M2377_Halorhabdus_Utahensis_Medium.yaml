@@ -77,18 +77,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: phosphate solution
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: calcium chloride solution
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Fe/Mn solution
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -185,4 +173,27 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-09T08:04:39.270077+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: phosphate solution
+  term:
+    id: mediadive.solution:4669
+    label: Phosphate solution
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: See mediadive_4669_Phosphate_solution.yaml for composition
+- preferred_term: calcium chloride solution
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fe/Mn solution
+  composition: []
+  concentration:
+    value: '0.25'
+    unit: G_PER_L

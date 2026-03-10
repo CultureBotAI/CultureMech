@@ -4,52 +4,6 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: CaCl2・2H2O solution (68 mM)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: Pyruvate solution (1 M)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
-- preferred_term: Resazurin solution (0.02%)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
-- preferred_term: K2HPO4 solution (609 mM)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: Dithionite solution (0.2 M)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Basal salt solution (see below)
-  concentration:
-    value: '969'
-    unit: G_PER_L
-- preferred_term: SL--7 trace element solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin B12 solution (see Medium [M401])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M431])
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -218,4 +172,67 @@ curation_history:
   date: '2026-02-03T11:20:59.297511'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-09T08:05:10.738137+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 10 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: CaCl2・2H2O solution (68 mM)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Pyruvate solution (1 M)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
+- preferred_term: Resazurin solution (0.02%)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
+- preferred_term: K2HPO4 solution (609 mM)
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: Dithionite solution (0.2 M)
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Basal salt solution (see below)
+  composition: []
+  concentration:
+    value: '969'
+    unit: G_PER_L
+- preferred_term: SL--7 trace element solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  composition: []
+  notes: Cross-reference to Medium M401
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  composition: []
+  notes: Cross-reference to Medium M431
+  concentration:
+    value: '1'
+    unit: G_PER_L

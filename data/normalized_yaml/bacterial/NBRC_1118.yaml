@@ -5,15 +5,6 @@ description: 1118. NBRC 1117.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: KH2PO40.5gMgSO4·7H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2·2H2O0.25gSodium pyruvate0.5gSodium succinate0.5gSodium
-    acetate0.5gYeast extract0.5gFerric citrate solution* (0.1%)5mlTrace element solution SL7**1mlNaHCO3(10%
-    (w/v))15mlVitamin B12(0.002% (w/v))1mlNa2S·9H2O0.24gResazurin1mgDistilled water1LpH 6.6 - 7.4Mix ingredients
-    except for vitamin B12, NaHCO3and Na2S·9H2O, and autoclave under a N2atmosphere. Separately autoclave
-    Na2S·9H2O solution under a N2atmosphere. Sterilize vitamin B12and NaHCO3solutions by filtration. Prior
-    to inoculation, aseptically and anaerobically add them.*Soluble in hot water.**Trace element solution
-    SL7HCl (25%; 7.7 M)10mlFeCl2·4H2O1.5gZnCl270mgMnCl2·4H2O100mgH3BO360mgCoCl2·6H2O200mgCuCl2·2H2O20mgNiCl2·6H2O20mgNa2MoO4·2H2O40mgDistilled
-    water990mlInitially, dissolve FeCl2·4H2O in 25% HCl, then add distilled water followed by the other
-    components.
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -194,3 +185,20 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1117, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1117.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:28.303443+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KH2PO40.5gMgSO4·7H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2·2H2O0.25gSodium
+    pyruvate0.5gSodium succinate0.5gSodium acetate0.5gYeast extract0.5gFerric citrate
+    solution* (0.1%)5mlTrace element solution SL7**1mlNaHCO3(10% (w/v))15mlVitamin
+    B12(0.002% (w/v))1mlNa2S·9H2O0.24gResazurin1mgDistilled water1LpH 6.6 - 7.4Mix
+    ingredients except for vitamin B12, NaHCO3and Na2S·9H2O, and autoclave under a
+    N2atmosphere. Separately autoclave Na2S·9H2O solution under a N2atmosphere. Sterilize
+    vitamin B12and NaHCO3solutions by filtration. Prior to inoculation, aseptically
+    and anaerobically add them.*Soluble in hot water.**Trace element solution SL7HCl
+    (25%; 7.7 M)10mlFeCl2·4H2O1.5gZnCl270mgMnCl2·4H2O100mgH3BO360mgCoCl2·6H2O200mgCuCl2·2H2O20mgNiCl2·6H2O20mgNa2MoO4·2H2O40mgDistilled
+    water990mlInitially, dissolve FeCl2·4H2O in 25% HCl, then add distilled water
+    followed by the other components.
+  composition: []

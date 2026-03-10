@@ -1,0 +1,21 @@
+preferred_term: Vitamin B1 solution
+term:
+  id: mediadive.solution:6104
+  label: Vitamin B1 solution
+composition:
+- preferred_term: Thiamine hydrochloride
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1147
+    label: Thiamine hydrochloride
+  chebi_term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Filter sterile
+
+
+  Original volume: 100 mL'

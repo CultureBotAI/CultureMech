@@ -1,0 +1,30 @@
+preferred_term: Solution E (electron acceptor)
+term:
+  id: mediadive.solution:2394
+  label: Solution E (electron acceptor)
+composition:
+- preferred_term: Disodium fumarate
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1076
+    label: Disodium fumarate
+  chebi_term:
+    id: CHEBI:115156
+    label: disodium fumarate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 50 mL'

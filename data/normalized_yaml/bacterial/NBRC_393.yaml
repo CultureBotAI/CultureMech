@@ -5,15 +5,6 @@ description: 393. NBRC 392.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: KCl0.34gMgCl2·6H2O4gMgSO4·7H2O3.45gNH4Cl0.25gCaCl2·2H2O0.14gK2HPO40.14gNaCl18gNaHCO33gBacto
-    Yeast Extract (Difco)0.5gSodium lactate1.5gFe(NH4)2(SO4)2·7H2O2mgTrace element solution*10mlResazurin1mgNa2S·9H2O0.5gDistilled
-    water1LDissolve ingredients except bicarbonate and sulfide, bring to boil for few minutes, then cool
-    quickly to room temperature while gassing with N2/CO2(80/20), add sodium bicarbonate and adjust pH
-    to 6.9. Distribute in serum bottles (20 ml per 100 ml bottle) under N2/CO2, seal, pressurize bottles
-    up to 2 bar overpressure, then autoclave. Before use, reduce the medium with sodium sulfide from anaerobic
-    sterile neutral stock solution.*Trace element solutionNitrilotriacetic acid1.5gMgSO4·7H2O3gMnSO4·2H2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.18gCaCl2·2H2O0.1gZnSO4·7H2O0.18gCuSO4·5H2O0.01gKAl(SO4)2·12H2O4mgH3BO30.01gNa2MoO4·2H2O0.01gNiCl2·6H2O0.025gNa2SeO3·5H2O0.8mgNa2WO4·H2O0.8mgDistilled
-    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Final
-    pH 7.0 (with KOH).
 - preferred_term: ''
   concentration:
     value: KCl
@@ -186,3 +177,20 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 392, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=392.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-09T08:04:49.190629+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: KCl0.34gMgCl2·6H2O4gMgSO4·7H2O3.45gNH4Cl0.25gCaCl2·2H2O0.14gK2HPO40.14gNaCl18gNaHCO33gBacto
+    Yeast Extract (Difco)0.5gSodium lactate1.5gFe(NH4)2(SO4)2·7H2O2mgTrace element
+    solution*10mlResazurin1mgNa2S·9H2O0.5gDistilled water1LDissolve ingredients except
+    bicarbonate and sulfide, bring to boil for few minutes, then cool quickly to room
+    temperature while gassing with N2/CO2(80/20), add sodium bicarbonate and adjust
+    pH to 6.9. Distribute in serum bottles (20 ml per 100 ml bottle) under N2/CO2,
+    seal, pressurize bottles up to 2 bar overpressure, then autoclave. Before use,
+    reduce the medium with sodium sulfide from anaerobic sterile neutral stock solution.*Trace
+    element solutionNitrilotriacetic acid1.5gMgSO4·7H2O3gMnSO4·2H2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.18gCaCl2·2H2O0.1gZnSO4·7H2O0.18gCuSO4·5H2O0.01gKAl(SO4)2·12H2O4mgH3BO30.01gNa2MoO4·2H2O0.01gNiCl2·6H2O0.025gNa2SeO3·5H2O0.8mgNa2WO4·H2O0.8mgDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then
+    add minerals. Final pH 7.0 (with KOH).
+  composition: []

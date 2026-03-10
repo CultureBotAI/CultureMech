@@ -8,12 +8,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: MgSO4
   concentration:
     value: '0.145'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -21,7 +23,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32036
     label: potassium sulfate
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:28675
     label: dextrin
@@ -37,7 +41,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
@@ -45,30 +50,30 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: trace mineral stock solution
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: MnCl2 · 4H2O
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: CoCl2 · 6H2O
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: CuCl2 · 2H2O
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: ZnCl2
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:49976
     label: zinc dichloride
@@ -76,7 +81,8 @@ ingredients:
   concentration:
     value: '3'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:30808
     label: iron trichloride
@@ -97,3 +103,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:47.936288+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+solutions:
+- preferred_term: trace mineral stock solution
+  term:
+    id: mediadive.solution:5478
+    label: Trace mineral stock solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: See mediadive_5478_Trace_mineral_stock_solution.yaml for composition

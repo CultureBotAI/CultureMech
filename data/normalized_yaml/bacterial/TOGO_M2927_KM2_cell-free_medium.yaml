@@ -33,23 +33,6 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Fresh baker's yeast extract solution
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Sterile solution A
-  concentration:
-    value: '12.5'
-    unit: G_PER_L
-- preferred_term: Sterile solution B
-  concentration:
-    value: '12.5'
-    unit: G_PER_L
-- preferred_term: Phenol red solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: 100 mg/ml azlocillin
   concentration:
     value: '25'
@@ -204,4 +187,30 @@ curation_history:
   date: '2026-02-03T11:20:56.838764'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 1.0 M NaOH'
+- timestamp: '2026-03-09T08:03:32.269635+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
 high_metal: true
+solutions:
+- preferred_term: Fresh baker's yeast extract solution
+  composition: []
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Sterile solution A
+  composition: []
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Sterile solution B
+  composition: []
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Phenol red solution
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L

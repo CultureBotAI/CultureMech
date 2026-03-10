@@ -1,0 +1,32 @@
+preferred_term: Solution IV
+term:
+  id: mediadive.solution:1723
+  label: Solution IV
+composition:
+- preferred_term: Inositol
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:451
+    label: Inositol
+  chebi_term:
+    id: CHEBI:17268
+    label: myo-inositol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "10% inositol (1g/10 ml distilled water)\nFilter sterilize solution\
+  \ IV and add 0.1 ml/l medium.\nFinal pH of appr. 7.4 should be controlled sterile.\
+  \ \n\nOriginal volume: 10 mL"

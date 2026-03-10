@@ -1,0 +1,72 @@
+preferred_term: Main sol. J160
+term:
+  id: mediadive.solution:3813
+  label: Main sol. J160
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:19
+    label: Bacto peptone
+  chebi_term:
+    id: CHEBI:36218
+    label: beta-lactose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sulfur
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:80
+    label: Sulfur
+  chebi_term:
+    id: CHEBI:17909
+    label: polysulfur
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:25
+    label: Resazurin
+  chebi_term:
+    id: CHEBI:8806
+    label: resazurin
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O,
+  adjust pH to 6.5 with H2SO4, and autoclave under a N2 atmosphere. Separately autoclave
+  yeast extract and peptone as 10% solutions under a N2 atmosphere. Steam sulfur for
+  3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and
+  autoclave under a N2 atmosphere. Aseptically and anaerobically add the yeast extract
+  and peptone solutions, and sulfur to the medium. Prior to inoculation, add the sterile
+  Na2S x 9H2O solution, and readjust pH to 6.5, if necessary.

@@ -1,0 +1,57 @@
+preferred_term: Solution B
+term:
+  id: mediadive.solution:1514
+  label: Solution B
+composition:
+- preferred_term: Na-acetate x 3 H2O
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:294
+    label: Na-acetate x 3 H2O
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Disodium succinate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1189
+    label: Disodium succinate
+  chebi_term:
+    id: CHEBI:63675
+    label: sodium succinate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '19.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:222
+    label: Isobutyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust to pH 7.0 with 1 N NaOH.
+
+
+  Original volume: 10 mL'

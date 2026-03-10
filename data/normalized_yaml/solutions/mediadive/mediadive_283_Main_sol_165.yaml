@@ -1,0 +1,100 @@
+preferred_term: Main sol. 165
+term:
+  id: mediadive.solution:283
+  label: Main sol. 165
+composition:
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0004995'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1852
+    label: Sodium resazurin
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '1.4985'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Cellobiose
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:214
+    label: Cellobiose
+  chebi_term:
+    id: CHEBI:17057
+    label: cellobiose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Cellulose
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  notes: optional
+  term:
+    id: mediadive.compound:400
+    label: Cellulose
+  chebi_term:
+    id: CHEBI:62968
+    label: cellulose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:770
+    label: L-Cysteine HCl x H2O
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '819.1808191808192'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Dissolve ingredients except carbonate, cellobiose, vitamins, cysteine\
+  \ and sulfide, then sparge medium with\r\n80% N2 and 20% CO2 gas mixture for 30\
+  \ – 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+  \ anoxic Hungate-type tubes and autoclave. Add cellobiose, vitamins, cysteine and\
+  \ sulfide from sterile anoxic stock solutions prepared\r\nunder 100% N2 gas and\
+  \ carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2\
+  \ gas mixture. Cellobiose and vitamins have to be sterilized by filtration. Prior\
+  \ to use adjust pH of complete medium to 7.2 - 7.4. Cellulose (MN 300, Whatman CF\
+  \ II, Kleenex tissue paper, or HCl treated cotton) can be used as an alternative\
+  \ to cellobiose.\n\nOriginal volume: 1001 mL"

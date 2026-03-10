@@ -1,0 +1,98 @@
+preferred_term: Main sol. 1230
+term:
+  id: mediadive.solution:2449
+  label: Main sol. 1230
+composition:
+- preferred_term: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:43
+    label: NaCl
+  chebi_term:
+    id: CHEBI:26710
+    label: 1% sodium chloride
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:10
+    label: K2HPO4
+  chebi_term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: KNO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:191
+    label: KNO3
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:79
+    label: MgCl2 x 6 H2O
+  chebi_term:
+    id: CHEBI:34887
+    label: nickel dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sodium thiosulfate pentahydrate
+  concentration:
+    value: '4.96372'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1092
+    label: Sodium thiosulfate pentahydrate
+  chebi_term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed vessels
+  (i.e. a serum tube or bottle) with a liquid to air ratio of about 1:10. Flush the
+  gas phase with nitrogen and add 2% oxygen. Sterilize at 120°C 20 min.
+
+  Incubate statically until growth occurs, then shake at 100 rpm.
+
+  After sterilization add from sterile stock solutions:
+
+  (a white colloid will form which will rapidly dissolve after mixing)'
