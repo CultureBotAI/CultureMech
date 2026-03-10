@@ -90,7 +90,8 @@ class RecipeRenderer:
         )
 
         # Generate output filename (sanitize for filesystem)
-        recipe_name = recipe_data.get('name', 'Unknown')
+        # Use 'name' for media, 'preferred_term' for solutions
+        recipe_name = recipe_data.get('name') or recipe_data.get('preferred_term', 'Unknown')
         output_filename = self._sanitize_filename(recipe_name) + ".html"
         output_path = self.output_dir / output_filename
 

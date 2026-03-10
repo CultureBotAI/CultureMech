@@ -337,20 +337,21 @@
             </div>
             {% endif %}
 
-            {# Ingredients #}
+            {# Ingredients / Composition #}
+            {% if recipe.ingredients or recipe.composition %}
             <div class="section">
-                <h2>Ingredients</h2>
+                <h2>{% if recipe.composition and not recipe.ingredients %}Composition{% else %}Ingredients{% endif %}</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Ingredient</th>
+                            <th>{% if recipe.composition and not recipe.ingredients %}Component{% else %}Ingredient{% endif %}</th>
                             <th>Concentration</th>
                             <th>CHEBI ID</th>
                             <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for ing in recipe.ingredients %}
+                        {% for ing in (recipe.ingredients or recipe.composition or []) %}
                         <tr>
                             <td>{{ ing.preferred_term }}</td>
                             <td>
@@ -359,7 +360,11 @@
                                 {% endif %}
                             </td>
                             <td>
-                                {% if ing.term %}
+                                {% if ing.chebi_term and ing.chebi_term.id %}
+                                <a href="{{ resolve_curie(ing.chebi_term.id) }}" class="external-link" target="_blank" title="{{ ing.chebi_term.label }} ({{ ing.chebi_term.match_type }}, confidence: {{ ing.chebi_term.confidence }})">
+                                    {{ ing.chebi_term.id }}
+                                </a>
+                                {% elif ing.term %}
                                 <a href="{{ resolve_curie(ing.term.id) }}" class="external-link" target="_blank">
                                     {{ ing.term.id }}
                                 </a>
@@ -373,6 +378,7 @@
                     </tbody>
                 </table>
             </div>
+            {% endif %}
 
             {# Stock Solutions #}
             {% if recipe.solutions %}
@@ -406,7 +412,9 @@
                             {% for comp in solution.composition %}
                             <tr>
                                 <td>
-                                    {% if comp.term and comp.term.id %}
+                                    {% if comp.chebi_term and comp.chebi_term.id %}
+                                    <a href="{{ resolve_curie(comp.chebi_term.id) }}" target="_blank" rel="noopener" title="{{ comp.chebi_term.label }} ({{ comp.chebi_term.match_type }}, confidence: {{ comp.chebi_term.confidence }})">{{ comp.preferred_term }}</a>
+                                    {% elif comp.term and comp.term.id %}
                                     <a href="{{ resolve_curie(comp.term.id) }}" target="_blank" rel="noopener">{{ comp.preferred_term }}</a>
                                     {% else %}
                                     {{ comp.preferred_term }}
