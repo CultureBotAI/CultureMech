@@ -450,8 +450,15 @@
                 circles.each(function(d) {
                     const circle = d3.select(this);
                     const isVisible = filter === 'all' || d.entity_type === filter;
-                    circle.style("opacity", isVisible ? 0.5 : 0.05);
-                    if (isVisible) visibleCount++;
+
+                    if (isVisible) {
+                        circle.style("opacity", 0.5);
+                        circle.style("pointer-events", "all");  // Enable tooltips
+                        visibleCount++;
+                    } else {
+                        circle.style("opacity", 0);  // Completely hide
+                        circle.style("pointer-events", "none");  // Disable tooltips
+                    }
                 });
 
                 // Update visible count
