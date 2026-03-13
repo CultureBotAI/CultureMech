@@ -1,3 +1,4 @@
+id: CultureMech:004773
 name: VeEG4-MEDIUM
 original_name: VeEG4-MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:298i
     label: VeEG4-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298i | DSMZ Medium: 298i (mediadive.medium:298i) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298i | DSMZ Medium: 298i (mediadive.medium:298i)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -225,3 +227,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 298
+- timestamp: '2026-03-13T06:19:28.744736Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004773'

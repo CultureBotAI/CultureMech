@@ -1,3 +1,4 @@
+id: CultureMech:002265
 name: ANAEROBACTER MEDIUM
 original_name: ANAEROBACTER MEDIUM
 category: bacterial
@@ -151,14 +152,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0 and autoclave under a N2 atmosphere. After
-    cooling, aseptically and anaerobically add per liter the following sterile solutions from anaerobic
-    stocks (autoclaved and stored under a N2 atmosphere or *filter-sterilized and stored under 80% N2
-    and 20% CO2 gas mixture):'
+  description: 'Mix components thoroughly, adjust pH to 7.0 and autoclave under a
+    N2 atmosphere. After cooling, aseptically and anaerobically add per liter the
+    following sterile solutions from anaerobic stocks (autoclaved and stored under
+    a N2 atmosphere or *filter-sterilized and stored under 80% N2 and 20% CO2 gas
+    mixture):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Dispense the medium into culture vessels under a N2 atmosphere and seal with butyl rubber
-    stoppers. Finally, add per litter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Dispense the medium into culture vessels under a N2 atmosphere and
+    seal with butyl rubber stoppers. Finally, add per litter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -166,3 +169,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1085'
+- timestamp: '2026-03-13T06:19:11.786929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002265'

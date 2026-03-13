@@ -1,11 +1,12 @@
+id: CultureMech:006698
 name: DESULFOVIGRA ADIPICA
 original_name: DESULFOVIGRA ADIPICA
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 868 | DSMZ Medium: 868 (mediadive.medium:868)
-  | Aerobic: Yes'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 868 | DSMZ Medium: 868
+  (mediadive.medium:868) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 868
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 868'
+- timestamp: '2026-03-13T06:19:43.128330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006698'

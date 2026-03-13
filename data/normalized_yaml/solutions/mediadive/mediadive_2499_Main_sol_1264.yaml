@@ -1,3 +1,4 @@
+id: CultureMech:011861
 preferred_term: Main sol. 1264
 term:
   id: mediadive.solution:2499
@@ -149,3 +150,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Boil medium and cool under N2 stream on ice. Check pH (7.4). Autoclave
   aliquots and add the following sterile solutions (per 10 ml): '
+curation_history:
+- timestamp: '2026-03-13T06:20:22.467695Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011861'

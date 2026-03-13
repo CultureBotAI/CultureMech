@@ -1,3 +1,4 @@
+id: CultureMech:013544
 preferred_term: Main sol. J680
 term:
   id: mediadive.solution:4577
@@ -177,3 +178,8 @@ preparation_notes: "Mix components and adjust pH to 7.2 with 1.0 N KOH. Bring to
   \ gas mixture, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically\
   \ add the following solutions (filter-sterilized or *autoclaved) into the medium\
   \ (per liter): \n\nOriginal volume: 1048 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.920530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013544'

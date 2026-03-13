@@ -1,3 +1,4 @@
+id: CultureMech:014292
 preferred_term: Main sol. J1246
 term:
   id: mediadive.solution:5382
@@ -142,3 +143,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.5. Distribute t
   \ pure acetylene gas, made from calcium carbide and water, to the gas phase (the\
   \ first time, 0.5% volume of the gas phase: the next day, 1.0% volume: increase\
   \ each day until 2.5% volume is reached).\n\nOriginal volume: 1027 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.850653Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014292'

@@ -1,3 +1,4 @@
+id: CultureMech:004835
 name: Seven Vitamin solution (medium 1332)
 original_name: Seven Vitamin solution (medium 1332)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3052
     label: Seven Vitamin solution (medium 1332)
-notes: 'Source: KOMODO ModelSEED | ID: 3052 | DSMZ Medium: 3052 (mediadive.medium:3052) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3052 | DSMZ Medium: 3052 (mediadive.medium:3052)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3052'
+- timestamp: '2026-03-13T06:19:28.875612Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004835'

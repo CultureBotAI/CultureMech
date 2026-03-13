@@ -1,3 +1,4 @@
+id: CultureMech:013748
 preferred_term: Main sol. J843
 term:
   id: mediadive.solution:4807
@@ -190,3 +191,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (4:1,
   \ stoppers. Prior to inoculation, add per liter the following solution from an anaerobic\
   \ stock (autoclave and store under a N2 atmosphere): \nPressurize inoculated culture\
   \ vessels to 200 kPa H2-CO2 (4:1, v/v).\n\nOriginal volume: 1009 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.249374Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013748'

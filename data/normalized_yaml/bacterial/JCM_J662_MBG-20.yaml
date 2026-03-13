@@ -1,3 +1,4 @@
+id: CultureMech:003008
 name: MBG-20
 original_name: MBG-20
 category: bacterial
@@ -36,9 +37,10 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve Sea salts in distilled water and sterilize by filtration. Separately, autoclave
-    peptone, yeast extract and glucose solutions and add to the sterile Sea salts solution. Make the liquid
-    medium anaerobic by repeated cycles (three times) of degassing and charging with argon.
+  description: Dissolve Sea salts in distilled water and sterilize by filtration.
+    Separately, autoclave peptone, yeast extract and glucose solutions and add to
+    the sterile Sea salts solution. Make the liquid medium anaerobic by repeated cycles
+    (three times) of degassing and charging with argon.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J662'
+- timestamp: '2026-03-13T06:19:17.117953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003008'

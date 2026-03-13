@@ -1,3 +1,4 @@
+id: CultureMech:003139
 name: m TGE BROTH MEDIUM
 original_name: m TGE BROTH MEDIUM
 category: bacterial
@@ -25,3 +26,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J795'
+- timestamp: '2026-03-13T06:19:18.101918Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003139'

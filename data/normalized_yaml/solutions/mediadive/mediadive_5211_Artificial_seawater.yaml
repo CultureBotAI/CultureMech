@@ -1,3 +1,4 @@
+id: CultureMech:014121
 preferred_term: Artificial seawater
 term:
   id: mediadive.solution:5211
@@ -138,3 +139,8 @@ composition:
 preparation_notes: Artificial seawater can be replaced with natural seawater. In this
   case, filtrate seawater (pore size, 02 ï¿½m) and boil. After cooling, filtrate again
   (pore size, 0.45 ï¿½m).
+curation_history:
+- timestamp: '2026-03-13T06:20:35.729242Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014121'

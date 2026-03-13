@@ -1,3 +1,4 @@
+id: CultureMech:010576
 preferred_term: Main sol. 500
 term:
   id: mediadive.solution:1027
@@ -182,3 +183,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, magnesium sulfate,
 
 
   Original volume: 1005 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.470611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010576'

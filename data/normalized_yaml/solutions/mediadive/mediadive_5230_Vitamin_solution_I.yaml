@@ -1,3 +1,4 @@
+id: CultureMech:014142
 preferred_term: Vitamin solution I
 term:
   id: mediadive.solution:5230
@@ -112,3 +113,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: '<I>Vitamin solution II: </I> '
+curation_history:
+- timestamp: '2026-03-13T06:20:35.884070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014142'

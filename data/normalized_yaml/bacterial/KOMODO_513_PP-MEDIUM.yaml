@@ -1,3 +1,4 @@
+id: CultureMech:005714
 name: PP-MEDIUM
 original_name: PP-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:513
     label: PP-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 513 | DSMZ Medium: 513 (mediadive.medium:513) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 513 | DSMZ Medium: 513 (mediadive.medium:513)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Polypeptone
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 513
+- timestamp: '2026-03-13T06:19:35.683310Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005714'

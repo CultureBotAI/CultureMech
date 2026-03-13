@@ -1,3 +1,4 @@
+id: CultureMech:001837
 name: STARKEYA NOVELLA MEDIUM
 original_name: STARKEYA NOVELLA MEDIUM
 category: bacterial
@@ -121,12 +122,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Solutions A, B, C and D are sterilized separately by autoclaving and mixed when cooled
-    to room temperature. Adjust pH of complete medium to 8.5 with sterile 0.5 N NaOH.
+  description: Solutions A, B, C and D are sterilized separately by autoclaving and
+    mixed when cooled to room temperature. Adjust pH of complete medium to 8.5 with
+    sterile 0.5 N NaOH.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
-    Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -134,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 69'
+- timestamp: '2026-03-13T06:19:07.604768Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001837'

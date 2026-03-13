@@ -1,3 +1,4 @@
+id: CultureMech:015086
 preferred_term: Main sol. 52
 term:
   id: mediadive.solution:67
@@ -163,3 +164,8 @@ preparation_notes: 'Dissolve all ingredients (except ethanol, carbonate, vitamin
 
 
   Original volume: 1023 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.678684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015086'

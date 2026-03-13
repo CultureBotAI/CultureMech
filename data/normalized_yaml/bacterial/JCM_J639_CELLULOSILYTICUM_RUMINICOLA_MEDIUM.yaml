@@ -1,3 +1,4 @@
+id: CultureMech:002985
 name: CELLULOSILYTICUM RUMINICOLA MEDIUM
 original_name: CELLULOSILYTICUM RUMINICOLA MEDIUM
 category: bacterial
@@ -74,10 +75,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Solutions A and B separately and filter-sterilize Solution C. Combine the three
-    solutions, distribute into culture vessels under a stream of N2-CO2 (80:20, v/v) and seal with butyl
-    rubber stoppers. Prior to inoculation, reduce the medium with 0.05% L-cysteine x HCl x H2O (autoclaved
-    as a 5% solution under a N2 atmosphere).
+  description: Autoclave Solutions A and B separately and filter-sterilize Solution
+    C. Combine the three solutions, distribute into culture vessels under a stream
+    of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
+    reduce the medium with 0.05% L-cysteine x HCl x H2O (autoclaved as a 5% solution
+    under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +87,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J639'
+- timestamp: '2026-03-13T06:19:16.972396Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002985'

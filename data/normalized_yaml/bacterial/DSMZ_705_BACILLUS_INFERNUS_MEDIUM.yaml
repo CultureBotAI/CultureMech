@@ -1,3 +1,4 @@
+id: CultureMech:001844
 name: BACILLUS INFERNUS MEDIUM
 original_name: BACILLUS INFERNUS MEDIUM
 category: bacterial
@@ -162,19 +163,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "First, dissolve ferric citrate in water by heating and adjust to pH 7.5 with NaOH, then\
-    \ add other\r\nmedium ingredients except acetate, lactate, and coenzyme M. Sparge medium with 80%\
-    \ N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense under 80% N2 and 20% CO2\
-    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add acetate, lactate,\
+  description: "First, dissolve ferric citrate in water by heating and adjust to pH\
+    \ 7.5 with NaOH, then add other\r\nmedium ingredients except acetate, lactate,\
+    \ and coenzyme M. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45\
+    \ min to make it anoxic. Dispense under 80% N2 and 20% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add acetate, lactate,\
     \ and coenzyme M from sterile anoxic stock solutions prepared under 100% N2 gas."
 - step_number: 2
   action: MIX
-  description: Prior to inoculation the pH of the complete medium should be checked and adjusted to 7.5,
-    if necessary.
+  description: Prior to inoculation the pH of the complete medium should be checked
+    and adjusted to 7.5, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N NaOH, then dissolve
-    remaining compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
+    NaOH, then dissolve remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -182,3 +184,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 705'
+- timestamp: '2026-03-13T06:19:07.676215Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001844'

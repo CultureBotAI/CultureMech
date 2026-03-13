@@ -1,3 +1,4 @@
+id: CultureMech:003335
 name: METHANOCOCCOIDES MEDIUM
 original_name: METHANOCOCCOIDES MEDIUM
 category: bacterial
@@ -19,8 +20,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and adjust pH to 7.0
-    - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and
+    adjust pH to 7.0 - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20,
+    v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +34,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.594760Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003335'
 data_quality_flags:
 - incomplete_composition

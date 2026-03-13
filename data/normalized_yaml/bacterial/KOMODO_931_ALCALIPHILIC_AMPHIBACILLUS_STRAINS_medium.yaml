@@ -1,3 +1,4 @@
+id: CultureMech:006851
 name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
 original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:931
     label: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
-notes: 'Source: KOMODO ModelSEED | ID: 931 | DSMZ Medium: 931 (mediadive.medium:931) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 931 | DSMZ Medium: 931 (mediadive.medium:931)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -194,3 +196,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 931
+- timestamp: '2026-03-13T06:19:44.333719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006851'

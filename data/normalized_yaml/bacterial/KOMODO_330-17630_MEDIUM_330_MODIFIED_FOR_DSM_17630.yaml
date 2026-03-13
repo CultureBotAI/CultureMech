@@ -1,3 +1,4 @@
+id: CultureMech:005023
 name: MEDIUM 330 MODIFIED FOR DSM 17630
 original_name: MEDIUM 330 MODIFIED FOR DSM 17630
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:330_17630
     label: MEDIUM 330 MODIFIED FOR DSM 17630
-notes: 'Source: KOMODO ModelSEED | ID: 330_17630 | DSMZ Medium: 330 (mediadive.medium:330) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 330_17630 | DSMZ Medium: 330 (mediadive.medium:330)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -196,3 +197,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 330
+- timestamp: '2026-03-13T06:19:29.604239Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005023'

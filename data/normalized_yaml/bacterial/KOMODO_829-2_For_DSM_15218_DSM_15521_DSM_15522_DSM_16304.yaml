@@ -1,3 +1,4 @@
+id: CultureMech:006562
 name: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
 original_name: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
 category: bacterial
@@ -254,4 +255,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.931686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006562'
 ph_value: 6.0

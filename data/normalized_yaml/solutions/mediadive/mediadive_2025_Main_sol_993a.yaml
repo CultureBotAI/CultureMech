@@ -1,3 +1,4 @@
+id: CultureMech:011428
 preferred_term: Main sol. 993a
 term:
   id: mediadive.solution:2025
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2
   x 6 H20 (10%).
+curation_history:
+- timestamp: '2026-03-13T06:20:19.618477Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011428'

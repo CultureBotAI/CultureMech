@@ -1,11 +1,13 @@
+id: CultureMech:004348
 name: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
-original_name: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+original_name: Trace metals solution (Pfennig & Lippert, 1966)_replace_Na2MoO4 x 2
+  H2O_with_NH4MoO4
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 3-4
-notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4 | DSMZ
-  Medium: 2072 (mediadive.medium:2072) | Aerobic: No'
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
+  | DSMZ Medium: 2072 (mediadive.medium:2072) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4
   term:
@@ -19,3 +21,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2072_replace_Na2MoO4 x 2 H2O_with_NH4MoO4'
+- timestamp: '2026-03-13T06:19:26.639579Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004348'

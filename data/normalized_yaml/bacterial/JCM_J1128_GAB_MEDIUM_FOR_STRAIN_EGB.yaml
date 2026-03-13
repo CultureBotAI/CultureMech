@@ -1,3 +1,4 @@
+id: CultureMech:002300
 name: GAB MEDIUM FOR STRAIN EGB
 original_name: GAB MEDIUM FOR STRAIN EGB
 category: bacterial
@@ -74,9 +75,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, dispense the medium into culture vessels (e.g., 10 ml in the Hungate tubes)
-    under a N2-CO2 (4:1, v/v) gas stream, seal with butyl rubber stoppers and autoclave. Aseptically and
-    anaerobically add per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components, dispense the medium into culture vessels (e.g., 10
+    ml in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream, seal with butyl
+    rubber stoppers and autoclave. Aseptically and anaerobically add per liter the
+    following solutions (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 8.0 - 8.2, if necessary.
@@ -87,3 +89,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1128'
+- timestamp: '2026-03-13T06:19:12.139607Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002300'

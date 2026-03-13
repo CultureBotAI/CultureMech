@@ -1,3 +1,4 @@
+id: CultureMech:000697
 name: WOODSHOLEA MEDIUM
 original_name: WOODSHOLEA MEDIUM
 category: bacterial
@@ -46,9 +47,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g peptone and 50 g yeast
-    extract in 1l distilled water, autoclaved), 2 ml 50 % glucose (autoclaved) and 5 ml filter-sterilized
-    riboflavin (0.2 mg ml-1) were added.
+  description: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g peptone
+    and 50 g yeast extract in 1l distilled water, autoclaved), 2 ml 50 % glucose (autoclaved)
+    and 5 ml filter-sterilized riboflavin (0.2 mg ml-1) were added.
 - step_number: 2
   action: AUTOCLAVE
   description: autoclaved
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1238'
+- timestamp: '2026-03-13T06:18:57.557026Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000697'

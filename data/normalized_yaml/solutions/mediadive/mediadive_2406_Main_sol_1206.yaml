@@ -1,3 +1,4 @@
+id: CultureMech:011784
 preferred_term: Main sol. 1206
 term:
   id: mediadive.solution:2406
@@ -170,3 +171,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, xylose, vitamins, 
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.886567Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011784'

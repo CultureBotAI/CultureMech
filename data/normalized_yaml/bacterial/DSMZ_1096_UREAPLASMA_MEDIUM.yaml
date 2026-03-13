@@ -1,3 +1,4 @@
+id: CultureMech:000527
 name: UREAPLASMA MEDIUM
 original_name: UREAPLASMA MEDIUM
 category: bacterial
@@ -58,8 +59,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust solution A for final pH 6.0 with HCl. Autoclave solution A at 121°C for 15 min.
-    Cool to room temperature and aseptically add solution B filter sterilised.
+  description: Adjust solution A for final pH 6.0 with HCl. Autoclave solution A at
+    121°C for 15 min. Cool to room temperature and aseptically add solution B filter
+    sterilised.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +73,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.086405Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000527'

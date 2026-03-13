@@ -1,3 +1,4 @@
+id: CultureMech:013672
 preferred_term: Main sol. J774
 term:
   id: mediadive.solution:4721
@@ -104,3 +105,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 6.8 and autoclave. A
   \ medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) and seal with\
   \ butyl rubber stoppers. Then, pressurize to 100 kPa with H2-CO2 (4:1, v/v).\n\n\
   Original volume: 1005 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.727854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013672'

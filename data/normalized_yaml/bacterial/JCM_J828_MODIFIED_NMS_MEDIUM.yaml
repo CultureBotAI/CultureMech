@@ -1,3 +1,4 @@
+id: CultureMech:003172
 name: MODIFIED NMS MEDIUM
 original_name: MODIFIED NMS MEDIUM
 category: bacterial
@@ -126,13 +127,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solutions (autoclaved)
-    to the medium:'
+  description: 'Mix components and autoclave. After cooling, add the following solutions
+    (autoclaved) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 6.8, if necessary. Aseptically distribute the medium into sterile serum bottles
-    (leave &; 80% gas phase by volume) and seal with rubber stoppers. Replace the gas phase with an air-methane
-    gas mixture (75:25, v/v). Cultivate with shaking.
+  description: Adjust pH to 6.8, if necessary. Aseptically distribute the medium into
+    sterile serum bottles (leave &; 80% gas phase by volume) and seal with rubber
+    stoppers. Replace the gas phase with an air-methane gas mixture (75:25, v/v).
+    Cultivate with shaking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J828'
+- timestamp: '2026-03-13T06:19:18.340076Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003172'

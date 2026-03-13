@@ -1,3 +1,4 @@
+id: CultureMech:009576
 name: MC medium
 original_name: MC medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -24,7 +27,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,7 +36,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -40,7 +45,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -48,7 +54,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -56,12 +63,14 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
 - preferred_term: H3BO3
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -69,12 +78,14 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: CoCl2·6H2O
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   concentration:
     value: variable
     unit: VARIABLE
 - preferred_term: ZnSO4·7H2O
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
@@ -82,7 +93,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: CuSO4·5H2O
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
@@ -90,7 +102,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: MnSO4·5H2O
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
@@ -98,7 +111,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: (NH4)6Mo7O4·4H2O
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   concentration:
     value: variable
     unit: VARIABLE
@@ -126,7 +140,11 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.332153'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H3BO3; Added default concentration for ingredient:
-    CoCl2·6H2O; Added default concentration for ingredient: ZnSO4·7H2O; Added default concentration for
-    ingredient: CuSO4·5H2O; Added default concentration for ingredient: MnSO4·5H2O; Added default concentration
-    for ingredient: (NH4)6Mo7O4·4H2O'
+  notes: 'Added default concentration for ingredient: H3BO3; Added default concentration
+    for ingredient: CoCl2·6H2O; Added default concentration for ingredient: ZnSO4·7H2O;
+    Added default concentration for ingredient: CuSO4·5H2O; Added default concentration
+    for ingredient: MnSO4·5H2O; Added default concentration for ingredient: (NH4)6Mo7O4·4H2O'
+- timestamp: '2026-03-13T06:20:07.021107Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009576'

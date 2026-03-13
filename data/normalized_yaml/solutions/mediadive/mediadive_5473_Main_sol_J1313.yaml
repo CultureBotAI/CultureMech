@@ -1,3 +1,4 @@
+id: CultureMech:014377
 preferred_term: Main sol. J1313
 term:
   id: mediadive.solution:5473
@@ -225,3 +226,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (9:1,
   \ solution:\nAutoclave 100 mg menadione (vitamin K3) with 100 ml 5% NaHCO3 solution.\
   \ Remove insoluble residue by filtration. Store the solution under a N2-CO2 (8:2,\
   \ v/v) gas mixture.\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.432105Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014377'

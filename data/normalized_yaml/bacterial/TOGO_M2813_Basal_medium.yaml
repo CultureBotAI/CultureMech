@@ -1,3 +1,4 @@
+id: CultureMech:009361
 name: Basal medium
 original_name: Basal medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +23,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:50385
     label: hemin
@@ -37,7 +41,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -84,5 +89,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.592725'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 10 N NaOH; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: 10 N NaOH; Added default concentration
+    for ingredient: N2'
+- timestamp: '2026-03-13T06:20:05.873236Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009361'

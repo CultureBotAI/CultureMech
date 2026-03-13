@@ -1,3 +1,4 @@
+id: CultureMech:003209
 name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 15% NaCl
 original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 15% NaCl
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J863'
+- timestamp: '2026-03-13T06:19:18.590627Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003209'

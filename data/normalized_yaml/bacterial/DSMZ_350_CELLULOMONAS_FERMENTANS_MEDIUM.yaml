@@ -1,3 +1,4 @@
+id: CultureMech:001450
 name: CELLULOMONAS FERMENTANS MEDIUM
 original_name: CELLULOMONAS FERMENTANS MEDIUM
 category: bacterial
@@ -91,8 +92,8 @@ preparation_steps:
   description: Adjust pH to 7.4 with 8 M NaOH.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Cellobiose, NaHCO3, and cysteine
-    are sterilized separately by autoclaving under N2.
+  description: Prepare the medium anaerobically under 100% nitrogen. Cellobiose, NaHCO3,
+    and cysteine are sterilized separately by autoclaving under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,3 +101,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 350'
+- timestamp: '2026-03-13T06:19:04.316208Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001450'

@@ -1,3 +1,4 @@
+id: CultureMech:014766
 preferred_term: Mail sol. C48
 term:
   id: mediadive.solution:6039
@@ -28,3 +29,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Add to 1000 ml of 3N­BBM+V 1g of Bacto peptone and 5g of sucrose.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.460779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014766'

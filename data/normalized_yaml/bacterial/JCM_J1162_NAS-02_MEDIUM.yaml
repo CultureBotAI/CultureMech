@@ -1,3 +1,4 @@
+id: CultureMech:002335
 name: NAS-02 MEDIUM
 original_name: NAS-02 MEDIUM
 category: bacterial
@@ -183,9 +184,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 5.2. Autoclave under a N2-CO2 (4:1, v/v) gas
-    mixture. After cooling, add the following solutions anaerobically and aseptically (autoclaved or *filter-sterilized
-    and store under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 5.2. Autoclave under a
+    N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions anaerobically
+    and aseptically (autoclaved or *filter-sterilized and store under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -193,3 +194,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1162'
+- timestamp: '2026-03-13T06:19:12.473311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002335'

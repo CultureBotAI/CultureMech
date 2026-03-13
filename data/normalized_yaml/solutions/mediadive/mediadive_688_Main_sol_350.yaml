@@ -1,3 +1,4 @@
+id: CultureMech:015094
 preferred_term: Main sol. 350
 term:
   id: mediadive.solution:688
@@ -151,3 +152,8 @@ preparation_notes: 'Adjust pH to 7.4 with 8 M NaOH.
 
   Prepare the medium anaerobically under 100% nitrogen. Cellobiose, NaHCO3, and cysteine
   are sterilized separately by autoclaving under N2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.715265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015094'

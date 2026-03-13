@@ -1,3 +1,4 @@
+id: CultureMech:003004
 name: PELAGICOCCUS AGAR
 original_name: PELAGICOCCUS AGAR
 category: bacterial
@@ -66,9 +67,9 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: MIX
-  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216 (BD-Difco) instead
-    of Marine agar 2216 and R2A broth instead of R2A agar by omitting agar from the R2A agar medium composition
-    (see Medium No. 346).'
+  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216
+    (BD-Difco) instead of Marine agar 2216 and R2A broth instead of R2A agar by omitting
+    agar from the R2A agar medium composition (see Medium No. 346).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J659'
+- timestamp: '2026-03-13T06:19:17.090753Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003004'

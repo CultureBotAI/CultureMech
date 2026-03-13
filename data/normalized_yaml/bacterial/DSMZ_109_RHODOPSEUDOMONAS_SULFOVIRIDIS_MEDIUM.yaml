@@ -1,3 +1,4 @@
+id: CultureMech:000531
 name: RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM
 original_name: RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM
 category: bacterial
@@ -164,10 +165,11 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 3
   action: ADJUST_PH
-  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate (). Adjust pH to 6.8 and
-    sterilize at 121°C for 15 min. The liquid medium is sterilized in rubber stoppered or screw-capped
-    bottles under anaerobic conditions (Ref. 3365). After sterilization neutralized sterile sodium sulfide
-    solution is added to a final concentration of 0.03% (see medium 27).
+  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate (). Adjust
+    pH to 6.8 and sterilize at 121°C for 15 min. The liquid medium is sterilized in
+    rubber stoppered or screw-capped bottles under anaerobic conditions (Ref. 3365).
+    After sterilization neutralized sterile sodium sulfide solution is added to a
+    final concentration of 0.03% (see medium 27).
 applications:
 - Microbial cultivation
 curation_history:
@@ -175,3 +177,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 109'
+- timestamp: '2026-03-13T06:18:56.132673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000531'

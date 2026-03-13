@@ -1,3 +1,4 @@
+id: CultureMech:000521
 name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
 original_name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
 category: bacterial
@@ -71,9 +72,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: In liquid medium, the pH should be adjusted to 3.5 with H2SO4. In solid medium, the pH
-    should be adjusted to 4.5 with H2SO4 after autoclaving the medium. Sterilize the glucose separately
-    and add to the sterile medium.
+  description: In liquid medium, the pH should be adjusted to 3.5 with H2SO4. In solid
+    medium, the pH should be adjusted to 4.5 with H2SO4 after autoclaving the medium.
+    Sterilize the glucose separately and add to the sterile medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +82,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 108'
+- timestamp: '2026-03-13T06:18:56.029628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000521'

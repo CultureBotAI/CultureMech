@@ -1,3 +1,4 @@
+id: CultureMech:009974
 name: DB Characterization Medium NO. 2
 original_name: DB Characterization Medium NO. 2
 category: bacterial
@@ -188,6 +189,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:10.424176Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009974'
 high_metal: true
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])

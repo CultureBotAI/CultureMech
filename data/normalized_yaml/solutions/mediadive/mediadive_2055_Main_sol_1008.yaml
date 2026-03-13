@@ -1,3 +1,4 @@
+id: CultureMech:011455
 preferred_term: Main sol. 1008
 term:
   id: mediadive.solution:2055
@@ -90,3 +91,8 @@ preparation_notes: 'Dissolve ingredients except thioglycolate and cellobiose, th
   N2 gas atmosphere and sterilized by filtration.
 
   Note: Bottled seawater from Biomaris GmbH can be used instead of filtered seawater.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.817105Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011455'

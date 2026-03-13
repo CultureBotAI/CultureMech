@@ -1,3 +1,4 @@
+id: CultureMech:012667
 preferred_term: Main sol. 1728
 term:
   id: mediadive.solution:3567
@@ -81,3 +82,8 @@ preparation_notes: 'pH 7.0- 7.5
   For solid medium, add 15g of agar per liter.
 
   Glucose and vitamin solution should be filter-sterilized separately.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.143865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012667'

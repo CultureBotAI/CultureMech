@@ -1,3 +1,4 @@
+id: CultureMech:015016
 preferred_term: Main sol. 1012b
 term:
   id: mediadive.solution:6397
@@ -60,3 +61,8 @@ preparation_notes: 'Grow prey bacteria on agar plates using the medium indicated
   prey medium suspension should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells.
   Inoculate the complete medium immediately after preparation and incubate the suspension
   with shaking until a decrease in turbidity is visible.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.389160Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015016'

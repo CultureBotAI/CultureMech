@@ -1,3 +1,4 @@
+id: CultureMech:013939
 preferred_term: Main sol. J985
 term:
   id: mediadive.solution:5015
@@ -141,3 +142,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (80:2
   \ culture vessels under a N2-CO2 (80:20, v/v) gas mixture and seal with butyl rubber\
   \ stoppers. Finally, add per liter the following solution from an anaerobic stock\
   \ (autoclaved and stored under a N2 atmosphere): \n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.508508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013939'

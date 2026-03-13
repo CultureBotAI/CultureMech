@@ -1,3 +1,4 @@
+id: CultureMech:001213
 name: BEIJERINCKIA MEDIUM (LMG 18)
 original_name: BEIJERINCKIA MEDIUM (LMG 18)
 category: bacterial
@@ -92,3 +93,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1736'
+- timestamp: '2026-03-13T06:19:02.293509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001213'

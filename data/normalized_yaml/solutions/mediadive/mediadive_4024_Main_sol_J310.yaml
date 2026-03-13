@@ -1,3 +1,4 @@
+id: CultureMech:013082
 preferred_term: Main sol. J310
 term:
   id: mediadive.solution:4024
@@ -93,3 +94,8 @@ preparation_notes: 'Filter-sterilize KSCN solution and separately autoclave Trac
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.290464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013082'

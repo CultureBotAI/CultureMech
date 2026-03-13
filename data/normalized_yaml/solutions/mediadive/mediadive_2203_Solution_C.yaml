@@ -1,3 +1,4 @@
+id: CultureMech:011595
 preferred_term: Solution C
 term:
   id: mediadive.solution:2203
@@ -43,3 +44,8 @@ preparation_notes: 'Adjust to pH 7.5 with NaOH.
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.664774Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011595'

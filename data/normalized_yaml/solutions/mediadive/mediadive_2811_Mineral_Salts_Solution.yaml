@@ -1,3 +1,4 @@
+id: CultureMech:012096
 preferred_term: Mineral Salts Solution
 term:
   id: mediadive.solution:2811
@@ -31,3 +32,8 @@ preparation_notes: 'pH 6.8
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.834483Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012096'

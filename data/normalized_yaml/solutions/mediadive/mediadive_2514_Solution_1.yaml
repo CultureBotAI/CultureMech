@@ -1,3 +1,4 @@
+id: CultureMech:011874
 preferred_term: Solution 1
 term:
   id: mediadive.solution:2514
@@ -31,3 +32,8 @@ preparation_notes: 'Adjust to pH 5.5 with NaOH/KOH solution (see below).
 
 
   Original volume: 492 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.538825Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011874'

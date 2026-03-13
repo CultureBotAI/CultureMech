@@ -1,3 +1,4 @@
+id: CultureMech:000538
 name: NITRILIRUPTOR ALKALIPHILUS MEDIUM
 original_name: NITRILIRUPTOR ALKALIPHILUS MEDIUM
 category: bacterial
@@ -134,9 +135,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize in closed bottles at 120°C
-    20 min. After cooling, usually there will be some precipitate on the bottom. That´s why it is handy
-    to have another empty 1L bottle to decant clear top solution into it.
+  description: Dissolve in this order in 1L preferably MilliQ water. Sterilize in
+    closed bottles at 120°C 20 min. After cooling, usually there will be some precipitate
+    on the bottom. That´s why it is handy to have another empty 1L bottle to decant
+    clear top solution into it.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from concentrated steril stock solutions:'
@@ -148,7 +150,8 @@ preparation_steps:
   description: Vitamin B12 and Isobutyramide solution you have to filter-sterilize
 - step_number: 5
   action: FILTER_STERILIZE
-  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or 110°C 20 min
+  description: 50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize or 110°C
+    20 min
 - step_number: 6
   action: MIX
   description: pH final 3-4 by HCl
@@ -162,4 +165,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.629971Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:56.210303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000538'

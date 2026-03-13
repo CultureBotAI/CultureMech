@@ -1,3 +1,4 @@
+id: CultureMech:011795
 preferred_term: Main sol. 1212
 term:
   id: mediadive.solution:2416
@@ -175,3 +176,8 @@ composition:
 preparation_notes: Autoclave the Na2CO3, NaHCO3 and the lactate separately from the
   medium and combine after cooling. Vitamin B12 is added from a sterile stock solution.
   The final pH of the medium should be 9.5. Add 15.0 g/l agar for solid media.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.971891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011795'

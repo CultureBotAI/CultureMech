@@ -1,3 +1,4 @@
+id: CultureMech:014868
 preferred_term: Vitamin mix
 term:
   id: mediadive.solution:6166
@@ -39,3 +40,8 @@ composition:
     label: biotin
     confidence: 0.9
     match_type: synonym_match_ambiguous
+curation_history:
+- timestamp: '2026-03-13T06:20:39.847558Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014868'

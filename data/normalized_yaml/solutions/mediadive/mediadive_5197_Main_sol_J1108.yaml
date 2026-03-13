@@ -1,3 +1,4 @@
+id: CultureMech:014108
 preferred_term: Main sol. J1108
 term:
   id: mediadive.solution:5197
@@ -139,3 +140,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (80:2
   \ v/v) gas atmosphere. After cooling, add the following solutions (autoclaved or\
   \ *filter-sterilized): \nAdjust pH to 7.0, if necessary.\n\nOriginal volume: 1003\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.648104Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014108'

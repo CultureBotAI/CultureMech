@@ -1,3 +1,4 @@
+id: CultureMech:007430
 name: Pjc with 4-hpa
 original_name: Pjc with 4-hpa
 category: bacterial
@@ -74,14 +75,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.353060Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 82, Reference: Mazumdar et al. (2014)
-    PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 82, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:49.015522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007430'
 media_term:
   preferred_term: MediaDB Medium 82
   term:
     id: MEDIADB:82
     label: Pjc with 4-hpa
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,3 +1,4 @@
+id: CultureMech:001477
 name: AN1 MEDIUM
 original_name: AN1 MEDIUM
 category: bacterial
@@ -59,8 +60,9 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate and sulfur
-    separately. Sterilize the sulfur by steaming for 3 h on each of three successive days.
+  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate
+    and sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three
+    successive days.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +74,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:04.474984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001477'

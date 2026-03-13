@@ -1,3 +1,4 @@
+id: CultureMech:012432
 preferred_term: Main sol. 1566
 term:
   id: mediadive.solution:3240
@@ -224,3 +225,8 @@ preparation_notes: 'Adjust pH to 7.5 with 1 M HCl or 1 M NaHCO3
   Autoclave at 121 °C for 20 min.
 
   Before inoculation add from sterile stock solutions: '
+curation_history:
+- timestamp: '2026-03-13T06:20:25.899804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012432'

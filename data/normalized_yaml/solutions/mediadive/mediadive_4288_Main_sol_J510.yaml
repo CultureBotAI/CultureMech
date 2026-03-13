@@ -1,3 +1,4 @@
+id: CultureMech:013295
 preferred_term: Main sol. J510
 term:
   id: mediadive.solution:4288
@@ -68,3 +69,8 @@ preparation_notes: 'Adjust pH to 6.8. Separately autoclave 20 x Phosphate soluti
 
 
   Original volume: 1050 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.525487Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013295'

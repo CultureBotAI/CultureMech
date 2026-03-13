@@ -1,3 +1,4 @@
+id: CultureMech:010462
 name: CZAPEK PEPTONE AGAR + 12% NACL
 original_name: CZAPEK PEPTONE AGAR + 12% NACL
 category: fungal
@@ -82,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1857'
+- timestamp: '2026-03-13T06:20:13.924274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010462'

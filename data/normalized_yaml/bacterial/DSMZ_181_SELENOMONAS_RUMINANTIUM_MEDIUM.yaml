@@ -1,3 +1,4 @@
+id: CultureMech:001252
 name: SELENOMONAS RUMINANTIUM MEDIUM
 original_name: SELENOMONAS RUMINANTIUM MEDIUM
 category: bacterial
@@ -89,3 +90,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:02.566133Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001252'

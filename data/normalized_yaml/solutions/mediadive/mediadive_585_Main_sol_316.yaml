@@ -1,3 +1,4 @@
+id: CultureMech:014676
 preferred_term: Main sol. 316
 term:
   id: mediadive.solution:585
@@ -131,3 +132,8 @@ preparation_notes: 'Dissolve ingredients (except sulfide), adjust pH to 7.0, bri
 
 
   Original volume: 1016 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.004352Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014676'

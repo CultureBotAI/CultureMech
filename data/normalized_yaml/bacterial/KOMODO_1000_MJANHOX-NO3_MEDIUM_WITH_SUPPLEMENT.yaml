@@ -1,3 +1,4 @@
+id: CultureMech:003497
 name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1000
     label: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
-notes: 'Source: KOMODO ModelSEED | ID: 1000 | DSMZ Medium: 1000 (mediadive.medium:1000) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1000 | DSMZ Medium: 1000 (mediadive.medium:1000)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -176,4 +178,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1000
+- timestamp: '2026-03-13T06:19:20.159303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003497'
 ph_value: 7.9

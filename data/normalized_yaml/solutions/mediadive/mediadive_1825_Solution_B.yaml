@@ -1,3 +1,4 @@
+id: CultureMech:011251
 preferred_term: Solution B
 term:
   id: mediadive.solution:1825
@@ -31,3 +32,8 @@ preparation_notes: 'The pH of this solution should be 1.2.
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.404926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011251'

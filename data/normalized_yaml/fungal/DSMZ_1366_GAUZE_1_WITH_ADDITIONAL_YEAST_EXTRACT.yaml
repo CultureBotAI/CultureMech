@@ -1,3 +1,4 @@
+id: CultureMech:010449
 name: GAUZE 1 WITH ADDITIONAL YEAST EXTRACT
 original_name: GAUZE 1 WITH ADDITIONAL YEAST EXTRACT
 category: fungal
@@ -77,4 +78,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1366'
+- timestamp: '2026-03-13T06:20:13.868169Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010449'
 high_metal: true

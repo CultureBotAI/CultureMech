@@ -1,3 +1,4 @@
+id: CultureMech:012649
 preferred_term: Bicarbonate solution (1M)
 term:
   id: mediadive.solution:3547
@@ -31,3 +32,8 @@ preparation_notes: The solution was dispensed in the required portions (40 mL pe
   1 L medium). The head space of the bottles was flushed with CO2. Saturation of CO2
   in the solution was achieved by repeated flushing and shaking of the bottles. Finally,
   the bottles were sealed with rubber stoppers and aluminum crimps and autoclaved.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.063848Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012649'

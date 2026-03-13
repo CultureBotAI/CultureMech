@@ -1,3 +1,4 @@
+id: CultureMech:011708
 preferred_term: Main sol. 1162
 term:
   id: mediadive.solution:2328
@@ -154,3 +155,8 @@ preparation_notes: 'Adjust to pH 7.5
 
   Notes: Filter-sterilized Vitamin B12, Na2S x 9 H2O, Na2S2O3 x 5 H2O are to be added
   only after autoclaving the medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.425333Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011708'

@@ -1,3 +1,4 @@
+id: CultureMech:011199
 preferred_term: Main sol. 857
 term:
   id: mediadive.solution:1749
@@ -169,3 +170,8 @@ preparation_notes: 'Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C
   to 50-55°C.
 
   Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.129246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011199'

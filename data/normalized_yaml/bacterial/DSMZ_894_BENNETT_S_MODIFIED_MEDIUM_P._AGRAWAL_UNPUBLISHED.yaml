@@ -1,3 +1,4 @@
+id: CultureMech:002057
 name: BENNETT'S MODIFIED MEDIUM (P. AGRAWAL, UNPUBLISHED)
 original_name: BENNETT'S MODIFIED MEDIUM (P. AGRAWAL, UNPUBLISHED)
 category: bacterial
@@ -79,5 +80,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:25.018562'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration for ingredient:
-    Ferric ammonium citrate'
+  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
+    for ingredient: Ferric ammonium citrate'
+- timestamp: '2026-03-13T06:19:09.860331Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002057'

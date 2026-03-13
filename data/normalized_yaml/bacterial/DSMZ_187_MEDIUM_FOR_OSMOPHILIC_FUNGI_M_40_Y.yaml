@@ -1,3 +1,4 @@
+id: CultureMech:001279
 name: MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)
 original_name: MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 187'
+- timestamp: '2026-03-13T06:19:02.782136Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001279'

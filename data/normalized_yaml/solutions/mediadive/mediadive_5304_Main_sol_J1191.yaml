@@ -1,3 +1,4 @@
+id: CultureMech:014217
 preferred_term: Main sol. J1191
 term:
   id: mediadive.solution:5304
@@ -44,3 +45,8 @@ preparation_notes: 'After autoclaving, aseptically add 100 ml of a sterile 10% N
 
 
   Original volume: 900 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.395920Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014217'

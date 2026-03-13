@@ -1,3 +1,4 @@
+id: CultureMech:007095
 name: Medium without amino acids; fang et al
 original_name: Medium without amino acids; fang et al
 category: bacterial
@@ -81,14 +82,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.395946Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 202, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 202, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.104658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007095'
 media_term:
   preferred_term: MediaDB Medium 202
   term:
     id: MEDIADB:202
     label: Medium without amino acids; fang et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,3 +1,4 @@
+id: CultureMech:003137
 name: NHA MEDIUM
 original_name: NHA MEDIUM
 category: bacterial
@@ -72,4 +73,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:18.085319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003137'
 high_metal: true

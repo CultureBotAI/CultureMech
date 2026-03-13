@@ -1,3 +1,4 @@
+id: CultureMech:012625
 preferred_term: Main sol. 1700
 term:
   id: mediadive.solution:3521
@@ -146,3 +147,8 @@ preparation_notes: 'Dissolve all ingredients except thioglycolate, ascorbic acid
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.926629Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012625'

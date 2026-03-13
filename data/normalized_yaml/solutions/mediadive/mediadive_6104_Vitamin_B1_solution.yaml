@@ -1,3 +1,4 @@
+id: CultureMech:014806
 preferred_term: Vitamin B1 solution
 term:
   id: mediadive.solution:6104
@@ -19,3 +20,8 @@ preparation_notes: 'Filter sterile
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.612473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014806'

@@ -1,3 +1,4 @@
+id: CultureMech:006861
 name: ST21 AGAR FOR CELLULOSE DEGRADERS
 original_name: ST21 AGAR FOR CELLULOSE DEGRADERS
 category: bacterial
@@ -93,3 +94,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:44.430012Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006861'

@@ -1,3 +1,4 @@
+id: CultureMech:006086
 name: blood agar No 2 (Oxoid)
 original_name: blood agar No 2 (Oxoid)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:6004
     label: blood agar No 2 (Oxoid)
-notes: 'Source: KOMODO ModelSEED | ID: 6004 | DSMZ Medium: 6004 (mediadive.medium:6004) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 6004 | DSMZ Medium: 6004 (mediadive.medium:6004)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 6004'
+- timestamp: '2026-03-13T06:19:38.156676Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006086'

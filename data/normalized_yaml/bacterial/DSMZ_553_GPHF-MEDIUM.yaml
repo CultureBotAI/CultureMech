@@ -1,3 +1,4 @@
+id: CultureMech:001688
 name: GPHF-MEDIUM
 original_name: GPHF-MEDIUM
 category: bacterial
@@ -55,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 553'
+- timestamp: '2026-03-13T06:19:06.438202Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001688'

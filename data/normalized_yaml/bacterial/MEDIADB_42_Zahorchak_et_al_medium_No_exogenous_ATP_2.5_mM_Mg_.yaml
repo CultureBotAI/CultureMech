@@ -1,3 +1,4 @@
+id: CultureMech:007332
 name: Zahorchak et al medium; No exogenous ATP, 2.5 mM Mg^2+
 original_name: Zahorchak et al medium; No exogenous ATP, 2.5 mM Mg^2+
 category: bacterial
@@ -196,8 +197,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:42.889358Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 42, Reference: Mazumdar et al. (2014)
-    PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 42, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:06.731364Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -206,12 +207,17 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: Zahorchak et, culture_type: isolate'
+- timestamp: '2026-03-13T06:19:47.932541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007332'
 media_term:
   preferred_term: MediaDB Medium 42
   term:
     id: MEDIADB:42
     label: Zahorchak et al medium; No exogenous ATP, 2.5 mM Mg^2+
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,3 +1,4 @@
+id: CultureMech:014343
 preferred_term: Main sol. J1288
 term:
   id: mediadive.solution:5436
@@ -57,3 +58,8 @@ preparation_notes: "Mix two media autoclaved separately. Aseptically add the fol
   \ sulfur (see below, approximately 5.0 g/L) under an argon gas stream, and seal\
   \ with butyl rubber stoppers. Then, add per liter the following solutions (autoclaved\
   \ or *filter-sterilized): \n\nOriginal volume: 1026 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.186728Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014343'

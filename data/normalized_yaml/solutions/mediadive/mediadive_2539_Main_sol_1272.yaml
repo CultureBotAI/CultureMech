@@ -1,3 +1,4 @@
+id: CultureMech:011885
 preferred_term: Main sol. 1272
 term:
   id: mediadive.solution:2539
@@ -81,3 +82,8 @@ preparation_notes: 'Sterilize at 110°C 20 min in a closed vessel (i.e. a serum 
   (a white colloid will form which will rapidly dissolve after mixing)
 
   After sterilization add:'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.608324Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011885'

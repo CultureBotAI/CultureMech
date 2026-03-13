@@ -1,3 +1,4 @@
+id: CultureMech:006742
 name: VM1 MEDIUM for heterotrophic growth
 original_name: VM1 MEDIUM for heterotrophic growth
 category: bacterial
@@ -181,3 +182,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:43.524080Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006742'

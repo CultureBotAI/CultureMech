@@ -1,3 +1,4 @@
+id: CultureMech:002964
 name: MODIFIED PY4S AGAR
 original_name: MODIFIED PY4S AGAR
 category: bacterial
@@ -19,8 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 363 supplemented with 5 mg/L hemin and 10 ï¿½g/L vitamin B12. Adjust pH
-    to 7.8.
+  description: Use Medium No. 363 supplemented with 5 mg/L hemin and 10 ï¿½g/L vitamin
+    B12. Adjust pH to 7.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.853188Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002964'
 data_quality_flags:
 - incomplete_composition

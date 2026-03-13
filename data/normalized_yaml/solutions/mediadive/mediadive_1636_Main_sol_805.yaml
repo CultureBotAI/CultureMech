@@ -1,3 +1,4 @@
+id: CultureMech:011093
 preferred_term: Main sol. 805
 term:
   id: mediadive.solution:1636
@@ -102,3 +103,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: To solid media add 15 g/l agar. Sterilise medium at 115°C for 10
   minutes.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.472675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011093'

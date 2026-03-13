@@ -1,3 +1,4 @@
+id: CultureMech:009474
 name: tryptic soy agar (supplemented with 5% sheep blood)
 original_name: tryptic soy agar (supplemented with 5% sheep blood)
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   date: '2026-02-03T11:20:56.867347'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.316560Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009474'

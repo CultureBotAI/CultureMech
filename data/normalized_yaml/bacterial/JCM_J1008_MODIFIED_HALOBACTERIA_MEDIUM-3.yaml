@@ -1,3 +1,4 @@
+id: CultureMech:002192
 name: MODIFIED HALOBACTERIA MEDIUM-3
 original_name: MODIFIED HALOBACTERIA MEDIUM-3
 category: bacterial
@@ -19,8 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0 g/L MgSO4 x 7H2O.
-    Adjust pH to 7.5.
+  description: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0
+    g/L MgSO4 x 7H2O. Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:11.118644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002192'
 data_quality_flags:
 - incomplete_composition

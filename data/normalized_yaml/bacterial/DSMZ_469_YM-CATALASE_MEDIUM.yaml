@@ -1,3 +1,4 @@
+id: CultureMech:001598
 name: YM-CATALASE MEDIUM
 original_name: YM-CATALASE MEDIUM
 category: bacterial
@@ -50,9 +51,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize
-    separately by filtration. Cool down autoclaved main solution to 50°C, and aseptically add catalase
-    and MgSO4 solution.
+  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water
+    each, and sterilize separately by filtration. Cool down autoclaved main solution
+    to 50°C, and aseptically add catalase and MgSO4 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,3 +61,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 469'
+- timestamp: '2026-03-13T06:19:05.532578Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001598'

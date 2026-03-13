@@ -1,3 +1,4 @@
+id: CultureMech:010972
 preferred_term: Main sol. 733
 term:
   id: mediadive.solution:1503
@@ -141,3 +142,8 @@ preparation_notes: 'Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt so
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.739723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010972'

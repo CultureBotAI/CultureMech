@@ -1,3 +1,4 @@
+id: CultureMech:005054
 name: FLEXIBACTER medium
 original_name: FLEXIBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:344
     label: FLEXIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 344 | DSMZ Medium: 344 (mediadive.medium:344) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 344 | DSMZ Medium: 344 (mediadive.medium:344)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 344
+- timestamp: '2026-03-13T06:19:29.831315Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005054'

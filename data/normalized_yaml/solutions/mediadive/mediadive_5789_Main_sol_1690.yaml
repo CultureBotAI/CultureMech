@@ -1,3 +1,4 @@
+id: CultureMech:014635
 preferred_term: Main sol. 1690
 term:
   id: mediadive.solution:5789
@@ -47,3 +48,8 @@ preparation_notes: 'Dilute stock solution with MilliQ water (1+19 v/v), add 4 g 
   another dose of ammonium can be added. Incubation time may be up to several weeks.
   We checked the nitrite content (absence/presence) every 5-7 days and added ammonium
   chloride about every 2-3 weeks. Don''t expose cultures to intense light.'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.761109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014635'

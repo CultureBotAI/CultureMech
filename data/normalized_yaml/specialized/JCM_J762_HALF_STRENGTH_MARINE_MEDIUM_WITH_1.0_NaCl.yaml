@@ -1,3 +1,4 @@
+id: CultureMech:015420
 name: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
 original_name: HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl
 category: specialized
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J762'
+- timestamp: '2026-03-13T06:20:42.574819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015420'

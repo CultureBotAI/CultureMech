@@ -1,3 +1,4 @@
+id: CultureMech:000924
 name: Glucose minerals salts medium
 original_name: Glucose minerals salts medium
 category: bacterial
@@ -79,3 +80,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1458'
+- timestamp: '2026-03-13T06:18:59.617393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000924'

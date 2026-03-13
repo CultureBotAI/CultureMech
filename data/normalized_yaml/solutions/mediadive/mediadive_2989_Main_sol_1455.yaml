@@ -1,3 +1,4 @@
+id: CultureMech:012223
 preferred_term: Main sol. 1455
 term:
   id: mediadive.solution:2989
@@ -182,3 +183,8 @@ preparation_notes: 'Dissolve ingredients except bicarbonate, succinate, vitamins
 
 
   Original volume: 1006 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.616289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012223'

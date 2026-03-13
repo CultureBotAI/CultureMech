@@ -1,3 +1,4 @@
+id: CultureMech:001277
 name: 70:30 sporulation medium
 original_name: 70:30 sporulation medium
 category: bacterial
@@ -76,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1874'
+- timestamp: '2026-03-13T06:19:02.764652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001277'

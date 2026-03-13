@@ -1,3 +1,4 @@
+id: CultureMech:011823
 preferred_term: Artificial seawater
 term:
   id: mediadive.solution:2453
@@ -124,3 +125,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 5.5 - 6.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.184813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011823'

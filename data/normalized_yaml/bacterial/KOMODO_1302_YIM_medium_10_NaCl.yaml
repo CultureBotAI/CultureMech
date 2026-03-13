@@ -1,3 +1,4 @@
+id: CultureMech:004057
 name: YIM medium + 10 % NaCl
 original_name: YIM medium + 10 % NaCl
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1302
     label: YIM medium + 10 % NaCl
-notes: 'Source: KOMODO ModelSEED | ID: 1302 | DSMZ Medium: 1302 (mediadive.medium:1302) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1302 | DSMZ Medium: 1302 (mediadive.medium:1302)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -58,3 +60,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1302
+- timestamp: '2026-03-13T06:19:24.487929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004057'

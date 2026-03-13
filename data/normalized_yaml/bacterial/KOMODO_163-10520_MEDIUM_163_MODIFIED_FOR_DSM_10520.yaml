@@ -1,11 +1,12 @@
+id: CultureMech:004188
 name: MEDIUM 163 MODIFIED FOR DSM 10520
 original_name: MEDIUM 163 MODIFIED FOR DSM 10520
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
-notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 163_10520 | DSMZ Medium: 163 (mediadive.medium:163)
-  | Aerobic: No'
+notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 163_10520 |
+  DSMZ Medium: 163 (mediadive.medium:163) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 163_10520
   term:
@@ -101,3 +102,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 163
+- timestamp: '2026-03-13T06:19:25.729304Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004188'

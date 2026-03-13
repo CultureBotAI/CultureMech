@@ -1,3 +1,4 @@
+id: CultureMech:014440
 preferred_term: Neutralized sulfide solution 3%(w/v)
 term:
   id: mediadive.solution:5561
@@ -39,3 +40,8 @@ preparation_notes: 'The sulfide solution is prepared in a 250 ml screw-capped bo
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.827055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014440'

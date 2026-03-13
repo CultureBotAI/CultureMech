@@ -1,3 +1,4 @@
+id: CultureMech:010644
 preferred_term: Trace element solution (Vishniac & Santer, 1957)
 term:
   id: mediadive.solution:114
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH,
   then add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:14.800980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010644'

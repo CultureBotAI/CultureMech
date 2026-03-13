@@ -1,3 +1,4 @@
+id: CultureMech:014894
 preferred_term: MY75S (Malt & Yeast Extract ­ 75% Seawater Agar)
 term:
   id: mediadive.solution:6197
@@ -68,3 +69,8 @@ preparation_notes: "Thoroughly  disperse  the agar  in cold  75% seawater.  Brin
   \  Transfer the molten agar \r\nto suitable vessels and sterilise at 15 psi for\
   \ 15 minutes.  If available a bench top \r\nagar  maker  is  preferable  to making\
   \  this  medium.  The  constant stirring  during \r\nsterilisation minimises flocculation."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.946523Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014894'

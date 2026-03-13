@@ -1,3 +1,4 @@
+id: CultureMech:015265
 preferred_term: Main sol. 455
 term:
   id: mediadive.solution:909
@@ -138,3 +139,8 @@ composition:
 preparation_notes: 'pH: 6.9.
 
   Prepare and distribute medium anaerobically by using the Hungate technique.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.555695Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015265'

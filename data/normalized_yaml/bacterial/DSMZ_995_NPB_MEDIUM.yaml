@@ -1,3 +1,4 @@
+id: CultureMech:002180
 name: NPB MEDIUM
 original_name: NPB MEDIUM
 category: bacterial
@@ -61,9 +62,10 @@ preparation_steps:
   description: For solid medium 15 g of agar is mixed, and autoclaved. pH 7.0.
 - step_number: 2
   action: HEAT
-  description: Inoculate the cells to 5 ml of NPB medium, and incubate at 30°C with shaking (160 strokes
-    per min.). Cell turbidity at 660 nm after 4 days of cultivation will be 0.4-0.5. On NPB agar plate,
-    colony formation is observed after 3-4 days of incubation at 30°C.
+  description: Inoculate the cells to 5 ml of NPB medium, and incubate at 30°C with
+    shaking (160 strokes per min.). Cell turbidity at 660 nm after 4 days of cultivation
+    will be 0.4-0.5. On NPB agar plate, colony formation is observed after 3-4 days
+    of incubation at 30°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 995'
+- timestamp: '2026-03-13T06:19:11.007070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002180'

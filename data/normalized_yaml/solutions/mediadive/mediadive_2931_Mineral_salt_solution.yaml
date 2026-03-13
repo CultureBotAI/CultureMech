@@ -1,3 +1,4 @@
+id: CultureMech:012185
 preferred_term: Mineral salt solution
 term:
   id: mediadive.solution:2931
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve NTA first by neutralizing with KOH, then add other salts.
   Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.416104Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012185'

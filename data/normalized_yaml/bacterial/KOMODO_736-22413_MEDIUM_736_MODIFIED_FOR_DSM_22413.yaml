@@ -1,3 +1,4 @@
+id: CultureMech:006383
 name: MEDIUM 736 MODIFIED FOR DSM 22413
 original_name: MEDIUM 736 MODIFIED FOR DSM 22413
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:736_22413
     label: MEDIUM 736 MODIFIED FOR DSM 22413
-notes: 'Source: KOMODO ModelSEED | ID: 736_22413 | DSMZ Medium: 736 (mediadive.medium:736) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 736_22413 | DSMZ Medium: 736 (mediadive.medium:736)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -73,4 +74,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 736
+- timestamp: '2026-03-13T06:19:40.303055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006383'
 ph_value: 7.2

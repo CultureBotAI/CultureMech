@@ -1,3 +1,4 @@
+id: CultureMech:012090
 preferred_term: Main sol. 1382
 term:
   id: mediadive.solution:2802
@@ -81,3 +82,8 @@ preparation_notes: 'Adjust pH to 5.0-6.5
   15 ml tubes).
 
   Sterilize at 121°C for 15 minutes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.808653Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012090'

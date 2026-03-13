@@ -1,3 +1,4 @@
+id: CultureMech:011440
 preferred_term: Main sol. 999
 term:
   id: mediadive.solution:2037
@@ -118,3 +119,8 @@ preparation_notes: "After autoclaving 20 min at 121°C, the following sterile so
   \ should be incubated at 30°C and light intensity of 500 lux from a tungsten lamp\
   \ (16 h light, 8 h dark). Pure cultures in liquid medium can be stored in 60 ml\
   \ screw cap bottles at 4°C in the dark."
+curation_history:
+- timestamp: '2026-03-13T06:20:19.699975Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011440'

@@ -1,3 +1,4 @@
+id: CultureMech:014044
 preferred_term: Main sol. J1067
 term:
   id: mediadive.solution:5132
@@ -42,3 +43,8 @@ preparation_notes: "Bottom layer:\nTop layer: \nAutoclave both layer solutions. 
   \ rubber stoppers and keeping anoxic in the vessels. Silicone rubber stopper is\
   \ O2 permeable and creates a mircoaerophilic condition in the culture vessels.\n\
   \nOriginal volume: 1125 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.230505Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014044'

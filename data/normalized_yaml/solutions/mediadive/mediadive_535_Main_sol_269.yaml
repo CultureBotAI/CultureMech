@@ -1,3 +1,4 @@
+id: CultureMech:014271
 preferred_term: Main sol. 269
 term:
   id: mediadive.solution:535
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Autoclave glucose and yeast extract separately as a 10% and 3%,
   resp., stock solution. Adjust pH of complete medium to 3.0 with 1 N H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.732096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014271'

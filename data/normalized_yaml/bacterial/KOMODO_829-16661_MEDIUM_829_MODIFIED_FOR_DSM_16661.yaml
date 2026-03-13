@@ -1,3 +1,4 @@
+id: CultureMech:006560
 name: MEDIUM 829 MODIFIED FOR DSM 16661
 original_name: MEDIUM 829 MODIFIED FOR DSM 16661
 category: bacterial
@@ -253,4 +254,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.903465Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006560'
 ph_value: 6.0

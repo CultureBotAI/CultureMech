@@ -1,3 +1,4 @@
+id: CultureMech:011446
 preferred_term: Main sol. 1003
 term:
   id: mediadive.solution:2046
@@ -94,3 +95,8 @@ preparation_notes: "Place 1000 ml of anaerobic water (CO2 water) in a flask. Add
   \ tube. Place stopper on loaded culture tube, crimp tube cap onto stopper. Autoclave\
   \ the medium for 20 min., 121°C. Add 1 ml of O2 to each tube before inoculation.\
   \ After the inoculation the tubes are pressurized with H2 (138 KP)."
+curation_history:
+- timestamp: '2026-03-13T06:20:19.754189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011446'

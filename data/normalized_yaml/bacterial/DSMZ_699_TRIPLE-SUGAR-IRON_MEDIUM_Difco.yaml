@@ -1,3 +1,4 @@
+id: CultureMech:001836
 name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
 original_name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
 category: bacterial
@@ -91,3 +92,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 699'
+- timestamp: '2026-03-13T06:19:07.597442Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001836'

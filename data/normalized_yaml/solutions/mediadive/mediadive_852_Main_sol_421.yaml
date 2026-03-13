@@ -1,3 +1,4 @@
+id: CultureMech:015214
 preferred_term: Main sol. 421
 term:
   id: mediadive.solution:852
@@ -53,3 +54,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: Supplement medium 28 with NaCl (10%), MgCl2 x 6 H2O (0.3%) Na-acetate
   (0.05%) and sodium thiosulfate (0.05%). Incubate at 500 to 1000 Lux light intensity.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.345809Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015214'

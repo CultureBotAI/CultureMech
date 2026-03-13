@@ -1,3 +1,4 @@
+id: CultureMech:012374
 preferred_term: Main sol. 1530
 term:
   id: mediadive.solution:3170
@@ -104,3 +105,8 @@ preparation_notes: 'Adjust pH to 10.5
 
   The basic medium is the same as Caso Bouillon (Merck or Oxoid). The medium may be
   solidified by adding 20.0 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.573673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012374'

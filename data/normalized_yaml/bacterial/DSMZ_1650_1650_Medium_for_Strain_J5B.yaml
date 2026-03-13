@@ -1,3 +1,4 @@
+id: CultureMech:001132
 name: '1650: Medium for Strain J5B'
 original_name: '1650: Medium for Strain J5B'
 category: bacterial
@@ -234,17 +235,18 @@ preparation_steps:
   description: Adjust pH 7.0-7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Dispense the medium into sterile bottles. Fill 6 ml medium in 15 ml tubes, fill the headspace
-    with a mixture of N2/CO2 (80:20) and seal the bottles with butyl rubber stoppers . Autoclave at 121°C
-    for 15 min. Add following solutions aseptically: 1 M Bicarbonate solution (see below) 30 ml, Vitamin
-    solution (see below) 1 ml, 1 M acetate solution (see below) 1 ml. Adjust pH 7.0-7.2'
+  description: 'Dispense the medium into sterile bottles. Fill 6 ml medium in 15 ml
+    tubes, fill the headspace with a mixture of N2/CO2 (80:20) and seal the bottles
+    with butyl rubber stoppers . Autoclave at 121°C for 15 min. Add following solutions
+    aseptically: 1 M Bicarbonate solution (see below) 30 ml, Vitamin solution (see
+    below) 1 ml, 1 M acetate solution (see below) 1 ml. Adjust pH 7.0-7.2'
 - step_number: 3
   action: AUTOCLAVE
   description: Adjust pH 7.0-7.2 and autoclave at 121°C for 15 min.
 - step_number: 4
   action: AUTOCLAVE
-  description: Saturated with CO2 gas and tightly sealed in bottles filled with CO2 gas. Autoclave at
-    121°C for 15 min
+  description: Saturated with CO2 gas and tightly sealed in bottles filled with CO2
+    gas. Autoclave at 121°C for 15 min
 - step_number: 5
   action: FILTER_STERILIZE
   description: Filter-sterilized the vitamin solution
@@ -259,3 +261,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:01.483992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001132'

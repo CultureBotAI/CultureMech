@@ -1,3 +1,4 @@
+id: CultureMech:000919
 name: ALTERYTHROBACTER MEDIUM 216L
 original_name: ALTERYTHROBACTER MEDIUM 216L
 category: bacterial
@@ -58,11 +59,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified by adding 12.0
-    g/l agar.
+  description: Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified
+    by adding 12.0 g/l agar.
 - step_number: 2
   action: MIX
-  description: 'Note: alternatively, distilled water can be replaced by seawater if the NaCl is omitted.'
+  description: 'Note: alternatively, distilled water can be replaced by seawater if
+    the NaCl is omitted.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +76,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.563778Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000919'

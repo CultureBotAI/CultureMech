@@ -1,3 +1,4 @@
+id: CultureMech:003326
 name: VNG MEDIUM
 original_name: VNG MEDIUM
 category: bacterial
@@ -207,9 +208,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl. Distribute the medium into
-    culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch tubes), seal with butyl rubber stoppers and
-    autoclave. After cooling, add the following solution (per 900 ml, autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl. Distribute
+    the medium into culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch tubes),
+    seal with butyl rubber stoppers and autoclave. After cooling, add the following
+    solution (per 900 ml, autoclaved):'
 - step_number: 2
   action: MIX
   description: Do not use if exceeds 90 days shelf life.
@@ -220,3 +222,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J977'
+- timestamp: '2026-03-13T06:19:19.520883Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003326'

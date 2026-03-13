@@ -1,3 +1,4 @@
+id: CultureMech:003534
 name: SODALIS GLOSSINIDIUS medium
 original_name: SODALIS GLOSSINIDIUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1021
     label: SODALIS GLOSSINIDIUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1021 | DSMZ Medium: 1021 (mediadive.medium:1021) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1021 | DSMZ Medium: 1021 (mediadive.medium:1021)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -86,3 +88,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1021
+- timestamp: '2026-03-13T06:19:20.490626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003534'

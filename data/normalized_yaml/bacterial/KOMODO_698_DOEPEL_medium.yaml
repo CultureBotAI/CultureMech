@@ -1,3 +1,4 @@
+id: CultureMech:006322
 name: DOEPEL medium
 original_name: DOEPEL medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:698
     label: DOEPEL medium
-notes: 'Source: KOMODO ModelSEED | ID: 698 | DSMZ Medium: 698 (mediadive.medium:698) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 698 | DSMZ Medium: 698 (mediadive.medium:698)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 698
+- timestamp: '2026-03-13T06:19:39.728929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006322'

@@ -1,3 +1,4 @@
+id: CultureMech:013735
 preferred_term: Main sol. J830
 term:
   id: mediadive.solution:4793
@@ -203,3 +204,8 @@ preparation_notes: "Mix ingredients and adjust pH to 7.4. Bring to a boil and co
   \ a N2-CO2 (4:1, v/v) gas mixture. The other solutions are autoclaved and stored\
   \ anaerobically under a N2 atmosphere.\nReadjust pH of the medium to 7.4, if necessary.\n\
   \nOriginal volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.160587Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013735'

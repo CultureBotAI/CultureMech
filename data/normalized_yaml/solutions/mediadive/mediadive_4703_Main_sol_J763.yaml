@@ -1,3 +1,4 @@
+id: CultureMech:013655
 preferred_term: Main sol. J763
 term:
   id: mediadive.solution:4703
@@ -31,3 +32,8 @@ preparation_notes: 'Mix components thoroughly and autoclave. After cooling, adju
   pH to 8.5 - 9.0 with sterile 20% sodium carbonate solution (autoclaved).
 
   For preparation of solid medium, add 20.0 g/L agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.625586Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013655'

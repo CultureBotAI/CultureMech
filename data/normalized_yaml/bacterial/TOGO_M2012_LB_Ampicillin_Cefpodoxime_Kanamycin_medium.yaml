@@ -1,3 +1,4 @@
+id: CultureMech:008599
 name: LB + Ampicillin, Cefpodoxime, Kanamycin medium
 original_name: LB + Ampicillin, Cefpodoxime, Kanamycin medium
 category: bacterial
@@ -62,6 +63,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:58.533863Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008599'
 solutions:
 - preferred_term: Kanamycin solution (50 mg/ml)*
   composition: []

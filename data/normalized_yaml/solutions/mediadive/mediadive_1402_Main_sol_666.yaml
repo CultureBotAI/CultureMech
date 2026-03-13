@@ -1,3 +1,4 @@
+id: CultureMech:010887
 preferred_term: Main sol. 666
 term:
   id: mediadive.solution:1402
@@ -169,3 +170,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, succinate, yeast e
 
   Note: Supplementing the medium with 1.50 g/l agar stimulates growth of strains after
   resuscitation from ampoules.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.160935Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010887'

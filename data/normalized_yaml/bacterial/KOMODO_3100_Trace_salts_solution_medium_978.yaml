@@ -1,3 +1,4 @@
+id: CultureMech:004938
 name: Trace salts solution (medium 978)
 original_name: Trace salts solution (medium 978)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3100
     label: Trace salts solution (medium 978)
-notes: 'Source: KOMODO ModelSEED | ID: 3100 | DSMZ Medium: 3100 (mediadive.medium:3100) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3100 | DSMZ Medium: 3100 (mediadive.medium:3100)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3100'
+- timestamp: '2026-03-13T06:19:29.127376Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004938'

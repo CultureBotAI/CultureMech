@@ -1,3 +1,4 @@
+id: CultureMech:014748
 preferred_term: Mail sol. C21
 term:
   id: mediadive.solution:6012
@@ -140,3 +141,8 @@ preparation_notes: "Once elements are dissolved autoclave at 15 psi for 15 minut
   Make up to 1 litre with distilled water. For agar add 15 g per litre Bacteriological\
   \ Agar (Thermo\r\nScientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi\
   \ for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.390248Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014748'

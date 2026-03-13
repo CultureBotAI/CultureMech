@@ -1,3 +1,4 @@
+id: CultureMech:003909
 name: AEROBIC SULFOLOBALES medium WITHOUT SULFUR
 original_name: AEROBIC SULFOLOBALES medium WITHOUT SULFUR
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1189
     label: AEROBIC SULFOLOBALES medium WITHOUT SULFUR
-notes: 'Source: KOMODO ModelSEED | ID: 1189 | DSMZ Medium: 1189 (mediadive.medium:1189) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1189 | DSMZ Medium: 1189 (mediadive.medium:1189)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -99,3 +101,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1189
+- timestamp: '2026-03-13T06:19:23.160241Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003909'

@@ -1,3 +1,4 @@
+id: CultureMech:001589
 name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
 original_name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
 category: bacterial
@@ -116,20 +117,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare and autoclave medium 465 without ammonium sulfate. Add 120 mg/l benzylcyanide (not
-    sterilized) to the incubation atmosphere or directly to the medium.
+  description: Prepare and autoclave medium 465 without ammonium sulfate. Add 120
+    mg/l benzylcyanide (not sterilized) to the incubation atmosphere or directly to
+    the medium.
 - step_number: 2
   action: MIX
   description: pH 7.25
 - step_number: 3
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended for the specific
-    strain (e.g. medium 1, 220, 535 or 830). After this reactivation, cultivate on mineral medium with
-    the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
+    for the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation,
+    cultivate on mineral medium with the appropriate carbon source.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 465d'
+- timestamp: '2026-03-13T06:19:05.437508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001589'

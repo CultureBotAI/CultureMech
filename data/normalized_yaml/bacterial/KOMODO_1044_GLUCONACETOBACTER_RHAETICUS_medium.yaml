@@ -1,3 +1,4 @@
+id: CultureMech:003603
 name: GLUCONACETOBACTER RHAETICUS medium
 original_name: GLUCONACETOBACTER RHAETICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1044
     label: GLUCONACETOBACTER RHAETICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1044
+- timestamp: '2026-03-13T06:19:20.966847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003603'

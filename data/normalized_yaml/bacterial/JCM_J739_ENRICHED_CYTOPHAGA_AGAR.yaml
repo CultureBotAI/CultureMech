@@ -1,3 +1,4 @@
+id: CultureMech:003082
 name: ENRICHED CYTOPHAGA AGAR
 original_name: ENRICHED CYTOPHAGA AGAR
 category: bacterial
@@ -48,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J739'
+- timestamp: '2026-03-13T06:19:17.654304Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003082'

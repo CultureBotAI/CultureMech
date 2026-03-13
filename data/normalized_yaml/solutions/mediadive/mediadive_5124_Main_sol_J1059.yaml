@@ -1,3 +1,4 @@
+id: CultureMech:014035
 preferred_term: Main sol. J1059
 term:
   id: mediadive.solution:5124
@@ -56,3 +57,8 @@ preparation_notes: Mix components thoroughly except the glucose solution and Vit
   Aseptically add the filter-sterilized glucose solution and Vitamin solution. Adjust
   pH to 7.2 - 7.4 with sterile KOH, if necessary. For preparation of solid medium,
   add 15 g/L agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:35.163677Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014035'

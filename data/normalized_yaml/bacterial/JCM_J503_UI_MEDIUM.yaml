@@ -1,3 +1,4 @@
+id: CultureMech:002853
 name: UI MEDIUM
 original_name: UI MEDIUM
 category: bacterial
@@ -18,10 +19,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and 1.0 ml Trace vitamins
-    solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic acid in Solution B (per 100
-    ml) instead of sodium pyruvate. Otherwise, prepare the medium as described in the recipe of Medium
-    No. 284.
+  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and
+    1.0 ml Trace vitamins solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic
+    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 284.
 - step_number: 2
   action: MIX
   description: 'Comment: For strain JCM 13376, incubate with a 15 - 20% inoculum.'
@@ -36,5 +37,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.100810Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002853'
 data_quality_flags:
 - incomplete_composition

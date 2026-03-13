@@ -1,3 +1,4 @@
+id: CultureMech:002801
 name: ANOXIC MEDIUM FOR STRAIN AcBE2-1
 original_name: ANOXIC MEDIUM FOR STRAIN AcBE2-1
 category: bacterial
@@ -230,6 +231,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:15.815429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002801'
 solutions:
 - preferred_term: 84 g/L NaHCO3 solution
   composition: []

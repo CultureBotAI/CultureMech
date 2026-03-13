@@ -1,3 +1,4 @@
+id: CultureMech:004224
 name: For DSM 16697
 original_name: For DSM 16697
 category: bacterial
@@ -257,4 +258,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:25.941060Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004224'
 high_metal: true

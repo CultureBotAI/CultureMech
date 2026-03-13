@@ -1,3 +1,4 @@
+id: CultureMech:013637
 preferred_term: Solution A
 term:
   id: mediadive.solution:4684
@@ -167,3 +168,8 @@ preparation_notes: "First dissolve iron(III) citrate in 800 ml distilled water a
   \ mixture, and seal with sterile butyl rubber stoppers. Then add per 50 ml the following\
   \ solutions from anaerobic stocks: \nCheck the final pH of the medium to be around\
   \ 7.0.\n\nOriginal volume: 36 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.490529Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013637'

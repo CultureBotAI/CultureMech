@@ -1,3 +1,4 @@
+id: CultureMech:006678
 name: MEDIUM 86 MODIFIED FOR DSM 11376
 original_name: MEDIUM 86 MODIFIED FOR DSM 11376
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:86_11376
     label: MEDIUM 86 MODIFIED FOR DSM 11376
-notes: 'Source: KOMODO ModelSEED | ID: 86_11376 | DSMZ Medium: 86 (mediadive.medium:86) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 86_11376 | DSMZ Medium: 86 (mediadive.medium:86)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -127,4 +129,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 86
+- timestamp: '2026-03-13T06:19:42.916115Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006678'
 ph_value: 8.2

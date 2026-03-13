@@ -1,3 +1,4 @@
+id: CultureMech:012153
 preferred_term: Main sol. 1416
 term:
   id: mediadive.solution:2886
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Prepare separate solutions of sodium thiosulfate and magnesium
   sulfate. Adjust solutions to pH 7.5 -8.0 and sterilize by autoclaving. Add sterile
   trace element solution after autoclving and combining the solutions.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.218491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012153'

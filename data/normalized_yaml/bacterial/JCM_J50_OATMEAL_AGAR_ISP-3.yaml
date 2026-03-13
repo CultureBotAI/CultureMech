@@ -1,3 +1,4 @@
+id: CultureMech:002860
 name: OATMEAL AGAR (ISP-3)
 original_name: OATMEAL AGAR (ISP-3)
 category: bacterial
@@ -46,8 +47,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water for 20 min. Filter through
-    cheesecloth. Bring volume back up to 1.0 L and add 1.0 ml of Trace salt solution.
+  description: Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water for 20
+    min. Filter through cheesecloth. Bring volume back up to 1.0 L and add 1.0 ml
+    of Trace salt solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2.
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J50'
+- timestamp: '2026-03-13T06:19:16.134592Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002860'

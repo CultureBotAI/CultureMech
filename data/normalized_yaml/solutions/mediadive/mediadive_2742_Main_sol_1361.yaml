@@ -1,3 +1,4 @@
+id: CultureMech:012050
 preferred_term: Main sol. 1361
 term:
   id: mediadive.solution:2742
@@ -142,3 +143,8 @@ preparation_notes: Prepare the medium without yeast extract, glucose, NaHCO3, cy
   be 7.0. Autoclave the medium and add from sterile stock solutions yeast extract,
   glucose, cysteine hydrochloride, vitamin solution and Na2S x 9 H2O.The final pH
   should be 7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.541867Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012050'

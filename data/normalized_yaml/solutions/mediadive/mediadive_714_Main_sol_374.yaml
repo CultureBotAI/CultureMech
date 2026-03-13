@@ -1,3 +1,4 @@
+id: CultureMech:015120
 preferred_term: Main sol. 374
 term:
   id: mediadive.solution:714
@@ -144,3 +145,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, isopropyl alcohol and
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.872840Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015120'

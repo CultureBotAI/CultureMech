@@ -1,3 +1,4 @@
+id: CultureMech:011471
 preferred_term: Main sol. 1019
 term:
   id: mediadive.solution:2070
@@ -115,3 +116,8 @@ composition:
 preparation_notes: 'pH 7.1 (adjusted with NaOH if needed)
 
   The medium may be solifidied with 17 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.931282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011471'

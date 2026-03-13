@@ -1,3 +1,4 @@
+id: CultureMech:001976
 name: THERMOANAEROBACTER SULFUROPHILUS MEDIUM
 original_name: THERMOANAEROBACTER SULFUROPHILUS MEDIUM
 category: bacterial
@@ -215,18 +216,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Dissolve ingredients except sulfur, carbonate, yeast extract, glucose, vitamins, and sulfide,
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing already
-    the appropriate amount of sulfur. Heat the medium vials to 90-100°C for 1 hour on each of 3 successive
-    days to sterilize the medium. Add yeast extract, glucose, vitamins (sterilized by filtration), and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use check pH of complete
-    medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients except sulfur, carbonate, yeast extract, glucose,
+    vitamins, and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials containing already the appropriate amount
+    of sulfur. Heat the medium vials to 90-100°C for 1 hour on each of 3 successive
+    days to sterilize the medium. Add yeast extract, glucose, vitamins (sterilized
+    by filtration), and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Prior to use check pH of complete medium and adjust
+    to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -237,4 +240,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.664509Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:09.018800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001976'

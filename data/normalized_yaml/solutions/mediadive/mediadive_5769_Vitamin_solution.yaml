@@ -1,3 +1,4 @@
+id: CultureMech:014620
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:5769
@@ -136,3 +137,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Note: for preparation see Medium 141'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.658409Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014620'

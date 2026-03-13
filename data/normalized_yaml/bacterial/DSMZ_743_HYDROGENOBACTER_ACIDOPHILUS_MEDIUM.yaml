@@ -1,3 +1,4 @@
+id: CultureMech:001878
 name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 original_name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 category: bacterial
@@ -105,8 +106,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 3.0 with HCl. Steam medium for 3 hours on each of 3 successive days. Incubate
-    under a gas phase H2:O2:CO2 = 7:1:1 with an overpressure of one atmosphere at 65°C.
+  description: Adjust pH to 3.0 with HCl. Steam medium for 3 hours on each of 3 successive
+    days. Incubate under a gas phase H2:O2:CO2 = 7:1:1 with an overpressure of one
+    atmosphere at 65°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,3 +116,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 743'
+- timestamp: '2026-03-13T06:19:08.077470Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001878'

@@ -1,3 +1,4 @@
+id: CultureMech:014020
 preferred_term: Main sol. J1047
 term:
   id: mediadive.solution:5108
@@ -116,3 +117,8 @@ preparation_notes: "Mix components and adjust pH to 7.0. Bubble the medium with 
   \ butyl rubber stoppers and autoclave. After cooling, add the following solutions\
   \ aseptically and anaerobically (autoclaved and stored under a N2 gas atmosphere):\
   \ \n\nOriginal volume: 1034 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.060392Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014020'

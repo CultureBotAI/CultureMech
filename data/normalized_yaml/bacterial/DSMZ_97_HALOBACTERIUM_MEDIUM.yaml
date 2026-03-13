@@ -1,3 +1,4 @@
+id: CultureMech:002162
 name: HALOBACTERIUM MEDIUM
 original_name: HALOBACTERIUM MEDIUM
 category: bacterial
@@ -87,4 +88,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:10.881416Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002162'
 high_metal: true

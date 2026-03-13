@@ -1,3 +1,4 @@
+id: CultureMech:012877
 preferred_term: Hutner's vitamin free mineral base
 term:
   id: mediadive.solution:3799
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: After nitrilotriacetic acid is dissolved in distilled water and
   neutralized with ca. 7.3 g of KOH, add the remaining salts.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.091817Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012877'

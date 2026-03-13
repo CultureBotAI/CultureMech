@@ -1,3 +1,4 @@
+id: CultureMech:011998
 preferred_term: Main sol. 1337
 term:
   id: mediadive.solution:2678
@@ -106,3 +107,8 @@ preparation_notes: 'Adjust to pH 8.0 and sterilize by autoclaving. The medium ma
   After autoclaving cool down and add the following to 1 litre medium. Methanol  and
   Vitamine B12 are filter sterilized. Solution T and Wolfe''s Mineral Solution are
   separately autoclaved. Final pH 8.0.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.202366Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011998'

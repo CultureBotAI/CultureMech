@@ -1,3 +1,4 @@
+id: CultureMech:002774
 name: MMJHS MEDIUM
 original_name: MMJHS MEDIUM
 category: bacterial
@@ -175,13 +176,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Mix ingredients except sulfur, adjust pH to 6.5 - 7.0 with NaOH and filter-sterilize. Steam
-    sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture vessels (e.g., 20
-    ml in 120 ml serum bottles) containing sulfur under a H2-CO2 (4:1, v/v) gas mixture, and seal with
-    butyl rubber stoppers. Pressurize the inoculated bottles to 300 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except sulfur, adjust pH to 6.5 - 7.0 with NaOH and
+    filter-sterilize. Steam sulfur for 3 hr on each of 3 successive days. Distribute
+    the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) containing
+    sulfur under a H2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers.
+    Pressurize the inoculated bottles to 300 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: Adjust final pH to 7.0 (for strain JCM 12458) or 6.5 (for strain JCM 12459).'
+  description: 'Comment: Adjust final pH to 7.0 (for strain JCM 12458) or 6.5 (for
+    strain JCM 12459).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -193,3 +196,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:15.644957Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002774'

@@ -1,3 +1,4 @@
+id: CultureMech:010496
 name: MARINE TRYPTONE YEAST EXTRACT MEDIUM
 original_name: MARINE TRYPTONE YEAST EXTRACT MEDIUM
 category: fungal
@@ -85,14 +86,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and cool down under a
-    N2 gas atmosphere. Distribute the medium in culture vessels (e.g., 10 ml in Balch tubes) under N2,
-    seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically add per
-    liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Comment: For strains JCM 32481, JCM 32483, JCM 32614 and JCM 32615, add separately autoclaved
-    1.0 M sodium pyruvate solution to the medium (20.0 ml per liter) instead of 0.2 M cellobiose solution.'
+  description: 'Comment: For strains JCM 32481, JCM 32483, JCM 32614 and JCM 32615,
+    add separately autoclaved 1.0 M sodium pyruvate solution to the medium (20.0 ml
+    per liter) instead of 0.2 M cellobiose solution.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,3 +103,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1208'
+- timestamp: '2026-03-13T06:20:14.073643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010496'

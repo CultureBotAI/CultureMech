@@ -1,3 +1,4 @@
+id: CultureMech:014780
 preferred_term: Mail sol. C68
 term:
   id: mediadive.solution:6059
@@ -30,3 +31,8 @@ composition:
 preparation_notes: "Add stock solutions to deionized water and make up to 1 litre.\
   \ In suitable vessels thoroughly\r\ndisperse the agar in cold amoeba saline solution.\
   \ Autoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.515803Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014780'

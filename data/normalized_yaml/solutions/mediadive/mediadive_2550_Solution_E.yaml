@@ -1,3 +1,4 @@
+id: CultureMech:011893
 preferred_term: Solution E
 term:
   id: mediadive.solution:2550
@@ -32,3 +33,8 @@ preparation_notes: 'Sterile distilled water gassed with dinitrogen, 100.00 ml. A
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.636368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011893'

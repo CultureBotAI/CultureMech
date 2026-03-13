@@ -1,3 +1,4 @@
+id: CultureMech:013811
 preferred_term: Main sol. J888
 term:
   id: mediadive.solution:4879
@@ -70,3 +71,8 @@ preparation_notes: 'Boil potatoes for 20 min. Strain through a fine sieve. Add g
 
   Comment: Commercial potato dextrose agar (BD-Difco or Oxoid) supplemented with NaCl
   can be used.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.644762Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013811'

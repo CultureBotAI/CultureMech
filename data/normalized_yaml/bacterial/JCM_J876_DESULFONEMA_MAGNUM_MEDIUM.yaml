@@ -1,3 +1,4 @@
+id: CultureMech:003223
 name: DESULFONEMA MAGNUM MEDIUM
 original_name: DESULFONEMA MAGNUM MEDIUM
 category: bacterial
@@ -185,18 +186,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to the boil and cool down under a N2-CO2 (4:1, v/v) gas
-    mixture. After cooling, check pH to be around 6.0. Distribute the medium into culture vessels under
-    the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter
-    the following solutions (autoclaved or *filter-sterilized and stored under N2) in the order listed:'
+  description: 'Mix components thoroughly, bring to the boil and cool down under a
+    N2-CO2 (4:1, v/v) gas mixture. After cooling, check pH to be around 6.0. Distribute
+    the medium into culture vessels under the same gas mixture, seal with butyl rubber
+    stoppers and autoclave. After cooling, add per liter the following solutions (autoclaved
+    or *filter-sterilized and stored under N2) in the order listed:'
 - step_number: 2
   action: MIX
-  description: By the completion of the medium, white precipitate should be formed. Equilibrate the medium
-    by standing the culture vessels overnight.
+  description: By the completion of the medium, white precipitate should be formed.
+    Equilibrate the medium by standing the culture vessels overnight.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized under N2) just before
-    inoculation may stimulate growth at the beginning. Incubate with a 5-10% inoculum.'
+  description: 'Comment: Addition of 10-20 mg/L sodium dithionate (filter-sterilized
+    under N2) just before inoculation may stimulate growth at the beginning. Incubate
+    with a 5-10% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +207,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J876'
+- timestamp: '2026-03-13T06:19:18.735423Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003223'

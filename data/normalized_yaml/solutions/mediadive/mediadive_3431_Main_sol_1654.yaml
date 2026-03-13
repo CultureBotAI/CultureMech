@@ -1,3 +1,4 @@
+id: CultureMech:012562
 preferred_term: Main sol. 1654
 term:
   id: mediadive.solution:3431
@@ -121,3 +122,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Add ascorbate solution ( 20 g per litre) after autoclaving and
   cooling. Final pH of the medium is 7.2. Charcoal should be omitted in liquid medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.567278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012562'

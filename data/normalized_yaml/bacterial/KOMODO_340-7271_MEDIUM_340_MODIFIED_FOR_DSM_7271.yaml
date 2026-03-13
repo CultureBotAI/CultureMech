@@ -1,3 +1,4 @@
+id: CultureMech:005048
 name: MEDIUM 340 MODIFIED FOR DSM 7271
 original_name: MEDIUM 340 MODIFIED FOR DSM 7271
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:340_7271
     label: MEDIUM 340 MODIFIED FOR DSM 7271
-notes: 'Source: KOMODO ModelSEED | ID: 340_7271 | DSMZ Medium: 340 (mediadive.medium:340) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 340_7271 | DSMZ Medium: 340 (mediadive.medium:340)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase
   concentration:
@@ -60,4 +62,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 340
+- timestamp: '2026-03-13T06:19:29.776192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005048'
 ph_value: 7.0

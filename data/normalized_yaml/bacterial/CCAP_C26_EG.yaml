@@ -1,3 +1,4 @@
+id: CultureMech:000334
 name: EG
 original_name: EG
 category: bacterial
@@ -44,8 +45,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add constituents above and make up to 1 litre with deionized water. For agar add 15 g\
-    \ per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at 15 psi for 15 minutes."
+  description: "Add constituents above and make up to 1 litre with deionized water.\
+    \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
+    \ 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C26'
+- timestamp: '2026-03-13T06:18:54.529219Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000334'

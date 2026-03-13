@@ -1,11 +1,12 @@
+id: CultureMech:004807
 name: Mineral salt solution (medium 289)
 original_name: Mineral salt solution (medium 289)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3028 | DSMZ Medium: 3028 (mediadive.medium:3028)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3028 | DSMZ Medium: 3028
+  (mediadive.medium:3028) | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 3028
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3028'
+- timestamp: '2026-03-13T06:19:28.830218Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004807'

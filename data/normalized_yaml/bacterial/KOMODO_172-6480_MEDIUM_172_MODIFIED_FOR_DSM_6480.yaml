@@ -1,3 +1,4 @@
+id: CultureMech:004199
 name: MEDIUM 172 MODIFIED FOR DSM 6480
 original_name: MEDIUM 172 MODIFIED FOR DSM 6480
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:172_6480
     label: MEDIUM 172 MODIFIED FOR DSM 6480
-notes: 'Source: KOMODO ModelSEED | ID: 172_6480 | DSMZ Medium: 172 (mediadive.medium:172) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 172_6480 | DSMZ Medium: 172 (mediadive.medium:172)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -78,4 +80,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 172
+- timestamp: '2026-03-13T06:19:25.792182Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004199'
 ph_value: 7.2

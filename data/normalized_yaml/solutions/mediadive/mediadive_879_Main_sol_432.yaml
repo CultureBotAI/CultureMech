@@ -1,3 +1,4 @@
+id: CultureMech:015238
 preferred_term: Main sol. 432
 term:
   id: mediadive.solution:879
@@ -19,3 +20,8 @@ preparation_notes: 'Use medium no. 144 supplemented with 100 g/l of NaCl.
 
   Sterilize glucose, yeast extract and sodium sulfide separately (autoclave under
   nitrogen atmosphere).'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.432198Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015238'

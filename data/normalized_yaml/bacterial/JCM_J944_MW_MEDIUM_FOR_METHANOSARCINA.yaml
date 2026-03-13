@@ -1,3 +1,4 @@
+id: CultureMech:003292
 name: MW MEDIUM FOR METHANOSARCINA
 original_name: MW MEDIUM FOR METHANOSARCINA
 category: bacterial
@@ -231,20 +232,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
-    cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v)
+    gas atmosphere. After cooling, aseptically and anaerobically add the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a H2-CO2 (80:20, v/v) gas
-    mixture and seal with butyl rubber stoppers (leave >80% gas phase by volume). Finally, add per liter
-    the following solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under a H2-CO2
+    (80:20, v/v) gas mixture and seal with butyl rubber stoppers (leave >80% gas phase
+    by volume). Finally, add per liter the following solutions from anaerobic stocks
+    (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -256,3 +259,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:19.255207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003292'

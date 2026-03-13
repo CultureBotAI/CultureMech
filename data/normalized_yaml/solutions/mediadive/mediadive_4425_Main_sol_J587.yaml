@@ -1,3 +1,4 @@
+id: CultureMech:013408
 preferred_term: Main sol. J587
 term:
   id: mediadive.solution:4425
@@ -125,3 +126,8 @@ preparation_notes: 'Adjust pH to 7.3.
   prior to sterilization. Distribute into tubes or flasks. This medium may be cloudy
   after sterilization and turns black as a result of H2S production due to bacterial
   growth.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.169491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013408'

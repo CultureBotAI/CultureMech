@@ -1,3 +1,4 @@
+id: CultureMech:001943
 name: LEUCOTHRIX MEDIUM
 original_name: LEUCOTHRIX MEDIUM
 category: bacterial
@@ -111,3 +112,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:08.697123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001943'

@@ -1,3 +1,4 @@
+id: CultureMech:004939
 name: True Blue Trace Elements (medium 748)
 original_name: True Blue Trace Elements (medium 748)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3101
     label: True Blue Trace Elements (medium 748)
-notes: 'Source: KOMODO ModelSEED | ID: 3101 | DSMZ Medium: 3101 (mediadive.medium:3101) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3101 | DSMZ Medium: 3101 (mediadive.medium:3101)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3101'
+- timestamp: '2026-03-13T06:19:29.128907Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004939'

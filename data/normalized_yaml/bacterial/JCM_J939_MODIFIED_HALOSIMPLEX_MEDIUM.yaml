@@ -1,3 +1,4 @@
+id: CultureMech:003286
 name: MODIFIED HALOSIMPLEX MEDIUM
 original_name: MODIFIED HALOSIMPLEX MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 298 supplemented with 210.0 g/L (final) NaCl and 10.0 g/L (final) MgSO4
-    x 7H2O.
+  description: Use Medium No. 298 supplemented with 210.0 g/L (final) NaCl and 10.0
+    g/L (final) MgSO4 x 7H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.215654Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003286'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:012675
 preferred_term: Main sol. 1730
 term:
   id: mediadive.solution:3576
@@ -102,3 +103,8 @@ composition:
 preparation_notes: 'Final pH 7.5
 
   Sterilize NaCl solution separately and combine autoclaved solutions after cooling.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.185295Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012675'

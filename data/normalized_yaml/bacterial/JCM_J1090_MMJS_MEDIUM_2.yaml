@@ -1,3 +1,4 @@
+id: CultureMech:002270
 name: MMJS MEDIUM 2
 original_name: MMJS MEDIUM 2
 category: bacterial
@@ -261,3 +262,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:11.822143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002270'

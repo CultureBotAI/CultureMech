@@ -1,3 +1,4 @@
+id: CultureMech:013340
 preferred_term: SL-7 trace element solution
 term:
   id: mediadive.solution:4336
@@ -128,3 +129,8 @@ preparation_notes: 'Initially, dissolve FeCl2 x 4H2O in 25% HCl, then add distil
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.771552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013340'

@@ -1,3 +1,4 @@
+id: CultureMech:011246
 preferred_term: Main sol. 105
 term:
   id: mediadive.solution:181
@@ -74,3 +75,8 @@ preparation_notes: 'Adjust pH to 6.8.
   carbonate, causing it to dissolve and form zones of clearing immediately below the
   colonies. In liquid culture the calcium carbonate also forms a sediment that clears
   as acid is produced.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.367951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011246'

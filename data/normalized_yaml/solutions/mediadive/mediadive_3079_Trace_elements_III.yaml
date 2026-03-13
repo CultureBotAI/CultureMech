@@ -1,3 +1,4 @@
+id: CultureMech:012303
 preferred_term: Trace elements III
 term:
   id: mediadive.solution:3079
@@ -68,3 +69,8 @@ preparation_notes: 'Prepare Trace elements III, flush with nitrogen to make them
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.095142Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012303'

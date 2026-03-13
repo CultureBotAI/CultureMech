@@ -1,3 +1,4 @@
+id: CultureMech:004258
 name: DESULFOCOCCUS MEDIUM
 original_name: DESULFOCOCCUS MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:197
     label: DESULFOCOCCUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 197 | DSMZ Medium: 197 (mediadive.medium:197) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 197 | DSMZ Medium: 197 (mediadive.medium:197)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 197'
+- timestamp: '2026-03-13T06:19:26.393440Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004258'

@@ -1,3 +1,4 @@
+id: CultureMech:014977
 preferred_term: Main sol. 1805
 term:
   id: mediadive.solution:6305
@@ -80,3 +81,8 @@ preparation_notes: 'Adjust pH to 3.7 with H2SO4.
   For preparation of agar plates dissolve  agar in 500 ml distilled water and autoclave
   separately. The basis medium should then be dissolved in 500 ml distilled water
   only. Cool down after sterilization and mix.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.222955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014977'

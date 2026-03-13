@@ -1,3 +1,4 @@
+id: CultureMech:011803
 preferred_term: Main sol. 1218
 term:
   id: mediadive.solution:2424
@@ -198,3 +199,8 @@ composition:
 preparation_notes: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.\
   \ Add the vitamin\r\nB12 solution from a filter sterilised stock solution to the\
   \ autoclaved, cooled medium. Final\r\nis pH 9.0 - 9.5"
+curation_history:
+- timestamp: '2026-03-13T06:20:22.035415Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011803'

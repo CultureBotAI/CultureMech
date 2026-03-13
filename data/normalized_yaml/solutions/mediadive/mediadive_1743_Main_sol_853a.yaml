@@ -1,3 +1,4 @@
+id: CultureMech:011195
 preferred_term: Main sol. 853a
 term:
   id: mediadive.solution:1743
@@ -218,3 +219,8 @@ preparation_notes: 'Dissolve ingredients, except thiosulfate, cysteine, carbonat
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.091170Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011195'

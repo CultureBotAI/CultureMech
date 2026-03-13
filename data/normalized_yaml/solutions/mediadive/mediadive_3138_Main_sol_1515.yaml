@@ -1,3 +1,4 @@
+id: CultureMech:012348
 preferred_term: Main sol. 1515
 term:
   id: mediadive.solution:3138
@@ -204,3 +205,8 @@ preparation_notes: 'Dissolve ingredients except cysteine and bicarbonate, then s
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.339550Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012348'

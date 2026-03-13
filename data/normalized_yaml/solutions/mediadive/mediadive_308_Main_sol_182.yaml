@@ -1,3 +1,4 @@
+id: CultureMech:012315
 preferred_term: Main sol. 182
 term:
   id: mediadive.solution:308
@@ -94,3 +95,8 @@ preparation_notes: 'Dissolve all compounds except yeast extract and Casamino aci
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.147121Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012315'

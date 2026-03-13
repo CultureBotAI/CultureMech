@@ -1,3 +1,4 @@
+id: CultureMech:002505
 name: MODIFIED OTI MEDIUM
 original_name: MODIFIED OTI MEDIUM
 category: bacterial
@@ -114,11 +115,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.0. Prepare medium anaerobically and dispense into rubber-stoppered tubes
-    under oxygen-free N2. Add inactivated sterile rabbit serum to give final concentration in each tube
-    of 5%. Add filter-sterilized thiamine pyrophosphate to each tube to give a final concentration of
-    0.75 mg/100 ml. Subculture with a Pasteur pipette (20-30 drops). Gas phase for culture system should
-    be oxygen-free N2 or N2-CO2 (90:10).
+  description: Adjust pH to 7.0. Prepare medium anaerobically and dispense into rubber-stoppered
+    tubes under oxygen-free N2. Add inactivated sterile rabbit serum to give final
+    concentration in each tube of 5%. Add filter-sterilized thiamine pyrophosphate
+    to each tube to give a final concentration of 0.75 mg/100 ml. Subculture with
+    a Pasteur pipette (20-30 drops). Gas phase for culture system should be oxygen-free
+    N2 or N2-CO2 (90:10).
 applications:
 - Microbial cultivation
 curation_history:
@@ -126,3 +128,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J146'
+- timestamp: '2026-03-13T06:19:13.867930Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002505'

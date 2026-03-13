@@ -1,3 +1,4 @@
+id: CultureMech:004999
 name: BACTEROIDES CELLULOSOLVENS MEDIUM_replace_Cellobiose_with_Cellulose
 original_name: BACTEROIDES CELLULOSOLVENS MEDIUM_replace_Cellobiose_with_Cellulose
 category: bacterial
@@ -261,3 +262,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:29.353006Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004999'

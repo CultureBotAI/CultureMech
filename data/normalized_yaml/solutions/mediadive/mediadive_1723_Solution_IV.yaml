@@ -1,3 +1,4 @@
+id: CultureMech:011173
 preferred_term: Solution IV
 term:
   id: mediadive.solution:1723
@@ -30,3 +31,8 @@ composition:
 preparation_notes: "10% inositol (1g/10 ml distilled water)\nFilter sterilize solution\
   \ IV and add 0.1 ml/l medium.\nFinal pH of appr. 7.4 should be controlled sterile.\
   \ \n\nOriginal volume: 10 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:17.943985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011173'

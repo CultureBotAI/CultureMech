@@ -1,3 +1,4 @@
+id: CultureMech:000745
 name: ANAEROCELLA MEDIUM
 original_name: ANAEROCELLA MEDIUM
 category: bacterial
@@ -173,9 +174,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Boil 10 minutes under N2 stream, cool to room temperature. Adjust pH to 7.3 and autoclave
-    for 20 minutes at 121°C. After autoclaving add sterile, anoxic solutions marked with #. For preparation
-    of solid medium add 15.0 g agar per liter.'
+  description: 'Boil 10 minutes under N2 stream, cool to room temperature. Adjust
+    pH to 7.3 and autoclave for 20 minutes at 121°C. After autoclaving add sterile,
+    anoxic solutions marked with #. For preparation of solid medium add 15.0 g agar
+    per liter.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -187,3 +189,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.027024Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000745'

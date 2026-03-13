@@ -1,3 +1,4 @@
+id: CultureMech:002453
 name: GS2 MEDIUM WITH CELLOBIOSE
 original_name: GS2 MEDIUM WITH CELLOBIOSE
 category: bacterial
@@ -95,9 +96,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2 with NaOH. Bring to a boil, then cool down
-    and distribute into culture vessels under a N2 gas stream, seal with butyl rubber stoppers, and autoclave.
-    After cooling, aseptically and anaerobically add the following solution (autoclaved):'
+  description: 'Mix components thoroughly and adjust pH to 7.2 with NaOH. Bring to
+    a boil, then cool down and distribute into culture vessels under a N2 gas stream,
+    seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and
+    anaerobically add the following solution (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,3 +111,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:13.442185Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002453'

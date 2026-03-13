@@ -1,3 +1,4 @@
+id: CultureMech:012517
 preferred_term: Main sol. 1622
 term:
   id: mediadive.solution:3370
@@ -19,3 +20,8 @@ preparation_notes: 'Adjust solutions A and B to pH 7.0±0.2, autoclave separatel
   combine after cooling.
 
   Add 1.0 ml sterile vitamin B12 solution (50 mg/l) per litre.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.321088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012517'

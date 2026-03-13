@@ -1,3 +1,4 @@
+id: CultureMech:012564
 preferred_term: Main sol. 1656
 term:
   id: mediadive.solution:3435
@@ -115,3 +116,8 @@ preparation_notes: 'Prepare the medium without cysteine hydrochloride, Na2S x 9 
   and Na2CO3. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v) and
   add the Na2CO3. Autoclave the medium and add from sterile stock solutions cysteine
   hydrochloride and Na2S x 9 H2O. The final pH should be 11.0. '
+curation_history:
+- timestamp: '2026-03-13T06:20:26.579893Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012564'

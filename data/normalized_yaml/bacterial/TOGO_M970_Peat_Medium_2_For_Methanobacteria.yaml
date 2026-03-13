@@ -1,3 +1,4 @@
+id: CultureMech:010396
 name: Peat Medium 2 For Methanobacteria
 original_name: Peat Medium 2 For Methanobacteria
 category: bacterial
@@ -82,6 +83,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.537981Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010396'
 solutions:
 - preferred_term: Major metals (see Medium [M969])
   composition: []

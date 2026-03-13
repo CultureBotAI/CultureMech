@@ -1,3 +1,4 @@
+id: CultureMech:014823
 preferred_term: Main sol. 333
 term:
   id: mediadive.solution:611
@@ -108,3 +109,8 @@ preparation_notes: 'Dissolve ingredients except phosphates and tetrathionate. Th
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.679742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014823'

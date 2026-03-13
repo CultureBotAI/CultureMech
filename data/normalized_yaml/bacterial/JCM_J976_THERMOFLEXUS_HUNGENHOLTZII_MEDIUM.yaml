@@ -1,3 +1,4 @@
+id: CultureMech:003325
 name: THERMOFLEXUS HUNGENHOLTZII MEDIUM
 original_name: THERMOFLEXUS HUNGENHOLTZII MEDIUM
 category: bacterial
@@ -193,21 +194,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 6.75 with NaOH. Distribute the medium into
-    culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a stream of N2, seal with
-    butyl rubber stoppers and autoclave. After cooling, aseptically add per liter the following solutions
-    (filter-sterilized and stored anaerobically):'
+  description: 'Mix components thoroughly and adjust pH to 6.75 with NaOH. Distribute
+    the medium into culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes)
+    under a stream of N2, seal with butyl rubber stoppers and autoclave. After cooling,
+    aseptically add per liter the following solutions (filter-sterilized and stored
+    anaerobically):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Before inoculation, add filter-sterilized O2 gas or air, at a final concentration of 1%
-    O2 in the gas phase.
+  description: Before inoculation, add filter-sterilized O2 gas or air, at a final
+    concentration of 1% O2 in the gas phase.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH.
 - step_number: 4
   action: HEAT
-  description: 'Comment: Consistent growth in serum tubes requires pretreatment of butyl rubber stoppers
-    by boiling in 1% sodium sulfide solution (1 hr) followed by boiling in distilled H2O (1 hr, twice).'
+  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
+    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
+    by boiling in distilled H2O (1 hr, twice).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -215,3 +218,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J976'
+- timestamp: '2026-03-13T06:19:19.508484Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003325'

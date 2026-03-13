@@ -1,3 +1,4 @@
+id: CultureMech:002225
 name: LB AGAR WITH MnSO<sub>4</sub>
 original_name: LB AGAR WITH MnSO<sub>4</sub>
 category: bacterial
@@ -48,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1040'
+- timestamp: '2026-03-13T06:19:11.418154Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002225'

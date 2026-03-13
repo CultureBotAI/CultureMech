@@ -1,3 +1,4 @@
+id: CultureMech:011219
 preferred_term: ' Na2CO3 solution'
 term:
   id: mediadive.solution:1783
@@ -29,3 +30,8 @@ composition:
     match_type: exact_match
 preparation_notes: Dissolve 106 g Na2CO3 in 1 liter of degassed H2O. Autoclave in
   sealed serum bottles under CO2.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.224940Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011219'

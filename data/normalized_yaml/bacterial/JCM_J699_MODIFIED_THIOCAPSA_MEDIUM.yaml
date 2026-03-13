@@ -1,3 +1,4 @@
+id: CultureMech:003044
 name: MODIFIED THIOCAPSA MEDIUM
 original_name: MODIFIED THIOCAPSA MEDIUM
 category: bacterial
@@ -190,3 +191,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J699'
+- timestamp: '2026-03-13T06:19:17.388372Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003044'

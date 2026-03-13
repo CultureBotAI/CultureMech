@@ -1,3 +1,4 @@
+id: CultureMech:003627
 name: BOSEA medium
 original_name: BOSEA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1052
     label: BOSEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1052 | DSMZ Medium: 1052 (mediadive.medium:1052) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1052 | DSMZ Medium: 1052 (mediadive.medium:1052)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1052
+- timestamp: '2026-03-13T06:19:21.132908Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003627'

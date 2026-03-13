@@ -1,3 +1,4 @@
+id: CultureMech:013013
 preferred_term: Main sol. J266
 term:
   id: mediadive.solution:3953
@@ -196,3 +197,8 @@ preparation_notes: 'Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and N
 
   To prepare the clarified rumen fluid, preheat rumen content at 120C for 15 min.
   Use the supernatant after centrifuging at 25,000 x g for 15 min.'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.895059Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013013'

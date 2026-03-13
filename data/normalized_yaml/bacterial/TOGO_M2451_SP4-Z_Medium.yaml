@@ -1,3 +1,4 @@
+id: CultureMech:009031
 name: SP4-Z Medium
 original_name: SP4-Z Medium
 category: bacterial
@@ -76,6 +77,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:02.051900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009031'
 solutions:
 - preferred_term: Arginine HCl (50% aqueous solution)
   composition: []

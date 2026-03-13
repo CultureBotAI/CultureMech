@@ -1,3 +1,4 @@
+id: CultureMech:006868
 name: MEDIUM 940 MODIFIED FOR DSM 18940
 original_name: MEDIUM 940 MODIFIED FOR DSM 18940
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:940_18940
     label: MEDIUM 940 MODIFIED FOR DSM 18940
-notes: 'Source: KOMODO ModelSEED | ID: 940_18940 | DSMZ Medium: 940 (mediadive.medium:940) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 940_18940 | DSMZ Medium: 940 (mediadive.medium:940)
+  | Aerobic: No'
 ingredients:
 - preferred_term: D-Glucose
   term:
@@ -65,4 +66,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 940
+- timestamp: '2026-03-13T06:19:44.473311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006868'
 ph_value: 9.0

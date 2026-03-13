@@ -1,3 +1,4 @@
+id: CultureMech:011335
 preferred_term: Main sol. 933
 term:
   id: mediadive.solution:1922
@@ -212,3 +213,8 @@ preparation_notes: Prepare the medium and boil, cool under N2:CO2 (80:20 v/v). D
   To the sterile medium add from sterile stock solutions 2% Na2S x 9 H2O (0.2 ml/10
   ml), 10% NaHCO3 (0.2 ml/10 ml), 1M glucose (0.2 ml/10 ml) and 1M sodium thiosulphate
   (0.2 ml/10 ml). Final pH 7.0
+curation_history:
+- timestamp: '2026-03-13T06:20:19.009534Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011335'

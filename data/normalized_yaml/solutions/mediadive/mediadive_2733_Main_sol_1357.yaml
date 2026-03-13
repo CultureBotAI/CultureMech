@@ -1,3 +1,4 @@
+id: CultureMech:012041
 preferred_term: Main sol. 1357
 term:
   id: mediadive.solution:2733
@@ -177,3 +178,8 @@ preparation_notes: Prepare the liquid medium without Na2CO3, NaHCO3, Vitamin sol
   tubes sealed with rubber stoppers) and sterilize by autoclaving. After autoclaving
   add  cysteine HCl  from sterile stock solution and 10 ml of the vitamin solution
   to 1 litre of the sterile main solution. Final pH 9.8.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.473224Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012041'

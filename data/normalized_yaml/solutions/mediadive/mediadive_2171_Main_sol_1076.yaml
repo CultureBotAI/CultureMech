@@ -1,3 +1,4 @@
+id: CultureMech:011566
 preferred_term: Main sol. 1076
 term:
   id: mediadive.solution:2171
@@ -125,3 +126,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: "Adjust pH to 7.4; autoclave at 121°C for 15 minutes.\nAdd aseptically:\
   \ \n\nOriginal volume: 515 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:20.511678Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011566'

@@ -1,3 +1,4 @@
+id: CultureMech:003991
 name: MEDIUM 1235 MODIFIED FOR DSM 22867
 original_name: MEDIUM 1235 MODIFIED FOR DSM 22867
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1235_22867
     label: MEDIUM 1235 MODIFIED FOR DSM 22867
-notes: 'Source: KOMODO ModelSEED | ID: 1235_22867 | DSMZ Medium: 1235 (mediadive.medium:1235) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1235_22867 | DSMZ Medium: 1235 (mediadive.medium:1235)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Xylan
   term:
@@ -72,4 +73,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1235
+- timestamp: '2026-03-13T06:19:23.930902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003991'
 ph_value: 7.0

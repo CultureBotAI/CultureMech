@@ -1,3 +1,4 @@
+id: CultureMech:010925
 preferred_term: Main sol. 701
 term:
   id: mediadive.solution:1452
@@ -192,3 +193,8 @@ preparation_notes: 'pH 7.2
   prepared under nitrogen), L-cysteine (from a stock solution prepared under nitrogen),
   and the glucose or N-acetylglucosamine (if used as substrate) from sterile stock
   solution prepared under nitrogen. Check the final pH.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.414399Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010925'

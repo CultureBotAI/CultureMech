@@ -1,3 +1,4 @@
+id: CultureMech:011090
 preferred_term: Trace metals solution
 term:
   id: mediadive.solution:1633
@@ -152,3 +153,8 @@ preparation_notes: 'Dissolve salts in the HCl in the oder given above, then make
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.455574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011090'

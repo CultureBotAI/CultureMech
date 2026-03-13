@@ -1,3 +1,4 @@
+id: CultureMech:009491
 name: brain heart infusion medium (with added NAD and hemin)
 original_name: brain heart infusion medium (with added NAD and hemin)
 category: bacterial
@@ -10,7 +11,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 - preferred_term: hemin (ICN)
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -35,5 +37,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.907046'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: hemin (ICN); Added default concentration for ingredient:
-    NAD (Sigma)'
+  notes: 'Added default concentration for ingredient: hemin (ICN); Added default concentration
+    for ingredient: NAD (Sigma)'
+- timestamp: '2026-03-13T06:20:06.382683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009491'

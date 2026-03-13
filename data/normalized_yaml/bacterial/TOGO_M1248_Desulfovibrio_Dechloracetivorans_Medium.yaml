@@ -1,3 +1,4 @@
+id: CultureMech:007778
 name: Desulfovibrio Dechloracetivorans Medium
 original_name: Desulfovibrio Dechloracetivorans Medium
 category: bacterial
@@ -134,6 +135,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.382268Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007778'
 solutions:
 - preferred_term: Trace metal solution SL12 (see Medium [M581])
   composition: []

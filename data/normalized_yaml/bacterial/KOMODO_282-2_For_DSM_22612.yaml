@@ -1,3 +1,4 @@
+id: CultureMech:004737
 name: For DSM 22612
 original_name: For DSM 22612
 category: bacterial
@@ -268,3 +269,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:28.386928Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004737'

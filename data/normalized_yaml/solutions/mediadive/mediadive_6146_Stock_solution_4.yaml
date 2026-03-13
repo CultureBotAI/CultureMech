@@ -1,3 +1,4 @@
+id: CultureMech:014848
 preferred_term: Stock solution 4
 term:
   id: mediadive.solution:6146
@@ -17,3 +18,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Silicate can react with glass, ensure this stock solution is stored\
   \ in plastic\r\nbottles.\n\nOriginal volume: 200 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.768382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014848'

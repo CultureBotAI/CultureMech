@@ -1,3 +1,4 @@
+id: CultureMech:006190
 name: MIDDELBROOK medium
 original_name: MIDDELBROOK medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:645
     label: MIDDELBROOK medium
-notes: 'Source: KOMODO ModelSEED | ID: 645 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 645 | DSMZ Medium: 645 (mediadive.medium:645)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:
@@ -165,3 +167,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 645
+- timestamp: '2026-03-13T06:19:38.981140Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006190'

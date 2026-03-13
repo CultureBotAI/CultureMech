@@ -1,3 +1,4 @@
+id: CultureMech:002303
 name: YCFA MEDIUM
 original_name: YCFA MEDIUM
 category: bacterial
@@ -214,7 +215,8 @@ preparation_steps:
   description: Adjust pH to 7.45.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized 1.0 ml Vitamin solution II (see below).
+  description: After autoclaving, add filter-sterilized 1.0 ml Vitamin solution II
+    (see below).
 - step_number: 3
   action: MIX
   description: Adjust volume to 100 ml with distilled water.
@@ -228,3 +230,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1130'
+- timestamp: '2026-03-13T06:19:12.164986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002303'

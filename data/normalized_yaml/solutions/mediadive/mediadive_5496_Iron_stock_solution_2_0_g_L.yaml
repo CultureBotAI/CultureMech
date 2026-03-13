@@ -1,3 +1,4 @@
+id: CultureMech:014399
 preferred_term: Iron stock solution 2.0 g/L
 term:
   id: mediadive.solution:5496
@@ -19,3 +20,8 @@ preparation_notes: 'steril filtration, store in aliquots at -20°C
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.588144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014399'

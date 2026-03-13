@@ -1,3 +1,4 @@
+id: CultureMech:006489
 name: CALORAMATOR PROTEOCLASTICUS medium
 original_name: CALORAMATOR PROTEOCLASTICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:788
     label: CALORAMATOR PROTEOCLASTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 788 | DSMZ Medium: 788 (mediadive.medium:788) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 788 | DSMZ Medium: 788 (mediadive.medium:788)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -219,3 +221,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 788
+- timestamp: '2026-03-13T06:19:41.259065Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006489'

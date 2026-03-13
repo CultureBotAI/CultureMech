@@ -1,3 +1,4 @@
+id: CultureMech:012593
 preferred_term: Main sol. 1681
 term:
   id: mediadive.solution:3470
@@ -85,3 +86,8 @@ preparation_notes: "<b>Reducing agents</b>: \r\nFlush each solution under N2 for
   \ NaHCO3 and adjust pH to 7.0. Switch to N2 to prevent further lowering of the\r\
   \npH. Fill up into Hungate tubes under N2 and autoclave. Before use add vitamins\r\
   \n(sterilized by filtration) and reducing agents."
+curation_history:
+- timestamp: '2026-03-13T06:20:26.769039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012593'

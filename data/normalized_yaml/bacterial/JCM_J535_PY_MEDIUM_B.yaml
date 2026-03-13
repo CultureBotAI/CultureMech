@@ -1,3 +1,4 @@
+id: CultureMech:002883
 name: PY MEDIUM (B)
 original_name: PY MEDIUM (B)
 category: bacterial
@@ -72,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J535'
+- timestamp: '2026-03-13T06:19:16.305046Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002883'

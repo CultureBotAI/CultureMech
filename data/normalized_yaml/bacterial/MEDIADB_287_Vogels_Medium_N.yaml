@@ -1,3 +1,4 @@
+id: CultureMech:007187
 name: Vogels Medium N
 original_name: Vogels Medium N
 category: bacterial
@@ -85,6 +86,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 287, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.675452Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007187'
 media_term:
   preferred_term: MediaDB Medium 287
   term:

@@ -1,3 +1,4 @@
+id: CultureMech:010500
 name: HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE
 original_name: HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE
 category: fungal
@@ -246,4 +247,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1284'
+- timestamp: '2026-03-13T06:20:14.098977Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010500'
 high_metal: true

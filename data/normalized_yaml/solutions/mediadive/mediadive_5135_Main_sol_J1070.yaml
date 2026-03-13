@@ -1,3 +1,4 @@
+id: CultureMech:014047
 preferred_term: Main sol. J1070
 term:
   id: mediadive.solution:5135
@@ -169,3 +170,8 @@ preparation_notes: "Solution A:\nMix components, except NaHCO3, and adjust pH to
   \ solution A. Prior to inoculation, aseptically and anaerobically add per liter\
   \ the following solutions (autoclaved and stored under a N2 atmosphere): \n\nOriginal\
   \ volume: 1112 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.243441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014047'

@@ -1,3 +1,4 @@
+id: CultureMech:000897
 name: METHYLOTROPHES MEDIUM
 original_name: METHYLOTROPHES MEDIUM
 category: bacterial
@@ -74,9 +75,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without ethanol in closed vessels with a medium to headspace ratio of
-    1:5 to 1:10. Adjust pH to 7.0 and sterilize. Allow to cool to about 45°C before adding 0.5 mL filter-sterilized
-    ethanol per liter medium.
+  description: Prepare the medium without ethanol in closed vessels with a medium
+    to headspace ratio of 1:5 to 1:10. Adjust pH to 7.0 and sterilize. Allow to cool
+    to about 45°C before adding 0.5 mL filter-sterilized ethanol per liter medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1435'
+- timestamp: '2026-03-13T06:18:59.319118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000897'

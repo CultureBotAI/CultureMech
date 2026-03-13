@@ -1,3 +1,4 @@
+id: CultureMech:010546
 name: SALINE TRYPTONE-YEAST EXTRACT BROTH
 original_name: SALINE TRYPTONE-YEAST EXTRACT BROTH
 category: fungal
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J668'
+- timestamp: '2026-03-13T06:20:14.301916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010546'

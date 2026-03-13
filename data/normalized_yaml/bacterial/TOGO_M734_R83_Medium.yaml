@@ -1,3 +1,4 @@
+id: CultureMech:010143
 name: R83 Medium
 original_name: R83 Medium
 category: bacterial
@@ -102,4 +103,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.653771Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010143'
 high_metal: true

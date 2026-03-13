@@ -1,3 +1,4 @@
+id: CultureMech:014056
 preferred_term: Main sol. J1078
 term:
   id: mediadive.solution:5143
@@ -176,3 +177,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 9.0 with NaOH and au
   \ v/v) gas mixture. Add the following solutions from sterile anaerobic stocks (autoclaved\
   \ and stored under a N2 atmosphere): \nCheck final pH be around 8.5.\n\nOriginal\
   \ volume: 1007 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.324445Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014056'

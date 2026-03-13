@@ -1,3 +1,4 @@
+id: CultureMech:001062
 name: ISP2 MODIFIED MEDIUM FOR METHYLIBIUM
 original_name: ISP2 MODIFIED MEDIUM FOR METHYLIBIUM
 category: bacterial
@@ -176,3 +177,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1586'
+- timestamp: '2026-03-13T06:19:00.866649Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001062'

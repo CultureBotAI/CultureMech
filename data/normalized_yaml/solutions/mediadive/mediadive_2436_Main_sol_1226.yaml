@@ -1,3 +1,4 @@
+id: CultureMech:011813
 preferred_term: Main sol. 1226
 term:
   id: mediadive.solution:2436
@@ -167,3 +168,8 @@ preparation_notes: 'Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3
 
   For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl to 10.0 g/l
   and increase the amount of NH4Cl to 0.64 g/l.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.109031Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011813'

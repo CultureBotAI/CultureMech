@@ -1,3 +1,4 @@
+id: CultureMech:001807
 name: METHANOMICROBIUM MOBILE MEDIUM
 original_name: METHANOMICROBIUM MOBILE MEDIUM
 category: bacterial
@@ -88,21 +89,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, cysteine, and DTT), bring the medium to a boil,
-    and then cool it to room temperature under an 80% H2 and 20% CO2 gas atmosphere. Add the bicarbonate
-    and equilibrate the medium to pH 6.8. Distribute under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials, filling them to 30% of their volume, and then autoclave. After that, add cysteine
-    and DTT from sterile anoxic stock solutions prepared under a 100% N2 gas atmosphere. Adjust the pH
-    of the complete medium to 6.7 - 6.8, if necessary.
+  description: Dissolve ingredients (except bicarbonate, cysteine, and DTT), bring
+    the medium to a boil, and then cool it to room temperature under an 80% H2 and
+    20% CO2 gas atmosphere. Add the bicarbonate and equilibrate the medium to pH 6.8.
+    Distribute under the same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials, filling them to 30% of their volume, and then autoclave. After that, add
+    cysteine and DTT from sterile anoxic stock solutions prepared under a 100% N2
+    gas atmosphere. Adjust the pH of the complete medium to 6.7 - 6.8, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar of overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar
+    of overpressure.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
-    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
-    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
-    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -110,3 +114,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 666b'
+- timestamp: '2026-03-13T06:19:07.356480Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001807'

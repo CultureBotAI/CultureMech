@@ -1,3 +1,4 @@
+id: CultureMech:006011
 name: FRUCTOSE MINERAL MEDIUM
 original_name: FRUCTOSE MINERAL MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:55
     label: FRUCTOSE MINERAL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 55 | DSMZ Medium: 55 (mediadive.medium:55) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 55 | DSMZ Medium: 55 (mediadive.medium:55)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:
@@ -127,3 +129,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 55
+- timestamp: '2026-03-13T06:19:37.639452Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006011'

@@ -1,3 +1,4 @@
+id: CultureMech:011258
 preferred_term: Main sol. 886
 term:
   id: mediadive.solution:1834
@@ -179,3 +180,8 @@ preparation_notes: 'Boil the medium for few minutes. Fill in tubes with rubber s
   Adjust pH to 9 - 9.5 .
 
   To control anoxic conditions, add resazurin to a final concentration of 0.002%.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.449763Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011258'

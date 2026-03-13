@@ -1,3 +1,4 @@
+id: CultureMech:001271
 name: Cultivation Medium for Sf1Ep cells for Treponema pallidum
 original_name: Cultivation Medium for Sf1Ep cells for Treponema pallidum
 category: bacterial
@@ -28,5 +29,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:02.722853Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001271'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:014476
 preferred_term: Main sol. 302
 term:
   id: mediadive.solution:5599
@@ -71,3 +72,8 @@ preparation_notes: 'Adjust pH to 7.0. For Bacillus strains the addition of 10.0 
 
 
   Original volume: 1100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.005474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014476'

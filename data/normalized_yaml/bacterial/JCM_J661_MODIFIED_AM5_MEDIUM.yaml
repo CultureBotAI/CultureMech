@@ -1,3 +1,4 @@
+id: CultureMech:003007
 name: MODIFIED AM5 MEDIUM
 original_name: MODIFIED AM5 MEDIUM
 category: bacterial
@@ -214,6 +215,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:17.111737Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003007'
 solutions:
 - preferred_term: Vitamin B12 solution (see Medium No. 403)
   composition: []

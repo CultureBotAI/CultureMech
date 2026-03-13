@@ -1,3 +1,4 @@
+id: CultureMech:002551
 name: LACTIC ACID BACTERIA BROTH
 original_name: LACTIC ACID BACTERIA BROTH
 category: bacterial
@@ -86,3 +87,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J18'
+- timestamp: '2026-03-13T06:19:14.099536Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002551'

@@ -1,3 +1,4 @@
+id: CultureMech:011768
 preferred_term: Main sol. 139
 term:
   id: mediadive.solution:238
@@ -90,3 +91,8 @@ composition:
 preparation_notes: Dissolve ingredients, adjust pH to 7.2, bring medium to the boil,
   then cool to room temperature under 100% N2 gas atmosphere. Dispense under same
   gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.799632Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011768'

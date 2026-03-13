@@ -1,3 +1,4 @@
+id: CultureMech:002217
 name: ST65 MEDIUM
 original_name: ST65 MEDIUM
 category: bacterial
@@ -266,18 +267,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components, except sulfur, bring to a boil and cool down under a CO2 (100%) gas stream.
-    While gassing, add the following components to the medium:'
+  description: 'Mix components, except sulfur, bring to a boil and cool down under
+    a CO2 (100%) gas stream. While gassing, add the following components to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Bubble CO2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH to the range if necessary.
-    Autoclave under a CO2 gas atmosphere. Add the following solution to the medium (separately autoclaved
-    under N2):'
+  description: 'Bubble CO2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH
+    to the range if necessary. Autoclave under a CO2 gas atmosphere. Add the following
+    solution to the medium (separately autoclaved under N2):'
 - step_number: 3
   action: MIX
-  description: Steam sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically distribute
-    the medium into culture vessels containing appropriate amount of sulfur (e.g., 10 ml of the medium
-    and 0.05 g sulfur in Hungate tubes) under a CO2 stream and seal with butyl rubber stoppers.
+  description: Steam sulfur for 3 hr on each of 3 successive days. Aseptically and
+    anaerobically distribute the medium into culture vessels containing appropriate
+    amount of sulfur (e.g., 10 ml of the medium and 0.05 g sulfur in Hungate tubes)
+    under a CO2 stream and seal with butyl rubber stoppers.
 applications:
 - Microbial cultivation
 curation_history:
@@ -289,3 +291,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.352143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002217'

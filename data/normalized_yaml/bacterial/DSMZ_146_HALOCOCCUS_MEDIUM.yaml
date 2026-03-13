@@ -1,3 +1,4 @@
+id: CultureMech:000936
 name: HALOCOCCUS MEDIUM
 original_name: HALOCOCCUS MEDIUM
 category: bacterial
@@ -77,4 +78,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 146'
+- timestamp: '2026-03-13T06:18:59.702072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000936'
 high_metal: true

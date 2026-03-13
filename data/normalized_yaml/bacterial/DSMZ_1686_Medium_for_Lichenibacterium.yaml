@@ -1,3 +1,4 @@
+id: CultureMech:001168
 name: Medium for Lichenibacterium
 original_name: Medium for Lichenibacterium
 category: bacterial
@@ -119,7 +120,8 @@ preparation_steps:
   description: Autoclave at 121°C for 15 min.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After sterilization add 0,5 ml/l filter-sterilized vitamin solution (see Medium 462).
+  description: After sterilization add 0,5 ml/l filter-sterilized vitamin solution
+    (see Medium 462).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 5 - 6.
@@ -134,3 +136,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:01.846152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001168'

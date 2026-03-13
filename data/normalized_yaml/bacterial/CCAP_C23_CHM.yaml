@@ -1,3 +1,4 @@
+id: CultureMech:000331
 name: CHM
 original_name: CHM
 category: bacterial
@@ -21,7 +22,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add the above constituents to 1 litre of deionised water. Autoclave at 15 psi for 15 minutes.
+  description: Add the above constituents to 1 litre of deionised water. Autoclave
+    at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -29,3 +31,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C23'
+- timestamp: '2026-03-13T06:18:54.517110Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000331'

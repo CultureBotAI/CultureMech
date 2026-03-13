@@ -1,3 +1,4 @@
+id: CultureMech:013687
 preferred_term: Main sol. J788
 term:
   id: mediadive.solution:4737
@@ -139,3 +140,8 @@ preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.
   pH to 8.5 - 8.8 before autoclaving.
 
   For preparation of solid medium, add 20.0 g/L Agar, Noble (BD-Difco).'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.848325Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013687'

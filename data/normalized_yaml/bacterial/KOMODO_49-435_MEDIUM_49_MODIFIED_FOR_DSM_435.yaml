@@ -1,3 +1,4 @@
+id: CultureMech:005616
 name: MEDIUM 49 MODIFIED FOR DSM 435
 original_name: MEDIUM 49 MODIFIED FOR DSM 435
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:49_435
     label: MEDIUM 49 MODIFIED FOR DSM 435
-notes: 'Source: KOMODO ModelSEED | ID: 49_435 | DSMZ Medium: 49 (mediadive.medium:49) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 49_435 | DSMZ Medium: 49 (mediadive.medium:49)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -39,4 +41,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 49
+- timestamp: '2026-03-13T06:19:34.602030Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005616'
 ph_value: 7.2

@@ -1,3 +1,4 @@
+id: CultureMech:011079
 preferred_term: Main sol. 795
 term:
   id: mediadive.solution:1622
@@ -123,3 +124,8 @@ preparation_notes: 'Dissolve ingredients except sulfur and sulfide, then sparge 
 
 
   Original volume: 1018 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.381799Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011079'

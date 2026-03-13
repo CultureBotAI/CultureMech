@@ -1,3 +1,4 @@
+id: CultureMech:002224
 name: ORGANIC MEDIUM 79
 original_name: ORGANIC MEDIUM 79
 category: bacterial
@@ -56,3 +57,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J103'
+- timestamp: '2026-03-13T06:19:11.414775Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002224'

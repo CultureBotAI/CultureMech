@@ -1,3 +1,4 @@
+id: CultureMech:000246
 name: METHERMICOCCUS (METHANOGEN) MEDIUM
 original_name: METHERMICOCCUS (METHANOGEN) MEDIUM
 category: archaea
@@ -123,3 +124,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:53.748349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000246'

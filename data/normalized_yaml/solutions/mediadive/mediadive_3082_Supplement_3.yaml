@@ -1,3 +1,4 @@
+id: CultureMech:012307
 preferred_term: Supplement 3
 term:
   id: mediadive.solution:3082
@@ -34,3 +35,8 @@ preparation_notes: 'Glutathion (0.5 M); in distilled water, neutralize with NaOH
 
 
   Original volume: 2 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.109974Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012307'

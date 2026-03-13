@@ -1,3 +1,4 @@
+id: CultureMech:014866
 preferred_term: Mail sol. C38
 term:
   id: mediadive.solution:6164
@@ -57,3 +58,8 @@ preparation_notes: "Add while stirring:\nSilicate can react with glass, ensure t
   \ for 15 minutes at 15 psi and use when cooled to room\r\ntemperature.\nFor heterotrophic\
   \ growth (in the dark) add either  0.5 g/l yeast extract and 5 g/l glucose or 0.5\
   \ g/l yeast extract and 3 g/l sodium acetate."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.838939Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014866'

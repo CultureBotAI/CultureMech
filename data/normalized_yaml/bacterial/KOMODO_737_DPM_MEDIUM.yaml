@@ -1,3 +1,4 @@
+id: CultureMech:006385
 name: DPM MEDIUM
 original_name: DPM MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:737
     label: DPM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -105,4 +107,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 737
+- timestamp: '2026-03-13T06:19:40.313006Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006385'
 ph_value: 6.8

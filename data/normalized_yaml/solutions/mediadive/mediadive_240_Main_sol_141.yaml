@@ -1,3 +1,4 @@
+id: CultureMech:011788
 preferred_term: Main sol. 141
 term:
   id: mediadive.solution:240
@@ -212,3 +213,8 @@ preparation_notes: 'Note: If the medium is being used without overpressure then 
 
 
   Original volume: 1013 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.914239Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011788'

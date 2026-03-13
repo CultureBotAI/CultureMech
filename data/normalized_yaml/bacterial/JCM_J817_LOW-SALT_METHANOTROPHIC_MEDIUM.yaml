@@ -1,3 +1,4 @@
+id: CultureMech:003161
 name: LOW-SALT METHANOTROPHIC MEDIUM
 original_name: LOW-SALT METHANOTROPHIC MEDIUM
 category: bacterial
@@ -189,13 +190,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solutions (autoclaved or
-    *filter-sterilized) to the medium:'
+  description: 'Mix components and autoclave. After cooling, add the following solutions
+    (autoclaved or *filter-sterilized) to the medium:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: To complete medium, adjust pH to 6.8. Then, distribute 20 ml-aliquots of the medium into
-    sterile 120 ml-serum bottles and seal with butyl rubber stoppers. Add 100 ml methane gas (filter-sterilized)
-    into the head space of the culture bottle through a syringe.
+  description: To complete medium, adjust pH to 6.8. Then, distribute 20 ml-aliquots
+    of the medium into sterile 120 ml-serum bottles and seal with butyl rubber stoppers.
+    Add 100 ml methane gas (filter-sterilized) into the head space of the culture
+    bottle through a syringe.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,3 +205,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J817'
+- timestamp: '2026-03-13T06:19:18.228029Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003161'

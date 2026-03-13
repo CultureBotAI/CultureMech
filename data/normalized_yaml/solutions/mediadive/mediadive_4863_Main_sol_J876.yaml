@@ -1,3 +1,4 @@
+id: CultureMech:013795
 preferred_term: Main sol. J876
 term:
   id: mediadive.solution:4863
@@ -180,3 +181,8 @@ preparation_notes: "Mix components thoroughly, bring to the boil and cool down u
   \ the culture vessels overnight.\nComment: Addition of 10-20 mg/L sodium dithionate\
   \ (filter-sterilized under N2) just before inoculation may stimulate growth at the\
   \ beginning. Incubate with a 5-10% inoculum.\n\nOriginal volume: 1063 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.543228Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013795'

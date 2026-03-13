@@ -1,3 +1,4 @@
+id: CultureMech:007468
 name: '1275'
 original_name: '1275'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 92 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.177288Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007468'
 solutions:
 - preferred_term: NaCl30gK2HPO40.14gCaCl2·2H2O0.14gNH4Cl0.25gMgSO4·7H2O3.4gMgCl2·6H2O4.2gKCl0.33gFe(NH4)2(SO4)2·6H2O0.01gBacto
     Yeast Extract (Difco)1gTrace elements solution*10mlVitamin solution**2mlNaHCO32.5gSulfur

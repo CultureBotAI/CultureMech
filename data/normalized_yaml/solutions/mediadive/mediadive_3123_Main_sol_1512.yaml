@@ -1,3 +1,4 @@
+id: CultureMech:012341
 preferred_term: Main sol. 1512
 term:
   id: mediadive.solution:3123
@@ -37,3 +38,8 @@ preparation_notes: "Medium for maintenance of infected amoeba cultures\nCombine 
   \ bacteria have to be transferred by adding culture supernatant\r\n(approximately\
   \ 0.5 ml) to fresh culture flasks containing uninfected host cells\r\n(approximately\
   \ semi-confluent culture) each 7-10 days."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.301640Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012341'

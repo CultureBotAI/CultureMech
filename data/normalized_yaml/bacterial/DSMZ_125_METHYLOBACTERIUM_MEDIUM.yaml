@@ -1,3 +1,4 @@
+id: CultureMech:000718
 name: METHYLOBACTERIUM MEDIUM
 original_name: METHYLOBACTERIUM MEDIUM
 category: bacterial
@@ -98,7 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
+  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to
+    6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,3 +108,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 125'
+- timestamp: '2026-03-13T06:18:57.746970Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000718'

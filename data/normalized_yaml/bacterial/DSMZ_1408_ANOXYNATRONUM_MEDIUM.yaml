@@ -1,3 +1,4 @@
+id: CultureMech:000869
 name: ANOXYNATRONUM MEDIUM
 original_name: ANOXYNATRONUM MEDIUM
 category: bacterial
@@ -32,8 +33,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles under
-    gassing with N2. Sterilize by autoclaving
+  description: Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into
+    serum bottles under gassing with N2. Sterilize by autoclaving
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +46,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.043873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000869'

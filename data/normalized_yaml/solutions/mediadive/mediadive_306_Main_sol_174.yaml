@@ -1,3 +1,4 @@
+id: CultureMech:012293
 preferred_term: Main sol. 174
 term:
   id: mediadive.solution:306
@@ -93,3 +94,8 @@ preparation_notes: 'Dissolve ingredients, adjust pH to 7.6 with KOH and sparge m
   gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
 
   For stabs add 10.0 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.062357Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012293'

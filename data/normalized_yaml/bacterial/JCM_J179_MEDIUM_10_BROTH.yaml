@@ -1,3 +1,4 @@
+id: CultureMech:002539
 name: MEDIUM 10 BROTH
 original_name: MEDIUM 10 BROTH
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium 10 (see Medium No. 133) with 0.5 ml/L (final) of 0.2% hemin solution, and omit
-    agar and Toray silicone solution.
+  description: Use Medium 10 (see Medium No. 133) with 0.5 ml/L (final) of 0.2% hemin
+    solution, and omit agar and Toray silicone solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.039833Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002539'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:004168
 name: RUMINOBACTER AMYLOPHILUS medium
 original_name: RUMINOBACTER AMYLOPHILUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:147
     label: RUMINOBACTER AMYLOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 147 | DSMZ Medium: 147 (mediadive.medium:147) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 147 | DSMZ Medium: 147 (mediadive.medium:147)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -96,3 +98,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 147
+- timestamp: '2026-03-13T06:19:25.590516Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004168'

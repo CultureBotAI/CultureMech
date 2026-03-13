@@ -1,3 +1,4 @@
+id: CultureMech:014207
 preferred_term: Main sol. J1183
 term:
   id: mediadive.solution:5295
@@ -117,3 +118,8 @@ preparation_notes: 'After autoclaving, add 1 ml of 5% Na2S x 9H2O solution (auto
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.331082Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014207'

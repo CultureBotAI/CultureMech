@@ -1,3 +1,4 @@
+id: CultureMech:001304
 name: NATRONOBACTERIUM MEDIUM
 original_name: NATRONOBACTERIUM MEDIUM
 category: bacterial
@@ -77,4 +78,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:03.047916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001304'
 high_metal: true

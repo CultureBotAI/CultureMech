@@ -1,3 +1,4 @@
+id: CultureMech:005072
 name: METHANOSARCINA FRISIA medium
 original_name: METHANOSARCINA FRISIA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:355
     label: METHANOSARCINA FRISIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 355 | DSMZ Medium: 355 (mediadive.medium:355) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 355 | DSMZ Medium: 355 (mediadive.medium:355)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 355'
+- timestamp: '2026-03-13T06:19:29.942291Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005072'

@@ -1,3 +1,4 @@
+id: CultureMech:012243
 preferred_term: Main sol. 1468
 term:
   id: mediadive.solution:3012
@@ -118,3 +119,8 @@ preparation_notes: 'Before autoclaving adjust pH to 7.0 with NaOH.
   by autoclaving. Dissolve the remaining ingredients in 500 ml distilled water (including
   20.0 g agar), sterilise by autoclaving, cool to about 50°C and then mix with the
   warm sterile MgCl2 solution before pouring the plates.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.724984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012243'

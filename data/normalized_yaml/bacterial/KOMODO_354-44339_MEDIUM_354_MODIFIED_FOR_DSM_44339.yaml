@@ -1,3 +1,4 @@
+id: CultureMech:005070
 name: MEDIUM 354 MODIFIED FOR DSM 44339
 original_name: MEDIUM 354 MODIFIED FOR DSM 44339
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:354_44339
     label: MEDIUM 354 MODIFIED FOR DSM 44339
-notes: 'Source: KOMODO ModelSEED | ID: 354_44339 | DSMZ Medium: 354 (mediadive.medium:354) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 354_44339 | DSMZ Medium: 354 (mediadive.medium:354)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -72,4 +73,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 354
+- timestamp: '2026-03-13T06:19:29.932602Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005070'
 ph_value: 7.0

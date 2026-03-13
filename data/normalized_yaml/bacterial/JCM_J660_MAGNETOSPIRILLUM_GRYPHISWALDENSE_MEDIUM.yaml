@@ -1,3 +1,4 @@
+id: CultureMech:003006
 name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
 original_name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
 category: bacterial
@@ -63,8 +64,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: MIX
-  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid medium (1.0 g/L
-    agar).'
+  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid
+    medium (1.0 g/L agar).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,6 +77,10 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: MAGNETOSPIRILLUM GRYPHISWALDENSE, culture_type: isolate'
+- timestamp: '2026-03-13T06:19:17.101688Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003006'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: MAGNETOSPIRILLUM GRYPHISWALDENSE

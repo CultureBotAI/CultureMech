@@ -1,3 +1,4 @@
+id: CultureMech:000556
 name: BEIJERINCKIA MEDIUM
 original_name: BEIJERINCKIA MEDIUM
 category: bacterial
@@ -84,7 +85,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O) and mix after cooling.
+  description: Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O)
+    and mix after cooling.
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,3 +94,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 111'
+- timestamp: '2026-03-13T06:18:56.362744Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000556'

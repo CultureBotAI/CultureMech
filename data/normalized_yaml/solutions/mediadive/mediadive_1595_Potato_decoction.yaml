@@ -1,3 +1,4 @@
+id: CultureMech:011054
 preferred_term: Potato decoction
 term:
   id: mediadive.solution:1595
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Boil for 30 min; filter out potato and return volume of liquid
   to 1000 ml.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.246232Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011054'

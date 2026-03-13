@@ -1,3 +1,4 @@
+id: CultureMech:010545
 name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
 original_name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
 category: fungal
@@ -32,8 +33,9 @@ preparation_steps:
   description: Adjust pH to 7.0 - 7.2.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available from Becton
-    Dickinson & Co. as ISP Medium 1. Add MgSO4 x 7H2O to the medium before autoclaving.'
+  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available
+    from Becton Dickinson & Co. as ISP Medium 1. Add MgSO4 x 7H2O to the medium before
+    autoclaving.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J656'
+- timestamp: '2026-03-13T06:20:14.299042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010545'

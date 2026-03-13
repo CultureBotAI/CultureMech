@@ -1,3 +1,4 @@
+id: CultureMech:009418
 name: M17 medium (Oxoid) supplemented with 0.5% (wt/vol) glucose
 original_name: M17 medium (Oxoid) supplemented with 0.5% (wt/vol) glucose
 category: bacterial
@@ -61,6 +62,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.110473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009418'
 solutions:
 - preferred_term: Lactose solution 10% (w/v)
   composition: []

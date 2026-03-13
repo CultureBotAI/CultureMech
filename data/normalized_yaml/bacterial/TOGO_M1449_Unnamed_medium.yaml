@@ -1,3 +1,4 @@
+id: CultureMech:007989
 name: TOGO Medium M1449
 original_name: (Unnamed medium)
 category: bacterial
@@ -114,6 +115,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.863424Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007989'
 solutions:
 - preferred_term: Mercaptoacetic acid (80% solution)
   composition: []

@@ -1,3 +1,4 @@
+id: CultureMech:007607
 name: Methanogens Saline Water Medium
 original_name: Methanogens Saline Water Medium
 category: bacterial
@@ -136,6 +137,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:50.009509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007607'
 solutions:
 - preferred_term: Trace mineral solution (see Medium [M888])
   composition: []

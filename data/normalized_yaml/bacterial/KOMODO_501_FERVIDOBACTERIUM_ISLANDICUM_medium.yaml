@@ -1,3 +1,4 @@
+id: CultureMech:005656
 name: FERVIDOBACTERIUM ISLANDICUM medium
 original_name: FERVIDOBACTERIUM ISLANDICUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:501
     label: FERVIDOBACTERIUM ISLANDICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 501 | DSMZ Medium: 501 (mediadive.medium:501) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 501 | DSMZ Medium: 501 (mediadive.medium:501)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -125,3 +127,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 501
+- timestamp: '2026-03-13T06:19:34.960703Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005656'

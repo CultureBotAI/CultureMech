@@ -1,5 +1,7 @@
+id: CultureMech:009346
 name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1 μg/mL)
-original_name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1 μg/mL)
+original_name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1
+  μg/mL)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -8,7 +10,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -16,7 +19,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:28869
     label: Menadione
@@ -42,3 +46,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:05.779292Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009346'

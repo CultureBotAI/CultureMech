@@ -1,3 +1,4 @@
+id: CultureMech:001289
 name: DESULFOVIRGA MEDIUM
 original_name: DESULFOVIRGA MEDIUM
 category: bacterial
@@ -242,20 +243,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
-    30 min ), then distributed under the same gas atmosphere in anoxic serum vials (e.g., 50 ml medium
-    in 100 ml serum bottles) and autoclaved. Solutions B, D and G are autoclaved separately under 100%
-    N2 gas. Solution C is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solutions E and F are prepared
-    under 100% N2 gas atmosphere and sterilized by filtration. Solutions B to G are added to the sterile,
-    cooled solution A in appropriate amounts in the sequence as indicated. Final pH of the medium should
-    be 7.2 - 7.4.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 min ), then distributed under the same gas atmosphere
+    in anoxic serum vials (e.g., 50 ml medium in 100 ml serum bottles) and autoclaved.
+    Solutions B, D and G are autoclaved separately under 100% N2 gas. Solution C is
+    autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solutions E and F are prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. Solutions B to G are
+    added to the sterile, cooled solution A in appropriate amounts in the sequence
+    as indicated. Final pH of the medium should be 7.2 - 7.4.
 - step_number: 2
   action: MIX
-  description: 'Note: For transfers use 5 - 10% (v/v) inoculum. Incubate tubes in a slanted position.'
+  description: 'Note: For transfers use 5 - 10% (v/v) inoculum. Incubate tubes in
+    a slanted position.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,3 +266,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 194a'
+- timestamp: '2026-03-13T06:19:02.875204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001289'

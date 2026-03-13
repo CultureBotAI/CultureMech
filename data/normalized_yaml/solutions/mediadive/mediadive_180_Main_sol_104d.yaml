@@ -1,3 +1,4 @@
+id: CultureMech:011238
 preferred_term: Main sol. 104d
 term:
   id: mediadive.solution:180
@@ -117,3 +118,8 @@ preparation_notes: Dissolve ingredients (except betaine and cysteine), boil medi
   tubes or serum vials and autoclave. Add betaine and cysteine from sterile, anoxic
   stock solutions prepared under 100% N2. Adjust the pH of the complete medium to
   7.3 - 7.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.327362Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011238'

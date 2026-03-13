@@ -1,3 +1,4 @@
+id: CultureMech:010980
 preferred_term: Main sol. 738
 term:
   id: mediadive.solution:1511
@@ -115,3 +116,8 @@ preparation_notes: 'Dissolve phosphates separately, Adjust pH to 6.5. Add cresol
   and vitamin solution after autoclaving.
 
   (e.g.: 20 ml/l of a 4.7 g/l phenol-solution)'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.793873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010980'

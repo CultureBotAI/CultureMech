@@ -1,3 +1,4 @@
+id: CultureMech:001317
 name: BHI MEDIUM FOR STRICT ANAEROBES
 original_name: BHI MEDIUM FOR STRICT ANAEROBES
 category: bacterial
@@ -32,8 +33,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare medium anoxically under 100% N2 gas atmosphere. Reducing agents are added after
-    autoclaving from sterile anoxic solutions prepared under N2.
+  description: Prepare medium anoxically under 100% N2 gas atmosphere. Reducing agents
+    are added after autoclaving from sterile anoxic solutions prepared under N2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 215c'
+- timestamp: '2026-03-13T06:19:03.178379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001317'

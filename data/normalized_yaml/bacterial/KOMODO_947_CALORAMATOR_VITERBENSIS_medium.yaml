@@ -1,3 +1,4 @@
+id: CultureMech:006884
 name: CALORAMATOR VITERBENSIS medium
 original_name: CALORAMATOR VITERBENSIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:947
     label: CALORAMATOR VITERBENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 947 | DSMZ Medium: 947 (mediadive.medium:947) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 947 | DSMZ Medium: 947 (mediadive.medium:947)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.268675Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:44.652830Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006884'

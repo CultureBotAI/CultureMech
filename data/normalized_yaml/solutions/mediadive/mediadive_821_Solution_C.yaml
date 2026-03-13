@@ -1,3 +1,4 @@
+id: CultureMech:015191
 preferred_term: Solution C
 term:
   id: mediadive.solution:821
@@ -30,3 +31,8 @@ composition:
 preparation_notes: "Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma\
   \ No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409. \n\nOriginal\
   \ volume: 143 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:41.245507Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015191'

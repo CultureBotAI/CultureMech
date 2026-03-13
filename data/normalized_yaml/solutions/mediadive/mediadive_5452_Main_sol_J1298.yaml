@@ -1,3 +1,4 @@
+id: CultureMech:014357
 preferred_term: Main sol. J1298
 term:
   id: mediadive.solution:5452
@@ -127,3 +128,8 @@ preparation_notes: "Mix components and autoclave. After cooling, aseptically and
   \ add per liter the following solutions (autoclaved or *filter-sterilized): \nAdjust\
   \ pH to 7.5 by bubbling with a N2-CO2 (4:1, v/v) gas mixture.\n\nOriginal volume:\
   \ 1023 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.277038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014357'

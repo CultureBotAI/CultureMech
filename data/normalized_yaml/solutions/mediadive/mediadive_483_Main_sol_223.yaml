@@ -1,3 +1,4 @@
+id: CultureMech:013773
 preferred_term: Main sol. 223
 term:
   id: mediadive.solution:483
@@ -92,3 +93,8 @@ preparation_notes: 'Adjust pH to 7.2 (use pH indicator-paper).
   Aseptically add one or more sterile strips of filter paper to slants or plates.
   Inoculate the filter papers with a small (5 mm x 5mm) agar cube or a piece of filter
   paper overgrown with the strain.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.395250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013773'

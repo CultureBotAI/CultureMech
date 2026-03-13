@@ -1,3 +1,4 @@
+id: CultureMech:014151
 preferred_term: Main sol. 257
 term:
   id: mediadive.solution:523
@@ -49,3 +50,8 @@ preparation_notes: "Preparation of double layered agar plates:<p>\r\n<b>Bottom l
   \ and 0.5 ml cell suspension of host organism, mix and pour top layer. For the top\
   \ layer of one plate use one 24 h old agar slant culture and wash off grown cells\
   \ in 0.5 ml sterile water.<p>\nInoculate double layer plates the same day when prepared."
+curation_history:
+- timestamp: '2026-03-13T06:20:35.943211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014151'

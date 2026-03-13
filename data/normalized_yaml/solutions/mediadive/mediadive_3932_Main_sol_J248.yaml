@@ -1,3 +1,4 @@
+id: CultureMech:012998
 preferred_term: Main sol. J248
 term:
   id: mediadive.solution:3932
@@ -42,3 +43,8 @@ composition:
 preparation_notes: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil
   for 1 hr. Filter, first through cheesecloth and then paper. Make up volume to 1.0
   L.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.811083Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012998'

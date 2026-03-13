@@ -1,3 +1,4 @@
+id: CultureMech:003091
 name: METALLOSPHAERA CUPRINA MEDIUM
 original_name: METALLOSPHAERA CUPRINA MEDIUM
 category: bacterial
@@ -100,8 +101,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 3.5 and autoclave. After cooling, aseptically add 2.0 ml of Trace element
-    solution (see below).
+  description: Adjust pH to 3.5 and autoclave. After cooling, aseptically add 2.0
+    ml of Trace element solution (see below).
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,4 +113,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.350854Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:17.735136Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003091'

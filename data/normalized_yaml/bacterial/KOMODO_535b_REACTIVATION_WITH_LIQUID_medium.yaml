@@ -1,3 +1,4 @@
+id: CultureMech:005962
 name: REACTIVATION WITH LIQUID medium
 original_name: REACTIVATION WITH LIQUID medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:535b
     label: REACTIVATION WITH LIQUID medium
-notes: 'Source: KOMODO ModelSEED | ID: 535b | DSMZ Medium: 535b (mediadive.medium:535b) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 535b | DSMZ Medium: 535b (mediadive.medium:535b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -32,4 +34,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 535
+- timestamp: '2026-03-13T06:19:37.340239Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005962'
 ph_value: 7.3

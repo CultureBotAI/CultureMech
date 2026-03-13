@@ -1,3 +1,4 @@
+id: CultureMech:000450
 name: BBL ACTINOMYCES BROTH
 original_name: BBL ACTINOMYCES BROTH
 category: bacterial
@@ -78,8 +79,8 @@ preparation_steps:
   description: final pH 6.9
 - step_number: 2
   action: HEAT
-  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling prepare and distribute
-    into Hungate tubes by using the Hungate technique.
+  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling
+    prepare and distribute into Hungate tubes by using the Hungate technique.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +88,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1029'
+- timestamp: '2026-03-13T06:18:55.421831Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000450'

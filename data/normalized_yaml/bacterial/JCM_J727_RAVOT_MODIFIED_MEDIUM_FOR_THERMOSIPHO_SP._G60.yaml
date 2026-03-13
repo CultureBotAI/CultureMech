@@ -1,3 +1,4 @@
+id: CultureMech:003071
 name: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
 original_name: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
 category: bacterial
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.577719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003071'
 data_quality_flags:
 - incomplete_composition

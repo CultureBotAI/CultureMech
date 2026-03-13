@@ -1,3 +1,4 @@
+id: CultureMech:003389
 name: MEDIUM 1 MODIFIED FOR DSM 1478
 original_name: MEDIUM 1 MODIFIED FOR DSM 1478
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1_1478
     label: MEDIUM 1 MODIFIED FOR DSM 1478
-notes: 'Source: KOMODO ModelSEED | ID: 1_1478 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_1478 | DSMZ Medium: 1 (mediadive.medium:1)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1
+- timestamp: '2026-03-13T06:19:19.835240Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003389'

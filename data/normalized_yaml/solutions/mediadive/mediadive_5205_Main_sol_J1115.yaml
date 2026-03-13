@@ -1,3 +1,4 @@
+id: CultureMech:014115
 preferred_term: Main sol. J1115
 term:
   id: mediadive.solution:5205
@@ -188,3 +189,8 @@ preparation_notes: "Mix components thoroughly and autoclave. After cooling, add 
   \ into culture vessels (e.g., 20 ml in 120 ml serum bottles) under a stream of N2-CO2\
   \ (4:1, v/v) and seal with butyl rubber stoppers. Pressurize the vessels to 200\
   \ kPa with the same gas mixture.\n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.690794Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014115'

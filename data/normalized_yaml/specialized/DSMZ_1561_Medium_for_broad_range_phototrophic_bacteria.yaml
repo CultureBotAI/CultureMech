@@ -1,3 +1,4 @@
+id: CultureMech:015344
 name: Medium for broad range phototrophic bacteria
 original_name: Medium for broad range phototrophic bacteria
 category: specialized
@@ -268,3 +269,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:42.017588Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015344'

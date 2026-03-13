@@ -1,3 +1,4 @@
+id: CultureMech:012671
 preferred_term: 3% NaHCO3
 term:
   id: mediadive.solution:3572
@@ -32,3 +33,8 @@ preparation_notes: 'Fill 50 ml in 100 ml serum bottles, bubble for 15 min with C
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.163861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012671'

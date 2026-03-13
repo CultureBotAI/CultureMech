@@ -1,3 +1,4 @@
+id: CultureMech:006860
 name: MODIFIED PYES medium
 original_name: MODIFIED PYES medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:937a
     label: MODIFIED PYES medium
-notes: 'Source: KOMODO ModelSEED | ID: 937a | DSMZ Medium: 937a (mediadive.medium:937a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 937a | DSMZ Medium: 937a (mediadive.medium:937a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -44,4 +46,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 937
+- timestamp: '2026-03-13T06:19:44.425211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006860'
 ph_value: 7.2

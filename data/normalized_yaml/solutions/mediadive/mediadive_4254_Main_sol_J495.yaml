@@ -1,3 +1,4 @@
+id: CultureMech:013267
 preferred_term: Main sol. J495
 term:
   id: mediadive.solution:4254
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Mix ingredients except NaHCO3, adjust pH to 7.0 with NaOH and autoclave
   under a H2-CO2 (4:1, v/v) gas mixture. Filter-sterilize 8% NaHCO3 solution and add
   to the medium. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+curation_history:
+- timestamp: '2026-03-13T06:20:30.394836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013267'

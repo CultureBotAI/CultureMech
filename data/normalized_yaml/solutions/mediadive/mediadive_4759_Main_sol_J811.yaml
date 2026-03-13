@@ -1,3 +1,4 @@
+id: CultureMech:013705
 preferred_term: Main sol. J811
 term:
   id: mediadive.solution:4759
@@ -231,3 +232,8 @@ preparation_notes: 'Mix ingredients except Na2S x 9H2O, adjust pH to 6.8 and dis
   18G needle and stick the needle into a silicone rubber stopper. Put the assemblage
   of the syringe, needle and rubber stopper in a pressure vessel, pour water into
   the vessel and keep pressure inside between 20 and 100 MPa (at 90C).'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.967542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013705'

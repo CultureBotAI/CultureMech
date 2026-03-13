@@ -1,3 +1,4 @@
+id: CultureMech:005186
 name: Aerobic version
 original_name: Aerobic version
 category: bacterial
@@ -79,3 +80,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:30.934633Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005186'

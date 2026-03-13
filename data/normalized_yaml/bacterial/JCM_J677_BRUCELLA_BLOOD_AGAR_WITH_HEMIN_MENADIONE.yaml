@@ -1,3 +1,4 @@
+id: CultureMech:003022
 name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
 original_name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
 category: bacterial
@@ -24,7 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
+    to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J677'
+- timestamp: '2026-03-13T06:19:17.228931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003022'

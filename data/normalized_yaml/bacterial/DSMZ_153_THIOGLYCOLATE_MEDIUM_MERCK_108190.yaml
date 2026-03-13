@@ -1,3 +1,4 @@
+id: CultureMech:001017
 name: THIOGLYCOLATE MEDIUM (MERCK 108190)
 original_name: THIOGLYCOLATE MEDIUM (MERCK 108190)
 category: bacterial
@@ -65,9 +66,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Adjust pH to 7.1 with Na2CO3 (5% w/v), if necessary. Then dispense medium under the same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients, sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Adjust pH to 7.1 with Na2CO3 (5% w/v), if necessary. Then dispense
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,3 +81,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:00.526507Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001017'

@@ -1,3 +1,4 @@
+id: CultureMech:000397
 name: RPL:MP
 original_name: RPL:MP
 category: bacterial
@@ -105,3 +106,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:54.937387Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000397'

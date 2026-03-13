@@ -1,3 +1,4 @@
+id: CultureMech:011778
 preferred_term: Solution B
 term:
   id: mediadive.solution:2400
@@ -20,3 +21,8 @@ preparation_notes: 'Dissolve in 0.2 N H2SO4 and fill up to a volume of 100 ml. F
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.847443Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011778'

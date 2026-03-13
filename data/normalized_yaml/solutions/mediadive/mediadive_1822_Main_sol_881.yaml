@@ -1,3 +1,4 @@
+id: CultureMech:011249
 preferred_term: Main sol. 881
 term:
   id: mediadive.solution:1822
@@ -169,3 +170,8 @@ preparation_notes: 'Dissolve all ingredients except carbonate, fumarate, vitamin
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.395609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011249'

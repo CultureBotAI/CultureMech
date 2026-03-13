@@ -1,3 +1,4 @@
+id: CultureMech:012489
 preferred_term: Phosphate buffer
 term:
   id: mediadive.solution:3333
@@ -39,3 +40,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:26.164854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012489'

@@ -1,3 +1,4 @@
+id: CultureMech:014956
 preferred_term: Main sol. 1797
 term:
   id: mediadive.solution:6263
@@ -104,3 +105,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0.
 
   Note: When preparing a solid medium, autoclave the NaCl separately.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.148519Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014956'

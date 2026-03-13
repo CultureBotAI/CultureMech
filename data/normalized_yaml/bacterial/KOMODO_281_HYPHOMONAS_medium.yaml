@@ -1,3 +1,4 @@
+id: CultureMech:004734
 name: HYPHOMONAS medium
 original_name: HYPHOMONAS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:281
     label: HYPHOMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 281 | DSMZ Medium: 281 (mediadive.medium:281) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 281 | DSMZ Medium: 281 (mediadive.medium:281)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 281
+- timestamp: '2026-03-13T06:19:28.345356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004734'

@@ -1,3 +1,4 @@
+id: CultureMech:004801
 name: Inorganic salt solution (medium 754)
 original_name: Inorganic salt solution (medium 754)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3021
     label: Inorganic salt solution (medium 754)
-notes: 'Source: KOMODO ModelSEED | ID: 3021 | DSMZ Medium: 3021 (mediadive.medium:3021) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3021 | DSMZ Medium: 3021 (mediadive.medium:3021)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3021'
+- timestamp: '2026-03-13T06:19:28.821594Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004801'

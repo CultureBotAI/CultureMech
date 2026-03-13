@@ -1,3 +1,4 @@
+id: CultureMech:005290
 name: SUPPLEMENTED (ARGININE) M9 MEDIUM
 original_name: SUPPLEMENTED (ARGININE) M9 MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:450
     label: SUPPLEMENTED (ARGININE) M9 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 450 | DSMZ Medium: 450 (mediadive.medium:450) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 450 | DSMZ Medium: 450 (mediadive.medium:450)
+  | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4
   term:
@@ -91,4 +93,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 450
+- timestamp: '2026-03-13T06:19:31.541571Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005290'
 ph_value: 7.4

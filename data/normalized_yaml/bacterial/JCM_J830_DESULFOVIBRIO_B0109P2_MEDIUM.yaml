@@ -1,3 +1,4 @@
+id: CultureMech:003174
 name: DESULFOVIBRIO B0109P2 MEDIUM
 original_name: DESULFOVIBRIO B0109P2 MEDIUM
 category: bacterial
@@ -179,17 +180,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients and adjust pH to 7.4. Bring to a boil and cool down under a N2-CO2 (4:1,
-    v/v) gas stream. Distribute the medium into culture tubes under the same gas mixture, seal with butyl
-    rubber stoppers and autoclave.
+  description: Mix ingredients and adjust pH to 7.4. Bring to a boil and cool down
+    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture tubes
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: MIX
-  description: 'To complete the medium, aseptically and anaerobically add the following stock solutions
-    (per liter, final volume):'
+  description: 'To complete the medium, aseptically and anaerobically add the following
+    stock solutions (per liter, final volume):'
 - step_number: 3
   action: AUTOCLAVE
-  description: Filter-sterilize NaHCO3 solution and store under a N2-CO2 (4:1, v/v) gas mixture. The other
-    solutions are autoclaved and stored anaerobically under a N2 atmosphere.
+  description: Filter-sterilize NaHCO3 solution and store under a N2-CO2 (4:1, v/v)
+    gas mixture. The other solutions are autoclaved and stored anaerobically under
+    a N2 atmosphere.
 - step_number: 4
   action: ADJUST_PH
   description: Readjust pH of the medium to 7.4, if necessary.
@@ -200,3 +202,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J830'
+- timestamp: '2026-03-13T06:19:18.354942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003174'

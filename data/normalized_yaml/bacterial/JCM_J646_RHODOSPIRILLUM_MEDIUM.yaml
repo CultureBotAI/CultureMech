@@ -1,3 +1,4 @@
+id: CultureMech:002992
 name: RHODOSPIRILLUM MEDIUM
 original_name: RHODOSPIRILLUM MEDIUM
 category: bacterial
@@ -53,7 +54,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized Na2S x 9H2O solution to the medium.
+  description: After autoclaving, add filter-sterilized Na2S x 9H2O solution to the
+    medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J646'
+- timestamp: '2026-03-13T06:19:17.021924Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002992'

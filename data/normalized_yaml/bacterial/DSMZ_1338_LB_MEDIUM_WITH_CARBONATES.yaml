@@ -1,3 +1,4 @@
+id: CultureMech:000795
 name: LB MEDIUM WITH CARBONATES
 original_name: LB MEDIUM WITH CARBONATES
 category: bacterial
@@ -51,10 +52,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the Mineral Salts and the Carbonate Salts separately. Combine both solutions
-    after cooling. The medium may be solidified by adding 20.0 g/l agar. The agar is added to Minerals
-    Salts Solution and after autoclaving both the Mineral Salts Solution and the Carbonate Salts Solution
-    are cooled to 50-55°C, mixed and poured into Petri dishes. Final pH 9.6.
+  description: Autoclave the Mineral Salts and the Carbonate Salts separately. Combine
+    both solutions after cooling. The medium may be solidified by adding 20.0 g/l
+    agar. The agar is added to Minerals Salts Solution and after autoclaving both
+    the Mineral Salts Solution and the Carbonate Salts Solution are cooled to 50-55°C,
+    mixed and poured into Petri dishes. Final pH 9.6.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1338'
+- timestamp: '2026-03-13T06:18:58.414325Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000795'

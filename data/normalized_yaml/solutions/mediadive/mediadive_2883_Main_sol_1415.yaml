@@ -1,3 +1,4 @@
+id: CultureMech:012151
 preferred_term: Main sol. 1415
 term:
   id: mediadive.solution:2883
@@ -149,3 +150,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Prepare the liquid medium. Adjust to pH 8.5. Before inoculation
   add from sterile stock solutions: '
+curation_history:
+- timestamp: '2026-03-13T06:20:24.205754Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012151'

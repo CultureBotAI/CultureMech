@@ -1,3 +1,4 @@
+id: CultureMech:008902
 name: seawater medium (with 0.5% tryptone)
 original_name: seawater medium (with 0.5% tryptone)
 category: bacterial
@@ -27,3 +28,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2315'
+- timestamp: '2026-03-13T06:20:01.165789Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008902'

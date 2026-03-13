@@ -1,3 +1,4 @@
+id: CultureMech:000304
 name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
 original_name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
 category: archaea
@@ -267,3 +268,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:54.322533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000304'

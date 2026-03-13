@@ -1,3 +1,4 @@
+id: CultureMech:012136
 preferred_term: Main sol. 1409
 term:
   id: mediadive.solution:2864
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium
   into serum bottles with a medium to headspace ratio of about 1:4. Add 20% methane
   to the gas phase. Sterilize by autoclaving. Incubate the cultures with shaking.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.097530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012136'

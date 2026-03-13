@@ -1,3 +1,4 @@
+id: CultureMech:009079
 name: Columbia agar (with sheep blood)
 original_name: Columbia agar (with sheep blood)
 category: bacterial
@@ -29,5 +30,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.021555'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sheep blood; Added default concentration for ingredient:
-    Columbia agar'
+  notes: 'Added default concentration for ingredient: sheep blood; Added default concentration
+    for ingredient: Columbia agar'
+- timestamp: '2026-03-13T06:20:02.392827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009079'

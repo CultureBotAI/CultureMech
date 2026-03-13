@@ -1,3 +1,4 @@
+id: CultureMech:000857
 name: HALOARCHAEAL MEDIUM MH-1
 original_name: HALOARCHAEAL MEDIUM MH-1
 category: bacterial
@@ -177,4 +178,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.944561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000857'
 high_metal: true

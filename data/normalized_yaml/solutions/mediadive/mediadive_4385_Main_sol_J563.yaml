@@ -1,3 +1,4 @@
+id: CultureMech:013380
 preferred_term: Main sol. J563
 term:
   id: mediadive.solution:4385
@@ -127,3 +128,8 @@ preparation_notes: Dissolve ingredients except NaHCO3 in distilled water, boil f
   5 min, then cool to room temperature while gassing with 100% CO2. Add NaHCO3, equilibrate
   the medium with NaOH to pH 6.9. Distribute 10 ml amounts in anaerobic Hungate tubes
   under CO2 and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.011330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013380'

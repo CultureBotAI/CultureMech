@@ -1,3 +1,4 @@
+id: CultureMech:011636
 preferred_term: Main sol. 1118
 term:
   id: mediadive.solution:2247
@@ -65,3 +66,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a
   filter sterilized stock solution. pH should be 7.0 -7.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.933355Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011636'

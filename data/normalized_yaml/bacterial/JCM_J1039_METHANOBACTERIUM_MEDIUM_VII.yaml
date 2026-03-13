@@ -1,3 +1,4 @@
+id: CultureMech:002223
 name: METHANOBACTERIUM MEDIUM (VII)
 original_name: METHANOBACTERIUM MEDIUM (VII)
 category: bacterial
@@ -221,11 +222,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, except NaHCO3 and vitamin solution, and bring to a boil for 5-10 sec. Cool
-    down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3 to the medium. Dispense the medium into
-    culture vessels under a stream of H2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave.
-    Prior to inoculation, add per liter the following solutions (autoclaved or *filter-sterilized and
-    stored under a N2 atmosphere).
+  description: Mix components, except NaHCO3 and vitamin solution, and bring to a
+    boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3
+    to the medium. Dispense the medium into culture vessels under a stream of H2-CO2
+    (80:20, v/v), seal with butyl rubber stoppers and autoclave. Prior to inoculation,
+    add per liter the following solutions (autoclaved or *filter-sterilized and stored
+    under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,3 +235,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1039'
+- timestamp: '2026-03-13T06:19:11.408087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002223'

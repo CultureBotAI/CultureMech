@@ -1,3 +1,4 @@
+id: CultureMech:000401
 name: R75S
 original_name: R75S
 category: bacterial
@@ -32,3 +33,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C87'
+- timestamp: '2026-03-13T06:18:54.956143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000401'

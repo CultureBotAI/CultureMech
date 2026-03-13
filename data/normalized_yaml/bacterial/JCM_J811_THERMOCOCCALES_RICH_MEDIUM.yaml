@@ -1,3 +1,4 @@
+id: CultureMech:003156
 name: THERMOCOCCALES RICH MEDIUM
 original_name: THERMOCOCCALES RICH MEDIUM
 category: bacterial
@@ -127,17 +128,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S x 9H2O, adjust pH to 6.8 and distribute the medium into culture
-    vessels (e.g., 70 ml in 120 ml serum bottles). Bubble the medium with N2 gas for 30 min and seal with
-    butyl rubber stoppers. Steam the medium for 3 hr on each of 3 successive days. Reduce the medium with
-    sterile Na2S x 9H2O solution (neutralized and autoclaved under a N2 atmosphere) and readjust pH to
-    6.8, if necessary.
+  description: Mix ingredients except Na2S x 9H2O, adjust pH to 6.8 and distribute
+    the medium into culture vessels (e.g., 70 ml in 120 ml serum bottles). Bubble
+    the medium with N2 gas for 30 min and seal with butyl rubber stoppers. Steam the
+    medium for 3 hr on each of 3 successive days. Reduce the medium with sterile Na2S
+    x 9H2O solution (neutralized and autoclaved under a N2 atmosphere) and readjust
+    pH to 6.8, if necessary.
 - step_number: 2
   action: MIX
-  description: 'Comment: For cultivation of JCM 16557, inoculated cultures should be pressurized to 20
-    to 100 MPa. Therefore, aspirate the culture into a plastic syringe with a 18G needle and stick the
-    needle into a silicone rubber stopper. Put the assemblage of the syringe, needle and rubber stopper
-    in a pressure vessel, pour water into the vessel and keep pressure inside between 20 and 100 MPa (at
+  description: 'Comment: For cultivation of JCM 16557, inoculated cultures should
+    be pressurized to 20 to 100 MPa. Therefore, aspirate the culture into a plastic
+    syringe with a 18G needle and stick the needle into a silicone rubber stopper.
+    Put the assemblage of the syringe, needle and rubber stopper in a pressure vessel,
+    pour water into the vessel and keep pressure inside between 20 and 100 MPa (at
     90C).'
 applications:
 - Microbial cultivation
@@ -146,3 +149,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J811'
+- timestamp: '2026-03-13T06:19:18.190199Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003156'

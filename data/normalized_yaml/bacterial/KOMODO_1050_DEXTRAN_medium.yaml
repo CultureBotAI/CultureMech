@@ -1,3 +1,4 @@
+id: CultureMech:003624
 name: DEXTRAN medium
 original_name: DEXTRAN medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1050
     label: DEXTRAN medium
-notes: 'Source: KOMODO ModelSEED | ID: 1050 | DSMZ Medium: 1050 (mediadive.medium:1050) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1050 | DSMZ Medium: 1050 (mediadive.medium:1050)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Dextran
   term:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1050
+- timestamp: '2026-03-13T06:19:21.098211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003624'

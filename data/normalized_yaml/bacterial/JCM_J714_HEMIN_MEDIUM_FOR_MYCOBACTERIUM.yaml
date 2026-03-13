@@ -1,3 +1,4 @@
+id: CultureMech:003061
 name: HEMIN MEDIUM FOR MYCOBACTERIUM
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with 60 ï¿½mol/L of hemin.
-    Hemin is solubilized with 1 N NaOH.
+  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with
+    60 ï¿½mol/L of hemin. Hemin is solubilized with 1 N NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.505081Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003061'
 data_quality_flags:
 - incomplete_composition

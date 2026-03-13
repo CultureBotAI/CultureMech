@@ -1,3 +1,4 @@
+id: CultureMech:010646
 preferred_term: Solution C
 term:
   id: mediadive.solution:1151
@@ -45,3 +46,8 @@ preparation_notes: 'Heat the suspension in a closed bottle (with 100% N2 gas atm
 
 
   Original volume: 11 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.806401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010646'

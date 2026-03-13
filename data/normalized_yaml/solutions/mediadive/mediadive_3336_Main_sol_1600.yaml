@@ -1,3 +1,4 @@
+id: CultureMech:012491
 preferred_term: Main sol. 1600
 term:
   id: mediadive.solution:3336
@@ -141,3 +142,8 @@ preparation_notes: "2x concentrated stock:\nAdjust pH to 6.8 with NaOH.\nFill up
   \ 346ml with demineralized water and filter sterilize through 0.2µm filter\nAliquot\
   \ 17.3ml into 50ml tubes and store at -20°C.\nWhen ready to use add: \nFilter sterilize\
   \ each tube through 0.2µm filter.\n\nOriginal volume: 358 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:26.181117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012491'

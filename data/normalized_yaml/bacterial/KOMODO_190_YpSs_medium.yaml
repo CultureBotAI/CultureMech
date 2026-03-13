@@ -1,3 +1,4 @@
+id: CultureMech:004214
 name: YpSs medium
 original_name: YpSs medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:190
     label: YpSs medium
-notes: 'Source: KOMODO ModelSEED | ID: 190 | DSMZ Medium: 190 (mediadive.medium:190) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 190 | DSMZ Medium: 190 (mediadive.medium:190)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -53,4 +55,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 190
+- timestamp: '2026-03-13T06:19:25.858835Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004214'
 ph_value: 6.5

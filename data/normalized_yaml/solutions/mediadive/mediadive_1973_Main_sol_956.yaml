@@ -1,3 +1,4 @@
+id: CultureMech:011376
 preferred_term: Main sol. 956
 term:
   id: mediadive.solution:1973
@@ -103,3 +104,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: pH 7.2. To the sterilised medium add sterile methanol (to a final
   concentration of 0.5%) or methylamine (to a final concentration of 0.3%).
+curation_history:
+- timestamp: '2026-03-13T06:20:19.247620Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011376'

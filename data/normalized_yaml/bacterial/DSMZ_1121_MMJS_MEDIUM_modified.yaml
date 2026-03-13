@@ -1,3 +1,4 @@
+id: CultureMech:000558
 name: MMJS MEDIUM (modified)
 original_name: MMJS MEDIUM (modified)
 category: bacterial
@@ -277,13 +278,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The pH of the medium is adjusted with NaOH to 6.8. Steam medium for 3 hours on each of
-    3 successive days. The separately autoclaved, concentrated solutions including each of follows are
-    added to the medium. Then a mix gas (80%N2, 20%CO2) is purged for 5 min.
+  description: The pH of the medium is adjusted with NaOH to 6.8. Steam medium for
+    3 hours on each of 3 successive days. The separately autoclaved, concentrated
+    solutions including each of follows are added to the medium. Then a mix gas (80%N2,
+    20%CO2) is purged for 5 min.
 - step_number: 2
   action: MIX
-  description: Finally, the mix gas (79%N2, 20%CO2, 1%O2) is compressed into gas phase (>80% volume of
-    the tube or bottle) at 2 atm.
+  description: Finally, the mix gas (79%N2, 20%CO2, 1%O2) is compressed into gas phase
+    (>80% volume of the tube or bottle) at 2 atm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -295,3 +297,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.379489Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000558'

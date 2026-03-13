@@ -1,3 +1,4 @@
+id: CultureMech:014302
 preferred_term: Main sol. J1255
 term:
   id: mediadive.solution:5392
@@ -130,3 +131,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 6.75 with NaOH. D
   \ solutions (autoclaved): \nThen, add filter-sterilized H2, CO2 and air to the culture\
   \ vessels to make the gaseous composition in the gas phase 75% N2, 17% H2, 4% CO2\
   \ and 4% air by volume.\n\nOriginal volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.940486Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014302'

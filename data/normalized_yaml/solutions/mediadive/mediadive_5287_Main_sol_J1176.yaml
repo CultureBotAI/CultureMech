@@ -1,3 +1,4 @@
+id: CultureMech:014198
 preferred_term: Main sol. J1176
 term:
   id: mediadive.solution:5287
@@ -166,3 +167,8 @@ preparation_notes: "Mix components except NaHCO3 and bring to a boil for a few s
   \ autoclave. Allow to stand the medium until re-dissolved. Then, add per liter the\
   \ following solutions (autoclaved or *filter-sterilized): \nAdjust pH of the medium\
   \ to 6.8-7.0, if necessary.\n\nOriginal volume: 1042 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.274460Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014198'

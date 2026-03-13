@@ -1,3 +1,4 @@
+id: CultureMech:014494
 preferred_term: Main sol. 294
 term:
   id: mediadive.solution:561
@@ -168,3 +169,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, vitamins, gentisic a
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.099110Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014494'

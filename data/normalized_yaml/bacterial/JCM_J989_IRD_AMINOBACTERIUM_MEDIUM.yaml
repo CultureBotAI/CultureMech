@@ -1,3 +1,4 @@
+id: CultureMech:003338
 name: IRD AMINOBACTERIUM MEDIUM
 original_name: IRD AMINOBACTERIUM MEDIUM
 category: bacterial
@@ -186,10 +187,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2. Bring to a boil, cool down under a N2-CO2
-    (4:1, v/v) gas stream, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically
-    add the following stock solutions [autoclaved and stored under a N2 atmosphere or *filter-sterilize
-    and store under a N2-CO2 (4:1, v/v) gas mixture]:'
+  description: 'Mix components thoroughly and adjust pH to 7.2. Bring to a boil, cool
+    down under a N2-CO2 (4:1, v/v) gas stream, seal with butyl rubber stoppers and
+    autoclave. Aseptically and anaerobically add the following stock solutions [autoclaved
+    and stored under a N2 atmosphere or *filter-sterilize and store under a N2-CO2
+    (4:1, v/v) gas mixture]:'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.2, if necessary.
@@ -200,3 +202,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J989'
+- timestamp: '2026-03-13T06:19:19.628349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003338'

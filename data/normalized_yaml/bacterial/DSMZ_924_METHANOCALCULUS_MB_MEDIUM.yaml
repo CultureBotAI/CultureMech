@@ -1,3 +1,4 @@
+id: CultureMech:002094
 name: METHANOCALCULUS MB MEDIUM
 original_name: METHANOCALCULUS MB MEDIUM
 category: bacterial
@@ -290,3 +291,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:10.230054Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002094'

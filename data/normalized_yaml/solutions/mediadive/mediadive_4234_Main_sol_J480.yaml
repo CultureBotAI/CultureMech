@@ -1,3 +1,4 @@
+id: CultureMech:013248
 preferred_term: Main sol. J480
 term:
   id: mediadive.solution:4234
@@ -156,3 +157,8 @@ preparation_notes: 'Dissolve components, except NaHCO3, dithiothreitol and manni
 
 
   Original volume: 12 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.299259Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013248'

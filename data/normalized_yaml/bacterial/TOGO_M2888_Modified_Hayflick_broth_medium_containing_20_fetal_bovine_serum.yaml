@@ -1,3 +1,4 @@
+id: CultureMech:009423
 name: Modified Hayflick broth medium containing 20% fetal bovine serum
 original_name: Modified Hayflick broth medium containing 20% fetal bovine serum
 category: bacterial
@@ -69,3 +70,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin G (Parke, Davis &
     Co)'
+- timestamp: '2026-03-13T06:20:06.132245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009423'

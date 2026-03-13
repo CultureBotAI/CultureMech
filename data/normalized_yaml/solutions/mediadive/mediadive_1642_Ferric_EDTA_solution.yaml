@@ -1,3 +1,4 @@
+id: CultureMech:011100
 preferred_term: Ferric EDTA solution
 term:
   id: mediadive.solution:1642
@@ -58,3 +59,8 @@ preparation_notes: '1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of 
   overnight, and store in a brown glass bottle.
 
   3) Combine the two solutions and make up to 1 litre with distilled water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.526841Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011100'

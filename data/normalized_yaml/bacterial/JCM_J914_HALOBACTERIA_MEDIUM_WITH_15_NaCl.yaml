@@ -1,3 +1,4 @@
+id: CultureMech:003262
 name: HALOBACTERIA MEDIUM WITH 15% NaCl
 original_name: HALOBACTERIA MEDIUM WITH 15% NaCl
 category: bacterial
@@ -18,7 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 168 with 150.0 g/L (final) NaCl. Omit agar for preparation of liquid medium.
+  description: Use Medium No. 168 with 150.0 g/L (final) NaCl. Omit agar for preparation
+    of liquid medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.018552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003262'
 data_quality_flags:
 - incomplete_composition

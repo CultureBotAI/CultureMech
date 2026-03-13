@@ -1,3 +1,4 @@
+id: CultureMech:009872
 name: Modified Methanocaldococcus Medium
 original_name: Modified Methanocaldococcus Medium
 category: bacterial
@@ -224,6 +225,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.557298Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009872'
 solutions:
 - preferred_term: Iron stock solution (see Medium [M221])
   composition: []

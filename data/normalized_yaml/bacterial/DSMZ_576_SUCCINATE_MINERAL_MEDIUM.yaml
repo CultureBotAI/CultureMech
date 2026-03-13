@@ -1,3 +1,4 @@
+id: CultureMech:001703
 name: SUCCINATE MINERAL MEDIUM
 original_name: SUCCINATE MINERAL MEDIUM
 category: bacterial
@@ -136,3 +137,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:06.565508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001703'

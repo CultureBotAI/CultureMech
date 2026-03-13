@@ -1,3 +1,4 @@
+id: CultureMech:009954
 name: Sauton's Synthetic Medium
 original_name: Sauton's Synthetic Medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,12 +18,14 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -29,7 +33,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -37,7 +42,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Organic compound'
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
@@ -45,7 +51,8 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -91,3 +98,7 @@ curation_history:
   date: '2026-02-03T11:20:59.447604'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NH4OH'
+- timestamp: '2026-03-13T06:20:10.263395Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009954'

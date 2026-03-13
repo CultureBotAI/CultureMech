@@ -1,3 +1,4 @@
+id: CultureMech:005068
 name: AZOSPIRILLUM AMAZONENSE MEDIUM
 original_name: AZOSPIRILLUM AMAZONENSE MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:352
     label: AZOSPIRILLUM AMAZONENSE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 352 | DSMZ Medium: 352 (mediadive.medium:352) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 352 | DSMZ Medium: 352 (mediadive.medium:352)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -85,3 +87,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 352
+- timestamp: '2026-03-13T06:19:29.923788Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005068'

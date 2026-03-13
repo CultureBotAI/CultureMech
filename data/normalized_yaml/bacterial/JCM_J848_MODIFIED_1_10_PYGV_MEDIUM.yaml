@@ -1,3 +1,4 @@
+id: CultureMech:003193
 name: MODIFIED 1/10 PYGV MEDIUM
 original_name: MODIFIED 1/10 PYGV MEDIUM
 category: bacterial
@@ -125,3 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J848'
+- timestamp: '2026-03-13T06:19:18.488015Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003193'

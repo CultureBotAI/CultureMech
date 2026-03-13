@@ -1,3 +1,4 @@
+id: CultureMech:002236
 name: DEFERRISOMA PALEOCHRORII MEDIUM
 original_name: DEFERRISOMA PALEOCHRORII MEDIUM
 category: bacterial
@@ -224,17 +225,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.0 with 1 N HCl and autoclave under a H2-CO2
-    (4:1, v/v) gas mixture. After cooling, aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 6.0 with 1 N HCl and autoclave
+    under a H2-CO2 (4:1, v/v) gas mixture. After cooling, aseptically and anaerobically
+    add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 6.0 to 6.3, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until dissolved. Cool to
-    an ambient temperature and adjust pH to 6.0 with 10 N NaOH solution. Fill up to 100 ml with distilled
-    water.
+  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until
+    dissolved. Cool to an ambient temperature and adjust pH to 6.0 with 10 N NaOH
+    solution. Fill up to 100 ml with distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -242,3 +243,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1053'
+- timestamp: '2026-03-13T06:19:11.507419Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002236'

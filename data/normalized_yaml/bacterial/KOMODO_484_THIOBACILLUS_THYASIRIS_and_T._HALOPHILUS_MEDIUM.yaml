@@ -1,3 +1,4 @@
+id: CultureMech:005607
 name: THIOBACILLUS THYASIRIS and T. HALOPHILUS MEDIUM
 original_name: THIOBACILLUS THYASIRIS and T. HALOPHILUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:484
     label: THIOBACILLUS THYASIRIS and T. HALOPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 484 | DSMZ Medium: 484 (mediadive.medium:484) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 484 | DSMZ Medium: 484 (mediadive.medium:484)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -188,3 +190,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 484
+- timestamp: '2026-03-13T06:19:34.539468Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005607'

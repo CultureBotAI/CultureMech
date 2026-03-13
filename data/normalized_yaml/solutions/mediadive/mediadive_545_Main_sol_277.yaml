@@ -1,3 +1,4 @@
+id: CultureMech:014363
 preferred_term: Main sol. 277
 term:
   id: mediadive.solution:545
@@ -31,3 +32,8 @@ preparation_notes: 'Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 
   cherry extract, distribute in presterilized tubes and sterilize for 5 min at 120°C.
 
   Final pH 3.8 - 4.6.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.317698Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014363'

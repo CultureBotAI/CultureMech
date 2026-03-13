@@ -1,3 +1,4 @@
+id: CultureMech:001831
 name: MEDIUM E-2
 original_name: MEDIUM E-2
 category: bacterial
@@ -53,7 +54,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole source of carbon.
+  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole source
+    of carbon.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 694'
+- timestamp: '2026-03-13T06:19:07.576533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001831'

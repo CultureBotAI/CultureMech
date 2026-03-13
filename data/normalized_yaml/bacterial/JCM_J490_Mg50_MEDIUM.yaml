@@ -1,3 +1,4 @@
+id: CultureMech:002841
 name: Mg50 MEDIUM
 original_name: Mg50 MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave 1 M glucose solution
-    separately under a N2 atmosphere, and add to the medium.
+  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave
+    1 M glucose solution separately under a N2 atmosphere, and add to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.014340Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002841'
 data_quality_flags:
 - incomplete_composition

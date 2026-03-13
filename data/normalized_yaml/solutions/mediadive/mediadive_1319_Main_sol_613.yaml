@@ -1,3 +1,4 @@
+id: CultureMech:010806
 preferred_term: Main sol. 613
 term:
   id: mediadive.solution:1319
@@ -180,3 +181,8 @@ preparation_notes: 'Dissolve ingredients (except glucose, calcium chloride, vita
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.634376Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010806'

@@ -1,5 +1,8 @@
-name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 = DSM 13740
-original_name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 = DSM 13740
+id: CultureMech:006840
+name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 = DSM
+  13740
+original_name: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL
+  7 = DSM 13740
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
@@ -7,8 +10,10 @@ media_term:
   preferred_term: KOMODO Medium 925.6
   term:
     id: komodo.medium:925.6
-    label: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 = DSM 13740
-notes: 'Source: KOMODO ModelSEED | ID: 925.6 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
+    label: Thioalkalimicrobium aerophilum AL 3 = DSM 13739 and Tm.sibericum AL 7 =
+      DSM 13740
+notes: 'Source: KOMODO ModelSEED | ID: 925.6 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -119,4 +124,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 925
+- timestamp: '2026-03-13T06:19:44.241383Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006840'
 ph_value: 10.0

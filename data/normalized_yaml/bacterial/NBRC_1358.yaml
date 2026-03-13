@@ -1,3 +1,4 @@
+id: CultureMech:007474
 name: '1358'
 original_name: '1358'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 120 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.197377Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007474'
 solutions:
 - preferred_term: Mineral base 1*500mlMineral base 2**500mlMgCl2·6H2O0.2gBacto Yeast
     Extract (Difco)0.02gCoenzyme M0.014gVitamin solution***5mlTrace element solution****10mlMethanol2mlSodium

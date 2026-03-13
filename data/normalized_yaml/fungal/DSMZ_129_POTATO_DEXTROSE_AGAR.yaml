@@ -1,3 +1,4 @@
+id: CultureMech:010445
 name: POTATO DEXTROSE AGAR
 original_name: POTATO DEXTROSE AGAR
 category: fungal
@@ -38,8 +39,8 @@ preparation_steps:
   description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
 - step_number: 2
   action: HEAT
-  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour. Pass through fine
-    sieve. Avoid new potatoes.
+  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour.
+    Pass through fine sieve. Avoid new potatoes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,3 +52,7 @@ curation_history:
   curator: atcc-crossref-backfill
   action: Added ATCC cross-reference
   notes: ATCC:2 verified equivalent (verified 2026-02-19)
+- timestamp: '2026-03-13T06:20:13.852073Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010445'

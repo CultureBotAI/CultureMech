@@ -1,3 +1,4 @@
+id: CultureMech:000678
 name: MEDIUM FOR SULFOSPIRILLUM DSM 806
 original_name: MEDIUM FOR SULFOSPIRILLUM DSM 806
 category: bacterial
@@ -127,12 +128,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together in 1/10 vol. of water
-    and sterilized separately.
+  description: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together
+    in 1/10 vol. of water and sterilized separately.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,3 +141,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 121'
+- timestamp: '2026-03-13T06:18:57.379650Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000678'

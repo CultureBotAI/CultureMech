@@ -1,3 +1,4 @@
+id: CultureMech:005874
 name: ANAEROCELLUM medium
 original_name: ANAEROCELLUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:516
     label: ANAEROCELLUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 516 | DSMZ Medium: 516 (mediadive.medium:516) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 516 | DSMZ Medium: 516 (mediadive.medium:516)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -219,4 +221,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.908912Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:36.961330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005874'

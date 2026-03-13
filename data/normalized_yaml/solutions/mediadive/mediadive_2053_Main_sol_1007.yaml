@@ -1,3 +1,4 @@
+id: CultureMech:011453
 preferred_term: Main sol. 1007
 term:
   id: mediadive.solution:2053
@@ -66,3 +67,8 @@ composition:
 preparation_notes: 'Final pH 5.5-6.0.
 
   Strains should be grown with shaking when grown on methane.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.804817Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011453'

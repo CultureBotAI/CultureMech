@@ -1,3 +1,4 @@
+id: CultureMech:011064
 preferred_term: Wolfe's mineral elixir
 term:
   id: mediadive.solution:1605
@@ -185,3 +186,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve
   the salts.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.301769Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011064'

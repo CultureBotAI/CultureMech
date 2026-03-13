@@ -1,3 +1,4 @@
+id: CultureMech:010529
 name: SUCROSE-NITRATE AGAR (CZAPEK-DOX AGAR)
 original_name: SUCROSE-NITRATE AGAR (CZAPEK-DOX AGAR)
 category: fungal
@@ -71,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J441'
+- timestamp: '2026-03-13T06:20:14.241260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010529'

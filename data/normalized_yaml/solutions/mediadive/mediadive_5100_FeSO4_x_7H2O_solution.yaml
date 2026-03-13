@@ -1,3 +1,4 @@
+id: CultureMech:014012
 preferred_term: FeSO4 x 7H2O solution
 term:
   id: mediadive.solution:5100
@@ -31,3 +32,8 @@ preparation_notes: 'Prepare just before use.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.999475Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014012'

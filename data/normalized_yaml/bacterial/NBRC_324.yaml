@@ -1,3 +1,4 @@
+id: CultureMech:007487
 name: '324'
 original_name: '324'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 16 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.231563Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007487'
 solutions:
 - preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
     water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions

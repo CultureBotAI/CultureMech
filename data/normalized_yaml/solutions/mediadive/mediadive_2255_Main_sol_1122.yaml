@@ -1,3 +1,4 @@
+id: CultureMech:011643
 preferred_term: Main sol. 1122
 term:
   id: mediadive.solution:2255
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust to pH 7.2.
 
   After autoclaving add methanol (sterilized separately) to a concentration of 1%
   (v/v).'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.989051Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011643'

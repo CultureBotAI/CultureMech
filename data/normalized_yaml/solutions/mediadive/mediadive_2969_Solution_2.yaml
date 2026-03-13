@@ -1,3 +1,4 @@
+id: CultureMech:012207
 preferred_term: Solution 2
 term:
   id: mediadive.solution:2969
@@ -43,3 +44,8 @@ preparation_notes: 'Adjust pH to 7.5, filter-sterilize, and add to solution 1.
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.514308Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012207'

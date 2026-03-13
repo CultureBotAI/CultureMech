@@ -1,3 +1,4 @@
+id: CultureMech:014382
 preferred_term: Trace mineral stock solution
 term:
   id: mediadive.solution:5478
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Mix components thoroughly. Dilute the stock solution 1:25 to receive
   the trace mineral working solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.473040Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014382'

@@ -1,3 +1,4 @@
+id: CultureMech:005985
 name: MEDIUM 545a MODIFIED FOR DSM 17448
 original_name: MEDIUM 545a MODIFIED FOR DSM 17448
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:545a_17448
     label: MEDIUM 545a MODIFIED FOR DSM 17448
-notes: 'Source: KOMODO ModelSEED | ID: 545a_17448 | DSMZ Medium: 545a (mediadive.medium:545a) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 545a_17448 | DSMZ Medium: 545a (mediadive.medium:545a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -69,4 +70,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 545
+- timestamp: '2026-03-13T06:19:37.466244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005985'
 ph_value: 8.0

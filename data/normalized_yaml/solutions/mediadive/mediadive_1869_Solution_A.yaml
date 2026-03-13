@@ -1,3 +1,4 @@
+id: CultureMech:011290
 preferred_term: Solution A
 term:
   id: mediadive.solution:1869
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2.
   Distribute to anaerobic tubes under the same atmosphere and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.711566Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011290'

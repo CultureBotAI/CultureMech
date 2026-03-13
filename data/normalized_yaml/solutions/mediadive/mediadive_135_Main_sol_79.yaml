@@ -1,3 +1,4 @@
+id: CultureMech:010843
 preferred_term: Main sol. 79
 term:
   id: mediadive.solution:135
@@ -15,3 +16,8 @@ composition:
     label: boric acid
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:15.869474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010843'

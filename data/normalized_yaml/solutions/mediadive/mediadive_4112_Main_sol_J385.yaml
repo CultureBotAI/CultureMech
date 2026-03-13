@@ -1,3 +1,4 @@
+id: CultureMech:013152
 preferred_term: Main sol. J385
 term:
   id: mediadive.solution:4112
@@ -166,3 +167,8 @@ preparation_notes: "Mix components, except methanol, and bring to a boil for 5-1
   \ mixture, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically\
   \ add per liter the following solutions (autoclaved or *filter-sterilized and stored\
   \ under an anaerobic gas atmosphere): \n\nOriginal volume: 1058 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:29.739717Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013152'

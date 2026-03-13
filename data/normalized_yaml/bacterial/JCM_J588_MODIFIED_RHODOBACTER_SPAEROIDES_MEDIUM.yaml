@@ -1,3 +1,4 @@
+id: CultureMech:002935
 name: MODIFIED RHODOBACTER SPAEROIDES MEDIUM
 original_name: MODIFIED RHODOBACTER SPAEROIDES MEDIUM
 category: bacterial
@@ -141,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J588'
+- timestamp: '2026-03-13T06:19:16.666955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002935'

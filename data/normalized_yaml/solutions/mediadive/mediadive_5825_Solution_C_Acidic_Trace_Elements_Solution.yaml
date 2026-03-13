@@ -1,3 +1,4 @@
+id: CultureMech:014657
 preferred_term: Solution C (Acidic Trace Elements Solution)
 term:
   id: mediadive.solution:5825
@@ -136,3 +137,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: "Contains the following components per liter\r\nof distilled water:"
+curation_history:
+- timestamp: '2026-03-13T06:20:38.903222Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014657'

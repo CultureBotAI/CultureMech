@@ -1,3 +1,4 @@
+id: CultureMech:003238
 name: 1% OGAWA MEDIUM
 original_name: 1% OGAWA MEDIUM
 category: bacterial
@@ -45,8 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Homogenize Solution II by stirring and filter through gauze. Mix solutions I and II, and
-    sterilize at 90C for 60 min.
+  description: Homogenize Solution II by stirring and filter through gauze. Mix solutions
+    I and II, and sterilize at 90C for 60 min.
 - step_number: 2
   action: MIX
   description: 'Comment: Commercial 1% Ogawa medium (Eiken or Nissui) is also available.'
@@ -57,3 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J88'
+- timestamp: '2026-03-13T06:19:18.839956Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003238'

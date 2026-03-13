@@ -1,3 +1,4 @@
+id: CultureMech:000264
 name: MEDIUM FOR BACILLUS STEAROTHERMOPHILUS
 original_name: MEDIUM FOR BACILLUS STEAROTHERMOPHILUS
 category: archaea
@@ -119,12 +120,12 @@ preparation_steps:
   description: pH 7.4
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave for 15 min. Add 1 ml of sterile SL-4 (see medium 14) and 100 ml of filter-sterilized
-    phenol-solution (4.7g/l).
+  description: Autoclave for 15 min. Add 1 ml of sterile SL-4 (see medium 14) and
+    100 ml of filter-sterilized phenol-solution (4.7g/l).
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -136,3 +137,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:53.913922Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000264'

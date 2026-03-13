@@ -1,3 +1,4 @@
+id: CultureMech:014162
 preferred_term: Main sol. J1143
 term:
   id: mediadive.solution:5250
@@ -214,3 +215,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil and cool down und
   \ same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,\
   \ add per liter the following solutions (autoclave and stored under a N2 atmosphere):\
   \ \n\nOriginal volume: 1044 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.994677Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014162'

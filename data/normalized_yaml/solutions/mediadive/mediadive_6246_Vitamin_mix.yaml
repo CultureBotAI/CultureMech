@@ -1,3 +1,4 @@
+id: CultureMech:014938
 preferred_term: Vitamin mix
 term:
   id: mediadive.solution:6246
@@ -90,3 +91,8 @@ composition:
 preparation_notes: "Dissolve vitamins one at a time; adjust the pH to 7 with 1 M NaOH\
   \ or 1 M HCl if\r\nnecessary, to dissolve the biotin and folic acid. Filter sterilise.\
   \ Dispense excess into 1\r\nml aliquots and freeze."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.093215Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014938'

@@ -1,3 +1,4 @@
+id: CultureMech:012840
 preferred_term: Main sol. J123
 term:
   id: mediadive.solution:3763
@@ -127,3 +128,8 @@ preparation_notes: 'Adjust pH to 5.0.
 
   Dilute Tomato juice (Del Monte) with an equal volume of distilled water, adjust
   pH to 7.0 with 10% NaOH and filter with filter paper.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.892110Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012840'

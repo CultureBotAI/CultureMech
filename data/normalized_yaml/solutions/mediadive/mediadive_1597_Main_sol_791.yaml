@@ -1,3 +1,4 @@
+id: CultureMech:011056
 preferred_term: Main sol. 791
 term:
   id: mediadive.solution:1597
@@ -102,3 +103,8 @@ composition:
 preparation_notes: 'Final pH 7.5
 
   Add the vitamin solution, aseptically to the cooled, autoclaved medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.255517Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011056'

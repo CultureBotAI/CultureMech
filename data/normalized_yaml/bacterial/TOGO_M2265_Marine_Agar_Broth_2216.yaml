@@ -1,3 +1,4 @@
+id: CultureMech:008852
 name: Marine Agar/Broth 2216
 original_name: Marine Agar/Broth 2216
 category: bacterial
@@ -161,3 +162,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.765111Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008852'

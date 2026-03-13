@@ -1,3 +1,4 @@
+id: CultureMech:000498
 name: M1-NOCARDIOPSIS ARABIA MEDIUM
 original_name: M1-NOCARDIOPSIS ARABIA MEDIUM
 category: bacterial
@@ -55,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1065'
+- timestamp: '2026-03-13T06:18:55.864644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000498'

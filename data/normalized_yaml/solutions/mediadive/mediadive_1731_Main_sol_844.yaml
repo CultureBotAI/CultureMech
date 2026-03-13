@@ -1,3 +1,4 @@
+id: CultureMech:011182
 preferred_term: Main sol. 844
 term:
   id: mediadive.solution:1731
@@ -79,3 +80,8 @@ composition:
 preparation_notes: Dissolve ingredients except magnesium chloride and calcium chloride.
   Add magnesium chloride and calcium chloride after autoclaving from sterile stock
   solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
+curation_history:
+- timestamp: '2026-03-13T06:20:17.995251Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011182'

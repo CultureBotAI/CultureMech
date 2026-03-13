@@ -1,3 +1,4 @@
+id: CultureMech:012567
 preferred_term: Main sol. 1657
 term:
   id: mediadive.solution:3438
@@ -172,3 +173,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust to pH 7.5 and sterilize by autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.603675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012567'

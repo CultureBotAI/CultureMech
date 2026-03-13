@@ -1,3 +1,4 @@
+id: CultureMech:003221
 name: BELH1 MEDIUM
 original_name: BELH1 MEDIUM
 category: bacterial
@@ -172,14 +173,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave under a N2-CO2 (4:1,
-    v/v) gas mixture. After cooling, add the following solutions (autoclaved and stored under N2, or *filter-sterilized
-    and stored under N2-CO2, 4:1, v/v):'
+  description: 'Mix components thoroughly, adjust pH to 7.5 with KOH and autoclave
+    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions
+    (autoclaved and stored under N2, or *filter-sterilized and stored under N2-CO2,
+    4:1, v/v):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under the same gas mixture and
-    seal with butyl rubber stoppers. Finally, add per liter the following solutions (autoclaved and stored
-    under N2):'
+  description: 'Aseptically distribute the medium into culture vessels under the same
+    gas mixture and seal with butyl rubber stoppers. Finally, add per liter the following
+    solutions (autoclaved and stored under N2):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -187,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J874'
+- timestamp: '2026-03-13T06:19:18.680879Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003221'

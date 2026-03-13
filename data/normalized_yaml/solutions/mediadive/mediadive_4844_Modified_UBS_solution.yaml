@@ -1,3 +1,4 @@
+id: CultureMech:013778
 preferred_term: Modified UBS solution
 term:
   id: mediadive.solution:4844
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Comment: For cultivation of JCM 30830, adjust pH of the medium
   to 1.7.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.411360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013778'

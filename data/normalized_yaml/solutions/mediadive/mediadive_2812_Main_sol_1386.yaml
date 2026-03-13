@@ -1,3 +1,4 @@
+id: CultureMech:012097
 preferred_term: Main sol. 1386
 term:
   id: mediadive.solution:2812
@@ -114,3 +115,8 @@ composition:
 preparation_notes: "Prepare the liquid medium. Adjust to pH 6.0 – 6.5. Dispense the\
   \ medium into Hungate\r\ntubes. Sterilize by autoclaving. Before inoculation add\
   \ from sterile stock solutions:"
+curation_history:
+- timestamp: '2026-03-13T06:20:23.839421Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012097'

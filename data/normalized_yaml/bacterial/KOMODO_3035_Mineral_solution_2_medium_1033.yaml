@@ -1,3 +1,4 @@
+id: CultureMech:004815
 name: Mineral solution 2 (medium 1033)
 original_name: Mineral solution 2 (medium 1033)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3035
     label: Mineral solution 2 (medium 1033)
-notes: 'Source: KOMODO ModelSEED | ID: 3035 | DSMZ Medium: 3035 (mediadive.medium:3035) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3035 | DSMZ Medium: 3035 (mediadive.medium:3035)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3035'
+- timestamp: '2026-03-13T06:19:28.843546Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004815'

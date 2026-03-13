@@ -1,3 +1,4 @@
+id: CultureMech:006829
 name: ALKALIBACTERIUM OLIVAPOVLITICUS
 original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:923
     label: ALKALIBACTERIUM OLIVAPOVLITICUS
-notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 923
+- timestamp: '2026-03-13T06:19:44.120983Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006829'

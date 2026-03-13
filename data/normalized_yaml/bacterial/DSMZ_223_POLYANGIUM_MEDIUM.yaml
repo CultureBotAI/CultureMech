@@ -1,3 +1,4 @@
+id: CultureMech:001327
 name: POLYANGIUM MEDIUM
 original_name: POLYANGIUM MEDIUM
 category: bacterial
@@ -66,9 +67,9 @@ preparation_steps:
   description: Adjust pH to 7.2 (use pH indicator-paper).
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Aseptically add one or more sterile strips of filter paper to slants or plates. Inoculate
-    the filter papers with a small (5 mm x 5mm) agar cube or a piece of filter paper overgrown with the
-    strain.
+  description: Aseptically add one or more sterile strips of filter paper to slants
+    or plates. Inoculate the filter papers with a small (5 mm x 5mm) agar cube or
+    a piece of filter paper overgrown with the strain.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 223'
+- timestamp: '2026-03-13T06:19:03.215205Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001327'

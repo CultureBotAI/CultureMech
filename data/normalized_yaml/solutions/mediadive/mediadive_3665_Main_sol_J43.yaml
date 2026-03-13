@@ -1,3 +1,4 @@
+id: CultureMech:012747
 preferred_term: Main sol. J43
 term:
   id: mediadive.solution:3665
@@ -67,3 +68,8 @@ preparation_notes: 'Adjust pH to 7.3.
 
   Comment: The premixed powder is available from Becton Dickinson & Co. as ISP Medium
   2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.503877Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012747'

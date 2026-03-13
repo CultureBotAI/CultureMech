@@ -1,3 +1,4 @@
+id: CultureMech:010982
 preferred_term: Solution B
 term:
   id: mediadive.solution:1514
@@ -55,3 +56,8 @@ preparation_notes: 'Adjust to pH 7.0 with 1 N NaOH.
 
 
   Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.806015Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010982'

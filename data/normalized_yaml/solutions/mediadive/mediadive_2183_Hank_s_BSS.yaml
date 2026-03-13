@@ -1,3 +1,4 @@
+id: CultureMech:011573
 preferred_term: Hank's BSS
 term:
   id: mediadive.solution:2183
@@ -23,3 +24,8 @@ preparation_notes: '25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O,
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.547379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011573'

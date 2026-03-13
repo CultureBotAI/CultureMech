@@ -1,3 +1,4 @@
+id: CultureMech:014471
 preferred_term: Main sol. 258
 term:
   id: mediadive.solution:5594
@@ -66,3 +67,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg
   MnSO4 x H2O is recommended for sporulation.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.975043Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014471'

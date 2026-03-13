@@ -1,3 +1,4 @@
+id: CultureMech:013616
 preferred_term: Solution A
 term:
   id: mediadive.solution:4659
@@ -115,3 +116,8 @@ preparation_notes: 'Autoclave under a N2 gas atmosphere.
 
 
   Original volume: 863 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.355351Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013616'

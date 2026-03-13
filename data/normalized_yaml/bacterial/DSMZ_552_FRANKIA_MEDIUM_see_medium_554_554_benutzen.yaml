@@ -1,3 +1,4 @@
+id: CultureMech:001687
 name: FRANKIA MEDIUM (see medium 554; 554 benutzen)
 original_name: FRANKIA MEDIUM (see medium 554; 554 benutzen)
 category: bacterial
@@ -51,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 552'
+- timestamp: '2026-03-13T06:19:06.434934Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001687'

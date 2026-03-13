@@ -1,3 +1,4 @@
+id: CultureMech:014241
 preferred_term: Main sol. J1208
 term:
   id: mediadive.solution:5329
@@ -155,3 +156,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Bring to a b
   \ JCM 32483, JCM 32614 and JCM 32615, add separately autoclaved 1.0 M sodium pyruvate\
   \ solution to the medium (20.0 ml per liter) instead of 0.2 M cellobiose solution.\n\
   \nOriginal volume: 1040 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.534757Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014241'

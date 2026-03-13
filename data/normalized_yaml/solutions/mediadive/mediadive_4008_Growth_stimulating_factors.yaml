@@ -1,3 +1,4 @@
+id: CultureMech:013067
 preferred_term: Growth stimulating factors
 term:
   id: mediadive.solution:4008
@@ -91,3 +92,8 @@ preparation_notes: 'Adjust pH to 9.0 with NaOH.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.210127Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013067'

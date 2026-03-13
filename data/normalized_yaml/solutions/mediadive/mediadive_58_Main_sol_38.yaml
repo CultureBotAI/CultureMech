@@ -1,3 +1,4 @@
+id: CultureMech:014692
 preferred_term: Main sol. 38
 term:
   id: mediadive.solution:58
@@ -91,3 +92,8 @@ preparation_notes: Dissolve ingredients (except sulfide), adjust pH to 7.0, brin
   medium to the boil, then cool to room temperature under 100% N2 gas. Dispense under
   same gas atmosphere in culture vessels and autoclave. After sterilization add sulfide
   from a sterile anoxic stock solution prepared under 100% N2 gas.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.080231Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014692'

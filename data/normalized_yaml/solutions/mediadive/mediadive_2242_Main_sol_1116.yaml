@@ -1,3 +1,4 @@
+id: CultureMech:011633
 preferred_term: Main sol. 1116
 term:
   id: mediadive.solution:2242
@@ -126,3 +127,8 @@ preparation_notes: 'For growth with testosterone, dissolve testosterone in aceto
   tungstate solution (see below), and 100 µl vitamin solution (see below). Adjust
   pH to 7.2. Incubate the cultures in the dark for up to 4 weeks. Briefly shake the
   cultures once per day.'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.916635Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011633'

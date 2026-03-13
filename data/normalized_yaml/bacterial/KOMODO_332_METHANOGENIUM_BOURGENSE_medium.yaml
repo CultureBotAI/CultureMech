@@ -1,3 +1,4 @@
+id: CultureMech:005026
 name: METHANOGENIUM BOURGENSE medium
 original_name: METHANOGENIUM BOURGENSE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:332
     label: METHANOGENIUM BOURGENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 332 | DSMZ Medium: 332 (mediadive.medium:332) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 332 | DSMZ Medium: 332 (mediadive.medium:332)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -90,3 +92,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 332
+- timestamp: '2026-03-13T06:19:29.636437Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005026'

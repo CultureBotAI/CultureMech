@@ -1,3 +1,4 @@
+id: CultureMech:002024
 name: DESULFOFALX MEDIUM
 original_name: DESULFOFALX MEDIUM
 category: bacterial
@@ -222,15 +223,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve the ingredients (except carbonate, bicarbonate, vitamins, formate and sulfide,)
-    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and
-    bicarbonate, adjust pH to 8.8 - 9.0, then dispense under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Before use add vitamins (sterilized by filtration), formate and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve the ingredients (except carbonate, bicarbonate, vitamins,
+    formate and sulfide,) and sparge medium with 100% N2 gas for 30 - 45 min to make
+    it anoxic. Add and dissolve carbonate and bicarbonate, adjust pH to 8.8 - 9.0,
+    then dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Before use add vitamins (sterilized by filtration), formate
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -241,4 +243,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.809898Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:09.517624Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002024'

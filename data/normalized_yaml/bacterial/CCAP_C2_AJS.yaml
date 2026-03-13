@@ -1,3 +1,4 @@
+id: CultureMech:000338
 name: AJS
 original_name: AJS
 category: bacterial
@@ -118,32 +119,35 @@ preparation_steps:
   description: Acidified 97:3 mixture of JM and SE2
 - step_number: 2
   action: AUTOCLAVE
-  description: "See separate recipes.  For approximately 1 litre of final medium, mix 970 ml JM\r\nwith\
-    \ 30 ml SE2.  Add 10 ml of concentrated H2SO4 to give a pH of approximately \r\n1.5.  Autoclave at\
-    \ 15 psi for 15 minutes."
+  description: "See separate recipes.  For approximately 1 litre of final medium,\
+    \ mix 970 ml JM\r\nwith 30 ml SE2.  Add 10 ml of concentrated H2SO4 to give a\
+    \ pH of approximately \r\n1.5.  Autoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per litre of Bacterial Agar
-    (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per
+    litre of Bacterial Agar (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
 - step_number: 4
   action: MIX
-  description: "Site selection for a good soil is very important and for most purposes a soil from \r\n\
-    undisturbed deciduous woodland is best.  Sites to avoid are those showing obvious \r\nsigns of man's\
-    \ activity and particular care should be taken to avoid areas where \r\nfertilizers, crop sprays or\
-    \ other toxic chemicals may have been used."
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid are\
+    \ those showing obvious \r\nsigns of man's activity and particular care should\
+    \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
+    \ may have been used."
 - step_number: 5
   action: STORE
-  description: "A rich loam with good crumb structure should be sought.  Stones, roots and larger \r\n\
-    invertebrates should be removed during an initial sieving through a 1 cm mesh.  The sieved soil should\
-    \ be spread to air dry and hand picked for smaller \r\ninvertebrates and roots.  It should be turned\
-    \ periodically and picked over again.  When dry it may be sieved through a finer mesh (2­4 mm) or\
-    \ stored as it is prior to\r\nuse."
+  description: "A rich loam with good crumb structure should be sought.  Stones, roots\
+    \ and larger \r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh.  The sieved soil should be spread to air dry and hand picked for\
+    \ smaller \r\ninvertebrates and roots.  It should be turned periodically and picked\
+    \ over again.  When dry it may be sieved through a finer mesh (2­4 mm) or stored\
+    \ as it is prior to\r\nuse."
 - step_number: 6
   action: AUTOCLAVE
-  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660 ml of deionized \r\n\
-    water are placed in a 1 litre bottle and autoclaved once at 15 psi for 15 minutes, \r\nthen again\
-    \ after 24 hours.  The contents of the bottle are left to settle (usually for \r\nat least a week)\
-    \ and then the supernatant is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
+  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660\
+    \ ml of deionized \r\nwater are placed in a 1 litre bottle and autoclaved once\
+    \ at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The contents of the\
+    \ bottle are left to settle (usually for \r\nat least a week) and then the supernatant\
+    \ is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
 applications:
 - Microbial cultivation
 curation_history:
@@ -151,3 +155,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C2'
+- timestamp: '2026-03-13T06:18:54.564926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000338'

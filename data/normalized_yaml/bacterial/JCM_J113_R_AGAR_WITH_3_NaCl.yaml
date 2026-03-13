@@ -1,3 +1,4 @@
+id: CultureMech:002313
 name: R AGAR WITH 3% NaCl
 original_name: R AGAR WITH 3% NaCl
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J113'
+- timestamp: '2026-03-13T06:19:12.247914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002313'

@@ -1,3 +1,4 @@
+id: CultureMech:001507
 name: THERMOPLASMA VOLCANIUM MEDIUM
 original_name: THERMOPLASMA VOLCANIUM MEDIUM
 category: bacterial
@@ -60,16 +61,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH of the mineral base to about 2 with sulfuric acid and autoclave. Add glucose
-    and yeast extract from filter-sterilized stock solutions.
+  description: Adjust pH of the mineral base to about 2 with sulfuric acid and autoclave.
+    Add glucose and yeast extract from filter-sterilized stock solutions.
 - step_number: 2
   action: ADJUST_PH
   description: Check pH to be 2 to 3.
 - step_number: 3
   action: MIX
-  description: For anaerobic growth, the acidified mineral base containing sulfur is filled into serum
-    bottles (20 ml per 100 ml bottle) under N2 + CO2 (80 + 20) gas mixture. Then, the bottles are sterilized
-    by tyndallisation. Yeast extract and glucose are added from separately sterilized stock solutions.
+  description: For anaerobic growth, the acidified mineral base containing sulfur
+    is filled into serum bottles (20 ml per 100 ml bottle) under N2 + CO2 (80 + 20)
+    gas mixture. Then, the bottles are sterilized by tyndallisation. Yeast extract
+    and glucose are added from separately sterilized stock solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -77,3 +79,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 398'
+- timestamp: '2026-03-13T06:19:04.790397Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001507'

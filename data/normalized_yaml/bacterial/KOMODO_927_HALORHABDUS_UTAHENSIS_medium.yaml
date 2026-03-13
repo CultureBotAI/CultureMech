@@ -1,3 +1,4 @@
+id: CultureMech:006845
 name: HALORHABDUS UTAHENSIS medium
 original_name: HALORHABDUS UTAHENSIS medium
 category: bacterial
@@ -177,4 +178,8 @@ curation_history:
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Resolved trace metal unit conflict for MnCl2 x 4 H2O
+- timestamp: '2026-03-13T06:19:44.281634Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006845'
 high_metal: true

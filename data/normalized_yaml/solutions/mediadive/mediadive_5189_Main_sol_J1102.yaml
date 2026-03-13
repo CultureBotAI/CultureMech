@@ -1,3 +1,4 @@
+id: CultureMech:014099
 preferred_term: Main sol. J1102
 term:
   id: mediadive.solution:5189
@@ -95,3 +96,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Bring to a b
   \ supplement with 10 mM sodium pyruvate. For JCM 33129, omit resazurin and the reducing\
   \ agents (L-cysteine x HCl x H2O and Na2S x 9H2O). For JCM 33131, supplement with\
   \ 10 ml/L trace vitamins (see Medium No. 197).\n\nOriginal volume: 1012 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.574328Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014099'

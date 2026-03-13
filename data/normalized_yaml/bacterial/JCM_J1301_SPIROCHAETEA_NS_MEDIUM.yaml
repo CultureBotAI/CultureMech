@@ -1,3 +1,4 @@
+id: CultureMech:002465
 name: SPIROCHAETEA NS MEDIUM
 original_name: SPIROCHAETEA NS MEDIUM
 category: bacterial
@@ -168,10 +169,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 8.0, bring to a boil for a few seconds and cool
-    down under a stream of N2. Distribute the medium into culture vessels (e.g., 10 ml in Hungate tubes)
-    under a N2 gas stream, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
-    anaerobically add per liter the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 8.0, bring to a boil for a
+    few seconds and cool down under a stream of N2. Distribute the medium into culture
+    vessels (e.g., 10 ml in Hungate tubes) under a N2 gas stream, seal with butyl
+    rubber stoppers and autoclave. After cooling, aseptically and anaerobically add
+    per liter the following solutions from sterile anaerobic stocks (autoclaved or
+    *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -179,3 +182,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1301'
+- timestamp: '2026-03-13T06:19:13.538722Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002465'

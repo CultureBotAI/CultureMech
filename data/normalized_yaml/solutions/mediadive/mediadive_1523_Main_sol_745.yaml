@@ -1,3 +1,4 @@
+id: CultureMech:010991
 preferred_term: Main sol. 745
 term:
   id: mediadive.solution:1523
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Boil the medium under a stream of nitrogen gas for few minutes
   and distribute in screw-capped bottles or tubes. Autoclave at 121°C for 15 minutes. '
+curation_history:
+- timestamp: '2026-03-13T06:20:16.856790Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010991'

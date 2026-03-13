@@ -1,3 +1,4 @@
+id: CultureMech:001968
 name: THIOMONAS ISLANDICA MEDIUM
 original_name: THIOMONAS ISLANDICA MEDIUM
 category: bacterial
@@ -168,17 +169,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (ecxept bicarbonate, ferric ammonium citrate and vitamins), then sparge
-    solution with 80% N2 and 20% CO2 gas mixture for at least 30 - 45 min to remove dissolved oxygen and
-    to saturate the solution with CO2. Adjust pH to 4.5 and dispense solution under air atmosphere into
-    serum vials suitable for anaerobic cultivation to 50% of volume. Close vials with butyl rubber septa
-    to prevent free exchange of oxygen with the external atmosphere and autoclave. Add ferric ammonium
-    citrate and vitamins from anoxic stock solutions sterilized by filtration and bicarbonate from a sterile
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of the complete medium
-    to 5.0, if necessary.
+  description: Dissolve ingredients (ecxept bicarbonate, ferric ammonium citrate and
+    vitamins), then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
+    Adjust pH to 4.5 and dispense solution under air atmosphere into serum vials suitable
+    for anaerobic cultivation to 50% of volume. Close vials with butyl rubber septa
+    to prevent free exchange of oxygen with the external atmosphere and autoclave.
+    Add ferric ammonium citrate and vitamins from anoxic stock solutions sterilized
+    by filtration and bicarbonate from a sterile stock solution prepared under 80%
+    N2 and 20% CO2 gas atmosphere. Adjust pH of the complete medium to 5.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar
+    overpressure.
 - step_number: 3
   action: MIX
   description: 'Note: Use at least 10% (v/v) as inoculum.'
@@ -189,3 +192,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 81a'
+- timestamp: '2026-03-13T06:19:08.928501Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001968'

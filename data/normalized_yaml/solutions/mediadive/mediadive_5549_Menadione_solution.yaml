@@ -1,3 +1,4 @@
+id: CultureMech:014427
 preferred_term: Menadione solution
 term:
   id: mediadive.solution:5549
@@ -31,3 +32,8 @@ preparation_notes: 'Filtrate if insoluble residues remain.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.737541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014427'

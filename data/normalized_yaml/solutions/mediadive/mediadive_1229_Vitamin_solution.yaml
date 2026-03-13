@@ -1,3 +1,4 @@
+id: CultureMech:010723
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:1229
@@ -137,3 +138,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust final pH of solution to 7.2 using 50 mM sodium phosphate
   buffer.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.198308Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010723'

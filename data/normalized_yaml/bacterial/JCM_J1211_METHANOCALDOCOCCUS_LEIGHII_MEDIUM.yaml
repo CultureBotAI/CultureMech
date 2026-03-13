@@ -1,3 +1,4 @@
+id: CultureMech:002380
 name: METHANOCALDOCOCCUS LEIGHII MEDIUM
 original_name: METHANOCALDOCOCCUS LEIGHII MEDIUM
 category: bacterial
@@ -293,6 +294,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:12.864022Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002380'
 solutions:
 - preferred_term: Trace mineral solution
   term:

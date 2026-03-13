@@ -1,3 +1,4 @@
+id: CultureMech:012496
 preferred_term: Main sol. 1605
 term:
   id: mediadive.solution:3345
@@ -139,3 +140,8 @@ preparation_notes: 'Adjust pH to 8.0
 
   Sterilize at 121°C for 15 minutes. After sterilization add 1 ml/l filter-sterilized
   Wolfe´s vitamin solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.209720Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012496'

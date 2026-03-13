@@ -1,3 +1,4 @@
+id: CultureMech:005160
 name: DESULFOVIBRIO CARBINOLICUS medium
 original_name: DESULFOVIBRIO CARBINOLICUS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:384
     label: DESULFOVIBRIO CARBINOLICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 384 | DSMZ Medium: 384 (mediadive.medium:384) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 384 | DSMZ Medium: 384 (mediadive.medium:384)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 384'
+- timestamp: '2026-03-13T06:19:30.695098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005160'

@@ -1,3 +1,4 @@
+id: CultureMech:003277
 name: 9K MEDIUM
 original_name: 9K MEDIUM
 category: bacterial
@@ -71,4 +72,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.566544Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:19.139420Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003277'

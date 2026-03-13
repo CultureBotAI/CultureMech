@@ -1,3 +1,4 @@
+id: CultureMech:004775
 name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
 original_name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:29
     label: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
-notes: 'Source: KOMODO ModelSEED | ID: 29 | DSMZ Medium: 29 (mediadive.medium:29) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 29 | DSMZ Medium: 29 (mediadive.medium:29)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bicarbonate
   concentration:
@@ -184,3 +186,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 29
+- timestamp: '2026-03-13T06:19:28.757192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004775'

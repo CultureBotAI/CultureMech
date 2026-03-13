@@ -1,3 +1,4 @@
+id: CultureMech:013361
 preferred_term: Main sol. J552
 term:
   id: mediadive.solution:4363
@@ -145,3 +146,8 @@ preparation_notes: 'Mix ingredients except L-sodium lactate and L-cysteine x H2O
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.911832Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013361'

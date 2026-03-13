@@ -1,3 +1,4 @@
+id: CultureMech:006004
 name: SPORULATION-AGAR (SA)
 original_name: SPORULATION-AGAR (SA)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:555
     label: SPORULATION-AGAR (SA)
-notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -59,3 +61,7 @@ curation_history:
   date: '2026-02-03T11:20:39.432114'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4'
+- timestamp: '2026-03-13T06:19:37.545730Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006004'

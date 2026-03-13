@@ -1,3 +1,4 @@
+id: CultureMech:011223
 preferred_term: Main sol. 867
 term:
   id: mediadive.solution:1788
@@ -41,3 +42,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: supplement medium 28 with 0,25% Yeast-extract, 0,3% Na-acetate,
   2mg/l Vitamin B12 and 10ml/l Standard vitamin solution (see below).
+curation_history:
+- timestamp: '2026-03-13T06:20:18.246945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011223'

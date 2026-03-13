@@ -1,3 +1,4 @@
+id: CultureMech:002222
 name: METHANOBACTERIUM MEDIUM (VI)
 original_name: METHANOBACTERIUM MEDIUM (VI)
 category: bacterial
@@ -22,10 +23,10 @@ preparation_steps:
   description: Use Medium No. 872 with final 0.4 g/L NaCl.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Comment: Sludge fluid can be replaced with a human fecal extract. The extract is prepared
-    as follows: autoclave equal quantities of human feces and water at 121C for 30 min. Remove the sludge
-    by centrifugation. Adjust pH of the supernatant to 7.0-7.2 and sterilize at 121C for 15 min under
-    a N2 atmosphere.'
+  description: 'Comment: Sludge fluid can be replaced with a human fecal extract.
+    The extract is prepared as follows: autoclave equal quantities of human feces
+    and water at 121C for 30 min. Remove the sludge by centrifugation. Adjust pH of
+    the supernatant to 7.0-7.2 and sterilize at 121C for 15 min under a N2 atmosphere.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,5 +38,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:11.398369Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002222'
 data_quality_flags:
 - incomplete_composition

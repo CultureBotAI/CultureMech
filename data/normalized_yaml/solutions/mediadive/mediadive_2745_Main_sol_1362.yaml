@@ -1,3 +1,4 @@
+id: CultureMech:012052
 preferred_term: Main sol. 1362
 term:
   id: mediadive.solution:2745
@@ -95,3 +96,8 @@ preparation_notes: 'Adjust pH to 7.2 - 7.5.
 
   When using commercially available Caso Bouillon (Merck or Oxoid) for strains DSM
   24264, DSM 24313, DSM 24197 increase the NaCl concentration to 100.0 g/L.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.556121Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012052'

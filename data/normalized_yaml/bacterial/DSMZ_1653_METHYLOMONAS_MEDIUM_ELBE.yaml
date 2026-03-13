@@ -1,3 +1,4 @@
+id: CultureMech:001135
 name: METHYLOMONAS MEDIUM (ELBE)
 original_name: METHYLOMONAS MEDIUM (ELBE)
 category: bacterial
@@ -178,3 +179,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1653'
+- timestamp: '2026-03-13T06:19:01.521189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001135'

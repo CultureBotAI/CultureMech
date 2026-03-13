@@ -1,3 +1,4 @@
+id: CultureMech:004281
 name: Mineral solution B (medium 492)
 original_name: Mineral solution B (medium 492)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2014
     label: Mineral solution B (medium 492)
-notes: 'Source: KOMODO ModelSEED | ID: 2014 | DSMZ Medium: 2014 (mediadive.medium:2014) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2014 | DSMZ Medium: 2014 (mediadive.medium:2014)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2014'
+- timestamp: '2026-03-13T06:19:26.449341Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004281'

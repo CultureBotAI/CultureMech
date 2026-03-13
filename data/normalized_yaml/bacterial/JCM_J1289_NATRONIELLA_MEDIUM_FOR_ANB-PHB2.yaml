@@ -1,3 +1,4 @@
+id: CultureMech:002451
 name: NATRONIELLA MEDIUM FOR ANB-PHB2
 original_name: NATRONIELLA MEDIUM FOR ANB-PHB2
 category: bacterial
@@ -250,4 +251,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1289'
+- timestamp: '2026-03-13T06:19:13.421974Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002451'
 high_metal: true

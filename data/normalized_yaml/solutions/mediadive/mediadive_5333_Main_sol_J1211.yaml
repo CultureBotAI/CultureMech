@@ -1,3 +1,4 @@
+id: CultureMech:014246
 preferred_term: Main sol. J1211
 term:
   id: mediadive.solution:5333
@@ -361,3 +362,8 @@ preparation_notes: "Mix components, except NaHCO3, and adjust pH to 6.0. Bring t
   \ and cultivate under a H2-N2-CO2 (60:20:20, v/v/v, 200 kPa) gas mixture.\nTrace\
   \ mineral solution: \nDissolve trisodium citrate and adjust pH to 6.5. Then proceed\
   \ to add minerals.\n\nOriginal volume: 2030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.582249Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014246'

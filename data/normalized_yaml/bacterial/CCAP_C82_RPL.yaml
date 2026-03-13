@@ -1,3 +1,4 @@
+id: CultureMech:000396
 name: RPL
 original_name: RPL
 category: bacterial
@@ -45,12 +46,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue to boil for 5 minutes.\
-    \  Allow to\r\ncool then restore volume to 1 litre with deionized water.  Filter through GF/C paper\
-    \ \r\nand autoclave at 15 psi for 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue\
+    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
+    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+    \ 15 minutes."
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +61,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C82'
+- timestamp: '2026-03-13T06:18:54.931873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000396'

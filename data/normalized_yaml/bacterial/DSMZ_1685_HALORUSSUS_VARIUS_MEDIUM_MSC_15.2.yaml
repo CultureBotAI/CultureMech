@@ -1,3 +1,4 @@
+id: CultureMech:001167
 name: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
 original_name: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
 category: bacterial
@@ -236,6 +237,10 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: HALORUSSUS VARIUS, culture_type: isolate'
+- timestamp: '2026-03-13T06:19:01.836135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001167'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: HALORUSSUS VARIUS

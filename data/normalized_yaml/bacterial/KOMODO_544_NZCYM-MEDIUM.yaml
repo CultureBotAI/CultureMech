@@ -1,3 +1,4 @@
+id: CultureMech:005973
 name: NZCYM-MEDIUM
 original_name: NZCYM-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:544
     label: NZCYM-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 544 | DSMZ Medium: 544 (mediadive.medium:544) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 544 | DSMZ Medium: 544 (mediadive.medium:544)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein hydrolysate
   concentration:
@@ -58,3 +60,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 544
+- timestamp: '2026-03-13T06:19:37.415680Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005973'

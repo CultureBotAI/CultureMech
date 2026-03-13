@@ -1,3 +1,4 @@
+id: CultureMech:000416
 name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 category: bacterial
@@ -168,11 +169,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Before autoclaving, the pH of the Medium is adjusted with NaOH to 7.5-8.0. After autoclaving,
-    the filter-sterilized vitamin solution (0.1% volume), and each of the separately autoclaved, concentrated
-    solutions are added to the medium at a final concentration described below. Then a mix gas (80% H2,
-    20% CO2) is purged for 5 min. Finally, the mix gas is compressed into gas phase (> 80% volume of the
-    tube or bottle) at 3 atm.
+  description: Before autoclaving, the pH of the Medium is adjusted with NaOH to 7.5-8.0.
+    After autoclaving, the filter-sterilized vitamin solution (0.1% volume), and each
+    of the separately autoclaved, concentrated solutions are added to the medium at
+    a final concentration described below. Then a mix gas (80% H2, 20% CO2) is purged
+    for 5 min. Finally, the mix gas is compressed into gas phase (> 80% volume of
+    the tube or bottle) at 3 atm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -180,3 +182,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1000'
+- timestamp: '2026-03-13T06:18:55.057446Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000416'

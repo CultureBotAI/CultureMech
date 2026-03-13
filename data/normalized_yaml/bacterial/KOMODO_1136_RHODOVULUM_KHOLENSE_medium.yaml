@@ -1,3 +1,4 @@
+id: CultureMech:003845
 name: RHODOVULUM KHOLENSE medium
 original_name: RHODOVULUM KHOLENSE medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1136
     label: RHODOVULUM KHOLENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 1136 | DSMZ Medium: 1136 (mediadive.medium:1136) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1136 | DSMZ Medium: 1136 (mediadive.medium:1136)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -130,4 +132,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1136
+- timestamp: '2026-03-13T06:19:22.676726Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003845'
 ph_value: 7.0

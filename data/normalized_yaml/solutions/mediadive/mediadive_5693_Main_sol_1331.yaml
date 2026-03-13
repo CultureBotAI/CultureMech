@@ -1,3 +1,4 @@
+id: CultureMech:014557
 preferred_term: Main sol. 1331
 term:
   id: mediadive.solution:5693
@@ -30,3 +31,8 @@ preparation_notes: '1. Suspend 44 g Columbia Blood Agar Base in 1l deionized wat
   3. Cool to 45°C. Add 5% sterile defibrinated sheep blood and mix well.
 
   Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see below).'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.411419Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014557'

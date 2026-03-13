@@ -1,3 +1,4 @@
+id: CultureMech:001019
 name: SPHINGOBACTERIUM MEDIUM
 original_name: SPHINGOBACTERIUM MEDIUM
 category: bacterial
@@ -44,8 +45,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0 and sterilize by autoclaving. The medium may be solidified by adding 15.0
-    g/l agar.
+  description: Adjust to pH 7.0 and sterilize by autoclaving. The medium may be solidified
+    by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1541'
+- timestamp: '2026-03-13T06:19:00.535373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001019'

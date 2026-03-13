@@ -1,3 +1,4 @@
+id: CultureMech:014266
 preferred_term: Main sol. J1223
 term:
   id: mediadive.solution:5353
@@ -142,3 +143,8 @@ preparation_notes: "Mix components, adjust pH to 7.5 and autoclave under a N2 ga
   \ and iron metal into culture vessels (e.g., 10 ml medium and 100 mg iron in Hungate\
   \ tubes) under a N2 gas stream and seal with butyl rubber stoppers. Prior to use,\
   \ add per liter the following solution: \n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.694330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014266'

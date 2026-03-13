@@ -1,3 +1,4 @@
+id: CultureMech:012317
 preferred_term: Mineral Salts Solution for liquid Medium
 term:
   id: mediadive.solution:3092
@@ -139,3 +140,8 @@ preparation_notes: 'Adjust to pH 5.5 with 10% KOH and sterilize by autoclaving.
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.164178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012317'

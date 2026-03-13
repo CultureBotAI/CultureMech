@@ -1,3 +1,4 @@
+id: CultureMech:014892
 preferred_term: Mail sol. C53
 term:
   id: mediadive.solution:6193
@@ -42,3 +43,8 @@ composition:
 preparation_notes: "Make up to 1 litre with filtered natural seawater. Autoclave at\
   \ 15 psi for 15 minutes. It may\r\nbe necessary to filter final medium to avoid\
   \ problems with precipitation."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.939050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014892'

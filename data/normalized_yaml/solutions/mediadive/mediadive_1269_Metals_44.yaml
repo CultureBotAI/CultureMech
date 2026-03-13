@@ -1,3 +1,4 @@
+id: CultureMech:010760
 preferred_term: '"Metals 44"'
 term:
   id: mediadive.solution:1269
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve the EDTA and add a few drops of concentrated H2SO4 to
   retard precipitation of the heavy metal ions.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.362090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010760'

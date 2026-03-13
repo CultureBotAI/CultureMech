@@ -1,3 +1,4 @@
+id: CultureMech:011591
 preferred_term: Main sol. 121
 term:
   id: mediadive.solution:219
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together
   in 1/10 vol. of water and sterilized separately.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.651346Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011591'

@@ -1,3 +1,4 @@
+id: CultureMech:006421
 name: MEDIUM 767 MODIFIED FOR DSM 8509
 original_name: MEDIUM 767 MODIFIED FOR DSM 8509
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:767_8509
     label: MEDIUM 767 MODIFIED FOR DSM 8509
-notes: 'Source: KOMODO ModelSEED | ID: 767_8509 | DSMZ Medium: 767 (mediadive.medium:767) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 767_8509 | DSMZ Medium: 767 (mediadive.medium:767)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -127,3 +129,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 767
+- timestamp: '2026-03-13T06:19:40.605245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006421'

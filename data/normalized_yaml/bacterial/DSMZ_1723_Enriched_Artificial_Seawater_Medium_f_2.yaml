@@ -1,3 +1,4 @@
+id: CultureMech:001202
 name: Enriched Artificial Seawater Medium f/2
 original_name: Enriched Artificial Seawater Medium f/2
 category: bacterial
@@ -102,19 +103,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Optional: To prepare solid medium, use 7 g/l agarose. Sterilize the agarose separately\
-    \ in half of the\r\nMilliQ water and combine the agarose solution and remaining medium (1. & 2.) after\r\
-    \nautoclaving."
+  description: "Optional: To prepare solid medium, use 7 g/l agarose. Sterilize the\
+    \ agarose separately in half of the\r\nMilliQ water and combine the agarose solution\
+    \ and remaining medium (1. & 2.) after\r\nautoclaving."
 - step_number: 2
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: "After cooling, add the following filter sterilized (0.2 µm) components to complete the\r\
-    \nmedium:"
+  description: "After cooling, add the following filter sterilized (0.2 µm) components\
+    \ to complete the\r\nmedium:"
 applications:
 - Microbial cultivation
 curation_history:
@@ -122,3 +124,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1723'
+- timestamp: '2026-03-13T06:19:02.191616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001202'

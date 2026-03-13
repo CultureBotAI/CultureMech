@@ -1,3 +1,4 @@
+id: CultureMech:004764
 name: For DSM 8271
 original_name: For DSM 8271
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:298b.1
     label: For DSM 8271
-notes: 'Source: KOMODO ModelSEED | ID: 298b.1 | DSMZ Medium: 298b (mediadive.medium:298b) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 298b.1 | DSMZ Medium: 298b (mediadive.medium:298b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -226,3 +228,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 298
+- timestamp: '2026-03-13T06:19:28.631854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004764'

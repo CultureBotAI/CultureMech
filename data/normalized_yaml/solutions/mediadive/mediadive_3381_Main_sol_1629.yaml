@@ -1,3 +1,4 @@
+id: CultureMech:012527
 preferred_term: Main sol. 1629
 term:
   id: mediadive.solution:3381
@@ -199,3 +200,8 @@ preparation_notes: 'Prepare the medium without methanol. Adjust pH to 7.1.
 
   Autoclave and after cooling to 50°C add the methanol from a filter-sterilized stock
   solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.364668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012527'

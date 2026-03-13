@@ -1,3 +1,4 @@
+id: CultureMech:014128
 preferred_term: Main sol. J1124
 term:
   id: mediadive.solution:5218
@@ -189,3 +190,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (4:1,
   \ the same gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal with butyl\
   \ rubber stoppers. Prior to use, add per liter the following solution to reduce\
   \ the medium (autoclaved and stored under N2): \n\nOriginal volume: 1014 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.782745Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014128'

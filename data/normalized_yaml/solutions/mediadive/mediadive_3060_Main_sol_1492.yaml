@@ -1,3 +1,4 @@
+id: CultureMech:012284
 preferred_term: Main sol. 1492
 term:
   id: mediadive.solution:3060
@@ -128,3 +129,8 @@ preparation_notes: 'Adjust pH to 7.2 with K2HPO4 or KH2PO4.
   Add agar after adjusting the pH, then boil to dissolve the agar
 
   Autoclave at 121 °C for 15 min.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.987124Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012284'

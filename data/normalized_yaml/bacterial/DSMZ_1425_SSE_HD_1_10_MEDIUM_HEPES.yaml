@@ -1,3 +1,4 @@
+id: CultureMech:000889
 name: SSE/HD 1:10 MEDIUM (HEPES)
 original_name: SSE/HD 1:10 MEDIUM (HEPES)
 category: bacterial
@@ -255,8 +256,8 @@ preparation_steps:
   description: Dissolve by shaking overnight. Sterilize by autoclaving.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -268,3 +269,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.249721Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000889'

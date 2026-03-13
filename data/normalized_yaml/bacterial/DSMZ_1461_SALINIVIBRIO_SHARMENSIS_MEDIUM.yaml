@@ -1,3 +1,4 @@
+id: CultureMech:000927
 name: SALINIVIBRIO SHARMENSIS MEDIUM
 original_name: SALINIVIBRIO SHARMENSIS MEDIUM
 category: bacterial
@@ -78,9 +79,10 @@ preparation_steps:
   description: Final pH 9.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Add all the components together, except Na2CO3 which is added from a sterilized stock solution
-    when the autoclaved medium has cooled. Agar is added at a concentration of 20 g/l for solid media
-    and should be cooled to about 55°C before the Na2CO3.is added.
+  description: Add all the components together, except Na2CO3 which is added from
+    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
+    at a concentration of 20 g/l for solid media and should be cooled to about 55°C
+    before the Na2CO3.is added.
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +90,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1461'
+- timestamp: '2026-03-13T06:18:59.640651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000927'

@@ -1,3 +1,4 @@
+id: CultureMech:014206
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:5294
@@ -147,3 +148,8 @@ composition:
     label: sulfuric acid
     confidence: 1.0
     match_type: exact_match
+curation_history:
+- timestamp: '2026-03-13T06:20:36.323799Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014206'

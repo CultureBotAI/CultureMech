@@ -1,3 +1,4 @@
+id: CultureMech:013644
 preferred_term: Main sol. J755
 term:
   id: mediadive.solution:4694
@@ -70,3 +71,8 @@ preparation_notes: "Mix components and adjust pH to 6.5 with NaOH. Bring to a bo
   \ per liter the following solutions (autoclaved or *filter-sterilize) from anaerobic\
   \ stocks: \nAdjust pH of the medium to 6.0 - 6.5, if necessary. Pressurize the inoculated\
   \ bottles to 200 kPa N2-CO2 (4:1, v/v).\n\nOriginal volume: 2032 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.556887Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013644'

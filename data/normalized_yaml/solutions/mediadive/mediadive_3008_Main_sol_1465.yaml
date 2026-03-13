@@ -1,3 +1,4 @@
+id: CultureMech:012239
 preferred_term: Main sol. 1465
 term:
   id: mediadive.solution:3008
@@ -128,3 +129,8 @@ preparation_notes: 'Adjust pH to 10.0 with NaOH or HCl. Make anoxic under nitrog
   stream and autoclave at 121°C.
 
   After autoclaving add sterile, anoxic solutions of:'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.707066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012239'

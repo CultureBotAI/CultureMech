@@ -1,3 +1,4 @@
+id: CultureMech:006215
 name: MEDIUM 65 MODIFIED FOR DSM 44619
 original_name: MEDIUM 65 MODIFIED FOR DSM 44619
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:65_44619
     label: MEDIUM 65 MODIFIED FOR DSM 44619
-notes: 'Source: KOMODO ModelSEED | ID: 65_44619 | DSMZ Medium: 65 (mediadive.medium:65) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 65_44619 | DSMZ Medium: 65 (mediadive.medium:65)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -51,4 +53,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 65
+- timestamp: '2026-03-13T06:19:39.096533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006215'
 ph_value: 7.2

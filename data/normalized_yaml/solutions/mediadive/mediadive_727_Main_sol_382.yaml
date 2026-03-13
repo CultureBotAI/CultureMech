@@ -1,3 +1,4 @@
+id: CultureMech:015134
 preferred_term: Main sol. 382
 term:
   id: mediadive.solution:727
@@ -67,3 +68,8 @@ preparation_notes: 'The above solutions should be sterilized separately by filtr
   (thiamine, glucose) or autoclaving.
 
   Adjust pH to 7.4.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.987378Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015134'

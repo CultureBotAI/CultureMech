@@ -1,3 +1,4 @@
+id: CultureMech:013075
 preferred_term: Mineral salt solution
 term:
   id: mediadive.solution:4016
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve
   by adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
   Readjust pH to 7.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.246472Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013075'

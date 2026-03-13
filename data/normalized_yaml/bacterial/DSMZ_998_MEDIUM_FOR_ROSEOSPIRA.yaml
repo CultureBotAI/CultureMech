@@ -1,3 +1,4 @@
+id: CultureMech:002183
 name: MEDIUM FOR ROSEOSPIRA
 original_name: MEDIUM FOR ROSEOSPIRA
 category: bacterial
@@ -163,12 +164,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Media were autoclaved and cooled under N2/CO2 (90/10, v/v). Vitamin V7 solution (1 ml/l)
-    and NaHCO3, (0.15% w/v) were then aseptically added to the medium. Final pH was adjusted to 6.8-7.0
-    and the medium was dispensed into sterile 50 ml screw-capped bottles. Organic substrates (5 mM Na-acetate
-    and/or 5 mM di-Na-succinate) were added as substrates before use. In addition, for strains DSM 15114
-    and AT2115, Na2S x 9 H2O (0.02% w/v) were also added to the medium prior to utilisation. Pure cultures,
-    grown in 50-ml screw-capped bottles were stored at +4°C in the dark for preservation.
+  description: Media were autoclaved and cooled under N2/CO2 (90/10, v/v). Vitamin
+    V7 solution (1 ml/l) and NaHCO3, (0.15% w/v) were then aseptically added to the
+    medium. Final pH was adjusted to 6.8-7.0 and the medium was dispensed into sterile
+    50 ml screw-capped bottles. Organic substrates (5 mM Na-acetate and/or 5 mM di-Na-succinate)
+    were added as substrates before use. In addition, for strains DSM 15114 and AT2115,
+    Na2S x 9 H2O (0.02% w/v) were also added to the medium prior to utilisation. Pure
+    cultures, grown in 50-ml screw-capped bottles were stored at +4°C in the dark
+    for preservation.
 - step_number: 2
   action: MIX
   description: Sterilized by filtration.
@@ -185,4 +188,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.318764Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:11.042087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002183'

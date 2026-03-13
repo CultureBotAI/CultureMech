@@ -1,3 +1,4 @@
+id: CultureMech:015029
 preferred_term: Main sol. 1840
 term:
   id: mediadive.solution:6431
@@ -109,3 +110,8 @@ preparation_notes: 'Adjust pH to 6.8 with 0.5 M KH2PO4.
   Autoclave at 121 °C for 20 min.
 
   Before inoculation add from sterile stock solutions per liter:'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.437349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015029'

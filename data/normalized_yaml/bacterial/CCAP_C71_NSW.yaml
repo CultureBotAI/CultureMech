@@ -1,3 +1,4 @@
+id: CultureMech:000384
 name: NSW
 original_name: NSW
 category: bacterial
@@ -26,3 +27,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C71'
+- timestamp: '2026-03-13T06:18:54.880959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000384'

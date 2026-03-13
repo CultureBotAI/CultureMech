@@ -1,3 +1,4 @@
+id: CultureMech:002418
 name: HALOARCHAEAL COMPLEX MEDIUM PH 7.0
 original_name: HALOARCHAEAL COMPLEX MEDIUM PH 7.0
 category: bacterial
@@ -137,4 +138,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1252'
+- timestamp: '2026-03-13T06:19:13.148932Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002418'
 high_metal: true

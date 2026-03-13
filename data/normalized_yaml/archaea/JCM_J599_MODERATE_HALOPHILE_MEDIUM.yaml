@@ -1,3 +1,4 @@
+id: CultureMech:000301
 name: MODERATE HALOPHILE MEDIUM
 original_name: MODERATE HALOPHILE MEDIUM
 category: archaea
@@ -78,8 +79,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 - 7.2. For
-    preparation of solid medium, add 20.0 g/L agar.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0 - 7.2. For preparation of solid medium, add 20.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +88,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J599'
+- timestamp: '2026-03-13T06:18:54.285155Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000301'

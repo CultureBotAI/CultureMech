@@ -1,3 +1,4 @@
+id: CultureMech:005597
 name: DESULFURELLA MULTIPOTENS medium
 original_name: DESULFURELLA MULTIPOTENS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:480a
     label: DESULFURELLA MULTIPOTENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 480a | DSMZ Medium: 480a (mediadive.medium:480a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 480a | DSMZ Medium: 480a (mediadive.medium:480a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -232,4 +234,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.631341Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:34.418961Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005597'

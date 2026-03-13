@@ -1,3 +1,4 @@
+id: CultureMech:009248
 name: TOGO Medium M2696
 original_name: (Unnamed medium)
 category: bacterial
@@ -35,4 +36,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:55.681165'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Antifoam (Union Carbide Corp., SAG-471)'
+  notes: 'Added default concentration for ingredient: Antifoam (Union Carbide Corp.,
+    SAG-471)'
+- timestamp: '2026-03-13T06:20:04.672516Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009248'

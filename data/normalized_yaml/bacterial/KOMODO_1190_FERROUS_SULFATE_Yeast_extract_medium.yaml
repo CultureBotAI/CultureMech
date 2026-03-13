@@ -1,3 +1,4 @@
+id: CultureMech:003927
 name: FERROUS SULFATE/Yeast extract medium
 original_name: FERROUS SULFATE/Yeast extract medium
 category: bacterial
@@ -85,4 +86,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:23.375694Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003927'
 high_metal: true

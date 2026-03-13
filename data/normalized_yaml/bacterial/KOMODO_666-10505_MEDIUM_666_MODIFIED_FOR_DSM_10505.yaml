@@ -1,3 +1,4 @@
+id: CultureMech:006251
 name: MEDIUM 666 MODIFIED FOR DSM 10505
 original_name: MEDIUM 666 MODIFIED FOR DSM 10505
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:666_10505
     label: MEDIUM 666 MODIFIED FOR DSM 10505
-notes: 'Source: KOMODO ModelSEED | ID: 666_10505 | DSMZ Medium: 666 (mediadive.medium:666) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 666_10505 | DSMZ Medium: 666 (mediadive.medium:666)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -103,3 +104,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 666
+- timestamp: '2026-03-13T06:19:39.277360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006251'

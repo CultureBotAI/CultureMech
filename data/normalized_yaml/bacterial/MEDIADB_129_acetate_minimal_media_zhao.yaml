@@ -1,3 +1,4 @@
+id: CultureMech:007017
 name: '''acetate minimal media (zhao'
 original_name: '''acetate minimal media (zhao'
 category: bacterial
@@ -90,14 +91,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.757186Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 129, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 129, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.613263Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007017'
 media_term:
   preferred_term: MediaDB Medium 129
   term:
     id: MEDIADB:129
     label: '''acetate minimal media (zhao'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

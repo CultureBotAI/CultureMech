@@ -1,3 +1,4 @@
+id: CultureMech:015304
 preferred_term: Trace element solution SL-4
 term:
   id: mediadive.solution:969
@@ -44,3 +45,8 @@ preparation_notes: "First dissolve EDTA in distilled water by adjusting the pH t
   \ element solution SL-6. \nFirst dissolve EDTA in distilled water by adjusting the\
   \ pH to 7.0 - 8.0 using a 2 M solution\r\nof NaOH; then add ferrous sulfate and\
   \ the trace element solution SL–6."
+curation_history:
+- timestamp: '2026-03-13T06:20:41.710801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015304'

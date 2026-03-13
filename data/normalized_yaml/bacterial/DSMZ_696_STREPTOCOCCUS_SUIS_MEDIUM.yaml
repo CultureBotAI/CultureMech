@@ -1,3 +1,4 @@
+id: CultureMech:001833
 name: STREPTOCOCCUS SUIS MEDIUM
 original_name: STREPTOCOCCUS SUIS MEDIUM
 category: bacterial
@@ -85,8 +86,8 @@ preparation_steps:
   description: After sterilization add 5% bovine serum.
 - step_number: 3
   action: MIX
-  description: For anaerobic handling prepare and distribute into tubes under 100% N2 by using the Hungate
-    technique.
+  description: For anaerobic handling prepare and distribute into tubes under 100%
+    N2 by using the Hungate technique.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,3 +95,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 696'
+- timestamp: '2026-03-13T06:19:07.585233Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001833'

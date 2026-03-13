@@ -1,3 +1,4 @@
+id: CultureMech:004129
 name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
 original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and
   DSM17508
@@ -283,3 +284,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:25.130247Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004129'

@@ -1,3 +1,4 @@
+id: CultureMech:000676
 name: ROSEINATRONOBACTER MONICUS MEDIUM
 original_name: ROSEINATRONOBACTER MONICUS MEDIUM
 category: bacterial
@@ -176,9 +177,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add the vitamin\r\n\
-    B12 solution from a filter sterilised stock solution to the autoclaved, cooled medium. Final\r\nis\
-    \ pH 9.0 - 9.5"
+  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.\
+    \ Add the vitamin\r\nB12 solution from a filter sterilised stock solution to the\
+    \ autoclaved, cooled medium. Final\r\nis pH 9.0 - 9.5"
 applications:
 - Microbial cultivation
 curation_history:
@@ -186,3 +187,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1218'
+- timestamp: '2026-03-13T06:18:57.362931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000676'

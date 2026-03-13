@@ -1,3 +1,4 @@
+id: CultureMech:010757
 preferred_term: Main sol. 590
 term:
   id: mediadive.solution:1266
@@ -56,3 +57,8 @@ preparation_notes: "pH 7.0-7.2\nAgar at a concentration of 18 g/l is added for s
   \ media.\nPrepare an 8% solution of NaHCO3 in half full 100ml serum bottles closed\
   \ with a rubber\r\nseptum and autoclave. Add 28.4 ml of the sterile 8% solution\
   \ of NaHCO3 (2.822g/l) per\r\nlitre of the sterile, cooled medium."
+curation_history:
+- timestamp: '2026-03-13T06:20:15.344940Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010757'

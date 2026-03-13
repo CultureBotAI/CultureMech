@@ -1,3 +1,4 @@
+id: CultureMech:012940
 preferred_term: Main sol. J203
 term:
   id: mediadive.solution:3868
@@ -71,3 +72,8 @@ preparation_notes: "Mix components except sulfur, adjust pH to 5.5 with H2SO4 an
   \ inoculation, add per litter the following solution (autoclave and stored under\
   \ a N2 atmosphere): \nReadjust pH to 5.5, if necessary. Pressurize inoculated vessels\
   \ to 200kPa H2 -CO2 (80:20, v/v).\n\nOriginal volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:28.438531Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012940'

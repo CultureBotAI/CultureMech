@@ -1,3 +1,4 @@
+id: CultureMech:011065
 preferred_term: Solution A
 term:
   id: mediadive.solution:1607
@@ -136,3 +137,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 989 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.311178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011065'

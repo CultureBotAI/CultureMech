@@ -1,3 +1,4 @@
+id: CultureMech:000739
 name: SULFURIFUSTIS MEDIUM
 original_name: SULFURIFUSTIS MEDIUM
 category: bacterial
@@ -214,15 +215,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, thiosulfate and vitamins) and sparge medium with
-    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under air atmosphere
-    into Hungate-type tubes or serum vials to 30% of volume, close with butyl rubber septa and autoclave.
-    Add carbonate, thiosulfate and vitamins from stock solutions sterilized by filtration. Adjust pH of
-    complete medium to 7.0 - 7.2. Incubate without shaking.
+  description: Dissolve ingredients (except carbonate, thiosulfate and vitamins) and
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under air atmosphere into Hungate-type tubes or serum vials to
+    30% of volume, close with butyl rubber septa and autoclave. Add carbonate, thiosulfate
+    and vitamins from stock solutions sterilized by filtration. Adjust pH of complete
+    medium to 7.0 - 7.2. Incubate without shaking.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.432031Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:57.962955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000739'

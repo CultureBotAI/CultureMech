@@ -1,3 +1,4 @@
+id: CultureMech:014768
 preferred_term: Mail sol. C49
 term:
   id: mediadive.solution:6040
@@ -105,3 +106,8 @@ preparation_notes: "To be added later:\nAdd  the  first six  constituents  in th
   \ 180 ml aliquots and sterilise by pressure cooking at 10 psi for 15\r\nminutes.\n\
   Aseptically add the foetal calf serum to a final concentration of 10%.\nStore at\
   \ 4°C.\n\nOriginal volume: 900 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.470407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014768'

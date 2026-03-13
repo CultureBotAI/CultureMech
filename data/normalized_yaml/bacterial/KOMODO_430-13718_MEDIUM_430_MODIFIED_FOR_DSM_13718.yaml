@@ -1,3 +1,4 @@
+id: CultureMech:005277
 name: MEDIUM 430 MODIFIED FOR DSM 13718
 original_name: MEDIUM 430 MODIFIED FOR DSM 13718
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:430_13718
     label: MEDIUM 430 MODIFIED FOR DSM 13718
-notes: 'Source: KOMODO ModelSEED | ID: 430_13718 | DSMZ Medium: 430 (mediadive.medium:430) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 430_13718 | DSMZ Medium: 430 (mediadive.medium:430)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -205,4 +206,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 430
+- timestamp: '2026-03-13T06:19:31.446466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005277'
 ph_value: 8.5

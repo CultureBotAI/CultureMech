@@ -1,3 +1,4 @@
+id: CultureMech:012878
 preferred_term: Metals ''44''
 term:
   id: mediadive.solution:3800
@@ -99,3 +100,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:28.097639Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012878'

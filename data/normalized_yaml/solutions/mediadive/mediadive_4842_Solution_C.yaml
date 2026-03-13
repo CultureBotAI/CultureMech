@@ -1,3 +1,4 @@
+id: CultureMech:013776
 preferred_term: Solution C
 term:
   id: mediadive.solution:4842
@@ -37,3 +38,8 @@ preparation_notes: 'Mix components of solution A, adjust pH to 5.7, then boil fo
 
 
   Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.404181Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013776'

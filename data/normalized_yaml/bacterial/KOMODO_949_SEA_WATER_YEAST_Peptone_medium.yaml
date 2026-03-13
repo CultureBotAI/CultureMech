@@ -1,3 +1,4 @@
+id: CultureMech:006887
 name: SEA WATER YEAST Peptone medium
 original_name: SEA WATER YEAST Peptone medium
 category: bacterial
@@ -101,3 +102,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:44.667731Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006887'

@@ -1,3 +1,4 @@
+id: CultureMech:014645
 preferred_term: Micronutrient solution (after H. Gaffron)
 term:
   id: mediadive.solution:5814
@@ -175,3 +176,8 @@ preparation_notes: 'Add to 100 ml of MilliQ water:
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.832245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014645'

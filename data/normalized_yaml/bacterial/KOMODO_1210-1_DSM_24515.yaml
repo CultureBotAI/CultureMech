@@ -1,3 +1,4 @@
+id: CultureMech:003961
 name: DSM 24515
 original_name: DSM 24515
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1210.1
     label: DSM 24515
-notes: 'Source: KOMODO ModelSEED | ID: 1210.1 | DSMZ Medium: 1210 (mediadive.medium:1210) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1210.1 | DSMZ Medium: 1210 (mediadive.medium:1210)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -250,4 +252,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.610179Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:23.686277Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003961'

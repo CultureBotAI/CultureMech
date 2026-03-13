@@ -1,3 +1,4 @@
+id: CultureMech:003992
 name: XYLAN medium
 original_name: XYLAN medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1235
     label: XYLAN medium
-notes: 'Source: KOMODO ModelSEED | ID: 1235 | DSMZ Medium: 1235 (mediadive.medium:1235) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1235 | DSMZ Medium: 1235 (mediadive.medium:1235)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Xylan
   term:
@@ -72,3 +74,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1235
+- timestamp: '2026-03-13T06:19:23.935198Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003992'

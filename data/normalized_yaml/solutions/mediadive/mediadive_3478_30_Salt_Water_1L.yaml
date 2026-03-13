@@ -1,3 +1,4 @@
+id: CultureMech:012598
 preferred_term: 30% Salt Water (1L)
 term:
   id: mediadive.solution:3478
@@ -66,3 +67,8 @@ composition:
 preparation_notes: 'Dissolve salts completely then add CaCl2 x H2O.
 
   Adjust pH to 7.5 with Tris-HCl at pH=7.5'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.786919Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012598'

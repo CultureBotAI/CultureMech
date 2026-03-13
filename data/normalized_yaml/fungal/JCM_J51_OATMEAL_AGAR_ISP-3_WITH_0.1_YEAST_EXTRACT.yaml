@@ -1,3 +1,4 @@
+id: CultureMech:010531
 name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
 original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
 category: fungal
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J51'
+- timestamp: '2026-03-13T06:20:14.247323Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010531'

@@ -1,3 +1,4 @@
+id: CultureMech:006964
 name: BACILLUS FILIFORMIS medium
 original_name: BACILLUS FILIFORMIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:992
     label: BACILLUS FILIFORMIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 992 | DSMZ Medium: 992 (mediadive.medium:992) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 992 | DSMZ Medium: 992 (mediadive.medium:992)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -75,3 +77,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 992
+- timestamp: '2026-03-13T06:19:45.305829Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006964'

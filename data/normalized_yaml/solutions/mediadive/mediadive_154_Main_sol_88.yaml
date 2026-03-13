@@ -1,3 +1,4 @@
+id: CultureMech:011012
 preferred_term: Main sol. 88
 term:
   id: mediadive.solution:154
@@ -94,3 +95,8 @@ preparation_notes: 'Dissolve ingredients (except yeast extract or other substrat
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.970774Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011012'

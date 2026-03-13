@@ -1,3 +1,4 @@
+id: CultureMech:004084
 name: DEFLUVIITOGA medium
 original_name: DEFLUVIITOGA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1328
     label: DEFLUVIITOGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1328 | DSMZ Medium: 1328 (mediadive.medium:1328) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1328 | DSMZ Medium: 1328 (mediadive.medium:1328)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -181,3 +183,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1328
+- timestamp: '2026-03-13T06:19:24.685162Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004084'

@@ -1,6 +1,8 @@
-name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and 150.0 g/l for DSM 6640
-original_name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and 150.0 g/l for DSM
-  6640
+id: CultureMech:006071
+name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and 150.0
+  g/l for DSM 6640
+original_name: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212
+  and 150.0 g/l for DSM 6640
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -9,8 +11,10 @@ media_term:
   preferred_term: KOMODO Medium 591.1
   term:
     id: komodo.medium:591.1
-    label: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and 150.0 g/l for DSM 6640
-notes: 'Source: KOMODO ModelSEED | ID: 591.1 | DSMZ Medium: 591 (mediadive.medium:591) | Aerobic: No'
+    label: For DSM 6641, DSM 6642, DSM 6638, DSM 6639, DSM 6643, and DSM 7212 and
+      150.0 g/l for DSM 6640
+notes: 'Source: KOMODO ModelSEED | ID: 591.1 | DSMZ Medium: 591 (mediadive.medium:591)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -231,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.853771Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:38.068764Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006071'

@@ -1,3 +1,4 @@
+id: CultureMech:001028
 name: EX-LM MEDIUM
 original_name: EX-LM MEDIUM
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1550'
+- timestamp: '2026-03-13T06:19:00.574158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001028'

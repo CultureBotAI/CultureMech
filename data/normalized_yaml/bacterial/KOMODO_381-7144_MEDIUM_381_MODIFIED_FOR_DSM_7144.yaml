@@ -1,3 +1,4 @@
+id: CultureMech:005127
 name: MEDIUM 381 MODIFIED FOR DSM 7144
 original_name: MEDIUM 381 MODIFIED FOR DSM 7144
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:381_7144
     label: MEDIUM 381 MODIFIED FOR DSM 7144
-notes: 'Source: KOMODO ModelSEED | ID: 381_7144 | DSMZ Medium: 381 (mediadive.medium:381) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 381_7144 | DSMZ Medium: 381 (mediadive.medium:381)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -41,4 +43,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 381
+- timestamp: '2026-03-13T06:19:30.277626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005127'
 ph_value: 7.2

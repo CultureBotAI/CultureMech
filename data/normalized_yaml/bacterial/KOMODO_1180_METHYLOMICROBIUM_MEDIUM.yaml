@@ -1,3 +1,4 @@
+id: CultureMech:003900
 name: METHYLOMICROBIUM MEDIUM
 original_name: METHYLOMICROBIUM MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1180
     label: METHYLOMICROBIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1180 | DSMZ Medium: 1180 (mediadive.medium:1180) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1180 | DSMZ Medium: 1180 (mediadive.medium:1180)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -140,3 +142,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1180
+- timestamp: '2026-03-13T06:19:23.098253Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003900'

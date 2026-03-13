@@ -1,7 +1,8 @@
-name: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05% cysteine HCl-H2O, 0.5 mg/ml
-  of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
-original_name: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05% cysteine HCl-H2O,
-  0.5 mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
+id: CultureMech:009342
+name: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05% cysteine
+  HCl-H2O, 0.5 mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
+original_name: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05%
+  cysteine HCl-H2O, 0.5 mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -15,7 +16,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -23,7 +25,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:18067
     label: Vitamin K1
@@ -61,8 +64,8 @@ media_term:
   preferred_term: TOGO Medium M2794
   term:
     id: TOGO:M2794
-    label: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05% cysteine HCl-H2O, 0.5
-      mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
+    label: Tryptic soy broth medium supplemented with 0.5% yeast extract, 0.05% cysteine
+      HCl-H2O, 0.5 mg/ml of hemin, 2 μg/ml of vitamin K1, and 5% sheep blood
 notes: 'Source: https://togomedium.org/medium/M2794'
 applications:
 - Microbial cultivation
@@ -78,5 +81,10 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.506325'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+- timestamp: '2026-03-13T06:20:05.767130Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009342'

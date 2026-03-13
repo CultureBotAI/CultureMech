@@ -1,3 +1,4 @@
+id: CultureMech:013528
 preferred_term: Main sol. J670
 term:
   id: mediadive.solution:4560
@@ -80,3 +81,8 @@ preparation_notes: "Mix ingredients and distribute into culture vessels under a 
   \ or *filter-sterilize the following solutions under a N2 atmosphere and add to\
   \ the medium (per liter): \nAdjust pH of the medium to 7.0 with sterile NaOH, if\
   \ necessary.\n\nOriginal volume: 1055 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.810951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013528'

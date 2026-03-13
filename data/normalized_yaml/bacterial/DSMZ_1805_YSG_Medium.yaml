@@ -1,3 +1,4 @@
+id: CultureMech:001245
 name: YSG Medium
 original_name: YSG Medium
 category: bacterial
@@ -49,9 +50,9 @@ preparation_steps:
   description: Adjust pH to 3.7 with H2SO4.
 - step_number: 2
   action: AUTOCLAVE
-  description: For preparation of agar plates dissolve  agar in 500 ml distilled water and autoclave separately.
-    The basis medium should then be dissolved in 500 ml distilled water only. Cool down after sterilization
-    and mix.
+  description: For preparation of agar plates dissolve  agar in 500 ml distilled water
+    and autoclave separately. The basis medium should then be dissolved in 500 ml
+    distilled water only. Cool down after sterilization and mix.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1805'
+- timestamp: '2026-03-13T06:19:02.538480Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001245'

@@ -1,3 +1,4 @@
+id: CultureMech:001682
 name: BENNETT'S AGAR
 original_name: BENNETT'S AGAR
 category: bacterial
@@ -43,8 +44,8 @@ preparation_steps:
   description: Adjust pH to 7.3 with NaOH.
 - step_number: 2
   action: MIX
-  description: Modified Bennett's agar can also be used. In it, glucose is replaced by glycerol (10.0
-    g) and N-Z amine by Bacto casein (2.0 g, Difco).
+  description: Modified Bennett's agar can also be used. In it, glucose is replaced
+    by glycerol (10.0 g) and N-Z amine by Bacto casein (2.0 g, Difco).
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +53,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 548'
+- timestamp: '2026-03-13T06:19:06.413477Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001682'

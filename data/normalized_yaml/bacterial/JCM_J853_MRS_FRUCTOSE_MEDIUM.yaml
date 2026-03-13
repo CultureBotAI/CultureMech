@@ -1,3 +1,4 @@
+id: CultureMech:003199
 name: MRS FRUCTOSE MEDIUM
 original_name: MRS FRUCTOSE MEDIUM
 category: bacterial
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J853'
+- timestamp: '2026-03-13T06:19:18.529679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003199'

@@ -1,3 +1,4 @@
+id: CultureMech:002950
 name: DESULFOVIBRIO MAGNUS MEDIUM
 original_name: DESULFOVIBRIO MAGNUS MEDIUM
 category: bacterial
@@ -216,14 +217,16 @@ preparation_steps:
   description: Mix components and autoclave under a N2 atmosphere.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Mix components, filter-sterilize and store under a N2-CO2 (4:1, v/v) gas mixture.
+  description: Mix components, filter-sterilize and store under a N2-CO2 (4:1, v/v)
+    gas mixture.
 - step_number: 4
   action: AUTOCLAVE
-  description: To complete the medium, combine Solutions A, B, C and 1 ml Vitamin solution (see below)
-    aseptically under a stream of a N2-CO2 (4:1, v/v) gas mixture. Distribute the medium into sterilized
-    culture vessels under the same gas mixture and seal with butyl rubber stoppers. Then, add 0.01 volume
-    of 5% Na2S x 9H2O solution (autoclaved under a N2 atmosphere). Check the final pH to be 7.0 - 7.2.
-    Pressurize the inoculated vessels to 70 kPa N2-CO2 (4:1, v/v) overpressure.
+  description: To complete the medium, combine Solutions A, B, C and 1 ml Vitamin
+    solution (see below) aseptically under a stream of a N2-CO2 (4:1, v/v) gas mixture.
+    Distribute the medium into sterilized culture vessels under the same gas mixture
+    and seal with butyl rubber stoppers. Then, add 0.01 volume of 5% Na2S x 9H2O solution
+    (autoclaved under a N2 atmosphere). Check the final pH to be 7.0 - 7.2. Pressurize
+    the inoculated vessels to 70 kPa N2-CO2 (4:1, v/v) overpressure.
 - step_number: 5
   action: FILTER_STERILIZE
   description: Filter-sterilize and store under a N2 atmosphere.
@@ -234,3 +237,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J602'
+- timestamp: '2026-03-13T06:19:16.777420Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002950'

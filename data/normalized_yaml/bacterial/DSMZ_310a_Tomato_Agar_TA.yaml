@@ -1,3 +1,4 @@
+id: CultureMech:001409
 name: Tomato Agar TA
 original_name: Tomato Agar TA
 category: bacterial
@@ -40,3 +41,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 310a'
+- timestamp: '2026-03-13T06:19:03.822264Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001409'

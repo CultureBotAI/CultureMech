@@ -1,3 +1,4 @@
+id: CultureMech:000586
 name: TINDALLIA MEDIUM
 original_name: TINDALLIA MEDIUM
 category: bacterial
@@ -226,7 +227,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the medium omitting Na2CO3, NaHCO3, Na2S x 9 H2O, and Vitamin solution.
+  description: Prepare the medium omitting Na2CO3, NaHCO3, Na2S x 9 H2O, and Vitamin
+    solution.
 - step_number: 2
   action: HEAT
   description: Boil the medium and cool under nitrogen, add Na2CO3 and NaHCO3.
@@ -241,7 +243,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 6
   action: MIX
-  description: Add Na2S x 9 H2O (neutralized) and Vitamin solution from sterile stock solutions
+  description: Add Na2S x 9 H2O (neutralized) and Vitamin solution from sterile stock
+    solutions
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,4 +255,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.540190Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:56.603528Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000586'

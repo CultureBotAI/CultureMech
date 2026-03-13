@@ -1,3 +1,4 @@
+id: CultureMech:000932
 name: NBRC702 MEDIUM
 original_name: NBRC702 MEDIUM
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1466'
+- timestamp: '2026-03-13T06:18:59.675336Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000932'

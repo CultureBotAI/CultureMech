@@ -1,3 +1,4 @@
+id: CultureMech:013595
 preferred_term: Se-W solution
 term:
   id: mediadive.solution:4636
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve Na2WO4 x 2H2O and Na2SeO3 x 5H2O in 10 mM NaOH solution
   at first. Then dilute with distilled water.
+curation_history:
+- timestamp: '2026-03-13T06:20:32.225797Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013595'

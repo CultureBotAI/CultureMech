@@ -1,3 +1,4 @@
+id: CultureMech:010673
 preferred_term: Main sol. 533
 term:
   id: mediadive.solution:1177
@@ -103,3 +104,8 @@ preparation_notes: 'pH 7.0
 
   Incubate (e.g., in a serum bottle) with a headspace of 5% (v/v) O2, 85% H2, 10%
   CO2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.971135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010673'

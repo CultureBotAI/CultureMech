@@ -1,3 +1,4 @@
+id: CultureMech:011315
 preferred_term: Main sol. 923
 term:
   id: mediadive.solution:1898
@@ -105,3 +106,8 @@ preparation_notes: We recommend that liquid media be made by autoclaving the Na2
   solidified with agar (20 g/l) the agar should also not be autoclaved with the Na2CO3
   otherwise the agar will be hydrolysed. When mixing the ingredients for solid media
   cool all components to about 55°C otherwise hydrolysis of the agar may occur.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.850619Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011315'

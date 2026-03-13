@@ -1,3 +1,4 @@
+id: CultureMech:002194
 name: ALKALINE NUTRIENT AGAR
 original_name: ALKALINE NUTRIENT AGAR
 category: bacterial
@@ -37,3 +38,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J100'
+- timestamp: '2026-03-13T06:19:11.134949Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002194'

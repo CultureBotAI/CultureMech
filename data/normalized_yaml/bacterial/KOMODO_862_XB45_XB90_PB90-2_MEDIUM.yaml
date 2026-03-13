@@ -1,3 +1,4 @@
+id: CultureMech:006693
 name: XB45/XB90/PB90-2 MEDIUM
 original_name: XB45/XB90/PB90-2 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:862
     label: XB45/XB90/PB90-2 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 862 | DSMZ Medium: 862 (mediadive.medium:862) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 862 | DSMZ Medium: 862 (mediadive.medium:862)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 862'
+- timestamp: '2026-03-13T06:19:43.082490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006693'

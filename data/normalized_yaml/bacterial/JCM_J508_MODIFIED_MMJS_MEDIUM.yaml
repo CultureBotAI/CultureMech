@@ -1,3 +1,4 @@
+id: CultureMech:002858
 name: MODIFIED MMJS MEDIUM
 original_name: MODIFIED MMJS MEDIUM
 category: bacterial
@@ -196,15 +197,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur, Trace vitamins and NaHCO3, adjust pH to 6.8 and autoclave.
-    Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins and 5% NaHCO3
-    solution, and add to the medium. Distribute the medium into culture vessels (e.g., 20 ml of the medium
-    in 120 ml serum bottles) containing sulfur under a stream of N2-CO2 (4:1, v/v) gas mixture and seal
-    with butyl rubber stoppers. Replace the gas phase with N2-CO2-O2 (79:20:1, v/v) and pressurized inoculated
-    bottles to 200 kPa with the same gas mixture.
+  description: Mix ingredients except sulfur, Trace vitamins and NaHCO3, adjust pH
+    to 6.8 and autoclave. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize
+    Trace vitamins and 5% NaHCO3 solution, and add to the medium. Distribute the medium
+    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
+    sulfur under a stream of N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
+    stoppers. Replace the gas phase with N2-CO2-O2 (79:20:1, v/v) and pressurized
+    inoculated bottles to 200 kPa with the same gas mixture.
 - step_number: 2
   action: MIX
-  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L (final) Na2MoO4 x 2H2O.
+  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L (final)
+    Na2MoO4 x 2H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -212,3 +215,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J508'
+- timestamp: '2026-03-13T06:19:16.125839Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002858'

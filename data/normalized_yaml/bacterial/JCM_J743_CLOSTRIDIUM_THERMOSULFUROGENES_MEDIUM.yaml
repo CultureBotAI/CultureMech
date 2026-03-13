@@ -1,3 +1,4 @@
+id: CultureMech:003086
 name: CLOSTRIDIUM THERMOSULFUROGENES MEDIUM
 original_name: CLOSTRIDIUM THERMOSULFUROGENES MEDIUM
 category: bacterial
@@ -231,8 +232,9 @@ preparation_steps:
   description: Adjust pH to 6.0 - 6.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare sodium sulfide separately as 5% (w/v) solution, autoclave under a nitrogen atmosphere
-    and neutralize with 1 N HCl before use. Sterilize glucose separately.
+  description: Prepare sodium sulfide separately as 5% (w/v) solution, autoclave under
+    a nitrogen atmosphere and neutralize with 1 N HCl before use. Sterilize glucose
+    separately.
 - step_number: 3
   action: DISSOLVE
   description: First, dissolve nitrilotriacetic acid and adjust to pH 6.5 with KOH.
@@ -243,3 +245,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J743'
+- timestamp: '2026-03-13T06:19:17.692135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003086'

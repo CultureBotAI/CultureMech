@@ -1,3 +1,4 @@
+id: CultureMech:013736
 preferred_term: Main sol. J831
 term:
   id: mediadive.solution:4794
@@ -187,3 +188,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (4:1,
   \ atmosphere. After cooling, add the following solutions from anaerobic stocks (autoclaved\
   \ or *filter-sterilized): \nFinally reduce the medium with the following solution\
   \ (autoclaved and stored under a N2 atmosphere): \n\nOriginal volume: 993 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.172022Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013736'

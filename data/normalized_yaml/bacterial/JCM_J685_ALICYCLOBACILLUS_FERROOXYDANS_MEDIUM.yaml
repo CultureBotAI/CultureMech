@@ -1,3 +1,4 @@
+id: CultureMech:003030
 name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
 original_name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
 category: bacterial
@@ -66,10 +67,11 @@ preparation_steps:
   description: Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.
 - step_number: 3
   action: AUTOCLAVE
-  description: To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare
-    double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan
-    gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized
-    Solution B (70 ml/L) and pour into petri dishes.
+  description: To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For
+    solid medium, prepare double-strength Solution A and autoclave. Separately autoclave
+    an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep
+    the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution
+    B (70 ml/L) and pour into petri dishes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +83,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.300552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003030'

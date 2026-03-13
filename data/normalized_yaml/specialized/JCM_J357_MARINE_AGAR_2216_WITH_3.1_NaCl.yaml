@@ -1,3 +1,4 @@
+id: CultureMech:015400
 name: MARINE AGAR 2216 WITH  3.1% NaCl
 original_name: MARINE AGAR 2216 WITH  3.1% NaCl
 category: specialized
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J357'
+- timestamp: '2026-03-13T06:20:42.444508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015400'

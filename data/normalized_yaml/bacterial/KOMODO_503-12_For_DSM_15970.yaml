@@ -1,11 +1,12 @@
+id: CultureMech:005663
 name: For DSM 15970
 original_name: For DSM 15970
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 503.12 | DSMZ Medium: 503 (mediadive.medium:503)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 503.12 | DSMZ Medium: 503
+  (mediadive.medium:503) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 503.12
   term:
@@ -223,3 +224,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 503
+- timestamp: '2026-03-13T06:19:35.046543Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005663'

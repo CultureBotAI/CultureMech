@@ -1,3 +1,4 @@
+id: CultureMech:002809
 name: FLUID THIOGLYCOLLATE MEDIUM
 original_name: FLUID THIOGLYCOLLATE MEDIUM
 category: bacterial
@@ -65,7 +66,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1 with Na2CO3 (10%, w/v), if necessary. Prepare medium under a N2 atmosphere.
+  description: Adjust pH to 7.1 with Na2CO3 (10%, w/v), if necessary. Prepare medium
+    under a N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,3 +75,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J460'
+- timestamp: '2026-03-13T06:19:15.855766Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002809'

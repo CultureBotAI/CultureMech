@@ -1,3 +1,4 @@
+id: CultureMech:004116
 name: CLOSTRIDIUM HISTOLYTICUM medium
 original_name: CLOSTRIDIUM HISTOLYTICUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:139
     label: CLOSTRIDIUM HISTOLYTICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 139 | DSMZ Medium: 139 (mediadive.medium:139) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 139 | DSMZ Medium: 139 (mediadive.medium:139)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -55,3 +57,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 139
+- timestamp: '2026-03-13T06:19:24.973347Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004116'

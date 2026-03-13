@@ -1,3 +1,4 @@
+id: CultureMech:001038
 name: MODIFIED THERMUS MEDIUM
 original_name: MODIFIED THERMUS MEDIUM
 category: bacterial
@@ -38,3 +39,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1562'
+- timestamp: '2026-03-13T06:19:00.643117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001038'

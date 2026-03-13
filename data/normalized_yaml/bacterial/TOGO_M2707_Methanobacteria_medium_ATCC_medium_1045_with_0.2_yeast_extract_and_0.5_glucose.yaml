@@ -1,3 +1,4 @@
+id: CultureMech:009258
 name: Methanobacteria medium (ATCC medium 1045) with 0.2% yeast extract and 0.5% glucose
 original_name: Methanobacteria medium (ATCC medium 1045) with 0.2% yeast extract and
   0.5% glucose
@@ -293,6 +294,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 12 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.763962Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009258'
 solutions:
 - preferred_term: Resazurin (0.025% solution)
   composition: []

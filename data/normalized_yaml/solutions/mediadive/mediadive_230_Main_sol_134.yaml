@@ -1,3 +1,4 @@
+id: CultureMech:011692
 preferred_term: Main sol. 134
 term:
   id: mediadive.solution:230
@@ -161,3 +162,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.5. The vitamins are sterilized by filtration. The
   glucose is dissolved in 5 ml of distilled water and sterilized separately by autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.294358Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011692'

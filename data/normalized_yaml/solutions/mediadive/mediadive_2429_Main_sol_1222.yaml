@@ -1,3 +1,4 @@
+id: CultureMech:011807
 preferred_term: Main sol. 1222
 term:
   id: mediadive.solution:2429
@@ -103,3 +104,8 @@ preparation_notes: Prepare the medium under a nitrogen atmosphere, dispense into
   or bottles fitted with rubber stoppers so that they are half full. Add the vitamin
   B12 from a filter-sterilised stock solution. Either sorbitol or sodium pyruvate
   may serve as the carbon source. The final pH of the medium should be 6.8.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.060971Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011807'

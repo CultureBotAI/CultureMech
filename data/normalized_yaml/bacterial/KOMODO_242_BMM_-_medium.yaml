@@ -1,3 +1,4 @@
+id: CultureMech:004614
 name: BMM - medium
 original_name: BMM - medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:242
     label: BMM - medium
-notes: 'Source: KOMODO ModelSEED | ID: 242 | DSMZ Medium: 242 (mediadive.medium:242) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 242 | DSMZ Medium: 242 (mediadive.medium:242)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -104,3 +106,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 242
+- timestamp: '2026-03-13T06:19:27.685247Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004614'

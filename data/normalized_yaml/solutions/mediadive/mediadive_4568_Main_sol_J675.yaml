@@ -1,3 +1,4 @@
+id: CultureMech:013536
 preferred_term: Main sol. J675
 term:
   id: mediadive.solution:4568
@@ -79,3 +80,8 @@ preparation_notes: 'Boil and cool under CO2. Under a gentle stream of CO2, add 4
   g Na2CO3, 1.0 ml fatty acid mixture (see below) and 500 mg L-cysteine x HCl x H2O.
 
   Adjust pH to 7.0, distribute into appropriate vessels under N2 and autoclave.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.868568Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013536'

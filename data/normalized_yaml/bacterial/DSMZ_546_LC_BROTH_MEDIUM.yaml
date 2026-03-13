@@ -1,3 +1,4 @@
+id: CultureMech:001680
 name: LC BROTH MEDIUM
 original_name: LC BROTH MEDIUM
 category: bacterial
@@ -53,8 +54,8 @@ preparation_steps:
   description: Adjust pH to 7.4.
 - step_number: 2
   action: HEAT
-  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M
-    MgSO4 x 7 H2O as sterile solutions.
+  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2
+    x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 546'
+- timestamp: '2026-03-13T06:19:06.404087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001680'

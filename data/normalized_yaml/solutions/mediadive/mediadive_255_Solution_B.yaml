@@ -1,3 +1,4 @@
+id: CultureMech:011901
 preferred_term: Solution B
 term:
   id: mediadive.solution:255
@@ -64,3 +65,8 @@ preparation_notes: 'Use trace of Fe(III)citrate.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.688558Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011901'

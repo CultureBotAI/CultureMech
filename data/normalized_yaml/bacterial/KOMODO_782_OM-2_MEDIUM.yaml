@@ -1,3 +1,4 @@
+id: CultureMech:006481
 name: OM-2 MEDIUM
 original_name: OM-2 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:782
     label: OM-2 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 782 | DSMZ Medium: 782 (mediadive.medium:782) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 782 | DSMZ Medium: 782 (mediadive.medium:782)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4-oxalate
   term:
@@ -86,3 +88,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 782
+- timestamp: '2026-03-13T06:19:41.190245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006481'

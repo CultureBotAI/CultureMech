@@ -1,3 +1,4 @@
+id: CultureMech:013107
 preferred_term: Main sol. J335
 term:
   id: mediadive.solution:4053
@@ -151,3 +152,8 @@ preparation_notes: 'Adjust pH to 5.5. Fill the gas phase with H2-CO2 (80:20).
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.447576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013107'

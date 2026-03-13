@@ -1,3 +1,4 @@
+id: CultureMech:002552
 name: LYS MEDIUM
 original_name: LYS MEDIUM
 category: bacterial
@@ -138,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J190'
+- timestamp: '2026-03-13T06:19:14.106415Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002552'

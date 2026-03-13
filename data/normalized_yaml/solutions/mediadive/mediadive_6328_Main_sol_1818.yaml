@@ -1,3 +1,4 @@
+id: CultureMech:014988
 preferred_term: Main sol. 1818
 term:
   id: mediadive.solution:6328
@@ -100,3 +101,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.266131Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014988'

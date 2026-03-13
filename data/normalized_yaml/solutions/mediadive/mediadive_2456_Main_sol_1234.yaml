@@ -1,3 +1,4 @@
+id: CultureMech:011826
 preferred_term: Main sol. 1234
 term:
   id: mediadive.solution:2456
@@ -128,3 +129,8 @@ preparation_notes: Dissolve ingredients (except tetrathionate and ferrous sulfat
   a 100 mM stock solution and FeSO4 from a 10 mM stock solution (prepared in water
   adjusted to pH 2.0 with H2SO4). Both solutions should be freshly prepared and sterilized
   by filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.213270Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011826'

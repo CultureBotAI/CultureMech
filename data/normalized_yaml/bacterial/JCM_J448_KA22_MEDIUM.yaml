@@ -1,3 +1,4 @@
+id: CultureMech:002798
 name: KA22 MEDIUM
 original_name: KA22 MEDIUM
 category: bacterial
@@ -235,4 +236,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J448'
+- timestamp: '2026-03-13T06:19:15.795839Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002798'
 high_metal: true

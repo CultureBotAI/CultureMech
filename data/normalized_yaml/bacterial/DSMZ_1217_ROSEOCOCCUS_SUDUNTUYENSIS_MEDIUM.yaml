@@ -1,3 +1,4 @@
+id: CultureMech:000675
 name: ROSEOCOCCUS SUDUNTUYENSIS MEDIUM
 original_name: ROSEOCOCCUS SUDUNTUYENSIS MEDIUM
 category: bacterial
@@ -169,8 +170,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add the vitamin B12 solution
-    from a filter sterilised stock solution to the autoclaved, cooled medium. Final is pH 8.5.
+  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add
+    the vitamin B12 solution from a filter sterilised stock solution to the autoclaved,
+    cooled medium. Final is pH 8.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,3 +180,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1217'
+- timestamp: '2026-03-13T06:18:57.352502Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000675'

@@ -1,3 +1,4 @@
+id: CultureMech:014166
 preferred_term: Main sol. J1148
 term:
   id: mediadive.solution:5256
@@ -101,3 +102,8 @@ preparation_notes: "Mix components and autoclave (CaCO3 will not fully dissolve)
   \ supernatant, and add fresh culture medium to the white pellet. Then, suspend the\
   \ pellet and remove the suspension to a new glass bottle.\n\nOriginal volume: 1022\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.037215Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014166'

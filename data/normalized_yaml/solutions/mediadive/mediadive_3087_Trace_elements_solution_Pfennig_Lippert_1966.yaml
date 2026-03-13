@@ -1,3 +1,4 @@
+id: CultureMech:012312
 preferred_term: Trace elements solution (Pfennig & Lippert, 1966)
 term:
   id: mediadive.solution:3087
@@ -124,3 +125,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: pH 3.0-4.0
+curation_history:
+- timestamp: '2026-03-13T06:20:25.128634Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012312'

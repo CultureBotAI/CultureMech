@@ -1,3 +1,4 @@
+id: CultureMech:014531
 preferred_term: Bacto Middelbrook 7H11 agar (Difco 283810)
 term:
   id: mediadive.solution:5667
@@ -160,3 +161,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 900 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.291247Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014531'

@@ -1,3 +1,4 @@
+id: CultureMech:005592
 name: ACETOBACTERIUM SP. KoMAc1 medium
 original_name: ACETOBACTERIUM SP. KoMAc1 medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:478
     label: ACETOBACTERIUM SP. KoMAc1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 478 | DSMZ Medium: 478 (mediadive.medium:478) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 478 | DSMZ Medium: 478 (mediadive.medium:478)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 478'
+- timestamp: '2026-03-13T06:19:34.359935Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005592'

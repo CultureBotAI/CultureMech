@@ -1,3 +1,4 @@
+id: CultureMech:014001
 preferred_term: Main sol. J1033
 term:
   id: mediadive.solution:5086
@@ -132,3 +133,8 @@ preparation_notes: "Mix components, except sulfur, bring to a boil and cool down
   \ culture vessels containing appropriate amount of sulfur (e.g., 10 ml of the medium\
   \ and 0.05 g sulfur in Hungate tubes) under a CO2 stream and seal with butyl rubber\
   \ stoppers.\n\nOriginal volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.935340Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014001'

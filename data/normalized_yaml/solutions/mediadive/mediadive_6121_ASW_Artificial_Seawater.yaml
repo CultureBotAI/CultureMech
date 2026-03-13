@@ -1,3 +1,4 @@
+id: CultureMech:014825
 preferred_term: ASW (Artificial Seawater)
 term:
   id: mediadive.solution:6121
@@ -19,3 +20,8 @@ preparation_notes: "Make up to 1 litre with filtered natural sea water. Adjust t
   \ pH to 7.6 – 7.8 with\r\n1N NaOH or 1N HCl. Autoclave at 15 psi.\nAlternatively\
   \ use \"Ultramarine Synthetica\" sea salts 33.6 g and make up to 1\r\nlitre with\
   \ distilled water. Adjust pH as above."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.685780Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014825'

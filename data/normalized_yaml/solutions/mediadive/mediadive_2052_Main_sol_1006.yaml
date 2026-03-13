@@ -1,3 +1,4 @@
+id: CultureMech:011452
 preferred_term: Main sol. 1006
 term:
   id: mediadive.solution:2052
@@ -167,3 +168,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, fatty acid mixture a
 
 
   Original volume: 1004 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.798388Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011452'

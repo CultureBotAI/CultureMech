@@ -1,3 +1,4 @@
+id: CultureMech:004287
 name: Phosphate buffer (pH 6.8, see medium 1132)
 original_name: Phosphate buffer (pH 6.8, see medium 1132)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:2020
     label: Phosphate buffer (pH 6.8, see medium 1132)
-notes: 'Source: KOMODO ModelSEED | ID: 2020 | DSMZ Medium: 2020 (mediadive.medium:2020) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2020 | DSMZ Medium: 2020 (mediadive.medium:2020)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2020'
+- timestamp: '2026-03-13T06:19:26.458373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004287'

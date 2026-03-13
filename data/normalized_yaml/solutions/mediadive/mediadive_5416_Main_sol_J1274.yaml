@@ -1,3 +1,4 @@
+id: CultureMech:014329
 preferred_term: Main sol. J1274
 term:
   id: mediadive.solution:5416
@@ -122,3 +123,8 @@ preparation_notes: 'Mix components and adjust pH to 7.0. Distribute the medium i
   culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and
   seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically
   add per 900 ml the following solution (autoclaved under a N2 atmosphere): '
+curation_history:
+- timestamp: '2026-03-13T06:20:37.119987Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014329'

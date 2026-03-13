@@ -1,3 +1,4 @@
+id: CultureMech:002263
 name: DESULFURELLA TR1 MEDIUM
 original_name: DESULFURELLA TR1 MEDIUM
 category: bacterial
@@ -225,15 +226,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, except sulfur, and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After
-    cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components, except sulfur, and autoclave under a N2-CO2 (4:1,
+    v/v) gas mixture. After cooling, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Steam sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically distribute
-    the medium and sulfur into culture vessels (e.g., 50 ml of the medium and 0.04 g of sulfur in 120
-    ml serum bottle) under a N2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers. Prior
-    to use, anaerobically add per liter the following solution from an anaerobic stock (autoclaved and
-    stored under a N2 atmosphere):'
+  description: 'Steam sulfur for 3 hr on each of 3 successive days. Aseptically and
+    anaerobically distribute the medium and sulfur into culture vessels (e.g., 50
+    ml of the medium and 0.04 g of sulfur in 120 ml serum bottle) under a N2-CO2 (4:1,
+    v/v) gas mixture, and seal with butyl rubber stoppers. Prior to use, anaerobically
+    add per liter the following solution from an anaerobic stock (autoclaved and stored
+    under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.0, if necessary.
@@ -247,3 +249,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1083'
+- timestamp: '2026-03-13T06:19:11.765706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002263'

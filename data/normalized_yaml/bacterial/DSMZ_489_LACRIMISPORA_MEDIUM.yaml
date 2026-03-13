@@ -1,3 +1,4 @@
+id: CultureMech:001616
 name: LACRIMISPORA MEDIUM
 original_name: LACRIMISPORA MEDIUM
 category: bacterial
@@ -85,10 +86,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the
-    boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0,
+    bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,3 +98,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 489'
+- timestamp: '2026-03-13T06:19:05.735897Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001616'

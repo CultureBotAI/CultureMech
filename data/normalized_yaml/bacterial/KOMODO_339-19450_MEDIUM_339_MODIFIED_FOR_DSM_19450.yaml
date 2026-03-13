@@ -1,3 +1,4 @@
+id: CultureMech:005038
 name: MEDIUM 339 MODIFIED FOR DSM 19450
 original_name: MEDIUM 339 MODIFIED FOR DSM 19450
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:339_19450
     label: MEDIUM 339 MODIFIED FOR DSM 19450
-notes: 'Source: KOMODO ModelSEED | ID: 339_19450 | DSMZ Medium: 339 (mediadive.medium:339) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 339_19450 | DSMZ Medium: 339 (mediadive.medium:339)
+  | Aerobic: No'
 ingredients:
 - preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:
@@ -37,3 +38,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 339
+- timestamp: '2026-03-13T06:19:29.746463Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005038'

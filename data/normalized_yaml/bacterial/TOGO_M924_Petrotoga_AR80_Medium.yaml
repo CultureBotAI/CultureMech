@@ -1,3 +1,4 @@
+id: CultureMech:010345
 name: Petrotoga AR80 Medium
 original_name: Petrotoga AR80 Medium
 category: bacterial
@@ -166,6 +167,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.160771Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010345'
 high_metal: true
 solutions:
 - preferred_term: Trace mineral solution (see below)

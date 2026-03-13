@@ -1,3 +1,4 @@
+id: CultureMech:001257
 name: SACCHAROLOBUS SOLFATARICUS MEDIUM
 original_name: SACCHAROLOBUS SOLFATARICUS MEDIUM
 category: bacterial
@@ -99,9 +100,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all compounds except yeast extract and Casamino acids, adjust pH to 4.0 - 4.2
-    with 10 N H2SO4 at room temperature and autoclave. Prior to inoculation add yeast extract and Casamino
-    acids from stock solutions sterilized by filtration.
+  description: Dissolve all compounds except yeast extract and Casamino acids, adjust
+    pH to 4.0 - 4.2 with 10 N H2SO4 at room temperature and autoclave. Prior to inoculation
+    add yeast extract and Casamino acids from stock solutions sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -116,3 +117,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:02.603782Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001257'

@@ -1,3 +1,4 @@
+id: CultureMech:014863
 preferred_term: Vitamin mix
 term:
   id: mediadive.solution:6161
@@ -45,3 +46,8 @@ preparation_notes: 'First make primary stocks of Cyanocobalamin and Biotin.
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.827672Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014863'

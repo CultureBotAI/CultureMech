@@ -1,3 +1,4 @@
+id: CultureMech:006012
 name: MTP4 MEDIUM
 original_name: MTP4 MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:560
     label: MTP4 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 560 | DSMZ Medium: 560 (mediadive.medium:560) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 560 | DSMZ Medium: 560 (mediadive.medium:560)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 560'
+- timestamp: '2026-03-13T06:19:37.642805Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006012'

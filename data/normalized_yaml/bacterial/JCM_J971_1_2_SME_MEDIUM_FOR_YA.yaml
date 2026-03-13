@@ -1,3 +1,4 @@
+id: CultureMech:003320
 name: 1/2 SME MEDIUM FOR YA
 original_name: 1/2 SME MEDIUM FOR YA
 category: bacterial
@@ -292,3 +293,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:19.475578Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003320'

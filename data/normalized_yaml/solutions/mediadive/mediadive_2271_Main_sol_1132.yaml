@@ -1,3 +1,4 @@
+id: CultureMech:011657
 preferred_term: Main sol. 1132
 term:
   id: mediadive.solution:2271
@@ -91,3 +92,8 @@ preparation_notes: "Dispense 5 ml aliquots into Hungate tubes. After autoclaving
   \ the following components per liter: \nAdjust to pH 6.8.\nIncubate in sealed containers.\
   \ The strain held in the DSMZ has been cultivated on methanol, but the original\
   \ publication indicates that the strain will also grow on methane."
+curation_history:
+- timestamp: '2026-03-13T06:20:21.075195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011657'

@@ -1,3 +1,4 @@
+id: CultureMech:003142
 name: GYPF WITH 2.5% NaCl
 original_name: GYPF WITH 2.5% NaCl
 category: bacterial
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J798'
+- timestamp: '2026-03-13T06:19:18.118558Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003142'

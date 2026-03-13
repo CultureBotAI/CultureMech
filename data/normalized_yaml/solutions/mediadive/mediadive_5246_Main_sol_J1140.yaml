@@ -1,3 +1,4 @@
+id: CultureMech:014158
 preferred_term: Main sol. J1140
 term:
   id: mediadive.solution:5246
@@ -31,3 +32,8 @@ preparation_notes: 'Aseptically combine the above described media and solutions.
 
 
   Original volume: 1017 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.968548Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014158'

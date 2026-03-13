@@ -1,3 +1,4 @@
+id: CultureMech:013635
 preferred_term: Main sol. J744
 term:
   id: mediadive.solution:4680
@@ -239,3 +240,8 @@ preparation_notes: "Mix ingredients, bring to a boil and cool under a H2-CO2 (4:
   \ per liter the following solutions from anaerobic stocks (autoclaved and stored\
   \ under a N2 atmosphere): \nPressurize the inoculated culture vessels to 200 kPa\
   \ H2-CO2 (4:1, v/v).\n\nOriginal volume: 1049 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.475178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013635'

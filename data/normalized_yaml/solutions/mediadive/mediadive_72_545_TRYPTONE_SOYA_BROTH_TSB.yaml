@@ -1,3 +1,4 @@
+id: CultureMech:015136
 preferred_term: 545. TRYPTONE SOYA BROTH (TSB)
 term:
   id: mediadive.solution:72
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.3.
 
   The same as Caso Bouillon (Merck or Oxoid, Germany).'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.998503Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015136'

@@ -1,3 +1,4 @@
+id: CultureMech:015028
 preferred_term: Main sol. 1778a
 term:
   id: mediadive.solution:6430
@@ -111,3 +112,8 @@ preparation_notes: 'mix compounds.
 
   Mix well and aliquot into the desired volumes and flasks or tubes (e.g., 20 ml in
   100 ml flasks).'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.431382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015028'

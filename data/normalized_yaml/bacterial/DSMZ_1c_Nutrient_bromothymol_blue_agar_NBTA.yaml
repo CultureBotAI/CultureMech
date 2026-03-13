@@ -1,3 +1,4 @@
+id: CultureMech:001299
 name: Nutrient bromothymol blue agar NBTA
 original_name: Nutrient bromothymol blue agar NBTA
 category: bacterial
@@ -39,8 +40,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 21 min.
 - step_number: 2
   action: MIX
-  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium chloride stock solution
-    (1% w/v).
+  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium
+    chloride stock solution (1% w/v).
 applications:
 - Microbial cultivation
 references:
@@ -50,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1c'
+- timestamp: '2026-03-13T06:19:02.990748Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001299'

@@ -1,3 +1,4 @@
+id: CultureMech:001796
 name: M17 MEDIUM (modified)
 original_name: M17 MEDIUM (modified)
 category: bacterial
@@ -65,8 +66,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving add a lactose solution (sterilized by filtration) up to a concentration
-    of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15 ± 0.05.
+  description: After autoclaving add a lactose solution (sterilized by filtration)
+    up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15
+    ± 0.05.
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 659'
+- timestamp: '2026-03-13T06:19:07.271057Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001796'

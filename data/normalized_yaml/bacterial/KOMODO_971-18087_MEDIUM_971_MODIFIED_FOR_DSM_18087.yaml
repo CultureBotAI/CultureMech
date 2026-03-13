@@ -1,3 +1,4 @@
+id: CultureMech:006928
 name: MEDIUM 971 MODIFIED FOR DSM 18087
 original_name: MEDIUM 971 MODIFIED FOR DSM 18087
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:971_18087
     label: MEDIUM 971 MODIFIED FOR DSM 18087
-notes: 'Source: KOMODO ModelSEED | ID: 971_18087 | DSMZ Medium: 971 (mediadive.medium:971) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 971_18087 | DSMZ Medium: 971 (mediadive.medium:971)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -72,4 +73,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 971
+- timestamp: '2026-03-13T06:19:45.053050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006928'
 ph_value: 10.0

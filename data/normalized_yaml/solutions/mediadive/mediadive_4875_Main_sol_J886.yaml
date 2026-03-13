@@ -1,3 +1,4 @@
+id: CultureMech:013808
 preferred_term: Main sol. J886
 term:
   id: mediadive.solution:4875
@@ -57,3 +58,8 @@ preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.
 
 
   Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.626004Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013808'

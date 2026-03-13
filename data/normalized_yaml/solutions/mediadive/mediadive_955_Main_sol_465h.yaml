@@ -1,3 +1,4 @@
+id: CultureMech:015292
 preferred_term: Main sol. 465h
 term:
   id: mediadive.solution:955
@@ -14,3 +15,8 @@ composition:
 preparation_notes: Supplement medium 465 with selenite, tungstate, 2.5 - 5 g/l 6-methylnicotinate
   from a stock solution (autoclave separately) and 1 ml/l vitamin solution (see medium
   461).
+curation_history:
+- timestamp: '2026-03-13T06:20:41.662966Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015292'

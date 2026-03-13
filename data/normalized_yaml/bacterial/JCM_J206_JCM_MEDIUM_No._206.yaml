@@ -1,3 +1,4 @@
+id: CultureMech:002568
 name: JCM MEDIUM No. 206
 original_name: JCM MEDIUM No. 206
 category: bacterial
@@ -127,19 +128,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5 with H2SO4. Sterilize
-    by filtration while gassing with H2-CO2 (80:20) gas mixture. Steam sulfur for 3 hr on each of 3 successive
-    days. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere. Aseptically and
-    anaerobically add sterile sulfur to the medium under a H2-CO2 (80:20) atmosphere. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution. Pressurize inoculated bottles to 100 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
+    with H2SO4. Sterilize by filtration while gassing with H2-CO2 (80:20) gas mixture.
+    Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as
+    a 5% solution, and autoclave under a N2 atmosphere. Aseptically and anaerobically
+    add sterile sulfur to the medium under a H2-CO2 (80:20) atmosphere. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution. Pressurize inoculated bottles to 100 kPa
+    H2-CO2 (80:20).
 - step_number: 2
   action: MIX
-  description: Use Salt base solution of Medium No. 151 with 17.0 g/L (final) NaCl and 2.5 mg/L (final)
-    KI.
+  description: Use Salt base solution of Medium No. 151 with 17.0 g/L (final) NaCl
+    and 2.5 mg/L (final) KI.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -147,3 +150,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J206'
+- timestamp: '2026-03-13T06:19:14.212706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002568'

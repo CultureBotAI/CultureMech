@@ -1,3 +1,4 @@
+id: CultureMech:012605
 preferred_term: Main sol. 1686
 term:
   id: mediadive.solution:3489
@@ -117,3 +118,8 @@ preparation_notes: 'Autoclave at 121°C for 15 min.
   462).
 
   Adjust pH to 5 - 6.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.822904Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012605'

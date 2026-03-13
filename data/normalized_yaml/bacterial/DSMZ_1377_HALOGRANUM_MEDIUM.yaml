@@ -1,3 +1,4 @@
+id: CultureMech:000838
 name: HALOGRANUM MEDIUM
 original_name: HALOGRANUM MEDIUM
 category: bacterial
@@ -85,3 +86,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.783815Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000838'

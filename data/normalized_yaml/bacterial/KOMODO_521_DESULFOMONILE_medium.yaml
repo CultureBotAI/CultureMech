@@ -1,3 +1,4 @@
+id: CultureMech:005883
 name: DESULFOMONILE medium
 original_name: DESULFOMONILE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:521
     label: DESULFOMONILE medium
-notes: 'Source: KOMODO ModelSEED | ID: 521 | DSMZ Medium: 521 (mediadive.medium:521) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 521 | DSMZ Medium: 521 (mediadive.medium:521)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -254,3 +256,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 521
+- timestamp: '2026-03-13T06:19:37.048402Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005883'

@@ -1,3 +1,4 @@
+id: CultureMech:000358
 name: MBBM
 original_name: MBBM
 category: bacterial
@@ -127,12 +128,12 @@ preparation_steps:
   description: Add to 1000 ml of 3N­BBM+V 1g of Bacto peptone and 5g of sucrose.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water.  For agar add 15 g per litre Bacterial Agar.\r\
-    \nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water.  For agar add 15 g per litre\
+    \ Bacterial Agar.\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
-  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \r\n\
-    following sequence:"
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
+    \ in exactly the \r\nfollowing sequence:"
 - step_number: 4
   action: FILTER_STERILIZE
   description: Filter sterile
@@ -146,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C48'
+- timestamp: '2026-03-13T06:18:54.733822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000358'

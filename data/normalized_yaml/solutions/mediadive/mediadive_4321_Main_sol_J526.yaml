@@ -1,3 +1,4 @@
+id: CultureMech:013327
 preferred_term: Main sol. J526
 term:
   id: mediadive.solution:4321
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Mix ingredients except FeSO4 x 7H2O, adjust pH to 1.2 with H2SO4
   and autoclave. Add filter-sterilized FeSO4 x 7H2O to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.715373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013327'

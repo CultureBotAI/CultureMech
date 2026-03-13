@@ -1,3 +1,4 @@
+id: CultureMech:012635
 preferred_term: Main sol. 1706
 term:
   id: mediadive.solution:3532
@@ -36,3 +37,8 @@ composition:
     label: Carbon source solution
 preparation_notes: 'For 1 l of medium combine 500 ml of solution I, 100 ml of solution
   II and 400 ml of solution III and add the following additives:'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.978622Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012635'

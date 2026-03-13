@@ -1,3 +1,4 @@
+id: CultureMech:011950
 preferred_term: Main sol. 1309
 term:
   id: mediadive.solution:2616
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: The NaCl and Na2CO3 were dissolved and autoclaved separately and
   added to the organic components at 60°C before pouring the agar medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.966707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011950'

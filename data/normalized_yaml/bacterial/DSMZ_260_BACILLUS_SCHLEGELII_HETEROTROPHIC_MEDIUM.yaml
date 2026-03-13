@@ -1,3 +1,4 @@
+id: CultureMech:001359
 name: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
 original_name: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
 category: bacterial
@@ -127,8 +128,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml amounts in Erlenmeyer
-    flasks and sterilize for 15 minutes at 121°C. Incubate without agitation at 65°C.
+  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
+    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C. Incubate without
+    agitation at 65°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -136,3 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 260'
+- timestamp: '2026-03-13T06:19:03.383227Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001359'

@@ -1,3 +1,4 @@
+id: CultureMech:010523
 name: 2% MALT AGAR
 original_name: 2% MALT AGAR
 category: fungal
@@ -33,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J38'
+- timestamp: '2026-03-13T06:20:14.223404Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010523'

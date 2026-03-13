@@ -1,3 +1,4 @@
+id: CultureMech:014937
 preferred_term: Vitamin mix
 term:
   id: mediadive.solution:6245
@@ -51,3 +52,8 @@ composition:
     label: nicotinamide
     confidence: 1.0
     match_type: exact_match
+curation_history:
+- timestamp: '2026-03-13T06:20:40.088409Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014937'

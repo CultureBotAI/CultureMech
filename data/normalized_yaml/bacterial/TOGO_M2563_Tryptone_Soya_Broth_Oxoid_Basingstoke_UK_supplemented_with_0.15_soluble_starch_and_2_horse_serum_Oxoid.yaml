@@ -1,7 +1,8 @@
-name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble starch and 2% horse
-  serum (Oxoid)
-original_name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble starch and
-  2% horse serum (Oxoid)
+id: CultureMech:009132
+name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble
+  starch and 2% horse serum (Oxoid)
+original_name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15%
+  soluble starch and 2% horse serum (Oxoid)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -10,7 +11,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -38,8 +40,8 @@ media_term:
   preferred_term: TOGO Medium M2563
   term:
     id: TOGO:M2563
-    label: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble starch and 2%
-      horse serum (Oxoid)
+    label: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble
+      starch and 2% horse serum (Oxoid)
 notes: 'Source: https://togomedium.org/medium/M2563'
 applications:
 - Microbial cultivation
@@ -56,3 +58,7 @@ curation_history:
   date: '2026-02-03T11:20:54.502159'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:03.086597Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009132'

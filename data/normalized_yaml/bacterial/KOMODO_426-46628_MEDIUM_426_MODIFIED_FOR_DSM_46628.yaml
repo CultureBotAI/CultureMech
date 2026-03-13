@@ -1,3 +1,4 @@
+id: CultureMech:005251
 name: MEDIUM 426 MODIFIED FOR DSM 46628
 original_name: MEDIUM 426 MODIFIED FOR DSM 46628
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:426_46628
     label: MEDIUM 426 MODIFIED FOR DSM 46628
-notes: 'Source: KOMODO ModelSEED | ID: 426_46628 | DSMZ Medium: 426 (mediadive.medium:426) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 426_46628 | DSMZ Medium: 426 (mediadive.medium:426)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Dextrose
   term:
@@ -55,4 +56,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 426
+- timestamp: '2026-03-13T06:19:31.315210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005251'
 ph_value: 7.8

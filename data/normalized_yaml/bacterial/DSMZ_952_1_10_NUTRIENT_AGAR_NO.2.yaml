@@ -1,3 +1,4 @@
+id: CultureMech:002130
 name: 1/10 NUTRIENT AGAR NO.2
 original_name: 1/10 NUTRIENT AGAR NO.2
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 952'
+- timestamp: '2026-03-13T06:19:10.604892Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002130'

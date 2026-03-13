@@ -1,3 +1,4 @@
+id: CultureMech:012657
 preferred_term: Main sol. 1717
 term:
   id: mediadive.solution:3554
@@ -166,3 +167,8 @@ preparation_notes: Dissolve ingredients (except carbonate, and sulfide), adjust 
   a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Filter sterilize
   vitamin solution and aseptically add 100 µl per Hungate tube. Adjust pH of the complete
   medium to 8.0, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.093020Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012657'

@@ -1,3 +1,4 @@
+id: CultureMech:014306
 preferred_term: Pyrocatechol solution
 term:
   id: mediadive.solution:5396
@@ -44,3 +45,8 @@ preparation_notes: 'Filter-sterilize. Use always freshly prepared solution prior
 
 
   Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.965324Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014306'

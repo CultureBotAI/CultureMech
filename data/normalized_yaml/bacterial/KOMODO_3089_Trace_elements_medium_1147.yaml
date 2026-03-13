@@ -1,3 +1,4 @@
+id: CultureMech:004875
 name: Trace elements (medium 1147)
 original_name: Trace elements (medium 1147)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3089
     label: Trace elements (medium 1147)
-notes: 'Source: KOMODO ModelSEED | ID: 3089 | DSMZ Medium: 3089 (mediadive.medium:3089) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3089 | DSMZ Medium: 3089 (mediadive.medium:3089)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3089'
+- timestamp: '2026-03-13T06:19:28.936685Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004875'

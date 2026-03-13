@@ -1,3 +1,4 @@
+id: CultureMech:001908
 name: MEDIUM FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS
 original_name: MEDIUM FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 774'
+- timestamp: '2026-03-13T06:19:08.323775Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001908'

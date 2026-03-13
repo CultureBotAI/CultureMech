@@ -1,3 +1,4 @@
+id: CultureMech:011681
 preferred_term: Main sol. 133
 term:
   id: mediadive.solution:229
@@ -120,3 +121,8 @@ preparation_notes: 'Dissolve ingredients, adjust pH to 7.0 and autoclave.
   per liter of medium.
 
   For chemoorganotrophic growth add 3.00 g sodium acetate and incubate under air atmosphere.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.194186Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011681'

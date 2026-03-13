@@ -1,3 +1,4 @@
+id: CultureMech:010484
 name: YEAST-PEPTONE-SUCCINATE MEDIUM
 original_name: YEAST-PEPTONE-SUCCINATE MEDIUM
 category: fungal
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 988'
+- timestamp: '2026-03-13T06:20:14.015436Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010484'

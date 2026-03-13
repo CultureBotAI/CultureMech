@@ -1,3 +1,4 @@
+id: CultureMech:011398
 preferred_term: Main sol. 971
 term:
   id: mediadive.solution:1996
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: NaCl and Na2CO3 were autoclaved separately and added to the organic
   components at 60°C before pouring the agar media. Final pH should be about 10.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.418565Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011398'

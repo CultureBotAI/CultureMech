@@ -1,3 +1,4 @@
+id: CultureMech:003240
 name: RAE MEDIUM
 original_name: RAE MEDIUM
 category: bacterial
@@ -61,8 +62,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Separately filter-sterilize glacial acetic acid and ethanol (use Teflon filters), and aseptically
-    add to the sterile medium. Final pH should be about 3.8.
+  description: Separately filter-sterilize glacial acetic acid and ethanol (use Teflon
+    filters), and aseptically add to the sterile medium. Final pH should be about
+    3.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J891'
+- timestamp: '2026-03-13T06:19:18.847735Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003240'

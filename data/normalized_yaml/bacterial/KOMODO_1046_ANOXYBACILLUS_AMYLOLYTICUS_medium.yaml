@@ -1,3 +1,4 @@
+id: CultureMech:003604
 name: ANOXYBACILLUS AMYLOLYTICUS medium
 original_name: ANOXYBACILLUS AMYLOLYTICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1046
     label: ANOXYBACILLUS AMYLOLYTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1046 | DSMZ Medium: 1046 (mediadive.medium:1046) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1046 | DSMZ Medium: 1046 (mediadive.medium:1046)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1046
+- timestamp: '2026-03-13T06:19:20.969686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003604'

@@ -1,3 +1,4 @@
+id: CultureMech:003108
 name: SYNBIOBACTERIUM KY46 MEDIUM
 original_name: SYNBIOBACTERIUM KY46 MEDIUM
 category: bacterial
@@ -50,9 +51,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium into culture vessels,
-    replace the gas phase with a N2 gas and autoclave. After cooling, aseptically and anaerobically add
-    per liter the following solution (filter-sterilized):'
+  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
+    into culture vessels, replace the gas phase with a N2 gas and autoclave. After
+    cooling, aseptically and anaerobically add per liter the following solution (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -64,3 +65,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.877730Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003108'

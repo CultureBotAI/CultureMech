@@ -1,3 +1,4 @@
+id: CultureMech:014010
 preferred_term: Main sol. J1041
 term:
   id: mediadive.solution:5098
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Adjust pH to 6.0 and autoclave. After cooling, aseptically add
   the following solutions (filter-sterilized): '
+curation_history:
+- timestamp: '2026-03-13T06:20:34.993283Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014010'

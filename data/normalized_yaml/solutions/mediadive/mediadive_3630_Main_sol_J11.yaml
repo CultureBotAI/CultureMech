@@ -1,3 +1,4 @@
+id: CultureMech:012710
 preferred_term: Main sol. J11
 term:
   id: mediadive.solution:3630
@@ -123,3 +124,8 @@ preparation_notes: 'Adjust pH to 6.0.
 
 
   Original volume: 1200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.339492Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012710'

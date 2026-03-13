@@ -1,3 +1,4 @@
+id: CultureMech:004890
 name: MEDIUM 31 MODIFIED FOR DSM 6716
 original_name: MEDIUM 31 MODIFIED FOR DSM 6716
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:31_6716
     label: MEDIUM 31 MODIFIED FOR DSM 6716
-notes: 'Source: KOMODO ModelSEED | ID: 31_6716 | DSMZ Medium: 31 (mediadive.medium:31) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 31_6716 | DSMZ Medium: 31 (mediadive.medium:31)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -51,4 +53,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 31
+- timestamp: '2026-03-13T06:19:28.968574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004890'
 ph_value: 9.7

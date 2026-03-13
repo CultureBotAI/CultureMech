@@ -1,3 +1,4 @@
+id: CultureMech:010537
 name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
 original_name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
 category: fungal
@@ -53,8 +54,8 @@ preparation_steps:
   description: Mix components, adjust pH to 9.0 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Mix components and filter-sterilize. Combine Solutions A and B aseptically and readjust
-    pH to 9.0, if necessary.
+  description: Mix components and filter-sterilize. Combine Solutions A and B aseptically
+    and readjust pH to 9.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J571'
+- timestamp: '2026-03-13T06:20:14.270830Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010537'

@@ -1,3 +1,4 @@
+id: CultureMech:002658
 name: PETROTOGA MEDIUM
 original_name: PETROTOGA MEDIUM
 category: bacterial
@@ -87,3 +88,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J300'
+- timestamp: '2026-03-13T06:19:14.822314Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002658'

@@ -1,3 +1,4 @@
+id: CultureMech:015325
 preferred_term: Main sol. 486
 term:
   id: mediadive.solution:993
@@ -118,3 +119,8 @@ preparation_notes: 'Sterilize the phosphates separately in 1/10 of medium volume
 
 
   Original volume: 1006 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.834665Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015325'

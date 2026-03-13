@@ -1,3 +1,4 @@
+id: CultureMech:011883
 preferred_term: Main sol. 1270
 term:
   id: mediadive.solution:2536
@@ -186,3 +187,8 @@ composition:
 preparation_notes: 'Adjust pH to 6.8 - 7.2.
 
   Final concentration of vitamin B12: 40 µg/L.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.592723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011883'

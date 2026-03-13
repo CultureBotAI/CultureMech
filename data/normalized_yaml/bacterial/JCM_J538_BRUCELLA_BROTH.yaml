@@ -1,3 +1,4 @@
+id: CultureMech:002886
 name: BRUCELLA BROTH
 original_name: BRUCELLA BROTH
 category: bacterial
@@ -50,7 +51,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is also available.'
+  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is
+    also available.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J538'
+- timestamp: '2026-03-13T06:19:16.337060Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002886'

@@ -1,3 +1,4 @@
+id: CultureMech:012116
 preferred_term: Main sol. 1399
 term:
   id: mediadive.solution:2837
@@ -66,3 +67,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Make up to 1000.0 ml. Adjust to pH 7.0 and sterilize by autoclaving.
   The medium may be solidified by adding 20.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.968232Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012116'

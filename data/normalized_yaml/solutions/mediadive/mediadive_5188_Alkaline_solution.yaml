@@ -1,3 +1,4 @@
+id: CultureMech:014098
 preferred_term: Alkaline solution
 term:
   id: mediadive.solution:5188
@@ -43,3 +44,8 @@ preparation_notes: 'Mix components thoroughly and filter-sterilize.
 
 
   Original volume: 300 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.569500Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014098'

@@ -1,3 +1,4 @@
+id: CultureMech:011496
 preferred_term: Main sol. 1033
 term:
   id: mediadive.solution:2098
@@ -154,3 +155,8 @@ preparation_notes: 'Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH 
   to pH 8.2 with 1 M NaOH.
 
   Autoclave at 121° C for 15 minutes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.057629Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011496'

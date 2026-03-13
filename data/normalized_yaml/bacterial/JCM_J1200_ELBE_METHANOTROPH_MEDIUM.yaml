@@ -1,3 +1,4 @@
+id: CultureMech:002369
 name: ELBE METHANOTROPH MEDIUM
 original_name: ELBE METHANOTROPH MEDIUM
 category: bacterial
@@ -160,17 +161,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. For preparation of solid medium, add 15.0 g/L agar before
-    autoclaving. After cooling to 55C, add the following solutions (autoclaved or *filter-sterilized)
-    to the medium:'
+  description: 'Mix components and autoclave. For preparation of solid medium, add
+    15.0 g/L agar before autoclaving. After cooling to 55C, add the following solutions
+    (autoclaved or *filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
-  description: Distribute the culture medium into culture tubes (leave > 80% volume of a gas phase)and
-    seal with butyl rubber stoppers. Finally, add methane to make a concentration of 50% in the gas phase
-    (by volume).
+  description: Distribute the culture medium into culture tubes (leave > 80% volume
+    of a gas phase)and seal with butyl rubber stoppers. Finally, add methane to make
+    a concentration of 50% in the gas phase (by volume).
 - step_number: 3
   action: MIX
-  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml of 1 M phosphate buffer.
+  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml
+    of 1 M phosphate buffer.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,3 +180,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1200'
+- timestamp: '2026-03-13T06:19:12.763197Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002369'

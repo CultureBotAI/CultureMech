@@ -1,3 +1,4 @@
+id: CultureMech:006179
 name: For DSM 16036, DSM 16058 and DSM 21394
 original_name: For DSM 16036, DSM 16058 and DSM 21394
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:641.2
     label: For DSM 16036, DSM 16058 and DSM 21394
-notes: 'Source: KOMODO ModelSEED | ID: 641.2 | DSMZ Medium: 641 (mediadive.medium:641) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 641.2 | DSMZ Medium: 641 (mediadive.medium:641)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.107632Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:38.872187Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006179'

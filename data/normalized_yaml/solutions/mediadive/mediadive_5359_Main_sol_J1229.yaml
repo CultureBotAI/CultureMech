@@ -1,3 +1,4 @@
+id: CultureMech:014270
 preferred_term: Main sol. J1229
 term:
   id: mediadive.solution:5359
@@ -177,3 +178,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0 with NaOH. Di
   \ 80% headspace volume of filter-sterilized H2 gas into the culture vessels. Aseptically\
   \ and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized\
   \ and stored anaerobically): \nSolution <I>A:</I> \n\nOriginal volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.725085Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014270'

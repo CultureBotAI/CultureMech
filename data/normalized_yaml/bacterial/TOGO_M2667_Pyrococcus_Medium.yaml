@@ -1,3 +1,4 @@
+id: CultureMech:009222
 name: Pyrococcus Medium
 original_name: Pyrococcus Medium
 category: bacterial
@@ -263,6 +264,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.346453Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009222'
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []

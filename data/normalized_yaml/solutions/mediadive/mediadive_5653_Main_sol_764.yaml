@@ -1,3 +1,4 @@
+id: CultureMech:014521
 preferred_term: Main sol. 764
 term:
   id: mediadive.solution:5653
@@ -163,3 +164,8 @@ preparation_notes: Prepare the medium and boil, cool under N2:CO2 (80:20 v/v). D
   medium into Hungate tubes or serum bottles under N2:CO2 (80:20 v/v), autoclave.
   To the sterile medium add from sterile stock solutions 2% Na2S x 9 H2O (0.1ml/10ml),
   10% NaHCO3 (0.5ml/10ml), and 1M glucose (0.25ml/10ml). Final pH 7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.234192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014521'

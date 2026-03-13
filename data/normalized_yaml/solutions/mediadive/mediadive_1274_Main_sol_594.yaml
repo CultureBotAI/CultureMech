@@ -1,3 +1,4 @@
+id: CultureMech:010765
 preferred_term: Main sol. 594
 term:
   id: mediadive.solution:1274
@@ -191,3 +192,8 @@ preparation_notes: 'pH 7.2
   the filter-sterilized heptadecane to the warm medium and carefully mixing so that
   the heptadecane is evenly distributed in the agar. Avoid excessive air bubble formation,
   and cool the agar slopes in a refrigerator or under an ice pack.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.402319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010765'

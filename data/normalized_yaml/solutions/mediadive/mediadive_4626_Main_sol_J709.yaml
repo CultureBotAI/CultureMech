@@ -1,3 +1,4 @@
+id: CultureMech:013587
 preferred_term: Main sol. J709
 term:
   id: mediadive.solution:4626
@@ -88,3 +89,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.178907Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013587'

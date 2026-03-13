@@ -1,3 +1,4 @@
+id: CultureMech:005965
 name: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
 original_name: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:539_replace_Cellulose_with_Cellobiose
     label: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
-notes: 'Source: KOMODO ModelSEED | ID: 539_replace_Cellulose_with_Cellobiose | DSMZ Medium: 539 (mediadive.medium:539)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 539_replace_Cellulose_with_Cellobiose | DSMZ
+  Medium: 539 (mediadive.medium:539) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -165,3 +166,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 539
+- timestamp: '2026-03-13T06:19:37.358916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005965'

@@ -1,3 +1,4 @@
+id: CultureMech:013190
 preferred_term: Main sol. J425
 term:
   id: mediadive.solution:4161
@@ -72,3 +73,8 @@ preparation_notes: 'Add components except acetate and APM salts solutions to dis
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.964866Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013190'

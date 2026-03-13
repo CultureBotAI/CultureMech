@@ -1,3 +1,4 @@
+id: CultureMech:004578
 name: POLYANGIUM MEDIUM
 original_name: POLYANGIUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:223
     label: POLYANGIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 223 | DSMZ Medium: 223 (mediadive.medium:223) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 223 | DSMZ Medium: 223 (mediadive.medium:223)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:
@@ -71,3 +73,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 223
+- timestamp: '2026-03-13T06:19:27.490657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004578'

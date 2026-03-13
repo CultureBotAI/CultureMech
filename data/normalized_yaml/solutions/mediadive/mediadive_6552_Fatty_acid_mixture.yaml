@@ -1,3 +1,4 @@
+id: CultureMech:015061
 preferred_term: Fatty acid mixture
 term:
   id: mediadive.solution:6552
@@ -67,3 +68,8 @@ preparation_notes: 'Store fatty acid mixture at -20°C.
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.584901Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015061'

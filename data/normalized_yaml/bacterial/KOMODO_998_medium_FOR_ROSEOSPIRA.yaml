@@ -1,3 +1,4 @@
+id: CultureMech:006983
 name: medium FOR ROSEOSPIRA
 original_name: medium FOR ROSEOSPIRA
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:998
     label: medium FOR ROSEOSPIRA
-notes: 'Source: KOMODO ModelSEED | ID: 998 | DSMZ Medium: 998 (mediadive.medium:998) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 998 | DSMZ Medium: 998 (mediadive.medium:998)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -174,5 +176,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.475759Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:45.433669Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006983'
 ph_value: 6.9

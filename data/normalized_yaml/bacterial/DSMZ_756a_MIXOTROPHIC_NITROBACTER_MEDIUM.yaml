@@ -1,3 +1,4 @@
+id: CultureMech:001889
 name: MIXOTROPHIC NITROBACTER MEDIUM
 original_name: MIXOTROPHIC NITROBACTER MEDIUM
 category: bacterial
@@ -111,3 +112,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 756a'
+- timestamp: '2026-03-13T06:19:08.161090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001889'

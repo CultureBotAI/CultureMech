@@ -1,3 +1,4 @@
+id: CultureMech:011487
 preferred_term: Main sol. 1029
 term:
   id: mediadive.solution:2088
@@ -19,3 +20,8 @@ preparation_notes: 'final pH 6.9
 
   Distribute into screw-capped Wheaton tubes. For anaerobic handling prepare and distribute
   into Hungate tubes by using the Hungate technique.'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.015819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011487'

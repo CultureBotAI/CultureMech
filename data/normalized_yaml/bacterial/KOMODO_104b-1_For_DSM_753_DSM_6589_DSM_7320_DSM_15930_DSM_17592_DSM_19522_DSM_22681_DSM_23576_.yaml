@@ -1,3 +1,4 @@
+id: CultureMech:003613
 name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM 22681,
   DSM 23576 and DSM 24553
 original_name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM
@@ -110,3 +111,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:21.033314Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003613'

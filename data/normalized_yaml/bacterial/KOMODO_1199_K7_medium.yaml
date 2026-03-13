@@ -1,3 +1,4 @@
+id: CultureMech:003938
 name: K7 medium
 original_name: K7 medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1199
     label: K7 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1199 | DSMZ Medium: 1199 (mediadive.medium:1199) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1199 | DSMZ Medium: 1199 (mediadive.medium:1199)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -36,3 +38,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1199
+- timestamp: '2026-03-13T06:19:23.437460Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003938'

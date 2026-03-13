@@ -1,3 +1,4 @@
+id: CultureMech:010949
 preferred_term: Main sol. 727
 term:
   id: mediadive.solution:1476
@@ -191,3 +192,8 @@ preparation_notes: "Dissolve ingredients except carbonate, vitamins and sulfide,
   \ anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions\
   \ of vitamins should be sterilized by filtration. Adjust pH of complete medium to\
   \ 7.0, if necessay.\n\nOriginal volume: 1003 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:16.623707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010949'

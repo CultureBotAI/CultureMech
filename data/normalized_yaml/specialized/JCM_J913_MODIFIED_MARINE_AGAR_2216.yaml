@@ -1,3 +1,4 @@
+id: CultureMech:015424
 name: MODIFIED MARINE AGAR 2216
 original_name: MODIFIED MARINE AGAR 2216
 category: specialized
@@ -48,3 +49,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:42.593473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015424'

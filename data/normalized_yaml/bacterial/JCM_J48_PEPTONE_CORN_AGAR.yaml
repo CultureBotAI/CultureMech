@@ -1,3 +1,4 @@
+id: CultureMech:002840
 name: PEPTONE CORN AGAR
 original_name: PEPTONE CORN AGAR
 category: bacterial
@@ -53,7 +54,8 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: Corn steep liquor, powder (Wako Pure Chemicals) may be substituted for corn steep liquor.
+  description: Corn steep liquor, powder (Wako Pure Chemicals) may be substituted
+    for corn steep liquor.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J48'
+- timestamp: '2026-03-13T06:19:16.011578Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002840'

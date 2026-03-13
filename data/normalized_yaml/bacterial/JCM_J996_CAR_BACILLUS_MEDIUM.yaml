@@ -1,3 +1,4 @@
+id: CultureMech:003345
 name: CAR BACILLUS MEDIUM
 original_name: CAR BACILLUS MEDIUM
 category: bacterial
@@ -18,15 +19,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Use the Vero E6 cell culture supernatant fluid (see below). Incubate the microorganism
-    in the supernatant fluid in a polystyrene culture flask (75 cm2 flask, canted neck, vent cap, coated
-    with Ultra-Low Attachment Surface, Corning: Cat. No. 3814) at 37C under 5% CO2.'
+  description: 'Use the Vero E6 cell culture supernatant fluid (see below). Incubate
+    the microorganism in the supernatant fluid in a polystyrene culture flask (75
+    cm2 flask, canted neck, vent cap, coated with Ultra-Low Attachment Surface, Corning:
+    Cat. No. 3814) at 37C under 5% CO2.'
 - step_number: 2
   action: MIX
-  description: 'Incubate Vero E6 cells (ATCC CRL-1586) in Iscove''s Modified Dulbecco''s Medium (IMDM,
-    GlutaMAXTM) (Life Technologies: Cat. No. 31980030) supplemented with 10% fetal bovine serum (FBS;
-    inactivated at 56C for 30 min) at 37C under 5% CO2. After cultivation, centrifuge the culture medium.
-    Use the supernatant fluid for cultivation of the microorganism as described above.'
+  description: 'Incubate Vero E6 cells (ATCC CRL-1586) in Iscove''s Modified Dulbecco''s
+    Medium (IMDM, GlutaMAXTM) (Life Technologies: Cat. No. 31980030) supplemented
+    with 10% fetal bovine serum (FBS; inactivated at 56C for 30 min) at 37C under
+    5% CO2. After cultivation, centrifuge the culture medium. Use the supernatant
+    fluid for cultivation of the microorganism as described above.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,5 +41,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.685736Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003345'
 data_quality_flags:
 - incomplete_composition

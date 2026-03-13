@@ -1,6 +1,8 @@
-name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml NAD and 15 μg/ml haemin)
-original_name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml NAD and 15 μg/ml
-  haemin)
+id: CultureMech:008781
+name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml NAD
+  and 15 μg/ml haemin)
+original_name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15
+  μg/ml NAD and 15 μg/ml haemin)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
@@ -14,7 +16,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -22,7 +25,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
 - preferred_term: Columbia agar
   concentration:
     value: '1'
@@ -31,8 +35,8 @@ media_term:
   preferred_term: TOGO Medium M2189
   term:
     id: TOGO:M2189
-    label: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml NAD and 15 μg/ml
-      haemin)
+    label: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml
+      NAD and 15 μg/ml haemin)
 notes: 'Source: https://togomedium.org/medium/M2189'
 applications:
 - Microbial cultivation
@@ -45,3 +49,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.279415Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008781'

@@ -1,3 +1,4 @@
+id: CultureMech:011867
 preferred_term: Solid media
 term:
   id: mediadive.solution:2503
@@ -90,3 +91,8 @@ composition:
 preparation_notes: "Adjust to pH 5.5 with NaOH/KOH solution (see below).\nAfter autoclaving,\
   \ keep at about 60°C, then add to each 250 ml lot: \nAutoclave in 250ml lots, with\
   \ a magnetic stirring bar in each bottle."
+curation_history:
+- timestamp: '2026-03-13T06:20:22.510787Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011867'

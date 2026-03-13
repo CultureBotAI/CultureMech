@@ -1,3 +1,4 @@
+id: CultureMech:011564
 preferred_term: Main sol. 120b
 term:
   id: mediadive.solution:216
@@ -211,3 +212,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, coenzyme M, vitami
 
 
   Original volume: 1024 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.497694Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011564'

@@ -1,3 +1,4 @@
+id: CultureMech:011348
 preferred_term: Main sol. 942
 term:
   id: mediadive.solution:1939
@@ -45,3 +46,8 @@ preparation_notes: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia
   Place three separate drops on one CaCl2-agar plate and streak every drop once to
   receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate E. coli
   lines/drops with myxobacteria.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.086772Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011348'

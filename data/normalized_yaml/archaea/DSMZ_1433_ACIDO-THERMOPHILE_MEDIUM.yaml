@@ -1,3 +1,4 @@
+id: CultureMech:000256
 name: ACIDO-THERMOPHILE MEDIUM
 original_name: ACIDO-THERMOPHILE MEDIUM
 category: archaea
@@ -82,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1433'
+- timestamp: '2026-03-13T06:18:53.820455Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000256'

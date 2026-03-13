@@ -1,3 +1,4 @@
+id: CultureMech:014475
 preferred_term: Main sol. 300
 term:
   id: mediadive.solution:5598
@@ -171,3 +172,8 @@ preparation_notes: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.
   sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
   from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
   Prior to use adjust pH of complete medium to 7.2 - 7.5.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.999192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014475'

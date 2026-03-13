@@ -1,3 +1,4 @@
+id: CultureMech:001665
 name: TRYPTICASE SOY BROTH AGAR
 original_name: TRYPTICASE SOY BROTH AGAR
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 535'
+- timestamp: '2026-03-13T06:19:06.317829Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001665'

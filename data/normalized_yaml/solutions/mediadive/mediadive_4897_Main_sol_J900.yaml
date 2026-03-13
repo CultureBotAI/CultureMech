@@ -1,3 +1,4 @@
+id: CultureMech:013825
 preferred_term: Main sol. J900
 term:
   id: mediadive.solution:4897
@@ -76,3 +77,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: For agar plates, increase pH of Tris-HCl buffer to 8.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.724171Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013825'

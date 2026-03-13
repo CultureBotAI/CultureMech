@@ -1,3 +1,4 @@
+id: CultureMech:002256
 name: ALKALIPHILUS LACT MEDIUM
 original_name: ALKALIPHILUS LACT MEDIUM
 category: bacterial
@@ -165,9 +166,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 9.0 with NaOH and autoclave under a N2 atmosphere.
-    After cooling, replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Add the following solutions
-    from sterile anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components thoroughly, adjust pH to 9.0 with NaOH and autoclave
+    under a N2 atmosphere. After cooling, replace the gas phase with a N2-CO2 (4:1,
+    v/v) gas mixture. Add the following solutions from sterile anaerobic stocks (autoclaved
+    and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
   description: Check final pH be around 8.2.
@@ -178,3 +180,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1076'
+- timestamp: '2026-03-13T06:19:11.703843Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002256'

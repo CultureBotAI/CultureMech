@@ -1,3 +1,4 @@
+id: CultureMech:011218
 preferred_term: Trace elements solution
 term:
   id: mediadive.solution:1782
@@ -113,3 +114,8 @@ composition:
     match_type: exact_match
 preparation_notes: Adjust pH of nitrilotriacetic acid in solution to 7.0 with KOH.
   Add minerals and adjust the final pH to 7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.221277Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011218'

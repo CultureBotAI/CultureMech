@@ -1,3 +1,4 @@
+id: CultureMech:005066
 name: CELLULOMONAS FERMENTANS medium
 original_name: CELLULOMONAS FERMENTANS medium
 category: bacterial
@@ -106,3 +107,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:29.907055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005066'

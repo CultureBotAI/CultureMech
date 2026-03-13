@@ -1,3 +1,4 @@
+id: CultureMech:002897
 name: POTATO-CARROT AGAR
 original_name: POTATO-CARROT AGAR
 category: bacterial
@@ -30,8 +31,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil potatoes and carrots until cooked, filter through cheesecloth, make up volume to 1.0
-    L and add agar.
+  description: Boil potatoes and carrots until cooked, filter through cheesecloth,
+    make up volume to 1.0 L and add agar.
 - step_number: 2
   action: MIX
   description: pH unadjusted.
@@ -42,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J54'
+- timestamp: '2026-03-13T06:19:16.421899Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002897'

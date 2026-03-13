@@ -1,3 +1,4 @@
+id: CultureMech:003123
 name: PATEL LABORATORY MEDIUM WITH GLYCERIN
 original_name: PATEL LABORATORY MEDIUM WITH GLYCERIN
 category: bacterial
@@ -24,3 +25,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J780'
+- timestamp: '2026-03-13T06:19:17.980104Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003123'

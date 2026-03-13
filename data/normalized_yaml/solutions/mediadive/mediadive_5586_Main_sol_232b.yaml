@@ -1,3 +1,4 @@
+id: CultureMech:014464
 preferred_term: Main sol. 232b
 term:
   id: mediadive.solution:5586
@@ -139,3 +140,8 @@ preparation_notes: 'Adjust pH to 6.2 - 6.5.
 
   Add 4 ml Resazurin solution (25 mg/100 ml). 0.05% Cysteine-hydrochloride is added
   after the medium has been boiled and cooled and CO2. Distribute under N2 and autoclave.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.947438Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014464'

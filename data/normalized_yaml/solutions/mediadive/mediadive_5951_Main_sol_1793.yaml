@@ -1,3 +1,4 @@
+id: CultureMech:014705
 preferred_term: Main sol. 1793
 term:
   id: mediadive.solution:5951
@@ -40,3 +41,8 @@ preparation_notes: 'Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. 
 
 
   Original volume: 607 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.165086Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014705'

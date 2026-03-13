@@ -1,3 +1,4 @@
+id: CultureMech:013518
 preferred_term: Main sol. J662
 term:
   id: mediadive.solution:4550
@@ -69,3 +70,8 @@ preparation_notes: 'Adjust pH to 7.0.
   peptone, yeast extract and glucose solutions and add to the sterile Sea salts solution.
   Make the liquid medium anaerobic by repeated cycles (three times) of degassing and
   charging with argon.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.765240Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013518'

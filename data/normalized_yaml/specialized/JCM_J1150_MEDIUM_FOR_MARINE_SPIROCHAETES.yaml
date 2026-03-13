@@ -1,3 +1,4 @@
+id: CultureMech:015386
 name: MEDIUM FOR MARINE SPIROCHAETES
 original_name: MEDIUM FOR MARINE SPIROCHAETES
 category: specialized
@@ -235,9 +236,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down under a N2-CO2 (4:1,
-    v/v) gas stream. Distribute the medium into culture vessels under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. Add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down
+    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave. Add
+    per liter the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,3 +247,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1150'
+- timestamp: '2026-03-13T06:20:42.337189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015386'

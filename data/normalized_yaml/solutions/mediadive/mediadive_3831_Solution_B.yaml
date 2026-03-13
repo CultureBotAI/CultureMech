@@ -1,3 +1,4 @@
+id: CultureMech:012908
 preferred_term: Solution B
 term:
   id: mediadive.solution:3831
@@ -46,3 +47,8 @@ preparation_notes: 'Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration t
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.261559Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012908'

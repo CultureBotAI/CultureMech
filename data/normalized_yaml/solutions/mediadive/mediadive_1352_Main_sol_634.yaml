@@ -1,3 +1,4 @@
+id: CultureMech:010835
 preferred_term: Main sol. 634
 term:
   id: mediadive.solution:1352
@@ -32,3 +33,8 @@ preparation_notes: Dissolve dehydrated RCM medium (available from BD-BBL, OXOID 
   to the boil and cool to room temperature while sparging with 100% N2 gas. Dispense
   medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and
   autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.829902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010835'

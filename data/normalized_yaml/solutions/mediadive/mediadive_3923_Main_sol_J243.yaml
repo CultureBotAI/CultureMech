@@ -1,3 +1,4 @@
+id: CultureMech:012988
 preferred_term: Main sol. J243
 term:
   id: mediadive.solution:3923
@@ -148,3 +149,8 @@ preparation_notes: 'Mix ingredients, except Trace vitamins, KHCO3, L-cysteine x 
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.762175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012988'

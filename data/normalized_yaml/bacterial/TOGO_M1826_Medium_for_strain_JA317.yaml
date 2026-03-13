@@ -1,3 +1,4 @@
+id: CultureMech:008398
 name: Medium for strain JA317
 original_name: Medium for strain JA317
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -37,7 +41,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
@@ -45,7 +50,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -83,3 +89,7 @@ curation_history:
   date: '2026-02-03T11:20:50.055960'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-03-13T06:19:56.447992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008398'

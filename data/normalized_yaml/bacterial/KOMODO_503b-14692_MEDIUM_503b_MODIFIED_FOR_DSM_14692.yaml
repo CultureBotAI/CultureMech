@@ -1,3 +1,4 @@
+id: CultureMech:005681
 name: MEDIUM 503b MODIFIED FOR DSM 14692
 original_name: MEDIUM 503b MODIFIED FOR DSM 14692
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:503b_14692
     label: MEDIUM 503b MODIFIED FOR DSM 14692
-notes: 'Source: KOMODO ModelSEED | ID: 503b_14692 | DSMZ Medium: 503b (mediadive.medium:503b) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 503b_14692 | DSMZ Medium: 503b (mediadive.medium:503b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -222,3 +223,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 503
+- timestamp: '2026-03-13T06:19:35.268201Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005681'

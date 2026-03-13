@@ -1,3 +1,4 @@
+id: CultureMech:007142
 name: M9 with 3.35% zinc sulfate; Park et al
 original_name: M9 with 3.35% zinc sulfate; Park et al
 category: bacterial
@@ -68,6 +69,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 245, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.416916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007142'
 media_term:
   preferred_term: MediaDB Medium 245
   term:

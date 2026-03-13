@@ -1,3 +1,4 @@
+id: CultureMech:012261
 preferred_term: ' Vitamin mix (pfennig & Lippert,1966)'
 term:
   id: mediadive.solution:3031
@@ -115,3 +116,8 @@ preparation_notes: "1: acidic solution (HCl, pH3; 100ml) \n2: basic solution (10
   \ 0.1N NaOH) \n3: Neutral solution in 100 ml demi water \n4: neutral solution in\
   \ 100 ml demi water \nSterilize by filtration.\nMix 1:1:1:1 just after addition\
   \ or add separatlely, each 1ml/L.\n\nOriginal volume: 400 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:24.852368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012261'

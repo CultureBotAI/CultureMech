@@ -1,3 +1,4 @@
+id: CultureMech:003247
 name: THERMOBACTER ROSEUM MEDIUM
 original_name: THERMOBACTER ROSEUM MEDIUM
 category: bacterial
@@ -213,8 +214,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 gas atmosphere. Aseptically and anaerobically
-    add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2 gas atmosphere.
+    Aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Check pH to be 7.5 - 7.6.
@@ -229,3 +230,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:18.900585Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003247'

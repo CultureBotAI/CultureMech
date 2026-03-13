@@ -1,3 +1,4 @@
+id: CultureMech:011006
 preferred_term: Main sol. 754
 term:
   id: mediadive.solution:1540
@@ -41,3 +42,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: Adjust pH to 7.5 with KOH and autoclave at 121°C for 15 minutes.
   After sterilization add 20 ml of a 25% maltose (filter-sterilized) solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.944504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011006'

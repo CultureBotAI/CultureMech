@@ -1,3 +1,4 @@
+id: CultureMech:012674
 preferred_term: Vitamin B12 solution 0.02 g/L
 term:
   id: mediadive.solution:3575
@@ -31,3 +32,8 @@ preparation_notes: 'Filtrate (filter sterilze).
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.180811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012674'

@@ -1,3 +1,4 @@
+id: CultureMech:012596
 preferred_term: Main sol. 1682
 term:
   id: mediadive.solution:3476
@@ -67,3 +68,8 @@ composition:
 preparation_notes: Dissolve the ingredients in 500 mL distilled water and adjust pH
   to 4.0 and autoclave. Dissolve 20 g agar in 500 mL distilled water and autoclave.
   Combine both after autoclavation.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.779569Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012596'

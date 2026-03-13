@@ -1,3 +1,4 @@
+id: CultureMech:013834
 preferred_term: Main sol. J904
 term:
   id: mediadive.solution:4905
@@ -103,3 +104,8 @@ preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.
   pH to 7.0 - 7.2.
 
   For preparation of solid medium, add 20.0 g/L agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.774748Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013834'

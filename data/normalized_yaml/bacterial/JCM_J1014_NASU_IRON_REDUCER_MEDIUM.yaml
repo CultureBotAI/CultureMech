@@ -1,3 +1,4 @@
+id: CultureMech:002199
 name: NASU IRON REDUCER MEDIUM
 original_name: NASU IRON REDUCER MEDIUM
 category: bacterial
@@ -176,14 +177,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 6.0. Autoclave under a N2-CO2 (4:1, v/v) gas
-    mixture. After cooling, add the following solutions anaerobically and aseptically (autoclaved or *filter-sterilized
-    and store under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 6.0. Autoclave under a
+    N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions anaerobically
+    and aseptically (autoclaved or *filter-sterilized and store under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until dissolved. Cool to
-    an ambient temperature and adjust pH to 6.0 with 10 N NaOH solution. Fill up to 100 ml with distilled
-    water.
+  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until
+    dissolved. Cool to an ambient temperature and adjust pH to 6.0 with 10 N NaOH
+    solution. Fill up to 100 ml with distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +192,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1014'
+- timestamp: '2026-03-13T06:19:11.184373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002199'

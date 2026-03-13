@@ -1,3 +1,4 @@
+id: CultureMech:003228
 name: SALT GLUCOSE AGAR (SGA)
 original_name: SALT GLUCOSE AGAR (SGA)
 category: bacterial
@@ -42,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J880'
+- timestamp: '2026-03-13T06:19:18.756642Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003228'

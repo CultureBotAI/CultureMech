@@ -1,3 +1,4 @@
+id: CultureMech:012661
 preferred_term: Main sol. 1721
 term:
   id: mediadive.solution:3559
@@ -60,3 +61,8 @@ preparation_notes: 'Prepare the medium under an atmosphere of H2/CO2 (80:20) wit
   Increase the 80% H2 + 20% CO2 gas phase pressure to 0.3 MPa.
 
   Adjust pH strain-specifically.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.120920Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012661'

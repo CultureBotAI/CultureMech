@@ -1,3 +1,4 @@
+id: CultureMech:011805
 preferred_term: Main sol. 1220
 term:
   id: mediadive.solution:2427
@@ -96,3 +97,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust to pH 5.0 - 5.5. Agar may be added at 15 g/l for solid media.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.048652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011805'

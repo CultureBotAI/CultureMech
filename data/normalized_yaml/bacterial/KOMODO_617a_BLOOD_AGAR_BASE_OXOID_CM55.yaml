@@ -1,3 +1,4 @@
+id: CultureMech:006111
 name: BLOOD AGAR BASE (OXOID CM55)
 original_name: BLOOD AGAR BASE (OXOID CM55)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:617a
     label: BLOOD AGAR BASE (OXOID CM55)
-notes: 'Source: KOMODO ModelSEED | ID: 617a | DSMZ Medium: 617a (mediadive.medium:617a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 617a | DSMZ Medium: 617a (mediadive.medium:617a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 617
+- timestamp: '2026-03-13T06:19:38.358821Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006111'

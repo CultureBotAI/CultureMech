@@ -1,3 +1,4 @@
+id: CultureMech:001540
 name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
 original_name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
 category: bacterial
@@ -189,7 +190,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 8.7, filter sterilize and add appropriate amount of Na2S solution.
+  description: Adjust pH to 8.7, filter sterilize and add appropriate amount of Na2S
+    solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.0 - 3.0.
@@ -200,3 +202,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 431'
+- timestamp: '2026-03-13T06:19:05.061242Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001540'

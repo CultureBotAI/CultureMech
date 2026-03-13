@@ -1,3 +1,4 @@
+id: CultureMech:000885
 name: NATRONORUBRUM THIOOXIDANS MEDIUM
 original_name: NATRONORUBRUM THIOOXIDANS MEDIUM
 category: bacterial
@@ -127,4 +128,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:18:59.224179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000885'
 high_metal: true

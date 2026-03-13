@@ -1,3 +1,4 @@
+id: CultureMech:014431
 preferred_term: Main sol. 31
 term:
   id: mediadive.solution:5552
@@ -57,3 +58,8 @@ preparation_notes: 'For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is 
 
   After sterilization add sterile 1 M Na-sesquicarbonate solution (1 ml in 10 ml)  to
   achieve a pH of 9.7'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.762993Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014431'

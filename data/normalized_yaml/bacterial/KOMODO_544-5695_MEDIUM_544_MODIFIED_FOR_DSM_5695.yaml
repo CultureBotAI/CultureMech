@@ -1,3 +1,4 @@
+id: CultureMech:005972
 name: MEDIUM 544 MODIFIED FOR DSM 5695
 original_name: MEDIUM 544 MODIFIED FOR DSM 5695
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:544_5695
     label: MEDIUM 544 MODIFIED FOR DSM 5695
-notes: 'Source: KOMODO ModelSEED | ID: 544_5695 | DSMZ Medium: 544 (mediadive.medium:544) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 544_5695 | DSMZ Medium: 544 (mediadive.medium:544)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein hydrolysate
   concentration:
@@ -57,4 +59,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 544
+- timestamp: '2026-03-13T06:19:37.412066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005972'
 ph_value: 7.5

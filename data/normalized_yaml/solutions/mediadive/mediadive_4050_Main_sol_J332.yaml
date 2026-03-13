@@ -1,3 +1,4 @@
+id: CultureMech:013104
 preferred_term: Main sol. J332
 term:
   id: mediadive.solution:4050
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust pH to 7.0.
 
   Where necessary, put a piece of sterilized filter paper (ca. 1 x 2 cm) or carnation
   leaf on the agar medium and incubate cultures under near-UV light for sporulation.'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.431614Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013104'

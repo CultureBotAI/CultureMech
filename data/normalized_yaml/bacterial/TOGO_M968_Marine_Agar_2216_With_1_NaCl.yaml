@@ -1,3 +1,4 @@
+id: CultureMech:010393
 name: Marine Agar 2216 With 1% NaCl
 original_name: Marine Agar 2216 With 1% NaCl
 category: bacterial
@@ -38,6 +39,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.507757Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010393'
 solutions:
 - preferred_term: Marine agar 2216 (see Medium [M110])
   composition: []

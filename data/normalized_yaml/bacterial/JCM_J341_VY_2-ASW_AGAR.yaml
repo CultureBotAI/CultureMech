@@ -1,3 +1,4 @@
+id: CultureMech:002701
 name: VY/2-ASW AGAR
 original_name: VY/2-ASW AGAR
 category: bacterial
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J341'
+- timestamp: '2026-03-13T06:19:15.118311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002701'

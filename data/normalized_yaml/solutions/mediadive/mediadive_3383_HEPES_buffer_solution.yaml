@@ -1,3 +1,4 @@
+id: CultureMech:012529
 preferred_term: HEPES buffer solution
 term:
   id: mediadive.solution:3383
@@ -41,3 +42,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH
   to 7.5 and fill up to 1000 ml volume.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.377685Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012529'

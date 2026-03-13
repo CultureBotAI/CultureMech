@@ -1,3 +1,4 @@
+id: CultureMech:006867
 name: LACTOBACILLUS medium II
 original_name: LACTOBACILLUS medium II
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:93
     label: LACTOBACILLUS medium II
-notes: 'Source: KOMODO ModelSEED | ID: 93 | DSMZ Medium: 93 (mediadive.medium:93) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 93 | DSMZ Medium: 93 (mediadive.medium:93)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -111,3 +113,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 93
+- timestamp: '2026-03-13T06:19:44.468643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006867'

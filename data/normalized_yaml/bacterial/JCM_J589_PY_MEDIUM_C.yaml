@@ -1,3 +1,4 @@
+id: CultureMech:002936
 name: PY MEDIUM (C)
 original_name: PY MEDIUM (C)
 category: bacterial
@@ -77,8 +78,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically and anaerobically
-    add the following solutions (autoclaved under a N2 atmosphere) to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically
+    and anaerobically add the following solutions (autoclaved under a N2 atmosphere)
+    to the medium:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -86,3 +88,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J589'
+- timestamp: '2026-03-13T06:19:16.672825Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002936'

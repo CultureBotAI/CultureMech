@@ -1,3 +1,4 @@
+id: CultureMech:012760
 preferred_term: Main sol. J54
 term:
   id: mediadive.solution:3678
@@ -52,3 +53,8 @@ preparation_notes: 'Boil potatoes and carrots until cooked, filter through chees
   make up volume to 1.0 L and add agar.
 
   pH unadjusted.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.553551Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012760'

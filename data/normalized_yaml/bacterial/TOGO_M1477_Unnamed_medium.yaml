@@ -1,3 +1,4 @@
+id: CultureMech:008020
 name: TOGO Medium M1477
 original_name: (Unnamed medium)
 category: bacterial
@@ -116,4 +117,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:53.040812Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008020'
 high_metal: true

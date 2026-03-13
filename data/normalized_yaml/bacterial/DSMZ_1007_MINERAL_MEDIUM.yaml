@@ -1,3 +1,4 @@
+id: CultureMech:000423
 name: MINERAL MEDIUM
 original_name: MINERAL MEDIUM
 category: bacterial
@@ -109,3 +110,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1007'
+- timestamp: '2026-03-13T06:18:55.138343Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000423'

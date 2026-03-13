@@ -1,3 +1,4 @@
+id: CultureMech:001471
 name: THIOBACILLUS MEDIUM
 original_name: THIOBACILLUS MEDIUM
 category: bacterial
@@ -78,8 +79,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6. Dispense in suitable
-    culivation vials and autoclave. Add thiosulfate to the autoclaved medium from a sterile stock solution.
+  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6. Dispense
+    in suitable culivation vials and autoclave. Add thiosulfate to the autoclaved
+    medium from a sterile stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +89,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 36'
+- timestamp: '2026-03-13T06:19:04.424639Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001471'

@@ -1,3 +1,4 @@
+id: CultureMech:001512
 name: ALICYCLOBACILLUS MEDIUM
 original_name: ALICYCLOBACILLUS MEDIUM
 category: bacterial
@@ -108,9 +109,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Sterilize separately. For liquid medium combine solution A (with 1000.0 ml distilled water)
-    and solution B. For solid medium combine solution A (with 500 ml distilled water), solution B and
-    solution C. For strains of A. cycloheptanicus add 5 g/l of yeast extract instead of 2 g/l.
+  description: Sterilize separately. For liquid medium combine solution A (with 1000.0
+    ml distilled water) and solution B. For solid medium combine solution A (with
+    500 ml distilled water), solution B and solution C. For strains of A. cycloheptanicus
+    add 5 g/l of yeast extract instead of 2 g/l.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 4.0
@@ -121,3 +123,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 402'
+- timestamp: '2026-03-13T06:19:04.833801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001512'

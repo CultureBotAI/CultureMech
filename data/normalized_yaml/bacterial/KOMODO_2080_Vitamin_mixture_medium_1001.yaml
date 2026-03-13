@@ -1,3 +1,4 @@
+id: CultureMech:004358
 name: Vitamin mixture (medium 1001)
 original_name: Vitamin mixture (medium 1001)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2080
     label: Vitamin mixture (medium 1001)
-notes: 'Source: KOMODO ModelSEED | ID: 2080 | DSMZ Medium: 2080 (mediadive.medium:2080) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2080 | DSMZ Medium: 2080 (mediadive.medium:2080)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2080'
+- timestamp: '2026-03-13T06:19:26.667650Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004358'

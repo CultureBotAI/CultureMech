@@ -1,3 +1,4 @@
+id: CultureMech:001325
 name: AZOSPIRILLUM MEDIUM
 original_name: AZOSPIRILLUM MEDIUM
 category: bacterial
@@ -103,8 +104,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH of the medium to 7.1. Add 1.5% agar if needed. Autoclave for 15 min at 121°C.
-    After sterilization add 25 ml each of filter-sterilized 20% glucose and 20% Na-malate.
+  description: Adjust pH of the medium to 7.1. Add 1.5% agar if needed. Autoclave
+    for 15 min at 121°C. After sterilization add 25 ml each of filter-sterilized 20%
+    glucose and 20% Na-malate.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +114,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 221'
+- timestamp: '2026-03-13T06:19:03.205299Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001325'

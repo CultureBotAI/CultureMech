@@ -1,3 +1,4 @@
+id: CultureMech:001390
 name: PYROBACULUM NEUTROPHILUM MEDIUM
 original_name: PYROBACULUM NEUTROPHILUM MEDIUM
 category: bacterial
@@ -116,18 +117,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.5 with NaOH, bring to boil for 5 min, then cool to room temperature under
-    H2 + CO2 (80% + 20%) gas mixture. Add 0.85 g NaHCO3 per liter and equilibrate the pH to c. 6.5 by
-    further gassing.
+  description: Adjust pH to 6.5 with NaOH, bring to boil for 5 min, then cool to room
+    temperature under H2 + CO2 (80% + 20%) gas mixture. Add 0.85 g NaHCO3 per liter
+    and equilibrate the pH to c. 6.5 by further gassing.
 - step_number: 2
   action: POUR_PLATES
-  description: Dispense in serum bottles (10 ml/30 ml bottle), seal and heat the bottles for one hour
-    at 85°C on each of three successive days.
+  description: Dispense in serum bottles (10 ml/30 ml bottle), seal and heat the bottles
+    for one hour at 85°C on each of three successive days.
 - step_number: 3
   action: MIX
-  description: Before inoculation, add from anaerobic stock solutions 0.02% yeast extract (for mixotrophic
-    growth only) and neutralized Na2S x 9 H2O solution, 10% (w/v). After inoculation, pressurize to 1
-    bar H2 + CO2 overpressure.
+  description: Before inoculation, add from anaerobic stock solutions 0.02% yeast
+    extract (for mixotrophic growth only) and neutralized Na2S x 9 H2O solution, 10%
+    (w/v). After inoculation, pressurize to 1 bar H2 + CO2 overpressure.
 - step_number: 4
   action: MIX
   description: 'Prepare medium, then add per liter:'
@@ -144,3 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 291'
+- timestamp: '2026-03-13T06:19:03.666663Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001390'

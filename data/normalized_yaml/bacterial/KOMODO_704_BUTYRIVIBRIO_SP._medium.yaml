@@ -1,3 +1,4 @@
+id: CultureMech:006335
 name: BUTYRIVIBRIO SP. medium
 original_name: BUTYRIVIBRIO SP. medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:704
     label: BUTYRIVIBRIO SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 704 | DSMZ Medium: 704 (mediadive.medium:704) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 704 | DSMZ Medium: 704 (mediadive.medium:704)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -194,3 +196,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 704
+- timestamp: '2026-03-13T06:19:39.832306Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006335'

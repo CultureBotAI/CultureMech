@@ -1,3 +1,4 @@
+id: CultureMech:002405
 name: THERMOPLASMA KAMCHATKENSIS MEDIUM
 original_name: THERMOPLASMA KAMCHATKENSIS MEDIUM
 category: bacterial
@@ -60,11 +61,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except sulfur, yeast extract and sucrose, adjust pH to 2.5 with 10 N H2SO4
-    and autoclave. Separately autoclave yeast extract and sucrose and add to the medium. Steam sulfur
-    for 3 hr on each of 3 successive days. Aseptically distribute the medium into culture vessels (e.g.,
-    10 ml in Balch tubes) containing appropriate amount of sulfur, replace gas phase with a N2-CO2 (4:1,
-    v/v) gas mixture and seal with butyl rubber stoppers.
+  description: Mix components except sulfur, yeast extract and sucrose, adjust pH
+    to 2.5 with 10 N H2SO4 and autoclave. Separately autoclave yeast extract and sucrose
+    and add to the medium. Steam sulfur for 3 hr on each of 3 successive days. Aseptically
+    distribute the medium into culture vessels (e.g., 10 ml in Balch tubes) containing
+    appropriate amount of sulfur, replace gas phase with a N2-CO2 (4:1, v/v) gas mixture
+    and seal with butyl rubber stoppers.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +74,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1239'
+- timestamp: '2026-03-13T06:19:13.041342Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002405'

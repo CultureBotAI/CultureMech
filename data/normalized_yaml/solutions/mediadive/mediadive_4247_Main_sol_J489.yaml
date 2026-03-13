@@ -1,3 +1,4 @@
+id: CultureMech:013261
 preferred_term: Main sol. J489
 term:
   id: mediadive.solution:4247
@@ -105,3 +106,8 @@ preparation_notes: Mix components except urea and sodium thioglycolate, bring to
   the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
   add 10% urea solution (filter-sterilized and stored under a N2 gas atmosphere) to
   the medium and adjust pH to 7.4.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.368116Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013261'

@@ -1,3 +1,4 @@
+id: CultureMech:002426
 name: LSR1 MEDIUM
 original_name: LSR1 MEDIUM
 category: bacterial
@@ -146,8 +147,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a microaerophilic atmosphere (1.0 - 3.0%
-    O2 in N2). Aseptically add per liter the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a microaerophilic atmosphere
+    (1.0 - 3.0% O2 in N2). Aseptically add per liter the following solutions (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -155,3 +156,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1260'
+- timestamp: '2026-03-13T06:19:13.231178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002426'

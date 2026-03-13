@@ -1,3 +1,4 @@
+id: CultureMech:000513
 name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
 original_name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
 category: bacterial
@@ -47,8 +48,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add all components except sterile supplement; adjust pH to 7.6 + 0.2. Autoclave at 121°C
-    for 15 minutes; add aseptically sterile supplement.
+  description: Add all components except sterile supplement; adjust pH to 7.6 + 0.2.
+    Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.
 - step_number: 2
   action: AUTOCLAVE
   description: Adjust pH to 7.0 + 0.2 and autoclave at 121°C for 15 minutes.
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1079'
+- timestamp: '2026-03-13T06:18:55.967913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000513'

@@ -1,3 +1,4 @@
+id: CultureMech:005285
 name: MITSUOKELLA DENTALIS medium
 original_name: MITSUOKELLA DENTALIS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:437
     label: MITSUOKELLA DENTALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 437 | DSMZ Medium: 437 (mediadive.medium:437) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 437 | DSMZ Medium: 437 (mediadive.medium:437)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -124,3 +126,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 437
+- timestamp: '2026-03-13T06:19:31.511216Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005285'

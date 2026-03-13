@@ -1,3 +1,4 @@
+id: CultureMech:007188
 name: Song cdm
 original_name: Song cdm
 category: bacterial
@@ -119,8 +120,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:45.256139Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 288, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 288, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:39.154155Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -128,16 +129,22 @@ curation_history:
 - curator: schema-defaulter-v1.0
   timestamp: '2026-02-03T11:20:44.142114'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: L-Methionine; Added default concentration for ingredient:
-    L-Cysteine; Added default concentration for ingredient: dTMP; Added default concentration for ingredient:
-    Calcium pantothenate; Added default concentration for ingredient: Pyridoxine HCl; Added default concentration
+  notes: 'Added default concentration for ingredient: L-Methionine; Added default
+    concentration for ingredient: L-Cysteine; Added default concentration for ingredient:
+    dTMP; Added default concentration for ingredient: Calcium pantothenate; Added
+    default concentration for ingredient: Pyridoxine HCl; Added default concentration
     for ingredient: Thiamine HCl'
+- timestamp: '2026-03-13T06:19:46.683095Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007188'
 media_term:
   preferred_term: MediaDB Medium 288
   term:
     id: MEDIADB:288
     label: Song cdm
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

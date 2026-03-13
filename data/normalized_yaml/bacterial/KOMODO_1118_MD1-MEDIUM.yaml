@@ -1,3 +1,4 @@
+id: CultureMech:003820
 name: MD1-MEDIUM
 original_name: MD1-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1118
     label: MD1-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1118 | DSMZ Medium: 1118 (mediadive.medium:1118) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1118 | DSMZ Medium: 1118 (mediadive.medium:1118)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -110,3 +112,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1118
+- timestamp: '2026-03-13T06:19:22.504942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003820'

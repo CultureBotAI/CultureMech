@@ -1,3 +1,4 @@
+id: CultureMech:001278
 name: Medium MYGS
 original_name: Medium MYGS
 category: bacterial
@@ -228,15 +229,15 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: Agar und die restlichen Bestandteile getrennt autoklavieren (20 g Agar in 500 ml dest.
-    H2O + Rest der Zutaten in 440 ml dest. H2O)
+  description: Agar und die restlichen Bestandteile getrennt autoklavieren (20 g Agar
+    in 500 ml dest. H2O + Rest der Zutaten in 440 ml dest. H2O)
 - step_number: 3
   action: MIX
   description: Vitaminlösung erst nach dem Autoklavieren dazugeben
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 5
   action: FILTER_STERILIZE
   description: Filter sterilize the solution.
@@ -251,3 +252,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:02.775630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001278'

@@ -1,3 +1,4 @@
+id: CultureMech:008446
 name: Nitrate mineral salts medium (NMS) + 0.01% Tryptone
 original_name: Nitrate mineral salts medium (NMS) + 0.01% Tryptone
 category: bacterial
@@ -194,6 +195,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:56.944159Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008446'
 high_metal: true
 solutions:
 - preferred_term: Chelated Iron Solution*

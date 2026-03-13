@@ -1,3 +1,4 @@
+id: CultureMech:012336
 preferred_term: Main sol. 1508
 term:
   id: mediadive.solution:3116
@@ -158,3 +159,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, pyruvate, thiosulfate
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.272038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012336'

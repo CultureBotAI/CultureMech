@@ -1,3 +1,4 @@
+id: CultureMech:001185
 name: YMA modified
 original_name: YMA modified
 category: bacterial
@@ -68,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1704'
+- timestamp: '2026-03-13T06:19:02.007187Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001185'

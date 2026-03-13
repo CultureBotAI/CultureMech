@@ -1,3 +1,4 @@
+id: CultureMech:010671
 preferred_term: Main sol. 530
 term:
   id: mediadive.solution:1175
@@ -68,3 +69,8 @@ preparation_notes: 'Adjust pH to 5.5.
   Sterilize Na-Thioglycolate separately by filtration.
 
   Optimal pO2 for growth on solid media is 0.03 - 0.08 atm.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.959963Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010671'

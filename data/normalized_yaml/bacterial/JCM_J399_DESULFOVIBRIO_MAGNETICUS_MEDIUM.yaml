@@ -1,3 +1,4 @@
+id: CultureMech:002755
 name: DESULFOVIBRIO MAGNETICUS MEDIUM
 original_name: DESULFOVIBRIO MAGNETICUS MEDIUM
 category: bacterial
@@ -217,8 +218,8 @@ preparation_steps:
   description: Adjust pH to 7.0. Prepare medium anaerobically under a N2 gas atmosphere.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -226,3 +227,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J399'
+- timestamp: '2026-03-13T06:19:15.502274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002755'

@@ -1,3 +1,4 @@
+id: CultureMech:004575
 name: CASO AGAR (Merck 105458)
 original_name: CASO AGAR (Merck 105458)
 category: bacterial
@@ -66,3 +67,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:27.475651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004575'

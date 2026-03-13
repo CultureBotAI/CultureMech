@@ -1,3 +1,4 @@
+id: CultureMech:003529
 name: HALOFERAX SULFURIFONTIS medium
 original_name: HALOFERAX SULFURIFONTIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1018
     label: HALOFERAX SULFURIFONTIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1018 | DSMZ Medium: 1018 (mediadive.medium:1018) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1018 | DSMZ Medium: 1018 (mediadive.medium:1018)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -62,3 +64,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1018
+- timestamp: '2026-03-13T06:19:20.458370Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003529'

@@ -1,3 +1,4 @@
+id: CultureMech:014566
 preferred_term: Acidic trace metals (Pfennig & Lippert, 1965)
 term:
   id: mediadive.solution:5704
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: adjust pH to 3-4 with HCl; autoclave in closed bottles, 120°C,
   20 min.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.447602Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014566'

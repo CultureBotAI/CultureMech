@@ -1,3 +1,4 @@
+id: CultureMech:010454
 name: Glycerol-Yeast extract-Peptone Medium
 original_name: Glycerol-Yeast extract-Peptone Medium
 category: fungal
@@ -226,8 +227,8 @@ preparation_steps:
   description: Adjust to pH 7.2
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -238,4 +239,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:57.061279Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:13.891286Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010454'

@@ -1,3 +1,4 @@
+id: CultureMech:008703
 name: Modified WS medium 2
 original_name: Modified WS medium 2
 category: bacterial
@@ -326,6 +327,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:59.549786Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008703'
 solutions:
 - preferred_term: Vitamin solution*
   term:

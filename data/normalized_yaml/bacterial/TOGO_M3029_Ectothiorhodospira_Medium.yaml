@@ -1,3 +1,4 @@
+id: CultureMech:009540
 name: Ectothiorhodospira Medium
 original_name: Ectothiorhodospira Medium
 category: bacterial
@@ -146,6 +147,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.705763Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009540'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SLA (see Medium [M352])

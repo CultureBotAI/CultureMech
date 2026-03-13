@@ -1,3 +1,4 @@
+id: CultureMech:012331
 preferred_term: Main sol. 1503
 term:
   id: mediadive.solution:3111
@@ -45,3 +46,8 @@ preparation_notes: "Cultivation of CACO-2 cells (ACC 169) \nFilter-sterilize (0.
   \ at 37°C + 5% CO2. Control cells daily and look for inclusions. Not all Chlamydiae\
   \ form well-visible inclusions, ultimately, immunofluorescence or in situ-hybridization\
   \ techniques are necessary to visualize inclusions.\n\nOriginal volume: 50 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:25.237553Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012331'

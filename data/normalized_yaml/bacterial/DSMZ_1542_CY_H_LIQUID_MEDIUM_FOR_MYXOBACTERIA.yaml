@@ -1,3 +1,4 @@
+id: CultureMech:001020
 name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
 original_name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
 category: bacterial
@@ -76,8 +77,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH of solution A to pH 7.4. Autoclave solutions A and B separately. Filter sterilize
-    vitamin solution. After cooling, add 1 ml solution B and 1 ml solution C per liter solution A.
+  description: Adjust pH of solution A to pH 7.4. Autoclave solutions A and B separately.
+    Filter sterilize vitamin solution. After cooling, add 1 ml solution B and 1 ml
+    solution C per liter solution A.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +87,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1542'
+- timestamp: '2026-03-13T06:19:00.539803Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001020'

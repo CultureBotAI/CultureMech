@@ -1,3 +1,4 @@
+id: CultureMech:011505
 preferred_term: Main sol. 1037
 term:
   id: mediadive.solution:2105
@@ -114,3 +115,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissove ingredients, adjust medium to pH 6.0, dispense into suitable
   culture vessels and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.105502Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011505'

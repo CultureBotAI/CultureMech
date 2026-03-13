@@ -1,3 +1,4 @@
+id: CultureMech:012860
 preferred_term: Main sol. J138
 term:
   id: mediadive.solution:3782
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 6.8.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.012280Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012860'

@@ -1,3 +1,4 @@
+id: CultureMech:003840
 name: HYDROGENIVIRGA OKINAWENSIS MEDIUM
 original_name: HYDROGENIVIRGA OKINAWENSIS MEDIUM
 category: bacterial
@@ -261,3 +262,7 @@ curation_history:
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Resolved trace metal unit conflict for NiCl2 x 6 H2O
+- timestamp: '2026-03-13T06:19:22.643177Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003840'

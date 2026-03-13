@@ -1,3 +1,4 @@
+id: CultureMech:001035
 name: TRYPTONE-STARCH MEDIUM
 original_name: TRYPTONE-STARCH MEDIUM
 category: bacterial
@@ -61,8 +62,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Sterilize vitamin B12 separately by filtration. Adjust pH of medium to 7.0 with KOH prior
-    to autoclaving.
+  description: Sterilize vitamin B12 separately by filtration. Adjust pH of medium
+    to 7.0 with KOH prior to autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +71,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1559'
+- timestamp: '2026-03-13T06:19:00.608342Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001035'

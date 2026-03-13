@@ -1,3 +1,4 @@
+id: CultureMech:000605
 name: HALOMICROBIUM KATESII MEDIUM
 original_name: HALOMICROBIUM KATESII MEDIUM
 category: bacterial
@@ -86,4 +87,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1164'
+- timestamp: '2026-03-13T06:18:56.742785Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000605'
 high_metal: true

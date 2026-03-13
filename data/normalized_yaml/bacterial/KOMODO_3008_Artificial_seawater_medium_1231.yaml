@@ -1,3 +1,4 @@
+id: CultureMech:004786
 name: Artificial seawater (medium 1231)
 original_name: Artificial seawater (medium 1231)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3008
     label: Artificial seawater (medium 1231)
-notes: 'Source: KOMODO ModelSEED | ID: 3008 | DSMZ Medium: 3008 (mediadive.medium:3008) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3008 | DSMZ Medium: 3008 (mediadive.medium:3008)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3008'
+- timestamp: '2026-03-13T06:19:28.790671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004786'

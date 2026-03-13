@@ -1,3 +1,4 @@
+id: CultureMech:006644
 name: MSV-THIOTRIX-MEDIUM
 original_name: MSV-THIOTRIX-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:841
     label: MSV-THIOTRIX-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 841 | DSMZ Medium: 841 (mediadive.medium:841) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 841 | DSMZ Medium: 841 (mediadive.medium:841)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:
@@ -162,3 +164,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 841
+- timestamp: '2026-03-13T06:19:42.609877Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006644'

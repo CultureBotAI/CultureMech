@@ -1,3 +1,4 @@
+id: CultureMech:006726
 name: For DSM 18786
 original_name: For DSM 18786
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:88.2
     label: For DSM 18786
-notes: 'Source: KOMODO ModelSEED | ID: 88.2 | DSMZ Medium: 88 (mediadive.medium:88) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 88.2 | DSMZ Medium: 88 (mediadive.medium:88)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -121,3 +123,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 88
+- timestamp: '2026-03-13T06:19:43.387349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006726'

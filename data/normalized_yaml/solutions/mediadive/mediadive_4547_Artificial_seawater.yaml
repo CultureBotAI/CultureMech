@@ -1,3 +1,4 @@
+id: CultureMech:013514
 preferred_term: Artificial seawater
 term:
   id: mediadive.solution:4547
@@ -80,3 +81,8 @@ preparation_notes: 'Adjust pH to 7.5.
   Comment: For preparation of the liquid medium, use Marine broth 2216 (BD-Difco)
   instead of Marine agar 2216 and R2A broth instead of R2A agar by omitting agar from
   the R2A agar medium composition (see Medium No. 346).'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.734046Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013514'

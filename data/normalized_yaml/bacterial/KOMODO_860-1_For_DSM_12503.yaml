@@ -1,3 +1,4 @@
+id: CultureMech:006681
 name: For DSM 12503
 original_name: For DSM 12503
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:860.1
     label: For DSM 12503
-notes: 'Source: KOMODO ModelSEED | ID: 860.1 | DSMZ Medium: 860 (mediadive.medium:860) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 860.1 | DSMZ Medium: 860 (mediadive.medium:860)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -170,3 +172,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 860
+- timestamp: '2026-03-13T06:19:42.939652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006681'

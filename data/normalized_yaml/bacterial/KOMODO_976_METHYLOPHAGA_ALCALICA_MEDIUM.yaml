@@ -1,3 +1,4 @@
+id: CultureMech:006934
 name: METHYLOPHAGA ALCALICA MEDIUM
 original_name: METHYLOPHAGA ALCALICA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:976
     label: METHYLOPHAGA ALCALICA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 976 | DSMZ Medium: 976 (mediadive.medium:976) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 976 | DSMZ Medium: 976 (mediadive.medium:976)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -104,3 +106,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 976
+- timestamp: '2026-03-13T06:19:45.095591Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006934'

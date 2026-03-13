@@ -1,3 +1,4 @@
+id: CultureMech:009480
 name: brain heart infusion (BHI; Difco) agar
 original_name: brain heart infusion (BHI; Difco) agar
 category: bacterial
@@ -21,3 +22,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2956'
+- timestamp: '2026-03-13T06:20:06.346013Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009480'

@@ -1,3 +1,4 @@
+id: CultureMech:001495
 name: ANNWOODIA MEDIUM
 original_name: ANNWOODIA MEDIUM
 category: bacterial
@@ -117,15 +118,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A, B and C and filter sterilize solution D. To complete the medium
-    combine sterile solutions when cool.
+  description: Autoclave solutions A, B and C and filter sterilize solution D. To
+    complete the medium combine sterile solutions when cool.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.6.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
-    Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +134,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 389'
+- timestamp: '2026-03-13T06:19:04.677382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001495'

@@ -1,3 +1,4 @@
+id: CultureMech:001280
 name: CHAETOMIUM MEDIUM
 original_name: CHAETOMIUM MEDIUM
 category: bacterial
@@ -68,8 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar and inoculate on
-    filter strip.
+  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar
+    and inoculate on filter strip.
 applications:
 - Microbial cultivation
 curation_history:
@@ -77,3 +78,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 188'
+- timestamp: '2026-03-13T06:19:02.786120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001280'

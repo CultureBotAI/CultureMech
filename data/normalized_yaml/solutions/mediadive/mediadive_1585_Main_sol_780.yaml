@@ -1,3 +1,4 @@
+id: CultureMech:011043
 preferred_term: Main sol. 780
 term:
   id: mediadive.solution:1585
@@ -24,3 +25,8 @@ preparation_notes: Reconstitute the contents of one vial of 2 mg Mycobactine J w
   Rinse out the vial that contained the Mycobactine J with an additional 2 ml of absolute
   ethanol and pour into the culture medium. Mix the Mycobactine J alcohol solution
   and the culture medium very thoroughly.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.162288Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011043'

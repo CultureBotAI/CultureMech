@@ -1,3 +1,4 @@
+id: CultureMech:004352
 name: Trace mineral solution (medium 1003)
 original_name: Trace mineral solution (medium 1003)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2075'
+- timestamp: '2026-03-13T06:19:26.645768Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004352'

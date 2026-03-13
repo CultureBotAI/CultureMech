@@ -1,3 +1,4 @@
+id: CultureMech:001438
 name: CAMPYLOBACTER RECTUS MEDIUM
 original_name: CAMPYLOBACTER RECTUS MEDIUM
 category: bacterial
@@ -81,8 +82,8 @@ preparation_steps:
   description: Adjust pH to 7.5. Prepare the medium anaerobically under 100% N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted with water to
-    10 ml and neutralized), formate, and fumarate separately under nitrogen.
+  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted
+    with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,3 +95,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:04.203193Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001438'

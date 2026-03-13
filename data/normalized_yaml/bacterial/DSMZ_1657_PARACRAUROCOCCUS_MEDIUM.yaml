@@ -1,3 +1,4 @@
+id: CultureMech:001139
 name: PARACRAUROCOCCUS MEDIUM
 original_name: PARACRAUROCOCCUS MEDIUM
 category: bacterial
@@ -107,3 +108,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1657'
+- timestamp: '2026-03-13T06:19:01.551713Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001139'

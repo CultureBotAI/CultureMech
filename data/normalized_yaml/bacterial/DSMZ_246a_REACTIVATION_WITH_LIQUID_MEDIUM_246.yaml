@@ -1,3 +1,4 @@
+id: CultureMech:001347
 name: REACTIVATION WITH LIQUID MEDIUM 246
 original_name: REACTIVATION WITH LIQUID MEDIUM 246
 category: bacterial
@@ -101,3 +102,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 246a'
+- timestamp: '2026-03-13T06:19:03.320095Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001347'

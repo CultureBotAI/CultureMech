@@ -1,3 +1,4 @@
+id: CultureMech:012036
 preferred_term: Mineral Salts Solution
 term:
   id: mediadive.solution:2726
@@ -235,3 +236,8 @@ composition:
 preparation_notes: Final pH should be 6.8 - 8.5. If using the commercially available
   medium BD Difco Marine Broth 2216 add 10g/l Na acetate to the medium. The medium
   may be solidified by adding 15.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.435109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012036'

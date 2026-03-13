@@ -1,3 +1,4 @@
+id: CultureMech:002262
 name: HALALKALIARCHAEUM MEDIUM
 original_name: HALALKALIARCHAEUM MEDIUM
 category: bacterial
@@ -95,4 +96,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1082'
+- timestamp: '2026-03-13T06:19:11.754670Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002262'
 high_metal: true

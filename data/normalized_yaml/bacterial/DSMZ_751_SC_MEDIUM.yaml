@@ -1,3 +1,4 @@
+id: CultureMech:001884
 name: SC MEDIUM
 original_name: SC MEDIUM
 category: bacterial
@@ -72,11 +73,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized components:'
+  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized
+    components:'
 - step_number: 2
   action: MIX
-  description: For liquid medium, omit corn meal agar and change the phosphate concentration to KH2PO4,
-    1.5 g and K2HPO4, 0.5 g.
+  description: For liquid medium, omit corn meal agar and change the phosphate concentration
+    to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +86,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 751'
+- timestamp: '2026-03-13T06:19:08.138676Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001884'

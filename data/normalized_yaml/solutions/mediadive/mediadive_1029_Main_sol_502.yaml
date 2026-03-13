@@ -1,3 +1,4 @@
+id: CultureMech:010578
 preferred_term: Main sol. 502
 term:
   id: mediadive.solution:1029
@@ -195,3 +196,8 @@ preparation_notes: 'Dissolve ingredients (except yeast extract, Casamino acids, 
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.489232Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010578'

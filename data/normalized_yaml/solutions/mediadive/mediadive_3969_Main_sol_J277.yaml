@@ -1,3 +1,4 @@
+id: CultureMech:013027
 preferred_term: Main sol. J277
 term:
   id: mediadive.solution:3969
@@ -80,3 +81,8 @@ preparation_notes: Mix ingredients, except NaNO3, FeSO4 x 7H2O and Na2S x 9H2O, 
   x 9H2O solutions (pH 7.0, 7.5 and 7.5, respectively) under a N2 atmosphere. Aseptically
   and anaerobically add the NaNO3, FeSO4 x 7H2O and Na2S x 9H2O solutions to the medium
   and adjust pH to 6.0. Pressurize the inoculated bottle to 200 kPa N2.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.978497Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013027'

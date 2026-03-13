@@ -1,3 +1,4 @@
+id: CultureMech:014006
 preferred_term: Solution B
 term:
   id: mediadive.solution:5091
@@ -19,3 +20,8 @@ preparation_notes: 'Mix and filter-sterilize just before addition to the medium.
 
 
   Original volume: 8 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.966179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014006'

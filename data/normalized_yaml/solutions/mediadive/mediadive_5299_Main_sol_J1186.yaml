@@ -1,3 +1,4 @@
+id: CultureMech:014211
 preferred_term: Main sol. J1186
 term:
   id: mediadive.solution:5299
@@ -178,3 +179,8 @@ preparation_notes: "Mix components and adjust pH to 7.5. Bring to a boil and coo
   \ anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):\
   \ \nPressurize the inoculated vessels to 100 kPa H2-CO2 (4:1, v/v)\n\nOriginal volume:\
   \ 1041 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.361905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014211'

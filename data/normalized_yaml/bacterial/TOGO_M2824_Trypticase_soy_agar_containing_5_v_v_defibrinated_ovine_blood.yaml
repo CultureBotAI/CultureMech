@@ -1,3 +1,4 @@
+id: CultureMech:009370
 name: Trypticase soy agar (containing 5% (v/v) defibrinated ovine blood)
 original_name: Trypticase soy agar (containing 5% (v/v) defibrinated ovine blood)
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   date: '2026-02-03T11:20:56.625265'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Trypticase soy agar'
+- timestamp: '2026-03-13T06:20:05.919820Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009370'

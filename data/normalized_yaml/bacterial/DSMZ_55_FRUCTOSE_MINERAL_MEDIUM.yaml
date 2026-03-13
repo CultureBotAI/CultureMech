@@ -1,3 +1,4 @@
+id: CultureMech:001695
 name: FRUCTOSE MINERAL MEDIUM
 original_name: FRUCTOSE MINERAL MEDIUM
 category: bacterial
@@ -119,7 +120,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately, filter sterilize solution C. Add 1.5% agar if necessary.
+  description: Autoclave solutions A and B separately, filter sterilize solution C.
+    Add 1.5% agar if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,3 +129,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 55'
+- timestamp: '2026-03-13T06:19:06.513797Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001695'

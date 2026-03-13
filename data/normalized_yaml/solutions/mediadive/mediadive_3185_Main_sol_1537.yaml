@@ -1,3 +1,4 @@
+id: CultureMech:012387
 preferred_term: Main sol. 1537
 term:
   id: mediadive.solution:3185
@@ -43,3 +44,8 @@ preparation_notes: 'pH 7.0-7.2
 
   Prepare the medium. Sterilize by autoclaving. Before inoculation add from sterile
   stock solutions: '
+curation_history:
+- timestamp: '2026-03-13T06:20:25.647123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012387'

@@ -1,3 +1,4 @@
+id: CultureMech:006900
 name: MEDIUM FOR DSM 14457 AND 14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:956
     label: MEDIUM FOR DSM 14457 AND 14458
-notes: 'Source: KOMODO ModelSEED | ID: 956 | DSMZ Medium: 956 (mediadive.medium:956) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 956 | DSMZ Medium: 956 (mediadive.medium:956)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -73,3 +75,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 956
+- timestamp: '2026-03-13T06:19:44.752194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006900'

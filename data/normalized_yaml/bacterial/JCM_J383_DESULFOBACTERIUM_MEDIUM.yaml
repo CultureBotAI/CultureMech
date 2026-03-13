@@ -1,3 +1,4 @@
+id: CultureMech:002740
 name: DESULFOBACTERIUM MEDIUM
 original_name: DESULFOBACTERIUM MEDIUM
 category: bacterial
@@ -234,10 +235,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except L-sodium lactate, NaHCO3 and Na2S x 9H2O, and autoclave under a
-    N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave L-sodium lactate in 10 ml distilled water anaerobically
-    and filter-sterilize 5% NaHCO3 gassed with N2-CO2 (4:1, v/v) for 20 min. Add the sterile L-sodium
-    lactate and NaHCO3 solutions to the medium. Prior to inoculation, add an anaerobically autoclaved
+  description: Mix ingredients, except L-sodium lactate, NaHCO3 and Na2S x 9H2O, and
+    autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave L-sodium
+    lactate in 10 ml distilled water anaerobically and filter-sterilize 5% NaHCO3
+    gassed with N2-CO2 (4:1, v/v) for 20 min. Add the sterile L-sodium lactate and
+    NaHCO3 solutions to the medium. Prior to inoculation, add an anaerobically autoclaved
     5% Na2S x 9H2O solution to the medium.
 applications:
 - Microbial cultivation
@@ -246,3 +248,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J383'
+- timestamp: '2026-03-13T06:19:15.404173Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002740'

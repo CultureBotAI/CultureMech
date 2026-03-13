@@ -1,3 +1,4 @@
+id: CultureMech:000854
 name: HALOMONAS WANG MEDIUM
 original_name: HALOMONAS WANG MEDIUM
 category: bacterial
@@ -40,8 +41,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 9.0 - 9.5 and sterilize by autoclaving. The medium may be solidified by adding
-    20.0 g/l agar.
+  description: Adjust to pH 9.0 - 9.5 and sterilize by autoclaving. The medium may
+    be solidified by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +54,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.923673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000854'

@@ -1,3 +1,4 @@
+id: CultureMech:006404
 name: HALOMONAS PANTELLERIENSE
 original_name: HALOMONAS PANTELLERIENSE
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:752
     label: HALOMONAS PANTELLERIENSE
-notes: 'Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -75,3 +77,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 752
+- timestamp: '2026-03-13T06:19:40.483795Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006404'

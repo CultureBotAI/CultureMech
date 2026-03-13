@@ -1,3 +1,4 @@
+id: CultureMech:014370
 preferred_term: Main sol. J1309
 term:
   id: mediadive.solution:5466
@@ -177,3 +178,8 @@ preparation_notes: "Mix components and autoclave. After cooling, add the followi
   \ stoppers and replace the gas phase with N2.\n30% Salt water: \nAdd components\
   \ to distilled water and bring volume to 1.0 L. Adjust pH to 7.5.\n\nOriginal volume:\
   \ 1005 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.374465Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014370'

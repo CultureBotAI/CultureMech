@@ -1,3 +1,4 @@
+id: CultureMech:000817
 name: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
 original_name: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
 category: bacterial
@@ -161,9 +162,9 @@ preparation_steps:
   description: Prepare the basal medium under nitrogen.
 - step_number: 2
   action: AUTOCLAVE
-  description: NaHCO3 solution (autoclaved in sealed, half full vessels under CO2), Na2S x 9H2O solution
-    (autoclaved) and vitamin B12 solution (filter sterilised) is added to the autoclaved medium and the
-    final pH adjusted to 6.6 - 7.4.
+  description: NaHCO3 solution (autoclaved in sealed, half full vessels under CO2),
+    Na2S x 9H2O solution (autoclaved) and vitamin B12 solution (filter sterilised)
+    is added to the autoclaved medium and the final pH adjusted to 6.6 - 7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -171,3 +172,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1359'
+- timestamp: '2026-03-13T06:18:58.583098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000817'

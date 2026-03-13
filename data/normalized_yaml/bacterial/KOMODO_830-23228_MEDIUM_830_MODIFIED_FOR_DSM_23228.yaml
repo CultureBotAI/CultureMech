@@ -1,3 +1,4 @@
+id: CultureMech:006611
 name: MEDIUM 830 MODIFIED FOR DSM 23228
 original_name: MEDIUM 830 MODIFIED FOR DSM 23228
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:830_23228
     label: MEDIUM 830 MODIFIED FOR DSM 23228
-notes: 'Source: KOMODO ModelSEED | ID: 830_23228 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 830_23228 | DSMZ Medium: 830 (mediadive.medium:830)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -142,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 830
+- timestamp: '2026-03-13T06:19:42.347750Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006611'

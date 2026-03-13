@@ -1,3 +1,4 @@
+id: CultureMech:004356
 name: Vitamin B12 solution (medium 867)
 original_name: Vitamin B12 solution (medium 867)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2079
     label: Vitamin B12 solution (medium 867)
-notes: 'Source: KOMODO ModelSEED | ID: 2079 | DSMZ Medium: 2079 (mediadive.medium:2079) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2079 | DSMZ Medium: 2079 (mediadive.medium:2079)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2079'
+- timestamp: '2026-03-13T06:19:26.651873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004356'

@@ -1,3 +1,4 @@
+id: CultureMech:011727
 preferred_term: Main sol. 1176
 term:
   id: mediadive.solution:2348
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust pH to 7.5. Dispense the medium into sealed bottles an
   autoclave.
 
   After sterilization add from sterile stock solutions add: '
+curation_history:
+- timestamp: '2026-03-13T06:20:21.570887Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011727'

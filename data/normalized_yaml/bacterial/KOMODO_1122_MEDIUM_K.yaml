@@ -1,3 +1,4 @@
+id: CultureMech:003826
 name: MEDIUM K
 original_name: MEDIUM K
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1122
     label: MEDIUM K
-notes: 'Source: KOMODO ModelSEED | ID: 1122 | DSMZ Medium: 1122 (mediadive.medium:1122) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1122 | DSMZ Medium: 1122 (mediadive.medium:1122)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -78,3 +80,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1122
+- timestamp: '2026-03-13T06:19:22.548435Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003826'

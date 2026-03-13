@@ -1,3 +1,4 @@
+id: CultureMech:013937
 preferred_term: Main sol. J984
 term:
   id: mediadive.solution:5013
@@ -129,3 +130,8 @@ preparation_notes: "Mix components thoroughly. Distribute medium into culture ve
   \ \nPrior to inoculation, reduce the medium by the addition of the following solution\
   \ (per liter, autoclaved and stored under a N2 atmosphere): \n\nOriginal volume:\
   \ 1040 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.490656Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013937'

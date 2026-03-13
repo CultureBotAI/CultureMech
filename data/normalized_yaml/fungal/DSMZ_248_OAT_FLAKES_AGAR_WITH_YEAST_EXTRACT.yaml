@@ -1,3 +1,4 @@
+id: CultureMech:010466
 name: OAT FLAKES AGAR WITH YEAST EXTRACT
 original_name: OAT FLAKES AGAR WITH YEAST EXTRACT
 category: fungal
@@ -53,8 +54,8 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Boil oat flakes for 20 min, filter through cheese cloth and adjust to 1000 ml. Add trace
-    elements and agar.
+  description: Boil oat flakes for 20 min, filter through cheese cloth and adjust
+    to 1000 ml. Add trace elements and agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 248'
+- timestamp: '2026-03-13T06:20:13.943111Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010466'

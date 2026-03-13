@@ -1,3 +1,4 @@
+id: CultureMech:015415
 name: ANAEROBIC MARINE BROTH 2216
 original_name: ANAEROBIC MARINE BROTH 2216
 category: specialized
@@ -38,10 +39,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O, bring to a boil and cool
-    down under a steam of N2. Distribute the medium into culture vessels under a N2 gas atmosphere, seal
-    with butyl rubber stoppers and autoclave. Separately autoclave 5% L-cysteine x HCl x H2O solution
-    and 5% Na2S x 9H2O solution under a N2 gas atmosphere. Prior to inoculation, aseptically and anaerobically
+  description: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O, bring
+    to a boil and cool down under a steam of N2. Distribute the medium into culture
+    vessels under a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+    Separately autoclave 5% L-cysteine x HCl x H2O solution and 5% Na2S x 9H2O solution
+    under a N2 gas atmosphere. Prior to inoculation, aseptically and anaerobically
     add L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium.
 applications:
 - Microbial cultivation
@@ -50,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J719'
+- timestamp: '2026-03-13T06:20:42.562742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015415'

@@ -1,3 +1,4 @@
+id: CultureMech:001791
 name: PEPTONE-SUCCINATE AGAR
 original_name: PEPTONE-SUCCINATE AGAR
 category: bacterial
@@ -68,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 653'
+- timestamp: '2026-03-13T06:19:07.249709Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001791'

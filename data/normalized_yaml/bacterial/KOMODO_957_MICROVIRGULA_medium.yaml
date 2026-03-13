@@ -1,3 +1,4 @@
+id: CultureMech:006901
 name: MICROVIRGULA medium
 original_name: MICROVIRGULA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:957
     label: MICROVIRGULA medium
-notes: 'Source: KOMODO ModelSEED | ID: 957 | DSMZ Medium: 957 (mediadive.medium:957) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 957 | DSMZ Medium: 957 (mediadive.medium:957)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 957
+- timestamp: '2026-03-13T06:19:44.756403Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006901'

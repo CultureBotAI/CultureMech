@@ -1,3 +1,4 @@
+id: CultureMech:001809
 name: FLEXIBACTER MEDIUM
 original_name: FLEXIBACTER MEDIUM
 category: bacterial
@@ -110,3 +111,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 668'
+- timestamp: '2026-03-13T06:19:07.379812Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001809'

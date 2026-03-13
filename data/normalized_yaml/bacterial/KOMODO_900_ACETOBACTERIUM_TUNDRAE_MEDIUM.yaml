@@ -1,3 +1,4 @@
+id: CultureMech:006769
 name: ACETOBACTERIUM TUNDRAE MEDIUM
 original_name: ACETOBACTERIUM TUNDRAE MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:900
     label: ACETOBACTERIUM TUNDRAE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 900 | DSMZ Medium: 900 (mediadive.medium:900) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 900 | DSMZ Medium: 900 (mediadive.medium:900)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -205,3 +207,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 900
+- timestamp: '2026-03-13T06:19:43.762119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006769'

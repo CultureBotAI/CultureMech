@@ -1,3 +1,4 @@
+id: CultureMech:005093
 name: NATRONOBACTERIA medium
 original_name: NATRONOBACTERIA medium
 category: bacterial
@@ -161,4 +162,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 371
+- timestamp: '2026-03-13T06:19:30.052280Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005093'
 high_metal: true

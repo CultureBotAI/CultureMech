@@ -1,3 +1,4 @@
+id: CultureMech:012039
 preferred_term: Main sol. 157
 term:
   id: mediadive.solution:272
@@ -140,3 +141,8 @@ preparation_notes: Dissolve ingredients (except cysteine and sulfide), sparge me
   atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add cysteine
   and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and adjust
   pH of complete medium to 7.0 - 7.2, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.456661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012039'

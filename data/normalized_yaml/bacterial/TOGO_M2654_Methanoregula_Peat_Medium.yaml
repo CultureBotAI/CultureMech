@@ -1,3 +1,4 @@
+id: CultureMech:009209
 name: Methanoregula (Peat) Medium
 original_name: Methanoregula (Peat) Medium
 category: bacterial
@@ -308,6 +309,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 9 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.073093Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009209'
 high_metal: true
 solutions:
 - preferred_term: Solution A

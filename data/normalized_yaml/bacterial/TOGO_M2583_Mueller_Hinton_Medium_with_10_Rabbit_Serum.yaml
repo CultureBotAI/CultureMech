@@ -1,3 +1,4 @@
+id: CultureMech:009151
 name: Mueller Hinton Medium with 10% Rabbit Serum
 original_name: Mueller Hinton Medium with 10% Rabbit Serum
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
 - preferred_term: Mueller Hinton Broth (BD 211443)
   concentration:
     value: '22'
@@ -34,3 +36,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2583'
+- timestamp: '2026-03-13T06:20:03.294847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009151'

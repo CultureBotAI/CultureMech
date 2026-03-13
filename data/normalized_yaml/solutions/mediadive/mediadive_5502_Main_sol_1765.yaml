@@ -1,3 +1,4 @@
+id: CultureMech:014407
 preferred_term: Main sol. 1765
 term:
   id: mediadive.solution:5502
@@ -49,3 +50,8 @@ composition:
 preparation_notes: Boil the peeled and chopped potatoes and carrots for 45 minutes,
   then filter through cheesecloth and complete the volume to 1000 ml using distilled
   water and add agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.621800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014407'

@@ -1,3 +1,4 @@
+id: CultureMech:006831
 name: For DSM 14539, DSM 14646 and DSM 14648
 original_name: For DSM 14539, DSM 14646 and DSM 14648
 category: bacterial
@@ -281,4 +282,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:44.148843Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006831'
 ph_value: 7.2

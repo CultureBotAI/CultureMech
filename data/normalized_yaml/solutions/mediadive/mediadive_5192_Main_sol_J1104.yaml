@@ -1,3 +1,4 @@
+id: CultureMech:014103
 preferred_term: Main sol. J1104
 term:
   id: mediadive.solution:5192
@@ -163,3 +164,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (80:2
   \ v/v) atmosphere. Aseptically and anaerobically add the following solutions (autoclaved\
   \ or *filter-sterilized): \nReadjust pH to 6.8 - 7.2, if necessary.\n\nOriginal\
   \ volume: 1003 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.607413Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014103'

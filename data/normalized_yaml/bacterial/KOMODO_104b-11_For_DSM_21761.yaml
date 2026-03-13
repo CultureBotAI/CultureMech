@@ -1,3 +1,4 @@
+id: CultureMech:003610
 name: For DSM 21761
 original_name: For DSM 21761
 category: bacterial
@@ -107,4 +108,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:21.013718Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003610'
 ph_value: 7.0

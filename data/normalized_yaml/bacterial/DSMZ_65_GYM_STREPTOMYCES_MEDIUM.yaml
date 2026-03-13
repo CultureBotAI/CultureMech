@@ -1,3 +1,4 @@
+id: CultureMech:001797
 name: GYM STREPTOMYCES MEDIUM
 original_name: GYM STREPTOMYCES MEDIUM
 category: bacterial
@@ -44,7 +45,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium is used.
+  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium
+    is used.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 65'
+- timestamp: '2026-03-13T06:19:07.274775Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001797'

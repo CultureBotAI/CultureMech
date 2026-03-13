@@ -1,3 +1,4 @@
+id: CultureMech:000862
 name: MSYS MEDIUM
 original_name: MSYS MEDIUM
 category: bacterial
@@ -141,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1401'
+- timestamp: '2026-03-13T06:18:58.988099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000862'

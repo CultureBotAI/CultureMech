@@ -1,3 +1,4 @@
+id: CultureMech:012291
 preferred_term: Solution D
 term:
   id: mediadive.solution:3068
@@ -142,3 +143,8 @@ preparation_notes: 'Prepare Solutions D, flush with nitrogen to make them anoxic
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.046990Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012291'

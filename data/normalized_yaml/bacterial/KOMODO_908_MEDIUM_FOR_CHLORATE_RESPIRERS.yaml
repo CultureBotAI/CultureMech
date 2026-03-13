@@ -1,3 +1,4 @@
+id: CultureMech:006779
 name: MEDIUM FOR CHLORATE RESPIRERS
 original_name: MEDIUM FOR CHLORATE RESPIRERS
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:908
     label: MEDIUM FOR CHLORATE RESPIRERS
-notes: 'Source: KOMODO ModelSEED | ID: 908 | DSMZ Medium: 908 (mediadive.medium:908) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 908 | DSMZ Medium: 908 (mediadive.medium:908)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -229,3 +231,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 908
+- timestamp: '2026-03-13T06:19:43.862726Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006779'

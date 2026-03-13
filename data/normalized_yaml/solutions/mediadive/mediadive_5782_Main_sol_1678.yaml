@@ -1,3 +1,4 @@
+id: CultureMech:014629
 preferred_term: Main sol. 1678
 term:
   id: mediadive.solution:5782
@@ -174,3 +175,8 @@ composition:
 preparation_notes: 'Adjust to 1000 mL with H2O dist. and autoclave.
 
   After cooling, add the following filter sterilized components:'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.729822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014629'

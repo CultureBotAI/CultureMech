@@ -1,3 +1,4 @@
+id: CultureMech:000554
 name: MD1-MEDIUM
 original_name: MD1-MEDIUM
 category: bacterial
@@ -102,8 +103,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a filter sterilized stock
-    solution. pH should be 7.0 -7.2.
+  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a filter
+    sterilized stock solution. pH should be 7.0 -7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -111,3 +112,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1118'
+- timestamp: '2026-03-13T06:18:56.348815Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000554'

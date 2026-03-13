@@ -1,3 +1,4 @@
+id: CultureMech:005654
 name: PPLO broth
 original_name: PPLO broth
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:5013
     label: PPLO broth
-notes: 'Source: KOMODO ModelSEED | ID: 5013 | DSMZ Medium: 5013 (mediadive.medium:5013) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5013 | DSMZ Medium: 5013 (mediadive.medium:5013)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5013'
+- timestamp: '2026-03-13T06:19:34.953871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005654'

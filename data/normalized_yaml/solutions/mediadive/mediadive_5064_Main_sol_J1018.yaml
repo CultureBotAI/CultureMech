@@ -1,3 +1,4 @@
+id: CultureMech:013979
 preferred_term: Main sol. J1018
 term:
   id: mediadive.solution:5064
@@ -40,3 +41,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: For preparation of solid medium, add 15.0 g/L agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:34.788597Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013979'

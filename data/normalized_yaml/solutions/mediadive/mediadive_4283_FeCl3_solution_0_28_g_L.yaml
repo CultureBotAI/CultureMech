@@ -1,3 +1,4 @@
+id: CultureMech:013292
 preferred_term: FeCl3 solution 0.28 g/L
 term:
   id: mediadive.solution:4283
@@ -27,3 +28,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:30.506412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013292'

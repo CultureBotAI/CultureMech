@@ -1,3 +1,4 @@
+id: CultureMech:014262
 preferred_term: Main sol. 268
 term:
   id: mediadive.solution:534
@@ -46,3 +47,8 @@ preparation_notes: Add tea and sucrose to a 1 l flask, pour on freshly boiled ta
   vinegar (5%). Place a small disc of a cork stopper on the surface of the tea and
   place the inoculum onto it. Cover the beaker with aluminium foil and incubate. (Steam
   the cork disc for 15 min on two successive days).
+curation_history:
+- timestamp: '2026-03-13T06:20:36.676503Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014262'

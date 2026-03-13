@@ -1,3 +1,4 @@
+id: CultureMech:000782
 name: PARACOCCUS BOGORIENSIS MEDIUM
 original_name: PARACOCCUS BOGORIENSIS MEDIUM
 category: bacterial
@@ -124,8 +125,9 @@ preparation_steps:
   description: Final pH to 9.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the Na2CO3 solution separately and combine with the rest of the medium after
-    cooling both to about 50°C. Agar may be added at 15g/l to solidify the medium
+  description: Autoclave the Na2CO3 solution separately and combine with the rest
+    of the medium after cooling both to about 50°C. Agar may be added at 15g/l to
+    solidify the medium
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1325'
+- timestamp: '2026-03-13T06:18:58.322130Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000782'

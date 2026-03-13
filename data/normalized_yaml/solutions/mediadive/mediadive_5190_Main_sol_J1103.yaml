@@ -1,3 +1,4 @@
+id: CultureMech:014101
 preferred_term: Main sol. J1103
 term:
   id: mediadive.solution:5190
@@ -158,3 +159,8 @@ preparation_notes: "Solution A:\nMix components except NaHCO3 and trace vitamins
   \ A (e.g., 18 ml Solution A in 60 ml serum bottles and 2 ml Solution B). Prior to\
   \ inoculation, add per liter the following solutions: \n\nOriginal volume: 1024\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.590220Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014101'

@@ -1,3 +1,4 @@
+id: CultureMech:002805
 name: ALKALI-REINFORCED CLOSTRIDIAL AGAR
 original_name: ALKALI-REINFORCED CLOSTRIDIAL AGAR
 category: bacterial
@@ -21,8 +22,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution to the medium. Check
-    final pH to be about 10.0.
+  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
+    to the medium. Check final pH to be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +31,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J455'
+- timestamp: '2026-03-13T06:19:15.841606Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002805'

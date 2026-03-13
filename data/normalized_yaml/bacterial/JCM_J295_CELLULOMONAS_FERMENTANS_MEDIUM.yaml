@@ -1,3 +1,4 @@
+id: CultureMech:002652
 name: CELLULOMONAS FERMENTANS MEDIUM
 original_name: CELLULOMONAS FERMENTANS MEDIUM
 category: bacterial
@@ -67,8 +68,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the
-    medium aseptically.
+  description: Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution,
+    and add to the medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J295'
+- timestamp: '2026-03-13T06:19:14.786411Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002652'

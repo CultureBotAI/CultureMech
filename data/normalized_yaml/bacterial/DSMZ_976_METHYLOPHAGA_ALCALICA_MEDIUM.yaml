@@ -1,3 +1,4 @@
+id: CultureMech:002158
 name: METHYLOPHAGA ALCALICA MEDIUM
 original_name: METHYLOPHAGA ALCALICA MEDIUM
 category: bacterial
@@ -99,11 +100,11 @@ preparation_steps:
   description: Final pH 9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2CO3, which can be sterilised separately by autoclaving.
-    10 ml/l sterile methanol is added to the cooled medium. When preparing liquid media cool the mineral
-    salts solution and Na2CO3 to room temperature before mixing. When preparing agar add 2.0 % agar to
-    the mineral salts solution and autoclave. Cool the Na2CO3 stock solution and agar to 50-55°C before
-    mixing.
+  description: Prepare the medium without the Na2CO3, which can be sterilised separately
+    by autoclaving. 10 ml/l sterile methanol is added to the cooled medium. When preparing
+    liquid media cool the mineral salts solution and Na2CO3 to room temperature before
+    mixing. When preparing agar add 2.0 % agar to the mineral salts solution and autoclave.
+    Cool the Na2CO3 stock solution and agar to 50-55°C before mixing.
 applications:
 - Microbial cultivation
 curation_history:
@@ -111,3 +112,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 976'
+- timestamp: '2026-03-13T06:19:10.831864Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002158'

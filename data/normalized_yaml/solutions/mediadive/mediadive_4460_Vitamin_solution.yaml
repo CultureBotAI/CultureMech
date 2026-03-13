@@ -1,3 +1,4 @@
+id: CultureMech:013440
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:4460
@@ -112,3 +113,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Filter-sterilize and store under a N2 atmosphere.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.322225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013440'

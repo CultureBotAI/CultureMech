@@ -1,3 +1,4 @@
+id: CultureMech:004357
 name: PROPIONISPIRA medium
 original_name: PROPIONISPIRA medium
 category: bacterial
@@ -255,3 +256,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:26.661857Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004357'

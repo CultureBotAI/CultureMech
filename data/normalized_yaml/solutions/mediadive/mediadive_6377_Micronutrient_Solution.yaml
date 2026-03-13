@@ -1,3 +1,4 @@
+id: CultureMech:015008
 preferred_term: Micronutrient Solution *
 term:
   id: mediadive.solution:6377
@@ -103,3 +104,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000<
   ml with Milli Q water.
 
   Prepare aliquots and store them at -20 °C.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.345377Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015008'

@@ -1,3 +1,4 @@
+id: CultureMech:004825
 name: Phosphate solution (medium 1191)
 original_name: Phosphate solution (medium 1191)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3043
     label: Phosphate solution (medium 1191)
-notes: 'Source: KOMODO ModelSEED | ID: 3043 | DSMZ Medium: 3043 (mediadive.medium:3043) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3043 | DSMZ Medium: 3043 (mediadive.medium:3043)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3043'
+- timestamp: '2026-03-13T06:19:28.861010Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004825'

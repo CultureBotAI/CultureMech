@@ -1,3 +1,4 @@
+id: CultureMech:002843
 name: MMJ-TL MEDIUM
 original_name: MMJ-TL MEDIUM
 category: bacterial
@@ -262,3 +263,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:16.027194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002843'

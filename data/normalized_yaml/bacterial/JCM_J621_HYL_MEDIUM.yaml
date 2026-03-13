@@ -1,3 +1,4 @@
+id: CultureMech:002968
 name: HYL MEDIUM
 original_name: HYL MEDIUM
 category: bacterial
@@ -249,11 +250,12 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave and cool down to room temperature while flushing with N2. Then add the following
-    solutions from sterile anaerobic stocks:'
+  description: 'Autoclave and cool down to room temperature while flushing with N2.
+    Then add the following solutions from sterile anaerobic stocks:'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
+    minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,3 +267,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:16.878719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002968'

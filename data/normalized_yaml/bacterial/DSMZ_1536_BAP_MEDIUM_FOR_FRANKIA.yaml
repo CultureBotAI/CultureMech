@@ -1,3 +1,4 @@
+id: CultureMech:001014
 name: BAP+ MEDIUM FOR FRANKIA
 original_name: BAP+ MEDIUM FOR FRANKIA
 category: bacterial
@@ -136,8 +137,8 @@ preparation_steps:
   description: The pH of the final solution is adjusted to 6.3.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Note: Please autoclave the chelated iron solution before you add to the medium, so that
-    solves everything!!!!'
+  description: 'Note: Please autoclave the chelated iron solution before you add to
+    the medium, so that solves everything!!!!'
 applications:
 - Microbial cultivation
 curation_history:
@@ -145,3 +146,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1536'
+- timestamp: '2026-03-13T06:19:00.494245Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001014'

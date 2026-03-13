@@ -1,3 +1,4 @@
+id: CultureMech:002216
 name: SVX8 MEDIUM
 original_name: SVX8 MEDIUM
 category: bacterial
@@ -266,13 +267,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components, bring to a boil and cool down under a CO2 (100%) gas stream. While gassing,
-    add the following components to the medium:'
+  description: 'Mix components, bring to a boil and cool down under a CO2 (100%) gas
+    stream. While gassing, add the following components to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Bubble N2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH to the range if necessary.
-    Autoclave under a CO2 gas atmosphere. Add the following solution to the medium (separately autoclaved
-    under N2):'
+  description: 'Bubble N2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH
+    to the range if necessary. Autoclave under a CO2 gas atmosphere. Add the following
+    solution to the medium (separately autoclaved under N2):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,3 +285,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.335980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002216'

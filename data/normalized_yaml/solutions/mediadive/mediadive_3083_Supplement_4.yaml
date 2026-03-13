@@ -1,3 +1,4 @@
+id: CultureMech:012308
 preferred_term: Supplement 4
 term:
   id: mediadive.solution:3083
@@ -31,3 +32,8 @@ preparation_notes: 'Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C
 
 
   Original volume: 1 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.112165Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012308'

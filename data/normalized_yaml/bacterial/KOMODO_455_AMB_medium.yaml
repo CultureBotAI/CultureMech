@@ -1,3 +1,4 @@
+id: CultureMech:005305
 name: AMB medium
 original_name: AMB medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:455
     label: AMB medium
-notes: 'Source: KOMODO ModelSEED | ID: 455 | DSMZ Medium: 455 (mediadive.medium:455) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 455 | DSMZ Medium: 455 (mediadive.medium:455)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -83,3 +85,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 455
+- timestamp: '2026-03-13T06:19:31.599391Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005305'

@@ -1,3 +1,4 @@
+id: CultureMech:014150
 preferred_term: 100 x BG-FPC solution
 term:
   id: mediadive.solution:5239
@@ -63,3 +64,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:35.939611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014150'

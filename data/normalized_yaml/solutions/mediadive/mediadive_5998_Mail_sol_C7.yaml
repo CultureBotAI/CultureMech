@@ -1,3 +1,4 @@
+id: CultureMech:014734
 preferred_term: Mail sol. C7
 term:
   id: mediadive.solution:5998
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "Add  20  ml of  the  autoclaved artificial seawater  with 255\
   \  psu and  4 \r\nautoclaved barley grains to a T­25 tissue culture flask (Corning\
   \ 25100)."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.310199Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014734'

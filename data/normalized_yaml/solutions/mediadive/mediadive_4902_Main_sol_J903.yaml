@@ -1,3 +1,4 @@
+id: CultureMech:013831
 preferred_term: Main sol. J903
 term:
   id: mediadive.solution:4902
@@ -90,3 +91,8 @@ composition:
 preparation_notes: "Mix components thoroughly and autoclave. After cooling, add the\
   \ following solutions (filter-sterilized): \nAdjust pH to 8.0 - 8.5 with sterile\
   \ 0.1 N NaOH.\n\nOriginal volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.754458Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013831'

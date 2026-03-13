@@ -1,3 +1,4 @@
+id: CultureMech:008900
 name: minimal media
 original_name: minimal media
 category: bacterial
@@ -13,7 +14,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -21,7 +23,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:8006
     label: Peptidoglycan(N-acetyl-D-glucosamine)
@@ -42,7 +46,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:12936
     label: D-galactose
@@ -50,7 +55,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:65327
     label: D-xylose
@@ -58,7 +64,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:18024
     label: D-galacturonic acid
@@ -66,12 +73,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: L-rhamnose
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:62345
     label: L-Rhamnose
@@ -79,7 +88,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:16024
     label: D-Mannose
@@ -87,7 +97,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:27082
     label: D-Trehalose
@@ -100,12 +111,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: pectin (citrus peel)
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: galatcomannan (Ceratonia siliqua)
   concentration:
     value: '0.2'
@@ -166,4 +179,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.566835Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:01.158811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008900'

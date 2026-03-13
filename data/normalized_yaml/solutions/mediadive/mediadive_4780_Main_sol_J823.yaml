@@ -1,3 +1,4 @@
+id: CultureMech:013723
 preferred_term: Main sol. J823
 term:
   id: mediadive.solution:4780
@@ -166,3 +167,8 @@ preparation_notes: "Mix components and bring to a boil for 5-10 sec and cool dow
   \ from sterile anaerobic stocks: \nTo prepare the stock solutions, autoclave 5%\
   \ Na2S x 9H2O solution under a N2 atmosphere, filter-sterilize and store 8% NaHCO3\
   \ solution under a N2-CO2 (80:20, v/v) gas mixture.\n\nOriginal volume: 1027 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.080435Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013723'

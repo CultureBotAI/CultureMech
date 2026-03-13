@@ -1,3 +1,4 @@
+id: CultureMech:011193
 preferred_term: Salt solution
 term:
   id: mediadive.solution:1741
@@ -63,3 +64,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:18.069096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011193'

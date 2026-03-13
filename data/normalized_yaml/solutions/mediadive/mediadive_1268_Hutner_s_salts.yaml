@@ -1,3 +1,4 @@
+id: CultureMech:010759
 preferred_term: Hutner's salts
 term:
   id: mediadive.solution:1268
@@ -82,3 +83,8 @@ preparation_notes: 'Dissolve the nitrilotriacetic acid.
   Dissolve other salts separately and combine.
 
   Adjust pH to 6.8 with NaOH or H2SO4.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.356256Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010759'

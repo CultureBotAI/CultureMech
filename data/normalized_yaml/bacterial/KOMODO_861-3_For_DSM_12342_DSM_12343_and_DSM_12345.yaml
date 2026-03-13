@@ -1,3 +1,4 @@
+id: CultureMech:006690
 name: For DSM 12342, DSM 12343 and DSM 12345
 original_name: For DSM 12342, DSM 12343 and DSM 12345
 category: bacterial
@@ -271,4 +272,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:43.045976Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006690'
 high_metal: true

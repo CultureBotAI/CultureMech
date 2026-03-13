@@ -1,3 +1,4 @@
+id: CultureMech:011540
 preferred_term: Main sol. 1058d
 term:
   id: mediadive.solution:2143
@@ -127,3 +128,8 @@ preparation_notes: 'Dissolve sodium chloride, potassium hydrogenphosphate, ammon
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.341230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011540'

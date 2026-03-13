@@ -1,3 +1,4 @@
+id: CultureMech:002045
 name: PHC MEDIUM
 original_name: PHC MEDIUM
 category: bacterial
@@ -100,3 +101,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 885'
+- timestamp: '2026-03-13T06:19:09.742085Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002045'

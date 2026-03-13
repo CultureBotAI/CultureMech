@@ -1,3 +1,4 @@
+id: CultureMech:001437
 name: SYNTROPHOCOCCUS SUCROMUTANS MEDIUM
 original_name: SYNTROPHOCOCCUS SUCROMUTANS MEDIUM
 category: bacterial
@@ -204,27 +205,29 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Adjust pH to 6.4 and dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solution
-    C is prepared under 100% N2 gas atmosphere and sterilized by filtration. Solutions D, E and F are
-    autoclaved separately under 100% N2 gas. To complete the medium add appropriate amounts of solutions
-    B - F to the sterile solution A in the sequence as indicated. Adjust pH of the complete medium to
-    6.4 - 6.8, if necessary.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Adjust pH to 6.4 and dispense under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solution C is prepared under
+    100% N2 gas atmosphere and sterilized by filtration. Solutions D, E and F are
+    autoclaved separately under 100% N2 gas. To complete the medium add appropriate
+    amounts of solutions B - F to the sterile solution A in the sequence as indicated.
+    Adjust pH of the complete medium to 6.4 - 6.8, if necessary.
 - step_number: 2
   action: MIX
-  description: 'Note: Rumen fluid may be replaced by supplementing the medium with 200 µg/ml of crude
-    egg yolk phosphatidylcholine (SIGMA, type IX-E).'
+  description: 'Note: Rumen fluid may be replaced by supplementing the medium with
+    200 µg/ml of crude egg yolk phosphatidylcholine (SIGMA, type IX-E).'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 4
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
-    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
-    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
-    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -232,3 +235,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 337'
+- timestamp: '2026-03-13T06:19:04.194630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001437'

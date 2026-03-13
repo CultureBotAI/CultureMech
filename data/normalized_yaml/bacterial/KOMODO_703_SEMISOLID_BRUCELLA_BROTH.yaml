@@ -1,3 +1,4 @@
+id: CultureMech:006334
 name: SEMISOLID BRUCELLA BROTH
 original_name: SEMISOLID BRUCELLA BROTH
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:703
     label: SEMISOLID BRUCELLA BROTH
-notes: 'Source: KOMODO ModelSEED | ID: 703 | DSMZ Medium: 703 (mediadive.medium:703) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 703 | DSMZ Medium: 703 (mediadive.medium:703)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 703
+- timestamp: '2026-03-13T06:19:39.823759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006334'

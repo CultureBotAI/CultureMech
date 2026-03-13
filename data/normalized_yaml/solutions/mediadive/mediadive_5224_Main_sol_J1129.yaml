@@ -1,3 +1,4 @@
+id: CultureMech:014135
 preferred_term: Main sol. J1129
 term:
   id: mediadive.solution:5224
@@ -176,3 +177,8 @@ preparation_notes: "Mix components thoroughly, distribute the medium into cultur
   \ gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add\
   \ per liter the following solutions from anaerobic stocks (autoclaved or *filter-sterilized).\
   \ Prior to use adjust pH to 7.0 - 7.2. \n\nOriginal volume: 1086 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.851276Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014135'

@@ -1,3 +1,4 @@
+id: CultureMech:006642
 name: MEDIUM 84 MODIFIED FOR DSM 44681
 original_name: MEDIUM 84 MODIFIED FOR DSM 44681
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:84_44681
     label: MEDIUM 84 MODIFIED FOR DSM 44681
-notes: 'Source: KOMODO ModelSEED | ID: 84_44681 | DSMZ Medium: 84 (mediadive.medium:84) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 84_44681 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Rolled oats
   concentration:
@@ -53,4 +55,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 84
+- timestamp: '2026-03-13T06:19:42.598995Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006642'
 ph_value: 7.2

@@ -1,3 +1,4 @@
+id: CultureMech:001820
 name: TISSIERELLA (AMO.1) MEDIUM
 original_name: TISSIERELLA (AMO.1) MEDIUM
 category: bacterial
@@ -254,21 +255,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, cysteine and vitamins) and sparge medium with
-    100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to 8.3 with 10 N NaOH, add bicarbonate and
-    cysteine and dissolve. Switch gas phase to 80% N2 and 20% CO2 gas mixture and flush only the head
-    space of the medium vessel. Dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave 15 min at 121°C. Add vitamins to the autoclaved medium from an
-    anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH
-    of complete medium to 8.3, if necessary.
+  description: Dissolve ingredients (except bicarbonate, cysteine and vitamins) and
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to
+    8.3 with 10 N NaOH, add bicarbonate and cysteine and dissolve. Switch gas phase
+    to 80% N2 and 20% CO2 gas mixture and flush only the head space of the medium
+    vessel. Dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave 15 min at 121°C. Add vitamins to the autoclaved
+    medium from an anoxic stock solution prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. Adjust pH of complete medium to 8.3, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: If creatinine is used as the substrate replacing N-methylhydantoin, prepare separately
-    an anoxic, filter sterilized stock solution of creatinine under 100% N2 gas atmosphere.'
+  description: 'Note: If creatinine is used as the substrate replacing N-methylhydantoin,
+    prepare separately an anoxic, filter sterilized stock solution of creatinine under
+    100% N2 gas atmosphere.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -279,4 +282,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.414823Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:07.452729Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001820'

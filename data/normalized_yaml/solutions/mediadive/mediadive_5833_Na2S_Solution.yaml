@@ -1,3 +1,4 @@
+id: CultureMech:014661
 preferred_term: Na2S Solution
 term:
   id: mediadive.solution:5833
@@ -33,3 +34,8 @@ preparation_notes: 'To 50 ml of boiled and cooled distilled or deionized H2O add
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.924916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014661'

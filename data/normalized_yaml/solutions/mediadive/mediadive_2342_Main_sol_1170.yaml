@@ -1,3 +1,4 @@
+id: CultureMech:011722
 preferred_term: Main sol. 1170
 term:
   id: mediadive.solution:2342
@@ -131,3 +132,8 @@ preparation_notes: 'pH 10.0
   of the medium. Vitamin B12 is added from a filter sterilised stock solution to the
   sterile medium. Incubate the strains with shaking at 150 rpm. Growth is faster in
   the presence of 20 mM sodium acetate instead of methanol.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.539977Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011722'

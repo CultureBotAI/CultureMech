@@ -1,3 +1,4 @@
+id: CultureMech:013993
 preferred_term: Main sol. J1027
 term:
   id: mediadive.solution:5078
@@ -158,3 +159,8 @@ preparation_notes: "Mix components thoroughly and distribute the medium into cul
   \ 0.1 g/L) and pressurize to 100 kPa H2-CO2 (80:20, v/v). For strain JCM 19936,\
   \ prepare the medium without trimethylamine. Pressurize inoculated culture vessels\
   \ to 100 kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1033 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.871220Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013993'

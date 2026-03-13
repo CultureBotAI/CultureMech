@@ -1,3 +1,4 @@
+id: CultureMech:000931
 name: CHITINISPIRILLUM MEDIUM
 original_name: CHITINISPIRILLUM MEDIUM
 category: bacterial
@@ -192,14 +193,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 10.0 with NaOH or HCl. Make anoxic under nitrogen stream and autoclave at
-    121°C.
+  description: Adjust pH to 10.0 with NaOH or HCl. Make anoxic under nitrogen stream
+    and autoclave at 121°C.
 - step_number: 2
   action: MIX
   description: 'After autoclaving add sterile, anoxic solutions of:'
 - step_number: 3
   action: HEAT
-  description: Sterilize by filtration and keep at 4°C. Before addition to the medium mix 1:1:1 (vol:vol:vol).
+  description: Sterilize by filtration and keep at 4°C. Before addition to the medium
+    mix 1:1:1 (vol:vol:vol).
 - step_number: 4
   action: AUTOCLAVE
   description: adjust pH to 3-4 with HCl; autoclave in closed bottles, 120°C, 20 min.
@@ -213,4 +215,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.514659Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:59.669386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000931'

@@ -1,3 +1,4 @@
+id: CultureMech:006451
 name: MEDIUM 78 MODIFIED FOR DSM 2079
 original_name: MEDIUM 78 MODIFIED FOR DSM 2079
 category: bacterial
@@ -196,3 +197,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:40.882441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006451'

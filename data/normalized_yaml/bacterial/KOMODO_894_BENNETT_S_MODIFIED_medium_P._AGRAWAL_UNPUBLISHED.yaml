@@ -1,3 +1,4 @@
+id: CultureMech:006747
 name: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
 original_name: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:894
     label: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
-notes: 'Source: KOMODO ModelSEED | ID: 894 | DSMZ Medium: 894 (mediadive.medium:894) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 894 | DSMZ Medium: 894 (mediadive.medium:894)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Lab-Lemco beef extract
   concentration:
@@ -79,5 +81,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:42.530189'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration for ingredient:
-    Ferric ammonium citrate'
+  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
+    for ingredient: Ferric ammonium citrate'
+- timestamp: '2026-03-13T06:19:43.568748Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006747'

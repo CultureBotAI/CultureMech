@@ -1,3 +1,4 @@
+id: CultureMech:011261
 preferred_term: Main sol. 889
 term:
   id: mediadive.solution:1839
@@ -158,3 +159,8 @@ preparation_notes: 'Adjust pH to 7.0 using H2SO4.
   Check pH and adjust accordingly.
 
   Give an atmosphere of H2/CO2/O2 (78/20/2) with an overpressure of two atmospheres.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.475909Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011261'

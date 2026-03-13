@@ -1,3 +1,4 @@
+id: CultureMech:014939
 preferred_term: Mail sol. C108
 term:
   id: mediadive.solution:6247
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "Make up to 1 litre with 75% filtered seawater: 25% deionized water.\
   \ Autoclave at 15 psi for\r\n15 minutes. Cool to approx. 55 °C and add sterile marine\
   \ supplement."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.097822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014939'

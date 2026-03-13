@@ -1,3 +1,4 @@
+id: CultureMech:006002
 name: MEDIUM 554 MODIFIED FOR DSM 44396
 original_name: MEDIUM 554 MODIFIED FOR DSM 44396
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:554_44396
     label: MEDIUM 554 MODIFIED FOR DSM 44396
-notes: 'Source: KOMODO ModelSEED | ID: 554_44396 | DSMZ Medium: 554 (mediadive.medium:554) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 554_44396 | DSMZ Medium: 554 (mediadive.medium:554)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -59,4 +60,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 554
+- timestamp: '2026-03-13T06:19:37.538522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006002'
 ph_value: 7.2

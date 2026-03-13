@@ -1,3 +1,4 @@
+id: CultureMech:000770
 name: PY4S
 original_name: PY4S
 category: bacterial
@@ -117,8 +118,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium has been boiled and cooled
-    under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
+  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium has
+    been boiled and cooled under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -126,3 +127,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1308'
+- timestamp: '2026-03-13T06:18:58.237852Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000770'

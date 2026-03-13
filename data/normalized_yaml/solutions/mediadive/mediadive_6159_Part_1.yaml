@@ -1,3 +1,4 @@
+id: CultureMech:014860
 preferred_term: Part 1
 term:
   id: mediadive.solution:6159
@@ -91,3 +92,8 @@ preparation_notes: 'Distilled water to 500 ml.  Autoclave
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.817116Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014860'

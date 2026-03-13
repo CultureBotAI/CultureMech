@@ -1,3 +1,4 @@
+id: CultureMech:003090
 name: FRESHWATER MEDIUM WITH TOLUENE
 original_name: FRESHWATER MEDIUM WITH TOLUENE
 category: bacterial
@@ -211,6 +212,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:17.726566Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003090'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution (see Medium No. 187

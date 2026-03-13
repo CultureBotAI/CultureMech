@@ -1,3 +1,4 @@
+id: CultureMech:000713
 name: LACTOBACILLUS KEFIRANOFACIENS
 original_name: LACTOBACILLUS KEFIRANOFACIENS
 category: bacterial
@@ -50,12 +51,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add all products except white wine, hemin and cysteine solutions. Adjust pH to 6.5 and
-    autoclave for 15 minutes. Cool to 50°C and add aseptically white wine, hemin and cysteine solutions.
+  description: Add all products except white wine, hemin and cysteine solutions. Adjust
+    pH to 6.5 and autoclave for 15 minutes. Cool to 50°C and add aseptically white
+    wine, hemin and cysteine solutions.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve 50 mg hemin in 1 ml 1N NaOH; make to 100 ml with distilled water. Autoclave at
-    121°C for 15 min.
+  description: Dissolve 50 mg hemin in 1 ml 1N NaOH; make to 100 ml with distilled
+    water. Autoclave at 121°C for 15 min.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterilize.
@@ -66,3 +68,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1253'
+- timestamp: '2026-03-13T06:18:57.700550Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000713'

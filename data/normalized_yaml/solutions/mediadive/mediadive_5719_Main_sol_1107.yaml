@@ -1,3 +1,4 @@
+id: CultureMech:014580
 preferred_term: Main sol. 1107
 term:
   id: mediadive.solution:5719
@@ -117,3 +118,8 @@ preparation_notes: 'To 10 ml of the dialister medium add aseptically:
 
 
   Original volume: 12 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.497710Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014580'

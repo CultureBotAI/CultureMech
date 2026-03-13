@@ -1,3 +1,4 @@
+id: CultureMech:011422
 preferred_term: Main sol. 990
 term:
   id: mediadive.solution:2019
@@ -166,3 +167,8 @@ preparation_notes: Prepare the medium without the yeast extract, peptone and sod
   sterile (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised
   5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should
   be 6.8
+curation_history:
+- timestamp: '2026-03-13T06:20:19.588582Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011422'

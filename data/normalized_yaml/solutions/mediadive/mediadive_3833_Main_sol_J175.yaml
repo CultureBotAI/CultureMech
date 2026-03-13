@@ -1,3 +1,4 @@
+id: CultureMech:012910
 preferred_term: Main sol. J175
 term:
   id: mediadive.solution:3833
@@ -58,3 +59,8 @@ preparation_notes: Mix ingredients except yeast extract, sulfur and Na2S x 9H2O,
   the yeast extract solution and sulfur to the medium under a H2-CO2 (80:20) atmosphere.
   Prior to inoculation, add the sterile Na2S x 9H2O solution and adjust pH to 2.5
   with sterile 1 N H2SO4. Pressurize inoculated bottles to 100 kPa H2-CO2 (80:20).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.267489Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012910'

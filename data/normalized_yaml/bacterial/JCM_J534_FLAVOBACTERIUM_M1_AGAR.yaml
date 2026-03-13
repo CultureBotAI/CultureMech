@@ -1,3 +1,4 @@
+id: CultureMech:002882
 name: FLAVOBACTERIUM M1 AGAR
 original_name: FLAVOBACTERIUM M1 AGAR
 category: bacterial
@@ -48,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J534'
+- timestamp: '2026-03-13T06:19:16.301193Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002882'

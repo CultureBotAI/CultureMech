@@ -1,3 +1,4 @@
+id: CultureMech:001679
 name: TRYPTONE SOYA BROTH (ANAEROB)
 original_name: TRYPTONE SOYA BROTH (ANAEROB)
 category: bacterial
@@ -61,10 +62,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium for 1 minute, then
-    cool to room temperature under 100% N2 gas atmosphere. Add cysteine and thioglycolate, then adjust
-    the pH to 8.0. Dispense medium under the same gas atmosphere in culture vessels and autoclave at 121ºC
-    for <b>15</b> minutes. Check and adjust the pH of the complete medium to 8.0, if necessary.
+  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium
+    for 1 minute, then cool to room temperature under 100% N2 gas atmosphere. Add
+    cysteine and thioglycolate, then adjust the pH to 8.0. Dispense medium under the
+    same gas atmosphere in culture vessels and autoclave at 121ºC for <b>15</b> minutes.
+    Check and adjust the pH of the complete medium to 8.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +74,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 545c'
+- timestamp: '2026-03-13T06:19:06.399968Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001679'

@@ -1,3 +1,4 @@
+id: CultureMech:011259
 preferred_term: Main sol. 887
 term:
   id: mediadive.solution:1836
@@ -159,3 +160,8 @@ preparation_notes: 'Sparge medium with 100% N2 gas mixture for 30 min to make an
   After autoclaving add the following (e.g., from sterile stock solutions)
 
   Adjust the gas atmosphere strain specifically.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.459489Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011259'

@@ -1,3 +1,4 @@
+id: CultureMech:012148
 preferred_term: Main sol. 167
 term:
   id: mediadive.solution:287
@@ -119,3 +120,8 @@ preparation_notes: 'Adjust pH to 7.2.
   ml of medium, thereby leaving 1 - 2 cm of the strip outside of the medium. Inoculate
   the strain onto the cellulose filter paper. The strain will grow on the cellulose
   paper only.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.187353Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012148'

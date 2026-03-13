@@ -1,3 +1,4 @@
+id: CultureMech:006479
 name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
 original_name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:780
     label: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
-notes: 'Source: KOMODO ModelSEED | ID: 780 | DSMZ Medium: 780 (mediadive.medium:780) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 780 | DSMZ Medium: 780 (mediadive.medium:780)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Mycobactine J
   concentration:
@@ -43,3 +45,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 780
+- timestamp: '2026-03-13T06:19:41.181799Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006479'

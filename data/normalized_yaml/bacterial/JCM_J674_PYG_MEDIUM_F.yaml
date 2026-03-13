@@ -1,3 +1,4 @@
+id: CultureMech:003019
 name: PYG MEDIUM (F)
 original_name: PYG MEDIUM (F)
 category: bacterial
@@ -97,3 +98,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J674'
+- timestamp: '2026-03-13T06:19:17.211279Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003019'

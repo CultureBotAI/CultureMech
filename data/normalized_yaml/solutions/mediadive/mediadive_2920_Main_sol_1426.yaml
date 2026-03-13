@@ -1,3 +1,4 @@
+id: CultureMech:012176
 preferred_term: Main sol. 1426
 term:
   id: mediadive.solution:2920
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "adjust pH to 5.5\nAdd to 1000 ml of medium after autoclaving:\
   \ \nFor solid medium use purified agar (Oxoid LP0028) which has to be autoclaved\
   \ separately."
+curation_history:
+- timestamp: '2026-03-13T06:20:24.327278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012176'

@@ -1,3 +1,4 @@
+id: CultureMech:002439
 name: 0.01% LB SEAWATER MEDIUM
 original_name: 0.01% LB SEAWATER MEDIUM
 category: bacterial
@@ -88,4 +89,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1273'
+- timestamp: '2026-03-13T06:19:13.321778Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002439'
 high_metal: true

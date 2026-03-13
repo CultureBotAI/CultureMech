@@ -1,3 +1,4 @@
+id: CultureMech:009658
 name: Luria–Bertani (LB) + antibiotics
 original_name: Luria–Bertani (LB) + antibiotics
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:28971
     label: Ampicillin
@@ -16,12 +18,14 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component,
+    Defined component'
 - preferred_term: Rifampicin
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
+    Organic compound'
   term:
     id: CHEBI:28077
     label: Rifampicin
@@ -34,7 +38,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
+    Organic compound'
 - preferred_term: Luria–Bertani (LB)
   concentration:
     value: '1'
@@ -56,3 +61,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:07.938543Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009658'

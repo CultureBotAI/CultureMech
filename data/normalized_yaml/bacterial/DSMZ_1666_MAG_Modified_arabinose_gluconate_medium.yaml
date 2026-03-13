@@ -1,3 +1,4 @@
+id: CultureMech:001150
 name: MAG Modified arabinose gluconate medium
 original_name: MAG Modified arabinose gluconate medium
 category: bacterial
@@ -110,3 +111,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1666'
+- timestamp: '2026-03-13T06:19:01.672800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001150'

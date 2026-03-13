@@ -1,3 +1,4 @@
+id: CultureMech:003233
 name: PHOSPHATE-BUFFERED SALINE (pH 7.4)
 original_name: PHOSPHATE-BUFFERED SALINE (pH 7.4)
 category: bacterial
@@ -49,3 +50,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J885'
+- timestamp: '2026-03-13T06:19:18.804103Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003233'

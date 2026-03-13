@@ -1,3 +1,4 @@
+id: CultureMech:014328
 preferred_term: Main sol. J1273
 term:
   id: mediadive.solution:5415
@@ -128,3 +129,8 @@ preparation_notes: 'Mix components thoroughly, adjust pH to 8.0 with HCl and aut
 
   Comment: Artificial sea water (such as artificial sea water in Medium No. 1118)
   can be used instead of natural sea water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.113122Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014328'

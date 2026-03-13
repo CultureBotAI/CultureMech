@@ -1,3 +1,4 @@
+id: CultureMech:001904
 name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
 original_name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
 category: bacterial
@@ -107,17 +108,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A except carbonate, sparge with 100% N2 gas for 30 - 45
-    min to make it anoxic, then add carbonate and adjust pH to 9.0 - 9.3. Dispense under 100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials (e.g., 30 ml medium per 100 ml bottle) and autoclave.
-    Solutions B and C are autoclaved separately under 100% N2 gas atmosphere. Solutions D and E are prepared
-    under 100% N2 gas and sterilized by filtration. To complete the medium add appropriate amounts of
-    solutions B to E to the sterile solution A in the sequence as indicated. Adjust pH of complete medium
-    to 7.5.
+  description: Dissolve ingredients of solution A except carbonate, sparge with 100%
+    N2 gas for 30 - 45 min to make it anoxic, then add carbonate and adjust pH to
+    9.0 - 9.3. Dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials (e.g., 30 ml medium per 100 ml bottle) and autoclave. Solutions
+    B and C are autoclaved separately under 100% N2 gas atmosphere. Solutions D and
+    E are prepared under 100% N2 gas and sterilized by filtration. To complete the
+    medium add appropriate amounts of solutions B to E to the sterile solution A in
+    the sequence as indicated. Adjust pH of complete medium to 7.5.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
-    freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning.'
 - step_number: 3
   action: MIX
   description: For transfers use 10% (v/v) inoculum.
@@ -128,3 +131,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 770'
+- timestamp: '2026-03-13T06:19:08.289242Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001904'

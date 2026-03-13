@@ -1,3 +1,4 @@
+id: CultureMech:000831
 name: RICH ORGANIC MEDIUM
 original_name: RICH ORGANIC MEDIUM
 category: bacterial
@@ -148,8 +149,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 5.9. Add NaOH (0.1 mol/l) 16ml/l after sterilisation from sterile stock solution
-    to readjust pH to 6.8.
+  description: Adjust pH to 5.9. Add NaOH (0.1 mol/l) 16ml/l after sterilisation from
+    sterile stock solution to readjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
   description: 'Add the following from sterile stock solutions to the autoclaved medium:'
@@ -167,3 +168,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.714773Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000831'

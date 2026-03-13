@@ -1,3 +1,4 @@
+id: CultureMech:003087
 name: MODIFIED HB-1 MEDIUM
 original_name: MODIFIED HB-1 MEDIUM
 category: bacterial
@@ -134,11 +135,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly
-    add 10 ml 5% Na2S x 9H2O solution to the medium, wait for the medium to become colorless, then adjust
-    pH to 7.0 with NaOH. Distribute medium into culture vessels under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. Before inoculation, aseptically and anaerobically add per liter
-    the following solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v)
+    gas mixture. Slowly add 10 ml 5% Na2S x 9H2O solution to the medium, wait for
+    the medium to become colorless, then adjust pH to 7.0 with NaOH. Distribute medium
+    into culture vessels under the same gas mixture, seal with butyl rubber stoppers
+    and autoclave. Before inoculation, aseptically and anaerobically add per liter
+    the following solutions from anaerobic stocks (autoclaved and stored under a N2
+    atmosphere):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (4:1, v/v).
@@ -149,3 +152,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J744'
+- timestamp: '2026-03-13T06:19:17.702386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003087'

@@ -1,5 +1,8 @@
-name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol; Nakano et al','N
-original_name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol; Nakano et al','N
+id: CultureMech:007109
+name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol; Nakano et
+  al','N
+original_name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol;
+  Nakano et al','N
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
@@ -197,14 +200,20 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.555935Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 215, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 215, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.210018Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007109'
 media_term:
   preferred_term: MediaDB Medium 215
   term:
     id: MEDIADB:215
-    label: Spizizen's medium + trace elements + amino acids sln + 1% glycerol; Nakano et al','N
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+    label: Spizizen's medium + trace elements + amino acids sln + 1% glycerol; Nakano
+      et al','N
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

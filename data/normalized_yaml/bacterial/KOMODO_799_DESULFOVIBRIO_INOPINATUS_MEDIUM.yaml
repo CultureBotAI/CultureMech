@@ -1,3 +1,4 @@
+id: CultureMech:006511
 name: DESULFOVIBRIO INOPINATUS MEDIUM
 original_name: DESULFOVIBRIO INOPINATUS MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:799
     label: DESULFOVIBRIO INOPINATUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 799 | DSMZ Medium: 799 (mediadive.medium:799) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 799 | DSMZ Medium: 799 (mediadive.medium:799)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 799'
+- timestamp: '2026-03-13T06:19:41.480457Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006511'

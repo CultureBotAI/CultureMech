@@ -1,3 +1,4 @@
+id: CultureMech:010763
 preferred_term: Trace elements
 term:
   id: mediadive.solution:1272
@@ -91,3 +92,8 @@ preparation_notes: 'pH adjusted to 2.0 with H2SO4.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.384034Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010763'

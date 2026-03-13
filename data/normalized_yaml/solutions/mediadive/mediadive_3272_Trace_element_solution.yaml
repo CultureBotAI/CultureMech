@@ -1,3 +1,4 @@
+id: CultureMech:012451
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:3272
@@ -100,3 +101,8 @@ composition:
     label: magnesium sulfate
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:26.011705Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012451'

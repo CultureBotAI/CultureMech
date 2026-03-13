@@ -1,3 +1,4 @@
+id: CultureMech:003299
 name: C41 MEDIUM
 original_name: C41 MEDIUM
 category: bacterial
@@ -144,8 +145,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,3 +154,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J951'
+- timestamp: '2026-03-13T06:19:19.309590Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003299'

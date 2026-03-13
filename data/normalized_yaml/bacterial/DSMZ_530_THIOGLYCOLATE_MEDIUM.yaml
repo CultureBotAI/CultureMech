@@ -1,3 +1,4 @@
+id: CultureMech:001662
 name: THIOGLYCOLATE MEDIUM
 original_name: THIOGLYCOLATE MEDIUM
 category: bacterial
@@ -50,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 530'
+- timestamp: '2026-03-13T06:19:06.297933Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001662'

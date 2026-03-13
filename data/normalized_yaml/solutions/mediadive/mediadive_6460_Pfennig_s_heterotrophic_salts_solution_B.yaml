@@ -1,3 +1,4 @@
+id: CultureMech:015041
 preferred_term: Pfennig's heterotrophic salts solution B
 term:
   id: mediadive.solution:6460
@@ -103,3 +104,8 @@ preparation_notes: 'Filter sterilize into sterile, gas-tight, 100 ml screw-cap b
 
 
   Original volume: 26 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.494264Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015041'

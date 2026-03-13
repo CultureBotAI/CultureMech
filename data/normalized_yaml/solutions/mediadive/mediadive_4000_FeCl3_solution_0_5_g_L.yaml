@@ -1,3 +1,4 @@
+id: CultureMech:013060
 preferred_term: FeCl3 solution 0.5 g/L
 term:
   id: mediadive.solution:4000
@@ -31,3 +32,8 @@ preparation_notes: 'Prepare just before use.
 
 
   Original volume: 300 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.157404Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013060'

@@ -1,3 +1,4 @@
+id: CultureMech:006040
 name: MEDIUM 58 MODIFIED FOR DSM 20467
 original_name: MEDIUM 58 MODIFIED FOR DSM 20467
 category: bacterial
@@ -125,4 +126,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:37.822135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006040'
 ph_value: 6.8

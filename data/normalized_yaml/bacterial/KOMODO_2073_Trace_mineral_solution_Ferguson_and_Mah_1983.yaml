@@ -1,3 +1,4 @@
+id: CultureMech:004350
 name: Trace mineral solution (Ferguson and Mah, 1983)
 original_name: Trace mineral solution (Ferguson and Mah, 1983)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2073'
+- timestamp: '2026-03-13T06:19:26.642726Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004350'

@@ -1,3 +1,4 @@
+id: CultureMech:001386
 name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
 original_name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
 category: bacterial
@@ -90,15 +91,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and cellobiose) and sparge medium with 100% N2 gas
-    for 30 - 45 m in to make it anoxic. Add cysteine, adjust pH to 7.2 and dispense under 100% N2 gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add cellobiose
-    from an anoxic stock solution sterilized by filtration.
+  description: Dissolve ingredients (except cysteine and cellobiose) and sparge medium
+    with 100% N2 gas for 30 - 45 m in to make it anoxic. Add cysteine, adjust pH to
+    7.2 and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After sterilization add cellobiose from an anoxic stock
+    solution sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: 'Note: Some strains can be adapted to cellulose as substrate using 5.0 g/l cellulose (Lens
-    tissue, OXOID; or cellulose powder MN 301, MACHEREY-NAGEL). If necessary adjust pH of completed medium
-    to 7.2.'
+  description: 'Note: Some strains can be adapted to cellulose as substrate using
+    5.0 g/l cellulose (Lens tissue, OXOID; or cellulose powder MN 301, MACHEREY-NAGEL).
+    If necessary adjust pH of completed medium to 7.2.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,3 +108,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 289'
+- timestamp: '2026-03-13T06:19:03.630313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001386'

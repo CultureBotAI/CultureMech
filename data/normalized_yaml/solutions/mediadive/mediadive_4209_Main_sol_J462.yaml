@@ -1,3 +1,4 @@
+id: CultureMech:013234
 preferred_term: Main sol. J462
 term:
   id: mediadive.solution:4209
@@ -160,3 +161,8 @@ preparation_notes: 'Dissolve components except NaHCO3, Vitamin solution, Thiamin
 
 
   Original volume: 6 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.220634Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013234'

@@ -1,3 +1,4 @@
+id: CultureMech:015291
 preferred_term: Main sol. 465f
 term:
   id: mediadive.solution:953
@@ -19,3 +20,8 @@ preparation_notes: Prepare mineral medium 465. Prepare a stock solution of 10 g/
   3-aminophenol by adding boiling water to the crystals, stir the solution, cool and
   sterilize by filtration. Add 10 ml of this stock solution to 1 l of autoclaved and
   cooled medium 465.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.661613Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015291'

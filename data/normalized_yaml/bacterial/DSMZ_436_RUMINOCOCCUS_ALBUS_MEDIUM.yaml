@@ -1,3 +1,4 @@
+id: CultureMech:001544
 name: RUMINOCOCCUS ALBUS MEDIUM
 original_name: RUMINOCOCCUS ALBUS MEDIUM
 category: bacterial
@@ -123,7 +124,8 @@ preparation_steps:
   description: 'Boil and cool under CO2. Under a gentle stream of CO2 add:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
+  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and
+    sterilize.
 - step_number: 3
   action: HEAT
   description: Inoculate under CO2 and incubate at 37°C.
@@ -134,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 436'
+- timestamp: '2026-03-13T06:19:05.089899Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001544'

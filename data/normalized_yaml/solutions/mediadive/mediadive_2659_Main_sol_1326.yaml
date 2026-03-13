@@ -1,3 +1,4 @@
+id: CultureMech:011981
 preferred_term: Main sol. 1326
 term:
   id: mediadive.solution:2659
@@ -67,3 +68,8 @@ composition:
 preparation_notes: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and
   0.1ml of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium
   may be solidified by adding 15 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.101935Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011981'

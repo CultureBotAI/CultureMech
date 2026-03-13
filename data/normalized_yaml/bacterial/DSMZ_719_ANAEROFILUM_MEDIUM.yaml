@@ -1,3 +1,4 @@
+id: CultureMech:001857
 name: ANAEROFILUM MEDIUM
 original_name: ANAEROFILUM MEDIUM
 category: bacterial
@@ -204,15 +205,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, glucose, cysteine and sulfide. Sparge medium with
-    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate, then
-    dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add glucose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas.
-    Prior to use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients except bicarbonate, glucose, cysteine and sulfide.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve bicarbonate, then dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior
+    to use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH.
@@ -226,3 +228,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 719'
+- timestamp: '2026-03-13T06:19:07.817933Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001857'

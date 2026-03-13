@@ -1,3 +1,4 @@
+id: CultureMech:011626
 preferred_term: Main sol. 1113
 term:
   id: mediadive.solution:2234
@@ -51,3 +52,8 @@ preparation_notes: Dissolve the agarose in water by boiling. Add the Leptospira 
   to 50-55°C. Warm the Leptospira Enrichment to approximately 25°C and add to the
   warm medium. Mix uniformly and dispense aseptically into sterile tubes as requested.
   Final pH is 7.5 at 25°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.882485Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011626'

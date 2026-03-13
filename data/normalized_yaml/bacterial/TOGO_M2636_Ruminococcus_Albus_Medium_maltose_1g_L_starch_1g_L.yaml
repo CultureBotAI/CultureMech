@@ -1,3 +1,4 @@
+id: CultureMech:009193
 name: Ruminococcus Albus Medium + maltose (1g/L), starch (1g/L)
 original_name: Ruminococcus Albus Medium + maltose (1g/L), starch (1g/L)
 category: bacterial
@@ -212,6 +213,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.839313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009193'
 solutions:
 - preferred_term: Mineral solution 1
   term:

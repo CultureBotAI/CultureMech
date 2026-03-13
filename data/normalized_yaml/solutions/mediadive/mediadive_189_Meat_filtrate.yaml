@@ -1,3 +1,4 @@
+id: CultureMech:011317
 preferred_term: Meat filtrate
 term:
   id: mediadive.solution:189
@@ -43,3 +44,8 @@ preparation_notes: Use lean beef or horse meat. Remove fat and connective tissue
   grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
   room temperature, skim fat off surface, and filter, retaining both meat particles
   and filtrate. To the filtrate add water to a final volume of 1000.0 ml.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.866382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011317'

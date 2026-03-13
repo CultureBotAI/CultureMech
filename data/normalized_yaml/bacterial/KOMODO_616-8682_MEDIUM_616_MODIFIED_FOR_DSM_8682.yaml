@@ -1,3 +1,4 @@
+id: CultureMech:006107
 name: MEDIUM 616 MODIFIED FOR DSM 8682
 original_name: MEDIUM 616 MODIFIED FOR DSM 8682
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:616_8682
     label: MEDIUM 616 MODIFIED FOR DSM 8682
-notes: 'Source: KOMODO ModelSEED | ID: 616_8682 | DSMZ Medium: 616 (mediadive.medium:616) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 616_8682 | DSMZ Medium: 616 (mediadive.medium:616)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -76,3 +78,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 616
+- timestamp: '2026-03-13T06:19:38.343282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006107'

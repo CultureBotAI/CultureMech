@@ -1,3 +1,4 @@
+id: CultureMech:012311
 preferred_term: Main sol. 1495
 term:
   id: mediadive.solution:3086
@@ -91,3 +92,8 @@ composition:
 preparation_notes: Adjust pH to 7.4-7.6 Autoclave and add 1.0 ml/l vitamin solution
   from a filter sterilised stock solution (see below). The medium may be solidified
   by adding 15.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.121801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012311'

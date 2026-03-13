@@ -1,3 +1,4 @@
+id: CultureMech:011003
 preferred_term: Main sol. 751
 term:
   id: mediadive.solution:1537
@@ -127,3 +128,8 @@ composition:
 preparation_notes: "Adjust pH to 6.6. Autoclave, cool to 50°C and add the following\
   \ filter-sterilized components: \nFor liquid medium, omit corn meal agar and change\
   \ the phosphate concentration to KH2PO4, 1.5 g and K2HPO4, 0.5 g."
+curation_history:
+- timestamp: '2026-03-13T06:20:16.928055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011003'

@@ -1,3 +1,4 @@
+id: CultureMech:010839
 preferred_term: Main sol. 635
 term:
   id: mediadive.solution:1356
@@ -72,3 +73,8 @@ preparation_notes: 'Dissolve ingredients (except cysteine and vitamins), sparge 
 
 
   Original volume: 1006 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.846091Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010839'

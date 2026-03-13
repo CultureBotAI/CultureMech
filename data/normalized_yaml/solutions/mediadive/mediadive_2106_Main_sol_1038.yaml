@@ -1,3 +1,4 @@
+id: CultureMech:011506
 preferred_term: Main sol. 1038
 term:
   id: mediadive.solution:2106
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Dissolve ingredients except glucose and yeast extract, adjust pH
   to 2.5, dispense in suitable cultivation vessels and autoclave. Add glucose and
   yeast extract after autoclaving from sterile stock solutions.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.112618Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011506'

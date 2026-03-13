@@ -1,3 +1,4 @@
+id: CultureMech:002147
 name: R3 MEDIUM
 original_name: R3 MEDIUM
 category: bacterial
@@ -72,3 +73,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:10.747583Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002147'

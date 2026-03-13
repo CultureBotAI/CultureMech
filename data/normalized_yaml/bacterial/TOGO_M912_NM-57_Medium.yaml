@@ -1,3 +1,4 @@
+id: CultureMech:010332
 name: NM-57 Medium
 original_name: NM-57 Medium
 category: bacterial
@@ -130,6 +131,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.060946Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010332'
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []

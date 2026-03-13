@@ -1,3 +1,4 @@
+id: CultureMech:012420
 preferred_term: Mineral salts solution
 term:
   id: mediadive.solution:3221
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
   (about 7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8
   with NaOH or H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.821858Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012420'

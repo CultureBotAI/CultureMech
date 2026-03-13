@@ -1,3 +1,4 @@
+id: CultureMech:015101
 preferred_term: Main sol. 354
 term:
   id: mediadive.solution:694
@@ -111,3 +112,8 @@ preparation_notes: "Addition: \npH 7.0\nSterilize medium for 30 min at 121°C, c
   \ of egg mixture 20 - 25 fresh eggs (not older then 1 week). Clean the eggs, wipe\
   \ away with 70% alcohol, open the eggs and homogenize the egg mixture carefully.\n\
   \nOriginal volume: 1612 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:40.756986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015101'

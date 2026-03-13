@@ -1,3 +1,4 @@
+id: CultureMech:007318
 name: '''Defined freshwater medium (CoSO4'
 original_name: '''Defined freshwater medium (CoSO4'
 category: bacterial
@@ -203,6 +204,10 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:47.756943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007318'
 media_term:
   preferred_term: MediaDB Medium 417
   term:

@@ -1,3 +1,4 @@
+id: CultureMech:000816
 name: THIORHODOCOCCUS MEDIUM
 original_name: THIORHODOCOCCUS MEDIUM
 category: bacterial
@@ -151,14 +152,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
-    under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
+    a rubber septum under a stream of nitrogen gas.
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O and vitamin B12, under
-    a nitrogen atmosphere dispense into tubes or bottles fitted with rubber stoppers so that they are
-    half full. Autoclave and add the vitamin B12 from a filter-sterilised stock solution and the NaHCO3,
-    Na2S x 9 H2O, Na2S2O3 x 5 H2O from sterile stock solutions. The final pH of the medium should be 7.5
+  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O
+    and vitamin B12, under a nitrogen atmosphere dispense into tubes or bottles fitted
+    with rubber stoppers so that they are half full. Autoclave and add the vitamin
+    B12 from a filter-sterilised stock solution and the NaHCO3, Na2S x 9 H2O, Na2S2O3
+    x 5 H2O from sterile stock solutions. The final pH of the medium should be 7.5
     + 0.2.
 - step_number: 3
   action: MIX
@@ -170,3 +172,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1358'
+- timestamp: '2026-03-13T06:18:58.573505Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000816'

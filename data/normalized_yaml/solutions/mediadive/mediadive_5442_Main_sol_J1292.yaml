@@ -1,3 +1,4 @@
+id: CultureMech:014348
 preferred_term: Main sol. J1292
 term:
   id: mediadive.solution:5442
@@ -177,3 +178,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Distribute t
   \ N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.After cooling,\
   \ aseptically and anaerobically add per liter the following solutions (autoclaved\
   \ and stored under N2) \n\nOriginal volume: 1021 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.223070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014348'

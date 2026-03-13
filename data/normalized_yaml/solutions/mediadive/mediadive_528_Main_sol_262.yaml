@@ -1,3 +1,4 @@
+id: CultureMech:014201
 preferred_term: Main sol. 262
 term:
   id: mediadive.solution:528
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled
   water and sterilize glucose separately. Aseptically add to the basis medium after
   sterilization.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.294878Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014201'

@@ -1,3 +1,4 @@
+id: CultureMech:006077
 name: BLASTOCOCCUS AGGREGATUS MEDIUM
 original_name: BLASTOCOCCUS AGGREGATUS MEDIUM
 category: bacterial
@@ -111,3 +112,7 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:38.118385Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006077'

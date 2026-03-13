@@ -1,3 +1,4 @@
+id: CultureMech:010492
 name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
 original_name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
 category: fungal
@@ -40,8 +41,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix components thoroughly and adjust pH to 7.5. For preparation of solid medium, add 18.0
-    g/L agar.
+  description: Mix components thoroughly and adjust pH to 7.5. For preparation of
+    solid medium, add 18.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +50,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1141'
+- timestamp: '2026-03-13T06:20:14.054727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010492'

@@ -1,3 +1,4 @@
+id: CultureMech:007505
 name: '927'
 original_name: '927'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 84 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.284637Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007505'
 solutions:
 - preferred_term: Sodium acetate1.7gNH4Cl1gKH2PO40.3gNaCl0.6gMgCl2·6H2O0.1gCaCl2·2H2O0.08gTrace
     elements solution*10mlVitamin solution**10mlBacto Yeast Extract (Difco)0.5gHipolypepton

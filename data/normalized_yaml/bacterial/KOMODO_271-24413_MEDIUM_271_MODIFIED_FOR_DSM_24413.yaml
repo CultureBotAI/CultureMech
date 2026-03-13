@@ -1,3 +1,4 @@
+id: CultureMech:004698
 name: MEDIUM 271 MODIFIED FOR DSM 24413
 original_name: MEDIUM 271 MODIFIED FOR DSM 24413
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:271_24413
     label: MEDIUM 271 MODIFIED FOR DSM 24413
-notes: 'Source: KOMODO ModelSEED | ID: 271_24413 | DSMZ Medium: 271 (mediadive.medium:271) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 271_24413 | DSMZ Medium: 271 (mediadive.medium:271)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -65,3 +66,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 271
+- timestamp: '2026-03-13T06:19:28.182791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004698'

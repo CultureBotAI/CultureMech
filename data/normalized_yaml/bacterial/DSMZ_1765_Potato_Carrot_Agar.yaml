@@ -1,3 +1,4 @@
+id: CultureMech:001233
 name: Potato Carrot Agar
 original_name: Potato Carrot Agar
 category: bacterial
@@ -29,8 +30,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil the peeled and chopped potatoes and carrots for 45 minutes, then filter through cheesecloth
-    and complete the volume to 1000 ml using distilled water and add agar.
+  description: Boil the peeled and chopped potatoes and carrots for 45 minutes, then
+    filter through cheesecloth and complete the volume to 1000 ml using distilled
+    water and add agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -38,3 +40,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1765'
+- timestamp: '2026-03-13T06:19:02.449218Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001233'

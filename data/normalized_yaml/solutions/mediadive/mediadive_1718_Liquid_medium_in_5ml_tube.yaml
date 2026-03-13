@@ -1,3 +1,4 @@
+id: CultureMech:011168
 preferred_term: Liquid medium (in 5ml tube)
 term:
   id: mediadive.solution:1718
@@ -72,3 +73,8 @@ preparation_notes: 'Incubate inoculated tubes in slanted position.
 
 
   Original volume: 5 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.925268Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011168'

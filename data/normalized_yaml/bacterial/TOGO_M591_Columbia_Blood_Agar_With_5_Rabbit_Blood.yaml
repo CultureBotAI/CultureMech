@@ -1,3 +1,4 @@
+id: CultureMech:009988
 name: Columbia Blood Agar With 5% Rabbit Blood
 original_name: Columbia Blood Agar With 5% Rabbit Blood
 category: bacterial
@@ -34,4 +35,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.614070'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sterile defibrinated rabbit blood'
+  notes: 'Added default concentration for ingredient: sterile defibrinated rabbit
+    blood'
+- timestamp: '2026-03-13T06:20:10.529295Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009988'

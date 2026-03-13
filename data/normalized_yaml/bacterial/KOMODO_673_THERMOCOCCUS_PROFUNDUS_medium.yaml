@@ -1,3 +1,4 @@
+id: CultureMech:006269
 name: THERMOCOCCUS PROFUNDUS medium
 original_name: THERMOCOCCUS PROFUNDUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:673
     label: THERMOCOCCUS PROFUNDUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 673 | DSMZ Medium: 673 (mediadive.medium:673) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 673 | DSMZ Medium: 673 (mediadive.medium:673)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -132,3 +134,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 673
+- timestamp: '2026-03-13T06:19:39.392527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006269'

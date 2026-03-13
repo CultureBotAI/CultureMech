@@ -1,3 +1,4 @@
+id: CultureMech:003809
 name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
 original_name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:1108a
     label: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
-notes: 'Source: KOMODO ModelSEED | ID: 1108a | DSMZ Medium: 1108a (mediadive.medium:1108a) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1108a | DSMZ Medium: 1108a (mediadive.medium:1108a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: N-Z-Case
   concentration:
@@ -119,3 +120,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1108
+- timestamp: '2026-03-13T06:19:22.400274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003809'

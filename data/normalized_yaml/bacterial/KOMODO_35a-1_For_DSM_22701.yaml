@@ -1,3 +1,4 @@
+id: CultureMech:005080
 name: For DSM 22701
 original_name: For DSM 22701
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:35a.1
     label: For DSM 22701
-notes: 'Source: KOMODO ModelSEED | ID: 35a.1 | DSMZ Medium: 35a (mediadive.medium:35a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 35a.1 | DSMZ Medium: 35a (mediadive.medium:35a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -69,4 +71,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 35
+- timestamp: '2026-03-13T06:19:29.988967Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005080'
 ph_value: 6.0

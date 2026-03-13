@@ -1,3 +1,4 @@
+id: CultureMech:013125
 preferred_term: Main sol. J355
 term:
   id: mediadive.solution:4074
@@ -258,3 +259,8 @@ preparation_notes: 'Mix ingredients, except methanol, L-cysteine x HCl x H2O and
 
 
   Original volume: 1016 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.535810Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013125'

@@ -1,3 +1,4 @@
+id: CultureMech:013105
 preferred_term: Main sol. J333
 term:
   id: mediadive.solution:4051
@@ -57,3 +58,8 @@ preparation_notes: 'Adjust pH to 5.6.
   quickly and boil 200 g of potato cubes with 1.0 L of distilled water for 20 min.
   Mash and squeeze through a muslin bag. Add agar and boil until melting. Add sucrose
   and mix thoroughly. Make up to 1.0 L, adjust pH and autoclave for sterilization.'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.435942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013105'

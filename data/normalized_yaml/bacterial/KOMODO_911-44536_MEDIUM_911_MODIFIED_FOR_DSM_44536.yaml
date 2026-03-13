@@ -1,3 +1,4 @@
+id: CultureMech:006785
 name: MEDIUM 911 MODIFIED FOR DSM 44536
 original_name: MEDIUM 911 MODIFIED FOR DSM 44536
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:911_44536
     label: MEDIUM 911 MODIFIED FOR DSM 44536
-notes: 'Source: KOMODO ModelSEED | ID: 911_44536 | DSMZ Medium: 911 (mediadive.medium:911) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 911_44536 | DSMZ Medium: 911 (mediadive.medium:911)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glycerol
   term:
@@ -142,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 911
+- timestamp: '2026-03-13T06:19:43.898028Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006785'

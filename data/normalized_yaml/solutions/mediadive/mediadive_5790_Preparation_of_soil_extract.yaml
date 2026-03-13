@@ -1,3 +1,4 @@
+id: CultureMech:014637
 preferred_term: Preparation of soil extract
 term:
   id: mediadive.solution:5790
@@ -23,3 +24,8 @@ preparation_notes: "Fill 300ml garden soil in a 1 l laboratory flask and fill up
   Filter through Whatmanfilter 595 (1/2, 320 mm) to remove residual particles\nFilter\
   \ sterilize (PES membrane, pore size 0,22 µm)\nStore at 4°C – 10°C\n\nOriginal volume:\
   \ 700 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:38.774871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014637'

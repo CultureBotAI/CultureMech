@@ -1,3 +1,4 @@
+id: CultureMech:006426
 name: CLOSTRIDIUM ACIDIURICI medium
 original_name: CLOSTRIDIUM ACIDIURICI medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:76
     label: CLOSTRIDIUM ACIDIURICI medium
-notes: 'Source: KOMODO ModelSEED | ID: 76 | DSMZ Medium: 76 (mediadive.medium:76) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 76 | DSMZ Medium: 76 (mediadive.medium:76)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KOH
   term:
@@ -170,3 +172,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 76
+- timestamp: '2026-03-13T06:19:40.652636Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006426'

@@ -1,3 +1,4 @@
+id: CultureMech:013118
 preferred_term: Main sol. J346
 term:
   id: mediadive.solution:4066
@@ -127,3 +128,8 @@ preparation_notes: 'Adjust pH to 7.2.
 
   Comment: The premixed powder is available from Becton Dickinson & Co. as Difco R2A
   Agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.493875Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013118'

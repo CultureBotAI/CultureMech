@@ -1,3 +1,4 @@
+id: CultureMech:014247
 preferred_term: Main sol. J1212
 term:
   id: mediadive.solution:5334
@@ -107,3 +108,8 @@ preparation_notes: "Mix components, except L-cysteine x HCl x H2O, and heat the 
   \ rubber stoppers and autoclave. Aseptically and anaerobically add per liter the\
   \ following solution (autoclaved and stored under a N2 atmosphere): \n\nOriginal\
   \ volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.593683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014247'

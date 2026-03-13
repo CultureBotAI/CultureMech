@@ -1,3 +1,4 @@
+id: CultureMech:012323
 preferred_term: Main sol. 182a
 term:
   id: mediadive.solution:309
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH of the medium at room temperature to 3.5 with 10 N H2SO4
   prior to autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.199576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012323'

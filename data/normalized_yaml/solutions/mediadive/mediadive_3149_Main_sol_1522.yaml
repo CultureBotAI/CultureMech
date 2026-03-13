@@ -1,3 +1,4 @@
+id: CultureMech:012357
 preferred_term: Main sol. 1522
 term:
   id: mediadive.solution:3149
@@ -79,3 +80,8 @@ preparation_notes: 'The ethanol and acetic acid are sterilized separately by fil
   (use filter resistant to these solvents), and added aseptically to the sterile medium.
 
   Adjust pH to 3,5 with concentrated HCl after autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.411584Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012357'

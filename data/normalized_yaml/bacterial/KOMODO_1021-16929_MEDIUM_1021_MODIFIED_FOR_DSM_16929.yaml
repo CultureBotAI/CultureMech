@@ -1,3 +1,4 @@
+id: CultureMech:003533
 name: MEDIUM 1021 MODIFIED FOR DSM 16929
 original_name: MEDIUM 1021 MODIFIED FOR DSM 16929
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1021_16929
     label: MEDIUM 1021 MODIFIED FOR DSM 16929
-notes: 'Source: KOMODO ModelSEED | ID: 1021_16929 | DSMZ Medium: 1021 (mediadive.medium:1021) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1021_16929 | DSMZ Medium: 1021 (mediadive.medium:1021)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -86,4 +87,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1021
+- timestamp: '2026-03-13T06:19:20.485550Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003533'
 ph_value: 8.0

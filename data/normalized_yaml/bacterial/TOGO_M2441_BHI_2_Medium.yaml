@@ -1,3 +1,4 @@
+id: CultureMech:009020
 name: BHI/2 Medium
 original_name: BHI/2 Medium
 category: bacterial
@@ -56,3 +57,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.986112Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009020'

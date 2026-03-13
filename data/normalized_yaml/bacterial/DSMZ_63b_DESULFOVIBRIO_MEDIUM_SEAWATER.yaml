@@ -1,3 +1,4 @@
+id: CultureMech:001775
 name: DESULFOVIBRIO MEDIUM (SEAWATER)
 original_name: DESULFOVIBRIO MEDIUM (SEAWATER)
 category: bacterial
@@ -106,3 +107,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 63b'
+- timestamp: '2026-03-13T06:19:07.107244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001775'

@@ -1,3 +1,4 @@
+id: CultureMech:013779
 preferred_term: Main sol. J861
 term:
   id: mediadive.solution:4845
@@ -67,3 +68,8 @@ preparation_notes: "Mix thoroughly except sulfur, adjust pH 1.9 with H2SO4 and a
   \ Steam sulfur for 3 hr on each of 3 successive days. After cooling, add sulfur\
   \ and the following solutions (filter-sterilized) to the medium: \n\nOriginal volume:\
   \ 960 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.415891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013779'

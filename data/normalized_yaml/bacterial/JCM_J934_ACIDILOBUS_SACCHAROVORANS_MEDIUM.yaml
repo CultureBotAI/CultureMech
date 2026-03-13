@@ -1,3 +1,4 @@
+id: CultureMech:003282
 name: ACIDILOBUS SACCHAROVORANS MEDIUM
 original_name: ACIDILOBUS SACCHAROVORANS MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose
-    (separately autoclaved).
+  description: Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract
+    and 2.0 g/L glucose (separately autoclaved).
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.173166Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003282'
 data_quality_flags:
 - incomplete_composition

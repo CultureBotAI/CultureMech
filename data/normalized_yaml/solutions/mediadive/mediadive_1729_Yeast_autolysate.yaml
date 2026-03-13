@@ -1,3 +1,4 @@
+id: CultureMech:011179
 preferred_term: Yeast autolysate
 term:
   id: mediadive.solution:1729
@@ -31,3 +32,8 @@ preparation_notes: Suspend dry baker's yeast (SIGMA YSC-1) in distilled water an
   allow cells to autolyse for 48 h at 55°C. Thereafter, cell debris are removed by
   centrifugation (3.700 x g for 30 min) and the amber-colored supernatant is stored
   in aliquots at -20°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.977685Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011179'

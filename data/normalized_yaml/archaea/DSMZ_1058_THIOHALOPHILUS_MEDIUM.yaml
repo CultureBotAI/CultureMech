@@ -1,3 +1,4 @@
+id: CultureMech:000244
 name: THIOHALOPHILUS MEDIUM
 original_name: THIOHALOPHILUS MEDIUM
 category: archaea
@@ -175,13 +176,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium chloride, then sparge
-    solution with 80% N2 and 20% CO2 gas mixture for at least 30 - 45 min to remove dissolved oxygen and
-    to saturate the solution with CO2. Dispense solution in vials suitable for anaerobic cultures (e.g.
-    Balch-type tubes) to 50% volume under air atmosphere. Close vials with butyl rubber septa to prevent
-    free exchange of oxygen with the external atmosphere and autoclave. Add trace elements, calcium chloride,
-    magnesium sulfate, thiosulfate, bicarbonate and vitamins from sterile stock solutions and adjust pH
-    of the medium to 7.5 - 7.8 using a sterile stock solution of sodium carbonate (5% w/v).
+  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium
+    chloride, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
+    Dispense solution in vials suitable for anaerobic cultures (e.g. Balch-type tubes)
+    to 50% volume under air atmosphere. Close vials with butyl rubber septa to prevent
+    free exchange of oxygen with the external atmosphere and autoclave. Add trace
+    elements, calcium chloride, magnesium sulfate, thiosulfate, bicarbonate and vitamins
+    from sterile stock solutions and adjust pH of the medium to 7.5 - 7.8 using a
+    sterile stock solution of sodium carbonate (5% w/v).
 - step_number: 2
   action: MIX
   description: 'Note: Use at least 10% (v/v) as inoculum.'
@@ -195,3 +198,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1058'
+- timestamp: '2026-03-13T06:18:53.727113Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000244'

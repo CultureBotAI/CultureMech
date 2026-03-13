@@ -1,3 +1,4 @@
+id: CultureMech:010494
 name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
 category: fungal
@@ -19,7 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43) and adjust pH to 5.5.
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43)
+    and adjust pH to 5.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:14.059741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010494'
 data_quality_flags:
 - incomplete_composition

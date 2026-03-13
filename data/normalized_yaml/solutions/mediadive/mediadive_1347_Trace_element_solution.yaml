@@ -1,3 +1,4 @@
+id: CultureMech:010830
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:1347
@@ -114,3 +115,8 @@ composition:
 preparation_notes: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH
   (about 8 - 9 g). Dissolve other salts separately, combine and adjust the pH to 6.8
   with NaOH or H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.794292Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010830'

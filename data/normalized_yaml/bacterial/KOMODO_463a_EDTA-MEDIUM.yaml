@@ -1,3 +1,4 @@
+id: CultureMech:005508
 name: EDTA-MEDIUM
 original_name: EDTA-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:463a
     label: EDTA-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 463a | DSMZ Medium: 463a (mediadive.medium:463a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 463a | DSMZ Medium: 463a (mediadive.medium:463a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -195,3 +197,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 463
+- timestamp: '2026-03-13T06:19:33.527566Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005508'

@@ -1,3 +1,4 @@
+id: CultureMech:012248
 preferred_term: Main sol. 1473
 term:
   id: mediadive.solution:3018
@@ -115,3 +116,8 @@ preparation_notes: 'Prepare the liquid medium. Boil the medium in a water bath a
   cool under N2 to room temperature. Adjust to pH 5.8-6.2. Dispense the medium into
   Hungate tubes or serum bottles under gassing with N2. Sterilize by autoclaving.
   Before inoculation add from sterile stock solutions: '
+curation_history:
+- timestamp: '2026-03-13T06:20:24.752052Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012248'

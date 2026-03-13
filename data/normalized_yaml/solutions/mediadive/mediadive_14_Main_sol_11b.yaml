@@ -1,3 +1,4 @@
+id: CultureMech:010969
 preferred_term: Main sol. 11b
 term:
   id: mediadive.solution:14
@@ -161,3 +162,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Cysteine is added after the medium has been boiled and cooled under
   CO2. Adjust pH to 6.2 - 6.5, distribute under N2 and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.725907Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010969'

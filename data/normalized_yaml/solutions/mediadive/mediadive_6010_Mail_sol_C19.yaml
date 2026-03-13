@@ -1,3 +1,4 @@
+id: CultureMech:014746
 preferred_term: Mail sol. C19
 term:
   id: mediadive.solution:6010
@@ -103,3 +104,8 @@ preparation_notes: "Once elements are dissolved autoclave at 15 psi for 15 minut
   Make up to 1 litre with distilled water and adjust to pH 8.0 with1M NaOH or 1M HCl.\r\
   \nAutoclave at 15 psi for 15 minutes.\nFor brackish organisms, take 15 g of NaCl\
   \ instead of 30 g (BW/MASM)."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.377014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014746'

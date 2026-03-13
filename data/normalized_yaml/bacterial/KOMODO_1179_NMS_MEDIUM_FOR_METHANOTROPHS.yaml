@@ -1,3 +1,4 @@
+id: CultureMech:003899
 name: NMS MEDIUM FOR METHANOTROPHS
 original_name: NMS MEDIUM FOR METHANOTROPHS
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1179
     label: NMS MEDIUM FOR METHANOTROPHS
-notes: 'Source: KOMODO ModelSEED | ID: 1179 | DSMZ Medium: 1179 (mediadive.medium:1179) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1179 | DSMZ Medium: 1179 (mediadive.medium:1179)
+  | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -127,3 +129,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1179
+- timestamp: '2026-03-13T06:19:23.090673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003899'

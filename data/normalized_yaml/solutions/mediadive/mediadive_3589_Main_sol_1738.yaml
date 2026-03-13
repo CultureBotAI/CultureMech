@@ -1,3 +1,4 @@
+id: CultureMech:012682
 preferred_term: Main sol. 1738
 term:
   id: mediadive.solution:3589
@@ -23,3 +24,8 @@ preparation_notes: "The growth medium contains the following components (per lit
   \ of 5-10% CH4 and 21% O2.\nAutoclave the serum bottles for 20 minutes at 121 °C.\n\
   Upon cooling to room temperature, add Solutions 2 and 5 from a filter-sterilized\
   \ stock solution.\nThe final pH of the medium should be 7.8 - 7.9."
+curation_history:
+- timestamp: '2026-03-13T06:20:27.227058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012682'

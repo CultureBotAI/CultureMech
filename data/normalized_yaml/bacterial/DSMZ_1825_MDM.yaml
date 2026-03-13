@@ -1,3 +1,4 @@
+id: CultureMech:001254
 name: MDM
 original_name: MDM
 category: bacterial
@@ -164,11 +165,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with sterile distilled
-    water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    sterile distilled water.
 - step_number: 2
   action: STORE
-  description: anaerobize with nitrogen, can be stored anaerobically for a limited time
+  description: anaerobize with nitrogen, can be stored anaerobically for a limited
+    time
 - step_number: 3
   action: AUTOCLAVE
   description: autoclave
@@ -205,4 +207,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.266245Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:02.580409Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001254'

@@ -1,3 +1,4 @@
+id: CultureMech:012898
 preferred_term: Main sol. J166
 term:
   id: mediadive.solution:3820
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Add components to distilled water and bring volume to 1.0 L. Adjust
   pH to 7.0. After autoclaving, readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.199320Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012898'

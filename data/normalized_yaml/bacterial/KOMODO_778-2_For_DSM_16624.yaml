@@ -1,3 +1,4 @@
+id: CultureMech:006437
 name: For DSM 16624
 original_name: For DSM 16624
 category: bacterial
@@ -234,4 +235,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:40.728488Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006437'
 ph_value: 7.2

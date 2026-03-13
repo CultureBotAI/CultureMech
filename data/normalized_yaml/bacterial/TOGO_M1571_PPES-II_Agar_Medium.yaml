@@ -1,3 +1,4 @@
+id: CultureMech:008120
 name: PPES-II Agar Medium
 original_name: PPES-II Agar Medium
 category: bacterial
@@ -121,6 +122,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.625594Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008120'
 solutions:
 - preferred_term: Artificial sea water*
   term:

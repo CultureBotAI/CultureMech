@@ -1,3 +1,4 @@
+id: CultureMech:014269
 preferred_term: Main sol. J1228
 term:
   id: mediadive.solution:5358
@@ -154,3 +155,8 @@ preparation_notes: "Solution A:\nMix components thoroughly and autoclave under a
   \ (filter-sterilized and stored under a N2 atmosphere): \nComment: For JCM 32929,\
   \ aseptically and anaerobically add per liter the following solutions (autoclaved\
   \ and stored under a N2 atmosphere): \n\nOriginal volume: 1027 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.715267Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014269'

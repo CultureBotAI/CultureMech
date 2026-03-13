@@ -1,3 +1,4 @@
+id: CultureMech:012913
 preferred_term: Main sol. J180
 term:
   id: mediadive.solution:3838
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 2.0 with 10 N H2SO4. Separately autoclave yeast extract
   and glucose as 10% solutions, and add aseptically to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.284057Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012913'

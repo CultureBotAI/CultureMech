@@ -1,3 +1,4 @@
+id: CultureMech:001425
 name: TREPONEMA SACCHAROPHILUM MEDIUM
 original_name: TREPONEMA SACCHAROPHILUM MEDIUM
 category: bacterial
@@ -132,12 +133,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge
-    medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the cysteine and carbonate, then equilibrate
-    the medium with the CO2 gas to pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution prepared
-    under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to 7.0, if
-    necessary.
+  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust
+    pH to 7.0 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
+    Add the cysteine and carbonate, then equilibrate the medium with the CO2 gas to
+    pH 7.0. Distribute medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH
+    of complete medium to 7.0, if necessary.
 - step_number: 2
   action: MIX
   description: For solid medium add 12.00 g/l agar (BD Bacto).
@@ -151,3 +153,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 323'
+- timestamp: '2026-03-13T06:19:04.043943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001425'

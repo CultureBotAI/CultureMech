@@ -1,3 +1,4 @@
+id: CultureMech:013322
 preferred_term: Main sol. J523
 term:
   id: mediadive.solution:4317
@@ -177,3 +178,8 @@ preparation_notes: "Mix components thoroughly and autoclave. After cooling, add 
   \ rubber stoppers. Replace the gas phase with N2-CO2-CH4-O2 (40:15:40:5, by volume)\
   \ and pressurize to 100 kPa with the same gas mixture. Check final pH of the medium\
   \ to be around 6.0.\n\nOriginal volume: 1007 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:30.673218Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013322'

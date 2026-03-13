@@ -1,3 +1,4 @@
+id: CultureMech:007361
 name: '''Defined freshwater medium (CoCl2'
 original_name: '''Defined freshwater medium (CoCl2'
 category: bacterial
@@ -188,8 +189,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:46.835999Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 456, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 456, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:11.724405Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -197,13 +198,19 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.957798Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:48.295290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007361'
 media_term:
   preferred_term: MediaDB Medium 456
   term:
     id: MEDIADB:456
     label: '''Defined freshwater medium (CoCl2'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

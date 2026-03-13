@@ -1,3 +1,4 @@
+id: CultureMech:014164
 preferred_term: Main sol. J1146
 term:
   id: mediadive.solution:5254
@@ -214,3 +215,8 @@ preparation_notes: "Mix components and autoclave under a N2-CO2 (80:20, v/v) gas
   \ Prior to inoculation, add per liter the following solutions (autoclaved and stored\
   \ under a N2 atmosphere): \nReadjust pH to 7.0 - 7.2, if necessary. Pressurize inoculated\
   \ culture vessels to 100 kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1016 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.018238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014164'

@@ -1,3 +1,4 @@
+id: CultureMech:011408
 preferred_term: Main sol. 977
 term:
   id: mediadive.solution:2003
@@ -145,3 +146,8 @@ preparation_notes: Prepare the medium anaerobically, under nitrogen, omitting th
   sterile filtered. This strain grows anaerobically in the presence of nitrate, but
   aerobic growth has been reported provided the oxygen concentration does not exceed
   16% (v/v). Under anaerobic conditions a redox agent, such as sulphide is not required.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.484109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011408'

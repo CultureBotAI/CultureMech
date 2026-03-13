@@ -1,3 +1,4 @@
+id: CultureMech:004837
 name: solution II (medium 1398)
 original_name: solution II (medium 1398)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3054
     label: solution II (medium 1398)
-notes: 'Source: KOMODO ModelSEED | ID: 3054 | DSMZ Medium: 3054 (mediadive.medium:3054) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3054 | DSMZ Medium: 3054 (mediadive.medium:3054)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3054'
+- timestamp: '2026-03-13T06:19:28.878476Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004837'

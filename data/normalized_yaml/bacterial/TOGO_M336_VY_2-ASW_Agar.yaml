@@ -1,3 +1,4 @@
+id: CultureMech:009714
 name: VY/2-ASW Agar
 original_name: VY/2-ASW Agar
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:176843
     label: vitamin B12
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution, Defined component'
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution,
+    Defined component'
 - preferred_term: Yeast cell paste (see below)
   concentration:
     value: '5'
@@ -51,3 +54,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:08.324758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009714'

@@ -1,3 +1,4 @@
+id: CultureMech:000787
 name: ASAIA GYP MEDIUM
 original_name: ASAIA GYP MEDIUM
 category: bacterial
@@ -51,10 +52,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: The medium may be solidified by adding 15 g/l agar. Calcium carbonate in the medium serves
-    as a buffer. The calcium carbonate will settle in agar plates before the agar has set, producing an
-    opaque layer in the bottom. As the strain grows and acid is produced this will react with the calcium
-    carbonate, causing it to dissolve and form zones of clearing immediately below the colonies. pH 6.8
+  description: The medium may be solidified by adding 15 g/l agar. Calcium carbonate
+    in the medium serves as a buffer. The calcium carbonate will settle in agar plates
+    before the agar has set, producing an opaque layer in the bottom. As the strain
+    grows and acid is produced this will react with the calcium carbonate, causing
+    it to dissolve and form zones of clearing immediately below the colonies. pH 6.8
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1330'
+- timestamp: '2026-03-13T06:18:58.369348Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000787'

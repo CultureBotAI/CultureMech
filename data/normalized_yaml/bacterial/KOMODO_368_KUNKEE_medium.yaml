@@ -1,3 +1,4 @@
+id: CultureMech:005089
 name: KUNKEE medium
 original_name: KUNKEE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:368
     label: KUNKEE medium
-notes: 'Source: KOMODO ModelSEED | ID: 368 | DSMZ Medium: 368 (mediadive.medium:368) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 368 | DSMZ Medium: 368 (mediadive.medium:368)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -52,3 +54,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 368
+- timestamp: '2026-03-13T06:19:30.029670Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005089'

@@ -1,3 +1,4 @@
+id: CultureMech:012650
 preferred_term: Ascorbate solution (1M)
 term:
   id: mediadive.solution:3548
@@ -35,3 +36,8 @@ preparation_notes: 'In an ice bath ascorbic acid was dissolved in 80 mL anoxic H
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.066337Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012650'

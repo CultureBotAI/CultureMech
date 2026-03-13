@@ -1,3 +1,4 @@
+id: CultureMech:001156
 name: ACIDICAPSA MEDIUM (GYS MEDIUM)
 original_name: ACIDICAPSA MEDIUM (GYS MEDIUM)
 category: bacterial
@@ -137,7 +138,8 @@ preparation_steps:
   description: SOLUTION B
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave solution A and B separately in order to prevent hydrolysis at low pH.
+  description: Autoclave solution A and B separately in order to prevent hydrolysis
+    at low pH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -145,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1671'
+- timestamp: '2026-03-13T06:19:01.726749Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001156'

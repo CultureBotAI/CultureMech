@@ -1,3 +1,4 @@
+id: CultureMech:003642
 name: GEOALKALIBACTER medium
 original_name: GEOALKALIBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1059
     label: GEOALKALIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1059 | DSMZ Medium: 1059 (mediadive.medium:1059) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1059 | DSMZ Medium: 1059 (mediadive.medium:1059)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -173,3 +175,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1059
+- timestamp: '2026-03-13T06:19:21.307900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003642'

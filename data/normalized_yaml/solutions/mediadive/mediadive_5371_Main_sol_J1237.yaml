@@ -1,3 +1,4 @@
+id: CultureMech:014281
 preferred_term: Main sol. J1237
 term:
   id: mediadive.solution:5371
@@ -143,3 +144,8 @@ preparation_notes: 'Dissolve ingredients (except cysteine), boil medium for 1 mi
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.777035Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014281'

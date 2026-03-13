@@ -1,3 +1,4 @@
+id: CultureMech:002032
 name: FERROPLASMA ACIDIPHILUM MEDIUM
 original_name: FERROPLASMA ACIDIPHILUM MEDIUM
 category: bacterial
@@ -124,4 +125,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 874'
+- timestamp: '2026-03-13T06:19:09.603178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002032'
 high_metal: true

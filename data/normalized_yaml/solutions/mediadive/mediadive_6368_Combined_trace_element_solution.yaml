@@ -1,3 +1,4 @@
+id: CultureMech:014999
 preferred_term: Combined trace element solution*
 term:
   id: mediadive.solution:6368
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust pH to 4.0-4.5.
 
   Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with distilled
   water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.305929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014999'

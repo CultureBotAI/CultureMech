@@ -1,3 +1,4 @@
+id: CultureMech:000559
 name: MEDIUM K
 original_name: MEDIUM K
 category: bacterial
@@ -66,7 +67,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: MIX
-  description: After autoclaving add methanol (sterilized separately) to a concentration of 1% (v/v).
+  description: After autoclaving add methanol (sterilized separately) to a concentration
+    of 1% (v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1122'
+- timestamp: '2026-03-13T06:18:56.387885Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000559'

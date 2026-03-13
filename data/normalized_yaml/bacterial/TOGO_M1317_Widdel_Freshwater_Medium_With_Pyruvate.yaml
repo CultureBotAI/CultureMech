@@ -1,3 +1,4 @@
+id: CultureMech:007853
 name: Widdel Freshwater Medium With Pyruvate
 original_name: Widdel Freshwater Medium With Pyruvate
 category: bacterial
@@ -118,6 +119,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.978395Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007853'
 solutions:
 - preferred_term: sodium pyruvate solution
   composition: []

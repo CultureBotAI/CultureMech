@@ -1,3 +1,4 @@
+id: CultureMech:006068
 name: HALOBACTERIUM LACUSPROFUNDII medium
 original_name: HALOBACTERIUM LACUSPROFUNDII medium
 category: bacterial
@@ -102,4 +103,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 589
+- timestamp: '2026-03-13T06:19:38.041093Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006068'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:001684
 name: REACTIVATION WITH LIQUID MEDIUM 545
 original_name: REACTIVATION WITH LIQUID MEDIUM 545
 category: bacterial
@@ -69,8 +70,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium 54 or 545. Subsequent
-    subculturing may be carried out in liquid medium or on agar plates medium 54.
+  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium
+    54 or 545. Subsequent subculturing may be carried out in liquid medium or on agar
+    plates medium 54.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.3.
@@ -84,3 +86,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 54a'
+- timestamp: '2026-03-13T06:19:06.423980Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001684'

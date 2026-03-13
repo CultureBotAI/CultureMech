@@ -1,3 +1,4 @@
+id: CultureMech:002820
 name: DESULFONAUTICUS MEDIUM
 original_name: DESULFONAUTICUS MEDIUM
 category: bacterial
@@ -18,10 +19,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 383, replacing sodium lactate with 0.7 g/L sodium acetate and 2.0 g/L yeast
-    extract. Prepare the medium under a H2-CO2 (4:1, v/v) gas atmosphere and reduce the medium with final
-    0.1 g/L Na2S x 9H2O and 0.03 g/L sodium dithionite (filter-sterilized, prepare the solution just before
-    use). Pressurize the inoculated culture vessels to 100 kPa H2-CO2 (4:1, v/v).
+  description: Use Medium No. 383, replacing sodium lactate with 0.7 g/L sodium acetate
+    and 2.0 g/L yeast extract. Prepare the medium under a H2-CO2 (4:1, v/v) gas atmosphere
+    and reduce the medium with final 0.1 g/L Na2S x 9H2O and 0.03 g/L sodium dithionite
+    (filter-sterilized, prepare the solution just before use). Pressurize the inoculated
+    culture vessels to 100 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,5 +35,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.915085Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002820'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:012094
 preferred_term: Main sol. 1385
 term:
   id: mediadive.solution:2808
@@ -85,3 +86,8 @@ composition:
 preparation_notes: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium
   into serum bottles. Inject 10 % CO2. Sterilize by autoclaving. Before inoculation
   add from sterile stock solutions:'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.824574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012094'

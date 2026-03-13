@@ -1,3 +1,4 @@
+id: CultureMech:010063
 name: Halosarcina Pallida Medium
 original_name: Halosarcina Pallida Medium
 category: bacterial
@@ -100,4 +101,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:11.068847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010063'
 high_metal: true

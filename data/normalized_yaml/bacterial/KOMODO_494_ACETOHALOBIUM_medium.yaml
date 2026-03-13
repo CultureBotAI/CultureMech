@@ -1,3 +1,4 @@
+id: CultureMech:005623
 name: ACETOHALOBIUM medium
 original_name: ACETOHALOBIUM medium
 category: bacterial
@@ -263,3 +264,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:34.685413Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005623'

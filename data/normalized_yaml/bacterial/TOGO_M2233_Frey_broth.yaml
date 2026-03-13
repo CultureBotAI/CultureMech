@@ -1,3 +1,4 @@
+id: CultureMech:008822
 name: Frey broth
 original_name: Frey broth
 category: bacterial
@@ -92,3 +93,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.522036Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008822'

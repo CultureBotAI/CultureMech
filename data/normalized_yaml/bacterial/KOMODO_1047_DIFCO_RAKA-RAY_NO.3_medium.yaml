@@ -1,3 +1,4 @@
+id: CultureMech:003605
 name: DIFCO RAKA-RAY NO.3 medium
 original_name: DIFCO RAKA-RAY NO.3 medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1047
     label: DIFCO RAKA-RAY NO.3 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1047 | DSMZ Medium: 1047 (mediadive.medium:1047) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1047 | DSMZ Medium: 1047 (mediadive.medium:1047)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -108,4 +110,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1047
+- timestamp: '2026-03-13T06:19:20.974970Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003605'
 ph_value: 5.4

@@ -1,3 +1,4 @@
+id: CultureMech:010819
 preferred_term: Main sol. 623
 term:
   id: mediadive.solution:1336
@@ -223,3 +224,8 @@ preparation_notes: Prepare the medium under 100% N2 and adjust final pH to 6.5. 
   medium, containing sulphur, is sterilized by steaming on three consecutive days
   for 3 h. Reduce the medium with a sterile Na2S stock solution to give a final concentration
   of 0.5 g/l.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.725997Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010819'

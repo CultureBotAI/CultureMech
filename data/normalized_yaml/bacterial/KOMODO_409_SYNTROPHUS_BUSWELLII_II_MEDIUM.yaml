@@ -1,3 +1,4 @@
+id: CultureMech:005230
 name: SYNTROPHUS BUSWELLII II MEDIUM
 original_name: SYNTROPHUS BUSWELLII II MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:409
     label: SYNTROPHUS BUSWELLII II MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 409 | DSMZ Medium: 409 (mediadive.medium:409) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 409 | DSMZ Medium: 409 (mediadive.medium:409)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 409'
+- timestamp: '2026-03-13T06:19:31.177496Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005230'

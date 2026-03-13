@@ -1,3 +1,4 @@
+id: CultureMech:001050
 name: T 5 MEDIUM
 original_name: T 5 MEDIUM
 category: bacterial
@@ -141,8 +142,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -150,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1573'
+- timestamp: '2026-03-13T06:19:00.770993Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001050'

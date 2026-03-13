@@ -1,3 +1,4 @@
+id: CultureMech:000902
 name: CLOSTRIDIUM SP. LA1 MEDIUM
 original_name: CLOSTRIDIUM SP. LA1 MEDIUM
 category: bacterial
@@ -121,13 +122,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except potassium carbonate) and sparge medium with 100% N2 gas for
-    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. An anoxic stock solution of the potassium carbonate is autoclaved
-    separately under 80% N2 and 20% CO2 gas mixture and thereafter added to the sterile medium. Adjust
-    pH of the complete medium to 6.8 - 7.0. Prior to inoculation add 10 - 20 mg/l sodium dithionite from
-    a 5% (w/v) stock solution that has been freshly prepared under 100% N2 gas and sterilized by filtration
-    to reduce the medium.
+  description: Dissolve ingredients (except potassium carbonate) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. An
+    anoxic stock solution of the potassium carbonate is autoclaved separately under
+    80% N2 and 20% CO2 gas mixture and thereafter added to the sterile medium. Adjust
+    pH of the complete medium to 6.8 - 7.0. Prior to inoculation add 10 - 20 mg/l
+    sodium dithionite from a 5% (w/v) stock solution that has been freshly prepared
+    under 100% N2 gas and sterilized by filtration to reduce the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +137,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 143'
+- timestamp: '2026-03-13T06:18:59.380875Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000902'

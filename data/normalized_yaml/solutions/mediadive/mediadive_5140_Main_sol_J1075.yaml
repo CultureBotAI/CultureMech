@@ -1,3 +1,4 @@
+id: CultureMech:014053
 preferred_term: Main sol. J1075
 term:
   id: mediadive.solution:5140
@@ -134,3 +135,8 @@ preparation_notes: 'Adjust pH to 1.0 - 1.2 with H2SO4.
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.294024Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014053'

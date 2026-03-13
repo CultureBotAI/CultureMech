@@ -1,3 +1,4 @@
+id: CultureMech:012905
 preferred_term: Main sol. J171
 term:
   id: mediadive.solution:3827
@@ -172,3 +173,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 4.0-4.2 with 10 N H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.243338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012905'

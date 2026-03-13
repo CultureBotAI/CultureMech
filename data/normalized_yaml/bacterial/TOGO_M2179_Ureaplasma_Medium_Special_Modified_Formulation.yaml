@@ -1,3 +1,4 @@
+id: CultureMech:008773
 name: Ureaplasma Medium – Special Modified Formulation
 original_name: Ureaplasma Medium – Special Modified Formulation
 category: bacterial
@@ -99,6 +100,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.206159Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008773'
 solutions:
 - preferred_term: Additive Solution
   composition: []

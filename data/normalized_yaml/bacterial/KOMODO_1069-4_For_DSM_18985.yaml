@@ -1,3 +1,4 @@
+id: CultureMech:003654
 name: For DSM 18985
 original_name: For DSM 18985
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1069.4
     label: For DSM 18985
-notes: 'Source: KOMODO ModelSEED | ID: 1069.4 | DSMZ Medium: 1069 (mediadive.medium:1069) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1069.4 | DSMZ Medium: 1069 (mediadive.medium:1069)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -124,3 +126,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1069
+- timestamp: '2026-03-13T06:19:21.394842Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003654'

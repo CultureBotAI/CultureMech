@@ -1,3 +1,4 @@
+id: CultureMech:011477
 preferred_term: Main sol. 1023
 term:
   id: mediadive.solution:2079
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Solution A is separately autoclaved and added to the medium. The
   medium is supplemented with Solution B (yeast extract). Medium pH adjusted by 0.1
   N H2SO4 to pH 2.5 - 2.7.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.969827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011477'

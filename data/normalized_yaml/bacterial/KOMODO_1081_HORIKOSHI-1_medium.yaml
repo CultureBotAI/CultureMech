@@ -1,3 +1,4 @@
+id: CultureMech:003731
 name: HORIKOSHI-1 medium
 original_name: HORIKOSHI-1 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1081
     label: HORIKOSHI-1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1081 | DSMZ Medium: 1081 (mediadive.medium:1081) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1081 | DSMZ Medium: 1081 (mediadive.medium:1081)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -65,3 +67,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1081
+- timestamp: '2026-03-13T06:19:21.747757Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003731'

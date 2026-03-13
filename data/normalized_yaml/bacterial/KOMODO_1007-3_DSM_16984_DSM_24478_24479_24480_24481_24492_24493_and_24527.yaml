@@ -1,3 +1,4 @@
+id: CultureMech:003509
 name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
 original_name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1007.3
     label: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
-notes: 'Source: KOMODO ModelSEED | ID: 1007.3 | DSMZ Medium: 1007 (mediadive.medium:1007) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1007.3 | DSMZ Medium: 1007 (mediadive.medium:1007)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:
@@ -105,3 +107,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1007
+- timestamp: '2026-03-13T06:19:20.290315Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003509'

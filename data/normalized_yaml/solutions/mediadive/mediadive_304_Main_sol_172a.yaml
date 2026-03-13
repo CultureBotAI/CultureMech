@@ -1,3 +1,4 @@
+id: CultureMech:012277
 preferred_term: Main sol. 172a
 term:
   id: mediadive.solution:304
@@ -150,3 +151,8 @@ composition:
 preparation_notes: "Adjust pH to 7.0 and autoclave.\nAfter autoclaving, add from separate\
   \ sterile solutions per liter medium: \nAseptically fill sterile 10-ml screwcap\
   \ tubes almost completely with the medium. Make stab inoculation."
+curation_history:
+- timestamp: '2026-03-13T06:20:24.944386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012277'

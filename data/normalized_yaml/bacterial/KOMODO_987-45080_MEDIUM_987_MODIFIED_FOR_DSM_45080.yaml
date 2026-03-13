@@ -1,3 +1,4 @@
+id: CultureMech:006952
 name: MEDIUM 987 MODIFIED FOR DSM 45080
 original_name: MEDIUM 987 MODIFIED FOR DSM 45080
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:987_45080
     label: MEDIUM 987 MODIFIED FOR DSM 45080
-notes: 'Source: KOMODO ModelSEED | ID: 987_45080 | DSMZ Medium: 987 (mediadive.medium:987) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 987_45080 | DSMZ Medium: 987 (mediadive.medium:987)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -45,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 987
+- timestamp: '2026-03-13T06:19:45.256975Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006952'

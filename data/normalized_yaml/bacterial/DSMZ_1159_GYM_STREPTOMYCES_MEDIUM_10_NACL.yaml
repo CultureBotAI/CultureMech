@@ -1,3 +1,4 @@
+id: CultureMech:000597
 name: GYM STREPTOMYCES MEDIUM 10% NACL
 original_name: GYM STREPTOMYCES MEDIUM 10% NACL
 category: bacterial
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1159'
+- timestamp: '2026-03-13T06:18:56.682353Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000597'

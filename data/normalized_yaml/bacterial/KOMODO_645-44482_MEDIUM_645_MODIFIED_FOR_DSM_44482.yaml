@@ -1,3 +1,4 @@
+id: CultureMech:006187
 name: MEDIUM 645 MODIFIED FOR DSM 44482
 original_name: MEDIUM 645 MODIFIED FOR DSM 44482
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:645_44482
     label: MEDIUM 645 MODIFIED FOR DSM 44482
-notes: 'Source: KOMODO ModelSEED | ID: 645_44482 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 645_44482 | DSMZ Medium: 645 (mediadive.medium:645)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:
@@ -166,3 +167,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 645
+- timestamp: '2026-03-13T06:19:38.953945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006187'

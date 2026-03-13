@@ -1,3 +1,4 @@
+id: CultureMech:003708
 name: MEDIUM 1076b MODIFIED FOR DSM 22551
 original_name: MEDIUM 1076b MODIFIED FOR DSM 22551
 category: bacterial
@@ -65,4 +66,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:21.649014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003708'
 ph_value: 7.4

@@ -1,3 +1,4 @@
+id: CultureMech:014606
 preferred_term: Solution 4 (10 mM CuSO4 x 5 H2O)
 term:
   id: mediadive.solution:5750
@@ -27,3 +28,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:38.602290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014606'

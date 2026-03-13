@@ -1,3 +1,4 @@
+id: CultureMech:000250
 name: THIOALKALIBACTER HALOPHILUS MEDIUM
 original_name: THIOALKALIBACTER HALOPHILUS MEDIUM
 category: archaea
@@ -125,8 +126,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or bottle) with an air
-    to liquid ratio of 10:1. pH after sterilization will be about 10.
+  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
+    bottle) with an air to liquid ratio of 10:1. pH after sterilization will be about
+    10.
 - step_number: 2
   action: MIX
   description: 'After sterilization add:'
@@ -143,3 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1225'
+- timestamp: '2026-03-13T06:18:53.774780Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000250'

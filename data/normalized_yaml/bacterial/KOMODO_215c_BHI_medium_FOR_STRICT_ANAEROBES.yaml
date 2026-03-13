@@ -1,3 +1,4 @@
+id: CultureMech:004425
 name: BHI medium FOR STRICT ANAEROBES
 original_name: BHI medium FOR STRICT ANAEROBES
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:215c
     label: BHI medium FOR STRICT ANAEROBES
-notes: 'Source: KOMODO ModelSEED | ID: 215c | DSMZ Medium: 215c (mediadive.medium:215c) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 215c | DSMZ Medium: 215c (mediadive.medium:215c)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:
@@ -25,3 +27,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 215
+- timestamp: '2026-03-13T06:19:26.857017Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004425'

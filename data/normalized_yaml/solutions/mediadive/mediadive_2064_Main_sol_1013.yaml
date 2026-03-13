@@ -1,3 +1,4 @@
+id: CultureMech:011465
 preferred_term: Main sol. 1013
 term:
   id: mediadive.solution:2064
@@ -25,3 +26,8 @@ preparation_notes: 'Mix ingredients and adjust pH of the final solution to 7.5 -
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.899313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011465'

@@ -1,3 +1,4 @@
+id: CultureMech:013044
 preferred_term: Main sol. J290
 term:
   id: mediadive.solution:3988
@@ -31,3 +32,8 @@ preparation_notes: 'Adjust pH to 7.4.
 
   After autoclaving, cool to 50C and add aseptically 20% (final) sterile defibrinated
   horse serum.'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.092588Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013044'

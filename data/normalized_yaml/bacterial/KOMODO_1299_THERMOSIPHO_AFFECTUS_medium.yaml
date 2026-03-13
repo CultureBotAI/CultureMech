@@ -1,3 +1,4 @@
+id: CultureMech:004046
 name: THERMOSIPHO AFFECTUS medium
 original_name: THERMOSIPHO AFFECTUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1299
     label: THERMOSIPHO AFFECTUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1299 | DSMZ Medium: 1299 (mediadive.medium:1299) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1299 | DSMZ Medium: 1299 (mediadive.medium:1299)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -185,4 +187,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.216818Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:24.433191Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004046'

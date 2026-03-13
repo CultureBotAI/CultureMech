@@ -1,3 +1,4 @@
+id: CultureMech:001273
 name: Pectin medium
 original_name: Pectin medium
 category: bacterial
@@ -49,8 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add cysteine solution after the medium has been boiled and cooled under CO2. Adjust pH
-    to 6.5 using NaOH, Distribute under N2 and autoclave.
+  description: Add cysteine solution after the medium has been boiled and cooled under
+    CO2. Adjust pH to 6.5 using NaOH, Distribute under N2 and autoclave.
 - step_number: 2
   action: MIX
   description: When preparing the plate medium, add 15g/L agar
@@ -64,3 +65,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1855'
+- timestamp: '2026-03-13T06:19:02.729950Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001273'

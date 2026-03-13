@@ -1,3 +1,4 @@
+id: CultureMech:004977
 name: SCY - medium
 original_name: SCY - medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:312
     label: SCY - medium
-notes: 'Source: KOMODO ModelSEED | ID: 312 | DSMZ Medium: 312 (mediadive.medium:312) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 312 | DSMZ Medium: 312 (mediadive.medium:312)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Sucrose
   term:
@@ -55,3 +57,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 312
+- timestamp: '2026-03-13T06:19:29.294027Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004977'

@@ -1,3 +1,4 @@
+id: CultureMech:014159
 preferred_term: Main sol. J1141
 term:
   id: mediadive.solution:5247
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Mix components thoroughly and adjust pH to 7.5. For preparation
   of solid medium, add 18.0 g/L agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:35.972374Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014159'

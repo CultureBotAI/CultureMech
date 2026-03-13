@@ -1,3 +1,4 @@
+id: CultureMech:000644
 name: METHANOBREVIBACTER MEDIUM
 original_name: METHANOBREVIBACTER MEDIUM
 category: bacterial
@@ -197,24 +198,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, cysteine and sulfide. Sparge medium with 80% H2
-    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate, then dispense
-    medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes to 30% of their volume
-    and autoclave. Add cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
-    gas. Prior to use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients except bicarbonate, cysteine and sulfide. Sparge
+    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve bicarbonate, then dispense medium under 80% H2 and 20% CO2 gas
+    atmosphere into anoxic Hungate-type tubes to 30% of their volume and autoclave.
+    Add cysteine and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas. Prior to use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar
+    overpressure.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 4
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
-    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
-    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
-    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH.
@@ -228,3 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 119a'
+- timestamp: '2026-03-13T06:18:57.026508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000644'

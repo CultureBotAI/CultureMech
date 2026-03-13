@@ -1,3 +1,4 @@
+id: CultureMech:014086
 preferred_term: Solution 1 (50 x stock)
 term:
   id: mediadive.solution:5177
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 1051 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.504812Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014086'

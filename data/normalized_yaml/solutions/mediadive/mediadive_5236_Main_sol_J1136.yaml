@@ -1,3 +1,4 @@
+id: CultureMech:014147
 preferred_term: Main sol. J1136
 term:
   id: mediadive.solution:5236
@@ -154,3 +155,8 @@ preparation_notes: "Mix components and adjust pH to 7.0. Bring to a boil and coo
   \ (autoclaved or *filter-sterilized): \nPrior to use, add per liter the following\
   \ solution to reduce the medium (autoclaved and stored under N2): \n\nOriginal volume:\
   \ 1009 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.925616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014147'

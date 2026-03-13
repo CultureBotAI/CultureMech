@@ -1,3 +1,4 @@
+id: CultureMech:000456
 name: THERMUS MEDIUM
 original_name: THERMUS MEDIUM
 category: bacterial
@@ -127,11 +128,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH to 8.0 with 1 M NaOH.
+  description: Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH to 8.0
+    with 1 M NaOH.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve the remaining ingredients in the nitrilotriacetic acid solution and adjust to
-    pH 8.2 with 1 M NaOH.
+  description: Dissolve the remaining ingredients in the nitrilotriacetic acid solution
+    and adjust to pH 8.2 with 1 M NaOH.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121° C for 15 minutes.
@@ -142,3 +144,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1033'
+- timestamp: '2026-03-13T06:18:55.471622Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000456'

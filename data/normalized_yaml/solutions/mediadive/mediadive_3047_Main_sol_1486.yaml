@@ -1,3 +1,4 @@
+id: CultureMech:012274
 preferred_term: Main sol. 1486
 term:
   id: mediadive.solution:3047
@@ -146,3 +147,8 @@ preparation_notes: 'Adjust pH to 7.2.
   solutions (e.g., 100x)
 
   Before inoculation 2% sterile O2 or 10% sterile air is added to the headspace.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.918699Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012274'

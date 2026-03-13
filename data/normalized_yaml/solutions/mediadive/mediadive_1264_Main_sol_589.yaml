@@ -1,3 +1,4 @@
+id: CultureMech:010755
 preferred_term: Main sol. 589
 term:
   id: mediadive.solution:1264
@@ -116,3 +117,8 @@ preparation_notes: 'pH 7.4
 
   Filter-sterilize vitamin solution and add to the medium when it has cooled to about
   55 - 60°C. Add agar at a concentration of 15 g/l for solid media.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.336890Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010755'

@@ -1,3 +1,4 @@
+id: CultureMech:012368
 preferred_term: Main sol. 1526e
 term:
   id: mediadive.solution:3163
@@ -195,3 +196,8 @@ preparation_notes: 'Dissolve ingredients except sulfur, carbonate, glucose, yeas
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.515944Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012368'

@@ -1,3 +1,4 @@
+id: CultureMech:011359
 preferred_term: Main sol. 945
 term:
   id: mediadive.solution:1956
@@ -205,3 +206,8 @@ preparation_notes: 'Dissolve ingredients except sulfur, cysteine and sulfide. Sp
   100% N2 gas.
 
   After inoculation pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.138371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011359'

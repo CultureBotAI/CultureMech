@@ -1,3 +1,4 @@
+id: CultureMech:014787
 preferred_term: Mail sol. C79
 term:
   id: mediadive.solution:6070
@@ -79,3 +80,8 @@ composition:
 preparation_notes: "The stock solutions are those for SES. Make up to 1 litre with\
   \ distilled water. For agar add 15g\r\nper litre Bacterial Agar. Autoclave at 15\
   \ psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.546666Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014787'

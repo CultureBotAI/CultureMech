@@ -1,3 +1,4 @@
+id: CultureMech:004701
 name: SPIROCHAETA ISOVALERICA medium
 original_name: SPIROCHAETA ISOVALERICA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:273
     label: SPIROCHAETA ISOVALERICA medium
-notes: 'Source: KOMODO ModelSEED | ID: 273 | DSMZ Medium: 273 (mediadive.medium:273) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 273 | DSMZ Medium: 273 (mediadive.medium:273)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 273'
+- timestamp: '2026-03-13T06:19:28.191150Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004701'

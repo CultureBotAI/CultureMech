@@ -1,3 +1,4 @@
+id: CultureMech:000978
 name: CALDERIHABITANS MEDIUM
 original_name: CALDERIHABITANS MEDIUM
 category: bacterial
@@ -212,17 +213,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins and sulfide, then
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate,
-    thiosulfate, vitamins  and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
-    and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by filtration. Prior to
-    use adjust pH of complete medium to 7.3 - 7.5, if necessary.
+  description: Dissolve ingredients except carbonate, pyruvate, thiosulfate, vitamins
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins  and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Stock solutions of pyruvate, thiosulfate and vitamins should be sterilized by
+    filtration. Prior to use adjust pH of complete medium to 7.3 - 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -237,4 +239,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.296159Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:00.122033Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000978'

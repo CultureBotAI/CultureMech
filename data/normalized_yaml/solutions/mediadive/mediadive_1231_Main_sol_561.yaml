@@ -1,3 +1,4 @@
+id: CultureMech:010725
 preferred_term: Main sol. 561
 term:
   id: mediadive.solution:1231
@@ -133,3 +134,8 @@ preparation_notes: 'Dissolve ingredients, adjust pH to 6.0 with H2SO4 and sparge
 
 
   Original volume: 1015 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.207396Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010725'

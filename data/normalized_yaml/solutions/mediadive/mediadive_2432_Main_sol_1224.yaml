@@ -1,3 +1,4 @@
+id: CultureMech:011811
 preferred_term: Main sol. 1224
 term:
   id: mediadive.solution:2432
@@ -166,3 +167,8 @@ preparation_notes: 'Final pH 9.0 - 9.5
   components, except vitamin B12 and Na2S2O3 x 5 H2O. Dispense into tubes or bottle
   fitted with rubber stoppers and autoclave. Add the vitamin B12 (filter sterilised)
   and Na2S2O3 x 5 H2O from sterile stock solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.093790Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011811'

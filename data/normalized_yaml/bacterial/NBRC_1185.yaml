@@ -1,3 +1,4 @@
+id: CultureMech:007462
 name: '1185'
 original_name: '1185'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 18 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.159175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007462'
 solutions:
 - preferred_term: KNO30.50gNa-glycerophosphate0.10gTris HCl1.00gTryptone (Difco 0123)2.00gYeast
     extract2.00gTrace elements (see below)1.00mlArtificial sea water999.00mlpH 7.0Artificial

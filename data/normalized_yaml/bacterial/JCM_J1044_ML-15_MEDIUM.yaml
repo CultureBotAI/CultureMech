@@ -1,3 +1,4 @@
+id: CultureMech:002228
 name: ML-15 MEDIUM
 original_name: ML-15 MEDIUM
 category: bacterial
@@ -49,7 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix thoroughly and autoclave. After cooling, add the following solution (autoclaved).
+  description: Mix thoroughly and autoclave. After cooling, add the following solution
+    (autoclaved).
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1044'
+- timestamp: '2026-03-13T06:19:11.447425Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002228'

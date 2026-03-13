@@ -1,3 +1,4 @@
+id: CultureMech:005087
 name: PYEA medium
 original_name: PYEA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:364
     label: PYEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 364 | DSMZ Medium: 364 (mediadive.medium:364) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 364 | DSMZ Medium: 364 (mediadive.medium:364)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 364
+- timestamp: '2026-03-13T06:19:30.023588Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005087'

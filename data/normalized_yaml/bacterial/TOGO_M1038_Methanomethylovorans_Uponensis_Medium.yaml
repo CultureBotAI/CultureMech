@@ -1,3 +1,4 @@
+id: CultureMech:007553
 name: Methanomethylovorans Uponensis Medium
 original_name: Methanomethylovorans Uponensis Medium
 category: bacterial
@@ -121,6 +122,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.619145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007553'
 solutions:
 - preferred_term: 8% NaHCO3 solution*
   composition: []

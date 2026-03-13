@@ -1,3 +1,4 @@
+id: CultureMech:008285
 name: MPA Medium
 original_name: MPA Medium
 category: bacterial
@@ -304,6 +305,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:55.255303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008285'
 solutions:
 - preferred_term: Trace element solution*
   term:

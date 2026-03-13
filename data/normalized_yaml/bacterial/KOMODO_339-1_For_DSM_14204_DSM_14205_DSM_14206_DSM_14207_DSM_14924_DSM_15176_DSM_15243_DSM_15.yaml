@@ -1,7 +1,10 @@
-name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243, DSM 15248, DSM
-  15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763 and DSM 22608
-original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243, DSM 15248,
-  DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763 and DSM 22608
+id: CultureMech:005039
+name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243,
+  DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763 and
+  DSM 22608
+original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176,
+  DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
+  17763 and DSM 22608
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -10,9 +13,11 @@ media_term:
   preferred_term: KOMODO Medium 339.1
   term:
     id: komodo.medium:339.1
-    label: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243, DSM 15248,
-      DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763 and DSM 22608
-notes: 'Source: KOMODO ModelSEED | ID: 339.1 | DSMZ Medium: 339 (mediadive.medium:339) | Aerobic: Yes'
+    label: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM
+      15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
+      17763 and DSM 22608
+notes: 'Source: KOMODO ModelSEED | ID: 339.1 | DSMZ Medium: 339 (mediadive.medium:339)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:
@@ -40,3 +45,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 339
+- timestamp: '2026-03-13T06:19:29.749265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005039'

@@ -1,3 +1,4 @@
+id: CultureMech:014425
 preferred_term: Branched-chain fatty acids solution
 term:
   id: mediadive.solution:5547
@@ -64,3 +65,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.730311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014425'

@@ -1,3 +1,4 @@
+id: CultureMech:014274
 preferred_term: BG-FPC
 term:
   id: mediadive.solution:5362
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 1100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.748997Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014274'

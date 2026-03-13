@@ -1,3 +1,4 @@
+id: CultureMech:009233
 name: Acidolobus Aceticus Medium (For DSM 16705)
 original_name: Acidolobus Aceticus Medium (For DSM 16705)
 category: bacterial
@@ -282,6 +283,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.503680Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009233'
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

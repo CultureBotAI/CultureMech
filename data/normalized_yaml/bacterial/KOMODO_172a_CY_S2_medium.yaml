@@ -1,3 +1,4 @@
+id: CultureMech:004201
 name: CY S2 medium
 original_name: CY S2 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:172a
     label: CY S2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 172a | DSMZ Medium: 172a (mediadive.medium:172a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 172a | DSMZ Medium: 172a (mediadive.medium:172a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -79,3 +81,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 172
+- timestamp: '2026-03-13T06:19:25.801496Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004201'

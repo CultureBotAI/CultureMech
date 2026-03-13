@@ -1,3 +1,4 @@
+id: CultureMech:010665
 preferred_term: Main sol. 71
 term:
   id: mediadive.solution:116
@@ -80,3 +81,8 @@ preparation_notes: 'Prepare the medium without thiosulfate, adjust pH to 4.4 - 4
   and add after autoclaving.
 
   Note: Incubate statically without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.935309Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010665'

@@ -1,3 +1,4 @@
+id: CultureMech:000650
 name: ANAEROMYXOBACTER-MEDIUM
 original_name: ANAEROMYXOBACTER-MEDIUM
 category: bacterial
@@ -259,10 +260,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare solutions A, B, and D separately and anaerobically under 80% N2 + 20% CO2 and autoclave.
-    Filter-sterilize solutions C, E and F and outgas with N2. After cooling, add about 1 ml solution B
-    per 10 ml solution A, by this way adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution D, 0.2
-    ml solution F and 0.05 ml solution E, each per 10 ml solution A.
+  description: Prepare solutions A, B, and D separately and anaerobically under 80%
+    N2 + 20% CO2 and autoclave. Filter-sterilize solutions C, E and F and outgas with
+    N2. After cooling, add about 1 ml solution B per 10 ml solution A, by this way
+    adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution D, 0.2 ml solution
+    F and 0.05 ml solution E, each per 10 ml solution A.
 applications:
 - Microbial cultivation
 curation_history:
@@ -274,3 +276,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:57.090042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000650'

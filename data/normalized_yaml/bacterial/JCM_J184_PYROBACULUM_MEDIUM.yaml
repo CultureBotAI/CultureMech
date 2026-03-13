@@ -1,3 +1,4 @@
+id: CultureMech:002545
 name: PYROBACULUM MEDIUM
 original_name: PYROBACULUM MEDIUM
 category: bacterial
@@ -124,10 +125,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x 9H2O, and autoclave under
-    a N2 atmosphere. Separately autoclave yeast extract and peptone as 10% solutions, and Na2S x 9H2O
-    as a 5% solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Aseptically
-    and anaerobically add the yeast extract and peptone solutions and sulfur to the medium. Prior to inoculation,
+  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x 9H2O,
+    and autoclave under a N2 atmosphere. Separately autoclave yeast extract and peptone
+    as 10% solutions, and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam
+    sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically add
+    the yeast extract and peptone solutions and sulfur to the medium. Prior to inoculation,
     add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
 applications:
 - Microbial cultivation
@@ -136,3 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J184'
+- timestamp: '2026-03-13T06:19:14.067499Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002545'

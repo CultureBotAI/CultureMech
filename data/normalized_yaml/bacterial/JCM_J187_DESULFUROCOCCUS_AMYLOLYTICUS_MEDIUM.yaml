@@ -1,3 +1,4 @@
+id: CultureMech:002548
 name: DESULFUROCOCCUS AMYLOLYTICUS MEDIUM
 original_name: DESULFUROCOCCUS AMYLOLYTICUS MEDIUM
 category: bacterial
@@ -225,13 +226,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, peptone, vitamins, sulfur and Na2S x 9H2O, and autoclave
-    under a N2-CO2 (80:20) atmosphere. Separately autoclave yeast extract and peptone as 10% solutions
-    and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Filter-sterilize NaHCO3 as an 8% solution and vitamin solution while gassing with N2. Aseptically
-    and anaerobically add yeast extract, peptone, NaHCO3 and vitamin solutions, and sulfur to the medium
-    under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
-    adjust pH to 6.2-6.4 with sterile 1 N H2SO4.
+  description: Mix ingredients, except yeast extract, peptone, vitamins, sulfur and
+    Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Separately autoclave
+    yeast extract and peptone as 10% solutions and Na2S x 9H2O as a 5% solution under
+    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize
+    NaHCO3 as an 8% solution and vitamin solution while gassing with N2. Aseptically
+    and anaerobically add yeast extract, peptone, NaHCO3 and vitamin solutions, and
+    sulfur to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution, and adjust pH to 6.2-6.4 with sterile 1
+    N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,3 +242,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J187'
+- timestamp: '2026-03-13T06:19:14.083603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002548'

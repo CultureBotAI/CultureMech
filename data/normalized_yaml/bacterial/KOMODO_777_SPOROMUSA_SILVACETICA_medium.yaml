@@ -1,3 +1,4 @@
+id: CultureMech:006435
 name: SPOROMUSA SILVACETICA medium
 original_name: SPOROMUSA SILVACETICA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:777
     label: SPOROMUSA SILVACETICA medium
-notes: 'Source: KOMODO ModelSEED | ID: 777 | DSMZ Medium: 777 (mediadive.medium:777) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 777 | DSMZ Medium: 777 (mediadive.medium:777)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 777'
+- timestamp: '2026-03-13T06:19:40.705473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006435'

@@ -1,3 +1,4 @@
+id: CultureMech:001955
 name: SKIM MILK/GLUCOSE AGAR
 original_name: SKIM MILK/GLUCOSE AGAR
 category: bacterial
@@ -40,3 +41,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 810'
+- timestamp: '2026-03-13T06:19:08.781069Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001955'

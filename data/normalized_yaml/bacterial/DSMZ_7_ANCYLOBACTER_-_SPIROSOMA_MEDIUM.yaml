@@ -1,3 +1,4 @@
+id: CultureMech:001944
 name: ANCYLOBACTER - SPIROSOMA MEDIUM
 original_name: ANCYLOBACTER - SPIROSOMA MEDIUM
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 7'
+- timestamp: '2026-03-13T06:19:08.701332Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001944'

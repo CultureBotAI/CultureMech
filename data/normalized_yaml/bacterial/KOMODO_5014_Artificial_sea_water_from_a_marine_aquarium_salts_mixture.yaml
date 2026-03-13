@@ -1,3 +1,4 @@
+id: CultureMech:005655
 name: Artificial sea water from a marine aquarium salts mixture
 original_name: Artificial sea water from a marine aquarium salts mixture
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5014
     label: Artificial sea water from a marine aquarium salts mixture
-notes: 'Source: KOMODO ModelSEED | ID: 5014 | DSMZ Medium: 5014 (mediadive.medium:5014) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5014 | DSMZ Medium: 5014 (mediadive.medium:5014)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5014'
+- timestamp: '2026-03-13T06:19:34.955356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005655'

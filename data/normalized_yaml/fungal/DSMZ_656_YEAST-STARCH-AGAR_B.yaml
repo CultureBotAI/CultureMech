@@ -1,3 +1,4 @@
+id: CultureMech:010473
 name: YEAST-STARCH-AGAR(B)
 original_name: YEAST-STARCH-AGAR(B)
 category: fungal
@@ -54,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 656'
+- timestamp: '2026-03-13T06:20:13.974290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010473'

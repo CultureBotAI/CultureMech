@@ -1,3 +1,4 @@
+id: CultureMech:014987
 preferred_term: Main sol. 1817
 term:
   id: mediadive.solution:6327
@@ -51,3 +52,8 @@ composition:
     label: agar
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:40.261367Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014987'

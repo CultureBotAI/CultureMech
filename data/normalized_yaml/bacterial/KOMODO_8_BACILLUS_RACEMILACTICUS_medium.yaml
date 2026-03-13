@@ -1,3 +1,4 @@
+id: CultureMech:006760
 name: BACILLUS "RACEMILACTICUS" medium
 original_name: BACILLUS "RACEMILACTICUS" medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:8
     label: BACILLUS "RACEMILACTICUS" medium
-notes: 'Source: KOMODO ModelSEED | ID: 8 | DSMZ Medium: 8 (mediadive.medium:8) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 8 | DSMZ Medium: 8 (mediadive.medium:8) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 8
+- timestamp: '2026-03-13T06:19:43.727000Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006760'

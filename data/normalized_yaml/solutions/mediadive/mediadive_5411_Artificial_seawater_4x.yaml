@@ -1,3 +1,4 @@
+id: CultureMech:014324
 preferred_term: Artificial seawater (4x)
 term:
   id: mediadive.solution:5411
@@ -147,3 +148,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:37.087481Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014324'

@@ -1,3 +1,4 @@
+id: CultureMech:014875
 preferred_term: Trace elements
 term:
   id: mediadive.solution:6177
@@ -91,3 +92,8 @@ preparation_notes: "There are 7 chemicals. Prepare Primary stock solutions first
   \ Add first three\r\nchemicals separately in 100ml/dH2O, allowing each to completely\
   \ dissolve\r\nbefore adding the primary stocks in order:\n\nOriginal volume: 100\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.874944Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014875'

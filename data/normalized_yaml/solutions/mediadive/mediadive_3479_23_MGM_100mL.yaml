@@ -1,3 +1,4 @@
+id: CultureMech:012599
 preferred_term: 23% MGM (100mL)
 term:
   id: mediadive.solution:3479
@@ -58,3 +59,8 @@ preparation_notes: 'Don''t use Difco Bacto-peptone, it was reported in 1988 to c
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.790397Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012599'

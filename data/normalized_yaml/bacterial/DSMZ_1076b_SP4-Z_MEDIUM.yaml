@@ -1,3 +1,4 @@
+id: CultureMech:000510
 name: SP4-Z MEDIUM
 original_name: SP4-Z MEDIUM
 category: bacterial
@@ -71,10 +72,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The difference between this medium and "normal" SP4 medium (Medium 1076) is that the yeast
-    extract was left out and DNA was added instead. Since most mycoplasmas use either glucose or arginine
-    as their energy source one is added to the media. Do not combine both in one medium, arginine can
-    inhibit the growth of some glucose utilizers (unknown reason).
+  description: The difference between this medium and "normal" SP4 medium (Medium
+    1076) is that the yeast extract was left out and DNA was added instead. Since
+    most mycoplasmas use either glucose or arginine as their energy source one is
+    added to the media. Do not combine both in one medium, arginine can inhibit the
+    growth of some glucose utilizers (unknown reason).
 - step_number: 2
   action: AUTOCLAVE
   description: Adjust pH to 7.4; autoclave at 121°C for 15 minutes.
@@ -89,8 +91,8 @@ preparation_steps:
   description: 'For Ureaplasma add instead of Glucose or Arginine:'
 - step_number: 6
   action: HEAT
-  description: For agar plates use only 126 ml of distilled water and add 2 g of agar. Medium containing
-    agar should be placed at 55°C before adding supplements.
+  description: For agar plates use only 126 ml of distilled water and add 2 g of agar.
+    Medium containing agar should be placed at 55°C before adding supplements.
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,3 +100,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1076b'
+- timestamp: '2026-03-13T06:18:55.952135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000510'

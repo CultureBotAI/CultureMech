@@ -1,3 +1,4 @@
+id: CultureMech:002431
 name: GBS SALTS MEDIUM FOR THERMANAEROMONAS INYOENSIS
 original_name: GBS SALTS MEDIUM FOR THERMANAEROMONAS INYOENSIS
 category: bacterial
@@ -224,17 +225,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0, distribute the medium into culture vessels
-    (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a stream of N2, seal with butyl rubber stoppers
-    and autoclave. After cooling, aseptically and anaerobically add per liter the following solutions
-    (autoclaved or *filter-sterilized and stored anaerobically):'
+  description: 'Mix components thoroughly, adjust pH to 7.0, distribute the medium
+    into culture vessels (e.g., 5.0 ml in 25 ml serum bottles/Balch tubes) under a
+    stream of N2, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
+    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized
+    and stored anaerobically):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH.
 - step_number: 3
   action: HEAT
-  description: 'Comment: Consistent growth in serum tubes requires pretreatment of butyl rubber stoppers
-    by boiling in 1% sodium sulfide solution (1 hr) followed by boiling in distilled H2O (1 hr, twice).'
+  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
+    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
+    by boiling in distilled H2O (1 hr, twice).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -242,3 +245,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1265'
+- timestamp: '2026-03-13T06:19:13.262237Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002431'

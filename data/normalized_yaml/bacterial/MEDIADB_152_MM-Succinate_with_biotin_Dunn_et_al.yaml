@@ -1,3 +1,4 @@
+id: CultureMech:007043
 name: MM-Succinate with biotin; Dunn et al
 original_name: MM-Succinate with biotin; Dunn et al
 category: bacterial
@@ -67,18 +68,23 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.960842Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 152, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 152, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:29.016541Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.754266Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007043'
 media_term:
   preferred_term: MediaDB Medium 152
   term:
     id: MEDIADB:152
     label: MM-Succinate with biotin; Dunn et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

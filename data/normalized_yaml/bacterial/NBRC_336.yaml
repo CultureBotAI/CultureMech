@@ -1,3 +1,4 @@
+id: CultureMech:007488
 name: '336'
 original_name: '336'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 23 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.234684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007488'
 solutions:
 - preferred_term: KNO30.5gSodium glycerophosphate0.1gTrace element solution*1mlTris
     (hydroxymethyl) aminomethane1gBacto Tryptone (Difco)5gYeast extract5gAgar (if

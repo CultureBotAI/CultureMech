@@ -1,3 +1,4 @@
+id: CultureMech:004771
 name: PB90-1 MEDIUM
 original_name: PB90-1 MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:298g
     label: PB90-1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298g | DSMZ Medium: 298g (mediadive.medium:298g) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298g | DSMZ Medium: 298g (mediadive.medium:298g)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -225,3 +227,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 298
+- timestamp: '2026-03-13T06:19:28.719759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004771'

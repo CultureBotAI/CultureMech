@@ -1,3 +1,4 @@
+id: CultureMech:011328
 preferred_term: Main sol. 929
 term:
   id: mediadive.solution:1913
@@ -179,3 +180,8 @@ preparation_notes: 'Sparge medium with 80% N2 and 20% CO2 gas mixture to make an
   Note: When the iron is added to the medium a white floculant precipitate may appear.
   In the initial stages of growth the precipitate turns orange/brown as the ferrous
   ions are oxidised to ferrihydrite.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.952291Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011328'

@@ -1,3 +1,4 @@
+id: CultureMech:004211
 name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 original_name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:187
     label: medium FOR OSMOPHILIC FUNGI (M 40 Y)
-notes: 'Source: KOMODO ModelSEED | ID: 187 | DSMZ Medium: 187 (mediadive.medium:187) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 187 | DSMZ Medium: 187 (mediadive.medium:187)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Sucrose
   term:
@@ -43,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 187
+- timestamp: '2026-03-13T06:19:25.848686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004211'
 ph_value: 5.4

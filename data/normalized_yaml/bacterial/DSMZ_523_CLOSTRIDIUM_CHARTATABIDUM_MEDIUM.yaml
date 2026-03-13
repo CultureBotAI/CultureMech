@@ -1,3 +1,4 @@
+id: CultureMech:001655
 name: CLOSTRIDIUM CHARTATABIDUM MEDIUM
 original_name: CLOSTRIDIUM CHARTATABIDUM MEDIUM
 category: bacterial
@@ -110,22 +111,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide), bring medium
-    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add the carbonate and equilibrate
-    the medium with the CO2 gas to pH 6.8. Distribute under CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add cellobiose, cysteine and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
+  description: Dissolve ingredients (except carbonate, cellobiose, cysteine and sulfide),
+    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
+    Add the carbonate and equilibrate the medium with the CO2 gas to pH 6.8. Distribute
+    under CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, cysteine and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Cellobiose has to be sterilized by filtration. Adjust pH of
     complete medium to 6.7 - 6.8, if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
-    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
-    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
-    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
-    sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 523'
+- timestamp: '2026-03-13T06:19:06.239066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001655'

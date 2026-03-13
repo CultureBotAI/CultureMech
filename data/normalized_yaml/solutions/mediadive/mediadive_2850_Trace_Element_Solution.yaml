@@ -1,3 +1,4 @@
+id: CultureMech:012127
 preferred_term: Trace Element Solution
 term:
   id: mediadive.solution:2850
@@ -149,3 +150,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve Na2EDTA x 2 H2O and adjust pH 8.0 with KOH before adding
   the minerals to the solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.035061Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012127'

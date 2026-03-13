@@ -1,3 +1,4 @@
+id: CultureMech:012619
 preferred_term: Main sol. 1696
 term:
   id: mediadive.solution:3514
@@ -80,3 +81,8 @@ preparation_notes: 'Final pH 9.0 - 9.5
   Prepare and boil the medium in the absence NaHCO3, Na2CO3.Cool under a stream of
   nitrogen and add the remaining components. Dispense into tubes or bottle fitted
   with rubber stoppers and autoclave.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.894084Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012619'

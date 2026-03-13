@@ -1,3 +1,4 @@
+id: CultureMech:005116
 name: MAGNETOSPIRILLUM MEDIUM
 original_name: MAGNETOSPIRILLUM MEDIUM
 category: bacterial
@@ -273,3 +274,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:30.242393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005116'

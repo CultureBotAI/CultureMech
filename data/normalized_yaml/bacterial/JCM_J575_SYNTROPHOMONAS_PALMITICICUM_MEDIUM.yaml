@@ -1,3 +1,4 @@
+id: CultureMech:002923
 name: SYNTROPHOMONAS PALMITICICUM MEDIUM
 original_name: SYNTROPHOMONAS PALMITICICUM MEDIUM
 category: bacterial
@@ -18,9 +19,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 0.5 g yeast extract and 1.0 ml Trace vitamins
-    solution in Solution A (per 900 ml), and with 0.86 g crotonic acid in Solution B (per 100 ml) instead
-    of sodium pyruvate. Otherwise, prepare the medium as described in the recipe of Medium No. 284.
+  description: Use Medium No. 284 supplemented with final 0.5 g yeast extract and
+    1.0 ml Trace vitamins solution in Solution A (per 900 ml), and with 0.86 g crotonic
+    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 284.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +34,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.597779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002923'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:014454
 preferred_term: Main sol. 160
 term:
   id: mediadive.solution:5576
@@ -83,3 +84,8 @@ preparation_notes: 'Adjust pH to 7.2.
   agar) in 5 ml amounts in test tubes, add a strip of filter paper (7 cm long) to
   each and autoclave, or place sterile pieces of filter paper on the surface of agarized
   medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.889148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014454'

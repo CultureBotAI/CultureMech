@@ -1,3 +1,4 @@
+id: CultureMech:007799
 name: Ferrous Iron Yeast Extract Medium
 original_name: Ferrous Iron Yeast Extract Medium
 category: bacterial
@@ -180,6 +181,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.559537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007799'
 solutions:
 - preferred_term: Trace elements solution (see below)
   composition: []

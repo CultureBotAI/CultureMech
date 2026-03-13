@@ -1,3 +1,4 @@
+id: CultureMech:002350
 name: M MEDIUM
 original_name: M MEDIUM
 category: bacterial
@@ -63,8 +64,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After autoclaving, aseptically add filter-sterilized 2 M NaHCO3 solution, 1 M Na2CO3 solution
-    and methanol. Readjust pH to 9.0, if necessary.
+  description: After autoclaving, aseptically add filter-sterilized 2 M NaHCO3 solution,
+    1 M Na2CO3 solution and methanol. Readjust pH to 9.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1179'
+- timestamp: '2026-03-13T06:19:12.607136Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002350'

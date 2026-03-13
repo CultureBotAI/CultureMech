@@ -1,3 +1,4 @@
+id: CultureMech:010764
 preferred_term: Main sol. 593
 term:
   id: mediadive.solution:1273
@@ -152,3 +153,8 @@ preparation_notes: 'Final pH 7.5
 
   NaHCO3 is added from a sterilized stock solution when the medium has cooled. Agar
   is added at a concentration of 15.0 g/l for solid media.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.391813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010764'

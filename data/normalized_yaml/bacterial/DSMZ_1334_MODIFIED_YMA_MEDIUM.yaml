@@ -1,3 +1,4 @@
+id: CultureMech:000791
 name: MODIFIED YMA MEDIUM
 original_name: MODIFIED YMA MEDIUM
 category: bacterial
@@ -55,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1334'
+- timestamp: '2026-03-13T06:18:58.391434Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000791'

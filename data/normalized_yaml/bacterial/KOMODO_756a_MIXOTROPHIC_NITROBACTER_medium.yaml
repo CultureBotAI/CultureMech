@@ -1,3 +1,4 @@
+id: CultureMech:006410
 name: MIXOTROPHIC NITROBACTER medium
 original_name: MIXOTROPHIC NITROBACTER medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:756a
     label: MIXOTROPHIC NITROBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 756a | DSMZ Medium: 756a (mediadive.medium:756a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 756a | DSMZ Medium: 756a (mediadive.medium:756a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -110,4 +112,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 756
+- timestamp: '2026-03-13T06:19:40.509983Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006410'
 ph_value: 8.6

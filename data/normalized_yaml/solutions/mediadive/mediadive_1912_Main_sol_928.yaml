@@ -1,3 +1,4 @@
+id: CultureMech:011327
 preferred_term: Main sol. 928
 term:
   id: mediadive.solution:1912
@@ -141,3 +142,8 @@ preparation_notes: 'Final pH should be about 10.0
   Note: If the medium is solidified with agar prepare the medium given above in 500
   ml of distilled water and 20 g of agar in another container with 500 ml distilled
   water. Autoclave separately and allow to cool to about 50°C before mixing.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.942619Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011327'

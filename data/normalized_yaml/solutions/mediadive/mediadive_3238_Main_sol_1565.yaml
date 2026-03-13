@@ -1,3 +1,4 @@
+id: CultureMech:012430
 preferred_term: Main sol. 1565
 term:
   id: mediadive.solution:3238
@@ -154,3 +155,8 @@ preparation_notes: Dissolve ingredients except carbonate, bicarbonate, and thios
   Add thiosulfate to the autoclaved medium from an anoxic stock solution prepared
   under 100% N2 gas and sterilized by filtration. Adjust the pH of the complete medium
   to 9.8 - 10.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.885673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012430'

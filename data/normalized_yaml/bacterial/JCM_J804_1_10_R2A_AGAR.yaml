@@ -1,3 +1,4 @@
+id: CultureMech:003149
 name: 1/10 R2A AGAR
 original_name: 1/10 R2A AGAR
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J804'
+- timestamp: '2026-03-13T06:19:18.143816Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003149'

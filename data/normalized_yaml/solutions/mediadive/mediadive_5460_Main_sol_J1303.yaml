@@ -1,3 +1,4 @@
+id: CultureMech:014364
 preferred_term: Main sol. J1303
 term:
   id: mediadive.solution:5460
@@ -117,3 +118,8 @@ preparation_notes: "Mix components, adjust pH to 6.0-6.2. After autoclaving and 
   \ the color of the medium turns from yellow to orange or red, subculture into the\
   \ new medium. After color change, the strain can be stored at 4C for 1-2 weeks.\n\
   \nOriginal volume: 200 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.326741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014364'

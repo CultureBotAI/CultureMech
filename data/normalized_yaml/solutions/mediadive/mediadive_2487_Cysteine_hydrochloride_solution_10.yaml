@@ -1,3 +1,4 @@
+id: CultureMech:011851
 preferred_term: Cysteine hydrochloride solution (10%)
 term:
   id: mediadive.solution:2487
@@ -31,3 +32,8 @@ preparation_notes: 'Filter sterilize.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.394745Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011851'

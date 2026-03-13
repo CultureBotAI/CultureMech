@@ -1,3 +1,4 @@
+id: CultureMech:000609
 name: NSY-MEDIUM FOR POLYNUCLEOBACTER
 original_name: NSY-MEDIUM FOR POLYNUCLEOBACTER
 category: bacterial
@@ -137,8 +138,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -146,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1167'
+- timestamp: '2026-03-13T06:18:56.794622Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000609'

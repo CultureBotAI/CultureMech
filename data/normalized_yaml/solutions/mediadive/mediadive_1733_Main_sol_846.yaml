@@ -1,3 +1,4 @@
+id: CultureMech:011184
 preferred_term: Main sol. 846
 term:
   id: mediadive.solution:1733
@@ -182,3 +183,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, serine, vitamins, cy
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.011148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011184'

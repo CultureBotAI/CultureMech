@@ -1,3 +1,4 @@
+id: CultureMech:007250
 name: Batch medium; mattanovich et al
 original_name: Batch medium; mattanovich et al
 category: bacterial
@@ -110,6 +111,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:47.184890Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007250'
 media_term:
   preferred_term: MediaDB Medium 34
   term:

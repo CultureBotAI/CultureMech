@@ -1,3 +1,4 @@
+id: CultureMech:002504
 name: MEDIUM FOR TREPONEMA PECTINOVORUM
 original_name: MEDIUM FOR TREPONEMA PECTINOVORUM
 category: bacterial
@@ -79,7 +80,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0-7.2. Prepare medium anaerobically. Inoculate under a N2-CO2 (90:10) atmosphere.
+  description: Adjust pH to 7.0-7.2. Prepare medium anaerobically. Inoculate under
+    a N2-CO2 (90:10) atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +89,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J145'
+- timestamp: '2026-03-13T06:19:13.861257Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002504'

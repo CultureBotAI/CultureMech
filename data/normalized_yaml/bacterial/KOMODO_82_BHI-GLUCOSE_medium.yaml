@@ -1,3 +1,4 @@
+id: CultureMech:006566
 name: BHI-GLUCOSE medium
 original_name: BHI-GLUCOSE medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:82
     label: BHI-GLUCOSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 82 | DSMZ Medium: 82 (mediadive.medium:82) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 82 | DSMZ Medium: 82 (mediadive.medium:82)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:
@@ -39,3 +41,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 82
+- timestamp: '2026-03-13T06:19:41.980681Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006566'

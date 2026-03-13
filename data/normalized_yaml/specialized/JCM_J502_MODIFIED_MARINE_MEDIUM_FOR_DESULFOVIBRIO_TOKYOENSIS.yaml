@@ -1,3 +1,4 @@
+id: CultureMech:015409
 name: MODIFIED MARINE MEDIUM FOR DESULFOVIBRIO TOKYOENSIS
 original_name: MODIFIED MARINE MEDIUM FOR DESULFOVIBRIO TOKYOENSIS
 category: specialized
@@ -240,4 +241,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J502'
+- timestamp: '2026-03-13T06:20:42.527500Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015409'
 high_metal: true

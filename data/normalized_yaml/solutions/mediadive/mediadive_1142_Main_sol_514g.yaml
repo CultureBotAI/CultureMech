@@ -1,3 +1,4 @@
+id: CultureMech:010640
 preferred_term: Main sol. 514g
 term:
   id: mediadive.solution:1142
@@ -236,3 +237,8 @@ preparation_notes: 'Final pH should be 7.6 ± 0.2 at 25°C. If using Difco Bacto
   Broth use 18.7 g/l to 1 litre water.
 
   The medium may be solidified by adding 15 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.775366Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010640'

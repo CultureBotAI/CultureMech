@@ -1,3 +1,4 @@
+id: CultureMech:004804
 name: Micronutrient solution SL8 (medium 1128)
 original_name: Micronutrient solution SL8 (medium 1128)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3024
     label: Micronutrient solution SL8 (medium 1128)
-notes: 'Source: KOMODO ModelSEED | ID: 3024 | DSMZ Medium: 3024 (mediadive.medium:3024) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3024 | DSMZ Medium: 3024 (mediadive.medium:3024)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3024'
+- timestamp: '2026-03-13T06:19:28.825872Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004804'

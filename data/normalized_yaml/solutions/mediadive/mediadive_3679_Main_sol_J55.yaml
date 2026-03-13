@@ -1,3 +1,4 @@
+id: CultureMech:012761
 preferred_term: Main sol. J55
 term:
   id: mediadive.solution:3679
@@ -49,3 +50,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: See the footnote for Medium No. 54.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.556631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012761'

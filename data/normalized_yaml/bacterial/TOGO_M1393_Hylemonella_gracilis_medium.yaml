@@ -1,3 +1,4 @@
+id: CultureMech:007928
 name: Hylemonella gracilis medium
 original_name: Hylemonella gracilis medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -64,3 +67,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:52.555912Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007928'

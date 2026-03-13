@@ -1,3 +1,4 @@
+id: CultureMech:006519
 name: GRACILIBACILLUS medium
 original_name: GRACILIBACILLUS medium
 category: bacterial
@@ -177,3 +178,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:41.506406Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006519'

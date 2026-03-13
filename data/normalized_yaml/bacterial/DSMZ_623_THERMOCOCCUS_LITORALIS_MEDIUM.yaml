@@ -1,3 +1,4 @@
+id: CultureMech:001755
 name: THERMOCOCCUS LITORALIS MEDIUM
 original_name: THERMOCOCCUS LITORALIS MEDIUM
 category: bacterial
@@ -124,9 +125,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium, containing sulphur,
-    is sterilized by steaming on three consecutive days for 3 h. Reduce the medium with a sterile Na2S
-    stock solution to give a final concentration of 0.5 g/l.
+  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium,
+    containing sulphur, is sterilized by steaming on three consecutive days for 3
+    h. Reduce the medium with a sterile Na2S stock solution to give a final concentration
+    of 0.5 g/l.
 applications:
 - Microbial cultivation
 curation_history:
@@ -134,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 623'
+- timestamp: '2026-03-13T06:19:06.985959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001755'

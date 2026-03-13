@@ -1,3 +1,4 @@
+id: CultureMech:002996
 name: THIOPHAEOCOCCUS MEDIUM
 original_name: THIOPHAEOCOCCUS MEDIUM
 category: bacterial
@@ -154,8 +155,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized vitamin B12, NaHCO3, Na2S x 9H2O and Na2S2O3 x
-    5H2O solutions to the medium.
+  description: After autoclaving, add filter-sterilized vitamin B12, NaHCO3, Na2S
+    x 9H2O and Na2S2O3 x 5H2O solutions to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -163,3 +164,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J650'
+- timestamp: '2026-03-13T06:19:17.050773Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002996'

@@ -1,3 +1,4 @@
+id: CultureMech:014259
 preferred_term: Main sol. J1219
 term:
   id: mediadive.solution:5347
@@ -126,3 +127,8 @@ composition:
 preparation_notes: "Mix components and adjust pH to 7.0 with 6 N KOH. For preparation\
   \ of solid medium, add 15.0 g agar. Autoclave. After cooling, add the following\
   \ solutions (filer-sterilized): \n\nOriginal volume: 1005 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.659528Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014259'

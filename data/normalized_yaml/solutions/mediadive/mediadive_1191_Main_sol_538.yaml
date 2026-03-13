@@ -1,3 +1,4 @@
+id: CultureMech:010686
 preferred_term: Main sol. 538
 term:
   id: mediadive.solution:1191
@@ -127,3 +128,8 @@ preparation_notes: 'pH 7.0
 
   Autoclave at 121°C for 15 min and after sterilization add filter sterilized solution
   A.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.027394Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010686'

@@ -1,3 +1,4 @@
+id: CultureMech:003273
 name: IRD MESOTOGA MEDIUM
 original_name: IRD MESOTOGA MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 875, replacing the L-sodium lactate solution with 20.0 ml/L 1.0 M fructose
-    solution (autoclaved and stored under N2).
+  description: Use Medium No. 875, replacing the L-sodium lactate solution with 20.0
+    ml/L 1.0 M fructose solution (autoclaved and stored under N2).
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.107588Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003273'
 data_quality_flags:
 - incomplete_composition

@@ -1,3 +1,4 @@
+id: CultureMech:013917
 preferred_term: Main sol. J970
 term:
   id: mediadive.solution:4993
@@ -174,3 +175,8 @@ composition:
 preparation_notes: "Adjust pH to 2.0 with 10 N H2SO4 and autoclave. After autoclaving,\
   \ add the following solution (separately autoclaved):\n<I>Iron(II) sulfate solution:\
   \ </I> \n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.346827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013917'

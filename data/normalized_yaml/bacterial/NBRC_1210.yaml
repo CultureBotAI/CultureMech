@@ -1,3 +1,4 @@
+id: CultureMech:007464
 name: '1210'
 original_name: '1210'
 category: bacterial
@@ -32,3 +33,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 10 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.164570Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007464'

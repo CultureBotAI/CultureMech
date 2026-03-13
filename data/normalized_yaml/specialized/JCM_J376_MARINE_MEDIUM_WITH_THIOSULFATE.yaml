@@ -1,3 +1,4 @@
+id: CultureMech:015402
 name: MARINE MEDIUM WITH THIOSULFATE
 original_name: MARINE MEDIUM WITH THIOSULFATE
 category: specialized
@@ -30,5 +31,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:42.452690Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015402'
 data_quality_flags:
 - incomplete_composition

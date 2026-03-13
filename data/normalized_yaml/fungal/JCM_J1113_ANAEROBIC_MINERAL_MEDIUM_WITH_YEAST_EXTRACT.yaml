@@ -1,3 +1,4 @@
+id: CultureMech:010491
 name: ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT
 original_name: ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT
 category: fungal
@@ -239,15 +240,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 7.0 and autoclave under a N2 atmosphere in a bottle capped
-    with a butyl rubber stopper. After cooling, add the following solution (autoclaved and stored under
-    a N2 gas atmosphere):'
+  description: 'Mix components, adjust pH to 7.0 and autoclave under a N2 atmosphere
+    in a bottle capped with a butyl rubber stopper. After cooling, add the following
+    solution (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH solution.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust final pH to 7.0.
@@ -262,3 +264,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:14.047549Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010491'

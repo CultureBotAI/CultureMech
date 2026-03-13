@@ -1,3 +1,4 @@
+id: CultureMech:006529
 name: MEDIUM 81 MODIFIED FOR DSM 21442
 original_name: MEDIUM 81 MODIFIED FOR DSM 21442
 category: bacterial
@@ -189,4 +190,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.576527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006529'
 ph_value: 6.8

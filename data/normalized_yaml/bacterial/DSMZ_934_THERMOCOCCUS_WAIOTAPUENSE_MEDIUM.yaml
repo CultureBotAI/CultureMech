@@ -1,3 +1,4 @@
+id: CultureMech:002107
 name: THERMOCOCCUS WAIOTAPUENSE MEDIUM
 original_name: THERMOCOCCUS WAIOTAPUENSE MEDIUM
 category: bacterial
@@ -109,8 +110,9 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically under N2. Steam the medium for 3 hours (in a boiling water
-    bath) on three successive days. Alternatively, sterilize in an autoclave at 110°C for 20 minutes.
+  description: Prepare the medium anaerobically under N2. Steam the medium for 3 hours
+    (in a boiling water bath) on three successive days. Alternatively, sterilize in
+    an autoclave at 110°C for 20 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,3 +120,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 934'
+- timestamp: '2026-03-13T06:19:10.392993Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002107'

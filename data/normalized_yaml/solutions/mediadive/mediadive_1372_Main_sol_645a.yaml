@@ -1,3 +1,4 @@
+id: CultureMech:010856
 preferred_term: Main sol. 645a
 term:
   id: mediadive.solution:1372
@@ -36,3 +37,8 @@ composition:
     match_type: exact_match
 preparation_notes: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722)
   with 60 micromoles hemin. Hemin must be solubilized with 1N NAOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.955090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010856'

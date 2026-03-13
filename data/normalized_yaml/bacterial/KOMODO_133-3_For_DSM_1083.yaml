@@ -1,3 +1,4 @@
+id: CultureMech:004088
 name: For DSM 1083
 original_name: For DSM 1083
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:133.3
     label: For DSM 1083
-notes: 'Source: KOMODO ModelSEED | ID: 133.3 | DSMZ Medium: 133 (mediadive.medium:133) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 133.3 | DSMZ Medium: 133 (mediadive.medium:133)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 12 H2O
   term:
@@ -129,3 +131,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 133
+- timestamp: '2026-03-13T06:19:24.722862Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004088'

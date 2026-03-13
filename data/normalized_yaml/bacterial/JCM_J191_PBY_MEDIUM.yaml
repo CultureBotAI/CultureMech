@@ -1,3 +1,4 @@
+id: CultureMech:002553
 name: PBY MEDIUM
 original_name: PBY MEDIUM
 category: bacterial
@@ -34,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J191'
+- timestamp: '2026-03-13T06:19:14.110354Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002553'

@@ -1,3 +1,4 @@
+id: CultureMech:001983
 name: BHI-GLUCOSE MEDIUM
 original_name: BHI-GLUCOSE MEDIUM
 category: bacterial
@@ -35,3 +36,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 82'
+- timestamp: '2026-03-13T06:19:09.106221Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001983'

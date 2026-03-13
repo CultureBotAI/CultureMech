@@ -1,3 +1,4 @@
+id: CultureMech:014229
 preferred_term: Main sol. J1199
 term:
   id: mediadive.solution:5318
@@ -110,3 +111,8 @@ preparation_notes: "Adjust pH to 6.9. After autoclaving, aseptically add the pho
   \ solution to the medium. After inoculation, put several drops of toluene inside\
   \ of lid of petri dishes. \nPhosphates solution: \nAdjust pH to 6.9.\n\nOriginal\
   \ volume: 2010 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.453305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014229'

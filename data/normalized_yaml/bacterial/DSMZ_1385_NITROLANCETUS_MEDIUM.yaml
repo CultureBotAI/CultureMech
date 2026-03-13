@@ -1,3 +1,4 @@
+id: CultureMech:000845
 name: NITROLANCETUS MEDIUM
 original_name: NITROLANCETUS MEDIUM
 category: bacterial
@@ -116,8 +117,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium into serum bottles. Inject
-    10 % CO2. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium into
+    serum bottles. Inject 10 % CO2. Sterilize by autoclaving. Before inoculation add
+    from sterile stock solutions:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,3 +131,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.846747Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000845'

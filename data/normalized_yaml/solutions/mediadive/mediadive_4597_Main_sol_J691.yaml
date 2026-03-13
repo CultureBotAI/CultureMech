@@ -1,3 +1,4 @@
+id: CultureMech:013558
 preferred_term: Main sol. J691
 term:
   id: mediadive.solution:4597
@@ -30,3 +31,8 @@ composition:
 preparation_notes: Autoclave Salt base solution and yeast extract (as a 10% solution)
   separately and combine after cooling. Steam sulfur for 3 hr on each of 3 successive
   days.
+curation_history:
+- timestamp: '2026-03-13T06:20:32.014287Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013558'

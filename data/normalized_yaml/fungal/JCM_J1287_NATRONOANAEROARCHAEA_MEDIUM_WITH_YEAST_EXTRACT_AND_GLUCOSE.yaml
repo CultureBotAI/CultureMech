@@ -1,3 +1,4 @@
+id: CultureMech:010503
 name: NATRONOANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND GLUCOSE
 original_name: NATRONOANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND GLUCOSE
 category: fungal
@@ -269,4 +270,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:14.143046Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010503'
 high_metal: true

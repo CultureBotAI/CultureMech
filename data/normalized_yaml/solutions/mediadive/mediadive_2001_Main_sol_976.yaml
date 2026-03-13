@@ -1,3 +1,4 @@
+id: CultureMech:011406
 preferred_term: Main sol. 976
 term:
   id: mediadive.solution:2001
@@ -94,3 +95,8 @@ preparation_notes: 'Final pH 9.5
   cool the mineral salts solution and Na2CO3 to room temperature before mixing. When
   preparing agar add 2.0 % agar to the mineral salts solution and autoclave. Cool
   the Na2CO3 stock solution and agar to 50-55°C before mixing.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.470327Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011406'

@@ -1,3 +1,4 @@
+id: CultureMech:011618
 preferred_term: Vitamin K1 solution
 term:
   id: mediadive.solution:2227
@@ -32,3 +33,8 @@ preparation_notes: 'Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filte
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.816696Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011618'

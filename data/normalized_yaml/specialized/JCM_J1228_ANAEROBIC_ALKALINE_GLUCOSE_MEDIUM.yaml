@@ -1,3 +1,4 @@
+id: CultureMech:015394
 name: ANAEROBIC ALKALINE GLUCOSE MEDIUM
 original_name: ANAEROBIC ALKALINE GLUCOSE MEDIUM
 category: specialized
@@ -230,13 +231,13 @@ preparation_steps:
   description: Mix components thoroughly and autoclave under a N2 gas atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: 'Aseptically and anaerobically combine Solutions A and B. Check final pH of the medium
-    to be around 9.2. Add the following solution into the medium (filter-sterilized and stored under a
-    N2 atmosphere):'
+  description: 'Aseptically and anaerobically combine Solutions A and B. Check final
+    pH of the medium to be around 9.2. Add the following solution into the medium
+    (filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 6
   action: AUTOCLAVE
-  description: 'Comment: For JCM 32929, aseptically and anaerobically add per liter the following solutions
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Comment: For JCM 32929, aseptically and anaerobically add per liter
+    the following solutions (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,3 +249,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:42.406836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015394'

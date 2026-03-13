@@ -1,3 +1,4 @@
+id: CultureMech:014639
 preferred_term: Solution 2
 term:
   id: mediadive.solution:5796
@@ -43,3 +44,8 @@ preparation_notes: 'Adjust pH to 7.8. Autoclave solutions to sterilize.
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.783608Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014639'

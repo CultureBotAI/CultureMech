@@ -1,3 +1,4 @@
+id: CultureMech:001210
 name: MEDIUM FOR HYDROGENOPHILUS
 original_name: MEDIUM FOR HYDROGENOPHILUS
 category: bacterial
@@ -123,11 +124,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly, adjust pH to 6.8. Distribute the medium into culture vessels
-    (e.g., 17.0 ml in 120 ml serum bottles), seal with butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly, adjust pH to 6.8. Distribute the medium
+    into culture vessels (e.g., 17.0 ml in 120 ml serum bottles), seal with butyl
+    rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'After cooling, add the following autoclaved solutions (for final 20 ml):'
+  description: 'After cooling, add the following autoclaved solutions (for final 20
+    ml):'
 - step_number: 3
   action: MIX
   description: Pressurize to 100 kPa with H2-CO2 (4:1, v/v).
@@ -141,3 +144,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1733'
+- timestamp: '2026-03-13T06:19:02.273177Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001210'

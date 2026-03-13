@@ -1,3 +1,4 @@
+id: CultureMech:008819
 name: M17 medium supplemented with 20 g/L of lactose
 original_name: M17 medium supplemented with 20 g/L of lactose
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:36218
     label: beta-lactose
@@ -33,3 +35,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.484557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008819'

@@ -1,3 +1,4 @@
+id: CultureMech:002428
 name: JCM MEDIUM No. 1262
 original_name: JCM MEDIUM No. 1262
 category: bacterial
@@ -82,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1262'
+- timestamp: '2026-03-13T06:19:13.239278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002428'

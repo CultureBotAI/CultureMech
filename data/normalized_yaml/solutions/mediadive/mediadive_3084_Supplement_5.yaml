@@ -1,3 +1,4 @@
+id: CultureMech:012309
 preferred_term: Supplement 5
 term:
   id: mediadive.solution:3084
@@ -31,3 +32,8 @@ preparation_notes: 'NaHCO3 (10%; w/v) in distilled water, store at 4°C
 
 
   Original volume: 2 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.114310Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012309'

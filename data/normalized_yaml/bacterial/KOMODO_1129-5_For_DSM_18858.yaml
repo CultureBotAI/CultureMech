@@ -1,3 +1,4 @@
+id: CultureMech:003837
 name: For DSM 18858
 original_name: For DSM 18858
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1129.5
     label: For DSM 18858
-notes: 'Source: KOMODO ModelSEED | ID: 1129.5 | DSMZ Medium: 1129 (mediadive.medium:1129) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1129.5 | DSMZ Medium: 1129 (mediadive.medium:1129)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -131,3 +133,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1129
+- timestamp: '2026-03-13T06:19:22.615161Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003837'

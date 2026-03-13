@@ -1,3 +1,4 @@
+id: CultureMech:010513
 name: YEAST EXTRACT MANNITOL AGAR MEDIUM
 original_name: YEAST EXTRACT MANNITOL AGAR MEDIUM
 category: fungal
@@ -68,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J250'
+- timestamp: '2026-03-13T06:20:14.190474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010513'

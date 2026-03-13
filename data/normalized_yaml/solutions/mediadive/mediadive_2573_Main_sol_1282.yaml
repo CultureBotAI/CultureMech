@@ -1,3 +1,4 @@
+id: CultureMech:011912
 preferred_term: Main sol. 1282
 term:
   id: mediadive.solution:2573
@@ -236,3 +237,8 @@ preparation_notes: 'pH 7.5 - 8.5
 
   To solid media add 15.0 g/l agar. Add the vitamin solution (filter sterilized) and
   the NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved, cooled medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.742701Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011912'

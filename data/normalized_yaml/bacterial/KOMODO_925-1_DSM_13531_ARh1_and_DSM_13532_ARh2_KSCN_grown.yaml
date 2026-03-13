@@ -1,3 +1,4 @@
+id: CultureMech:006835
 name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
 original_name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:925.1
     label: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
-notes: 'Source: KOMODO ModelSEED | ID: 925.1 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925.1 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -119,4 +121,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 925
+- timestamp: '2026-03-13T06:19:44.206159Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006835'
 ph_value: 10.0

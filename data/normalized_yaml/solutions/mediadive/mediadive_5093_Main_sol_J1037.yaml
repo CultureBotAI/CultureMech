@@ -1,3 +1,4 @@
+id: CultureMech:014007
 preferred_term: Main sol. J1037
 term:
   id: mediadive.solution:5093
@@ -81,3 +82,8 @@ preparation_notes: 'Before autoclaving, adjust pH to 7.6 - 7.8 for agar plate an
 
 
   Original volume: 1013 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.970214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014007'

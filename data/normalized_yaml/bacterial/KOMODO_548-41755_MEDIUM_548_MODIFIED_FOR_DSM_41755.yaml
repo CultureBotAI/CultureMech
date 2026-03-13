@@ -1,3 +1,4 @@
+id: CultureMech:005992
 name: MEDIUM 548 MODIFIED FOR DSM 41755
 original_name: MEDIUM 548 MODIFIED FOR DSM 41755
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:548_41755
     label: MEDIUM 548 MODIFIED FOR DSM 41755
-notes: 'Source: KOMODO ModelSEED | ID: 548_41755 | DSMZ Medium: 548 (mediadive.medium:548) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 548_41755 | DSMZ Medium: 548 (mediadive.medium:548)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -49,4 +50,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 548
+- timestamp: '2026-03-13T06:19:37.499671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005992'
 ph_value: 7.3

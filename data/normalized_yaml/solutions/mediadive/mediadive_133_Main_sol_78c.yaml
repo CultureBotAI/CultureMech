@@ -1,3 +1,4 @@
+id: CultureMech:010823
 preferred_term: Main sol. 78c
 term:
   id: mediadive.solution:133
@@ -161,3 +162,8 @@ preparation_notes: 'Use lean beef or horse meat. Remove fat and connective tissu
 
 
   Original volume: 853 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.756198Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010823'

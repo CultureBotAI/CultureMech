@@ -1,3 +1,4 @@
+id: CultureMech:002522
 name: PPLO-GLUCOSE BROTH
 original_name: PPLO-GLUCOSE BROTH
 category: bacterial
@@ -55,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J163'
+- timestamp: '2026-03-13T06:19:13.944612Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002522'

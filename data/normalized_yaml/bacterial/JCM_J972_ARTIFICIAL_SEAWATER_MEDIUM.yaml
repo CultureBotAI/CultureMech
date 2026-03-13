@@ -1,3 +1,4 @@
+id: CultureMech:003321
 name: ARTIFICIAL SEAWATER MEDIUM
 original_name: ARTIFICIAL SEAWATER MEDIUM
 category: bacterial
@@ -19,7 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L (final) peptone.
+  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L (final)
+    peptone.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.
@@ -34,5 +36,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.482754Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003321'
 data_quality_flags:
 - incomplete_composition

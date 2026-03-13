@@ -1,3 +1,4 @@
+id: CultureMech:012981
 preferred_term: Main sol. J237
 term:
   id: mediadive.solution:3914
@@ -106,3 +107,8 @@ preparation_notes: 'Mix components except Na2S x 9H2O, adjust pH to 6.5 and auto
 
 
   Original volume: 1015 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.717480Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012981'

@@ -1,3 +1,4 @@
+id: CultureMech:012079
 preferred_term: Main sol. 162
 term:
   id: mediadive.solution:278
@@ -137,3 +138,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Adjust pH to 7.4 with NaOH. Autoclave 20 min at 121°C; final pH:
   7.2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.739691Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012079'

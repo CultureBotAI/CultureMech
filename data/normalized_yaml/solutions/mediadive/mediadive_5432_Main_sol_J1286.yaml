@@ -1,3 +1,4 @@
+id: CultureMech:014341
 preferred_term: Main sol. J1286
 term:
   id: mediadive.solution:5432
@@ -69,3 +70,8 @@ preparation_notes: "Autoclave. After cooling, add the following solutions (autoc
   \ (see below, approximately 5.0 g/L) under an argon gas stream, and seal with butyl\
   \ rubber stoppers. Then, add per liter the following solutions (autoclaved or *filter-sterilized):\
   \ \n\nOriginal volume: 1072 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.179062Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014341'

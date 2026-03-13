@@ -1,3 +1,4 @@
+id: CultureMech:013905
 preferred_term: Main sol. J959
 term:
   id: mediadive.solution:4981
@@ -188,3 +189,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 7.2 with KOH, distri
   \ butyl rubber stoppers and autoclave. After cooling, add the following solutions\
   \ (per 935 ml of the medium) from anaerobic stocks (autoclaved or *filter-sterilized):\
   \ \n\nOriginal volume: 1009 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.250430Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013905'

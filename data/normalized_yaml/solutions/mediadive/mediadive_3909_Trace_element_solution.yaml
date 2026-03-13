@@ -1,3 +1,4 @@
+id: CultureMech:012977
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:3909
@@ -161,3 +162,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve EDTA x 2Na first in 500 ml of distilled water. Then add
   the remaining salts and adjust volume to 1000 ml.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.688376Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012977'

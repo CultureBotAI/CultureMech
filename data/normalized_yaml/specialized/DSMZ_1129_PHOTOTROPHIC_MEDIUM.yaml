@@ -1,3 +1,4 @@
+id: CultureMech:015333
 name: PHOTOTROPHIC MEDIUM
 original_name: PHOTOTROPHIC MEDIUM
 category: specialized
@@ -122,14 +123,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
-    under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
+    a rubber septum under a stream of nitrogen gas.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 3
   action: MIX
-  description: Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min, then close tightly.
+  description: Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min, then
+    close tightly.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave in closed vessel under CO2 atmosphere.
@@ -143,3 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1129'
+- timestamp: '2026-03-13T06:20:41.904563Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015333'

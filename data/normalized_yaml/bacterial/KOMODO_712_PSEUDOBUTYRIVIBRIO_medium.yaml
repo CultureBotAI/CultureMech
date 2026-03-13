@@ -1,3 +1,4 @@
+id: CultureMech:006350
 name: PSEUDOBUTYRIVIBRIO medium
 original_name: PSEUDOBUTYRIVIBRIO medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:712
     label: PSEUDOBUTYRIVIBRIO medium
-notes: 'Source: KOMODO ModelSEED | ID: 712 | DSMZ Medium: 712 (mediadive.medium:712) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 712 | DSMZ Medium: 712 (mediadive.medium:712)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -172,4 +174,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.001127Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:39.958912Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006350'

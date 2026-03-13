@@ -1,3 +1,4 @@
+id: CultureMech:012938
 preferred_term: Main sol. J201
 term:
   id: mediadive.solution:3866
@@ -127,3 +128,8 @@ composition:
 preparation_notes: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6.
   Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum
   to final concentration of 6%.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.429695Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012938'

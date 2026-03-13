@@ -1,3 +1,4 @@
+id: CultureMech:001007
 name: NICOTINIC ACID MEDIUM
 original_name: NICOTINIC ACID MEDIUM
 category: bacterial
@@ -74,8 +75,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add nicotinic acid to the given amount of water, boil until dissolved and cool to room
-    temperature. Add the other substances, adjust pH to 8.2 and distribute under 100% nitrogen atmosphere.
+  description: Add nicotinic acid to the given amount of water, boil until dissolved
+    and cool to room temperature. Add the other substances, adjust pH to 8.2 and distribute
+    under 100% nitrogen atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 152'
+- timestamp: '2026-03-13T06:19:00.437779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001007'

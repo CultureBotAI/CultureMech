@@ -1,3 +1,4 @@
+id: CultureMech:000688
 name: ACETIVIBRIO MEDIUM
 original_name: ACETIVIBRIO MEDIUM
 category: bacterial
@@ -87,15 +88,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cellobiose, sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Then adjust pH to 7.0 - 7.2, distribute under same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials and autoclave. Cellobiose is added to the sterile medium
-    from an anoxic 10% (w/v) stock solution prepared under 100% N2 gas and sterilized by filtration. Some
-    strains can be adapted to cellulose as substrate using 10.00 g/l cellulose (Avicel or MN 301, MACHEREY-NAGEL).
+  description: Dissolve ingredients except cellobiose, sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Then adjust pH to 7.0 -
+    7.2, distribute under same gas atmosphere in anoxic Hungate-type tubes or serum
+    vials and autoclave. Cellobiose is added to the sterile medium from an anoxic
+    10% (w/v) stock solution prepared under 100% N2 gas and sterilized by filtration.
+    Some strains can be adapted to cellulose as substrate using 10.00 g/l cellulose
+    (Avicel or MN 301, MACHEREY-NAGEL).
 - step_number: 2
   action: MIX
-  description: 'Note: A white precipitate forms after mixing the ingredients of this medium, but this
-    has no negative effect on growth.'
+  description: 'Note: A white precipitate forms after mixing the ingredients of this
+    medium, but this has no negative effect on growth.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +106,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 122'
+- timestamp: '2026-03-13T06:18:57.464862Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000688'

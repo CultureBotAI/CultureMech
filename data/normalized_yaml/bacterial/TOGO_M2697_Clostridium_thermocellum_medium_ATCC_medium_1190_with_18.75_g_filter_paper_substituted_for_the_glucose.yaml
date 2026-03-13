@@ -1,3 +1,4 @@
+id: CultureMech:009249
 name: Clostridium thermocellum medium (ATCC medium 1190) with 18.75 g filter paper
   substituted for the glucose
 original_name: Clostridium thermocellum medium (ATCC medium 1190) with 18.75 g filter
@@ -309,6 +310,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.686545Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009249'
 high_metal: true
 solutions:
 - preferred_term: Vitamin Solution

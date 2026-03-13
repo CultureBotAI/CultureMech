@@ -1,3 +1,4 @@
+id: CultureMech:013063
 preferred_term: Main sol. J299
 term:
   id: mediadive.solution:4004
@@ -201,3 +202,8 @@ preparation_notes: Mix ingredients, except Na2S x 9H2O and L-cystine, and adjust
   respectively, under a N2 atmosphere. Prior to inoculation, add the sterile Na2S
   x 9H2O and cystine solutions, and readjust pH to 6.0, if necessary. Pressurize the
   inoculated bottles to 300 kPa N2.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.177028Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013063'

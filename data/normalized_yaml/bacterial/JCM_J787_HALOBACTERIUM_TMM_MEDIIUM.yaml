@@ -1,3 +1,4 @@
+id: CultureMech:003130
 name: HALOBACTERIUM TMM MEDIIUM
 original_name: HALOBACTERIUM TMM MEDIIUM
 category: bacterial
@@ -90,4 +91,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:18.050466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003130'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:012458
 preferred_term: Main sol. 1588
 term:
   id: mediadive.solution:3282
@@ -90,3 +91,8 @@ preparation_notes: 'Dissolve beef extract and peptone by heating in tap water, a
 
   Natural sea water is stored in the dark for at least three weeks to "age". If natural
   sea water is not available use artificial sea water:'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.054660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012458'

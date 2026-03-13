@@ -1,3 +1,4 @@
+id: CultureMech:006842
 name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
 original_name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:925.8
     label: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
-notes: 'Source: KOMODO ModelSEED | ID: 925.8 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925.8 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -119,4 +121,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 925
+- timestamp: '2026-03-13T06:19:44.255086Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006842'
 ph_value: 10.0

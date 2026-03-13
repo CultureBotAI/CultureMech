@@ -1,3 +1,4 @@
+id: CultureMech:007445
 name: M9 with 0.4% glucose and 20% emulsion
 original_name: M9 with 0.4% glucose and 20% emulsion
 category: bacterial
@@ -75,6 +76,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 97, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:49.101949Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007445'
 media_term:
   preferred_term: MediaDB Medium 97
   term:

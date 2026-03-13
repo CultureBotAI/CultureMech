@@ -1,3 +1,4 @@
+id: CultureMech:011878
 preferred_term: Ferrous sulfide sludge
 term:
   id: mediadive.solution:2526
@@ -50,3 +51,8 @@ preparation_notes: 'Heat distilled water to 50°C in a 250 ml beaker with a stir
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.558394Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011878'

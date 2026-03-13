@@ -1,3 +1,4 @@
+id: CultureMech:010852
 preferred_term: Main sol. 645
 term:
   id: mediadive.solution:1369
@@ -46,3 +47,8 @@ preparation_notes: 'Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 m
 
 
   Original volume: 905 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.930226Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010852'

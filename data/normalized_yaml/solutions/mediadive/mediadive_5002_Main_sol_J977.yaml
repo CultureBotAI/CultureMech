@@ -1,3 +1,4 @@
+id: CultureMech:013927
 preferred_term: Main sol. J977
 term:
   id: mediadive.solution:5002
@@ -55,3 +56,8 @@ preparation_notes: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl
   Distribute the medium into culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch
   tubes), seal with butyl rubber stoppers and autoclave. After cooling, add the following
   solution (per 900 ml, autoclaved): '
+curation_history:
+- timestamp: '2026-03-13T06:20:34.416411Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013927'

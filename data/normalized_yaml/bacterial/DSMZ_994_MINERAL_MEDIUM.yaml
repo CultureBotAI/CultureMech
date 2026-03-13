@@ -1,3 +1,4 @@
+id: CultureMech:002179
 name: MINERAL MEDIUM
 original_name: MINERAL MEDIUM
 category: bacterial
@@ -199,8 +200,8 @@ preparation_steps:
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -208,3 +209,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 994'
+- timestamp: '2026-03-13T06:19:11.000368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002179'

@@ -1,3 +1,4 @@
+id: CultureMech:011172
 preferred_term: Solution II
 term:
   id: mediadive.solution:1721
@@ -34,3 +35,8 @@ preparation_notes: 'NaHCO3 2.625 g per 50 ml distilled water
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.941447Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011172'

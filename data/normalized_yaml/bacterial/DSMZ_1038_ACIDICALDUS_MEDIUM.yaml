@@ -1,3 +1,4 @@
+id: CultureMech:000461
 name: ACIDICALDUS MEDIUM
 original_name: ACIDICALDUS MEDIUM
 category: bacterial
@@ -60,9 +61,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose and yeast extract, adjust pH to 2.5, dispense in suitable
-    cultivation vessels and autoclave. Add glucose and yeast extract after autoclaving from sterile stock
-    solutions.
+  description: Dissolve ingredients except glucose and yeast extract, adjust pH to
+    2.5, dispense in suitable cultivation vessels and autoclave. Add glucose and yeast
+    extract after autoclaving from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +71,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1038'
+- timestamp: '2026-03-13T06:18:55.511192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000461'

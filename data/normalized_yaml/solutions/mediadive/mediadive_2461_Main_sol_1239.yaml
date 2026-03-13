@@ -1,3 +1,4 @@
+id: CultureMech:011832
 preferred_term: Main sol. 1239
 term:
   id: mediadive.solution:2461
@@ -127,3 +128,8 @@ preparation_notes: Flush the medium with N2 and dispense 20 ml into 100ml serum 
   under an N2 atmosphere, seal with butyl rubber stoppers and autoclave. To the cooled.
   sterile medium add, from anaerobic, sterile stock solutions, MgSO4 (1 mM), yeast
   extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM) and Na2S (0.1 mM).
+curation_history:
+- timestamp: '2026-03-13T06:20:22.262986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011832'

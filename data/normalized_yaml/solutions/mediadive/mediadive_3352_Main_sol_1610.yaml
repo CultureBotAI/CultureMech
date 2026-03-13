@@ -1,3 +1,4 @@
+id: CultureMech:012503
 preferred_term: Main sol. 1610
 term:
   id: mediadive.solution:3352
@@ -33,3 +34,8 @@ preparation_notes: "Dilute 20 ml of solution 1 to 700ml with distilled water.\nA
   \ mL solution 4.\nAdd 1.0 mL solution 9.\nDisolve and bring to 1L.\nAdjust pH to\
   \ 7.8 with HCl or NaOH.\r\nAutoclave medium.\nAfter autoclaving add 10mL per liter\
   \ of filter sterilized methanol."
+curation_history:
+- timestamp: '2026-03-13T06:20:26.244314Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012503'

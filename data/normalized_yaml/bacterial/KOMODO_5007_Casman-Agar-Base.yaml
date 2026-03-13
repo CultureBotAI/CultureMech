@@ -1,3 +1,4 @@
+id: CultureMech:005647
 name: Casman-Agar-Base
 original_name: Casman-Agar-Base
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5007
     label: Casman-Agar-Base
-notes: 'Source: KOMODO ModelSEED | ID: 5007 | DSMZ Medium: 5007 (mediadive.medium:5007) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5007 | DSMZ Medium: 5007 (mediadive.medium:5007)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5007'
+- timestamp: '2026-03-13T06:19:34.926225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005647'

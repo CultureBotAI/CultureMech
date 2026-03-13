@@ -1,3 +1,4 @@
+id: CultureMech:012285
 preferred_term: Main sol. 1493
 term:
   id: mediadive.solution:3061
@@ -107,3 +108,8 @@ preparation_notes: 'Do not adjust the pH.
   For liquid medium use 0.8-2.0g/l Gelrite as carbon source (the medium remains liquid).
   Alternatively mannose (1g/l) may be used instead of Gelrite in liquid medium. Do
   not add mannose to solid media, which will inhibit growth.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.993473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012285'

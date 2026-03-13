@@ -1,3 +1,4 @@
+id: CultureMech:001754
 name: PLANCTOMYCES MEDIUM
 original_name: PLANCTOMYCES MEDIUM
 category: bacterial
@@ -105,7 +106,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to 1000.0 ml with Sea water or Artificial Sea water, see medium 607.
+  description: Make up to 1000.0 ml with Sea water or Artificial Sea water, see medium
+    607.
 applications:
 - Microbial cultivation
 curation_history:
@@ -113,3 +115,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 622'
+- timestamp: '2026-03-13T06:19:06.978772Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001754'

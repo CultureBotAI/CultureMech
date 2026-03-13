@@ -1,3 +1,4 @@
+id: CultureMech:001084
 name: ACETOBACTER MUSTI MEDIUM
 original_name: ACETOBACTER MUSTI MEDIUM
 category: bacterial
@@ -40,3 +41,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1603'
+- timestamp: '2026-03-13T06:19:01.068272Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001084'

@@ -1,3 +1,4 @@
+id: CultureMech:001330
 name: AUREOBACTERIUM TERREGENS MEDIUM
 original_name: AUREOBACTERIUM TERREGENS MEDIUM
 category: bacterial
@@ -63,7 +64,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.
+  description: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone
+    in ethanol.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +77,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:03.225631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001330'

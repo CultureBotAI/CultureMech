@@ -1,3 +1,4 @@
+id: CultureMech:013766
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:4827
@@ -140,3 +141,8 @@ preparation_notes: For vial cultures, dissolve all compounds except Na2S x 9H2O 
   vials, purge with N2-CO2 (80:20) gas and fix with a stopper. After autoclaving,
   add filter-sterilized Na2S x 9H2O and L-cysteine x HCl x H2O solution to each vial
   as reducing agents.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.361227Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013766'

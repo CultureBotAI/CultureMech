@@ -1,3 +1,4 @@
+id: CultureMech:012656
 preferred_term: Main sol. 1716
 term:
   id: mediadive.solution:3553
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Adjust pH to 5.5.
 
   The same as Caso Bouillon (Merck or Oxoid, Germany).'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.085066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012656'

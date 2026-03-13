@@ -1,3 +1,4 @@
+id: CultureMech:012900
 preferred_term: SL-6 trace element solution
 term:
   id: mediadive.solution:3822
@@ -100,3 +101,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 3.6.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.213003Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012900'

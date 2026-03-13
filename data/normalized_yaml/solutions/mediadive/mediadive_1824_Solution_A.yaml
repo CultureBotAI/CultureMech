@@ -1,3 +1,4 @@
+id: CultureMech:011250
 preferred_term: Solution A
 term:
   id: mediadive.solution:1824
@@ -67,3 +68,8 @@ preparation_notes: 'Adjust pH to 2.3 with 10 N H2SO4.
 
 
   Original volume: 950 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.402047Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011250'

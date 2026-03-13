@@ -1,3 +1,4 @@
+id: CultureMech:013924
 preferred_term: Main sol. 2
 term:
   id: mediadive.solution:4
@@ -19,3 +20,8 @@ preparation_notes: 'To medium 1 add 20 g/l urea before autoclaving. Do not adjus
   pH; pH raises to about 8 due to heat degraded urea.
 
   For sporulation enhancement add 10 mg/l MnSO4 x H2O.'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.399138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013924'

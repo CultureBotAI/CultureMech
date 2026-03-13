@@ -1,3 +1,4 @@
+id: CultureMech:012297
 preferred_term: Solution I
 term:
   id: mediadive.solution:3073
@@ -52,3 +53,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Prepare Solution I and store at -20°C
+curation_history:
+- timestamp: '2026-03-13T06:20:25.077620Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012297'

@@ -1,3 +1,4 @@
+id: CultureMech:012654
 preferred_term: Main sol. 1714
 term:
   id: mediadive.solution:3551
@@ -121,3 +122,8 @@ preparation_notes: 'Dissolve ammonium sulfate, potassium phosphate and trace ele
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.077796Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012654'

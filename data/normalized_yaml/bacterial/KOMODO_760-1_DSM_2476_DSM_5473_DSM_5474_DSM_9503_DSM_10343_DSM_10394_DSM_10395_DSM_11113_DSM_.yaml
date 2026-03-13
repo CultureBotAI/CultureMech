@@ -1,8 +1,10 @@
-name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395, DSM 11113, DSM 11836, DSM
-  12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM 14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882
-original_name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395, DSM 11113, DSM
-  11836, DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM 14981, DSM 15226, DSM 16538, DSM 17994,
-  DSM 17882
+id: CultureMech:006414
+name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395, DSM
+  11113, DSM 11836, DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM 14981,
+  DSM 15226, DSM 16538, DSM 17994, DSM 17882
+original_name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395,
+  DSM 11113, DSM 11836, DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM
+  14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -11,10 +13,11 @@ media_term:
   preferred_term: KOMODO Medium 760.1
   term:
     id: komodo.medium:760.1
-    label: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395, DSM 11113, DSM 11836,
-      DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM 14981, DSM 15226, DSM 16538, DSM 17994,
-      DSM 17882
-notes: 'Source: KOMODO ModelSEED | ID: 760.1 | DSMZ Medium: 760 (mediadive.medium:760) | Aerobic: Yes'
+    label: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395,
+      DSM 11113, DSM 11836, DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767,
+      DSM 14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882
+notes: 'Source: KOMODO ModelSEED | ID: 760.1 | DSMZ Medium: 760 (mediadive.medium:760)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -133,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 760
+- timestamp: '2026-03-13T06:19:40.543309Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006414'

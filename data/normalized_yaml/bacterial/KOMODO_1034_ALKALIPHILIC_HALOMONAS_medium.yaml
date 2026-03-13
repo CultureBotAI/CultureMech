@@ -1,3 +1,4 @@
+id: CultureMech:003547
 name: ALKALIPHILIC HALOMONAS medium
 original_name: ALKALIPHILIC HALOMONAS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1034
     label: ALKALIPHILIC HALOMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1034 | DSMZ Medium: 1034 (mediadive.medium:1034) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1034 | DSMZ Medium: 1034 (mediadive.medium:1034)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1034
+- timestamp: '2026-03-13T06:19:20.581387Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003547'

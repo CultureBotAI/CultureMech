@@ -1,3 +1,4 @@
+id: CultureMech:012147
 preferred_term: Main sol. 1414
 term:
   id: mediadive.solution:2879
@@ -150,3 +151,8 @@ composition:
 preparation_notes: "Adjust to pH 5.9 before autoclaving\nPrepare the liquid medium.\
   \ Before inoculation add from sterile stock solutions: \nAdjust to pH 8.0 - 8.5\
   \ with 0.5 N NaOH."
+curation_history:
+- timestamp: '2026-03-13T06:20:24.179946Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012147'

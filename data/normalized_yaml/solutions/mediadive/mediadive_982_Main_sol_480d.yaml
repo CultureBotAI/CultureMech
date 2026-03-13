@@ -1,3 +1,4 @@
+id: CultureMech:015317
 preferred_term: Main sol. 480d
 term:
   id: mediadive.solution:982
@@ -25,3 +26,8 @@ preparation_notes: Use medium 480, but reduce the amount of Na acetate to 1.0 g/
   originally available in Russia. This product is no longer available, but it appears
   this product gave better growth than with highly purified products from Oxoid or
   Difco.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.788227Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015317'

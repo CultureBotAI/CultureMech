@@ -1,3 +1,4 @@
+id: CultureMech:002880
 name: BACILLUS FILIFORMIS MEDIUM
 original_name: BACILLUS FILIFORMIS MEDIUM
 category: bacterial
@@ -75,3 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J531'
+- timestamp: '2026-03-13T06:19:16.289542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002880'

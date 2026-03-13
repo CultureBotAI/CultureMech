@@ -1,3 +1,4 @@
+id: CultureMech:000433
 name: BDELLOVIBRIO BACTERIOVORUS MEDIUM
 original_name: BDELLOVIBRIO BACTERIOVORUS MEDIUM
 category: bacterial
@@ -50,17 +51,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Preparation of double-layered agar plates:<p>\r\n\r\n<b>Bottom layer:</b>\r\nDissolve\
-    \ ingredients and adjust the pH of the medium to 7.2 with NaOH. Then bring the medium to a boil to\
-    \ dissolve the agar and autoclave (121°C for 15 min). Dry plates at room temperature for 2 - 3 days.<p>\r\
-    \n\r\n<b>Top layer:</b>\r\nGrow prey bacterium on agar slants using DSMZ medium 54 or medium 1. Prepare\
-    \ 5 ml aliquots of 1 % Bacto agar in 25 mM HEPES buffer (6.0 g/l HEPES,    0.6 g/l MgCl2 x 6 H2O,\
-    \     0.3 g/l CaCl2 x 2 H2O, pH 7.2 ) and autoclave in test tubes. After cooling to 45°C in a water\
-    \ bath add 0.5 ml cell suspension of the host organism, mix, and pour the top layer. For the top layer\
-    \ of one plate use one 24 h old agar slant culture and wash off grown cells in 0.5 ml sterile water.<p>"
+  description: "Preparation of double-layered agar plates:<p>\r\n\r\n<b>Bottom layer:</b>\r\
+    \nDissolve ingredients and adjust the pH of the medium to 7.2 with NaOH. Then\
+    \ bring the medium to a boil to dissolve the agar and autoclave (121°C for 15\
+    \ min). Dry plates at room temperature for 2 - 3 days.<p>\r\n\r\n<b>Top layer:</b>\r\
+    \nGrow prey bacterium on agar slants using DSMZ medium 54 or medium 1. Prepare\
+    \ 5 ml aliquots of 1 % Bacto agar in 25 mM HEPES buffer (6.0 g/l HEPES,    0.6\
+    \ g/l MgCl2 x 6 H2O,     0.3 g/l CaCl2 x 2 H2O, pH 7.2 ) and autoclave in test\
+    \ tubes. After cooling to 45°C in a water bath add 0.5 ml cell suspension of the\
+    \ host organism, mix, and pour the top layer. For the top layer of one plate use\
+    \ one 24 h old agar slant culture and wash off grown cells in 0.5 ml sterile water.<p>"
 - step_number: 2
   action: MIX
-  description: Inoculate the top layer of the double-layer plates the same day when prepared.
+  description: Inoculate the top layer of the double-layer plates the same day when
+    prepared.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +76,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:55.252084Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000433'

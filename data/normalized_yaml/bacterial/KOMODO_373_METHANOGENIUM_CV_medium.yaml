@@ -1,3 +1,4 @@
+id: CultureMech:005105
 name: METHANOGENIUM CV medium
 original_name: METHANOGENIUM CV medium
 category: bacterial
@@ -282,3 +283,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:30.125214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005105'

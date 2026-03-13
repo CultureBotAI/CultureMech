@@ -1,3 +1,4 @@
+id: CultureMech:000683
 name: ECTOTHIORHODOSPIRA VARIABILIS MEDIUM
 original_name: ECTOTHIORHODOSPIRA VARIABILIS MEDIUM
 category: bacterial
@@ -161,14 +162,15 @@ preparation_steps:
   description: Final pH 9.0 - 9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare and boil the medium in the absence of Na2S x 9 H2O, NaHCO3, Vitamin B12, CaCl2
-    x 2 H2O, MgCl2 x 6 H2O. Cool under a stream of nitrogen and add the remaining components, except vitamin
-    B12 and Na2S2O3 x 5 H2O. Dispense into tubes or bottle fitted with rubber stoppers and autoclave.
-    Add the vitamin B12 (filter sterilised) and Na2S2O3 x 5 H2O from sterile stock solutions.
+  description: Prepare and boil the medium in the absence of Na2S x 9 H2O, NaHCO3,
+    Vitamin B12, CaCl2 x 2 H2O, MgCl2 x 6 H2O. Cool under a stream of nitrogen and
+    add the remaining components, except vitamin B12 and Na2S2O3 x 5 H2O. Dispense
+    into tubes or bottle fitted with rubber stoppers and autoclave. Add the vitamin
+    B12 (filter sterilised) and Na2S2O3 x 5 H2O from sterile stock solutions.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,3 +178,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1224'
+- timestamp: '2026-03-13T06:18:57.420783Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000683'

@@ -1,3 +1,4 @@
+id: CultureMech:012218
 preferred_term: Main sol. 1451
 term:
   id: mediadive.solution:2983
@@ -131,3 +132,8 @@ preparation_notes: "First, dissolve ferric citrate in water by heating and adjus
   \ autoclave at 121°C for 15 min. Add vitamins from sterile anoxic stock solutions\
   \ prepared under 100% N2 gas and sterilized by filtration. Adjust pH of the complete\
   \ medium to 6.5, if necessary.\n\nOriginal volume: 1003 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:24.577942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012218'

@@ -1,3 +1,4 @@
+id: CultureMech:004113
 name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium (medium
   1396)_with_Mineral salts solution for liquid medium (medium 1396)
 original_name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium
@@ -178,4 +179,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1396
+- timestamp: '2026-03-13T06:19:24.949518Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004113'
 high_metal: true

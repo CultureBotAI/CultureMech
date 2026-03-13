@@ -1,3 +1,4 @@
+id: CultureMech:014459
 preferred_term: Main sol. 218
 term:
   id: mediadive.solution:5581
@@ -51,3 +52,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:37.910519Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014459'

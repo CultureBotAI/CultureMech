@@ -1,3 +1,4 @@
+id: CultureMech:003950
 name: EMSSDQ4 medium
 original_name: EMSSDQ4 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1202
     label: EMSSDQ4 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1202 | DSMZ Medium: 1202 (mediadive.medium:1202) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1202 | DSMZ Medium: 1202 (mediadive.medium:1202)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -268,4 +270,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.933001Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:23.582533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003950'

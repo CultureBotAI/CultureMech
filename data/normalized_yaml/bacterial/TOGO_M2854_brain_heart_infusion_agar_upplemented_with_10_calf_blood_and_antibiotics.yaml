@@ -1,3 +1,4 @@
+id: CultureMech:009396
 name: brain–heart infusion agar (upplemented with 10% calf blood and antibiotics)
 original_name: brain–heart infusion agar (upplemented with 10% calf blood and antibiotics)
 category: bacterial
@@ -66,5 +67,10 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.695892'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Oxygen gas'
+- timestamp: '2026-03-13T06:20:06.028353Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009396'

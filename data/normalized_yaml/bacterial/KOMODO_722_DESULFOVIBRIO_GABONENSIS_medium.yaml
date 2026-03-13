@@ -1,3 +1,4 @@
+id: CultureMech:006365
 name: DESULFOVIBRIO GABONENSIS medium
 original_name: DESULFOVIBRIO GABONENSIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:722
     label: DESULFOVIBRIO GABONENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 722 | DSMZ Medium: 722 (mediadive.medium:722) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 722 | DSMZ Medium: 722 (mediadive.medium:722)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -219,3 +221,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 722
+- timestamp: '2026-03-13T06:19:40.137713Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006365'

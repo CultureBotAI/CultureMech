@@ -1,3 +1,4 @@
+id: CultureMech:000677
 name: METHYLOVIRGULA LIGNI MEDIUM
 original_name: METHYLOVIRGULA LIGNI MEDIUM
 category: bacterial
@@ -110,9 +111,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes with screw caps. The methanol
-    may either be filter sterilised or autoclaved in half full serum bottles sealed with a rubber stopper
-    and a crimp closure. Add to the cooled autoclaved medium. Agar may be added at 15 g/l for solid media.
+  description: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes with
+    screw caps. The methanol may either be filter sterilised or autoclaved in half
+    full serum bottles sealed with a rubber stopper and a crimp closure. Add to the
+    cooled autoclaved medium. Agar may be added at 15 g/l for solid media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -124,6 +126,10 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: METHYLOVIRGULA LIGNI, culture_type: isolate'
+- timestamp: '2026-03-13T06:18:57.371490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000677'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: METHYLOVIRGULA LIGNI

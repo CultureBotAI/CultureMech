@@ -1,3 +1,4 @@
+id: CultureMech:003902
 name: AQUISALIMONAS medium
 original_name: AQUISALIMONAS medium
 category: bacterial
@@ -74,4 +75,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1182
+- timestamp: '2026-03-13T06:19:23.110539Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003902'
 high_metal: true

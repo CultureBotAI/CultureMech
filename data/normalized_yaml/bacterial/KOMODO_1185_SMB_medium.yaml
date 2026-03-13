@@ -1,3 +1,4 @@
+id: CultureMech:003905
 name: SMB medium
 original_name: SMB medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1185
     label: SMB medium
-notes: 'Source: KOMODO ModelSEED | ID: 1185 | DSMZ Medium: 1185 (mediadive.medium:1185) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1185 | DSMZ Medium: 1185 (mediadive.medium:1185)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -101,3 +103,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1185
+- timestamp: '2026-03-13T06:19:23.130829Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003905'

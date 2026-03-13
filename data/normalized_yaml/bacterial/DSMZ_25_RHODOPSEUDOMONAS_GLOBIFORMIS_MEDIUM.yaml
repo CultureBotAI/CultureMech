@@ -1,3 +1,4 @@
+id: CultureMech:001358
 name: RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM
 original_name: RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM
 category: bacterial
@@ -147,9 +148,9 @@ preparation_steps:
   description: 'Adjust pH to 4.9, then add:'
 - step_number: 2
   action: COOL
-  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each 100 ml medium add\r\
-    \n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3 </sub>solution. Incubate in the light\
-    \ using a tungsten lamp"
+  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each\
+    \ 100 ml medium add\r\n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3\
+    \ </sub>solution. Incubate in the light using a tungsten lamp"
 applications:
 - Microbial cultivation
 curation_history:
@@ -157,3 +158,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 25'
+- timestamp: '2026-03-13T06:19:03.375005Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001358'

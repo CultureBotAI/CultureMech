@@ -1,3 +1,4 @@
+id: CultureMech:014261
 preferred_term: Main sol. J1221
 term:
   id: mediadive.solution:5349
@@ -84,3 +85,8 @@ preparation_notes: "Mix components thoroughly and autoclave. After cooling, add 
   \ distribute the medium into culture vessels (e.g., 20 ml in 60 ml serum bottles),\
   \ supplement with 4.0 ml per liter filter-sterilized methanol and seal with rubber\
   \ stoppers.\n\nOriginal volume: 1016 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.672726Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014261'

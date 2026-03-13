@@ -1,3 +1,4 @@
+id: CultureMech:013197
 preferred_term: Main sol. J431
 term:
   id: mediadive.solution:4169
@@ -110,3 +111,8 @@ preparation_notes: 'Autoclave Basal medium supplemented with Trace element solut
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.000170Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013197'

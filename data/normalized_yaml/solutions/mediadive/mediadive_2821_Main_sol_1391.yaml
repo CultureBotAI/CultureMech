@@ -1,3 +1,4 @@
+id: CultureMech:012105
 preferred_term: Main sol. 1391
 term:
   id: mediadive.solution:2821
@@ -190,3 +191,8 @@ preparation_notes: 'Prepare the medium under N2/CO2 (80%N2, 20%CO2) and fill in 
 
   Finally, the mix gas (77%H2, 20%CO2, 3%O2) is compressed into gas phase (>80% volume
   of the tube or bottle) at 2 atm. '
+curation_history:
+- timestamp: '2026-03-13T06:20:23.894354Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012105'

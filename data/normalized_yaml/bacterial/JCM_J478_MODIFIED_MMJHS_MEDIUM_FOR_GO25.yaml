@@ -1,3 +1,4 @@
+id: CultureMech:002827
 name: MODIFIED MMJHS MEDIUM FOR GO25
 original_name: MODIFIED MMJHS MEDIUM FOR GO25
 category: bacterial
@@ -277,16 +278,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Trace vitamins, NaHCO3 and sulfur, adjust pH to 6.8 and autoclave.
-    Filter-sterilize Trace vitamins and 5% NaHCO3 solution and add to the medium. Steam sulfur for 3 hr
-    on each of 3 successive days. Distribute the medium into culture vessels containing appropriate amount
-    of sulfur (e.g., 20 ml of medium in 120 ml serum bottles containing 0.2 g sulfur) under a stream of
-    H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Pressurize the inoculated bottle
-    to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except Trace vitamins, NaHCO3 and sulfur, adjust pH
+    to 6.8 and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3 solution and
+    add to the medium. Steam sulfur for 3 hr on each of 3 successive days. Distribute
+    the medium into culture vessels containing appropriate amount of sulfur (e.g.,
+    20 ml of medium in 120 ml serum bottles containing 0.2 g sulfur) under a stream
+    of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Pressurize
+    the inoculated bottle to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -294,3 +296,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J478'
+- timestamp: '2026-03-13T06:19:15.940609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002827'

@@ -1,3 +1,4 @@
+id: CultureMech:002033
 name: DESULFACINUM HYDROTHERMALE MEDIUM
 original_name: DESULFACINUM HYDROTHERMALE MEDIUM
 category: bacterial
@@ -219,4 +220,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 875'
+- timestamp: '2026-03-13T06:19:09.614269Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002033'
 high_metal: true

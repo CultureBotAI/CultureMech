@@ -1,3 +1,4 @@
+id: CultureMech:014442
 preferred_term: Main sol. 78d
 term:
   id: mediadive.solution:5564
@@ -30,3 +31,8 @@ composition:
 preparation_notes: "To medium 78 add per liter: \nPrepare medium anaerobically under\
   \ N2:CO2 (80:20). After inoculation of the tubes, pressurize them with hydrogen\
   \ gas to 150 kP (1.5 bar).\nAll following solutions were filter sterilized"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.837820Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014442'

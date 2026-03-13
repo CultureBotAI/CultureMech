@@ -1,3 +1,4 @@
+id: CultureMech:012015
 preferred_term: Main sol. 1344
 term:
   id: mediadive.solution:2699
@@ -156,3 +157,8 @@ preparation_notes: 'pH 8.3
   Vitamin B12 solution, vitamin mixture, bicarbonate solution by filtration. Prior
   to inoculation, aseptically and anaerobically add vitamin B12 solution, vitamin
   mixture, bicarbonate solution and neutralized sulfide solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.307116Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012015'

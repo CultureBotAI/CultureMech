@@ -1,3 +1,4 @@
+id: CultureMech:002857
 name: METHANOCELLA MEDIUM
 original_name: METHANOCELLA MEDIUM
 category: bacterial
@@ -18,12 +19,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Solution A of Medium No. 284 supplemented with 0.1 g sodium acetate and bring final
-    volume to 1.0 L. Replace the gas phase with H2-CO2 (80:20, v/v) and pressurize an inoculated bottle
-    to 150 kPa with the same gas mixture.
+  description: Use Solution A of Medium No. 284 supplemented with 0.1 g sodium acetate
+    and bring final volume to 1.0 L. Replace the gas phase with H2-CO2 (80:20, v/v)
+    and pressurize an inoculated bottle to 150 kPa with the same gas mixture.
 - step_number: 2
   action: MIX
-  description: 'Comment: For cultivation of strain JCM 13418, incubate with a 10% inoculum.'
+  description: 'Comment: For cultivation of strain JCM 13418, incubate with a 10%
+    inoculum.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,5 +37,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.116865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002857'
 data_quality_flags:
 - incomplete_composition

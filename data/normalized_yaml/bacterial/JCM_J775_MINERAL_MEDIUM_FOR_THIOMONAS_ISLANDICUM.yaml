@@ -1,3 +1,4 @@
+id: CultureMech:003117
 name: MINERAL MEDIUM FOR THIOMONAS ISLANDICUM
 original_name: MINERAL MEDIUM FOR THIOMONAS ISLANDICUM
 category: bacterial
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.934994Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003117'
 data_quality_flags:
 - incomplete_composition

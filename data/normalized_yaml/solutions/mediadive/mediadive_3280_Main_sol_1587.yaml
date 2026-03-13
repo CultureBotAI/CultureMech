@@ -1,3 +1,4 @@
+id: CultureMech:012457
 preferred_term: Main sol. 1587
 term:
   id: mediadive.solution:3280
@@ -128,3 +129,8 @@ preparation_notes: 'After autoclaving the mineral base add the glucose at final 
   of 0.5g/l.
 
   If solid media is required add agar to a final concentration of 15 g/l.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.048421Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012457'

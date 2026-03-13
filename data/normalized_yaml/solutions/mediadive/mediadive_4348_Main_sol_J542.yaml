@@ -1,3 +1,4 @@
+id: CultureMech:013350
 preferred_term: Main sol. J542
 term:
   id: mediadive.solution:4348
@@ -174,3 +175,8 @@ composition:
 preparation_notes: 'Adjust pH to 9.0.
 
   Autoclave and remove precipitate, if necessary.'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.830377Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013350'

@@ -1,3 +1,4 @@
+id: CultureMech:006942
 name: GEOTHERMOBACTER medium
 original_name: GEOTHERMOBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:981
     label: GEOTHERMOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 981 | DSMZ Medium: 981 (mediadive.medium:981) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 981 | DSMZ Medium: 981 (mediadive.medium:981)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -271,4 +273,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.888373Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:45.181697Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006942'

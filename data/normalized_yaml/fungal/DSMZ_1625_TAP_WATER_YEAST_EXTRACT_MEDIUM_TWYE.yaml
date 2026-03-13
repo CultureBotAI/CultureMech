@@ -1,3 +1,4 @@
+id: CultureMech:010456
 name: TAP WATER YEAST EXTRACT MEDIUM (TWYE)
 original_name: TAP WATER YEAST EXTRACT MEDIUM (TWYE)
 category: fungal
@@ -42,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1625'
+- timestamp: '2026-03-13T06:20:13.904142Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010456'

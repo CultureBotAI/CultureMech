@@ -1,3 +1,4 @@
+id: CultureMech:012224
 preferred_term: Solution C
 term:
   id: mediadive.solution:298
@@ -32,3 +33,8 @@ preparation_notes: 'Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.621179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012224'

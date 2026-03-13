@@ -1,3 +1,4 @@
+id: CultureMech:011624
 preferred_term: Main sol. 1111
 term:
   id: mediadive.solution:2232
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Carboxymethyl cellulose, sodium salt, high viscosity (Sigma No.
   C-5013), works well.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.869907Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011624'

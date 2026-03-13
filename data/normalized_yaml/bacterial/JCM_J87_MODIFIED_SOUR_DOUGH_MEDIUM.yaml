@@ -1,3 +1,4 @@
+id: CultureMech:003227
 name: MODIFIED SOUR DOUGH MEDIUM
 original_name: MODIFIED SOUR DOUGH MEDIUM
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J87'
+- timestamp: '2026-03-13T06:19:18.753856Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003227'

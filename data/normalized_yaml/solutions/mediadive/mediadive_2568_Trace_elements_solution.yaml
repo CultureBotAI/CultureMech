@@ -1,3 +1,4 @@
+id: CultureMech:011907
 preferred_term: Trace elements solution
 term:
   id: mediadive.solution:2568
@@ -164,3 +165,8 @@ preparation_notes: 'First dissolve ferrous chloride in the HCl, then dilute in w
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.709517Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011907'

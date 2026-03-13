@@ -1,3 +1,4 @@
+id: CultureMech:014672
 preferred_term: Vitamin 3 Mix
 term:
   id: mediadive.solution:5855
@@ -40,3 +41,8 @@ composition:
     confidence: 0.9
     match_type: synonym_match_ambiguous
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.987522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014672'

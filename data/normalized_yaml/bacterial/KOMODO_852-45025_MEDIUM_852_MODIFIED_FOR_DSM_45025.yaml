@@ -1,3 +1,4 @@
+id: CultureMech:006662
 name: MEDIUM 852 MODIFIED FOR DSM 45025
 original_name: MEDIUM 852 MODIFIED FOR DSM 45025
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:852_45025
     label: MEDIUM 852 MODIFIED FOR DSM 45025
-notes: 'Source: KOMODO ModelSEED | ID: 852_45025 | DSMZ Medium: 852 (mediadive.medium:852) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 852_45025 | DSMZ Medium: 852 (mediadive.medium:852)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -81,3 +82,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 852
+- timestamp: '2026-03-13T06:19:42.784571Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006662'

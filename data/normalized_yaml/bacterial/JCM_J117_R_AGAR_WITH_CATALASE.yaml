@@ -1,3 +1,4 @@
+id: CultureMech:002351
 name: R AGAR WITH CATALASE
 original_name: R AGAR WITH CATALASE
 category: bacterial
@@ -35,3 +36,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J117'
+- timestamp: '2026-03-13T06:19:12.610089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002351'

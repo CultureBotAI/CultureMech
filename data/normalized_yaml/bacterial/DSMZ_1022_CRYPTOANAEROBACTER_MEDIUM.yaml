@@ -1,3 +1,4 @@
+id: CultureMech:000444
 name: CRYPTOANAEROBACTER MEDIUM
 original_name: CRYPTOANAEROBACTER MEDIUM
 category: bacterial
@@ -222,35 +223,39 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, C. sporogenes supernatant, magnesium chloride,
-    calcium chloride, and vitamins), adjust pH to 7.0 - 7.5 and boil medium for 1 min, then cool to room
-    temperature under 80% N2 and 20% CO2 gas mixture. Dissolve solid bicarbonate, adjust pH to 7.8, dispense
-    the solution under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. After autoclaving add the appropriate amount of sterile and anoxic supernatant of C.
-    sporogenes and complete the medium by adding magnesium chloride, calcium chloride and vitamins (sterilized
-    by filtration) from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the
-    medium should be 7.5 - 8.0.
+  description: Dissolve ingredients (except bicarbonate, C. sporogenes supernatant,
+    magnesium chloride, calcium chloride, and vitamins), adjust pH to 7.0 - 7.5 and
+    boil medium for 1 min, then cool to room temperature under 80% N2 and 20% CO2
+    gas mixture. Dissolve solid bicarbonate, adjust pH to 7.8, dispense the solution
+    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. After autoclaving add the appropriate amount of sterile and
+    anoxic supernatant of C. sporogenes and complete the medium by adding magnesium
+    chloride, calcium chloride and vitamins (sterilized by filtration) from sterile
+    anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium
+    should be 7.5 - 8.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: It may be necessary to add 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
-    freshly prepared under N2 gas and filter-sterilized), if the medium is not completely reduced after
-    inoculation.
+  description: It may be necessary to add 10 - 20 mg sodium dithionite per liter (e.g.
+    from 5% (w/v) solution, freshly prepared under N2 gas and filter-sterilized),
+    if the medium is not completely reduced after inoculation.
 - step_number: 3
   action: MIX
   description: 'Note: For transfers use 10% (v/v) inoculum.'
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 5
   action: AUTOCLAVE
-  description: "Cultivate <i>Clostridium</i> sp. DSM 754 for 5 to 8 days at 37°C in the medium 1022, but\
-    \ omit 4-hydroxybenzoic acid, replace the <i>C. sporogenes</i> supernatant with distilled water and\
-    \ add after autoclaving 0.30 g/l Na2S x 9 H2O from a sterile anoxic stock solution prepared under\
-    \ 100% N2 gas. Adjust pH of the complete medium to 7.0.\r\nDisrupt cells of the grown culture by autoclaving\
-    \ at 121°C for 20 min . Centrifuge autoclaved culture at 18000 x g for 20 min. Discard cell pellet\
-    \ and store the supernatant in screw capped bottles at -20°C .\r\nBefore use sterilize the supernatant\
-    \ by autoclaving under 100% N2 gas atmosphere in vials suitable for anaerobic cultivation."
+  description: "Cultivate <i>Clostridium</i> sp. DSM 754 for 5 to 8 days at 37°C in\
+    \ the medium 1022, but omit 4-hydroxybenzoic acid, replace the <i>C. sporogenes</i>\
+    \ supernatant with distilled water and add after autoclaving 0.30 g/l Na2S x 9\
+    \ H2O from a sterile anoxic stock solution prepared under 100% N2 gas. Adjust\
+    \ pH of the complete medium to 7.0.\r\nDisrupt cells of the grown culture by autoclaving\
+    \ at 121°C for 20 min . Centrifuge autoclaved culture at 18000 x g for 20 min.\
+    \ Discard cell pellet and store the supernatant in screw capped bottles at -20°C\
+    \ .\r\nBefore use sterilize the supernatant by autoclaving under 100% N2 gas atmosphere\
+    \ in vials suitable for anaerobic cultivation."
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,4 +270,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.447343Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:55.326614Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000444'

@@ -1,3 +1,4 @@
+id: CultureMech:011411
 preferred_term: Main sol. 979
 term:
   id: mediadive.solution:2007
@@ -130,3 +131,8 @@ preparation_notes: 'Prepare the medium without the vitamins.
   Autoclave at 121 °C for 20 min.
 
   After cooling add vitamins from a filter sterilised stock solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.504895Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011411'

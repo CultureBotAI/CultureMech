@@ -1,3 +1,4 @@
+id: CultureMech:011739
 preferred_term: Main sol. 1183
 term:
   id: mediadive.solution:2361
@@ -150,3 +151,8 @@ composition:
 preparation_notes: "pH is about 5.9 before autoclaving.\nAdd to the autoclaved medium\
   \ the following, from sterile stock solutions \nThe pH of the final medium should\
   \ be 8.0-8.5."
+curation_history:
+- timestamp: '2026-03-13T06:20:21.641196Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011739'

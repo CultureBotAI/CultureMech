@@ -1,3 +1,4 @@
+id: CultureMech:011267
 preferred_term: Main sol. 895
 term:
   id: mediadive.solution:1845
@@ -194,3 +195,8 @@ preparation_notes: 'Dissolve all ingredients except cysteine, carbonate, starch 
 
 
   Original volume: 1013 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.524308Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011267'

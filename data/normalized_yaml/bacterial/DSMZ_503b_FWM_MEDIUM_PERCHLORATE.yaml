@@ -1,3 +1,4 @@
+id: CultureMech:001632
 name: FWM MEDIUM (PERCHLORATE)
 original_name: FWM MEDIUM (PERCHLORATE)
 category: bacterial
@@ -271,4 +272,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.939260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001632'
 high_metal: true

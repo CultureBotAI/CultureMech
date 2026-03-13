@@ -1,3 +1,4 @@
+id: CultureMech:003104
 name: DESULFURISPIRILLUM ALKALIPHILUM MEDIUM
 original_name: DESULFURISPIRILLUM ALKALIPHILUM MEDIUM
 category: bacterial
@@ -136,16 +137,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. Then add the following solutions from
-    sterile anaerobic stocks:'
+  description: 'Mix components and autoclave under a N2 atmosphere. Then add the following
+    solutions from sterile anaerobic stocks:'
 - step_number: 2
   action: MIX
-  description: 'Mix well until clarified. Finally, add the following solution to the medium:'
+  description: 'Mix well until clarified. Finally, add the following solution to the
+    medium:'
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Comment: Incubate with a 5-10% inoculum. The strain also grows in the medium with sulfur
-    as an electron acceptor. In this case, use the above described medium, replacing KNO3 with 0.25 g/L
-    NH4Cl and 2.0 g/L sulfur (separately autoclaved at 110C for 40 min).'
+  description: 'Comment: Incubate with a 5-10% inoculum. The strain also grows in
+    the medium with sulfur as an electron acceptor. In this case, use the above described
+    medium, replacing KNO3 with 0.25 g/L NH4Cl and 2.0 g/L sulfur (separately autoclaved
+    at 110C for 40 min).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,3 +156,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J760'
+- timestamp: '2026-03-13T06:19:17.854822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003104'

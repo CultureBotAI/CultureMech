@@ -1,3 +1,4 @@
+id: CultureMech:002736
 name: CARNOBACTERIUM PLEISTOCAENIUM MEDIUM
 original_name: CARNOBACTERIUM PLEISTOCAENIUM MEDIUM
 category: bacterial
@@ -222,14 +223,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3 and Na2S x 9H2O, and bring to a boil for 5-10 sec. Cool
-    down under a stream of N2 and add NaHCO3 to the medium. Anaerobically dispense the medium into culture
-    vessels, seal with butyl rubber stoppers and autoclave. Separately autoclave 5% Na2S x 9H2O solution
-    under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add the Na2S x 9H2O solution
+  description: Mix ingredients, except NaHCO3 and Na2S x 9H2O, and bring to a boil
+    for 5-10 sec. Cool down under a stream of N2 and add NaHCO3 to the medium. Anaerobically
+    dispense the medium into culture vessels, seal with butyl rubber stoppers and
+    autoclave. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
+    Prior to inoculation, aseptically and anaerobically add the Na2S x 9H2O solution
     to the medium. Check final pH to be 7.2-7.4.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust final pH to 7.0.
@@ -244,3 +247,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:15.382899Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002736'

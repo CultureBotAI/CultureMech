@@ -1,3 +1,4 @@
+id: CultureMech:005084
 name: FLAVOBACTERIUM TIRRENICUM medium
 original_name: FLAVOBACTERIUM TIRRENICUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:362
     label: FLAVOBACTERIUM TIRRENICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 362 | DSMZ Medium: 362 (mediadive.medium:362) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 362 | DSMZ Medium: 362 (mediadive.medium:362)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -49,3 +51,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 362
+- timestamp: '2026-03-13T06:19:30.004483Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005084'

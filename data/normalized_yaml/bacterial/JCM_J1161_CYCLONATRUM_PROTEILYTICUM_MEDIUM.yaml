@@ -1,3 +1,4 @@
+id: CultureMech:002334
 name: CYCLONATRUM PROTEILYTICUM MEDIUM
 original_name: CYCLONATRUM PROTEILYTICUM MEDIUM
 category: bacterial
@@ -196,4 +197,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1161'
+- timestamp: '2026-03-13T06:19:12.462381Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002334'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:001230
 name: Sucrose-Bennett's Agar
 original_name: Sucrose-Bennett's Agar
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1762'
+- timestamp: '2026-03-13T06:19:02.441412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001230'

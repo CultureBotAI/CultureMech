@@ -1,3 +1,4 @@
+id: CultureMech:012014
 preferred_term: Zeikus trace elements solution
 term:
   id: mediadive.solution:2698
@@ -149,3 +150,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before
   adding the other trace elements.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.298547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012014'

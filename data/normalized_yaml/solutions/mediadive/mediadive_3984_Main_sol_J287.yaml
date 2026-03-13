@@ -1,3 +1,4 @@
+id: CultureMech:013040
 preferred_term: Main sol. J287
 term:
   id: mediadive.solution:3984
@@ -189,3 +190,8 @@ preparation_notes: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH
   of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture vessels
   and seal with butyl rubber stoppers. Prior to inoculation, add the Na2S x 9H2O solution
   to the medium aseptically and anaerobically.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.060436Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013040'

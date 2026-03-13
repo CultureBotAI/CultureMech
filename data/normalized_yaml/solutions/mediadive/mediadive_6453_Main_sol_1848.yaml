@@ -1,3 +1,4 @@
+id: CultureMech:015039
 preferred_term: Main sol. 1848
 term:
   id: mediadive.solution:6453
@@ -83,3 +84,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000<
   Autoclave at 121 °C for 15 min.
 
   Cool down to 45-50°C.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.487089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015039'

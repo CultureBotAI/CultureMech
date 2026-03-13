@@ -1,3 +1,4 @@
+id: CultureMech:013368
 preferred_term: Main sol. J557
 term:
   id: mediadive.solution:4373
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Separately sterilize Na2CO3 by filtration and aseptically add to
   the medium. Check final pH to be about 8.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.949365Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013368'

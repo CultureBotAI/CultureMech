@@ -1,3 +1,4 @@
+id: CultureMech:002280
 name: HALOLACTIBACILLUS 9G MEDIUM
 original_name: HALOLACTIBACILLUS 9G MEDIUM
 category: bacterial
@@ -218,13 +219,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere in a bottle capped with
-    a butyl rubber stopper. After cooling, add the following solution to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere in a
+    bottle capped with a butyl rubber stopper. After cooling, add the following solution
+    to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Anaerobically and aseptically distribute the medium into culture vessels (e.g., 10 ml
-    medium in Hungate tubes) under a N2 gas atmosphere and seal with butyl rubber stoppers. Prior to inoculation,
-    add per liter the following solution (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Anaerobically and aseptically distribute the medium into culture vessels
+    (e.g., 10 ml medium in Hungate tubes) under a N2 gas atmosphere and seal with
+    butyl rubber stoppers. Prior to inoculation, add per liter the following solution
+    (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 9.0, if necessary.
@@ -233,7 +236,8 @@ preparation_steps:
   description: Mix components thoroughly and filter-sterilize.
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals.
 - step_number: 6
   action: ADJUST_PH
   description: Adjust final pH to 7.0.
@@ -248,3 +252,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.932574Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002280'

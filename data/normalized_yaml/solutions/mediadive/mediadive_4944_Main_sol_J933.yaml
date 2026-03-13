@@ -1,3 +1,4 @@
+id: CultureMech:013870
 preferred_term: Main sol. J933
 term:
   id: mediadive.solution:4944
@@ -187,3 +188,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0 with NaOH. Di
   \ the medium into culture vessels under a N2 gas stream, seal with butyl rubber\
   \ stoppers and autoclave. Reduce the medium by the addition of the following solutions\
   \ (autoclaved under a N2 gas atmosphere) per liter: \n\nOriginal volume: 1018 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.996969Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013870'

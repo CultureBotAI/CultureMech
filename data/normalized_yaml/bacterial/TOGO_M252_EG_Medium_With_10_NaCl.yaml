@@ -1,3 +1,4 @@
+id: CultureMech:009099
 name: EG Medium With 10% NaCl
 original_name: EG Medium With 10% NaCl
 category: bacterial
@@ -109,3 +110,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:02.557859Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009099'

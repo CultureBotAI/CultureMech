@@ -1,3 +1,4 @@
+id: CultureMech:013645
 preferred_term: Main sol. J756
 term:
   id: mediadive.solution:4695
@@ -191,3 +192,8 @@ preparation_notes: "Mix components and autoclave under a N2 atmosphere. After co
   \ butyl rubber stoppers. Adjust pH to 7.0, if necessary. Prior to use, add per liter\
   \ the following solution from an anaerobic stock (autoclaved): \n\nOriginal volume:\
   \ 1012 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.566318Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013645'

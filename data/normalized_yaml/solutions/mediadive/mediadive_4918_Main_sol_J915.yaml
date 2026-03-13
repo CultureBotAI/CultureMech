@@ -1,3 +1,4 @@
+id: CultureMech:013846
 preferred_term: Main sol. J915
 term:
   id: mediadive.solution:4918
@@ -183,3 +184,8 @@ preparation_notes: "Adjust pH to 7.2.\nMix components thoroughly, except agar, a
   \ and a O2-gradient formed (as evidenced by a pink upper oxic zone and a colorless\
   \ lower anoxic zone). Inoculate cells just below the pink-colorless interface in\
   \ the medium tube using a syringe.\n\nOriginal volume: 1019 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.856185Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013846'

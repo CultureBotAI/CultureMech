@@ -1,3 +1,4 @@
+id: CultureMech:004590
 name: PEDIOCOCCUS DAMNOSUS medium
 original_name: PEDIOCOCCUS DAMNOSUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:231
     label: PEDIOCOCCUS DAMNOSUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 231 | DSMZ Medium: 231 (mediadive.medium:231) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 231 | DSMZ Medium: 231 (mediadive.medium:231)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -90,3 +92,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 231
+- timestamp: '2026-03-13T06:19:27.549470Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004590'

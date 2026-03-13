@@ -1,3 +1,4 @@
+id: CultureMech:005707
 name: For DSM 23698
 original_name: For DSM 23698
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:507.7
     label: For DSM 23698
-notes: 'Source: KOMODO ModelSEED | ID: 507.7 | DSMZ Medium: 507 (mediadive.medium:507) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 507.7 | DSMZ Medium: 507 (mediadive.medium:507)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -205,4 +207,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.328093Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:35.603815Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005707'

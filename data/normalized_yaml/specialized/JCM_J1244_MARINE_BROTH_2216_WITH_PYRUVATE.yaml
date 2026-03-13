@@ -1,3 +1,4 @@
+id: CultureMech:015395
 name: MARINE BROTH 2216 WITH PYRUVATE
 original_name: MARINE BROTH 2216 WITH PYRUVATE
 category: specialized
@@ -25,11 +26,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add the following solution
-    (autoclaved):'
+  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add
+    the following solution (autoclaved):'
 - step_number: 2
   action: MIX
-  description: 'Comments: Remove precipitate yielded after autoclaving by filtration, if necessary.'
+  description: 'Comments: Remove precipitate yielded after autoclaving by filtration,
+    if necessary.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +39,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1244'
+- timestamp: '2026-03-13T06:20:42.413248Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015395'

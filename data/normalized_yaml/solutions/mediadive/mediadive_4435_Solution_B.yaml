@@ -1,3 +1,4 @@
+id: CultureMech:013417
 preferred_term: Solution B
 term:
   id: mediadive.solution:4435
@@ -33,3 +34,8 @@ preparation_notes: 'After autoclaving Solutions A and B separately and cooling t
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.212183Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013417'

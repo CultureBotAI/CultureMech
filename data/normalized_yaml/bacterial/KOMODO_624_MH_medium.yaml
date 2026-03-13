@@ -1,3 +1,4 @@
+id: CultureMech:006130
 name: MH medium
 original_name: MH medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:624
     label: MH medium
-notes: 'Source: KOMODO ModelSEED | ID: 624 | DSMZ Medium: 624 (mediadive.medium:624) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 624 | DSMZ Medium: 624 (mediadive.medium:624)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -86,3 +88,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 624
+- timestamp: '2026-03-13T06:19:38.510391Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006130'

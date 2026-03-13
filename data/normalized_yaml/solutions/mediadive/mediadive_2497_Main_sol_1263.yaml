@@ -1,3 +1,4 @@
+id: CultureMech:011860
 preferred_term: Main sol. 1263
 term:
   id: mediadive.solution:2497
@@ -158,3 +159,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, bicarbonate, yeast e
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.459087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011860'

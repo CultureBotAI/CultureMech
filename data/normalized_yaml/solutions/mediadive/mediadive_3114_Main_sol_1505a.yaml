@@ -1,3 +1,4 @@
+id: CultureMech:012334
 preferred_term: Main sol. 1505a
 term:
   id: mediadive.solution:3114
@@ -120,3 +121,8 @@ preparation_notes: 'Dissolve ingredients (except sodium carbonate, sodium hydrog
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.257697Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012334'

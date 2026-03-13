@@ -1,3 +1,4 @@
+id: CultureMech:013658
 preferred_term: Main sol. J766
 term:
   id: mediadive.solution:4706
@@ -91,3 +92,8 @@ preparation_notes: "Mix components and adjust pH to 8.0 with NaOH. Distribute th
   \ medium into culture vessels, replace the gas phase with a N2 gas and autoclave.\
   \ After cooling, aseptically and anaerobically add per liter the following solution\
   \ (filter-sterilized): \n\nOriginal volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.650210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013658'

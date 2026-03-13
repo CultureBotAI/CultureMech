@@ -1,3 +1,4 @@
+id: CultureMech:007053
 name: Vogel-Bonner Medium
 original_name: Vogel-Bonner Medium
 category: bacterial
@@ -85,14 +86,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.034061Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 162, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 162, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.809058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007053'
 media_term:
   preferred_term: MediaDB Medium 162
   term:
     id: MEDIADB:162
     label: Vogel-Bonner Medium
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

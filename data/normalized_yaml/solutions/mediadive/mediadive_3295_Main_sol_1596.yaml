@@ -1,3 +1,4 @@
+id: CultureMech:012463
 preferred_term: Main sol. 1596
 term:
   id: mediadive.solution:3295
@@ -150,3 +151,8 @@ preparation_notes: 'Dissolve sodium chloride and hydrogenphosphate, then sparge 
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.090349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012463'

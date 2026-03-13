@@ -1,3 +1,4 @@
+id: CultureMech:002342
 name: JCM MEDIUM No. 116
 original_name: JCM MEDIUM No. 116
 category: bacterial
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J116'
+- timestamp: '2026-03-13T06:19:12.523054Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002342'

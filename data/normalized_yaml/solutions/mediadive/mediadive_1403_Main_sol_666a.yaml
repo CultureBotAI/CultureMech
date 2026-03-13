@@ -1,3 +1,4 @@
+id: CultureMech:010888
 preferred_term: Main sol. 666a
 term:
   id: mediadive.solution:1403
@@ -179,3 +180,8 @@ preparation_notes: Dissolve ingredients (except bicarbonate, cellobiose, yeast e
   and DTT from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
   Cellobiose has to be sterilzed by filtration. Adjust pH of complete medium to 6.7
   - 6.8, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.171856Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010888'

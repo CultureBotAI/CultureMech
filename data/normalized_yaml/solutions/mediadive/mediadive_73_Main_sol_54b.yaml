@@ -1,3 +1,4 @@
+id: CultureMech:015140
 preferred_term: Main sol. 54b
 term:
   id: mediadive.solution:73
@@ -68,3 +69,8 @@ preparation_notes: Dissolve ingredients (note that most of the carbonate remains
   and sparge medium with 100% N2 gas for 30 -45 min to make it anoxic. Dispense medium
   under same gas atmosphere into anoxic Hungate-type tubes or serum vials vials while
   stirring to keep carbonate suspended and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.008674Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015140'

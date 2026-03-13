@@ -1,3 +1,4 @@
+id: CultureMech:006116
 name: MEDIUM 621 MODIFIED FOR DSM 45328
 original_name: MEDIUM 621 MODIFIED FOR DSM 45328
 category: bacterial
@@ -146,6 +147,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:38.390734Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006116'
 ph_value: 7.5
 solutions:
 - preferred_term: Metall salt sol. 44

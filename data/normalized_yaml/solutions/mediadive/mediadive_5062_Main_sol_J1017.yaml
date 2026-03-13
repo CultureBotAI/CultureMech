@@ -1,3 +1,4 @@
+id: CultureMech:013978
 preferred_term: Main sol. J1017
 term:
   id: mediadive.solution:5062
@@ -138,3 +139,8 @@ composition:
 preparation_notes: "Mix components thoroughly, adjust pH to 6.0 and autoclave under\
   \ a N2 gas atmosphere. Before inoculation, add per liter the following solution\
   \ (autoclaved and stored under a N2 gas atmosphere): \n\nOriginal volume: 1027 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.783758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013978'

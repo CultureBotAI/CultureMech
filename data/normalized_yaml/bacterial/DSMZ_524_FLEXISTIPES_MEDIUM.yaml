@@ -1,3 +1,4 @@
+id: CultureMech:001656
 name: FLEXISTIPES MEDIUM
 original_name: FLEXISTIPES MEDIUM
 category: bacterial
@@ -117,12 +118,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, yeast extract, nitrate and sulfide, adjust pH
-    to 6.0 - 6.2 using sulfuric acid and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Complete medium by adding yeast extract, nitrate and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas atmosphere and bicarbonate from a sterile anoxic stock solution prepared under 80%
-    N2 and 20% CO2. Adjust pH of complete medium to 6.5.
+  description: Dissolve ingredients except bicarbonate, yeast extract, nitrate and
+    sulfide, adjust pH to 6.0 - 6.2 using sulfuric acid and sparge medium with 100%
+    N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Complete medium by
+    adding yeast extract, nitrate and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas atmosphere and bicarbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2. Adjust pH of complete medium to 6.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 524'
+- timestamp: '2026-03-13T06:19:06.246741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001656'

@@ -1,3 +1,4 @@
+id: CultureMech:010606
 preferred_term: Main sol. 9a
 term:
   id: mediadive.solution:10
@@ -73,3 +74,8 @@ preparation_notes: 'Sterilize vitamin B12 separately by filtration. Prepare and 
   For suspension of freeze-dried cells from ampoules add about 0.5 - 1.0 ml medium
   MD1 (per liter: casiton, 3.0 g; CaCl2 x 2 H2O,  0.7 g; MgSO4 x 7 H2O, 2.0 g) to
   the vial with freeze dried material.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.595545Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010606'

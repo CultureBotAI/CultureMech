@@ -1,3 +1,4 @@
+id: CultureMech:011734
 preferred_term: Main sol. 1181
 term:
   id: mediadive.solution:2356
@@ -94,3 +95,8 @@ preparation_notes: "Dispense the medium into the culture vessels. For small volu
   Autoclave at 121°C for 15 min.\nAdd to the sterile medium from a filter sterilised\
   \ phosphate buffer: \nLiquid cultures should be grown with shaking.\nFinal pH of\
   \ the medium is 5.8."
+curation_history:
+- timestamp: '2026-03-13T06:20:21.612926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011734'

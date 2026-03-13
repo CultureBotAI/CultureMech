@@ -1,3 +1,4 @@
+id: CultureMech:012874
 preferred_term: Main sol. J148
 term:
   id: mediadive.solution:3796
@@ -42,3 +43,8 @@ composition:
 preparation_notes: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water
   bath, stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add
   agar and boil till dissolved.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.081854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012874'

@@ -1,3 +1,4 @@
+id: CultureMech:002685
 name: RENIBACTERIUM KDM-2 MEDIUM
 original_name: RENIBACTERIUM KDM-2 MEDIUM
 category: bacterial
@@ -40,8 +41,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve peptone, yeast extract and cysteine in 800 ml of distilled water. Adjust pH to
-    6.5 with NaOH. Add agar and dissolve by heating. After autoclaving, cool to 45C and add serum.
+  description: Dissolve peptone, yeast extract and cysteine in 800 ml of distilled
+    water. Adjust pH to 6.5 with NaOH. Add agar and dissolve by heating. After autoclaving,
+    cool to 45C and add serum.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J327'
+- timestamp: '2026-03-13T06:19:15.026185Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002685'

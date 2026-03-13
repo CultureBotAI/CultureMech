@@ -1,3 +1,4 @@
+id: CultureMech:006326
 name: MEDIUM 7 MODIFIED FOR DSM 9000
 original_name: MEDIUM 7 MODIFIED FOR DSM 9000
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:7_9000
     label: MEDIUM 7 MODIFIED FOR DSM 9000
-notes: 'Source: KOMODO ModelSEED | ID: 7_9000 | DSMZ Medium: 7 (mediadive.medium:7) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 7_9000 | DSMZ Medium: 7 (mediadive.medium:7)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -43,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 7
+- timestamp: '2026-03-13T06:19:39.750599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006326'
 ph_value: 7.0

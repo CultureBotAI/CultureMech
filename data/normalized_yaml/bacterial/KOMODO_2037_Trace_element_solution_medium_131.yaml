@@ -1,3 +1,4 @@
+id: CultureMech:004308
 name: Trace element solution (medium 131)
 original_name: Trace element solution (medium 131)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2037
     label: Trace element solution (medium 131)
-notes: 'Source: KOMODO ModelSEED | ID: 2037 | DSMZ Medium: 2037 (mediadive.medium:2037) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2037 | DSMZ Medium: 2037 (mediadive.medium:2037)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2037'
+- timestamp: '2026-03-13T06:19:26.544342Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004308'

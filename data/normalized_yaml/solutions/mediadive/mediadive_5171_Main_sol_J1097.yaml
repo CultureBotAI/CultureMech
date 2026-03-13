@@ -1,3 +1,4 @@
+id: CultureMech:014080
 preferred_term: Main sol. J1097
 term:
   id: mediadive.solution:5171
@@ -141,3 +142,8 @@ preparation_notes: "Mix components and autoclave under a N2-CO2 (4:1, v/v) atmos
   \ vessels (e.g., 20 ml medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v)\
   \ gas stream and seal with butyl rubber stoppers. Finally, add per liter the following\
   \ solution: \n\nOriginal volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.470343Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014080'

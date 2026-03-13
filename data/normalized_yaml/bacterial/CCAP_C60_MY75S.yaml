@@ -1,3 +1,4 @@
+id: CultureMech:000372
 name: MY75S
 original_name: MY75S
 category: bacterial
@@ -43,3 +44,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C60'
+- timestamp: '2026-03-13T06:18:54.830303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000372'

@@ -1,3 +1,4 @@
+id: CultureMech:001952
 name: SS1-MEDIUM
 original_name: SS1-MEDIUM
 category: bacterial
@@ -134,18 +135,20 @@ preparation_steps:
   description: pH 6.8
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the mineral salts solution and add 10 ml/l filter sterilised methanol to the
-    cooled medium. Add 15 g/l agar for solid media.
+  description: Autoclave the mineral salts solution and add 10 ml/l filter sterilised
+    methanol to the cooled medium. Add 15 g/l agar for solid media.
 - step_number: 3
   action: DISSOLVE
-  description: 1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled water.
+  description: 1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled
+    water.
 - step_number: 4
   action: DISSOLVE
-  description: 2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling with air overnight,
-    and store in a brown glass bottle.
+  description: 2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling
+    with air overnight, and store in a brown glass bottle.
 - step_number: 5
   action: MIX
-  description: 3) Combine the two solutions and make up to 1 litre with distilled water.
+  description: 3) Combine the two solutions and make up to 1 litre with distilled
+    water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,3 +156,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 808'
+- timestamp: '2026-03-13T06:19:08.767861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001952'

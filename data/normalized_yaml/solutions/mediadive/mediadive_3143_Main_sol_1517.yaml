@@ -1,3 +1,4 @@
+id: CultureMech:012352
 preferred_term: Main sol. 1517
 term:
   id: mediadive.solution:3143
@@ -211,3 +212,8 @@ preparation_notes: 'Final pH should be 7.6 ± 0.2 at 25°C.
 
   It is strongly suggested that Bacto peptone (BD 212750) and Bacto yeast extract
   (BD 211921) should be used for the incubation'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.371926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012352'

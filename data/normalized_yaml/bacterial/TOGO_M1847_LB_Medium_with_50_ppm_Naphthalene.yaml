@@ -1,3 +1,4 @@
+id: CultureMech:008421
 name: LB Medium with 50 ppm Naphthalene
 original_name: LB Medium with 50 ppm Naphthalene
 category: bacterial
@@ -79,6 +80,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:56.705366Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008421'
 solutions:
 - preferred_term: Naphthalene solution (10,000 ppm)*
   composition: []

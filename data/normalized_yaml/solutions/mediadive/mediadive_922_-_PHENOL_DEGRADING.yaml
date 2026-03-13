@@ -1,3 +1,4 @@
+id: CultureMech:015273
 preferred_term: '- PHENOL DEGRADING'
 term:
   id: mediadive.solution:922
@@ -91,3 +92,8 @@ preparation_notes: 'pH 7.4
 
   Autoclave for 15 min. Add 1 ml of sterile SL-4 (see medium 14) and 100 ml of filter-sterilized
   phenol-solution (4.7g/l).'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.584230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015273'

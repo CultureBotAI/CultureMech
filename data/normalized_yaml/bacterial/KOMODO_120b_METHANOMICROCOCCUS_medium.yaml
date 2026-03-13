@@ -1,3 +1,4 @@
+id: CultureMech:003960
 name: METHANOMICROCOCCUS medium
 original_name: METHANOMICROCOCCUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:120b
     label: METHANOMICROCOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 120b | DSMZ Medium: 120b (mediadive.medium:120b) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 120b | DSMZ Medium: 120b (mediadive.medium:120b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -251,4 +253,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.344556Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:23.672297Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003960'

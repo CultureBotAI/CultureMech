@@ -1,3 +1,4 @@
+id: CultureMech:005062
 name: ACETOBACTERIUM 2 medium
 original_name: ACETOBACTERIUM 2 medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:349
     label: ACETOBACTERIUM 2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 349 | DSMZ Medium: 349 (mediadive.medium:349) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 349 | DSMZ Medium: 349 (mediadive.medium:349)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 349'
+- timestamp: '2026-03-13T06:19:29.886954Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005062'

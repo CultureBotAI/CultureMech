@@ -1,3 +1,4 @@
+id: CultureMech:002201
 name: FRESHWATER SAP2 MEDIUM
 original_name: FRESHWATER SAP2 MEDIUM
 category: bacterial
@@ -29,3 +30,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1018'
+- timestamp: '2026-03-13T06:19:11.203138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002201'

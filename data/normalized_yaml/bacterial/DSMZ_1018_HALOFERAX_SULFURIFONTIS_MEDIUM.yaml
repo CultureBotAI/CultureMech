@@ -1,3 +1,4 @@
+id: CultureMech:000439
 name: HALOFERAX SULFURIFONTIS MEDIUM
 original_name: HALOFERAX SULFURIFONTIS MEDIUM
 category: bacterial
@@ -65,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1018'
+- timestamp: '2026-03-13T06:18:55.286266Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000439'

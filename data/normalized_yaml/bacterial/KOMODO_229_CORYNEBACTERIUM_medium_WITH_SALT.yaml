@@ -1,3 +1,4 @@
+id: CultureMech:004582
 name: CORYNEBACTERIUM medium WITH SALT
 original_name: CORYNEBACTERIUM medium WITH SALT
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:229
     label: CORYNEBACTERIUM medium WITH SALT
-notes: 'Source: KOMODO ModelSEED | ID: 229 | DSMZ Medium: 229 (mediadive.medium:229) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 229 | DSMZ Medium: 229 (mediadive.medium:229)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -50,3 +52,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 229
+- timestamp: '2026-03-13T06:19:27.507085Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004582'

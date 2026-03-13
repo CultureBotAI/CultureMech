@@ -1,3 +1,4 @@
+id: CultureMech:002047
 name: OS MEDIUM
 original_name: OS MEDIUM
 category: bacterial
@@ -203,3 +204,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:09.761871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002047'

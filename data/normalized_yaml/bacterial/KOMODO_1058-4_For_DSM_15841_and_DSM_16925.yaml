@@ -1,3 +1,4 @@
+id: CultureMech:003639
 name: For DSM 15841 and DSM 16925
 original_name: For DSM 15841 and DSM 16925
 category: bacterial
@@ -184,4 +185,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1058
+- timestamp: '2026-03-13T06:19:21.277064Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003639'
 high_metal: true

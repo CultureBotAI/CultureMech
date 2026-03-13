@@ -1,3 +1,4 @@
+id: CultureMech:014028
 preferred_term: Main sol. J1053
 term:
   id: mediadive.solution:5115
@@ -103,3 +104,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 6.0 with 1 N HCl and
   \ under a H2-CO2 (4:1, v/v) gas mixture. After cooling, aseptically and anaerobically\
   \ add the following solutions (autoclaved or *filter-sterilized): \nReadjust pH\
   \ to 6.0 to 6.3, if necessary.\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.119794Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014028'

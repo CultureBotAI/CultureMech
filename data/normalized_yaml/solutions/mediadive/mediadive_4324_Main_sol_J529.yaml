@@ -1,3 +1,4 @@
+id: CultureMech:013329
 preferred_term: Main sol. J529
 term:
   id: mediadive.solution:4324
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Comment: The medium is semisolid. For strain JCM 13596, prepare
   the medium anaerobically (under N2).'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.721176Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013329'

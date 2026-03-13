@@ -1,3 +1,4 @@
+id: CultureMech:010109
 name: Methanofollis Ethanolicus Medium
 original_name: Methanofollis Ethanolicus Medium
 category: bacterial
@@ -280,6 +281,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.393694Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010109'
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []

@@ -1,3 +1,4 @@
+id: CultureMech:014841
 preferred_term: SE2 (Soil Extract 2)
 term:
   id: mediadive.solution:6139
@@ -42,3 +43,8 @@ preparation_notes: "Site selection for a good soil is very important and for mos
   \ contents of the bottle are left to settle (usually for \r\nat least a week) and\
   \ then the supernatant is decanted and filtered.  The final pH\r\nshould be 7.0\
   \ - 8.0.\n\nOriginal volume: 660 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.746700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014841'

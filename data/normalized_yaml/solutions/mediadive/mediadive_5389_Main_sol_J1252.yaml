@@ -1,3 +1,4 @@
+id: CultureMech:014299
 preferred_term: Main sol. J1252
 term:
   id: mediadive.solution:5389
@@ -210,3 +211,8 @@ composition:
 preparation_notes: Dissolve components in distilled water and bring volume to 1.0
   L. Adjust pH to 7.0. For preparation of solid medium, add 20.0 g/L agar (if necessary,
   use washed agar as described in the recipe of Medium No. 574).
+curation_history:
+- timestamp: '2026-03-13T06:20:36.912646Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014299'

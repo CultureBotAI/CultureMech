@@ -1,3 +1,4 @@
+id: CultureMech:002582
 name: SC MEDIUM
 original_name: SC MEDIUM
 category: bacterial
@@ -75,8 +76,8 @@ preparation_steps:
   description: Adjust pH to 6.6.
 - step_number: 2
   action: MIX
-  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration,
-    and aseptically add to the medium.
+  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions
+    by filtration, and aseptically add to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -84,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J220'
+- timestamp: '2026-03-13T06:19:14.313039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002582'

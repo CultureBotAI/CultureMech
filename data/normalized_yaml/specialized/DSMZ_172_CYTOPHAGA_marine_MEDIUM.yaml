@@ -1,3 +1,4 @@
+id: CultureMech:015349
 name: CYTOPHAGA (marine) MEDIUM
 original_name: CYTOPHAGA (marine) MEDIUM
 category: specialized
@@ -71,8 +72,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2. Sodium bicarbonate and calcium chloride are autoclaved separately, each
-    in a small volume of distilled water.
+  description: Adjust pH to 7.2. Sodium bicarbonate and calcium chloride are autoclaved
+    separately, each in a small volume of distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,3 +81,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 172'
+- timestamp: '2026-03-13T06:20:42.059754Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015349'

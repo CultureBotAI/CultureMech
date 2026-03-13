@@ -1,3 +1,4 @@
+id: CultureMech:009067
 name: M17 broth (containing lactose)
 original_name: M17 broth (containing lactose)
 category: bacterial
@@ -33,3 +34,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:02.346150Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009067'

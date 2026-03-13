@@ -1,3 +1,4 @@
+id: CultureMech:010432
 name: Taiyang Medium No.9 (prototype)
 original_name: Taiyang Medium No.9 (prototype)
 category: bacterial
@@ -26,5 +27,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:13.817423Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010432'
 data_quality_flags:
 - incomplete_composition

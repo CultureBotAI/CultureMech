@@ -1,3 +1,4 @@
+id: CultureMech:003839
 name: RE-101/102 medium
 original_name: RE-101/102 medium
 category: bacterial
@@ -63,4 +64,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1130
+- timestamp: '2026-03-13T06:19:22.631804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003839'
 high_metal: true

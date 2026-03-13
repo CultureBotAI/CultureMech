@@ -1,3 +1,4 @@
+id: CultureMech:014509
 preferred_term: Main sol. 607a
 term:
   id: mediadive.solution:5642
@@ -76,3 +77,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Autoclave at 121°C for 15 min.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.158414Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014509'

@@ -1,3 +1,4 @@
+id: CultureMech:013720
 preferred_term: Main sol. J821
 term:
   id: mediadive.solution:4777
@@ -55,3 +56,8 @@ preparation_notes: 'Adjust pH to 7.0 - 7.2.
 
   Comment: The premixed powder of Tryptone-yeast extract broth is available from Becton
   Dickinson & Co. as ISP Medium 1. Add agar to the medium before autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.057429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013720'

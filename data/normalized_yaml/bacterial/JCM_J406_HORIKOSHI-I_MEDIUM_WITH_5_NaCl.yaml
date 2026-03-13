@@ -1,3 +1,4 @@
+id: CultureMech:002762
 name: HORIKOSHI-I MEDIUM WITH 5% NaCl
 original_name: HORIKOSHI-I MEDIUM WITH 5% NaCl
 category: bacterial
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J406'
+- timestamp: '2026-03-13T06:19:15.559669Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002762'

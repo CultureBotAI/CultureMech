@@ -1,3 +1,4 @@
+id: CultureMech:014291
 preferred_term: Main sol. J1245
 term:
   id: mediadive.solution:5381
@@ -116,3 +117,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.2. Distribute t
   \ (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. Allow to\
   \ stand overnight. Aseptically and anaerobically add the following solutions (filter-sterilized):\
   \ \nReadjust pH to 7.2-7.6, if necessary.\n\nOriginal volume: 992 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.842934Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014291'

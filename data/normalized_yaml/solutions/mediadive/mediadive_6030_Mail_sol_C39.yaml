@@ -1,3 +1,4 @@
+id: CultureMech:014760
 preferred_term: Mail sol. C39
 term:
   id: mediadive.solution:6030
@@ -18,3 +19,8 @@ composition:
 preparation_notes: "Aseptically add stock solutions (2), (3) and (4) in above amounts\
   \ to each test tube.\r\nIncubate at room temperature for 3 days to check sterility\
   \ prior to use."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.440471Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014760'

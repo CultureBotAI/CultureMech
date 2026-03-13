@@ -1,3 +1,4 @@
+id: CultureMech:002922
 name: DB CHARACTERIZATION MEDIUM NO. 2
 original_name: DB CHARACTERIZATION MEDIUM NO. 2
 category: bacterial
@@ -245,4 +246,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J574'
+- timestamp: '2026-03-13T06:19:16.591535Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002922'
 high_metal: true

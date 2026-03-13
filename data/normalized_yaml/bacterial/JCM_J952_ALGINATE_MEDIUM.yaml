@@ -1,3 +1,4 @@
+id: CultureMech:003300
 name: ALGINATE MEDIUM
 original_name: ALGINATE MEDIUM
 category: bacterial
@@ -64,3 +65,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J952'
+- timestamp: '2026-03-13T06:19:19.314981Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003300'

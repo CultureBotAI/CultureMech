@@ -1,3 +1,4 @@
+id: CultureMech:010495
 name: FERROUS IRON YEAST EXTRACT MEDIUM
 original_name: FERROUS IRON YEAST EXTRACT MEDIUM
 category: fungal
@@ -147,8 +148,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH 2.0 with H2SO4 and autoclave. After cooling, aseptically
-    add the following solutions (autoclave or *filer-sterilized):'
+  description: 'Mix components thoroughly, adjust pH 2.0 with H2SO4 and autoclave.
+    After cooling, aseptically add the following solutions (autoclave or *filer-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -156,3 +157,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1182'
+- timestamp: '2026-03-13T06:20:14.066581Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010495'

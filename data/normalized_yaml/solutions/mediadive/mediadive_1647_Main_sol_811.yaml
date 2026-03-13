@@ -1,3 +1,4 @@
+id: CultureMech:011104
 preferred_term: Main sol. 811
 term:
   id: mediadive.solution:1647
@@ -115,3 +116,8 @@ preparation_notes: 'Befor autoclaving add trace element solution to the medium. 
   first all ingredients then add activated carbon. Finally autoclave.
 
   pH 7.5'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.544017Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011104'

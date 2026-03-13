@@ -1,3 +1,4 @@
+id: CultureMech:011430
 preferred_term: Main sol. 993c
 term:
   id: mediadive.solution:2027
@@ -20,3 +21,8 @@ preparation_notes: 'Prepare medium 993 supplemented with NaCl (10 %). pH should 
 
   Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
   25 ml per dish.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.623128Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011430'

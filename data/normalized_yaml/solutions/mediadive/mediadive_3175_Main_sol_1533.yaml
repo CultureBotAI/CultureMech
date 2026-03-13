@@ -1,3 +1,4 @@
+id: CultureMech:012377
 preferred_term: Main sol. 1533
 term:
   id: mediadive.solution:3175
@@ -178,3 +179,8 @@ preparation_notes: "pH 7.0\nAdd after autoclave \nPrepare the medium without NaH
   \ a stream of N2/CO2 (80/20). Seal the tubes under N2/CO2 (80/20) and autoclave.\
   \ To the cooled medium at the appropriate amounts of Na2S x 9 H2O, MgCl2 x 6 H2O\
   \ and glucose from sterile, anaerobic stock solutions."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.594597Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012377'

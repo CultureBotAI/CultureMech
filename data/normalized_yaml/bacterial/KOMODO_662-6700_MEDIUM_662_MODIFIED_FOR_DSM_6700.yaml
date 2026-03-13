@@ -1,3 +1,4 @@
+id: CultureMech:006243
 name: MEDIUM 662 MODIFIED FOR DSM 6700
 original_name: MEDIUM 662 MODIFIED FOR DSM 6700
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:662_6700
     label: MEDIUM 662 MODIFIED FOR DSM 6700
-notes: 'Source: KOMODO ModelSEED | ID: 662_6700 | DSMZ Medium: 662 (mediadive.medium:662) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 662_6700 | DSMZ Medium: 662 (mediadive.medium:662)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -43,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 662
+- timestamp: '2026-03-13T06:19:39.215242Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006243'
 ph_value: 7.0

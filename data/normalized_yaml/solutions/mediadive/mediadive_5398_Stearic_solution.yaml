@@ -1,3 +1,4 @@
+id: CultureMech:014308
 preferred_term: Stearic solution
 term:
   id: mediadive.solution:5398
@@ -46,3 +47,8 @@ preparation_notes: 'Heat the solution in a closed vial under a N2 atmosphere in 
 
 
   Original volume: 11 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.976186Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014308'

@@ -1,3 +1,4 @@
+id: CultureMech:014132
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:5221
@@ -173,3 +174,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Comment: For strain JCM 32479, replace trimethylamine with sodium
   lactate (final 0.55 g/L) and yeast extract (1.0 g/L).'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.829802Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014132'

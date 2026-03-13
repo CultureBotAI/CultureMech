@@ -1,3 +1,4 @@
+id: CultureMech:013331
 preferred_term: FeSO4 solution 5%(w/v)
 term:
   id: mediadive.solution:4328
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Separately autoclave Na2CO3 and NaCl. Check final pH to be about
   9.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.728258Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013331'

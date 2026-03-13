@@ -1,3 +1,4 @@
+id: CultureMech:004993
 name: 4 times concentrated sea water (medium 821)
 original_name: 4 times concentrated sea water (medium 821)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3144
     label: 4 times concentrated sea water (medium 821)
-notes: 'Source: KOMODO ModelSEED | ID: 3144 | DSMZ Medium: 3144 (mediadive.medium:3144) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3144 | DSMZ Medium: 3144 (mediadive.medium:3144)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3144'
+- timestamp: '2026-03-13T06:19:29.318076Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004993'

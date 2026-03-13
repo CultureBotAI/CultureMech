@@ -1,3 +1,4 @@
+id: CultureMech:009503
 name: BHI agar
 original_name: BHI agar
 category: bacterial
@@ -21,3 +22,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2982'
+- timestamp: '2026-03-13T06:20:06.436452Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009503'

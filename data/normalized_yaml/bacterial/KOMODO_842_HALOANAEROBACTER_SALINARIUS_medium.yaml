@@ -1,3 +1,4 @@
+id: CultureMech:006645
 name: HALOANAEROBACTER SALINARIUS medium
 original_name: HALOANAEROBACTER SALINARIUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:842
     label: HALOANAEROBACTER SALINARIUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 842 | DSMZ Medium: 842 (mediadive.medium:842) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 842 | DSMZ Medium: 842 (mediadive.medium:842)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -205,3 +207,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 842
+- timestamp: '2026-03-13T06:19:42.620446Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006645'

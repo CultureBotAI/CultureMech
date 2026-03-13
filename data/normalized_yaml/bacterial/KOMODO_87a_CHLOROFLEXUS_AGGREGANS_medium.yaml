@@ -1,3 +1,4 @@
+id: CultureMech:006721
 name: CHLOROFLEXUS AGGREGANS medium
 original_name: CHLOROFLEXUS AGGREGANS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:87a
     label: CHLOROFLEXUS AGGREGANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 87a | DSMZ Medium: 87a (mediadive.medium:87a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 87a | DSMZ Medium: 87a (mediadive.medium:87a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -200,4 +202,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 87
+- timestamp: '2026-03-13T06:19:43.348890Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006721'
 ph_value: 8.2

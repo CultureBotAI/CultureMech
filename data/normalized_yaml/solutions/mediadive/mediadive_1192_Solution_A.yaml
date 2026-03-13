@@ -1,3 +1,4 @@
+id: CultureMech:010687
 preferred_term: Solution A
 term:
   id: mediadive.solution:1192
@@ -31,3 +32,8 @@ preparation_notes: 'pH 7.0.
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.030970Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010687'

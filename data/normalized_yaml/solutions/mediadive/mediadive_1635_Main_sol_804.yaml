@@ -1,3 +1,4 @@
+id: CultureMech:011092
 preferred_term: Main sol. 804
 term:
   id: mediadive.solution:1635
@@ -41,3 +42,8 @@ preparation_notes: 'For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (
 
   Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make up to 25 ml
   with dist. water, filter sterilize.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.467380Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011092'

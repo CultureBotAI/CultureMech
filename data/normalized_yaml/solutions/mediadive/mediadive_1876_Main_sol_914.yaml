@@ -1,3 +1,4 @@
+id: CultureMech:011297
 preferred_term: Main sol. 914
 term:
   id: mediadive.solution:1876
@@ -88,3 +89,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: pH 7.0
+curation_history:
+- timestamp: '2026-03-13T06:20:18.752817Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011297'

@@ -1,3 +1,4 @@
+id: CultureMech:010281
 name: Halarchaeum Neutrophilum Medium
 original_name: Halarchaeum Neutrophilum Medium
 category: bacterial
@@ -94,4 +95,8 @@ curation_history:
   date: '2026-02-03T11:21:00.968404'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-13T06:20:12.667926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010281'
 high_metal: true

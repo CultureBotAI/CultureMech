@@ -1,3 +1,4 @@
+id: CultureMech:003020
 name: RUMINOCOCCUS ALBUS MEDIUM
 original_name: RUMINOCOCCUS ALBUS MEDIUM
 category: bacterial
@@ -106,11 +107,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Boil and cool under CO2. Under a gentle stream of CO2, add 4.0 g Na2CO3, 1.0 ml fatty acid
-    mixture (see below) and 500 mg L-cysteine x HCl x H2O.
+  description: Boil and cool under CO2. Under a gentle stream of CO2, add 4.0 g Na2CO3,
+    1.0 ml fatty acid mixture (see below) and 500 mg L-cysteine x HCl x H2O.
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 7.0, distribute into appropriate vessels under N2 and autoclave.
+  description: Adjust pH to 7.0, distribute into appropriate vessels under N2 and
+    autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -118,3 +120,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J675'
+- timestamp: '2026-03-13T06:19:17.217953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003020'

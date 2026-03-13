@@ -1,5 +1,7 @@
+id: CultureMech:009395
 name: Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)
-original_name: Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)
+original_name: Wilkins-Chalgren agar plates (supplemented with 10% human blood and
+  antibiotics)
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
@@ -64,6 +66,11 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.692284'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen gas; Added default
-    concentration for ingredient: Wilkins-Chalgren agar plates (Oxoid Ltd., Hampshire, UK)'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Oxygen gas; Added default concentration for ingredient: Wilkins-Chalgren agar
+    plates (Oxoid Ltd., Hampshire, UK)'
+- timestamp: '2026-03-13T06:20:06.023849Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009395'

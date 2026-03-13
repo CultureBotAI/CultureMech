@@ -1,3 +1,4 @@
+id: CultureMech:004778
 name: MEDIUM 3 MODIFIED FOR DSM 44106
 original_name: MEDIUM 3 MODIFIED FOR DSM 44106
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:3_44106
     label: MEDIUM 3 MODIFIED FOR DSM 44106
-notes: 'Source: KOMODO ModelSEED | ID: 3_44106 | DSMZ Medium: 3 (mediadive.medium:3) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 3_44106 | DSMZ Medium: 3 (mediadive.medium:3)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -91,4 +93,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 3
+- timestamp: '2026-03-13T06:19:28.777429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004778'
 ph_value: 7.3

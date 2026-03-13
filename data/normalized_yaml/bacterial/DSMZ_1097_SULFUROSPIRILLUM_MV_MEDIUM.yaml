@@ -1,3 +1,4 @@
+id: CultureMech:000528
 name: SULFUROSPIRILLUM MV MEDIUM
 original_name: SULFUROSPIRILLUM MV MEDIUM
 category: bacterial
@@ -232,16 +233,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, fumarate, vitamins and sulfide), then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add fumarate, vitamins
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of vitamins and
-    fumarate should be sterilized by filtration. Adjust pH of complete medium to 7.2, if necessary.
+  description: Dissolve ingredients (except carbonate, fumarate, vitamins and sulfide),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add fumarate, vitamins and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions
+    of vitamins and fumarate should be sterilized by filtration. Adjust pH of complete
+    medium to 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,4 +255,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.106659Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:56.097619Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000528'

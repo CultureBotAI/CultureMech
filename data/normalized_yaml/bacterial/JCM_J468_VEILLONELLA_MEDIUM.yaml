@@ -1,3 +1,4 @@
+id: CultureMech:002816
 name: VEILLONELLA MEDIUM
 original_name: VEILLONELLA MEDIUM
 category: bacterial
@@ -72,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J468'
+- timestamp: '2026-03-13T06:19:15.892282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002816'

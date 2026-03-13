@@ -1,3 +1,4 @@
+id: CultureMech:012413
 preferred_term: Main sol. 1555
 term:
   id: mediadive.solution:3212
@@ -162,3 +163,8 @@ preparation_notes: "Prior to use in supplemented medium, L15C was diluted by the
   \ centrifuged for 1 h onto the cell layer at 1600 rpm at 20°C . Incubate at 30°C\
   \ with closed lid (without CO2) and look for bacteria and destroyed cells after\
   \ 4-6 days ."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.775707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012413'

@@ -1,3 +1,4 @@
+id: CultureMech:001165
 name: CM1A Halorubrum Medium
 original_name: CM1A Halorubrum Medium
 category: bacterial
@@ -250,4 +251,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:01.816956Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001165'
 high_metal: true

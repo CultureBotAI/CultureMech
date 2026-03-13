@@ -1,3 +1,4 @@
+id: CultureMech:015379
 name: MARINE SRB MEDIUM
 original_name: MARINE SRB MEDIUM
 category: specialized
@@ -234,13 +235,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) atmosphere. After cooling,
-    add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under and a N2-CO2 (4:1, v/v) gas
-    stream and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under and a
+    N2-CO2 (4:1, v/v) gas stream and seal with butyl rubber stoppers. Prior to inoculation,
+    add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,3 +249,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1073'
+- timestamp: '2026-03-13T06:20:42.288248Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015379'

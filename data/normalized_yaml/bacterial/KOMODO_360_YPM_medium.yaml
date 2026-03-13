@@ -1,3 +1,4 @@
+id: CultureMech:005083
 name: YPM medium
 original_name: YPM medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:360
     label: YPM medium
-notes: 'Source: KOMODO ModelSEED | ID: 360 | DSMZ Medium: 360 (mediadive.medium:360) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 360 | DSMZ Medium: 360 (mediadive.medium:360)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 360
+- timestamp: '2026-03-13T06:19:30.001381Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005083'

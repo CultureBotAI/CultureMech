@@ -1,3 +1,4 @@
+id: CultureMech:014039
 preferred_term: Main sol. J1063
 term:
   id: mediadive.solution:5128
@@ -127,3 +128,8 @@ preparation_notes: Mix components except NaHCO3 and adjust pH to 7.0. Bring to a
   cool down to room temperature under a N2-CO2 (4:1, v/v) gas stream and add NaHCO3.
   Dispense the medium into culture vessels under the same gas mixture, seal with butyl
   rubber stoppers and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:35.193957Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014039'

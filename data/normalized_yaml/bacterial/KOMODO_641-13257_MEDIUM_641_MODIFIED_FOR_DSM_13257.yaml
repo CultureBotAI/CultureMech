@@ -1,3 +1,4 @@
+id: CultureMech:006176
 name: MEDIUM 641 MODIFIED FOR DSM 13257
 original_name: MEDIUM 641 MODIFIED FOR DSM 13257
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:641_13257
     label: MEDIUM 641 MODIFIED FOR DSM 13257
-notes: 'Source: KOMODO ModelSEED | ID: 641_13257 | DSMZ Medium: 641 (mediadive.medium:641) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 641_13257 | DSMZ Medium: 641 (mediadive.medium:641)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -247,4 +248,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.965877Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:38.830000Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006176'

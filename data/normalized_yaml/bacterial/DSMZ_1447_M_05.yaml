@@ -1,3 +1,4 @@
+id: CultureMech:000910
 name: M 05
 original_name: M 05
 category: bacterial
@@ -24,8 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 5.5. Dissolve malt extract in water and autoclave 15 min at 121°C; filter
-    until entirely clear. Fill up to 1 L add agar and autoclave again.
+  description: Adjust pH to 5.5. Dissolve malt extract in water and autoclave 15 min
+    at 121°C; filter until entirely clear. Fill up to 1 L add agar and autoclave again.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1447'
+- timestamp: '2026-03-13T06:18:59.476850Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000910'

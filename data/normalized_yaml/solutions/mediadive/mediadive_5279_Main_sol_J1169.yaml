@@ -1,3 +1,4 @@
+id: CultureMech:014191
 preferred_term: Main sol. J1169
 term:
   id: mediadive.solution:5279
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Mix components thoroughly and adjust pH to 7.0 with KOH. Distribute
   the medium into culture vessels (e.g., 5 ml of the medium in Hungate tubes) under
   a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.208936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014191'

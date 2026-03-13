@@ -1,3 +1,4 @@
+id: CultureMech:002110
 name: SALINIBACTER RUBER MEDIUM
 original_name: SALINIBACTER RUBER MEDIUM
 category: bacterial
@@ -75,4 +76,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 936'
+- timestamp: '2026-03-13T06:19:10.428392Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002110'
 high_metal: true

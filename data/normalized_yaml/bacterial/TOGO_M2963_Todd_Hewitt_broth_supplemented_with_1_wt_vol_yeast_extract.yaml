@@ -1,10 +1,12 @@
+id: CultureMech:009488
 name: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
 original_name: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes, NJ, USA)
+- preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes,
+    NJ, USA)
   concentration:
     value: '1'
     unit: G_PER_L
@@ -36,3 +38,7 @@ curation_history:
   date: '2026-02-03T11:20:56.899687'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.369963Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009488'

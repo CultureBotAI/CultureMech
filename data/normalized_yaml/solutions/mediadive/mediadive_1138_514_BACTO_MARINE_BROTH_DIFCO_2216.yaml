@@ -1,3 +1,4 @@
+id: CultureMech:010635
 preferred_term: 514. BACTO MARINE BROTH (DIFCO 2216)
 term:
   id: mediadive.solution:1138
@@ -221,3 +222,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
   from Difco add 37.4 g to 1 litre water.
+curation_history:
+- timestamp: '2026-03-13T06:20:14.730037Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010635'

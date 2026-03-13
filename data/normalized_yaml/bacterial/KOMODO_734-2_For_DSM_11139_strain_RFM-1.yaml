@@ -1,3 +1,4 @@
+id: CultureMech:006380
 name: For DSM 11139 (strain RFM-1)
 original_name: For DSM 11139 (strain RFM-1)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:734.2
     label: For DSM 11139 (strain RFM-1)
-notes: 'Source: KOMODO ModelSEED | ID: 734.2 | DSMZ Medium: 734 (mediadive.medium:734) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 734.2 | DSMZ Medium: 734 (mediadive.medium:734)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -240,3 +242,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 734
+- timestamp: '2026-03-13T06:19:40.279040Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006380'

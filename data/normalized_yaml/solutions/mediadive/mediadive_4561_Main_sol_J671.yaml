@@ -1,3 +1,4 @@
+id: CultureMech:013529
 preferred_term: Main sol. J671
 term:
   id: mediadive.solution:4561
@@ -152,3 +153,8 @@ preparation_notes: "Mix ingredients and adjust pH to 7.0. Distribute the medium 
   \ Separately autoclave the following solutions under a N2 atmosphere and add to\
   \ the medium (per 950 ml): \nReadjust pH of the medium to 7.2 - 7.4 with sterile\
   \ NaOH, if necessary.\n\nOriginal volume: 1024 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.818681Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013529'

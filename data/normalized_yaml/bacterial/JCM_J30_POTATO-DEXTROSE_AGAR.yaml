@@ -1,3 +1,4 @@
+id: CultureMech:002667
 name: POTATO-DEXTROSE AGAR
 original_name: POTATO-DEXTROSE AGAR
 category: bacterial
@@ -33,14 +34,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Boil potatoes for 20 min. Strain off the pieces of potatoes through a fine sieve. Add glucose
-    and agar, and boil until dissolved. Do not use new potatoes.
+  description: Boil potatoes for 20 min. Strain off the pieces of potatoes through
+    a fine sieve. Add glucose and agar, and boil until dissolved. Do not use new potatoes.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 5.4-5.6.
 - step_number: 3
   action: MIX
-  description: 'Comment: Commercial Potato dextrose agar (BD-Difco or Oxoid) is also available.'
+  description: 'Comment: Commercial Potato dextrose agar (BD-Difco or Oxoid) is also
+    available.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +50,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J30'
+- timestamp: '2026-03-13T06:19:14.888913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002667'

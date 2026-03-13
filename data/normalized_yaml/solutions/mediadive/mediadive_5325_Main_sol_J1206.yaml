@@ -1,3 +1,4 @@
+id: CultureMech:014237
 preferred_term: Main sol. J1206
 term:
   id: mediadive.solution:5325
@@ -41,3 +42,8 @@ composition:
     match_type: exact_match
 preparation_notes: "Mix two media autoclaved separately. Aseptically add the following\
   \ solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 1017 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.518435Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014237'

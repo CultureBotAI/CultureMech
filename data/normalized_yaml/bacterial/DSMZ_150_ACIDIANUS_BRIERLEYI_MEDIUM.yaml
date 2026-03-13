@@ -1,3 +1,4 @@
+id: CultureMech:000980
 name: ACIDIANUS BRIERLEYI MEDIUM
 original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: bacterial
@@ -60,10 +61,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except yeast extract and sulfur. Adjust pH with 6 N H2SO4 to 1.5 -
-    2.5. Yeast extract (10% w/v in distilled water) is autoclaved separately. For sterilization of the
-    sulfur place it in screw-capped tubes or bottles, wet with a few drops of water and heat for 3 hours
-    to 90 - 100°C in a water bath on each of three successive days. Before use, aseptically layer the
+  description: Dissolve ingredients except yeast extract and sulfur. Adjust pH with
+    6 N H2SO4 to 1.5 - 2.5. Yeast extract (10% w/v in distilled water) is autoclaved
+    separately. For sterilization of the sulfur place it in screw-capped tubes or
+    bottles, wet with a few drops of water and heat for 3 hours to 90 - 100°C in a
+    water bath on each of three successive days. Before use, aseptically layer the
     sulfur onto the surface of the autoclaved liquid basal medium.
 applications:
 - Microbial cultivation
@@ -72,3 +74,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 150'
+- timestamp: '2026-03-13T06:19:00.132562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000980'

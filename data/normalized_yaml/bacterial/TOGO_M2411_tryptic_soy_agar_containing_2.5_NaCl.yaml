@@ -1,3 +1,4 @@
+id: CultureMech:008995
 name: tryptic soy agar (containing 2.5% NaCl)
 original_name: tryptic soy agar (containing 2.5% NaCl)
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -36,4 +38,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.681081'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: tryptic soy agar (Merck KGaA, Darmstadt, Germany)'
+  notes: 'Added default concentration for ingredient: tryptic soy agar (Merck KGaA,
+    Darmstadt, Germany)'
+- timestamp: '2026-03-13T06:20:01.884766Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008995'

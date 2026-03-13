@@ -1,3 +1,4 @@
+id: CultureMech:006148
 name: RCM medium
 original_name: RCM medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:634
     label: RCM medium
-notes: 'Source: KOMODO ModelSEED | ID: 634 | DSMZ Medium: 634 (mediadive.medium:634) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 634 | DSMZ Medium: 634 (mediadive.medium:634)
+  | Aerobic: No'
 ingredients:
 - preferred_term: dehydrated RCM medium
   concentration:
@@ -36,4 +38,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 634
+- timestamp: '2026-03-13T06:19:38.625434Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006148'
 ph_value: 6.8

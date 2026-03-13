@@ -1,3 +1,4 @@
+id: CultureMech:005579
 name: TSBY salt medium
 original_name: TSBY salt medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:466
     label: TSBY salt medium
-notes: 'Source: KOMODO ModelSEED | ID: 466 | DSMZ Medium: 466 (mediadive.medium:466) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 466 | DSMZ Medium: 466 (mediadive.medium:466)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -72,3 +74,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 466
+- timestamp: '2026-03-13T06:19:34.274473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005579'

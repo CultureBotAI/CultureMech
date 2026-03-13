@@ -1,3 +1,4 @@
+id: CultureMech:015267
 preferred_term: Lactic acid whey
 term:
   id: mediadive.solution:911
@@ -19,3 +20,8 @@ preparation_notes: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 1
   for 30 minutes. Remove precipitate by filtration. For preparing broth medium, adjust
   filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30 minutes. Remove precipitate
   by filtration. Adjust filtrate to pH 5.5 with 2 N HCl.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.563434Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015267'

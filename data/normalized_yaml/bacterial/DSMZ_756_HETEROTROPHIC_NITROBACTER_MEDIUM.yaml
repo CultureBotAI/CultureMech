@@ -1,3 +1,4 @@
+id: CultureMech:001888
 name: HETEROTROPHIC NITROBACTER MEDIUM
 original_name: HETEROTROPHIC NITROBACTER MEDIUM
 category: bacterial
@@ -104,3 +105,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 756'
+- timestamp: '2026-03-13T06:19:08.154837Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001888'

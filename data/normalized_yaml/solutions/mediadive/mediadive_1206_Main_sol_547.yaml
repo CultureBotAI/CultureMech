@@ -1,3 +1,4 @@
+id: CultureMech:010701
 preferred_term: Main sol. 547
 term:
   id: mediadive.solution:1206
@@ -21,3 +22,8 @@ preparation_notes: 'The pH should be between 7.0 and 7.4. Do not adjust if it is
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.093617Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010701'

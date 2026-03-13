@@ -1,3 +1,4 @@
+id: CultureMech:011014
 preferred_term: Main sol. 762
 term:
   id: mediadive.solution:1552
@@ -90,3 +91,8 @@ composition:
 preparation_notes: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled
   water and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately
   and add to the cooled medium. Final pH 9.5-10.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.985591Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011014'

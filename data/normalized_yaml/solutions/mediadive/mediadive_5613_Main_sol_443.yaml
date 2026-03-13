@@ -1,3 +1,4 @@
+id: CultureMech:014489
 preferred_term: Main sol. 443
 term:
   id: mediadive.solution:5613
@@ -17,3 +18,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: "To medium 442 add 0.05% phenylacetate as carbon source instead\
   \ of toluene, sterilized\r\nby filtration."
+curation_history:
+- timestamp: '2026-03-13T06:20:38.076297Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014489'

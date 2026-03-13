@@ -1,3 +1,4 @@
+id: CultureMech:011575
 preferred_term: Sterile supplement
 term:
   id: mediadive.solution:2185
@@ -43,3 +44,8 @@ preparation_notes: 'Adjust pH to 7.0 + 0.2 and autoclave at 121°C for 15 minute
 
 
   Original volume: 210 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.553321Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011575'

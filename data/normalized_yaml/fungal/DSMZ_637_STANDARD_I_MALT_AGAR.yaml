@@ -1,3 +1,4 @@
+id: CultureMech:010472
 name: STANDARD I + MALT AGAR
 original_name: STANDARD I + MALT AGAR
 category: fungal
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 637'
+- timestamp: '2026-03-13T06:20:13.971090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010472'

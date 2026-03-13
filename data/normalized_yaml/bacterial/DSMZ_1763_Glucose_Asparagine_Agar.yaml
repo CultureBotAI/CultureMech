@@ -1,3 +1,4 @@
+id: CultureMech:001231
 name: Glucose Asparagine Agar
 original_name: Glucose Asparagine Agar
 category: bacterial
@@ -46,3 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1763'
+- timestamp: '2026-03-13T06:19:02.444439Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001231'

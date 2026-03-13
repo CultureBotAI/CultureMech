@@ -1,3 +1,4 @@
+id: CultureMech:006485
 name: MEDIUM 785 MODIFIED FOR DSM 18337
 original_name: MEDIUM 785 MODIFIED FOR DSM 18337
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:785_18337
     label: MEDIUM 785 MODIFIED FOR DSM 18337
-notes: 'Source: KOMODO ModelSEED | ID: 785_18337 | DSMZ Medium: 785 (mediadive.medium:785) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 785_18337 | DSMZ Medium: 785 (mediadive.medium:785)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -73,4 +74,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 785
+- timestamp: '2026-03-13T06:19:41.231145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006485'
 ph_value: 9.6

@@ -1,3 +1,4 @@
+id: CultureMech:006814
 name: MEDIUM 92 MODIFIED FOR DSM 25585
 original_name: MEDIUM 92 MODIFIED FOR DSM 25585
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:92_25585
     label: MEDIUM 92 MODIFIED FOR DSM 25585
-notes: 'Source: KOMODO ModelSEED | ID: 92_25585 | DSMZ Medium: 92 (mediadive.medium:92) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 92_25585 | DSMZ Medium: 92 (mediadive.medium:92)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 92
+- timestamp: '2026-03-13T06:19:44.065106Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006814'

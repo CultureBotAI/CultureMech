@@ -1,3 +1,4 @@
+id: CultureMech:004026
 name: THIOALKALIVIBRIO JANNASCHI
 original_name: THIOALKALIVIBRIO JANNASCHI
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1272
     label: THIOALKALIVIBRIO JANNASCHI
-notes: 'Source: KOMODO ModelSEED | ID: 1272 | DSMZ Medium: 1272 (mediadive.medium:1272) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1272 | DSMZ Medium: 1272 (mediadive.medium:1272)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -120,3 +122,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1272
+- timestamp: '2026-03-13T06:19:24.241742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004026'

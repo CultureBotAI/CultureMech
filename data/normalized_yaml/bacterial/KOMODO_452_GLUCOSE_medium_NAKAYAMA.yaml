@@ -1,3 +1,4 @@
+id: CultureMech:005291
 name: GLUCOSE medium (NAKAYAMA)
 original_name: GLUCOSE medium (NAKAYAMA)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:452
     label: GLUCOSE medium (NAKAYAMA)
-notes: 'Source: KOMODO ModelSEED | ID: 452 | DSMZ Medium: 452 (mediadive.medium:452) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 452 | DSMZ Medium: 452 (mediadive.medium:452)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -100,3 +102,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 452
+- timestamp: '2026-03-13T06:19:31.547313Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005291'

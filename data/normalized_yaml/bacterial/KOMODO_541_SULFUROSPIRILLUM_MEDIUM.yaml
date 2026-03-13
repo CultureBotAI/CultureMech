@@ -1,3 +1,4 @@
+id: CultureMech:005970
 name: SULFUROSPIRILLUM MEDIUM
 original_name: SULFUROSPIRILLUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:541
     label: SULFUROSPIRILLUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 541 | DSMZ Medium: 541 (mediadive.medium:541) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 541 | DSMZ Medium: 541 (mediadive.medium:541)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 541
+- timestamp: '2026-03-13T06:19:37.404399Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005970'

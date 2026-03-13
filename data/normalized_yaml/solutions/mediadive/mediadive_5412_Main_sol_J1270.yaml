@@ -1,3 +1,4 @@
+id: CultureMech:014325
 preferred_term: Main sol. J1270
 term:
   id: mediadive.solution:5412
@@ -32,3 +33,8 @@ composition:
 preparation_notes: Mix ingredients except horse blood, autoclave and cool to about
   70C. Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for
   15 minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.091679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014325'

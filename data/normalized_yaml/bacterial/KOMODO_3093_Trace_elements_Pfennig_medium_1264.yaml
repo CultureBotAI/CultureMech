@@ -1,3 +1,4 @@
+id: CultureMech:004879
 name: Trace elements (Pfennig) (medium 1264)
 original_name: Trace elements (Pfennig) (medium 1264)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3093
     label: Trace elements (Pfennig) (medium 1264)
-notes: 'Source: KOMODO ModelSEED | ID: 3093 | DSMZ Medium: 3093 (mediadive.medium:3093) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3093 | DSMZ Medium: 3093 (mediadive.medium:3093)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3093'
+- timestamp: '2026-03-13T06:19:28.944034Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004879'

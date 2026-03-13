@@ -1,3 +1,4 @@
+id: CultureMech:002884
 name: PHE91 MEDIUM
 original_name: PHE91 MEDIUM
 category: bacterial
@@ -195,13 +196,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the basal solution under a N2 gas atmosphere. Separately filter-sterilize the
-    other solutions and add to the medium anaerobically and aseptically. Prepare dithionite solution just
-    before use.
+  description: Autoclave the basal solution under a N2 gas atmosphere. Separately
+    filter-sterilize the other solutions and add to the medium anaerobically and aseptically.
+    Prepare dithionite solution just before use.
 - step_number: 2
   action: DISSOLVE
-  description: Initially, dissolve FeCl2 x 4H2O in 25% HCl, then add distilled water followed by the other
-    components.
+  description: Initially, dissolve FeCl2 x 4H2O in 25% HCl, then add distilled water
+    followed by the other components.
 - step_number: 3
   action: STORE
   description: Store in the dark at 4C.
@@ -212,3 +213,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J536'
+- timestamp: '2026-03-13T06:19:16.314278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002884'

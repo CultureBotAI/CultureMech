@@ -1,3 +1,4 @@
+id: CultureMech:004766
 name: GOL CHI1 MEDIUM
 original_name: GOL CHI1 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:298c
     label: GOL CHI1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298c | DSMZ Medium: 298c (mediadive.medium:298c) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298c | DSMZ Medium: 298c (mediadive.medium:298c)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -226,3 +228,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 298
+- timestamp: '2026-03-13T06:19:28.657098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004766'

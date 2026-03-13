@@ -1,3 +1,4 @@
+id: CultureMech:014332
 preferred_term: Main sol. J1277
 term:
   id: mediadive.solution:5421
@@ -212,3 +213,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 6.3 and autoclave un
   \ from anaerobic stocks (autoclaved): \nComment:\nFor JCM 39183, add 1.0 M glucose\
   \ solution (final 10 mM), instead of sodium fumarate solution, and adjust pH to\
   \ 5.5.\n\nOriginal volume: 1017 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.134815Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014332'

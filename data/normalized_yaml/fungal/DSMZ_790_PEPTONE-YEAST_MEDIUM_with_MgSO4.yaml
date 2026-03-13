@@ -1,3 +1,4 @@
+id: CultureMech:010477
 name: PEPTONE-YEAST MEDIUM with MgSO4
 original_name: PEPTONE-YEAST MEDIUM with MgSO4
 category: fungal
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 790'
+- timestamp: '2026-03-13T06:20:13.987324Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010477'

@@ -1,3 +1,4 @@
+id: CultureMech:005881
 name: MEDIUM 520 MODIFIED FOR DSM 9801
 original_name: MEDIUM 520 MODIFIED FOR DSM 9801
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:520_9801
     label: MEDIUM 520 MODIFIED FOR DSM 9801
-notes: 'Source: KOMODO ModelSEED | ID: 520_9801 | DSMZ Medium: 520 (mediadive.medium:520) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 520_9801 | DSMZ Medium: 520 (mediadive.medium:520)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -163,4 +165,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 520
+- timestamp: '2026-03-13T06:19:37.027101Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005881'
 ph_value: 7.2

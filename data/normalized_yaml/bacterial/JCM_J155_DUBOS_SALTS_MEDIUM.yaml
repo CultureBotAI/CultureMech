@@ -1,3 +1,4 @@
+id: CultureMech:002513
 name: DUBOS SALTS MEDIUM
 original_name: DUBOS SALTS MEDIUM
 category: bacterial
@@ -56,8 +57,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the agar has solidified, place
-    a strip of sterile filter paper onto the surface of each slope. Inoculate onto the filter paper.
+  description: Adjust pH to 7.2. Autoclave and dispense into slopes. When the agar
+    has solidified, place a strip of sterile filter paper onto the surface of each
+    slope. Inoculate onto the filter paper.
 applications:
 - Microbial cultivation
 curation_history:
@@ -65,3 +67,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J155'
+- timestamp: '2026-03-13T06:19:13.909464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002513'

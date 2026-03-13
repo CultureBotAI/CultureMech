@@ -1,3 +1,4 @@
+id: CultureMech:014255
 preferred_term: Solution B
 term:
   id: mediadive.solution:5343
@@ -32,3 +33,8 @@ preparation_notes: 'Add components to distilled water and bring volume to 500 ml
   Autoclave solutions A and B separately and combine them after cooling. For preparation
   of solid medium, add 18.0 g agar to Solution A (500 ml), combine them after cooling
   to 60-70C, mix well and quickly distribute into sterile petri dishes or test tubes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.633208Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014255'

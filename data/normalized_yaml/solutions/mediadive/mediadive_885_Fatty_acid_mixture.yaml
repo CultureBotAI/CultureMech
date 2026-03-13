@@ -1,3 +1,4 @@
+id: CultureMech:015245
 preferred_term: Fatty acid mixture
 term:
   id: mediadive.solution:885
@@ -55,3 +56,8 @@ preparation_notes: 'Inoculate under CO2 and incubate at 37°C.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.468738Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015245'

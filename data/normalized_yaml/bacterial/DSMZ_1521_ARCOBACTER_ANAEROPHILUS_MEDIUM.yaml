@@ -1,3 +1,4 @@
+id: CultureMech:000992
 name: ARCOBACTER ANAEROPHILUS MEDIUM
 original_name: ARCOBACTER ANAEROPHILUS MEDIUM
 category: bacterial
@@ -112,8 +113,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add distilled water to 1 liter, boil the medium and cool under N2, distribute under N2
-    and autoclave. After autoclaving the following sterilized solutions are added:'
+  description: 'Add distilled water to 1 liter, boil the medium and cool under N2,
+    distribute under N2 and autoclave. After autoclaving the following sterilized
+    solutions are added:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +123,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1521'
+- timestamp: '2026-03-13T06:19:00.234658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000992'

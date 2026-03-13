@@ -1,3 +1,4 @@
+id: CultureMech:003893
 name: MODIFIED medium 514
 original_name: MODIFIED medium 514
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1173
     label: MODIFIED medium 514
-notes: 'Source: KOMODO ModelSEED | ID: 1173 | DSMZ Medium: 1173 (mediadive.medium:1173) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1173 | DSMZ Medium: 1173 (mediadive.medium:1173)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -127,3 +129,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1173
+- timestamp: '2026-03-13T06:19:23.061063Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003893'

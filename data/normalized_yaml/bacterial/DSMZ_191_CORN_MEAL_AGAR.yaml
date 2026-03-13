@@ -1,3 +1,4 @@
+id: CultureMech:001283
 name: CORN MEAL AGAR
 original_name: CORN MEAL AGAR
 category: bacterial
@@ -25,9 +26,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight in the refrigerator.
-    Heat at 60°C for one hour. Filter and make up volume to 1 l. Add 10.0 g agar and heat to dissolve,
-    then autoclave at 121°C for 15 minutes. pH 6.0.
+  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
+    in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1
+    l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes.
+    pH 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -35,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 191'
+- timestamp: '2026-03-13T06:19:02.794828Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001283'

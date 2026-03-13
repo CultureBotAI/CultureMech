@@ -1,3 +1,4 @@
+id: CultureMech:000674
 name: SALINISPHAERA HYDROTHERMALIS MEDIUM
 original_name: SALINISPHAERA HYDROTHERMALIS MEDIUM
 category: bacterial
@@ -50,8 +51,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add the vitamin B12 solution from a filter sterilised stock solution to the autoclaved,
-    cooled medium. Add 15.0 g/l agar for solid media.
+  description: Add the vitamin B12 solution from a filter sterilised stock solution
+    to the autoclaved, cooled medium. Add 15.0 g/l agar for solid media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1216'
+- timestamp: '2026-03-13T06:18:57.344395Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000674'

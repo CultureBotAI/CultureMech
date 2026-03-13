@@ -1,3 +1,4 @@
+id: CultureMech:006668
 name: GYP GLUCOSE-YEAST-Peptone medium
 original_name: GYP GLUCOSE-YEAST-Peptone medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:852
     label: GYP GLUCOSE-YEAST-Peptone medium
-notes: 'Source: KOMODO ModelSEED | ID: 852 | DSMZ Medium: 852 (mediadive.medium:852) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 852 | DSMZ Medium: 852 (mediadive.medium:852)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -79,4 +81,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 852
+- timestamp: '2026-03-13T06:19:42.813813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006668'
 ph_value: 6.8

@@ -1,3 +1,4 @@
+id: CultureMech:012807
 preferred_term: Main sol. J96
 term:
   id: mediadive.solution:3726
@@ -81,3 +82,8 @@ preparation_notes: 'Mix ingredients, except acetic acid and ethanol, and autocla
 
 
   Original volume: 985 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.759120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012807'

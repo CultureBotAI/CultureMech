@@ -1,3 +1,4 @@
+id: CultureMech:002402
 name: R2A AGAR WITH FUMARATE
 original_name: R2A AGAR WITH FUMARATE
 category: bacterial
@@ -27,8 +28,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic gas generating
-    system, such as AnaeroPackTM, is also available.
+  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic
+    gas generating system, such as AnaeroPackTM, is also available.
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1235'
+- timestamp: '2026-03-13T06:19:13.020936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002402'

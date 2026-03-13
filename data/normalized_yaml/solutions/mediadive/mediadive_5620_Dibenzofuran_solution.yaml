@@ -1,3 +1,4 @@
+id: CultureMech:014495
 preferred_term: Dibenzofuran solution
 term:
   id: mediadive.solution:5620
@@ -28,3 +29,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Dissolve 8.4 g/l dibenzofuran in DMSO (dimethylsulfoxide) and filtersterilize.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.104050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014495'

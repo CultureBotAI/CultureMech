@@ -1,3 +1,4 @@
+id: CultureMech:004583
 name: TRYPTONE Yeast extract MINERAL medium
 original_name: TRYPTONE Yeast extract MINERAL medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:230
     label: TRYPTONE Yeast extract MINERAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 230 | DSMZ Medium: 230 (mediadive.medium:230) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 230 | DSMZ Medium: 230 (mediadive.medium:230)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -93,3 +95,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 230
+- timestamp: '2026-03-13T06:19:27.512083Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004583'

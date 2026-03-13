@@ -1,3 +1,4 @@
+id: CultureMech:012220
 preferred_term: Mineral Salts Solution
 term:
   id: mediadive.solution:2986
@@ -105,3 +106,8 @@ preparation_notes: 'Adjust to pH 7.5 and sterilize by autoclaving. The medium ma
 
   Note: alternatively, distilled water can be replaced by seawater if the NaCl is
   omitted.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.589785Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012220'

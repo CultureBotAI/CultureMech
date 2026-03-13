@@ -1,3 +1,4 @@
+id: CultureMech:014323
 preferred_term: Main sol. J1269
 term:
   id: mediadive.solution:5410
@@ -41,3 +42,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0. Distribute the medium in culture vessels under
   a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.081120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014323'

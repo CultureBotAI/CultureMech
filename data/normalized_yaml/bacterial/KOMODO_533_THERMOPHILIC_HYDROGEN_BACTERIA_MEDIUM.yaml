@@ -1,3 +1,4 @@
+id: CultureMech:005911
 name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
 original_name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:533
     label: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 533 | DSMZ Medium: 533 (mediadive.medium:533) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 533 | DSMZ Medium: 533 (mediadive.medium:533)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4NO3
   concentration:
@@ -113,3 +115,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 533
+- timestamp: '2026-03-13T06:19:37.209338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005911'

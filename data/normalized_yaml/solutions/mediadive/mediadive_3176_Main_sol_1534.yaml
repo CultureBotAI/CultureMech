@@ -1,3 +1,4 @@
+id: CultureMech:012378
 preferred_term: Main sol. 1534
 term:
   id: mediadive.solution:3176
@@ -156,3 +157,8 @@ preparation_notes: 'pH 7.0- 7.2
   (80/20). Seal the tubes under N2/CO2 (80/20) and autoclave. To the cooled medium
   at the appropriate amounts of Na2S x 9 H2O, vitamin solution, Selenite-tungstate
   solution and glucose from sterile, anaerobic stock solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.604253Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012378'

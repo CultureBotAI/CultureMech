@@ -1,3 +1,4 @@
+id: CultureMech:012714
 preferred_term: Solution B
 term:
   id: mediadive.solution:3634
@@ -70,3 +71,8 @@ preparation_notes: 'Mix ingredients except horse blood and adjust pH to 7.2. Aft
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.359446Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012714'

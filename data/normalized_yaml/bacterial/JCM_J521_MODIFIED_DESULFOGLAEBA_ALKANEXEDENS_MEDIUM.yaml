@@ -1,3 +1,4 @@
+id: CultureMech:002872
 name: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
 original_name: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
 category: bacterial
@@ -82,18 +83,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium and cool down under a N2-CO2
-    (4:1, v/v) gas stream. Distribute Mineral medium into culture vessels (e.g., 9.0 ml of the medium
-    in tubes) under the same gas mixture, seal with Teflon-coated rubber stoppers and autoclave. After
-    cooling, add the following components (per 9.0 ml Mineral medium) from sterile anoxic stock solutions
+  description: 'Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium and
+    cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute Mineral medium into
+    culture vessels (e.g., 9.0 ml of the medium in tubes) under the same gas mixture,
+    seal with Teflon-coated rubber stoppers and autoclave. After cooling, add the
+    following components (per 9.0 ml Mineral medium) from sterile anoxic stock solutions
     (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
 - step_number: 3
   action: MIX
-  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and incubate the vessels
-    in inverted position.'
+  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and
+    incubate the vessels in inverted position.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -101,3 +103,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J521'
+- timestamp: '2026-03-13T06:19:16.237937Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002872'

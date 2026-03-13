@@ -1,3 +1,4 @@
+id: CultureMech:003281
 name: THERMOANAEROBACULUM AQUATICUM MEDIUM
 original_name: THERMOANAEROBACULUM AQUATICUM MEDIUM
 category: bacterial
@@ -246,12 +247,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute the medium into culture
-    vessels under a N2 gas stream, seal with butyl rubber stoppers and autoclave. Reduce the medium by
-    the addition of the following solutions (autoclaved under a N2 gas atmosphere) per liter:'
+  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute
+    the medium into culture vessels under a N2 gas stream, seal with butyl rubber
+    stoppers and autoclave. Reduce the medium by the addition of the following solutions
+    (autoclaved under a N2 gas atmosphere) per liter:'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.0 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.0 with KOH. Then
+    proceed to add minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,3 +266,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:19.166231Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003281'

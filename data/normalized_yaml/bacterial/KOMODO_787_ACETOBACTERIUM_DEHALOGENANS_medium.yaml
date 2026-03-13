@@ -1,3 +1,4 @@
+id: CultureMech:006488
 name: ACETOBACTERIUM DEHALOGENANS medium
 original_name: ACETOBACTERIUM DEHALOGENANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:787
     label: ACETOBACTERIUM DEHALOGENANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 787 | DSMZ Medium: 787 (mediadive.medium:787) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 787 | DSMZ Medium: 787 (mediadive.medium:787)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 787'
+- timestamp: '2026-03-13T06:19:41.250214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006488'

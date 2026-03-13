@@ -1,3 +1,4 @@
+id: CultureMech:002741
 name: GLYCEROL-SOIL MEDIUM
 original_name: GLYCEROL-SOIL MEDIUM
 category: bacterial
@@ -50,9 +51,10 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Suspend 400 g of air-dried garden soil in 960 ml of tap water and autoclave at 121C for
-    1 hr. After the mixture is cooled and settled, the supernatant is decanted, filtered through paper,
-    autoclaved, and stored at room temperature until cleared by sedimentation.
+  description: Suspend 400 g of air-dried garden soil in 960 ml of tap water and autoclave
+    at 121C for 1 hr. After the mixture is cooled and settled, the supernatant is
+    decanted, filtered through paper, autoclaved, and stored at room temperature until
+    cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,3 +62,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J384'
+- timestamp: '2026-03-13T06:19:15.411150Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002741'

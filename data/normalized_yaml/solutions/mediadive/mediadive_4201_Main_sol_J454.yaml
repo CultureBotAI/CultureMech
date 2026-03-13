@@ -1,3 +1,4 @@
+id: CultureMech:013227
 preferred_term: Main sol. J454
 term:
   id: mediadive.solution:4201
@@ -144,3 +145,8 @@ preparation_notes: 'Dissolve components except Na2CO3, NaHCO3 and Na2S x 9H2O in
 
 
   Original volume: 3 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.177467Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013227'

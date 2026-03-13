@@ -1,3 +1,4 @@
+id: CultureMech:002171
 name: RHIZOBIUM MEDIUM
 original_name: RHIZOBIUM MEDIUM
 category: bacterial
@@ -46,8 +47,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear supernatant allow to
-    settle and centrifuge. Adjust pH to 7.2.
+  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear
+    supernatant allow to settle and centrifuge. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -55,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 98'
+- timestamp: '2026-03-13T06:19:10.947511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002171'

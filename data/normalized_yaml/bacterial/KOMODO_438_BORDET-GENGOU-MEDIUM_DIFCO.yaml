@@ -1,3 +1,4 @@
+id: CultureMech:005286
 name: BORDET-GENGOU-MEDIUM (DIFCO)
 original_name: BORDET-GENGOU-MEDIUM (DIFCO)
 category: bacterial
@@ -65,3 +66,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.516259Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005286'

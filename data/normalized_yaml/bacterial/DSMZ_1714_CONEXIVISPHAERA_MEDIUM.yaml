@@ -1,3 +1,4 @@
+id: CultureMech:001193
 name: CONEXIVISPHAERA MEDIUM
 original_name: CONEXIVISPHAERA MEDIUM
 category: bacterial
@@ -180,12 +181,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ammonium sulfate, potassium phosphate and trace elements, adjust pH to 5.2 using
-    10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add magnesium sulfate, calcium chloride, yeast extract, vitamins (sterilized by filtration), cysteine
-    and ferrous chloride from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of
-    complete medium to 5.0 - 5.2, if necessary.
+  description: Dissolve ammonium sulfate, potassium phosphate and trace elements,
+    adjust pH to 5.2 using 10 N H2SO4 and sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add magnesium sulfate,
+    calcium chloride, yeast extract, vitamins (sterilized by filtration), cysteine
+    and ferrous chloride from sterile anoxic stock solutions prepared under 100% N2
+    gas. Adjust pH of complete medium to 5.0 - 5.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -199,4 +201,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.430915Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:02.098812Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001193'

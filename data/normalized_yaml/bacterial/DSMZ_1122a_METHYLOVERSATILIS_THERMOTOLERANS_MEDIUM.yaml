@@ -1,3 +1,4 @@
+id: CultureMech:000560
 name: METHYLOVERSATILIS THERMOTOLERANS MEDIUM
 original_name: METHYLOVERSATILIS THERMOTOLERANS MEDIUM
 category: bacterial
@@ -73,8 +74,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving add methanol (sterilized separately) to a concentration of 0.5 % (v/v)
-    and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
+  description: After autoclaving add methanol (sterilized separately) to a concentration
+    of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1122a'
+- timestamp: '2026-03-13T06:18:56.392588Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000560'

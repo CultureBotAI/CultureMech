@@ -1,3 +1,4 @@
+id: CultureMech:002214
 name: DISSULFURIMICROBIUM HYDROTHERMALE MEDIUM
 original_name: DISSULFURIMICROBIUM HYDROTHERMALE MEDIUM
 category: bacterial
@@ -252,20 +253,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components, except sulfur, bring to a boil and cool down under a CO2 (100%) gas stream.
-    While gassing, add the following components to the medium:'
+  description: 'Mix components, except sulfur, bring to a boil and cool down under
+    a CO2 (100%) gas stream. While gassing, add the following components to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Bubble CO2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH to the range, if necessary.
-    Then, suspend ferrihydrite (see below) in the medium and dispense the suspension into culture vessels
-    (e.g., 10 ml in Hungate tubes) under a CO2 gas stream. Add appropriate amount of sulfur (powder).
-    Seal the culture vessels with butyl rubber stoppers and autoclave at 105C for 1 hr.
+  description: Bubble CO2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH
+    to the range, if necessary. Then, suspend ferrihydrite (see below) in the medium
+    and dispense the suspension into culture vessels (e.g., 10 ml in Hungate tubes)
+    under a CO2 gas stream. Add appropriate amount of sulfur (powder). Seal the culture
+    vessels with butyl rubber stoppers and autoclave at 105C for 1 hr.
 - step_number: 3
   action: STORE
-  description: <I>Ferrihydrite:</I> Slowly titrate 320 ml of FeCl3 x 6H2O solution (60.0 g/L) with 10%
-    (w/v) NaOH to pH 7.0-7.5 with agitation on a magnetic stirrer (approximately 80-100 ml NaOH solution).
-    Remove ferrihydrite into a container, cover with water and store at room temperature overnight. Remove
-    supernatant after centrifugation at 2000 rpm for 5 min.
+  description: <I>Ferrihydrite:</I> Slowly titrate 320 ml of FeCl3 x 6H2O solution
+    (60.0 g/L) with 10% (w/v) NaOH to pH 7.0-7.5 with agitation on a magnetic stirrer
+    (approximately 80-100 ml NaOH solution). Remove ferrihydrite into a container,
+    cover with water and store at room temperature overnight. Remove supernatant after
+    centrifugation at 2000 rpm for 5 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,3 +280,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.304115Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002214'

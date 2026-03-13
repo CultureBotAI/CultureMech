@@ -1,3 +1,4 @@
+id: CultureMech:004206
 name: SULFOLOBUS MT-4 medium
 original_name: SULFOLOBUS MT-4 medium
 category: bacterial
@@ -127,3 +128,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:25.828148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004206'

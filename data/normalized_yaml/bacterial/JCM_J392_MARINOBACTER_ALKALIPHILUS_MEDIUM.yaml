@@ -1,3 +1,4 @@
+id: CultureMech:002748
 name: MARINOBACTER ALKALIPHILUS MEDIUM
 original_name: MARINOBACTER ALKALIPHILUS MEDIUM
 category: bacterial
@@ -28,8 +29,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave. Separately dissolve
-    Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and add to the medium.
+  description: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
+    Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
+    add to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,4 +42,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.353871Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:15.457417Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002748'

@@ -1,3 +1,4 @@
+id: CultureMech:000963
 name: AQUASPIRILLUM MEDIUM II
 original_name: AQUASPIRILLUM MEDIUM II
 category: bacterial
@@ -180,8 +181,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.4-7.6 Autoclave and add 1.0 ml/l vitamin solution from a filter sterilised
-    stock solution (see below). The medium may be solidified by adding 15.0 g/l agar.
+  description: Adjust pH to 7.4-7.6 Autoclave and add 1.0 ml/l vitamin solution from
+    a filter sterilised stock solution (see below). The medium may be solidified by
+    adding 15.0 g/l agar.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -195,3 +197,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1495'
+- timestamp: '2026-03-13T06:18:59.995984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000963'

@@ -1,3 +1,4 @@
+id: CultureMech:004610
 name: ENB medium
 original_name: ENB medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:237
     label: ENB medium
-notes: 'Source: KOMODO ModelSEED | ID: 237 | DSMZ Medium: 237 (mediadive.medium:237) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 237 | DSMZ Medium: 237 (mediadive.medium:237)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:
@@ -65,3 +67,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 237
+- timestamp: '2026-03-13T06:19:27.669465Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004610'

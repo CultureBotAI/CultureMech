@@ -1,3 +1,4 @@
+id: CultureMech:014183
 preferred_term: Main sol. J1161
 term:
   id: mediadive.solution:5271
@@ -79,3 +80,8 @@ preparation_notes: "Add components to distilled water and bring volume to 1.0 L.
   \ pH to 9.5 with HCl and autoclave. After cooling, aseptically add per liter the\
   \ following solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 20\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.152490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014183'

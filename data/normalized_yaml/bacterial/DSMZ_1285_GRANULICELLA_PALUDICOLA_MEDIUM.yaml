@@ -1,3 +1,4 @@
+id: CultureMech:000749
 name: GRANULICELLA PALUDICOLA MEDIUM
 original_name: GRANULICELLA PALUDICOLA MEDIUM
 category: bacterial
@@ -68,7 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0 with alginic acid.
+  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0
+    with alginic acid.
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,3 +82,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.057296Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000749'

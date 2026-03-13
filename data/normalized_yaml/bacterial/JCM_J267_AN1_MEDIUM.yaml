@@ -1,3 +1,4 @@
+id: CultureMech:002624
 name: AN1 MEDIUM
 original_name: AN1 MEDIUM
 category: bacterial
@@ -53,10 +54,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust pH to 7.3. Autoclave
-    the medium under a N2 atmosphere. Separately autoclave sodium thioglycolate as 10% solution under
-    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Under a N2 stream, mix the medium
-    and sulfur in culture vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
+  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust
+    pH to 7.3. Autoclave the medium under a N2 atmosphere. Separately autoclave sodium
+    thioglycolate as 10% solution under a N2 atmosphere. Steam sulfur for 3 hr on
+    each of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture
+    vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
     solution to the medium anaerobically.
 applications:
 - Microbial cultivation
@@ -65,3 +67,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J267'
+- timestamp: '2026-03-13T06:19:14.606417Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002624'

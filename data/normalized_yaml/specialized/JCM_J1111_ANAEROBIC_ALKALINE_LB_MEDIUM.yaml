@@ -1,3 +1,4 @@
+id: CultureMech:015381
 name: ANAEROBIC ALKALINE LB MEDIUM
 original_name: ANAEROBIC ALKALINE LB MEDIUM
 category: specialized
@@ -49,4 +50,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1111'
+- timestamp: '2026-03-13T06:20:42.299459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015381'
 high_metal: true

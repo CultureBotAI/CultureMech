@@ -1,3 +1,4 @@
+id: CultureMech:003245
 name: 5% SALT WATER GROWTH MEDIUM
 original_name: 5% SALT WATER GROWTH MEDIUM
 category: bacterial
@@ -69,4 +70,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J897'
+- timestamp: '2026-03-13T06:19:18.878163Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003245'
 high_metal: true

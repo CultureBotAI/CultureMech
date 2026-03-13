@@ -1,3 +1,4 @@
+id: CultureMech:013862
 preferred_term: Trace metal 2 solution
 term:
   id: mediadive.solution:4934
@@ -16,3 +17,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Adjust pH to 7.0 with NaOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.946801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013862'

@@ -1,3 +1,4 @@
+id: CultureMech:008820
 name: Allen medium
 original_name: Allen medium
 category: bacterial
@@ -185,6 +186,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 7 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.493090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008820'
 solutions:
 - preferred_term: P-IV metal solution
   composition: []

@@ -1,3 +1,4 @@
+id: CultureMech:011435
 preferred_term: Main sol. 997
 term:
   id: mediadive.solution:2032
@@ -93,3 +94,8 @@ preparation_notes: To prepare the medium, all compounds of DMJ seawater were dis
   NaNO3 solution (100 g/l), NaHCO3 solution (100 g/l), Na2S solution (100 g/l); pH
   7.5) and trace vitamin solution were added. Then the tubes were tightly sealed with
   butyl rubber stoppers under a gas phase of 80% H2 + 20% CO2 (300 kPa).
+curation_history:
+- timestamp: '2026-03-13T06:20:19.658991Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011435'

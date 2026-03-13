@@ -1,3 +1,4 @@
+id: CultureMech:015063
 preferred_term: Main sol. 1874
 term:
   id: mediadive.solution:6564
@@ -92,3 +93,8 @@ preparation_notes: 'Autoclave at 121 °C for 15 min.
   Add cysteine solution after cooling to approximately 65°C.
 
   Store plates at 4°C for up to 1 week.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.596668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015063'

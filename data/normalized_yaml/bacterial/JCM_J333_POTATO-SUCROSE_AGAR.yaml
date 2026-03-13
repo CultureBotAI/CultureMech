@@ -1,3 +1,4 @@
+id: CultureMech:002692
 name: POTATO-SUCROSE AGAR
 original_name: POTATO-SUCROSE AGAR
 category: bacterial
@@ -35,10 +36,11 @@ preparation_steps:
   description: Adjust pH to 5.6.
 - step_number: 2
   action: AUTOCLAVE
-  description: Wash potatoes with tap water, peel and cut into 1 cm cubes. Rinse with tap water quickly
-    and boil 200 g of potato cubes with 1.0 L of distilled water for 20 min. Mash and squeeze through
-    a muslin bag. Add agar and boil until melting. Add sucrose and mix thoroughly. Make up to 1.0 L, adjust
-    pH and autoclave for sterilization.
+  description: Wash potatoes with tap water, peel and cut into 1 cm cubes. Rinse with
+    tap water quickly and boil 200 g of potato cubes with 1.0 L of distilled water
+    for 20 min. Mash and squeeze through a muslin bag. Add agar and boil until melting.
+    Add sucrose and mix thoroughly. Make up to 1.0 L, adjust pH and autoclave for
+    sterilization.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J333'
+- timestamp: '2026-03-13T06:19:15.049603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002692'

@@ -1,3 +1,4 @@
+id: CultureMech:013247
 preferred_term: Solution C
 term:
   id: mediadive.solution:4233
@@ -39,3 +40,8 @@ preparation_notes: 'Autoclave and store under a N2 atmosphere.
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.292651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013247'

@@ -1,3 +1,4 @@
+id: CultureMech:008625
 name: Basal Salt Medium with biphenyl
 original_name: Basal Salt Medium with biphenyl
 category: bacterial
@@ -139,6 +140,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:58.823277Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008625'
 solutions:
 - preferred_term: 20 x PO4*
   composition: []

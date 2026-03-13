@@ -1,3 +1,4 @@
+id: CultureMech:001826
 name: HALOTHIOBACILLUS NEAPOLITANUS MEDIUM
 original_name: HALOTHIOBACILLUS NEAPOLITANUS MEDIUM
 category: bacterial
@@ -117,13 +118,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thiosulfate, dispense into suitable cultivation vessels and
-    autoclave. Add thiosulfate to the autoclaved medium from a sterile stock solution. Adjust pH of complete
-    medium to 6.6 - 7.0.
+  description: Dissolve ingredients except thiosulfate, dispense into suitable cultivation
+    vessels and autoclave. Add thiosulfate to the autoclaved medium from a sterile
+    stock solution. Adjust pH of complete medium to 6.6 - 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
-    Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 68'
+- timestamp: '2026-03-13T06:19:07.527478Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001826'

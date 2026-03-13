@@ -1,3 +1,4 @@
+id: CultureMech:005281
 name: MARINOCOCCUS ALBUS - medium
 original_name: MARINOCOCCUS ALBUS - medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:434
     label: MARINOCOCCUS ALBUS - medium
-notes: 'Source: KOMODO ModelSEED | ID: 434 | DSMZ Medium: 434 (mediadive.medium:434) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 434 | DSMZ Medium: 434 (mediadive.medium:434)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -86,3 +88,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 434
+- timestamp: '2026-03-13T06:19:31.486513Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005281'

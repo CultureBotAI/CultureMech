@@ -1,3 +1,4 @@
+id: CultureMech:006976
 name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
 original_name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:993c
     label: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
-notes: 'Source: KOMODO ModelSEED | ID: 993c | DSMZ Medium: 993c (mediadive.medium:993c) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 993c | DSMZ Medium: 993c (mediadive.medium:993c)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -81,4 +83,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 993
+- timestamp: '2026-03-13T06:19:45.364051Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006976'
 ph_value: 7.2

@@ -1,3 +1,4 @@
+id: CultureMech:013233
 preferred_term: Main sol. J461
 term:
   id: mediadive.solution:4208
@@ -99,3 +100,8 @@ preparation_notes: "Use lean beef or horse meat. Remove fat and connective tissu
   \ (Oxoid CM81; Merck 10928; Difco 0267-01-7). The medium should be supplemented\
   \ with 5 g/L yeast extract, 5 g/L K2HPO4, 1 mg/L resazurin, and 0.5 g/L L-cysteine\
   \ x HCl x H2O.\n\nOriginal volume: 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:30.212696Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013233'

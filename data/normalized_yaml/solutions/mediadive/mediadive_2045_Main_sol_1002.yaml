@@ -1,3 +1,4 @@
+id: CultureMech:011445
 preferred_term: Main sol. 1002
 term:
   id: mediadive.solution:2045
@@ -162,3 +163,8 @@ composition:
 preparation_notes: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as
   a single sterile stock solution and add to the sterile medium after autoclaving.
   The pH should be adjust to 9-9.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.746925Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011445'

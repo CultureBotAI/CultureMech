@@ -1,3 +1,4 @@
+id: CultureMech:002277
 name: BSM-RC MEDIUM
 original_name: BSM-RC MEDIUM
 category: bacterial
@@ -217,12 +218,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. After cooling, add the
-    following solution (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. After
+    cooling, add the following solution (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Aseptically and anaerobically distribute the medium into culture vessels under a N2 atmosphere
-    and add H2 at 5% volume of the gas phase.
+  description: Aseptically and anaerobically distribute the medium into culture vessels
+    under a N2 atmosphere and add H2 at 5% volume of the gas phase.
 applications:
 - Microbial cultivation
 curation_history:
@@ -230,3 +231,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1098'
+- timestamp: '2026-03-13T06:19:11.895100Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002277'

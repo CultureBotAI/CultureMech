@@ -1,3 +1,4 @@
+id: CultureMech:011474
 preferred_term: Solution A
 term:
   id: mediadive.solution:2074
@@ -127,3 +128,8 @@ preparation_notes: 'Adjust pH to 8.0.
 
 
   Original volume: 900 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.952197Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011474'

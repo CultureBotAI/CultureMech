@@ -1,3 +1,4 @@
+id: CultureMech:005890
 name: CLOSTRIDIUM THERMOACETICUM II medium
 original_name: CLOSTRIDIUM THERMOACETICUM II medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:527
     label: CLOSTRIDIUM THERMOACETICUM II medium
-notes: 'Source: KOMODO ModelSEED | ID: 527 | DSMZ Medium: 527 (mediadive.medium:527) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 527 | DSMZ Medium: 527 (mediadive.medium:527)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -146,3 +148,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 527
+- timestamp: '2026-03-13T06:19:37.114464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005890'

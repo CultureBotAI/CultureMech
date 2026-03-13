@@ -1,3 +1,4 @@
+id: CultureMech:002562
 name: BIFIDOBACTERIUM MEDIUM
 original_name: BIFIDOBACTERIUM MEDIUM
 category: bacterial
@@ -51,9 +52,10 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: HEAT
-  description: After sterilization, aseptically add solutions of sodium ascorbate and L-cysteine x HCl
-    to final concentration of 1.0% and 0.05%, respectively. Heat medium not freshly prepared in a steamer
-    for 10 min before addition of the reducing substances.
+  description: After sterilization, aseptically add solutions of sodium ascorbate
+    and L-cysteine x HCl to final concentration of 1.0% and 0.05%, respectively. Heat
+    medium not freshly prepared in a steamer for 10 min before addition of the reducing
+    substances.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J19'
+- timestamp: '2026-03-13T06:19:14.181687Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002562'

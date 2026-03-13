@@ -1,3 +1,4 @@
+id: CultureMech:011679
 preferred_term: Solution A
 term:
   id: mediadive.solution:2298
@@ -52,3 +53,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust to pH 4 with HCl
+curation_history:
+- timestamp: '2026-03-13T06:20:21.185844Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011679'

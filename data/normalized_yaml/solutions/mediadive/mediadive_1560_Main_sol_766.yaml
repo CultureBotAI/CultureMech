@@ -1,3 +1,4 @@
+id: CultureMech:011022
 preferred_term: Main sol. 766
 term:
   id: mediadive.solution:1560
@@ -115,3 +116,8 @@ preparation_notes: Prepare the medium without Na2S x 9 H2O and NaHCO3, boil and 
   under N2. Add the NaHCO3 to the cooled medium and adjust the pH to 6.7. Dispense
   into Hungate tubes or serum bottles under N2 and autoclave. Reduce the medium before
   use from a sterile stock solution of neutralised Na2S x 9 H2O.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.029087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011022'

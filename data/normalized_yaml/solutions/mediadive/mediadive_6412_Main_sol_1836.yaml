@@ -1,3 +1,4 @@
+id: CultureMech:015022
 preferred_term: Main sol. 1836
 term:
   id: mediadive.solution:6412
@@ -184,3 +185,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, peptone, N-acetyl-D-g
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.412144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015022'

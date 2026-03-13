@@ -1,3 +1,4 @@
+id: CultureMech:014511
 preferred_term: Main sol. 621a
 term:
   id: mediadive.solution:5644
@@ -55,3 +56,8 @@ preparation_notes: "Sterilize 20 min./121°C. After cooling to 60°C add to the 
   \ \nThe percentage Artificial Sea Water (ASW) indicates the percentage ratio of\
   \ distilled water to artifical sea water (i.e. \"medium 621a + 25ASW\" = medium\
   \ 621 made with 750 ml distilled water + 250 ml ASW). The pH is 7.2 - 7.4."
+curation_history:
+- timestamp: '2026-03-13T06:20:38.166688Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014511'

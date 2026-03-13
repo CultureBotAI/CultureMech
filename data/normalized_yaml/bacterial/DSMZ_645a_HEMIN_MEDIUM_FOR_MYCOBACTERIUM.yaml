@@ -1,3 +1,4 @@
+id: CultureMech:001783
 name: HEMIN MEDIUM FOR MYCOBACTERIUM
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
@@ -31,8 +32,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with 60 micromoles hemin.
-    Hemin must be solubilized with 1N NAOH.
+  description: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with
+    60 micromoles hemin. Hemin must be solubilized with 1N NAOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +41,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 645a'
+- timestamp: '2026-03-13T06:19:07.186995Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001783'

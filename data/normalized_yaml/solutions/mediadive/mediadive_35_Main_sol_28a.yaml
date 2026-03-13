@@ -1,3 +1,4 @@
+id: CultureMech:012687
 preferred_term: Main sol. 28a
 term:
   id: mediadive.solution:35
@@ -40,3 +41,8 @@ composition:
     confidence: 0.9
     match_type: synonym_match_ambiguous
 preparation_notes: Incubate at 500 to 1000 lux light intensity.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.251338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012687'

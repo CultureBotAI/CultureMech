@@ -1,3 +1,4 @@
+id: CultureMech:007550
 name: Kosmotoga Pacifica Medium
 original_name: Kosmotoga Pacifica Medium
 category: bacterial
@@ -58,6 +59,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:49.589195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007550'
 solutions:
 - preferred_term: METHANOCALDOCOCCUS JANNASCHII MEDIUM (see Medium [M225])
   composition: []

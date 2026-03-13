@@ -1,3 +1,4 @@
+id: CultureMech:014025
 preferred_term: Main sol. J1051
 term:
   id: mediadive.solution:5112
@@ -189,3 +190,8 @@ preparation_notes: "Mix components thoroughly and autoclave. Cool medium under a
   \ into culture vessels under the same gas mixture and seal with butyl rubber stoppers.\
   \ Finally, add per liter the following solution (filter-sterilized): \n\nOriginal\
   \ volume: 1004 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.099423Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014025'

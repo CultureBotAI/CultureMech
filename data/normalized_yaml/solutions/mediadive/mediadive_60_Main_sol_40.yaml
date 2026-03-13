@@ -1,3 +1,4 @@
+id: CultureMech:014803
 preferred_term: Main sol. 40
 term:
   id: mediadive.solution:60
@@ -15,3 +16,8 @@ composition:
     label: 1% sodium chloride
     confidence: 1.0
     match_type: exact_match
+curation_history:
+- timestamp: '2026-03-13T06:20:39.597021Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014803'

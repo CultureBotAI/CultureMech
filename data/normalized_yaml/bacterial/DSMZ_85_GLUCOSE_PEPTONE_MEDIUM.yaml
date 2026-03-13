@@ -1,3 +1,4 @@
+id: CultureMech:002018
 name: GLUCOSE PEPTONE MEDIUM
 original_name: GLUCOSE PEPTONE MEDIUM
 category: bacterial
@@ -47,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 85'
+- timestamp: '2026-03-13T06:19:09.444458Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002018'

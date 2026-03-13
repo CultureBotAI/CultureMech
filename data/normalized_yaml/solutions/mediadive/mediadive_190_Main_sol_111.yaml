@@ -1,3 +1,4 @@
+id: CultureMech:011325
 preferred_term: Main sol. 111
 term:
   id: mediadive.solution:190
@@ -140,3 +141,8 @@ preparation_notes: 'Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 m
 
 
   Original volume: 950 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.926266Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011325'

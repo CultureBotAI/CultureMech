@@ -1,3 +1,4 @@
+id: CultureMech:009077
 name: tryptic soy broth (TSB)
 original_name: tryptic soy broth (TSB)
 category: bacterial
@@ -22,3 +23,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2506'
+- timestamp: '2026-03-13T06:20:02.388865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009077'

@@ -1,3 +1,4 @@
+id: CultureMech:006181
 name: MV medium
 original_name: MV medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:641
     label: MV medium
-notes: 'Source: KOMODO ModelSEED | ID: 641 | DSMZ Medium: 641 (mediadive.medium:641) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 641 | DSMZ Medium: 641 (mediadive.medium:641)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.585119Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:38.899790Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006181'

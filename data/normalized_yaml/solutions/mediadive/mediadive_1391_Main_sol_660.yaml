@@ -1,3 +1,4 @@
+id: CultureMech:010876
 preferred_term: Main sol. 660
 term:
   id: mediadive.solution:1391
@@ -149,3 +150,8 @@ composition:
     match_type: exact_match
 preparation_notes: After autoclaving add 2.5 ml 1.0 M CuSO4 and 10 ml of a 40% Na-succinate
   solution, both sterilized by filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.076902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010876'

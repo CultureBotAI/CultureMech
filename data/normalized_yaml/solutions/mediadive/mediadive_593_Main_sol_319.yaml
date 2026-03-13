@@ -1,3 +1,4 @@
+id: CultureMech:014702
 preferred_term: Main sol. 319
 term:
   id: mediadive.solution:593
@@ -159,3 +160,8 @@ preparation_notes: 'Dissolve ingredients (except cysteine, magnesium chloride, c
 
 
   Original volume: 1013 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.145541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014702'

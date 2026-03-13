@@ -1,3 +1,4 @@
+id: CultureMech:004213
 name: OAT FLAKE medium
 original_name: OAT FLAKE medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:189
     label: OAT FLAKE medium
-notes: 'Source: KOMODO ModelSEED | ID: 189 | DSMZ Medium: 189 (mediadive.medium:189) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 189 | DSMZ Medium: 189 (mediadive.medium:189)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Oat flakes
   concentration:
@@ -32,4 +34,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 189
+- timestamp: '2026-03-13T06:19:25.855689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004213'
 ph_value: 6.0

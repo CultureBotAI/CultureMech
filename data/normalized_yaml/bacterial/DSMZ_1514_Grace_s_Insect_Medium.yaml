@@ -1,3 +1,4 @@
+id: CultureMech:000986
 name: Grace's Insect Medium
 original_name: Grace's Insect Medium
 category: bacterial
@@ -104,3 +105,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1514'
+- timestamp: '2026-03-13T06:19:00.186498Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000986'

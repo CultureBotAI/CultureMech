@@ -1,3 +1,4 @@
+id: CultureMech:008906
 name: Bacto Marine Broth (Difco 2216) (For DSM 11879)
 original_name: Bacto Marine Broth (Difco 2216) (For DSM 11879)
 category: bacterial
@@ -173,3 +174,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:01.184316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008906'

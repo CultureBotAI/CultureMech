@@ -1,3 +1,4 @@
+id: CultureMech:012416
 preferred_term: Main sol. 1559
 term:
   id: mediadive.solution:3218
@@ -102,3 +103,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Sterilize vitamin B12 separately by filtration. Adjust pH of medium
   to 7.0 with KOH prior to autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.796109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012416'

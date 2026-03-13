@@ -1,3 +1,4 @@
+id: CultureMech:014362
 preferred_term: Main sol. J1302
 term:
   id: mediadive.solution:5459
@@ -116,3 +117,8 @@ preparation_notes: "Mix components and adjust pH to 7.0. Dispense the medium int
   \ seal with butyl rubber stoppers and autoclave. After cooling, aseptically and\
   \ anaerobicallly add per liter the following solutions (filter-sterilized): \n\n\
   Original volume: 1017 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.312375Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014362'

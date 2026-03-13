@@ -1,3 +1,4 @@
+id: CultureMech:003014
 name: V8 JUICE AGAR
 original_name: V8 JUICE AGAR
 category: bacterial
@@ -35,8 +36,8 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter V8 vegetable juice through 4 layers of cheesecloth or centrifuge (3,000 rpm, 10
-    min) to eliminate fibers.
+  description: Filter V8 vegetable juice through 4 layers of cheesecloth or centrifuge
+    (3,000 rpm, 10 min) to eliminate fibers.
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J66'
+- timestamp: '2026-03-13T06:19:17.149374Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003014'

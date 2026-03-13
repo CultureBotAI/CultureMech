@@ -1,3 +1,4 @@
+id: CultureMech:006968
 name: MEDIUM 993 MODIFIED FOR DSM 45010
 original_name: MEDIUM 993 MODIFIED FOR DSM 45010
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:993_45010
     label: MEDIUM 993 MODIFIED FOR DSM 45010
-notes: 'Source: KOMODO ModelSEED | ID: 993_45010 | DSMZ Medium: 993 (mediadive.medium:993) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 993_45010 | DSMZ Medium: 993 (mediadive.medium:993)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -82,4 +83,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 993
+- timestamp: '2026-03-13T06:19:45.325121Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006968'
 ph_value: 7.2

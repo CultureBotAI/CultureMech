@@ -1,3 +1,4 @@
+id: CultureMech:014473
 preferred_term: Cherry extract
 term:
   id: mediadive.solution:5596
@@ -31,3 +32,8 @@ preparation_notes: 'Add 1 l water to 200.0 g pulp of sour stone cherries.
 
   Heat to boiling and simmer gently for 2 h . Strain through cloth and sterilize at
   110°C for 30 minutes .'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.984838Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014473'

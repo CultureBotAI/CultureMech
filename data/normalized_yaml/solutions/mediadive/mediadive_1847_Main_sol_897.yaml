@@ -1,3 +1,4 @@
+id: CultureMech:011269
 preferred_term: Main sol. 897
 term:
   id: mediadive.solution:1847
@@ -209,3 +210,8 @@ preparation_notes: 'Dissolve ingredients except sulfur, meat extract and sulfide
 
 
   Original volume: 1008 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.541417Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011269'

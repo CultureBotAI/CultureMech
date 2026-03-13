@@ -1,3 +1,4 @@
+id: CultureMech:015348
 name: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
 original_name: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
 category: specialized
@@ -17,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Suspend the dehydrated medium in deionized water, and heat do dissolve the medium, sterilize
-    by autoclaving at 115 °C for 15 minutes.
+  description: Suspend the dehydrated medium in deionized water, and heat do dissolve
+    the medium, sterilize by autoclaving at 115 °C for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -26,3 +27,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1715'
+- timestamp: '2026-03-13T06:20:42.055913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015348'

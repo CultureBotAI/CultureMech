@@ -1,3 +1,4 @@
+id: CultureMech:011684
 preferred_term: Main sol. 1146
 term:
   id: mediadive.solution:2301
@@ -116,3 +117,8 @@ preparation_notes: Adjust the pH to 5.5 and gas the media with N2/CO2 (80/20) fo
   the media with H2/CO2 (80/20) and seal with a rubber stopper. Autoclave the medium
   for 20 min at 121°C. After the inoculation the tubes are pressurized with H2/CO2/O2
   (79%/15%/6%,170 kPa).
+curation_history:
+- timestamp: '2026-03-13T06:20:21.220911Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011684'

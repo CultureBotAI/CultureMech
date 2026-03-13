@@ -1,11 +1,12 @@
+id: CultureMech:004386
 name: Wolfes Mineral Elixir (medium 792)
 original_name: Wolfes Mineral Elixir (medium 792)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2106 | DSMZ Medium: 2106 (mediadive.medium:2106)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2106 | DSMZ Medium: 2106
+  (mediadive.medium:2106) | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2106
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2106'
+- timestamp: '2026-03-13T06:19:26.713668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004386'

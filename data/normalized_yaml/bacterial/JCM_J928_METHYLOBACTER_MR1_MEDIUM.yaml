@@ -1,3 +1,4 @@
+id: CultureMech:003275
 name: METHYLOBACTER MR1 MEDIUM
 original_name: METHYLOBACTER MR1 MEDIUM
 category: bacterial
@@ -259,3 +260,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:19.120682Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003275'

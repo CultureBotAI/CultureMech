@@ -1,3 +1,4 @@
+id: CultureMech:006184
 name: CATENOCOCCUS MEDIUM
 original_name: CATENOCOCCUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:644
     label: CATENOCOCCUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 644 | DSMZ Medium: 644 (mediadive.medium:644) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 644 | DSMZ Medium: 644 (mediadive.medium:644)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -153,3 +155,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 644
+- timestamp: '2026-03-13T06:19:38.926804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006184'

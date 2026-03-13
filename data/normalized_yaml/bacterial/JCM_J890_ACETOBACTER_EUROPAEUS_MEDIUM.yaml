@@ -1,3 +1,4 @@
+id: CultureMech:003239
 name: ACETOBACTER EUROPAEUS MEDIUM
 original_name: ACETOBACTER EUROPAEUS MEDIUM
 category: bacterial
@@ -49,8 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Separately filter-sterilize acetic acid and ethanol (use filter resistant to these solvents),
-    and aseptically add to the sterile medium.
+  description: Separately filter-sterilize acetic acid and ethanol (use filter resistant
+    to these solvents), and aseptically add to the sterile medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J890'
+- timestamp: '2026-03-13T06:19:18.843564Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003239'

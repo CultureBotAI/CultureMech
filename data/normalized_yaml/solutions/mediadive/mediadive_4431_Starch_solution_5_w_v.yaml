@@ -1,3 +1,4 @@
+id: CultureMech:013414
 preferred_term: Starch solution 5%(w/v)
 term:
   id: mediadive.solution:4431
@@ -31,3 +32,8 @@ preparation_notes: 'Boil water, then, add starch and mix until dissolves thoroug
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.200992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013414'

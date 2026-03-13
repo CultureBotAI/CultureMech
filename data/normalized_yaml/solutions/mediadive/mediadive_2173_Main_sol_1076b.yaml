@@ -1,3 +1,4 @@
+id: CultureMech:011568
 preferred_term: Main sol. 1076b
 term:
   id: mediadive.solution:2173
@@ -162,3 +163,8 @@ preparation_notes: 'The difference between this medium and "normal" SP4 medium (
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.521511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011568'

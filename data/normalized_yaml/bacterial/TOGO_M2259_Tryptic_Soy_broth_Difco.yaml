@@ -1,3 +1,4 @@
+id: CultureMech:008845
 name: Tryptic Soy broth (Difco)
 original_name: Tryptic Soy broth (Difco)
 category: bacterial
@@ -22,3 +23,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2259'
+- timestamp: '2026-03-13T06:20:00.713816Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008845'

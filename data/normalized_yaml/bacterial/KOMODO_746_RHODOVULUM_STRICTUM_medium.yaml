@@ -1,3 +1,4 @@
+id: CultureMech:006397
 name: RHODOVULUM STRICTUM medium
 original_name: RHODOVULUM STRICTUM medium
 category: bacterial
@@ -136,4 +137,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 746
+- timestamp: '2026-03-13T06:19:40.432171Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006397'
 high_metal: true

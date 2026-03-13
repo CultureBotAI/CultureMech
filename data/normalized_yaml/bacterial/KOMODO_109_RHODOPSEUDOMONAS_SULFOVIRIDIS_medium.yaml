@@ -1,3 +1,4 @@
+id: CultureMech:003752
 name: RHODOPSEUDOMONAS SULFOVIRIDIS medium
 original_name: RHODOPSEUDOMONAS SULFOVIRIDIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:109
     label: RHODOPSEUDOMONAS SULFOVIRIDIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 109 | DSMZ Medium: 109 (mediadive.medium:109) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 109 | DSMZ Medium: 109 (mediadive.medium:109)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -166,3 +168,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 109
+- timestamp: '2026-03-13T06:19:21.932479Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003752'

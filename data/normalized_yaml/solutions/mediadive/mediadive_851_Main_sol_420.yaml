@@ -1,3 +1,4 @@
+id: CultureMech:015213
 preferred_term: Main sol. 420
 term:
   id: mediadive.solution:851
@@ -27,3 +28,8 @@ preparation_notes: 'Sterilize blood agar No 2 (Oxoid). After autoclaving cool to
 
   Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For rehydration
   of Helicobacter and Campylobacter spp., use medium 215 (brain heart infusion).'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.342893Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015213'

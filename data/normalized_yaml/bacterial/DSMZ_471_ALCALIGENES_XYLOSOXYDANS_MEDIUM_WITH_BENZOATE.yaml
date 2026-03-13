@@ -1,3 +1,4 @@
+id: CultureMech:001600
 name: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
 original_name: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
 category: bacterial
@@ -132,12 +133,14 @@ preparation_steps:
   description: Adjust pH to 9.0 with KOH.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water by adjusting the pH to 7.0 - 8.0 using a 2 M solution
-    of NaOH; then add ferrous sulfate and the trace element solution SL-6.
+  description: First dissolve EDTA in distilled water by adjusting the pH to 7.0 -
+    8.0 using a 2 M solution of NaOH; then add ferrous sulfate and the trace element
+    solution SL-6.
 - step_number: 4
   action: ADJUST_PH
-  description: "First dissolve EDTA in distilled water by adjusting the pH to 7.0 - 8.0 using a 2 M solution\r\
-    \nof NaOH; then add ferrous sulfate and the trace element solution SL–6."
+  description: "First dissolve EDTA in distilled water by adjusting the pH to 7.0\
+    \ - 8.0 using a 2 M solution\r\nof NaOH; then add ferrous sulfate and the trace\
+    \ element solution SL–6."
 applications:
 - Microbial cultivation
 curation_history:
@@ -145,3 +148,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 471'
+- timestamp: '2026-03-13T06:19:05.551517Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001600'

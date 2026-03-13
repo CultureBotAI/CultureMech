@@ -1,3 +1,4 @@
+id: CultureMech:001060
 name: SULFURIFERULA MULTIVORANS MEDIUM
 original_name: SULFURIFERULA MULTIVORANS MEDIUM
 category: bacterial
@@ -70,10 +71,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except thiosulfate and adjust pH of medium to 6.5 -7.0. Dispense medium
-    under air atmosphere into serum vials suitable for anaerobic cultivation (e.g., 20 ml medium in 100
-    ml bottles) and close with butyl rubber septa. After autoclaving complete medium with thiosulfate
-    added from a stock solution sterilized by filtration and add 3% (v/v) sterile CO2 to the gas phase.
+  description: Dissolve ingredients except thiosulfate and adjust pH of medium to
+    6.5 -7.0. Dispense medium under air atmosphere into serum vials suitable for anaerobic
+    cultivation (e.g., 20 ml medium in 100 ml bottles) and close with butyl rubber
+    septa. After autoclaving complete medium with thiosulfate added from a stock solution
+    sterilized by filtration and add 3% (v/v) sterile CO2 to the gas phase.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1585'
+- timestamp: '2026-03-13T06:19:00.848634Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001060'

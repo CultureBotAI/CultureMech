@@ -1,3 +1,4 @@
+id: CultureMech:010895
 preferred_term: Main sol. 670
 term:
   id: mediadive.solution:1413
@@ -81,3 +82,8 @@ preparation_notes: 'Dissolve ingredients except ferrous sulfate and adjust pH to
   filter-sterilized under 100% N2 gas atmosphere.
 
   Note: Incubate statically without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.207658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010895'

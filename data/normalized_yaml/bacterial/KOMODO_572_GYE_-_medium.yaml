@@ -1,3 +1,4 @@
+id: CultureMech:006019
 name: GYE - medium
 original_name: GYE - medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:572
     label: GYE - medium
-notes: 'Source: KOMODO ModelSEED | ID: 572 | DSMZ Medium: 572 (mediadive.medium:572) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 572 | DSMZ Medium: 572 (mediadive.medium:572)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -47,3 +49,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 572
+- timestamp: '2026-03-13T06:19:37.672350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006019'

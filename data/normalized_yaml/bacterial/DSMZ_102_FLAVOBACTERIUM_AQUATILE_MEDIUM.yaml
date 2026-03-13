@@ -1,3 +1,4 @@
+id: CultureMech:000451
 name: FLAVOBACTERIUM AQUATILE MEDIUM
 original_name: FLAVOBACTERIUM AQUATILE MEDIUM
 category: bacterial
@@ -48,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 102'
+- timestamp: '2026-03-13T06:18:55.426162Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000451'

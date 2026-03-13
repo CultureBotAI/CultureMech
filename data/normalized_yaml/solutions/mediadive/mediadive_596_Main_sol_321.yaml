@@ -1,3 +1,4 @@
+id: CultureMech:014718
 preferred_term: Main sol. 321
 term:
   id: mediadive.solution:596
@@ -156,3 +157,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, cysteine and sulfide,
   pH of complete medium and adjust to 6.8 - 7.0, if necessary.
 
   After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.217470Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014718'

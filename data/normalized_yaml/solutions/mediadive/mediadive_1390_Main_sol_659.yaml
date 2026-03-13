@@ -1,3 +1,4 @@
+id: CultureMech:010875
 preferred_term: Main sol. 659
 term:
   id: mediadive.solution:1390
@@ -121,3 +122,8 @@ composition:
 preparation_notes: After autoclaving add a lactose solution (sterilized by filtration)
   up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15
   ± 0.05.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.068059Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010875'

@@ -1,3 +1,4 @@
+id: CultureMech:011731
 preferred_term: Main sol. 1179
 term:
   id: mediadive.solution:2352
@@ -91,3 +92,8 @@ preparation_notes: 'Adjust pH to 6.8.
 
   Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
   to add 50% methane to the gas phase Autoclave at 121°C for 15 min.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.594147Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011731'

@@ -1,3 +1,4 @@
+id: CultureMech:001039
 name: SEA WATER LURIA BERTANI MEDIUM
 original_name: SEA WATER LURIA BERTANI MEDIUM
 category: bacterial
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1563'
+- timestamp: '2026-03-13T06:19:00.645771Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001039'

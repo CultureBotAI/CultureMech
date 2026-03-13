@@ -1,3 +1,4 @@
+id: CultureMech:012356
 preferred_term: Main sol. 1521
 term:
   id: mediadive.solution:3148
@@ -198,3 +199,8 @@ composition:
 preparation_notes: 'Add distilled water to 1 liter, boil the medium and cool under
   N2, distribute under N2 and autoclave. After autoclaving the following sterilized
   solutions are added: '
+curation_history:
+- timestamp: '2026-03-13T06:20:25.404527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012356'

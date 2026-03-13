@@ -1,3 +1,4 @@
+id: CultureMech:011963
 preferred_term: Selenite and tungstate solution
 term:
   id: mediadive.solution:2636
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: First dissolve NaOH, subsequently the metal salts. Distribute to
   gas tight vessels under N2, autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.028158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011963'

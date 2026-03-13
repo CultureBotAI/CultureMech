@@ -1,3 +1,4 @@
+id: CultureMech:010989
 preferred_term: Main sol. 743
 term:
   id: mediadive.solution:1521
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Adjust pH to 3.0 with HCl. Steam medium for 3 hours on each of
   3 successive days. Incubate under a gas phase H2:O2:CO2 = 7:1:1 with an overpressure
   of one atmosphere at 65°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.844139Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010989'

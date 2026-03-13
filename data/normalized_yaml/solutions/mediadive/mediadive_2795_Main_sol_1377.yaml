@@ -1,3 +1,4 @@
+id: CultureMech:012082
 preferred_term: Main sol. 1377
 term:
   id: mediadive.solution:2795
@@ -116,3 +117,8 @@ preparation_notes: 'Adjust to pH 7.0 and sterilize by autoclaving.
 
   The medium may be solidified by adding 20.0 g/l agar. In this case, NaCl needs to
   be autoclaved separately.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.755560Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012082'

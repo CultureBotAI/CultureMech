@@ -1,3 +1,4 @@
+id: CultureMech:013952
 preferred_term: Main sol. J998
 term:
   id: mediadive.solution:5033
@@ -155,3 +156,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil for a few seconds
   \ a N2 atmosphere): \nComment: For JCM 32882 and JCM 32883, add per liter 10.0 g\
   \ iron powder in the medium. Then, adjust final pH of the medium to 2.5.\n\nOriginal\
   \ volume: 1032 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.609138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013952'

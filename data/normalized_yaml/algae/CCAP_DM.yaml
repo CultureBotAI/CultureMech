@@ -1,9 +1,10 @@
+id: CultureMech:000063
 name: DM
 category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
-description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater algae cultivation.
-  Recipe available in PDF format.
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
 notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -25,6 +26,10 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.060684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000063'
 references:
 - reference_id: CCAP:DM
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf

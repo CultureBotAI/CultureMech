@@ -1,3 +1,4 @@
+id: CultureMech:014512
 preferred_term: Main sol. 673
 term:
   id: mediadive.solution:5645
@@ -226,3 +227,8 @@ preparation_notes: 'Prepare the medium anaerobically under 100% nitrogen. The fo
   x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.
 
   Adjust final pH to 7.2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.176689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014512'

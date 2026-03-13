@@ -1,3 +1,4 @@
+id: CultureMech:006146
 name: ACETOBACTER EUROPAEUS medium
 original_name: ACETOBACTER EUROPAEUS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:631
     label: ACETOBACTER EUROPAEUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -50,3 +52,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 631
+- timestamp: '2026-03-13T06:19:38.614989Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006146'

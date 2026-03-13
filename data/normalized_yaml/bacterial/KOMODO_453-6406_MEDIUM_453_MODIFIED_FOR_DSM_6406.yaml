@@ -1,3 +1,4 @@
+id: CultureMech:005297
 name: MEDIUM 453 MODIFIED FOR DSM 6406
 original_name: MEDIUM 453 MODIFIED FOR DSM 6406
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:453_6406
     label: MEDIUM 453 MODIFIED FOR DSM 6406
-notes: 'Source: KOMODO ModelSEED | ID: 453_6406 | DSMZ Medium: 453 (mediadive.medium:453) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 453_6406 | DSMZ Medium: 453 (mediadive.medium:453)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Meat peptone
   concentration:
@@ -47,4 +49,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 453
+- timestamp: '2026-03-13T06:19:31.567078Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005297'
 ph_value: 7.5

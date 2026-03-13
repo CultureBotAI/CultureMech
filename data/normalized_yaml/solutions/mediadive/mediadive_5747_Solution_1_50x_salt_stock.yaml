@@ -1,3 +1,4 @@
+id: CultureMech:014602
 preferred_term: Solution 1 (50x salt stock)
 term:
   id: mediadive.solution:5747
@@ -41,3 +42,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve the ingredients listed above (in that order) in about
   700 ml of distilled water, and then make up to 1 litre
+curation_history:
+- timestamp: '2026-03-13T06:20:38.591017Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014602'

@@ -1,3 +1,4 @@
+id: CultureMech:000382
 name: ASW 150 + barley
 original_name: ASW 150 + barley
 category: bacterial
@@ -48,8 +49,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add 20 ml of the autoclaved artificial seawater with 150 psu and 4 autoclaved \r\nbarley\
-    \ grains to a T­25 tissue culture flask (Corning 25100)."
+  description: "Add 20 ml of the autoclaved artificial seawater with 150 psu and 4\
+    \ autoclaved \r\nbarley grains to a T­25 tissue culture flask (Corning 25100)."
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,3 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C6'
+- timestamp: '2026-03-13T06:18:54.874124Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000382'

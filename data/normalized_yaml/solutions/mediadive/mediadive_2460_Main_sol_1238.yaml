@@ -1,3 +1,4 @@
+id: CultureMech:011831
 preferred_term: Main sol. 1238
 term:
   id: mediadive.solution:2460
@@ -66,3 +67,8 @@ composition:
 preparation_notes: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g
   peptone and 50 g yeast extract in 1l distilled water, autoclaved), 2 ml 50 % glucose
   (autoclaved) and 5 ml filter-sterilized riboflavin (0.2 mg ml-1) were added.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.256603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011831'

@@ -1,3 +1,4 @@
+id: CultureMech:004639
 name: MEDIUM 252 MODIFIED FOR DSM 41418
 original_name: MEDIUM 252 MODIFIED FOR DSM 41418
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:252_41418
     label: MEDIUM 252 MODIFIED FOR DSM 41418
-notes: 'Source: KOMODO ModelSEED | ID: 252_41418 | DSMZ Medium: 252 (mediadive.medium:252) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 252_41418 | DSMZ Medium: 252 (mediadive.medium:252)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:
@@ -93,3 +94,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 252
+- timestamp: '2026-03-13T06:19:27.810342Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004639'

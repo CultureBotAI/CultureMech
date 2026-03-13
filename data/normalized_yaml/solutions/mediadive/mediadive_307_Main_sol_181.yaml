@@ -1,3 +1,4 @@
+id: CultureMech:012304
 preferred_term: Main sol. 181
 term:
   id: mediadive.solution:307
@@ -126,3 +127,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0. Gas atmosphere: 100% CO2.
 
   Distribute into Hungate tubes and autoclave.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.101611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012304'

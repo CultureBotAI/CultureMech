@@ -1,11 +1,12 @@
+id: CultureMech:004331
 name: Trace element solution (medium 939)
 original_name: Trace element solution (medium 939)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2058 | DSMZ Medium: 2058 (mediadive.medium:2058)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2058 | DSMZ Medium: 2058
+  (mediadive.medium:2058) | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2058
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2058'
+- timestamp: '2026-03-13T06:19:26.597496Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004331'

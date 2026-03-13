@@ -1,3 +1,4 @@
+id: CultureMech:008795
 name: Spirulina–Ogawa–Terui (SOT) medium
 original_name: Spirulina–Ogawa–Terui (SOT) medium
 category: bacterial
@@ -137,4 +138,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.334847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008795'
 high_metal: true

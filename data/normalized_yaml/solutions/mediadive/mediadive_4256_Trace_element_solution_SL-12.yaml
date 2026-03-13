@@ -1,3 +1,4 @@
+id: CultureMech:013269
 preferred_term: Trace element solution SL-12
 term:
   id: mediadive.solution:4256
@@ -126,3 +127,8 @@ composition:
 preparation_notes: 'Autoclave separately.
 
   Adjust pH to 6.8.'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.406981Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013269'

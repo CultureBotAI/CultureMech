@@ -1,3 +1,4 @@
+id: CultureMech:010535
 name: HALOPHILE YEAST EXTRACT MEDIUM
 original_name: HALOPHILE YEAST EXTRACT MEDIUM
 category: fungal
@@ -77,4 +78,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J546'
+- timestamp: '2026-03-13T06:20:14.263163Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010535'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:000777
 name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 category: bacterial
@@ -70,13 +71,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Refer to the composition of DSMZ medium 830 and either make up the medium in 2 litres of
-    75% seawater or use half of the amounts of the components specified and make up the medium in 1 litre
-    of 75% seawater. Liquid medium can be prepared by leaving out the agar.
+  description: Refer to the composition of DSMZ medium 830 and either make up the
+    medium in 2 litres of 75% seawater or use half of the amounts of the components
+    specified and make up the medium in 1 litre of 75% seawater. Liquid medium can
+    be prepared by leaving out the agar.
 - step_number: 2
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding agar. Add agar, heat
-    medium to boiling to dissolve agar, and autoclave for 15 min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
+    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
+    min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +91,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.286683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000777'

@@ -1,3 +1,4 @@
+id: CultureMech:001432
 name: THERMITHIOBACILLUS MEDIUM
 original_name: THERMITHIOBACILLUS MEDIUM
 category: bacterial
@@ -124,14 +125,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except phosphates and tetrathionate. The phosphates are sterilized
-    separately in 1/10 of medium volume and mixed with the other salts when cool. Tetrathionate is sterilized
-    by filtration and added to the autoclaved medium. Adjust pH of complete medium to 6.9. For agar medium
-    autoclave the phosphates (in 100 ml), other salts (in 300 ml), and agar (in 600 ml) separately.
+  description: Dissolve ingredients except phosphates and tetrathionate. The phosphates
+    are sterilized separately in 1/10 of medium volume and mixed with the other salts
+    when cool. Tetrathionate is sterilized by filtration and added to the autoclaved
+    medium. Adjust pH of complete medium to 6.9. For agar medium autoclave the phosphates
+    (in 100 ml), other salts (in 300 ml), and agar (in 600 ml) separately.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
-    Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -143,3 +145,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:04.125777Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001432'

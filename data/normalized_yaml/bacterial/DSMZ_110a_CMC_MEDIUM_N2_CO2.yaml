@@ -1,3 +1,4 @@
+id: CultureMech:000545
 name: CMC MEDIUM (N2/CO2)
 original_name: CMC MEDIUM (N2/CO2)
 category: bacterial
@@ -107,3 +108,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 110a'
+- timestamp: '2026-03-13T06:18:56.258984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000545'

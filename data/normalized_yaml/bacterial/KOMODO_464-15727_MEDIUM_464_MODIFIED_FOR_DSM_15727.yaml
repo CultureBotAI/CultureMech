@@ -1,3 +1,4 @@
+id: CultureMech:005511
 name: MEDIUM 464 MODIFIED FOR DSM 15727
 original_name: MEDIUM 464 MODIFIED FOR DSM 15727
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:464_15727
     label: MEDIUM 464 MODIFIED FOR DSM 15727
-notes: 'Source: KOMODO ModelSEED | ID: 464_15727 | DSMZ Medium: 464 (mediadive.medium:464) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 464_15727 | DSMZ Medium: 464 (mediadive.medium:464)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -44,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 464
+- timestamp: '2026-03-13T06:19:33.538943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005511'
 ph_value: 7.0

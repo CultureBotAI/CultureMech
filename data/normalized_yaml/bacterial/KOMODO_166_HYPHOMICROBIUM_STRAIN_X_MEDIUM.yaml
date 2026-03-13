@@ -1,3 +1,4 @@
+id: CultureMech:004193
 name: HYPHOMICROBIUM STRAIN X MEDIUM
 original_name: HYPHOMICROBIUM STRAIN X MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:166
     label: HYPHOMICROBIUM STRAIN X MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 166 | DSMZ Medium: 166 (mediadive.medium:166) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 166 | DSMZ Medium: 166 (mediadive.medium:166)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -117,3 +119,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 166
+- timestamp: '2026-03-13T06:19:25.760777Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004193'

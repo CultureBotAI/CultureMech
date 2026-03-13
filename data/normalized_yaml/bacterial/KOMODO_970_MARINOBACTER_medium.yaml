@@ -1,3 +1,4 @@
+id: CultureMech:006927
 name: MARINOBACTER medium
 original_name: MARINOBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:970
     label: MARINOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 970 | DSMZ Medium: 970 (mediadive.medium:970) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 970 | DSMZ Medium: 970 (mediadive.medium:970)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -72,3 +74,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 970
+- timestamp: '2026-03-13T06:19:45.048675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006927'

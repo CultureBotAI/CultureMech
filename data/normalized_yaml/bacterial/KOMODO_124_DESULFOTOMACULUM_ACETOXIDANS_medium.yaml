@@ -1,3 +1,4 @@
+id: CultureMech:004007
 name: DESULFOTOMACULUM ACETOXIDANS medium
 original_name: DESULFOTOMACULUM ACETOXIDANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:124
     label: DESULFOTOMACULUM ACETOXIDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 124 | DSMZ Medium: 124 (mediadive.medium:124) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 124 | DSMZ Medium: 124 (mediadive.medium:124)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -261,4 +263,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.120044Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:24.074428Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004007'

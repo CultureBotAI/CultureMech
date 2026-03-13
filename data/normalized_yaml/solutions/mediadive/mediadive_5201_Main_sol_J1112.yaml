@@ -1,3 +1,4 @@
+id: CultureMech:014112
 preferred_term: Main sol. J1112
 term:
   id: mediadive.solution:5201
@@ -113,3 +114,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: "Mix components thoroughly, adjust pH to 7.4 and autoclave. After\
   \ cooling, add the following solution (autoclaved): \n\nOriginal volume: 1023 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.669722Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014112'

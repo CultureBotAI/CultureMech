@@ -1,3 +1,4 @@
+id: CultureMech:006394
 name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 original_name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 category: bacterial
@@ -123,3 +124,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:40.410429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006394'

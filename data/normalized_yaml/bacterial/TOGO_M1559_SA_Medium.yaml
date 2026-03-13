@@ -1,3 +1,4 @@
+id: CultureMech:008107
 name: SA Medium
 original_name: SA Medium
 category: bacterial
@@ -256,6 +257,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:53.527036Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008107'
 solutions:
 - preferred_term: Vitamin mixture*
   term:

@@ -1,3 +1,4 @@
+id: CultureMech:003983
 name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 original_name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1228
     label: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1228 | DSMZ Medium: 1228 (mediadive.medium:1228) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1228 | DSMZ Medium: 1228 (mediadive.medium:1228)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1228
+- timestamp: '2026-03-13T06:19:23.863759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003983'

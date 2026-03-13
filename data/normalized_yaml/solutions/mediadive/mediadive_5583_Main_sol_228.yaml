@@ -1,3 +1,4 @@
+id: CultureMech:014461
 preferred_term: Main sol. 228
 term:
   id: mediadive.solution:5583
@@ -126,3 +127,8 @@ composition:
 preparation_notes: The vitamin K1, haemin solution and the cysteine are added after
   the medium has been boiled and cooled under CO2. Adjust pH to 7.2 using 8 N NaOH.
   Distribute under N2 and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.925965Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014461'

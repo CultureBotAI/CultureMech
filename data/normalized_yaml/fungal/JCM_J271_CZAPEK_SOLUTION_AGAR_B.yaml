@@ -1,3 +1,4 @@
+id: CultureMech:010517
 name: CZAPEK SOLUTION AGAR (B)
 original_name: CZAPEK SOLUTION AGAR (B)
 category: fungal
@@ -71,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J271'
+- timestamp: '2026-03-13T06:20:14.203294Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010517'

@@ -1,3 +1,4 @@
+id: CultureMech:012535
 preferred_term: Main sol. 1633
 term:
   id: mediadive.solution:3391
@@ -173,3 +174,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: "Sterilize 20 min./121°C. After cooling to 60°C add: \nAdjust pH\
   \ to 7.0 with 40% KOH."
+curation_history:
+- timestamp: '2026-03-13T06:20:26.417371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012535'

@@ -1,3 +1,4 @@
+id: CultureMech:012087
 preferred_term: Solution A
 term:
   id: mediadive.solution:27
@@ -44,3 +45,8 @@ preparation_notes: 'Aliquot Solution A into 100 mL screw-cap bottles, filled wit
 
 
   Original volume: 460 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.789193Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012087'

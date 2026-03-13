@@ -1,3 +1,4 @@
+id: CultureMech:015360
 name: MARINE BROTH (ANAEROB)
 original_name: MARINE BROTH (ANAEROB)
 category: specialized
@@ -124,10 +125,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and sulfide, then sparge medium with 100% N2 gas for
-    30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add cysteine and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Prior to use check pH of complete medium and adjust to 7.3 - 7.5, if necessary.
+  description: Dissolve ingredients except cysteine and sulfide, then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
+    gas. Prior to use check pH of complete medium and adjust to 7.3 - 7.5, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +137,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514e'
+- timestamp: '2026-03-13T06:20:42.166079Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015360'

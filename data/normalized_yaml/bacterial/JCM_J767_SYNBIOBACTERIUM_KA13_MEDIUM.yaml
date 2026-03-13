@@ -1,3 +1,4 @@
+id: CultureMech:003109
 name: SYNBIOBACTERIUM KA13 MEDIUM
 original_name: SYNBIOBACTERIUM KA13 MEDIUM
 category: bacterial
@@ -50,8 +51,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 8.0 with NaOH. Distribute the medium into culture vessels,
-    replace the gas phase with a N2 gas and autoclave.
+  description: Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
+    into culture vessels, replace the gas phase with a N2 gas and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J767'
+- timestamp: '2026-03-13T06:19:17.881564Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003109'

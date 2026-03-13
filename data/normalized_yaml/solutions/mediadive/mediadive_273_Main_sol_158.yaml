@@ -1,3 +1,4 @@
+id: CultureMech:012048
 preferred_term: Main sol. 158
 term:
   id: mediadive.solution:273
@@ -90,3 +91,8 @@ composition:
 preparation_notes: Adjust pH to 1.0 with 1 N H2SO4. Stock solutions of yeast extract
   (10% w/v) and glucose (50% w/v) in water are sterilized separately by autoclaving
   and thereafter added to the sterile mineral salt medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.523599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012048'

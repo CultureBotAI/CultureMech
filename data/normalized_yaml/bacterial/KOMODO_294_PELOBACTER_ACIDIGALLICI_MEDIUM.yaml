@@ -1,3 +1,4 @@
+id: CultureMech:004758
 name: PELOBACTER ACIDIGALLICI MEDIUM
 original_name: PELOBACTER ACIDIGALLICI MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:294
     label: PELOBACTER ACIDIGALLICI MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 294 | DSMZ Medium: 294 (mediadive.medium:294) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 294 | DSMZ Medium: 294 (mediadive.medium:294)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -226,4 +228,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 294
+- timestamp: '2026-03-13T06:19:28.577233Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004758'
 ph_value: 7.2

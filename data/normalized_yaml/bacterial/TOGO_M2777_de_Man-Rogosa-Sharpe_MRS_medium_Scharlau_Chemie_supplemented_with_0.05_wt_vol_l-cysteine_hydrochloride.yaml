@@ -1,7 +1,8 @@
-name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05% (wt/vol) l-cysteine
-  hydrochloride
-original_name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05% (wt/vol) l-cysteine
-  hydrochloride
+id: CultureMech:009325
+name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05%
+  (wt/vol) l-cysteine hydrochloride
+original_name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with
+  0.05% (wt/vol) l-cysteine hydrochloride
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -34,7 +35,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -47,7 +49,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -55,7 +58,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -71,12 +75,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
+    component'
 - preferred_term: Magnesium sulfate
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -84,12 +90,14 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
 - preferred_term: Manganese sulfate
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
@@ -107,8 +115,8 @@ media_term:
   preferred_term: TOGO Medium M2777
   term:
     id: TOGO:M2777
-    label: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05% (wt/vol) l-cysteine
-      hydrochloride
+    label: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05%
+      (wt/vol) l-cysteine hydrochloride
 notes: 'Source: https://togomedium.org/medium/M2777'
 applications:
 - Microbial cultivation
@@ -124,5 +132,10 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.426887'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+- timestamp: '2026-03-13T06:20:05.648542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009325'

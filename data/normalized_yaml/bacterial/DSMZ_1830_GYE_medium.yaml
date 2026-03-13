@@ -1,3 +1,4 @@
+id: CultureMech:001259
 name: GYE medium
 original_name: GYE medium
 category: bacterial
@@ -63,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1830'
+- timestamp: '2026-03-13T06:19:02.615651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001259'

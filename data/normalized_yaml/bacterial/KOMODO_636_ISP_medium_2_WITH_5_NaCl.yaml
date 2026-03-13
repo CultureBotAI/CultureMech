@@ -1,3 +1,4 @@
+id: CultureMech:006155
 name: ISP medium 2 WITH 5% NaCl
 original_name: ISP medium 2 WITH 5% NaCl
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:636
     label: ISP medium 2 WITH 5% NaCl
-notes: 'Source: KOMODO ModelSEED | ID: 636 | DSMZ Medium: 636 (mediadive.medium:636) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 636 | DSMZ Medium: 636 (mediadive.medium:636)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 636
+- timestamp: '2026-03-13T06:19:38.658720Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006155'

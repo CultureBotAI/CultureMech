@@ -1,3 +1,4 @@
+id: CultureMech:000432
 name: PEREDIBACTER (DN) MEDIUM
 original_name: PEREDIBACTER (DN) MEDIUM
 category: bacterial
@@ -43,14 +44,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except calcium and magnesium chloride and adjust pH of the medium
-    to 7.2 with NaOH. After autoclaving add calcium and magnesium from sterile stock solutions.
+  description: Dissolve ingredients except calcium and magnesium chloride and adjust
+    pH of the medium to 7.2 with NaOH. After autoclaving add calcium and magnesium
+    from sterile stock solutions.
 - step_number: 2
   action: MIX
-  description: Before inoculation prepare a suspension of prey cells in 30-40 ml medium using a 250 ml
-    flask. Usually the resuspension of two overnight cultures of the prey strain on agar slants of DSMZ
-    medium 54 will yield a final concentration of 10<sup>8</sup> to 10<sup>9</sup> cells per ml culture
-    broth.
+  description: Before inoculation prepare a suspension of prey cells in 30-40 ml medium
+    using a 250 ml flask. Usually the resuspension of two overnight cultures of the
+    prey strain on agar slants of DSMZ medium 54 will yield a final concentration
+    of 10<sup>8</sup> to 10<sup>9</sup> cells per ml culture broth.
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +64,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:55.247533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000432'

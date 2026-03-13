@@ -1,3 +1,4 @@
+id: CultureMech:005085
 name: For DSM 2118
 original_name: For DSM 2118
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:363.1
     label: For DSM 2118
-notes: 'Source: KOMODO ModelSEED | ID: 363.1 | DSMZ Medium: 363 (mediadive.medium:363) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 363.1 | DSMZ Medium: 363 (mediadive.medium:363)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Antipyrine
   term:
@@ -140,3 +142,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 363
+- timestamp: '2026-03-13T06:19:30.010956Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005085'

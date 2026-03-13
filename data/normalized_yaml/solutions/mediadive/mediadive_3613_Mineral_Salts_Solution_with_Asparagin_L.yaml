@@ -1,3 +1,4 @@
+id: CultureMech:012696
 preferred_term: Mineral Salts Solution with Asparagin (L)
 term:
   id: mediadive.solution:3613
@@ -69,3 +70,8 @@ preparation_notes: 'Adjust to pH 7.0 sterilize by autoclaving. The medium may be
 
 
   Original volume: 990 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.290428Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012696'

@@ -1,3 +1,4 @@
+id: CultureMech:004010
 name: MEDIUM 125 MODIFIED FOR DSM 23679
 original_name: MEDIUM 125 MODIFIED FOR DSM 23679
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:125_23679
     label: MEDIUM 125 MODIFIED FOR DSM 23679
-notes: 'Source: KOMODO ModelSEED | ID: 125_23679 | DSMZ Medium: 125 (mediadive.medium:125) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 125_23679 | DSMZ Medium: 125 (mediadive.medium:125)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:
@@ -106,4 +107,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 125
+- timestamp: '2026-03-13T06:19:24.104148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004010'
 ph_value: 6.8

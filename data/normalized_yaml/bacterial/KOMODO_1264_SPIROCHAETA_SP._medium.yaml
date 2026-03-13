@@ -1,3 +1,4 @@
+id: CultureMech:004021
 name: SPIROCHAETA SP. medium
 original_name: SPIROCHAETA SP. medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1264
     label: SPIROCHAETA SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 1264 | DSMZ Medium: 1264 (mediadive.medium:1264) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1264 | DSMZ Medium: 1264 (mediadive.medium:1264)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -150,3 +152,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1264
+- timestamp: '2026-03-13T06:19:24.205508Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004021'

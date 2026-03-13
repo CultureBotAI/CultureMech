@@ -1,3 +1,4 @@
+id: CultureMech:014612
 preferred_term: 20 mM K-P-Buffer
 term:
   id: mediadive.solution:5756
@@ -40,3 +41,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Sterilize at 121°C for 20 minutes in 1L Schott bottle
+curation_history:
+- timestamp: '2026-03-13T06:20:38.616962Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014612'

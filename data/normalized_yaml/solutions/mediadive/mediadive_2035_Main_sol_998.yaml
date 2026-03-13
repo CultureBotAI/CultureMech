@@ -1,3 +1,4 @@
+id: CultureMech:011438
 preferred_term: Main sol. 998
 term:
   id: mediadive.solution:2035
@@ -119,3 +120,8 @@ preparation_notes: Media were autoclaved and cooled under N2/CO2 (90/10, v/v). V
   Na2S x 9 H2O (0.02% w/v) were also added to the medium prior to utilisation. Pure
   cultures, grown in 50-ml screw-capped bottles were stored at +4°C in the dark for
   preservation.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.685229Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011438'

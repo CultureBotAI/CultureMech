@@ -1,3 +1,4 @@
+id: CultureMech:000800
 name: YIM MEDIUM WITH NaCl
 original_name: YIM MEDIUM WITH NaCl
 category: bacterial
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1342'
+- timestamp: '2026-03-13T06:18:58.452246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000800'

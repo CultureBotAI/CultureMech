@@ -1,3 +1,4 @@
+id: CultureMech:003866
 name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1156
     label: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1156 | DSMZ Medium: 1156 (mediadive.medium:1156) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1156 | DSMZ Medium: 1156 (mediadive.medium:1156)
+  | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -113,3 +115,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1156
+- timestamp: '2026-03-13T06:19:22.825183Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003866'

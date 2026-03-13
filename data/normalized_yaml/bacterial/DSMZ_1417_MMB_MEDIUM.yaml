@@ -1,3 +1,4 @@
+id: CultureMech:000879
 name: MMB MEDIUM
 original_name: MMB MEDIUM
 category: bacterial
@@ -186,3 +187,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:59.134305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000879'

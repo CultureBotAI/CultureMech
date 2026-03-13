@@ -1,3 +1,4 @@
+id: CultureMech:002852
 name: TYE MEDIUM
 original_name: TYE MEDIUM
 category: bacterial
@@ -96,9 +97,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S x 9H2O and adjust pH to 7.0 with 1 N NaOH. Distribute the medium
-    into culture vessels under a N2 gas atmosphere, add Na2S x 9H2O (as a 5% solution), seal with butyl
-    rubber stoppers and autoclave.
+  description: Mix ingredients except Na2S x 9H2O and adjust pH to 7.0 with 1 N NaOH.
+    Distribute the medium into culture vessels under a N2 gas atmosphere, add Na2S
+    x 9H2O (as a 5% solution), seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,3 +107,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J500'
+- timestamp: '2026-03-13T06:19:16.097039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002852'

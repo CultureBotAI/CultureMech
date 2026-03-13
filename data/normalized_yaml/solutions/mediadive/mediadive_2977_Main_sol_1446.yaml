@@ -1,3 +1,4 @@
+id: CultureMech:012211
 preferred_term: Main sol. 1446
 term:
   id: mediadive.solution:2977
@@ -155,3 +156,8 @@ preparation_notes: We recommend that liquid and solid media be made by autoclavi
   for media cool all components to about 55°C otherwise hydrolysis of the agar may
   occur. Adjust pH after autoclaving by adding the NaHCO3 (8 %) to pH 9.0. Please
   note that the NaHCO3 solution should be filter sterilized.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.534237Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012211'

@@ -1,3 +1,4 @@
+id: CultureMech:010828
 preferred_term: Main sol. 630
 term:
   id: mediadive.solution:1345
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave
   the phosphate buffer separately and then add to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.784146Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010828'

@@ -1,3 +1,4 @@
+id: CultureMech:014503
 preferred_term: Main sol. 465g
 term:
   id: mediadive.solution:5632
@@ -85,3 +86,8 @@ preparation_notes: 'Rehydrate and cultivate lyophilized cells in the complex med
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.135788Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014503'

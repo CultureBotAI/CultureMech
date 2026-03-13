@@ -1,3 +1,4 @@
+id: CultureMech:014027
 preferred_term: Main sol. J1052
 term:
   id: mediadive.solution:5114
@@ -130,3 +131,8 @@ preparation_notes: 'Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O so
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.112822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014027'

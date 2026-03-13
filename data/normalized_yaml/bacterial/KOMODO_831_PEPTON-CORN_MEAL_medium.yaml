@@ -1,3 +1,4 @@
+id: CultureMech:006624
 name: PEPTON-CORN MEAL medium
 original_name: PEPTON-CORN MEAL medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:831
     label: PEPTON-CORN MEAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 831 | DSMZ Medium: 831 (mediadive.medium:831) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 831 | DSMZ Medium: 831 (mediadive.medium:831)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 831
+- timestamp: '2026-03-13T06:19:42.450074Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006624'

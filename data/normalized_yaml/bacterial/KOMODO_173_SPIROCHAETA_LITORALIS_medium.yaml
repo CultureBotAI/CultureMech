@@ -1,3 +1,4 @@
+id: CultureMech:004202
 name: SPIROCHAETA LITORALIS medium
 original_name: SPIROCHAETA LITORALIS medium
 category: bacterial
@@ -57,3 +58,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 173
+- timestamp: '2026-03-13T06:19:25.805551Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004202'

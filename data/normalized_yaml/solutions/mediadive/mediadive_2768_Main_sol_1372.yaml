@@ -1,3 +1,4 @@
+id: CultureMech:012069
 preferred_term: Main sol. 1372
 term:
   id: mediadive.solution:2768
@@ -118,3 +119,8 @@ preparation_notes: 'Adjust pH to 6.8.
   Autoclave and add the vitamin solution from a filter-sterilised stock solution.
 
   Incubate strains in liquid culture with air headspace in closed vessels.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.658546Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012069'

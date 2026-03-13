@@ -1,3 +1,4 @@
+id: CultureMech:011766
 preferred_term: Main sol. 1198
 term:
   id: mediadive.solution:2387
@@ -44,3 +45,8 @@ preparation_notes: "Cultivation of Vero B4 (ACC 33) cells \nFilter-sterilize (0.
   \ cells should be infected after 15 days. Specific PCRs can be performed to verify\
   \ the presence of rickettsiae. Ultimately, in situ-hybridization can be used to\
   \ visualize them.\n\nOriginal volume: 50 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:21.791789Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011766'

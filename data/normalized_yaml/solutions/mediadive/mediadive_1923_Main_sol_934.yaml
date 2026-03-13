@@ -1,3 +1,4 @@
+id: CultureMech:011336
 preferred_term: Main sol. 934
 term:
   id: mediadive.solution:1923
@@ -188,3 +189,8 @@ preparation_notes: 'pH 7.0
   Prepare the medium anaerobically under N2. Steam the medium for 3 hours (in a boiling
   water bath) on three successive days. Alternatively, sterilize in an autoclave at
   110°C for 20 minutes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.020986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011336'

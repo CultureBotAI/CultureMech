@@ -1,3 +1,4 @@
+id: CultureMech:002719
 name: MMJ MEDIUM
 original_name: MMJ MEDIUM
 category: bacterial
@@ -169,16 +170,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O, adjust pH to 7.5
-    - 8.0, and autoclave. Separately autoclave NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O solutions
-    (5% each) under a N2 atmosphere. Distribute the medium into culture vessels (e.g., 20 ml of medium
-    in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
-    stoppers. Prior to inoculation, add the sterile NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O solutions
-    aseptically and anaerobically. Pressurize the inoculated bottle to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
+    adjust pH to 7.5 - 8.0, and autoclave. Separately autoclave NaHCO3, L-cysteine
+    x HCl x H2O and Na2S x 9H2O solutions (5% each) under a N2 atmosphere. Distribute
+    the medium into culture vessels (e.g., 20 ml of medium in 120 ml serum bottles)
+    under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
+    Prior to inoculation, add the sterile NaHCO3, L-cysteine x HCl x H2O and Na2S
+    x 9H2O solutions aseptically and anaerobically. Pressurize the inoculated bottle
+    to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -186,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J360'
+- timestamp: '2026-03-13T06:19:15.245283Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002719'

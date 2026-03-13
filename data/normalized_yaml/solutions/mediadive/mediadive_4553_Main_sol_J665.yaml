@@ -1,3 +1,4 @@
+id: CultureMech:013520
 preferred_term: Main sol. J665
 term:
   id: mediadive.solution:4553
@@ -105,3 +106,8 @@ preparation_notes: "Add components to distilled water, bring volume to 1.0 L and
   \ rubber stoppers and autoclave. Before inoculation, add the following sterile solutions\
   \ (autoclaved and stored under a N2 gas atmosphere) to the medium (per 10 ml of\
   \ medium): \n\nOriginal volume: 21 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.775039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013520'

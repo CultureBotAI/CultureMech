@@ -1,3 +1,4 @@
+id: CultureMech:000343
 name: f/2
 original_name: f/2
 category: bacterial
@@ -125,3 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C34'
+- timestamp: '2026-03-13T06:18:54.607785Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000343'

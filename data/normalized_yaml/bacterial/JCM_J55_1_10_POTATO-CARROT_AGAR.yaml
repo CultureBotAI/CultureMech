@@ -1,3 +1,4 @@
+id: CultureMech:002908
 name: 1/10 POTATO-CARROT AGAR
 original_name: 1/10 POTATO-CARROT AGAR
 category: bacterial
@@ -38,3 +39,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J55'
+- timestamp: '2026-03-13T06:19:16.491668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002908'

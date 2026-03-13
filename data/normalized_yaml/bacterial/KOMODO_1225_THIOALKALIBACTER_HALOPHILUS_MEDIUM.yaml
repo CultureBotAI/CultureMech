@@ -1,3 +1,4 @@
+id: CultureMech:003979
 name: THIOALKALIBACTER HALOPHILUS MEDIUM
 original_name: THIOALKALIBACTER HALOPHILUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1225
     label: THIOALKALIBACTER HALOPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1225 | DSMZ Medium: 1225 (mediadive.medium:1225) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1225 | DSMZ Medium: 1225 (mediadive.medium:1225)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1225
+- timestamp: '2026-03-13T06:19:23.829122Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003979'

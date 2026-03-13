@@ -1,3 +1,4 @@
+id: CultureMech:005460
 name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
 original_name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
 category: bacterial
@@ -170,3 +171,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:33.108044Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005460'

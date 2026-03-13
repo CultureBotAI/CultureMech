@@ -1,3 +1,4 @@
+id: CultureMech:013731
 preferred_term: Main sol. J828
 term:
   id: mediadive.solution:4789
@@ -56,3 +57,8 @@ preparation_notes: "Mix components and autoclave. After cooling, add the followi
   \ distribute the medium into sterile serum bottles (leave &; 80% gas phase by volume)\
   \ and seal with rubber stoppers. Replace the gas phase with an air-methane gas mixture\
   \ (75:25, v/v). Cultivate with shaking.\n\nOriginal volume: 1015 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.139841Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013731'

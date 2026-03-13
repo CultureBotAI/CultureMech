@@ -1,3 +1,4 @@
+id: CultureMech:004761
 name: ILYOBACTER TARTARICUS MEDIUM
 original_name: ILYOBACTER TARTARICUS MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:297
     label: ILYOBACTER TARTARICUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 297 | DSMZ Medium: 297 (mediadive.medium:297) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 297 | DSMZ Medium: 297 (mediadive.medium:297)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 297'
+- timestamp: '2026-03-13T06:19:28.597900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004761'

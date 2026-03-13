@@ -1,3 +1,4 @@
+id: CultureMech:011409
 preferred_term: Main sol. 978
 term:
   id: mediadive.solution:2004
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Add components, except vitamin B solution, to distilled water and
   bring volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized
   vitamin B solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.490870Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011409'

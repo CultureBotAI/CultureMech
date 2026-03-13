@@ -1,3 +1,4 @@
+id: CultureMech:014043
 preferred_term: Main sol. J1066
 term:
   id: mediadive.solution:5131
@@ -174,3 +175,8 @@ composition:
 preparation_notes: "Adjust pH to 5.5. Autoclave under a N2 atmosphere. After cooling,\
   \ aseptically and anaerobically add per liter the following solutions (autoclaved\
   \ or *filter sterilized): \n\nOriginal volume: 1022 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.224923Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014043'

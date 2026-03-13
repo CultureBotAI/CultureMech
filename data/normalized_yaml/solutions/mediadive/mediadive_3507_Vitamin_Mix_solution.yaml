@@ -1,3 +1,4 @@
+id: CultureMech:012616
 preferred_term: Vitamin Mix solution
 term:
   id: mediadive.solution:3507
@@ -76,3 +77,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.881433Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012616'

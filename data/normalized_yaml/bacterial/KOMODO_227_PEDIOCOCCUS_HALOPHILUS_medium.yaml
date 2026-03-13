@@ -1,3 +1,4 @@
+id: CultureMech:004581
 name: PEDIOCOCCUS HALOPHILUS medium
 original_name: PEDIOCOCCUS HALOPHILUS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:227
     label: PEDIOCOCCUS HALOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 227 | DSMZ Medium: 227 (mediadive.medium:227) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 227 | DSMZ Medium: 227 (mediadive.medium:227)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -89,3 +91,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 227
+- timestamp: '2026-03-13T06:19:27.503170Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004581'

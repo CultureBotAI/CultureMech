@@ -1,3 +1,4 @@
+id: CultureMech:013934
 preferred_term: Main sol. 239
 term:
   id: mediadive.solution:500
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Adjust pH to 7.4. After sterilization add 100 ml of a filter-sterilized
   solution of 1 mM diethyl phosphonate (Eastman Organic Chemical Div., Rochester,
   N.Y., USA) or of 20 mM phosphate buffer.
+curation_history:
+- timestamp: '2026-03-13T06:20:34.462702Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013934'

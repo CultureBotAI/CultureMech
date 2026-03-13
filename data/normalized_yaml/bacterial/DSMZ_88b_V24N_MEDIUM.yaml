@@ -1,3 +1,4 @@
+id: CultureMech:002051
 name: V24N MEDIUM
 original_name: V24N MEDIUM
 category: bacterial
@@ -132,9 +133,10 @@ preparation_steps:
   description: 'Prepare medium M.88, then add (per litre):'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust the pH to 6.0 with H2SO4 (25% v/v). Prepare the medium under 100% N2 gas phase and
-    distribute anaerobically into rubber stoppered tubes or bottles (presterilized by autoclaving). The
-    medium is sterilized by heating 2 hours at 85 °C on each of two following days.
+  description: Adjust the pH to 6.0 with H2SO4 (25% v/v). Prepare the medium under
+    100% N2 gas phase and distribute anaerobically into rubber stoppered tubes or
+    bottles (presterilized by autoclaving). The medium is sterilized by heating 2
+    hours at 85 °C on each of two following days.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -145,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 88b'
+- timestamp: '2026-03-13T06:19:09.804058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002051'

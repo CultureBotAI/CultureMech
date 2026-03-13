@@ -1,3 +1,4 @@
+id: CultureMech:002588
 name: METHANOCOCCUS McC MEDIUM
 original_name: METHANOCOCCUS McC MEDIUM
 category: bacterial
@@ -162,22 +163,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and bring to a boil for 5-10 sec.
-    Cool down under a stream of N2-CO2 (80:20). Dispense the medium into suitable culture vessels (e.g.,
-    20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20), seal with butyl rubber
-    stoppers, and autoclave. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions, respectively,
-    under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add the cysteine x HCl
-    and Na2S x 9H2O solutions. Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and bring to
+    a boil for 5-10 sec. Cool down under a stream of N2-CO2 (80:20). Dispense the
+    medium into suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum
+    bottles) under a stream of H2-CO2 (80:20), seal with butyl rubber stoppers, and
+    autoclave. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions,
+    respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically
+    add the cysteine x HCl and Na2S x 9H2O solutions. Pressurize the inoculated vessels
+    to 200 kPa H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust final pH to 7.0.
 - step_number: 4
   action: DISSOLVE
-  description: Dissolve 0.2 g of Fe(NH4)2(SO4)2 x 6H2O in 5 ml of distilled water containing 2 drops of
-    concentrated HCl. When the Fe(NH4)2(SO4)2 x 6H2O crystal have dissolved, bring volume up to 100 ml.
+  description: Dissolve 0.2 g of Fe(NH4)2(SO4)2 x 6H2O in 5 ml of distilled water
+    containing 2 drops of concentrated HCl. When the Fe(NH4)2(SO4)2 x 6H2O crystal
+    have dissolved, bring volume up to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,3 +194,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:14.352296Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002588'

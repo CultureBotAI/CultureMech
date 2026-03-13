@@ -1,3 +1,4 @@
+id: CultureMech:005645
 name: Bordet-Gengou-Agar-Base
 original_name: Bordet-Gengou-Agar-Base
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5005
     label: Bordet-Gengou-Agar-Base
-notes: 'Source: KOMODO ModelSEED | ID: 5005 | DSMZ Medium: 5005 (mediadive.medium:5005) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5005 | DSMZ Medium: 5005 (mediadive.medium:5005)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5005'
+- timestamp: '2026-03-13T06:19:34.923248Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005645'

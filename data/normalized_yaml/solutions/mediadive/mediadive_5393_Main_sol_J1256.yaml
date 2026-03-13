@@ -1,3 +1,4 @@
+id: CultureMech:014303
 preferred_term: Main sol. J1256
 term:
   id: mediadive.solution:5393
@@ -141,3 +142,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil and cool down und
   \ and autoclave. After cooling, aseptically and anaerobically add per liter the\
   \ following solutions (autoclaved and stored under a N2 gas atmosphere or *filter-sterilized\
   \ and stored under an 80% N2-20% CO2 gas mixture): \n\nOriginal volume: 1051 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.948855Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014303'

@@ -1,3 +1,4 @@
+id: CultureMech:006890
 name: DSM 14919_replace_Sodium acetate_with_Tween 80
 original_name: DSM 14919_replace_Sodium acetate_with_Tween 80
 category: bacterial
@@ -146,3 +147,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:44.691360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006890'

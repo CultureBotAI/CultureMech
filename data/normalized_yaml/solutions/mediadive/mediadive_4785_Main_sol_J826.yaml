@@ -1,3 +1,4 @@
+id: CultureMech:013727
 preferred_term: Main sol. J826
 term:
   id: mediadive.solution:4785
@@ -140,3 +141,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 6.0 with HCl. Aut
   \ solution (filter-sterilized and stored under a N2 atmosphere): \nFinally, adjust\
   \ pH to 7.0 with sterile anoxic 5% Na2CO2 solution (usually 30 - 40 ml to 1.0 L\
   \ medium).\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.112992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013727'

@@ -1,3 +1,4 @@
+id: CultureMech:004841
 name: Thermus macronutrients 10X solution
 original_name: Thermus macronutrients 10X solution
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3058
     label: Thermus macronutrients 10X solution
-notes: 'Source: KOMODO ModelSEED | ID: 3058 | DSMZ Medium: 3058 (mediadive.medium:3058) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3058 | DSMZ Medium: 3058 (mediadive.medium:3058)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3058'
+- timestamp: '2026-03-13T06:19:28.884211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004841'

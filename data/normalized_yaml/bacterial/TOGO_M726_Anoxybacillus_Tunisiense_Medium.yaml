@@ -1,3 +1,4 @@
+id: CultureMech:010134
 name: Anoxybacillus Tunisiense Medium
 original_name: Anoxybacillus Tunisiense Medium
 category: bacterial
@@ -153,6 +154,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.585033Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010134'
 solutions:
 - preferred_term: Base solution A (see below)
   composition: []

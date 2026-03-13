@@ -1,3 +1,4 @@
+id: CultureMech:000653
 name: FASTIDIOUS ANAEROBE AGAR
 original_name: FASTIDIOUS ANAEROBE AGAR
 category: bacterial
@@ -26,9 +27,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving at 121°C for
-    15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated horse blood, mix well
-    and pour plates. pH: 7.2 ± 0.2'
+  description: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
+    at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
+    horse blood, mix well and pour plates. pH: 7.2 ± 0.2'
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1203'
+- timestamp: '2026-03-13T06:18:57.118123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000653'

@@ -1,3 +1,4 @@
+id: CultureMech:001383
 name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
 original_name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
 category: bacterial
@@ -85,10 +86,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide), adjust pH to 7.2, bring medium to the boil, then
-    cool to room temperature under 100% N2 gas. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. After sterilization add sulfide from a sterile anoxic
-    stock solution prepared under 100% N2 gas atmosphere.
+  description: Dissolve ingredients (except sulfide), adjust pH to 7.2, bring medium
+    to the boil, then cool to room temperature under 100% N2 gas. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add sulfide from a sterile anoxic stock solution prepared
+    under 100% N2 gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -96,3 +98,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 286'
+- timestamp: '2026-03-13T06:19:03.589988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001383'

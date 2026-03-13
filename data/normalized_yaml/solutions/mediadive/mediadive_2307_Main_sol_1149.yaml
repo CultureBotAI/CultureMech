@@ -1,3 +1,4 @@
+id: CultureMech:011690
 preferred_term: Main sol. 1149
 term:
   id: mediadive.solution:2307
@@ -129,3 +130,8 @@ preparation_notes: 'Prepare the medium without vitamins, boil and cool under a n
   from stock solutions.
 
   The pH should be pH 6.5.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.275542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011690'

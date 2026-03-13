@@ -1,3 +1,4 @@
+id: CultureMech:014902
 preferred_term: Iron-EDTA
 term:
   id: mediadive.solution:6204
@@ -27,3 +28,8 @@ composition:
     label: EDTA disodium salt (anhydrous)
     confidence: 1.0
     match_type: exact_match
+curation_history:
+- timestamp: '2026-03-13T06:20:39.970800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014902'

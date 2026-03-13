@@ -1,3 +1,4 @@
+id: CultureMech:014046
 preferred_term: Main sol. J1069
 term:
   id: mediadive.solution:5134
@@ -33,3 +34,8 @@ preparation_notes: 'Mix components and adjust pH to 6.2 to 6.5. Distribute the m
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.235628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014046'

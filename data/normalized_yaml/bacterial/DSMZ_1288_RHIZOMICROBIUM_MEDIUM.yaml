@@ -1,3 +1,4 @@
+id: CultureMech:000751
 name: RHIZOMICROBIUM MEDIUM
 original_name: RHIZOMICROBIUM MEDIUM
 category: bacterial
@@ -116,10 +117,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without glucose, cellobiose, maltose, and soluble starch. Boil the medium
-    and cool under an atmosphere of N2:CO2 (80:20) and adjust the pH to 6.8. Dispense into Hungate tubes
-    or serum bottles under the same gas atmosphere and seal with rubber stoppers. Add the glucose, cellobiose,
-    maltose, and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH 6.8).
+  description: Prepare the medium without glucose, cellobiose, maltose, and soluble
+    starch. Boil the medium and cool under an atmosphere of N2:CO2 (80:20) and adjust
+    the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas
+    atmosphere and seal with rubber stoppers. Add the glucose, cellobiose, maltose,
+    and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH
+    6.8).
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +134,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.068400Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000751'

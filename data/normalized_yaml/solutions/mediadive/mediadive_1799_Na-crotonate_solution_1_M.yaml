@@ -1,3 +1,4 @@
+id: CultureMech:011227
 preferred_term: Na-crotonate solution (1 M)
 term:
   id: mediadive.solution:1799
@@ -42,3 +43,8 @@ composition:
 preparation_notes: Dissolve crotonic acid in 800 ml distilled water, add around 100
   ml of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000
   ml. Sterilize by filtration under 100% N2 gas atmosphere.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.266983Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011227'

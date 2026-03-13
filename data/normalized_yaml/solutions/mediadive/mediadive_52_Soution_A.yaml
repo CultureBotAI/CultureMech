@@ -1,3 +1,4 @@
+id: CultureMech:014213
 preferred_term: Soution A
 term:
   id: mediadive.solution:52
@@ -56,3 +57,8 @@ preparation_notes: 'Adjust pH to 6.0 with NaOH.
 
 
   Original volume: 900 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.370535Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014213'

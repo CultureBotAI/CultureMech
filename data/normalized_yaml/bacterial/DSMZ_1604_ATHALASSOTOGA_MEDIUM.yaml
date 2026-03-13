@@ -1,3 +1,4 @@
+id: CultureMech:001085
 name: ATHALASSOTOGA MEDIUM
 original_name: ATHALASSOTOGA MEDIUM
 category: bacterial
@@ -180,11 +181,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: First dissolve ferric citrate in water by heating and adjust to pH 6.0, then add other
-    medium ingredients except ferrous chloride, vitamins and cysteine. Sparge medium with 80% N2 and 20%
-    CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1
-    N HCl), vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared
+  description: First dissolve ferric citrate in water by heating and adjust to pH
+    6.0, then add other medium ingredients except ferrous chloride, vitamins and cysteine.
+    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Add ferrous chloride (dissolved in 0.1 N HCl), vitamins
+    (sterilized by filtration) and cysteine from sterile anoxic stock solutions prepared
     under 100% N2 gas. Prior to inoculation check pH and adjust to 6.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
@@ -199,4 +201,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.540873Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:01.077118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001085'

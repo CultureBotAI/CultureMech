@@ -1,3 +1,4 @@
+id: CultureMech:003337
 name: MPOB MEDIUM
 original_name: MPOB MEDIUM
 category: bacterial
@@ -242,14 +243,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Trace vitamins, NaHCO3 and Na2S x 9H2O. Separately autoclave NaHCO3
-    and Na2S x 9H2O (4 and 5% solutions, respectively) under a N2-CO2 atmosphere. Anaerobically and aseptically
-    add the NaHCO3 and Na2S x 9H2O solutions, and filter-sterilized Trace vitamins to the medium. Check
-    final pH to be 7.0 - 7.2. Pressurize the inoculated bottles to 70 kPa N2-CO2 (4:1, v/v).
+  description: Mix ingredients except Trace vitamins, NaHCO3 and Na2S x 9H2O. Separately
+    autoclave NaHCO3 and Na2S x 9H2O (4 and 5% solutions, respectively) under a N2-CO2
+    atmosphere. Anaerobically and aseptically add the NaHCO3 and Na2S x 9H2O solutions,
+    and filter-sterilized Trace vitamins to the medium. Check final pH to be 7.0 -
+    7.2. Pressurize the inoculated bottles to 70 kPa N2-CO2 (4:1, v/v).
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -257,3 +259,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J988'
+- timestamp: '2026-03-13T06:19:19.616146Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003337'

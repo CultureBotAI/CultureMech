@@ -1,3 +1,4 @@
+id: CultureMech:001685
 name: CLOSTRIDIUM SP. MEDIUM
 original_name: CLOSTRIDIUM SP. MEDIUM
 category: bacterial
@@ -39,9 +40,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (note that most of the carbonate remains suspended) and sparge medium
-    with 100% N2 gas for 30 -45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials vials while stirring to keep carbonate suspended and autoclave.
+  description: Dissolve ingredients (note that most of the carbonate remains suspended)
+    and sparge medium with 100% N2 gas for 30 -45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    vials while stirring to keep carbonate suspended and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 54b'
+- timestamp: '2026-03-13T06:19:06.427902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001685'

@@ -1,3 +1,4 @@
+id: CultureMech:005204
 name: For strains of A. cycloheptanicus
 original_name: For strains of A. cycloheptanicus
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:402.1
     label: For strains of A. cycloheptanicus
-notes: 'Source: KOMODO ModelSEED | ID: 402.1 | DSMZ Medium: 402 (mediadive.medium:402) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 402.1 | DSMZ Medium: 402 (mediadive.medium:402)
+  | Aerobic: No'
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -117,3 +119,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 402
+- timestamp: '2026-03-13T06:19:31.026591Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005204'

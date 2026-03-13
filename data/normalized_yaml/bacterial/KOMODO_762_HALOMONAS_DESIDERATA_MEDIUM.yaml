@@ -1,3 +1,4 @@
+id: CultureMech:006417
 name: HALOMONAS DESIDERATA MEDIUM
 original_name: HALOMONAS DESIDERATA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:762
     label: HALOMONAS DESIDERATA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 762 | DSMZ Medium: 762 (mediadive.medium:762) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 762 | DSMZ Medium: 762 (mediadive.medium:762)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -64,3 +66,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 762
+- timestamp: '2026-03-13T06:19:40.570460Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006417'

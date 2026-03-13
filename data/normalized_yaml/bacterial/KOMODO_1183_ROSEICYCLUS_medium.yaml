@@ -1,3 +1,4 @@
+id: CultureMech:003903
 name: ROSEICYCLUS medium
 original_name: ROSEICYCLUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1183
     label: ROSEICYCLUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1183 | DSMZ Medium: 1183 (mediadive.medium:1183) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1183 | DSMZ Medium: 1183 (mediadive.medium:1183)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -177,3 +179,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1183
+- timestamp: '2026-03-13T06:19:23.118505Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003903'

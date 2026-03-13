@@ -1,3 +1,4 @@
+id: CultureMech:010510
 name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
 original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
 category: fungal
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J217'
+- timestamp: '2026-03-13T06:20:14.179648Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010510'

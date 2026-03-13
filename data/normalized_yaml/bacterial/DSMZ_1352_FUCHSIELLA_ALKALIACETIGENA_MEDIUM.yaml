@@ -1,3 +1,4 @@
+id: CultureMech:000811
 name: FUCHSIELLA ALKALIACETIGENA MEDIUM
 original_name: FUCHSIELLA ALKALIACETIGENA MEDIUM
 category: bacterial
@@ -228,10 +229,11 @@ preparation_steps:
   description: 'pH 8.8- 9.5; gas atmosphere: 100% N2.'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve ingredients except the sodium carbonate, sodium bicarbonate, ethanol, and sodium
-    sulphide. Boil medium for a few minutes and cool to room temperature while flushing with N2. Add and
-    dissolve sodium carbonate, sodium bicarbonate and sodium sulphide while gassing the head space only.
-    Dispense and autoclave under N2. Before use add 10 ml/l (v/v) of 50% (v/v) ethanol solution (flushed
+  description: Dissolve ingredients except the sodium carbonate, sodium bicarbonate,
+    ethanol, and sodium sulphide. Boil medium for a few minutes and cool to room temperature
+    while flushing with N2. Add and dissolve sodium carbonate, sodium bicarbonate
+    and sodium sulphide while gassing the head space only. Dispense and autoclave
+    under N2. Before use add 10 ml/l (v/v) of 50% (v/v) ethanol solution (flushed
     and autoclaved under N2).
 applications:
 - Microbial cultivation
@@ -243,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.855866Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:58.527325Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000811'

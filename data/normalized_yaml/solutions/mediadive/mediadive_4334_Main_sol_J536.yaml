@@ -1,3 +1,4 @@
+id: CultureMech:013338
 preferred_term: Main sol. J536
 term:
   id: mediadive.solution:4334
@@ -66,3 +67,8 @@ composition:
 preparation_notes: Autoclave the basal solution under a N2 gas atmosphere. Separately
   filter-sterilize the other solutions and add to the medium anaerobically and aseptically.
   Prepare dithionite solution just before use.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.762259Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013338'

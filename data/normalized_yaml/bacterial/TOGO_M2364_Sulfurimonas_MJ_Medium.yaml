@@ -1,3 +1,4 @@
+id: CultureMech:008949
 name: Sulfurimonas MJ Medium
 original_name: Sulfurimonas MJ Medium
 category: bacterial
@@ -344,6 +345,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:01.495349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008949'
 solutions:
 - preferred_term: Trace element solution
   term:

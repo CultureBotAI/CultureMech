@@ -1,3 +1,4 @@
+id: CultureMech:013902
 preferred_term: Main sol. J957
 term:
   id: mediadive.solution:4979
@@ -151,3 +152,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (80:2
   \ v/v) gas mixture. Aseptically and anaerobically, add the following solutions (autoclaved\
   \ or *filter-sterilized) to the medium: \nFinally, add per liter the following solution\
   \ from an anaerobic stock: \n\nOriginal volume: 1008 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.226389Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013902'

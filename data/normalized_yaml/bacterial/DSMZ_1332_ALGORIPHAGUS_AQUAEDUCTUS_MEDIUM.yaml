@@ -1,3 +1,4 @@
+id: CultureMech:000789
 name: ALGORIPHAGUS AQUAEDUCTUS MEDIUM
 original_name: ALGORIPHAGUS AQUAEDUCTUS MEDIUM
 category: bacterial
@@ -163,7 +164,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 8.0 before autoclaving. The medium may be solidified by adding 15 g/l agar.
+  description: Adjust pH to 8.0 before autoclaving. The medium may be solidified by
+    adding 15 g/l agar.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.
@@ -177,3 +179,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1332'
+- timestamp: '2026-03-13T06:18:58.383026Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000789'

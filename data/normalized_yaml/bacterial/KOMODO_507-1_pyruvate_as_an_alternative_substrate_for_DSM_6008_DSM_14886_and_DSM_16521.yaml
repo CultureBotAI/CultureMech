@@ -1,5 +1,7 @@
+id: CultureMech:005700
 name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM 16521
-original_name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM 16521
+original_name: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM
+  16521
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -9,7 +11,8 @@ media_term:
   term:
     id: komodo.medium:507.1
     label: pyruvate as an alternative substrate for DSM 6008, DSM 14886 and DSM 16521
-notes: 'Source: KOMODO ModelSEED | ID: 507.1 | DSMZ Medium: 507 (mediadive.medium:507) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 507.1 | DSMZ Medium: 507 (mediadive.medium:507)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -205,4 +208,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.802315Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:35.521123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005700'

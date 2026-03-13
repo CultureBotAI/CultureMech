@@ -1,3 +1,4 @@
+id: CultureMech:012645
 preferred_term: Main sol. 1712
 term:
   id: mediadive.solution:3542
@@ -80,3 +81,8 @@ preparation_notes: "The medium was autoclaved and removed from the autoclave at 
   \ was complemented by addition of the following stock solutions: \nAfter adding\
   \ bicarbonate the gas was changed from N2 to N2/CO2 (90/10 %, v/v) and the pH was\
   \ adjusted to 7.2 - 7.4 with sterile 2 M HCL. \n\nOriginal volume: 950 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:27.044845Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012645'

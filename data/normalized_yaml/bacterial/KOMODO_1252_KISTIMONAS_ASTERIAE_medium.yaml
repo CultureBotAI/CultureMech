@@ -1,3 +1,4 @@
+id: CultureMech:004014
 name: KISTIMONAS ASTERIAE medium
 original_name: KISTIMONAS ASTERIAE medium
 category: bacterial
@@ -57,3 +58,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1252
+- timestamp: '2026-03-13T06:19:24.139461Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004014'

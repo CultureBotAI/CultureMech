@@ -1,3 +1,4 @@
+id: CultureMech:013602
 preferred_term: Main sol. J720
 term:
   id: mediadive.solution:4643
@@ -63,3 +64,8 @@ composition:
     label: sodium lactate
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:32.275667Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013602'

@@ -1,3 +1,4 @@
+id: CultureMech:012040
 preferred_term: Mineral Salts Solution
 term:
   id: mediadive.solution:2731
@@ -126,3 +127,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust to pH 7.5 and sterilize by autoclaving. The medium may be
   solidified by adding 12.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.464230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012040'

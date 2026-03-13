@@ -1,3 +1,4 @@
+id: CultureMech:006899
 name: MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
 original_name: MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:956_replace_Methanol_with_Methylamine
     label: MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
-notes: 'Source: KOMODO ModelSEED | ID: 956_replace_Methanol_with_Methylamine | DSMZ Medium: 956 (mediadive.medium:956)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 956_replace_Methanol_with_Methylamine | DSMZ
+  Medium: 956 (mediadive.medium:956) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -74,3 +75,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 956
+- timestamp: '2026-03-13T06:19:44.747577Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006899'

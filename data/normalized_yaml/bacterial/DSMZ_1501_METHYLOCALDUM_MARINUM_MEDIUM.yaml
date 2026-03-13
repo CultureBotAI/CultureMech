@@ -1,3 +1,4 @@
+id: CultureMech:000971
 name: METHYLOCALDUM MARINUM MEDIUM
 original_name: METHYLOCALDUM MARINUM MEDIUM
 category: bacterial
@@ -136,22 +137,25 @@ preparation_steps:
   description: 'Prepare the growth medium as follows:'
 - step_number: 2
   action: AUTOCLAVE
-  description: "Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml of solution 3, 1 ml\
-    \ of\r\nthe trace elements, and 0.1 ml of solution 2. If solid media is required add 1.5% agar.\r\n\
-    Dispense the medium into the growth vessels. If using sealed vessels it is appropriate to\r\nadd 25%\
-    \ methane to the gas phase and autoclave at 121C (15psi) for 15 minutes.\r\nAutoclave the phosphate\
-    \ buffer separately. When the growth medium is cool 10 ml/l of\r\nthe phosphate buffer is added -\
-    \ if too warm the phosphate will precipitate. Liquid\r\ncultures should be grown with shaking."
+  description: "Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml\
+    \ of solution 3, 1 ml of\r\nthe trace elements, and 0.1 ml of solution 2. If solid\
+    \ media is required add 1.5% agar.\r\nDispense the medium into the growth vessels.\
+    \ If using sealed vessels it is appropriate to\r\nadd 25% methane to the gas phase\
+    \ and autoclave at 121C (15psi) for 15 minutes.\r\nAutoclave the phosphate buffer\
+    \ separately. When the growth medium is cool 10 ml/l of\r\nthe phosphate buffer\
+    \ is added - if too warm the phosphate will precipitate. Liquid\r\ncultures should\
+    \ be grown with shaking."
 - step_number: 3
   action: HEAT
   description: May be stored at 4°C in the dark
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up to 1 litre.
+  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up
+    to 1 litre.
 - step_number: 5
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700 ml of 2% NaCl, and then
-    make up to 1 litre with 2% NaCl.
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of 2% NaCl, and then make up to 1 litre with 2% NaCl.
 applications:
 - Microbial cultivation
 curation_history:
@@ -159,3 +163,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1501'
+- timestamp: '2026-03-13T06:19:00.069146Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000971'

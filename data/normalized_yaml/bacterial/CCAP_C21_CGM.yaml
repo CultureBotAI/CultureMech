@@ -1,3 +1,4 @@
+id: CultureMech:000329
 name: CGM
 original_name: CGM
 category: bacterial
@@ -134,8 +135,9 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre Bacteriological Agar\
-    \ (Thermo\r\nScientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
+    \ Bacteriological Agar (Thermo\r\nScientific&trade; Oxoid&trade; Agar No.1). Autoclave\
+    \ at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
   description: 'Ensure elements are added in the following sequence:'
@@ -155,3 +157,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C21'
+- timestamp: '2026-03-13T06:18:54.509843Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000329'

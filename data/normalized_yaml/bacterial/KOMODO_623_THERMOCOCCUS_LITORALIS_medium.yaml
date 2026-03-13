@@ -1,3 +1,4 @@
+id: CultureMech:006129
 name: THERMOCOCCUS LITORALIS medium
 original_name: THERMOCOCCUS LITORALIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:623
     label: THERMOCOCCUS LITORALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 623 | DSMZ Medium: 623 (mediadive.medium:623) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 623 | DSMZ Medium: 623 (mediadive.medium:623)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -132,3 +134,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 623
+- timestamp: '2026-03-13T06:19:38.504668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006129'

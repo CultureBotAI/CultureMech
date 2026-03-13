@@ -1,3 +1,4 @@
+id: CultureMech:004096
 name: FLB medium
 original_name: FLB medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1333
     label: FLB medium
-notes: 'Source: KOMODO ModelSEED | ID: 1333 | DSMZ Medium: 1333 (mediadive.medium:1333) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1333 | DSMZ Medium: 1333 (mediadive.medium:1333)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -45,3 +47,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1333
+- timestamp: '2026-03-13T06:19:24.777412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004096'

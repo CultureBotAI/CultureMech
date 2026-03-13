@@ -1,3 +1,4 @@
+id: CultureMech:014779
 preferred_term: Mail sol. C63
 term:
   id: mediadive.solution:6054
@@ -30,3 +31,8 @@ preparation_notes: "Make up 1 litre of PJ (Main sol. C 76) with deionized water.
   \ to 500 ml with deionized water. Filter through GF/C paper and decant back\r\n\
   into the rest of the PJ (Main sol. C 76). Mix well and autoclave at 15 psi for 15\
   \ minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.513664Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014779'

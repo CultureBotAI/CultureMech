@@ -1,3 +1,4 @@
+id: CultureMech:000833
 name: SUCCINATE MINIMAL SALTS MEDIUM (SMS)
 original_name: SUCCINATE MINIMAL SALTS MEDIUM (SMS)
 category: bacterial
@@ -157,7 +158,8 @@ preparation_steps:
   description: Prepare the medium without the vitamin solution.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave and add the vitamin solution from a filter-sterilised stock solution.
+  description: Autoclave and add the vitamin solution from a filter-sterilised stock
+    solution.
 - step_number: 4
   action: MIX
   description: Incubate strains in liquid culture with air headspace in closed vessels.
@@ -168,3 +170,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1372'
+- timestamp: '2026-03-13T06:18:58.727615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000833'

@@ -1,3 +1,4 @@
+id: CultureMech:008841
 name: Artificial seawater base with thiosulfate as the electron donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
 category: bacterial
@@ -8,12 +9,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined component, Solution'
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
+    component, Solution'
 - preferred_term: thiosulfate
   concentration:
     value: '10'
     unit: MILLIMOLAR
-  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26977
     label: Thiosulfate
@@ -43,3 +46,7 @@ curation_history:
   date: '2026-02-03T11:20:52.902039'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: O2'
+- timestamp: '2026-03-13T06:20:00.679832Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008841'

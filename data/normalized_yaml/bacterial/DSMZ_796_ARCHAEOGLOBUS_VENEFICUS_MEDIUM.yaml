@@ -1,3 +1,4 @@
+id: CultureMech:001940
 name: ARCHAEOGLOBUS VENEFICUS MEDIUM
 original_name: ARCHAEOGLOBUS VENEFICUS MEDIUM
 category: bacterial
@@ -205,3 +206,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.669138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001940'

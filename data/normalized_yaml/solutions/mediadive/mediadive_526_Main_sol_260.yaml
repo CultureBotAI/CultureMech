@@ -1,3 +1,4 @@
+id: CultureMech:014181
 preferred_term: Main sol. 260
 term:
   id: mediadive.solution:526
@@ -127,3 +128,8 @@ composition:
 preparation_notes: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 -
   50 ml amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C. Incubate
   without agitation at 65°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.137619Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014181'

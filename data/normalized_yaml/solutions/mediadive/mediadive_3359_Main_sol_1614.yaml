@@ -1,3 +1,4 @@
+id: CultureMech:012509
 preferred_term: Main sol. 1614
 term:
   id: mediadive.solution:3359
@@ -76,3 +77,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.2. HEPES (10 mM) may be added to keep pH constant.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.281037Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012509'

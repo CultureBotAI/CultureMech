@@ -1,3 +1,4 @@
+id: CultureMech:010654
 preferred_term: Main sol. 524
 term:
   id: mediadive.solution:1159
@@ -217,3 +218,8 @@ preparation_notes: 'Dissolve ingredients except bicarbonate, yeast extract, nitr
 
 
   Original volume: 1007 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.868895Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010654'

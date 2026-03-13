@@ -1,3 +1,4 @@
+id: CultureMech:002284
 name: LIQUID BASAL MEDIUM FOR METHANOSARCINA
 original_name: LIQUID BASAL MEDIUM FOR METHANOSARCINA
 category: bacterial
@@ -235,14 +236,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. After cooling, aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a
+    N2-CO2 (80:20, v/v) gas atmosphere. After cooling, aseptically and anaerobically
+    add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under the same gas mixture and
-    seal with butyl rubber stoppers. Finally, add per liter the following solutions from anaerobic stocks
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under the same
+    gas mixture and seal with butyl rubber stoppers. Finally, add per liter the following
+    solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.2, if necessary.
@@ -253,3 +254,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1107'
+- timestamp: '2026-03-13T06:19:11.983090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002284'

@@ -1,3 +1,4 @@
+id: CultureMech:007050
 name: Modified m63 medium with hydroxyectoine and 2.5 m nacl
 original_name: Modified m63 medium with hydroxyectoine and 2.5 m nacl
 category: bacterial
@@ -57,6 +58,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 15, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.794006Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007050'
 media_term:
   preferred_term: MediaDB Medium 15
   term:

@@ -1,3 +1,4 @@
+id: CultureMech:004115
 name: 1/10 PYGV medium modified
 original_name: 1/10 PYGV medium modified
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1398
     label: 1/10 PYGV medium modified
-notes: 'Source: KOMODO ModelSEED | ID: 1398 | DSMZ Medium: 1398 (mediadive.medium:1398) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1398 | DSMZ Medium: 1398 (mediadive.medium:1398)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase
   concentration:
@@ -145,3 +147,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1398
+- timestamp: '2026-03-13T06:19:24.968272Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004115'

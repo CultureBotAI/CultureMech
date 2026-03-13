@@ -1,3 +1,4 @@
+id: CultureMech:008112
 name: TOGO Medium M1563
 original_name: (Unnamed medium)
 category: bacterial
@@ -61,6 +62,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.569644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008112'
 solutions:
 - preferred_term: Hipolypepton*
   composition: []

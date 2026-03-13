@@ -1,3 +1,4 @@
+id: CultureMech:011378
 preferred_term: Main sol. 958
 term:
   id: mediadive.solution:1975
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.5 with 1M NaOH, autoclave at 121°C for 20 min. Add
   filter sterilized cyanocobalamine solution after autoclaving and cooling.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.258453Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011378'

@@ -1,3 +1,4 @@
+id: CultureMech:012046
 preferred_term: Main sol. 1359
 term:
   id: mediadive.solution:2738
@@ -176,3 +177,8 @@ preparation_notes: 'Prepare the basal medium under nitrogen.
   NaHCO3 solution (autoclaved in sealed, half full vessels under CO2), Na2S x 9H2O
   solution (autoclaved) and vitamin B12 solution (filter sterilised) is added to the
   autoclaved medium and the final pH adjusted to 6.6 - 7.4.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.510154Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012046'

@@ -1,3 +1,4 @@
+id: CultureMech:013321
 preferred_term: Reducing agent solution
 term:
   id: mediadive.solution:4315
@@ -43,3 +44,8 @@ preparation_notes: 'Autoclave and store under a N2 atmosphere.
 
   Comment: For strain JCM 13588, inoculate with a 20% inoculum, and incubate the vessels
   in inverted position.'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.665379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013321'

@@ -1,3 +1,4 @@
+id: CultureMech:009185
 name: Chopped Meat Medium (ATCC 1490) with Formate and Fumarate (ATCC 9733)
 original_name: Chopped Meat Medium (ATCC 1490) with Formate and Fumarate (ATCC 9733)
 category: bacterial
@@ -168,6 +169,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.749759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009185'
 solutions:
 - preferred_term: Formate and Fumarate Solution
   composition: []

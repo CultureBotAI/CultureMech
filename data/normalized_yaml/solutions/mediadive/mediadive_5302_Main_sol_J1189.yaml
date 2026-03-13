@@ -1,3 +1,4 @@
+id: CultureMech:014215
 preferred_term: Main sol. J1189
 term:
   id: mediadive.solution:5302
@@ -76,3 +77,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.384109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014215'

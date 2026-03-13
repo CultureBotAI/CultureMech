@@ -1,3 +1,4 @@
+id: CultureMech:003307
 name: RHODOPSEUDOMONAS RUTILA MEDIUM
 original_name: RHODOPSEUDOMONAS RUTILA MEDIUM
 category: bacterial
@@ -102,3 +103,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J95'
+- timestamp: '2026-03-13T06:19:19.377900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003307'

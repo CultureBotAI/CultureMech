@@ -1,3 +1,4 @@
+id: CultureMech:006434
 name: MEDIUM 777 MODIFIED FOR DSM 14980
 original_name: MEDIUM 777 MODIFIED FOR DSM 14980
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:777_14980
     label: MEDIUM 777 MODIFIED FOR DSM 14980
-notes: 'Source: KOMODO ModelSEED | ID: 777_14980 | DSMZ Medium: 777 (mediadive.medium:777) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 777_14980 | DSMZ Medium: 777 (mediadive.medium:777)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 777_14980'
+- timestamp: '2026-03-13T06:19:40.703880Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006434'

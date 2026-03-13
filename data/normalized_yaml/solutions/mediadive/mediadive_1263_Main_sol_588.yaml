@@ -1,3 +1,4 @@
+id: CultureMech:010754
 preferred_term: Main sol. 588
 term:
   id: mediadive.solution:1263
@@ -129,3 +130,8 @@ preparation_notes: 'pH 6.5
   of a 10% solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100 ml), separately
   under nitrogen using normal anaerobic techniques. Add glucose and PIPES using anaerobic
   techniques.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.329610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010754'

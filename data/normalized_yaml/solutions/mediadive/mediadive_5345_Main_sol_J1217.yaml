@@ -1,3 +1,4 @@
+id: CultureMech:014257
 preferred_term: Main sol. J1217
 term:
   id: mediadive.solution:5345
@@ -115,3 +116,8 @@ preparation_notes: Mix components thoroughly and adjust pH to 6.0-6.5. For prepa
   of solid medium, add per liter 20.0 g agar. Bring to a boil (and dissolve agar),
   cool down and distribute the medium into culture vessels (e.g., 10 ml medium in
   Balch type tubes) under a stream of N2, seal with butyl rubber stoppers and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.642274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014257'

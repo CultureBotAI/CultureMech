@@ -1,3 +1,4 @@
+id: CultureMech:010747
 preferred_term: Solution B
 term:
   id: mediadive.solution:1254
@@ -31,3 +32,8 @@ preparation_notes: 'Autoclave at 121°C and cool to 50 - 55°C.
 
 
   Original volume: 490 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.303952Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010747'

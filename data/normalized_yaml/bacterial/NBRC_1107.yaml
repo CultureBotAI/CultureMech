@@ -1,3 +1,4 @@
+id: CultureMech:007456
 name: '1107'
 original_name: '1107'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 17 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.141509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007456'
 solutions:
 - preferred_term: NaNO31gMgSO4·7H2O0.1gNa2HPO4·2H2O0.5gKH2PO40.22gCaCl2·6H2O0.03gFeSO4·7H2O2mgTrace
     metal solution*1mlDistilled water1LpH 7Dispense the medium into suitable culture

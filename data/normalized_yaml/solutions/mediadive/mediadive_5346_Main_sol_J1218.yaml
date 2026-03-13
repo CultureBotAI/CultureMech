@@ -1,3 +1,4 @@
+id: CultureMech:014258
 preferred_term: Main sol. J1218
 term:
   id: mediadive.solution:5346
@@ -178,3 +179,8 @@ preparation_notes: "Mix components thoroughly and autoclave the medium under a N
   \ in 60 ml-serum bottles) and seal with butyl rubber stoppers. Add per liter the\
   \ following solution (autoclaved and stored under a N2 atmosphere). \n\nOriginal\
   \ volume: 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.651257Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014258'

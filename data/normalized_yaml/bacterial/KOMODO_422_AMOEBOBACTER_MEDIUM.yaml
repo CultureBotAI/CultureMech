@@ -1,3 +1,4 @@
+id: CultureMech:005247
 name: AMOEBOBACTER MEDIUM
 original_name: AMOEBOBACTER MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:422
     label: AMOEBOBACTER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 422 | DSMZ Medium: 422 (mediadive.medium:422) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 422 | DSMZ Medium: 422 (mediadive.medium:422)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Acetate
   term:
@@ -42,3 +44,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 422
+- timestamp: '2026-03-13T06:19:31.303007Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005247'

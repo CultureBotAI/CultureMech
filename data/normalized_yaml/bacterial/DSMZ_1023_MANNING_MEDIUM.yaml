@@ -1,3 +1,4 @@
+id: CultureMech:000445
 name: MANNING MEDIUM
 original_name: MANNING MEDIUM
 category: bacterial
@@ -57,8 +58,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is separately autoclaved and added to the medium. The medium is supplemented
-    with Solution B (yeast extract). Medium pH adjusted by 0.1 N H2SO4 to pH 2.5 - 2.7.
+  description: Solution A is separately autoclaved and added to the medium. The medium
+    is supplemented with Solution B (yeast extract). Medium pH adjusted by 0.1 N H2SO4
+    to pH 2.5 - 2.7.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,4 +71,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.197404Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:55.336138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000445'

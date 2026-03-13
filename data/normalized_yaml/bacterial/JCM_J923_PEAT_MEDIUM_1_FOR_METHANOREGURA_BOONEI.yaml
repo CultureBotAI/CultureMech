@@ -1,3 +1,4 @@
+id: CultureMech:003270
 name: PEAT MEDIUM 1 FOR METHANOREGURA BOONEI
 original_name: PEAT MEDIUM 1 FOR METHANOREGURA BOONEI
 category: bacterial
@@ -220,19 +221,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 5.0 with HCl. Bring to a boil for 5 min, then,
-    cool down under a stream of a N2-CO2 (80:20, v/v) gas mixture. Distribute the medium into Balch-type
-    culture tubes (5 ml each) under the same gas mixture, seal with thick blue butyl rubber stoppers and
-    autoclave.
+  description: Mix components thoroughly and adjust pH to 5.0 with HCl. Bring to a
+    boil for 5 min, then, cool down under a stream of a N2-CO2 (80:20, v/v) gas mixture.
+    Distribute the medium into Balch-type culture tubes (5 ml each) under the same
+    gas mixture, seal with thick blue butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, replace the gas phase with H2-CO2 (80:20, v/v) gas mixture, and
-    add the following solutions to each of the culture tubes (containing 5 ml medium) from sterile anaerobic
-    stocks (autoclaved or *filter-sterilized):'
+  description: 'To complete the medium, replace the gas phase with H2-CO2 (80:20,
+    v/v) gas mixture, and add the following solutions to each of the culture tubes
+    (containing 5 ml medium) from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: MIX
-  description: Check the final pH of the medium to be about 5.1. Pressurize inoculated tubes to 70 kPa
-    H2-CO2 (80:20, v/v).
+  description: Check the final pH of the medium to be about 5.1. Pressurize inoculated
+    tubes to 70 kPa H2-CO2 (80:20, v/v).
 - step_number: 4
   action: FILTER_STERILIZE
   description: Filter-sterilize and store under N2 at 4C in the dark.
@@ -246,4 +247,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.769093Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:19.083724Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003270'

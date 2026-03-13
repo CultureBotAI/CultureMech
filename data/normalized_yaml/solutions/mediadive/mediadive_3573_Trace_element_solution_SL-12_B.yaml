@@ -1,3 +1,4 @@
+id: CultureMech:012672
 preferred_term: Trace element solution SL-12 B
 term:
   id: mediadive.solution:3573
@@ -126,3 +127,8 @@ composition:
 preparation_notes: 'Adjust pH to 6.0.
 
   Filtrate (filter sterilze).'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.169502Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012672'

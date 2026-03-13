@@ -1,3 +1,4 @@
+id: CultureMech:002771
 name: MJYTFSH MEDIUM
 original_name: MJYTFSH MEDIUM
 category: bacterial
@@ -211,17 +212,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Trace vitamins, NaHCO3 and sulfur, adjust pH to 5.5, and autoclave.
-    Filter-sterilize Trace vitamins and 5% NaHCO3 solution, and add to the medium. Steam sulfur for 3
-    hr on each of 3 successive days. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
-    Distribute the medium into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
-    sterilized sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture, sparge for 5 min with the same
-    gas mixture, and seal with butyl rubber stoppers. Prior to inoculation, add the sterilized Na2S x
-    9H2O solution to the medium, and pressurize to 200 kPa H2-CO2 (4:1, v/v). Readjust pH to 5.5, if necessary.
+  description: Mix ingredients, except Trace vitamins, NaHCO3 and sulfur, adjust pH
+    to 5.5, and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3 solution,
+    and add to the medium. Steam sulfur for 3 hr on each of 3 successive days. Separately
+    autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Distribute the medium
+    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
+    sterilized sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture, sparge for
+    5 min with the same gas mixture, and seal with butyl rubber stoppers. Prior to
+    inoculation, add the sterilized Na2S x 9H2O solution to the medium, and pressurize
+    to 200 kPa H2-CO2 (4:1, v/v). Readjust pH to 5.5, if necessary.
 - step_number: 2
   action: MIX
-  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01 g/L SrCl2 x H2O, 0.01
-    g/L NaBr and 0.01 g/L KI.
+  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01
+    g/L SrCl2 x H2O, 0.01 g/L NaBr and 0.01 g/L KI.
 applications:
 - Microbial cultivation
 curation_history:
@@ -229,3 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J417'
+- timestamp: '2026-03-13T06:19:15.606095Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002771'

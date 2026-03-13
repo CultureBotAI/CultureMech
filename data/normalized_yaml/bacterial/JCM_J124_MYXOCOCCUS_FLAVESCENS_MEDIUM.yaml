@@ -1,3 +1,4 @@
+id: CultureMech:002416
 name: MYXOCOCCUS FLAVESCENS MEDIUM
 original_name: MYXOCOCCUS FLAVESCENS MEDIUM
 category: bacterial
@@ -79,3 +80,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J124'
+- timestamp: '2026-03-13T06:19:13.128212Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002416'

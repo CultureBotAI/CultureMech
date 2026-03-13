@@ -1,3 +1,4 @@
+id: CultureMech:002315
 name: TEPIDIBACILLUS DECATURENSIS MEDIUM
 original_name: TEPIDIBACILLUS DECATURENSIS MEDIUM
 category: bacterial
@@ -269,13 +270,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (80:20, v/v) gas
-    mixture. When the medium is cooled to around 50C, add the following components:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
+    (80:20, v/v) gas mixture. When the medium is cooled to around 50C, add the following
+    components:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Continue flushing with the gas mixture until the chemicals are dissolved completely. Distribute
-    the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave.
-    After cooling, add per liter the following solutions (autoclave and stored under a N2 atmosphere):'
+  description: 'Continue flushing with the gas mixture until the chemicals are dissolved
+    completely. Distribute the medium into culture vessels under the same gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the
+    following solutions (autoclave and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -283,3 +286,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1142'
+- timestamp: '2026-03-13T06:19:12.264906Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002315'

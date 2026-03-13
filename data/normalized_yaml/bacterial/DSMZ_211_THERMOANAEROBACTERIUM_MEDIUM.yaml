@@ -1,3 +1,4 @@
+id: CultureMech:001309
 name: THERMOANAEROBACTERIUM MEDIUM
 original_name: THERMOANAEROBACTERIUM MEDIUM
 category: bacterial
@@ -222,15 +223,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose, vitamins and sulfide), adjust pH to 6.0, sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense under same gas atmosphere into Hungate-type
-    tubes or serum vials and autoclave. After sterilization add glucose and sulfide from anoxic stock
-    solutions autoclaved under 100% N2 gas and vitamins from a filter-sterilized anoxic stock solution
+  description: Dissolve ingredients (except glucose, vitamins and sulfide), adjust
+    pH to 6.0, sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    under same gas atmosphere into Hungate-type tubes or serum vials and autoclave.
+    After sterilization add glucose and sulfide from anoxic stock solutions autoclaved
+    under 100% N2 gas and vitamins from a filter-sterilized anoxic stock solution
     prepared under 100% N2. Adjust pH of complete medium to 6.0 - 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -241,4 +244,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.527194Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:03.111824Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001309'

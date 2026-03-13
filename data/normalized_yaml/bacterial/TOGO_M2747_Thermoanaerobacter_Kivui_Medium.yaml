@@ -1,3 +1,4 @@
+id: CultureMech:009298
 name: Thermoanaerobacter Kivui Medium
 original_name: Thermoanaerobacter Kivui Medium
 category: bacterial
@@ -262,6 +263,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:05.367372Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009298'
 solutions:
 - preferred_term: CaCl2 x 2 H2O solution (0.1% w/v)
   composition: []

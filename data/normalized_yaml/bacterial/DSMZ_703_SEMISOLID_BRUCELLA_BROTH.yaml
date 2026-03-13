@@ -1,3 +1,4 @@
+id: CultureMech:001842
 name: SEMISOLID BRUCELLA BROTH
 original_name: SEMISOLID BRUCELLA BROTH
 category: bacterial
@@ -50,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 703'
+- timestamp: '2026-03-13T06:19:07.655547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001842'

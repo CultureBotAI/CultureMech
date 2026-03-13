@@ -1,3 +1,4 @@
+id: CultureMech:011742
 preferred_term: Main sol. 1184
 term:
   id: mediadive.solution:2364
@@ -127,3 +128,8 @@ composition:
 preparation_notes: 'The medium may be solidified by adding 20.0 g/l agar.
 
   For solid medium add the NaCl after autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.660577Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011742'

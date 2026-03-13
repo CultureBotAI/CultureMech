@@ -1,3 +1,4 @@
+id: CultureMech:005646
 name: Brucella Broth (Becton Dickinson)
 original_name: Brucella Broth (Becton Dickinson)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:5006
     label: Brucella Broth (Becton Dickinson)
-notes: 'Source: KOMODO ModelSEED | ID: 5006 | DSMZ Medium: 5006 (mediadive.medium:5006) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5006 | DSMZ Medium: 5006 (mediadive.medium:5006)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5006'
+- timestamp: '2026-03-13T06:19:34.924792Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005646'

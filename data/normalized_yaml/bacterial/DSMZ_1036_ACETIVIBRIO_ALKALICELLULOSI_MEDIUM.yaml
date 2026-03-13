@@ -1,3 +1,4 @@
+id: CultureMech:000459
 name: ACETIVIBRIO ALKALICELLULOSI MEDIUM
 original_name: ACETIVIBRIO ALKALICELLULOSI MEDIUM
 category: bacterial
@@ -165,15 +166,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cellobiose and sulfide, then sparge medium with 100% N2 gas
-    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add cellobiose after autoclaving from an anoxic stock solution
-    prepared under 100% N2 gas sterilized by filtration and sulfide from a sterile anoxic stock solution
+  description: Dissolve ingredients except cellobiose and sulfide, then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    cellobiose after autoclaving from an anoxic stock solution prepared under 100%
+    N2 gas sterilized by filtration and sulfide from a sterile anoxic stock solution
     autoclaved under 100% N2 gas. Adjust pH of the complete medium to pH 8.8-9.0.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -181,3 +183,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1036'
+- timestamp: '2026-03-13T06:18:55.498153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000459'

@@ -1,3 +1,4 @@
+id: CultureMech:007584
 name: Aminobacterium Shuijingfangii Medium
 original_name: Aminobacterium Shuijingfangii Medium
 category: bacterial
@@ -108,6 +109,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 8 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:49.860120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007584'
 solutions:
 - preferred_term: 1% CaCl2・2H2O solution
   composition: []

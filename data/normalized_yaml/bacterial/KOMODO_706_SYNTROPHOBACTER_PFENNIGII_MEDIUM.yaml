@@ -1,11 +1,12 @@
+id: CultureMech:006338
 name: SYNTROPHOBACTER PFENNIGII MEDIUM
 original_name: SYNTROPHOBACTER PFENNIGII MEDIUM
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.4
-notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 706 | DSMZ Medium: 706 (mediadive.medium:706)
-  | Aerobic: No'
+notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 706 | DSMZ Medium:
+  706 (mediadive.medium:706) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 706
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 706'
+- timestamp: '2026-03-13T06:19:39.857105Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006338'

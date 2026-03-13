@@ -1,3 +1,4 @@
+id: CultureMech:013096
 preferred_term: Main sol. J324
 term:
   id: mediadive.solution:4041
@@ -231,3 +232,8 @@ preparation_notes: 'Mix ingredients except Trace vitamins, NaHCO3, sulfur and Na
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.386066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013096'

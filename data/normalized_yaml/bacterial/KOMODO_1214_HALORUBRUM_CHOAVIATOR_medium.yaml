@@ -1,3 +1,4 @@
+id: CultureMech:003965
 name: HALORUBRUM CHOAVIATOR medium
 original_name: HALORUBRUM CHOAVIATOR medium
 category: bacterial
@@ -62,4 +63,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1214
+- timestamp: '2026-03-13T06:19:23.726576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003965'
 high_metal: true

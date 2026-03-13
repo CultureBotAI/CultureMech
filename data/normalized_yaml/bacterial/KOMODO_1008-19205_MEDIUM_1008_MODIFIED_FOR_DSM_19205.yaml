@@ -1,3 +1,4 @@
+id: CultureMech:003511
 name: MEDIUM 1008 MODIFIED FOR DSM 19205
 original_name: MEDIUM 1008 MODIFIED FOR DSM 19205
 category: bacterial
@@ -52,4 +53,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1008
+- timestamp: '2026-03-13T06:19:20.300922Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003511'
 ph_value: 7.5

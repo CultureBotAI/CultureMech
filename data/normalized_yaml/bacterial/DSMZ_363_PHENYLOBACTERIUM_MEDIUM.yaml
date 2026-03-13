@@ -1,3 +1,4 @@
+id: CultureMech:001464
 name: PHENYLOBACTERIUM MEDIUM
 original_name: PHENYLOBACTERIUM MEDIUM
 category: bacterial
@@ -136,3 +137,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 363'
+- timestamp: '2026-03-13T06:19:04.395935Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001464'

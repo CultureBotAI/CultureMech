@@ -1,3 +1,4 @@
+id: CultureMech:011192
 preferred_term: Main sol. 852
 term:
   id: mediadive.solution:1740
@@ -78,3 +79,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: For solid media add 10 g/l bacteriological agar. Adjust to pH 6.8.
   After sterilization of the medium add filter sterilized salt solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.064979Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011192'

@@ -1,3 +1,4 @@
+id: CultureMech:009309
 name: TOGO Medium M2759
 original_name: (Unnamed medium)
 category: bacterial
@@ -217,6 +218,10 @@ curation_history:
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Documented molar unit conflict for NaCl
+- timestamp: '2026-03-13T06:20:05.497776Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009309'
 high_metal: true
 solutions:
 - preferred_term: 100× mineral solution

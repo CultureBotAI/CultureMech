@@ -1,3 +1,4 @@
+id: CultureMech:013465
 preferred_term: Solution C
 term:
   id: mediadive.solution:4488
@@ -43,3 +44,8 @@ preparation_notes: "Autoclave under a N2 atmosphere.\nAseptically and anaerobica
   \ combine Solutions A, B and C in the culture vessels. Then, add (per liter) the\
   \ following solutions (autoclaved and stored under a N2 atmosphere): \nComment:\
   \ For strain JCM 14728, incubate with a 5% inoculum.\n\nOriginal volume: 30 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.469230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013465'

@@ -1,3 +1,4 @@
+id: CultureMech:002212
 name: RUMEN BACTERIA MEDIUM
 original_name: RUMEN BACTERIA MEDIUM
 category: bacterial
@@ -187,10 +188,11 @@ preparation_steps:
   description: 'Adjust pH to 6.7 - 6.8; gas atmosphere: 100% CO2.'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbohydrates, Na2CO3, cysteine and sodium sulfide in distilled
-    water, boil for 5 min, then cool to room temperature while gassing with 100% CO2. Add Na2CO3 and equilibrate
-    the medium with the gas to pH 6.8. Distribute under CO2 in rubber-stoppered tubes (i.e. Hungate tubes)
-    and autoclave. Thereafter add carbohydrate mixture, cysteine and sodium sulfide from concentrated
+  description: Dissolve ingredients except carbohydrates, Na2CO3, cysteine and sodium
+    sulfide in distilled water, boil for 5 min, then cool to room temperature while
+    gassing with 100% CO2. Add Na2CO3 and equilibrate the medium with the gas to pH
+    6.8. Distribute under CO2 in rubber-stoppered tubes (i.e. Hungate tubes) and autoclave.
+    Thereafter add carbohydrate mixture, cysteine and sodium sulfide from concentrated
     sterile stock solutions (prepared anaerobically under N2 gas and autoclaved).
 applications:
 - Microbial cultivation
@@ -199,3 +201,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1029'
+- timestamp: '2026-03-13T06:19:11.286870Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002212'

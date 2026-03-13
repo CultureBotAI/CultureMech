@@ -1,3 +1,4 @@
+id: CultureMech:009617
 name: PETC-MES medium
 original_name: PETC-MES medium
 category: bacterial
@@ -282,6 +283,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:07.553319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009617'
 solutions:
 - preferred_term: Trace metal solution
   term:

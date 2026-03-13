@@ -1,3 +1,4 @@
+id: CultureMech:014008
 preferred_term: Main sol. J1039
 term:
   id: mediadive.solution:5095
@@ -201,3 +202,8 @@ preparation_notes: "Mix components, except NaHCO3 and vitamin solution, and brin
   \ of H2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave. Prior to\
   \ inoculation, add per liter the following solutions (autoclaved or *filter-sterilized\
   \ and stored under a N2 atmosphere). \n\nOriginal volume: 1023 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.980241Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014008'

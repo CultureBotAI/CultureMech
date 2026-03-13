@@ -1,3 +1,4 @@
+id: CultureMech:011461
 preferred_term: Main sol. 1011b
 term:
   id: mediadive.solution:2060
@@ -194,3 +195,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, glucose, vitamins, cy
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.867278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011461'

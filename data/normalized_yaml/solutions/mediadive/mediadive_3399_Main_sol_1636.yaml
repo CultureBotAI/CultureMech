@@ -1,3 +1,4 @@
+id: CultureMech:012539
 preferred_term: Main sol. 1636
 term:
   id: mediadive.solution:3399
@@ -146,3 +147,8 @@ preparation_notes: 'Dissolve ingredients (except calcium chloride, bicarbonate, 
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.449594Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012539'

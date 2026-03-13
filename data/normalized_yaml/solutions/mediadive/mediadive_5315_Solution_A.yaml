@@ -1,3 +1,4 @@
+id: CultureMech:014226
 preferred_term: Solution A
 term:
   id: mediadive.solution:5315
@@ -67,3 +68,8 @@ preparation_notes: 'Adjust pH 2.5 with H2SO4 and autoclave.
 
 
   Original volume: 900 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.437671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014226'

@@ -1,3 +1,4 @@
+id: CultureMech:010917
 preferred_term: Main sol. 694
 term:
   id: mediadive.solution:1445
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole
   source of carbon.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.359356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010917'

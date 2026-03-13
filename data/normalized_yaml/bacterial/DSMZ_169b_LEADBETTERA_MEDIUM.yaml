@@ -1,3 +1,4 @@
+id: CultureMech:001181
 name: LEADBETTERA MEDIUM
 original_name: LEADBETTERA MEDIUM
 category: bacterial
@@ -211,21 +212,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A (except cysteine) and sparge medium with 100% N2 gas
-    for 30 - 45 min to make it anoxic. Add cysteine and adjust pH 7.2 with KOH, then distribute under
-    the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclave. Solution B is autoclaved
-    separately under 80% N2 and 20% CO2 gas atmosphere, solution C is autoclaved under 100% N2 gas atmosphere
-    and solutions D and E are sterilized by filtration under 100% N2 gas atmosphere. To complete the medium
-    appropriate amounts of solutions B, C, D and E are added to the sterile solution A in the sequence
-    as indicated. Final pH of the complete medium should be 7.5.
+  description: Dissolve ingredients of solution A (except cysteine) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add cysteine and adjust pH
+    7.2 with KOH, then distribute under the same gas atmosphere in anoxic Hungate-type
+    tubes or serum vials and autoclave. Solution B is autoclaved separately under
+    80% N2 and 20% CO2 gas atmosphere, solution C is autoclaved under 100% N2 gas
+    atmosphere and solutions D and E are sterilized by filtration under 100% N2 gas
+    atmosphere. To complete the medium appropriate amounts of solutions B, C, D and
+    E are added to the sterile solution A in the sequence as indicated. Final pH of
+    the complete medium should be 7.5.
 - step_number: 2
   action: MIX
-  description: Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO4 stock solution to reach a
-    pH of around 7.4.
+  description: Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO4 stock
+    solution to reach a pH of around 7.4.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,3 +236,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 169b'
+- timestamp: '2026-03-13T06:19:01.977714Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001181'

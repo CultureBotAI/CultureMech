@@ -1,3 +1,4 @@
+id: CultureMech:001879
 name: RHODOBIUM MEDIUM
 original_name: RHODOBIUM MEDIUM
 category: bacterial
@@ -129,8 +130,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Boil the medium under a stream of nitrogen gas for few minutes and distribute in screw-capped
-    bottles or tubes. Autoclave at 121°C for 15 minutes.
+  description: Boil the medium under a stream of nitrogen gas for few minutes and
+    distribute in screw-capped bottles or tubes. Autoclave at 121°C for 15 minutes.
 - step_number: 2
   action: MIX
   description: pH 6.8
@@ -145,3 +146,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:08.085241Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001879'

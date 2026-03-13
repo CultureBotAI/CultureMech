@@ -1,3 +1,4 @@
+id: CultureMech:003171
 name: DEHALOCOCCOIDES MEDIUM
 original_name: DEHALOCOCCOIDES MEDIUM
 category: bacterial
@@ -266,27 +267,31 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2 atmosphere. Add the
-    following solutions from anaerobic stocks, then dispense the medium into culture vessels leaving 40
-    to 50% volume of a gas phase (e.g., 30 ml of the medium in a 50 ml serum bottle) and autoclave under
-    a N2 atmosphere:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2
+    atmosphere. Add the following solutions from anaerobic stocks, then dispense the
+    medium into culture vessels leaving 40 to 50% volume of a gas phase (e.g., 30
+    ml of the medium in a 50 ml serum bottle) and autoclave under a N2 atmosphere:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'After cooling, replace the gas phase with a N2-CO2-H2 (8:1:1, v/v) gas mixture. Add per
-    liter the following filter-sterilized solutions from anaerobic stocks:'
+  description: 'After cooling, replace the gas phase with a N2-CO2-H2 (8:1:1, v/v)
+    gas mixture. Add per liter the following filter-sterilized solutions from anaerobic
+    stocks:'
 - step_number: 3
   action: ADJUST_PH
   description: Check final pH to be about 7.2.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: 'To complete the medium, add per liter the following filter-sterilized chlorosolvent:'
+  description: 'To complete the medium, add per liter the following filter-sterilized
+    chlorosolvent:'
 - step_number: 5
   action: FILTER_STERILIZE
-  description: To prepare anaerobic water, boil 1.0 L distilled water and cool down under a stream of
-    oxygen-free N2 gas. Mix components under N2 gas. Adjust pH to 9.0 with NaOH. Slowly add 9.6 ml of
-    20% TiCl3 to the chelator solution. Keep the pH above 2.0 by the addition of anaerobic saturated Na2CO3
-    solution. Adjust pH to 7.0 with Na2CO3 solution, adjust pH to 7.0 and bring the final volume to 500
-    ml with the anaerobic water. Filter-sterilize and keep the solution under a N2 gas atmosphere.
+  description: To prepare anaerobic water, boil 1.0 L distilled water and cool down
+    under a stream of oxygen-free N2 gas. Mix components under N2 gas. Adjust pH to
+    9.0 with NaOH. Slowly add 9.6 ml of 20% TiCl3 to the chelator solution. Keep the
+    pH above 2.0 by the addition of anaerobic saturated Na2CO3 solution. Adjust pH
+    to 7.0 with Na2CO3 solution, adjust pH to 7.0 and bring the final volume to 500
+    ml with the anaerobic water. Filter-sterilize and keep the solution under a N2
+    gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -294,3 +299,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J827'
+- timestamp: '2026-03-13T06:19:18.328783Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003171'

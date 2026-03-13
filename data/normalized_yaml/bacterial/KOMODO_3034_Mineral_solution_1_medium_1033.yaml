@@ -1,3 +1,4 @@
+id: CultureMech:004814
 name: Mineral solution 1 (medium 1033)
 original_name: Mineral solution 1 (medium 1033)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3034'
+- timestamp: '2026-03-13T06:19:28.842064Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004814'

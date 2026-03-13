@@ -1,3 +1,4 @@
+id: CultureMech:000622
 name: METHYLOMICROBIUM MEDIUM
 original_name: METHYLOMICROBIUM MEDIUM
 category: bacterial
@@ -136,10 +137,11 @@ preparation_steps:
   description: 'Final pH of the medium: 8.5-9.0'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into the culture vessels. For small volumes serum bottles or Hungate
-    tubes may be used. The gas phase to liquid ratio should be about 10:1. Use a gas phase containing
-    air, 50% methane and autoclave at 121°C for 15 minutes. When the growth medium is cool the NaHCO3,
-    the Na2CO3 and phosphate buffer are added.
+  description: Dispense the medium into the culture vessels. For small volumes serum
+    bottles or Hungate tubes may be used. The gas phase to liquid ratio should be
+    about 10:1. Use a gas phase containing air, 50% methane and autoclave at 121°C
+    for 15 minutes. When the growth medium is cool the NaHCO3, the Na2CO3 and phosphate
+    buffer are added.
 - step_number: 3
   action: MIX
   description: Liquid cultures should be grown with shaking.
@@ -153,3 +155,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1180'
+- timestamp: '2026-03-13T06:18:56.866952Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000622'

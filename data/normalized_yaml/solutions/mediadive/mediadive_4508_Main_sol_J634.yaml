@@ -1,3 +1,4 @@
+id: CultureMech:013480
 preferred_term: Main sol. J634
 term:
   id: mediadive.solution:4508
@@ -153,3 +154,8 @@ preparation_notes: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O 
   butyl rubber stoppers and autoclave. Separately autoclave L-cysteine x HCl x H2O
   and Na2S x 9H2O as 5% solutions under a N2 atmosphere. Prior to inoculation, add
   L-cysteine x HCl x H2O and Na2S x 9H2O solutions anaerobically.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.551204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013480'

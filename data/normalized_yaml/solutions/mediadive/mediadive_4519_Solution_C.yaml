@@ -1,3 +1,4 @@
+id: CultureMech:013488
 preferred_term: Solution C
 term:
   id: mediadive.solution:4519
@@ -35,3 +36,8 @@ preparation_notes: 'Autoclave Solutions A and B separately and filter-sterilize 
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.586511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013488'

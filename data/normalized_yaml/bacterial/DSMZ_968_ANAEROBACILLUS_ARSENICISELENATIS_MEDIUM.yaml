@@ -1,3 +1,4 @@
+id: CultureMech:002149
 name: ANAEROBACILLUS ARSENICISELENATIS MEDIUM
 original_name: ANAEROBACILLUS ARSENICISELENATIS MEDIUM
 category: bacterial
@@ -183,15 +184,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, hydrogencarbonate and reducing agents), then sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate, adjust
-    pH to 9.8, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.
+  description: Dissolve ingredients (except carbonate, hydrogencarbonate and reducing
+    agents), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Add solid carbonate and bicarbonate, adjust pH to 9.8, dispense medium under 100%
+    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Before inoculation, add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. Adjust pH of complete medium to 9.8, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,3 +201,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 968'
+- timestamp: '2026-03-13T06:19:10.763306Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002149'

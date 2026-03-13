@@ -1,3 +1,4 @@
+id: CultureMech:011220
 preferred_term: Cysteine solutions
 term:
   id: mediadive.solution:1784
@@ -31,3 +32,8 @@ preparation_notes: "To 50 ml of boiled and cooled distilled or deionized H2O add
   \ g of L-cysteine hydrochloride\r\n. Adjust pH to 10 with 3N NaOH and store under\
   \ N2 in a serum bottle sealed with a butyl rubber stopper.\n\nOriginal volume: 50\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:18.227422Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011220'

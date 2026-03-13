@@ -1,3 +1,4 @@
+id: CultureMech:014759
 preferred_term: Main sol. 328
 term:
   id: mediadive.solution:602
@@ -129,3 +130,8 @@ preparation_notes: 'Adjust pH to 6.9.
   temperature while gassing with 100% CO2, add cysteine-HCl and adjust pH to 6.9 with
   8 N NaOH while gassing is continued. Switch to 100% N2 gas after pH has reached
   the desired value, distribute in anaerobic tubes under nitrogen, and autoclave.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.436933Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014759'

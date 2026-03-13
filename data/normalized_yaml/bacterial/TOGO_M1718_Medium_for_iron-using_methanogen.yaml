@@ -1,3 +1,4 @@
+id: CultureMech:008281
 name: Medium for iron-using methanogen
 original_name: Medium for iron-using methanogen
 category: bacterial
@@ -325,6 +326,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:55.218965Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008281'
 high_metal: true
 solutions:
 - preferred_term: Iron granule (1-2 mm)***

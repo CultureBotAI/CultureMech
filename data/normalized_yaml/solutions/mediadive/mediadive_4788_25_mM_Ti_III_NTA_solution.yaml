@@ -1,3 +1,4 @@
+id: CultureMech:013730
 preferred_term: 25 mM Ti(III) NTA solution
 term:
   id: mediadive.solution:4788
@@ -37,3 +38,8 @@ preparation_notes: 'To prepare anaerobic water, boil 1.0 L distilled water and c
 
 
   Original volume: 300 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.136426Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013730'

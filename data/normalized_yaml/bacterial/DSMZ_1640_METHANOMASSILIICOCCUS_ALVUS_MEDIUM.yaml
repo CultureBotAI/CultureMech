@@ -1,3 +1,4 @@
+id: CultureMech:001125
 name: METHANOMASSILIICOCCUS ALVUS MEDIUM
 original_name: METHANOMASSILIICOCCUS ALVUS MEDIUM
 category: bacterial
@@ -29,15 +30,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Suspend Anaerobe Basal Broth in distilled water. Adjust pH to 7.4 with 1N NaOH and bring
-    to the boil to dissolve ingredients completely. Then cool medium to room temperature while sparging
-    with 100% N2 gas to make it anoxic. Distribute medium under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. After sterilization add methanol from an
-    anoxic stock solution autoclaved under 100% N2 gas atmosphere. Adjust pH of complete medium to 7.4
-    - 7.6, if necessary.
+  description: Suspend Anaerobe Basal Broth in distilled water. Adjust pH to 7.4 with
+    1N NaOH and bring to the boil to dissolve ingredients completely. Then cool medium
+    to room temperature while sparging with 100% N2 gas to make it anoxic. Distribute
+    medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    to 30% of their volume and autoclave. After sterilization add methanol from an
+    anoxic stock solution autoclaved under 100% N2 gas atmosphere. Adjust pH of complete
+    medium to 7.4 - 7.6, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation, add sterile 80% H2 and 20% CO2 gas mixture to 0.5 bar overpressure.
+  description: After inoculation, add sterile 80% H2 and 20% CO2 gas mixture to 0.5
+    bar overpressure.
 - step_number: 3
   action: MIX
   description: 'Note: Use 10% (v/v) inoculum.'
@@ -48,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1640'
+- timestamp: '2026-03-13T06:19:01.414466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001125'

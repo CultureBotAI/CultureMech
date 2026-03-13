@@ -1,3 +1,4 @@
+id: CultureMech:010275
 name: Desulfohalobium Medium
 original_name: Desulfohalobium Medium
 category: bacterial
@@ -160,6 +161,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:12.611018Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010275'
 solutions:
 - preferred_term: Solution A
   term:

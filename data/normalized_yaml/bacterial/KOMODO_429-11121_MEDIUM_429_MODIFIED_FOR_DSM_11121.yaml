@@ -1,3 +1,4 @@
+id: CultureMech:005257
 name: MEDIUM 429 MODIFIED FOR DSM 11121
 original_name: MEDIUM 429 MODIFIED FOR DSM 11121
 category: bacterial
@@ -71,3 +72,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 429
+- timestamp: '2026-03-13T06:19:31.353732Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005257'

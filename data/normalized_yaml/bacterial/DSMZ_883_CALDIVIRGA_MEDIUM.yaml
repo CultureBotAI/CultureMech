@@ -1,3 +1,4 @@
+id: CultureMech:002043
 name: CALDIVIRGA MEDIUM
 original_name: CALDIVIRGA MEDIUM
 category: bacterial
@@ -191,17 +192,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide, then adjust the
-    pH to 3.5 with 4 N H2SO4. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then dispense
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials which contain already the
-    appropriate amount of sulfur, only to 30% of their volume to allow for a large headspace. Autoclave
-    at <b>105°C</b> for 20 min. Prior to inoculation add yeast extract, vitamins (sterilized by filtration)
-    and sulfide from anoxic stock solutions prepared under 100% N2 gas atmosphere. The final pH of the
-    complete medium should be around 4.0.
+  description: Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide,
+    then adjust the pH to 3.5 with 4 N H2SO4. Sparge medium with 100% N2 gas for 30
+    - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials which contain already the appropriate amount
+    of sulfur, only to 30% of their volume to allow for a large headspace. Autoclave
+    at <b>105°C</b> for 20 min. Prior to inoculation add yeast extract, vitamins (sterilized
+    by filtration) and sulfide from anoxic stock solutions prepared under 100% N2
+    gas atmosphere. The final pH of the complete medium should be around 4.0.
 - step_number: 2
   action: MIX
-  description: After inoculation, pressurize the cultivation vessels to 1 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation, pressurize the cultivation vessels to 1 bar overpressure
+    with sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -219,4 +221,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.720643Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:09.730077Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002043'

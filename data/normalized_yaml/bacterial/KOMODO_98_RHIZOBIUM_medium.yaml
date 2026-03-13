@@ -1,3 +1,4 @@
+id: CultureMech:006961
 name: RHIZOBIUM medium
 original_name: RHIZOBIUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:98
     label: RHIZOBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 98 | DSMZ Medium: 98 (mediadive.medium:98) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 98 | DSMZ Medium: 98 (mediadive.medium:98)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 98
+- timestamp: '2026-03-13T06:19:45.284092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006961'

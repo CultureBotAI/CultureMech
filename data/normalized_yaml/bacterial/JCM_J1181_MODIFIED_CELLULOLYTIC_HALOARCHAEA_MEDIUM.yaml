@@ -1,3 +1,4 @@
+id: CultureMech:002353
 name: MODIFIED CELLULOLYTIC HALOARCHAEA MEDIUM
 original_name: MODIFIED CELLULOLYTIC HALOARCHAEA MEDIUM
 category: bacterial
@@ -239,4 +240,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1181'
+- timestamp: '2026-03-13T06:19:12.632147Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002353'
 high_metal: true

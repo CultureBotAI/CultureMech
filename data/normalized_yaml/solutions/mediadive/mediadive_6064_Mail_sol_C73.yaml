@@ -1,3 +1,4 @@
+id: CultureMech:014782
 preferred_term: Mail sol. C73
 term:
   id: mediadive.solution:6064
@@ -19,3 +20,8 @@ preparation_notes: "Using aseptic technique, make up to 1 litre with sterile dei
   \ water. It may be necessary\r\nto decant supernatant from precipitate in final\
   \ medium.\nAlternatively, after autoclaving, it might be necessary to filter through\
   \ 0.2 micron filter\r\n(removes precipitates etc)."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.527616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014782'

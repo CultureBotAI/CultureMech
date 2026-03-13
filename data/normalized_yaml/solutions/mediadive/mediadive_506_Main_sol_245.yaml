@@ -1,3 +1,4 @@
+id: CultureMech:013985
 preferred_term: Main sol. 245
 term:
   id: mediadive.solution:506
@@ -10,3 +11,8 @@ composition:
   term:
     id: mediadive.compound:1717
     label: Defibrinated sheep blood
+curation_history:
+- timestamp: '2026-03-13T06:20:34.815722Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013985'

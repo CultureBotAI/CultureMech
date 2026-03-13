@@ -1,3 +1,4 @@
+id: CultureMech:004166
 name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
 original_name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1457
     label: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1457 | DSMZ Medium: 1457 (mediadive.medium:1457) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1457 | DSMZ Medium: 1457 (mediadive.medium:1457)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:
@@ -226,3 +228,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1457
+- timestamp: '2026-03-13T06:19:25.577640Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004166'

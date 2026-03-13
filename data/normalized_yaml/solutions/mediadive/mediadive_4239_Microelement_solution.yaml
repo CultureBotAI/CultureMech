@@ -1,3 +1,4 @@
+id: CultureMech:013252
 preferred_term: Microelement solution
 term:
   id: mediadive.solution:4239
@@ -111,3 +112,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:30.320239Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013252'

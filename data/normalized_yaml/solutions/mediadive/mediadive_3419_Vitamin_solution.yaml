@@ -1,3 +1,4 @@
+id: CultureMech:012555
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:3419
@@ -136,3 +137,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Filter-sterilized the vitamin solution
+curation_history:
+- timestamp: '2026-03-13T06:20:26.531951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012555'

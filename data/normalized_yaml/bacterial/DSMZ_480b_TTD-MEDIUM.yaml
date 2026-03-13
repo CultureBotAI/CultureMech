@@ -1,3 +1,4 @@
+id: CultureMech:001607
 name: TTD-MEDIUM
 original_name: TTD-MEDIUM
 category: bacterial
@@ -215,14 +216,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add to the medium 0.5% casitone and 2.5% NaCl (marine source). Adjust pH to 5.7 with hydrochloric
-    acid before sterilization. Sterilize the medium by heating for 1 h at 90 - 100°C on three successive
-    days. Before use add 30.0 ml/l of 5% (w/v) sterile, anaerobic NaHCO3-solution, vitamins and sulfide.
-    Final pH should be 6.5.
+  description: Add to the medium 0.5% casitone and 2.5% NaCl (marine source). Adjust
+    pH to 5.7 with hydrochloric acid before sterilization. Sterilize the medium by
+    heating for 1 h at 90 - 100°C on three successive days. Before use add 30.0 ml/l
+    of 5% (w/v) sterile, anaerobic NaHCO3-solution, vitamins and sulfide. Final pH
+    should be 6.5.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.240882Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:05.627414Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001607'

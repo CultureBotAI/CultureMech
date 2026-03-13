@@ -1,16 +1,20 @@
-name: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
-original_name: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
+id: CultureMech:004345
+name: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2 x 2
+  H2O
+original_name: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2
+  x 2 H2O
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2070_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
-  | DSMZ Medium: 2070 (mediadive.medium:2070) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2070_replace_CaCl2 x 2 H2O_with_CaCl2
+  x 2 H2O | DSMZ Medium: 2070 (mediadive.medium:2070) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 2070_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
   term:
     id: komodo.medium:2070_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
-    label: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O
+    label: Trace metal solution (Kelly solution T)_replace_CaCl2 x 2 H2O_with_CaCl2
+      x 2 H2O
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +23,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2070_replace_CaCl2 x 2 H2O_with_CaCl2 x 2 H2O'
+- timestamp: '2026-03-13T06:19:26.634861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004345'

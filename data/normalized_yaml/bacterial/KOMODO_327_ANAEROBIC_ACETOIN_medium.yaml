@@ -1,3 +1,4 @@
+id: CultureMech:005020
 name: ANAEROBIC ACETOIN medium
 original_name: ANAEROBIC ACETOIN medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:327
     label: ANAEROBIC ACETOIN medium
-notes: 'Source: KOMODO ModelSEED | ID: 327 | DSMZ Medium: 327 (mediadive.medium:327) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 327 | DSMZ Medium: 327 (mediadive.medium:327)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 327'
+- timestamp: '2026-03-13T06:19:29.572985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005020'

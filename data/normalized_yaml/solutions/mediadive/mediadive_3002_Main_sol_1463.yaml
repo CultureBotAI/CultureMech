@@ -1,3 +1,4 @@
+id: CultureMech:012237
 preferred_term: Main sol. 1463
 term:
   id: mediadive.solution:3002
@@ -71,3 +72,8 @@ preparation_notes: "Add all the components together, except calcium chloride whi
   \ culture of DSM 25223 or transfer some material with an inoculation loop from the\
   \ lysis zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for\
   \ approximately 48 h."
+curation_history:
+- timestamp: '2026-03-13T06:20:24.693581Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012237'

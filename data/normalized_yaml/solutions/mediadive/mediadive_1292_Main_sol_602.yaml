@@ -1,3 +1,4 @@
+id: CultureMech:010782
 preferred_term: Main sol. 602
 term:
   id: mediadive.solution:1292
@@ -103,3 +104,8 @@ preparation_notes: 'pH 8.0
 
   Autoclave and add, on cooling 20.0 ml sterile Hutner''s salts (see medium 590),
   1.0 ml vitamin solution, and 20.0 ml sterile phosphate supplement.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.502573Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010782'

@@ -1,11 +1,12 @@
+id: CultureMech:006680
 name: MEDIUM 86 MODIFIED FOR DSM 19627
 original_name: MEDIUM 86 MODIFIED FOR DSM 19627
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
-notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 86_19627 | DSMZ Medium: 86 (mediadive.medium:86)
-  | Aerobic: No'
+notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 86_19627 |
+  DSMZ Medium: 86 (mediadive.medium:86) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 86_19627
   term:
@@ -129,3 +130,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 86
+- timestamp: '2026-03-13T06:19:42.930898Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006680'

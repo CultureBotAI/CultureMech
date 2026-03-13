@@ -1,3 +1,4 @@
+id: CultureMech:006858
 name: SALINIBACTER RUBER medium
 original_name: SALINIBACTER RUBER medium
 category: bacterial
@@ -76,4 +77,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 936
+- timestamp: '2026-03-13T06:19:44.418598Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006858'
 high_metal: true

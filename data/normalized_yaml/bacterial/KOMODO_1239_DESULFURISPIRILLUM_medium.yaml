@@ -1,3 +1,4 @@
+id: CultureMech:003996
 name: DESULFURISPIRILLUM medium
 original_name: DESULFURISPIRILLUM medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1239
     label: DESULFURISPIRILLUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1239 | DSMZ Medium: 1239 (mediadive.medium:1239) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1239 | DSMZ Medium: 1239 (mediadive.medium:1239)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaHCO3
   term:
@@ -141,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1239
+- timestamp: '2026-03-13T06:19:23.976562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003996'

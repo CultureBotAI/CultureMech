@@ -1,3 +1,4 @@
+id: CultureMech:001677
 name: TRYPTONE SOYA BROTH (TSB)
 original_name: TRYPTONE SOYA BROTH (TSB)
 category: bacterial
@@ -46,9 +47,10 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: "Note:\r\nThe following brands are used at the DSMZ:\r\nDifco™ Trypton-Soja-Bouillon (Soja-Caseinpepton-Bouillon)\
-    \ BD 211825. \r\nBBL™ Trypticase Soja-Bouillon (Caseinpepton-Soja-Bouillon) BD 211768. \r\nOxoid Tryptone\
-    \ Soy Broth (Casein soya bean digest medium) CM0129\r\nMerck Tryptic Soy Broth (CASO-Bouillon) 105459"
+  description: "Note:\r\nThe following brands are used at the DSMZ:\r\nDifco™ Trypton-Soja-Bouillon\
+    \ (Soja-Caseinpepton-Bouillon) BD 211825. \r\nBBL™ Trypticase Soja-Bouillon (Caseinpepton-Soja-Bouillon)\
+    \ BD 211768. \r\nOxoid Tryptone Soy Broth (Casein soya bean digest medium) CM0129\r\
+    \nMerck Tryptic Soy Broth (CASO-Bouillon) 105459"
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 545'
+- timestamp: '2026-03-13T06:19:06.392093Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001677'

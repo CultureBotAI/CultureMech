@@ -1,3 +1,4 @@
+id: CultureMech:011947
 preferred_term: Main sol. 1308
 term:
   id: mediadive.solution:2613
@@ -137,3 +138,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: The cysteine, Na2CO3, and vitamin B12 are added after the medium
   has been boiled and cooled under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.953542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011947'

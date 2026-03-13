@@ -1,3 +1,4 @@
+id: CultureMech:005878
 name: SPHAEROTILUS medium
 original_name: SPHAEROTILUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:51
     label: SPHAEROTILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 51 | DSMZ Medium: 51 (mediadive.medium:51) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 51 | DSMZ Medium: 51 (mediadive.medium:51)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -34,3 +36,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 51
+- timestamp: '2026-03-13T06:19:37.001316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005878'

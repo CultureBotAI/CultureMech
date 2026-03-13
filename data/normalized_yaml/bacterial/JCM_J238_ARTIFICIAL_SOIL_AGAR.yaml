@@ -1,3 +1,4 @@
+id: CultureMech:002598
 name: ARTIFICIAL SOIL AGAR
 original_name: ARTIFICIAL SOIL AGAR
 category: bacterial
@@ -88,8 +89,8 @@ preparation_steps:
   description: Adjust pH to 6.6-6.8.
 - step_number: 2
   action: HEAT
-  description: To prepare soil extract, equal volumes of leafy soil and tap water are boiled for 2 hr
-    and then cleared by centrifugation.
+  description: To prepare soil extract, equal volumes of leafy soil and tap water
+    are boiled for 2 hr and then cleared by centrifugation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,3 +98,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J238'
+- timestamp: '2026-03-13T06:19:14.450157Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002598'

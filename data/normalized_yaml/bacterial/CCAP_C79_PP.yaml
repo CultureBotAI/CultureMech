@@ -1,3 +1,4 @@
+id: CultureMech:000392
 name: PP
 original_name: PP
 category: bacterial
@@ -46,8 +47,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "The stock solutions are those for SES. Make up to 1 litre with distilled water. For agar\
-    \ add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for 15 minutes."
+  description: "The stock solutions are those for SES. Make up to 1 litre with distilled\
+    \ water. For agar add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for\
+    \ 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -55,3 +57,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C79'
+- timestamp: '2026-03-13T06:18:54.917102Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000392'

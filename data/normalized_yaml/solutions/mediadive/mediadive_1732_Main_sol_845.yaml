@@ -1,3 +1,4 @@
+id: CultureMech:011183
 preferred_term: Main sol. 845
 term:
   id: mediadive.solution:1732
@@ -122,3 +123,8 @@ preparation_notes: 'Dissolve ingredients except trace elements, vitamins and cat
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.001760Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011183'

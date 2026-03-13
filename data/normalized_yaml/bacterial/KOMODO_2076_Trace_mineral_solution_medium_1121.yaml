@@ -1,3 +1,4 @@
+id: CultureMech:004353
 name: Trace mineral solution (medium 1121)
 original_name: Trace mineral solution (medium 1121)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2076
     label: Trace mineral solution (medium 1121)
-notes: 'Source: KOMODO ModelSEED | ID: 2076 | DSMZ Medium: 2076 (mediadive.medium:2076) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2076 | DSMZ Medium: 2076 (mediadive.medium:2076)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2076'
+- timestamp: '2026-03-13T06:19:26.647317Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004353'

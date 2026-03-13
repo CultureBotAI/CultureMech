@@ -1,3 +1,4 @@
+id: CultureMech:001580
 name: PLATES WITH FLUORANTHENE
 original_name: PLATES WITH FLUORANTHENE
 category: bacterial
@@ -239,3 +240,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.346912Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001580'

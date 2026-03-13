@@ -1,3 +1,4 @@
+id: CultureMech:006650
 name: SPIRILLUM D427 medium
 original_name: SPIRILLUM D427 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:845
     label: SPIRILLUM D427 medium
-notes: 'Source: KOMODO ModelSEED | ID: 845 | DSMZ Medium: 845 (mediadive.medium:845) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 845 | DSMZ Medium: 845 (mediadive.medium:845)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -187,3 +189,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 845
+- timestamp: '2026-03-13T06:19:42.689803Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006650'

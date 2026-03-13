@@ -1,3 +1,4 @@
+id: CultureMech:014097
 preferred_term: Main sol. J1101
 term:
   id: mediadive.solution:5187
@@ -130,3 +131,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2 atmospher
   \ and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following\
   \ solution (autoclaved and stored under a N2 gas atmosphere): \nAdjust pH to 9.0,\
   \ if necessary.\n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.565039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014097'

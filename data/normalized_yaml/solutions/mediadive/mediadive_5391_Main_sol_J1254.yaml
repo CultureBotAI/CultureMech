@@ -1,3 +1,4 @@
+id: CultureMech:014301
 preferred_term: Main sol. J1254
 term:
   id: mediadive.solution:5391
@@ -199,3 +200,8 @@ preparation_notes: Dissolve components in distilled water and bring volume to 1.
   L. For preparation of solid medium, add 20.0 g/L agar (if necessary, use washed
   agar as described in the recipe of Medium No. 574). After autoclaving, adjust pH
   to 9.0 by the addition of 10% (w/v) Na2CO3 solution (autoclaved).
+curation_history:
+- timestamp: '2026-03-13T06:20:36.931818Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014301'

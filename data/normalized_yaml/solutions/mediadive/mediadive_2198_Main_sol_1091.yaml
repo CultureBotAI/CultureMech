@@ -1,3 +1,4 @@
+id: CultureMech:011589
 preferred_term: Main sol. 1091
 term:
   id: mediadive.solution:2198
@@ -162,3 +163,8 @@ composition:
 preparation_notes: "Add after autoclaving: \nFinal pH 7.4\nYeast extract and sodium\
   \ pyruvate are added from sterile (autoclaved) stock solutions to the respective\
   \ concentrations."
+curation_history:
+- timestamp: '2026-03-13T06:20:20.638043Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011589'

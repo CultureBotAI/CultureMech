@@ -1,3 +1,4 @@
+id: CultureMech:009859
 name: TSA Hemin Menadione Medium
 original_name: TSA Hemin Menadione Medium
 category: bacterial
@@ -76,6 +77,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.436800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009859'
 solutions:
 - preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
   composition: []

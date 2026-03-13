@@ -1,3 +1,4 @@
+id: CultureMech:000797
 name: CARBON MONOXIDE OXIDIZER MEDIUM
 original_name: CARBON MONOXIDE OXIDIZER MEDIUM
 category: bacterial
@@ -124,11 +125,13 @@ preparation_steps:
   description: Dissolve ingredients, adjust pH to 7.0 and autoclave.
 - step_number: 2
   action: MIX
-  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20 - 80% carbon monoxide
-    + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding 2.50 g NaHCO3 per liter of medium.
+  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20
+    - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding
+    2.50 g NaHCO3 per liter of medium.
 - step_number: 3
   action: MIX
-  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate under air atmosphere.
+  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate
+    under air atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -136,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 133'
+- timestamp: '2026-03-13T06:18:58.425698Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000797'

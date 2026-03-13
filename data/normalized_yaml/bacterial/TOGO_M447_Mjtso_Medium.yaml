@@ -1,3 +1,4 @@
+id: CultureMech:009833
 name: Mjtso Medium
 original_name: Mjtso Medium
 category: bacterial
@@ -252,6 +253,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.252173Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009833'
 solutions:
 - preferred_term: Trace mineral solution (see below)
   composition: []

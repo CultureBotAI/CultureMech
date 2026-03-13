@@ -1,3 +1,4 @@
+id: CultureMech:000956
 name: TSB-GLUCOSE MEDIUM
 original_name: TSB-GLUCOSE MEDIUM
 category: bacterial
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1489'
+- timestamp: '2026-03-13T06:18:59.891610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000956'

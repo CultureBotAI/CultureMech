@@ -1,3 +1,4 @@
+id: CultureMech:008311
 name: medium-H
 original_name: medium-H
 category: bacterial
@@ -18,7 +19,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:64220
     label: monosodium glutamate
@@ -26,7 +28,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -56,3 +59,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:55.592646Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008311'

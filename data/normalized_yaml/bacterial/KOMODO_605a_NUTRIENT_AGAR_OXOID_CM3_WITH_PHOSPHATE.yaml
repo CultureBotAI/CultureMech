@@ -1,3 +1,4 @@
+id: CultureMech:006094
 name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:605a
     label: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
-notes: 'Source: KOMODO ModelSEED | ID: 605a | DSMZ Medium: 605a (mediadive.medium:605a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 605a | DSMZ Medium: 605a (mediadive.medium:605a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -62,3 +64,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 605
+- timestamp: '2026-03-13T06:19:38.217097Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006094'

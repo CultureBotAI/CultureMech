@@ -1,3 +1,4 @@
+id: CultureMech:003873
 name: THIOPHAEOCOCCUS MANGROVI medium
 original_name: THIOPHAEOCOCCUS MANGROVI medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1162
     label: THIOPHAEOCOCCUS MANGROVI medium
-notes: 'Source: KOMODO ModelSEED | ID: 1162 | DSMZ Medium: 1162 (mediadive.medium:1162) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1162 | DSMZ Medium: 1162 (mediadive.medium:1162)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -159,3 +161,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1162
+- timestamp: '2026-03-13T06:19:22.858443Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003873'

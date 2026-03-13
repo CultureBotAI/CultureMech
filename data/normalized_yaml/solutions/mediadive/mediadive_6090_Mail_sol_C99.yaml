@@ -1,3 +1,4 @@
+id: CultureMech:014796
 preferred_term: Mail sol. C99
 term:
   id: mediadive.solution:6090
@@ -19,3 +20,8 @@ preparation_notes: "Put a layer about 1 cm deep of air-dried, sieved good calcar
   \ (longer for larger vessels) on\r\neach of 2 consecutive days; further sterilisation\
   \ is not needed. Allow to stand for a\r\nfurther day before inoculating, when the\
   \ pH should be between 7.0 - 8.0."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.574357Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014796'

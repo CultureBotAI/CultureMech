@@ -1,3 +1,4 @@
+id: CultureMech:013653
 preferred_term: Main sol. J761
 term:
   id: mediadive.solution:4701
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "Autoclave at 121C for 15 min. Cool to 55C and aseptically add\
   \ the following filter-sterilized solutions: \nWarm serum and yeast extract solution\
   \ to 55C before adding to the basal medium. Adjust pH to 7.4&;0.2 (final)."
+curation_history:
+- timestamp: '2026-03-13T06:20:32.619500Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013653'

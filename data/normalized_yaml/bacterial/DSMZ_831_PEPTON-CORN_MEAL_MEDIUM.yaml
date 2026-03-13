@@ -1,3 +1,4 @@
+id: CultureMech:001989
 name: PEPTON-CORN MEAL MEDIUM
 original_name: PEPTON-CORN MEAL MEDIUM
 category: bacterial
@@ -54,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 831'
+- timestamp: '2026-03-13T06:19:09.138830Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001989'

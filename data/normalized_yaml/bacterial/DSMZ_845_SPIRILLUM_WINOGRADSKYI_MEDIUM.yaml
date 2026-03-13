@@ -1,3 +1,4 @@
+id: CultureMech:002001
 name: SPIRILLUM WINOGRADSKYI MEDIUM
 original_name: SPIRILLUM WINOGRADSKYI MEDIUM
 category: bacterial
@@ -179,18 +180,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except trace elements, vitamins and catalase, adjust pH to 7.2 - 7.4,
-    bring medium to the boil and cool to room temperature under 100% N2 gas atmosphere. Dispense under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. To complete the medium
-    add trace elements, vitamins and catalase from sterile anoxic stock solutions prepared under 100%
-    N2 gas atmosphere. Vitamins and catalase should be sterilized by filtration. After inoculation, inject
-    sterile air into the culture vessel up to about 20% of the total gas volume (i.e., 4 parts N2 and
-    1 part air).
+  description: Dissolve ingredients except trace elements, vitamins and catalase,
+    adjust pH to 7.2 - 7.4, bring medium to the boil and cool to room temperature
+    under 100% N2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. To complete the medium add trace elements,
+    vitamins and catalase from sterile anoxic stock solutions prepared under 100%
+    N2 gas atmosphere. Vitamins and catalase should be sterilized by filtration. After
+    inoculation, inject sterile air into the culture vessel up to about 20% of the
+    total gas volume (i.e., 4 parts N2 and 1 part air).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
-    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
-    volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,3 +200,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 845'
+- timestamp: '2026-03-13T06:19:09.282336Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002001'

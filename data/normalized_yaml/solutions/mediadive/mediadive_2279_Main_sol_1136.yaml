@@ -1,3 +1,4 @@
+id: CultureMech:011663
 preferred_term: Main sol. 1136
 term:
   id: mediadive.solution:2279
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust to pH 7.0
 
   Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber
   septum under a stream of nitrogen gas.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.104532Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011663'

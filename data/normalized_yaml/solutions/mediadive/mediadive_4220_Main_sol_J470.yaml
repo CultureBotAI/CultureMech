@@ -1,3 +1,4 @@
+id: CultureMech:013241
 preferred_term: Main sol. J470
 term:
   id: mediadive.solution:4220
@@ -123,3 +124,8 @@ preparation_notes: 'Dissolve ingredients except FeSO4 x 7H2O, NaHCO3, yeast extr
 
 
   Original volume: 1022 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.256485Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013241'

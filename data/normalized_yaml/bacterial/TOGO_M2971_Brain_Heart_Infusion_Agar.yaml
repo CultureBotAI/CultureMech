@@ -1,3 +1,4 @@
+id: CultureMech:009494
 name: Brain Heart Infusion Agar
 original_name: Brain Heart Infusion Agar
 category: bacterial
@@ -22,3 +23,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2971'
+- timestamp: '2026-03-13T06:20:06.407464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009494'

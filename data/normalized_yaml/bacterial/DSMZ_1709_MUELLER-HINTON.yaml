@@ -1,3 +1,4 @@
+id: CultureMech:001190
 name: MUELLER-HINTON
 original_name: MUELLER-HINTON
 category: bacterial
@@ -46,3 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1709'
+- timestamp: '2026-03-13T06:19:02.067002Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001190'

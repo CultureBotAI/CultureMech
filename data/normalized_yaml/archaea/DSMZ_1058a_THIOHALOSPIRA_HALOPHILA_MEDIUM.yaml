@@ -1,3 +1,4 @@
+id: CultureMech:000245
 name: THIOHALOSPIRA HALOPHILA MEDIUM
 original_name: THIOHALOSPIRA HALOPHILA MEDIUM
 category: archaea
@@ -195,4 +196,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1058a'
+- timestamp: '2026-03-13T06:18:53.738713Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000245'
 high_metal: true

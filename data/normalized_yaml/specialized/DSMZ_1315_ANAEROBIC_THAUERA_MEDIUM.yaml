@@ -1,3 +1,4 @@
+id: CultureMech:015338
 name: ANAEROBIC THAUERA MEDIUM
 original_name: ANAEROBIC THAUERA MEDIUM
 category: specialized
@@ -242,27 +243,29 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Distribute to gas tight vessels, gas with 90% N2 +10% CO2 to achieve anaerobic conditions
-    and autoclave. After cooling, add the phosphate solution, substrate solution, vitamin solution and
-    trace element solution. After mixing, pH should be 7.1 - 7.5.
+  description: Distribute to gas tight vessels, gas with 90% N2 +10% CO2 to achieve
+    anaerobic conditions and autoclave. After cooling, add the phosphate solution,
+    substrate solution, vitamin solution and trace element solution. After mixing,
+    pH should be 7.1 - 7.5.
 - step_number: 2
   action: AUTOCLAVE
   description: Distribute to gas tight vessels under N2, autoclave.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Filter sterilize and gas with N2. For strains DSM 12141, DSM 12142, DSM 11243 and DSM 12144,
-    acetate may be replaced by Na-capronate (stock solution 2.76 g/100 ml).
+  description: Filter sterilize and gas with N2. For strains DSM 12141, DSM 12142,
+    DSM 11243 and DSM 12144, acetate may be replaced by Na-capronate (stock solution
+    2.76 g/100 ml).
 - step_number: 4
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 6
   action: AUTOCLAVE
-  description: First dissolve NaOH, subsequently the metal salts. Distribute to gas tight vessels under
-    N2, autoclave.
+  description: First dissolve NaOH, subsequently the metal salts. Distribute to gas
+    tight vessels under N2, autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -270,3 +273,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1315'
+- timestamp: '2026-03-13T06:20:41.946209Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015338'

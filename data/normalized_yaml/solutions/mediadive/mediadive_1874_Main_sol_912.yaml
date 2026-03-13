@@ -1,3 +1,4 @@
+id: CultureMech:011295
 preferred_term: Main sol. 912
 term:
   id: mediadive.solution:1874
@@ -206,3 +207,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, rumen fluid, vitam
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.739298Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011295'

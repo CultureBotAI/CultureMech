@@ -1,3 +1,4 @@
+id: CultureMech:013885
 preferred_term: Main sol. J944
 term:
   id: mediadive.solution:4962
@@ -143,3 +144,8 @@ preparation_notes: "Mix components thoroughly, and autoclave under a N2-CO2 (80:
   \ solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):\
   \ \nPressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).\n\nOriginal\
   \ volume: 1012 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.090885Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013885'

@@ -1,3 +1,4 @@
+id: CultureMech:000974
 name: CM MEDIUM
 original_name: CM MEDIUM
 category: bacterial
@@ -67,7 +68,8 @@ preparation_steps:
   description: pH 7.4 (NaOH)
 - step_number: 2
   action: MIX
-  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml per liter medium.
+  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml
+    per liter medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1504'
+- timestamp: '2026-03-13T06:19:00.087032Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000974'

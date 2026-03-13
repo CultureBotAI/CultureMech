@@ -1,3 +1,4 @@
+id: CultureMech:006270
 name: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
 original_name: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:674
     label: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
-notes: 'Source: KOMODO ModelSEED | ID: 674 | DSMZ Medium: 674 (mediadive.medium:674) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 674 | DSMZ Medium: 674 (mediadive.medium:674)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -79,3 +81,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 674
+- timestamp: '2026-03-13T06:19:39.398139Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006270'

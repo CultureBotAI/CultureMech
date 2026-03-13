@@ -1,3 +1,4 @@
+id: CultureMech:004605
 name: MEDIUM 232 MODIFIED FOR DSM 6306
 original_name: MEDIUM 232 MODIFIED FOR DSM 6306
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:232_6306
     label: MEDIUM 232 MODIFIED FOR DSM 6306
-notes: 'Source: KOMODO ModelSEED | ID: 232_6306 | DSMZ Medium: 232 (mediadive.medium:232) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 232_6306 | DSMZ Medium: 232 (mediadive.medium:232)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -82,3 +84,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 232
+- timestamp: '2026-03-13T06:19:27.623868Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004605'

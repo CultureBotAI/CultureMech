@@ -1,3 +1,4 @@
+id: CultureMech:010901
 preferred_term: Main sol. 675
 term:
   id: mediadive.solution:1426
@@ -58,3 +59,8 @@ preparation_notes: 'Adjust pH between 5.6 - 5.8.
   the mixture is cool and settled, the supernatant is carefully decanted, filtered
   through paper, autoclaved in 200 ml quantities, and stored at room temperature until
   cleared by sedimentation.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.239804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010901'

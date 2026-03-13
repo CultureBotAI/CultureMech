@@ -1,3 +1,4 @@
+id: CultureMech:012159
 preferred_term: Mineral Salts Solution A
 term:
   id: mediadive.solution:2894
@@ -55,3 +56,8 @@ preparation_notes: 'Adjust pH to 7.5
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.244351Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012159'

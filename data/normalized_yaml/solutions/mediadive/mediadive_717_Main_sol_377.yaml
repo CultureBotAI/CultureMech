@@ -1,3 +1,4 @@
+id: CultureMech:015123
 preferred_term: Main sol. 377
 term:
   id: mediadive.solution:717
@@ -226,3 +227,8 @@ preparation_notes: Dissolve ingredients except for sulfur, peptone, yeast extrac
   sulfur. Sterilize the medium by autoclaving at <b>110°C</b> for 20 min. After sterilization,
   add peptone and yeast extract from sterile stock solutions prepared under 100% N2
   gas atmosphere and sulfide from a neutralized stock solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:40.899586Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015123'

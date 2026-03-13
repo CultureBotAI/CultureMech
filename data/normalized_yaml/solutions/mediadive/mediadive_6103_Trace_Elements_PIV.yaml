@@ -1,3 +1,4 @@
+id: CultureMech:014805
 preferred_term: Trace Elements (PIV)
 term:
   id: mediadive.solution:6103
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Ensure elements are added in the following sequence:
 
   Once elements are dissolved autoclave at 15 psi for 15 minutes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.610042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014805'

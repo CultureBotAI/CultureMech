@@ -1,3 +1,4 @@
+id: CultureMech:010056
 name: Clostridium SW Medium
 original_name: Clostridium SW Medium
 category: bacterial
@@ -151,6 +152,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.011361Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010056'
 solutions:
 - preferred_term: Solution A
   term:

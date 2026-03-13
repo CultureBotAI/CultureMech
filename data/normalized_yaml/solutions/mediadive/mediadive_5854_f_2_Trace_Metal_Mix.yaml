@@ -1,3 +1,4 @@
+id: CultureMech:014671
 preferred_term: f/2 Trace Metal Mix
 term:
   id: mediadive.solution:5854
@@ -87,3 +88,8 @@ composition:
     label: manganese(II) sulfate
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:38.983936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014671'

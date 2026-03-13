@@ -1,3 +1,4 @@
+id: CultureMech:002961
 name: BACILLUS FUMARIOLI MEDIUM
 original_name: BACILLUS FUMARIOLI MEDIUM
 category: bacterial
@@ -65,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J614'
+- timestamp: '2026-03-13T06:19:16.834758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002961'

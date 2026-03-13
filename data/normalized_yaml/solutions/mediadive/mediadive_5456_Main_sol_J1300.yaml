@@ -1,3 +1,4 @@
+id: CultureMech:014360
 preferred_term: Main sol. J1300
 term:
   id: mediadive.solution:5456
@@ -128,3 +129,8 @@ preparation_notes: "Mix components thoroughly. Distribute the medium in culture 
   \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add\
   \ per 900 ml the following solution (autoclaved under a N2 atmosphere): \nAdjust\
   \ pH to 7.0, if necessary."
+curation_history:
+- timestamp: '2026-03-13T06:20:37.297655Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014360'

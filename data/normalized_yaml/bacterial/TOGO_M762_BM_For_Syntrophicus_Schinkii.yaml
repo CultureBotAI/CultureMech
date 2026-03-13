@@ -1,3 +1,4 @@
+id: CultureMech:010169
 name: BM For Syntrophicus Schinkii
 original_name: BM For Syntrophicus Schinkii
 category: bacterial
@@ -119,6 +120,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.816607Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010169'
 solutions:
 - preferred_term: Trace metal solution (see Medium [M288])
   composition: []

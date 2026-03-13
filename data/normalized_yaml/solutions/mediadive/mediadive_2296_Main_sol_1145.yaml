@@ -1,3 +1,4 @@
+id: CultureMech:011677
 preferred_term: Main sol. 1145
 term:
   id: mediadive.solution:2296
@@ -93,3 +94,8 @@ preparation_notes: "Each of the solutions (A, B, and C) is prepared with anaerob
   \ medium to gas phase ratio should be about 1:10 (v:v). \r\nSterilise the medium\
   \ by heating at 100° C for 3 hours on three consecutive days (e.g., in a water bath).\n\
   Add  4% O2 for microaerophilic conditions."
+curation_history:
+- timestamp: '2026-03-13T06:20:21.179702Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011677'

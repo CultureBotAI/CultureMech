@@ -1,3 +1,4 @@
+id: CultureMech:005642
 name: Isovitalex
 original_name: Isovitalex
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5001
     label: Isovitalex
-notes: 'Source: KOMODO ModelSEED | ID: 5001 | DSMZ Medium: 5001 (mediadive.medium:5001) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5001 | DSMZ Medium: 5001 (mediadive.medium:5001)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5001'
+- timestamp: '2026-03-13T06:19:34.918945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005642'

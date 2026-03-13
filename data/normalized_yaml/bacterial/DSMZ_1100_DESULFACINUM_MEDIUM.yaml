@@ -1,3 +1,4 @@
+id: CultureMech:000533
 name: DESULFACINUM MEDIUM
 original_name: DESULFACINUM MEDIUM
 category: bacterial
@@ -176,22 +177,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, lactate and sulfide) and sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add lactate and sulfide form sterile anoxic stock solutions prepared
-    under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
-    CO2 gas mixture. Adjust pH of the complete medium to 7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate, lactate and sulfide) and
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add lactate and sulfide form sterile anoxic stock solutions prepared under 100%
+    N2 gas and bicarbonate from a sterile anoxic stock solution prepared under 80%
+    N2 and 20% CO2 gas mixture. Adjust pH of the complete medium to 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
-    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
-    volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
-    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
-    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
-    M H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,3 +206,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.147113Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000533'

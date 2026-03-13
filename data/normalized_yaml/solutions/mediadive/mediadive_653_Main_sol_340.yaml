@@ -1,3 +1,4 @@
+id: CultureMech:015060
 preferred_term: Main sol. 340
 term:
   id: mediadive.solution:653
@@ -90,3 +91,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0.
 
   Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.580686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015060'

@@ -1,3 +1,4 @@
+id: CultureMech:014772
 preferred_term: Mail sol. C56
 term:
   id: mediadive.solution:6047
@@ -96,3 +97,8 @@ preparation_notes: "Prepare the following primary stocks solutions first.\nTo pr
   For 1/2 strength Modified Provasoli add 10 ml sterile stock per litre of sterile\
   \ 30 ppt filtered\r\nseawater (950mls filtered seawater: 40mls deionised water)\n\
   For agar add 15g per litre Bacteriological Agar."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.487397Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014772'

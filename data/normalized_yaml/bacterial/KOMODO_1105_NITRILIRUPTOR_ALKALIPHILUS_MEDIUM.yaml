@@ -1,3 +1,4 @@
+id: CultureMech:003805
 name: NITRILIRUPTOR ALKALIPHILUS MEDIUM
 original_name: NITRILIRUPTOR ALKALIPHILUS MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1105
     label: NITRILIRUPTOR ALKALIPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1105 | DSMZ Medium: 1105 (mediadive.medium:1105) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1105 | DSMZ Medium: 1105 (mediadive.medium:1105)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -144,5 +146,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.855211Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:22.373681Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003805'
 ph_value: 10.0

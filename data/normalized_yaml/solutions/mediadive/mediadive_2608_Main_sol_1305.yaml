@@ -1,3 +1,4 @@
+id: CultureMech:011943
 preferred_term: Main sol. 1305
 term:
   id: mediadive.solution:2608
@@ -124,3 +125,8 @@ composition:
     confidence: 0.9
     match_type: synonym_match_ambiguous
 preparation_notes: pH not adjusted. Sterilize at 121°C for 20 min.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.930616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011943'

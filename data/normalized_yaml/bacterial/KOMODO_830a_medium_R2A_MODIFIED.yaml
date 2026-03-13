@@ -1,3 +1,4 @@
+id: CultureMech:006620
 name: medium R2A MODIFIED
 original_name: medium R2A MODIFIED
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:830a
     label: medium R2A MODIFIED
-notes: 'Source: KOMODO ModelSEED | ID: 830a | DSMZ Medium: 830a (mediadive.medium:830a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830a | DSMZ Medium: 830a (mediadive.medium:830a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -141,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 830
+- timestamp: '2026-03-13T06:19:42.420947Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006620'

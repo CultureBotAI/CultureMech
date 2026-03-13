@@ -1,3 +1,4 @@
+id: CultureMech:000775
 name: MODIFIED NUTRIENT AGAR
 original_name: MODIFIED NUTRIENT AGAR
 category: bacterial
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1317'
+- timestamp: '2026-03-13T06:18:58.265441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000775'

@@ -1,3 +1,4 @@
+id: CultureMech:001562
 name: GLUCOSE MEDIUM (NAKAYAMA)
 original_name: GLUCOSE MEDIUM (NAKAYAMA)
 category: bacterial
@@ -100,3 +101,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 452'
+- timestamp: '2026-03-13T06:19:05.199579Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001562'

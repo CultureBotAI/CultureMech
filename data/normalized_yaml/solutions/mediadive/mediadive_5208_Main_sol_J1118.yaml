@@ -1,3 +1,4 @@
+id: CultureMech:014117
 preferred_term: Main sol. J1118
 term:
   id: mediadive.solution:5208
@@ -79,3 +80,8 @@ preparation_notes: "Mix components, adjust pH to 6.5 with NaOH, then distribute 
   \ medium into culture vessels (e.g., 50 ml per 120 ml serum bottles), seal with\
   \ butyl rubber stoppers and autoclave at 110C for 5 min. After cooling, add per\
   \ liter the following solutions (filter-sterilized): \n\nOriginal volume: 1024 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.708776Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014117'

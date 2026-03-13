@@ -1,3 +1,4 @@
+id: CultureMech:000781
 name: MODIFIED METHYLOBACTERIUM MEDIUM
 original_name: MODIFIED METHYLOBACTERIUM MEDIUM
 category: bacterial
@@ -120,8 +121,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.8. Add sterile methanol to a concentration of 0.5% to the sterile medium.
-    The medium may be solidified with 15 g/l agar
+  description: Adjust pH to 6.8. Add sterile methanol to a concentration of 0.5% to
+    the sterile medium. The medium may be solidified with 15 g/l agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,3 +130,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1324'
+- timestamp: '2026-03-13T06:18:58.314520Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000781'

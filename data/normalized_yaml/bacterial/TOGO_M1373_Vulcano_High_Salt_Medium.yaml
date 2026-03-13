@@ -1,3 +1,4 @@
+id: CultureMech:007912
 name: Vulcano High Salt Medium
 original_name: Vulcano High Salt Medium
 category: bacterial
@@ -174,6 +175,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.424332Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007912'
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

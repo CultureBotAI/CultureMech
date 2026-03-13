@@ -1,3 +1,4 @@
+id: CultureMech:013392
 preferred_term: Main sol. J574
 term:
   id: mediadive.solution:4402
@@ -56,3 +57,8 @@ preparation_notes: "Add components and bring volume to 980 ml with distilled wat
   \ as described below). Autoclave, and after cooling, add the following solutions\
   \ (filter-sterilized or *autoclaved) to the medium: \nReadjust pH to 7.0 - 7.5 with\
   \ a sterilized 10% Na2CO3 solution, if necessary."
+curation_history:
+- timestamp: '2026-03-13T06:20:31.086959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013392'

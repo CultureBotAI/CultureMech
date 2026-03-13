@@ -1,3 +1,4 @@
+id: CultureMech:005053
 name: THERMOTOGA NEAPOLITANA medium
 original_name: THERMOTOGA NEAPOLITANA medium
 category: bacterial
@@ -215,3 +216,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:29.824982Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005053'

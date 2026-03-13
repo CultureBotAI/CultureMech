@@ -1,3 +1,4 @@
+id: CultureMech:003971
 name: medium FOR CAMPYLOBACTER DSM 806
 original_name: medium FOR CAMPYLOBACTER DSM 806
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:121
     label: medium FOR CAMPYLOBACTER DSM 806
-notes: 'Source: KOMODO ModelSEED | ID: 121 | DSMZ Medium: 121 (mediadive.medium:121) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 121 | DSMZ Medium: 121 (mediadive.medium:121)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na-aspartate
   concentration:
@@ -135,3 +137,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 121
+- timestamp: '2026-03-13T06:19:23.768509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003971'

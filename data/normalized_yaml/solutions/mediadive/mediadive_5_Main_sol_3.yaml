@@ -1,3 +1,4 @@
+id: CultureMech:014738
 preferred_term: Main sol. 3
 term:
   id: mediadive.solution:5
@@ -143,3 +144,8 @@ preparation_notes: 'Adjust pH to 7.3.
   the bottom. As the strain grows and acid is produced this will react with the calcium
   carbonate, causing it to dissolve and form zones of clearing immediately below the
   colonies.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.331756Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014738'

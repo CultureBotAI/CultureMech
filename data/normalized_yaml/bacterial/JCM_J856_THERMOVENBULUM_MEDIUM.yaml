@@ -1,3 +1,4 @@
+id: CultureMech:003202
 name: THERMOVENBULUM MEDIUM
 original_name: THERMOVENBULUM MEDIUM
 category: bacterial
@@ -19,8 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 786 supplemented with 1.0 g/L NaCl (final), 1.0 g/L yeast extract (final)
-    and 4.96 g/L Na2S2O3 x 5H2O. Adjust pH to 7.4, if necessary.
+  description: Use Medium No. 786 supplemented with 1.0 g/L NaCl (final), 1.0 g/L
+    yeast extract (final) and 4.96 g/L Na2S2O3 x 5H2O. Adjust pH to 7.4, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:18.543522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003202'
 data_quality_flags:
 - incomplete_composition

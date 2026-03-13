@@ -1,3 +1,4 @@
+id: CultureMech:009467
 name: Skirrow's selective medium
 original_name: Skirrow's selective medium
 category: bacterial
@@ -27,3 +28,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2935'
+- timestamp: '2026-03-13T06:20:06.297913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009467'

@@ -1,3 +1,4 @@
+id: CultureMech:012156
 preferred_term: Modified Hutner`s Basal Salts Solution
 term:
   id: mediadive.solution:2891
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Note: Dissolve and neutralize the nitrilotriacetic acid with KOH
   (7.3 g); add the other ingredients and adjust the pH to 6.6 - 6.8 before bringing
   the volume to 1.0 L with distilled water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.232984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012156'

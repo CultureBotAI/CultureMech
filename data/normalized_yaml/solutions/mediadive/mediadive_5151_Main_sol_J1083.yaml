@@ -1,3 +1,4 @@
+id: CultureMech:014063
 preferred_term: Main sol. J1083
 term:
   id: mediadive.solution:5151
@@ -167,3 +168,8 @@ preparation_notes: "Mix components, except sulfur, and autoclave under a N2-CO2 
   \ and seal with butyl rubber stoppers. Prior to use, anaerobically add per liter\
   \ the following solution from an anaerobic stock (autoclaved and stored under a\
   \ N2 atmosphere): \nAdjust pH to 6.0, if necessary.\n\nOriginal volume: 1021 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.366842Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014063'

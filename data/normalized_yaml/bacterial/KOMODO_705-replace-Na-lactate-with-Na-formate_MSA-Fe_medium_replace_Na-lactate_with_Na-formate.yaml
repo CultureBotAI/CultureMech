@@ -1,3 +1,4 @@
+id: CultureMech:006336
 name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
 original_name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:705_replace_Na-lactate_with_Na-formate
     label: MSA-Fe medium_replace_Na-lactate_with_Na-formate
-notes: 'Source: KOMODO ModelSEED | ID: 705_replace_Na-lactate_with_Na-formate | DSMZ Medium: 705 (mediadive.medium:705)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 705_replace_Na-lactate_with_Na-formate | DSMZ
+  Medium: 705 (mediadive.medium:705) | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:
@@ -171,3 +172,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 705
+- timestamp: '2026-03-13T06:19:39.842660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006336'

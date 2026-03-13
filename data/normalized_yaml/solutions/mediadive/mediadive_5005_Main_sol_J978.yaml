@@ -1,3 +1,4 @@
+id: CultureMech:013930
 preferred_term: Main sol. J978
 term:
   id: mediadive.solution:5005
@@ -154,3 +155,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.25 with NaOH. D
   \ and stored anaerobically): \nBefore inoculation, add filter-sterilized O2 gas\
   \ or air, at a final concentration of 2% O2 in the gas phase.\n\nOriginal volume:\
   \ 1035 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.437240Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013930'

@@ -1,3 +1,4 @@
+id: CultureMech:010574
 preferred_term: Main sol. 498
 term:
   id: mediadive.solution:1025
@@ -216,3 +217,8 @@ preparation_notes: 'Dissolve ingredients (except hydrogenphosphate, starch and s
 
 
   Original volume: 1024 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.448328Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010574'

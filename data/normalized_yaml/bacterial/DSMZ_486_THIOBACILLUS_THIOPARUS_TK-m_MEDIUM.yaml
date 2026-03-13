@@ -1,3 +1,4 @@
+id: CultureMech:001614
 name: THIOBACILLUS THIOPARUS (TK-m) MEDIUM
 original_name: THIOBACILLUS THIOPARUS (TK-m) MEDIUM
 category: bacterial
@@ -187,16 +188,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Sterilize the phosphates separately in 1/10 of medium volume and mix with the other salts
-    when cool. Add filter-sterilized vitamin solution after autoclaving to sterile medium. Adjust pH of
-    complete medium to 7.1, if necessary.
+  description: Sterilize the phosphates separately in 1/10 of medium volume and mix
+    with the other salts when cool. Add filter-sterilized vitamin solution after autoclaving
+    to sterile medium. Adjust pH of complete medium to 7.1, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
-    Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +205,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 486'
+- timestamp: '2026-03-13T06:19:05.713265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001614'

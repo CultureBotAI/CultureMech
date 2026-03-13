@@ -1,3 +1,4 @@
+id: CultureMech:002388
 name: BENZOATE MEDIUM
 original_name: BENZOATE MEDIUM
 category: bacterial
@@ -60,8 +61,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Separately sterilize a solution of sodium benzoate by filtration, and aseptically add it
-    to the medium.
+  description: Separately sterilize a solution of sodium benzoate by filtration, and
+    aseptically add it to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,3 +70,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J121'
+- timestamp: '2026-03-13T06:19:12.929683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002388'

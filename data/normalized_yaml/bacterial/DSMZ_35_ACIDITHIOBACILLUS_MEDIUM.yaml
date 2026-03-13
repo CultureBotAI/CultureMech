@@ -1,3 +1,4 @@
+id: CultureMech:001459
 name: ACIDITHIOBACILLUS MEDIUM
 original_name: ACIDITHIOBACILLUS MEDIUM
 category: bacterial
@@ -49,10 +50,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients, except the sulfur and adjust the pH to 4.2, then autoclave. For
-    sterilization place the sulfur in screw-capped tubes or bottles, wet with a few drops of water and
-    heat for 3 hours to 90 - 100°C in a water bath on each of three successive days. Before use, aseptically
-    layer the sulfur onto the surface of autoclaved liquid basal medium.
+  description: Dissolve all ingredients, except the sulfur and adjust the pH to 4.2,
+    then autoclave. For sterilization place the sulfur in screw-capped tubes or bottles,
+    wet with a few drops of water and heat for 3 hours to 90 - 100°C in a water bath
+    on each of three successive days. Before use, aseptically layer the sulfur onto
+    the surface of autoclaved liquid basal medium.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -63,3 +65,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 35'
+- timestamp: '2026-03-13T06:19:04.375439Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001459'

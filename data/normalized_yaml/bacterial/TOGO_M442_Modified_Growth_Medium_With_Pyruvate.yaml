@@ -1,3 +1,4 @@
+id: CultureMech:009828
 name: Modified Growth Medium With Pyruvate
 original_name: Modified Growth Medium With Pyruvate
 category: bacterial
@@ -101,4 +102,8 @@ curation_history:
   date: '2026-02-03T11:20:58.783137'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Tris base'
+- timestamp: '2026-03-13T06:20:09.216362Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009828'
 high_metal: true

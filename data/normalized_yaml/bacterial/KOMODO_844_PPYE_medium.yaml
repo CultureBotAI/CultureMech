@@ -1,3 +1,4 @@
+id: CultureMech:006649
 name: PPYE medium
 original_name: PPYE medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:844
     label: PPYE medium
-notes: 'Source: KOMODO ModelSEED | ID: 844 | DSMZ Medium: 844 (mediadive.medium:844) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 844 | DSMZ Medium: 844 (mediadive.medium:844)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Proteose peptone no. 3
   concentration:
@@ -51,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 844
+- timestamp: '2026-03-13T06:19:42.681649Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006649'

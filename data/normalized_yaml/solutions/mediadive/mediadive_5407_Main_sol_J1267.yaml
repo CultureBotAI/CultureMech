@@ -1,3 +1,4 @@
+id: CultureMech:014319
 preferred_term: Main sol. J1267
 term:
   id: mediadive.solution:5407
@@ -85,3 +86,8 @@ composition:
 preparation_notes: "Mix components thoroughly, adjust pH to 2.0 - 2.5 with H2SO4 and\
   \ autoclave. After cooling, add the following solutions (filter-sterilized): \n\n\
   Original volume: 1115 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.049418Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014319'

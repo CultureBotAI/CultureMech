@@ -1,3 +1,4 @@
+id: CultureMech:009390
 name: Marine Broth  (MB) 2216
 original_name: Marine Broth  (MB) 2216
 category: bacterial
@@ -22,3 +23,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2848'
+- timestamp: '2026-03-13T06:20:06.010168Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009390'

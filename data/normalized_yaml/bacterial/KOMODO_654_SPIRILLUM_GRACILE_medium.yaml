@@ -1,3 +1,4 @@
+id: CultureMech:006231
 name: SPIRILLUM GRACILE medium
 original_name: SPIRILLUM GRACILE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:654
     label: SPIRILLUM GRACILE medium
-notes: 'Source: KOMODO ModelSEED | ID: 654 | DSMZ Medium: 654 (mediadive.medium:654) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 654 | DSMZ Medium: 654 (mediadive.medium:654)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -59,3 +61,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 654
+- timestamp: '2026-03-13T06:19:39.159673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006231'

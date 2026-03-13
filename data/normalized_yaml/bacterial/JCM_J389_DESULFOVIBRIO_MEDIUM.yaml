@@ -1,3 +1,4 @@
+id: CultureMech:002746
 name: DESULFOVIBRIO MEDIUM
 original_name: DESULFOVIBRIO MEDIUM
 category: bacterial
@@ -88,10 +89,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except FeSO4 x 7H2O, sodium thioglycolate and ascorbic acid, bring to
-    a boil, and cool down to room temperature under a N2 gas stream. Add FeSO4 x 7H2O in 10 ml distilled
-    water, and sodium thioglycolate and ascorbic acid in 10 ml distilled water, and adjust pH to 7.8 with
-    NaOH. While swirling the medium, dispense into culture vessels under a N2 gas stream, seal with butyl
+  description: Mix ingredients, except FeSO4 x 7H2O, sodium thioglycolate and ascorbic
+    acid, bring to a boil, and cool down to room temperature under a N2 gas stream.
+    Add FeSO4 x 7H2O in 10 ml distilled water, and sodium thioglycolate and ascorbic
+    acid in 10 ml distilled water, and adjust pH to 7.8 with NaOH. While swirling
+    the medium, dispense into culture vessels under a N2 gas stream, seal with butyl
     rubber stoppers, and autoclave. Adjust pH to 6.8-7.0, if necessary.
 applications:
 - Microbial cultivation
@@ -100,3 +102,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J389'
+- timestamp: '2026-03-13T06:19:15.450820Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002746'

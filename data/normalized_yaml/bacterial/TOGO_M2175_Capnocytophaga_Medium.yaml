@@ -1,3 +1,4 @@
+id: CultureMech:008769
 name: Capnocytophaga Medium
 original_name: Capnocytophaga Medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +23,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:17632
     label: nitrate
@@ -37,7 +41,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -45,7 +50,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -82,3 +88,7 @@ curation_history:
   date: '2026-02-03T11:20:52.590241'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2 '
+- timestamp: '2026-03-13T06:20:00.181801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008769'

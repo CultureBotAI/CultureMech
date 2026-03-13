@@ -1,3 +1,4 @@
+id: CultureMech:003331
 name: KOSMOTOGA PACIFICA MEDIUM
 original_name: KOSMOTOGA PACIFICA MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 232 supplemented with 3.0 g/L yeast extract and 2.4 g/L L-cystine. Cultivate
-    under a N2-CO2 (4:1, v/v) gas atmosphere.
+  description: Use Medium No. 232 supplemented with 3.0 g/L yeast extract and 2.4
+    g/L L-cystine. Cultivate under a N2-CO2 (4:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.550493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003331'
 data_quality_flags:
 - incomplete_composition

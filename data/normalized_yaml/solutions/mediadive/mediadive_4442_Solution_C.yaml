@@ -1,3 +1,4 @@
+id: CultureMech:013423
 preferred_term: Solution C
 term:
   id: mediadive.solution:4442
@@ -76,3 +77,8 @@ preparation_notes: "Prepare all solutions and autoclave under a N2 atmosphere. A
   \ and vitamin B12 solution (see Medium No. 403, filter-sterilized) to the medium.\
   \ Otherwise, prepare the modified medium as described above.\n\nOriginal volume:\
   \ 63 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.243058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013423'

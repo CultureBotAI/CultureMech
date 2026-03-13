@@ -1,3 +1,4 @@
+id: CultureMech:009220
 name: Archaeoglobus medium (DSM 399)
 original_name: Archaeoglobus medium (DSM 399)
 category: bacterial
@@ -234,6 +235,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.305350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009220'
 solutions:
 - preferred_term: Trace Elements Solution
   term:

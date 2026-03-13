@@ -1,3 +1,4 @@
+id: CultureMech:003744
 name: METHANOSPHAERULA MEDIUM
 original_name: METHANOSPHAERULA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1094
     label: METHANOSPHAERULA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1094 | DSMZ Medium: 1094 (mediadive.medium:1094) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1094 | DSMZ Medium: 1094 (mediadive.medium:1094)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -244,4 +246,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.292872Z'
   curator: invalid-chebi-removal
   action: Removed 2 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:21.843979Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003744'

@@ -1,3 +1,4 @@
+id: CultureMech:000599
 name: REACTIVATION WITH LIQUID MEDIUM 115
 original_name: REACTIVATION WITH LIQUID MEDIUM 115
 category: bacterial
@@ -36,8 +37,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: STORE
-  description: Rehydrate and grow freeze-dried cells from ampoule in liquid broth 115. Subsequent subculturing
-    may be carried out in liquid medium or on agar.
+  description: Rehydrate and grow freeze-dried cells from ampoule in liquid broth
+    115. Subsequent subculturing may be carried out in liquid medium or on agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 115a'
+- timestamp: '2026-03-13T06:18:56.688464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000599'

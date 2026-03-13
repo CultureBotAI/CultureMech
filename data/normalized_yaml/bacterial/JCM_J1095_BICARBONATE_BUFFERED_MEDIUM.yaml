@@ -1,3 +1,4 @@
+id: CultureMech:002274
 name: BICARBONATE BUFFERED MEDIUM
 original_name: BICARBONATE BUFFERED MEDIUM
 category: bacterial
@@ -234,13 +235,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add
-    the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave under a N2-CO2 (4:1, v/v) gas mixture.
+    After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 50 ml
-    of the medium in 120 ml serum bottle) under a N2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber
-    stoppers. Prior to use, add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    (e.g., 50 ml of the medium in 120 ml serum bottle) under a N2-CO2 (4:1, v/v) gas
+    mixture, and seal with butyl rubber stoppers. Prior to use, add per liter the
+    following solution (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
   description: For strain JCM 30818, 1 M glycerin solution;
@@ -257,3 +259,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1095'
+- timestamp: '2026-03-13T06:19:11.863158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002274'

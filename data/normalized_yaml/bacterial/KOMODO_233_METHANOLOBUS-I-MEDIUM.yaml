@@ -1,3 +1,4 @@
+id: CultureMech:004609
 name: METHANOLOBUS-I-MEDIUM
 original_name: METHANOLOBUS-I-MEDIUM
 category: bacterial
@@ -274,3 +275,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:27.661554Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004609'

@@ -1,3 +1,4 @@
+id: CultureMech:003804
 name: DETHIOBACTER medium
 original_name: DETHIOBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1104
     label: DETHIOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1104 | DSMZ Medium: 1104 (mediadive.medium:1104) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1104 | DSMZ Medium: 1104 (mediadive.medium:1104)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -257,4 +259,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.995844Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:22.363332Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003804'

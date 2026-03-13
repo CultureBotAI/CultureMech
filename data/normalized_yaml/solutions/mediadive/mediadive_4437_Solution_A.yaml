@@ -1,3 +1,4 @@
+id: CultureMech:013418
 preferred_term: Solution A
 term:
   id: mediadive.solution:4437
@@ -226,3 +227,8 @@ preparation_notes: "Mix ingredients and adjust pH to 6.8 with NaOH. Distribute t
   \ to the medium (per liter): \nFinally, replace the gas phase with a N2-CO2-O2 (79:20:1,\
   \ by volume) gas mixture and pressurize to 200 kPa with the same gas mixture.\n\n\
   Original volume: 1026 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.221145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013418'

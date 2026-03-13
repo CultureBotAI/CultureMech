@@ -1,3 +1,4 @@
+id: CultureMech:006278
 name: SB/SW MEDIUM
 original_name: SB/SW MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:679
     label: SB/SW MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 679 | DSMZ Medium: 679 (mediadive.medium:679) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 679 | DSMZ Medium: 679 (mediadive.medium:679)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 679'
+- timestamp: '2026-03-13T06:19:39.433626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006278'

@@ -1,3 +1,4 @@
+id: CultureMech:012125
 preferred_term: Main sol. 1404
 term:
   id: mediadive.solution:2849
@@ -150,3 +151,8 @@ composition:
 preparation_notes: Prepare the medium without the vitamin solution. Adjust to pH 7.25.
   Dispense the medium into Hungate tubes or serum bottles. Sterilize by autoclaving.
   Before inoculation add the sterile vitamin solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.023968Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012125'

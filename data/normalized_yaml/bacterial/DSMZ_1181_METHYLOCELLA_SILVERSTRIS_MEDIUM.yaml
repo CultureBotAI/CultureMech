@@ -1,3 +1,4 @@
+id: CultureMech:000623
 name: METHYLOCELLA SILVERSTRIS MEDIUM
 original_name: METHYLOCELLA SILVERSTRIS MEDIUM
 category: bacterial
@@ -133,3 +134,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:56.875440Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000623'

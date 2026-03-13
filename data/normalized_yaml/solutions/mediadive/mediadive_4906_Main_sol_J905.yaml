@@ -1,3 +1,4 @@
+id: CultureMech:013835
 preferred_term: Main sol. J905
 term:
   id: mediadive.solution:4906
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Add components to distilled water and bring volume to 1.0 L Adjust
   pH to 6.8 with 25% KOH. For preparation of solid medium, add 23.0 g/L Bacto agar
   (BD-Difco).
+curation_history:
+- timestamp: '2026-03-13T06:20:33.781192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013835'

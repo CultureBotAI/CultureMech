@@ -1,3 +1,4 @@
+id: CultureMech:013157
 preferred_term: Main sol. J391
 term:
   id: mediadive.solution:4118
@@ -156,3 +157,8 @@ preparation_notes: "Mix components thoroughly and adjust pH 7.0. Bring to a boil
   Readjust pH to 7.0 - 7.3, if necessary.\nComment: For strain JCM 31729, replace\
   \ sodium lactate with final 10 mM sodium fumarate and 0.01% yeast extract.\n\nOriginal\
   \ volume: 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:29.773380Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013157'

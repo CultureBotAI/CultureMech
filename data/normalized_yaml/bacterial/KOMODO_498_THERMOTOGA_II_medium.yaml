@@ -1,3 +1,4 @@
+id: CultureMech:005631
 name: THERMOTOGA II medium
 original_name: THERMOTOGA II medium
 category: bacterial
@@ -214,3 +215,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:34.783194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005631'

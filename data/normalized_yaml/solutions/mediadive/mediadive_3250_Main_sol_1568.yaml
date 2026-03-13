@@ -1,3 +1,4 @@
+id: CultureMech:012435
 preferred_term: Main sol. 1568
 term:
   id: mediadive.solution:3250
@@ -91,3 +92,8 @@ preparation_notes: 'Medium was adjusted pH 7.0 with NaOH
 
   Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
   to add 20% methane to the gas phase and autoclave at 121°C for 15 minutes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.912141Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012435'

@@ -1,3 +1,4 @@
+id: CultureMech:000875
 name: AMPHIBACILLUS MEDIUM
 original_name: AMPHIBACILLUS MEDIUM
 category: bacterial
@@ -123,8 +124,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Dispense the medium into serum bottles. After sterilization
-    pH 10.0. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Dispense the medium into serum bottles.
+    After sterilization pH 10.0. Before inoculation add from sterile stock solutions:'
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -135,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1413'
+- timestamp: '2026-03-13T06:18:59.096919Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000875'

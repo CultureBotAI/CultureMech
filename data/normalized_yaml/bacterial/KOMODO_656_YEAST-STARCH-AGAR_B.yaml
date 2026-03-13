@@ -1,3 +1,4 @@
+id: CultureMech:006234
 name: YEAST-STARCH-AGAR(B)
 original_name: YEAST-STARCH-AGAR(B)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:656
     label: YEAST-STARCH-AGAR(B)
-notes: 'Source: KOMODO ModelSEED | ID: 656 | DSMZ Medium: 656 (mediadive.medium:656) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 656 | DSMZ Medium: 656 (mediadive.medium:656)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 656
+- timestamp: '2026-03-13T06:19:39.176937Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006234'

@@ -1,3 +1,4 @@
+id: CultureMech:006016
 name: MEDIUM 125 WITH METHANOL
 original_name: MEDIUM 125 WITH METHANOL
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:569
     label: MEDIUM 125 WITH METHANOL
-notes: 'Source: KOMODO ModelSEED | ID: 569 | DSMZ Medium: 569 (mediadive.medium:569) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 569 | DSMZ Medium: 569 (mediadive.medium:569)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Methanol
   term:
@@ -113,3 +115,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 569
+- timestamp: '2026-03-13T06:19:37.661658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006016'

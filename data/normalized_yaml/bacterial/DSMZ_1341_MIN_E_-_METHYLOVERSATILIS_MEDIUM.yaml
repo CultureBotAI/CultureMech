@@ -1,3 +1,4 @@
+id: CultureMech:000799
 name: MIN E - METHYLOVERSATILIS MEDIUM
 original_name: MIN E - METHYLOVERSATILIS MEDIUM
 category: bacterial
@@ -134,13 +135,14 @@ preparation_steps:
   description: Add 100 ml of sterile phosphate buffer after autoclaving.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately and combine
-    after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter sterilized vitamin B12 (250
-    mg/l). The medium may be solidified by adding 15 g/l agar.
+  description: Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately
+    and combine after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter
+    sterilized vitamin B12 (250 mg/l). The medium may be solidified by adding 15 g/l
+    agar.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and NaOH in 800ml of distilled water then add the inorganic salts. Make
-    up to 1000.0 ml with distilled water.
+  description: Dissolve the EDTA and NaOH in 800ml of distilled water then add the
+    inorganic salts. Make up to 1000.0 ml with distilled water.
 - step_number: 4
   action: MIX
   description: pH 6.8 - 7.0
@@ -151,3 +153,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1341'
+- timestamp: '2026-03-13T06:18:58.446837Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000799'

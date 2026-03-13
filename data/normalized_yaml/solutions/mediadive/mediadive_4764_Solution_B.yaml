@@ -1,3 +1,4 @@
+id: CultureMech:013708
 preferred_term: Solution B
 term:
   id: mediadive.solution:4764
@@ -81,3 +82,8 @@ preparation_notes: "Autoclave solutions A and B under a N2 atmosphere. After coo
   \ under the same gas mixture and seal with butyl rubber stoppers. Finally, add per\
   \ liter the following solution (autoclaved and stored under a N2 atmosphere): \n\
   \nOriginal volume: 114 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.987770Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013708'

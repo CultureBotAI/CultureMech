@@ -1,3 +1,4 @@
+id: CultureMech:011654
 preferred_term: Main sol. 1130
 term:
   id: mediadive.solution:2266
@@ -95,3 +96,8 @@ preparation_notes: 'Adjust to pH 6.8-7.2
 
   Note: especially for strains DSM 17983 and 17984, yeast extract from ThermoFisher
   has to be used. Yeast extract from other vendors might not support growth.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.063653Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011654'

@@ -1,3 +1,4 @@
+id: CultureMech:006265
 name: MS-MEDIUM
 original_name: MS-MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:670
     label: MS-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 670 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 670 | DSMZ Medium: 670 (mediadive.medium:670)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -56,4 +58,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 670
+- timestamp: '2026-03-13T06:19:39.354136Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006265'
 ph_value: 2.2

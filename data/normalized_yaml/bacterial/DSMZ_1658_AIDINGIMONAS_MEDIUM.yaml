@@ -1,3 +1,4 @@
+id: CultureMech:001140
 name: AIDINGIMONAS MEDIUM
 original_name: AIDINGIMONAS MEDIUM
 category: bacterial
@@ -44,4 +45,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1658'
+- timestamp: '2026-03-13T06:19:01.555711Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001140'
 high_metal: true

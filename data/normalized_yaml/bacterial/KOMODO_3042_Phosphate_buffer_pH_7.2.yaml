@@ -1,3 +1,4 @@
+id: CultureMech:004824
 name: Phosphate buffer pH 7.2
 original_name: Phosphate buffer pH 7.2
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3042
     label: Phosphate buffer pH 7.2
-notes: 'Source: KOMODO ModelSEED | ID: 3042 | DSMZ Medium: 3042 (mediadive.medium:3042) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3042 | DSMZ Medium: 3042 (mediadive.medium:3042)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3042'
+- timestamp: '2026-03-13T06:19:28.859513Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004824'

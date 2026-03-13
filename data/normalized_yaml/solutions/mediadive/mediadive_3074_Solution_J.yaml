@@ -1,3 +1,4 @@
+id: CultureMech:012298
 preferred_term: Solution J
 term:
   id: mediadive.solution:3074
@@ -44,3 +45,8 @@ preparation_notes: 'D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethano
 
 
   Original volume: 1 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.080982Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012298'

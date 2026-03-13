@@ -1,3 +1,4 @@
+id: CultureMech:011087
 preferred_term: Main sol. 800
 term:
   id: mediadive.solution:1630
@@ -59,3 +60,8 @@ preparation_notes: "Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prep
   The pH of the completed medium should be 6.8 - 7.0. For growth an agar plates, Columbia\
   \ sheep blood agar plates (BBL) may be used and incubated under an anaerobic atmosphere\
   \ containig 5 - 10% CO2.\n\nOriginal volume: 12 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:17.436530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011087'

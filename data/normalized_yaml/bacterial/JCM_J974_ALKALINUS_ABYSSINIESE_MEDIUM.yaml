@@ -1,3 +1,4 @@
+id: CultureMech:003323
 name: ALKALINUS ABYSSINIESE MEDIUM
 original_name: ALKALINUS ABYSSINIESE MEDIUM
 category: bacterial
@@ -119,4 +120,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J974'
+- timestamp: '2026-03-13T06:19:19.493073Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003323'
 high_metal: true

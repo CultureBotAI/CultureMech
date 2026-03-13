@@ -1,3 +1,4 @@
+id: CultureMech:001357
 name: NUTRIENT STARCH AGAR
 original_name: NUTRIENT STARCH AGAR
 category: bacterial
@@ -36,8 +37,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 258'
+- timestamp: '2026-03-13T06:19:03.367898Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001357'

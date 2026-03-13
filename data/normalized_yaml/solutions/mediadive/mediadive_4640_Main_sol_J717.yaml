@@ -1,3 +1,4 @@
+id: CultureMech:013599
 preferred_term: Main sol. J717
 term:
   id: mediadive.solution:4640
@@ -151,3 +152,8 @@ preparation_notes: "Mix components thoroughly. Bring to a boil, cool down and di
   \ into culture vessels under a N2 gas stream. Seal with butyl rubber stoppers and\
   \ autoclave. Prior to inoculation, add the following solution (autoclaved under\
   \ a N2 atmosphere) into the medium (per liter): \n\nOriginal volume: 1018 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.256319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013599'

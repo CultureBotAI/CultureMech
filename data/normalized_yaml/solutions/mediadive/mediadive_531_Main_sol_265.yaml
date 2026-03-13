@@ -1,3 +1,4 @@
+id: CultureMech:014231
 preferred_term: Main sol. 265
 term:
   id: mediadive.solution:531
@@ -231,3 +232,8 @@ preparation_notes: "Adjust final pH to 5.2.\nPrepare the medium anaerobically un
   \ wet or 0,2 g dried biomass in 10 ml water or buffer, and use 10ml/l of the sterile-filtered\
   \ extract. Prepare under N2 conditions.\r\n\r\nModified from  W. Zillig et al. (1983),\
   \ Syst. Appl. Microbiol. 4: 79 - 87"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.469165Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014231'

@@ -1,3 +1,4 @@
+id: CultureMech:006673
 name: THAUERA AROMATICA AR-1 MEDIUM
 original_name: THAUERA AROMATICA AR-1 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:855
     label: THAUERA AROMATICA AR-1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 855 | DSMZ Medium: 855 (mediadive.medium:855) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 855 | DSMZ Medium: 855 (mediadive.medium:855)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -243,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.185759Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:42.879236Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006673'

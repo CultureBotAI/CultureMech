@@ -1,3 +1,4 @@
+id: CultureMech:011588
 preferred_term: Main sol. 1090
 term:
   id: mediadive.solution:2197
@@ -52,3 +53,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Dissolve ingredients and adjust to pH 7.0 with NaOH before autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.630764Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011588'

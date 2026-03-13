@@ -1,3 +1,4 @@
+id: CultureMech:000322
 name: 3N-BBM+V recipe for customer orders
 original_name: 3N-BBM+V recipe for customer orders
 category: bacterial
@@ -119,8 +120,8 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre Bacterialogical Agar.\r\
-    \nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
+    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterile
@@ -140,3 +141,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C15'
+- timestamp: '2026-03-13T06:18:54.444108Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000322'

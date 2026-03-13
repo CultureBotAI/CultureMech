@@ -1,3 +1,4 @@
+id: CultureMech:003085
 name: CLOSTRIDIUM AEROTOLERANS MEDIUM
 original_name: CLOSTRIDIUM AEROTOLERANS MEDIUM
 category: bacterial
@@ -96,3 +97,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J742'
+- timestamp: '2026-03-13T06:19:17.681014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003085'

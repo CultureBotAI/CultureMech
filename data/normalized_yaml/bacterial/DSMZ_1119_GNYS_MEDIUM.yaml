@@ -1,3 +1,4 @@
+id: CultureMech:000555
 name: GNYS MEDIUM
 original_name: GNYS MEDIUM
 category: bacterial
@@ -134,7 +135,8 @@ preparation_steps:
   description: Adjust pH to 4.0 - 4.5.
 - step_number: 2
   action: ADJUST_PH
-  description: For solid medium, add 1.8% agar (final) and adjust pH to 5.0 to avoid hydrolysis of agar.
+  description: For solid medium, add 1.8% agar (final) and adjust pH to 5.0 to avoid
+    hydrolysis of agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,3 +144,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1119'
+- timestamp: '2026-03-13T06:18:56.356491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000555'

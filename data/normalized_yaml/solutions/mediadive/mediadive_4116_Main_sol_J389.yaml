@@ -1,3 +1,4 @@
+id: CultureMech:013156
 preferred_term: Main sol. J389
 term:
   id: mediadive.solution:4116
@@ -153,3 +154,8 @@ preparation_notes: Mix ingredients, except FeSO4 x 7H2O, sodium thioglycolate an
   ascorbic acid in 10 ml distilled water, and adjust pH to 7.8 with NaOH. While swirling
   the medium, dispense into culture vessels under a N2 gas stream, seal with butyl
   rubber stoppers, and autoclave. Adjust pH to 6.8-7.0, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.764723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013156'

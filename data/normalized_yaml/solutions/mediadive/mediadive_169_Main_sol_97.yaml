@@ -1,3 +1,4 @@
+id: CultureMech:011153
 preferred_term: Main sol. 97
 term:
   id: mediadive.solution:169
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.4. Add the agar after dissolving all ingredients
   in the water and adjustment of pH.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.859745Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011153'

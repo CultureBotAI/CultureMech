@@ -1,3 +1,4 @@
+id: CultureMech:011790
 preferred_term: Amorphous Fe(OH)3
 term:
   id: mediadive.solution:2411
@@ -38,3 +39,8 @@ preparation_notes: 'Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.
 
 
   Original volume: 400 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.928339Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011790'

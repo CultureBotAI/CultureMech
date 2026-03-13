@@ -1,3 +1,4 @@
+id: CultureMech:002728
 name: MMJH MEDIUM
 original_name: MMJH MEDIUM
 category: bacterial
@@ -175,16 +176,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Fe2(SO4)3 x <I>x</I>H2O, Trace vitamins and NaHCO3, adjust pH to
-    6.8 and autoclave. Separately autoclave 0.5% Fe2(SO4)3 x <I>x</I>H2O solution (in 0.1 N H2SO4), filter-sterilize
-    Trace vitamins and 5% NaHCO3 solution and add the solutions to the medium. Distribute the medium into
-    culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2-O2 (80:20:1,
-    v/v) gas mixture and seal with butyl rubber stoppers. Readjust pH to 6.8, if necessary. Pressurize
-    the inoculated bottle to 200 kPa with the same gas mixture.
+  description: Mix ingredients except Fe2(SO4)3 x <I>x</I>H2O, Trace vitamins and
+    NaHCO3, adjust pH to 6.8 and autoclave. Separately autoclave 0.5% Fe2(SO4)3 x
+    <I>x</I>H2O solution (in 0.1 N H2SO4), filter-sterilize Trace vitamins and 5%
+    NaHCO3 solution and add the solutions to the medium. Distribute the medium into
+    culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream
+    of H2-CO2-O2 (80:20:1, v/v) gas mixture and seal with butyl rubber stoppers. Readjust
+    pH to 6.8, if necessary. Pressurize the inoculated bottle to 200 kPa with the
+    same gas mixture.
 - step_number: 2
   action: MIX
-  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01 g/L SrCl2 x H2O, 0.01
-    g/L NaBr and 0.01 g/L KI.
+  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01
+    g/L SrCl2 x H2O, 0.01 g/L NaBr and 0.01 g/L KI.
 applications:
 - Microbial cultivation
 curation_history:
@@ -192,3 +195,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J369'
+- timestamp: '2026-03-13T06:19:15.317027Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002728'

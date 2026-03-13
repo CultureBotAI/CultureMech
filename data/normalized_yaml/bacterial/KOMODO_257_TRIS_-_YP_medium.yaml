@@ -1,3 +1,4 @@
+id: CultureMech:004661
 name: TRIS - YP medium
 original_name: TRIS - YP medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:257
     label: TRIS - YP medium
-notes: 'Source: KOMODO ModelSEED | ID: 257 | DSMZ Medium: 257 (mediadive.medium:257) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 257 | DSMZ Medium: 257 (mediadive.medium:257)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -33,4 +35,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 257
+- timestamp: '2026-03-13T06:19:27.928586Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004661'
 ph_value: 7.5

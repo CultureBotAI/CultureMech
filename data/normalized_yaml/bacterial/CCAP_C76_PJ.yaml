@@ -1,3 +1,4 @@
+id: CultureMech:000389
 name: PJ
 original_name: PJ
 category: bacterial
@@ -41,7 +42,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C76'
+- timestamp: '2026-03-13T06:18:54.905284Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000389'

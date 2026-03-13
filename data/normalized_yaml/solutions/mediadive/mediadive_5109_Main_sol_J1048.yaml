@@ -1,3 +1,4 @@
+id: CultureMech:014021
 preferred_term: Main sol. J1048
 term:
   id: mediadive.solution:5109
@@ -179,3 +180,8 @@ preparation_notes: "Mix components, except NaHCO3, and adjust pH to 7.0. Bring t
   \ (autoclaved and stored under a N2 atmosphere): \nComment: For strain JCM 30226,\
   \ supplement with 20 mM (final) tetramethylammonium as a substrate instead of methanol.\n\
   \nOriginal volume: 1042 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.070305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014021'

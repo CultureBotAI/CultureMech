@@ -1,3 +1,4 @@
+id: CultureMech:013573
 preferred_term: Main sol. J700
 term:
   id: mediadive.solution:4612
@@ -73,3 +74,8 @@ preparation_notes: "Mix components thoroughly. Distribute the medium into cultur
   \ S (Jamarin Laboratory). Addition of rumen fluid clarified (10.0 ml/L, see Medium\
   \ No. 266) may stimulate growth. For strain JCM 15506, incubate with a 5-10% inoculum.\n\
   \nOriginal volume: 1015 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.094305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013573'

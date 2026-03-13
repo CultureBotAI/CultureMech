@@ -1,3 +1,4 @@
+id: CultureMech:014731
 preferred_term: Mail sol. C4
 term:
   id: mediadive.solution:5995
@@ -19,3 +20,8 @@ preparation_notes: "Make up to 1 Litre with filtered natural seawater. Adjust pH
   \ - 7.8 to with 1M NaOH or\r\n1M HCl, prior to autoclaving. Autoclave at 15 psi\
   \ for 15 minutes.\nAlternatively, use: Distilled water to 1 Litre and “Ultramarine\
   \ Synthetica” sea salts 33.60g"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.300615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014731'

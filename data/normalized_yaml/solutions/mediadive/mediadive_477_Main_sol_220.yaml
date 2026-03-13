@@ -1,3 +1,4 @@
+id: CultureMech:013722
 preferred_term: Main sol. 220
 term:
   id: mediadive.solution:477
@@ -65,3 +66,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
   CM 131).
+curation_history:
+- timestamp: '2026-03-13T06:20:33.072143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013722'

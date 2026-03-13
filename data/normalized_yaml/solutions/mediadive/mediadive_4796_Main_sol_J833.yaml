@@ -1,3 +1,4 @@
+id: CultureMech:013738
 preferred_term: Main sol. J833
 term:
   id: mediadive.solution:4796
@@ -203,3 +204,8 @@ preparation_notes: "Mix components and autoclave under a N2 atmosphere. After co
   \ with a N2-CO2-H2 (8:1:1, v/v) gas mixture. Finally, add the following reducing\
   \ solution and chlorosolvent (per liter): \nAdjust pH to 7.0, if necessary.\n\n\
   Original volume: 1015 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.185560Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013738'

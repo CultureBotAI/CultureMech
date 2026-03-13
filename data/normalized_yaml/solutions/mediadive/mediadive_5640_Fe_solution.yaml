@@ -1,3 +1,4 @@
+id: CultureMech:014508
 preferred_term: Fe solution
 term:
   id: mediadive.solution:5640
@@ -28,3 +29,8 @@ composition:
     confidence: 1.0
     match_type: exact_match
 preparation_notes: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl)
+curation_history:
+- timestamp: '2026-03-13T06:20:38.154695Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014508'

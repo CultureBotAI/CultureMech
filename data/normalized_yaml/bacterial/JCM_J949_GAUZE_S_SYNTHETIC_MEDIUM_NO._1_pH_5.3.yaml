@@ -1,3 +1,4 @@
+id: CultureMech:003296
 name: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
 category: bacterial
@@ -19,7 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Gauze's synthetic medium No. 1 (see Medium No. 81) and adjust pH to 5.3.
+  description: Prepare Gauze's synthetic medium No. 1 (see Medium No. 81) and adjust
+    pH to 5.3.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.289640Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003296'
 data_quality_flags:
 - incomplete_composition

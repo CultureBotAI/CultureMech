@@ -1,3 +1,4 @@
+id: CultureMech:000426
 name: DESULFOPILA CORRODENS MEDIUM
 original_name: DESULFOPILA CORRODENS MEDIUM
 category: bacterial
@@ -300,3 +301,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:55.159427Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000426'

@@ -1,3 +1,4 @@
+id: CultureMech:009549
 name: Modified synthetic Crenarchaeota medium for strain SCM1
 original_name: Modified synthetic Crenarchaeota medium for strain SCM1
 category: bacterial
@@ -213,6 +214,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 8 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.820644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009549'
 solutions:
 - preferred_term: HEPES buffer*
   composition: []

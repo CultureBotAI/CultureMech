@@ -1,3 +1,4 @@
+id: CultureMech:001203
 name: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
 original_name: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
 category: bacterial
@@ -106,20 +107,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: "After cooling, add the following filter sterilized (0.2 µm) components to complete the\r\
-    \nmedium:"
+  description: "After cooling, add the following filter sterilized (0.2 µm) components\
+    \ to complete the\r\nmedium:"
 - step_number: 4
   action: FILTER_STERILIZE
-  description: 'The strain is cultivated in 25 cm2 plastic tissue culture flasks with filter screw caps
-    (T25, distributor: TPP, order number: 90026). The T25 flasks are routinely filled with 20 ml of culture.
-    Each T25 culture is supplemented with a sterilized wheat grain as carbon source for ambient bacteria
-    from the sampling site.'
+  description: 'The strain is cultivated in 25 cm2 plastic tissue culture flasks with
+    filter screw caps (T25, distributor: TPP, order number: 90026). The T25 flasks
+    are routinely filled with 20 ml of culture. Each T25 culture is supplemented with
+    a sterilized wheat grain as carbon source for ambient bacteria from the sampling
+    site.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +134,7 @@ curation_history:
   date: '2026-02-03T11:20:21.005230'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Wheat Grains'
+- timestamp: '2026-03-13T06:19:02.199225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001203'

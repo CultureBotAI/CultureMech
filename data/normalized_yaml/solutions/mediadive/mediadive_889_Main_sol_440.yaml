@@ -1,3 +1,4 @@
+id: CultureMech:015248
 preferred_term: Main sol. 440
 term:
   id: mediadive.solution:889
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Autoclave the skim milk powder separately in 100 ml H2O and add
   it to the cooled (60°C) agar-medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.477998Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015248'

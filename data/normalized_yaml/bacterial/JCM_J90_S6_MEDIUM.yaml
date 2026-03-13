@@ -1,3 +1,4 @@
+id: CultureMech:003258
 name: S6 MEDIUM
 original_name: S6 MEDIUM
 category: bacterial
@@ -70,8 +71,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add sterile Na2S2O3 solution
-    to the medium.
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
+    sterile Na2S2O3 solution to the medium.
 - step_number: 3
   action: MIX
   description: For preparation of solid medium, add 15.0 g/L agar.
@@ -82,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J90'
+- timestamp: '2026-03-13T06:19:18.996071Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003258'

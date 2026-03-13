@@ -1,3 +1,4 @@
+id: CultureMech:012339
 preferred_term: Main sol. 185
 term:
   id: mediadive.solution:311
@@ -142,3 +143,8 @@ preparation_notes: 'Prepare medium (without starch, sodium sulfide, sulfur) anae
   to the medium starch and sodium sulfide.
 
   Medium pH is 5.5.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.289927Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012339'

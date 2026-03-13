@@ -1,3 +1,4 @@
+id: CultureMech:012543
 preferred_term: Main sol. 1639
 term:
   id: mediadive.solution:3403
@@ -109,3 +110,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate and pyruvate) and s
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.472813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012543'

@@ -1,3 +1,4 @@
+id: CultureMech:010666
 preferred_term: Main sol. 528
 term:
   id: mediadive.solution:1170
@@ -79,3 +80,8 @@ preparation_notes: 'pH 7.0.
 
   After autoclaving add 1 ml sterile trace element solution SL-4 (medium 14), 100
   ml solution A and 3 ml solution B per liter.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.940081Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010666'

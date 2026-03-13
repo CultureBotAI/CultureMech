@@ -1,3 +1,4 @@
+id: CultureMech:011547
 preferred_term: Main sol. 1062
 term:
   id: mediadive.solution:2152
@@ -174,3 +175,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, ferrous iron sulfate
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.391819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011547'

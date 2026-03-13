@@ -1,3 +1,4 @@
+id: CultureMech:004157
 name: ALKALOPHILIC HALOPHILE medium
 original_name: ALKALOPHILIC HALOPHILE medium
 category: bacterial
@@ -90,4 +91,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1431
+- timestamp: '2026-03-13T06:19:25.474213Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004157'
 high_metal: true

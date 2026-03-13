@@ -1,3 +1,4 @@
+id: CultureMech:001108
 name: MINIMAL MEDIA CONTAINING METHANOL
 original_name: MINIMAL MEDIA CONTAINING METHANOL
 category: bacterial
@@ -122,7 +123,8 @@ preparation_steps:
   description: Prepare the medium without methanol. Adjust pH to 7.1.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave and after cooling to 50°C add the methanol from a filter-sterilized stock solution.
+  description: Autoclave and after cooling to 50°C add the methanol from a filter-sterilized
+    stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -130,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1629'
+- timestamp: '2026-03-13T06:19:01.234655Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001108'

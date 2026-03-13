@@ -1,3 +1,4 @@
+id: CultureMech:005166
 name: THIOBACILLUS AQUAESULIS MEDIUM
 original_name: THIOBACILLUS AQUAESULIS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:389
     label: THIOBACILLUS AQUAESULIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 389 | DSMZ Medium: 389 (mediadive.medium:389) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 389 | DSMZ Medium: 389 (mediadive.medium:389)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -125,3 +127,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 389
+- timestamp: '2026-03-13T06:19:30.753714Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005166'

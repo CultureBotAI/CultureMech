@@ -1,3 +1,4 @@
+id: CultureMech:015387
 name: MARINE AGAR 2216 WITH 1% STARCH
 original_name: MARINE AGAR 2216 WITH 1% STARCH
 category: specialized
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1164'
+- timestamp: '2026-03-13T06:20:42.343436Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015387'

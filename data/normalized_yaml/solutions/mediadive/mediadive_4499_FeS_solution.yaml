@@ -1,3 +1,4 @@
+id: CultureMech:013473
 preferred_term: FeS solution
 term:
   id: mediadive.solution:4499
@@ -51,3 +52,8 @@ preparation_notes: 'Prewarm distilled water at 50C in a beaker with a stir bar. 
 
 
   Original volume: 300 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.505048Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013473'

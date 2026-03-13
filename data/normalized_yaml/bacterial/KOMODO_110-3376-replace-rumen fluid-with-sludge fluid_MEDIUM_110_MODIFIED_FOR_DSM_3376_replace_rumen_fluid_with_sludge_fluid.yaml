@@ -1,3 +1,4 @@
+id: CultureMech:003793
 name: MEDIUM 110 MODIFIED FOR DSM 3376_replace_rumen fluid_with_sludge fluid
 original_name: MEDIUM 110 MODIFIED FOR DSM 3376_replace_rumen fluid_with_sludge fluid
 category: bacterial
@@ -127,4 +128,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:22.253169Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003793'
 ph_value: 7.0

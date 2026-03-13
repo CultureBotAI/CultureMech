@@ -1,3 +1,4 @@
+id: CultureMech:012531
 preferred_term: Main sol. 1630b
 term:
   id: mediadive.solution:3386
@@ -146,3 +147,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate, trace elements, se
   1.00 mg/ml stock solution sterilized by filtration.
 
   Note: Use at least 5 - 10% (v/v) inoculum and incubate in the dark without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.391590Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012531'

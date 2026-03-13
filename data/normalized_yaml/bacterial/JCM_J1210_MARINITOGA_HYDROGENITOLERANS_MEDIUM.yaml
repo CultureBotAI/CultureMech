@@ -1,3 +1,4 @@
+id: CultureMech:002379
 name: MARINITOGA HYDROGENITOLERANS MEDIUM
 original_name: MARINITOGA HYDROGENITOLERANS MEDIUM
 category: bacterial
@@ -61,9 +62,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 6.0. Bubble the medium with N2 for 5 min, then distribute
-    the medium into culture vessels under N2, seal with butyl rubber stoppers and autoclave. After cooling,
-    add the following solutions aseptically and anaerobically (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Mix components and adjust pH to 6.0. Bubble the medium with N2 for
+    5 min, then distribute the medium into culture vessels under N2, seal with butyl
+    rubber stoppers and autoclave. After cooling, add the following solutions aseptically
+    and anaerobically (autoclaved and stored under a N2 gas atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1210'
+- timestamp: '2026-03-13T06:19:12.850938Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002379'

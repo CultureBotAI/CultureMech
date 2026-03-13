@@ -1,3 +1,4 @@
+id: CultureMech:002138
 name: MARINITOGA LITORALIS MEDIUM
 original_name: MARINITOGA LITORALIS MEDIUM
 category: bacterial
@@ -100,11 +101,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except maltose and sulfide, adjust pH to 5.8 - 6.0 and sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add maltose and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. The pH of the complete
-    medium should be 6.0.
+  description: Dissolve ingredients except maltose and sulfide, adjust pH to 5.8 -
+    6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere. The pH of the complete medium
+    should be 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +114,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 959a'
+- timestamp: '2026-03-13T06:19:10.646579Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002138'

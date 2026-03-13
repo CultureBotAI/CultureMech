@@ -1,3 +1,4 @@
+id: CultureMech:014314
 preferred_term: Main sol. J1262
 term:
   id: mediadive.solution:5402
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3
   solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.008620Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014314'

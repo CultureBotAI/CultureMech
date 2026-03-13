@@ -1,3 +1,4 @@
+id: CultureMech:004747
 name: CLOSTRIDIUM PAPYROSOLVENS medium
 original_name: CLOSTRIDIUM PAPYROSOLVENS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:289
     label: CLOSTRIDIUM PAPYROSOLVENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 289 | DSMZ Medium: 289 (mediadive.medium:289) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 289 | DSMZ Medium: 289 (mediadive.medium:289)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea water
   concentration:
@@ -97,4 +99,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 289
+- timestamp: '2026-03-13T06:19:28.498443Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004747'
 ph_value: 7.2

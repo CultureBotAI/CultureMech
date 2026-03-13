@@ -1,3 +1,4 @@
+id: CultureMech:014874
 preferred_term: Mail sol. C41
 term:
   id: mediadive.solution:6171
@@ -104,3 +105,8 @@ preparation_notes: "This recipe is a 7:3 mixture of JM and SE2. Make up to 1 lit
   \ with deionized water. For agar,\r\nadd 15.0 g per litre of Bacteriological Agar\
   \ (Thermo Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15\
   \ minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.869042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014874'

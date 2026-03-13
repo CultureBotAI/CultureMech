@@ -1,3 +1,4 @@
+id: CultureMech:006401
 name: THERMUS THERMOPHILUS medium
 original_name: THERMUS THERMOPHILUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:74
     label: THERMUS THERMOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 74 | DSMZ Medium: 74 (mediadive.medium:74) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 74 | DSMZ Medium: 74 (mediadive.medium:74)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 74
+- timestamp: '2026-03-13T06:19:40.471120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006401'

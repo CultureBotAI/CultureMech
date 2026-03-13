@@ -1,3 +1,4 @@
+id: CultureMech:002806
 name: PYG MEDIUM (C)
 original_name: PYG MEDIUM (C)
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 423 supplemented with 1.0 ml/L Tween 80 and 0.5 g/L L-cysteine x HCl x H2O.
-    Prepare the medium under a N2 atmosphere.
+  description: Use Medium No. 423 supplemented with 1.0 ml/L Tween 80 and 0.5 g/L
+    L-cysteine x HCl x H2O. Prepare the medium under a N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.843925Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002806'
 data_quality_flags:
 - incomplete_composition

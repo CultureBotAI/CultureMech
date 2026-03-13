@@ -1,3 +1,4 @@
+id: CultureMech:013484
 preferred_term: Solution C
 term:
   id: mediadive.solution:4513
@@ -34,3 +35,8 @@ preparation_notes: "Autoclave Solutions A and B separately and autoclave Solutio
   \ with butyl rubber stoppers. Prior to inoculation, reduce the medium with 0.025%\
   \ L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O (autoclaved as 5% solutions under\
   \ a N2 atmosphere).\n\nOriginal volume: 44 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.566934Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013484'

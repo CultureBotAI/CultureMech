@@ -1,3 +1,4 @@
+id: CultureMech:000437
 name: IDIOMARINA MEDIUM
 original_name: IDIOMARINA MEDIUM
 category: bacterial
@@ -55,6 +56,10 @@ curation_history:
   curator: preparation-steps-enrichment
   action: Added preparation steps from MediaDive API
   notes: Extracted 2 preparation steps from solution data
+- timestamp: '2026-03-13T06:18:55.279156Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000437'
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

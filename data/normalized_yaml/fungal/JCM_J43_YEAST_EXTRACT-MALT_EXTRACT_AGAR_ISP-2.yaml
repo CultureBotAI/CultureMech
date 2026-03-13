@@ -1,3 +1,4 @@
+id: CultureMech:010528
 name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2)
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2)
 category: fungal
@@ -39,7 +40,8 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder is available from Becton Dickinson & Co. as ISP Medium 2.'
+  description: 'Comment: The premixed powder is available from Becton Dickinson &
+    Co. as ISP Medium 2.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -47,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J43'
+- timestamp: '2026-03-13T06:20:14.237303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010528'

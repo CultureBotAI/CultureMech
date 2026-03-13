@@ -1,3 +1,4 @@
+id: CultureMech:004960
 name: Vitamin solution (medium 212)
 original_name: Vitamin solution (medium 212)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3116
     label: Vitamin solution (medium 212)
-notes: 'Source: KOMODO ModelSEED | ID: 3116 | DSMZ Medium: 3116 (mediadive.medium:3116) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3116 | DSMZ Medium: 3116 (mediadive.medium:3116)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3116'
+- timestamp: '2026-03-13T06:19:29.227864Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004960'

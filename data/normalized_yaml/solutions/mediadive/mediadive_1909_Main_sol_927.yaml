@@ -1,3 +1,4 @@
+id: CultureMech:011324
 preferred_term: Main sol. 927
 term:
   id: mediadive.solution:1909
@@ -116,3 +117,8 @@ preparation_notes: 'Prepare the medium, and adjust the pH to 7.6 with 5M NaOH.
   Autoclave and when the medium has cooled add 2.5 ml of the phosphate solution, 0.5
   ml of the calcium chloride solution, and 0.25 ml of the Fe/Mn solution. This strain
   will not grow in normal media for halobacteria, such as DSM medium 372!'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.918311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011324'

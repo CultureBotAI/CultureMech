@@ -1,3 +1,4 @@
+id: CultureMech:011221
 preferred_term: Main sol. 864
 term:
   id: mediadive.solution:1785
@@ -118,3 +119,8 @@ preparation_notes: 'Dissolve ingredients except hydrogenphosphate and thiosulfat
 
 
   Original volume: 1005 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.232827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011221'

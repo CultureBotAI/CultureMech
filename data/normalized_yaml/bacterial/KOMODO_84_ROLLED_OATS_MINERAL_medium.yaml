@@ -1,3 +1,4 @@
+id: CultureMech:006657
 name: ROLLED OATS MINERAL medium
 original_name: ROLLED OATS MINERAL medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:84
     label: ROLLED OATS MINERAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Rolled oats
   concentration:
@@ -53,4 +55,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 84
+- timestamp: '2026-03-13T06:19:42.759386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006657'
 ph_value: 7.2

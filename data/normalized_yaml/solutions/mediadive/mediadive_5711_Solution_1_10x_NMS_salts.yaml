@@ -1,3 +1,4 @@
+id: CultureMech:014573
 preferred_term: Solution 1 (10x NMS salts)
 term:
   id: mediadive.solution:5711
@@ -53,3 +54,8 @@ composition:
     match_type: exact_match
 preparation_notes: Dissolve the ingredients listed above (in that order) in about
   700 ml of 2% NaCl, and then make up to 1 litre with 2% NaCl.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.477544Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014573'

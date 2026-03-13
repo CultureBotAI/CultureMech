@@ -1,3 +1,4 @@
+id: CultureMech:009357
 name: LS4D
 original_name: LS4D
 category: bacterial
@@ -286,6 +287,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:05.843845Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009357'
 high_metal: true
 solutions:
 - preferred_term: Resazurin (0.1% solution)

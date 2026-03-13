@@ -1,3 +1,4 @@
+id: CultureMech:006888
 name: MEDIUM 950 MODIFIED FOR DSM 14913
 original_name: MEDIUM 950 MODIFIED FOR DSM 14913
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:950_14913
     label: MEDIUM 950 MODIFIED FOR DSM 14913
-notes: 'Source: KOMODO ModelSEED | ID: 950_14913 | DSMZ Medium: 950 (mediadive.medium:950) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 950_14913 | DSMZ Medium: 950 (mediadive.medium:950)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -136,4 +137,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 950
+- timestamp: '2026-03-13T06:19:44.674905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006888'
 ph_value: 7.6

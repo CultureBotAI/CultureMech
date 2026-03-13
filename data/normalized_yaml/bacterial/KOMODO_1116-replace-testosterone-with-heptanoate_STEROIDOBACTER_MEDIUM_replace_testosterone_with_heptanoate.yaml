@@ -1,3 +1,4 @@
+id: CultureMech:003817
 name: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
 original_name: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:1116_replace_testosterone_with_heptanoate
     label: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
-notes: 'Source: KOMODO ModelSEED | ID: 1116_replace_testosterone_with_heptanoate | DSMZ Medium: 1116 (mediadive.medium:1116)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1116_replace_testosterone_with_heptanoate |
+  DSMZ Medium: 1116 (mediadive.medium:1116) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -237,3 +238,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1116
+- timestamp: '2026-03-13T06:19:22.480184Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003817'

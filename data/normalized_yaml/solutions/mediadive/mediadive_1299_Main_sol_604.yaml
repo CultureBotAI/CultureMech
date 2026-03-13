@@ -1,3 +1,4 @@
+id: CultureMech:010788
 preferred_term: Main sol. 604
 term:
   id: mediadive.solution:1299
@@ -16,3 +17,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: MARINE AGAR 2216 (Difco 0979).
+curation_history:
+- timestamp: '2026-03-13T06:20:15.529909Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010788'

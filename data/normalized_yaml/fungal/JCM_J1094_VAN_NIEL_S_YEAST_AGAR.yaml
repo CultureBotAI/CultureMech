@@ -1,3 +1,4 @@
+id: CultureMech:010488
 name: VAN NIEL'S YEAST AGAR
 original_name: VAN NIEL'S YEAST AGAR
 category: fungal
@@ -47,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1094'
+- timestamp: '2026-03-13T06:20:14.029293Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010488'

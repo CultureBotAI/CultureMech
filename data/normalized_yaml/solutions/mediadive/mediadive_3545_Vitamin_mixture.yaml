@@ -1,3 +1,4 @@
+id: CultureMech:012647
 preferred_term: Vitamin mixture
 term:
   id: mediadive.solution:3545
@@ -117,3 +118,8 @@ preparation_notes: 'The solution was filter-sterilized and stored at 4°C in the
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.057807Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012647'

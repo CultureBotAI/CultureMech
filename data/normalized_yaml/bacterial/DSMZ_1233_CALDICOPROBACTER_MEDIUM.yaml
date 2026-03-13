@@ -1,3 +1,4 @@
+id: CultureMech:000692
 name: CALDICOPROBACTER MEDIUM
 original_name: CALDICOPROBACTER MEDIUM
 category: bacterial
@@ -103,15 +104,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and glucose), then sparge medium with 100% N2 gas
-    for 30 - 45 min to make it anoxic. Add solid cysteine and adjust pH to 7.3 - 7.5, then dispense medium
-    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation,
-    add glucose from a sterile anoxic stock solution prepared under 100% N2 gas.
+  description: Dissolve ingredients (except cysteine and glucose), then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid cysteine and adjust
+    pH to 7.3 - 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add glucose
+    from a sterile anoxic stock solution prepared under 100% N2 gas.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly
-    prepared under N2 and filter-sterilized) can be used to completely reduce the medium and may stimulate
-    growth at the beginning.
+  description: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v)
+    solution, freshly prepared under N2 and filter-sterilized) can be used to completely
+    reduce the medium and may stimulate growth at the beginning.
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,3 +125,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:57.504189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000692'

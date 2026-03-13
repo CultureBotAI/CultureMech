@@ -1,3 +1,4 @@
+id: CultureMech:010860
 preferred_term: Main sol. 648
 term:
   id: mediadive.solution:1376
@@ -94,3 +95,8 @@ preparation_notes: Dissolve DIFCO Marine Broth powder and resazurin, bring the m
   sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
   from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
   The pH of the complete medium should be around 6.6.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.980908Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010860'

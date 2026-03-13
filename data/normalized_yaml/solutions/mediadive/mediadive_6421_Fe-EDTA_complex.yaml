@@ -1,3 +1,4 @@
+id: CultureMech:015025
 preferred_term: ' Fe-EDTA complex'
 term:
   id: mediadive.solution:6421
@@ -31,3 +32,8 @@ preparation_notes: 'Combine in MilliQ water and make up to 500 ml.
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.420969Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015025'

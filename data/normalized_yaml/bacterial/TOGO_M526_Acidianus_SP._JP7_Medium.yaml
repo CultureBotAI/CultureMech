@@ -1,3 +1,4 @@
+id: CultureMech:009918
 name: Acidianus SP. JP7 Medium
 original_name: Acidianus SP. JP7 Medium
 category: bacterial
@@ -145,3 +146,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.964562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009918'

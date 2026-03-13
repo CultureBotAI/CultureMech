@@ -1,3 +1,4 @@
+id: CultureMech:007511
 name: Nutrient Agar
 original_name: Nutrient Agar
 category: bacterial
@@ -31,10 +32,14 @@ curation_history:
 - timestamp: '2026-01-24T16:10:12.690885Z'
   curator: nbrc-import
   action: Imported from NBRC
-  notes: 'Source: NBRC, Media No. No. 1, URL: https://www.nite.go.jp/en/nbrc/cultures/media/1.html. Imported
-    via ethical web scraping.'
+  notes: 'Source: NBRC, Media No. No. 1, URL: https://www.nite.go.jp/en/nbrc/cultures/media/1.html.
+    Imported via ethical web scraping.'
 - timestamp: '2026-01-28T19:48:21.502301Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:49.302038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007511'
 notes: General purpose medium for bacteria

@@ -1,3 +1,4 @@
+id: CultureMech:012332
 preferred_term: Main sol. 1504
 term:
   id: mediadive.solution:3112
@@ -114,3 +115,8 @@ composition:
 preparation_notes: 'pH 7.4 (NaOH)
 
   Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml per liter medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.243504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012332'

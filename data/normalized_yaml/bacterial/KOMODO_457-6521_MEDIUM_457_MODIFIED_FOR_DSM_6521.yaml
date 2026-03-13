@@ -1,3 +1,4 @@
+id: CultureMech:005392
 name: MEDIUM 457 MODIFIED FOR DSM 6521
 original_name: MEDIUM 457 MODIFIED FOR DSM 6521
 category: bacterial
@@ -170,3 +171,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:32.435092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005392'

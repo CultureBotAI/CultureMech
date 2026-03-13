@@ -1,3 +1,4 @@
+id: CultureMech:004025
 name: B12 - MEDIUM GUTTMAN
 original_name: B12 - MEDIUM GUTTMAN
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1270
     label: B12 - MEDIUM GUTTMAN
-notes: 'Source: KOMODO ModelSEED | ID: 1270 | DSMZ Medium: 1270 (mediadive.medium:1270) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1270 | DSMZ Medium: 1270 (mediadive.medium:1270)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -120,3 +122,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1270
+- timestamp: '2026-03-13T06:19:24.235019Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004025'

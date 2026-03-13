@@ -1,3 +1,4 @@
+id: CultureMech:005015
 name: METHANOLOBUS II medium
 original_name: METHANOLOBUS II medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:324
     label: METHANOLOBUS II medium
-notes: 'Source: KOMODO ModelSEED | ID: 324 | DSMZ Medium: 324 (mediadive.medium:324) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 324 | DSMZ Medium: 324 (mediadive.medium:324)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 324'
+- timestamp: '2026-03-13T06:19:29.520182Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005015'

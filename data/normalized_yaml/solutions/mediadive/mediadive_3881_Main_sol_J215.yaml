@@ -1,3 +1,4 @@
+id: CultureMech:012950
 preferred_term: Main sol. J215
 term:
   id: mediadive.solution:3881
@@ -126,3 +127,8 @@ composition:
 preparation_notes: Adjust pH to 7.0 with 1 N H2SO4, and sterilize by filtration. Dispense
   the medium into bottles under a N2-CO2-O2 (80:20:1) atmosphere. Pressurize inoculated
   bottles to 200 kPa N2-CO2-O2 (80:20:1).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.506323Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012950'

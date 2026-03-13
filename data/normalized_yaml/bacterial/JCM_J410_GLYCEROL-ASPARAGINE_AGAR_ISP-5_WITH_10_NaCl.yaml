@@ -1,3 +1,4 @@
+id: CultureMech:002767
 name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
 original_name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J410'
+- timestamp: '2026-03-13T06:19:15.575291Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002767'

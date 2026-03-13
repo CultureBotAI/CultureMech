@@ -1,3 +1,4 @@
+id: CultureMech:012575
 preferred_term: Main sol. 1663
 term:
   id: mediadive.solution:3448
@@ -117,3 +118,8 @@ preparation_notes: Dissolve ingredients (except vitamins and trace elements) in 
   and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust
   pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve
   a final concentration of 100 µM prior inoculation.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.652382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012575'

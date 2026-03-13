@@ -1,3 +1,4 @@
+id: CultureMech:013164
 preferred_term: Main sol. J401
 term:
   id: mediadive.solution:4129
@@ -152,3 +153,8 @@ preparation_notes: 'Adjust pH to 7.2. Prepare medium anaerobically under a N2-CO
 
 
   Original volume: 13 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.814590Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013164'

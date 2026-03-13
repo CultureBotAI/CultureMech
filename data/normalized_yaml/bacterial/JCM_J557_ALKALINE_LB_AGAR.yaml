@@ -1,3 +1,4 @@
+id: CultureMech:002905
 name: ALKALINE LB AGAR
 original_name: ALKALINE LB AGAR
 category: bacterial
@@ -43,8 +44,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Separately sterilize Na2CO3 by filtration and aseptically add to the medium. Check final
-    pH to be about 8.5.
+  description: Separately sterilize Na2CO3 by filtration and aseptically add to the
+    medium. Check final pH to be about 8.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +53,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J557'
+- timestamp: '2026-03-13T06:19:16.471126Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002905'

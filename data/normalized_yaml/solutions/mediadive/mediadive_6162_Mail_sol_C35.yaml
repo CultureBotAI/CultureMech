@@ -1,3 +1,4 @@
+id: CultureMech:014864
 preferred_term: Mail sol. C35
 term:
   id: mediadive.solution:6162
@@ -57,3 +58,8 @@ preparation_notes: "Make up to 1 litre with filtered natural seawater. Adjust pH
   \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes.\nThis medium will\
   \ provide nutrients for long lasting, dense cultures and can be used in liquid\r\
   \nand agar forms."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.831031Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014864'

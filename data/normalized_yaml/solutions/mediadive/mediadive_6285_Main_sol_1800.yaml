@@ -1,3 +1,4 @@
+id: CultureMech:014966
 preferred_term: Main sol. 1800
 term:
   id: mediadive.solution:6285
@@ -109,3 +110,8 @@ preparation_notes: 'Adjust pH to 6.0.
   Autoclave at 121 °C for 15 min.
 
   add vitamins solutions from 1000 x stocks'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.188344Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014966'

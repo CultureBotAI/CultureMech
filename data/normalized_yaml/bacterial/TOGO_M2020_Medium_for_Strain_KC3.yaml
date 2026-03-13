@@ -1,3 +1,4 @@
+id: CultureMech:008608
 name: Medium for Strain KC3
 original_name: Medium for Strain KC3
 category: bacterial
@@ -105,6 +106,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:58.624281Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008608'
 solutions:
 - preferred_term: Hipolypepton*
   composition: []

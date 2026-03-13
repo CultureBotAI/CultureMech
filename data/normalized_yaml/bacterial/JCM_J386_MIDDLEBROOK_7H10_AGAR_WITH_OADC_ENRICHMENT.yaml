@@ -1,3 +1,4 @@
+id: CultureMech:002743
 name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
 original_name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
 category: bacterial
@@ -27,8 +28,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically add 100 ml of Middlebrook
-    OADC Enrichment (BD-BBL) and mix thoroughly.
+  description: Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically add
+    100 ml of Middlebrook OADC Enrichment (BD-BBL) and mix thoroughly.
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J386'
+- timestamp: '2026-03-13T06:19:15.424569Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002743'

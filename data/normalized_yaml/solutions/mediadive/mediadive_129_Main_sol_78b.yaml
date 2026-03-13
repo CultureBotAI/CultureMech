@@ -1,3 +1,4 @@
+id: CultureMech:010789
 preferred_term: Main sol. 78b
 term:
   id: mediadive.solution:129
@@ -111,3 +112,8 @@ preparation_notes: "Use lean beef or horse meat. Remove fat and connective tissu
   \ (as indicated in the catalogue) the addition of Haemin and Vitamin K1 or Vitamin\
   \ K3 is necessary. Add to 1000 ml of medium after autoclaving:\n\nOriginal volume:\
   \ 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:15.534889Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010789'

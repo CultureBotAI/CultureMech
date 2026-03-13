@@ -1,3 +1,4 @@
+id: CultureMech:000352
 name: K Medium
 original_name: K Medium
 category: bacterial
@@ -119,17 +120,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top up to 100ml with\
-    \ DIW ensuring\r\nto check pH remains at 7.2."
+  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top\
+    \ up to 100ml with DIW ensuring\r\nto check pH remains at 7.2."
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1M\
-    \ HCl.\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: DISSOLVE
-  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add first three\r\nchemicals\
-    \ separately in 100ml/dH2O, allowing each to completely dissolve\r\nbefore adding the primary stocks\
-    \ in order:"
+  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add\
+    \ first three\r\nchemicals separately in 100ml/dH2O, allowing each to completely\
+    \ dissolve\r\nbefore adding the primary stocks in order:"
 - step_number: 4
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -146,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C42'
+- timestamp: '2026-03-13T06:18:54.678187Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000352'

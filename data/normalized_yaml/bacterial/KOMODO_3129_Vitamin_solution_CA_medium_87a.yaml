@@ -1,3 +1,4 @@
+id: CultureMech:004976
 name: Vitamin solution CA (medium 87a)
 original_name: Vitamin solution CA (medium 87a)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3129
     label: Vitamin solution CA (medium 87a)
-notes: 'Source: KOMODO ModelSEED | ID: 3129 | DSMZ Medium: 3129 (mediadive.medium:3129) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3129 | DSMZ Medium: 3129 (mediadive.medium:3129)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3129'
+- timestamp: '2026-03-13T06:19:29.291199Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004976'

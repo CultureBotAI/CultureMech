@@ -1,3 +1,4 @@
+id: CultureMech:004297
 name: DESULFONEMA MAGNUM MEDIUM
 original_name: DESULFONEMA MAGNUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:202
     label: DESULFONEMA MAGNUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 202 | DSMZ Medium: 202 (mediadive.medium:202) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 202 | DSMZ Medium: 202 (mediadive.medium:202)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -257,4 +259,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.415524Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:26.481910Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004297'

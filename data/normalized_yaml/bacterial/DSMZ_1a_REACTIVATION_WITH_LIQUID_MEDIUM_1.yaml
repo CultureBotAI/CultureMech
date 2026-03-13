@@ -1,3 +1,4 @@
+id: CultureMech:001298
 name: REACTIVATION WITH LIQUID MEDIUM 1
 original_name: REACTIVATION WITH LIQUID MEDIUM 1
 category: bacterial
@@ -30,12 +31,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
 - step_number: 2
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid broth 1. Subsequent
-    subculturing may be carried out in liquid medium or on agar plates.
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    broth 1. Subsequent subculturing may be carried out in liquid medium or on agar
+    plates.
 applications:
 - Microbial cultivation
 curation_history:
@@ -43,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1a'
+- timestamp: '2026-03-13T06:19:02.987652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001298'

@@ -1,3 +1,4 @@
+id: CultureMech:000535
 name: DESULFONATRONUM ZHILINAE MEDIUM
 original_name: DESULFONATRONUM ZHILINAE MEDIUM
 category: bacterial
@@ -207,12 +208,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonates, magnesium chloride, trace elements, lactate, vitamins
-    and sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Then add and dissolve
-    carbonates, adjust pH to 9.0, dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. After sterilization add magnesium chloride, trace elements, lactate,
-    vitamins and sulfide from sterile anoxic stock solution prepared under 100% N2 gas. The vitamin solution
-    should be sterilized by filtration. Adjust pH of complete medium to 9.0 - 9.5, if necessary.
+  description: Dissolve ingredients except carbonates, magnesium chloride, trace elements,
+    lactate, vitamins and sulfide, then sparge medium with 100% N2 gas for 30 - 45
+    min to make it anoxic. Then add and dissolve carbonates, adjust pH to 9.0, dispense
+    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. After sterilization add magnesium chloride, trace elements, lactate,
+    vitamins and sulfide from sterile anoxic stock solution prepared under 100% N2
+    gas. The vitamin solution should be sterilized by filtration. Adjust pH of complete
+    medium to 9.0 - 9.5, if necessary.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -227,3 +230,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.174248Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000535'

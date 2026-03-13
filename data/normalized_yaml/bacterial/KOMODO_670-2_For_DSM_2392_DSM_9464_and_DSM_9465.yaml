@@ -1,3 +1,4 @@
+id: CultureMech:006261
 name: For DSM 2392, DSM 9464 and DSM 9465
 original_name: For DSM 2392, DSM 9464 and DSM 9465
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:670.2
     label: For DSM 2392, DSM 9464 and DSM 9465
-notes: 'Source: KOMODO ModelSEED | ID: 670.2 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 670.2 | DSMZ Medium: 670 (mediadive.medium:670)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -57,3 +59,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 670
+- timestamp: '2026-03-13T06:19:39.338833Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006261'

@@ -1,3 +1,4 @@
+id: CultureMech:014579
 preferred_term: Filtrate of Desulfurococcus kamchatkensis (DSM18924)
 term:
   id: mediadive.solution:5717
@@ -33,3 +34,8 @@ preparation_notes: "Strain DSM 18924 was inoculated into anaerobic tube, contain
   \ 0,22nm filter. Filtered culture\r\nbroth is used for the cultivation of the strain\
   \ at a concentration of 1% as a source of\r\ngrowth factor\n\nOriginal volume: 10\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:38.492121Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014579'

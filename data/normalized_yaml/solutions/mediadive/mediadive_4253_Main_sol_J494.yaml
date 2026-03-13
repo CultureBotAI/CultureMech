@@ -1,3 +1,4 @@
+id: CultureMech:013266
 preferred_term: Main sol. J494
 term:
   id: mediadive.solution:4253
@@ -70,3 +71,8 @@ preparation_notes: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 5
   butyl rubber stoppers. Prior to inoculation, add 5% Na2S x 9H2O (autoclaved and
   stocked under a N2 atmosphere) to the medium. Readjust pH to 5.0 - 5.3. Pressurize
   the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+curation_history:
+- timestamp: '2026-03-13T06:20:30.390382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013266'

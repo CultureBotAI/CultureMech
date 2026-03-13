@@ -1,3 +1,4 @@
+id: CultureMech:006780
 name: MEDIUM 909 MODIFIED FOR DSM 14222
 original_name: MEDIUM 909 MODIFIED FOR DSM 14222
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:909_14222
     label: MEDIUM 909 MODIFIED FOR DSM 14222
-notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion broth
   concentration:
@@ -125,3 +126,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 909
+- timestamp: '2026-03-13T06:19:43.871683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006780'

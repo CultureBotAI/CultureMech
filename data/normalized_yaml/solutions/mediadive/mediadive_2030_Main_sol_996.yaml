@@ -1,3 +1,4 @@
+id: CultureMech:011433
 preferred_term: Main sol. 996
 term:
   id: mediadive.solution:2030
@@ -134,3 +135,8 @@ preparation_notes: 'Medium is prepared with anoxic water (under a CO2-atmosphere
   the tubes were pressurized with H2 to 20 psi (or 138 kPa). Inoculum should be in
   mid-logarithmic phase (16-10 h after inoculation). Incubation is carried out without
   shaking at 70°C and both strains (DSM 14351 and DSM 14350) grow within 24 h.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.642013Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011433'

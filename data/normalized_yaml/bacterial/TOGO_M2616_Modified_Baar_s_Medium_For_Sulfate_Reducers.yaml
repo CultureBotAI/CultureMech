@@ -1,3 +1,4 @@
+id: CultureMech:009183
 name: Modified Baar’s Medium For Sulfate Reducers
 original_name: Modified Baar’s Medium For Sulfate Reducers
 category: bacterial
@@ -115,3 +116,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.731637Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009183'

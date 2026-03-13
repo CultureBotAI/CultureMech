@@ -1,3 +1,4 @@
+id: CultureMech:011334
 preferred_term: Main sol. 932
 term:
   id: mediadive.solution:1921
@@ -156,3 +157,8 @@ preparation_notes: 'Final pH 9.5-10.0
   capped tubes). Autoclave, and to the cooled medium add the vitamins (filter sterilised
   under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic, sterile stock
   solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.997964Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011334'

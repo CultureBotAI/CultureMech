@@ -1,3 +1,4 @@
+id: CultureMech:014802
 preferred_term: Main sol. 331
 term:
   id: mediadive.solution:609
@@ -140,3 +141,8 @@ preparation_notes: 'Adjust pH to 7.2 - 7.4 with NaOH.
   Prepare the medium anaerobically under 100% nitrogen. Prepare concentrated solutions
   each of yeast extract, glycine, phosphates, NaHCO3 and Na2S separately and sterilize
   under nitrogen by autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.593195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014802'

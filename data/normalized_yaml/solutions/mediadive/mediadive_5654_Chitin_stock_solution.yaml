@@ -1,3 +1,4 @@
+id: CultureMech:014522
 preferred_term: Chitin stock solution
 term:
   id: mediadive.solution:5654
@@ -49,3 +50,8 @@ preparation_notes: 'The chitin solution is prepared as follows: mix 20 g chitin 
 
 
   Original volume: 1200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.239511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014522'

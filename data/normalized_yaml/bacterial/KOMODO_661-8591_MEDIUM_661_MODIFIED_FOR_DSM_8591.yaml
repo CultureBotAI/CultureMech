@@ -1,3 +1,4 @@
+id: CultureMech:006240
 name: MEDIUM 661 MODIFIED FOR DSM 8591
 original_name: MEDIUM 661 MODIFIED FOR DSM 8591
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:661_8591
     label: MEDIUM 661 MODIFIED FOR DSM 8591
-notes: 'Source: KOMODO ModelSEED | ID: 661_8591 | DSMZ Medium: 661 (mediadive.medium:661) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 661_8591 | DSMZ Medium: 661 (mediadive.medium:661)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 661
+- timestamp: '2026-03-13T06:19:39.204882Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006240'

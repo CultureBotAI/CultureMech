@@ -1,3 +1,4 @@
+id: CultureMech:003246
 name: SYPHC MEDIUM
 original_name: SYPHC MEDIUM
 category: bacterial
@@ -208,8 +209,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.7. After autoclaving, add the following solution
-    (autoclaved):'
+  description: 'Mix components thoroughly and adjust pH to 7.7. After autoclaving,
+    add the following solution (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.
@@ -220,3 +221,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J898'
+- timestamp: '2026-03-13T06:19:18.887819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003246'

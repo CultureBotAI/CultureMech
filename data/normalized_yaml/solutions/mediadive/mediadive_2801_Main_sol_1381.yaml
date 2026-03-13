@@ -1,3 +1,4 @@
+id: CultureMech:012089
 preferred_term: Main sol. 1381
 term:
   id: mediadive.solution:2801
@@ -174,3 +175,8 @@ composition:
 preparation_notes: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide
   as single sterile stock solutions to sterile medium after autoclaving. Adjust pH
   to 9 - 9.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.802379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012089'

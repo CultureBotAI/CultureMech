@@ -1,3 +1,4 @@
+id: CultureMech:012655
 preferred_term: Main sol. 1715
 term:
   id: mediadive.solution:3552
@@ -24,3 +25,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Suspend the dehydrated medium in deionized water, and heat do dissolve
   the medium, sterilize by autoclaving at 115 °C for 15 minutes.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.081401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012655'

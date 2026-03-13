@@ -1,3 +1,4 @@
+id: CultureMech:014134
 preferred_term: Main sol. J1128
 term:
   id: mediadive.solution:5223
@@ -128,3 +129,8 @@ preparation_notes: "Mix components, dispense the medium into culture vessels (e.
   \ rubber stoppers and autoclave. Aseptically and anaerobically add per liter the\
   \ following solutions (autoclaved and stored under a N2 atmosphere): \nAdjust pH\
   \ to 8.0 - 8.2, if necessary."
+curation_history:
+- timestamp: '2026-03-13T06:20:35.841571Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014134'

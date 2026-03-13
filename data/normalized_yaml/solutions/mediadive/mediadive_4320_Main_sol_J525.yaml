@@ -1,3 +1,4 @@
+id: CultureMech:013326
 preferred_term: Main sol. J525
 term:
   id: mediadive.solution:4320
@@ -165,3 +166,8 @@ preparation_notes: 'Dissolve ingredients except chalcopyrite in 500 ml distilled
   chalcopyrite concentrate.
 
   Comment: Chalcopyrite can be replaced with arsenopyrite or pyrite.'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.707576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013326'

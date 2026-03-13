@@ -1,3 +1,4 @@
+id: CultureMech:008713
 name: TOGO Medium M2120
 original_name: (Unnamed medium)
 category: bacterial
@@ -341,6 +342,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:59.708558Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008713'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution*

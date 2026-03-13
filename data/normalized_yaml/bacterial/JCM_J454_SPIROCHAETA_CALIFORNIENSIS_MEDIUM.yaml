@@ -1,3 +1,4 @@
+id: CultureMech:002804
 name: SPIROCHAETA CALIFORNIENSIS MEDIUM
 original_name: SPIROCHAETA CALIFORNIENSIS MEDIUM
 category: bacterial
@@ -242,4 +243,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:15.835616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002804'
 high_metal: true

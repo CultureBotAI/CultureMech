@@ -1,3 +1,4 @@
+id: CultureMech:015237
 preferred_term: Main sol. 431
 term:
   id: mediadive.solution:878
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 8.7, filter sterilize and add appropriate amount of
   Na2S solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.428619Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015237'

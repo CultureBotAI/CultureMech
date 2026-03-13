@@ -1,3 +1,4 @@
+id: CultureMech:014926
 preferred_term: Stock solution 2
 term:
   id: mediadive.solution:6235
@@ -99,3 +100,8 @@ composition:
     label: iron dichloride tetrahydrate
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:40.041158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014926'

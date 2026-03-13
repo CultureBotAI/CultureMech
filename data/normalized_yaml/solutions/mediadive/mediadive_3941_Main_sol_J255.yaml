@@ -1,3 +1,4 @@
+id: CultureMech:013004
 preferred_term: Main sol. J255
 term:
   id: mediadive.solution:3941
@@ -167,3 +168,8 @@ preparation_notes: 'Adjust pH to 6.0. Sterilize by filtration. Aseptically dispe
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.850699Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013004'

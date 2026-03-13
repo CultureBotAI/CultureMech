@@ -1,3 +1,4 @@
+id: CultureMech:005614
 name: CLOSTRIDIUM AEROTOLERANS medium
 original_name: CLOSTRIDIUM AEROTOLERANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:489
     label: CLOSTRIDIUM AEROTOLERANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -93,3 +95,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 489
+- timestamp: '2026-03-13T06:19:34.592448Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005614'

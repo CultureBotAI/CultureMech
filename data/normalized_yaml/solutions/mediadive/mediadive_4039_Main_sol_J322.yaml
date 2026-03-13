@@ -1,3 +1,4 @@
+id: CultureMech:013093
 preferred_term: Main sol. J322
 term:
   id: mediadive.solution:4039
@@ -83,3 +84,8 @@ preparation_notes: Mix ingredients, except KNO3 and Na2S x 9H2O, adjust pH to 6.
   and seal with butyl rubber stoppers. Prior to inoculation, add the sterile KNO3
   and Na2S x 9H2O solutions, and readjust pH, if necessary. Pressurize the inoculated
   bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.365371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013093'

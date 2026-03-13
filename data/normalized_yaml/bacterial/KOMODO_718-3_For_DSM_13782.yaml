@@ -1,3 +1,4 @@
+id: CultureMech:006357
 name: 'For DSM 13782:'
 original_name: 'For DSM 13782:'
 category: bacterial
@@ -271,3 +272,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:40.047496Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006357'

@@ -1,3 +1,4 @@
+id: CultureMech:006022
 name: ANAEROVIBRIO BURKINABENSIS medium
 original_name: ANAEROVIBRIO BURKINABENSIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:575
     label: ANAEROVIBRIO BURKINABENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 575 | DSMZ Medium: 575 (mediadive.medium:575) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 575 | DSMZ Medium: 575 (mediadive.medium:575)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 575'
+- timestamp: '2026-03-13T06:19:37.689643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006022'

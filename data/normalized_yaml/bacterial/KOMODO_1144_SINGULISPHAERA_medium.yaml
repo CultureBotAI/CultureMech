@@ -1,3 +1,4 @@
+id: CultureMech:003855
 name: SINGULISPHAERA medium
 original_name: SINGULISPHAERA medium
 category: bacterial
@@ -135,3 +136,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:22.736360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003855'

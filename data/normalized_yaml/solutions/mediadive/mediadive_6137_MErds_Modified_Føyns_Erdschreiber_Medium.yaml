@@ -1,3 +1,4 @@
+id: CultureMech:014839
 preferred_term: MErds (Modified Føyns Erdschreiber Medium)
 term:
   id: mediadive.solution:6137
@@ -42,3 +43,8 @@ composition:
 preparation_notes: "Mix  the  above  constituents  and  autoclave  at  15 psi for\
   \  15  minutes.  It may  be \r\nnecessary to filter final medium to avoid problems\
   \ with precipitate."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.739988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014839'

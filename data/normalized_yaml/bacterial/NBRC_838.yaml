@@ -1,3 +1,4 @@
+id: CultureMech:007497
 name: '838'
 original_name: '838'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 86 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.260267Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007497'
 solutions:
 - preferred_term: KH2PO40.75gK2HPO40.75gMgCl2·6H2O0.36gNH4Cl1gBacto Yeast Extract
     (Difco)0.1gHipolypepton*0.1gSodium acetate2.5gTrimethylamine-HCl8gTrace mineral

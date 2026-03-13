@@ -1,3 +1,4 @@
+id: CultureMech:004672
 name: MEDIUM 269 MODIFIED FOR DSM 11237
 original_name: MEDIUM 269 MODIFIED FOR DSM 11237
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:269_11237
     label: MEDIUM 269 MODIFIED FOR DSM 11237
-notes: 'Source: KOMODO ModelSEED | ID: 269_11237 | DSMZ Medium: 269 (mediadive.medium:269) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 269_11237 | DSMZ Medium: 269 (mediadive.medium:269)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -62,3 +63,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 269
+- timestamp: '2026-03-13T06:19:27.986016Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004672'

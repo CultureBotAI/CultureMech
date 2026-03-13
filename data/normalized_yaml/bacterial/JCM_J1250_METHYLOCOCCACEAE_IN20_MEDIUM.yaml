@@ -1,3 +1,4 @@
+id: CultureMech:002417
 name: METHYLOCOCCACEAE IN20 MEDIUM
 original_name: METHYLOCOCCACEAE IN20 MEDIUM
 category: bacterial
@@ -228,18 +229,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 5.7 with HCl and autoclave. After cooling, add
-    the following solutions (filter-sterilized) to the medium:'
+  description: 'Mix components thoroughly, adjust pH to 5.7 with HCl and autoclave.
+    After cooling, add the following solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Aseptically distribute the medium into culture vessels (leave >80% volume gas phase), and
-    seal with butyl rubber stoppers. Then, add methane (filter-sterilized) to the culture vessels to give
-    a 30% concentration by volume in the gas phase (overpressured). Check final pH of the medium to be
-    6.4-6.8.
+  description: Aseptically distribute the medium into culture vessels (leave >80%
+    volume gas phase), and seal with butyl rubber stoppers. Then, add methane (filter-sterilized)
+    to the culture vessels to give a 30% concentration by volume in the gas phase
+    (overpressured). Check final pH of the medium to be 6.4-6.8.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then, proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then,
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -247,3 +248,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1250'
+- timestamp: '2026-03-13T06:19:13.138963Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002417'

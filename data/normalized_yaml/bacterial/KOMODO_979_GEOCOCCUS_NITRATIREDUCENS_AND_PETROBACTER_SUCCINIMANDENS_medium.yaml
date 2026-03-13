@@ -1,3 +1,4 @@
+id: CultureMech:006939
 name: GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS medium
 original_name: GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS medium
 category: bacterial
@@ -244,4 +245,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:45.158622Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006939'
 ph_value: 7.0

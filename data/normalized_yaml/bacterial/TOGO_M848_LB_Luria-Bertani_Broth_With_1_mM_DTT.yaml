@@ -1,3 +1,4 @@
+id: CultureMech:010263
 name: LB (Luria-Bertani) Broth With 1 mM DTT
 original_name: LB (Luria-Bertani) Broth With 1 mM DTT
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -60,3 +63,7 @@ curation_history:
   date: '2026-02-03T11:21:00.859540'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 1,4--dithiothreitol (DTT)'
+- timestamp: '2026-03-13T06:20:12.508875Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010263'

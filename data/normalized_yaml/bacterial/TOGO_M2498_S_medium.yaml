@@ -1,3 +1,4 @@
+id: CultureMech:009071
 name: S medium
 original_name: S medium
 category: bacterial
@@ -221,6 +222,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:02.362680Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009071'
 high_metal: true
 solutions:
 - preferred_term: CaCl2 solution

@@ -1,3 +1,4 @@
+id: CultureMech:013751
 preferred_term: Solution A
 term:
   id: mediadive.solution:4811
@@ -128,3 +129,8 @@ preparation_notes: 'Mix components and adjust pH to 7.0. Autoclave under a N2-CO
 
 
   Original volume: 904 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.273211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013751'

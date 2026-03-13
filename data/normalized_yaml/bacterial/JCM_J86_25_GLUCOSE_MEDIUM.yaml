@@ -1,3 +1,4 @@
+id: CultureMech:003216
 name: 25% GLUCOSE MEDIUM
 original_name: 25% GLUCOSE MEDIUM
 category: bacterial
@@ -43,3 +44,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J86'
+- timestamp: '2026-03-13T06:19:18.638319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003216'

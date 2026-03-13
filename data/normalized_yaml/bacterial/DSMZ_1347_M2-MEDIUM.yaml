@@ -1,3 +1,4 @@
+id: CultureMech:000805
 name: M2-MEDIUM
 original_name: M2-MEDIUM
 category: bacterial
@@ -105,9 +106,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Final pH 5.5.The medium is fairly weakly buffered so the pH
-    should be checked before and after autoclaving. Dispense the medium into serum bottles. Add 10-20%
-    methane to the gas phase. Sterilize by autoclaving.
+  description: Prepare the liquid medium. Final pH 5.5.The medium is fairly weakly
+    buffered so the pH should be checked before and after autoclaving. Dispense the
+    medium into serum bottles. Add 10-20% methane to the gas phase. Sterilize by autoclaving.
 - step_number: 2
   action: MIX
   description: The strain should be grown with shaking.
@@ -118,3 +119,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1347'
+- timestamp: '2026-03-13T06:18:58.488493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000805'

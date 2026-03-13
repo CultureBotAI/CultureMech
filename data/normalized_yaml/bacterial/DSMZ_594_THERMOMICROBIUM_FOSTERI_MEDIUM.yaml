@@ -1,3 +1,4 @@
+id: CultureMech:001721
 name: THERMOMICROBIUM FOSTERI MEDIUM
 original_name: THERMOMICROBIUM FOSTERI MEDIUM
 category: bacterial
@@ -116,10 +117,11 @@ preparation_steps:
   description: pH 7.2
 - step_number: 2
   action: AUTOCLAVE
-  description: Add the filter-sterilized heptadecane to the autoclaved medium. Solid medium is prepared
-    by adding 20.0 g/l agar. Prepare slopes in screw cap bottles by adding the filter-sterilized heptadecane
-    to the warm medium and carefully mixing so that the heptadecane is evenly distributed in the agar.
-    Avoid excessive air bubble formation, and cool the agar slopes in a refrigerator or under an ice pack.
+  description: Add the filter-sterilized heptadecane to the autoclaved medium. Solid
+    medium is prepared by adding 20.0 g/l agar. Prepare slopes in screw cap bottles
+    by adding the filter-sterilized heptadecane to the warm medium and carefully mixing
+    so that the heptadecane is evenly distributed in the agar. Avoid excessive air
+    bubble formation, and cool the agar slopes in a refrigerator or under an ice pack.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,3 +129,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 594'
+- timestamp: '2026-03-13T06:19:06.688715Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001721'

@@ -1,3 +1,4 @@
+id: CultureMech:001351
 name: STARCH - MINERAL SALT - AGAR (STMS)
 original_name: STARCH - MINERAL SALT - AGAR (STMS)
 category: bacterial
@@ -92,3 +93,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 252'
+- timestamp: '2026-03-13T06:19:03.336951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001351'

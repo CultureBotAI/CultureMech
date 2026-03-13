@@ -1,3 +1,4 @@
+id: CultureMech:009703
 name: modified PYG Medium
 original_name: modified PYG Medium
 category: bacterial
@@ -190,6 +191,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:08.261090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009703'
 solutions:
 - preferred_term: Sal Solution*
   composition: []

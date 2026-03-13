@@ -1,3 +1,4 @@
+id: CultureMech:015241
 preferred_term: Main sol. 435
 term:
   id: mediadive.solution:881
@@ -89,3 +90,8 @@ preparation_notes: 'Adjust pH to 6.5.
 
   Add 2 g/l activated charcoal to the agar base solution before autoclaving. After
   autoclaving, cool to 45°C and add sterilized serum.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.445582Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015241'

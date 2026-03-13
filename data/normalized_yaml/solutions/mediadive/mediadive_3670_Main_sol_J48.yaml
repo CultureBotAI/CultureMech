@@ -1,3 +1,4 @@
+id: CultureMech:012753
 preferred_term: Main sol. J48
 term:
   id: mediadive.solution:3670
@@ -91,3 +92,8 @@ preparation_notes: 'Adjust pH to 7.2.
 
   Corn steep liquor, powder (Wako Pure Chemicals) may be substituted for corn steep
   liquor.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.528974Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012753'

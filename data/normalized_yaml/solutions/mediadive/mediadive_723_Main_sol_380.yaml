@@ -1,3 +1,4 @@
+id: CultureMech:015130
 preferred_term: Main sol. 380
 term:
   id: mediadive.solution:723
@@ -151,3 +152,8 @@ preparation_notes: 'Dissolve ingredients (except thioglycolate and vitamins) in 
 
 
   Original volume: 1008 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.965481Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015130'

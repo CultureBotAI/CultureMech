@@ -1,3 +1,4 @@
+id: CultureMech:015195
 preferred_term: Artificial sea water
 term:
   id: mediadive.solution:827
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each
   as separate stock solutions in 10 ml distilled water.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.262871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015195'

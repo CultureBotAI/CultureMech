@@ -1,3 +1,4 @@
+id: CultureMech:012813
 preferred_term: Solution B
 term:
   id: mediadive.solution:3733
@@ -43,3 +44,8 @@ preparation_notes: 'Autoclave Solutions A and B separately, and mix aseptically.
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.784460Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012813'

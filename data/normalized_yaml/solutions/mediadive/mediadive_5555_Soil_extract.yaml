@@ -1,3 +1,4 @@
+id: CultureMech:014434
 preferred_term: Soil extract
 term:
   id: mediadive.solution:5555
@@ -44,3 +45,8 @@ preparation_notes: 'Autoclave soil suspension for one hour at 121°C. To obtain 
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.780541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014434'

@@ -1,3 +1,4 @@
+id: CultureMech:015053
 preferred_term: Main sol. 338
 term:
   id: mediadive.solution:650
@@ -140,3 +141,8 @@ preparation_notes: 'Adjust pH to 7.5. Prepare the medium anaerobically under 100
 
   Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted with water
   to 10 ml and neutralized), formate, and fumarate separately under nitrogen.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.553054Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015053'

@@ -1,3 +1,4 @@
+id: CultureMech:009000
 name: Nutrient Broth
 original_name: Nutrient Broth
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Nutrient Broth (BD cat 234000)
   concentration:
     value: '8'
@@ -29,3 +31,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2418'
+- timestamp: '2026-03-13T06:20:01.904866Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009000'

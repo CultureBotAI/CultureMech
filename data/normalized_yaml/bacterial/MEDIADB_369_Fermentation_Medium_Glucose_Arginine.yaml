@@ -1,3 +1,4 @@
+id: CultureMech:007271
 name: '''Fermentation Medium (Glucose+Arginine'
 original_name: '''Fermentation Medium (Glucose+Arginine'
 category: bacterial
@@ -79,8 +80,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:45.960402Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 369, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 369, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:20.839501Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -88,13 +89,19 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.100184Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:47.315762Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007271'
 media_term:
   preferred_term: MediaDB Medium 369
   term:
     id: MEDIADB:369
     label: '''Fermentation Medium (Glucose+Arginine'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,3 +1,4 @@
+id: CultureMech:014250
 preferred_term: Main sol. J1213
 term:
   id: mediadive.solution:5337
@@ -141,3 +142,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil and cool down und
   \ pH to 7.2: \nDistribute the medium into culture vessels (e.g., 10 ml in Balch\
   \ type tubes) under N2, seal with butyl rubber stoppers and autoclave.\n\nOriginal\
   \ volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.607394Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014250'

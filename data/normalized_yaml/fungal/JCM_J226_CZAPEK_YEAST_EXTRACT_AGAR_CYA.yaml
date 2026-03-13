@@ -1,3 +1,4 @@
+id: CultureMech:010511
 name: CZAPEK YEAST EXTRACT AGAR (CYA)
 original_name: CZAPEK YEAST EXTRACT AGAR (CYA)
 category: fungal
@@ -84,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J226'
+- timestamp: '2026-03-13T06:20:14.183645Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010511'

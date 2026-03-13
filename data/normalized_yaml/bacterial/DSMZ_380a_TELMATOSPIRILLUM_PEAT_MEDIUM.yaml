@@ -1,3 +1,4 @@
+id: CultureMech:001485
 name: TELMATOSPIRILLUM (PEAT) MEDIUM
 original_name: TELMATOSPIRILLUM (PEAT) MEDIUM
 category: bacterial
@@ -250,17 +251,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except xylose, vitamins and thioglycolate) and adjust pH to 5.5 -
-    6.0. Sparge medium with 100% N2 gas for 30 -45 min to make it anoxic and dispense under the same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume. Seal vials with gas
-    tight butyl rubber closures. Autoclave at 121°C for 15 min. Before inoculation add xylose, vitamins
-    and thioglycolate from anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration.
-    Then add sterile air (with hypodermic syringe through the rubber closure) to 1% (v/v) O2 concentration
-    in the gas phase.
+  description: Dissolve ingredients (except xylose, vitamins and thioglycolate) and
+    adjust pH to 5.5 - 6.0. Sparge medium with 100% N2 gas for 30 -45 min to make
+    it anoxic and dispense under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume. Seal vials with gas tight butyl rubber
+    closures. Autoclave at 121°C for 15 min. Before inoculation add xylose, vitamins
+    and thioglycolate from anoxic stock solutions prepared under 100% N2 gas and sterilized
+    by filtration. Then add sterile air (with hypodermic syringe through the rubber
+    closure) to 1% (v/v) O2 concentration in the gas phase.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: Sterilize by filtration under 100% N2 gas atmosphere.
@@ -274,4 +276,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:30.658134Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:04.568300Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001485'

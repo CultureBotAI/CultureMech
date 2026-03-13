@@ -1,3 +1,4 @@
+id: CultureMech:008712
 name: Columbia Blood Agar With 10% Horse Blood
 original_name: Columbia Blood Agar With 10% Horse Blood
 category: bacterial
@@ -35,3 +36,7 @@ curation_history:
   date: '2026-02-03T11:20:52.269566'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sterile defibrinated horse blood'
+- timestamp: '2026-03-13T06:19:59.693640Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008712'

@@ -1,3 +1,4 @@
+id: CultureMech:011444
 preferred_term: Mineral mixture
 term:
   id: mediadive.solution:2044
@@ -183,3 +184,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:19.736321Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011444'

@@ -1,3 +1,4 @@
+id: CultureMech:011230
 preferred_term: Main sol. 871
 term:
   id: mediadive.solution:1800
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: pH should be between 7.0 - 7.4.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.282244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011230'

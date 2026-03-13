@@ -1,3 +1,4 @@
+id: CultureMech:014933
 preferred_term: Vitamin solution
 term:
   id: mediadive.solution:6241
@@ -55,3 +56,8 @@ preparation_notes: 'Make up to 100 ml with distilled water.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.072854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014933'

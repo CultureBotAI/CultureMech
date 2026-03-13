@@ -1,3 +1,4 @@
+id: CultureMech:006866
 name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:939
     label: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 939 | DSMZ Medium: 939 (mediadive.medium:939) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 939 | DSMZ Medium: 939 (mediadive.medium:939)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -110,3 +112,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 939
+- timestamp: '2026-03-13T06:19:44.462290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006866'

@@ -1,3 +1,4 @@
+id: CultureMech:010815
 preferred_term: Main sol. 621
 term:
   id: mediadive.solution:1330
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "Sterilize 20 min./121°C. After cooling to 60°C add to the medium:\
   \ \nAdjust pH to 7.5 (the medium is only weakly buffered; one needs approx. 10 drops/l\
   \ medium of 6 N KOH)."
+curation_history:
+- timestamp: '2026-03-13T06:20:15.697839Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010815'

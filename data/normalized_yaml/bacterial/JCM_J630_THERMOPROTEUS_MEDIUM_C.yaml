@@ -1,3 +1,4 @@
+id: CultureMech:002977
 name: THERMOPROTEUS MEDIUM (C)
 original_name: THERMOPROTEUS MEDIUM (C)
 category: bacterial
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.923589Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002977'
 data_quality_flags:
 - incomplete_composition

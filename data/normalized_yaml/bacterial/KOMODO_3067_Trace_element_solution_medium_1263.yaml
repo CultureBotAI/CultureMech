@@ -1,3 +1,4 @@
+id: CultureMech:004851
 name: Trace element solution (medium 1263)
 original_name: Trace element solution (medium 1263)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3067'
+- timestamp: '2026-03-13T06:19:28.900689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004851'

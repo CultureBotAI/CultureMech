@@ -1,3 +1,4 @@
+id: CultureMech:002266
 name: PEAT MEDIUM WITH SUCROSE
 original_name: PEAT MEDIUM WITH SUCROSE
 category: bacterial
@@ -130,12 +131,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0 g/L agar. After autoclaving
-    and cooling (for solid medium, cooling to 55C), add the following solution (filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0
+    g/L agar. After autoclaving and cooling (for solid medium, cooling to 55C), add
+    the following solution (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels and replace the gas phase with a
-    N2-CO2 (4:1, v/v) gas atmosphere.
+  description: Aseptically distribute the medium into culture vessels and replace
+    the gas phase with a N2-CO2 (4:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -143,3 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1086'
+- timestamp: '2026-03-13T06:19:11.795538Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002266'

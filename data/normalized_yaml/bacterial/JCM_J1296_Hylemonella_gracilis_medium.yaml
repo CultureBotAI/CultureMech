@@ -1,3 +1,4 @@
+id: CultureMech:002458
 name: Hylemonella gracilis medium
 original_name: Hylemonella gracilis medium
 category: bacterial
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1296'
+- timestamp: '2026-03-13T06:19:13.489536Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002458'

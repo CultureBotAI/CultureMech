@@ -1,3 +1,4 @@
+id: CultureMech:012388
 preferred_term: Marine Salts 12%
 term:
   id: mediadive.solution:3186
@@ -75,3 +76,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:25.651159Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012388'

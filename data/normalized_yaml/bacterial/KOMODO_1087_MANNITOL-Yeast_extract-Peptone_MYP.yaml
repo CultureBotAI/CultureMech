@@ -1,3 +1,4 @@
+id: CultureMech:003739
 name: MANNITOL-Yeast extract-Peptone (MYP)
 original_name: MANNITOL-Yeast extract-Peptone (MYP)
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1087
     label: MANNITOL-Yeast extract-Peptone (MYP)
-notes: 'Source: KOMODO ModelSEED | ID: 1087 | DSMZ Medium: 1087 (mediadive.medium:1087) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1087 | DSMZ Medium: 1087 (mediadive.medium:1087)
+  | Aerobic: No'
 ingredients:
 - preferred_term: D-Mannitol
   term:
@@ -43,3 +45,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1087
+- timestamp: '2026-03-13T06:19:21.806398Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003739'

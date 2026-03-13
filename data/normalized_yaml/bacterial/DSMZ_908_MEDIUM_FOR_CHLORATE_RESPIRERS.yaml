@@ -1,3 +1,4 @@
+id: CultureMech:002076
 name: MEDIUM FOR CHLORATE RESPIRERS
 original_name: MEDIUM FOR CHLORATE RESPIRERS
 category: bacterial
@@ -221,13 +222,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A, B and C separately and anaerobically under 80% N2 + 20% CO2 atmosphere.
-    Combine 1000 ml solution A, 10 ml solution B and 10 ml solution C. Add 5 ml vitamin solution E and
-    1 ml trace element solution D. The pH should be 7.2 without further adjustment.
+  description: Autoclave solutions A, B and C separately and anaerobically under 80%
+    N2 + 20% CO2 atmosphere. Combine 1000 ml solution A, 10 ml solution B and 10 ml
+    solution C. Add 5 ml vitamin solution E and 1 ml trace element solution D. The
+    pH should be 7.2 without further adjustment.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.0 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.0 ml.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
@@ -242,3 +244,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:10.069063Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002076'

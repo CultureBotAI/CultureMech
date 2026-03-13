@@ -1,3 +1,4 @@
+id: CultureMech:013508
 preferred_term: Main sol. J654
 term:
   id: mediadive.solution:4541
@@ -125,3 +126,8 @@ composition:
     match_type: exact_match
 preparation_notes: "Mix components thoroughly and autoclave. Then add the following\
   \ solution: \nCultivate under a N2 atmosphere."
+curation_history:
+- timestamp: '2026-03-13T06:20:31.703635Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013508'

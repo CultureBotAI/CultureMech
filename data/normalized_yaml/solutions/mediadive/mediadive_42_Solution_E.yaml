@@ -1,3 +1,4 @@
+id: CultureMech:013309
 preferred_term: Solution E
 term:
   id: mediadive.solution:42
@@ -103,3 +104,8 @@ preparation_notes: 'Filter sterilize into sterile, gas-tight, 100 ml screw-cap b
 
 
   Original volume: 25 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.596455Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013309'

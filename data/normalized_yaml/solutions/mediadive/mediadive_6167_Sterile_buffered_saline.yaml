@@ -1,3 +1,4 @@
+id: CultureMech:014869
 preferred_term: Sterile buffered saline
 term:
   id: mediadive.solution:6167
@@ -41,3 +42,8 @@ composition:
     match_type: exact_match
 preparation_notes: "Dispense 8.5 ml aliquots into test tubes.  Cap and autoclave at\
   \ 15 psi\r\nfor 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.850195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014869'

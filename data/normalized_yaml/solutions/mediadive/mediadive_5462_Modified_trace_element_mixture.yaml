@@ -1,3 +1,4 @@
+id: CultureMech:014366
 preferred_term: Modified trace element mixture
 term:
   id: mediadive.solution:5462
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve EDTA x Na2 in distilled water first and adjust pH to 6.5
   with NaOH. Then, proceed to add minerals.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.344207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014366'

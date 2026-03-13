@@ -1,3 +1,4 @@
+id: CultureMech:009432
 name: Todd–Hewitt broth
 original_name: Todd–Hewitt broth
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   date: '2026-02-03T11:20:56.779042'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.168407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009432'

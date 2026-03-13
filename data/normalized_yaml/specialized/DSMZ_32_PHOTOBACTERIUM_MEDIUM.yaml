@@ -1,3 +1,4 @@
+id: CultureMech:015353
 name: PHOTOBACTERIUM MEDIUM
 original_name: PHOTOBACTERIUM MEDIUM
 category: specialized
@@ -74,3 +75,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 32'
+- timestamp: '2026-03-13T06:20:42.105743Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015353'

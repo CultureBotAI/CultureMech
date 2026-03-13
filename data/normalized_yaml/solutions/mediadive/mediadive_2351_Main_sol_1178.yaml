@@ -1,3 +1,4 @@
+id: CultureMech:011730
 preferred_term: Main sol. 1178
 term:
   id: mediadive.solution:2351
@@ -67,3 +68,8 @@ composition:
 preparation_notes: 'pH 7.0
 
   Agar may be added (15 g/l) to solidify the medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.589020Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011730'

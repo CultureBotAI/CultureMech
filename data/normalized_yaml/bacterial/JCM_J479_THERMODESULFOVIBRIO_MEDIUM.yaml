@@ -1,3 +1,4 @@
+id: CultureMech:002828
 name: THERMODESULFOVIBRIO MEDIUM
 original_name: THERMODESULFOVIBRIO MEDIUM
 category: bacterial
@@ -27,8 +28,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Solution A of Medium No. 284 without yeast extract. Prepare the culture vessels containing
-    the solution as described in the recipe of Medium No. 284.
+  description: Use Solution A of Medium No. 284 without yeast extract. Prepare the
+    culture vessels containing the solution as described in the recipe of Medium No.
+    284.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
@@ -37,13 +39,14 @@ preparation_steps:
   description: Autoclave and store under a N2 atmosphere.
 - step_number: 4
   action: AUTOCLAVE
-  description: To complete the medium, add 0.05 volume of Solutions B and C to the culture vessels containing
-    Solution A. Prior to inoculation, aseptically and anaerobically add 0.01 volume of L-cysteine x HCl
-    x H2O and Na2S x 9H2O solutions to the medium (3% solutions, autoclaved and stored under a N2 atmosphere).
+  description: To complete the medium, add 0.05 volume of Solutions B and C to the
+    culture vessels containing Solution A. Prior to inoculation, aseptically and anaerobically
+    add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium
+    (3% solutions, autoclaved and stored under a N2 atmosphere).
 - step_number: 5
   action: MIX
-  description: 'Comment: For strains JCM 13213, JCM 13214, JCM 13215 and JCM 13216, incubate with a 10%
-    inoculum.'
+  description: 'Comment: For strains JCM 13213, JCM 13214, JCM 13215 and JCM 13216,
+    incubate with a 10% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -51,3 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J479'
+- timestamp: '2026-03-13T06:19:15.948386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002828'

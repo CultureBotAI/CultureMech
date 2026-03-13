@@ -1,3 +1,4 @@
+id: CultureMech:000332
 name: CMA
 original_name: CMA
 category: bacterial
@@ -31,9 +32,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: "Disperse the agar in cold deionised water. Apply heat, stirring constantly. During heating,\
-    \ add\r\nglucose and yeast extract. Bring contents to boil. Transfer molten agar to suitable vessels.\r\
-    \nSterilise by pressure cooking at 10 psi for 15 minutes."
+  description: "Disperse the agar in cold deionised water. Apply heat, stirring constantly.\
+    \ During heating, add\r\nglucose and yeast extract. Bring contents to boil. Transfer\
+    \ molten agar to suitable vessels.\r\nSterilise by pressure cooking at 10 psi\
+    \ for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -41,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C24'
+- timestamp: '2026-03-13T06:18:54.519650Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000332'

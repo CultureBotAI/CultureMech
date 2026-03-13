@@ -1,3 +1,4 @@
+id: CultureMech:013377
 preferred_term: Main sol. J559
 term:
   id: mediadive.solution:4381
@@ -200,3 +201,8 @@ preparation_notes: Mix ingredients except Na2S x 9H2O and distribute the medium 
   as a 5% solution, adjust pH to 6.0 and seal with butyl rubber stoppers. Autoclave
   at 110C for 1 hr. Prior to cultivation, replace the gas phase with a H2-CO2 (4:1,
   v/v) gas mixture. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+curation_history:
+- timestamp: '2026-03-13T06:20:30.986031Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013377'

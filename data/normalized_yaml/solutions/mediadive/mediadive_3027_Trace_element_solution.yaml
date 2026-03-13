@@ -1,3 +1,4 @@
+id: CultureMech:012258
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:3027
@@ -128,3 +129,8 @@ preparation_notes: 'Adjust pH to 3.0-4.0 with HCl.
   Autoclave at 121 °C for 15 min.
 
   Note: autoclave in closed bottles'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.827906Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012258'

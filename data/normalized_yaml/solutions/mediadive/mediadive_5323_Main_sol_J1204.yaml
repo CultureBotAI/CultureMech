@@ -1,3 +1,4 @@
+id: CultureMech:014235
 preferred_term: Main sol. J1204
 term:
   id: mediadive.solution:5323
@@ -203,3 +204,8 @@ preparation_notes: "Solution A:\nAutoclave under a N2 gas atmosphere.\nSolution 
   \ butyl rubber stoppers. Prior to use, add per liter the following solutions from\
   \ anaerobic stocks (autoclaved and stored under a N2 atmosphere): \nAdjust pH to\
   \ 6.5-7.0, if necessary.\n\nOriginal volume: 1017 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.505920Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014235'

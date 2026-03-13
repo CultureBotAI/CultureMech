@@ -1,3 +1,4 @@
+id: CultureMech:011099
 preferred_term: Main sol. 808
 term:
   id: mediadive.solution:1641
@@ -188,3 +189,8 @@ preparation_notes: 'pH 6.8
 
   Autoclave the mineral salts solution and add 10 ml/l filter sterilised methanol
   to the cooled medium. Add 15 g/l agar for solid media.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.520752Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011099'

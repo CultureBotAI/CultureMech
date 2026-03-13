@@ -1,3 +1,4 @@
+id: CultureMech:007457
 name: '1118'
 original_name: '1118'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 64 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.144937Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007457'
 solutions:
 - preferred_term: KH2PO40.5gMgSO4·7H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2·2H2O0.25gSodium
     pyruvate0.5gSodium succinate0.5gSodium acetate0.5gYeast extract0.5gFerric citrate

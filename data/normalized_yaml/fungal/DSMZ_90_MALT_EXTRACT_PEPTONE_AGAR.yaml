@@ -1,3 +1,4 @@
+id: CultureMech:010481
 name: MALT EXTRACT PEPTONE AGAR
 original_name: MALT EXTRACT PEPTONE AGAR
 category: fungal
@@ -37,3 +38,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 90'
+- timestamp: '2026-03-13T06:20:14.002265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010481'

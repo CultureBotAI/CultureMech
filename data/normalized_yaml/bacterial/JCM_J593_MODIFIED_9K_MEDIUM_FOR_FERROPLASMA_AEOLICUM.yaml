@@ -1,3 +1,4 @@
+id: CultureMech:002941
 name: MODIFIED 9K MEDIUM FOR FERROPLASMA AEOLICUM
 original_name: MODIFIED 9K MEDIUM FOR FERROPLASMA AEOLICUM
 category: bacterial
@@ -116,8 +117,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 1.6 - 1.7 with 10 N H2SO4 and autoclave. After cooling, add filter-sterilized
-    K2S4O6 solution to give a final concentration of 5 mM.
+  description: Adjust pH to 1.6 - 1.7 with 10 N H2SO4 and autoclave. After cooling,
+    add filter-sterilized K2S4O6 solution to give a final concentration of 5 mM.
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,3 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J593'
+- timestamp: '2026-03-13T06:19:16.707650Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002941'

@@ -1,3 +1,4 @@
+id: CultureMech:014376
 preferred_term: Main sol. J1312
 term:
   id: mediadive.solution:5472
@@ -141,3 +142,8 @@ preparation_notes: "Mix ingredients, bring to a boil and cool down under a N2-CO
   \ \nPrior to inoculation, aseptically and anaerobically add 0.01 volume of L-cysteine\
   \ x HCl x H2O to the medium (3% solution, autoclaved and stored under a N2 atmosphere).\n\
   \nOriginal volume: 112 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.420736Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014376'

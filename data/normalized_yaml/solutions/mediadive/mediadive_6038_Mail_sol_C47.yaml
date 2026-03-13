@@ -1,3 +1,4 @@
+id: CultureMech:014765
 preferred_term: Mail sol. C47
 term:
   id: mediadive.solution:6038
@@ -102,3 +103,8 @@ composition:
 preparation_notes: "Make up to 1 litre with distilled water and adjust to pH 8.0 with\
   \ 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes.\nFor brackish organisms,\
   \ take 15 g of NaCl instead of 30 g (BW/MASM)."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.457524Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014765'

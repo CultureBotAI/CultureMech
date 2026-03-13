@@ -1,3 +1,4 @@
+id: CultureMech:015067
 preferred_term: Main sol. 1c
 term:
   id: mediadive.solution:6571
@@ -68,3 +69,8 @@ preparation_notes: 'Autoclave at 121 °C for 21 min.
 
   After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium chloride
   stock solution (1% w/v).'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.609953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015067'

@@ -1,3 +1,4 @@
+id: CultureMech:005520
 name: REACTIVATION WITH LIQUID medium 464
 original_name: REACTIVATION WITH LIQUID medium 464
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:464a
     label: REACTIVATION WITH LIQUID medium 464
-notes: 'Source: KOMODO ModelSEED | ID: 464a | DSMZ Medium: 464a (mediadive.medium:464a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 464a | DSMZ Medium: 464a (mediadive.medium:464a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -43,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 464
+- timestamp: '2026-03-13T06:19:33.565224Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005520'
 ph_value: 7.0

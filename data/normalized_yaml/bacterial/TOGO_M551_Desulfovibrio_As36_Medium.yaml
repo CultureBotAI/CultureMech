@@ -1,3 +1,4 @@
+id: CultureMech:009945
 name: Desulfovibrio As36 Medium
 original_name: Desulfovibrio As36 Medium
 category: bacterial
@@ -142,6 +143,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:10.177021Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009945'
 solutions:
 - preferred_term: Solution A
   term:

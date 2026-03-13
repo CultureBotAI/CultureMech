@@ -1,3 +1,4 @@
+id: CultureMech:014930
 preferred_term: Mail sol. C101
 term:
   id: mediadive.solution:6239
@@ -33,3 +34,8 @@ preparation_notes: "Put a layer about 1 cm deep of air-dried, sieved good calcar
   \ pH should be between 7.0 - 8.0.\nS/W is  prepared  as  above,  but approximately\
   \  0.01  g  calcium  carbonate is placed into the base of the test tube before adding\
   \ the soil and water."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.059597Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014930'

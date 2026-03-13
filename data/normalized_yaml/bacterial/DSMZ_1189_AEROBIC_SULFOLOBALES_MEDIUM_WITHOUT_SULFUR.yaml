@@ -1,3 +1,4 @@
+id: CultureMech:000632
 name: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
 original_name: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
 category: bacterial
@@ -91,8 +92,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave salt base solution and yeast extract (as a 10% solution) separately, and combine
-    after cooling.
+  description: Autoclave salt base solution and yeast extract (as a 10% solution)
+    separately, and combine after cooling.
 - step_number: 2
   action: MIX
   description: Adjust to pH 2.5 with 10 N H2SO4.
@@ -103,3 +104,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1189'
+- timestamp: '2026-03-13T06:18:56.949381Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000632'

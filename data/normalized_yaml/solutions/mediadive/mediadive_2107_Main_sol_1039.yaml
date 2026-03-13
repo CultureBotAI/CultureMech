@@ -1,3 +1,4 @@
+id: CultureMech:011507
 preferred_term: Main sol. 1039
 term:
   id: mediadive.solution:2107
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Adjust to pH 7.2 prior to autoclaving with KOH.
 
   It is important to use indicator paper for pH adjustment and not a pH electrode!'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.118305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011507'

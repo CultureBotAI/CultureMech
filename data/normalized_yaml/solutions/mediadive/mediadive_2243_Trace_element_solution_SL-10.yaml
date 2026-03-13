@@ -1,3 +1,4 @@
+id: CultureMech:011634
 preferred_term: Trace element solution SL-10
 term:
   id: mediadive.solution:2243
@@ -123,3 +124,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:20.924276Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011634'

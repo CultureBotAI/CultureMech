@@ -1,3 +1,4 @@
+id: CultureMech:002745
 name: MV/LACTATE MEDIUM
 original_name: MV/LACTATE MEDIUM
 category: bacterial
@@ -221,10 +222,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sodium lactate, NaHCO3 and Na2S x 9H2O, bring to a boil, and cool
-    down to room temperature under a N2 gas stream. Dispense the medium into culture vessels under a N2
-    atmosphere, seal with butyl rubber stoppers and autoclave. Separately autoclave sodium lactate, NaHCO3
-    and Na2S x 9H2O solutions (10, 8 and 0.75%, respectively) under a N2 atmosphere, and add to the medium.
+  description: Mix ingredients, except sodium lactate, NaHCO3 and Na2S x 9H2O, bring
+    to a boil, and cool down to room temperature under a N2 gas stream. Dispense the
+    medium into culture vessels under a N2 atmosphere, seal with butyl rubber stoppers
+    and autoclave. Separately autoclave sodium lactate, NaHCO3 and Na2S x 9H2O solutions
+    (10, 8 and 0.75%, respectively) under a N2 atmosphere, and add to the medium.
     Check final pH to be 7.0 - 7.2.
 applications:
 - Microbial cultivation
@@ -233,3 +235,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J388'
+- timestamp: '2026-03-13T06:19:15.442693Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002745'

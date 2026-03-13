@@ -1,3 +1,4 @@
+id: CultureMech:012426
 preferred_term: Main sol. 1561
 term:
   id: mediadive.solution:3231
@@ -151,3 +152,8 @@ preparation_notes: 'Adjust pH to 7.5.
 
   Autoclave at 121°C for 15 min. Before inoculation add 1.0 ml/ l 5% sulfide solution
   pH 7.5 and 1.0 ml/l vitamin solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.866125Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012426'

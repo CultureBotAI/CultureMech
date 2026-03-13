@@ -1,3 +1,4 @@
+id: CultureMech:009492
 name: Thermodesulfobacterium Hydrogenophilum Medium
 original_name: Thermodesulfobacterium Hydrogenophilum Medium
 category: bacterial
@@ -310,6 +311,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.396042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009492'
 solutions:
 - preferred_term: Trace element solution (see below)
   composition: []

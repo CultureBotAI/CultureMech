@@ -1,3 +1,4 @@
+id: CultureMech:009082
 name: sheep blood agar
 original_name: sheep blood agar
 category: bacterial
@@ -31,3 +32,7 @@ curation_history:
   date: '2026-02-03T11:20:54.031426'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sheep blood agar'
+- timestamp: '2026-03-13T06:20:02.407675Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009082'

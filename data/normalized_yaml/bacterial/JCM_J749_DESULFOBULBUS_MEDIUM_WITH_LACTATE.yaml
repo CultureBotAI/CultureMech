@@ -1,3 +1,4 @@
+id: CultureMech:003092
 name: DESULFOBULBUS MEDIUM WITH LACTATE
 original_name: DESULFOBULBUS MEDIUM WITH LACTATE
 category: bacterial
@@ -224,8 +225,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After
-    cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    gas atmosphere. After cooling, aseptically and anaerobically add the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.1 - 7.4, if necessary.
@@ -236,3 +238,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J749'
+- timestamp: '2026-03-13T06:19:17.746260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003092'

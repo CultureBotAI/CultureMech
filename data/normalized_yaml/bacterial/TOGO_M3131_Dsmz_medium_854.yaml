@@ -1,3 +1,4 @@
+id: CultureMech:009602
 name: Dsmz medium 854
 original_name: Dsmz medium 854
 category: bacterial
@@ -352,6 +353,10 @@ curation_history:
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Documented molar unit conflict for NaCl
+- timestamp: '2026-03-13T06:20:07.311811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009602'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution

@@ -1,3 +1,4 @@
+id: CultureMech:002311
 name: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM
 original_name: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM
 category: bacterial
@@ -92,4 +93,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1138'
+- timestamp: '2026-03-13T06:19:12.234398Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002311'
 high_metal: true

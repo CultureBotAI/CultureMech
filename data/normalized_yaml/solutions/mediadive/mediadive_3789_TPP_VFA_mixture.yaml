@@ -1,3 +1,4 @@
+id: CultureMech:012867
 preferred_term: TPP/VFA mixture
 term:
   id: mediadive.solution:3789
@@ -31,3 +32,8 @@ preparation_notes: 'Mix together and filter-sterilize. Store at -20C.
 
 
   Original volume: 11 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.047081Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012867'

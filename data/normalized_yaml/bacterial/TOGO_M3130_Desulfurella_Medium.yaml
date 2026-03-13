@@ -1,3 +1,4 @@
+id: CultureMech:009601
 name: Desulfurella Medium
 original_name: Desulfurella Medium
 category: bacterial
@@ -302,6 +303,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:07.290833Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009601'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL-10

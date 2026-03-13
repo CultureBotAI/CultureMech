@@ -1,3 +1,4 @@
+id: CultureMech:006345
 name: For DSM 14366
 original_name: For DSM 14366
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:71.1
     label: For DSM 14366
-notes: 'Source: KOMODO ModelSEED | ID: 71.1 | DSMZ Medium: 71 (mediadive.medium:71) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 71.1 | DSMZ Medium: 71 (mediadive.medium:71)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -57,3 +59,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 71
+- timestamp: '2026-03-13T06:19:39.896288Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006345'

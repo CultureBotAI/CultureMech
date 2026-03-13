@@ -1,3 +1,4 @@
+id: CultureMech:003936
 name: For DSM 19966
 original_name: For DSM 19966
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1199.1
     label: For DSM 19966
-notes: 'Source: KOMODO ModelSEED | ID: 1199.1 | DSMZ Medium: 1199 (mediadive.medium:1199) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1199.1 | DSMZ Medium: 1199 (mediadive.medium:1199)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1199
+- timestamp: '2026-03-13T06:19:23.432492Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003936'

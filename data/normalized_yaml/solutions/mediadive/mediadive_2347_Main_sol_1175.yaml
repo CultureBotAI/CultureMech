@@ -1,3 +1,4 @@
+id: CultureMech:011726
 preferred_term: Main sol. 1175
 term:
   id: mediadive.solution:2347
@@ -120,3 +121,8 @@ preparation_notes: 'pH 10.0
   nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S
   x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions
   (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.564135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011726'

@@ -1,3 +1,4 @@
+id: CultureMech:010761
 preferred_term: Main sol. 591
 term:
   id: mediadive.solution:1270
@@ -153,3 +154,8 @@ preparation_notes: Prepare the medium without NaHCO3, Na2S, glucose and vitamins
   and stored under nitrogen), vitamins (filter sterilized and stored under nitrogen),
   and sodium sulphide (autoclaved under nitrogen) are added from sterile stock solutions.
   The pH should be pH 7.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.370317Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010761'

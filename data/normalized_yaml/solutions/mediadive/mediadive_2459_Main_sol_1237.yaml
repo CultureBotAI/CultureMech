@@ -1,3 +1,4 @@
+id: CultureMech:011829
 preferred_term: Main sol. 1237
 term:
   id: mediadive.solution:2459
@@ -207,3 +208,8 @@ preparation_notes: 'Dissolve ingredients (except ferrous chloride, carbonate, gl
 
 
   Original volume: 1013 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.237746Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011829'

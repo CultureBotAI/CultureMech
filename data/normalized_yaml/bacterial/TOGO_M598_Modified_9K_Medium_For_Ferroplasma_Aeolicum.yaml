@@ -1,3 +1,4 @@
+id: CultureMech:009995
 name: Modified 9K Medium For Ferroplasma Aeolicum
 original_name: Modified 9K Medium For Ferroplasma Aeolicum
 category: bacterial
@@ -96,6 +97,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:10.585618Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009995'
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

@@ -1,3 +1,4 @@
+id: CultureMech:014729
 preferred_term: Mail sol. C1
 term:
   id: mediadive.solution:5992
@@ -91,3 +92,8 @@ preparation_notes: "Once elements are dissolved autoclave at 15 psi for 15 minut
   The stock solutions are those for 3N-BBM+V. Make up to 1 litre with distilled water\
   \ and adjust\r\nthe pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15\
   \ minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.292119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014729'

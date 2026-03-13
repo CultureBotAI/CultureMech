@@ -1,3 +1,4 @@
+id: CultureMech:005957
 name: MEDIUM 535 MODIFIED FOR DSM 44792
 original_name: MEDIUM 535 MODIFIED FOR DSM 44792
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:535_44792
     label: MEDIUM 535 MODIFIED FOR DSM 44792
-notes: 'Source: KOMODO ModelSEED | ID: 535_44792 | DSMZ Medium: 535 (mediadive.medium:535) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 535_44792 | DSMZ Medium: 535 (mediadive.medium:535)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -33,4 +34,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 535
+- timestamp: '2026-03-13T06:19:37.328539Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005957'
 ph_value: 7.3

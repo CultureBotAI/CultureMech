@@ -1,3 +1,4 @@
+id: CultureMech:002906
 name: MAGNETOSPIRILLUM MEDIUM (A)
 original_name: MAGNETOSPIRILLUM MEDIUM (A)
 category: bacterial
@@ -171,9 +172,9 @@ preparation_steps:
   description: Adjust pH to 7.2 - 7.4.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Trace x 10 solution, Se/W solution and Mg/Ca solution, and filter-sterilize
-    Na benzoate solution, 7 vitamins solution and FeSO4 solution. Aseptically add all solutions to the
-    medium.
+  description: Separately autoclave Trace x 10 solution, Se/W solution and Mg/Ca solution,
+    and filter-sterilize Na benzoate solution, 7 vitamins solution and FeSO4 solution.
+    Aseptically add all solutions to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -185,3 +186,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:16.478986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002906'

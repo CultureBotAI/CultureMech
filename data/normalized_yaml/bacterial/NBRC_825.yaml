@@ -1,3 +1,4 @@
+id: CultureMech:007496
 name: '825'
 original_name: '825'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 100 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.256457Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007496'
 solutions:
 - preferred_term: Na-terephthalate0.42gYeast extract0.2gKH2PO40.14gMgCl2·H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gVitamin
     solution*3mlTrace element solution**1mlSe/W solution***1mlResazurin solution****1mlNaHCO32.5gNa2S·9H2O0.3gCysteine-HCl0.3gDistilled

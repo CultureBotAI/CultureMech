@@ -1,3 +1,4 @@
+id: CultureMech:000891
 name: HALOMONAS MEDIUM FOR STRAIN MA-C
 original_name: HALOMONAS MEDIUM FOR STRAIN MA-C
 category: bacterial
@@ -66,3 +67,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1428'
+- timestamp: '2026-03-13T06:18:59.272373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000891'

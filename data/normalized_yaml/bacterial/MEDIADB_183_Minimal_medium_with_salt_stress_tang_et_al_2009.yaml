@@ -1,3 +1,4 @@
+id: CultureMech:007074
 name: '''Minimal medium with salt stress (tang et al 2009'
 original_name: '''Minimal medium with salt stress (tang et al 2009'
 category: bacterial
@@ -117,6 +118,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.955014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007074'
 media_term:
   preferred_term: MediaDB Medium 183
   term:

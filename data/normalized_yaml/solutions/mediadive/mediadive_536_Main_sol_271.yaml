@@ -1,3 +1,4 @@
+id: CultureMech:014279
 preferred_term: Main sol. 271
 term:
   id: mediadive.solution:536
@@ -93,3 +94,8 @@ preparation_notes: 'Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4. S
   pH not adjusted, in a sealed vessel under nitrogen gas atmosphere).
 
   Note: Incubate statically without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.766691Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014279'

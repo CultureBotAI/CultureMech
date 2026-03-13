@@ -1,3 +1,4 @@
+id: CultureMech:013691
 preferred_term: Main sol. J794
 term:
   id: mediadive.solution:4743
@@ -141,3 +142,8 @@ preparation_notes: "Mix components, bring to a boil for several seconds and cool
   \ stoppers and autoclave. Add per liter the following sterile solutions from anaerobic\
   \ stocks (autoclaved under a N2 atmosphere): \nPressurize the inoculated vessels\
   \ to 150 kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1040 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.876030Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013691'

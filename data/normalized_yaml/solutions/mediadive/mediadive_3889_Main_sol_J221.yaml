@@ -1,3 +1,4 @@
+id: CultureMech:012956
 preferred_term: Main sol. J221
 term:
   id: mediadive.solution:3889
@@ -107,3 +108,8 @@ preparation_notes: 'Mix ingredients, except reducing solution, and bring to the 
 
 
   Original volume: 1006 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.549596Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012956'

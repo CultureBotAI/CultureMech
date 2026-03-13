@@ -1,3 +1,4 @@
+id: CultureMech:001576
 name: MINERAL MEDIUM WITH QUINOLINE
 original_name: MINERAL MEDIUM WITH QUINOLINE
 category: bacterial
@@ -70,17 +71,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare an emulsion of 3 g/l quinoline in 50 mM phosphate buffer by stirring or ultrasonication.
-    Autoclave in a gas tight vessel. Add 100 ml of this emulsion to 1 l autoclaved medium 461.
+  description: Prepare an emulsion of 3 g/l quinoline in 50 mM phosphate buffer by
+    stirring or ultrasonication. Autoclave in a gas tight vessel. Add 100 ml of this
+    emulsion to 1 l autoclaved medium 461.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve and autoclave the phosphates separately. Add the vitamin solution and trace element
-    solution after autoclaving. After mixing, pH should be 7.5.
+  description: Dissolve and autoclave the phosphates separately. Add the vitamin solution
+    and trace element solution after autoclaving. After mixing, pH should be 7.5.
 - step_number: 3
   action: MIX
-  description: Rehydrate and cultivate the lyophilized cells in complex medium recommended for the specific
-    strain (e.g. medium 1, 220 or 535) first. After this reactivation, cultivate on mineral medium 461
-    with the appropriate carbon source.
+  description: Rehydrate and cultivate the lyophilized cells in complex medium recommended
+    for the specific strain (e.g. medium 1, 220 or 535) first. After this reactivation,
+    cultivate on mineral medium 461 with the appropriate carbon source.
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +90,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 461a'
+- timestamp: '2026-03-13T06:19:05.311092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001576'

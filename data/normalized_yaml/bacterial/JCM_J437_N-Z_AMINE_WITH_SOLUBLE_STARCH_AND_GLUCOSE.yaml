@@ -1,3 +1,4 @@
+id: CultureMech:002788
 name: N-Z AMINE WITH SOLUBLE STARCH AND GLUCOSE
 original_name: N-Z AMINE WITH SOLUBLE STARCH AND GLUCOSE
 category: bacterial
@@ -59,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J437'
+- timestamp: '2026-03-13T06:19:15.718216Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002788'

@@ -1,3 +1,4 @@
+id: CultureMech:014881
 preferred_term: Mail sol. C44
 term:
   id: mediadive.solution:6182
@@ -105,3 +106,8 @@ preparation_notes: "Note for Tris base: First add to 50ml of DIW and pH. Then sl
   \ litre with deionised water. Adjust pH to 8.1-8.4 with 1M NaOH or 1M HCl prior\
   \ to\r\nautoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave\
   \ at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.895349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014881'

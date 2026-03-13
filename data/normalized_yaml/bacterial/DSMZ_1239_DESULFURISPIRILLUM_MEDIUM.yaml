@@ -1,3 +1,4 @@
+id: CultureMech:000698
 name: DESULFURISPIRILLUM MEDIUM
 original_name: DESULFURISPIRILLUM MEDIUM
 category: bacterial
@@ -133,10 +134,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Flush the medium with N2 and dispense 20 ml into 100ml serum bottles under an N2 atmosphere,
-    seal with butyl rubber stoppers and autoclave. To the cooled. sterile medium add, from anaerobic,
-    sterile stock solutions, MgSO4 (1 mM), yeast extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM)
-    and Na2S (0.1 mM).
+  description: Flush the medium with N2 and dispense 20 ml into 100ml serum bottles
+    under an N2 atmosphere, seal with butyl rubber stoppers and autoclave. To the
+    cooled. sterile medium add, from anaerobic, sterile stock solutions, MgSO4 (1
+    mM), yeast extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM) and Na2S (0.1
+    mM).
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0.
@@ -147,3 +149,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1239'
+- timestamp: '2026-03-13T06:18:57.563910Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000698'

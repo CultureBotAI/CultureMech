@@ -1,3 +1,4 @@
+id: CultureMech:010916
 preferred_term: Main sol. 693
 term:
   id: mediadive.solution:1441
@@ -28,3 +29,8 @@ preparation_notes: 'Columbia agar base supplemented with 5% defibrinated sheep b
   ATTENTION: organisms, for which only M 693 is mentioned in the catalogue entry,
   do not grow in one of the media listed below! Those are meant to rehydrate the freeze-dried
   pellets, not for cultivation.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.355135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010916'

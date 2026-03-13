@@ -1,3 +1,4 @@
+id: CultureMech:010402
 name: Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl
 original_name: Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -43,3 +45,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:13.592459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010402'

@@ -1,3 +1,4 @@
+id: CultureMech:001375
 name: RHODOSPIRILLACEAE MEDIUM (modified)
 original_name: RHODOSPIRILLACEAE MEDIUM (modified)
 category: bacterial
@@ -147,9 +148,10 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil the medium for a few minute. Bubble the medium with nitrogen gas and fill 10 ml in
-    15 ml tubes with a rubber septum under a stream of nitrogen gas. Autoclave at 121°C for 15 min. Sterile
-    syringes are used to inoculate and remove samples.
+  description: Boil the medium for a few minute. Bubble the medium with nitrogen gas
+    and fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen
+    gas. Autoclave at 121°C for 15 min. Sterile syringes are used to inoculate and
+    remove samples.
 - step_number: 3
   action: MIX
   description: Incubate in the light using a tungsten lamp.
@@ -160,3 +162,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 27'
+- timestamp: '2026-03-13T06:19:03.482536Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001375'

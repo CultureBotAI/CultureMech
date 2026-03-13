@@ -1,3 +1,4 @@
+id: CultureMech:014293
 preferred_term: Main sol. J1247
 term:
   id: mediadive.solution:5383
@@ -209,3 +210,8 @@ composition:
     match_type: exact_match
 preparation_notes: "Adjust pH to 7.5.\n30% <I>Seawater solution:</I> \nAdd components\
   \ to distilled water and bring volume to 1.0 L."
+curation_history:
+- timestamp: '2026-03-13T06:20:36.861367Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014293'

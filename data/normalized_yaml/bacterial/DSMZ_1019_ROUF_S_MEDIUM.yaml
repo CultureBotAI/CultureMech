@@ -1,3 +1,4 @@
+id: CultureMech:000440
 name: ROUF'S MEDIUM
 original_name: ROUF'S MEDIUM
 category: bacterial
@@ -187,8 +188,8 @@ preparation_steps:
   description: The medium may be solifidied with 17 g/l agar.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve the nitrilotriacetic acid and adjust the pH to 6.5 with KOH, then add the
-    minerals. The final pH is 7.0, adjusted with KOH.
+  description: First dissolve the nitrilotriacetic acid and adjust the pH to 6.5 with
+    KOH, then add the minerals. The final pH is 7.0, adjusted with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,4 +200,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.022191Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:55.295727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000440'

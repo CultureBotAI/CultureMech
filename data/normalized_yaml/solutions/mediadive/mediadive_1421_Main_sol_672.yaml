@@ -1,3 +1,4 @@
+id: CultureMech:010898
 preferred_term: Main sol. 672
 term:
   id: mediadive.solution:1421
@@ -11,3 +12,8 @@ composition:
     id: mediadive.compound:2132
     label: Difco 0001
 preparation_notes: Difco 0003 or Difco 0001
+curation_history:
+- timestamp: '2026-03-13T06:20:16.227326Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010898'

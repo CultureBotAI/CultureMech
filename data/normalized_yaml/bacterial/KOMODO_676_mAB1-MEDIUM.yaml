@@ -1,3 +1,4 @@
+id: CultureMech:006272
 name: mAB1-MEDIUM
 original_name: mAB1-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:676
     label: mAB1-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 676 | DSMZ Medium: 676 (mediadive.medium:676) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 676 | DSMZ Medium: 676 (mediadive.medium:676)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 676'
+- timestamp: '2026-03-13T06:19:39.403250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006272'

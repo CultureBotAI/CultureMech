@@ -1,3 +1,4 @@
+id: CultureMech:003506
 name: ALLISONELLA medium
 original_name: ALLISONELLA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1006
     label: ALLISONELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1006 | DSMZ Medium: 1006 (mediadive.medium:1006) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1006 | DSMZ Medium: 1006 (mediadive.medium:1006)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: DL-Histidine
   term:
@@ -146,3 +148,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1006
+- timestamp: '2026-03-13T06:19:20.270791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003506'

@@ -1,3 +1,4 @@
+id: CultureMech:005683
 name: PROPIONISPORA MEDIUM
 original_name: PROPIONISPORA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:503c
     label: PROPIONISPORA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 503c | DSMZ Medium: 503c (mediadive.medium:503c) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503c | DSMZ Medium: 503c (mediadive.medium:503c)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -222,3 +224,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 503
+- timestamp: '2026-03-13T06:19:35.292780Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005683'

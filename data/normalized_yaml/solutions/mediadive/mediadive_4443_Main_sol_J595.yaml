@@ -1,3 +1,4 @@
+id: CultureMech:013424
 preferred_term: Main sol. J595
 term:
   id: mediadive.solution:4443
@@ -153,3 +154,8 @@ preparation_notes: 'Adjust pH to 7.0 - 7.2.
 
   Comment: Cellulose can be replaced with 5.0 g/L cellobiose. In this case, cellobiose
   is filter-sterilized separately as 10% (w/v) solution in distilled water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.250293Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013424'

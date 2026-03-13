@@ -1,3 +1,4 @@
+id: CultureMech:014505
 preferred_term: Main sol. 480b
 term:
   id: mediadive.solution:5635
@@ -152,3 +153,8 @@ preparation_notes: Add to the medium 0.5% casitone and 2.5% NaCl (marine source)
   by heating for 1 h at 90 - 100°C on three successive days. Before use add 30.0 ml/l
   of 5% (w/v) sterile, anaerobic NaHCO3-solution, vitamins and sulfide. Final pH should
   be 6.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.146073Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014505'

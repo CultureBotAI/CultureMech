@@ -1,3 +1,4 @@
+id: CultureMech:015208
 preferred_term: Main sol. 412
 term:
   id: mediadive.solution:842
@@ -172,3 +173,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Autoclave under 2 bar N2:CO2 (80:20).
+curation_history:
+- timestamp: '2026-03-13T06:20:41.317039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015208'

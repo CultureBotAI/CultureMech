@@ -1,3 +1,4 @@
+id: CultureMech:011177
 preferred_term: Main sol. 843
 term:
   id: mediadive.solution:1727
@@ -162,3 +163,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, sugar mix, yeast aut
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.968062Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011177'

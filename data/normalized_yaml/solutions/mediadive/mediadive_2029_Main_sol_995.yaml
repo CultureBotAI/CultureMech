@@ -1,3 +1,4 @@
+id: CultureMech:011432
 preferred_term: Main sol. 995
 term:
   id: mediadive.solution:2029
@@ -106,3 +107,8 @@ preparation_notes: 'For solid medium 15 g of agar is mixed, and autoclaved. pH 7
   strokes per min.). Cell turbidity at 660 nm after 4 days of cultivation will be
   0.4-0.5. On NPB agar plate, colony formation is observed after 3-4 days of incubation
   at 30°C.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.634187Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011432'

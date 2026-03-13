@@ -1,3 +1,4 @@
+id: CultureMech:008219
 name: Haroarcula Medium
 original_name: Haroarcula Medium
 category: bacterial
@@ -108,4 +109,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:54.616456Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008219'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:006497
 name: Peptone-YEAST medium with MgSO4
 original_name: Peptone-YEAST medium with MgSO4
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:790
     label: Peptone-YEAST medium with MgSO4
-notes: 'Source: KOMODO ModelSEED | ID: 790 | DSMZ Medium: 790 (mediadive.medium:790) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 790 | DSMZ Medium: 790 (mediadive.medium:790)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -45,3 +47,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 790
+- timestamp: '2026-03-13T06:19:41.334877Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006497'

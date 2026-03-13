@@ -1,3 +1,4 @@
+id: CultureMech:011416
 preferred_term: Main sol. 984
 term:
   id: mediadive.solution:2013
@@ -112,3 +113,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: For autoclaving the pH of the medium should be adjusted to 7.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.542907Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011416'

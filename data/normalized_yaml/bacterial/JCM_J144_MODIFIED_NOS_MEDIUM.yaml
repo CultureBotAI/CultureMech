@@ -1,3 +1,4 @@
+id: CultureMech:002503
 name: MODIFIED NOS MEDIUM
 original_name: MODIFIED NOS MEDIUM
 category: bacterial
@@ -113,17 +114,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Combine the above ingredients and bring to a boil in a round bottom flask while flushing
-    with O2-free N2-H2-CO2 (85:10:5) gas mixture. Stopper anaerobically, wire or seal closed and autoclave
-    at 121C for 20 min. After autoclaving, allow to cool, open without admitting oxygen and while flushing
-    with gas, add the following ingredients which have been filter-sterilized ahead of time:'
+  description: 'Combine the above ingredients and bring to a boil in a round bottom
+    flask while flushing with O2-free N2-H2-CO2 (85:10:5) gas mixture. Stopper anaerobically,
+    wire or seal closed and autoclave at 121C for 20 min. After autoclaving, allow
+    to cool, open without admitting oxygen and while flushing with gas, add the following
+    ingredients which have been filter-sterilized ahead of time:'
 - step_number: 2
   action: FILTER_STERILIZE
   description: Mix together and filter-sterilize. Store at -20C.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Add volatile fatty acids to about 70-80 ml of NaOH solution and mix. Add NaOH solution
-    to bring final volume to 100 ml. If not used the same day, filter-sterilize and store at 4C.
+  description: Add volatile fatty acids to about 70-80 ml of NaOH solution and mix.
+    Add NaOH solution to bring final volume to 100 ml. If not used the same day, filter-sterilize
+    and store at 4C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +134,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J144'
+- timestamp: '2026-03-13T06:19:13.854978Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002503'

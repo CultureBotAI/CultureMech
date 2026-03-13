@@ -1,3 +1,4 @@
+id: CultureMech:010498
 name: MALT EXTRACT AGAR WITH 15% NaCl
 original_name: MALT EXTRACT AGAR WITH 15% NaCl
 category: fungal
@@ -46,3 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J125'
+- timestamp: '2026-03-13T06:20:14.082374Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010498'

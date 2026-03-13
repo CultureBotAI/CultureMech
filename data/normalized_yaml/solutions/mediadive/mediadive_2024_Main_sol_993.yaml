@@ -1,3 +1,4 @@
+id: CultureMech:011427
 preferred_term: Main sol. 993
 term:
   id: mediadive.solution:2024
@@ -68,3 +69,8 @@ preparation_notes: 'The pH of trace salts solution is about 7.0-7.4. Do not adju
 
   Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
   25 ml per dish.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.615395Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011427'

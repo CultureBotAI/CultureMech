@@ -1,3 +1,4 @@
+id: CultureMech:013716
 preferred_term: Main sol. J819
 term:
   id: mediadive.solution:4773
@@ -165,3 +166,8 @@ preparation_notes: 'Prepare the medium anaerobically under 100% N2. Add vitamins
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.032880Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013716'

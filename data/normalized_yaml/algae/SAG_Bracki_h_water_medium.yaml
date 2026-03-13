@@ -1,10 +1,12 @@
+id: CultureMech:000196
 name: Brackish_water_medium
 category: algae
 medium_type: COMPLEX
 physical_state: LIQUID
-description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable for saltwater algae
-  cultivation. Recipe available in PDF format.
-notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/06 Brackish water medium.pdf
+description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
+  for saltwater algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/06 Brackish
+  water medium.pdf
 salinity: marine (natural seawater or artificial seawater)
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
@@ -17,8 +19,8 @@ curation_history:
 - curator: sag-import
   date: '2026-01-28'
   action: Imported from SAG Culture Collection
-  notes: 'Source ID: Brackish_water_medium, PDF URL: http://sagdb.uni-goettingen.de/culture_media/06 Brackish
-    water medium.pdf'
+  notes: 'Source ID: Brackish_water_medium, PDF URL: http://sagdb.uni-goettingen.de/culture_media/06
+    Brackish water medium.pdf'
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:23:39.860346'
   action: Applied schema defaults and normalizations
@@ -27,6 +29,10 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.519934Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000196'
 references:
 - reference_id: SAG:Brackish_water_medium
 - reference_id: http://sagdb.uni-goettingen.de/culture_media/06 Brackish water medium.pdf

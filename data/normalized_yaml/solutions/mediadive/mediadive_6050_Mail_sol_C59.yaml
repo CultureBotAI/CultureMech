@@ -1,3 +1,4 @@
+id: CultureMech:014776
 preferred_term: Mail sol. C59
 term:
   id: mediadive.solution:6050
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Make up to 1 litre with deionized water. Autoclave at 15 psi for
   15 minutes.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.503599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014776'

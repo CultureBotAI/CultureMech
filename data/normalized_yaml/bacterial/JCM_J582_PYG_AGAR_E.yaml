@@ -1,3 +1,4 @@
+id: CultureMech:002930
 name: PYG AGAR (E)
 original_name: PYG AGAR (E)
 category: bacterial
@@ -62,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J582'
+- timestamp: '2026-03-13T06:19:16.642759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002930'

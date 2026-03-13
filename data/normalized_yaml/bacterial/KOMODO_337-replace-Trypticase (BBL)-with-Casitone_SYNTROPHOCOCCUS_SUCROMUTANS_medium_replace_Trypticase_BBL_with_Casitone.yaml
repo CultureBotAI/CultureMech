@@ -1,3 +1,4 @@
+id: CultureMech:005032
 name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
 original_name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:337_replace_Trypticase (BBL)_with_Casitone
     label: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
-notes: 'Source: KOMODO ModelSEED | ID: 337_replace_Trypticase (BBL)_with_Casitone | DSMZ Medium: 337 (mediadive.medium:337)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 337_replace_Trypticase (BBL)_with_Casitone
+  | DSMZ Medium: 337 (mediadive.medium:337) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -213,3 +214,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 337
+- timestamp: '2026-03-13T06:19:29.706152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005032'

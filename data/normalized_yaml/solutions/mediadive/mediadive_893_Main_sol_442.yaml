@@ -1,3 +1,4 @@
+id: CultureMech:015252
 preferred_term: Main sol. 442
 term:
   id: mediadive.solution:893
@@ -127,3 +128,8 @@ preparation_notes: 'Adjust pH to 7.0.
 
   One drop of toluene is evaporated in a desiccator so that the atmosphere is saturated.
   0.1% succinate may be added to the medium as additional carbon source.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.499557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015252'

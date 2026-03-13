@@ -1,3 +1,4 @@
+id: CultureMech:002060
 name: IGNICOCCUS MEDIUM
 original_name: IGNICOCCUS MEDIUM
 category: bacterial
@@ -113,17 +114,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur, meat extract and sulfide, adjust pH to 5.0 - 5.5 with
-    2 N H2SO4 and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Distribute medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials already
-    containing the appropriate amount of sulfur, only to 30% of their volume to allow for a large head
-    space. For sterilization heat cultivation vessels in boiling water for 1 -2 hours on each of 3 successive
-    days. Add meat extract and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
-    atmosphere.
+  description: Dissolve ingredients except sulfur, meat extract and sulfide, adjust
+    pH to 5.0 - 5.5 with 2 N H2SO4 and sparge medium with 80% H2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Distribute medium under the same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials already containing the appropriate
+    amount of sulfur, only to 30% of their volume to allow for a large head space.
+    For sterilization heat cultivation vessels in boiling water for 1 -2 hours on
+    each of 3 successive days. Add meat extract and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize the vessels with sterile 80% H2 and 20% CO2 gas mixture to
-    2 bar overpressure.
+  description: After inoculation pressurize the vessels with sterile 80% H2 and 20%
+    CO2 gas mixture to 2 bar overpressure.
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +133,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 897'
+- timestamp: '2026-03-13T06:19:09.898444Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002060'

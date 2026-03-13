@@ -1,3 +1,4 @@
+id: CultureMech:014631
 preferred_term: MCL Stock Solution B **
 term:
   id: mediadive.solution:5785
@@ -68,3 +69,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''500''>500</s
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.739620Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014631'

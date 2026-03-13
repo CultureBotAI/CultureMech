@@ -1,3 +1,4 @@
+id: CultureMech:014625
 preferred_term: T-Trace Metal Mix
 term:
   id: mediadive.solution:5774
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Make up to <span class='amount' data-volume='1000'>1000</span>
   ml with MilliQ water.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.693925Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014625'

@@ -1,3 +1,4 @@
+id: CultureMech:009065
 name: MRSsi
 original_name: MRSsi
 category: bacterial
@@ -20,7 +21,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -28,7 +30,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: yeast extract
   concentration:
     value: '5'
@@ -38,7 +41,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: sodium acetate
   concentration:
     value: '5'
@@ -51,7 +55,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -59,7 +64,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: casamino acids
   concentration:
     value: '5'
@@ -93,3 +99,7 @@ curation_history:
   date: '2026-02-03T11:20:53.995361'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: xylose'
+- timestamp: '2026-03-13T06:20:02.340083Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009065'

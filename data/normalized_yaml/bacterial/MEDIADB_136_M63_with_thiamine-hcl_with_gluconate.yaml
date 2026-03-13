@@ -1,3 +1,4 @@
+id: CultureMech:007025
 name: M63 with thiamine-hcl with gluconate
 original_name: M63 with thiamine-hcl with gluconate
 category: bacterial
@@ -56,14 +57,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.817213Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 136, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 136, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.654252Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007025'
 media_term:
   preferred_term: MediaDB Medium 136
   term:
     id: MEDIADB:136
     label: M63 with thiamine-hcl with gluconate
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

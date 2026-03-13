@@ -1,3 +1,4 @@
+id: CultureMech:002644
 name: WT1 MEDIUM
 original_name: WT1 MEDIUM
 category: bacterial
@@ -106,10 +107,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.8-7.0. Autoclave the
-    medium under a N2 atmosphere. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere.
-    Steam sulfur for 3 hr on each of 3 successive days. Under a N2 stream, mix the medium and sulfur in
-    culture vessels and seal with butyl rubber stoppers. Prior to inoculation, add the Na2S x 9H2O solution
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.8-7.0.
+    Autoclave the medium under a N2 atmosphere. Neutralize Na2S x 9H2O as a 5% solution,
+    and autoclave under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
+    days. Under a N2 stream, mix the medium and sulfur in culture vessels and seal
+    with butyl rubber stoppers. Prior to inoculation, add the Na2S x 9H2O solution
     to the medium aseptically and anaerobically.
 applications:
 - Microbial cultivation
@@ -118,3 +120,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J287'
+- timestamp: '2026-03-13T06:19:14.744333Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002644'

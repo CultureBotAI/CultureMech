@@ -1,3 +1,4 @@
+id: CultureMech:011046
 preferred_term: Main sol. 783
 term:
   id: mediadive.solution:1588
@@ -129,3 +130,8 @@ preparation_notes: Prepare the medium aerobically and adjust pH to 7.0 using H2S
   use add 100 µl of a sterile CaCO3 solution (10%). Give an atmosphere of H2/CO2 with
   an overpressure of two atmospheres and 20 ml filter-sterilized air. Incubate under
   shaking at 60°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.182609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011046'

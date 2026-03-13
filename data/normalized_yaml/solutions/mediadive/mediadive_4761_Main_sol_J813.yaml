@@ -1,3 +1,4 @@
+id: CultureMech:013706
 preferred_term: Main sol. J813
 term:
   id: mediadive.solution:4761
@@ -54,3 +55,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0.
 
   After autoclaving, aseptically add 1 mM (final conc.) 1,4-dithiothreitol (DTT).'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.974734Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013706'

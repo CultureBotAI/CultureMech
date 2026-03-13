@@ -1,3 +1,4 @@
+id: CultureMech:007054
 name: M63; jebbar
 original_name: M63; jebbar
 category: bacterial
@@ -54,6 +55,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 163, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.813811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007054'
 media_term:
   preferred_term: MediaDB Medium 163
   term:

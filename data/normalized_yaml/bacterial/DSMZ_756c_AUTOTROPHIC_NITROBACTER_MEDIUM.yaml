@@ -1,3 +1,4 @@
+id: CultureMech:001891
 name: AUTOTROPHIC NITROBACTER MEDIUM
 original_name: AUTOTROPHIC NITROBACTER MEDIUM
 category: bacterial
@@ -88,8 +89,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium to stand for 2 - 3\r\
-    \ndays so that pH can adjust itself to pH 7.4 - 7.6."
+  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium\
+    \ to stand for 2 - 3\r\ndays so that pH can adjust itself to pH 7.4 - 7.6."
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,3 +98,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 756c'
+- timestamp: '2026-03-13T06:19:08.173125Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001891'

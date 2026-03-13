@@ -1,3 +1,4 @@
+id: CultureMech:012980
 preferred_term: Main sol. J236
 term:
   id: mediadive.solution:3913
@@ -76,3 +77,8 @@ preparation_notes: 'Combine Modified Brock''s salt base solution, trisodium citr
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.711544Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012980'

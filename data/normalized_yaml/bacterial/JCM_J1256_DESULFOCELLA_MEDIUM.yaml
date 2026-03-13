@@ -1,3 +1,4 @@
+id: CultureMech:002422
 name: DESULFOCELLA MEDIUM
 original_name: DESULFOCELLA MEDIUM
 category: bacterial
@@ -258,10 +259,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
-    mixture. Distribute the medium into culture vessels (e.g., 10 ml in Balch tubes) under the same gas
-    mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved and stored under a N2 gas atmosphere or *filter-sterilized
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
+    (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g., 10 ml
+    in Balch tubes) under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, aseptically and anaerobically add per liter the following
+    solutions (autoclaved and stored under a N2 gas atmosphere or *filter-sterilized
     and stored under an 80% N2-20% CO2 gas mixture):'
 applications:
 - Microbial cultivation
@@ -270,3 +272,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1256'
+- timestamp: '2026-03-13T06:19:13.187429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002422'

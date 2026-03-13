@@ -1,3 +1,4 @@
+id: CultureMech:010882
 preferred_term: Main sol. 664a
 term:
   id: mediadive.solution:1397
@@ -193,3 +194,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, thiosulfate, glucose 
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.133725Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010882'

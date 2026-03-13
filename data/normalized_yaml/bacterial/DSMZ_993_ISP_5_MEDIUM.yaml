@@ -1,3 +1,4 @@
+id: CultureMech:002175
 name: ISP 5 MEDIUM
 original_name: ISP 5 MEDIUM
 category: bacterial
@@ -63,12 +64,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it is within this range.
-    Liquefy agar by steaming at 100°C for 15-20 minutes.
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
+    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
 - step_number: 2
   action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
-    25 ml per dish.
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
+    mm dishes containing 25 ml per dish.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 993'
+- timestamp: '2026-03-13T06:19:10.974837Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002175'

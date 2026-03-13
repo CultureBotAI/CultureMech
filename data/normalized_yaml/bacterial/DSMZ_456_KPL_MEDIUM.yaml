@@ -1,3 +1,4 @@
+id: CultureMech:001566
 name: KPL MEDIUM
 original_name: KPL MEDIUM
 category: bacterial
@@ -50,15 +51,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Combine components, except white table wine. Adjust pH to 5.5. Autoclave for 15 min at
-    121°C, Cool to 45-50°C. Aseptically add filter sterilized white table wine. Mix thoroughly. Pour into
-    sterile Petri dishes.
+  description: Combine components, except white table wine. Adjust pH to 5.5. Autoclave
+    for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter sterilized white
+    table wine. Mix thoroughly. Pour into sterile Petri dishes.
 - step_number: 2
   action: HEAT
-  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C for 30 minutes. Remove
-    precipitate by filtration. For preparing broth medium, adjust filtrate to pH 7.0 with 2 N NaOH and
-    heat at 100°C for 30 minutes. Remove precipitate by filtration. Adjust filtrate to pH 5.5 with 2 N
-    HCl.
+  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C for
+    30 minutes. Remove precipitate by filtration. For preparing broth medium, adjust
+    filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30 minutes. Remove precipitate
+    by filtration. Adjust filtrate to pH 5.5 with 2 N HCl.
 - step_number: 3
   action: AUTOCLAVE
   description: Filter-sterilize and add to autoclaved basal medium.
@@ -69,3 +70,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 456'
+- timestamp: '2026-03-13T06:19:05.222314Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001566'

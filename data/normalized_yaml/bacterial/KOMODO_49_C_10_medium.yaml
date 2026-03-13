@@ -1,3 +1,4 @@
+id: CultureMech:005633
 name: C/10 medium
 original_name: C/10 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:49
     label: C/10 medium
-notes: 'Source: KOMODO ModelSEED | ID: 49 | DSMZ Medium: 49 (mediadive.medium:49) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 49 | DSMZ Medium: 49 (mediadive.medium:49)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 49
+- timestamp: '2026-03-13T06:19:34.799923Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005633'

@@ -1,3 +1,4 @@
+id: CultureMech:011281
 preferred_term: Main sol. 904a
 term:
   id: mediadive.solution:1858
@@ -116,3 +117,8 @@ preparation_notes: Dissolve ingredients except glucose, sulfide and cysteine, ad
   Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
   vials (to 30% of volume) and autoclave. Add glucose, sulfide and cysteine from sterile
   anoxic stock solutions prepared under 100% N2 gas.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.651761Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011281'

@@ -1,3 +1,4 @@
+id: CultureMech:015350
 name: DESULFOBULBUS SP. MEDIUM (MARINE)
 original_name: DESULFOBULBUS SP. MEDIUM (MARINE)
 category: specialized
@@ -268,4 +269,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:20:42.071700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015350'
 high_metal: true

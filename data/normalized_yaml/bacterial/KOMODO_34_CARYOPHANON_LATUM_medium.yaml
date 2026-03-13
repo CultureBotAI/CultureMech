@@ -1,3 +1,4 @@
+id: CultureMech:005063
 name: CARYOPHANON LATUM medium
 original_name: CARYOPHANON LATUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:34
     label: CARYOPHANON LATUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 34 | DSMZ Medium: 34 (mediadive.medium:34) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 34 | DSMZ Medium: 34 (mediadive.medium:34)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -84,3 +86,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 34
+- timestamp: '2026-03-13T06:19:29.890724Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005063'

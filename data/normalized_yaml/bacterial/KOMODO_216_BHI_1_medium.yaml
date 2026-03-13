@@ -1,3 +1,4 @@
+id: CultureMech:004426
 name: BHI/1 medium
 original_name: BHI/1 medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:216
     label: BHI/1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 216 | DSMZ Medium: 216 (mediadive.medium:216) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 216 | DSMZ Medium: 216 (mediadive.medium:216)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:
@@ -29,3 +31,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 216
+- timestamp: '2026-03-13T06:19:26.859102Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004426'

@@ -1,3 +1,4 @@
+id: CultureMech:013390
 preferred_term: Solution F
 term:
   id: mediadive.solution:43
@@ -31,3 +32,8 @@ preparation_notes: 'Filter sterilized
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.075390Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013390'

@@ -1,3 +1,4 @@
+id: CultureMech:000828
 name: METHYLOVIRGULA MEDIUM
 original_name: METHYLOVIRGULA MEDIUM
 category: bacterial
@@ -49,8 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the medium into Hungate tubes.
-    Sterilize by autoclaving. Before inoculation add filter sterilized methanol (0.1% v/v).
+  description: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the medium
+    into Hungate tubes. Sterilize by autoclaving. Before inoculation add filter sterilized
+    methanol (0.1% v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1368'
+- timestamp: '2026-03-13T06:18:58.692824Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000828'

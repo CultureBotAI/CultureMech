@@ -1,3 +1,4 @@
+id: CultureMech:013759
 preferred_term: Main sol. 221
 term:
   id: mediadive.solution:481
@@ -175,3 +176,8 @@ composition:
 preparation_notes: Adjust pH of the medium to 7.1. Add 1.5% agar if needed. Autoclave
   for 15 min at 121°C. After sterilization add 25 ml each of filter-sterilized 20%
   glucose and 20% Na-malate.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.319885Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013759'

@@ -1,3 +1,4 @@
+id: CultureMech:005687
 name: For DSM 5848
 original_name: For DSM 5848
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:504.1
     label: For DSM 5848
-notes: 'Source: KOMODO ModelSEED | ID: 504.1 | DSMZ Medium: 504 (mediadive.medium:504) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 504.1 | DSMZ Medium: 504 (mediadive.medium:504)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -221,3 +223,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 504
+- timestamp: '2026-03-13T06:19:35.341883Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005687'

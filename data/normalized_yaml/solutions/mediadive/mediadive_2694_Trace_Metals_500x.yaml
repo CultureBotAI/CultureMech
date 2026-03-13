@@ -1,3 +1,4 @@
+id: CultureMech:012010
 preferred_term: Trace Metals (500x)
 term:
   id: mediadive.solution:2694
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve the EDTA and NaOH in 800ml of distilled water then add
   the inorganic salts. Make up to 1000.0 ml with distilled water.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.275421Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012010'

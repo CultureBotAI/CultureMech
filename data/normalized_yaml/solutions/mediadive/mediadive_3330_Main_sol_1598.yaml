@@ -1,3 +1,4 @@
+id: CultureMech:012486
 preferred_term: Main sol. 1598
 term:
   id: mediadive.solution:3330
@@ -25,3 +26,8 @@ preparation_notes: "Dilute 100 ml NMS salt solution to 1 litre with distilled wa
   \ and 0.1 ml\r\n 0.03 M Cerium-(III)-chlorid are added.\nAdjust pH to 3.5 with 1M\
   \ HCL to obtain the final mineral medium before inoculate.\nThe cultures should\
   \ be grown with shaking.\n\nOriginal volume: 1022 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:26.152260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012486'

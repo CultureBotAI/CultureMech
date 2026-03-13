@@ -1,3 +1,4 @@
+id: CultureMech:012102
 preferred_term: Main sol. 1389
 term:
   id: mediadive.solution:2819
@@ -156,3 +157,8 @@ preparation_notes: 'Adjust pH to 7.5.
 
   For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl to 10.0 g/l
   and increase the amount of NH4Cl to 0.64 g/l.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.872503Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012102'

@@ -1,3 +1,4 @@
+id: CultureMech:015359
 name: MODIFIED BACTO MARINE BROTH
 original_name: MODIFIED BACTO MARINE BROTH
 category: specialized
@@ -46,3 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514d'
+- timestamp: '2026-03-13T06:20:42.159901Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015359'

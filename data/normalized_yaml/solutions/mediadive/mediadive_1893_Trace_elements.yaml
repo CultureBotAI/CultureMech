@@ -1,3 +1,4 @@
+id: CultureMech:011311
 preferred_term: Trace elements
 term:
   id: mediadive.solution:1893
@@ -115,3 +116,8 @@ preparation_notes: 'May be stored at 4°C in the dark
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.829924Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011311'

@@ -1,3 +1,4 @@
+id: CultureMech:003522
 name: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
 original_name: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
 category: bacterial
@@ -255,4 +256,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:20.426827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003522'
 ph_value: 6.7

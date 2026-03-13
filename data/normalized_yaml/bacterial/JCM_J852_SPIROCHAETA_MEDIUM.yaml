@@ -1,3 +1,4 @@
+id: CultureMech:003198
 name: SPIROCHAETA MEDIUM
 original_name: SPIROCHAETA MEDIUM
 category: bacterial
@@ -242,10 +243,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: For vial cultures, dissolve all compounds except Na2S x 9H2O and L-cysteine x HCl x H2O,
-    then, adjust pH to 7.5. Dispense 19 ml of medium into 50-ml vials, purge with N2-CO2 (80:20) gas and
-    fix with a stopper. After autoclaving, add filter-sterilized Na2S x 9H2O and L-cysteine x HCl x H2O
-    solution to each vial as reducing agents.
+  description: For vial cultures, dissolve all compounds except Na2S x 9H2O and L-cysteine
+    x HCl x H2O, then, adjust pH to 7.5. Dispense 19 ml of medium into 50-ml vials,
+    purge with N2-CO2 (80:20) gas and fix with a stopper. After autoclaving, add filter-sterilized
+    Na2S x 9H2O and L-cysteine x HCl x H2O solution to each vial as reducing agents.
 applications:
 - Microbial cultivation
 curation_history:
@@ -253,3 +254,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J852'
+- timestamp: '2026-03-13T06:19:18.523533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003198'

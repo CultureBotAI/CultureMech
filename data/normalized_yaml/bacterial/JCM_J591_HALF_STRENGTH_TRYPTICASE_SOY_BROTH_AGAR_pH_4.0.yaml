@@ -1,3 +1,4 @@
+id: CultureMech:002939
 name: HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)
 original_name: HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)
 category: bacterial
@@ -28,8 +29,8 @@ preparation_steps:
   description: Adjust pH to 4.0.
 - step_number: 2
   action: POUR_PLATES
-  description: After autoclaving Solutions A and B separately and cooling to 50C, aseptically mix both
-    solutions and dispense into sterile test tubes or petri dishes.
+  description: After autoclaving Solutions A and B separately and cooling to 50C,
+    aseptically mix both solutions and dispense into sterile test tubes or petri dishes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +38,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J591'
+- timestamp: '2026-03-13T06:19:16.689707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002939'

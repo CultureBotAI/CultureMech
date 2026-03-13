@@ -1,3 +1,4 @@
+id: CultureMech:007157
 name: Liquid mm with arabinose; hodgson et al
 original_name: Liquid mm with arabinose; hodgson et al
 category: bacterial
@@ -57,14 +58,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.996498Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 259, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 259, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.504671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007157'
 media_term:
   preferred_term: MediaDB Medium 259
   term:
     id: MEDIADB:259
     label: Liquid mm with arabinose; hodgson et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

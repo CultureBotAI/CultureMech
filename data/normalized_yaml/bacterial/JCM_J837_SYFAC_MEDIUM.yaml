@@ -1,3 +1,4 @@
+id: CultureMech:003181
 name: SYFAC MEDIUM
 original_name: SYFAC MEDIUM
 category: bacterial
@@ -155,13 +156,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically and anaerobically
-    add the following solutions from sterile anaerobic stock solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically
+    and anaerobically add the following solutions from sterile anaerobic stock solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (e.g., 20 ml of the medium in 120 ml serum
-    bottles) under a stream of N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Finally
-    add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels (e.g., 20 ml of the medium
+    in 120 ml serum bottles) under a stream of N2-CO2 (4:1, v/v) gas mixture and seal
+    with butyl rubber stoppers. Finally add per liter the following solution (autoclaved
+    and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.
@@ -172,3 +175,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J837'
+- timestamp: '2026-03-13T06:19:18.404801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003181'

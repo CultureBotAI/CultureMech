@@ -1,3 +1,4 @@
+id: CultureMech:013560
 preferred_term: Main sol. J692
 term:
   id: mediadive.solution:4599
@@ -59,3 +60,8 @@ preparation_notes: Autoclave Salt base solution under a H2-CO2 (4:1, v/v) gas mi
   H2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Add Na2S x 9H2O from anaerobic,
   sterile stock solution (5%, autoclaved under a N2 atmosphere) and readjust pH to
   3.0. Pressurize the inoculated culture vessels to 100 kPa with the same gas mixture.
+curation_history:
+- timestamp: '2026-03-13T06:20:32.026425Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013560'

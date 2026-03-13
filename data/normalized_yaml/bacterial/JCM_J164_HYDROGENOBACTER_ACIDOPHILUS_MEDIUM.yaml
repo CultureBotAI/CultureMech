@@ -1,3 +1,4 @@
+id: CultureMech:002523
 name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 original_name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
 category: bacterial
@@ -120,3 +121,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J164'
+- timestamp: '2026-03-13T06:19:13.950303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002523'

@@ -1,3 +1,4 @@
+id: CultureMech:004942
 name: Vitamin solution (B) (medium 253)
 original_name: Vitamin solution (B) (medium 253)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3104
     label: Vitamin solution (B) (medium 253)
-notes: 'Source: KOMODO ModelSEED | ID: 3104 | DSMZ Medium: 3104 (mediadive.medium:3104) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3104 | DSMZ Medium: 3104 (mediadive.medium:3104)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3104'
+- timestamp: '2026-03-13T06:19:29.133244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004942'

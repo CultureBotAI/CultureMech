@@ -1,3 +1,4 @@
+id: CultureMech:004408
 name: MEDIUM 215 MODIFIED FOR DSM 10599
 original_name: MEDIUM 215 MODIFIED FOR DSM 10599
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:215_10599
     label: MEDIUM 215 MODIFIED FOR DSM 10599
-notes: 'Source: KOMODO ModelSEED | ID: 215_10599 | DSMZ Medium: 215 (mediadive.medium:215) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 215_10599 | DSMZ Medium: 215 (mediadive.medium:215)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:
@@ -26,3 +27,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 215
+- timestamp: '2026-03-13T06:19:26.823250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004408'

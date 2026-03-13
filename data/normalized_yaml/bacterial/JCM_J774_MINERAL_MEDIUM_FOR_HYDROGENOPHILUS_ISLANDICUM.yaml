@@ -1,3 +1,4 @@
+id: CultureMech:003116
 name: MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM
 original_name: MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM
 category: bacterial
@@ -112,12 +113,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.8 and autoclave. After cooling, add the following
-    solutions (autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 6.8 and autoclave. After cooling,
+    add the following solutions (autoclaved):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
-    and seal with butyl rubber stoppers. Then, pressurize to 100 kPa with H2-CO2 (4:1, v/v).
+  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
+    in 120 ml serum bottles) and seal with butyl rubber stoppers. Then, pressurize
+    to 100 kPa with H2-CO2 (4:1, v/v).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.
@@ -128,3 +130,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J774'
+- timestamp: '2026-03-13T06:19:17.931009Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003116'

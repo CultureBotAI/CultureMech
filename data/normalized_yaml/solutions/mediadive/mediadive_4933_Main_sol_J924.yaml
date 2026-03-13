@@ -1,3 +1,4 @@
+id: CultureMech:013861
 preferred_term: Main sol. J924
 term:
   id: mediadive.solution:4933
@@ -83,3 +84,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil for 5 min, then, 
   \ anaerobic stocks (autoclaved or *filter-sterilized): \nPressurize the tubes to\
   \ 70 kPa H2-CO2 (80:20, v/v) and allow to stand for at least 7 hr. Check the final\
   \ pH of the medium to be about 5.7.\n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.943814Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013861'

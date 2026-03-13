@@ -1,3 +1,4 @@
+id: CultureMech:001281
 name: OAT FLAKE MEDIUM
 original_name: OAT FLAKE MEDIUM
 category: bacterial
@@ -25,8 +26,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave 20 min at 121°C.
-    Shake before pouring. pH 6.0.
+  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave
+    20 min at 121°C. Shake before pouring. pH 6.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 189'
+- timestamp: '2026-03-13T06:19:02.789099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001281'

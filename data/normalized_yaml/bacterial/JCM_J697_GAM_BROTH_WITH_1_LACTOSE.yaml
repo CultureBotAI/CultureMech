@@ -1,3 +1,4 @@
+id: CultureMech:003042
 name: GAM BROTH WITH 1% LACTOSE
 original_name: GAM BROTH WITH 1% LACTOSE
 category: bacterial
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J697'
+- timestamp: '2026-03-13T06:19:17.376414Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003042'

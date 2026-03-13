@@ -1,3 +1,4 @@
+id: CultureMech:015287
 preferred_term: Main sol. 465
 term:
   id: mediadive.solution:945
@@ -80,3 +81,8 @@ preparation_notes: 'pH 7.25
   Rehydrate and cultivate lyophilized cells in the complex medium recommended for
   the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation, cultivate
   on mineral medium with the appropriate carbon source.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.654459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015287'

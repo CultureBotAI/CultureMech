@@ -1,3 +1,4 @@
+id: CultureMech:011384
 preferred_term: Main sol. 961
 term:
   id: mediadive.solution:1983
@@ -61,3 +62,8 @@ preparation_notes: 'Dissolve resazurin in seawater, then sparge medium with 80% 
   20% CO2 gas mixture.
 
   Note: Alternatively, aged filtered seawater can be used instead of synthetic seawater.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.306513Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011384'

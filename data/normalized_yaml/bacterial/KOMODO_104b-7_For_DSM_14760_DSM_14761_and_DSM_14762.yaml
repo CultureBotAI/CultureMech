@@ -1,3 +1,4 @@
+id: CultureMech:003619
 name: For DSM 14760, DSM 14761 and DSM 14762
 original_name: For DSM 14760, DSM 14761 and DSM 14762
 category: bacterial
@@ -107,3 +108,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:21.071171Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003619'

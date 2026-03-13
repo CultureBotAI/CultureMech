@@ -1,3 +1,4 @@
+id: CultureMech:000812
 name: YTBC - MEDIUM
 original_name: YTBC - MEDIUM
 category: bacterial
@@ -170,10 +171,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium without Na2S and cysteine-HCl. Boil the medium in a water bath
-    and cool under N2:CO2 (80:20 v/v) to room temperature. Adjust to pH 7.0 with 10 M NaOH solution. Dispense
-    the medium into Hungate tubes or serum bottles. Sterilize by autoclaving. Before inoculatiing add
-    Na2S and cysteine-HCl from sterile stock solutions.
+  description: Prepare the liquid medium without Na2S and cysteine-HCl. Boil the medium
+    in a water bath and cool under N2:CO2 (80:20 v/v) to room temperature. Adjust
+    to pH 7.0 with 10 M NaOH solution. Dispense the medium into Hungate tubes or serum
+    bottles. Sterilize by autoclaving. Before inoculatiing add Na2S and cysteine-HCl
+    from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -185,3 +187,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.538871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000812'

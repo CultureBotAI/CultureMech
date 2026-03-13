@@ -1,3 +1,4 @@
+id: CultureMech:000783
 name: AURANTIMONAS MANGANOXYDANS MEDIUM
 original_name: AURANTIMONAS MANGANOXYDANS MEDIUM
 category: bacterial
@@ -72,8 +73,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and 0.1ml of a sterile 3mg/ml
-    of ferric ammonium citrate. Final pH is 7.5. The medium may be solidified by adding 15 g/l agar.
+  description: After autoclaving add 20ml 1M HEPES sterile buffer (pH 7.8) and 0.1ml
+    of a sterile 3mg/ml of ferric ammonium citrate. Final pH is 7.5. The medium may
+    be solidified by adding 15 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +83,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1326'
+- timestamp: '2026-03-13T06:18:58.328183Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000783'

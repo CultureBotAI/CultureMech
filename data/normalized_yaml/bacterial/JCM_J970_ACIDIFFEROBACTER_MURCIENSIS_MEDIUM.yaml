@@ -1,3 +1,4 @@
+id: CultureMech:003319
 name: ACIDIFFEROBACTER MURCIENSIS MEDIUM
 original_name: ACIDIFFEROBACTER MURCIENSIS MEDIUM
 category: bacterial
@@ -98,8 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 2.0 with 10 N H2SO4 and autoclave. After autoclaving, add the following solution
-    (separately autoclaved):'
+  description: 'Adjust pH to 2.0 with 10 N H2SO4 and autoclave. After autoclaving,
+    add the following solution (separately autoclaved):'
 - step_number: 2
   action: MIX
   description: '<I>Iron(II) sulfate solution: </I>'
@@ -110,3 +111,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J970'
+- timestamp: '2026-03-13T06:19:19.462310Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003319'

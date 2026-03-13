@@ -1,3 +1,4 @@
+id: CultureMech:014480
 preferred_term: Main sol. 339a
 term:
   id: mediadive.solution:5601
@@ -87,3 +88,8 @@ preparation_notes: 'Dissolve 33.0 g/l dehydrated Wilkins-Chalgren medium (Oxoid 
   Note: In case resazurin is not colourless addition of 10 - 20 mg sodium dithionite
   per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized)
   can be used to completely reduce the medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.027000Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014480'

@@ -1,3 +1,4 @@
+id: CultureMech:000462
 name: ANACKER-ORDAL AGAR
 original_name: ANACKER-ORDAL AGAR
 category: bacterial
@@ -50,7 +51,8 @@ preparation_steps:
   description: Adjust to pH 7.2 prior to autoclaving with KOH.
 - step_number: 2
   action: MIX
-  description: It is important to use indicator paper for pH adjustment and not a pH electrode!
+  description: It is important to use indicator paper for pH adjustment and not a
+    pH electrode!
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1039'
+- timestamp: '2026-03-13T06:18:55.515371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000462'

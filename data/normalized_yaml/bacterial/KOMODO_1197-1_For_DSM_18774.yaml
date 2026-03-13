@@ -1,3 +1,4 @@
+id: CultureMech:003933
 name: For DSM 18774
 original_name: For DSM 18774
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1197.1
     label: For DSM 18774
-notes: 'Source: KOMODO ModelSEED | ID: 1197.1 | DSMZ Medium: 1197 (mediadive.medium:1197) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1197.1 | DSMZ Medium: 1197 (mediadive.medium:1197)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -131,3 +133,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1197
+- timestamp: '2026-03-13T06:19:23.413364Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003933'

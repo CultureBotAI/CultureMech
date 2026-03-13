@@ -1,3 +1,4 @@
+id: CultureMech:007632
 name: Marinitoga Medium
 original_name: Marinitoga Medium
 category: bacterial
@@ -79,6 +80,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:50.208305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007632'
 solutions:
 - preferred_term: 1.0 M Glucose solution
   composition: []

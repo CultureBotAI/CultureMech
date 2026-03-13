@@ -1,3 +1,4 @@
+id: CultureMech:002318
 name: MODIFIED ROSEOSPIRA MEDIUM
 original_name: MODIFIED ROSEOSPIRA MEDIUM
 category: bacterial
@@ -18,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM (final) Na2S2O3 x
-    5H2O.
+  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM
+    (final) Na2S2O3 x 5H2O.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:12.303205Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002318'
 data_quality_flags:
 - incomplete_composition

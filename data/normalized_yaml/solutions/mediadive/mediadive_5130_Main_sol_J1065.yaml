@@ -1,3 +1,4 @@
+id: CultureMech:014042
 preferred_term: Main sol. J1065
 term:
   id: mediadive.solution:5130
@@ -139,3 +140,8 @@ preparation_notes: "Mix components thoroughly, bubble with a N2-CO2 (80:20, v/v)
   \ mixture, seal with a butyl rubber stopper and autoclave under the same gas mixture.\
   \ After cooling, aseptically and anaerobically add per liter the following solutions\
   \ (separately autoclaved under a N2 atmosphere): \n\nOriginal volume: 1032 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.214955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014042'

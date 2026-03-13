@@ -1,3 +1,4 @@
+id: CultureMech:000571
 name: HD-MEDIUM, 1:10 diluted, modified
 original_name: HD-MEDIUM, 1:10 diluted, modified
 category: bacterial
@@ -70,3 +71,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:56.464914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000571'

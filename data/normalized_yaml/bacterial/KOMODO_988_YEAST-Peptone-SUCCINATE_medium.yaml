@@ -1,3 +1,4 @@
+id: CultureMech:006959
 name: YEAST-Peptone-SUCCINATE medium
 original_name: YEAST-Peptone-SUCCINATE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:988
     label: YEAST-Peptone-SUCCINATE medium
-notes: 'Source: KOMODO ModelSEED | ID: 988 | DSMZ Medium: 988 (mediadive.medium:988) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 988 | DSMZ Medium: 988 (mediadive.medium:988)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -45,3 +47,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 988
+- timestamp: '2026-03-13T06:19:45.277642Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006959'

@@ -1,3 +1,4 @@
+id: CultureMech:014443
 preferred_term: Amino acid solution
 term:
   id: mediadive.solution:5565
@@ -40,3 +41,8 @@ composition:
     confidence: 0.9
     match_type: synonym_match_ambiguous
 preparation_notes: "Amino acid solution per 50 ml: \n\nOriginal volume: 50 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.840430Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014443'

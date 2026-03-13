@@ -1,3 +1,4 @@
+id: CultureMech:004105
 name: MEDIUM 135 MODIFIED FOR DSM 7417
 original_name: MEDIUM 135 MODIFIED FOR DSM 7417
 category: bacterial
@@ -266,3 +267,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:24.869967Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004105'

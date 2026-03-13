@@ -1,3 +1,4 @@
+id: CultureMech:001361
 name: J - AGAR
 original_name: J - AGAR
 category: bacterial
@@ -43,8 +44,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water and sterilize glucose
-    separately. Aseptically add to the basis medium after sterilization.
+  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water
+    and sterilize glucose separately. Aseptically add to the basis medium after sterilization.
 applications:
 - Microbial cultivation
 curation_history:
@@ -52,3 +53,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 262'
+- timestamp: '2026-03-13T06:19:03.395560Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001361'

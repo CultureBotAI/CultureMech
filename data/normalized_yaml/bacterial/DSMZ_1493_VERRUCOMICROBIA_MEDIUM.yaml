@@ -1,3 +1,4 @@
+id: CultureMech:000961
 name: VERRUCOMICROBIA MEDIUM
 original_name: VERRUCOMICROBIA MEDIUM
 category: bacterial
@@ -162,16 +163,18 @@ preparation_steps:
   description: Do not adjust the pH.
 - step_number: 2
   action: MIX
-  description: For plates add 8g/l Gelrite or 15g Phytagel and 1g/L MgCl. A carbon source is not required
-    because the organism degrades the polysaccharides in Gelrite or Phytagel
+  description: For plates add 8g/l Gelrite or 15g Phytagel and 1g/L MgCl. A carbon
+    source is not required because the organism degrades the polysaccharides in Gelrite
+    or Phytagel
 - step_number: 3
   action: MIX
-  description: For liquid medium use 0.8-2.0g/l Gelrite as carbon source (the medium remains liquid).
-    Alternatively mannose (1g/l) may be used instead of Gelrite in liquid medium. Do not add mannose to
-    solid media, which will inhibit growth.
+  description: For liquid medium use 0.8-2.0g/l Gelrite as carbon source (the medium
+    remains liquid). Alternatively mannose (1g/l) may be used instead of Gelrite in
+    liquid medium. Do not add mannose to solid media, which will inhibit growth.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals.
 - step_number: 5
   action: MIX
   description: Final pH 7.0 (with KOH).
@@ -189,4 +192,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.299500Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:59.940891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000961'

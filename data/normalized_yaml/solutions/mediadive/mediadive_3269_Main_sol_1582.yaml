@@ -1,3 +1,4 @@
+id: CultureMech:012448
 preferred_term: Main sol. 1582
 term:
   id: mediadive.solution:3269
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 6.6 with NaOH. Boil medium and cool under N2, distribute
   under N2 and sterilize by autoclaving at 121°C for 20 minutes.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.997690Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012448'

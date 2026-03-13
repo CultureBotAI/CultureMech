@@ -1,3 +1,4 @@
+id: CultureMech:010734
 preferred_term: Main sol. 78
 term:
   id: mediadive.solution:123
@@ -124,3 +125,8 @@ preparation_notes: "To make medium anoxic bring it to a boil, cool under 100% N2
   \ for 15 min with stirring. Cool to room temperature,\r\nskim fat off surface, and\
   \ filter, retaining both meat particles and filtrate. To the filtrate\r\nadd water\
   \ to a final volume of 1000 ml, and then add:\n\nOriginal volume: 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:15.252660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010734'

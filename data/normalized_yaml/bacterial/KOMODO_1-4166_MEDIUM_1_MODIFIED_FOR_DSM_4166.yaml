@@ -1,3 +1,4 @@
+id: CultureMech:003462
 name: MEDIUM 1 MODIFIED FOR DSM 4166
 original_name: MEDIUM 1 MODIFIED FOR DSM 4166
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1_4166
     label: MEDIUM 1 MODIFIED FOR DSM 4166
-notes: 'Source: KOMODO ModelSEED | ID: 1_4166 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_4166 | DSMZ Medium: 1 (mediadive.medium:1)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1
+- timestamp: '2026-03-13T06:19:20.051103Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003462'

@@ -1,3 +1,4 @@
+id: CultureMech:011783
 preferred_term: Main sol. 1205
 term:
   id: mediadive.solution:2405
@@ -80,3 +81,8 @@ preparation_notes: Dissolve ingredients except glucose and DTT, then sparge medi
   dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
   vials and autoclave at 121°C for 20 min. Add glucose and DTT from anoxic stock solutions
   prepared under 100% N2 gas atmosphere and sterilized by filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.877966Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011783'

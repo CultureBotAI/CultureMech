@@ -1,3 +1,4 @@
+id: CultureMech:013689
 preferred_term: Main sol. J791
 term:
   id: mediadive.solution:4740
@@ -152,3 +153,8 @@ preparation_notes: 'Add components to distilled water and bring volume to 1.0 L.
   medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl
   rubber stoppers and autoclave. After cooling, add per liter the following solutions
   from anaerobic stocks (autoclaved or *filter-sterilized): '
+curation_history:
+- timestamp: '2026-03-13T06:20:32.862408Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013689'

@@ -1,3 +1,4 @@
+id: CultureMech:014230
 preferred_term: Main sol. J1200
 term:
   id: mediadive.solution:5319
@@ -81,3 +82,8 @@ preparation_notes: "Mix components and autoclave. For preparation of solid mediu
   \ medium into culture tubes (leave > 80% volume of a gas phase)and seal with butyl\
   \ rubber stoppers. Finally, add methane to make a concentration of 50% in the gas\
   \ phase (by volume)."
+curation_history:
+- timestamp: '2026-03-13T06:20:36.458556Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014230'

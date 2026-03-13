@@ -1,3 +1,4 @@
+id: CultureMech:003176
 name: R2A AGAR WITH ARTIFICIAL SEAWATER
 original_name: R2A AGAR WITH ARTIFICIAL SEAWATER
 category: bacterial
@@ -94,3 +95,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J832'
+- timestamp: '2026-03-13T06:19:18.374442Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003176'

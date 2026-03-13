@@ -1,3 +1,4 @@
+id: CultureMech:014724
 preferred_term: Main sol. 1723a
 term:
   id: mediadive.solution:5983
@@ -51,3 +52,8 @@ preparation_notes: "Make up to <span class='amount' data-volume='1000'>1000</spa
   \ caps (T25, distributor: TPP, order number: 90026). The T25 flasks are routinely\
   \ filled with 20 ml of culture. Each T25 culture is supplemented with a sterilized\
   \ wheat grain as carbon source for ambient bacteria from the sampling site."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.262501Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014724'

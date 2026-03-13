@@ -1,3 +1,4 @@
+id: CultureMech:004290
 name: Seven vitamins solution (medium 503)
 original_name: Seven vitamins solution (medium 503)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2023
     label: Seven vitamins solution (medium 503)
-notes: 'Source: KOMODO ModelSEED | ID: 2023 | DSMZ Medium: 2023 (mediadive.medium:2023) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2023 | DSMZ Medium: 2023 (mediadive.medium:2023)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2023'
+- timestamp: '2026-03-13T06:19:26.462778Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004290'

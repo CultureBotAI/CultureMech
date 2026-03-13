@@ -1,3 +1,4 @@
+id: CultureMech:014880
 preferred_term: Main sol. 1796
 term:
   id: mediadive.solution:6181
@@ -23,3 +24,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000<
   Autoclave at 121 °C for 20 min.
 
   Store at room temperature.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.890687Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014880'

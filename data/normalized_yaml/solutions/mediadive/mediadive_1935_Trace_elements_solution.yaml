@@ -1,3 +1,4 @@
+id: CultureMech:011344
 preferred_term: Trace elements solution
 term:
   id: mediadive.solution:1935
@@ -116,3 +117,8 @@ preparation_notes: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH
   to the EDTA-NaOH solution. Adjust the final pH of the solution to pH 6.0 with 1M
   NaOH (about 24 ml). Make up to 1 litre with distilled water, store in the dark and
   do not autoclave the stock solution before it is added to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.061025Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011344'

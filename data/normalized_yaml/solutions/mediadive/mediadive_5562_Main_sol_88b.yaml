@@ -1,3 +1,4 @@
+id: CultureMech:014441
 preferred_term: Main sol. 88b
 term:
   id: mediadive.solution:5562
@@ -143,3 +144,8 @@ preparation_notes: 'Prepare medium M.88, then add (per litre):
   phase and distribute anaerobically into rubber stoppered tubes or bottles (presterilized
   by autoclaving). The medium is sterilized by heating 2 hours at 85 °C on each of
   two following days.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.833606Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014441'

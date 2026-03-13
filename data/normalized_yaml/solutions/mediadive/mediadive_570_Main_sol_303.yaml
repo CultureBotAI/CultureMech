@@ -1,3 +1,4 @@
+id: CultureMech:014571
 preferred_term: Main sol. 303
 term:
   id: mediadive.solution:570
@@ -103,3 +104,8 @@ composition:
 preparation_notes: Prepare the medium without horse serum. After autoclaving cool
   to 50°C, then add 100 ml/l of sterile horse serum. Transfer cultures when actively
   growing. Cultures die rapidly in stationary growth phase!
+curation_history:
+- timestamp: '2026-03-13T06:20:38.470696Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014571'

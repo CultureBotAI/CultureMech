@@ -1,3 +1,4 @@
+id: CultureMech:011271
 preferred_term: Main sol. 898a
 term:
   id: mediadive.solution:1849
@@ -157,3 +158,8 @@ preparation_notes: 'Dissolve all ingredients except carbonates, yeast extract, g
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.560942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011271'

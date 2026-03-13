@@ -1,3 +1,4 @@
+id: CultureMech:004173
 name: ACIDIANUS BRIERLEYI MEDIUM
 original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: bacterial
@@ -123,4 +124,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:25.634718Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004173'
 ph_value: 2.5

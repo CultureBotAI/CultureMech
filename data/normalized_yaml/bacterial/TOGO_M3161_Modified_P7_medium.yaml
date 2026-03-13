@@ -1,3 +1,4 @@
+id: CultureMech:009620
 name: Modified P7 medium
 original_name: Modified P7 medium
 category: bacterial
@@ -273,6 +274,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:07.600827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009620'
 high_metal: true
 solutions:
 - preferred_term: 0.1% Resazurin solution

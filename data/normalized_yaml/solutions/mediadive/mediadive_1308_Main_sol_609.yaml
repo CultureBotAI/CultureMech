@@ -1,3 +1,4 @@
+id: CultureMech:010798
 preferred_term: Main sol. 609
 term:
   id: mediadive.solution:1308
@@ -42,3 +43,8 @@ composition:
 preparation_notes: Adjust pH to 7.2. Cook or steam 20.0 g in 1000.0 ml distilled water
   for 20 min. Filter through cheese cloth. Add 18.0 g agar and make up to 1000.0 ml.
   Add 1 ml of trace salts solution (see below).
+curation_history:
+- timestamp: '2026-03-13T06:20:15.587464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010798'

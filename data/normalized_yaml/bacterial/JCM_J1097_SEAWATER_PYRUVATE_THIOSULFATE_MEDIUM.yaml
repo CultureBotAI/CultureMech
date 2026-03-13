@@ -1,3 +1,4 @@
+id: CultureMech:002276
 name: SEAWATER PYRUVATE THIOSULFATE MEDIUM
 original_name: SEAWATER PYRUVATE THIOSULFATE MEDIUM
 category: bacterial
@@ -231,23 +232,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2-CO2 (4:1, v/v) atmosphere. After cooling, add
-    the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave under a N2-CO2 (4:1, v/v) atmosphere.
+    After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: 'Anaerobically and aseptically distribute the medium into appropriate culture vessels (e.g.,
-    20 ml medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v) gas stream and seal with butyl rubber
-    stoppers. Finally, add per liter the following solution:'
+  description: 'Anaerobically and aseptically distribute the medium into appropriate
+    culture vessels (e.g., 20 ml medium in 60 ml serum bottles) under a N2-CO2 (4:1,
+    v/v) gas stream and seal with butyl rubber stoppers. Finally, add per liter the
+    following solution:'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.0 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.0 with KOH. Then
+    proceed to add minerals.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
 - step_number: 5
   action: MIX
-  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and incubate the vessels
-    in inverted position.'
+  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and
+    incubate the vessels in inverted position.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -259,3 +262,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.881664Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002276'

@@ -1,3 +1,4 @@
+id: CultureMech:003196
 name: THERMOSYNTROPHA L-60 MEDIUM
 original_name: THERMOSYNTROPHA L-60 MEDIUM
 category: bacterial
@@ -225,14 +226,15 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave Solutions A, B and C separately. After cooling, aseptically and anaerobically
-    combine the three solutions under a stream of N2-CO2 (80:20, v/v), then add the following solutions
-    (filter-sterilized):'
+  description: 'Autoclave Solutions A, B and C separately. After cooling, aseptically
+    and anaerobically combine the three solutions under a stream of N2-CO2 (80:20,
+    v/v), then add the following solutions (filter-sterilized):'
 - step_number: 3
   action: AUTOCLAVE
-  description: Distribute the medium into culture vessels under the same gas mixture and seal with butyl
-    rubber stoppers. Prior to inoculation, reduce the medium with 0.025% L-cysteine x HCl x H2O and 0.025%
-    Na2S x 9H2O (use 5% solutions autoclaved and stored under a N2 atmosphere).
+  description: Distribute the medium into culture vessels under the same gas mixture
+    and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with
+    0.025% L-cysteine x HCl x H2O and 0.025% Na2S x 9H2O (use 5% solutions autoclaved
+    and stored under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -240,3 +242,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J850'
+- timestamp: '2026-03-13T06:19:18.506858Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003196'

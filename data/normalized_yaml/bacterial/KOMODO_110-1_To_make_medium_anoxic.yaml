@@ -1,3 +1,4 @@
+id: CultureMech:003782
 name: To make medium anoxic
 original_name: To make medium anoxic
 category: bacterial
@@ -128,3 +129,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:22.171450Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003782'

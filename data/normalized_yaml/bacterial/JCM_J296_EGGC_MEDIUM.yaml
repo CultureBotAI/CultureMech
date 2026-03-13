@@ -1,3 +1,4 @@
+id: CultureMech:002653
 name: EGGC MEDIUM
 original_name: EGGC MEDIUM
 category: bacterial
@@ -158,8 +159,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2-7.4. Autoclave at 115C for 20 min. Separately sterilize Solution A by
-    filtration, and add to the medium aseptically.
+  description: Adjust pH to 7.2-7.4. Autoclave at 115C for 20 min. Separately sterilize
+    Solution A by filtration, and add to the medium aseptically.
 - step_number: 2
   action: MIX
   description: Prepare just before use.
@@ -174,3 +175,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:14.794422Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002653'

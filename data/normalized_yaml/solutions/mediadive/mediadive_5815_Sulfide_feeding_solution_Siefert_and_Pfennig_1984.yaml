@@ -1,3 +1,4 @@
+id: CultureMech:014646
 preferred_term: Sulfide feeding solution (Siefert and Pfennig 1984)
 term:
   id: mediadive.solution:5815
@@ -49,3 +50,8 @@ preparation_notes: 'Sparge medium with 100% CO2 gas mixture.
 
 
   Original volume: 250 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.837615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014646'

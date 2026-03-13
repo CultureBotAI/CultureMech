@@ -1,3 +1,4 @@
+id: CultureMech:003800
 name: DESULFACINUM medium
 original_name: DESULFACINUM medium
 category: bacterial
@@ -194,3 +195,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:22.307753Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003800'

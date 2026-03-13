@@ -1,3 +1,4 @@
+id: CultureMech:002900
 name: SULFATE REDUCING BACTERIUM MEDIUM WITH LACTATE
 original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH LACTATE
 category: bacterial
@@ -165,10 +166,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except L-sodium lactate and L-cysteine x H2O x HCl, adjust pH to 7.5 and
-    autoclave under a N2 atmosphere. Separately autoclave L-sodium lactate and L-cysteine x H2O x HCl
-    in 10 ml distilled water under a N2 atmosphere and add to the medium. Readjust pH to 7.5 with 1 N
-    NaOH (from a sterile stock solution).
+  description: Mix ingredients except L-sodium lactate and L-cysteine x H2O x HCl,
+    adjust pH to 7.5 and autoclave under a N2 atmosphere. Separately autoclave L-sodium
+    lactate and L-cysteine x H2O x HCl in 10 ml distilled water under a N2 atmosphere
+    and add to the medium. Readjust pH to 7.5 with 1 N NaOH (from a sterile stock
+    solution).
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 15 g/L agar (BD-Difco).
@@ -179,3 +181,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J552'
+- timestamp: '2026-03-13T06:19:16.441657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002900'

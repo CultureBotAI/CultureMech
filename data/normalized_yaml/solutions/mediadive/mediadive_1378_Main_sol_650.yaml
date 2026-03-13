@@ -1,3 +1,4 @@
+id: CultureMech:010862
 preferred_term: Main sol. 650
 term:
   id: mediadive.solution:1378
@@ -79,3 +80,8 @@ preparation_notes: 'Adjust pH to 7.0.
 
   Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM pyruvate after
   autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.995958Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010862'

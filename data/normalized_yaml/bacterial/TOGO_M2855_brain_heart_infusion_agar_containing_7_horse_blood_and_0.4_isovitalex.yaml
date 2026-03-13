@@ -1,3 +1,4 @@
+id: CultureMech:009397
 name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
 original_name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
 category: bacterial
@@ -43,5 +44,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.698519'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
-    O2'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: O2'
+- timestamp: '2026-03-13T06:20:06.031971Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009397'

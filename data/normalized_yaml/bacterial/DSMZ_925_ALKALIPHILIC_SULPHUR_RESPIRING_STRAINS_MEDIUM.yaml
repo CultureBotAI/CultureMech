@@ -1,3 +1,4 @@
+id: CultureMech:002097
 name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
 original_name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
 category: bacterial
@@ -112,8 +113,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 110°C 20 min in a closed vessel (i.e. a serum tube or bottle). pH after sterilization
-    will about 10.
+  description: Sterilize at 110°C 20 min in a closed vessel (i.e. a serum tube or
+    bottle). pH after sterilization will about 10.
 - step_number: 2
   action: DISSOLVE
   description: (a white colloid will form which will rapidly dissolve after mixing)
@@ -130,3 +131,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 925'
+- timestamp: '2026-03-13T06:19:10.273424Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002097'

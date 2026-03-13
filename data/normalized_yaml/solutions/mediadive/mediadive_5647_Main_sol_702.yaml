@@ -1,3 +1,4 @@
+id: CultureMech:014514
 preferred_term: Main sol. 702
 term:
   id: mediadive.solution:5647
@@ -192,3 +193,8 @@ preparation_notes: Prepare the medium without NaHCO3, Na2S, cellobiose or vitami
   instead of cellobiose as a substrate the microcrystalline cellulose must be added
   to the medium before autoclaving at the appropiate concentration. The final pH is
   7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.190780Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014514'

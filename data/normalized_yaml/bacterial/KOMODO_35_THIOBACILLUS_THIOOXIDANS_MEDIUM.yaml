@@ -1,3 +1,4 @@
+id: CultureMech:005079
 name: THIOBACILLUS THIOOXIDANS MEDIUM
 original_name: THIOBACILLUS THIOOXIDANS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:35
     label: THIOBACILLUS THIOOXIDANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 35 | DSMZ Medium: 35 (mediadive.medium:35) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 35 | DSMZ Medium: 35 (mediadive.medium:35)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -69,3 +71,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 35
+- timestamp: '2026-03-13T06:19:29.984731Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005079'

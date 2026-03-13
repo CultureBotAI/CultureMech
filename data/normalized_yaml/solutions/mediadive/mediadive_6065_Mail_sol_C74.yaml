@@ -1,3 +1,4 @@
+id: CultureMech:014783
 preferred_term: Mail sol. C74
 term:
   id: mediadive.solution:6065
@@ -19,3 +20,8 @@ preparation_notes: "Filter natural seawater and reduce to 95% using glass distil
   \ water.  Autoclave.\nIngredients above should be autoclaved separately and added\
   \ together cold using \r\naseptic techniques.  Sterilise for 15 minutes at 15 psi\
   \ and use when cooled to room \r\ntemperature."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.529214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014783'

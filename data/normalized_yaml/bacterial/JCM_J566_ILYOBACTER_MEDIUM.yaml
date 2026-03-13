@@ -1,3 +1,4 @@
+id: CultureMech:002915
 name: ILYOBACTER MEDIUM
 original_name: ILYOBACTER MEDIUM
 category: bacterial
@@ -211,9 +212,9 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: POUR_PLATES
-  description: Boil until the volume decreases to 1.0 L and dispense under an atmosphere of N2 into 15
-    ml Hungate tube. If the medium stays pink (O2 is present), add one drop of 5% Na2S from the sterile
-    stock solution.
+  description: Boil until the volume decreases to 1.0 L and dispense under an atmosphere
+    of N2 into 15 ml Hungate tube. If the medium stays pink (O2 is present), add one
+    drop of 5% Na2S from the sterile stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -221,3 +222,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J566'
+- timestamp: '2026-03-13T06:19:16.540472Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002915'

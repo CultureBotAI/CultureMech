@@ -1,3 +1,4 @@
+id: CultureMech:006962
 name: YPS medium
 original_name: YPS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:990
     label: YPS medium
-notes: 'Source: KOMODO ModelSEED | ID: 990 | DSMZ Medium: 990 (mediadive.medium:990) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 990 | DSMZ Medium: 990 (mediadive.medium:990)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -97,3 +99,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 990
+- timestamp: '2026-03-13T06:19:45.288972Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006962'

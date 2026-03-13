@@ -1,3 +1,4 @@
+id: CultureMech:013251
 preferred_term: Main sol. J483
 term:
   id: mediadive.solution:4238
@@ -128,3 +129,8 @@ preparation_notes: 'Mix components except vitamin solution, and adjust pH to 4.5
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.313221Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013251'

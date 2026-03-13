@@ -1,3 +1,4 @@
+id: CultureMech:001895
 name: HALOMONAS DESIDERATA MEDIUM
 original_name: HALOMONAS DESIDERATA MEDIUM
 category: bacterial
@@ -56,9 +57,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water and autoclave. Prepare
-    the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately and add to the cooled medium. Final pH
-    9.5-10.0.
+  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water
+    and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately
+    and add to the cooled medium. Final pH 9.5-10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,3 +67,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 762'
+- timestamp: '2026-03-13T06:19:08.198459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001895'

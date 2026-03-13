@@ -1,3 +1,4 @@
+id: CultureMech:012949
 preferred_term: Main sol. J214
 term:
   id: mediadive.solution:3880
@@ -201,3 +202,8 @@ preparation_notes: Mix ingredients except Na2S x 9H2O and adjust pH to 6.9 with 
   the sterile Na2S x 9H2O solution to the medium under a H2-CO2 (80:20) atmosphere
   and readjust pH to 6.9, if necessary. Pressurize inoculated bottle to 200 kPa H2-CO2
   (80:20).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.497600Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012949'

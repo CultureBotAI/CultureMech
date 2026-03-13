@@ -1,3 +1,4 @@
+id: CultureMech:010812
 preferred_term: Main sol. 619
 term:
   id: mediadive.solution:1327
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Sterilize methanol by filtration, and add to other components sterilized
   by autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.677253Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010812'

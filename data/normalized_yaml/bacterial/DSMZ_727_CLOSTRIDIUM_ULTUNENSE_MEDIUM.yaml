@@ -1,3 +1,4 @@
+id: CultureMech:001862
 name: CLOSTRIDIUM ULTUNENSE MEDIUM
 original_name: CLOSTRIDIUM ULTUNENSE MEDIUM
 category: bacterial
@@ -261,16 +262,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Dissolve ingredients except carbonate, vitamins and sulfide, then sparge medium with 80%\
-    \ N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere\
-    \ into anoxic Hungate-type tubes or serum vials and autoclave. Prior to inoculation add vitamins and\
-    \ sulfide from sterile\r\nanoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile\
-    \ anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of vitamins\
-    \ should be sterilized by filtration. Adjust pH of complete medium to 7.0, if necessay."
+  description: "Dissolve ingredients except carbonate, vitamins and sulfide, then\
+    \ sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it\
+    \ anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes\
+    \ or serum vials and autoclave. Prior to inoculation add vitamins and sulfide\
+    \ from sterile\r\nanoxic stock solutions prepared under 100% N2 gas and carbonate\
+    \ from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.\
+    \ Stock solutions of vitamins should be sterilized by filtration. Adjust pH of\
+    \ complete medium to 7.0, if necessay."
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride.
-    After ferrous chloride has dissolved add remaining compounds.
+  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -281,4 +284,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.192692Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:07.868759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001862'

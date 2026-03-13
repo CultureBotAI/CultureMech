@@ -1,3 +1,4 @@
+id: CultureMech:010394
 name: Peat Medium 1 For Methanoregura Boonei
 original_name: Peat Medium 1 For Methanoregura Boonei
 category: bacterial
@@ -272,6 +273,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.521463Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010394'
 high_metal: true
 solutions:
 - preferred_term: Trace metal 1 solution (see below)

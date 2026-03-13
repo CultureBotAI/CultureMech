@@ -1,3 +1,4 @@
+id: CultureMech:001365
 name: THERMOCOCCUS CELER MEDIUM
 original_name: THERMOCOCCUS CELER MEDIUM
 category: bacterial
@@ -123,9 +124,10 @@ preparation_steps:
   description: Adjust final pH to 5.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared
-    separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled
-    for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
+  description: 'Prepare the medium anaerobically under 100% nitrogen. The following
+    constituents are prepared separately and added to the autoclaved mineral salt
+    solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not
+    autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
     days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.'
 applications:
 - Microbial cultivation
@@ -134,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 266'
+- timestamp: '2026-03-13T06:19:03.417025Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001365'

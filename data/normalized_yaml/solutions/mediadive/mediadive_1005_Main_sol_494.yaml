@@ -1,3 +1,4 @@
+id: CultureMech:010563
 preferred_term: Main sol. 494
 term:
   id: mediadive.solution:1005
@@ -159,3 +160,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, yeast extract, trimet
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.407189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010563'

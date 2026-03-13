@@ -1,3 +1,4 @@
+id: CultureMech:003133
 name: ANAEROBE MEDIUM NO. 1
 original_name: ANAEROBE MEDIUM NO. 1
 category: bacterial
@@ -90,3 +91,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J78'
+- timestamp: '2026-03-13T06:19:18.064286Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003133'

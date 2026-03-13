@@ -1,3 +1,4 @@
+id: CultureMech:014789
 preferred_term: Mail sol. C81
 term:
   id: mediadive.solution:6072
@@ -43,3 +44,8 @@ preparation_notes: 'Make up to 1 litre with deionized water. Autoclave at 15 psi
   15 minutes.
 
   Note. For test tubes, only use paper or pink silicone bungs.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.552575Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014789'

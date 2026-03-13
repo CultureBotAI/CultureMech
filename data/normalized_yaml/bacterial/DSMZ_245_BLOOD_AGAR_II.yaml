@@ -1,3 +1,4 @@
+id: CultureMech:001345
 name: BLOOD AGAR II
 original_name: BLOOD AGAR II
 category: bacterial
@@ -40,7 +41,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +50,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 245'
+- timestamp: '2026-03-13T06:19:03.308829Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001345'

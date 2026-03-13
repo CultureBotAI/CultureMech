@@ -1,3 +1,4 @@
+id: CultureMech:005007
 name: SPOROHALOBACTER LORTETII medium
 original_name: SPOROHALOBACTER LORTETII medium
 category: bacterial
@@ -263,6 +264,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 3 duplicate ingredient(s); Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:29.440114Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005007'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: SPOROHALOBACTER LORTETII

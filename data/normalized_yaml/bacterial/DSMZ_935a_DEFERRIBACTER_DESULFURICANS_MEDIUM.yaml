@@ -1,3 +1,4 @@
+id: CultureMech:002109
 name: DEFERRIBACTER DESULFURICANS MEDIUM
 original_name: DEFERRIBACTER DESULFURICANS MEDIUM
 category: bacterial
@@ -276,3 +277,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:10.420128Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002109'

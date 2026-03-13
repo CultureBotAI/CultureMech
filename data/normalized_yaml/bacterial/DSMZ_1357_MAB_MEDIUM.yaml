@@ -1,3 +1,4 @@
+id: CultureMech:000815
 name: MAB MEDIUM
 original_name: MAB MEDIUM
 category: bacterial
@@ -200,10 +201,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium without Na2CO3, NaHCO3, Vitamin solution and cysteine HCl. Boil
-    and then cool under N2 to room temperature. Add Na2CO3 and NaHCO3. Dispense into suitable vessels
-    for anaerobic growth (serum bottles or Hungate tubes sealed with rubber stoppers) and sterilize by
-    autoclaving. After autoclaving add  cysteine HCl  from sterile stock solution and 10 ml of the vitamin
+  description: Prepare the liquid medium without Na2CO3, NaHCO3, Vitamin solution
+    and cysteine HCl. Boil and then cool under N2 to room temperature. Add Na2CO3
+    and NaHCO3. Dispense into suitable vessels for anaerobic growth (serum bottles
+    or Hungate tubes sealed with rubber stoppers) and sterilize by autoclaving. After
+    autoclaving add  cysteine HCl  from sterile stock solution and 10 ml of the vitamin
     solution to 1 litre of the sterile main solution. Final pH 9.8.
 applications:
 - Microbial cultivation
@@ -212,3 +214,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1357'
+- timestamp: '2026-03-13T06:18:58.563071Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000815'

@@ -1,3 +1,4 @@
+id: CultureMech:013649
 preferred_term: Main sol. J759
 term:
   id: mediadive.solution:4699
@@ -189,3 +190,8 @@ preparation_notes: "Mix components and bubble with N2-CO2 (4:1, v/v) gas mixture
   \ from sterile anaerobic stocks (autoclaved or *filter-sterilized; per 900 ml of\
   \ medium): \nReadjust pH of the medium to 7.3, if necessary.\n\nOriginal volume:\
   \ 1025 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.599118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013649'

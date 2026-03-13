@@ -1,3 +1,4 @@
+id: CultureMech:013285
 preferred_term: Solution A
 term:
   id: mediadive.solution:4274
@@ -129,3 +130,8 @@ preparation_notes: 'Mix ingredients except Vitamin and Vitamin B12 solutions, ad
 
 
   Original volume: 865 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.479237Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013285'

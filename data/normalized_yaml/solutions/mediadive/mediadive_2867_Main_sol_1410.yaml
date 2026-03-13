@@ -1,3 +1,4 @@
+id: CultureMech:012138
 preferred_term: Main sol. 1410
 term:
   id: mediadive.solution:2867
@@ -152,3 +153,8 @@ preparation_notes: "Prepare the liquid medium. Adjust to pH 6.3 with 10 M KOH so
   \ Dispense the medium into Hungate tubes or serum bottles under gassing with N2:CO2\
   \ (80:20 v/v). Sterilize by autoclaving. Before inoculation add from sterile stock\
   \ solutions: \nFinal pH 7.2 - 7.4"
+curation_history:
+- timestamp: '2026-03-13T06:20:24.110813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012138'

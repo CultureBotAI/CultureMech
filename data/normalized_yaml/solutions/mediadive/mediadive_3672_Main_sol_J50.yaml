@@ -1,3 +1,4 @@
+id: CultureMech:012755
 preferred_term: Main sol. J50
 term:
   id: mediadive.solution:3672
@@ -47,3 +48,8 @@ preparation_notes: 'Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water 
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.536316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012755'

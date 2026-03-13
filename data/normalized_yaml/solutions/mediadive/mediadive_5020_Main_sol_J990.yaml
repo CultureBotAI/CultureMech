@@ -1,3 +1,4 @@
+id: CultureMech:013943
 preferred_term: Main sol. J990
 term:
   id: mediadive.solution:5020
@@ -142,3 +143,8 @@ preparation_notes: 'Prepare the medium anaerobically under a N2-CO2 (4:1, v/v) g
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.549305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013943'

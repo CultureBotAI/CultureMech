@@ -1,3 +1,4 @@
+id: CultureMech:012944
 preferred_term: Main sol. J209
 term:
   id: mediadive.solution:3875
@@ -269,3 +270,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "<I>Salts solution</I> \nAdjust pH to 6.7-6.8.\n\nOriginal volume:\
   \ 1092 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:28.459014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012944'

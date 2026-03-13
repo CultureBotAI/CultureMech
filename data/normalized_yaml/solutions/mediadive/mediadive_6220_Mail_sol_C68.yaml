@@ -1,3 +1,4 @@
+id: CultureMech:014916
 preferred_term: Mail sol. C68
 term:
   id: mediadive.solution:6220
@@ -30,3 +31,8 @@ composition:
 preparation_notes: "Thoroughly disperse the agar in cold amoeba saline solution and\
   \ then slowly bring \r\nto the boil.  Transfer the molten agar to suitable vessels\
   \ and sterilize at 15 psi for \r\n15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.010271Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014916'

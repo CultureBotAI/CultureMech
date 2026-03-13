@@ -1,3 +1,4 @@
+id: CultureMech:009456
 name: Sterile human urine
 original_name: Sterile human urine
 category: bacterial
@@ -22,3 +23,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2920'
+- timestamp: '2026-03-13T06:20:06.251482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009456'

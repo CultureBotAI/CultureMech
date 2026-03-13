@@ -1,3 +1,4 @@
+id: CultureMech:006169
 name: MEDIUM 640 MODIFIED FOR DSM 11426
 original_name: MEDIUM 640 MODIFIED FOR DSM 11426
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:640_11426
     label: MEDIUM 640 MODIFIED FOR DSM 11426
-notes: 'Source: KOMODO ModelSEED | ID: 640_11426 | DSMZ Medium: 640 (mediadive.medium:640) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 640_11426 | DSMZ Medium: 640 (mediadive.medium:640)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -160,4 +161,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 640
+- timestamp: '2026-03-13T06:19:38.759070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006169'
 ph_value: 6.5

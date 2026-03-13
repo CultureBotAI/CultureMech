@@ -1,3 +1,4 @@
+id: CultureMech:014156
 preferred_term: Basal medium 2
 term:
   id: mediadive.solution:5244
@@ -79,3 +80,8 @@ preparation_notes: "Add components to distilled water and bring volume to 1.0 L.
   \ pH of the medium to be 9.9 - 10.0. Autoclave and let it stand for three days.\
   \ Decant the clear solution into another empty sterile bottle. Aseptically add per\
   \ liter the following solutions (autoclaved): \n\nOriginal volume: 7 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.963235Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014156'

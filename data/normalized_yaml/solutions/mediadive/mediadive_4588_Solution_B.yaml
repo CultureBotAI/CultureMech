@@ -1,3 +1,4 @@
+id: CultureMech:013553
 preferred_term: Solution B
 term:
   id: mediadive.solution:4588
@@ -22,3 +23,8 @@ preparation_notes: 'Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize
   amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions
   at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and
   pour into petri dishes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.990011Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013553'

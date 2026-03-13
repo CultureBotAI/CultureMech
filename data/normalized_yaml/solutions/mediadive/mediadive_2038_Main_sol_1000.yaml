@@ -1,3 +1,4 @@
+id: CultureMech:011441
 preferred_term: Main sol. 1000
 term:
   id: mediadive.solution:2038
@@ -189,3 +190,8 @@ preparation_notes: Before autoclaving, the pH of the Medium is adjusted with NaO
   at a final concentration described below. Then a mix gas (80% H2, 20% CO2) is purged
   for 5 min. Finally, the mix gas is compressed into gas phase (> 80% volume of the
   tube or bottle) at 3 atm.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.710643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011441'

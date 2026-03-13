@@ -1,3 +1,4 @@
+id: CultureMech:000619
 name: RUBITELEA MEDIUM
 original_name: RUBITELEA MEDIUM
 category: bacterial
@@ -48,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1177'
+- timestamp: '2026-03-13T06:18:56.849204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000619'

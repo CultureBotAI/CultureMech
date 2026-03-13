@@ -1,3 +1,4 @@
+id: CultureMech:012190
 preferred_term: Main sol. 1435
 term:
   id: mediadive.solution:2937
@@ -126,3 +127,8 @@ composition:
 preparation_notes: Prepare the medium without ethanol in closed vessels with a medium
   to headspace ratio of 1:5 to 1:10. Adjust pH to 7.0 and sterilize. Allow to cool
   to about 45°C before adding 0.5 mL filter-sterilized ethanol per liter medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.443192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012190'

@@ -1,3 +1,4 @@
+id: CultureMech:002564
 name: BSK MEDIUM
 original_name: BSK MEDIUM
 category: bacterial
@@ -69,8 +70,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin.
-    Filter-sterilize entire medium. Add sterile rabbit serum to final concentration of 6%.
+  description: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6.
+    Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum
+    to final concentration of 6%.
 applications:
 - Microbial cultivation
 curation_history:
@@ -78,3 +80,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J201'
+- timestamp: '2026-03-13T06:19:14.188327Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002564'

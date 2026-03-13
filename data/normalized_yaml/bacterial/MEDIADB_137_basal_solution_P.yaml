@@ -1,3 +1,4 @@
+id: CultureMech:007026
 name: basal solution P
 original_name: basal solution P
 category: bacterial
@@ -47,6 +48,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 137, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.658235Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007026'
 media_term:
   preferred_term: MediaDB Medium 137
   term:

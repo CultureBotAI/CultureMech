@@ -1,3 +1,4 @@
+id: CultureMech:000824
 name: TUA ACETOBACTER MEDIUM
 original_name: TUA ACETOBACTER MEDIUM
 category: bacterial
@@ -51,9 +52,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize by autoclaving.
-    Add sterile ethanol to the sterile cooled medium. The medium may be solidified by adding 15.0 g/l
-    agar.
+  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize
+    by autoclaving. Add sterile ethanol to the sterile cooled medium. The medium may
+    be solidified by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -61,3 +62,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1363'
+- timestamp: '2026-03-13T06:18:58.668962Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000824'

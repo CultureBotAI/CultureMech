@@ -1,3 +1,4 @@
+id: CultureMech:010518
 name: MRS MALTOSE MEDIUM
 original_name: MRS MALTOSE MEDIUM
 category: fungal
@@ -33,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J293'
+- timestamp: '2026-03-13T06:20:14.206285Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010518'

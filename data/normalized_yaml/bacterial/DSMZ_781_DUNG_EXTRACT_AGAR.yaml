@@ -1,3 +1,4 @@
+id: CultureMech:001917
 name: DUNG EXTRACT AGAR
 original_name: DUNG EXTRACT AGAR
 category: bacterial
@@ -53,8 +54,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Dung extract: Boil an average sized piece of horse dung (fresh or frozen) for two hours
-    in 150 ml water using a water bath; filter and use immediately. Sterilize at 121°C for 15 min.'
+  description: 'Dung extract: Boil an average sized piece of horse dung (fresh or
+    frozen) for two hours in 150 ml water using a water bath; filter and use immediately.
+    Sterilize at 121°C for 15 min.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -62,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 781'
+- timestamp: '2026-03-13T06:19:08.392708Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001917'

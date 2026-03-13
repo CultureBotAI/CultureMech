@@ -1,3 +1,4 @@
+id: CultureMech:014013
 preferred_term: Main sol. J1042
 term:
   id: mediadive.solution:5101
@@ -56,3 +57,8 @@ preparation_notes: 'Adjust pH to 7.0. Distribute the medium into culture vessels
 
 
   Original volume: 1005 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.002614Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014013'

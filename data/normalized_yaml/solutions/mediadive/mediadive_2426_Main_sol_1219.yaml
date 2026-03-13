@@ -1,3 +1,4 @@
+id: CultureMech:011804
 preferred_term: Main sol. 1219
 term:
   id: mediadive.solution:2426
@@ -104,3 +105,8 @@ preparation_notes: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes
   screw caps. The methanol may either be filter sterilised or autoclaved in half full
   serum bottles sealed with a rubber stopper and a crimp closure. Add to the cooled
   autoclaved medium. Agar may be added at 15 g/l for solid media.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.042984Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011804'

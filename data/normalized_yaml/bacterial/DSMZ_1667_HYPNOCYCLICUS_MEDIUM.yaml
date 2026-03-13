@@ -1,3 +1,4 @@
+id: CultureMech:001151
 name: HYPNOCYCLICUS MEDIUM
 original_name: HYPNOCYCLICUS MEDIUM
 category: bacterial
@@ -204,16 +205,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients except carbonate, vitamins and sulfide, then sparge medium with
-    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
-    prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. Adjust
-    pH of complete medium to 6.8 - 7.2, if necessary.
+  description: Dissolve all ingredients except carbonate, vitamins and sulfide, then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized
+    by filtration. Adjust pH of complete medium to 6.8 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -221,3 +223,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1667'
+- timestamp: '2026-03-13T06:19:01.683373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001151'

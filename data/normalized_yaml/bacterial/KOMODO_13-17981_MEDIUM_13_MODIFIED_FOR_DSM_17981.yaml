@@ -1,3 +1,4 @@
+id: CultureMech:004055
 name: MEDIUM 13 MODIFIED FOR DSM 17981
 original_name: MEDIUM 13 MODIFIED FOR DSM 17981
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:13_17981
     label: MEDIUM 13 MODIFIED FOR DSM 17981
-notes: 'Source: KOMODO ModelSEED | ID: 13_17981 | DSMZ Medium: 13 (mediadive.medium:13) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 13_17981 | DSMZ Medium: 13 (mediadive.medium:13)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -67,3 +69,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 13
+- timestamp: '2026-03-13T06:19:24.469561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004055'

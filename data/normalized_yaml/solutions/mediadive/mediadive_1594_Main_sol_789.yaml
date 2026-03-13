@@ -1,3 +1,4 @@
+id: CultureMech:011053
 preferred_term: Main sol. 789
 term:
   id: mediadive.solution:1594
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust medium for final pH 6.8. Autoclave at 121°C for 15 min.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.243300Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011053'

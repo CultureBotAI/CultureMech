@@ -1,3 +1,4 @@
+id: CultureMech:000987
 name: OCEANIRHABDUS MEDIUM
 original_name: OCEANIRHABDUS MEDIUM
 category: bacterial
@@ -173,15 +174,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and bicarbonate, then sparge medium with 80% N2 and
-    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve cysteine, adjust pH to 6.5,
-    then dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and
-    20% CO2 gas mixture. Prior to use adjust pH of complete medium to 6.5 - 7.0, if necessary.
+  description: Dissolve ingredients except cysteine and bicarbonate, then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and
+    dissolve cysteine, adjust pH to 6.5, then dispense medium under 80% N2 and 20%
+    CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and
+    20% CO2 gas mixture. Prior to use adjust pH of complete medium to 6.5 - 7.0, if
+    necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -193,3 +196,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:00.196382Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000987'

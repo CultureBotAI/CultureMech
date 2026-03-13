@@ -1,3 +1,4 @@
+id: CultureMech:012976
 preferred_term: Main sol. J231
 term:
   id: mediadive.solution:3908
@@ -155,3 +156,8 @@ preparation_notes: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and a
   x HCl and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior
   to inoculation, aseptically and anaerobically add the cysteine x HCl and Na2S x
   9H2O solutions. Pressurize the inoculated bottles to 100 kPa H2-CO2 (80:20).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.679066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012976'

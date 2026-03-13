@@ -1,3 +1,4 @@
+id: CultureMech:006054
 name: CORYNEBACTERIUM medium CII
 original_name: CORYNEBACTERIUM medium CII
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:583
     label: CORYNEBACTERIUM medium CII
-notes: 'Source: KOMODO ModelSEED | ID: 583 | DSMZ Medium: 583 (mediadive.medium:583) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 583 | DSMZ Medium: 583 (mediadive.medium:583)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -46,4 +48,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 583
+- timestamp: '2026-03-13T06:19:37.915686Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006054'
 ph_value: 7.0

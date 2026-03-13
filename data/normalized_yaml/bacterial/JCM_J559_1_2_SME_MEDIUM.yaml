@@ -1,3 +1,4 @@
+id: CultureMech:002907
 name: 1/2 SME MEDIUM
 original_name: 1/2 SME MEDIUM
 category: bacterial
@@ -119,11 +120,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S x 9H2O and distribute the medium into culture vessels under
-    a stream of a N2-CO2 (4:1, v/v) gas mixture. Add Na2S x 9H2O as a 5% solution, adjust pH to 6.0 and
-    seal with butyl rubber stoppers. Autoclave at 110C for 1 hr. Prior to cultivation, replace the gas
-    phase with a H2-CO2 (4:1, v/v) gas mixture. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1,
-    v/v).
+  description: Mix ingredients except Na2S x 9H2O and distribute the medium into culture
+    vessels under a stream of a N2-CO2 (4:1, v/v) gas mixture. Add Na2S x 9H2O as
+    a 5% solution, adjust pH to 6.0 and seal with butyl rubber stoppers. Autoclave
+    at 110C for 1 hr. Prior to cultivation, replace the gas phase with a H2-CO2 (4:1,
+    v/v) gas mixture. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -131,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J559'
+- timestamp: '2026-03-13T06:19:16.487416Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002907'

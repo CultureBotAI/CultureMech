@@ -1,3 +1,4 @@
+id: CultureMech:013549
 preferred_term: Solution A
 term:
   id: mediadive.solution:4583
@@ -129,3 +130,8 @@ preparation_notes: "Mix components and adjust pH to 7.0. Dispense the solution i
   \ anaerobically and aseptically add the following solutions (autoclaved under a\
   \ N2 atmosphere) to the medium (per 10 ml): \nComment: Sodium nitrate can be substituted\
   \ by ferric citrate (20 mM).\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.962847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013549'

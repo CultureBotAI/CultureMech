@@ -1,3 +1,4 @@
+id: CultureMech:005629
 name: For DSM 5673 (strain KN032)
 original_name: For DSM 5673 (strain KN032)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:497.3
     label: For DSM 5673 (strain KN032)
-notes: 'Source: KOMODO ModelSEED | ID: 497.3 | DSMZ Medium: 497 (mediadive.medium:497) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 497.3 | DSMZ Medium: 497 (mediadive.medium:497)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.900882Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:34.756714Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005629'

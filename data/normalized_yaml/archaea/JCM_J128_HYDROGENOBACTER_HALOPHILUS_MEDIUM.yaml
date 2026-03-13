@@ -1,3 +1,4 @@
+id: CultureMech:000292
 name: HYDROGENOBACTER HALOPHILUS MEDIUM
 original_name: HYDROGENOBACTER HALOPHILUS MEDIUM
 category: archaea
@@ -112,3 +113,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J128'
+- timestamp: '2026-03-13T06:18:54.203725Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000292'

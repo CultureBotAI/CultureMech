@@ -1,3 +1,4 @@
+id: CultureMech:000923
 name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
 original_name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
 category: bacterial
@@ -218,18 +219,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solution A without the vitamin solution. Autoclave solution B in half full, closed
-    bottles. Autoclave solution C. Combine the sterile solutions A, B, and C after cooling. Aseptically
-    add 1.0 ml of the vitamin solution (filter sterilized) to 1 litre of the sterile medium.
+  description: Autoclave solution A without the vitamin solution. Autoclave solution
+    B in half full, closed bottles. Autoclave solution C. Combine the sterile solutions
+    A, B, and C after cooling. Aseptically add 1.0 ml of the vitamin solution (filter
+    sterilized) to 1 litre of the sterile medium.
 - step_number: 2
   action: HEAT
-  description: Adjust to pH 9.8. The medium may be solidified by adding 20 g/l agar, but care should be
-    taken that the temperature of the solutions to be mixed are about 50°C, otherwise the agar will darken
-    and degrade.
+  description: Adjust to pH 9.8. The medium may be solidified by adding 20 g/l agar,
+    but care should be taken that the temperature of the solutions to be mixed are
+    about 50°C, otherwise the agar will darken and degrade.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Make up to a final volume of 1000.0 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Make up to a final volume of 1000.0 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -241,3 +243,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.609702Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000923'

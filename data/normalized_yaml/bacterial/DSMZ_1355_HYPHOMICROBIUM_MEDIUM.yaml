@@ -1,3 +1,4 @@
+id: CultureMech:000813
 name: HYPHOMICROBIUM MEDIUM
 original_name: HYPHOMICROBIUM MEDIUM
 category: bacterial
@@ -110,8 +111,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 6 and sterilize by autoclaving. The medium may be solidified by adding 12.0
-    g/l agar. After autoclaving add sterile methylamine (0.2% v/v) to the sterile main solution.
+  description: Adjust to pH 6 and sterilize by autoclaving. The medium may be solidified
+    by adding 12.0 g/l agar. After autoclaving add sterile methylamine (0.2% v/v)
+    to the sterile main solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with NaOH.
@@ -122,3 +124,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1355'
+- timestamp: '2026-03-13T06:18:58.547274Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000813'

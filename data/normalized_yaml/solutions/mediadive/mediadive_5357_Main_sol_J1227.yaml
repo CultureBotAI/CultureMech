@@ -1,3 +1,4 @@
+id: CultureMech:014268
 preferred_term: Main sol. J1227
 term:
   id: mediadive.solution:5357
@@ -106,3 +107,8 @@ preparation_notes: "Heat the medium to boiling while bubbling with a N2-CO2 (4:1
   \ the medium into culture vessels (e.g., 10 ml in Balch type tubes) under the same\
   \ gas mixture, seal with butyl rubber stoppers and autoclave.\n\nOriginal volume:\
   \ 2010 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.707527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014268'

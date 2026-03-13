@@ -1,3 +1,4 @@
+id: CultureMech:012164
 preferred_term: Main sol. 1420
 term:
   id: mediadive.solution:2900
@@ -18,3 +19,8 @@ composition:
 preparation_notes: "For solid media add 15.0 g agar to solution B\nAutoclave solution\
   \ A and B separately and combine after cooling.\nPrepare the liquid medium. Before\
   \ inoculation add from sterile stock solutions: \n\nOriginal volume: 1050 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:24.264817Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012164'

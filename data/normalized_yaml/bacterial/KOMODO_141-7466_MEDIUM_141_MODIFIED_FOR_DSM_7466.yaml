@@ -1,3 +1,4 @@
+id: CultureMech:004138
 name: MEDIUM 141 MODIFIED FOR DSM 7466
 original_name: MEDIUM 141 MODIFIED FOR DSM 7466
 category: bacterial
@@ -282,3 +283,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:25.273249Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004138'

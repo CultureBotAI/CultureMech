@@ -1,3 +1,4 @@
+id: CultureMech:001369
 name: ACID RHODOSPIRILLACEAE MEDIUM
 original_name: ACID RHODOSPIRILLACEAE MEDIUM
 category: bacterial
@@ -153,7 +154,8 @@ preparation_steps:
   description: Sparge medium with 100% N2 gas mixture to make it anoxic.
 - step_number: 4
   action: MIX
-  description: Fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen gas.
+  description: Fill 10 ml in 15 ml tubes with a rubber septum under a stream of nitrogen
+    gas.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -170,3 +172,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 26'
+- timestamp: '2026-03-13T06:19:03.436298Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001369'

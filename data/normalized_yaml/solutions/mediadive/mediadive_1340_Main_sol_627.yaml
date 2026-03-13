@@ -1,3 +1,4 @@
+id: CultureMech:010824
 preferred_term: Main sol. 627
 term:
   id: mediadive.solution:1340
@@ -70,3 +71,8 @@ preparation_notes: 'Dissolve ingredients, by heating if necessary. Adjust pH to 
 
   For solid medium add 15.0 g agar after readjusting pH and steam to dissolve the
   agar prior to autoclaving.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.762647Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010824'

@@ -1,3 +1,4 @@
+id: CultureMech:014104
 preferred_term: Main sol. J1105
 term:
   id: mediadive.solution:5193
@@ -79,3 +80,8 @@ preparation_notes: "Add components to distilled water and bring volume to 1.0 L.
   \ preparation of solid medium, add 20.0 g/L agar. After autoclaving, add the following\
   \ solution (autoclaved): \nReadjust pH to 8.0, if necessary.\n\nOriginal volume:\
   \ 10 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.613800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014104'

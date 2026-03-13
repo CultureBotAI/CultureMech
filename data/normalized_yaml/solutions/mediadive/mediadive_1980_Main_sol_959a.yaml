@@ -1,3 +1,4 @@
+id: CultureMech:011382
 preferred_term: Main sol. 959a
 term:
   id: mediadive.solution:1980
@@ -188,3 +189,8 @@ preparation_notes: Dissolve ingredients except maltose and sulfide, adjust pH to
   medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and
   autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock solutions
   prepared under 100% N2 gas atmosphere. The pH of the complete medium should be 6.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.291234Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011382'

@@ -1,3 +1,4 @@
+id: CultureMech:014563
 preferred_term: Main sol. 36
 term:
   id: mediadive.solution:56
@@ -127,3 +128,8 @@ composition:
 preparation_notes: Dissolve ingredients except thiosulfate and adjust the pH to 6.6.
   Dispense in suitable culivation vials and autoclave. Add thiosulfate to the autoclaved
   medium from a sterile stock solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.432859Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014563'

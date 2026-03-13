@@ -1,3 +1,4 @@
+id: CultureMech:003822
 name: BEIJERINCKIA MEDIUM
 original_name: BEIJERINCKIA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:111
     label: BEIJERINCKIA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 111 | DSMZ Medium: 111 (mediadive.medium:111) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 111 | DSMZ Medium: 111 (mediadive.medium:111)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -92,3 +94,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 111
+- timestamp: '2026-03-13T06:19:22.518537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003822'

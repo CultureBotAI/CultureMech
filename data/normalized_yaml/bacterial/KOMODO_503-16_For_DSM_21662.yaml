@@ -1,3 +1,4 @@
+id: CultureMech:005667
 name: For DSM 21662
 original_name: For DSM 21662
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:503.16
     label: For DSM 21662
-notes: 'Source: KOMODO ModelSEED | ID: 503.16 | DSMZ Medium: 503 (mediadive.medium:503) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503.16 | DSMZ Medium: 503 (mediadive.medium:503)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -222,3 +224,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 503
+- timestamp: '2026-03-13T06:19:35.097039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005667'

@@ -1,3 +1,4 @@
+id: CultureMech:011974
 preferred_term: Main sol. 150
 term:
   id: mediadive.solution:264
@@ -105,3 +106,8 @@ preparation_notes: Dissolve ingredients except yeast extract and sulfur. Adjust 
   wet with a few drops of water and heat for 3 hours to 90 - 100°C in a water bath
   on each of three successive days. Before use, aseptically layer the sulfur onto
   the surface of the autoclaved liquid basal medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.070515Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011974'

@@ -1,3 +1,4 @@
+id: CultureMech:004404
 name: For DSM 15682 and DSM 16215
 original_name: For DSM 15682 and DSM 16215
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:213.1
     label: For DSM 15682 and DSM 16215
-notes: 'Source: KOMODO ModelSEED | ID: 213.1 | DSMZ Medium: 213 (mediadive.medium:213) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 213.1 | DSMZ Medium: 213 (mediadive.medium:213)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -204,4 +206,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 213
+- timestamp: '2026-03-13T06:19:26.800742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004404'
 ph_value: 7.2

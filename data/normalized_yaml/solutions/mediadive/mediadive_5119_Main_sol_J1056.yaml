@@ -1,3 +1,4 @@
+id: CultureMech:014032
 preferred_term: Main sol. J1056
 term:
   id: mediadive.solution:5119
@@ -152,3 +153,8 @@ preparation_notes: 'Adjust pH to 7.0 with HCl. After autoclave, pH goes up to ar
 
 
   Original volume: 1004 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.145459Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014032'

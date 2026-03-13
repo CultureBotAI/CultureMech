@@ -1,3 +1,4 @@
+id: CultureMech:012023
 preferred_term: Main sol. 1347
 term:
   id: mediadive.solution:2708
@@ -80,3 +81,8 @@ preparation_notes: 'Prepare the liquid medium. Final pH 5.5.The medium is fairly
   medium into serum bottles. Add 10-20% methane to the gas phase. Sterilize by autoclaving.
 
   The strain should be grown with shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.347471Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012023'

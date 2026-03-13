@@ -1,3 +1,4 @@
+id: CultureMech:011481
 preferred_term: Main sol. 1024
 term:
   id: mediadive.solution:2082
@@ -57,3 +58,8 @@ preparation_notes: 'Prepare the medium under an atmosphere of H2/CO2 (80:20) wit
   medium add, from filter sterilised stock solutions, the NaHCO3 and vitamin solution.
 
   Increase the 80% H2 + 20% CO2 gas phase pressure to 300 kPa. The final pH is 7.0.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.989273Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011481'

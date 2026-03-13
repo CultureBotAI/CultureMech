@@ -1,3 +1,4 @@
+id: CultureMech:004664
 name: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
 original_name: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:260
     label: BACILLUS SCHLEGELII HETEROTROPHIC MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 260 | DSMZ Medium: 260 (mediadive.medium:260) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 260 | DSMZ Medium: 260 (mediadive.medium:260)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -135,3 +137,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 260
+- timestamp: '2026-03-13T06:19:27.946727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004664'

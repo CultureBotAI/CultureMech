@@ -1,3 +1,4 @@
+id: CultureMech:008948
 name: Columbia Blood Agar
 original_name: Columbia Blood Agar
 category: bacterial
@@ -31,5 +32,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.432488'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 4% horse blood; Added default concentration for
-    ingredient: Columbia agar base'
+  notes: 'Added default concentration for ingredient: 4% horse blood; Added default
+    concentration for ingredient: Columbia agar base'
+- timestamp: '2026-03-13T06:20:01.480860Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008948'

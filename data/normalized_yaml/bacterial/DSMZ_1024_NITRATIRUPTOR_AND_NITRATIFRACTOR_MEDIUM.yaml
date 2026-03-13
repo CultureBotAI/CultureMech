@@ -1,3 +1,4 @@
+id: CultureMech:000446
 name: NITRATIRUPTOR AND NITRATIFRACTOR MEDIUM
 original_name: NITRATIRUPTOR AND NITRATIFRACTOR MEDIUM
 category: bacterial
@@ -275,4 +276,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:55.352818Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000446'
 high_metal: true

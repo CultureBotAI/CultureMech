@@ -1,3 +1,4 @@
+id: CultureMech:001096
 name: Basic mineral medium
 original_name: Basic mineral medium
 category: bacterial
@@ -193,8 +194,8 @@ preparation_steps:
   description: 'After sterilization add from sterile stock solutions:'
 - step_number: 3
   action: DISSOLVE
-  description: "might result in colloid formation, especially when added into\r\nhot medium, but dissolves\
-    \ after vigorous shaking"
+  description: "might result in colloid formation, especially when added into\r\n\
+    hot medium, but dissolves after vigorous shaking"
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 3.0-4.0 with HCl.
@@ -223,4 +224,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.256938Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:01.156316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001096'

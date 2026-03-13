@@ -1,3 +1,4 @@
+id: CultureMech:006259
 name: MEDIUM 67 MODIFIED FOR DSM 21789
 original_name: MEDIUM 67 MODIFIED FOR DSM 21789
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:67_21789
     label: MEDIUM 67 MODIFIED FOR DSM 21789
-notes: 'Source: KOMODO ModelSEED | ID: 67_21789 | DSMZ Medium: 67 (mediadive.medium:67) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 67_21789 | DSMZ Medium: 67 (mediadive.medium:67)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:
@@ -43,4 +45,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 67
+- timestamp: '2026-03-13T06:19:39.331297Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006259'
 ph_value: 7.2

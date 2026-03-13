@@ -1,3 +1,4 @@
+id: CultureMech:005456
 name: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
 original_name: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
 category: bacterial
@@ -176,3 +177,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:33.069019Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005456'

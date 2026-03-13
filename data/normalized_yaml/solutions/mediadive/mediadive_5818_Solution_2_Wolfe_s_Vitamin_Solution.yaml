@@ -1,3 +1,4 @@
+id: CultureMech:014649
 preferred_term: Solution 2 (Wolfe's Vitamin Solution)
 term:
   id: mediadive.solution:5818
@@ -135,3 +136,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:38.855312Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014649'

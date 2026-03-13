@@ -1,3 +1,4 @@
+id: CultureMech:011960
 preferred_term: Main sol. 1315
 term:
   id: mediadive.solution:2631
@@ -103,3 +104,8 @@ preparation_notes: Distribute to gas tight vessels, gas with 90% N2 +10% CO2 to 
   anaerobic conditions and autoclave. After cooling, add the phosphate solution, substrate
   solution, vitamin solution and trace element solution. After mixing, pH should be
   7.1 - 7.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.019277Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011960'

@@ -1,3 +1,4 @@
+id: CultureMech:013147
 preferred_term: Main sol. J378
 term:
   id: mediadive.solution:4103
@@ -160,3 +161,8 @@ preparation_notes: 'Dissolve ingredients, except crotonic acid, NaHCO3, L-cystei
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.697701Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013147'

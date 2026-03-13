@@ -1,3 +1,4 @@
+id: CultureMech:002717
 name: ATYP MEDIUM
 original_name: ATYP MEDIUM
 category: bacterial
@@ -186,7 +187,8 @@ preparation_steps:
   description: Adjust pH to 6.9.
 - step_number: 2
   action: MIX
-  description: Separately sterilize vitamin solution VA by filtration, and aseptically add to the medium.
+  description: Separately sterilize vitamin solution VA by filtration, and aseptically
+    add to the medium.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 2 - 3 with HCl.
@@ -197,3 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J358'
+- timestamp: '2026-03-13T06:19:15.232289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002717'

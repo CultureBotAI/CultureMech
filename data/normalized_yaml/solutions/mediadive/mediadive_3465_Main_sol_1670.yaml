@@ -1,3 +1,4 @@
+id: CultureMech:012590
 preferred_term: Main sol. 1670
 term:
   id: mediadive.solution:3465
@@ -77,3 +78,8 @@ preparation_notes: "Cultivation of Occidentia massiliensis has to be carried out
   \ bacteria and destroyed cells after 7-10 days (using Gimenez staining after one\
   \ week). To obtain more than 90% infected cells takes about 14 - 21 days .\n\nOriginal\
   \ volume: 101 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:26.750966Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012590'

@@ -1,11 +1,12 @@
+id: CultureMech:006540
 name: BT medium
 original_name: BT medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 816 | DSMZ Medium: 816 (mediadive.medium:816)
-  | Aerobic: Yes'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 816 | DSMZ Medium: 816
+  (mediadive.medium:816) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 816
   term:
@@ -185,3 +186,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 816
+- timestamp: '2026-03-13T06:19:41.684537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006540'

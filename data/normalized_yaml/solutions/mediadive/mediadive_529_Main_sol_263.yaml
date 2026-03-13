@@ -1,3 +1,4 @@
+id: CultureMech:014212
 preferred_term: Main sol. 263
 term:
   id: mediadive.solution:529
@@ -48,3 +49,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: 'Autoclave, cool to room temperature, and inoculate with about
   50 ml Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged). '
+curation_history:
+- timestamp: '2026-03-13T06:20:36.367359Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014212'

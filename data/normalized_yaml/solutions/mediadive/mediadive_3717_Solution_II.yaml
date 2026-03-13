@@ -1,3 +1,4 @@
+id: CultureMech:012798
 preferred_term: Solution II
 term:
   id: mediadive.solution:3717
@@ -46,3 +47,8 @@ preparation_notes: 'Homogenize Solution II by stirring and filter through gauze.
 
 
   Original volume: 212 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.711742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012798'

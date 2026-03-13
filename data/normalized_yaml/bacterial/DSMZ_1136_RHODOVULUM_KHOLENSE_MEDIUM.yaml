@@ -1,3 +1,4 @@
+id: CultureMech:000572
 name: RHODOVULUM KHOLENSE MEDIUM
 original_name: RHODOVULUM KHOLENSE MEDIUM
 category: bacterial
@@ -126,8 +127,8 @@ preparation_steps:
   description: Adjust to pH 7.0
 - step_number: 2
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
-    under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
+    a rubber septum under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1136'
+- timestamp: '2026-03-13T06:18:56.471532Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000572'

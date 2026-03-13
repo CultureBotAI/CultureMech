@@ -1,3 +1,4 @@
+id: CultureMech:006512
 name: LEUCOTHRIX medium
 original_name: LEUCOTHRIX medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:79
     label: LEUCOTHRIX medium
-notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -106,4 +108,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 79
+- timestamp: '2026-03-13T06:19:41.485173Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006512'
 ph_value: 7.8

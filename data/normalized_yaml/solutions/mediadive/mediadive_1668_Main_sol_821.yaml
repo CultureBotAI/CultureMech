@@ -1,3 +1,4 @@
+id: CultureMech:011123
 preferred_term: Main sol. 821
 term:
   id: mediadive.solution:1668
@@ -54,3 +55,8 @@ composition:
 preparation_notes: Sterilize the medium without the 4 times concentrated sea water.
   Cool the artificial sea water and the medium to 60°C - 70°C after autoclaving and
   mix. Hexadecane may be replaced by 1 g/l sodium acetate.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.678003Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011123'

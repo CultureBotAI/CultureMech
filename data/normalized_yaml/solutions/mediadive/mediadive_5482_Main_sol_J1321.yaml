@@ -1,3 +1,4 @@
+id: CultureMech:014386
 preferred_term: Main sol. J1321
 term:
   id: mediadive.solution:5482
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Mix components except sulfur, adjust pH to 2.5 with H2SO4 and autoclave.
   Separately sterilize sulfur by steaming for 3 hr on each of 3 successive days.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.501223Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014386'

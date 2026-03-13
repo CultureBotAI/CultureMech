@@ -1,3 +1,4 @@
+id: CultureMech:015358
 name: HALF STRENGTH BACTO MARINE BROTH
 original_name: HALF STRENGTH BACTO MARINE BROTH
 category: specialized
@@ -128,18 +129,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 1/2 strength medium 514. If using Difco Bacto Marine Broth use 18.7 g/l.
+  description: 1/2 strength medium 514. If using Difco Bacto Marine Broth use 18.7
+    g/l.
 - step_number: 2
   action: MIX
   description: Final pH 7.6. The medium may be solidified by adding 15 g/l agar.
 - step_number: 3
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
-    g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
+    from Difco add 37.40 g to 1 litre water.
 - step_number: 4
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
-    they refer to Difco2216) have not been tested and might not support growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
+    brands (even if they refer to Difco2216) have not been tested and might not support
+    growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -147,3 +150,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514a'
+- timestamp: '2026-03-13T06:20:42.155101Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015358'

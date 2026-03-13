@@ -1,3 +1,4 @@
+id: CultureMech:014485
 preferred_term: Main sol. 397
 term:
   id: mediadive.solution:5606
@@ -37,3 +38,8 @@ preparation_notes: 'Add and dissolve ingredients of solution A and sparge medium
 
 
   Original volume: 933 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.050855Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014485'

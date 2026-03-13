@@ -1,3 +1,4 @@
+id: CultureMech:006424
 name: DSM 5262
 original_name: DSM 5262
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:769.2
     label: DSM 5262
-notes: 'Source: KOMODO ModelSEED | ID: 769.2 | DSMZ Medium: 769 (mediadive.medium:769) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 769.2 | DSMZ Medium: 769 (mediadive.medium:769)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -147,5 +149,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.794485Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:40.634565Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006424'
 ph_value: 6.5

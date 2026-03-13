@@ -1,3 +1,4 @@
+id: CultureMech:004774
 name: PELOBACTER VENETIANUS (fresh water) MEDIUM
 original_name: PELOBACTER VENETIANUS (fresh water) MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:299
     label: PELOBACTER VENETIANUS (fresh water) MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 299 | DSMZ Medium: 299 (mediadive.medium:299) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 299 | DSMZ Medium: 299 (mediadive.medium:299)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 299'
+- timestamp: '2026-03-13T06:19:28.749830Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004774'

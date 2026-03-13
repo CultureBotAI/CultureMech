@@ -1,3 +1,4 @@
+id: CultureMech:011365
 preferred_term: Main sol. 949
 term:
   id: mediadive.solution:1961
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.3. Prepare in similar manner to sea water agar (medium
   246).
+curation_history:
+- timestamp: '2026-03-13T06:20:19.172496Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011365'

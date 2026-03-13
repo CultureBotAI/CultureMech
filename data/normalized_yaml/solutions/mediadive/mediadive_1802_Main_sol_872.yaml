@@ -1,3 +1,4 @@
+id: CultureMech:011232
 preferred_term: Main sol. 872
 term:
   id: mediadive.solution:1802
@@ -182,3 +183,8 @@ preparation_notes: 'Dissolve all ingredients except the carbonate, cinnamic acid
 
 
   Original volume: 1026 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.292760Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011232'

@@ -1,3 +1,4 @@
+id: CultureMech:002091
 name: AMS medium
 original_name: AMS medium
 category: bacterial
@@ -126,13 +127,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Combine Solutions 1-3 with Trace Elements and distilled water. Then dispense into growth
-    vessels and autoclave under 20% methane in air (or strain specific other ratio) atmosphere (if not
-    using agar).
+  description: Combine Solutions 1-3 with Trace Elements and distilled water. Then
+    dispense into growth vessels and autoclave under 20% methane in air (or strain
+    specific other ratio) atmosphere (if not using agar).
 - step_number: 2
   action: AUTOCLAVE
-  description: Add separately autoclaved phosphate buffer (10 ml/L) to autoclaved and cooled medium. If
-    phosphate buffer is added to warm medium, it will precipitate.
+  description: Add separately autoclaved phosphate buffer (10 ml/L) to autoclaved
+    and cooled medium. If phosphate buffer is added to warm medium, it will precipitate.
 - step_number: 3
   action: MIX
   description: Liquid cultures should be grown with shaking.
@@ -141,7 +142,8 @@ preparation_steps:
   description: May be stored at 4°C in the dark
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up to 1 litre.
+  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up
+    to 1 litre.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 921a'
+- timestamp: '2026-03-13T06:19:10.201364Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002091'

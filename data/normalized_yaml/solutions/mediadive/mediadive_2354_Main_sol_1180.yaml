@@ -1,3 +1,4 @@
+id: CultureMech:011732
 preferred_term: Main sol. 1180
 term:
   id: mediadive.solution:2354
@@ -97,3 +98,8 @@ preparation_notes: 'Final pH of the medium: 8.5-9.0
   Liquid cultures should be grown with shaking.
 
   To the sterile medium add from sterile stock solutions: '
+curation_history:
+- timestamp: '2026-03-13T06:20:21.599864Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011732'

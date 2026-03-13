@@ -1,3 +1,4 @@
+id: CultureMech:004204
 name: SELENOMONAS RUMINANTIUM medium
 original_name: SELENOMONAS RUMINANTIUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:181
     label: SELENOMONAS RUMINANTIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 181 | DSMZ Medium: 181 (mediadive.medium:181) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 181 | DSMZ Medium: 181 (mediadive.medium:181)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -82,3 +84,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 181
+- timestamp: '2026-03-13T06:19:25.814143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004204'

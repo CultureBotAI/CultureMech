@@ -1,3 +1,4 @@
+id: CultureMech:001497
 name: PYROBACULUM MEDIUM
 original_name: PYROBACULUM MEDIUM
 category: bacterial
@@ -121,12 +122,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium thiosulfate and
-    sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas for at least 30 min to remove dissolved
-    oxygen. After autoclaving add peptone, yeast extract, thiosulfate and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Stock solutions of substrates can be autoclaved with the
-    exception of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation adjust
-    pH of final medium to 6.0.
+  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium
+    thiosulfate and sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas
+    for at least 30 min to remove dissolved oxygen. After autoclaving add peptone,
+    yeast extract, thiosulfate and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Stock solutions of substrates can be autoclaved with the exception
+    of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation
+    adjust pH of final medium to 6.0.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -137,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 390'
+- timestamp: '2026-03-13T06:19:04.688992Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001497'

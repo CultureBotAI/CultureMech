@@ -1,3 +1,4 @@
+id: CultureMech:010413
 name: Modified Halosimplex Medium
 original_name: Modified Halosimplex Medium
 category: bacterial
@@ -103,6 +104,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.673539Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010413'
 high_metal: true
 solutions:
 - preferred_term: Trace metal solution (see Medium [M292])

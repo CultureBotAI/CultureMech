@@ -1,3 +1,4 @@
+id: CultureMech:010122
 name: Nautilia Abyssi Medium
 original_name: Nautilia Abyssi Medium
 category: bacterial
@@ -138,6 +139,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:11.496238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010122'
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

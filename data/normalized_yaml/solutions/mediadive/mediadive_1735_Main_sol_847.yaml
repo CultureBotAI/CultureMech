@@ -1,3 +1,4 @@
+id: CultureMech:011186
 preferred_term: Main sol. 847
 term:
   id: mediadive.solution:1735
@@ -106,3 +107,8 @@ preparation_notes: 'Dissolve ingredients except vitamins, trace elements, thiosu
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.029807Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011186'

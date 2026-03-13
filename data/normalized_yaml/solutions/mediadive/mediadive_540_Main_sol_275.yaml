@@ -1,3 +1,4 @@
+id: CultureMech:014322
 preferred_term: Main sol. 275
 term:
   id: mediadive.solution:540
@@ -166,3 +167,8 @@ preparation_notes: Dissolve ingredients except for cysteine, carbonate, and gluc
   or serum vials and autoclave. After autoclaving add glucose from a sterile anoxic
   stock solution prepared under a 100% N2 gas atmosphere. The final pH of the medium
   should be at 7.4.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.076088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014322'

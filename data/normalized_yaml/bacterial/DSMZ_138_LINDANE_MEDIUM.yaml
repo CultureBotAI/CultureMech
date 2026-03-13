@@ -1,3 +1,4 @@
+id: CultureMech:000850
 name: LINDANE MEDIUM
 original_name: LINDANE MEDIUM
 category: bacterial
@@ -33,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 138'
+- timestamp: '2026-03-13T06:18:58.883219Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000850'

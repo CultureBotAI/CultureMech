@@ -1,3 +1,4 @@
+id: CultureMech:003541
 name: BBL ACTINOMYCES BROTH
 original_name: BBL ACTINOMYCES BROTH
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1029
     label: BBL ACTINOMYCES BROTH
-notes: 'Source: KOMODO ModelSEED | ID: 1029 | DSMZ Medium: 1029 (mediadive.medium:1029) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1029 | DSMZ Medium: 1029 (mediadive.medium:1029)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Potassium Phosphate
   term:
@@ -83,3 +85,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1029
+- timestamp: '2026-03-13T06:19:20.538936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003541'

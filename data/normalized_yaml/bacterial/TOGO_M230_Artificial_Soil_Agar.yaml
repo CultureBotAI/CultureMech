@@ -1,3 +1,4 @@
+id: CultureMech:008896
 name: Artificial Soil Agar
 original_name: Artificial Soil Agar
 category: bacterial
@@ -129,3 +130,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: tap water; Added default concentration
     for ingredient: leafy soil'
+- timestamp: '2026-03-13T06:20:01.121752Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008896'

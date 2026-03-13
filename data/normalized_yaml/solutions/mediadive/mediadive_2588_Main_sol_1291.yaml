@@ -1,3 +1,4 @@
+id: CultureMech:011925
 preferred_term: Main sol. 1291
 term:
   id: mediadive.solution:2588
@@ -98,3 +99,8 @@ preparation_notes: 'Add gellan gum and boil to dissolve. Then add the remaining 
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.819465Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011925'

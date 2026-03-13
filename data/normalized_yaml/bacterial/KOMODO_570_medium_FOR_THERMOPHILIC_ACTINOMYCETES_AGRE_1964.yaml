@@ -1,3 +1,4 @@
+id: CultureMech:006018
 name: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
 original_name: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:570
     label: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
-notes: 'Source: KOMODO ModelSEED | ID: 570 | DSMZ Medium: 570 (mediadive.medium:570) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 570 | DSMZ Medium: 570 (mediadive.medium:570)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:
@@ -58,3 +60,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 570
+- timestamp: '2026-03-13T06:19:37.669071Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006018'

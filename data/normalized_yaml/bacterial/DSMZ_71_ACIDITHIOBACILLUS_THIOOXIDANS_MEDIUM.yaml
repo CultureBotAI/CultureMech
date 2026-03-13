@@ -1,3 +1,4 @@
+id: CultureMech:001858
 name: ACIDITHIOBACILLUS THIOOXIDANS MEDIUM
 original_name: ACIDITHIOBACILLUS THIOOXIDANS MEDIUM
 category: bacterial
@@ -49,8 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7 and autoclave at 121°C for
-    15 min. Sterilize thiosulfate separately by filtration and add after autoclaving.
+  description: Prepare the medium without thiosulfate, adjust pH to 4.4 - 4.7 and
+    autoclave at 121°C for 15 min. Sterilize thiosulfate separately by filtration
+    and add after autoclaving.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'
@@ -61,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 71'
+- timestamp: '2026-03-13T06:19:07.824881Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001858'

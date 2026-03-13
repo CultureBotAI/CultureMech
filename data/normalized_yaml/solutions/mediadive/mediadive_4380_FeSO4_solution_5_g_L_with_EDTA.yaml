@@ -1,3 +1,4 @@
+id: CultureMech:013376
 preferred_term: FeSO4 solution (5 g/L) with EDTA
 term:
   id: mediadive.solution:4380
@@ -40,3 +41,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.977575Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013376'

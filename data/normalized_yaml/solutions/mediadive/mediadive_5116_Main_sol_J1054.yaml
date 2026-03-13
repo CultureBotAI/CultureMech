@@ -1,3 +1,4 @@
+id: CultureMech:014029
 preferred_term: Main sol. J1054
 term:
   id: mediadive.solution:5116
@@ -48,3 +49,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Boil maize meal and dried sardine with 500 ml of distilled water
   for 20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.
+curation_history:
+- timestamp: '2026-03-13T06:20:35.124262Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014029'

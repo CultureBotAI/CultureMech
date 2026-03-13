@@ -1,3 +1,4 @@
+id: CultureMech:005227
 name: SYNTROPHOMONAS SP. medium
 original_name: SYNTROPHOMONAS SP. medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:407
     label: SYNTROPHOMONAS SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 407 | DSMZ Medium: 407 (mediadive.medium:407) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 407 | DSMZ Medium: 407 (mediadive.medium:407)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -211,4 +213,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 407
+- timestamp: '2026-03-13T06:19:31.160997Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005227'
 ph_value: 7.2

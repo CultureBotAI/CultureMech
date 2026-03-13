@@ -1,3 +1,4 @@
+id: CultureMech:015095
 preferred_term: Main sol. 351
 term:
   id: mediadive.solution:689
@@ -131,3 +132,8 @@ preparation_notes: 'Adjust pH to 7.0.
   Autoclave at 121 °C for 15 min.
 
   After sterilization add filter-sterilized vitamin and neutralized sulfide solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.722813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015095'

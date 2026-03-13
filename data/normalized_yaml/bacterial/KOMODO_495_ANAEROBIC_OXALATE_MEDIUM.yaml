@@ -1,3 +1,4 @@
+id: CultureMech:005624
 name: ANAEROBIC OXALATE MEDIUM
 original_name: ANAEROBIC OXALATE MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:495
     label: ANAEROBIC OXALATE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 495 | DSMZ Medium: 495 (mediadive.medium:495) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 495 | DSMZ Medium: 495 (mediadive.medium:495)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 495'
+- timestamp: '2026-03-13T06:19:34.691238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005624'

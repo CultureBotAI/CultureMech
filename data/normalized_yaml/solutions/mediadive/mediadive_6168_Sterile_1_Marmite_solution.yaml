@@ -1,3 +1,4 @@
+id: CultureMech:014870
 preferred_term: Sterile 1% "Marmite" solution
 term:
   id: mediadive.solution:6168
@@ -19,3 +20,8 @@ preparation_notes: 'Sterilise by passing through 0.22 µm filter.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.852014Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014870'

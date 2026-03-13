@@ -1,3 +1,4 @@
+id: CultureMech:013526
 preferred_term: Ferric quinate solution
 term:
   id: mediadive.solution:4559
@@ -46,3 +47,8 @@ preparation_notes: 'Dissolve and autoclave at 121C for 15 min.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.804227Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013526'

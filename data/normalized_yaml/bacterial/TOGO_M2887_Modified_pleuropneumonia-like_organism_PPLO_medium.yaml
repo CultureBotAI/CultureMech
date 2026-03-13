@@ -1,3 +1,4 @@
+id: CultureMech:009422
 name: Modified pleuropneumonia-like organism (PPLO) medium
 original_name: Modified pleuropneumonia-like organism (PPLO) medium
 category: bacterial
@@ -25,7 +26,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 - preferred_term: Penicillin
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:17334
     label: Penicillin
@@ -53,3 +55,7 @@ curation_history:
   date: '2026-02-03T11:20:56.751237'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin'
+- timestamp: '2026-03-13T06:20:06.127926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009422'

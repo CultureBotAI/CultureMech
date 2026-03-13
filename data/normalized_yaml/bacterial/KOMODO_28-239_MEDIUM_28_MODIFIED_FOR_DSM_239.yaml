@@ -1,3 +1,4 @@
+id: CultureMech:004723
 name: MEDIUM 28 MODIFIED FOR DSM 239
 original_name: MEDIUM 28 MODIFIED FOR DSM 239
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:28_239
     label: MEDIUM 28 MODIFIED FOR DSM 239
-notes: 'Source: KOMODO ModelSEED | ID: 28_239 | DSMZ Medium: 28 (mediadive.medium:28) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 28_239 | DSMZ Medium: 28 (mediadive.medium:28)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -50,3 +52,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 28
+- timestamp: '2026-03-13T06:19:28.284658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004723'

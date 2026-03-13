@@ -1,3 +1,4 @@
+id: CultureMech:014812
 preferred_term: Main sol. 332
 term:
   id: mediadive.solution:610
@@ -157,3 +158,8 @@ preparation_notes: 'Dissolve ingredients except cysteine, carbonate and sulfide.
 
   Note: After growth has started add sterile 80% H2 and 20% CO2 gas mixture to 0.5
   - 1 bar overpressure.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.633281Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014812'

@@ -1,3 +1,4 @@
+id: CultureMech:014799
 preferred_term: Mail sol. C106
 term:
   id: mediadive.solution:6097
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Make up to 1 litre with deionized water and adjust pH to 7.0 with\
   \ 1M NaOH or 1M HCl.\r\nAutoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.582196Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014799'

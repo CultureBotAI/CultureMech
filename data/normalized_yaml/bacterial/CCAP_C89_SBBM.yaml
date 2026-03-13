@@ -1,3 +1,4 @@
+id: CultureMech:000403
 name: SBBM
 original_name: SBBM
 category: bacterial
@@ -265,3 +266,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 8 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:54.971456Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000403'

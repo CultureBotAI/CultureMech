@@ -1,3 +1,4 @@
+id: CultureMech:000455
 name: MEDIUM FOR METHYLOBACTERIUM PODARIUM
 original_name: MEDIUM FOR METHYLOBACTERIUM PODARIUM
 category: bacterial
@@ -115,10 +116,11 @@ preparation_steps:
   description: sterilize by 115°C / 10 min
 - step_number: 3
   action: AUTOCLAVE
-  description: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH. Dissolve each of the salts
-    individually in about 40-50 ml of water and add them to the EDTA-NaOH solution. Adjust the final pH
-    of the solution to pH 6.0 with 1M NaOH (about 24 ml). Make up to 1 litre with distilled water, store
-    in the dark and do not autoclave the stock solution before it is added to the medium.
+  description: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH. Dissolve
+    each of the salts individually in about 40-50 ml of water and add them to the
+    EDTA-NaOH solution. Adjust the final pH of the solution to pH 6.0 with 1M NaOH
+    (about 24 ml). Make up to 1 litre with distilled water, store in the dark and
+    do not autoclave the stock solution before it is added to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -126,3 +128,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1032'
+- timestamp: '2026-03-13T06:18:55.462321Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000455'

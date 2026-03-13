@@ -1,3 +1,4 @@
+id: CultureMech:010588
 preferred_term: Main sol. 65
 term:
   id: mediadive.solution:106
@@ -78,3 +79,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium
   is used.
+curation_history:
+- timestamp: '2026-03-13T06:20:14.534754Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010588'

@@ -1,3 +1,4 @@
+id: CultureMech:013160
 preferred_term: Main sol. J395
 term:
   id: mediadive.solution:4122
@@ -145,3 +146,8 @@ preparation_notes: 'Mix ingredients, except sodium butyrate, NaHCO3 and Na2S x 9
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.786954Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013160'

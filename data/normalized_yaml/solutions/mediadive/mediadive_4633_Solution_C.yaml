@@ -1,3 +1,4 @@
+id: CultureMech:013592
 preferred_term: Solution C
 term:
   id: mediadive.solution:4633
@@ -68,3 +69,8 @@ preparation_notes: "Mix components thoroughly. Filter-sterilize and store under 
   \ and anaerobically: \nTo complete medium, add 2.5 ml Solution B and 2.5 ml Solution\
   \ C to the culture vessels containing 45.0 ml of the medium (Solution A).\n\nOriginal\
   \ volume: 50 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.204709Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013592'

@@ -1,3 +1,4 @@
+id: CultureMech:014873
 preferred_term: Mail sol. C40
 term:
   id: mediadive.solution:6170
@@ -103,3 +104,8 @@ composition:
 preparation_notes: "Make up to 1 litre with deionized water. For agar, add 15.0 g\
   \ per litre of Bacteriological Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar\
   \ No.1). Autoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.862826Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014873'

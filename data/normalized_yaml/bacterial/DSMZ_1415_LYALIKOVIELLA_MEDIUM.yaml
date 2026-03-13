@@ -1,3 +1,4 @@
+id: CultureMech:000877
 name: LYALIKOVIELLA MEDIUM
 original_name: LYALIKOVIELLA MEDIUM
 category: bacterial
@@ -148,8 +149,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Prepare the liquid medium. Adjust to pH 8.5. Before inoculation add from sterile stock
-    solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 8.5. Before inoculation add
+    from sterile stock solutions:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -157,3 +158,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1415'
+- timestamp: '2026-03-13T06:18:59.116655Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000877'

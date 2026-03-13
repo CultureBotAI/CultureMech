@@ -1,3 +1,4 @@
+id: CultureMech:014771
 preferred_term: Mail sol. C55
 term:
   id: mediadive.solution:6046
@@ -19,3 +20,8 @@ preparation_notes: "To make up to 1 litre with distilled water. First disperse t
   \ elements in 800ml distilled water.\r\nAdd the other stock solutions and make up\
   \ to 1 litre. Adjust pH to 6.8 with 1M NaOH or 1M\r\nHCl, prior to autoclaving.\
   \ Autoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.483219Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014771'

@@ -1,3 +1,4 @@
+id: CultureMech:005170
 name: For DSM 13380
 original_name: For DSM 13380
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:390.3
     label: For DSM 13380
-notes: 'Source: KOMODO ModelSEED | ID: 390.3 | DSMZ Medium: 390 (mediadive.medium:390) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 390.3 | DSMZ Medium: 390 (mediadive.medium:390)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -129,3 +131,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 390
+- timestamp: '2026-03-13T06:19:30.779798Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005170'

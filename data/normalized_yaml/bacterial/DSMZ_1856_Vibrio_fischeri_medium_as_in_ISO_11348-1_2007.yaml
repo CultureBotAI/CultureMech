@@ -1,3 +1,4 @@
+id: CultureMech:001274
 name: Vibrio fischeri medium as in ISO 11348-1:2007
 original_name: Vibrio fischeri medium as in ISO 11348-1:2007
 category: bacterial
@@ -70,7 +71,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 3
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -83,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1856'
+- timestamp: '2026-03-13T06:19:02.734691Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001274'

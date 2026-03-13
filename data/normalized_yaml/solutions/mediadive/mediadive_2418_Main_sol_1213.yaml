@@ -1,3 +1,4 @@
+id: CultureMech:011796
 preferred_term: Main sol. 1213
 term:
   id: mediadive.solution:2418
@@ -125,3 +126,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Final pH should be 7.4. For solid media add 15.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.979879Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011796'

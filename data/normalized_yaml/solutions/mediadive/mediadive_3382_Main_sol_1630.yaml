@@ -1,3 +1,4 @@
+id: CultureMech:012528
 preferred_term: Main sol. 1630
 term:
   id: mediadive.solution:3382
@@ -131,3 +132,8 @@ preparation_notes: Dissolve ingredients (except trace elements, HEPES buffer, am
   elements, pyruvate, bicarbonate, and vitamins are added from sterile stock solutions
   sterilized by filtration. Adjust pH of the complete medium to 7.5 using a sterile
   solution of bicarbonate (5% w/v) or 1 N HCl.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.373338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012528'

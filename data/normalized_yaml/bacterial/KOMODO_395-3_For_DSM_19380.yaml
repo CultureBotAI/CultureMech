@@ -1,3 +1,4 @@
+id: CultureMech:005181
 name: For DSM 19380
 original_name: For DSM 19380
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:395.3
     label: For DSM 19380
-notes: 'Source: KOMODO ModelSEED | ID: 395.3 | DSMZ Medium: 395 (mediadive.medium:395) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 395.3 | DSMZ Medium: 395 (mediadive.medium:395)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -223,4 +225,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.587337Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:30.885306Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005181'

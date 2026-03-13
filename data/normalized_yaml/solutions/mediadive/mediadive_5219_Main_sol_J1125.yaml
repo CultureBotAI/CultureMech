@@ -1,3 +1,4 @@
+id: CultureMech:014129
 preferred_term: Main sol. J1125
 term:
   id: mediadive.solution:5219
@@ -191,3 +192,8 @@ preparation_notes: "Mix components thoroughly and autoclave under a N2-CO2 (4:1,
   \ the medium (autoclaved and stored under N2): \nComment:\nFor cultivation of JCM\
   \ 31104, use 1 M sodium lactate solution instead of 1 M glycerin solution (final\
   \ 10 mM).\n\nOriginal volume: 1016 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.794293Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014129'

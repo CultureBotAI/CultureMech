@@ -1,3 +1,4 @@
+id: CultureMech:010694
 preferred_term: Main sol. 10
 term:
   id: mediadive.solution:11
@@ -65,3 +66,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Incubate microaerobic, for example in a candle jar.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.069220Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010694'

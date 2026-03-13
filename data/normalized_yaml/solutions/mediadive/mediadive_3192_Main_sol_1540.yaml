@@ -1,3 +1,4 @@
+id: CultureMech:012393
 preferred_term: Main sol. 1540
 term:
   id: mediadive.solution:3192
@@ -126,3 +127,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Final pH should be 7.8 ± 0.2 at 25°C. The medium may be solidified
   by adding 15.0g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.682450Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012393'

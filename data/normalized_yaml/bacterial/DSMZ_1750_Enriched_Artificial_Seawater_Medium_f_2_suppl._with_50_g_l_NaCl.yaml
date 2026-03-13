@@ -1,3 +1,4 @@
+id: CultureMech:001224
 name: Enriched Artificial Seawater Medium f/2  suppl. with 50 g/l NaCl
 original_name: Enriched Artificial Seawater Medium f/2  suppl. with 50 g/l NaCl
 category: bacterial
@@ -109,14 +110,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'After cooling, add the following filter sterilized (0.2 µm) components to complete the
-    medium:'
+  description: 'After cooling, add the following filter sterilized (0.2 µm) components
+    to complete the medium:'
 applications:
 - Microbial cultivation
 references:
@@ -126,3 +128,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1750'
+- timestamp: '2026-03-13T06:19:02.394498Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001224'

@@ -1,3 +1,4 @@
+id: CultureMech:003931
 name: KUSHNERIA AURANTIA medium
 original_name: KUSHNERIA AURANTIA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1195
     label: KUSHNERIA AURANTIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1195 | DSMZ Medium: 1195 (mediadive.medium:1195) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1195 | DSMZ Medium: 1195 (mediadive.medium:1195)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -83,3 +85,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1195
+- timestamp: '2026-03-13T06:19:23.398967Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003931'

@@ -1,3 +1,4 @@
+id: CultureMech:004175
 name: NICOTINIC ACID medium
 original_name: NICOTINIC ACID medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:152
     label: NICOTINIC ACID medium
-notes: 'Source: KOMODO ModelSEED | ID: 152 | DSMZ Medium: 152 (mediadive.medium:152) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 152 | DSMZ Medium: 152 (mediadive.medium:152)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Nicotinic acid
   term:
@@ -82,3 +84,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 152
+- timestamp: '2026-03-13T06:19:25.647512Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004175'

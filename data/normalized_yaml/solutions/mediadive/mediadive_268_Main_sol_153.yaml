@@ -1,3 +1,4 @@
+id: CultureMech:012007
 preferred_term: Main sol. 153
 term:
   id: mediadive.solution:268
@@ -116,3 +117,8 @@ preparation_notes: Dissolve ingredients, sparge medium with 100% N2 gas for 30 -
   min to make it anoxic. Adjust pH to 7.1 with Na2CO3 (5% w/v), if necessary. Then
   dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or
   serum vials and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.261262Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012007'

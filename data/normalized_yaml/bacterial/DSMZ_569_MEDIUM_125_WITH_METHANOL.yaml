@@ -1,3 +1,4 @@
+id: CultureMech:001698
 name: MEDIUM 125 WITH METHANOL
 original_name: MEDIUM 125 WITH METHANOL
 category: bacterial
@@ -108,7 +109,8 @@ preparation_steps:
   description: To 1 l of medium 125 pH adjusted to 4.0-5.4 add 10 ml CH3OH.
 - step_number: 2
   action: ADJUST_PH
-  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
+  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to
+    6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -116,3 +118,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 569'
+- timestamp: '2026-03-13T06:19:06.534827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001698'

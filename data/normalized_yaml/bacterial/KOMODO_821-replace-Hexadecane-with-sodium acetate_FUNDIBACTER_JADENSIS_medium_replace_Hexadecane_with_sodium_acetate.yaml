@@ -1,3 +1,4 @@
+id: CultureMech:006548
 name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
 original_name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:821_replace_Hexadecane_with_sodium acetate
     label: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
-notes: 'Source: KOMODO ModelSEED | ID: 821_replace_Hexadecane_with_sodium acetate | DSMZ Medium: 821 (mediadive.medium:821)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 821_replace_Hexadecane_with_sodium acetate
+  | DSMZ Medium: 821 (mediadive.medium:821) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -72,3 +73,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 821
+- timestamp: '2026-03-13T06:19:41.755365Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006548'

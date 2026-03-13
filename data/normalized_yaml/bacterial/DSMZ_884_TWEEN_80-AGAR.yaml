@@ -1,3 +1,4 @@
+id: CultureMech:002044
 name: TWEEN 80-AGAR
 original_name: TWEEN 80-AGAR
 category: bacterial
@@ -45,7 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine after cooling to approximately 50°C.
+  description: Autoclave solutions A and B separately and combine after cooling to
+    approximately 50°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 884'
+- timestamp: '2026-03-13T06:19:09.736927Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002044'

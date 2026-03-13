@@ -1,3 +1,4 @@
+id: CultureMech:007106
 name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan and
   phenylalanine + 1% glucose + 1% pyruvate; Nakano et al','N
 original_name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan
@@ -117,6 +118,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 212, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.179493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007106'
 media_term:
   preferred_term: MediaDB Medium 212
   term:

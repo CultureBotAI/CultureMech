@@ -1,3 +1,4 @@
+id: CultureMech:006313
 name: medium FOR ERYTHROBACTER LONGUS
 original_name: medium FOR ERYTHROBACTER LONGUS
 category: bacterial
@@ -53,3 +54,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 695
+- timestamp: '2026-03-13T06:19:39.695111Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006313'

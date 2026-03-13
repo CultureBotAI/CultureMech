@@ -1,3 +1,4 @@
+id: CultureMech:003112
 name: BETAINE+BICARBONATE BUFFERED MEDIUM
 original_name: BETAINE+BICARBONATE BUFFERED MEDIUM
 category: bacterial
@@ -270,19 +271,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
+    gas mixture.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Mix components thoroughly and filter-sterilize. Stock the solution under a N2-CO2 (80:20,
-    v/v) gas mixture.
+  description: Mix components thoroughly and filter-sterilize. Stock the solution
+    under a N2-CO2 (80:20, v/v) gas mixture.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Mix components thoroughly and filter-sterilize. Stock the solution under a N2-CO2 (80:20,
-    v/v) gas mixture.
+  description: Mix components thoroughly and filter-sterilize. Stock the solution
+    under a N2-CO2 (80:20, v/v) gas mixture.
 - step_number: 4
   action: ADJUST_PH
-  description: To complete the medium, combine Solutions A, B and C aseptically and anaerobically under
-    a N2-CO2 (80:20, v/v) gas mixture. Check the final pH to be 6.9 - 7.2.
+  description: To complete the medium, combine Solutions A, B and C aseptically and
+    anaerobically under a N2-CO2 (80:20, v/v) gas mixture. Check the final pH to be
+    6.9 - 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -290,3 +293,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J770'
+- timestamp: '2026-03-13T06:19:17.900959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003112'

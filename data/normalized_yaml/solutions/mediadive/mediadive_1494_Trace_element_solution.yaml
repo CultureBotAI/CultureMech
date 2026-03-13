@@ -1,3 +1,4 @@
+id: CultureMech:010964
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:1494
@@ -138,3 +139,8 @@ composition:
 preparation_notes: First dissolve EDTA in distilled water, adjust pH to 7 using 2
   N NaOH and add ferrous chloride. After ferrous chloride has dissolved add remaining
   compounds.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.693853Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010964'

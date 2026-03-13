@@ -1,3 +1,4 @@
+id: CultureMech:006484
 name: NATRONIELLA medium
 original_name: NATRONIELLA medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:784
     label: NATRONIELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 784 | DSMZ Medium: 784 (mediadive.medium:784) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 784 | DSMZ Medium: 784 (mediadive.medium:784)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -225,4 +227,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.018491Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:41.224068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006484'

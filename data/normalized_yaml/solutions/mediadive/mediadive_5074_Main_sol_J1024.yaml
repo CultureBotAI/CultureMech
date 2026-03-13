@@ -1,3 +1,4 @@
+id: CultureMech:013990
 preferred_term: Main sol. J1024
 term:
   id: mediadive.solution:5074
@@ -90,3 +91,8 @@ composition:
 preparation_notes: "Adjust pH to 7.2 with NaOH. For preparation of solid medium, add\
   \ 28.0 g/L agar. After autoclaving, add the following solution to the medium: \n\
   \nOriginal volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.846425Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013990'

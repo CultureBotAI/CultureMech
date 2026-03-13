@@ -1,3 +1,4 @@
+id: CultureMech:010859
 preferred_term: Main sol. 647a
 term:
   id: mediadive.solution:1375
@@ -160,3 +161,8 @@ preparation_notes: 'Dissolve ingredients (except sulfur, carbonate, pyruvate, vi
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.973490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010859'

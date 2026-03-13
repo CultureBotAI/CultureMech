@@ -1,3 +1,4 @@
+id: CultureMech:013315
 preferred_term: Solution A
 term:
   id: mediadive.solution:4308
@@ -88,3 +89,8 @@ preparation_notes: 'Mix components, adjust pH to 7.2, bring to a boil for a few 
 
 
   Original volume: 902 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.635050Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013315'

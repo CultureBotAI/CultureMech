@@ -1,3 +1,4 @@
+id: CultureMech:002744
 name: PYGV AGAR
 original_name: PYGV AGAR
 category: bacterial
@@ -134,14 +135,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components, except Glucose solution and Vitamin solution, to distilled water and mix
-    thoroughly. Gently heat and bring to a boil. Autoclave and then cool to 45 - 50C. Aseptically add
-    the filter-sterilized Glucose solution and Vitamin solution. Adjust pH to 7.5 with sterile KOH, if
-    necessary.
+  description: Add components, except Glucose solution and Vitamin solution, to distilled
+    water and mix thoroughly. Gently heat and bring to a boil. Autoclave and then
+    cool to 45 - 50C. Aseptically add the filter-sterilized Glucose solution and Vitamin
+    solution. Adjust pH to 7.5 with sterile KOH, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by adjusting pH to 6.5
-    with KOH. Add the remaining components and distilled water. Readjust pH to 7.2.
+  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by
+    adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
+    Readjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J387'
+- timestamp: '2026-03-13T06:19:15.431194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002744'

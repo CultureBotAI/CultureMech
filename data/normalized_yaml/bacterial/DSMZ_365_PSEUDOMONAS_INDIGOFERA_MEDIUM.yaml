@@ -1,3 +1,4 @@
+id: CultureMech:001466
 name: PSEUDOMONAS INDIGOFERA MEDIUM
 original_name: PSEUDOMONAS INDIGOFERA MEDIUM
 category: bacterial
@@ -39,7 +40,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid broth and on agar.
+  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid
+    broth and on agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -47,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 365'
+- timestamp: '2026-03-13T06:19:04.403097Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001466'

@@ -1,3 +1,4 @@
+id: CultureMech:003959
 name: G?1 medium
 original_name: G?1 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:120a
     label: G?1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 120a | DSMZ Medium: 120a (mediadive.medium:120a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 120a | DSMZ Medium: 120a (mediadive.medium:120a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -251,4 +253,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:34.287630Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:23.658305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003959'

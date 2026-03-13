@@ -1,3 +1,4 @@
+id: CultureMech:012059
 preferred_term: Main sol. 1367
 term:
   id: mediadive.solution:2755
@@ -92,3 +93,8 @@ preparation_notes: Prepare the liquid medium without Staley´s vitamin solution 
   phase is air:CO2 (95:5) and the liquid:gas phase should be 1:9. Sterilize by autoclaving.
   After autoclaving add the Staley´s vitamin solution (filter sterilised) and glucose
   (autoclaved) from sterile stock solutions.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.594936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012059'

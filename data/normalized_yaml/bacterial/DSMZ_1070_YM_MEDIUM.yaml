@@ -1,3 +1,4 @@
+id: CultureMech:000502
 name: YM MEDIUM
 original_name: YM MEDIUM
 category: bacterial
@@ -68,3 +69,7 @@ curation_history:
   curator: atcc-crossref-backfill
   action: Added ATCC cross-reference
   notes: ATCC:416 verified equivalent (verified 2026-02-19)
+- timestamp: '2026-03-13T06:18:55.893022Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000502'

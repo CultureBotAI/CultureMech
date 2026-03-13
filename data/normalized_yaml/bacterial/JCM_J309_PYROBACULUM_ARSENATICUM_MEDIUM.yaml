@@ -1,3 +1,4 @@
+id: CultureMech:002666
 name: PYROBACULUM ARSENATICUM MEDIUM
 original_name: PYROBACULUM ARSENATICUM MEDIUM
 category: bacterial
@@ -19,7 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 184 without sulfur, and supplement with 2.0 g/L (final) Na2S2O3.
+  description: Use Medium No. 184 without sulfur, and supplement with 2.0 g/L (final)
+    Na2S2O3.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.
@@ -34,5 +36,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.885758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002666'
 data_quality_flags:
 - incomplete_composition

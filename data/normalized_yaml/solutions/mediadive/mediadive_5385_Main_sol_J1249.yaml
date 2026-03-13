@@ -1,3 +1,4 @@
+id: CultureMech:014295
 preferred_term: Main sol. J1249
 term:
   id: mediadive.solution:5385
@@ -163,3 +164,8 @@ preparation_notes: 'After autoclaving, aseptically add 20 ml acetic acid (filter
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.881476Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014295'

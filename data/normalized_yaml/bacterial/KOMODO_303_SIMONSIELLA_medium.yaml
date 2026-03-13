@@ -1,3 +1,4 @@
+id: CultureMech:004820
 name: SIMONSIELLA medium
 original_name: SIMONSIELLA medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:303
     label: SIMONSIELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 303 | DSMZ Medium: 303 (mediadive.medium:303) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 303 | DSMZ Medium: 303 (mediadive.medium:303)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase
   concentration:
@@ -62,3 +64,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 303
+- timestamp: '2026-03-13T06:19:28.852443Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004820'

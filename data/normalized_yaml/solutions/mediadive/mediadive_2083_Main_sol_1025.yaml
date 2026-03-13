@@ -1,3 +1,4 @@
+id: CultureMech:011482
 preferred_term: Main sol. 1025
 term:
   id: mediadive.solution:2083
@@ -66,3 +67,8 @@ composition:
 preparation_notes: Autoclave and cool the medium. Aseptically add from sterile stock
   solutions, 20 ml 50xPYE and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2
   ml 50% glucose per liter of medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.993716Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011482'

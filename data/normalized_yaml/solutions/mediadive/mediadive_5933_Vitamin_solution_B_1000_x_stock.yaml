@@ -1,3 +1,4 @@
+id: CultureMech:014701
 preferred_term: Vitamin solution B (1000 x stock)
 term:
   id: mediadive.solution:5933
@@ -34,3 +35,8 @@ preparation_notes: 'Dissolve the vitamin B12 in water.
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.138958Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014701'

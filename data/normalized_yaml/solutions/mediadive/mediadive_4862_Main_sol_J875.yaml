@@ -1,3 +1,4 @@
+id: CultureMech:013794
 preferred_term: Main sol. J875
 term:
   id: mediadive.solution:4862
@@ -202,3 +203,8 @@ preparation_notes: "Mix components except sulfur, and autoclave under a N2-CO2 (
   \ stoppers. Add per liter the following solutions (autoclaved and stored under N2,\
   \ or *filter-sterilized and stored under N2-CO2, 4:1, v/v): \n\nOriginal volume:\
   \ 1063 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.532185Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013794'

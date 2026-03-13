@@ -1,3 +1,4 @@
+id: CultureMech:012836
 preferred_term: Main sol. J121
 term:
   id: mediadive.solution:3759
@@ -102,3 +103,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Separately sterilize a solution of sodium benzoate by filtration,
   and aseptically add it to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.872793Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012836'

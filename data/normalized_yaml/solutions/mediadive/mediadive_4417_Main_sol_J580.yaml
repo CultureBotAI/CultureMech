@@ -1,3 +1,4 @@
+id: CultureMech:013402
 preferred_term: Main sol. J580
 term:
   id: mediadive.solution:4417
@@ -125,3 +126,8 @@ composition:
     match_type: synonym_match_ambiguous
 preparation_notes: "Adjust pH to 7.0.\nAdd the following component after autoclaving:\
   \ \n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.142072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013402'

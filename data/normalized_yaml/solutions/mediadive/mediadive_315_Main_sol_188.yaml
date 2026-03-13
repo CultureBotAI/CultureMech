@@ -1,3 +1,4 @@
+id: CultureMech:012365
 preferred_term: Main sol. 188
 term:
   id: mediadive.solution:315
@@ -120,3 +121,8 @@ composition:
     label: Cellulose MN 300
 preparation_notes: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled
   agar and inoculate on filter strip.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.475557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012365'

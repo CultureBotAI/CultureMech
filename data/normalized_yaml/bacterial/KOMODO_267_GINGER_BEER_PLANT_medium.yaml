@@ -1,3 +1,4 @@
+id: CultureMech:004670
 name: GINGER BEER PLANT medium
 original_name: GINGER BEER PLANT medium
 category: bacterial
@@ -44,3 +45,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 267
+- timestamp: '2026-03-13T06:19:27.979795Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004670'

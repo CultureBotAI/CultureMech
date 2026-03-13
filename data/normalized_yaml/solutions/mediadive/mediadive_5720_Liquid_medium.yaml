@@ -1,3 +1,4 @@
+id: CultureMech:014582
 preferred_term: Liquid medium
 term:
   id: mediadive.solution:5720
@@ -99,3 +100,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:38.509371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014582'

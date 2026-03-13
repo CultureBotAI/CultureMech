@@ -1,3 +1,4 @@
+id: CultureMech:011615
 preferred_term: Sodium thiosulfate solution (available)
 term:
   id: mediadive.solution:2224
@@ -20,3 +21,8 @@ preparation_notes: '50% solution of Na2S2O3 (Fluka), pH 9-10 >> filter sterilize
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.799892Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011615'

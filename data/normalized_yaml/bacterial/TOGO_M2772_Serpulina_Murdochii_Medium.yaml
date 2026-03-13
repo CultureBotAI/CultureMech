@@ -1,3 +1,4 @@
+id: CultureMech:009320
 name: Serpulina Murdochii Medium
 original_name: Serpulina Murdochii Medium
 category: bacterial
@@ -27,4 +28,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.391167'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Columbia Agar Plates with 5% sheep blood (BBL 4354005)'
+  notes: 'Added default concentration for ingredient: Columbia Agar Plates with 5%
+    sheep blood (BBL 4354005)'
+- timestamp: '2026-03-13T06:20:05.603360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009320'

@@ -1,3 +1,4 @@
+id: CultureMech:011617
 preferred_term: DIALISTER MEDIUM
 term:
   id: mediadive.solution:2226
@@ -66,3 +67,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0.
 
   Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.813763Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011617'

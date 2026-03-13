@@ -1,3 +1,4 @@
+id: CultureMech:001431
 name: METHANOCULLEUS BOURGENSIS MEDIUM
 original_name: METHANOCULLEUS BOURGENSIS MEDIUM
 category: bacterial
@@ -82,16 +83,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, carbonate and sulfide. Sparge medium with 80% H2
-    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve cysteine, then dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume
-    and autoclave. Add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas mixture and sulfide from a sterile anoxic stock solution prepared under 100% N2 gas. Prior to
-    use check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients except cysteine, carbonate and sulfide. Sparge
+    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve cysteine, then dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture and sulfide from a sterile anoxic stock solution prepared under
+    100% N2 gas. Prior to use check pH of complete medium and adjust to 6.8 - 7.0,
+    if necessary.
 - step_number: 2
   action: MIX
-  description: 'Note: After growth has started add sterile 80% H2 and 20% CO2 gas mixture to 0.5 - 1 bar
-    overpressure.'
+  description: 'Note: After growth has started add sterile 80% H2 and 20% CO2 gas
+    mixture to 0.5 - 1 bar overpressure.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,3 +102,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 332'
+- timestamp: '2026-03-13T06:19:04.117982Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001431'

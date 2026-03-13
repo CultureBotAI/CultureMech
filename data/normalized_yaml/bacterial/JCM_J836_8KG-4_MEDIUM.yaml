@@ -1,3 +1,4 @@
+id: CultureMech:003180
 name: 8KG-4 MEDIUM
 original_name: 8KG-4 MEDIUM
 category: bacterial
@@ -33,5 +34,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:18.397012Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003180'
 data_quality_flags:
 - incomplete_composition

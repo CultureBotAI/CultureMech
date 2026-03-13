@@ -1,3 +1,4 @@
+id: CultureMech:015366
 name: MEDIUM FOR MARINE METHYLOTROPHS
 original_name: MEDIUM FOR MARINE METHYLOTROPHS
 category: specialized
@@ -68,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 750'
+- timestamp: '2026-03-13T06:20:42.196431Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015366'

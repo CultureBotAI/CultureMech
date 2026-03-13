@@ -1,3 +1,4 @@
+id: CultureMech:001027
 name: HALOCOCCUS MEDIUM (NTYE)
 original_name: HALOCOCCUS MEDIUM (NTYE)
 category: bacterial
@@ -51,4 +52,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1549'
+- timestamp: '2026-03-13T06:19:00.571144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001027'
 high_metal: true

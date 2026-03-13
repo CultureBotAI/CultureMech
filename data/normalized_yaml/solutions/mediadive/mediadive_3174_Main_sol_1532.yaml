@@ -1,3 +1,4 @@
+id: CultureMech:012376
 preferred_term: Main sol. 1532
 term:
   id: mediadive.solution:3174
@@ -90,3 +91,8 @@ composition:
 preparation_notes: 'pH 6.55
 
   or Difco Antibiotic Medium 1 (BD, order number 226340)'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.585953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012376'

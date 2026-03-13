@@ -1,3 +1,4 @@
+id: CultureMech:015332
 preferred_term: Main sol. 9
 term:
   id: mediadive.solution:9
@@ -87,3 +88,8 @@ preparation_notes: 'Sterilize vitamin B12 separately by filtration. Prepare and 
   the temperature given for the strain, taking measures against desiccation. If there
   is no growth after ten days, carefully split up the agar-culture-cubes and squeeze
   the material to the agar plate and reincubate.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.896592Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015332'

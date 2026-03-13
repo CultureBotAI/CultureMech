@@ -1,3 +1,4 @@
+id: CultureMech:006389
 name: medium FOR HALOPHILIC BACILLI
 original_name: medium FOR HALOPHILIC BACILLI
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:73
     label: medium FOR HALOPHILIC BACILLI
-notes: 'Source: KOMODO ModelSEED | ID: 73 | DSMZ Medium: 73 (mediadive.medium:73) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 73 | DSMZ Medium: 73 (mediadive.medium:73)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 73
+- timestamp: '2026-03-13T06:19:40.358893Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006389'

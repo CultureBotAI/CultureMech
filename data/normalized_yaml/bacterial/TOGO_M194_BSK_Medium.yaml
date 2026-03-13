@@ -1,3 +1,4 @@
+id: CultureMech:008529
 name: BSK Medium
 original_name: BSK Medium
 category: bacterial
@@ -115,3 +116,7 @@ curation_history:
   date: '2026-02-03T11:20:50.991509'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sterile rabbit serum'
+- timestamp: '2026-03-13T06:19:57.788673Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008529'

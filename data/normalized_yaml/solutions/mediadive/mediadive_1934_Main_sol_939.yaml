@@ -1,3 +1,4 @@
+id: CultureMech:011343
 preferred_term: Main sol. 939
 term:
   id: mediadive.solution:1934
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Final pH 7.2-7.5
 
   After autoclaving add 10 ml methanol to 1 litre of the sterile Mineral Salts Solution.'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.054368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011343'

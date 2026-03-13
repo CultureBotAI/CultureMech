@@ -1,3 +1,4 @@
+id: CultureMech:010792
 preferred_term: Main sol. 605a
 term:
   id: mediadive.solution:1301
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12
   H2O. Final pH of the medium should be 6.8.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.551397Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010792'

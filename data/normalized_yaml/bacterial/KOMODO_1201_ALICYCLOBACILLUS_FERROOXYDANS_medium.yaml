@@ -1,3 +1,4 @@
+id: CultureMech:003949
 name: ALICYCLOBACILLUS FERROOXYDANS medium
 original_name: ALICYCLOBACILLUS FERROOXYDANS medium
 category: bacterial
@@ -76,4 +77,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1201
+- timestamp: '2026-03-13T06:19:23.570896Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003949'
 high_metal: true

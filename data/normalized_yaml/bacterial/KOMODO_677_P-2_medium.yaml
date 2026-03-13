@@ -1,3 +1,4 @@
+id: CultureMech:006273
 name: P-2 medium
 original_name: P-2 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:677
     label: P-2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 677 | DSMZ Medium: 677 (mediadive.medium:677) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 677 | DSMZ Medium: 677 (mediadive.medium:677)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -86,3 +88,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 677
+- timestamp: '2026-03-13T06:19:39.407068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006273'

@@ -1,3 +1,4 @@
+id: CultureMech:010632
 preferred_term: Main sol. 514
 term:
   id: mediadive.solution:1134
@@ -213,3 +214,8 @@ preparation_notes: 'Final pH should be 7.6 ± 0.2 at 25°C. If using the complet
   Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even
   if they refer to Difco2216) have not been tested and might not support growth for
   some strains.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.713380Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010632'

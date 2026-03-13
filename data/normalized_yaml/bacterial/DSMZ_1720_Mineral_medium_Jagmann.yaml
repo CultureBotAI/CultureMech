@@ -1,3 +1,4 @@
+id: CultureMech:001199
 name: Mineral medium (Jagmann)
 original_name: Mineral medium (Jagmann)
 category: bacterial
@@ -133,8 +134,8 @@ preparation_steps:
   description: Dissolve and autoclave. pH should be 7.0-7.2.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -142,3 +143,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1720'
+- timestamp: '2026-03-13T06:19:02.168573Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001199'

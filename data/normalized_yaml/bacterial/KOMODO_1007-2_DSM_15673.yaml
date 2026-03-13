@@ -1,3 +1,4 @@
+id: CultureMech:003508
 name: DSM 15673
 original_name: DSM 15673
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1007.2
     label: DSM 15673
-notes: 'Source: KOMODO ModelSEED | ID: 1007.2 | DSMZ Medium: 1007 (mediadive.medium:1007) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1007.2 | DSMZ Medium: 1007 (mediadive.medium:1007)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:
@@ -105,3 +107,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1007
+- timestamp: '2026-03-13T06:19:20.283896Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003508'

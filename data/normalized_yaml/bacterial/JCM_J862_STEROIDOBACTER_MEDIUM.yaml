@@ -1,3 +1,4 @@
+id: CultureMech:003208
 name: STEROIDOBACTER MEDIUM
 original_name: STEROIDOBACTER MEDIUM
 category: bacterial
@@ -168,22 +169,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: For growth with testosterone, dissolve testosterone in acetone (20 mg/ml) and dispense
-    portions of the solution, e.g., 0.1 ml portions for 10 ml medium, to anaerobic culture tubes. Let
-    the solvent evaporate to dryness. Dispense 10 ml portions of medium in the culture tubes and stream
-    with N2-CO2 (80:20, v/v). Close the vessels and autoclave. Treat the vessels in an ultrasonic bath
-    to detach and suspend the testosterone.
+  description: For growth with testosterone, dissolve testosterone in acetone (20
+    mg/ml) and dispense portions of the solution, e.g., 0.1 ml portions for 10 ml
+    medium, to anaerobic culture tubes. Let the solvent evaporate to dryness. Dispense
+    10 ml portions of medium in the culture tubes and stream with N2-CO2 (80:20, v/v).
+    Close the vessels and autoclave. Treat the vessels in an ultrasonic bath to detach
+    and suspend the testosterone.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: For growth with heptanoate, omit testosterone. Sterilize the gassed medium in anaerobic
-    vessels by autoclaving. Add 2.5 mM heptanoate from a 20-fold filter-sterilized anaerobic stock solution
-    after cooling.
+  description: For growth with heptanoate, omit testosterone. Sterilize the gassed
+    medium in anaerobic vessels by autoclaving. Add 2.5 mM heptanoate from a 20-fold
+    filter-sterilized anaerobic stock solution after cooling.
 - step_number: 3
   action: AUTOCLAVE
-  description: After autoclaving, add (per 10 ml) 0.3 ml NaHCO3 solution (84 g/L, autoclaved under a CO2
-    atmosphere), 1 ï¿½l Trace element solution SL-10 (see Medium No. 433), 1 ï¿½l Selenite-tungstate solution
-    (see below) and 1 ï¿½l Vitamin solution (see below). Adjust pH to 7.2. Incubate the cultures in the
-    dark for up to 4 weeks. Briefly shake the cultures once per day.
+  description: After autoclaving, add (per 10 ml) 0.3 ml NaHCO3 solution (84 g/L,
+    autoclaved under a CO2 atmosphere), 1 ï¿½l Trace element solution SL-10 (see Medium
+    No. 433), 1 ï¿½l Selenite-tungstate solution (see below) and 1 ï¿½l Vitamin solution
+    (see below). Adjust pH to 7.2. Incubate the cultures in the dark for up to 4 weeks.
+    Briefly shake the cultures once per day.
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +194,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J862'
+- timestamp: '2026-03-13T06:19:18.585236Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003208'

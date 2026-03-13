@@ -1,3 +1,4 @@
+id: CultureMech:004802
 name: LIP-solution (medium 391)
 original_name: LIP-solution (medium 391)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3022
     label: LIP-solution (medium 391)
-notes: 'Source: KOMODO ModelSEED | ID: 3022 | DSMZ Medium: 3022 (mediadive.medium:3022) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3022 | DSMZ Medium: 3022 (mediadive.medium:3022)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3022'
+- timestamp: '2026-03-13T06:19:28.822988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004802'

@@ -1,3 +1,4 @@
+id: CultureMech:004100
 name: TISTLIA CONSOTENSIS medium
 original_name: TISTLIA CONSOTENSIS medium
 category: bacterial
@@ -161,3 +162,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:24.802956Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004100'

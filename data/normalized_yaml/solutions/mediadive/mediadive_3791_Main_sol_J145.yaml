@@ -1,3 +1,4 @@
+id: CultureMech:012870
 preferred_term: Main sol. J145
 term:
   id: mediadive.solution:3791
@@ -152,3 +153,8 @@ preparation_notes: 'Adjust pH to 7.0-7.2. Prepare medium anaerobically. Inoculat
 
 
   Original volume: 1004 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.059336Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012870'

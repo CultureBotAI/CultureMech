@@ -1,3 +1,4 @@
+id: CultureMech:011527
 preferred_term: Main sol. 1051
 term:
   id: mediadive.solution:2127
@@ -146,3 +147,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, yeast extract, vitam
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.235436Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011527'

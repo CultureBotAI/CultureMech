@@ -1,3 +1,4 @@
+id: CultureMech:001787
 name: CLOSTRIDIUM GRANTII MEDIUM
 original_name: CLOSTRIDIUM GRANTII MEDIUM
 category: bacterial
@@ -50,12 +51,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve DIFCO Marine Broth powder and resazurin, bring the medium to a boil, then cool
-    to room temperature under 80% N2 and 20% CO2 gas atmosphere. Dispense the medium under the same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Complete the medium by adding
-    glucose, cysteine, and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The
-    pH of the complete medium should be around 6.6.
+  description: Dissolve DIFCO Marine Broth powder and resazurin, bring the medium
+    to a boil, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere.
+    Dispense the medium under the same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Complete the medium by adding glucose, cysteine,
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. The pH of the complete medium should be around 6.6.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +65,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 648'
+- timestamp: '2026-03-13T06:19:07.219921Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001787'

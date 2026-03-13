@@ -1,3 +1,4 @@
+id: CultureMech:000726
 name: MEDIUM GY VL55
 original_name: MEDIUM GY VL55
 category: bacterial
@@ -173,3 +174,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:57.811689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000726'

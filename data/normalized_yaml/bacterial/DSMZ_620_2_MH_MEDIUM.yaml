@@ -1,3 +1,4 @@
+id: CultureMech:001751
 name: 2% MH MEDIUM
 original_name: 2% MH MEDIUM
 category: bacterial
@@ -71,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 620'
+- timestamp: '2026-03-13T06:19:06.949204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001751'

@@ -1,3 +1,4 @@
+id: CultureMech:010731
 preferred_term: Main sol. 574
 term:
   id: mediadive.solution:1237
@@ -129,3 +130,8 @@ preparation_notes: 'Dissove ingredients and adjust pH to 7.5. Sterilize the medi
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.234445Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010731'

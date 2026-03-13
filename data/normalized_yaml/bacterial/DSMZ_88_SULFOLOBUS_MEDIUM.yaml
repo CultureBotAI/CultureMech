@@ -1,3 +1,4 @@
+id: CultureMech:002050
 name: SULFOLOBUS MEDIUM
 original_name: SULFOLOBUS MEDIUM
 category: bacterial
@@ -99,9 +100,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except yeast extract or other substrates), adjust pH of the salt
-    solution at room temperature to 2.0 using 10 N H2SO4 and autoclave. Yeast extract and other organic
-    substrates are sterilized separately by autoclaving of a 10% (w/v) stock solution at neutral pH.
+  description: Dissolve ingredients (except yeast extract or other substrates), adjust
+    pH of the salt solution at room temperature to 2.0 using 10 N H2SO4 and autoclave.
+    Yeast extract and other organic substrates are sterilized separately by autoclaving
+    of a 10% (w/v) stock solution at neutral pH.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -112,3 +114,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 88'
+- timestamp: '2026-03-13T06:19:09.795678Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002050'

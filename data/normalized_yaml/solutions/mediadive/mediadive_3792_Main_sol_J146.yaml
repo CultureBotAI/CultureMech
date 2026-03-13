@@ -1,3 +1,4 @@
+id: CultureMech:012871
 preferred_term: Main sol. J146
 term:
   id: mediadive.solution:3792
@@ -213,3 +214,8 @@ preparation_notes: Adjust pH to 7.0. Prepare medium anaerobically and dispense i
   to each tube to give a final concentration of 0.75 mg/100 ml. Subculture with a
   Pasteur pipette (20-30 drops). Gas phase for culture system should be oxygen-free
   N2 or N2-CO2 (90:10).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.070174Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012871'

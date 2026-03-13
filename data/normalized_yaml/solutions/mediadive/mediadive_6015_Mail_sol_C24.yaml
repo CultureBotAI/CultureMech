@@ -1,3 +1,4 @@
+id: CultureMech:014751
 preferred_term: Mail sol. C24
 term:
   id: mediadive.solution:6015
@@ -55,3 +56,8 @@ preparation_notes: "Disperse the agar in cold deionised water. Apply heat, stirr
   \ constantly. During heating, add\r\nglucose and yeast extract. Bring contents to\
   \ boil. Transfer molten agar to suitable vessels.\r\nSterilise by pressure cooking\
   \ at 10 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.401480Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014751'

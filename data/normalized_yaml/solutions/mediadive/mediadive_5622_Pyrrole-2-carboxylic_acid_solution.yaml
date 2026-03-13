@@ -1,3 +1,4 @@
+id: CultureMech:014497
 preferred_term: Pyrrole-2-carboxylic acid solution
 term:
   id: mediadive.solution:5622
@@ -29,3 +30,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve 10 mol pyrrole-2-carboxylic acid per liter potassium phosphate
   buffer (50 mM; pH 7.2) and sterilize the solution by membrane filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.108423Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014497'

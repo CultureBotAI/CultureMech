@@ -1,3 +1,4 @@
+id: CultureMech:002160
 name: THERMOACTINOMYCES MEDIUM
 original_name: THERMOACTINOMYCES MEDIUM
 category: bacterial
@@ -117,8 +118,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add components, except vitamin B solution, to distilled water and bring volume to 990 ml.
-    Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized vitamin B solution.
+  description: Add components, except vitamin B solution, to distilled water and bring
+    volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized
+    vitamin B solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -129,4 +131,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.854414Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:10.859839Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002160'

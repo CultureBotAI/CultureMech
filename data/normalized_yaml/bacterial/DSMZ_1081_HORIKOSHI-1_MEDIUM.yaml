@@ -1,3 +1,4 @@
+id: CultureMech:000515
 name: HORIKOSHI-1 MEDIUM
 original_name: HORIKOSHI-1 MEDIUM
 category: bacterial
@@ -57,8 +58,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution to the medium. Check
-    final pH to be about 10.0.
+  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
+    to the medium. Check final pH to be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,3 +67,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1081'
+- timestamp: '2026-03-13T06:18:55.976255Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000515'

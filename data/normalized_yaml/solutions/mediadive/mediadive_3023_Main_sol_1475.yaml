@@ -1,3 +1,4 @@
+id: CultureMech:012254
 preferred_term: Main sol. 1475
 term:
   id: mediadive.solution:3023
@@ -106,3 +107,8 @@ preparation_notes: 'Dissolve ingredients except vitamins and ferrous sulfate and
 
 
   Original volume: 1008 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.789819Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012254'

@@ -1,3 +1,4 @@
+id: CultureMech:013855
 preferred_term: Main sol. J923
 term:
   id: mediadive.solution:4928
@@ -72,3 +73,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 5.0 with HCl. Bri
   \ medium) from sterile anaerobic stocks (autoclaved or *filter-sterilized): \nCheck\
   \ the final pH of the medium to be about 5.1. Pressurize inoculated tubes to 70\
   \ kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.907684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013855'

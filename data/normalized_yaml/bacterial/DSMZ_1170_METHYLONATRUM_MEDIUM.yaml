@@ -1,3 +1,4 @@
+id: CultureMech:000612
 name: METHYLONATRUM MEDIUM
 original_name: METHYLONATRUM MEDIUM
 category: bacterial
@@ -129,10 +130,11 @@ preparation_steps:
   description: pH 10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without methanol, vitamin B12, MgSO4 x 7 H2O and NaS2O3 x 5 H2O in closed
-    vessels with a medium to headspace ratio of 1:5 to 1:10. Add the methanol, MgSO4 x 7 H2O and NaS2O3
-    x 5 H2O from autoclaved stock solutions after sterilisation of the medium. Vitamin B12 is added from
-    a filter sterilised stock solution to the sterile medium. Incubate the strains with shaking at 150
+  description: Prepare the medium without methanol, vitamin B12, MgSO4 x 7 H2O and
+    NaS2O3 x 5 H2O in closed vessels with a medium to headspace ratio of 1:5 to 1:10.
+    Add the methanol, MgSO4 x 7 H2O and NaS2O3 x 5 H2O from autoclaved stock solutions
+    after sterilisation of the medium. Vitamin B12 is added from a filter sterilised
+    stock solution to the sterile medium. Incubate the strains with shaking at 150
     rpm. Growth is faster in the presence of 20 mM sodium acetate instead of methanol.
 applications:
 - Microbial cultivation
@@ -145,3 +147,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.809072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000612'

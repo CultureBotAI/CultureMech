@@ -1,3 +1,4 @@
+id: CultureMech:006478
 name: MEDIUM 780 MODIFIED FOR DSM 44133
 original_name: MEDIUM 780 MODIFIED FOR DSM 44133
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:780_44133
     label: MEDIUM 780 MODIFIED FOR DSM 44133
-notes: 'Source: KOMODO ModelSEED | ID: 780_44133 | DSMZ Medium: 780 (mediadive.medium:780) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 780_44133 | DSMZ Medium: 780 (mediadive.medium:780)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Mycobactine J
   concentration:
@@ -44,3 +45,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 780
+- timestamp: '2026-03-13T06:19:41.178743Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006478'

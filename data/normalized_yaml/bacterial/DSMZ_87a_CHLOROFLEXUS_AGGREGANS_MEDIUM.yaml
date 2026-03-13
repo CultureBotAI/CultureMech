@@ -1,3 +1,4 @@
+id: CultureMech:002039
 name: CHLOROFLEXUS AGGREGANS MEDIUM
 original_name: CHLOROFLEXUS AGGREGANS MEDIUM
 category: bacterial
@@ -196,27 +197,29 @@ preparation_steps:
   description: Adjust pH to 8.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil the medium under a stream of nitrogen gas for a few minutes and distribute 90 ml medium
-    into 100 ml screw-capped bottles. Bubble each bottle with nitrogen gas and close immediately with
-    a rubber septum and screw tight. Autoclave at 121°C for 15 min. After autoclaving inject 1.0 ml of
-    neutralized sulfide solution (0.03% end concentration) to each bottle. This medium can be stored for
-    several months. Incubate the culture at 50°C at a light intensity of 300 - 500 lux. For heavy cell
-    suspension supplement periodically with sterile yeast extract solution (0.1% end concentration, for
-    more details see Ref. 3365, 3366).
+  description: Boil the medium under a stream of nitrogen gas for a few minutes and
+    distribute 90 ml medium into 100 ml screw-capped bottles. Bubble each bottle with
+    nitrogen gas and close immediately with a rubber septum and screw tight. Autoclave
+    at 121°C for 15 min. After autoclaving inject 1.0 ml of neutralized sulfide solution
+    (0.03% end concentration) to each bottle. This medium can be stored for several
+    months. Incubate the culture at 50°C at a light intensity of 300 - 500 lux. For
+    heavy cell suspension supplement periodically with sterile yeast extract solution
+    (0.1% end concentration, for more details see Ref. 3365, 3366).
 - step_number: 3
   action: FILTER_STERILIZE
   description: Adjust pH to 7.5. The solution is filter-sterilized.
 - step_number: 4
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
-    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
-    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
-    M H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 - step_number: 5
   action: ADJUST_PH
-  description: Appearance of a yellow colour indicates the drop of pH to about 8. The solution should
-    be stirred continuously to avoid precipitation of elemental sulfur. The final solution should be clear
-    and is yellow in colour.
+  description: Appearance of a yellow colour indicates the drop of pH to about 8.
+    The solution should be stirred continuously to avoid precipitation of elemental
+    sulfur. The final solution should be clear and is yellow in colour.
 applications:
 - Microbial cultivation
 curation_history:
@@ -224,3 +227,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 87a'
+- timestamp: '2026-03-13T06:19:09.681304Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002039'

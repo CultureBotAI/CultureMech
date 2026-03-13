@@ -1,3 +1,4 @@
+id: CultureMech:011685
 preferred_term: Trace mineral solution
 term:
   id: mediadive.solution:2302
@@ -160,3 +161,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust the pH of the solution to 3.0 with HCl.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.229585Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011685'

@@ -1,3 +1,4 @@
+id: CultureMech:014843
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:6141
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
   \ in exactly the \r\nfollowing sequence:"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.756221Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014843'

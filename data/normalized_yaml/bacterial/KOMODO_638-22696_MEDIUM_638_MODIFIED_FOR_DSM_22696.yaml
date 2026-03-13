@@ -1,3 +1,4 @@
+id: CultureMech:006158
 name: MEDIUM 638 MODIFIED FOR DSM 22696
 original_name: MEDIUM 638 MODIFIED FOR DSM 22696
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:638_22696
     label: MEDIUM 638 MODIFIED FOR DSM 22696
-notes: 'Source: KOMODO ModelSEED | ID: 638_22696 | DSMZ Medium: 638 (mediadive.medium:638) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 638_22696 | DSMZ Medium: 638 (mediadive.medium:638)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -108,4 +109,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 638
+- timestamp: '2026-03-13T06:19:38.673527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006158'
 ph_value: 6.3

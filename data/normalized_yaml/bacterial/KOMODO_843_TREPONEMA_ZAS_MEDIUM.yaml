@@ -1,3 +1,4 @@
+id: CultureMech:006648
 name: TREPONEMA ZAS MEDIUM
 original_name: TREPONEMA ZAS MEDIUM
 category: bacterial
@@ -340,3 +341,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 843
+- timestamp: '2026-03-13T06:19:42.673296Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006648'

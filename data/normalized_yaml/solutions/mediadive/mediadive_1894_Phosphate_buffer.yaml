@@ -1,3 +1,4 @@
+id: CultureMech:011312
 preferred_term: Phosphate buffer
 term:
   id: mediadive.solution:1894
@@ -41,3 +42,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make
   up to 1 litre.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.834196Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011312'

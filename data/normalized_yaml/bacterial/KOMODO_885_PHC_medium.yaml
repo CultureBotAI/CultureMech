@@ -1,3 +1,4 @@
+id: CultureMech:006736
 name: PHC medium
 original_name: PHC medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:885
     label: PHC medium
-notes: 'Source: KOMODO ModelSEED | ID: 885 | DSMZ Medium: 885 (mediadive.medium:885) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 885 | DSMZ Medium: 885 (mediadive.medium:885)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Poly hexamethylene carbonate
   concentration:
@@ -97,3 +99,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 885
+- timestamp: '2026-03-13T06:19:43.467621Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006736'

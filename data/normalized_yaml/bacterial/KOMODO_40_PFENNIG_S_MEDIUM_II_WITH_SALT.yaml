@@ -1,3 +1,4 @@
+id: CultureMech:005231
 name: PFENNIG'S MEDIUM II WITH SALT
 original_name: PFENNIG'S MEDIUM II WITH SALT
 category: bacterial
@@ -194,4 +195,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 13 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.185427Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005231'
 high_metal: true

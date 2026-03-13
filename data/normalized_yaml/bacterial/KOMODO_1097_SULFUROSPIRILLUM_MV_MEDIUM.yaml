@@ -1,3 +1,4 @@
+id: CultureMech:003749
 name: SULFUROSPIRILLUM MV MEDIUM
 original_name: SULFUROSPIRILLUM MV MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1097
     label: SULFUROSPIRILLUM MV MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1097 | DSMZ Medium: 1097 (mediadive.medium:1097) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1097 | DSMZ Medium: 1097 (mediadive.medium:1097)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -243,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.519251Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:21.900047Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003749'

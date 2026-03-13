@@ -1,3 +1,4 @@
+id: CultureMech:011649
 preferred_term: Main sol. 1126
 term:
   id: mediadive.solution:2260
@@ -210,3 +211,8 @@ composition:
 preparation_notes: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5
   - 6.5 with 1M H3PO4. Dispense into serum bottles or Hungate tubes (under a nitrogen
   atmosphere) that can be sealed with rubber stoppers.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.028529Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011649'

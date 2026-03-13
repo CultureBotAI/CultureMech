@@ -1,3 +1,4 @@
+id: CultureMech:015255
 preferred_term: Main sol. 448
 term:
   id: mediadive.solution:899
@@ -17,3 +18,8 @@ composition:
     match_type: exact_match
 preparation_notes: To medium 442 add 0.05% nicotinic acid as carbon source instead
   of toluene, sterilized by filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.505684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015255'

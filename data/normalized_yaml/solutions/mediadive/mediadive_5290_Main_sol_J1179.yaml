@@ -1,3 +1,4 @@
+id: CultureMech:014202
 preferred_term: Main sol. J1179
 term:
   id: mediadive.solution:5290
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: After autoclaving, aseptically add filter-sterilized 2 M NaHCO3
   solution, 1 M Na2CO3 solution and methanol. Readjust pH to 9.0, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.300199Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014202'

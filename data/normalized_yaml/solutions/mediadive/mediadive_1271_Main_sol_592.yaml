@@ -1,3 +1,4 @@
+id: CultureMech:010762
 preferred_term: Main sol. 592
 term:
   id: mediadive.solution:1271
@@ -116,3 +117,8 @@ preparation_notes: 'Adjust pH to 8.5.
 
   Add 20.0 g/l agar for solid media and pour short slants with a long butt in screw-capped
   tubes.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.378061Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010762'

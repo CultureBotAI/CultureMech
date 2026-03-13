@@ -1,3 +1,4 @@
+id: CultureMech:011760
 preferred_term: Main sol. 1193
 term:
   id: mediadive.solution:2381
@@ -46,3 +47,8 @@ preparation_notes: "Cultivation of L929 (ACC 2) or HeLa (ACC 57) cells \nFilter-
   \ Not all Chlamydiae form well-visible inclusions, ultimately, immunofluorescence\
   \ or in situ-hybridization techniques are necessary to visualize inclusions.\n\n\
   Original volume: 50 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:21.751870Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011760'

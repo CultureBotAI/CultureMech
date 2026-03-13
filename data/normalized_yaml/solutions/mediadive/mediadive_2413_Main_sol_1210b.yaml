@@ -1,3 +1,4 @@
+id: CultureMech:011792
 preferred_term: Main sol. 1210b
 term:
   id: mediadive.solution:2413
@@ -160,3 +161,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, hydrogenphosphate, fe
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.944403Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011792'

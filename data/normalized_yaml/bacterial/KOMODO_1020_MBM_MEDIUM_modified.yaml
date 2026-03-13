@@ -1,3 +1,4 @@
+id: CultureMech:003532
 name: MBM MEDIUM (modified)
 original_name: MBM MEDIUM (modified)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1020
     label: MBM MEDIUM (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 1020 | DSMZ Medium: 1020 (mediadive.medium:1020) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1020 | DSMZ Medium: 1020 (mediadive.medium:1020)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaNO3
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1020
+- timestamp: '2026-03-13T06:19:20.479405Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003532'

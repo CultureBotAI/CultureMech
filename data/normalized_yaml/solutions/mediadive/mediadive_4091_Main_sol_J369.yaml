@@ -1,3 +1,4 @@
+id: CultureMech:013138
 preferred_term: Main sol. J369
 term:
   id: mediadive.solution:4091
@@ -182,3 +183,8 @@ preparation_notes: 'Mix ingredients except Fe2(SO4)3 x <I>x</I>H2O, Trace vitami
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.632530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013138'

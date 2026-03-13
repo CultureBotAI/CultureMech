@@ -1,3 +1,4 @@
+id: CultureMech:011456
 preferred_term: Main sol. 1009
 term:
   id: mediadive.solution:2056
@@ -65,3 +66,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
   in 1000 ml distilled water.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.822072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011456'

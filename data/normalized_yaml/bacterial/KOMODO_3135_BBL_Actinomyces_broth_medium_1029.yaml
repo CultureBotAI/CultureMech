@@ -1,3 +1,4 @@
+id: CultureMech:004983
 name: BBL Actinomyces broth (medium 1029)
 original_name: BBL Actinomyces broth (medium 1029)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3135
     label: BBL Actinomyces broth (medium 1029)
-notes: 'Source: KOMODO ModelSEED | ID: 3135 | DSMZ Medium: 3135 (mediadive.medium:3135) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3135 | DSMZ Medium: 3135 (mediadive.medium:3135)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3135'
+- timestamp: '2026-03-13T06:19:29.303534Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004983'

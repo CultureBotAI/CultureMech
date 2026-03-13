@@ -1,3 +1,4 @@
+id: CultureMech:012083
 preferred_term: Main sol. 1378
 term:
   id: mediadive.solution:2796
@@ -192,3 +193,8 @@ preparation_notes: 'pH 7.0
   sterile Na2S solution end concentration 0.03%
 
   and filter-sterile Vitamin solution (see below) 0.2 ml / 100 ml.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.764757Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012083'

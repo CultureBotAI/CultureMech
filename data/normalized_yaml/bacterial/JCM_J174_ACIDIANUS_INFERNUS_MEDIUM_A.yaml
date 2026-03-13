@@ -1,3 +1,4 @@
+id: CultureMech:002534
 name: ACIDIANUS INFERNUS MEDIUM (A)
 original_name: ACIDIANUS INFERNUS MEDIUM (A)
 category: bacterial
@@ -106,8 +107,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately and steam sulfur for
-    3 hr on each of 3 successive days. Cultivate under air enriched with 1-10% CO2.
+  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately
+    and steam sulfur for 3 hr on each of 3 successive days. Cultivate under air enriched
+    with 1-10% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,3 +117,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J174'
+- timestamp: '2026-03-13T06:19:14.017669Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002534'

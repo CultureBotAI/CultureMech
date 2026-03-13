@@ -1,3 +1,4 @@
+id: CultureMech:011688
 preferred_term: Main sol. 1148
 term:
   id: mediadive.solution:2305
@@ -159,3 +160,8 @@ preparation_notes: 'Prepare the medium omitting Na2CO3, NaHCO3, Na2S x 9 H2O, an
   Autoclave at 121 °C for 15 min.
 
   Add Na2S x 9 H2O (neutralized) and Vitamin solution from sterile stock solutions'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.257630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011688'

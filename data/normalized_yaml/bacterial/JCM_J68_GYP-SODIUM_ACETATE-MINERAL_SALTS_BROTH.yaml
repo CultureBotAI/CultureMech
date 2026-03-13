@@ -1,3 +1,4 @@
+id: CultureMech:003035
 name: GYP-SODIUM ACETATE-MINERAL SALTS BROTH
 original_name: GYP-SODIUM ACETATE-MINERAL SALTS BROTH
 category: bacterial
@@ -69,3 +70,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J68'
+- timestamp: '2026-03-13T06:19:17.326919Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003035'

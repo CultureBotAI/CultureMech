@@ -1,3 +1,4 @@
+id: CultureMech:015026
 preferred_term: Main sol. 1837
 term:
   id: mediadive.solution:6422
@@ -65,3 +66,8 @@ composition:
     match_type: exact_match
 preparation_notes: "autoclave MgSO4 x 7 H2O und Gellan Gum separate (500 ml),\r\n\
   liquid medium without MgSO4 x 7 H2O und Gellan Gum"
+curation_history:
+- timestamp: '2026-03-13T06:20:40.424255Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015026'

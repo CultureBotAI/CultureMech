@@ -1,3 +1,4 @@
+id: CultureMech:011920
 preferred_term: Main sol. 1288
 term:
   id: mediadive.solution:2582
@@ -200,3 +201,8 @@ preparation_notes: Prepare the medium without glucose, cellobiose, maltose, and 
   the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas atmosphere
   and seal with rubber stoppers. Add the glucose, cellobiose, maltose, and soluble
   starch from N2/CO2 gassed and sterile-filtered stock solutions (pH 6.8).
+curation_history:
+- timestamp: '2026-03-13T06:20:22.799093Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011920'

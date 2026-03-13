@@ -1,3 +1,4 @@
+id: CultureMech:011187
 preferred_term: Main sol. 848
 term:
   id: mediadive.solution:1736
@@ -100,3 +101,8 @@ preparation_notes: 'Final pH ca. 3.8 (pH is not adjusted)
   above and prepare a lower, 0.5% agar layer, which is then overlaid with a 1.0% agar
   layer as described in medium 631. Incubate in closed containers to keep the humidity
   high (> 90%).'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.035960Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011187'

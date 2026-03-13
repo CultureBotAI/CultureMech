@@ -1,3 +1,4 @@
+id: CultureMech:014000
 preferred_term: Main sol. J1032
 term:
   id: mediadive.solution:5085
@@ -128,3 +129,8 @@ preparation_notes: "Mix components, bring to a boil and cool down under a CO2 (1
   \ N2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH to the range if necessary.\
   \ Autoclave under a CO2 gas atmosphere. Add the following solution to the medium\
   \ (separately autoclaved under N2): \n\nOriginal volume: 1050 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.927048Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014000'

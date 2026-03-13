@@ -1,3 +1,4 @@
+id: CultureMech:005649
 name: Columbia agar base
 original_name: Columbia agar base
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:5009
     label: Columbia agar base
-notes: 'Source: KOMODO ModelSEED | ID: 5009 | DSMZ Medium: 5009 (mediadive.medium:5009) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5009 | DSMZ Medium: 5009 (mediadive.medium:5009)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5009'
+- timestamp: '2026-03-13T06:19:34.929125Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005649'

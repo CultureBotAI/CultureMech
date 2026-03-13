@@ -1,3 +1,4 @@
+id: CultureMech:000429
 name: THERMOSIPHO MJ MEDIUM
 original_name: THERMOSIPHO MJ MEDIUM
 category: bacterial
@@ -222,12 +223,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, glucose, vitamins, cysteine and sulfide, then sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
-    the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins,
-    glucose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas (vitamins
-    are sterilized by filtration) and carbonate from a sterile anoxic stock solution prepared under 80%
-    N2 and 20% CO2 gas mixture. Adjust pH of complete medium to 6.0 - 6.5, if necessary.
+  description: Dissolve ingredients except carbonate, glucose, vitamins, cysteine
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add vitamins, glucose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas (vitamins
+    are sterilized by filtration) and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to
+    6.0 - 6.5, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -242,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.756835Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:18:55.206201Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000429'

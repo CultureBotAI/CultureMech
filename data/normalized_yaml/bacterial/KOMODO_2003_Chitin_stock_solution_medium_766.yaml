@@ -1,3 +1,4 @@
+id: CultureMech:004269
 name: Chitin stock solution (medium 766)
 original_name: Chitin stock solution (medium 766)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2003'
+- timestamp: '2026-03-13T06:19:26.431609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004269'

@@ -1,3 +1,4 @@
+id: CultureMech:000412
 name: SNA/5
 original_name: SNA/5
 category: bacterial
@@ -21,8 +22,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,  ensuring \r\n\
-    homogeneity, then dispense  as  required. Autoclave  at 15 psi and  slope  (tubes) \r\nprior to cooling."
+  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,\
+    \  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at 15 psi\
+    \ and  slope  (tubes) \r\nprior to cooling."
 - step_number: 2
   action: MIX
   description: Alternatively use "Ultramarine" Synthetica sea salts 17.5 g
@@ -33,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C97'
+- timestamp: '2026-03-13T06:18:55.026190Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000412'

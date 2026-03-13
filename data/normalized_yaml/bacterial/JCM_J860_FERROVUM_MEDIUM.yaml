@@ -1,3 +1,4 @@
+id: CultureMech:003206
 name: FERROVUM  MEDIUM
 original_name: FERROVUM  MEDIUM
 category: bacterial
@@ -109,11 +110,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix thoroughly, adjust pH to 2.3 with H2SO4 and autoclave. After cooling, add the following
-    solutions (filter-sterilized) to the medium:'
+  description: 'Mix thoroughly, adjust pH to 2.3 with H2SO4 and autoclave. After cooling,
+    add the following solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to 1.7.'
+  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to
+    1.7.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +123,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J860'
+- timestamp: '2026-03-13T06:19:18.567504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003206'

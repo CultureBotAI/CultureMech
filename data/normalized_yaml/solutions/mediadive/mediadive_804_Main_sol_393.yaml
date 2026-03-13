@@ -1,3 +1,4 @@
+id: CultureMech:015176
 preferred_term: Main sol. 393
 term:
   id: mediadive.solution:804
@@ -52,3 +53,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 5.6. Sterilize at 121°C for 15 min.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.144864Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015176'

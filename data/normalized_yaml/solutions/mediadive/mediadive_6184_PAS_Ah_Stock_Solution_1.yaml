@@ -1,3 +1,4 @@
+id: CultureMech:014883
 preferred_term: PAS Ah Stock Solution 1
 term:
   id: mediadive.solution:6184
@@ -20,3 +21,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''500''>500</s
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.906705Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014883'

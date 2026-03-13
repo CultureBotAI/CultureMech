@@ -1,3 +1,4 @@
+id: CultureMech:003045
 name: JCM MEDIUM No. 69
 original_name: JCM MEDIUM No. 69
 category: bacterial
@@ -28,4 +29,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J69'
+- timestamp: '2026-03-13T06:19:17.393291Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003045'
 high_metal: true

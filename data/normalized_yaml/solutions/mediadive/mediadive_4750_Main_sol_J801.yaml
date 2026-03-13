@@ -1,3 +1,4 @@
+id: CultureMech:013697
 preferred_term: Main sol. J801
 term:
   id: mediadive.solution:4750
@@ -93,3 +94,8 @@ preparation_notes: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7
   Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
   with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O solution
   and readjust pH to 7.0 - 7.2, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:32.916257Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013697'

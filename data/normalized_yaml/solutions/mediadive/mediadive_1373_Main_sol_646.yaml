@@ -1,3 +1,4 @@
+id: CultureMech:010857
 preferred_term: Main sol. 646
 term:
   id: mediadive.solution:1373
@@ -20,3 +21,8 @@ composition:
 preparation_notes: Prepare Blood Agar Base from Difco 0045 according to directions
   on the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
   defibrinated rabbit blood or sheep blood, mix well.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.957542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010857'

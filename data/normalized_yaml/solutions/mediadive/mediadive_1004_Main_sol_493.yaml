@@ -1,3 +1,4 @@
+id: CultureMech:010562
 preferred_term: Main sol. 493
 term:
   id: mediadive.solution:1004
@@ -140,3 +141,8 @@ preparation_notes: 'Dissolve ingredients except yeast extract and adjust pH to 3
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.398739Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010562'

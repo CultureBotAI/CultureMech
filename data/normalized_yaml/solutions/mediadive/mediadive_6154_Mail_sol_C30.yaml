@@ -1,3 +1,4 @@
+id: CultureMech:014855
 preferred_term: Mail sol. C30
 term:
   id: mediadive.solution:6154
@@ -19,3 +20,8 @@ preparation_notes: "This medium is made up in 2 parts which are autoclaved separ
   \ at 15 psi and \r\nmixed aseptically (1:1), when cool. This avoids precipitation.\n\
   Alternatively,  use  17.5g  of  “Ultramarine  Synthetica” sea  salts in\r\n500ml\
   \ of distilled water."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.796809Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014855'

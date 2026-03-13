@@ -1,3 +1,4 @@
+id: CultureMech:013366
 preferred_term: Main sol. J556
 term:
   id: mediadive.solution:4370
@@ -104,3 +105,8 @@ preparation_notes: "Mix components and autoclave. After cooling, add the followi
   \ medium into culture tubes (leave >80% volume as a gas phase) and seal with butyl\
   \ rubber stoppers.\nFinally, replace the gas phase with 20% methane and 5% CO2 in\
   \ air (by volume).\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:30.938558Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013366'

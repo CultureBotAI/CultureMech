@@ -1,3 +1,4 @@
+id: CultureMech:014960
 preferred_term: Main sol. 1630c
 term:
   id: mediadive.solution:6278
@@ -95,3 +96,8 @@ preparation_notes: "Incubate all used glass ware and magnetic stirring rods in 0
   \n- Trace element solution (Nitrososphaera)\r\n- FeNaEDTA solution\r\n- NaHCO3 solution\r\
   \n- HEPES buffer solution\r\n- NH4Cl solution\r\n- Sodiumpyruvate solution\nAdjust\
   \ pH to 7.5."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.166491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014960'

@@ -1,3 +1,4 @@
+id: CultureMech:011840
 preferred_term: Main sol. 1245
 term:
   id: mediadive.solution:2474
@@ -221,3 +222,8 @@ preparation_notes: "OTEB-medium is available from Anaerobe Systems (http://www.a
   \ prepared, stored and dispensed under oxygen-free conditions to prevent the formation\
   \ of oxidized products prior to use.\nFinal pH 7.0 +/- 0.2 at 25 degrees C.\nFinal\
   \ volume 7.0 ml +/- 0.7."
+curation_history:
+- timestamp: '2026-03-13T06:20:22.322051Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011840'

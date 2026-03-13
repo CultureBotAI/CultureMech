@@ -1,3 +1,4 @@
+id: CultureMech:001333
 name: PEDIOCOCCUS DAMNOSUS MEDIUM
 original_name: PEDIOCOCCUS DAMNOSUS MEDIUM
 category: bacterial
@@ -93,3 +94,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 231'
+- timestamp: '2026-03-13T06:19:03.242704Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001333'

@@ -1,3 +1,4 @@
+id: CultureMech:002398
 name: HLH MEDIUM
 original_name: HLH MEDIUM
 category: bacterial
@@ -133,7 +134,8 @@ preparation_steps:
   description: Adjust pH to 8.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'After autoclaving, add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'After autoclaving, add per liter the following solutions (autoclaved
+    or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -141,3 +143,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1231'
+- timestamp: '2026-03-13T06:19:13.008651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002398'

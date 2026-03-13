@@ -1,3 +1,4 @@
+id: CultureMech:015056
 preferred_term: Main sol. 1867
 term:
   id: mediadive.solution:6534
@@ -112,3 +113,8 @@ preparation_notes: 'Autoclave at 121 °C for 20 min.
 
   Prior to the cultivation supplement media aliquot with 30 mM acetate, 25 mM NO-3,
   and 1.75 g/L Na2CO3.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.570790Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015056'

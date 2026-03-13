@@ -1,3 +1,4 @@
+id: CultureMech:001922
 name: BOGORIELLA MEDIUM
 original_name: BOGORIELLA MEDIUM
 category: bacterial
@@ -65,8 +66,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: 'Note: sterilize dissolved sodium carbonate and sodium chloride separately and mix with
-    the other sterile components.'
+  description: 'Note: sterilize dissolved sodium carbonate and sodium chloride separately
+    and mix with the other sterile components.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +75,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 785'
+- timestamp: '2026-03-13T06:19:08.439890Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001922'

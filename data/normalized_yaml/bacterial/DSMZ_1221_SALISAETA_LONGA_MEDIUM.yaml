@@ -1,3 +1,4 @@
+id: CultureMech:000680
 name: SALISAETA LONGA MEDIUM
 original_name: SALISAETA LONGA MEDIUM
 category: bacterial
@@ -68,8 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates should be sealed
-    during incubation to prevent drying out.
+  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates
+    should be sealed during incubation to prevent drying out.
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +82,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:57.392217Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000680'

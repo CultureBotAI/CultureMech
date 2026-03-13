@@ -1,3 +1,4 @@
+id: CultureMech:001532
 name: HETEROTROPHIC MEDIUM H3P
 original_name: HETEROTROPHIC MEDIUM H3P
 category: bacterial
@@ -261,3 +262,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.004036Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001532'

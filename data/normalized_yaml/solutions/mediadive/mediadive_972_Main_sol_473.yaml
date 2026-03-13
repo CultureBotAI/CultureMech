@@ -1,3 +1,4 @@
+id: CultureMech:015307
 preferred_term: Main sol. 473
 term:
   id: mediadive.solution:972
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6.
   Add 5.0 ml sterile stock solution (see medium 462).
+curation_history:
+- timestamp: '2026-03-13T06:20:41.721357Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015307'

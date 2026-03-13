@@ -1,3 +1,4 @@
+id: CultureMech:014041
 preferred_term: Main sol. 248
 term:
   id: mediadive.solution:512
@@ -55,3 +56,8 @@ preparation_notes: 'Adjust pH to 7.2.
 
   Boil oat flakes for 20 min, filter through cheese cloth and adjust to 1000 ml. Add
   trace elements and agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.208113Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014041'

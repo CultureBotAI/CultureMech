@@ -1,3 +1,4 @@
+id: CultureMech:013397
 preferred_term: Main sol. 207
 term:
   id: mediadive.solution:440
@@ -138,3 +139,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.2. Gas atmosphere: 80% N2 + 20% CO2. Prepare a
   5% (w/v) solution of sodium sulfide anoxically under nitrogen and autoclave separately.
   Before use, neutralize by dropwise addition of 1 N HCl.'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.116408Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013397'

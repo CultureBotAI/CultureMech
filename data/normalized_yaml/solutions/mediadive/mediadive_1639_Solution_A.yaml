@@ -1,3 +1,4 @@
+id: CultureMech:011096
 preferred_term: Solution A
 term:
   id: mediadive.solution:1639
@@ -15,3 +16,8 @@ composition:
     label: dipotassium hydrogen phosphate
     confidence: 1.0
     match_type: exact_match
+curation_history:
+- timestamp: '2026-03-13T06:20:17.496511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011096'

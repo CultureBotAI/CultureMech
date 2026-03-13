@@ -1,3 +1,4 @@
+id: CultureMech:002535
 name: ACIDIANUS INFERNUS MEDIUM (B)
 original_name: ACIDIANUS INFERNUS MEDIUM (B)
 category: bacterial
@@ -120,12 +121,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except yeast extract, sulfur and Na2S x 9H2O, and autoclave under a H2-CO2
-    (80:20) atmosphere. Separately autoclave yeast extract as a 10% solution and Na2S x 9H2O as a 5% solution
-    under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically
-    add the yeast extract solution and sulfur to the medium under a H2-CO2 (80:20) atmosphere. Prior to
-    inoculation, add the sterile Na2S x 9H2O solution and adjust pH to 2.5 with sterile 1 N H2SO4. Pressurize
-    inoculated bottles to 100 kPa H2-CO2 (80:20).
+  description: Mix ingredients except yeast extract, sulfur and Na2S x 9H2O, and autoclave
+    under a H2-CO2 (80:20) atmosphere. Separately autoclave yeast extract as a 10%
+    solution and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam sulfur
+    for 3 hr on each of 3 successive days. Aseptically and anaerobically add the yeast
+    extract solution and sulfur to the medium under a H2-CO2 (80:20) atmosphere. Prior
+    to inoculation, add the sterile Na2S x 9H2O solution and adjust pH to 2.5 with
+    sterile 1 N H2SO4. Pressurize inoculated bottles to 100 kPa H2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J175'
+- timestamp: '2026-03-13T06:19:14.025173Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002535'

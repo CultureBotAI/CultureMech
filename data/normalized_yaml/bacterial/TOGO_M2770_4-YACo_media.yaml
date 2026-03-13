@@ -1,3 +1,4 @@
+id: CultureMech:009318
 name: 4-YACo media
 original_name: 4-YACo media
 category: bacterial
@@ -10,7 +11,8 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Properties: Undefined component'
 - preferred_term: maltose
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:18167
     label: alpha-maltose
@@ -65,7 +67,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: hydroxocobalamin acetate salt
-  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -85,7 +88,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: tryptophan (Sigma Aldrich)
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -109,13 +113,20 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.385977'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: maltose; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas; Added default concentration
-    for ingredient: Vitamin B7; Added default concentration for ingredient: Vitamin B6; Added default
-    concentration for ingredient: Vitamin B12; Added default concentration for ingredient: Tryptophan;
-    Added default concentration for ingredient: biotin (Sigma Aldrich, St Louis, MO, USA); Added default
-    concentration for ingredient: pyridoxal-phosphate (Sigma Aldrich); Added default concentration for
-    ingredient: pyridoxal-HCl (Sigma Aldrich); Added default concentration for ingredient: hydroxocobalamin
-    acetate salt; Added default concentration for ingredient: hydroxocobalamin hydrochloride; Added default
-    concentration for ingredient: methylcobalamin; Added default concentration for ingredient: cyanocobalamin
-    (Sigma Aldrich); Added default concentration for ingredient: tryptophan (Sigma Aldrich)'
+  notes: 'Added default concentration for ingredient: maltose; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: Vitamin B7; Added default
+    concentration for ingredient: Vitamin B6; Added default concentration for ingredient:
+    Vitamin B12; Added default concentration for ingredient: Tryptophan; Added default
+    concentration for ingredient: biotin (Sigma Aldrich, St Louis, MO, USA); Added
+    default concentration for ingredient: pyridoxal-phosphate (Sigma Aldrich); Added
+    default concentration for ingredient: pyridoxal-HCl (Sigma Aldrich); Added default
+    concentration for ingredient: hydroxocobalamin acetate salt; Added default concentration
+    for ingredient: hydroxocobalamin hydrochloride; Added default concentration for
+    ingredient: methylcobalamin; Added default concentration for ingredient: cyanocobalamin
+    (Sigma Aldrich); Added default concentration for ingredient: tryptophan (Sigma
+    Aldrich)'
+- timestamp: '2026-03-13T06:20:05.596711Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009318'

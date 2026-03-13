@@ -1,3 +1,4 @@
+id: CultureMech:001005
 name: HALOLAMINA MEDIUM (NOM-3)
 original_name: HALOLAMINA MEDIUM (NOM-3)
 category: bacterial
@@ -114,4 +115,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1528'
+- timestamp: '2026-03-13T06:19:00.416345Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001005'
 high_metal: true

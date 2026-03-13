@@ -1,5 +1,7 @@
+id: CultureMech:007233
 name: '''Chemically Defined Fermentation Medium (45g glucose + 4g ammonium nitrate'
-original_name: '''Chemically Defined Fermentation Medium (45g glucose + 4g ammonium nitrate'
+original_name: '''Chemically Defined Fermentation Medium (45g glucose + 4g ammonium
+  nitrate'
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
@@ -84,14 +86,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:45.639660Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 333, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 333, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:47.061436Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007233'
 media_term:
   preferred_term: MediaDB Medium 333
   term:
     id: MEDIADB:333
     label: '''Chemically Defined Fermentation Medium (45g glucose + 4g ammonium nitrate'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

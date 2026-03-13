@@ -1,3 +1,4 @@
+id: CultureMech:007429
 name: M9 minimal medium with myo-inositol
 original_name: M9 minimal medium with myo-inositol
 category: bacterial
@@ -59,14 +60,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.345348Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 80, Reference: Mazumdar et al. (2014)
-    PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 80, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:49.010303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007429'
 media_term:
   preferred_term: MediaDB Medium 80
   term:
     id: MEDIADB:80
     label: M9 minimal medium with myo-inositol
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,3 +1,4 @@
+id: CultureMech:000679
 name: ACIDOSOMA MEDIUM
 original_name: ACIDOSOMA MEDIUM
 category: bacterial
@@ -118,3 +119,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1220'
+- timestamp: '2026-03-13T06:18:57.386800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000679'

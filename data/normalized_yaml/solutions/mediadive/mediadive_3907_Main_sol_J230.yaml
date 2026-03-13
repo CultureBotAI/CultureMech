@@ -1,3 +1,4 @@
+id: CultureMech:012975
 preferred_term: Main sol. J230
 term:
   id: mediadive.solution:3907
@@ -194,3 +195,8 @@ preparation_notes: 'Mix ingredients, except NaHCO3, methanol, cysteine x HCl and
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.669437Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012975'

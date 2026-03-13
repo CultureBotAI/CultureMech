@@ -1,3 +1,4 @@
+id: CultureMech:009296
 name: Dehalobacter Restrictus Medium (TCE)
 original_name: Dehalobacter Restrictus Medium (TCE)
 category: bacterial
@@ -359,6 +360,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 17 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:05.332859Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009296'
 high_metal: true
 solutions:
 - preferred_term: Solution A

@@ -1,3 +1,4 @@
+id: CultureMech:014632
 preferred_term: MCL Vitamin Stock Solution ***
 term:
   id: mediadive.solution:5786
@@ -44,3 +45,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''100''>100</s
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.742899Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014632'

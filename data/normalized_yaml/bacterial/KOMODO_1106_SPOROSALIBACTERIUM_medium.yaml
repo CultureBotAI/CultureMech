@@ -1,3 +1,4 @@
+id: CultureMech:003806
 name: SPOROSALIBACTERIUM medium
 original_name: SPOROSALIBACTERIUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1106
     label: SPOROSALIBACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1106 | DSMZ Medium: 1106 (mediadive.medium:1106) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1106 | DSMZ Medium: 1106 (mediadive.medium:1106)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -97,3 +99,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1106
+- timestamp: '2026-03-13T06:19:22.380294Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003806'

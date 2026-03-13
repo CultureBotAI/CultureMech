@@ -1,3 +1,4 @@
+id: CultureMech:005582
 name: YM-CATALASE medium
 original_name: YM-CATALASE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:469
     label: YM-CATALASE medium
-notes: 'Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -58,3 +60,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 469
+- timestamp: '2026-03-13T06:19:34.284737Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005582'

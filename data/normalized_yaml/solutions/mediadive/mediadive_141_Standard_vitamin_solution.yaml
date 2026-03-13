@@ -1,3 +1,4 @@
+id: CultureMech:010896
 preferred_term: Standard vitamin solution
 term:
   id: mediadive.solution:141
@@ -112,3 +113,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.214161Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010896'

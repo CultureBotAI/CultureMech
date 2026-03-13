@@ -1,3 +1,4 @@
+id: CultureMech:011806
 preferred_term: Main sol. 1221
 term:
   id: mediadive.solution:2428
@@ -114,3 +115,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media.
   Plates should be sealed during incubation to prevent drying out.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.054744Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011806'

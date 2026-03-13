@@ -1,3 +1,4 @@
+id: CultureMech:013470
 preferred_term: Main sol. J626
 term:
   id: mediadive.solution:4494
@@ -189,3 +190,8 @@ preparation_notes: Mix ingredients except glucose, sulfur and Na2S x 9H2O, and a
   successive days. Aseptically and anaerobically add glucose and sulfur to the medium.
   Prior to inoculation, add sterile Na2S x 9H2O solution and adjust pH to 7.5 with
   sterile 1 N H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.493024Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013470'

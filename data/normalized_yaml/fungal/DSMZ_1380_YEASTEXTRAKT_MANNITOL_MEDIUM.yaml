@@ -1,3 +1,4 @@
+id: CultureMech:010451
 name: YEASTEXTRAKT MANNITOL MEDIUM
 original_name: YEASTEXTRAKT MANNITOL MEDIUM
 category: fungal
@@ -62,3 +63,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1380'
+- timestamp: '2026-03-13T06:20:13.875281Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010451'

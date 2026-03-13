@@ -1,3 +1,4 @@
+id: CultureMech:014549
 preferred_term: Main sol. 1173
 term:
   id: mediadive.solution:5684
@@ -208,3 +209,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Final pH should be 7.6 ± 0.2 at 25°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.378921Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014549'

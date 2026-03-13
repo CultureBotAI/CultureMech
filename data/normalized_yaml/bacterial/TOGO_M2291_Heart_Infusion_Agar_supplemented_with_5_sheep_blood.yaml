@@ -1,3 +1,4 @@
+id: CultureMech:008877
 name: Heart Infusion Agar (supplemented with 5% sheep blood)
 original_name: Heart Infusion Agar (supplemented with 5% sheep blood)
 category: bacterial
@@ -35,5 +36,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.086029'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
-    Heart Infusion Agar (Difco)'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: Heart Infusion Agar (Difco)'
+- timestamp: '2026-03-13T06:20:00.957092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008877'

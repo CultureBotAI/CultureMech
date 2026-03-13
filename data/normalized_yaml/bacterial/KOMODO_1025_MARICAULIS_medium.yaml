@@ -1,3 +1,4 @@
+id: CultureMech:003537
 name: MARICAULIS medium
 original_name: MARICAULIS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1025
     label: MARICAULIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1025 | DSMZ Medium: 1025 (mediadive.medium:1025) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1025 | DSMZ Medium: 1025 (mediadive.medium:1025)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Sigma Sea salts
   concentration:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1025
+- timestamp: '2026-03-13T06:19:20.514490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003537'

@@ -1,3 +1,4 @@
+id: CultureMech:013400
 preferred_term: Solution A
 term:
   id: mediadive.solution:4415
@@ -116,3 +117,8 @@ preparation_notes: "Mix ingredients and adjust pH to 7.2. Distribute the solutio
   \ v/v), seal with butyl rubber stoppers and autoclave.\nTo complete medium, aseptically\
   \ add the following solutions to the medium (per 10 ml): \n\nOriginal volume: 1011\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.132288Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013400'

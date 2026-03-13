@@ -1,3 +1,4 @@
+id: CultureMech:005999
 name: CYC-MEDIUM (modified following Cross and Attwell,1973)
 original_name: CYC-MEDIUM (modified following Cross and Attwell,1973)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:550
     label: CYC-MEDIUM (modified following Cross and Attwell,1973)
-notes: 'Source: KOMODO ModelSEED | ID: 550 | DSMZ Medium: 550 (mediadive.medium:550) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 550 | DSMZ Medium: 550 (mediadive.medium:550)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Czapek Dox agar
   term:
@@ -54,3 +56,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 550
+- timestamp: '2026-03-13T06:19:37.528255Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005999'

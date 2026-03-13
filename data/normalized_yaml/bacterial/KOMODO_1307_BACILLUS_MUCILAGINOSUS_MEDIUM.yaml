@@ -1,3 +1,4 @@
+id: CultureMech:004062
 name: BACILLUS MUCILAGINOSUS MEDIUM
 original_name: BACILLUS MUCILAGINOSUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1307
     label: BACILLUS MUCILAGINOSUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1307 | DSMZ Medium: 1307 (mediadive.medium:1307) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1307 | DSMZ Medium: 1307 (mediadive.medium:1307)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Sucrose
   term:
@@ -57,3 +59,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1307
+- timestamp: '2026-03-13T06:19:24.524338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004062'

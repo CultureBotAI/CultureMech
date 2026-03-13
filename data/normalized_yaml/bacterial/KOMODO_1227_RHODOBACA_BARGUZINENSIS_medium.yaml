@@ -1,3 +1,4 @@
+id: CultureMech:003982
 name: RHODOBACA BARGUZINENSIS medium
 original_name: RHODOBACA BARGUZINENSIS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1227
     label: RHODOBACA BARGUZINENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1227 | DSMZ Medium: 1227 (mediadive.medium:1227) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1227 | DSMZ Medium: 1227 (mediadive.medium:1227)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -158,3 +160,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1227
+- timestamp: '2026-03-13T06:19:23.855623Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003982'

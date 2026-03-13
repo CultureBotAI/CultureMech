@@ -1,3 +1,4 @@
+id: CultureMech:012884
 preferred_term: Main sol. J153
 term:
   id: mediadive.solution:3806
@@ -127,3 +128,8 @@ preparation_notes: 'Autoclave at 110C for 15 min.
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.133331Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012884'

@@ -1,3 +1,4 @@
+id: CultureMech:013351
 preferred_term: Solution A
 term:
   id: mediadive.solution:4350
@@ -128,3 +129,8 @@ preparation_notes: 'Mix components and adjust pH to 9.0 with 10 N KOH. Autoclave
 
 
   Original volume: 710 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.838269Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013351'

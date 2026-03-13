@@ -1,3 +1,4 @@
+id: CultureMech:002506
 name: OATMEAL AGAR
 original_name: OATMEAL AGAR
 category: bacterial
@@ -24,8 +25,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath, stirring occasionally,
-    for 1 hr. Filter through cloth, make up to 1.0 L, add agar and boil till dissolved.
+  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath,
+    stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add agar
+    and boil till dissolved.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J148'
+- timestamp: '2026-03-13T06:19:13.871988Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002506'

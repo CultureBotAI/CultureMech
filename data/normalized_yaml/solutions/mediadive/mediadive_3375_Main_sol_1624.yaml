@@ -1,3 +1,4 @@
+id: CultureMech:012521
 preferred_term: Main sol. 1624
 term:
   id: mediadive.solution:3375
@@ -74,3 +75,8 @@ preparation_notes: 'pH 5.0
 
 
   Original volume: 890 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.334994Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012521'

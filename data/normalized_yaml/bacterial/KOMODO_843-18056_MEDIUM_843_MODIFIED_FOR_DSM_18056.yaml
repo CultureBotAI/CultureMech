@@ -1,3 +1,4 @@
+id: CultureMech:006646
 name: MEDIUM 843 MODIFIED FOR DSM 18056
 original_name: MEDIUM 843 MODIFIED FOR DSM 18056
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:843_18056
     label: MEDIUM 843 MODIFIED FOR DSM 18056
-notes: 'Source: KOMODO ModelSEED | ID: 843_18056 | DSMZ Medium: 843 (mediadive.medium:843) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 843_18056 | DSMZ Medium: 843 (mediadive.medium:843)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -339,3 +340,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 843
+- timestamp: '2026-03-13T06:19:42.636384Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006646'

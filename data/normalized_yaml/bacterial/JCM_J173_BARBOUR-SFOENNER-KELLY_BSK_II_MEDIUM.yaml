@@ -1,3 +1,4 @@
+id: CultureMech:002533
 name: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
 original_name: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
 category: bacterial
@@ -80,9 +81,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through a 0.22 ï¿½m filter (Millipore).
-    Autoclave Solution B, then mix Solutions A and B, and add 40 ml of heat-inactivated (56C, 45 min)
-    sterile rabbit serum (Pel-Freez Biologicals).
+  description: Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through
+    a 0.22 ï¿½m filter (Millipore). Autoclave Solution B, then mix Solutions A and
+    B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez
+    Biologicals).
 applications:
 - Microbial cultivation
 curation_history:
@@ -90,3 +92,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J173'
+- timestamp: '2026-03-13T06:19:14.011366Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002533'

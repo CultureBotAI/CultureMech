@@ -1,3 +1,4 @@
+id: CultureMech:005196
 name: DESULFOVIBRIO GIGANTEUS MEDIUM
 original_name: DESULFOVIBRIO GIGANTEUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:400
     label: DESULFOVIBRIO GIGANTEUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 400 | DSMZ Medium: 400 (mediadive.medium:400) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 400 | DSMZ Medium: 400 (mediadive.medium:400)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 400'
+- timestamp: '2026-03-13T06:19:30.973178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005196'

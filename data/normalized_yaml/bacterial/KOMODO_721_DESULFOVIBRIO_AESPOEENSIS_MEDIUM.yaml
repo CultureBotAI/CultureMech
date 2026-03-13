@@ -1,3 +1,4 @@
+id: CultureMech:006364
 name: DESULFOVIBRIO AESPOEENSIS MEDIUM
 original_name: DESULFOVIBRIO AESPOEENSIS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:721
     label: DESULFOVIBRIO AESPOEENSIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 721 | DSMZ Medium: 721 (mediadive.medium:721) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 721 | DSMZ Medium: 721 (mediadive.medium:721)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 721'
+- timestamp: '2026-03-13T06:19:40.129025Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006364'

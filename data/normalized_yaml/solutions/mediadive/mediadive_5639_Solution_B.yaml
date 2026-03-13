@@ -1,3 +1,4 @@
+id: CultureMech:014507
 preferred_term: Solution B
 term:
   id: mediadive.solution:5639
@@ -31,3 +32,8 @@ preparation_notes: 'Prepared under N2,autoclave 121°C, 15 min
 
 
   Original volume: 30 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.152633Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014507'

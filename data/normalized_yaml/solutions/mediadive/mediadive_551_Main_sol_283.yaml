@@ -1,3 +1,4 @@
+id: CultureMech:014410
 preferred_term: Main sol. 283
 term:
   id: mediadive.solution:551
@@ -234,3 +235,8 @@ preparation_notes: 'Prepare the medium without sulfur, yeast extract and sodium 
 
 
   Original volume: 1025 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.648538Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014410'

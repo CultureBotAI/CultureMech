@@ -1,3 +1,4 @@
+id: CultureMech:007481
 name: '257'
 original_name: '257'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 28 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.215244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007481'
 solutions:
 - preferred_term: Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4·7H2O0.24gCaSO4·2H2O0.17gSodium
     glutamate1gNa2CO35gNaCl250gDistilled water, make up to1LAgar (if needed)*20gAdjust

@@ -1,3 +1,4 @@
+id: CultureMech:011837
 preferred_term: Main sol. 1243
 term:
   id: mediadive.solution:2466
@@ -148,3 +149,8 @@ preparation_notes: 'First dissolve ferric citrate by heating the water. After co
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.297250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011837'

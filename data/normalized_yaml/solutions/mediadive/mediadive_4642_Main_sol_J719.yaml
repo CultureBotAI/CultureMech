@@ -1,3 +1,4 @@
+id: CultureMech:013601
 preferred_term: Main sol. J719
 term:
   id: mediadive.solution:4642
@@ -69,3 +70,8 @@ preparation_notes: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O,
   Separately autoclave 5% L-cysteine x HCl x H2O solution and 5% Na2S x 9H2O solution
   under a N2 gas atmosphere. Prior to inoculation, aseptically and anaerobically add
   L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:32.271368Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013601'

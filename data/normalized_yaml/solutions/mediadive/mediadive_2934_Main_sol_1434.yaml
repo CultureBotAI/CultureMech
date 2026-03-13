@@ -1,3 +1,4 @@
+id: CultureMech:012187
 preferred_term: Main sol. 1434
 term:
   id: mediadive.solution:2934
@@ -105,3 +106,8 @@ preparation_notes: 'pH 7.0
   to headspace ratio of 1:5 to 1:10. Adjust pH to 7.0 and sterilize. Allow to cool
   to about 45°C before adding 1mL filter-sterilized Vitamin B12 stock solution (0.1mg/100ml)
   and 10 mL filter-sterilized methanol per litre medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.428661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012187'

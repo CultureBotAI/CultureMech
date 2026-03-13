@@ -1,3 +1,4 @@
+id: CultureMech:002639
 name: NUTRIENT-METHANOL AGAR
 original_name: NUTRIENT-METHANOL AGAR
 category: bacterial
@@ -42,7 +43,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add methanol aseptically to the autoclaved medium and mix well before dispensation.
+  description: Add methanol aseptically to the autoclaved medium and mix well before
+    dispensation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -50,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J281'
+- timestamp: '2026-03-13T06:19:14.714793Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002639'

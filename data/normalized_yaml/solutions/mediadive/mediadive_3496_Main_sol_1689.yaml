@@ -1,3 +1,4 @@
+id: CultureMech:012609
 preferred_term: Main sol. 1689
 term:
   id: mediadive.solution:3496
@@ -105,3 +106,8 @@ preparation_notes: "Boil the medium for 5 min and cool on ice under N2 (100%). D
   \ seconds.\nAutoclave at 121° for 15 min. After autoclaving add 0.01 ml of filter-sterilized\
   \ vitamin solution per 10 ml media.\nInject 3 ml of sterile air with sterile syringe\
   \ into each Hungate tube before inoculation."
+curation_history:
+- timestamp: '2026-03-13T06:20:26.844418Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012609'

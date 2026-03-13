@@ -1,3 +1,4 @@
+id: CultureMech:006095
 name: COLBY AND ZATHMAN MEDIUM
 original_name: COLBY AND ZATHMAN MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:606
     label: COLBY AND ZATHMAN MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 606 | DSMZ Medium: 606 (mediadive.medium:606) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 606 | DSMZ Medium: 606 (mediadive.medium:606)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -127,3 +129,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 606
+- timestamp: '2026-03-13T06:19:38.223249Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006095'

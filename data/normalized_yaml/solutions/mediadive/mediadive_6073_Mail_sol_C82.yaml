@@ -1,3 +1,4 @@
+id: CultureMech:014790
 preferred_term: Mail sol. C82
 term:
   id: mediadive.solution:6073
@@ -18,3 +19,8 @@ composition:
 preparation_notes: "Bring PJ (Mail sol. C 76) to the boil then add rye grass.  Continue\
   \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized\
   \ water.  Filter through GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.554422Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014790'

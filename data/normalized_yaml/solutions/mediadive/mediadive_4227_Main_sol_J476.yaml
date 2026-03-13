@@ -1,3 +1,4 @@
+id: CultureMech:013244
 preferred_term: Main sol. J476
 term:
   id: mediadive.solution:4227
@@ -77,3 +78,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Mix components and autoclave. After cooling down to room temperature,
   adjust pH to 9.0 with 20% (w/v) Na2CO3 (sterilized by autoclaving).
+curation_history:
+- timestamp: '2026-03-13T06:20:30.274889Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013244'

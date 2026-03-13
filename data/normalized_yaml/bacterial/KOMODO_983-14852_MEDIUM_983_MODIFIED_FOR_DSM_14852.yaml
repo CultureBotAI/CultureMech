@@ -1,3 +1,4 @@
+id: CultureMech:006944
 name: MEDIUM 983 MODIFIED FOR DSM 14852
 original_name: MEDIUM 983 MODIFIED FOR DSM 14852
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:983_14852
     label: MEDIUM 983 MODIFIED FOR DSM 14852
-notes: 'Source: KOMODO ModelSEED | ID: 983_14852 | DSMZ Medium: 983 (mediadive.medium:983) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 983_14852 | DSMZ Medium: 983 (mediadive.medium:983)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -120,4 +121,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 983
+- timestamp: '2026-03-13T06:19:45.194789Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006944'
 ph_value: 7.6

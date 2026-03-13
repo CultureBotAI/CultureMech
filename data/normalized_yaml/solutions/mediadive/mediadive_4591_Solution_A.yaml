@@ -1,3 +1,4 @@
+id: CultureMech:013555
 preferred_term: Solution A
 term:
   id: mediadive.solution:4591
@@ -188,3 +189,8 @@ preparation_notes: "Mix components except NaHCO3, bring to a boil for several se
   \ distribute the medium into culture vessels under the same gas mixture. Seal with\
   \ butyl rubber stoppers and autoclave. Finally, add per liter the following sterile\
   \ solutions (autoclaved or *filter-sterilized): \n\nOriginal volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.004375Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013555'

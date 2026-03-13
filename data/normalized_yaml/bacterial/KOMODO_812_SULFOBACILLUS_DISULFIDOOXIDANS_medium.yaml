@@ -1,3 +1,4 @@
+id: CultureMech:006534
 name: SULFOBACILLUS DISULFIDOOXIDANS medium
 original_name: SULFOBACILLUS DISULFIDOOXIDANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:812
     label: SULFOBACILLUS DISULFIDOOXIDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 812 | DSMZ Medium: 812 (mediadive.medium:812) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 812 | DSMZ Medium: 812 (mediadive.medium:812)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 812
+- timestamp: '2026-03-13T06:19:41.617957Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006534'

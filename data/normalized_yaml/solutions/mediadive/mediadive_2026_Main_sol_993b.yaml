@@ -1,3 +1,4 @@
+id: CultureMech:011429
 preferred_term: Main sol. 993b
 term:
   id: mediadive.solution:2026
@@ -29,3 +30,8 @@ composition:
     match_type: exact_match
 preparation_notes: Prepare medium 993 supplemented with yeast extract (0.5 %) and
   KCl (10%). pH of the medium should be 7.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.620910Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011429'

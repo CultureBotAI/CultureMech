@@ -1,3 +1,4 @@
+id: CultureMech:001092
 name: METHYLOCEANIBACTER MEDIUM (NaCl-dANMS)
 original_name: METHYLOCEANIBACTER MEDIUM (NaCl-dANMS)
 category: bacterial
@@ -166,8 +167,8 @@ preparation_steps:
   description: Dilute 20 ml of solution 1 to 700ml with distilled water.
 - step_number: 2
   action: MIX
-  description: "Add 100mL of solution 5, 50 mL of solution 8, 20mL of solution 6 and 7 and 10 mL of\r\n\
-    solution 3."
+  description: "Add 100mL of solution 5, 50 mL of solution 8, 20mL of solution 6 and\
+    \ 7 and 10 mL of\r\nsolution 3."
 - step_number: 3
   action: MIX
   description: Add 1ml trace element solution.
@@ -194,8 +195,8 @@ preparation_steps:
   description: May be stored at 4°C in the dark
 - step_number: 11
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700 ml of distilled water,
-    and then make up to 1 litre
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of distilled water, and then make up to 1 litre
 applications:
 - Microbial cultivation
 curation_history:
@@ -206,4 +207,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.420022Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:01.125022Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001092'

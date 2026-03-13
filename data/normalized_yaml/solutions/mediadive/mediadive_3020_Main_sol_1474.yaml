@@ -1,3 +1,4 @@
+id: CultureMech:012251
 preferred_term: Main sol. 1474
 term:
   id: mediadive.solution:3020
@@ -128,3 +129,8 @@ preparation_notes: Prepare the liquid medium without Vitamin solution, Cysteine-
   Hungate tubes or serum bottles under gassing with N2:CO2 (80:20 v/v). Sterilize
   by autoclaving. Before inoculation add from sterile stock solutions Cysteine-HCl
   x H2O, Vitamin solution (filter sterilized) and Na2S x 9 H2O.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.770624Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012251'

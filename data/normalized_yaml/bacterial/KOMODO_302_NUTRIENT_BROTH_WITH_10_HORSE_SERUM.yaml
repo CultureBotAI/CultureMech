@@ -1,3 +1,4 @@
+id: CultureMech:004809
 name: NUTRIENT BROTH WITH 10% HORSE SERUM
 original_name: NUTRIENT BROTH WITH 10% HORSE SERUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:302
     label: NUTRIENT BROTH WITH 10% HORSE SERUM
-notes: 'Source: KOMODO ModelSEED | ID: 302 | DSMZ Medium: 302 (mediadive.medium:302) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 302 | DSMZ Medium: 302 (mediadive.medium:302)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -41,4 +43,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 302
+- timestamp: '2026-03-13T06:19:28.834225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004809'
 ph_value: 7.0

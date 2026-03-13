@@ -1,3 +1,4 @@
+id: CultureMech:002156
 name: 1/2 YTSS MEDIUM
 original_name: 1/2 YTSS MEDIUM
 category: bacterial
@@ -45,3 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 974'
+- timestamp: '2026-03-13T06:19:10.811082Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002156'

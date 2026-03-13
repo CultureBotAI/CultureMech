@@ -1,3 +1,4 @@
+id: CultureMech:010489
 name: CASAMINO ACIDS-PEPTONE-CZAPEK'S AGAR
 original_name: CASAMINO ACIDS-PEPTONE-CZAPEK'S AGAR
 category: fungal
@@ -74,3 +75,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:14.033303Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010489'

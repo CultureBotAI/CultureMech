@@ -1,3 +1,4 @@
+id: CultureMech:012234
 preferred_term: Bicarbonate solution
 term:
   id: mediadive.solution:29
@@ -32,3 +33,8 @@ preparation_notes: 'Bubble with CO2 and filter sterilize into sterile, gas-tight
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.678390Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012234'

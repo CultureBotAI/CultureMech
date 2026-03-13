@@ -1,3 +1,4 @@
+id: CultureMech:007118
 name: Gotz minimal medium with mannitol
 original_name: Gotz minimal medium with mannitol
 category: bacterial
@@ -113,14 +114,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.650872Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 223, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 223, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.291233Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007118'
 media_term:
   preferred_term: MediaDB Medium 223
   term:
     id: MEDIADB:223
     label: Gotz minimal medium with mannitol
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

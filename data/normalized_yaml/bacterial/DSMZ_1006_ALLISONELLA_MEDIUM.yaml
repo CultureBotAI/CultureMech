@@ -1,3 +1,4 @@
+id: CultureMech:000422
 name: ALLISONELLA MEDIUM
 original_name: ALLISONELLA MEDIUM
 category: bacterial
@@ -138,10 +139,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, fatty acid mixture and cysteine), bring medium
-    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add solid carbonate, fatty
-    acid mixture and cysteine and adjust pH to 6.0. Dispense medium under 100% CO2 gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Adjust pH of complete medium to 6.0, if necessary.
+  description: Dissolve ingredients (except carbonate, fatty acid mixture and cysteine),
+    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
+    Add solid carbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense
+    medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Adjust pH of complete medium to 6.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1006'
+- timestamp: '2026-03-13T06:18:55.131266Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000422'

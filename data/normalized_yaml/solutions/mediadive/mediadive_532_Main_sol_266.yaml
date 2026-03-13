@@ -1,3 +1,4 @@
+id: CultureMech:014242
 preferred_term: Main sol. 266
 term:
   id: mediadive.solution:532
@@ -214,3 +215,8 @@ preparation_notes: 'Adjust final pH to 5.8.
   extract (20 ml of 10% w/v solution)-boiled for a few minutes not autoclaved; sulfur
   (10 g)-sterilized by steaming for 3 h on each of three successive days; Na2S x 9
   H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.545757Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014242'

@@ -1,3 +1,4 @@
+id: CultureMech:010479
 name: CZAPEK PEPTONE AGAR
 original_name: CZAPEK PEPTONE AGAR
 category: fungal
@@ -79,3 +80,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 83'
+- timestamp: '2026-03-13T06:20:13.994070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010479'

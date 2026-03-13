@@ -1,3 +1,4 @@
+id: CultureMech:002943
 name: CLOSTRIDIUM THERMOCELLUM MEDIUM
 original_name: CLOSTRIDIUM THERMOCELLUM MEDIUM
 category: bacterial
@@ -94,8 +95,9 @@ preparation_steps:
   description: 'Gas atmosphere: 95% N2 + 5% CO2.'
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Comment: Cellulose can be replaced with 5.0 g/L cellobiose. In this case, cellobiose is
-    filter-sterilized separately as 10% (w/v) solution in distilled water.'
+  description: 'Comment: Cellulose can be replaced with 5.0 g/L cellobiose. In this
+    case, cellobiose is filter-sterilized separately as 10% (w/v) solution in distilled
+    water.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +105,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J595'
+- timestamp: '2026-03-13T06:19:16.728338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002943'

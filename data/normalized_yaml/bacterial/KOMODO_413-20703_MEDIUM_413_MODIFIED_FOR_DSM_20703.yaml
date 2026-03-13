@@ -1,3 +1,4 @@
+id: CultureMech:005237
 name: MEDIUM 413 MODIFIED FOR DSM 20703
 original_name: MEDIUM 413 MODIFIED FOR DSM 20703
 category: bacterial
@@ -115,4 +116,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.249372Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005237'
 ph_value: 7.0

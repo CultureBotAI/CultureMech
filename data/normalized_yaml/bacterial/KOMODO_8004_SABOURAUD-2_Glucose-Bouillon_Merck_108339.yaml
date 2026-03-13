@@ -1,3 +1,4 @@
+id: CultureMech:006517
 name: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
 original_name: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:8004
     label: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
-notes: 'Source: KOMODO ModelSEED | ID: 8004 | DSMZ Medium: 8004 (mediadive.medium:8004) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 8004 | DSMZ Medium: 8004 (mediadive.medium:8004)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 8004'
+- timestamp: '2026-03-13T06:19:41.495412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006517'

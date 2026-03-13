@@ -1,3 +1,4 @@
+id: CultureMech:011717
 preferred_term: Main sol. 1166a
 term:
   id: mediadive.solution:2338
@@ -158,3 +159,8 @@ preparation_notes: 'Dissolve sodium chloride, hydrogenphosphate and sodium sulfa
 
 
   Original volume: 1003 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.507700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011717'

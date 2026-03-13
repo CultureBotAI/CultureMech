@@ -1,3 +1,4 @@
+id: CultureMech:015116
 preferred_term: Main sol. 370
 term:
   id: mediadive.solution:710
@@ -67,3 +68,8 @@ preparation_notes: "Adjust pH to 7.0 .\nBoil the medium for few minutes under ni
   \ gas. Add sodium ascorbate (0.5 g) and\r\ncontinue to bubble with nitrogen gas.\n\
   Adjust pH to 6.8.\nFill immediately about 10 ml medium in 15 mL hungate tubes (with\
   \ rubber septum).\nAutoclave at 121 °C for 15 min."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.838826Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015116'

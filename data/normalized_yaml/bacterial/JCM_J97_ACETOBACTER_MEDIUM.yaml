@@ -1,3 +1,4 @@
+id: CultureMech:003329
 name: ACETOBACTER MEDIUM
 original_name: ACETOBACTER MEDIUM
 category: bacterial
@@ -42,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J97'
+- timestamp: '2026-03-13T06:19:19.543485Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003329'

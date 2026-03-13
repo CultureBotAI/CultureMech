@@ -1,3 +1,4 @@
+id: CultureMech:003814
 name: CALDITERRIVIBRIO MEDIUM
 original_name: CALDITERRIVIBRIO MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1112
     label: CALDITERRIVIBRIO MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1112 | DSMZ Medium: 1112 (mediadive.medium:1112) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1112 | DSMZ Medium: 1112 (mediadive.medium:1112)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -236,4 +238,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.577030Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:22.439953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003814'

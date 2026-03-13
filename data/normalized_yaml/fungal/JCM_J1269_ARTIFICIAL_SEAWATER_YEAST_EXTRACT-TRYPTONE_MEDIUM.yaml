@@ -1,3 +1,4 @@
+id: CultureMech:010499
 name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
 original_name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
 category: fungal
@@ -99,8 +100,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Distribute the medium in culture vessels under a N2 gas atmosphere, seal
-    with butyl rubber stoppers and autoclave.
+  description: Adjust pH to 7.0. Distribute the medium in culture vessels under a
+    N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,3 +109,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1269'
+- timestamp: '2026-03-13T06:20:14.087528Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010499'

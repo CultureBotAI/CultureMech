@@ -1,3 +1,4 @@
+id: CultureMech:014798
 preferred_term: Mail sol. C105
 term:
   id: mediadive.solution:6096
@@ -18,3 +19,8 @@ composition:
 preparation_notes: "Dispense nutrient and vitamin solutions separately into 10 ml\
   \ and 1 ml respectively \r\nand autoclave at 15 psi for 15 minutes.  Add an aliquot\
   \ of each aseptically to 10\r\nlitres of sterilised seawater."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.578646Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014798'

@@ -1,3 +1,4 @@
+id: CultureMech:006369
 name: RHIZOMONAS SUBERIFACIENS medium
 original_name: RHIZOMONAS SUBERIFACIENS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:726
     label: RHIZOMONAS SUBERIFACIENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 726 | DSMZ Medium: 726 (mediadive.medium:726) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 726 | DSMZ Medium: 726 (mediadive.medium:726)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Enzymatic digest of casein
   concentration:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 726
+- timestamp: '2026-03-13T06:19:40.149012Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006369'

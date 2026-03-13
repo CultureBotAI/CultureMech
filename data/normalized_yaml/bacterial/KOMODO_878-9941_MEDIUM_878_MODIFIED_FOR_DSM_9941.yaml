@@ -1,3 +1,4 @@
+id: CultureMech:006716
 name: MEDIUM 878 MODIFIED FOR DSM 9941
 original_name: MEDIUM 878 MODIFIED FOR DSM 9941
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:878_9941
     label: MEDIUM 878 MODIFIED FOR DSM 9941
-notes: 'Source: KOMODO ModelSEED | ID: 878_9941 | DSMZ Medium: 878 (mediadive.medium:878) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 878_9941 | DSMZ Medium: 878 (mediadive.medium:878)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -127,4 +129,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 878
+- timestamp: '2026-03-13T06:19:43.292330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006716'
 ph_value: 7.2

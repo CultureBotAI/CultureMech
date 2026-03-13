@@ -1,3 +1,4 @@
+id: CultureMech:004750
 name: THIORHODOCOCCUS medium II
 original_name: THIORHODOCOCCUS medium II
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:28b
     label: THIORHODOCOCCUS medium II
-notes: 'Source: KOMODO ModelSEED | ID: 28b | DSMZ Medium: 28b (mediadive.medium:28b) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 28b | DSMZ Medium: 28b (mediadive.medium:28b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -50,3 +52,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 28
+- timestamp: '2026-03-13T06:19:28.508902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004750'

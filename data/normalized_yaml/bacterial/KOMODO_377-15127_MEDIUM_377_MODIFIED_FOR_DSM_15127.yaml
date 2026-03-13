@@ -1,3 +1,4 @@
+id: CultureMech:005111
 name: MEDIUM 377 MODIFIED FOR DSM 15127
 original_name: MEDIUM 377 MODIFIED FOR DSM 15127
 category: bacterial
@@ -225,4 +226,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:30.192070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005111'
 ph_value: 6.8

@@ -1,3 +1,4 @@
+id: CultureMech:002354
 name: CHLOROFLEXUS MEDIUM
 original_name: CHLOROFLEXUS MEDIUM
 category: bacterial
@@ -193,8 +194,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: After autoclaving, add 1 ml of 5% Na2S x 9H2O solution (autoclaved), 1 ml of 5% CaCl2 x
-    2H2O solution (autoclaved) and 10 ml of 3% NaHCO3 solution (filter-sterilized). Adjust pH to 7.5.
+  description: After autoclaving, add 1 ml of 5% Na2S x 9H2O solution (autoclaved),
+    1 ml of 5% CaCl2 x 2H2O solution (autoclaved) and 10 ml of 3% NaHCO3 solution
+    (filter-sterilized). Adjust pH to 7.5.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3 with HCl.
@@ -205,3 +207,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1183'
+- timestamp: '2026-03-13T06:19:12.644511Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002354'

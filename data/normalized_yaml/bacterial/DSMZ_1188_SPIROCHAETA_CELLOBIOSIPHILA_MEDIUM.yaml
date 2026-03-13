@@ -1,3 +1,4 @@
+id: CultureMech:000630
 name: SPIROCHAETA CELLOBIOSIPHILA MEDIUM
 original_name: SPIROCHAETA CELLOBIOSIPHILA MEDIUM
 category: bacterial
@@ -131,12 +132,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve compounds except cellobiose, adjust pH to 7.5 and dispense medium under air atmosphere
-    into Hungate-type tubes or serum vials to 30% volume and autoclave. Add cellobiose after autoclaving
-    from a stock solution sterilized by filtration.
+  description: Dissolve compounds except cellobiose, adjust pH to 7.5 and dispense
+    medium under air atmosphere into Hungate-type tubes or serum vials to 30% volume
+    and autoclave. Add cellobiose after autoclaving from a stock solution sterilized
+    by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -144,3 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1188'
+- timestamp: '2026-03-13T06:18:56.933023Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000630'

@@ -1,3 +1,4 @@
+id: CultureMech:011908
 preferred_term: Main sol. 1281
 term:
   id: mediadive.solution:2569
@@ -140,3 +141,8 @@ preparation_notes: 'Boil 10 minutes under N2 stream, cool to room temperature. A
   pH to 7.3 and autoclave for 20 minutes at 121°C. After autoclaving add sterile,
   anoxic solutions marked with #. For preparation of solid medium add 15.0 g agar
   per liter.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.717545Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011908'

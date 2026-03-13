@@ -1,3 +1,4 @@
+id: CultureMech:003305
 name: DESULFOHALOBIUM UTAHENSE MEDIUM
 original_name: DESULFOHALOBIUM UTAHENSE MEDIUM
 category: bacterial
@@ -233,4 +234,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J957'
+- timestamp: '2026-03-13T06:19:19.359805Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003305'
 high_metal: true

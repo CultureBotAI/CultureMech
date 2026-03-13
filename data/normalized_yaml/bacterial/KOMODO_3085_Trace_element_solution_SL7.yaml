@@ -1,3 +1,4 @@
+id: CultureMech:004871
 name: Trace element solution SL7
 original_name: Trace element solution SL7
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3085
     label: Trace element solution SL7
-notes: 'Source: KOMODO ModelSEED | ID: 3085 | DSMZ Medium: 3085 (mediadive.medium:3085) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3085 | DSMZ Medium: 3085 (mediadive.medium:3085)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3085'
+- timestamp: '2026-03-13T06:19:28.931005Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004871'

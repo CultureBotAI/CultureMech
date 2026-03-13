@@ -1,3 +1,4 @@
+id: CultureMech:015331
 preferred_term: Solution A
 term:
   id: mediadive.solution:99
@@ -116,3 +117,8 @@ preparation_notes: 'Alternatively to filtered aged sea water bottled water from 
 
 
   Original volume: 980 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.891023Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015331'

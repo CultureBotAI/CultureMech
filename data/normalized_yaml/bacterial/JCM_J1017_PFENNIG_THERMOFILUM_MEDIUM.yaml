@@ -1,3 +1,4 @@
+id: CultureMech:002200
 name: PFENNIG THERMOFILUM MEDIUM
 original_name: PFENNIG THERMOFILUM MEDIUM
 category: bacterial
@@ -218,17 +219,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.0 and autoclave under a N2 gas atmosphere. Before
-    inoculation, add per liter the following solution (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Mix components thoroughly, adjust pH to 6.0 and autoclave under a
+    N2 gas atmosphere. Before inoculation, add per liter the following solution (autoclaved
+    and stored under a N2 gas atmosphere):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Cultivate <I>Desulfurococcus kamchatkensis</I> strain 1221n (=JCM 16383) in the above described
-    medium supplemented with 0.6 g/L (final) yeast extract (without the archaeal culture filtrate). After
-    three days of the cultivation, filtrate the grown culture with 0.22 ï¿½m (pore size) filter.
+  description: Cultivate <I>Desulfurococcus kamchatkensis</I> strain 1221n (=JCM 16383)
+    in the above described medium supplemented with 0.6 g/L (final) yeast extract
+    (without the archaeal culture filtrate). After three days of the cultivation,
+    filtrate the grown culture with 0.22 ï¿½m (pore size) filter.
 - step_number: 3
   action: MIX
-  description: 'Comment: For cultivation of JCM 19810, increase amount of yeast extract to 1.0 g/L. Growth
-    may be affected by quality of yeast extract.'
+  description: 'Comment: For cultivation of JCM 19810, increase amount of yeast extract
+    to 1.0 g/L. Growth may be affected by quality of yeast extract.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -240,3 +243,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.197134Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002200'

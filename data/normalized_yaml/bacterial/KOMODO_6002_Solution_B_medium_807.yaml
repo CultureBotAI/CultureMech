@@ -1,3 +1,4 @@
+id: CultureMech:006084
 name: Solution B (medium 807)
 original_name: Solution B (medium 807)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:6002
     label: Solution B (medium 807)
-notes: 'Source: KOMODO ModelSEED | ID: 6002 | DSMZ Medium: 6002 (mediadive.medium:6002) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 6002 | DSMZ Medium: 6002 (mediadive.medium:6002)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 6002'
+- timestamp: '2026-03-13T06:19:38.153727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006084'

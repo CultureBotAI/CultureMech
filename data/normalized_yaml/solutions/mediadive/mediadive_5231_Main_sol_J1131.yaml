@@ -1,3 +1,4 @@
+id: CultureMech:014143
 preferred_term: Main sol. J1131
 term:
   id: mediadive.solution:5231
@@ -191,3 +192,8 @@ preparation_notes: "Mix components thoroughly, bring to a boil and cool down und
   \ rubber stoppers. Prior to inoculation, add per liter the following solutions (autoclaved\
   \ and stored under a N2 atmosphere): \nReadjust pH to 7.3-7.5, if necessary.\n\n\
   Original volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.893874Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014143'

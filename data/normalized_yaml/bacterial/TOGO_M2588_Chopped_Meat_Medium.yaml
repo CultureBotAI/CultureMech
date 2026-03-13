@@ -1,3 +1,4 @@
+id: CultureMech:009156
 name: Chopped Meat Medium
 original_name: Chopped Meat Medium
 category: bacterial
@@ -92,3 +93,7 @@ curation_history:
   date: '2026-02-03T11:20:54.688819'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas'
+- timestamp: '2026-03-13T06:20:03.348959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009156'

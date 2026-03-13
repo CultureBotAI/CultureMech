@@ -1,3 +1,4 @@
+id: CultureMech:001529
 name: OATMEAL AGAR
 original_name: OATMEAL AGAR
 category: bacterial
@@ -37,3 +38,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 425'
+- timestamp: '2026-03-13T06:19:04.986017Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001529'

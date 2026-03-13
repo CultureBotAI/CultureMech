@@ -1,3 +1,4 @@
+id: CultureMech:002403
 name: LB (LURIA-BERTANI) MEDIUM (LENNOX)
 original_name: LB (LURIA-BERTANI) MEDIUM (LENNOX)
 category: bacterial
@@ -37,3 +38,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1236'
+- timestamp: '2026-03-13T06:19:13.023400Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002403'

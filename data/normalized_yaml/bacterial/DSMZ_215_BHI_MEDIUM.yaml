@@ -1,3 +1,4 @@
+id: CultureMech:001314
 name: BHI MEDIUM
 original_name: BHI MEDIUM
 category: bacterial
@@ -21,3 +22,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 215'
+- timestamp: '2026-03-13T06:19:03.172090Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001314'

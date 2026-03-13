@@ -1,3 +1,4 @@
+id: CultureMech:000689
 name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 category: bacterial
@@ -119,9 +120,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed vessels (i.e. a serum tube
-    or bottle) with a liquid to air ratio of about 1:10. Flush the gas phase with nitrogen and add 2%
-    oxygen. Sterilize at 120°C 20 min.
+  description: Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed vessels
+    (i.e. a serum tube or bottle) with a liquid to air ratio of about 1:10. Flush
+    the gas phase with nitrogen and add 2% oxygen. Sterilize at 120°C 20 min.
 - step_number: 2
   action: MIX
   description: Incubate statically until growth occurs, then shake at 100 rpm.
@@ -141,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1230'
+- timestamp: '2026-03-13T06:18:57.472481Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000689'

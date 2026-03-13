@@ -1,3 +1,4 @@
+id: CultureMech:002609
 name: JCM MEDIUM No. 248
 original_name: JCM MEDIUM No. 248
 category: bacterial
@@ -24,8 +25,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil for 1 hr. Filter, first
-    through cheesecloth and then paper. Make up volume to 1.0 L.
+  description: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil
+    for 1 hr. Filter, first through cheesecloth and then paper. Make up volume to
+    1.0 L.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J248'
+- timestamp: '2026-03-13T06:19:14.523970Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002609'

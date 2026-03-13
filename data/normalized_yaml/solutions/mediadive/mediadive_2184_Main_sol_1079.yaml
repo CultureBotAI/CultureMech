@@ -1,3 +1,4 @@
+id: CultureMech:011574
 preferred_term: Main sol. 1079
 term:
   id: mediadive.solution:2184
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Add all components except sterile supplement; adjust pH to 7.6
   + 0.2. Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.550373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011574'

@@ -1,3 +1,4 @@
+id: CultureMech:014430
 preferred_term: Main sol. 26
 term:
   id: mediadive.solution:5551
@@ -172,3 +173,8 @@ preparation_notes: 'Adjust pH to 5.7.
   Sterile syringes are used to inoculate and remove samples.
 
   Incubate in the light using a tungsten lamp.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.757339Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014430'

@@ -1,3 +1,4 @@
+id: CultureMech:006564
 name: DESULFUROBACTERIUM MEDIUM
 original_name: DESULFUROBACTERIUM MEDIUM
 category: bacterial
@@ -254,3 +255,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.959862Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006564'

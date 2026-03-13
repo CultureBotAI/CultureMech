@@ -1,3 +1,4 @@
+id: CultureMech:002264
 name: THIOBACILLUS PROSPERUS MEDIUM
 original_name: THIOBACILLUS PROSPERUS MEDIUM
 category: bacterial
@@ -176,3 +177,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:11.777202Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002264'

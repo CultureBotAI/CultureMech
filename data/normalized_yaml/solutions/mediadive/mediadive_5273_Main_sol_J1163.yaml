@@ -1,3 +1,4 @@
+id: CultureMech:014185
 preferred_term: Main sol. J1163
 term:
   id: mediadive.solution:5273
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Mix components thoroughly and adjust pH to 7.2. Bring to a boil,
   cool down and dispense the medium into culture vessels (e.g., 10 ml medium in Hungate
   tubes) under a N2 gas stream, seal with butyl rubber stoppers and autoclave.
+curation_history:
+- timestamp: '2026-03-13T06:20:36.164533Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014185'

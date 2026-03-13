@@ -1,3 +1,4 @@
+id: CultureMech:003750
 name: ARC51 MEDIUM
 original_name: ARC51 MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1098
     label: ARC51 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1098 | DSMZ Medium: 1098 (mediadive.medium:1098) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1098 | DSMZ Medium: 1098 (mediadive.medium:1098)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -230,3 +232,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1098
+- timestamp: '2026-03-13T06:19:21.913138Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003750'

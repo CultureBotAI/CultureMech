@@ -1,3 +1,4 @@
+id: CultureMech:004746
 name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
 original_name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:289_replace_Cellobiose_with_Cellulose
     label: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
-notes: 'Source: KOMODO ModelSEED | ID: 289_replace_Cellobiose_with_Cellulose | DSMZ Medium: 289 (mediadive.medium:289)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 289_replace_Cellobiose_with_Cellulose | DSMZ
+  Medium: 289 (mediadive.medium:289) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea water
   concentration:
@@ -98,4 +99,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 289
+- timestamp: '2026-03-13T06:19:28.492584Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004746'
 ph_value: 7.2

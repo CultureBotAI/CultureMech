@@ -1,3 +1,4 @@
+id: CultureMech:009086
 name: tryptic soy broth
 original_name: tryptic soy broth
 category: bacterial
@@ -25,4 +26,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.038086'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: tryptic soy broth (TSB; Difco, Detroit, MI, USA)'
+  notes: 'Added default concentration for ingredient: tryptic soy broth (TSB; Difco,
+    Detroit, MI, USA)'
+- timestamp: '2026-03-13T06:20:02.418772Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009086'

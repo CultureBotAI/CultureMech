@@ -1,3 +1,4 @@
+id: CultureMech:001264
 name: TRICHOCOCCUS MEDIUM
 original_name: TRICHOCOCCUS MEDIUM
 category: bacterial
@@ -54,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 183'
+- timestamp: '2026-03-13T06:19:02.657643Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001264'

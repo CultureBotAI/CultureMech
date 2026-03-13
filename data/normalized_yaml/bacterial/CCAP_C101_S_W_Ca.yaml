@@ -1,3 +1,4 @@
+id: CultureMech:000308
 name: S/W + Ca
 original_name: S/W + Ca
 category: bacterial
@@ -25,16 +26,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Put a layer about 1 cm deep of air-dried, sieved good calcareous garden loam into a\r\n\
-    test tube or jar. (The use of mud from rivers or ponds is rarely satisfactory.)\r\nCarefully add deionised\
-    \ water to a depth of 7 to 10 cm, plug or cover, and steam\r\nfor one hour or autoclave for 15 minutes\
-    \ at 15 psi (longer for larger vessels) on\r\neach of 2 consecutive days; further sterilisation is\
-    \ not needed. Allow to stand for a\r\nfurther day before inoculating, when the pH should be between\
-    \ 7.0 - 8.0."
+  description: "Put a layer about 1 cm deep of air-dried, sieved good calcareous garden\
+    \ loam into a\r\ntest tube or jar. (The use of mud from rivers or ponds is rarely\
+    \ satisfactory.)\r\nCarefully add deionised water to a depth of 7 to 10 cm, plug\
+    \ or cover, and steam\r\nfor one hour or autoclave for 15 minutes at 15 psi (longer\
+    \ for larger vessels) on\r\neach of 2 consecutive days; further sterilisation\
+    \ is not needed. Allow to stand for a\r\nfurther day before inoculating, when\
+    \ the pH should be between 7.0 - 8.0."
 - step_number: 2
   action: MIX
-  description: S/W is  prepared  as  above,  but approximately  0.01  g  calcium  carbonate is placed
-    into the base of the test tube before adding the soil and water.
+  description: S/W is  prepared  as  above,  but approximately  0.01  g  calcium  carbonate
+    is placed into the base of the test tube before adding the soil and water.
 applications:
 - Microbial cultivation
 references:
@@ -48,3 +50,7 @@ curation_history:
   date: '2026-02-03T11:20:16.841771'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T06:18:54.343516Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000308'

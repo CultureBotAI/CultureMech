@@ -1,3 +1,4 @@
+id: CultureMech:012306
 preferred_term: Supplement 2
 term:
   id: mediadive.solution:3081
@@ -35,3 +36,8 @@ preparation_notes: 'Ascorbic acid (10%; w/v); in distilled water, neutralize wit
 
 
   Original volume: 2 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.107870Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012306'

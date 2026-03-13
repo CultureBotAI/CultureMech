@@ -1,3 +1,4 @@
+id: CultureMech:006367
 name: DESULFOMICROBIUM WHB MEDIUM
 original_name: DESULFOMICROBIUM WHB MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:724
     label: DESULFOMICROBIUM WHB MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 724 | DSMZ Medium: 724 (mediadive.medium:724) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 724 | DSMZ Medium: 724 (mediadive.medium:724)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 724'
+- timestamp: '2026-03-13T06:19:40.144231Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006367'

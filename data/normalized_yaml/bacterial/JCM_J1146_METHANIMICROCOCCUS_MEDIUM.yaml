@@ -1,3 +1,4 @@
+id: CultureMech:002319
 name: METHANIMICROCOCCUS MEDIUM
 original_name: METHANIMICROCOCCUS MEDIUM
 category: bacterial
@@ -253,17 +254,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After cooling,
-    add the following solutions from anaerobic stocks (autoclaved or filter-sterilized):'
+  description: 'Mix components and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere.
+    After cooling, add the following solutions from anaerobic stocks (autoclaved or
+    filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels under a H2-CO2
-    (80:20, v/v) gas stream and seal with butyl stoppers. Prior to inoculation, add per liter the following
-    solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    under a H2-CO2 (80:20, v/v) gas stream and seal with butyl stoppers. Prior to
+    inoculation, add per liter the following solutions (autoclaved and stored under
+    a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Readjust pH to 7.0 - 7.2, if necessary. Pressurize inoculated culture vessels to 100 kPa
-    H2-CO2 (80:20, v/v).
+  description: Readjust pH to 7.0 - 7.2, if necessary. Pressurize inoculated culture
+    vessels to 100 kPa H2-CO2 (80:20, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -271,3 +274,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1146'
+- timestamp: '2026-03-13T06:19:12.314225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002319'

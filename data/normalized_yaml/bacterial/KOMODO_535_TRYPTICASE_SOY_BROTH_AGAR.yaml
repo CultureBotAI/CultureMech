@@ -1,3 +1,4 @@
+id: CultureMech:005959
 name: TRYPTICASE SOY BROTH AGAR
 original_name: TRYPTICASE SOY BROTH AGAR
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:535
     label: TRYPTICASE SOY BROTH AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 535 | DSMZ Medium: 535 (mediadive.medium:535) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 535 | DSMZ Medium: 535 (mediadive.medium:535)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
@@ -33,3 +35,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 535
+- timestamp: '2026-03-13T06:19:37.333301Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005959'

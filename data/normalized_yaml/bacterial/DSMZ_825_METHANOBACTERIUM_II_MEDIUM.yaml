@@ -1,3 +1,4 @@
+id: CultureMech:001973
 name: METHANOBACTERIUM II MEDIUM
 original_name: METHANOBACTERIUM II MEDIUM
 category: bacterial
@@ -290,3 +291,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.973360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001973'

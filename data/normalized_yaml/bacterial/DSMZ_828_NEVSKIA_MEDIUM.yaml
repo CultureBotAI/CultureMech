@@ -1,3 +1,4 @@
+id: CultureMech:001977
 name: NEVSKIA MEDIUM
 original_name: NEVSKIA MEDIUM
 category: bacterial
@@ -173,8 +174,8 @@ preparation_steps:
   description: Filter sterilize the vitamin solution and add to the autoclaved medium.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 6.0 .
@@ -185,3 +186,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 828'
+- timestamp: '2026-03-13T06:19:09.030259Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001977'

@@ -1,3 +1,4 @@
+id: CultureMech:011678
 preferred_term: MS Buffer
 term:
   id: mediadive.solution:2297
@@ -19,3 +20,8 @@ preparation_notes: '100 mM NaOH saturated with CO2
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.182707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011678'

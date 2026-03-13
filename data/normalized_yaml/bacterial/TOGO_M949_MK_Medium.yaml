@@ -1,3 +1,4 @@
+id: CultureMech:010372
 name: MK Medium
 original_name: MK Medium
 category: bacterial
@@ -112,6 +113,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.358765Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010372'
 high_metal: true
 solutions:
 - preferred_term: SL-6 trace element solution (see Medium [M158])

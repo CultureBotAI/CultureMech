@@ -1,3 +1,4 @@
+id: CultureMech:004081
 name: PARACOCCUS BOGORIENSIS medium
 original_name: PARACOCCUS BOGORIENSIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1325
     label: PARACOCCUS BOGORIENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1325 | DSMZ Medium: 1325 (mediadive.medium:1325) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1325 | DSMZ Medium: 1325 (mediadive.medium:1325)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -129,3 +131,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1325
+- timestamp: '2026-03-13T06:19:24.662664Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004081'

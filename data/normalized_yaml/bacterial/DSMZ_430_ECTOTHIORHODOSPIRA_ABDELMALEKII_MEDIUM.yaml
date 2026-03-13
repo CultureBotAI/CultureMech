@@ -1,3 +1,4 @@
+id: CultureMech:001539
 name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
 original_name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
 category: bacterial
@@ -200,7 +201,8 @@ preparation_steps:
   description: Dissolve and bring to the boil.
 - step_number: 2
   action: COOL
-  description: Allow to cool down to room temperature under N2 gas phase. Then add bicarbonate.
+  description: Allow to cool down to room temperature under N2 gas phase. Then add
+    bicarbonate.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 8.5.
@@ -218,10 +220,11 @@ preparation_steps:
   description: Adjust pH to 2.0 - 3.0.
 - step_number: 8
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
-    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
-    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
-    M H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -229,3 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 430'
+- timestamp: '2026-03-13T06:19:05.049020Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001539'

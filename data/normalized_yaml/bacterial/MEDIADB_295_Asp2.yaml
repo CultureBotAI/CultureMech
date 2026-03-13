@@ -1,3 +1,4 @@
+id: CultureMech:007196
 name: Asp2
 original_name: Asp2
 category: bacterial
@@ -169,6 +170,10 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:46.746731Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007196'
 media_term:
   preferred_term: MediaDB Medium 295
   term:

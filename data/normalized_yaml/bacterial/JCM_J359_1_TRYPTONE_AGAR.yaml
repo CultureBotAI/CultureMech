@@ -1,3 +1,4 @@
+id: CultureMech:002718
 name: 1% TRYPTONE AGAR
 original_name: 1% TRYPTONE AGAR
 category: bacterial
@@ -33,3 +34,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J359'
+- timestamp: '2026-03-13T06:19:15.237485Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002718'

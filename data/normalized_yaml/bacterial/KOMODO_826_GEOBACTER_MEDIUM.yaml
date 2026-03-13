@@ -1,3 +1,4 @@
+id: CultureMech:006556
 name: GEOBACTER MEDIUM
 original_name: GEOBACTER MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:826
     label: GEOBACTER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 826 | DSMZ Medium: 826 (mediadive.medium:826) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 826 | DSMZ Medium: 826 (mediadive.medium:826)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -239,4 +241,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.904264Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:41.853102Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006556'

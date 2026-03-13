@@ -1,3 +1,4 @@
+id: CultureMech:011916
 preferred_term: Main sol. 1284
 term:
   id: mediadive.solution:2577
@@ -90,3 +91,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: The medium may be solidified with 15 g/l agar. Adjust to pH 4.5
   - 5.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.769632Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011916'

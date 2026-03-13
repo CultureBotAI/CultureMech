@@ -1,3 +1,4 @@
+id: CultureMech:005145
 name: For DSM 3384
 original_name: For DSM 3384
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:383.3
     label: For DSM 3384
-notes: 'Source: KOMODO ModelSEED | ID: 383.3 | DSMZ Medium: 383 (mediadive.medium:383) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 383.3 | DSMZ Medium: 383 (mediadive.medium:383)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -243,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:30.530226Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:30.500318Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005145'

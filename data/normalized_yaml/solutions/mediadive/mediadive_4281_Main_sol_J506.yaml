@@ -1,3 +1,4 @@
+id: CultureMech:013290
 preferred_term: Main sol. J506
 term:
   id: mediadive.solution:4281
@@ -138,3 +139,8 @@ composition:
 preparation_notes: "Mix components thoroughly, adjust pH to 6.5 and autoclave under\
   \ a N2 atmosphere. After cooling, add per liter the following solution (autoclaved\
   \ and stored under a N2 atmosphere): \n\nOriginal volume: 1008 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:30.497079Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013290'

@@ -1,3 +1,4 @@
+id: CultureMech:013696
 preferred_term: Main sol. J799
 term:
   id: mediadive.solution:4748
@@ -78,3 +79,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.2.
 
   Artificial seawater can be substituted for seawater.'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.909663Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013696'

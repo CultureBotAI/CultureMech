@@ -1,3 +1,4 @@
+id: CultureMech:013079
 preferred_term: Main sol. J306
 term:
   id: mediadive.solution:4020
@@ -115,3 +116,8 @@ preparation_notes: Add components except Na2CO3 to distilled water and bring vol
   to 900 ml. Adjust pH to 6.5 and autoclave. Dissolve Na2CO3 in 100 ml distilled water
   and autoclave separately. Aseptically add the sterile Na2CO3 solution to the medium.
   Check final pH to be 9.0 - 9.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.269997Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013079'

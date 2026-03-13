@@ -1,3 +1,4 @@
+id: CultureMech:009493
 name: brain heart infusion (BHI) medium (supplemented with antibiotics)
 original_name: brain heart infusion (BHI) medium (supplemented with antibiotics)
 category: bacterial
@@ -8,12 +9,14 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Solution'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Solution'
 - preferred_term: ampicillin
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
+    component'
   term:
     id: CHEBI:28971
     label: Ampicillin
@@ -21,7 +24,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex component'
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex
+    component'
   term:
     id: CHEBI:48923
     label: Erythromycin
@@ -52,3 +56,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.404954Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009493'

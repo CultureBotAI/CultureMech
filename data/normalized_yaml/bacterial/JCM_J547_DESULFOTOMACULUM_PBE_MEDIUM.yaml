@@ -1,3 +1,4 @@
+id: CultureMech:002894
 name: DESULFOTOMACULUM PBE MEDIUM
 original_name: DESULFOTOMACULUM PBE MEDIUM
 category: bacterial
@@ -73,8 +74,8 @@ preparation_steps:
   description: Mix components and autoclave under a N2 gas atmosphere.
 - step_number: 2
   action: MIX
-  description: 'To complete the medium, aseptically and anaerobically add the following solutions to the
-    medium:'
+  description: 'To complete the medium, aseptically and anaerobically add the following
+    solutions to the medium:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -86,3 +87,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:16.403641Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002894'

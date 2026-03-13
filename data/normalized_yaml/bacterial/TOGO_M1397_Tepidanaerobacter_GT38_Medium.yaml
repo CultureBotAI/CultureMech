@@ -1,3 +1,4 @@
+id: CultureMech:007932
 name: Tepidanaerobacter GT38 Medium
 original_name: Tepidanaerobacter GT38 Medium
 category: bacterial
@@ -129,6 +130,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:52.590386Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007932'
 high_metal: true
 solutions:
 - preferred_term: Mineral solution (see below)

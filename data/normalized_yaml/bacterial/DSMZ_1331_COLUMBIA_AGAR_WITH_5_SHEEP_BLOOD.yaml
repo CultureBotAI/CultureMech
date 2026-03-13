@@ -1,3 +1,4 @@
+id: CultureMech:000788
 name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
 original_name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
 category: bacterial
@@ -88,3 +89,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:58.374458Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000788'

@@ -1,3 +1,4 @@
+id: CultureMech:012278
 preferred_term: Main sol. 1488
 term:
   id: mediadive.solution:3050
@@ -47,3 +48,8 @@ preparation_notes: 'Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then ad
   the phosphate will precipitate.
 
   Add filter-sterilized methanol to produce 1% (final concentration).'
+curation_history:
+- timestamp: '2026-03-13T06:20:24.949250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012278'

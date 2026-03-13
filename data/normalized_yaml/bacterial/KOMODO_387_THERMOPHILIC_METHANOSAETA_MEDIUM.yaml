@@ -1,3 +1,4 @@
+id: CultureMech:005164
 name: THERMOPHILIC METHANOSAETA MEDIUM
 original_name: THERMOPHILIC METHANOSAETA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:387
     label: THERMOPHILIC METHANOSAETA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 387 | DSMZ Medium: 387 (mediadive.medium:387) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 387 | DSMZ Medium: 387 (mediadive.medium:387)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 387'
+- timestamp: '2026-03-13T06:19:30.736847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005164'

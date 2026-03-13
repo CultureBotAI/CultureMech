@@ -1,3 +1,4 @@
+id: CultureMech:013926
 preferred_term: 'Mineral solution '
 term:
   id: mediadive.solution:5001
@@ -116,3 +117,8 @@ preparation_notes: 'Adjust pH to 6.0 with KOH.
   Comment: Consistent growth in serum tubes requires pretreatment of butyl rubber
   stoppers by boiling in 1% sodium sulfide solution (1 hr) followed by boiling in
   distilled H2O (1 hr, twice).'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.411595Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013926'

@@ -1,3 +1,4 @@
+id: CultureMech:004998
 name: ILYOBACTER POLYTROPUS medium
 original_name: ILYOBACTER POLYTROPUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:314
     label: ILYOBACTER POLYTROPUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 314 | DSMZ Medium: 314 (mediadive.medium:314) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 314 | DSMZ Medium: 314 (mediadive.medium:314)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -254,4 +256,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.598053Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:29.333860Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004998'

@@ -1,3 +1,4 @@
+id: CultureMech:003201
 name: MO-SEDI MEDIUM
 original_name: MO-SEDI MEDIUM
 category: bacterial
@@ -18,8 +19,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 846 but omit glucose and tryptone. Supplement the medium with final 2.75
-    g/L sodium pyruvate. Otherwise, prepare the medium as described in the recipe of Medium No. 846.
+  description: Use Medium No. 846 but omit glucose and tryptone. Supplement the medium
+    with final 2.75 g/L sodium pyruvate. Otherwise, prepare the medium as described
+    in the recipe of Medium No. 846.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:18.541055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003201'
 data_quality_flags:
 - incomplete_composition

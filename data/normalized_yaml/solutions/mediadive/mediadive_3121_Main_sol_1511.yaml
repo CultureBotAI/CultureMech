@@ -1,3 +1,4 @@
+id: CultureMech:012340
 preferred_term: Main sol. 1511
 term:
   id: mediadive.solution:3121
@@ -117,3 +118,8 @@ preparation_notes: "Prepare the liquid medium. Dispense the medium into culture 
   \ solution is autoclaved use tightly closed vessels that are filled to a maximum\
   \ of 50% of the total volume.\nThe final pH of the medium should be adjusted to\
   \ pH 7.6-8.0."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.297289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012340'

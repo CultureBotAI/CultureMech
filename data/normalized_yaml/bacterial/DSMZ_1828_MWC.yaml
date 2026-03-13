@@ -1,3 +1,4 @@
+id: CultureMech:001255
 name: MWC
 original_name: MWC
 category: bacterial
@@ -137,22 +138,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'After cooling add the following filter sterilized component under sterile conditions:'
+  description: 'After cooling add the following filter sterilized component under
+    sterile conditions:'
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 4.0-4.5.
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 - step_number: 6
   action: MIX
-  description: Make up to <span class='amount' data-volume='100'>100</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='100'>100</span> ml with
+    MilliQ water.
 - step_number: 7
   action: FILTER_STERILIZE
   description: Filter sterilise, aliquot and store frozen.
@@ -163,3 +168,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1828'
+- timestamp: '2026-03-13T06:19:02.590794Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001255'

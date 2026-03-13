@@ -1,3 +1,4 @@
+id: CultureMech:012403
 preferred_term: Vitamin solution No.6
 term:
   id: mediadive.solution:3202
@@ -123,3 +124,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:25.729217Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012403'

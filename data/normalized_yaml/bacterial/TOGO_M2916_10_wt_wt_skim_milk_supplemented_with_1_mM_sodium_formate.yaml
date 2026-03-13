@@ -1,3 +1,4 @@
+id: CultureMech:009451
 name: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
 original_name: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
 category: bacterial
@@ -26,3 +27,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2916'
+- timestamp: '2026-03-13T06:20:06.238632Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009451'

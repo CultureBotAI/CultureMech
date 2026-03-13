@@ -1,3 +1,4 @@
+id: CultureMech:004048
 name: SOIL EXTRACT medium
 original_name: SOIL EXTRACT medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:12
     label: SOIL EXTRACT medium
-notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12)
+  | Aerobic: No'
 ingredients:
 - preferred_term: air-dried garden soil
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 12
+- timestamp: '2026-03-13T06:19:24.441282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004048'

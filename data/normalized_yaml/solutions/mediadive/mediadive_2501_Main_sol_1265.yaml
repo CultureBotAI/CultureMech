@@ -1,3 +1,4 @@
+id: CultureMech:011865
 preferred_term: Main sol. 1265
 term:
   id: mediadive.solution:2501
@@ -140,3 +141,8 @@ preparation_notes: 'Adjust pH to 7.1 and prepare medium in a gas atmosphere of 1
 
   NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added to the autoclaved
   medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.500559Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011865'

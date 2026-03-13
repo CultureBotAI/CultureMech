@@ -1,3 +1,4 @@
+id: CultureMech:001733
 name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 category: bacterial
@@ -54,8 +55,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O. Final pH of the medium
-    should be 6.8.
+  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O.
+    Final pH of the medium should be 6.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 605a'
+- timestamp: '2026-03-13T06:19:06.803316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001733'

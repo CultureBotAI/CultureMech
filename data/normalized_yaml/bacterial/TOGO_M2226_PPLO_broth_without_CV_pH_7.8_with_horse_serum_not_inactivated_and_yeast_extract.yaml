@@ -1,3 +1,4 @@
+id: CultureMech:008814
 name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast
   extract
 original_name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and
@@ -50,3 +51,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:00.447061Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008814'

@@ -1,3 +1,4 @@
+id: CultureMech:006183
 name: CLOSTRIDIUM HYDROXYBENZOICUM medium
 original_name: CLOSTRIDIUM HYDROXYBENZOICUM medium
 category: bacterial
@@ -267,4 +268,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:38.916101Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006183'
 high_metal: true

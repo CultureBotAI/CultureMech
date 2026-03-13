@@ -1,3 +1,4 @@
+id: CultureMech:014865
 preferred_term: Mail sol. C37
 term:
   id: mediadive.solution:6163
@@ -68,3 +69,8 @@ preparation_notes: "Make up to 1 litre with filtered natural seawater. Adjust pH
   \ 8.0 with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
   \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes.\nSilicate can react\
   \ with glass, ensure this stock solution is stored in plastic\r\nbottles."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.835039Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014865'

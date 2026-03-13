@@ -1,3 +1,4 @@
+id: CultureMech:001515
 name: SP2 MEDIUM
 original_name: SP2 MEDIUM
 category: bacterial
@@ -85,8 +86,8 @@ preparation_steps:
   description: If natural sea water is used, the pH need not be adjusted.
 - step_number: 3
   action: AUTOCLAVE
-  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as separate stock solutions
-    in 10 ml distilled water.
+  description: To prevent precipitation, CaCl2 and NaHCO3 are autoclaved each as separate
+    stock solutions in 10 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,3 +95,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 405'
+- timestamp: '2026-03-13T06:19:04.864979Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001515'

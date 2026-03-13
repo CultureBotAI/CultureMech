@@ -1,3 +1,4 @@
+id: CultureMech:009501
 name: MOPS (morpholinethanesulfonic acid) minimal medium
 original_name: MOPS (morpholinethanesulfonic acid) minimal medium
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '50'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '9.52'
     unit: MILLIMOLAR
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -24,7 +27,8 @@ ingredients:
   concentration:
     value: '1.32'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -40,7 +44,8 @@ ingredients:
   concentration:
     value: '0.523'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:6636
     label: magnesium dichloride
@@ -48,7 +53,8 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32036
     label: potassium sulfate
@@ -56,7 +62,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
@@ -66,7 +73,8 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Properties: Buffer'
 - preferred_term: CaCl2
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -78,7 +86,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: H3BO3
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -86,7 +95,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: CuSO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
@@ -94,7 +104,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: CoCl2
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:35696
     label: cobalt dichloride
@@ -102,12 +113,14 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: MnCl2
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   concentration:
     value: variable
     unit: VARIABLE
 - preferred_term: ZnSO4
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:35176
     label: zinc sulfate
@@ -115,7 +128,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: (NH4)6(MO7)24
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   concentration:
     value: variable
     unit: VARIABLE
@@ -139,12 +153,18 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.938288'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CaCl2; Added default concentration for ingredient:
-    Micronutrients; Added default concentration for ingredient: H3BO3; Added default concentration for
-    ingredient: CuSO4; Added default concentration for ingredient: CoCl2; Added default concentration
-    for ingredient: MnCl2; Added default concentration for ingredient: ZnSO4; Added default concentration
-    for ingredient: (NH4)6(MO7)24'
+  notes: 'Added default concentration for ingredient: CaCl2; Added default concentration
+    for ingredient: Micronutrients; Added default concentration for ingredient: H3BO3;
+    Added default concentration for ingredient: CuSO4; Added default concentration
+    for ingredient: CoCl2; Added default concentration for ingredient: MnCl2; Added
+    default concentration for ingredient: ZnSO4; Added default concentration for ingredient:
+    (NH4)6(MO7)24'
 - timestamp: '2026-02-06T05:10:37.943745Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:06.428883Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009501'

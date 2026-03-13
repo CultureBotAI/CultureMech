@@ -1,3 +1,4 @@
+id: CultureMech:012283
 preferred_term: Main sol. 173
 term:
   id: mediadive.solution:305
@@ -103,3 +104,8 @@ preparation_notes: Dissolve ingredients (except cysteine) and sparge medium for 
   - 45 min with 100% N2 gas to make it anoxic. Add cysteine and adjust pH to 7.2 -
   7.4, then distribute medium under 100% N2 gas atmosphere into anoxic Hungate-type
   tubes or serum vials and autoclave. Final pH of the medium should be about 7.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.979781Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012283'

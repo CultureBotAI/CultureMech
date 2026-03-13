@@ -1,3 +1,4 @@
+id: CultureMech:000686
 name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 original_name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 category: bacterial
@@ -126,8 +127,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or bottle) with a liquid
-    to air ratio of about 1:10. pH after sterilization will about 10.
+  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
+    bottle) with a liquid to air ratio of about 1:10. pH after sterilization will
+    about 10.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from sterile stock solutions:'
@@ -147,3 +149,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1228'
+- timestamp: '2026-03-13T06:18:57.449038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000686'

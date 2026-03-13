@@ -1,3 +1,4 @@
+id: CultureMech:014662
 preferred_term: 'Infection medium:'
 term:
   id: mediadive.solution:5834
@@ -62,3 +63,8 @@ preparation_notes: 'Infect cells with 1 ml of Diplorickettsia stock solution (th
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.928082Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014662'

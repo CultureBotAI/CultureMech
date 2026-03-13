@@ -1,3 +1,4 @@
+id: CultureMech:002077
 name: TREPONEMA DENTICOLA MEDIUM
 original_name: TREPONEMA DENTICOLA MEDIUM
 category: bacterial
@@ -116,14 +117,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add 0.45 ml Sol. B to 10 ml Sol. A. Inoculate and pressurize the tubes with H2 to 0.5 bar.
+  description: Add 0.45 ml Sol. B to 10 ml Sol. A. Inoculate and pressurize the tubes
+    with H2 to 0.5 bar.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2. Distribute to anaerobic
-    tubes under the same atmosphere and autoclave.
+  description: Boil for 5 min, cool to 50°C while gassing with 80% N2 + 20% CO2. Distribute
+    to anaerobic tubes under the same atmosphere and autoclave.
 - step_number: 3
   action: MIX
-  description: Sterilize by filtration, add 20 ml rabbit serum, gas with 80% N2 + 20% CO2.
+  description: Sterilize by filtration, add 20 ml rabbit serum, gas with 80% N2 +
+    20% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +138,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:10.078830Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002077'

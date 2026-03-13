@@ -1,3 +1,4 @@
+id: CultureMech:014468
 preferred_term: Main sol. 29a
 term:
   id: mediadive.solution:5591
@@ -50,3 +51,8 @@ preparation_notes: 'Mix solution D, C and E. Bubble with CO2 in an ice bath unde
   Fill in sterile, N2 gassed screw-cap tubes under N2 gas.
 
   At 25C in light the incubation time is about 4 weeks.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.966482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014468'

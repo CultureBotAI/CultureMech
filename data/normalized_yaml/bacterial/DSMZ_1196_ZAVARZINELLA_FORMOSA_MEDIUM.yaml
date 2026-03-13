@@ -1,3 +1,4 @@
+id: CultureMech:000639
 name: ZAVARZINELLA FORMOSA MEDIUM
 original_name: ZAVARZINELLA FORMOSA MEDIUM
 category: bacterial
@@ -128,8 +129,8 @@ preparation_steps:
   description: Final pH 5.8 - 6.0
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -141,3 +142,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.987118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000639'

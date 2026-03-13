@@ -1,3 +1,4 @@
+id: CultureMech:003183
 name: R2A BROTH
 original_name: R2A BROTH
 category: bacterial
@@ -67,7 +68,8 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder is available from Nihon Pharm. Co. as R2A broth ''DAIGO''.'
+  description: 'Comment: The premixed powder is available from Nihon Pharm. Co. as
+    R2A broth ''DAIGO''.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,3 +81,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:18.415158Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003183'

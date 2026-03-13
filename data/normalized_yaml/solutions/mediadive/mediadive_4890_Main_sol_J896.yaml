@@ -1,3 +1,4 @@
+id: CultureMech:013819
 preferred_term: Main sol. J896
 term:
   id: mediadive.solution:4890
@@ -140,3 +141,8 @@ preparation_notes: 'Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled
 
 
   Original volume: 40 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.685683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013819'

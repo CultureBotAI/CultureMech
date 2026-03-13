@@ -1,3 +1,4 @@
+id: CultureMech:002468
 name: FRESHWATER MEDIUM WITH RHAMNOSE
 original_name: FRESHWATER MEDIUM WITH RHAMNOSE
 category: bacterial
@@ -221,18 +222,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2-7.4 and autoclave under a N2-CO2 (80:20, v/v)
-    gas mixture. After cooling, while gassing with the same gas mixture, add the following solutions from
-    sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2-7.4 and autoclave under
+    a N2-CO2 (80:20, v/v) gas mixture. After cooling, while gassing with the same
+    gas mixture, add the following solutions from sterile anaerobic stocks (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Readjust pH to 7.2-7.4, if necessary. Aseptically and anaerobically distribute the medium
-    into culture vessels (e.g., 10 ml in Hungate tubes) under the same gas mixture and seal with butyl
-    rubber stoppers. Prior to use, add per liter the following solution (autoclaved and stored under N2):'
+  description: 'Readjust pH to 7.2-7.4, if necessary. Aseptically and anaerobically
+    distribute the medium into culture vessels (e.g., 10 ml in Hungate tubes) under
+    the same gas mixture and seal with butyl rubber stoppers. Prior to use, add per
+    liter the following solution (autoclaved and stored under N2):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA x Na2 in distilled water first and adjust pH to 6.5 with NaOH. Then, proceed
-    to add minerals.
+  description: Dissolve EDTA x Na2 in distilled water first and adjust pH to 6.5 with
+    NaOH. Then, proceed to add minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -240,3 +243,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1304'
+- timestamp: '2026-03-13T06:19:13.569155Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002468'

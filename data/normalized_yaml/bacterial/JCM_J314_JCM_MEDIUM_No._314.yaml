@@ -1,3 +1,4 @@
+id: CultureMech:002672
 name: JCM MEDIUM No. 314
 original_name: JCM MEDIUM No. 314
 category: bacterial
@@ -118,9 +119,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter-sterilize Na2S2O3 solution and KNO3 solution, and separately autoclave Trace elements
-    solution and MgCl2 x 6H2O solution. Aseptically add Na2S2O3 solution, KNO3 solution, Trace elements
-    solution and MgCl2 x 6H2O solution to the medium.
+  description: Filter-sterilize Na2S2O3 solution and KNO3 solution, and separately
+    autoclave Trace elements solution and MgCl2 x 6H2O solution. Aseptically add Na2S2O3
+    solution, KNO3 solution, Trace elements solution and MgCl2 x 6H2O solution to
+    the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3 with HCl.
@@ -131,3 +133,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J314'
+- timestamp: '2026-03-13T06:19:14.909798Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002672'

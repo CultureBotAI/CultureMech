@@ -1,3 +1,4 @@
+id: CultureMech:013074
 preferred_term: Main sol. J304
 term:
   id: mediadive.solution:4015
@@ -55,3 +56,8 @@ preparation_notes: Add components except the glucose solution and Vitamin soluti
   to artificial seawater and mix thoroughly. Gently heat and bring to a boil. Autoclave
   and then cool to 45 - 50C. Aseptically add the filter-sterilized glucose solution
   and Vitamin solution. Adjust pH to 7.5 with sterile KOH, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.242232Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013074'

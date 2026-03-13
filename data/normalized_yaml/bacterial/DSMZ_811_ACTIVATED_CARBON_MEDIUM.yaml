@@ -1,3 +1,4 @@
+id: CultureMech:001956
 name: ACTIVATED CARBON MEDIUM
 original_name: ACTIVATED CARBON MEDIUM
 category: bacterial
@@ -130,8 +131,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Befor autoclaving add trace element solution to the medium. Dissolve first all ingredients
-    then add activated carbon. Finally autoclave.
+  description: Befor autoclaving add trace element solution to the medium. Dissolve
+    first all ingredients then add activated carbon. Finally autoclave.
 - step_number: 2
   action: MIX
   description: pH 7.5
@@ -142,3 +143,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 811'
+- timestamp: '2026-03-13T06:19:08.787484Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001956'

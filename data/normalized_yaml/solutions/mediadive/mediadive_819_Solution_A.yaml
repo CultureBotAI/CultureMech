@@ -1,3 +1,4 @@
+id: CultureMech:015188
 preferred_term: Solution A
 term:
   id: mediadive.solution:819
@@ -149,3 +150,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M
   NaOH. Filter sterilize.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.231620Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015188'

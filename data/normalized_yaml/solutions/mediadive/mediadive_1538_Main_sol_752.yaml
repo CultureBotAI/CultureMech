@@ -1,3 +1,4 @@
+id: CultureMech:011004
 preferred_term: Main sol. 752
 term:
   id: mediadive.solution:1538
@@ -115,3 +116,8 @@ preparation_notes: Liquid medium may be prepared by adding all components togeth
   Agar (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving.
   Add 20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing
   agar so that the final pH is 9.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:16.935542Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011004'

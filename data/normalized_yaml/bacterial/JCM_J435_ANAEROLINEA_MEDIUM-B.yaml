@@ -1,3 +1,4 @@
+id: CultureMech:002786
 name: ANAEROLINEA MEDIUM-B
 original_name: ANAEROLINEA MEDIUM-B
 category: bacterial
@@ -18,11 +19,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Solution A of Medium No. 284 supplemented with final 1.0 ml Trace vitamins solution
-    and 1.0 g yeast extract, and dissolved in 1.0 L distilled water. Dispense the medium into culture
-    vessels (e.g., 20 ml of the medium in 50 ml serum bottle) under a stream of N2-CO2 (80:20, v/v) and
-    seal with butyl rubber stoppers. After autoclaving, stand the medium overnight. Prior to inoculation,
-    aseptically and anaerobically add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions
+  description: Use Solution A of Medium No. 284 supplemented with final 1.0 ml Trace
+    vitamins solution and 1.0 g yeast extract, and dissolved in 1.0 L distilled water.
+    Dispense the medium into culture vessels (e.g., 20 ml of the medium in 50 ml serum
+    bottle) under a stream of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers.
+    After autoclaving, stand the medium overnight. Prior to inoculation, aseptically
+    and anaerobically add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions
     to the medium (3% solutions, autoclaved and stored under a N2 atmosphere).
 - step_number: 2
   action: MIX
@@ -38,5 +40,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.711905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002786'
 data_quality_flags:
 - incomplete_composition

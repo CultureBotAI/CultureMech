@@ -1,3 +1,4 @@
+id: CultureMech:002056
 name: TS AGAR
 original_name: TS AGAR
 category: bacterial
@@ -51,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 893'
+- timestamp: '2026-03-13T06:19:09.855700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002056'

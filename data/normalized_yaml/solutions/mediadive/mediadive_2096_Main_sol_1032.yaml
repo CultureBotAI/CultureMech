@@ -1,3 +1,4 @@
+id: CultureMech:011495
 preferred_term: Main sol. 1032
 term:
   id: mediadive.solution:2096
@@ -90,3 +91,8 @@ composition:
 preparation_notes: 'initial pH 7.3 - 7.4
 
   sterilize by 115°C / 10 min'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.049724Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011495'

@@ -1,3 +1,4 @@
+id: CultureMech:014887
 preferred_term: 3N­BBM+V (Bold Basal Medium with 3­fold Nitrogen  and Vitamins; modified)
 term:
   id: mediadive.solution:6188
@@ -102,3 +103,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Make up to 1 litre with distilled water.  For agar add 15 g per\
   \ litre Bacterial Agar.\r\nAutoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.923945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014887'

@@ -1,3 +1,4 @@
+id: CultureMech:000876
 name: PORPHYROBACTER MEDIUM
 original_name: PORPHYROBACTER MEDIUM
 category: bacterial
@@ -172,7 +173,8 @@ preparation_steps:
   description: Adjust to pH 5.9 before autoclaving
 - step_number: 2
   action: MIX
-  description: 'Prepare the liquid medium. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Before inoculation add from sterile stock
+    solutions:'
 - step_number: 3
   action: MIX
   description: Adjust to pH 8.0 - 8.5 with 0.5 N NaOH.
@@ -189,3 +191,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1414'
+- timestamp: '2026-03-13T06:18:59.106908Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000876'

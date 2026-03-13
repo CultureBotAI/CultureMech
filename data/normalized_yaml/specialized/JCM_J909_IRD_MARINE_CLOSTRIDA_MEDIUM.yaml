@@ -1,3 +1,4 @@
+id: CultureMech:015423
 name: IRD MARINE CLOSTRIDA MEDIUM
 original_name: IRD MARINE CLOSTRIDA MEDIUM
 category: specialized
@@ -194,3 +195,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:42.587603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015423'

@@ -1,3 +1,4 @@
+id: CultureMech:003031
 name: JCM MEDIUM No. 686
 original_name: JCM MEDIUM No. 686
 category: bacterial
@@ -65,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J686'
+- timestamp: '2026-03-13T06:19:17.305164Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003031'

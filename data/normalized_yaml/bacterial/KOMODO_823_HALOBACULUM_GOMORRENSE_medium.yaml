@@ -1,3 +1,4 @@
+id: CultureMech:006550
 name: HALOBACULUM GOMORRENSE medium
 original_name: HALOBACULUM GOMORRENSE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:823
     label: HALOBACULUM GOMORRENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 823 | DSMZ Medium: 823 (mediadive.medium:823) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 823 | DSMZ Medium: 823 (mediadive.medium:823)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -68,3 +70,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 823
+- timestamp: '2026-03-13T06:19:41.764171Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006550'

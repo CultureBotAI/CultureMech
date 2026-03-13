@@ -1,3 +1,4 @@
+id: CultureMech:001270
 name: Rhizobium medium for isolation
 original_name: Rhizobium medium for isolation
 category: bacterial
@@ -53,7 +54,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 - step_number: 2
   action: DISSOLVE
   description: Heat to boiling to dissolve the medium completely
@@ -70,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1848'
+- timestamp: '2026-03-13T06:19:02.719827Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001270'

@@ -1,3 +1,4 @@
+id: CultureMech:013928
 preferred_term: 10 x CMD stock solution
 term:
   id: mediadive.solution:5003
@@ -115,3 +116,8 @@ preparation_notes: 'Do not use if exceeds 90 days shelf life.
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.422490Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013928'

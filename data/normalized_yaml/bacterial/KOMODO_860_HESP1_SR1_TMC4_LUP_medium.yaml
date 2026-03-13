@@ -1,3 +1,4 @@
+id: CultureMech:006687
 name: HESP1/SR1/TMC4/LUP medium
 original_name: HESP1/SR1/TMC4/LUP medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:860
     label: HESP1/SR1/TMC4/LUP medium
-notes: 'Source: KOMODO ModelSEED | ID: 860 | DSMZ Medium: 860 (mediadive.medium:860) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 860 | DSMZ Medium: 860 (mediadive.medium:860)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -170,3 +172,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 860
+- timestamp: '2026-03-13T06:19:42.998255Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006687'

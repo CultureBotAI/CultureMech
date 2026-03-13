@@ -1,3 +1,4 @@
+id: CultureMech:011820
 preferred_term: Main sol. 1230
 term:
   id: mediadive.solution:2449
@@ -96,3 +97,8 @@ preparation_notes: 'Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed
   After sterilization add from sterile stock solutions:
 
   (a white colloid will form which will rapidly dissolve after mixing)'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.160288Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011820'

@@ -1,3 +1,4 @@
+id: CultureMech:000519
 name: HOWARDELLA MEDIUM
 original_name: HOWARDELLA MEDIUM
 category: bacterial
@@ -54,11 +55,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except urea and thioglycolate), boil medium for 1 min, then cool
-    to room temperature under 80% N2 and 20% CO2 gas mixture. Add thioglycolate, dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
-    add urea from a 10% (w/v) stock solution sterilized by filtration and stored under 100% N2 gas. Adjust
-    pH of complete medium to 7.4.
+  description: Dissolve ingredients (except urea and thioglycolate), boil medium for
+    1 min, then cool to room temperature under 80% N2 and 20% CO2 gas mixture. Add
+    thioglycolate, dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After autoclaving add urea from a 10% (w/v)
+    stock solution sterilized by filtration and stored under 100% N2 gas. Adjust pH
+    of complete medium to 7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,3 +68,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1085'
+- timestamp: '2026-03-13T06:18:56.008145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000519'

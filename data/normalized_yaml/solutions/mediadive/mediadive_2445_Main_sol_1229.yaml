@@ -1,3 +1,4 @@
+id: CultureMech:011819
 preferred_term: Main sol. 1229
 term:
   id: mediadive.solution:2445
@@ -110,3 +111,8 @@ preparation_notes: 'Flush the gas phase with nitrogen and add 5% oxygen. Sterili
   After sterilization add from sterile stock solutions:
 
   (a white colloid will form which will rapidly dissolve after mixing)'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.154575Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011819'

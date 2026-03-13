@@ -1,3 +1,4 @@
+id: CultureMech:014444
 preferred_term: Hemin solution
 term:
   id: mediadive.solution:5566
@@ -44,3 +45,8 @@ preparation_notes: 'Dissolve 5 mg hemin in 1 ml 1 M NaOH, fill up to 50 ml with 
 
 
   Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.843207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014444'

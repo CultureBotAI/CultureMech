@@ -1,3 +1,4 @@
+id: CultureMech:013663
 preferred_term: Solution A
 term:
   id: mediadive.solution:4711
@@ -68,3 +69,8 @@ preparation_notes: 'Mix components thoroughly and autoclave under a N2-CO2 (80:2
 
 
   Original volume: 915 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.673004Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013663'

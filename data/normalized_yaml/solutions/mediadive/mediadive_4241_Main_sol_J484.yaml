@@ -1,3 +1,4 @@
+id: CultureMech:013255
 preferred_term: Main sol. J484
 term:
   id: mediadive.solution:4241
@@ -160,3 +161,8 @@ preparation_notes: 'Mix ingredients except Na2S2O3 x 5H2O, yeast extract, Trace 
 
 
   Original volume: 1025 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.336820Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013255'

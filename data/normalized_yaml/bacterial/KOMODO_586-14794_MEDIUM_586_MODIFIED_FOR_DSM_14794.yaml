@@ -1,3 +1,4 @@
+id: CultureMech:006061
 name: MEDIUM 586 MODIFIED FOR DSM 14794
 original_name: MEDIUM 586 MODIFIED FOR DSM 14794
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:586_14794
     label: MEDIUM 586 MODIFIED FOR DSM 14794
-notes: 'Source: KOMODO ModelSEED | ID: 586_14794 | DSMZ Medium: 586 (mediadive.medium:586) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 586_14794 | DSMZ Medium: 586 (mediadive.medium:586)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -209,3 +210,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 586
+- timestamp: '2026-03-13T06:19:37.986870Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006061'

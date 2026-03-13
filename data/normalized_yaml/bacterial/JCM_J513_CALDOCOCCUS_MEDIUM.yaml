@@ -1,3 +1,4 @@
+id: CultureMech:002864
 name: CALDOCOCCUS MEDIUM
 original_name: CALDOCOCCUS MEDIUM
 category: bacterial
@@ -180,13 +181,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except vitamins, sulfur and Na2S x 9H2O, adjust pH to 2.7 with H2SO4 and
-    autoclave. Separately autoclave 5% (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur
-    for 3 hr on each of 3 successive days. Filter-sterilize Trace vitamins solution. Distribute the medium
-    into culture vessels (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur,
-    replace the gas phase with a H2-CO2 (80:20) gas atmosphere and seal with butyl rubber stoppers. Prior
-    to inoculation, add sterile Na2S x 9H2O solution and adjust pH to 3.0 with sterile 1 N H2SO4. Pressurize
-    the inoculated bottle to 200 kPa H2-CO2 (80:20).
+  description: Mix ingredients except vitamins, sulfur and Na2S x 9H2O, adjust pH
+    to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S x 9H2O solution
+    under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize
+    Trace vitamins solution. Distribute the medium into culture vessels (e.g., 20
+    ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace the
+    gas phase with a H2-CO2 (80:20) gas atmosphere and seal with butyl rubber stoppers.
+    Prior to inoculation, add sterile Na2S x 9H2O solution and adjust pH to 3.0 with
+    sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,3 +200,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:16.177462Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002864'

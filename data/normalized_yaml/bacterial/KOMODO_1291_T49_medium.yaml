@@ -1,3 +1,4 @@
+id: CultureMech:004041
 name: T49 medium
 original_name: T49 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1291
     label: T49 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1291 | DSMZ Medium: 1291 (mediadive.medium:1291) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1291 | DSMZ Medium: 1291 (mediadive.medium:1291)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Gellan Gum
   term:
@@ -173,3 +175,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1291
+- timestamp: '2026-03-13T06:19:24.377914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004041'

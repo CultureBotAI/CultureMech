@@ -1,3 +1,4 @@
+id: CultureMech:004038
 name: RHIZOMICROBIUM medium
 original_name: RHIZOMICROBIUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1288
     label: RHIZOMICROBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1288 | DSMZ Medium: 1288 (mediadive.medium:1288) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1288 | DSMZ Medium: 1288 (mediadive.medium:1288)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase
   concentration:
@@ -124,3 +126,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1288
+- timestamp: '2026-03-13T06:19:24.352238Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004038'

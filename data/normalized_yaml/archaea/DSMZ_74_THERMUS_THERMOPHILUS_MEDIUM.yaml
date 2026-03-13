@@ -1,3 +1,4 @@
+id: CultureMech:000282
 name: THERMUS THERMOPHILUS MEDIUM
 original_name: THERMUS THERMOPHILUS MEDIUM
 category: archaea
@@ -32,7 +33,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: The original medium description specifies polypeptone, which appears to be no longer available.
+  description: The original medium description specifies polypeptone, which appears
+    to be no longer available.
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 74'
+- timestamp: '2026-03-13T06:18:54.092210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000282'

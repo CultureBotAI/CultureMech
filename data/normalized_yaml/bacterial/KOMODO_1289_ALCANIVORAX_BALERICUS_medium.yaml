@@ -1,3 +1,4 @@
+id: CultureMech:004039
 name: ALCANIVORAX BALERICUS medium
 original_name: ALCANIVORAX BALERICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1289
     label: ALCANIVORAX BALERICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1289 | DSMZ Medium: 1289 (mediadive.medium:1289) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1289 | DSMZ Medium: 1289 (mediadive.medium:1289)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -45,3 +47,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1289
+- timestamp: '2026-03-13T06:19:24.356456Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004039'

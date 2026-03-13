@@ -1,3 +1,4 @@
+id: CultureMech:012715
 preferred_term: Main sol. J14
 term:
   id: mediadive.solution:3635
@@ -139,3 +140,8 @@ preparation_notes: Add L-cystine to 50 ml of 1 N HCl and mix thoroughly. Add the
   components and bring volume to 950 ml. Adjust pH to 7.6-7.8. After autoclaving and
   then cooling to 50C, aseptically add 50.0 ml of horse blood. Mix thoroughly and
   pour into sterile petri dishes or distribute into sterile tubes.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.365990Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012715'

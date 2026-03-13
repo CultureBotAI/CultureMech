@@ -1,3 +1,4 @@
+id: CultureMech:002874
 name: METHYLOTHERMUS SUBTERRANEUS MEDIUM
 original_name: METHYLOTHERMUS SUBTERRANEUS MEDIUM
 category: bacterial
@@ -228,17 +229,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (filter-sterilized)
-    to the medium:'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following
+    solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
-  description: Then, distribute the medium into culture vessels (leave >80% gas phase, by volume) and
-    seal with butyl rubber stoppers. Replace the gas phase with N2-CO2-CH4-O2 (40:15:40:5, by volume)
-    and pressurize to 100 kPa with the same gas mixture. Check final pH of the medium to be around 6.0.
+  description: Then, distribute the medium into culture vessels (leave >80% gas phase,
+    by volume) and seal with butyl rubber stoppers. Replace the gas phase with N2-CO2-CH4-O2
+    (40:15:40:5, by volume) and pressurize to 100 kPa with the same gas mixture. Check
+    final pH of the medium to be around 6.0.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -246,3 +248,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J523'
+- timestamp: '2026-03-13T06:19:16.251625Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002874'

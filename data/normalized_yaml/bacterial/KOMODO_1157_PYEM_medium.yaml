@@ -1,3 +1,4 @@
+id: CultureMech:003867
 name: PYEM medium
 original_name: PYEM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1157
     label: PYEM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1157 | DSMZ Medium: 1157 (mediadive.medium:1157)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -65,3 +67,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1157
+- timestamp: '2026-03-13T06:19:22.829900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003867'

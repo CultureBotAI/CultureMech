@@ -1,3 +1,4 @@
+id: CultureMech:006510
 name: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
 original_name: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
     label: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
-notes: 'Source: KOMODO ModelSEED | ID: 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene | DSMZ Medium:
-  799 (mediadive.medium:799) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+  | DSMZ Medium: 799 (mediadive.medium:799) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene'
+- timestamp: '2026-03-13T06:19:41.478759Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006510'

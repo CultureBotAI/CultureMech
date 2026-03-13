@@ -1,3 +1,4 @@
+id: CultureMech:002812
 name: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
 original_name: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
 category: bacterial
@@ -18,9 +19,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use JCM Medium No. 462 without Na2S x 9H2O, and with 20 mM sodium acetate and 30 mM ferric
-    citrate instead of sodium lactate. Reduce the medium with 0.5 g/L L-cysteine x HCl (5% solution, autoclaved
-    and stored under N2).
+  description: Use JCM Medium No. 462 without Na2S x 9H2O, and with 20 mM sodium acetate
+    and 30 mM ferric citrate instead of sodium lactate. Reduce the medium with 0.5
+    g/L L-cysteine x HCl (5% solution, autoclaved and stored under N2).
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.878483Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002812'
 data_quality_flags:
 - incomplete_composition

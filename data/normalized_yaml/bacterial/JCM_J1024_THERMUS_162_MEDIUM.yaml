@@ -1,3 +1,4 @@
+id: CultureMech:002208
 name: THERMUS 162 MEDIUM
 original_name: THERMUS 162 MEDIUM
 category: bacterial
@@ -110,8 +111,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Adjust pH to 7.2 with NaOH. For preparation of solid medium, add 28.0 g/L agar. After
-    autoclaving, add the following solution to the medium:'
+  description: 'Adjust pH to 7.2 with NaOH. For preparation of solid medium, add 28.0
+    g/L agar. After autoclaving, add the following solution to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2
@@ -122,3 +123,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1024'
+- timestamp: '2026-03-13T06:19:11.258135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002208'

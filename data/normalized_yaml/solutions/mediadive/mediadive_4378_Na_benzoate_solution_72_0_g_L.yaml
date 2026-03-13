@@ -1,3 +1,4 @@
+id: CultureMech:013373
 preferred_term: Na benzoate solution 72.0 g/L
 term:
   id: mediadive.solution:4378
@@ -28,3 +29,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.967151Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013373'

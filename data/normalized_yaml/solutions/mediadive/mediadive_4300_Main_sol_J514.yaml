@@ -1,3 +1,4 @@
+id: CultureMech:013310
 preferred_term: Main sol. J514
 term:
   id: mediadive.solution:4300
@@ -138,3 +139,8 @@ composition:
 preparation_notes: Add components except Vitamin solution to distilled water and bring
   volume to 990 ml. Adjust pH to 7.3. After autoclaving, aseptically add filter-sterilized
   Vitamin solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:30.603445Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013310'

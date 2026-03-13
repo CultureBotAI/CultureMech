@@ -1,3 +1,4 @@
+id: CultureMech:006675
 name: ANAEROBIC CHOLESTEROL MEDIUM
 original_name: ANAEROBIC CHOLESTEROL MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:858
     label: ANAEROBIC CHOLESTEROL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 858 | DSMZ Medium: 858 (mediadive.medium:858) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 858 | DSMZ Medium: 858 (mediadive.medium:858)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -222,3 +224,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 858
+- timestamp: '2026-03-13T06:19:42.897868Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006675'

@@ -1,3 +1,4 @@
+id: CultureMech:013752
 preferred_term: Solution B
 term:
   id: mediadive.solution:4812
@@ -69,3 +70,8 @@ preparation_notes: "Mix components and autoclave under a N2 atmosphere.\nTo comp
   \ same gas mixture (e.g., 20 ml medium in 50 ml serum bottle) and seal with butyl\
   \ rubber stoppers. Finally add per liter the following solutions (autoclaved and\
   \ stored under a N2 atmosphere): \n\nOriginal volume: 120 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.278821Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013752'

@@ -1,3 +1,4 @@
+id: CultureMech:003852
 name: RHODOBLASTUS medium
 original_name: RHODOBLASTUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1142
     label: RHODOBLASTUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1142 | DSMZ Medium: 1142 (mediadive.medium:1142) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1142 | DSMZ Medium: 1142 (mediadive.medium:1142)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -117,3 +119,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1142
+- timestamp: '2026-03-13T06:19:22.723419Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003852'

@@ -1,3 +1,4 @@
+id: CultureMech:013923
 preferred_term: Main sol. 35
 term:
   id: mediadive.solution:49
@@ -82,3 +83,8 @@ preparation_notes: 'Dissolve all ingredients, except the sulfur and adjust the p
   sulfur onto the surface of autoclaved liquid basal medium.
 
   Note: Incubate statically without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.396356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013923'

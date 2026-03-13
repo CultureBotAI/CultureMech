@@ -1,3 +1,4 @@
+id: CultureMech:011917
 preferred_term: Main sol. 1285
 term:
   id: mediadive.solution:2578
@@ -114,3 +115,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0
   - 5.0 with alginic acid.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.775677Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011917'

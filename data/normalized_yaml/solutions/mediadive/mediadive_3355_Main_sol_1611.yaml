@@ -1,3 +1,4 @@
+id: CultureMech:012505
 preferred_term: Main sol. 1611
 term:
   id: mediadive.solution:3355
@@ -166,3 +167,8 @@ preparation_notes: 'Dissolve ingredients except NaHCO3, hemin, cysteine in water
   cysteine.
 
   Adjust pH to 6.7-6.8.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.258732Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012505'

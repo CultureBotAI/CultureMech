@@ -1,3 +1,4 @@
+id: CultureMech:013567
 preferred_term: Main sol. J698
 term:
   id: mediadive.solution:4607
@@ -91,3 +92,8 @@ preparation_notes: "Adjust pH to 2.0 with H2SO4. After autoclaving, add the foll
   \ solution (autoclaved): \nComment: For autotrophic growth on ferrous sulfate, prepare\
   \ the medium without yeast extract, add 13.9 g/L (final) FeSO4 x 7H2O and adjust\
   \ pH to 1.7 with H2SO4.\n\nOriginal volume: 1002 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.065562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013567'

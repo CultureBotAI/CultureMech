@@ -1,3 +1,4 @@
+id: CultureMech:003164
 name: GAUZE'S SYNTHETIC MEDIUM NO. 1
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1
 category: bacterial
@@ -71,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J81'
+- timestamp: '2026-03-13T06:19:18.251482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003164'

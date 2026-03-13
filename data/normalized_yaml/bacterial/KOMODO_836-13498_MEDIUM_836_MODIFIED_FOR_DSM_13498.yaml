@@ -1,3 +1,4 @@
+id: CultureMech:006628
 name: MEDIUM 836 MODIFIED FOR DSM 13498
 original_name: MEDIUM 836 MODIFIED FOR DSM 13498
 category: bacterial
@@ -161,4 +162,8 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:42.501002Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006628'
 ph_value: 7.5

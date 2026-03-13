@@ -1,3 +1,4 @@
+id: CultureMech:013584
 preferred_term: Main sol. J706
 term:
   id: mediadive.solution:4623
@@ -178,3 +179,8 @@ preparation_notes: "Mix ingredients and adjust pH to 7.2. Distribute the medium 
   \ and store under a N2-CO2 (4:1, v/v) gas mixture. The other solutions are autoclaved\
   \ and stored anaerobically under a N2 atmosphere] to the medium (per 4.7 ml of the\
   \ medium): \n\nOriginal volume: 941 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.153805Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013584'

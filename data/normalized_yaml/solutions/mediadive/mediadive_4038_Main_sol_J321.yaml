@@ -1,3 +1,4 @@
+id: CultureMech:013092
 preferred_term: Main sol. J321
 term:
   id: mediadive.solution:4038
@@ -52,3 +53,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.4 with NaOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.360841Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013092'

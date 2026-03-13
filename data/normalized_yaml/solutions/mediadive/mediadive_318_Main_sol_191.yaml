@@ -1,3 +1,4 @@
+id: CultureMech:012391
 preferred_term: Main sol. 191
 term:
   id: mediadive.solution:318
@@ -43,3 +44,8 @@ preparation_notes: Blend 50.0 g corn meal in 800 ml of distilled water. Leave ov
   in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1 l.
   Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes. pH
   6.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.667098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012391'

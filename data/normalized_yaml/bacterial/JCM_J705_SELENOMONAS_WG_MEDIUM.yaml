@@ -1,3 +1,4 @@
+id: CultureMech:003051
 name: SELENOMONAS WG MEDIUM
 original_name: SELENOMONAS WG MEDIUM
 category: bacterial
@@ -113,13 +114,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Bring to a boil for several seconds and cool down
-    to room temperature under a stream of N2-CO2 (4:1, v/v). Distribute the medium into culture vessels
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. Prior to use, add per liter
-    the following sterile solutions (autoclaved):'
+  description: 'Mix components and adjust pH to 7.0. Bring to a boil for several seconds
+    and cool down to room temperature under a stream of N2-CO2 (4:1, v/v). Distribute
+    the medium into culture vessels under the same gas mixture, seal with butyl rubber
+    stoppers and autoclave. Prior to use, add per liter the following sterile solutions
+    (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 6.7 - 6.8, and store in a tightly stoppered bottle at 4C.
+  description: Adjust pH to 6.7 - 6.8, and store in a tightly stoppered bottle at
+    4C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -127,3 +130,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J705'
+- timestamp: '2026-03-13T06:19:17.436041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003051'

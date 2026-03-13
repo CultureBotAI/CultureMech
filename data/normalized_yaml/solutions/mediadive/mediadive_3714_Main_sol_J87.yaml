@@ -1,3 +1,4 @@
+id: CultureMech:012796
 preferred_term: Main sol. J87
 term:
   id: mediadive.solution:3714
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 5.6 with 20% lactic acid or 1 N to 6 N HCl.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.705915Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012796'

@@ -1,3 +1,4 @@
+id: CultureMech:009546
 name: Thiomonas cuprina medium
 original_name: Thiomonas cuprina medium
 category: bacterial
@@ -224,6 +225,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.778119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009546'
 solutions:
 - preferred_term: Trace element solution*
   term:

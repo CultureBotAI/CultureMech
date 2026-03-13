@@ -1,3 +1,4 @@
+id: CultureMech:012000
 preferred_term: Main sol. 152
 term:
   id: mediadive.solution:267
@@ -126,3 +127,8 @@ composition:
 preparation_notes: Add nicotinic acid to the given amount of water, boil until dissolved
   and cool to room temperature. Add the other substances, adjust pH to 8.2 and distribute
   under 100% nitrogen atmosphere.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.212949Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012000'

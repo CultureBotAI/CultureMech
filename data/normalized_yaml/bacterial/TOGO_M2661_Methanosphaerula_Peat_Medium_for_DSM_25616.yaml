@@ -1,3 +1,4 @@
+id: CultureMech:009216
 name: Methanosphaerula (Peat) Medium (for DSM 25616)
 original_name: Methanosphaerula (Peat) Medium (for DSM 25616)
 category: bacterial
@@ -300,6 +301,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 12 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.212576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009216'
 high_metal: true
 solutions:
 - preferred_term: Solution A

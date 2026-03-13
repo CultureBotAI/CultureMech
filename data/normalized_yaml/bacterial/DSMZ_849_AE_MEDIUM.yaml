@@ -1,3 +1,4 @@
+id: CultureMech:002006
 name: AE MEDIUM
 original_name: AE MEDIUM
 category: bacterial
@@ -43,12 +44,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Both liquid and solid media are prepared by autoclaving the medium without the addition
-    of glacial acetic acid and absolute ethanol. Glacial acetic acid and absolute ethanol are sterilised
-    either by filtration (use Teflon filters) or they may be autoclaved in completely closed screw cap
-    glass bottles sealed with a Teflon coated septum. A double layer system das not appear to be essential
-    for the growth of this organism, however, plates should be incubated in sealed containers to keep
-    the humidity high (> 90%).
+  description: Both liquid and solid media are prepared by autoclaving the medium
+    without the addition of glacial acetic acid and absolute ethanol. Glacial acetic
+    acid and absolute ethanol are sterilised either by filtration (use Teflon filters)
+    or they may be autoclaved in completely closed screw cap glass bottles sealed
+    with a Teflon coated septum. A double layer system das not appear to be essential
+    for the growth of this organism, however, plates should be incubated in sealed
+    containers to keep the humidity high (> 90%).
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 849'
+- timestamp: '2026-03-13T06:19:09.336764Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002006'

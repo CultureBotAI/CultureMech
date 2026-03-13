@@ -1,3 +1,4 @@
+id: CultureMech:011309
 preferred_term: Main sol. 920
 term:
   id: mediadive.solution:1891
@@ -102,3 +103,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final
   pH 6.7.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.820229Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011309'

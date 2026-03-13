@@ -1,3 +1,4 @@
+id: CultureMech:002889
 name: MODIFIED SYNTROPHOMONAS MEDIUM FOR OL4
 original_name: MODIFIED SYNTROPHOMONAS MEDIUM FOR OL4
 category: bacterial
@@ -175,22 +176,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH to 7.2, bring to a boil for a few seconds and cool down under
-    a stream of a N2-CO2 (80:20) gas mixture. Distribute Solution A into culture vessels (e.g., 8 ml per
-    tube) under the same gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Mix components, adjust pH to 7.2, bring to a boil for a few seconds
+    and cool down under a stream of a N2-CO2 (80:20) gas mixture. Distribute Solution
+    A into culture vessels (e.g., 8 ml per tube) under the same gas mixture, seal
+    with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.
 - step_number: 3
   action: AUTOCLAVE
-  description: To complete the medium, combine 0.8 volume of Solution A, 0.1 volume of Solution B and
-    0.1 volume of 3.5% NaHCO3 solution [filter-sterilized and stored under a N2-CO2 (80:20) gas mixture].
-    Reduce the medium with 0.3 g/L (final) L-cysteine x HCl x H2O and 0.3 g/L (final) Na2S x 9H2O (autoclave
-    and store 3% stock solutions under a N2 atmosphere).
+  description: To complete the medium, combine 0.8 volume of Solution A, 0.1 volume
+    of Solution B and 0.1 volume of 3.5% NaHCO3 solution [filter-sterilized and stored
+    under a N2-CO2 (80:20) gas mixture]. Reduce the medium with 0.3 g/L (final) L-cysteine
+    x HCl x H2O and 0.3 g/L (final) Na2S x 9H2O (autoclave and store 3% stock solutions
+    under a N2 atmosphere).
 - step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 13948, incubate with a 10% inoculum together with a 5% inoculum
-    of <I>Methanobacterium formicicum</I> NT (=JCM 10132).'
+  description: 'Comment: For strain JCM 13948, incubate with a 10% inoculum together
+    with a 5% inoculum of <I>Methanobacterium formicicum</I> NT (=JCM 10132).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,3 +201,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J540'
+- timestamp: '2026-03-13T06:19:16.361416Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002889'

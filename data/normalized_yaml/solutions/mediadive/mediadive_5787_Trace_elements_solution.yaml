@@ -1,3 +1,4 @@
+id: CultureMech:014633
 preferred_term: Trace elements solution
 term:
   id: mediadive.solution:5787
@@ -135,3 +136,8 @@ composition:
     label: sodium molybdate (anhydrous)
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:38.749120Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014633'

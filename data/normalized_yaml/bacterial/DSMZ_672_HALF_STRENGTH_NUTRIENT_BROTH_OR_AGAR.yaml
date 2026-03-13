@@ -1,3 +1,4 @@
+id: CultureMech:001813
 name: HALF STRENGTH NUTRIENT BROTH OR AGAR
 original_name: HALF STRENGTH NUTRIENT BROTH OR AGAR
 category: bacterial
@@ -25,3 +26,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 672'
+- timestamp: '2026-03-13T06:19:07.408058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001813'

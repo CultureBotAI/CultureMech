@@ -1,3 +1,4 @@
+id: CultureMech:004808
 name: Mineral salt solution (medium 621)
 original_name: Mineral salt solution (medium 621)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3029'
+- timestamp: '2026-03-13T06:19:28.831767Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004808'

@@ -1,3 +1,4 @@
+id: CultureMech:013836
 preferred_term: Main sol. J906
 term:
   id: mediadive.solution:4907
@@ -134,3 +135,8 @@ preparation_notes: "Add components to distilled water and bring volume to 900 ml
   \ Adjust pH to 7.0 and autoclave. For preparation of solid medium, add 20.0 g/L\
   \ Bacto agar (BD-Difco). Separately autoclave the following solution: \nAfter autoclaving,\
   \ add the solution to the medium.\n\nOriginal volume: 101 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:33.788565Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013836'

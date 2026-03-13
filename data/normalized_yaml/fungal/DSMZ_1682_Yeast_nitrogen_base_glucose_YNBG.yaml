@@ -1,3 +1,4 @@
+id: CultureMech:010458
 name: Yeast nitrogen base glucose (YNBG)
 original_name: Yeast nitrogen base glucose (YNBG)
 category: fungal
@@ -37,8 +38,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to 4.0 and autoclave.
-    Dissolve 20 g agar in 500 mL distilled water and autoclave. Combine both after autoclavation.
+  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to
+    4.0 and autoclave. Dissolve 20 g agar in 500 mL distilled water and autoclave.
+    Combine both after autoclavation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -46,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1682'
+- timestamp: '2026-03-13T06:20:13.911278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010458'

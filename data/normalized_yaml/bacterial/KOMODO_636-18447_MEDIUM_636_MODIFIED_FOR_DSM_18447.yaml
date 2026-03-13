@@ -1,3 +1,4 @@
+id: CultureMech:006153
 name: MEDIUM 636 MODIFIED FOR DSM 18447
 original_name: MEDIUM 636 MODIFIED FOR DSM 18447
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:636_18447
     label: MEDIUM 636 MODIFIED FOR DSM 18447
-notes: 'Source: KOMODO ModelSEED | ID: 636_18447 | DSMZ Medium: 636 (mediadive.medium:636) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 636_18447 | DSMZ Medium: 636 (mediadive.medium:636)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -51,3 +52,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 636
+- timestamp: '2026-03-13T06:19:38.652407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006153'

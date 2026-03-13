@@ -1,3 +1,4 @@
+id: CultureMech:011585
 preferred_term: Main sol. 1085
 term:
   id: mediadive.solution:2194
@@ -105,3 +106,8 @@ preparation_notes: Dissolve ingredients (except urea and thioglycolate), boil me
   tubes or serum vials and autoclave. After autoclaving add urea from a 10% (w/v)
   stock solution sterilized by filtration and stored under 100% N2 gas. Adjust pH
   of complete medium to 7.4.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.612664Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011585'

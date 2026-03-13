@@ -1,3 +1,4 @@
+id: CultureMech:005415
 name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
 original_name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
 category: bacterial
@@ -170,3 +171,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:32.657927Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005415'

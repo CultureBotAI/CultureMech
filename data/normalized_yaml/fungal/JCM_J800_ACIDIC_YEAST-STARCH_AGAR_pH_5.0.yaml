@@ -1,3 +1,4 @@
+id: CultureMech:010549
 name: ACIDIC YEAST-STARCH AGAR (pH 5.0)
 original_name: ACIDIC YEAST-STARCH AGAR (pH 5.0)
 category: fungal
@@ -19,7 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Yeast-starch agar (A) (see Medium No. 42) and adjust pH to 5.0.
+  description: Prepare Yeast-starch agar (A) (see Medium No. 42) and adjust pH to
+    5.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:14.322391Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010549'
 data_quality_flags:
 - incomplete_composition

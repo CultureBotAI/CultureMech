@@ -1,11 +1,12 @@
+id: CultureMech:006344
 name: THIOBACILLUS FERROOXIDANS MEDIUM WITH FERROUS SULFATE
 original_name: THIOBACILLUS FERROOXIDANS MEDIUM WITH FERROUS SULFATE
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.4
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 70 | DSMZ Medium: 70 (mediadive.medium:70) |
-  Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 70 | DSMZ Medium: 70 (mediadive.medium:70)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 70
   term:
@@ -58,3 +59,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 70
+- timestamp: '2026-03-13T06:19:39.892537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006344'

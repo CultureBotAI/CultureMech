@@ -1,3 +1,4 @@
+id: CultureMech:013381
 preferred_term: Main sol. 205
 term:
   id: mediadive.solution:438
@@ -102,3 +103,8 @@ composition:
 preparation_notes: Dissolve agar by heating before adding sodium chloride. Adjust
   pH to 7.0 before autoclaving. Adjust pH to 8.5 with sterile 5% Na2CO3 after heat
   sterilization of the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.017681Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013381'

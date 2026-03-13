@@ -1,3 +1,4 @@
+id: CultureMech:014474
 preferred_term: Main sol. 291
 term:
   id: mediadive.solution:5597
@@ -111,3 +112,8 @@ preparation_notes: 'Adjust pH to 6.5 with NaOH, bring to boil for 5 min, then co
   inoculation, pressurize to 1 bar H2 + CO2 overpressure.
 
   Prepare medium, then add per liter:'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.990032Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014474'

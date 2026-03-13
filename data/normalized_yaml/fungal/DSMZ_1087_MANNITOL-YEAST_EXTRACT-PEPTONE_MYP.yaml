@@ -1,3 +1,4 @@
+id: CultureMech:010442
 name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
 original_name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
 category: fungal
@@ -39,3 +40,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1087'
+- timestamp: '2026-03-13T06:20:13.840878Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010442'

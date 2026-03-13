@@ -1,3 +1,4 @@
+id: CultureMech:012932
 preferred_term: Main sol. J196
 term:
   id: mediadive.solution:3859
@@ -225,3 +226,8 @@ preparation_notes: Mix ingredients, except yeast extract, starch, sulfur and Na2
   Steam sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically
   add the yeast extract and starch solutions, and sulfur to the medium. Prior to inoculation,
   add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.386407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012932'

@@ -1,3 +1,4 @@
+id: CultureMech:003057
 name: AG MEDIUM
 original_name: AG MEDIUM
 category: bacterial
@@ -57,3 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J710'
+- timestamp: '2026-03-13T06:19:17.479474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003057'

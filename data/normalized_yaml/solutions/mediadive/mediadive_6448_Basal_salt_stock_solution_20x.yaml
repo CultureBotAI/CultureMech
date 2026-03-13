@@ -1,3 +1,4 @@
+id: CultureMech:015035
 preferred_term: Basal salt stock solution (20x)
 term:
   id: mediadive.solution:6448
@@ -58,3 +59,8 @@ preparation_notes: 'Prepare with double distilled water.
   Cool down to room temperature.
 
   Store in the dark at 4 °C.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.465343Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015035'

@@ -1,3 +1,4 @@
+id: CultureMech:014190
 preferred_term: Main sol. J1168
 term:
   id: mediadive.solution:5278
@@ -90,3 +91,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0.
 
   After autoclaving, aseptically add the following antibiotics (filter-sterilized): '
+curation_history:
+- timestamp: '2026-03-13T06:20:36.202986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014190'

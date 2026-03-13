@@ -1,3 +1,4 @@
+id: CultureMech:013968
 preferred_term: Main sol. J1010
 term:
   id: mediadive.solution:5051
@@ -177,3 +178,8 @@ preparation_notes: "Adjust pH to 7.0 - 7.8.\nPrepare the medium anaerobically un
   \ and autoclave. After autoclaving, add per 5.0 ml the following solutions from\
   \ anaerobic stocks (autoclaved or *filter-sterilized and stored under a N2 atmosphere):\
   \ \n\nOriginal volume: 1047 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.731240Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013968'

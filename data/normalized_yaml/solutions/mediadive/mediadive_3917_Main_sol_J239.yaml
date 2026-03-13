@@ -1,3 +1,4 @@
+id: CultureMech:012983
 preferred_term: Main sol. J239
 term:
   id: mediadive.solution:3917
@@ -69,3 +70,8 @@ preparation_notes: 'Add components, except vitamin B solution, to distilled wate
 
 
   Original volume: 11 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.730527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012983'

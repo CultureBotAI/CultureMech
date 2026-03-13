@@ -1,3 +1,4 @@
+id: CultureMech:013840
 preferred_term: Main sol. J908
 term:
   id: mediadive.solution:4910
@@ -157,3 +158,8 @@ preparation_notes: 'Adjust pH to 7.0 with 1 M Na2CO3 or 1 M H2SO4. Mix ingredien
 
 
   Original volume: 1046 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.815886Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013840'

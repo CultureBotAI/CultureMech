@@ -1,3 +1,4 @@
+id: CultureMech:006408
 name: HALOBACILLUS medium
 original_name: HALOBACILLUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:755
     label: HALOBACILLUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 755 | DSMZ Medium: 755 (mediadive.medium:755) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 755 | DSMZ Medium: 755 (mediadive.medium:755)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -45,3 +47,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 755
+- timestamp: '2026-03-13T06:19:40.497608Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006408'

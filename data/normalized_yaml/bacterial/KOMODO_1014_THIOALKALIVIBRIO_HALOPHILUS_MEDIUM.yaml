@@ -1,3 +1,4 @@
+id: CultureMech:003524
 name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
 original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
 category: bacterial
@@ -135,4 +136,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1014
+- timestamp: '2026-03-13T06:19:20.440247Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003524'
 high_metal: true

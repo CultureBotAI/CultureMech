@@ -1,3 +1,4 @@
+id: CultureMech:001948
 name: HAEMOPHILUS MEDIUM
 original_name: HAEMOPHILUS MEDIUM
 category: bacterial
@@ -27,8 +28,8 @@ preparation_steps:
   description: 'NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.'
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make up to 25 ml with dist.
-    water, filter sterilize.'
+  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make
+    up to 25 ml with dist. water, filter sterilize.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 804'
+- timestamp: '2026-03-13T06:19:08.723221Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001948'

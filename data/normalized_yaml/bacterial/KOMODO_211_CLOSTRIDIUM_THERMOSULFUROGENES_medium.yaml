@@ -1,3 +1,4 @@
+id: CultureMech:004402
 name: CLOSTRIDIUM THERMOSULFUROGENES medium
 original_name: CLOSTRIDIUM THERMOSULFUROGENES medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:211
     label: CLOSTRIDIUM THERMOSULFUROGENES medium
-notes: 'Source: KOMODO ModelSEED | ID: 211 | DSMZ Medium: 211 (mediadive.medium:211) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 211 | DSMZ Medium: 211 (mediadive.medium:211)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -233,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.837643Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:26.769527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004402'

@@ -1,3 +1,4 @@
+id: CultureMech:006288
 name: For DSM 17232
 original_name: For DSM 17232
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:684.2
     label: For DSM 17232
-notes: 'Source: KOMODO ModelSEED | ID: 684.2 | DSMZ Medium: 684 (mediadive.medium:684) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 684.2 | DSMZ Medium: 684 (mediadive.medium:684)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.217976Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:39.523656Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006288'

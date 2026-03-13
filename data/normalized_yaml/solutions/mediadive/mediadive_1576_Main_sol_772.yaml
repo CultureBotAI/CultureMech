@@ -1,3 +1,4 @@
+id: CultureMech:011034
 preferred_term: Main sol. 772
 term:
   id: mediadive.solution:1576
@@ -151,3 +152,8 @@ preparation_notes: Thiamine hydrochloride may be replaced by 2 g/l yeast extract
   The pH of the medium is adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10
   ml sterile methanol (filter sterilised, or autoclaved in crimp top sealed bottles)
   is added to the sterilised medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.099966Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011034'

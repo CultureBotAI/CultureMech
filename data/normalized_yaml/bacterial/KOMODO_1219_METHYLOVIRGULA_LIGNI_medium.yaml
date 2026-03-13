@@ -1,3 +1,4 @@
+id: CultureMech:003970
 name: METHYLOVIRGULA LIGNI medium
 original_name: METHYLOVIRGULA LIGNI medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1219
     label: METHYLOVIRGULA LIGNI medium
-notes: 'Source: KOMODO ModelSEED | ID: 1219 | DSMZ Medium: 1219 (mediadive.medium:1219) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1219 | DSMZ Medium: 1219 (mediadive.medium:1219)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -118,3 +120,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1219
+- timestamp: '2026-03-13T06:19:23.761128Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003970'

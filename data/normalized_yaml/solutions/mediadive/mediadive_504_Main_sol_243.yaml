@@ -1,3 +1,4 @@
+id: CultureMech:013966
 preferred_term: Main sol. 243
 term:
   id: mediadive.solution:504
@@ -68,3 +69,8 @@ preparation_notes: 'Adjust pH to 7.8. Boil for 5 min, filter and readjust the pH
 
   Natural sea water is stored in the dark for at least three weeks to "age". If natural
   sea water is not available use artificial sea water.'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.711894Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013966'

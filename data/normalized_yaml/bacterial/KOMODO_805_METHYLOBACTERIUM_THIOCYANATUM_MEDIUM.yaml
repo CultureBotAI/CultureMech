@@ -1,3 +1,4 @@
+id: CultureMech:006523
 name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
 original_name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:805
     label: METHYLOBACTERIUM THIOCYANATUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 805 | DSMZ Medium: 805 (mediadive.medium:805) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 805 | DSMZ Medium: 805 (mediadive.medium:805)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KSCN
   term:
@@ -71,3 +73,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 805
+- timestamp: '2026-03-13T06:19:41.521893Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006523'

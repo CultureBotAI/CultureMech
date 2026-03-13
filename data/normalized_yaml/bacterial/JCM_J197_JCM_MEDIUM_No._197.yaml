@@ -1,3 +1,4 @@
+id: CultureMech:002559
 name: JCM MEDIUM No. 197
 original_name: JCM MEDIUM No. 197
 category: bacterial
@@ -225,12 +226,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and
-    autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins
-    while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under
-    a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a
-    N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x
-    H2O solutions, and adjust pH to 6.8.
+  description: Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine
+    x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
+    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
+    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
+    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 with 1 N KOH.
@@ -245,3 +247,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:14.159562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002559'

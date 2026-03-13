@@ -1,3 +1,4 @@
+id: CultureMech:013607
 preferred_term: Main sol. J724
 term:
   id: mediadive.solution:4648
@@ -213,3 +214,8 @@ preparation_notes: "Mix components except sulfur, adjust pH to 6.0 and autoclave
   \ Distribute the medium into culture vessels containing sulfur under a N2 atmosphere,\
   \ and seal with butyl rubber stoppers. Then, add the following solution (autoclaved\
   \ and stored under a N2 atmosphere) to the medium: \n\nOriginal volume: 1019 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.309914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013607'

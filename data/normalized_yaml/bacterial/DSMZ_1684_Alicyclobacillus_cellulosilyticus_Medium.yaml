@@ -1,3 +1,4 @@
+id: CultureMech:001166
 name: Alicyclobacillus cellulosilyticus Medium
 original_name: Alicyclobacillus cellulosilyticus Medium
 category: bacterial
@@ -71,8 +72,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7
-    H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.
+  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.
+    Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution
+    separately.
 - step_number: 2
   action: MIX
   description: Aseptically add all solutions to the basal medium.
@@ -83,3 +85,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1684'
+- timestamp: '2026-03-13T06:19:01.825167Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001166'

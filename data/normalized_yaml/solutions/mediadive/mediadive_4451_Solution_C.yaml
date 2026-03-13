@@ -1,3 +1,4 @@
+id: CultureMech:013432
 preferred_term: Solution C
 term:
   id: mediadive.solution:4451
@@ -83,3 +84,8 @@ preparation_notes: "Prepare all solutions and autoclave under a N2 atmosphere. A
   \ ml in 120 ml serum bottle) and seal with Viton rubber stoppers. Finally add per\
   \ liter the following solution from an anaerobic stock (autoclaved): \n\nOriginal\
   \ volume: 111 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.289377Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013432'

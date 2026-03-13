@@ -1,3 +1,4 @@
+id: CultureMech:015190
 preferred_term: Solution B
 term:
   id: mediadive.solution:820
@@ -32,3 +33,8 @@ preparation_notes: 'Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.243406Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015190'

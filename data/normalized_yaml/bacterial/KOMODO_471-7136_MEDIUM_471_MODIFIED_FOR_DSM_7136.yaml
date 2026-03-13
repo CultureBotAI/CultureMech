@@ -1,3 +1,4 @@
+id: CultureMech:005584
 name: MEDIUM 471 MODIFIED FOR DSM 7136
 original_name: MEDIUM 471 MODIFIED FOR DSM 7136
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:471_7136
     label: MEDIUM 471 MODIFIED FOR DSM 7136
-notes: 'Source: KOMODO ModelSEED | ID: 471_7136 | DSMZ Medium: 471 (mediadive.medium:471) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 471_7136 | DSMZ Medium: 471 (mediadive.medium:471)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 471
+- timestamp: '2026-03-13T06:19:34.302006Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005584'

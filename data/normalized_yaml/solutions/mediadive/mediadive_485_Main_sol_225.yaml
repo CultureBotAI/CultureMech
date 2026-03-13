@@ -1,3 +1,4 @@
+id: CultureMech:013792
 preferred_term: Main sol. 225
 term:
   id: mediadive.solution:485
@@ -81,3 +82,8 @@ preparation_notes: Adjust pH to 5.6 with 20% lactic acid or HCl. Fresh yeast ext
   to 8°C, decanting and further clarifying the supernatant by centrifugation. The
   extract prepared in this manner contains 1.5% solids and if not to be used within
   a few days, should be frozen or freeze-dried immediately.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.511172Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013792'

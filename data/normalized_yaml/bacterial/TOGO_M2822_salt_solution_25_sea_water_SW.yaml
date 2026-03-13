@@ -1,3 +1,4 @@
+id: CultureMech:009368
 name: salt solution 25% sea water (SW)
 original_name: salt solution 25% sea water (SW)
 category: bacterial
@@ -104,4 +105,8 @@ curation_history:
   date: '2026-02-03T11:20:56.616674'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-13T06:20:05.908884Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009368'
 high_metal: true

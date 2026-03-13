@@ -1,3 +1,4 @@
+id: CultureMech:000249
 name: MEDIUM FOR HALOPHILIC ARCHAEA
 original_name: MEDIUM FOR HALOPHILIC ARCHAEA
 category: archaea
@@ -86,4 +87,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1184'
+- timestamp: '2026-03-13T06:18:53.767246Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000249'
 high_metal: true

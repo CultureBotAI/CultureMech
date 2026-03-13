@@ -1,3 +1,4 @@
+id: CultureMech:011528
 preferred_term: Main sol. 1052
 term:
   id: mediadive.solution:2128
@@ -61,3 +62,8 @@ composition:
 preparation_notes: 'Adjust pH to 6.9 prior to addition of agar.
 
   Same as solutions A and B of medium 585, CYE-ACES agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.240814Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011528'

@@ -1,3 +1,4 @@
+id: CultureMech:002515
 name: EUBACTERIUM MEDIUM
 original_name: EUBACTERIUM MEDIUM
 category: bacterial
@@ -39,3 +40,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J157'
+- timestamp: '2026-03-13T06:19:13.914196Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002515'

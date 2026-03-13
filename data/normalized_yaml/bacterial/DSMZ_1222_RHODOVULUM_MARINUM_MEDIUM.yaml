@@ -1,3 +1,4 @@
+id: CultureMech:000681
 name: RHODOVULUM MARINUM MEDIUM
 original_name: RHODOVULUM MARINUM MEDIUM
 category: bacterial
@@ -123,10 +124,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium under a nitrogen atmosphere, dispense into tubes or bottles fitted with
-    rubber stoppers so that they are half full. Add the vitamin B12 from a filter-sterilised stock solution.
-    Either sorbitol or sodium pyruvate may serve as the carbon source. The final pH of the medium should
-    be 6.8.
+  description: Prepare the medium under a nitrogen atmosphere, dispense into tubes
+    or bottles fitted with rubber stoppers so that they are half full. Add the vitamin
+    B12 from a filter-sterilised stock solution. Either sorbitol or sodium pyruvate
+    may serve as the carbon source. The final pH of the medium should be 6.8.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.
@@ -137,3 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1222'
+- timestamp: '2026-03-13T06:18:57.399271Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000681'

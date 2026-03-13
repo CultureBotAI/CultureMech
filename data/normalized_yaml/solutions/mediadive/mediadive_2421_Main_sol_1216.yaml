@@ -1,3 +1,4 @@
+id: CultureMech:011800
 preferred_term: Main sol. 1216
 term:
   id: mediadive.solution:2421
@@ -90,3 +91,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Add the vitamin B12 solution from a filter sterilised stock solution
   to the autoclaved, cooled medium. Add 15.0 g/l agar for solid media.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.008936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011800'

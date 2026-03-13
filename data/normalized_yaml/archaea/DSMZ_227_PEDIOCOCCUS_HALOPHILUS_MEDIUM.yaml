@@ -1,3 +1,4 @@
+id: CultureMech:000258
 name: PEDIOCOCCUS HALOPHILUS MEDIUM
 original_name: PEDIOCOCCUS HALOPHILUS MEDIUM
 category: archaea
@@ -90,3 +91,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 227'
+- timestamp: '2026-03-13T06:18:53.830708Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000258'

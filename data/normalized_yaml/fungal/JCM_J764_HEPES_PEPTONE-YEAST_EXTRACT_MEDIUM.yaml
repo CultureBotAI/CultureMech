@@ -1,3 +1,4 @@
+id: CultureMech:010548
 name: HEPES PEPTONE-YEAST EXTRACT MEDIUM
 original_name: HEPES PEPTONE-YEAST EXTRACT MEDIUM
 category: fungal
@@ -229,10 +230,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 7.25. Autoclave and after cooling, add the following solution (filter-sterilized):'
+  description: 'Adjust pH to 7.25. Autoclave and after cooling, add the following
+    solution (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
+    minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -244,3 +247,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:14.315941Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010548'

@@ -1,3 +1,4 @@
+id: CultureMech:004579
 name: SOUR DOUGH medium
 original_name: SOUR DOUGH medium
 category: bacterial
@@ -55,3 +56,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: HCl'
+- timestamp: '2026-03-13T06:19:27.494449Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004579'

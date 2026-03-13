@@ -1,3 +1,4 @@
+id: CultureMech:007465
 name: '1227'
 original_name: '1227'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 86 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.167668Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007465'
 solutions:
 - preferred_term: NH4Cl1gKH2PO40.27gMgSO4·7H2O0.25gCaCl2·2H2O0.15gNaHCO32.5gGlucose10gYeast
     extract3gNa2S·9H2O30gCysteine-HCl30gResazurin1mgTrace element solution*1mlVitamin

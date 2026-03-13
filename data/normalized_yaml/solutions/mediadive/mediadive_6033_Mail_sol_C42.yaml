@@ -1,3 +1,4 @@
+id: CultureMech:014761
 preferred_term: Mail sol. C42
 term:
   id: mediadive.solution:6033
@@ -67,3 +68,8 @@ preparation_notes: "Note for Tris base: First add to 50ml of DIW and pH. Then sl
   \ top up to 100ml with DIW ensuring\r\nto check pH remains at 7.2.\nMake up to 1\
   \ litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1M HCl.\r\
   \nAutoclave at 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.443787Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014761'

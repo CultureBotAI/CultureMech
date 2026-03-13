@@ -1,3 +1,4 @@
+id: CultureMech:014414
 preferred_term: Main sol. 1723
 term:
   id: mediadive.solution:5533
@@ -46,3 +47,8 @@ preparation_notes: "Optional: To prepare solid medium, use 7 g/l agarose. Steril
   \ class='amount' data-volume='1000'>1000</span> ml with MilliQ water.\nAutoclave\
   \ at 121 °C for 20 min.\nAfter cooling, add the following filter sterilized (0.2\
   \ µm) components to complete the\r\nmedium:"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.677978Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014414'

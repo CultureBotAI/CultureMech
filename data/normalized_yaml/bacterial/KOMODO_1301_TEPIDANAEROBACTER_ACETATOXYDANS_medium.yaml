@@ -1,3 +1,4 @@
+id: CultureMech:004056
 name: TEPIDANAEROBACTER ACETATOXYDANS medium
 original_name: TEPIDANAEROBACTER ACETATOXYDANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1301
     label: TEPIDANAEROBACTER ACETATOXYDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1301 | DSMZ Medium: 1301 (mediadive.medium:1301) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1301 | DSMZ Medium: 1301 (mediadive.medium:1301)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -261,4 +263,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.250875Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:24.480631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004056'

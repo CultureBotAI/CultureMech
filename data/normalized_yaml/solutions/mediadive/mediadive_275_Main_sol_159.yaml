@@ -1,3 +1,4 @@
+id: CultureMech:012061
 preferred_term: Main sol. 159
 term:
   id: mediadive.solution:275
@@ -142,3 +143,8 @@ preparation_notes: Dissolve ingredients (except cysteine, carbonate and glucose)
   an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by
   filtration and carbonate from a sterile anoxic stock solution prepared under 80%
   N2 and 20% CO2 gas atmosphere. Final pH of the medium should be 6.7 - 7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.609117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012061'

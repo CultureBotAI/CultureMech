@@ -1,3 +1,4 @@
+id: CultureMech:013630
 preferred_term: Main sol. J741
 term:
   id: mediadive.solution:4675
@@ -145,3 +146,8 @@ preparation_notes: 'Dissolve ingredients except NaHCO3, fructose, cysteine and s
 
 
   Original volume: 1040 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.425703Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013630'

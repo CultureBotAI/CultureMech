@@ -1,3 +1,4 @@
+id: CultureMech:011145
 preferred_term: Main sol. 830d
 term:
   id: mediadive.solution:1690
@@ -124,3 +125,8 @@ preparation_notes: 'Dissolve ingredients, then sparge solution with 80% N2 and 2
 
   Before inoculation, add sterile air to obtain 5% O2 in headspace gas atmosphere
   (e.g., add 2 ml air to a Hungate-type tube).'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.829942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011145'

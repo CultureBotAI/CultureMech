@@ -1,3 +1,4 @@
+id: CultureMech:007981
 name: TOGO Medium M1441
 original_name: (Unnamed medium)
 category: bacterial
@@ -68,6 +69,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.824635Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007981'
 solutions:
 - preferred_term: Potato*
   composition: []

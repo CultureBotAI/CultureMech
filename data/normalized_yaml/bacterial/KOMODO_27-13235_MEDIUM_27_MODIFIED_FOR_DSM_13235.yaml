@@ -1,3 +1,4 @@
+id: CultureMech:004680
 name: MEDIUM 27 MODIFIED FOR DSM 13235
 original_name: MEDIUM 27 MODIFIED FOR DSM 13235
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:27_13235
     label: MEDIUM 27 MODIFIED FOR DSM 13235
-notes: 'Source: KOMODO ModelSEED | ID: 27_13235 | DSMZ Medium: 27 (mediadive.medium:27) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 27_13235 | DSMZ Medium: 27 (mediadive.medium:27)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -151,4 +153,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 27
+- timestamp: '2026-03-13T06:19:28.039287Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004680'
 ph_value: 6.8

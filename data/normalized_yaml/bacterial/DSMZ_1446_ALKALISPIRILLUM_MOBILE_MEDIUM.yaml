@@ -1,3 +1,4 @@
+id: CultureMech:000909
 name: ALKALISPIRILLUM MOBILE MEDIUM
 original_name: ALKALISPIRILLUM MOBILE MEDIUM
 category: bacterial
@@ -152,12 +153,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: We recommend that liquid and solid media be made by autoclaving the Na2CO3 separately,
-    otherwise the high pH will cause ammonia to be lost. When making media solidified with agar (20 g/l)
-    the agar should also not be autoclaved with the Na2CO3 otherwise the agar will be hydrolysed. When
-    mixing the ingredients for media cool all components to about 55°C otherwise hydrolysis of the agar
-    may occur. Adjust pH after autoclaving by adding the NaHCO3 (8 %) to pH 9.0. Please note that the
-    NaHCO3 solution should be filter sterilized.
+  description: We recommend that liquid and solid media be made by autoclaving the
+    Na2CO3 separately, otherwise the high pH will cause ammonia to be lost. When making
+    media solidified with agar (20 g/l) the agar should also not be autoclaved with
+    the Na2CO3 otherwise the agar will be hydrolysed. When mixing the ingredients
+    for media cool all components to about 55°C otherwise hydrolysis of the agar may
+    occur. Adjust pH after autoclaving by adding the NaHCO3 (8 %) to pH 9.0. Please
+    note that the NaHCO3 solution should be filter sterilized.
 - step_number: 2
   action: ADJUST_PH
   description: For dissolving adjust pH to about 3 with 1 N HCl.
@@ -172,3 +174,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:59.471874Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000909'

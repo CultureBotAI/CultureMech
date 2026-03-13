@@ -1,3 +1,4 @@
+id: CultureMech:000863
 name: MEIOTHERMUS MEDIUM R8
 original_name: MEIOTHERMUS MEDIUM R8
 category: bacterial
@@ -47,8 +48,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.2 with NaOH (1M) and sterilize by autoclaving. The medium may be solidified
-    by adding 20.0 g/l agar.
+  description: Adjust to pH 7.2 with NaOH (1M) and sterilize by autoclaving. The medium
+    may be solidified by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,3 +61,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.993167Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000863'

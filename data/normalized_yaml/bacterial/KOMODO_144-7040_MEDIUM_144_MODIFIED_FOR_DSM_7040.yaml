@@ -1,3 +1,4 @@
+id: CultureMech:004160
 name: MEDIUM 144 MODIFIED FOR DSM 7040
 original_name: MEDIUM 144 MODIFIED FOR DSM 7040
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:144_7040
     label: MEDIUM 144 MODIFIED FOR DSM 7040
-notes: 'Source: KOMODO ModelSEED | ID: 144_7040 | DSMZ Medium: 144 (mediadive.medium:144) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 144_7040 | DSMZ Medium: 144 (mediadive.medium:144)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -243,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.814005Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:25.506525Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004160'

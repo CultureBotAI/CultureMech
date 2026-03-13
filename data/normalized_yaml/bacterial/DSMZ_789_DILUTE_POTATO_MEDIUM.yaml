@@ -1,3 +1,4 @@
+id: CultureMech:001925
 name: DILUTE POTATO MEDIUM
 original_name: DILUTE POTATO MEDIUM
 category: bacterial
@@ -46,7 +47,8 @@ preparation_steps:
   description: Adjust medium for final pH 6.8. Autoclave at 121°C for 15 min.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Boil for 30 min; filter out potato and return volume of liquid to 1000 ml.
+  description: Boil for 30 min; filter out potato and return volume of liquid to 1000
+    ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -54,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 789'
+- timestamp: '2026-03-13T06:19:08.470013Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001925'

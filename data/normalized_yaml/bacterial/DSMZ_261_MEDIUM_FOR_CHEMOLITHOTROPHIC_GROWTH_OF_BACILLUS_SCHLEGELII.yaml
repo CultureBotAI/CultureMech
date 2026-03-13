@@ -1,3 +1,4 @@
+id: CultureMech:001360
 name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
 original_name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
 category: bacterial
@@ -120,11 +121,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml amounts in Erlenmeyer
-    flasks and sterilize for 15 minutes at 121°C.
+  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
+    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
 - step_number: 2
   action: MIX
-  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2, 45% H2"
+  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2,\
+    \ 45% H2"
 applications:
 - Microbial cultivation
 curation_history:
@@ -132,3 +134,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 261'
+- timestamp: '2026-03-13T06:19:03.390945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001360'

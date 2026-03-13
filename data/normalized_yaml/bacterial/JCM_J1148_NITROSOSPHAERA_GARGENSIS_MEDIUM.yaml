@@ -1,3 +1,4 @@
+id: CultureMech:002321
 name: NITROSOSPHAERA GARGENSIS MEDIUM
 original_name: NITROSOSPHAERA GARGENSIS MEDIUM
 category: bacterial
@@ -139,18 +140,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave (CaCO3 will not fully dissolve). After cooling, add the following
-    solutions to the medium (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave (CaCO3 will not fully dissolve). After
+    cooling, add the following solutions to the medium (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: DISSOLVE
-  description: 'Comments: Typically, prepare the medium in glass bottles with plastic caps leaving an
-    ample head space (e.g., 50 ml medium in 250 ml-Duran&reg; glass bottles). Cultivate in the dark without
-    agitation. Check growth by phase-contrast microscopy. Also, it can be checked by measuring ammonium
-    concentration. Once ammonium in the medium is depleted, it can be fed by the addition of another 50
-    mM NH4Cl solution (final 1.0 mM). The ammonium-feeding can be repeated several times. If the culture
-    stops the ammonium oxidation or begins to grow even slower, nitrite may be accumulated up to a level
-    causing growth inhibition in the culture (ca. 15 mM). If so, replace the medium as follows: spin down
-    the culture (< 65,000 g for 15 min), remove the supernatant, and add fresh culture medium to the white
+  description: 'Comments: Typically, prepare the medium in glass bottles with plastic
+    caps leaving an ample head space (e.g., 50 ml medium in 250 ml-Duran&reg; glass
+    bottles). Cultivate in the dark without agitation. Check growth by phase-contrast
+    microscopy. Also, it can be checked by measuring ammonium concentration. Once
+    ammonium in the medium is depleted, it can be fed by the addition of another 50
+    mM NH4Cl solution (final 1.0 mM). The ammonium-feeding can be repeated several
+    times. If the culture stops the ammonium oxidation or begins to grow even slower,
+    nitrite may be accumulated up to a level causing growth inhibition in the culture
+    (ca. 15 mM). If so, replace the medium as follows: spin down the culture (< 65,000
+    g for 15 min), remove the supernatant, and add fresh culture medium to the white
     pellet. Then, suspend the pellet and remove the suspension to a new glass bottle.'
 applications:
 - Microbial cultivation
@@ -159,3 +162,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1148'
+- timestamp: '2026-03-13T06:19:12.339066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002321'

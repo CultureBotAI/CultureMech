@@ -1,3 +1,4 @@
+id: CultureMech:013947
 preferred_term: Main sol. J994
 term:
   id: mediadive.solution:5025
@@ -167,3 +168,8 @@ preparation_notes: "Mix components thoroughly. Bring to a boil for a few seconds
   \ rubber stoppers. Add per liter the following solutions from anaerobic stocks (autoclaved\
   \ and stored under a N2 gas atmosphere): \nReadjust pH to 7.5, if necessary.\n\n\
   Original volume: 1022 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.577976Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013947'

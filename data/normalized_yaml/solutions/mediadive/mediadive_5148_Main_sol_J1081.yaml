@@ -1,3 +1,4 @@
+id: CultureMech:014059
 preferred_term: Main sol. J1081
 term:
   id: mediadive.solution:5148
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "To complete the medium, aseptically add the following solution\
   \ (autoclaved or *filter-sterilized): \n\nOriginal volume: 1015 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.345457Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014059'

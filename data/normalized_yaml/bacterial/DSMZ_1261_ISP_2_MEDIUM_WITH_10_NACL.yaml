@@ -1,3 +1,4 @@
+id: CultureMech:000720
 name: ISP 2 MEDIUM WITH 10% NACL
 original_name: ISP 2 MEDIUM WITH 10% NACL
 category: bacterial
@@ -51,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1261'
+- timestamp: '2026-03-13T06:18:57.754144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000720'

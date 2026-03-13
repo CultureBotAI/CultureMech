@@ -1,3 +1,4 @@
+id: CultureMech:005870
 name: MODIFIED BACTO MARINE BROTH
 original_name: MODIFIED BACTO MARINE BROTH
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:514d
     label: MODIFIED BACTO MARINE BROTH
-notes: 'Source: KOMODO ModelSEED | ID: 514d | DSMZ Medium: 514d (mediadive.medium:514d) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514d | DSMZ Medium: 514d (mediadive.medium:514d)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -140,3 +142,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 514
+- timestamp: '2026-03-13T06:19:36.924058Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005870'

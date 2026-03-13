@@ -1,3 +1,4 @@
+id: CultureMech:000540
 name: DIALISTER MEDIUM
 original_name: DIALISTER MEDIUM
 category: bacterial
@@ -122,8 +123,8 @@ preparation_steps:
   description: Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
-    in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +136,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:56.224961Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000540'

@@ -1,3 +1,4 @@
+id: CultureMech:010744
 preferred_term: Haemin solution
 term:
   id: mediadive.solution:124
@@ -44,3 +45,8 @@ preparation_notes: 'Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml wi
 
 
   Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.296670Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010744'

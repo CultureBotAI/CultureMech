@@ -1,3 +1,4 @@
+id: CultureMech:004191
 name: METHANOSARCINA (thermophilic) medium
 original_name: METHANOSARCINA (thermophilic) medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:164
     label: METHANOSARCINA (thermophilic) medium
-notes: 'Source: KOMODO ModelSEED | ID: 164 | DSMZ Medium: 164 (mediadive.medium:164) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 164 | DSMZ Medium: 164 (mediadive.medium:164)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 164'
+- timestamp: '2026-03-13T06:19:25.740129Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004191'

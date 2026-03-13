@@ -1,3 +1,4 @@
+id: CultureMech:001153
 name: SCHAEDLER BROTH (Roth; 5772)
 original_name: SCHAEDLER BROTH (Roth; 5772)
 category: bacterial
@@ -79,9 +80,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Boil medium under CO2 until the resazurin indicator changes from pink to colourless. Cool
-    down under CO2 and adjust pH to 7.6. Switch to N2 to prevent further lowering of the pH. Fill up into
-    Hungate tubes under N2 and autoclave.
+  description: Boil medium under CO2 until the resazurin indicator changes from pink
+    to colourless. Cool down under CO2 and adjust pH to 7.6. Switch to N2 to prevent
+    further lowering of the pH. Fill up into Hungate tubes under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +90,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1669'
+- timestamp: '2026-03-13T06:19:01.706638Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001153'

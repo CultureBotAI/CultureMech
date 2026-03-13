@@ -1,3 +1,4 @@
+id: CultureMech:014067
 preferred_term: Main sol. J1086
 term:
   id: mediadive.solution:5156
@@ -68,3 +69,8 @@ preparation_notes: "Mix components thoroughly. For preparation of solid medium, 
   \ add the following solution (filter-sterilized): \nAseptically distribute the medium\
   \ into culture vessels and replace the gas phase with a N2-CO2 (4:1, v/v) gas atmosphere.\n\
   \nOriginal volume: 1050 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.392697Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014067'

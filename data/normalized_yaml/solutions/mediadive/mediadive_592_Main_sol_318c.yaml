@@ -1,3 +1,4 @@
+id: CultureMech:014699
 preferred_term: Main sol. 318c
 term:
   id: mediadive.solution:592
@@ -165,3 +166,8 @@ preparation_notes: 'Dissolve ingredients except bicarbonate, vitamins, gallate, 
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.124625Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014699'

@@ -1,3 +1,4 @@
+id: CultureMech:002850
 name: SULFATE-FREE SYNTROPHOMONUS MEDIUM
 original_name: SULFATE-FREE SYNTROPHOMONUS MEDIUM
 category: bacterial
@@ -198,16 +199,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients of Solution A, adjust pH to 7.2, bring to a boil for a few minutes and
-    cool down to room temperature under a stream of N2-CO2 (4:1, v/v) gas mixture. Distribute the solution
-    into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave. Filter-sterilize
-    Solution B and equilibrate by gassing with the same gas mixture for at least 15 min. Autoclave Solutions
-    C and D under a N2 atmosphere. Add appropriate amounts of Solutions B, C and D to Solution A to complete
-    the medium.
+  description: Mix ingredients of Solution A, adjust pH to 7.2, bring to a boil for
+    a few minutes and cool down to room temperature under a stream of N2-CO2 (4:1,
+    v/v) gas mixture. Distribute the solution into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. Filter-sterilize Solution
+    B and equilibrate by gassing with the same gas mixture for at least 15 min. Autoclave
+    Solutions C and D under a N2 atmosphere. Add appropriate amounts of Solutions
+    B, C and D to Solution A to complete the medium.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -215,3 +217,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J499'
+- timestamp: '2026-03-13T06:19:16.085792Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002850'

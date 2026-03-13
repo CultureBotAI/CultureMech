@@ -1,3 +1,4 @@
+id: CultureMech:006837
 name: DSM 13542 = ARh1 (thiosulphate grown)
 original_name: DSM 13542 = ARh1 (thiosulphate grown)
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:925.3
     label: DSM 13542 = ARh1 (thiosulphate grown)
-notes: 'Source: KOMODO ModelSEED | ID: 925.3 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925.3 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -119,4 +121,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 925
+- timestamp: '2026-03-13T06:19:44.220393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006837'
 ph_value: 10.0

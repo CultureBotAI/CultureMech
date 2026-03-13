@@ -1,3 +1,4 @@
+id: CultureMech:005908
 name: MEDIUM 531 MODIFIED FOR DSM 6805
 original_name: MEDIUM 531 MODIFIED FOR DSM 6805
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:531_6805
     label: MEDIUM 531 MODIFIED FOR DSM 6805
-notes: 'Source: KOMODO ModelSEED | ID: 531_6805 | DSMZ Medium: 531 (mediadive.medium:531) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 531_6805 | DSMZ Medium: 531 (mediadive.medium:531)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:
@@ -61,3 +63,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 531
+- timestamp: '2026-03-13T06:19:37.198557Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005908'

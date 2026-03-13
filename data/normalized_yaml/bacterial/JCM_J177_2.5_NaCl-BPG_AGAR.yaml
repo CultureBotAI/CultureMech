@@ -1,3 +1,4 @@
+id: CultureMech:002537
 name: 2.5% NaCl-BPG AGAR
 original_name: 2.5% NaCl-BPG AGAR
 category: bacterial
@@ -65,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J177'
+- timestamp: '2026-03-13T06:19:14.034604Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002537'

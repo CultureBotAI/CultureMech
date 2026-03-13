@@ -1,11 +1,12 @@
+id: CultureMech:004346
 name: Trace metal solution (Kelly solution T)
 original_name: Trace metal solution (Kelly solution T)
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2070 | DSMZ Medium: 2070 (mediadive.medium:2070)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2070 | DSMZ Medium: 2070
+  (mediadive.medium:2070) | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2070
   term:
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2070'
+- timestamp: '2026-03-13T06:19:26.636527Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004346'

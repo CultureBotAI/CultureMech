@@ -1,3 +1,4 @@
+id: CultureMech:007712
 name: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
 original_name: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
 category: bacterial
@@ -43,6 +44,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:50.831659Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007712'
 solutions:
 - preferred_term: Nutrient agar (see Medium [M65])
   composition: []

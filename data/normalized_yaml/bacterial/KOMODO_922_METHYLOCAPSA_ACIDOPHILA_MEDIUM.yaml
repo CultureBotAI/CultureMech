@@ -1,3 +1,4 @@
+id: CultureMech:006828
 name: METHYLOCAPSA ACIDOPHILA MEDIUM
 original_name: METHYLOCAPSA ACIDOPHILA MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:922
     label: METHYLOCAPSA ACIDOPHILA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 922 | DSMZ Medium: 922 (mediadive.medium:922) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 922 | DSMZ Medium: 922 (mediadive.medium:922)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -99,3 +101,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 922
+- timestamp: '2026-03-13T06:19:44.116434Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006828'

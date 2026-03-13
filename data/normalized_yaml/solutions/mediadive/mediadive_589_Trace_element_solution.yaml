@@ -1,3 +1,4 @@
+id: CultureMech:014691
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:589
@@ -174,3 +175,8 @@ composition:
 preparation_notes: First dissolve NTA in 200 ml of distilled water and adjust pH to
   6.5 with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and
   make up to 1000.00 ml.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.073302Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014691'

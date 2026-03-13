@@ -1,3 +1,4 @@
+id: CultureMech:011928
 preferred_term: Main sol. 1293
 term:
   id: mediadive.solution:2591
@@ -83,3 +84,8 @@ preparation_notes: 'Dissolve ingredients (except bicarbonate) and adjust pH to 8
   9 ml medium). Adjust pH of the complete medium to 7.5 - 7.8, if necessary.
 
   After inoculation add sterile 100% H2 gas to an overpressure of 0.5 bar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.843688Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011928'

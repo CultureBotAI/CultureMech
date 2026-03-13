@@ -1,3 +1,4 @@
+id: CultureMech:006392
 name: CLOSTRIDIUM LONGISPORUM medium
 original_name: CLOSTRIDIUM LONGISPORUM medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:741
     label: CLOSTRIDIUM LONGISPORUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 741 | DSMZ Medium: 741 (mediadive.medium:741) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 741 | DSMZ Medium: 741 (mediadive.medium:741)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 741'
+- timestamp: '2026-03-13T06:19:40.389873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006392'

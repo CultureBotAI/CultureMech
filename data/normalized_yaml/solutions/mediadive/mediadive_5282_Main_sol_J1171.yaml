@@ -1,3 +1,4 @@
+id: CultureMech:014194
 preferred_term: Main sol. J1171
 term:
   id: mediadive.solution:5282
@@ -321,3 +322,8 @@ preparation_notes: "Mix components thoroughly. For preparation of solid medium, 
   \ solution (autoclaved). Cultivate under an air containing 10% (v/v) methane in\
   \ gas tight flasks or jars leaving &; 80% gas phase by volume.\nTrace element solution:\
   \ \nVitamins solution: \n\nOriginal volume: 3006 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.233005Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014194'

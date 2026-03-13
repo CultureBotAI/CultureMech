@@ -1,3 +1,4 @@
+id: CultureMech:002867
 name: RHODOBIUM GOKURNUM MEDIUM
 original_name: RHODOBIUM GOKURNUM MEDIUM
 category: bacterial
@@ -141,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J516'
+- timestamp: '2026-03-13T06:19:16.204509Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002867'

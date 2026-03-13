@@ -1,3 +1,4 @@
+id: CultureMech:008685
 name: NHB Medium
 original_name: NHB Medium
 category: bacterial
@@ -102,4 +103,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.389865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008685'
 high_metal: true

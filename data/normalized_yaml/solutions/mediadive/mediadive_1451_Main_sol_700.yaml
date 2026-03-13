@@ -1,3 +1,4 @@
+id: CultureMech:010924
 preferred_term: Main sol. 700
 term:
   id: mediadive.solution:1451
@@ -129,3 +130,8 @@ preparation_notes: 'Prepare the medium under N2, omitting Na2CO3, Na HCO3, Na2S,
   Boil the medium and cool under nitrogen, add the Na2CO3 and NaHCO3 and adjust the
   pH to 9.7 with 6N NaOH (about 15 ml). Sterilize by autoclaving and add the Na2S
   (neutralized), vitamins and sucrose from sterile stock solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.403838Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010924'

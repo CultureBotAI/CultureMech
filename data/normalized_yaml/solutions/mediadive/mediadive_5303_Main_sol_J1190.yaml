@@ -1,3 +1,4 @@
+id: CultureMech:014216
 preferred_term: Main sol. J1190
 term:
   id: mediadive.solution:5303
@@ -153,3 +154,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 7.9 with NaOH and au
   \ and seal with butyl rubber stoppers. Prior inoculation, add per liter the following\
   \ solution from an anaerobic stock (autoclaved and stored under a N2 atmosphere):\
   \ \n\nOriginal volume: 1011 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.391227Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014216'

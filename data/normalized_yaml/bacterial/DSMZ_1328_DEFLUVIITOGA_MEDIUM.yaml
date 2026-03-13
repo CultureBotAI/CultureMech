@@ -1,3 +1,4 @@
+id: CultureMech:000785
 name: DEFLUVIITOGA MEDIUM
 original_name: DEFLUVIITOGA MEDIUM
 category: bacterial
@@ -173,17 +174,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfur, cysteine, peptone, fumarate, carbonate and sulfide)
-    and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissove
-    cysteine, then dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or
-    serum vials containing already the appropriate amount of sulfur and autoclave at 121°C for 20 min.
-    Add peptone, fumarate and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust
-    pH of the complete medium to 7.0.
+  description: Dissolve ingredients (except sulfur, cysteine, peptone, fumarate, carbonate
+    and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Add and dissove cysteine, then dispense under 80% N2 and
+    20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing
+    already the appropriate amount of sulfur and autoclave at 121°C for 20 min. Add
+    peptone, fumarate and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Adjust pH of the complete medium to 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +193,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1328'
+- timestamp: '2026-03-13T06:18:58.347640Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000785'

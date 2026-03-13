@@ -1,3 +1,4 @@
+id: CultureMech:002250
 name: HALF STRENGTH SKIM MILK AGAR
 original_name: HALF STRENGTH SKIM MILK AGAR
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J106'
+- timestamp: '2026-03-13T06:19:11.641583Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002250'

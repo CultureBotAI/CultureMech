@@ -1,3 +1,4 @@
+id: CultureMech:010577
 preferred_term: Main sol. 501
 term:
   id: mediadive.solution:1028
@@ -132,3 +133,8 @@ preparation_notes: 'Dissolve ingredients (except glucose and sulfide), adjust pH
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.479259Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010577'

@@ -1,3 +1,4 @@
+id: CultureMech:001453
 name: TOMATO JUICE MILK Medium
 original_name: TOMATO JUICE MILK Medium
 category: bacterial
@@ -26,8 +27,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Filter canned tomatoes through paper. Leave over night at 10°C. Dissolve remaining components
-    and bring to 1L.
+  description: Filter canned tomatoes through paper. Leave over night at 10°C. Dissolve
+    remaining components and bring to 1L.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
@@ -38,3 +39,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 353'
+- timestamp: '2026-03-13T06:19:04.337798Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001453'

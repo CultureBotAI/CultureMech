@@ -1,3 +1,4 @@
+id: CultureMech:001129
 name: GEMMATIMONAS MEDIUM
 original_name: GEMMATIMONAS MEDIUM
 category: bacterial
@@ -145,3 +146,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1646'
+- timestamp: '2026-03-13T06:19:01.444876Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001129'

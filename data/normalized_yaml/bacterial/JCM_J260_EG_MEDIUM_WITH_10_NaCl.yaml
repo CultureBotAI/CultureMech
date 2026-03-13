@@ -1,3 +1,4 @@
+id: CultureMech:002618
 name: EG MEDIUM WITH 10% NaCl
 original_name: EG MEDIUM WITH 10% NaCl
 category: bacterial
@@ -18,7 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit horse blood.
+  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit
+    horse blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,5 +32,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.575435Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002618'
 data_quality_flags:
 - incomplete_composition

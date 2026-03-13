@@ -1,3 +1,4 @@
+id: CultureMech:013789
 preferred_term: Main sol. J870
 term:
   id: mediadive.solution:4856
@@ -66,3 +67,8 @@ composition:
 preparation_notes: 'Adjust pH to 6.8.
 
   For preparation of solid medium, add 15.0 g/L agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.486407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013789'

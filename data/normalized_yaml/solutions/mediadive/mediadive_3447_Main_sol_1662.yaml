@@ -1,3 +1,4 @@
+id: CultureMech:012574
 preferred_term: Main sol. 1662
 term:
   id: mediadive.solution:3447
@@ -157,3 +158,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, crotonate and sulfid
 
 
   Original volume: 1020 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.645035Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012574'

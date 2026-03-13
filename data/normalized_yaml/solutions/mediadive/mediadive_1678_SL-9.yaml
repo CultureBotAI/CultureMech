@@ -1,3 +1,4 @@
+id: CultureMech:011134
 preferred_term: SL-9
 term:
   id: mediadive.solution:1678
@@ -139,3 +140,8 @@ preparation_notes: 'First dissolve FeCl2 in the HCl, then dilute in water, add a
   dissolve the other salts. Finally make up to 1000.00 ml.
 
   Adjust pH to 6.0 .'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.758526Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011134'

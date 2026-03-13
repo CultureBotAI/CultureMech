@@ -1,3 +1,4 @@
+id: CultureMech:014022
 preferred_term: Main sol. 246a
 term:
   id: mediadive.solution:510
@@ -73,3 +74,8 @@ preparation_notes: 'Dissolve beef extract and peptone by heating in tap water, a
 
   Rehydrate and grow lyophilized cells from the ampoule in liquid medium 246. Subsequent
   subculturing may be carried out in liquid medium or on agar plates.'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.076955Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014022'

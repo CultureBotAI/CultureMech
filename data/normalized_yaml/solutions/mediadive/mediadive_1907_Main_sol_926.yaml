@@ -1,3 +1,4 @@
+id: CultureMech:011323
 preferred_term: Main sol. 926
 term:
   id: mediadive.solution:1907
@@ -145,3 +146,8 @@ preparation_notes: 'Prepare the medium anaerobically under nitrogen. Do not adju
 
 
   Original volume: 2000 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.910783Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011323'

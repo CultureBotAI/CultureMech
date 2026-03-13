@@ -1,3 +1,4 @@
+id: CultureMech:002583
 name: THERMOANAEROBACTER ETHANOLICUS MEDIUM
 original_name: THERMOANAEROBACTER ETHANOLICUS MEDIUM
 category: bacterial
@@ -239,21 +240,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except reducing solution, and bring to the boil while gassing with N2-H2
-    (95:5) gas mixture. When the color turns from blue to reddish pink, add the reducing solution during
-    continuous gassing and boiling. Anaerobically dispense the medium in tubes under a N2-H2 (95:5) atmosphere.
-    Stopper the tubes and autoclave.
+  description: Mix ingredients, except reducing solution, and bring to the boil while
+    gassing with N2-H2 (95:5) gas mixture. When the color turns from blue to reddish
+    pink, add the reducing solution during continuous gassing and boiling. Anaerobically
+    dispense the medium in tubes under a N2-H2 (95:5) atmosphere. Stopper the tubes
+    and autoclave.
 - step_number: 2
   action: STORE
   description: Store at -20C or 4C in the absence of light.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals
-    in the order listed.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals in the order listed.
 - step_number: 4
   action: AUTOCLAVE
-  description: Boil NaOH solution and cool down under a N2-H2 (95:5) atmosphere, then add Na2S x 9H2O
-    and L-cysteine x HCl x H2O to the solution. Autoclave it under a N2-H2 (95:5) atmosphere.
+  description: Boil NaOH solution and cool down under a N2-H2 (95:5) atmosphere, then
+    add Na2S x 9H2O and L-cysteine x HCl x H2O to the solution. Autoclave it under
+    a N2-H2 (95:5) atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,3 +264,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J221'
+- timestamp: '2026-03-13T06:19:14.324479Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002583'

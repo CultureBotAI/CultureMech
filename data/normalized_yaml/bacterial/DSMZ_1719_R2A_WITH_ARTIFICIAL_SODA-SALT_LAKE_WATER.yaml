@@ -1,3 +1,4 @@
+id: CultureMech:001197
 name: R2A WITH ARTIFICIAL SODA-SALT LAKE WATER
 original_name: R2A WITH ARTIFICIAL SODA-SALT LAKE WATER
 category: bacterial
@@ -146,8 +147,9 @@ preparation_steps:
   description: pH 9.0.
 - step_number: 5
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding agar. Add agar, heat
-    medium to boiling to dissolve agar, and autoclave for 15 min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
+    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
+    min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -159,3 +161,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:02.143099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001197'

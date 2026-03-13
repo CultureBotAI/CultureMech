@@ -1,3 +1,4 @@
+id: CultureMech:005619
 name: HYPERTHERMUS BUTYLICUS MEDIUM
 original_name: HYPERTHERMUS BUTYLICUS MEDIUM
 category: bacterial
@@ -227,3 +228,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Merged 5 duplicate ingredient(s); Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:34.634383Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005619'

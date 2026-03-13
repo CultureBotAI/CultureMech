@@ -1,3 +1,4 @@
+id: CultureMech:011548
 preferred_term: Main sol. 1063
 term:
   id: mediadive.solution:2153
@@ -41,3 +42,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: After sterilization add sterile 1M Na-sesquicarbonate solution
   to achieve the pH of 9.5 (see medium 31).
+curation_history:
+- timestamp: '2026-03-13T06:20:20.397272Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011548'

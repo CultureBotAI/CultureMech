@@ -1,3 +1,4 @@
+id: CultureMech:003088
 name: MJYP2 MEDIUM
 original_name: MJYP2 MEDIUM
 category: bacterial
@@ -169,8 +170,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH to 7.0 and autoclave. Replace the gas phase with N2-O2 (99:1,
-    v/v) gas mixture, and pressurize to 200 kPa with the same gas mixture.
+  description: Mix components, adjust pH to 7.0 and autoclave. Replace the gas phase
+    with N2-O2 (99:1, v/v) gas mixture, and pressurize to 200 kPa with the same gas
+    mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -182,3 +184,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.712184Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003088'

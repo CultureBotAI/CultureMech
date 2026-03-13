@@ -1,3 +1,4 @@
+id: CultureMech:006377
 name: DEHALOBACTER RESTRICTUS medium
 original_name: DEHALOBACTER RESTRICTUS medium
 category: bacterial
@@ -290,3 +291,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:40.241399Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006377'

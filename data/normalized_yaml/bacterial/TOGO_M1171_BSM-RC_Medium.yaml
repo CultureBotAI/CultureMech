@@ -1,3 +1,4 @@
+id: CultureMech:007696
 name: BSM-RC Medium
 original_name: BSM-RC Medium
 category: bacterial
@@ -184,6 +185,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:50.695499Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007696'
 high_metal: true
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])

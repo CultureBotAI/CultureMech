@@ -1,3 +1,4 @@
+id: CultureMech:013145
 preferred_term: Main sol. J375
 term:
   id: mediadive.solution:4100
@@ -143,3 +144,8 @@ preparation_notes: Mix ingredients, except sulfur and Na2S x 9H2O, adjust pH to 
   stoppers. Prior to inoculation, add the sterile Na2S solution to the medium, and
   readjust pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1,
   v/v).
+curation_history:
+- timestamp: '2026-03-13T06:20:29.682694Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013145'

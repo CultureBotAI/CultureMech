@@ -1,3 +1,4 @@
+id: CultureMech:001793
 name: PYE MEDIUM
 original_name: PYE MEDIUM
 category: bacterial
@@ -112,8 +113,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: HEAT
-  description: Boil the medium for few minutes. Fill in tubes with rubber stoppers under nitrogen gas.
-    Sterilize at 121°C for 15 min.
+  description: Boil the medium for few minutes. Fill in tubes with rubber stoppers
+    under nitrogen gas. Sterilize at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +122,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 655'
+- timestamp: '2026-03-13T06:19:07.259501Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001793'

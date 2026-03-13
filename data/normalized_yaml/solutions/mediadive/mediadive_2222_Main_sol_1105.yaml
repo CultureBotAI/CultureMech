@@ -1,3 +1,4 @@
+id: CultureMech:011613
 preferred_term: Main sol. 1105
 term:
   id: mediadive.solution:2222
@@ -121,3 +122,8 @@ preparation_notes: 'Dissolve in this order in 1L preferably MilliQ water. Steril
   Trace metals, MgSO4 x 7 H2O and Na2S2O3 x 5 H2O solution you can autoclave
 
   Vitamin B12 and Isobutyramide solution you have to filter-sterilize'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.788800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011613'

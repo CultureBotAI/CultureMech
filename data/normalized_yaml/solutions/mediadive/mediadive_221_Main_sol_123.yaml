@@ -1,3 +1,4 @@
+id: CultureMech:011611
 preferred_term: Main sol. 123
 term:
   id: mediadive.solution:221
@@ -42,3 +43,8 @@ composition:
 preparation_notes: To 1000 ml "Synthetic sea water" (see medium 79) add 5 g Bacto
   Peptone, 1 g Bacto Yeast extract, and 15 g agar. Alternatively medium 514 may be
   used.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.772596Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011611'

@@ -1,3 +1,4 @@
+id: CultureMech:009902
 name: NMS Medium
 original_name: NMS Medium
 category: bacterial
@@ -149,6 +150,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.805206Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009902'
 high_metal: true
 solutions:
 - preferred_term: Trace element solution (see below)

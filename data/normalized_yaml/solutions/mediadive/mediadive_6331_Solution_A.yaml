@@ -1,3 +1,4 @@
+id: CultureMech:014991
 preferred_term: Solution A
 term:
   id: mediadive.solution:6331
@@ -64,3 +65,8 @@ preparation_notes: 'Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. 
 
 
   Original volume: 490 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.275466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014991'

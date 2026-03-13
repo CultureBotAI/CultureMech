@@ -1,3 +1,4 @@
+id: CultureMech:009774
 name: Desulfosarcina Ovata Medium
 original_name: Desulfosarcina Ovata Medium
 category: bacterial
@@ -165,6 +166,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.792612Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009774'
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

@@ -1,3 +1,4 @@
+id: CultureMech:014140
 preferred_term: Hemin solution
 term:
   id: mediadive.solution:5229
@@ -43,3 +44,8 @@ preparation_notes: 'Adjust volume to 100 ml with distilled water.
 
 
   Original volume: 25 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.874515Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014140'

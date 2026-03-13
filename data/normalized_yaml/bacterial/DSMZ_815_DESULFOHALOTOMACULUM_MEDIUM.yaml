@@ -1,3 +1,4 @@
+id: CultureMech:001962
 name: DESULFOHALOTOMACULUM MEDIUM
 original_name: DESULFOHALOTOMACULUM MEDIUM
 category: bacterial
@@ -169,17 +170,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except iron, lactate and carbonate, adjust pH to 6.0 with NaOH and
-    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials containing 1 - 2 g iron powder or an iron nail. Autoclave
-    for 30 min at 105°C. Before use add lactate from a sterile anoxic stock solutions prepared under 100%
-    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
-    Final medium pH should be 7.2.
+  description: Dissolve ingredients except iron, lactate and carbonate, adjust pH
+    to 6.0 with NaOH and sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials containing 1 - 2 g iron powder or an iron nail. Autoclave for 30
+    min at 105°C. Before use add lactate from a sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas atmosphere. Final medium pH should be 7.2.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
-    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
-    volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +193,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:08.855989Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001962'

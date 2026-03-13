@@ -1,3 +1,4 @@
+id: CultureMech:010634
 preferred_term: Main sol. 514b
 term:
   id: mediadive.solution:1136
@@ -21,3 +22,8 @@ preparation_notes: 'Use medium 514 to which is added NaCl at the concentration i
   see strain dependant modifications).
 
   Final pH 7.6. The medium may be solidified by adding 15 - 20 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.720947Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010634'

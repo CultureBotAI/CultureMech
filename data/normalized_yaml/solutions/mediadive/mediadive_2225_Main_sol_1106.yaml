@@ -1,3 +1,4 @@
+id: CultureMech:011616
 preferred_term: Main sol. 1106
 term:
   id: mediadive.solution:2225
@@ -167,3 +168,8 @@ preparation_notes: Dissolve ingredients (except magnesium chloride, carbonate, g
   gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and
   20% CO2 gas mixture. The glucose solution should be sterilized by filtration. Adjust
   pH of complete medium to 6.8 - 7.0, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.807482Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011616'

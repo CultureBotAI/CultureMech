@@ -1,3 +1,4 @@
+id: CultureMech:006427
 name: SULFOPHOBOCOCCUS ZILLIGII medium
 original_name: SULFOPHOBOCOCCUS ZILLIGII medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:770
     label: SULFOPHOBOCOCCUS ZILLIGII medium
-notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2-EDTA
   term:
@@ -115,3 +117,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 770
+- timestamp: '2026-03-13T06:19:40.660152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006427'

@@ -1,3 +1,4 @@
+id: CultureMech:004667
 name: TOMATO JUICE medium
 original_name: TOMATO JUICE medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:264
     label: TOMATO JUICE medium
-notes: 'Source: KOMODO ModelSEED | ID: 264 | DSMZ Medium: 264 (mediadive.medium:264) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 264 | DSMZ Medium: 264 (mediadive.medium:264)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -41,3 +43,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 264
+- timestamp: '2026-03-13T06:19:27.961811Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004667'

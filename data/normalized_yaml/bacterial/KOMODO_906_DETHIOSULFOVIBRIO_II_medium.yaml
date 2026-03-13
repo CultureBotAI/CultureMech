@@ -1,3 +1,4 @@
+id: CultureMech:006777
 name: DETHIOSULFOVIBRIO II medium
 original_name: DETHIOSULFOVIBRIO II medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:906
     label: DETHIOSULFOVIBRIO II medium
-notes: 'Source: KOMODO ModelSEED | ID: 906 | DSMZ Medium: 906 (mediadive.medium:906) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 906 | DSMZ Medium: 906 (mediadive.medium:906)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -143,3 +145,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 906
+- timestamp: '2026-03-13T06:19:43.847696Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006777'

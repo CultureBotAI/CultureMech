@@ -1,3 +1,4 @@
+id: CultureMech:001012
 name: MARINIFILUM MEDIUM
 original_name: MARINIFILUM MEDIUM
 category: bacterial
@@ -224,16 +225,17 @@ preparation_steps:
   description: pH 7.0- 7.2
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without NaHCO3, Na2S x 9 H2O, vitamin solution, Selenite-tungstate solution
-    and glucose. Boil the medium in a water bath and cool under a stream of N2/CO2 (80/20). Add the NaHCO3
-    to the cooled medium (the pH should be 7.0-7.2) and dispense the medium into Hungate tubes or serum
-    bottles under a stream of N2/CO2 (80/20). Seal the tubes under N2/CO2 (80/20) and autoclave. To the
-    cooled medium at the appropriate amounts of Na2S x 9 H2O, vitamin solution, Selenite-tungstate solution
-    and glucose from sterile, anaerobic stock solutions.
+  description: Prepare the medium without NaHCO3, Na2S x 9 H2O, vitamin solution,
+    Selenite-tungstate solution and glucose. Boil the medium in a water bath and cool
+    under a stream of N2/CO2 (80/20). Add the NaHCO3 to the cooled medium (the pH
+    should be 7.0-7.2) and dispense the medium into Hungate tubes or serum bottles
+    under a stream of N2/CO2 (80/20). Seal the tubes under N2/CO2 (80/20) and autoclave.
+    To the cooled medium at the appropriate amounts of Na2S x 9 H2O, vitamin solution,
+    Selenite-tungstate solution and glucose from sterile, anaerobic stock solutions.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -244,4 +246,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.777199Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:00.479742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001012'

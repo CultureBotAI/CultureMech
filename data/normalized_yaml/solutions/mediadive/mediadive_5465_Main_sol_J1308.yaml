@@ -1,3 +1,4 @@
+id: CultureMech:014369
 preferred_term: Main sol. J1308
 term:
   id: mediadive.solution:5465
@@ -128,3 +129,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 6.8 and autoclave. A
   \ medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) and seal with\
   \ butyl rubber stoppers. Replace the gas phase with N2 containing 5-10% O2 (by volume).\n\
   \nOriginal volume: 1005 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.365169Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014369'

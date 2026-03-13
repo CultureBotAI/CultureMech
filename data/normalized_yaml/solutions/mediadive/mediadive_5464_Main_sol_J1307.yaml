@@ -1,3 +1,4 @@
+id: CultureMech:014368
 preferred_term: Main sol. J1307
 term:
   id: mediadive.solution:5464
@@ -166,3 +167,8 @@ preparation_notes: "Mix components and autoclave. Cool down under a N2 gas strea
   \ head space with a gas mixture of N2-CO2 (4:1, v/v), and seal with butyl rubber\
   \ stoppers. Prior to inoculation, add per liter the following solution. \n\nOriginal\
   \ volume: 1045 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.357096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014368'

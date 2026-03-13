@@ -1,3 +1,4 @@
+id: CultureMech:001220
 name: GHIORSEA MEDIUM
 original_name: GHIORSEA MEDIUM
 category: bacterial
@@ -221,20 +222,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins), then sparge medium with 80% N2 and 20% CO2 gas
-    mixture to make it anoxic and until a pH of 6.5 is reached. Dispense medium under same gas atmosphere
-    into anoxic serum vials to 20% of their volume and autoclave. After autoclaving add vitamins from
-    a sterile stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Prior
-    to inoculation add 5% (v/v) sterile H2 and 5% (v/v) sterile air to the headspace by using syringes.
-    Check pH of the complete medium and adjust pH to 6.5, if necessary. Incubate without shaking.
+  description: Dissolve ingredients (except vitamins), then sparge medium with 80%
+    N2 and 20% CO2 gas mixture to make it anoxic and until a pH of 6.5 is reached.
+    Dispense medium under same gas atmosphere into anoxic serum vials to 20% of their
+    volume and autoclave. After autoclaving add vitamins from a sterile stock solution
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Prior to inoculation
+    add 5% (v/v) sterile H2 and 5% (v/v) sterile air to the headspace by using syringes.
+    Check pH of the complete medium and adjust pH to 6.5, if necessary. Incubate without
+    shaking.
 - step_number: 2
   action: MIX
-  description: 'Note: After growth has started cell density of the culture can be increased by replenishing
-    H2 and air every two days.'
+  description: 'Note: After growth has started cell density of the culture can be
+    increased by replenishing H2 and air every two days.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N NaOH, then dissolve
-    remaining compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
+    NaOH, then dissolve remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,4 +248,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.647718Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:02.370088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001220'

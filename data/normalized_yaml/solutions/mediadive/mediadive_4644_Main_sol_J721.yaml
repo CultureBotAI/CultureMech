@@ -1,3 +1,4 @@
+id: CultureMech:013603
 preferred_term: Main sol. J721
 term:
   id: mediadive.solution:4644
@@ -139,3 +140,8 @@ preparation_notes: "Mix components and adjust pH to 7.5. Dispense the medium int
   \ culture vessels, purge with N2 for 5 min, seal with butyl rubber stoppers and\
   \ autoclave. After cooling, add per liter the following solutions (filter-sterilized\
   \ and stored anaerobically): \n\nOriginal volume: 1017 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.282593Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013603'

@@ -1,3 +1,4 @@
+id: CultureMech:004197
 name: Yeast extract - SKIM MILK medium
 original_name: Yeast extract - SKIM MILK medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:170
     label: Yeast extract - SKIM MILK medium
-notes: 'Source: KOMODO ModelSEED | ID: 170 | DSMZ Medium: 170 (mediadive.medium:170) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 170 | DSMZ Medium: 170 (mediadive.medium:170)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Skim milk
   concentration:
@@ -36,3 +38,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 170
+- timestamp: '2026-03-13T06:19:25.776596Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004197'

@@ -1,3 +1,4 @@
+id: CultureMech:002205
 name: MM4Y MEDIUM
 original_name: MM4Y MEDIUM
 category: bacterial
@@ -122,8 +123,8 @@ preparation_steps:
   description: Add components to distilled water and bring volume to 1.0 L.
 - step_number: 2
   action: STORE
-  description: Add components to distilled water and bring volume to 1.0 L. Sterilize by autoclaving for
-    storage.
+  description: Add components to distilled water and bring volume to 1.0 L. Sterilize
+    by autoclaving for storage.
 - step_number: 3
   action: STORE
   description: Sterilize by filtration for storage.
@@ -134,3 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1021'
+- timestamp: '2026-03-13T06:19:11.238383Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002205'

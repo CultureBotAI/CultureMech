@@ -1,3 +1,4 @@
+id: CultureMech:002569
 name: JCM MEDIUM No. 208
 original_name: JCM MEDIUM No. 208
 category: bacterial
@@ -35,3 +36,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J208'
+- timestamp: '2026-03-13T06:19:14.217040Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002569'

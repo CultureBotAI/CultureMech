@@ -1,3 +1,4 @@
+id: CultureMech:010452
 name: DILUTE FILTERED MALT EXTRACT AGAR
 original_name: DILUTE FILTERED MALT EXTRACT AGAR
 category: fungal
@@ -24,7 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave for 15 min. and filter the cooled liquid until clear; fill up to 1 L.
+  description: Autoclave for 15 min. and filter the cooled liquid until clear; fill
+    up to 1 L.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 min.
@@ -35,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1427'
+- timestamp: '2026-03-13T06:20:13.878532Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010452'

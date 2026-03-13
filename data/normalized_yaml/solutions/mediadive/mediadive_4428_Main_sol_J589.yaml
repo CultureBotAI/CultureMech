@@ -1,3 +1,4 @@
+id: CultureMech:013410
 preferred_term: Main sol. J589
 term:
   id: mediadive.solution:4428
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "Mix components thoroughly and autoclave under a N2 atmosphere.\
   \ Aseptically and anaerobically add the following solutions (autoclaved under a\
   \ N2 atmosphere) to the medium: \n\nOriginal volume: 1060 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.181626Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013410'

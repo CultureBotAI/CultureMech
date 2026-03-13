@@ -1,3 +1,4 @@
+id: CultureMech:012440
 preferred_term: Main sol. 1571
 term:
   id: mediadive.solution:3257
@@ -141,3 +142,8 @@ preparation_notes: 'Dissolve in 1 liter, boil under N2, add 0.5 g of L-cysteine 
   and autoclave for 20 minutes at 121°C.
 
   To 100 ml sterile medium add aseptically '
+curation_history:
+- timestamp: '2026-03-13T06:20:25.941684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012440'

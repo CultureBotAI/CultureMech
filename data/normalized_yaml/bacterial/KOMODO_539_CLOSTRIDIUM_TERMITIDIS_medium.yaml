@@ -1,3 +1,4 @@
+id: CultureMech:005966
 name: CLOSTRIDIUM TERMITIDIS medium
 original_name: CLOSTRIDIUM TERMITIDIS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:539
     label: CLOSTRIDIUM TERMITIDIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 539 | DSMZ Medium: 539 (mediadive.medium:539) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 539 | DSMZ Medium: 539 (mediadive.medium:539)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -164,3 +166,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 539
+- timestamp: '2026-03-13T06:19:37.368119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005966'

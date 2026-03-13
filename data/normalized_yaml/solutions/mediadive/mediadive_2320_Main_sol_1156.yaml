@@ -1,3 +1,4 @@
+id: CultureMech:011701
 preferred_term: Main sol. 1156
 term:
   id: mediadive.solution:2320
@@ -107,3 +108,8 @@ preparation_notes: "pH-value 7.2 (Adjust to 7.6 with 10% NaOH before sterilizati
   \ on rotary shaker (200 rpm)\nNotes: pH is critical, final pH must be between 6.5-7.5;\
   \ \r\nsome insoluble phosphates may precipitate during medium preparation (should\
   \ not be more than OD 0.005)."
+curation_history:
+- timestamp: '2026-03-13T06:20:21.381026Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011701'

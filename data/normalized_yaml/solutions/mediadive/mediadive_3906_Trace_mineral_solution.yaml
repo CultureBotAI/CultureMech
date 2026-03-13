@@ -1,3 +1,4 @@
+id: CultureMech:012974
 preferred_term: Trace mineral solution
 term:
   id: mediadive.solution:3906
@@ -161,3 +162,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve nitrilotriacetic acid with KOH to pH 6.5, then proceed
   to add minerals.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.659356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012974'

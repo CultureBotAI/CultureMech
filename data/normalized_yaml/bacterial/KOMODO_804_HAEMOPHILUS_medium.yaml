@@ -1,3 +1,4 @@
+id: CultureMech:006522
 name: HAEMOPHILUS medium
 original_name: HAEMOPHILUS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:804
     label: HAEMOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 804 | DSMZ Medium: 804 (mediadive.medium:804) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 804 | DSMZ Medium: 804 (mediadive.medium:804)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Mueller-Hinton broth
   concentration:
@@ -29,3 +31,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 804
+- timestamp: '2026-03-13T06:19:41.518153Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006522'

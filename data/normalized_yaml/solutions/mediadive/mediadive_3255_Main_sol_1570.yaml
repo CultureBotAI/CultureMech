@@ -1,3 +1,4 @@
+id: CultureMech:012438
 preferred_term: Main sol. 1570
 term:
   id: mediadive.solution:3255
@@ -115,3 +116,8 @@ preparation_notes: 'Dissolve ingredients (except phosphate buffer, thiosulfate, 
 
 
   Original volume: 1016 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.930800Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012438'

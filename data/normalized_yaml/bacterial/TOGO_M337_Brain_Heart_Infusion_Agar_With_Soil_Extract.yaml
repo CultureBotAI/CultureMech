@@ -1,3 +1,4 @@
+id: CultureMech:009715
 name: Brain Heart Infusion Agar With Soil Extract
 original_name: Brain Heart Infusion Agar With Soil Extract
 category: bacterial
@@ -42,6 +43,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.328491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009715'
 solutions:
 - preferred_term: Soil extract (see Medium [M94])
   composition: []

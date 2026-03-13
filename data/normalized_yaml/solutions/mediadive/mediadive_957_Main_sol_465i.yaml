@@ -1,3 +1,4 @@
+id: CultureMech:015294
 preferred_term: Main sol. 465i
 term:
   id: mediadive.solution:957
@@ -21,3 +22,8 @@ preparation_notes: Suspend atrazine (2-chloro-4(ethylamino)-6-(isopropylamino)-1
   to medium 465 without nitrogen source (omit ammonium sulphate and calcium nitrate),
   replace calcium nitrate by calcium chloride) but with 1 g/l glucose as the carbon
   source. Final concentration of atrazine is 50-100 mg/l.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.667833Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015294'

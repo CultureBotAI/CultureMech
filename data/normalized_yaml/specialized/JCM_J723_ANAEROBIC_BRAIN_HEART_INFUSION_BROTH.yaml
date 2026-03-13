@@ -1,3 +1,4 @@
+id: CultureMech:015416
 name: ANAEROBIC BRAIN HEART INFUSION BROTH
 original_name: ANAEROBIC BRAIN HEART INFUSION BROTH
 category: specialized
@@ -31,8 +32,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation, add per
-    liter the following solutions (autoclaved and stored under a N2 atmosphere) aseptically and anaerobically:'
+  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation,
+    add per liter the following solutions (autoclaved and stored under a N2 atmosphere)
+    aseptically and anaerobically:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J723'
+- timestamp: '2026-03-13T06:20:42.565773Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015416'

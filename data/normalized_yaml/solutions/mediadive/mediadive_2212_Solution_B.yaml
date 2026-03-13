@@ -1,3 +1,4 @@
+id: CultureMech:011603
 preferred_term: Solution B
 term:
   id: mediadive.solution:2212
@@ -35,3 +36,8 @@ composition:
     id: mediadive.compound:977
     label: Isovitalex
 preparation_notes: 'Original volume: 305 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.706795Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011603'

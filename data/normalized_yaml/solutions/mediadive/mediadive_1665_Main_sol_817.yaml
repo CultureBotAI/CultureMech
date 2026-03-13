@@ -1,3 +1,4 @@
+id: CultureMech:011120
 preferred_term: Main sol. 817
 term:
   id: mediadive.solution:1665
@@ -172,3 +173,8 @@ preparation_notes: 'Dissolve ingredients except carbonate, vitamins and sulfide.
 
 
   Original volume: 1015 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.652684Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011120'

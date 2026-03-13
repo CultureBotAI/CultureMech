@@ -1,3 +1,4 @@
+id: CultureMech:001398
 name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
 original_name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
 category: bacterial
@@ -176,11 +177,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Mix solution D, C and E. Bubble with CO2 in an ice bath under sterile conditions.
+  description: Mix solution D, C and E. Bubble with CO2 in an ice bath under sterile
+    conditions.
 - step_number: 2
   action: MIX
-  description: Fill 50 ml in each bottle of solution A. Before using add 4 ml solution B and 0.1 ml solution
-    F. To final medium add 10 mM bicarbonate, 10 mM FeSO4 and 2mM acetate.
+  description: Fill 50 ml in each bottle of solution A. Before using add 4 ml solution
+    B and 0.1 ml solution F. To final medium add 10 mM bicarbonate, 10 mM FeSO4 and
+    2mM acetate.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8.
@@ -192,18 +195,22 @@ preparation_steps:
   description: At 25C in light the incubation time is about 4 weeks.
 - step_number: 6
   action: AUTOCLAVE
-  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave 121°C 15 min.
+  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave
+    121°C 15 min.
 - step_number: 7
   action: AUTOCLAVE
-  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close tightly and autoclave.
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
+    tightly and autoclave.
 - step_number: 8
   action: FILTER_STERILIZE
-  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
+    screw-cap bottle.
 - step_number: 9
   action: AUTOCLAVE
-  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube for medium, connected
-    to a glass outlet at the bottom of the vessel and has, at the other end, a silicon rubber tube with
-    a pinch cock and a bell for aseptic dispensing of the medium into bottles.
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
+    for medium, connected to a glass outlet at the bottom of the vessel and has, at
+    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+    dispensing of the medium into bottles.
 - step_number: 10
   action: COOL
   description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
@@ -220,3 +227,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 29a'
+- timestamp: '2026-03-13T06:19:03.776044Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001398'

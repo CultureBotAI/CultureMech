@@ -1,3 +1,4 @@
+id: CultureMech:012524
 preferred_term: Main sol. 1627
 term:
   id: mediadive.solution:3378
@@ -40,3 +41,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 5.0 with sulfuric acid before autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.346244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012524'

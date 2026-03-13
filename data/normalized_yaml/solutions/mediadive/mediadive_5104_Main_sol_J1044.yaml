@@ -1,3 +1,4 @@
+id: CultureMech:014016
 preferred_term: Main sol. J1044
 term:
   id: mediadive.solution:5104
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Mix thoroughly and autoclave. After cooling, add the following\
   \ solution (autoclaved). \n\nOriginal volume: 1020 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.027841Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014016'

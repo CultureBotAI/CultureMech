@@ -1,3 +1,4 @@
+id: CultureMech:011704
 preferred_term: Main sol. 1158
 term:
   id: mediadive.solution:2324
@@ -90,3 +91,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Minimum NaCl concentration must be 5%. Adjust to pH 6.9. The medium
   may be solidified by adding 15.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.398719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011704'

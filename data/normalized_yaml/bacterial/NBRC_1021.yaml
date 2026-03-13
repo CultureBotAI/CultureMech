@@ -1,3 +1,4 @@
+id: CultureMech:007450
 name: '1021'
 original_name: '1021'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 102 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.122929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007450'
 solutions:
 - preferred_term: Ethanol0.46mlYeast extract0.1gKH2PO40.14gMgCl2·6H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gSodium
     acetate0.82gVitamin solution*2mlTrace element solution**2mlSe/W solution***1mlResazurin

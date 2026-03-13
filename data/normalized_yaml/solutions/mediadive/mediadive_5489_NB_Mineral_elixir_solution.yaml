@@ -1,3 +1,4 @@
+id: CultureMech:014392
 preferred_term: NB Mineral elixir solution
 term:
   id: mediadive.solution:5489
@@ -137,3 +138,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve nitrilotriacetic acid and adjust pH to 8.0-8.5 with NaOH.
   Then proceed to add minerals.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.547974Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014392'

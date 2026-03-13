@@ -1,3 +1,4 @@
+id: CultureMech:004174
 name: THIOBACILLUS CALDUS MEDIUM
 original_name: THIOBACILLUS CALDUS MEDIUM
 category: bacterial
@@ -123,3 +124,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:25.641924Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004174'

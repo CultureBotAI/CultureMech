@@ -1,3 +1,4 @@
+id: CultureMech:005651
 name: Corn meal Agar (Oxoid CM103)
 original_name: Corn meal Agar (Oxoid CM103)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:5010
     label: Corn meal Agar (Oxoid CM103)
-notes: 'Source: KOMODO ModelSEED | ID: 5010 | DSMZ Medium: 5010 (mediadive.medium:5010) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5010 | DSMZ Medium: 5010 (mediadive.medium:5010)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 5010'
+- timestamp: '2026-03-13T06:19:34.949446Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005651'

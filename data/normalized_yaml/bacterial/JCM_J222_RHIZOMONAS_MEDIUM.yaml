@@ -1,3 +1,4 @@
+id: CultureMech:002584
 name: RHIZOMONAS MEDIUM
 original_name: RHIZOMONAS MEDIUM
 category: bacterial
@@ -68,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J222'
+- timestamp: '2026-03-13T06:19:14.331917Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002584'

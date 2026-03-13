@@ -1,3 +1,4 @@
+id: CultureMech:000670
 name: MARINOSPIRILLUM CELERE
 original_name: MARINOSPIRILLUM CELERE
 category: bacterial
@@ -163,9 +164,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the Na2CO3, NaHCO3 and the lactate separately from the medium and combine after
-    cooling. Vitamin B12 is added from a sterile stock solution. The final pH of the medium should be
-    9.5. Add 15.0 g/l agar for solid media.
+  description: Autoclave the Na2CO3, NaHCO3 and the lactate separately from the medium
+    and combine after cooling. Vitamin B12 is added from a sterile stock solution.
+    The final pH of the medium should be 9.5. Add 15.0 g/l agar for solid media.
 applications:
 - Microbial cultivation
 curation_history:
@@ -173,3 +174,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1212'
+- timestamp: '2026-03-13T06:18:57.324399Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000670'

@@ -1,3 +1,4 @@
+id: CultureMech:010827
 preferred_term: Main sol. 629
 term:
   id: mediadive.solution:1343
@@ -57,3 +58,8 @@ preparation_notes: 'Dissolve peptone and yeast extract in the distilled water, a
   and Vitamin solution.
 
   For solid medium use 15.0 g agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.778537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010827'

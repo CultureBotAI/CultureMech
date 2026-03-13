@@ -1,3 +1,4 @@
+id: CultureMech:009199
 name: MS-OCM Base Medium
 original_name: MS-OCM Base Medium
 category: bacterial
@@ -249,6 +250,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:03.915595Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009199'
 high_metal: true
 solutions:
 - preferred_term: Solution A

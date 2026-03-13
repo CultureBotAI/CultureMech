@@ -1,3 +1,4 @@
+id: CultureMech:005191
 name: Trace salt solution (medium 609)
 original_name: Trace salt solution (medium 609)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:4001
     label: Trace salt solution (medium 609)
-notes: 'Source: KOMODO ModelSEED | ID: 4001 | DSMZ Medium: 4001 (mediadive.medium:4001) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4001 | DSMZ Medium: 4001 (mediadive.medium:4001)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 4001'
+- timestamp: '2026-03-13T06:19:30.965552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005191'

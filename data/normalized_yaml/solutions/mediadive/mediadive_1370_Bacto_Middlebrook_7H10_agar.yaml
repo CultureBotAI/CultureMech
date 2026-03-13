@@ -1,3 +1,4 @@
+id: CultureMech:010854
 preferred_term: Bacto Middlebrook 7H10 agar
 term:
   id: mediadive.solution:1370
@@ -184,3 +185,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Final pH at 25°C 6.6 ± 0.2.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.944535Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010854'

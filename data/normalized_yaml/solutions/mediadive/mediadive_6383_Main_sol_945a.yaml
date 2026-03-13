@@ -1,3 +1,4 @@
+id: CultureMech:015009
 preferred_term: Main sol. 945a
 term:
   id: mediadive.solution:6383
@@ -191,3 +192,8 @@ preparation_notes: 'Dissolve ingredients except cysteine and sulfide. Sparge med
   pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.
 
   After inoculation pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.354521Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015009'

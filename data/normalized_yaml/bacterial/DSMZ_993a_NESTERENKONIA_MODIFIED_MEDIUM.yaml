@@ -1,3 +1,4 @@
+id: CultureMech:002176
 name: NESTERENKONIA MODIFIED MEDIUM
 original_name: NESTERENKONIA MODIFIED MEDIUM
 category: bacterial
@@ -74,15 +75,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6 H20 (10%).
+  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6
+    H20 (10%).
 - step_number: 2
   action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it is within this range.
-    Liquefy agar by steaming at 100°C for 15-20 minutes.
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
+    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
 - step_number: 3
   action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
-    25 ml per dish.
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
+    mm dishes containing 25 ml per dish.
 applications:
 - Microbial cultivation
 curation_history:
@@ -90,3 +92,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 993a'
+- timestamp: '2026-03-13T06:19:10.979940Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002176'

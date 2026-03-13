@@ -1,3 +1,4 @@
+id: CultureMech:010758
 preferred_term: Artificial sea water, 3 times concentrated
 term:
   id: mediadive.solution:1267
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Add NaHCO3 from a filter-sterilized stock solution when the medium
   has cooled.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.350661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010758'

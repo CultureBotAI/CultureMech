@@ -1,3 +1,4 @@
+id: CultureMech:012110
 preferred_term: Main sol. 1396
 term:
   id: mediadive.solution:2829
@@ -139,3 +140,8 @@ preparation_notes: 'Adjust to pH 4.5 with 40% KOH and sterilize by autoclaving.
 
 
   Original volume: 802 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.930962Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012110'

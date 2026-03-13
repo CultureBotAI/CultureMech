@@ -1,3 +1,4 @@
+id: CultureMech:011137
 preferred_term: Growth-stimulating factors
 term:
   id: mediadive.solution:1680
@@ -89,3 +90,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Dissolve ingredients, adjust pH to 9.0 with NaOH, then autoclave
   under 100% N2 gas.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.774425Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011137'

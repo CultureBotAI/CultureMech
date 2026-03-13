@@ -1,3 +1,4 @@
+id: CultureMech:006707
 name: PAPILLIBACTER medium
 original_name: PAPILLIBACTER medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:872
     label: PAPILLIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 872 | DSMZ Medium: 872 (mediadive.medium:872) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 872 | DSMZ Medium: 872 (mediadive.medium:872)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -167,3 +169,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 872
+- timestamp: '2026-03-13T06:19:43.204268Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006707'

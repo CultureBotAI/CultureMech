@@ -1,3 +1,4 @@
+id: CultureMech:002373
 name: SPOROMUSA ACIDOVORANS MEDIUM
 original_name: SPOROMUSA ACIDOVORANS MEDIUM
 category: bacterial
@@ -265,13 +266,15 @@ preparation_steps:
   description: Autoclave under a N2 gas atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: 'After autoclaving, combine solutions A and B, then add the following solutions (filter-sterilized):'
+  description: 'After autoclaving, combine solutions A and B, then add the following
+    solutions (filter-sterilized):'
 - step_number: 6
   action: AUTOCLAVE
-  description: 'To complete the medium, aseptically and anaerobically distribute the medium into culture
-    vessels (e.g., 10 ml in Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream and seal with butyl rubber
-    stoppers. Prior to use, add per liter the following solutions from anaerobic stocks (autoclaved and
-    stored under a N2 atmosphere):'
+  description: 'To complete the medium, aseptically and anaerobically distribute the
+    medium into culture vessels (e.g., 10 ml in Hungate tubes) under a N2-CO2 (4:1,
+    v/v) gas stream and seal with butyl rubber stoppers. Prior to use, add per liter
+    the following solutions from anaerobic stocks (autoclaved and stored under a N2
+    atmosphere):'
 - step_number: 7
   action: ADJUST_PH
   description: Adjust pH to 6.5-7.0, if necessary.
@@ -282,3 +285,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1204'
+- timestamp: '2026-03-13T06:19:12.793568Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002373'

@@ -1,3 +1,4 @@
+id: CultureMech:002489
 name: MODIFIED DESULFOVIBRIO MEDIUM
 original_name: MODIFIED DESULFOVIBRIO MEDIUM
 category: bacterial
@@ -237,10 +238,11 @@ preparation_steps:
   description: 'SolutionC:'
 - step_number: 4
   action: AUTOCLAVE
-  description: Dissolve ingredients of each solution in the appropriate amount of distilled water. Bring
-    solution A to a boil and cool down to room temperature under a N2 gas stream. Add solutions Band C
-    to the medium, then, adjust pH to 7.3 with NaOH. While swirling the medium, dispense into culture
-    vessels under a N2 gas stream, seal with butyl rubber stoppers and autoclave.
+  description: Dissolve ingredients of each solution in the appropriate amount of
+    distilled water. Bring solution A to a boil and cool down to room temperature
+    under a N2 gas stream. Add solutions Band C to the medium, then, adjust pH to
+    7.3 with NaOH. While swirling the medium, dispense into culture vessels under
+    a N2 gas stream, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,3 +250,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1326'
+- timestamp: '2026-03-13T06:19:13.757402Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002489'

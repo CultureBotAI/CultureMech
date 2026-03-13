@@ -1,3 +1,4 @@
+id: CultureMech:001749
 name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 original_name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 category: bacterial
@@ -146,7 +147,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Sterilize methanol by filtration, and add to other components sterilized by autoclaving.
+  description: Sterilize methanol by filtration, and add to other components sterilized
+    by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -154,3 +156,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 619'
+- timestamp: '2026-03-13T06:19:06.939194Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001749'

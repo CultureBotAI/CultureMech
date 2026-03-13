@@ -1,3 +1,4 @@
+id: CultureMech:012212
 preferred_term: Main sol. 1447
 term:
   id: mediadive.solution:2978
@@ -42,3 +43,8 @@ composition:
 preparation_notes: Adjust pH to 5.5. Dissolve malt extract in water and autoclave
   15 min at 121°C; filter until entirely clear. Fill up to 1 L add agar and autoclave
   again.
+curation_history:
+- timestamp: '2026-03-13T06:20:24.538933Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012212'

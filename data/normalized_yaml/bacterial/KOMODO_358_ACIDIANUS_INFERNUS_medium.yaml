@@ -1,3 +1,4 @@
+id: CultureMech:005077
 name: ACIDIANUS INFERNUS medium
 original_name: ACIDIANUS INFERNUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:358
     label: ACIDIANUS INFERNUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 358 | DSMZ Medium: 358 (mediadive.medium:358) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 358 | DSMZ Medium: 358 (mediadive.medium:358)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -114,3 +116,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 358
+- timestamp: '2026-03-13T06:19:29.976162Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005077'

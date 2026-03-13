@@ -1,3 +1,4 @@
+id: CultureMech:014949
 preferred_term: SE1 (Soil Extract 1)
 term:
   id: mediadive.solution:6256
@@ -38,3 +39,8 @@ preparation_notes: "Site selection for a good soil is very important and for mos
   \ and their containers are autoclaved for an appropriate length of time (e.g.\r\n\
   1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
   \ \r\nuntil required."
+curation_history:
+- timestamp: '2026-03-13T06:20:40.126739Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014949'

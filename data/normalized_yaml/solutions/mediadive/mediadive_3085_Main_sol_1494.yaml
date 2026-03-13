@@ -1,3 +1,4 @@
+id: CultureMech:012310
 preferred_term: Main sol. 1494
 term:
   id: mediadive.solution:3085
@@ -47,3 +48,8 @@ preparation_notes: 'Add 10 ml rabbit serum, flush the medium with N2CO2, adjust 
 
 
   Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.117143Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012310'

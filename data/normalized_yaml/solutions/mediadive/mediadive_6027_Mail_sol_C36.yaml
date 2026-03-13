@@ -1,3 +1,4 @@
+id: CultureMech:014758
 preferred_term: Mail sol. C36
 term:
   id: mediadive.solution:6027
@@ -17,3 +18,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: For f/10 medium for calcifying Emiliania, simply dilute all stock
   solutions by 1/5th.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.431497Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014758'

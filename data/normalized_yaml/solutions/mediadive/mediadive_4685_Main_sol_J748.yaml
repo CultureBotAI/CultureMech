@@ -1,3 +1,4 @@
+id: CultureMech:013638
 preferred_term: Main sol. J748
 term:
   id: mediadive.solution:4685
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 3.5 and autoclave. After cooling, aseptically add
   2.0 ml of Trace element solution (see below).
+curation_history:
+- timestamp: '2026-03-13T06:20:32.497813Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013638'

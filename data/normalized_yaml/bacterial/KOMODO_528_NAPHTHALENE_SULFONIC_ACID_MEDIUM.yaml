@@ -1,3 +1,4 @@
+id: CultureMech:005891
 name: NAPHTHALENE SULFONIC ACID MEDIUM
 original_name: NAPHTHALENE SULFONIC ACID MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:528
     label: NAPHTHALENE SULFONIC ACID MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 528 | DSMZ Medium: 528 (mediadive.medium:528) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 528 | DSMZ Medium: 528 (mediadive.medium:528)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -145,3 +147,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 528
+- timestamp: '2026-03-13T06:19:37.123049Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005891'

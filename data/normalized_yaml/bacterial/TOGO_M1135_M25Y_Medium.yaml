@@ -1,3 +1,4 @@
+id: CultureMech:007657
 name: M25Y Medium
 original_name: M25Y Medium
 category: bacterial
@@ -139,6 +140,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:50.390152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007657'
 solutions:
 - preferred_term: Trace elements (see Medium [M631])
   composition: []

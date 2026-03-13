@@ -1,3 +1,4 @@
+id: CultureMech:012962
 preferred_term: Main sol. J224
 term:
   id: mediadive.solution:3895
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0-7.2. Use filtrated natural seawater or artificial
   seawater (e.g., Jamarin, S., Jamarin Laboratory).
+curation_history:
+- timestamp: '2026-03-13T06:20:28.586453Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012962'

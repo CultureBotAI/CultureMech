@@ -1,3 +1,4 @@
+id: CultureMech:012580
 preferred_term: Main sol. 1665
 term:
   id: mediadive.solution:3456
@@ -194,3 +195,8 @@ preparation_notes: 'Dissolve ingredients (except phosphate buffer, bicarbonate, 
 
 
   Original volume: 1015 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.691514Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012580'

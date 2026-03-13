@@ -1,11 +1,12 @@
+id: CultureMech:004037
 name: GRANULICELLA PALUDICOLA medium
 original_name: GRANULICELLA PALUDICOLA medium
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_range: 4.0-5.0
-notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium: 1285 (mediadive.medium:1285)
-  | Aerobic: No'
+notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium:
+  1285 (mediadive.medium:1285) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1285
   term:
@@ -77,3 +78,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1285
+- timestamp: '2026-03-13T06:19:24.345910Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004037'

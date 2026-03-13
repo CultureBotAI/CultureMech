@@ -1,3 +1,4 @@
+id: CultureMech:002654
 name: VULCANISAETA MEDIUM
 original_name: VULCANISAETA MEDIUM
 category: bacterial
@@ -19,8 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 183 with 0.5 g/L yeast extract (BD-Difco) and 10.0 g/L sulfur (powder),
-    and adjust final pH to 4.5.
+  description: Use Medium No. 183 with 0.5 g/L yeast extract (BD-Difco) and 10.0 g/L
+    sulfur (powder), and adjust final pH to 4.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.799164Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002654'
 data_quality_flags:
 - incomplete_composition

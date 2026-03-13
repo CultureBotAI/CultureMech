@@ -1,3 +1,4 @@
+id: CultureMech:011682
 preferred_term: Main sol. 25
 term:
   id: mediadive.solution:22
@@ -163,3 +164,8 @@ preparation_notes: "Adjust pH to 4.9, then add: \nSterilize in screw-capped bott
   \ Cool to room temperature; to each 100 ml medium add\r\n0.2 ml of a sterile 10%\
   \ Na<sub>2</sub>S<sub>2</sub>0<sub>3 </sub>solution. Incubate in the light using\
   \ a tungsten lamp"
+curation_history:
+- timestamp: '2026-03-13T06:20:21.203294Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011682'

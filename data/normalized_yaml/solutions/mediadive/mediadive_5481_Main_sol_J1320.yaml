@@ -1,3 +1,4 @@
+id: CultureMech:014385
 preferred_term: Main sol. J1320
 term:
   id: mediadive.solution:5481
@@ -191,3 +192,8 @@ preparation_notes: "Mix components thoroughly, except iron metal, and autoclave 
   \ and seal with butyl rubber stoppers. Prior to use, aseptically and anaerobically\
   \ add per liter the following solution (filter-sterilized): \nAdjust pH to 8.0,\
   \ if necessary.\n\nOriginal volume: 1063 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.494001Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014385'

@@ -1,3 +1,4 @@
+id: CultureMech:004831
 name: salt solution (medium 852)
 original_name: salt solution (medium 852)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3049
     label: salt solution (medium 852)
-notes: 'Source: KOMODO ModelSEED | ID: 3049 | DSMZ Medium: 3049 (mediadive.medium:3049) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3049 | DSMZ Medium: 3049 (mediadive.medium:3049)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3049'
+- timestamp: '2026-03-13T06:19:28.869771Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004831'

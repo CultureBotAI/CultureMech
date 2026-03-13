@@ -1,3 +1,4 @@
+id: CultureMech:012583
 preferred_term: Main sol. 1668
 term:
   id: mediadive.solution:3459
@@ -58,3 +59,8 @@ preparation_notes: 'To make medium anoxic boil it, cool under N2CO2 gas atmosphe
 
 
   Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.716207Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012583'

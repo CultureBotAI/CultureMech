@@ -1,3 +1,4 @@
+id: CultureMech:001374
 name: CHERRY AGAR (CBS formula)
 original_name: CHERRY AGAR (CBS formula)
 category: bacterial
@@ -25,8 +26,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml cherry extract, distribute
-    in presterilized tubes and sterilize for 5 min at 120°C.
+  description: Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml cherry
+    extract, distribute in presterilized tubes and sterilize for 5 min at 120°C.
 - step_number: 2
   action: MIX
   description: Final pH 3.8 - 4.6.
@@ -35,8 +36,8 @@ preparation_steps:
   description: Add 1 l water to 200.0 g pulp of sour stone cherries.
 - step_number: 4
   action: HEAT
-  description: Heat to boiling and simmer gently for 2 h . Strain through cloth and sterilize at 110°C
-    for 30 minutes .
+  description: Heat to boiling and simmer gently for 2 h . Strain through cloth and
+    sterilize at 110°C for 30 minutes .
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 277'
+- timestamp: '2026-03-13T06:19:03.475148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001374'

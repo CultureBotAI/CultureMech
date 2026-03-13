@@ -1,3 +1,4 @@
+id: CultureMech:011745
 preferred_term: Main sol. 1187
 term:
   id: mediadive.solution:2367
@@ -130,3 +131,8 @@ preparation_notes: 'pH 9.0
   under N2 and autoclave the medium. Add the vitamin solution, yeast extract, Na2S
   and glucose from sterile stock solution prepared under N2 to the cooled, autoclaved
   medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.682247Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011745'

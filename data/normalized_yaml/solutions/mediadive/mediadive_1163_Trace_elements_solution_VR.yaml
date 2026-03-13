@@ -1,3 +1,4 @@
+id: CultureMech:010659
 preferred_term: Trace elements solution VR
 term:
   id: mediadive.solution:1163
@@ -151,3 +152,8 @@ preparation_notes: Dissolve mineral salts in 700 ml water acidified with 2 ml of
   HCl. Separately dissolve 5.00 g of NTA in 300 ml water add 10 N NaOH until all the
   NTA has dissolved and the pH is 7.0. While stirring, slowly add the NTA solution
   to the salt solution. Stir until the solution is almost clear. Store cool and dark.
+curation_history:
+- timestamp: '2026-03-13T06:20:14.909941Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010659'

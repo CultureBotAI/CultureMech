@@ -1,3 +1,4 @@
+id: CultureMech:013158
 preferred_term: Main sol. J392
 term:
   id: mediadive.solution:4119
@@ -54,3 +55,8 @@ composition:
 preparation_notes: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
   Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
   add to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:29.778535Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013158'

@@ -1,3 +1,4 @@
+id: CultureMech:003242
 name: MBBS MEDIUM FOR HYDROGENOBACTER
 original_name: MBBS MEDIUM FOR HYDROGENOBACTER
 category: bacterial
@@ -113,11 +114,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the base solution and the yeast extract solution separately. Filter-sterilize
-    the NaHCO3 solution and steam sulfur for 3 hr on each of 3 successive 3 days. Aseptically mix the
-    three solutions and distribute into culture vessels containing sulfur under a H2-CO2-O2 (80:20:2,
-    v/v) gas stream and seal with butyl rubber stoppers. Adjust pH to 6.0 with sterile 1 N H2SO4, if necessary.
-    Pressurize inoculated bottles to 100 kPa with the same gas mixture.
+  description: Autoclave the base solution and the yeast extract solution separately.
+    Filter-sterilize the NaHCO3 solution and steam sulfur for 3 hr on each of 3 successive
+    3 days. Aseptically mix the three solutions and distribute into culture vessels
+    containing sulfur under a H2-CO2-O2 (80:20:2, v/v) gas stream and seal with butyl
+    rubber stoppers. Adjust pH to 6.0 with sterile 1 N H2SO4, if necessary. Pressurize
+    inoculated bottles to 100 kPa with the same gas mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,3 +127,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J893'
+- timestamp: '2026-03-13T06:19:18.865041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003242'

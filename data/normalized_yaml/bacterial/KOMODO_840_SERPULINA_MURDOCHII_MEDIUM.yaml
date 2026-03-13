@@ -1,3 +1,4 @@
+id: CultureMech:006643
 name: SERPULINA MURDOCHII MEDIUM
 original_name: SERPULINA MURDOCHII MEDIUM
 category: bacterial
@@ -57,3 +58,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:42.602595Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006643'

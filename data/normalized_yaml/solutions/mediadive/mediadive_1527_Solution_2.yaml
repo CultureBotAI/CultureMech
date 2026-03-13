@@ -1,3 +1,4 @@
+id: CultureMech:010994
 preferred_term: Solution 2
 term:
   id: mediadive.solution:1527
@@ -20,3 +21,8 @@ preparation_notes: "Boil both solutions under a stream of nitrogen gas for few m
   \ aseptically after autoclaving under a stream of sterile nitrogen gas and adjust\
   \ final pH to 7.8. Distribute in screw-capped bottles or tubes. \n\nOriginal volume:\
   \ 500 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:16.873437Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010994'

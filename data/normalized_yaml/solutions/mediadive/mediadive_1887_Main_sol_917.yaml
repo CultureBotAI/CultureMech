@@ -1,3 +1,4 @@
+id: CultureMech:011304
 preferred_term: Main sol. 917
 term:
   id: mediadive.solution:1887
@@ -126,3 +127,8 @@ composition:
 preparation_notes: Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A
   stock solution of calcium chloride should be sterilized separately and added to
   the medium after autoclaving.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.788403Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011304'

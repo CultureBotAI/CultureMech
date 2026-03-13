@@ -1,3 +1,4 @@
+id: CultureMech:010816
 preferred_term: Mineral salt solution
 term:
   id: mediadive.solution:1331
@@ -92,3 +93,8 @@ preparation_notes: 'Dissolve NTA first by neutralizing with KOH, then add other 
 
 
   Original volume: 950 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.703367Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010816'

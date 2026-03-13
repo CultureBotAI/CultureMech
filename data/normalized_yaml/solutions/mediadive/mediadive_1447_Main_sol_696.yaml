@@ -1,3 +1,4 @@
+id: CultureMech:010919
 preferred_term: Main sol. 696
 term:
   id: mediadive.solution:1447
@@ -153,3 +154,8 @@ preparation_notes: 'pH 6.8
 
   For anaerobic handling prepare and distribute into tubes under 100% N2 by using
   the Hungate technique.'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.372652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010919'

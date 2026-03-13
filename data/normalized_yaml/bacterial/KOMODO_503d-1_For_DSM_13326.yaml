@@ -1,3 +1,4 @@
+id: CultureMech:005684
 name: For DSM 13326
 original_name: For DSM 13326
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:503d.1
     label: For DSM 13326
-notes: 'Source: KOMODO ModelSEED | ID: 503d.1 | DSMZ Medium: 503d (mediadive.medium:503d) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503d.1 | DSMZ Medium: 503d (mediadive.medium:503d)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -222,3 +224,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 503
+- timestamp: '2026-03-13T06:19:35.305061Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005684'

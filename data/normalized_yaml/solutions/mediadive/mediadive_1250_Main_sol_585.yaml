@@ -1,3 +1,4 @@
+id: CultureMech:010745
 preferred_term: Main sol. 585
 term:
   id: mediadive.solution:1250
@@ -19,3 +20,8 @@ preparation_notes: 'Dehydrated media preparations are available from media distr
   onto agar plates.
 
   Note: Alternatively use CYE-ACES AGAR'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.298610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010745'

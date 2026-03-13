@@ -1,3 +1,4 @@
+id: CultureMech:010507
 name: ALKALINE MALT EXTRACT AGAR
 original_name: ALKALINE MALT EXTRACT AGAR
 category: fungal
@@ -50,3 +51,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J147'
+- timestamp: '2026-03-13T06:20:14.172027Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010507'

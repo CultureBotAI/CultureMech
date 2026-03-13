@@ -1,3 +1,4 @@
+id: CultureMech:003751
 name: DESULFOLUNA medium
 original_name: DESULFOLUNA medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1099
     label: DESULFOLUNA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1099 | DSMZ Medium: 1099 (mediadive.medium:1099) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1099 | DSMZ Medium: 1099 (mediadive.medium:1099)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -149,3 +151,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1099
+- timestamp: '2026-03-13T06:19:21.923224Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003751'

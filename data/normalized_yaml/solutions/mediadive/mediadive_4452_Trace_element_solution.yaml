@@ -1,3 +1,4 @@
+id: CultureMech:013433
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:4452
@@ -18,3 +19,8 @@ composition:
 preparation_notes: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum.
   When toluene is depleted, re-add the toluene solution (normally every 3 to 4 days,
   until enough cell growth is seen).'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.291989Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013433'

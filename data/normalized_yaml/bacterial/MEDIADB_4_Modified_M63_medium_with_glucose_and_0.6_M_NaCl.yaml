@@ -1,3 +1,4 @@
+id: CultureMech:007395
 name: Modified M63 medium with glucose and 0.6 M NaCl
 original_name: Modified M63 medium with glucose and 0.6 M NaCl
 category: bacterial
@@ -61,6 +62,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 4, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:48.679780Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007395'
 media_term:
   preferred_term: MediaDB Medium 4
   term:

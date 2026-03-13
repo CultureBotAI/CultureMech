@@ -1,3 +1,4 @@
+id: CultureMech:001582
 name: EDTA-MEDIUM
 original_name: EDTA-MEDIUM
 category: bacterial
@@ -198,3 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 463a'
+- timestamp: '2026-03-13T06:19:05.370098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001582'

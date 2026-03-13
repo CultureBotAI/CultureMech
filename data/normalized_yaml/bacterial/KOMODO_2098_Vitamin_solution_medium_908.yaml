@@ -1,3 +1,4 @@
+id: CultureMech:004377
 name: Vitamin solution (medium 908)
 original_name: Vitamin solution (medium 908)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2098
     label: Vitamin solution (medium 908)
-notes: 'Source: KOMODO ModelSEED | ID: 2098 | DSMZ Medium: 2098 (mediadive.medium:2098) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2098 | DSMZ Medium: 2098 (mediadive.medium:2098)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 2098'
+- timestamp: '2026-03-13T06:19:26.695373Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004377'

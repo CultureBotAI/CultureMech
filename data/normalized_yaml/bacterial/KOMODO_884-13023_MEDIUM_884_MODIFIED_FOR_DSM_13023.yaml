@@ -1,3 +1,4 @@
+id: CultureMech:006734
 name: MEDIUM 884 MODIFIED FOR DSM 13023
 original_name: MEDIUM 884 MODIFIED FOR DSM 13023
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:884_13023
     label: MEDIUM 884 MODIFIED FOR DSM 13023
-notes: 'Source: KOMODO ModelSEED | ID: 884_13023 | DSMZ Medium: 884 (mediadive.medium:884) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 884_13023 | DSMZ Medium: 884 (mediadive.medium:884)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -54,3 +55,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 884
+- timestamp: '2026-03-13T06:19:43.459262Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006734'

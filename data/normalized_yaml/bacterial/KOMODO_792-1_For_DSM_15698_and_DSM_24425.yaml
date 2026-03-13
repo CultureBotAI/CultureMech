@@ -1,3 +1,4 @@
+id: CultureMech:006499
 name: For DSM 15698 and DSM 24425
 original_name: For DSM 15698 and DSM 24425
 category: bacterial
@@ -189,3 +190,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:41.355659Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006499'

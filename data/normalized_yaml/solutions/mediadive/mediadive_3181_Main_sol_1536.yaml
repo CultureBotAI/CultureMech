@@ -1,3 +1,4 @@
+id: CultureMech:012383
 preferred_term: Main sol. 1536
 term:
   id: mediadive.solution:3181
@@ -91,3 +92,8 @@ preparation_notes: 'The pH of the final solution is adjusted to 6.3.
 
   Note: Please autoclave the chelated iron solution before you add to the medium,
   so that solves everything!!!!'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.631458Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012383'

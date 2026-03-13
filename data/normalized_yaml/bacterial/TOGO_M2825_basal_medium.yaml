@@ -1,3 +1,4 @@
+id: CultureMech:009371
 name: basal medium
 original_name: basal medium
 category: bacterial
@@ -79,3 +80,7 @@ curation_history:
   date: '2026-02-03T11:20:56.628393'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NH4CI'
+- timestamp: '2026-03-13T06:20:05.923871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009371'

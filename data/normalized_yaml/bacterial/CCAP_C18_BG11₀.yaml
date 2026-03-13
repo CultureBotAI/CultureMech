@@ -1,3 +1,4 @@
+id: CultureMech:000325
 name: BG11₀
 original_name: BG11₀
 category: bacterial
@@ -108,14 +109,16 @@ preparation_steps:
   description: This medium is standard BG11 but omitting NaNO3.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water. Adjust pH to 7.1 with 1M NaOH or HCl. For agar\
-    \ add\r\n15.0 g per litre of Bacteriological Agar (Thermo Scientific&trade;\r\n Oxoid&trade; Agar\
-    \ No.1). Autoclave at\r\n15 psi for 15 minutes."
+  description: "Make up to 1 litre with deionized water. Adjust pH to 7.1 with 1M\
+    \ NaOH or HCl. For agar add\r\n15.0 g per litre of Bacteriological Agar (Thermo\
+    \ Scientific&trade;\r\n Oxoid&trade; Agar No.1). Autoclave at\r\n15 psi for 15\
+    \ minutes."
 - step_number: 3
   action: AUTOCLAVE
-  description: Due to precipitation, larger volumes require stocks of citric acid and ammonium ferric
-    citrate to be autoclaved separately in 100ml deionized water or alternatively they can be autoclaved
-    separately in test tubes and added to sterile medium in the airflow cabinet.
+  description: Due to precipitation, larger volumes require stocks of citric acid
+    and ammonium ferric citrate to be autoclaved separately in 100ml deionized water
+    or alternatively they can be autoclaved separately in test tubes and added to
+    sterile medium in the airflow cabinet.
 applications:
 - Microbial cultivation
 curation_history:
@@ -123,3 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C18'
+- timestamp: '2026-03-13T06:18:54.473656Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000325'

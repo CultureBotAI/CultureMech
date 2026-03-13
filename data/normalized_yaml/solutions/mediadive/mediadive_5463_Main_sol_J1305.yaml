@@ -1,3 +1,4 @@
+id: CultureMech:014367
 preferred_term: Main sol. J1305
 term:
   id: mediadive.solution:5463
@@ -66,3 +67,8 @@ preparation_notes: "Autoclave. After cooling to 50C and add aseptically 135 ï¿
   \ in a polystyrene culture flask (25 cmz2 flask, canted neck, vent cap, AS ONE:\
   \ Cat. No. 2-8589-01) at 37C under a 5% O2 and 12% CO2 atmosphere (with shaking\
   \ at low speed; 50 rpm).\n\nOriginal volume: 102 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.349430Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014367'

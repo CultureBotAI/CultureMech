@@ -1,3 +1,4 @@
+id: CultureMech:015247
 preferred_term: Main sol. 439
 term:
   id: mediadive.solution:888
@@ -26,3 +27,8 @@ composition:
     label: Sheep blood
 preparation_notes: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
   water-lysed sheep blood.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.473089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015247'

@@ -1,3 +1,4 @@
+id: CultureMech:010682
 preferred_term: Main sol. 537
 term:
   id: mediadive.solution:1188
@@ -79,3 +80,8 @@ preparation_notes: 'Adjust pH to 6.8. Boil the medium for few minutes. Fill in t
   with rubber stoppers under nitrogen gas. Fill immediately about 45 ml Sterilize
   at 121°C for 15 min. Cool to room temperature and aseptically add the following
   filter-sterilized solutions. '
+curation_history:
+- timestamp: '2026-03-13T06:20:15.009242Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010682'

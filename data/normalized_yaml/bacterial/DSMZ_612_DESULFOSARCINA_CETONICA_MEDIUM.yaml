@@ -1,3 +1,4 @@
+id: CultureMech:001741
 name: DESULFOSARCINA CETONICA MEDIUM
 original_name: DESULFOSARCINA CETONICA MEDIUM
 category: bacterial
@@ -162,4 +163,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 612'
+- timestamp: '2026-03-13T06:19:06.878088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001741'
 high_metal: true

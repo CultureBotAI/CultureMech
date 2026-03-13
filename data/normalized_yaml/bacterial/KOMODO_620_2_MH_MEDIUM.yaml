@@ -1,3 +1,4 @@
+id: CultureMech:006115
 name: 2% MH MEDIUM
 original_name: 2% MH MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:620
     label: 2% MH MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 620 | DSMZ Medium: 620 (mediadive.medium:620) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 620 | DSMZ Medium: 620 (mediadive.medium:620)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -71,3 +73,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 620
+- timestamp: '2026-03-13T06:19:38.383361Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006115'

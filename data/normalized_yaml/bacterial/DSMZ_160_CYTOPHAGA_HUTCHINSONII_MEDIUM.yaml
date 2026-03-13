@@ -1,3 +1,4 @@
+id: CultureMech:001091
 name: CYTOPHAGA HUTCHINSONII MEDIUM
 original_name: CYTOPHAGA HUTCHINSONII MEDIUM
 category: bacterial
@@ -48,9 +49,10 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: To medium add 0.5% cellobiose (filter-sterilized) or distribute medium (without agar) in
-    5 ml amounts in test tubes, add a strip of filter paper (7 cm long) to each and autoclave, or place
-    sterile pieces of filter paper on the surface of agarized medium.
+  description: To medium add 0.5% cellobiose (filter-sterilized) or distribute medium
+    (without agar) in 5 ml amounts in test tubes, add a strip of filter paper (7 cm
+    long) to each and autoclave, or place sterile pieces of filter paper on the surface
+    of agarized medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 160'
+- timestamp: '2026-03-13T06:19:01.115530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001091'

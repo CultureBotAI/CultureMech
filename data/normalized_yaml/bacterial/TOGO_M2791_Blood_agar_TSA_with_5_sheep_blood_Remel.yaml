@@ -1,3 +1,4 @@
+id: CultureMech:009339
 name: Blood agar (TSA with 5% sheep blood) (Remel)
 original_name: Blood agar (TSA with 5% sheep blood) (Remel)
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Demineralized water
@@ -48,3 +50,7 @@ curation_history:
   date: '2026-02-03T11:20:56.500977'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:05.758493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009339'

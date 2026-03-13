@@ -1,3 +1,4 @@
+id: CultureMech:010299
 name: Rsulfac1 Medium
 original_name: Rsulfac1 Medium
 category: bacterial
@@ -147,6 +148,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:12.800457Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010299'
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

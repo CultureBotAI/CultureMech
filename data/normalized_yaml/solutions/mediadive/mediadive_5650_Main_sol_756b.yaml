@@ -1,3 +1,4 @@
+id: CultureMech:014518
 preferred_term: Main sol. 756b
 term:
   id: mediadive.solution:5650
@@ -64,3 +65,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust the pH to 8.6 with NaOH or KOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.222096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014518'

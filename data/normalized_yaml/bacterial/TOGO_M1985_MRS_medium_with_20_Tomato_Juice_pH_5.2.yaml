@@ -1,3 +1,4 @@
+id: CultureMech:008568
 name: MRS medium with 20% Tomato Juice (pH 5.2)
 original_name: MRS medium with 20% Tomato Juice (pH 5.2)
 category: bacterial
@@ -117,3 +118,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:58.150844Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008568'

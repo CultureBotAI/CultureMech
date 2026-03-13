@@ -1,3 +1,4 @@
+id: CultureMech:001055
 name: MODIFIED EGGERTH-GAGNON MEDIUM
 original_name: MODIFIED EGGERTH-GAGNON MEDIUM
 category: bacterial
@@ -39,7 +40,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50 ml sheep blood.
+  description: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50 ml
+    sheep blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -47,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1580'
+- timestamp: '2026-03-13T06:19:00.813282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001055'

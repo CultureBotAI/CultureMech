@@ -1,3 +1,4 @@
+id: CultureMech:003860
 name: PARACOCCUS HALODENITRIFICANS medium
 original_name: PARACOCCUS HALODENITRIFICANS medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:114
     label: PARACOCCUS HALODENITRIFICANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 114 | DSMZ Medium: 114 (mediadive.medium:114) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 114 | DSMZ Medium: 114 (mediadive.medium:114)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -44,4 +46,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 114
+- timestamp: '2026-03-13T06:19:22.783561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003860'
 ph_value: 7.0

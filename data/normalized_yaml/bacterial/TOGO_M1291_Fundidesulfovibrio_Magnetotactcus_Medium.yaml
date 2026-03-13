@@ -1,3 +1,4 @@
+id: CultureMech:007826
 name: Fundidesulfovibrio Magnetotactcus Medium
 original_name: Fundidesulfovibrio Magnetotactcus Medium
 category: bacterial
@@ -112,6 +113,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:51.768412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007826'
 solutions:
 - preferred_term: Modified Wolfe's mineral solution (see Medium [M961])
   composition: []

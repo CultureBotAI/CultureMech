@@ -1,3 +1,4 @@
+id: CultureMech:004170
 name: DESULFOVIBRIO GIGAS medium
 original_name: DESULFOVIBRIO GIGAS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:149
     label: DESULFOVIBRIO GIGAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 149 | DSMZ Medium: 149 (mediadive.medium:149) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 149 | DSMZ Medium: 149 (mediadive.medium:149)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -187,3 +189,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 149
+- timestamp: '2026-03-13T06:19:25.611631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004170'

@@ -1,3 +1,4 @@
+id: CultureMech:014492
 preferred_term: 2-chlorobenzoic acid solution
 term:
   id: mediadive.solution:5617
@@ -29,3 +30,8 @@ composition:
     match_type: exact_match
 preparation_notes: Dissolve 78.3 g/l 2-chlorobenzoic acid in water by slow addition
   of concentrated NaOH (pH should reach 7.4). Filter-sterilize the solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.089268Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014492'

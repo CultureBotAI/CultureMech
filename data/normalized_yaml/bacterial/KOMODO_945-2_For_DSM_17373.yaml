@@ -1,3 +1,4 @@
+id: CultureMech:006879
 name: For DSM 17373
 original_name: For DSM 17373
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:945.2
     label: For DSM 17373
-notes: 'Source: KOMODO ModelSEED | ID: 945.2 | DSMZ Medium: 945 (mediadive.medium:945) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 945.2 | DSMZ Medium: 945 (mediadive.medium:945)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -118,3 +120,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 945
+- timestamp: '2026-03-13T06:19:44.584749Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006879'

@@ -1,3 +1,4 @@
+id: CultureMech:002876
 name: ACIDIANUS SP. JP7 MEDIUM
 original_name: ACIDIANUS SP. JP7 MEDIUM
 category: bacterial
@@ -99,9 +100,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except chalcopyrite in 500 ml distilled water, adjust pH to 0.8 with
-    10 N H2SO4 and autoclave. Pulp chalcopyrite in 500 ml distilled water and steam for 1 hr on each of
-    3 successive days. Combine the medium and the chalcopyrite concentrate.
+  description: Dissolve ingredients except chalcopyrite in 500 ml distilled water,
+    adjust pH to 0.8 with 10 N H2SO4 and autoclave. Pulp chalcopyrite in 500 ml distilled
+    water and steam for 1 hr on each of 3 successive days. Combine the medium and
+    the chalcopyrite concentrate.
 - step_number: 2
   action: MIX
   description: 'Comment: Chalcopyrite can be replaced with arsenopyrite or pyrite.'
@@ -112,3 +114,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J525'
+- timestamp: '2026-03-13T06:19:16.275230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002876'

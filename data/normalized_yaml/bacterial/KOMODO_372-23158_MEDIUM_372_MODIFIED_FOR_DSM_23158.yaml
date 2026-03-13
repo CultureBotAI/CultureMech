@@ -1,3 +1,4 @@
+id: CultureMech:005102
 name: MEDIUM 372 MODIFIED FOR DSM 23158
 original_name: MEDIUM 372 MODIFIED FOR DSM 23158
 category: bacterial
@@ -89,4 +90,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 372
+- timestamp: '2026-03-13T06:19:30.102175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005102'
 high_metal: true

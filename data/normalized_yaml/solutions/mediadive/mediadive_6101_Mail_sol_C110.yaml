@@ -1,3 +1,4 @@
+id: CultureMech:014804
 preferred_term: Mail sol. C110
 term:
   id: mediadive.solution:6101
@@ -173,3 +174,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.3. Filter-sterilize and dispense into appropriate
   vessel.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.603885Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014804'

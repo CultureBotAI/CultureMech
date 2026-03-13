@@ -1,3 +1,4 @@
+id: CultureMech:002173
 name: CALDISPHAERA MEDIUM
 original_name: CALDISPHAERA MEDIUM
 category: bacterial
@@ -191,17 +192,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except sulfur, yeast extract, vitamins and sulfide), adjust pH to
-    3.5 with 10 N H2SO4 and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (e.g., 20 ml medium in 100 ml bottles) containing already the appropriate amount of sulfur. Sterilize
-    medium by heating cultivation vessels in a water bath to 90 - 100°C for 1 - 2 hours on each of 3 successive
-    days. Add yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas. Adjust pH of complete medium to 4.0 - 4.5, if necessary.
+  description: Dissolve ingredients (except sulfur, yeast extract, vitamins and sulfide),
+    adjust pH to 3.5 with 10 N H2SO4 and sparge medium with 80% H2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials (e.g., 20 ml medium in 100 ml bottles)
+    containing already the appropriate amount of sulfur. Sterilize medium by heating
+    cultivation vessels in a water bath to 90 - 100°C for 1 - 2 hours on each of 3
+    successive days. Add yeast extract, vitamins (sterilized by filtration) and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
+    medium to 4.0 - 4.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 1 bar overpressure with sterile 80% H2 and 20% CO2
-    gas mixture.
+  description: After inoculation pressurize vials to 1 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.
@@ -219,4 +222,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.326866Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:10.963018Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002173'

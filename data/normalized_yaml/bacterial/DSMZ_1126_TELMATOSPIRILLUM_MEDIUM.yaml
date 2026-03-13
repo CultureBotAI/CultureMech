@@ -1,3 +1,4 @@
+id: CultureMech:000563
 name: TELMATOSPIRILLUM MEDIUM
 original_name: TELMATOSPIRILLUM MEDIUM
 category: bacterial
@@ -126,9 +127,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5 - 6.5 with 1M H3PO4.
-    Dispense into serum bottles or Hungate tubes (under a nitrogen atmosphere) that can be sealed with
-    rubber stoppers.
+  description: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5 -
+    6.5 with 1M H3PO4. Dispense into serum bottles or Hungate tubes (under a nitrogen
+    atmosphere) that can be sealed with rubber stoppers.
 applications:
 - Microbial cultivation
 curation_history:
@@ -136,3 +137,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1126'
+- timestamp: '2026-03-13T06:18:56.405336Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000563'

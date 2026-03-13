@@ -1,3 +1,4 @@
+id: CultureMech:010716
 preferred_term: Main sol. 76
 term:
   id: mediadive.solution:121
@@ -146,3 +147,8 @@ preparation_notes: 'First dissolve KOH and K2HPO4 in water, then add uric acid a
 
 
   Original volume: 1008 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.171317Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010716'

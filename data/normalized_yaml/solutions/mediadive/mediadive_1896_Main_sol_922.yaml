@@ -1,3 +1,4 @@
+id: CultureMech:011313
 preferred_term: Main sol. 922
 term:
   id: mediadive.solution:1896
@@ -72,3 +73,8 @@ preparation_notes: 'Final pH 4.0-4.5.
   KNO3 enhances growth.
 
   The strain should be grown with shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.838190Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011313'

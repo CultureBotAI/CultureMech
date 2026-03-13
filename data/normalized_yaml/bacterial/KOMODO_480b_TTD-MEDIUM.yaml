@@ -1,3 +1,4 @@
+id: CultureMech:005598
 name: TTD-MEDIUM
 original_name: TTD-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:480b
     label: TTD-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 480b | DSMZ Medium: 480b (mediadive.medium:480b) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 480b | DSMZ Medium: 480b (mediadive.medium:480b)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -233,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.011781Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:34.432123Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005598'

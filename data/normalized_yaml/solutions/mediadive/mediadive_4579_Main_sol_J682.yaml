@@ -1,3 +1,4 @@
+id: CultureMech:013546
 preferred_term: Main sol. J682
 term:
   id: mediadive.solution:4579
@@ -134,3 +135,8 @@ preparation_notes: "Solution A:\nMix components, except NaHCO3, and adjust pH to
   \ and anaerobically add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions\
   \ to the medium (3% solutions, autoclaved and stored under a N2 atmosphere). Incubate\
   \ with a 10% inoculum.\n\nOriginal volume: 1003 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:31.937750Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013546'

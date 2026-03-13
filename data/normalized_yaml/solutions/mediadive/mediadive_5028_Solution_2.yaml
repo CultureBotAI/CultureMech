@@ -1,3 +1,4 @@
+id: CultureMech:013949
 preferred_term: Solution 2
 term:
   id: mediadive.solution:5028
@@ -55,3 +56,8 @@ preparation_notes: 'Add 0.2 ml filter-sterilized Solution 2 to Solution 1.
 
 
   Original volume: 54 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.587197Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013949'

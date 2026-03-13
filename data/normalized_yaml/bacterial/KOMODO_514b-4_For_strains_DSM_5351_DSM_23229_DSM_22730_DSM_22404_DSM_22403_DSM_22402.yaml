@@ -1,5 +1,7 @@
+id: CultureMech:005861
 name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
-original_name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
+original_name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM
+  22402
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
@@ -9,7 +11,8 @@ media_term:
   term:
     id: komodo.medium:514b.4
     label: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
-notes: 'Source: KOMODO ModelSEED | ID: 514b.4 | DSMZ Medium: 514b (mediadive.medium:514b) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514b.4 | DSMZ Medium: 514b (mediadive.medium:514b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -140,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 514
+- timestamp: '2026-03-13T06:19:36.852721Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005861'

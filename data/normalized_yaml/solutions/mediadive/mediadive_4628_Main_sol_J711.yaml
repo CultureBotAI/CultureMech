@@ -1,3 +1,4 @@
+id: CultureMech:013589
 preferred_term: Main sol. J711
 term:
   id: mediadive.solution:4628
@@ -103,3 +104,8 @@ preparation_notes: 'Adjust pH to 6.5.
 
   Add Na2CO3 (4.0 g/L) prior to dispensing and autoclaving. Add glucose (4.0 g/L)
   as a sterile addition.'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.191088Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013589'

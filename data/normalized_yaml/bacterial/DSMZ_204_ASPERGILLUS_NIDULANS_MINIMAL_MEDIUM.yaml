@@ -1,3 +1,4 @@
+id: CultureMech:001303
 name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
 original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
 category: bacterial
@@ -84,5 +85,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:21.468248'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default concentration for ingredient:
-    ZnSO4 x 7 H2O'
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
+    concentration for ingredient: ZnSO4 x 7 H2O'
+- timestamp: '2026-03-13T06:19:03.042851Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001303'

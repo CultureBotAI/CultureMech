@@ -1,3 +1,4 @@
+id: CultureMech:002322
 name: METHANOMASSILIICOCCUS ALVUS MEDIUM
 original_name: METHANOMASSILIICOCCUS ALVUS MEDIUM
 category: bacterial
@@ -165,10 +166,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Bring to a boil and cool down under a H2-CO2 (4:1,
-    v/v) gas stream. Distribute the medium into culture vessels under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically add per liter the
-    following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.0. Bring to a boil and cool down
+    under a H2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After
+    cooling, aseptically and anaerobically add per liter the following solutions (autoclaved
+    or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,3 +178,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1149'
+- timestamp: '2026-03-13T06:19:12.348998Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002322'

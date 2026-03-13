@@ -1,3 +1,4 @@
+id: CultureMech:006271
 name: BACILLUS THERMANTARCTICUS medium
 original_name: BACILLUS THERMANTARCTICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:675
     label: BACILLUS THERMANTARCTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 675 | DSMZ Medium: 675 (mediadive.medium:675) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 675 | DSMZ Medium: 675 (mediadive.medium:675)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 675
+- timestamp: '2026-03-13T06:19:39.401456Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006271'

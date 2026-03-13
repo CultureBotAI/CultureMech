@@ -1,3 +1,4 @@
+id: CultureMech:001044
 name: MEDIUM FOR METHYLOCALDUM (RS11D-PR)
 original_name: MEDIUM FOR METHYLOCALDUM (RS11D-PR)
 category: bacterial
@@ -101,8 +102,9 @@ preparation_steps:
   description: Medium was adjusted pH 7.0 with NaOH
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
-    to add 20% methane to the gas phase and autoclave at 121°C for 15 minutes.
+  description: Dispense the medium into the growth vessels. If using sealed vessels
+    it is appropriate to add 20% methane to the gas phase and autoclave at 121°C for
+    15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -110,3 +112,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1568'
+- timestamp: '2026-03-13T06:19:00.711234Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001044'

@@ -1,3 +1,4 @@
+id: CultureMech:015335
 name: MARINE AGAR
 original_name: MARINE AGAR
 category: specialized
@@ -109,8 +110,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: To 1000 ml "Synthetic sea water" (see medium 79) add 5 g Bacto Peptone, 1 g Bacto Yeast
-    extract, and 15 g agar. Alternatively medium 514 may be used.
+  description: To 1000 ml "Synthetic sea water" (see medium 79) add 5 g Bacto Peptone,
+    1 g Bacto Yeast extract, and 15 g agar. Alternatively medium 514 may be used.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.8.
@@ -125,3 +126,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:41.916102Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015335'

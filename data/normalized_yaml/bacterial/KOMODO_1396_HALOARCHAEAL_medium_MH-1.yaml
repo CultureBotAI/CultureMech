@@ -1,3 +1,4 @@
+id: CultureMech:004114
 name: HALOARCHAEAL medium MH-1
 original_name: HALOARCHAEAL medium MH-1
 category: bacterial
@@ -171,4 +172,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1396
+- timestamp: '2026-03-13T06:19:24.959590Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004114'
 high_metal: true

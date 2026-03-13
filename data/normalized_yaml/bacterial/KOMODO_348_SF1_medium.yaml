@@ -1,3 +1,4 @@
+id: CultureMech:005061
 name: SF1 medium
 original_name: SF1 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:348
     label: SF1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 348 | DSMZ Medium: 348 (mediadive.medium:348) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 348 | DSMZ Medium: 348 (mediadive.medium:348)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -195,3 +197,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 348
+- timestamp: '2026-03-13T06:19:29.882296Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005061'

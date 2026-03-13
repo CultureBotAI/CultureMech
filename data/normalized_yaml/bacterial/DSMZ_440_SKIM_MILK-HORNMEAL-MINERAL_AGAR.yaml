@@ -1,3 +1,4 @@
+id: CultureMech:001549
 name: SKIM MILK-HORNMEAL-MINERAL AGAR
 original_name: SKIM MILK-HORNMEAL-MINERAL AGAR
 category: bacterial
@@ -63,8 +64,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the skim milk powder separately in 100 ml H2O and add it to the cooled (60°C)
-    agar-medium.
+  description: Autoclave the skim milk powder separately in 100 ml H2O and add it
+    to the cooled (60°C) agar-medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 440'
+- timestamp: '2026-03-13T06:19:05.122551Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001549'

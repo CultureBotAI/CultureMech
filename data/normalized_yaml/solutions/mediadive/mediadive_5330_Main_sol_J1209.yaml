@@ -1,3 +1,4 @@
+id: CultureMech:014243
 preferred_term: Main sol. J1209
 term:
   id: mediadive.solution:5330
@@ -117,3 +118,8 @@ preparation_notes: "Solution A:\nSolution B: \nAutoclave solutions A and B, sepa
   \ the medium into culture vessels (e.g., 10 ml in Balch type tubes) under a N2 gas\
   \ stream and seal with butyl rubber stoppers. Finally, add per liter the following\
   \ solutions (autoclaved and stored under N2): \n\nOriginal volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.554184Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014243'

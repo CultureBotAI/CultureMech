@@ -1,3 +1,4 @@
+id: CultureMech:011460
 preferred_term: Main sol. 115a
 term:
   id: mediadive.solution:205
@@ -66,3 +67,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Rehydrate and grow freeze-dried cells from ampoule in liquid broth
   115. Subsequent subculturing may be carried out in liquid medium or on agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.857766Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011460'

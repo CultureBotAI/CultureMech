@@ -1,3 +1,4 @@
+id: CultureMech:000829
 name: ECTOTHIORHODOSPIRA MAGNA MEDIUM
 original_name: ECTOTHIORHODOSPIRA MAGNA MEDIUM
 category: bacterial
@@ -154,13 +155,13 @@ preparation_steps:
   description: pH 9.0-9.5
 - step_number: 2
   action: MIX
-  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2CO3 and vitamin B12, under a nitrogen
-    atmosphere.
+  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2CO3 and vitamin
+    B12, under a nitrogen atmosphere.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave and add the vitamin B12 from a filter-sterilised stock solution and the NaHCO3
-    (autoclaved in sealed, half full vessels), Na2S x 9 H2O, Na2CO3 from sterile stock solutions. The
-    final pH of the medium should be 9.0-9.5.
+  description: Autoclave and add the vitamin B12 from a filter-sterilised stock solution
+    and the NaHCO3 (autoclaved in sealed, half full vessels), Na2S x 9 H2O, Na2CO3
+    from sterile stock solutions. The final pH of the medium should be 9.0-9.5.
 - step_number: 4
   action: MIX
   description: pH 3.0-4.0
@@ -171,3 +172,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1369'
+- timestamp: '2026-03-13T06:18:58.700633Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000829'

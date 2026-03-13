@@ -1,3 +1,4 @@
+id: CultureMech:003301
 name: IRD DESULFOCURVUS MEDIUM
 original_name: IRD DESULFOCURVUS MEDIUM
 category: bacterial
@@ -172,13 +173,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a N2-CO2 (4:1, v/v) gas
-    mixture. After cooling, add the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a
+    N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions from
+    anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Aseptically distribute the medium into culture vessels under a stream of N2-CO2 (4:1, v/v),
-    and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution from
-    an anaerobic stock (autoclave and store under a N2 atmosphere).
+  description: Aseptically distribute the medium into culture vessels under a stream
+    of N2-CO2 (4:1, v/v), and seal with butyl rubber stoppers. Prior to inoculation,
+    add per liter the following solution from an anaerobic stock (autoclave and store
+    under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:
@@ -186,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J953'
+- timestamp: '2026-03-13T06:19:19.323214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003301'

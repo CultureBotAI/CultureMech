@@ -1,3 +1,4 @@
+id: CultureMech:005182
 name: DESULFUROCOCCUS AMYLOLYTICUS medium
 original_name: DESULFUROCOCCUS AMYLOLYTICUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:395
     label: DESULFUROCOCCUS AMYLOLYTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 395 | DSMZ Medium: 395 (mediadive.medium:395) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 395 | DSMZ Medium: 395 (mediadive.medium:395)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -223,4 +225,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.094163Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:30.897926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005182'

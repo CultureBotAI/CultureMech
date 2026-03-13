@@ -1,3 +1,4 @@
+id: CultureMech:002554
 name: PYS MEDIUM
 original_name: PYS MEDIUM
 category: bacterial
@@ -126,7 +127,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: MIX
-  description: Separately sterilize sodium pyruvate by filtration, and aseptically add to the medium.
+  description: Separately sterilize sodium pyruvate by filtration, and aseptically
+    add to the medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -134,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J192'
+- timestamp: '2026-03-13T06:19:14.116250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002554'

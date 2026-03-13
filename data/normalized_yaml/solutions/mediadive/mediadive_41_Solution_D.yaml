@@ -1,3 +1,4 @@
+id: CultureMech:013225
 preferred_term: Solution D
 term:
   id: mediadive.solution:41
@@ -36,3 +37,8 @@ preparation_notes: 'Autoclave in a cotton-stoppered Erlenmeyer flask with an out
 
 
   Original volume: 450 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.167429Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013225'

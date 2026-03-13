@@ -1,3 +1,4 @@
+id: CultureMech:013912
 preferred_term: Main sol. J966
 term:
   id: mediadive.solution:4989
@@ -199,3 +200,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 7.0. Distribute t
   \ medium into culture vessels under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl\
   \ rubber stoppers and autoclave. After cooling, add the following solution (per\
   \ 960 ml) from anaerobic stock (filter-sterilized) \n\nOriginal volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.311210Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013912'

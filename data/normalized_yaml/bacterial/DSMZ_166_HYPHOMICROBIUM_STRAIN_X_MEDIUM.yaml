@@ -1,3 +1,4 @@
+id: CultureMech:001154
 name: HYPHOMICROBIUM STRAIN X MEDIUM
 original_name: HYPHOMICROBIUM STRAIN X MEDIUM
 category: bacterial
@@ -109,11 +110,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2. For liquid medium use only 0.7 g of methylamine hydrochloride per liter.
+  description: Adjust pH to 7.2. For liquid medium use only 0.7 g of methylamine hydrochloride
+    per liter.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
-    Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +123,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 166'
+- timestamp: '2026-03-13T06:19:01.713341Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001154'

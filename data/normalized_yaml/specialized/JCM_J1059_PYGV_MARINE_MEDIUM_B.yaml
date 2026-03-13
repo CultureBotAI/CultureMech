@@ -1,3 +1,4 @@
+id: CultureMech:015378
 name: PYGV MARINE MEDIUM (B)
 original_name: PYGV MARINE MEDIUM (B)
 category: specialized
@@ -249,3 +250,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:42.274407Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015378'

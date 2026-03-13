@@ -1,3 +1,4 @@
+id: CultureMech:005475
 name: MEDIUM 461 MODIFIED FOR DSM 6388
 original_name: MEDIUM 461 MODIFIED FOR DSM 6388
 category: bacterial
@@ -79,4 +80,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 461
+- timestamp: '2026-03-13T06:19:33.189453Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005475'
 high_metal: true

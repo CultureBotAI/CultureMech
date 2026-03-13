@@ -1,3 +1,4 @@
+id: CultureMech:014501
 preferred_term: neutralized Na2S x 9 H2O solution, 3% (w/v)
 term:
   id: mediadive.solution:5630
@@ -28,3 +29,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.0.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.129319Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014501'

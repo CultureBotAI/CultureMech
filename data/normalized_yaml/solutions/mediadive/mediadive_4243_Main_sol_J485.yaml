@@ -1,3 +1,4 @@
+id: CultureMech:013257
 preferred_term: Main sol. J485
 term:
   id: mediadive.solution:4243
@@ -51,3 +52,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:30.352783Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013257'

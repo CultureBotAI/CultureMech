@@ -1,3 +1,4 @@
+id: CultureMech:010106
 name: Anaerobe Medium NO. 1
 original_name: Anaerobe Medium NO. 1
 category: bacterial
@@ -95,6 +96,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:11.360393Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010106'
 solutions:
 - preferred_term: 0.1% Resazurin solution
   composition: []

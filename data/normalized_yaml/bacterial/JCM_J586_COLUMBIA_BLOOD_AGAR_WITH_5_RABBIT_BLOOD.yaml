@@ -1,3 +1,4 @@
+id: CultureMech:002933
 name: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
 original_name: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
 category: bacterial
@@ -18,9 +19,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction, sterilize and
-    cool to about 45C. Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly dispense
-    into the sterile test tubes or petri dishes.
+  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction,
+    sterilize and cool to about 45C. Aseptically add 5% (final) sterile defibrinated
+    rabbit blood. Mix and quickly dispense into the sterile test tubes or petri dishes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -32,5 +33,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.655653Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002933'
 data_quality_flags:
 - incomplete_composition

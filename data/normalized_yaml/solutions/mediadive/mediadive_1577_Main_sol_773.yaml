@@ -1,3 +1,4 @@
+id: CultureMech:011035
 preferred_term: Main sol. 773
 term:
   id: mediadive.solution:1577
@@ -79,3 +80,8 @@ preparation_notes: 'Final pH 6.8-7.0
 
   The tetramethyl ammonium chloride and thiamine hydrochloride are added from filter
   sterilised stock solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.106435Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011035'

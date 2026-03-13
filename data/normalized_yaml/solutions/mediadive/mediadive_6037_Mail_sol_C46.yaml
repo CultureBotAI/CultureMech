@@ -1,3 +1,4 @@
+id: CultureMech:014764
 preferred_term: Mail sol. C46
 term:
   id: mediadive.solution:6037
@@ -17,3 +18,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Make up to 1 litre with distilled water. pH is adjusted to 6.6.\
   \  Autoclave at 15 psi for \r\n15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.453131Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014764'

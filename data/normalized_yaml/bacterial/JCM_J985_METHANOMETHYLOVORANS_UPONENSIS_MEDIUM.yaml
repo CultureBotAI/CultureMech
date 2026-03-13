@@ -1,3 +1,4 @@
+id: CultureMech:003334
 name: METHANOMETHYLOVORANS UPONENSIS MEDIUM
 original_name: METHANOMETHYLOVORANS UPONENSIS MEDIUM
 category: bacterial
@@ -237,13 +238,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
-    cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
+    gas atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels under a N2-CO2
-    (80:20, v/v) gas mixture and seal with butyl rubber stoppers. Finally, add per liter the following
-    solution from an anaerobic stock (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    under a N2-CO2 (80:20, v/v) gas mixture and seal with butyl rubber stoppers. Finally,
+    add per liter the following solution from an anaerobic stock (autoclaved and stored
+    under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -255,3 +257,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:19.588360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003334'

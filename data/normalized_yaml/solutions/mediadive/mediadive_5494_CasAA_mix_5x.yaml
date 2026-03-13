@@ -1,3 +1,4 @@
+id: CultureMech:014397
 preferred_term: CasAA mix 5x
 term:
   id: mediadive.solution:5494
@@ -43,3 +44,8 @@ preparation_notes: 'pH should be between 6-7, may depend on the casamino acid an
   cysteine lot
 
   steril filtration, store as batches at -20°C'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.579452Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014397'

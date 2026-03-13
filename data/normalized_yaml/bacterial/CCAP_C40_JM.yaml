@@ -1,3 +1,4 @@
+id: CultureMech:000350
 name: JM
 original_name: JM
 category: bacterial
@@ -110,8 +111,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water. For agar, add 15.0 g per litre of Bacteriological\
-    \ Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with deionized water. For agar, add 15.0 g per\
+    \ litre of Bacteriological Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar\
+    \ No.1). Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -119,3 +121,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C40'
+- timestamp: '2026-03-13T06:18:54.660997Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000350'

@@ -1,3 +1,4 @@
+id: CultureMech:001244
 name: BBM + V
 original_name: BBM + V
 category: bacterial
@@ -116,7 +117,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    Milli Q water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -134,13 +136,15 @@ preparation_steps:
   description: Adjust pH to 6.4.
 - step_number: 7
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    Milli Q water.
 - step_number: 8
   action: FILTER_STERILIZE
   description: Filtrate sterile (pore size 0.22 µm) and aliquot.
 - step_number: 9
   action: MIX
-  description: Make up to <span class='amount' data-volume='30'>30</span> ml with Milli Q water.
+  description: Make up to <span class='amount' data-volume='30'>30</span> ml with
+    Milli Q water.
 - step_number: 10
   action: FILTER_STERILIZE
   description: Filtrate sterile (pore size 0.22 µm) and aliquot.
@@ -151,3 +155,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1802'
+- timestamp: '2026-03-13T06:19:02.533189Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001244'

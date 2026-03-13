@@ -1,3 +1,4 @@
+id: CultureMech:013857
 preferred_term: Main sol. 232
 term:
   id: mediadive.solution:492
@@ -138,3 +139,8 @@ composition:
 preparation_notes: 'Adjust pH to 6.2 - 6.5.
 
   Add 0.05% cysteine-hydrochloride.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.918056Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013857'

@@ -1,3 +1,4 @@
+id: CultureMech:010474
 name: TRYPTONE YEAST EXTRACT AGAR (TYG)
 original_name: TRYPTONE YEAST EXTRACT AGAR (TYG)
 category: fungal
@@ -44,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 680'
+- timestamp: '2026-03-13T06:20:13.977451Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010474'

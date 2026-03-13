@@ -1,3 +1,4 @@
+id: CultureMech:001025
 name: MICROVIRGA MEDIUM (HV12)
 original_name: MICROVIRGA MEDIUM (HV12)
 category: bacterial
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1547'
+- timestamp: '2026-03-13T06:19:00.564447Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001025'

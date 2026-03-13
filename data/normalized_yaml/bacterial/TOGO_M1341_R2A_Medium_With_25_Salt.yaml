@@ -1,3 +1,4 @@
+id: CultureMech:007877
 name: R2A Medium With 25% Salt
 original_name: R2A Medium With 25% Salt
 category: bacterial
@@ -143,6 +144,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:52.139728Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007877'
 high_metal: true
 solutions:
 - preferred_term: 30% Seawater solution (see below)

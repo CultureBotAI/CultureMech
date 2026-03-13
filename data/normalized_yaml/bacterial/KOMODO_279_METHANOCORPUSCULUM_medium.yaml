@@ -1,3 +1,4 @@
+id: CultureMech:004706
 name: METHANOCORPUSCULUM medium
 original_name: METHANOCORPUSCULUM medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:279
     label: METHANOCORPUSCULUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 279 | DSMZ Medium: 279 (mediadive.medium:279) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 279 | DSMZ Medium: 279 (mediadive.medium:279)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 279'
+- timestamp: '2026-03-13T06:19:28.224772Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004706'

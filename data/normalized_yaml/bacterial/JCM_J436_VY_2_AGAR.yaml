@@ -1,3 +1,4 @@
+id: CultureMech:002787
 name: VY/2 AGAR
 original_name: VY/2 AGAR
 category: bacterial
@@ -19,12 +20,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 341 with 1.36 g/L (final) CaCl2 x 2H2O, and with distilled water instead
-    of the artificial seawater. Adjust pH to 7.2.
+  description: Use Medium No. 341 with 1.36 g/L (final) CaCl2 x 2H2O, and with distilled
+    water instead of the artificial seawater. Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Comment: For strain JCM 12614, place pieces of sterile filter paper (e.g., 1 cm x 1 cm)
-    onto the surface of the plate. Inoculate onto the filter paper.'
+  description: 'Comment: For strain JCM 12614, place pieces of sterile filter paper
+    (e.g., 1 cm x 1 cm) onto the surface of the plate. Inoculate onto the filter paper.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -36,5 +37,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.714808Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002787'
 data_quality_flags:
 - incomplete_composition

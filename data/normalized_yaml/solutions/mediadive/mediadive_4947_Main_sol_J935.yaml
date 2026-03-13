@@ -1,3 +1,4 @@
+id: CultureMech:013872
 preferred_term: Main sol. J935
 term:
   id: mediadive.solution:4947
@@ -128,3 +129,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 5.0 and autoclave un
   \ solutions from anaerobic stocks (autoclaved or *filter-sterilized): \nReadjust\
   \ pH to 5.5 - 6.0 with sterile 1 N H2SO4, if necessary.\n\nOriginal volume: 1047\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.014325Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013872'

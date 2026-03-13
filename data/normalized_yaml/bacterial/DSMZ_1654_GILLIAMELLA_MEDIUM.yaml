@@ -1,3 +1,4 @@
+id: CultureMech:001136
 name: GILLIAMELLA MEDIUM
 original_name: GILLIAMELLA MEDIUM
 category: bacterial
@@ -66,8 +67,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Add ascorbate solution ( 20 g per litre) after autoclaving and cooling. Final pH of the
-    medium is 7.2. Charcoal should be omitted in liquid medium.
+  description: Add ascorbate solution ( 20 g per litre) after autoclaving and cooling.
+    Final pH of the medium is 7.2. Charcoal should be omitted in liquid medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1654'
+- timestamp: '2026-03-13T06:19:01.527430Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001136'

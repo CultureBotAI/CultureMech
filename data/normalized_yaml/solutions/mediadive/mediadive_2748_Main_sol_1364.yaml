@@ -1,3 +1,4 @@
+id: CultureMech:012054
 preferred_term: 'Main sol. #1364'
 term:
   id: mediadive.solution:2748
@@ -68,3 +69,8 @@ preparation_notes: 'This medium is a modified version of Medium 1, Nutrient Agar
 
   Adjust to pH 7.0 - 8.0 and sterilize by autoclaving. The medium may be solidified
   by adding 15.0 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.565609Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012054'

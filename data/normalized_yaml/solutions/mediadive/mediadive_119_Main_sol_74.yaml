@@ -1,3 +1,4 @@
+id: CultureMech:010693
 preferred_term: Main sol. 74
 term:
   id: mediadive.solution:119
@@ -55,3 +56,8 @@ preparation_notes: 'Adjust pH to 7.0.
 
   The original medium description specifies polypeptone, which appears to be no longer
   available.'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.065414Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010693'

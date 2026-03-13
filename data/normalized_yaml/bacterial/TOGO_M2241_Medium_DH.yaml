@@ -1,3 +1,4 @@
+id: CultureMech:008830
 name: Medium DH
 original_name: Medium DH
 category: bacterial
@@ -194,6 +195,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.609541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008830'
 solutions:
 - preferred_term: Micronutrient solution
   term:

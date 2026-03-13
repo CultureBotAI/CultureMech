@@ -1,3 +1,4 @@
+id: CultureMech:012630
 preferred_term: Trace element solution SL-10
 term:
   id: mediadive.solution:3527
@@ -125,3 +126,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: First dissolve FeCl2 in the HCl, then dilute in water, add and
   dissolve the other salts. Finally make up to 1000.0 ml.
+curation_history:
+- timestamp: '2026-03-13T06:20:26.946412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012630'

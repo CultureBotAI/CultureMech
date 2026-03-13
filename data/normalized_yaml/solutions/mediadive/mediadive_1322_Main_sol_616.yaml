@@ -1,3 +1,4 @@
+id: CultureMech:010809
 preferred_term: Main sol. 616
 term:
   id: mediadive.solution:1322
@@ -129,3 +130,8 @@ preparation_notes: Dissolve ingredients (except carbonate, glucose, cysteine and
   tubes or serum vials and autoclave. Before use add glucose, cysteine and sulfide
   from sterile anoxic stock solutions prepared under 100% N2 gas and adjust pH to
   10 by adding sterile anoxic 3 N NaOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.661412Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010809'

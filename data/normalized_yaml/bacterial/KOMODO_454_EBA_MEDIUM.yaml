@@ -1,3 +1,4 @@
+id: CultureMech:005304
 name: EBA MEDIUM
 original_name: EBA MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:454
     label: EBA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 454 | DSMZ Medium: 454 (mediadive.medium:454) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 454 | DSMZ Medium: 454 (mediadive.medium:454)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -169,3 +171,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 454
+- timestamp: '2026-03-13T06:19:31.593192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005304'

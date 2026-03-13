@@ -1,3 +1,4 @@
+id: CultureMech:001763
 name: NMS MEDIUM
 original_name: NMS MEDIUM
 category: bacterial
@@ -133,8 +134,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 6.8. Autoclave at 121°C for 15 min. Methanol is added from a sterile stock
-    solution.
+  description: Adjust pH to 6.8. Autoclave at 121°C for 15 min. Methanol is added
+    from a sterile stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -146,3 +147,7 @@ curation_history:
   curator: atcc-crossref-backfill
   action: Added ATCC cross-reference
   notes: ATCC:1306 verified equivalent (verified 2026-01-06)
+- timestamp: '2026-03-13T06:19:07.039256Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001763'

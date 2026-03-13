@@ -1,3 +1,4 @@
+id: CultureMech:010617
 preferred_term: Main sol. 507a
 term:
   id: mediadive.solution:1113
@@ -124,3 +125,8 @@ preparation_notes: 'Dissolve ingredients except bicarbonate, yeast extract, vita
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:14.640293Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010617'

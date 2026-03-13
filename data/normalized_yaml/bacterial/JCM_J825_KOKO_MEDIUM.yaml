@@ -1,3 +1,4 @@
+id: CultureMech:003169
 name: KOKO MEDIUM
 original_name: KOKO MEDIUM
 category: bacterial
@@ -229,8 +230,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave the medium under a N2 atmosphere.
-    Add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave the medium
+    under a N2 atmosphere. Add the following solutions from sterile anaerobic stocks
+    (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -238,3 +240,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J825'
+- timestamp: '2026-03-13T06:19:18.304045Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003169'

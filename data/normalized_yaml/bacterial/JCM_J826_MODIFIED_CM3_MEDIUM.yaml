@@ -1,3 +1,4 @@
+id: CultureMech:003170
 name: MODIFIED CM3 MEDIUM
 original_name: MODIFIED CM3 MEDIUM
 category: bacterial
@@ -144,13 +145,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 6.0 with HCl. Autoclave under a N2 atmosphere.
-    After cooling, aseptically and anaerobically add the following solution (filter-sterilized and stored
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 6.0 with HCl. Autoclave
+    under a N2 atmosphere. After cooling, aseptically and anaerobically add the following
+    solution (filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Finally, adjust pH to 7.0 with sterile anoxic 5% Na2CO2 solution (usually 30 - 40 ml to
-    1.0 L medium).
+  description: Finally, adjust pH to 7.0 with sterile anoxic 5% Na2CO2 solution (usually
+    30 - 40 ml to 1.0 L medium).
 applications:
 - Microbial cultivation
 curation_history:
@@ -162,3 +163,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:18.314544Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003170'

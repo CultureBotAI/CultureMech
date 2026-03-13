@@ -1,3 +1,4 @@
+id: CultureMech:000361
 name: MC II
 original_name: MC II
 category: bacterial
@@ -53,9 +54,10 @@ preparation_steps:
   description: 'To be added later:'
 - step_number: 2
   action: POUR_PLATES
-  description: "Add  the  first six  constituents  in the  order  shown to 900 ml of  deionised  water,\
-    \ \r\nallowing  each to dissolve  completely  before  adding the  next.  Adjust to pH 6.9. \r\nDispense\
-    \ into 5 x 180 ml aliquots and sterilise by pressure cooking at 10 psi for 15\r\nminutes."
+  description: "Add  the  first six  constituents  in the  order  shown to 900 ml\
+    \ of  deionised  water, \r\nallowing  each to dissolve  completely  before  adding\
+    \ the  next.  Adjust to pH 6.9. \r\nDispense into 5 x 180 ml aliquots and sterilise\
+    \ by pressure cooking at 10 psi for 15\r\nminutes."
 - step_number: 3
   action: MIX
   description: Aseptically add the foetal calf serum to a final concentration of 10%.
@@ -69,3 +71,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C50'
+- timestamp: '2026-03-13T06:18:54.752421Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000361'

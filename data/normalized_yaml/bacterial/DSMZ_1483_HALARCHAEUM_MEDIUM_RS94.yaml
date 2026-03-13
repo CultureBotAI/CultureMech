@@ -1,3 +1,4 @@
+id: CultureMech:000951
 name: HALARCHAEUM MEDIUM RS94
 original_name: HALARCHAEUM MEDIUM RS94
 category: bacterial
@@ -177,4 +178,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1483'
+- timestamp: '2026-03-13T06:18:59.839135Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000951'
 high_metal: true

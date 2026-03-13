@@ -1,3 +1,4 @@
+id: CultureMech:005284
 name: RUMINOCOCCUS ALBUS medium
 original_name: RUMINOCOCCUS ALBUS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:436
     label: RUMINOCOCCUS ALBUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 436 | DSMZ Medium: 436 (mediadive.medium:436) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 436 | DSMZ Medium: 436 (mediadive.medium:436)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -128,3 +130,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 436
+- timestamp: '2026-03-13T06:19:31.503897Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005284'

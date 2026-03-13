@@ -1,3 +1,4 @@
+id: CultureMech:000411
 name: 2SNA
 original_name: 2SNA
 category: bacterial
@@ -30,5 +31,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:55.023791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000411'
 data_quality_flags:
 - incomplete_composition

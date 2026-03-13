@@ -1,3 +1,4 @@
+id: CultureMech:004832
 name: METHANOSARCINA ACETIVORANS medium
 original_name: METHANOSARCINA ACETIVORANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:304
     label: METHANOSARCINA ACETIVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 304 | DSMZ Medium: 304 (mediadive.medium:304) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 304 | DSMZ Medium: 304 (mediadive.medium:304)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 304'
+- timestamp: '2026-03-13T06:19:28.871195Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004832'

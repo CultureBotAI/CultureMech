@@ -1,3 +1,4 @@
+id: CultureMech:000808
 name: HALISCOMENOBACTER MEDIUM
 original_name: HALISCOMENOBACTER MEDIUM
 category: bacterial
@@ -144,8 +145,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5. The vitamins are sterilized by filtration. The glucose is dissolved in
-    5 ml of distilled water and sterilized separately by autoclaving.
+  description: Adjust pH to 7.5. The vitamins are sterilized by filtration. The glucose
+    is dissolved in 5 ml of distilled water and sterilized separately by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,3 +154,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 134'
+- timestamp: '2026-03-13T06:18:58.506656Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000808'

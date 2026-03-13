@@ -1,3 +1,4 @@
+id: CultureMech:001975
 name: GEOBACTER SULFURREDUCENS MEDIUM
 original_name: GEOBACTER SULFURREDUCENS MEDIUM
 category: bacterial
@@ -228,16 +229,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, fumarate and vitamins), sparge medium with 80%
-    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add bicarbonate and equilibrate the
-    medium with 80% N2 and 20% CO2 gas mixture to reach a pH of 6.8, then dispense medium under the same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add
-    fumarate and vitamins from anoxic stock solutions prepared under 100% N2 gas atmosphere and sterilized
-    by filtration. Check medium pH and adjust to 6.8, if necessary.
+  description: Dissolve ingredients (except bicarbonate, fumarate and vitamins), sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add bicarbonate and equilibrate the medium with 80% N2 and 20% CO2 gas mixture
+    to reach a pH of 6.8, then dispense medium under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add
+    fumarate and vitamins from anoxic stock solutions prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. Check medium pH and adjust to 6.8, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,4 +250,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:31.346117Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:09.004914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001975'

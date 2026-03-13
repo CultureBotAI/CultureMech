@@ -1,3 +1,4 @@
+id: CultureMech:012603
 preferred_term: Main sol. 1684
 term:
   id: mediadive.solution:3485
@@ -129,3 +130,8 @@ preparation_notes: 'Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar m
   separately.
 
   Aseptically add all solutions to the basal medium.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.806372Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012603'

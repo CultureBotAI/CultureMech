@@ -1,3 +1,4 @@
+id: CultureMech:006311
 name: COLUMBIA BLOOD medium
 original_name: COLUMBIA BLOOD medium
 category: bacterial
@@ -71,3 +72,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 693
+- timestamp: '2026-03-13T06:19:39.687530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006311'

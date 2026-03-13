@@ -1,3 +1,4 @@
+id: CultureMech:002128
 name: ONR7a MEDIUM
 original_name: ONR7a MEDIUM
 category: bacterial
@@ -128,9 +129,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the solutions separately. All solutions should be mixed after autoclaving when
-    they have cooled to at least 50°C. For solid media add to the first solution 15 g/l of Bacto agar
-    or 12 g/l of agarose (Sigma).
+  description: Autoclave the solutions separately. All solutions should be mixed after
+    autoclaving when they have cooled to at least 50°C. For solid media add to the
+    first solution 15 g/l of Bacto agar or 12 g/l of agarose (Sigma).
 - step_number: 2
   action: ADJUST_PH
   description: adjust pH to 7.6 with NaOH
@@ -141,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 950'
+- timestamp: '2026-03-13T06:19:10.588402Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002128'

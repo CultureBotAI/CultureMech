@@ -1,3 +1,4 @@
+id: CultureMech:002357
 name: VALLITALEA 70B-A MEDIUM
 original_name: VALLITALEA 70B-A MEDIUM
 category: bacterial
@@ -151,13 +152,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.9 with NaOH and autoclave under a N2 atmosphere.
-    After cooling, add the following solutions:'
+  description: 'Mix components thoroughly, adjust pH to 7.9 with NaOH and autoclave
+    under a N2 atmosphere. After cooling, add the following solutions:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels under a N2 gas
-    stream and seal with butyl rubber stoppers. Prior inoculation, add per liter the following solution
-    from an anaerobic stock (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    under a N2 gas stream and seal with butyl rubber stoppers. Prior inoculation,
+    add per liter the following solution from an anaerobic stock (autoclaved and stored
+    under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -165,3 +167,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1190'
+- timestamp: '2026-03-13T06:19:12.670117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002357'

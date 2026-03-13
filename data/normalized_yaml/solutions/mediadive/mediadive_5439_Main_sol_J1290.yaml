@@ -1,3 +1,4 @@
+id: CultureMech:014345
 preferred_term: Main sol. J1290
 term:
   id: mediadive.solution:5439
@@ -154,3 +155,8 @@ preparation_notes: "Mix components except NaHCO3 and adjust pH to 6.5. Bring to 
   \ stand the medium overnight. Aseptically and anaerobically add per liter the following\
   \ solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized): \n\
   \nOriginal volume: 939 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.201565Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014345'

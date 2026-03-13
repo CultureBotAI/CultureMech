@@ -1,3 +1,4 @@
+id: CultureMech:009516
 name: PYGV Marine Medium (A)
 original_name: PYGV Marine Medium (A)
 category: bacterial
@@ -249,6 +250,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.514215Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009516'
 high_metal: true
 solutions:
 - preferred_term: 2.5% Glucose solution

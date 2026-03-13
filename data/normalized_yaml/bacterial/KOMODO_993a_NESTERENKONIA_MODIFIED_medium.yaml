@@ -1,3 +1,4 @@
+id: CultureMech:006974
 name: NESTERENKONIA MODIFIED medium
 original_name: NESTERENKONIA MODIFIED medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:993a
     label: NESTERENKONIA MODIFIED medium
-notes: 'Source: KOMODO ModelSEED | ID: 993a | DSMZ Medium: 993a (mediadive.medium:993a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 993a | DSMZ Medium: 993a (mediadive.medium:993a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -81,4 +83,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 993
+- timestamp: '2026-03-13T06:19:45.354154Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006974'
 ph_value: 7.2

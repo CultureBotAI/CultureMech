@@ -1,3 +1,4 @@
+id: CultureMech:006515
 name: Blood Agar Base from Difco 0045
 original_name: Blood Agar Base from Difco 0045
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:8002
     label: Blood Agar Base from Difco 0045
-notes: 'Source: KOMODO ModelSEED | ID: 8002 | DSMZ Medium: 8002 (mediadive.medium:8002) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 8002 | DSMZ Medium: 8002 (mediadive.medium:8002)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 8002'
+- timestamp: '2026-03-13T06:19:41.492404Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006515'

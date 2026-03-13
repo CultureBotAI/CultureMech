@@ -1,3 +1,4 @@
+id: CultureMech:011900
 preferred_term: Main sol. 1279
 term:
   id: mediadive.solution:2559
@@ -58,3 +59,8 @@ composition:
 preparation_notes: "Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2,\
   \ distribute in Hungate tubes to 8 ml and autoclave.\nAdd aseptically to each tube:\
   \ \nAdd 1 ml of sterile air to each tube.\n\nOriginal volume: 80 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:22.684547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011900'

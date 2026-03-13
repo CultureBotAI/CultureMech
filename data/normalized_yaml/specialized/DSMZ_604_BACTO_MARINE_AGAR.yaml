@@ -1,3 +1,4 @@
+id: CultureMech:015364
 name: BACTO MARINE AGAR
 original_name: BACTO MARINE AGAR
 category: specialized
@@ -28,3 +29,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 604'
+- timestamp: '2026-03-13T06:20:42.188613Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015364'

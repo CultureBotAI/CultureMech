@@ -1,3 +1,4 @@
+id: CultureMech:012062
 preferred_term: Mineral Salts Solution
 term:
   id: mediadive.solution:2760
@@ -78,3 +79,8 @@ composition:
 preparation_notes: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the
   medium into Hungate tubes. Sterilize by autoclaving. Before inoculation add filter
   sterilized methanol (0.1% v/v).
+curation_history:
+- timestamp: '2026-03-13T06:20:23.614725Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012062'

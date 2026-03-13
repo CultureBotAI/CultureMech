@@ -1,3 +1,4 @@
+id: CultureMech:007173
 name: Bm in arabinose; hodgson et al
 original_name: Bm in arabinose; hodgson et al
 category: bacterial
@@ -67,14 +68,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:45.129008Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 273, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 273, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.581006Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007173'
 media_term:
   preferred_term: MediaDB Medium 273
   term:
     id: MEDIADB:273
     label: Bm in arabinose; hodgson et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

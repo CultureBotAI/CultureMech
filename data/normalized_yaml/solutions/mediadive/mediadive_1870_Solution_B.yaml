@@ -1,3 +1,4 @@
+id: CultureMech:011291
 preferred_term: Solution B
 term:
   id: mediadive.solution:1870
@@ -56,3 +57,8 @@ preparation_notes: 'Sterilize by filtration, add 20 ml rabbit serum, gas with 80
 
 
   Original volume: 45 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.716340Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011291'

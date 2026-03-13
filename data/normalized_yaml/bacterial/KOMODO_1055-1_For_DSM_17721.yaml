@@ -1,3 +1,4 @@
+id: CultureMech:003631
 name: For DSM 17721
 original_name: For DSM 17721
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1055.1
     label: For DSM 17721
-notes: 'Source: KOMODO ModelSEED | ID: 1055.1 | DSMZ Medium: 1055 (mediadive.medium:1055) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1055.1 | DSMZ Medium: 1055 (mediadive.medium:1055)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.526687Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:21.178909Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003631'

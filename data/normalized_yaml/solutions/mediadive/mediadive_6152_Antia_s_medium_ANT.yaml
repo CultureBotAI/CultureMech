@@ -1,3 +1,4 @@
+id: CultureMech:014853
 preferred_term: Antia's medium (ANT)
 term:
   id: mediadive.solution:6152
@@ -101,3 +102,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: "Make up to 1 litre with distilled water and autoclave at 15 psi.\
   \ Final pH should be \r\n7.6 -­ 7.8."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.788924Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014853'

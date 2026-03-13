@@ -1,3 +1,4 @@
+id: CultureMech:005829
 name: MEDIUM 514 MODIFIED FOR DSM 22302
 original_name: MEDIUM 514 MODIFIED FOR DSM 22302
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:514_22302
     label: MEDIUM 514 MODIFIED FOR DSM 22302
-notes: 'Source: KOMODO ModelSEED | ID: 514_22302 | DSMZ Medium: 514 (mediadive.medium:514) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 514_22302 | DSMZ Medium: 514 (mediadive.medium:514)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
@@ -140,4 +141,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 514
+- timestamp: '2026-03-13T06:19:36.602286Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005829'
 ph_value: 7.6

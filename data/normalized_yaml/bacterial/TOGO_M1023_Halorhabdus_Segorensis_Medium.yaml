@@ -1,3 +1,4 @@
+id: CultureMech:007537
 name: Halorhabdus Segorensis Medium
 original_name: Halorhabdus Segorensis Medium
 category: bacterial
@@ -79,3 +80,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:49.483342Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007537'

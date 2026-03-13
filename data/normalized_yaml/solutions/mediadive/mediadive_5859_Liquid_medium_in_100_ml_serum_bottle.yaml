@@ -1,3 +1,4 @@
+id: CultureMech:014675
 preferred_term: Liquid medium (in 100 ml serum bottle)
 term:
   id: mediadive.solution:5859
@@ -70,3 +71,8 @@ preparation_notes: 'Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% 
 
 
   Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.998025Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014675'

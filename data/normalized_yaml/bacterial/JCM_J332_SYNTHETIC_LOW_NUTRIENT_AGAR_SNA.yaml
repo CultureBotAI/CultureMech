@@ -1,3 +1,4 @@
+id: CultureMech:002691
 name: SYNTHETIC LOW NUTRIENT AGAR (SNA)
 original_name: SYNTHETIC LOW NUTRIENT AGAR (SNA)
 category: bacterial
@@ -66,8 +67,9 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Where necessary, put a piece of sterilized filter paper (ca. 1 x 2 cm) or carnation leaf
-    on the agar medium and incubate cultures under near-UV light for sporulation.
+  description: Where necessary, put a piece of sterilized filter paper (ca. 1 x 2
+    cm) or carnation leaf on the agar medium and incubate cultures under near-UV light
+    for sporulation.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J332'
+- timestamp: '2026-03-13T06:19:15.046091Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002691'

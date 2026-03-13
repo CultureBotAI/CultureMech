@@ -1,3 +1,4 @@
+id: CultureMech:014727
 preferred_term: Main sol. 322
 term:
   id: mediadive.solution:598
@@ -232,3 +233,8 @@ preparation_notes: 'Dissolve ingredients except bicarbonate, methanol, and dithi
 
 
   Original volume: 1028 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.282097Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014727'

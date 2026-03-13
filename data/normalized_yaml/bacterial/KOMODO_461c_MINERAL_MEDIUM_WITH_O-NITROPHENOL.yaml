@@ -1,3 +1,4 @@
+id: CultureMech:005483
 name: MINERAL MEDIUM WITH O-NITROPHENOL
 original_name: MINERAL MEDIUM WITH O-NITROPHENOL
 category: bacterial
@@ -80,4 +81,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 461
+- timestamp: '2026-03-13T06:19:33.228495Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005483'
 high_metal: true

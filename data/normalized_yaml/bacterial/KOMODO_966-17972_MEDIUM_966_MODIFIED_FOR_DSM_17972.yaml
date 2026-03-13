@@ -1,3 +1,4 @@
+id: CultureMech:006923
 name: MEDIUM 966 MODIFIED FOR DSM 17972
 original_name: MEDIUM 966 MODIFIED FOR DSM 17972
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:966_17972
     label: MEDIUM 966 MODIFIED FOR DSM 17972
-notes: 'Source: KOMODO ModelSEED | ID: 966_17972 | DSMZ Medium: 966 (mediadive.medium:966) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 966_17972 | DSMZ Medium: 966 (mediadive.medium:966)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -65,4 +66,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 966
+- timestamp: '2026-03-13T06:19:45.013735Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006923'
 ph_value: 7.8

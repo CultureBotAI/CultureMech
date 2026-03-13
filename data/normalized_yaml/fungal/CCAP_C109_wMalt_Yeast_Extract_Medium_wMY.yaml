@@ -1,3 +1,4 @@
+id: CultureMech:010440
 name: wMalt Yeast Extract Medium (wMY)
 original_name: wMalt Yeast Extract Medium (wMY)
 category: fungal
@@ -30,5 +31,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:13.835419Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010440'
 data_quality_flags:
 - incomplete_composition

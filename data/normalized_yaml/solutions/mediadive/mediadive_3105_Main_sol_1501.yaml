@@ -1,3 +1,4 @@
+id: CultureMech:012327
 preferred_term: Main sol. 1501
 term:
   id: mediadive.solution:3105
@@ -36,3 +37,8 @@ preparation_notes: "Prepare the growth medium as follows:\nDilute 100 ml solutio
   \nAutoclave the phosphate buffer separately. When the growth medium is cool 10 ml/l\
   \ of\r\nthe phosphate buffer is added - if too warm the phosphate will precipitate.\
   \ Liquid\r\ncultures should be grown with shaking."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.216855Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012327'

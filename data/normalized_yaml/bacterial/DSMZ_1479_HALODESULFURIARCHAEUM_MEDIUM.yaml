@@ -1,3 +1,4 @@
+id: CultureMech:000946
 name: HALODESULFURIARCHAEUM MEDIUM
 original_name: HALODESULFURIARCHAEUM MEDIUM
 category: bacterial
@@ -239,4 +240,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:18:59.807360Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000946'
 high_metal: true

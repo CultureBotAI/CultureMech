@@ -1,3 +1,4 @@
+id: CultureMech:004094
 name: ASAIA GYP medium
 original_name: ASAIA GYP medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1330
     label: ASAIA GYP medium
-notes: 'Source: KOMODO ModelSEED | ID: 1330 | DSMZ Medium: 1330 (mediadive.medium:1330) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1330 | DSMZ Medium: 1330 (mediadive.medium:1330)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -59,3 +61,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1330
+- timestamp: '2026-03-13T06:19:24.764865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004094'

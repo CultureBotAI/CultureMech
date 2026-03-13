@@ -1,3 +1,4 @@
+id: CultureMech:011254
 preferred_term: Main sol. 108
 term:
   id: mediadive.solution:182
@@ -115,3 +116,8 @@ composition:
 preparation_notes: In liquid medium, the pH should be adjusted to 3.5 with H2SO4.
   In solid medium, the pH should be adjusted to 4.5 with H2SO4 after autoclaving the
   medium. Sterilize the glucose separately and add to the sterile medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:18.424836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011254'

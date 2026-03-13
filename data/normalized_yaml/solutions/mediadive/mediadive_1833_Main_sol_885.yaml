@@ -1,3 +1,4 @@
+id: CultureMech:011257
 preferred_term: Main sol. 885
 term:
   id: mediadive.solution:1833
@@ -162,3 +163,8 @@ composition:
 preparation_notes: 'pH 7.0
 
   PHC: Emulsified, number-average molecular mass Mn=2000; Toagosei'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.439594Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011257'

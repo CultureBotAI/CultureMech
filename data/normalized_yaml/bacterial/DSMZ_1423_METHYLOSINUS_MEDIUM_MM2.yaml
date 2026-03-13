@@ -1,3 +1,4 @@
+id: CultureMech:000887
 name: METHYLOSINUS MEDIUM MM2
 original_name: METHYLOSINUS MEDIUM MM2
 category: bacterial
@@ -108,7 +109,8 @@ preparation_steps:
   description: Adjust pH to 5.0.
 - step_number: 2
   action: POUR_PLATES
-  description: Dispense the medium into serum bottles under gassing with CH4 (20% v/v).
+  description: Dispense the medium into serum bottles under gassing with CH4 (20%
+    v/v).
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -119,3 +121,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1423'
+- timestamp: '2026-03-13T06:18:59.234871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000887'

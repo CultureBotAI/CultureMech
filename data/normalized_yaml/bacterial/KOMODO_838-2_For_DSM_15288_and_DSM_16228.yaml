@@ -1,3 +1,4 @@
+id: CultureMech:006632
 name: For DSM 15288 and DSM 16228
 original_name: For DSM 15288 and DSM 16228
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:838.2
     label: For DSM 15288 and DSM 16228
-notes: 'Source: KOMODO ModelSEED | ID: 838.2 | DSMZ Medium: 838 (mediadive.medium:838) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 838.2 | DSMZ Medium: 838 (mediadive.medium:838)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:
@@ -162,3 +164,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 838
+- timestamp: '2026-03-13T06:19:42.544318Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006632'

@@ -1,3 +1,4 @@
+id: CultureMech:005710
 name: For DSM 6578
 original_name: For DSM 6578
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:509.1
     label: For DSM 6578
-notes: 'Source: KOMODO ModelSEED | ID: 509.1 | DSMZ Medium: 509 (mediadive.medium:509) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 509.1 | DSMZ Medium: 509 (mediadive.medium:509)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -247,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.426166Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:35.642836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005710'

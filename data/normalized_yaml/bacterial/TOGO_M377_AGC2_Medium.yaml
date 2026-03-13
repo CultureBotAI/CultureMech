@@ -1,3 +1,4 @@
+id: CultureMech:009758
 name: AGC2 Medium
 original_name: AGC2 Medium
 category: bacterial
@@ -105,3 +106,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:08.658144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009758'

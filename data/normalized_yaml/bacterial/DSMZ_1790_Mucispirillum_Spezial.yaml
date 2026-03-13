@@ -1,3 +1,4 @@
+id: CultureMech:001237
 name: Mucispirillum Spezial
 original_name: Mucispirillum Spezial
 category: bacterial
@@ -88,12 +89,12 @@ preparation_steps:
   description: pressurize with 1 bar H2
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
-    sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml in water and filter
-    sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -101,3 +102,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1790'
+- timestamp: '2026-03-13T06:19:02.477631Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001237'

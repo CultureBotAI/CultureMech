@@ -1,3 +1,4 @@
+id: CultureMech:009708
 name: TOGO Medium M330
 original_name: (Unnamed medium)
 category: bacterial
@@ -134,6 +135,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.292260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009708'
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

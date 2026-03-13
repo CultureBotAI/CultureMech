@@ -1,3 +1,4 @@
+id: CultureMech:000288
 name: MARINE METHANOGENIC MEDIUM
 original_name: MARINE METHANOGENIC MEDIUM
 category: archaea
@@ -178,8 +179,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) atmosphere. After
-    cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
+    atmosphere. After cooling, aseptically and anaerobically add the following solutions
+    (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -187,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1106'
+- timestamp: '2026-03-13T06:18:54.161365Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000288'

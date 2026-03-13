@@ -1,3 +1,4 @@
+id: CultureMech:014300
 preferred_term: Main sol. J1253
 term:
   id: mediadive.solution:5390
@@ -139,3 +140,8 @@ preparation_notes: "Add components to distilled water and bring volume to 1 L. A
   \ pH to 6.5 and autoclave. Aseptically add the following solution (autoclaved) to\
   \ the medium: \nCheck final pH of the medium to be 7.5-8.0.\n\nOriginal volume:\
   \ 6 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.921723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014300'

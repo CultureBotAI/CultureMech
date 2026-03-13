@@ -1,3 +1,4 @@
+id: CultureMech:004075
 name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1320
     label: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
-notes: 'Source: KOMODO ModelSEED | ID: 1320 | DSMZ Medium: 1320 (mediadive.medium:1320) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1320 | DSMZ Medium: 1320 (mediadive.medium:1320)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -78,3 +80,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1320
+- timestamp: '2026-03-13T06:19:24.624943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004075'

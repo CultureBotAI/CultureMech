@@ -1,3 +1,4 @@
+id: CultureMech:013110
 preferred_term: Main sol. J340
 term:
   id: mediadive.solution:4058
@@ -120,3 +121,8 @@ preparation_notes: 'Mix ingredients except SL-4 trace element solution and Na2S 
 
 
   Original volume: 1002 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.465488Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013110'

@@ -1,3 +1,4 @@
+id: CultureMech:000501
 name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
 original_name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
 category: bacterial
@@ -116,8 +117,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
-    under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
+    a rubber septum under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,3 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1069'
+- timestamp: '2026-03-13T06:18:55.887470Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000501'

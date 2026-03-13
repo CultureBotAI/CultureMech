@@ -1,3 +1,4 @@
+id: CultureMech:013997
 preferred_term: Main sol. J1030
 term:
   id: mediadive.solution:5082
@@ -111,3 +112,8 @@ preparation_notes: "Mix components, except sulfur, bring to a boil and cool down
   \ solution). Remove ferrihydrite into a container, cover with water and store at\
   \ room temperature overnight. Remove supernatant after centrifugation at 2000 rpm\
   \ for 5 min.\n\nOriginal volume: 820 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:34.897092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013997'

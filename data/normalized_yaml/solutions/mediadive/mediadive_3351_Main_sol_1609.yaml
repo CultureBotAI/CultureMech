@@ -1,3 +1,4 @@
+id: CultureMech:012502
 preferred_term: Main sol. 1609
 term:
   id: mediadive.solution:3351
@@ -49,3 +50,8 @@ composition:
 preparation_notes: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
   at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
   blood (horse or sheep), mix well and pour plates. pH: 7.2 ± 0.2'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.241506Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012502'

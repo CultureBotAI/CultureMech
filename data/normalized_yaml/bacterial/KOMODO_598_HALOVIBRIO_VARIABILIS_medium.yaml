@@ -1,3 +1,4 @@
+id: CultureMech:006079
 name: HALOVIBRIO VARIABILIS medium
 original_name: HALOVIBRIO VARIABILIS medium
 category: bacterial
@@ -185,4 +186,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 598
+- timestamp: '2026-03-13T06:19:38.137021Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006079'
 high_metal: true

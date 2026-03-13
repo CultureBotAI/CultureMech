@@ -1,3 +1,4 @@
+id: CultureMech:014113
 preferred_term: Main sol. J1113
 term:
   id: mediadive.solution:5202
@@ -139,3 +140,8 @@ preparation_notes: "Mix components, adjust pH to 7.0 and autoclave under a N2 at
   \ in a bottle capped with a butyl rubber stopper. After cooling, add the following\
   \ solution (autoclaved and stored under a N2 gas atmosphere): \n\nOriginal volume:\
   \ 1031 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.677747Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014113'

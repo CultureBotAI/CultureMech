@@ -1,3 +1,4 @@
+id: CultureMech:006281
 name: TGA-MEDIUM
 original_name: TGA-MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:681
     label: TGA-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 681 | DSMZ Medium: 681 (mediadive.medium:681) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 681 | DSMZ Medium: 681 (mediadive.medium:681)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 681
+- timestamp: '2026-03-13T06:19:39.441616Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006281'

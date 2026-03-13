@@ -1,3 +1,4 @@
+id: CultureMech:012118
 preferred_term: Main sol. 165
 term:
   id: mediadive.solution:283
@@ -98,3 +99,8 @@ preparation_notes: "Dissolve ingredients except carbonate, cellobiose, vitamins,
   \ to use adjust pH of complete medium to 7.2 - 7.4. Cellulose (MN 300, Whatman CF\
   \ II, Kleenex tissue paper, or HCl treated cotton) can be used as an alternative\
   \ to cellobiose.\n\nOriginal volume: 1001 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:23.979561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012118'

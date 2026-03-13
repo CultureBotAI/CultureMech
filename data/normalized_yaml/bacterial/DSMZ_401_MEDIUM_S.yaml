@@ -1,3 +1,4 @@
+id: CultureMech:001511
 name: MEDIUM S
 original_name: MEDIUM S
 category: bacterial
@@ -58,3 +59,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 401'
+- timestamp: '2026-03-13T06:19:04.827995Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001511'

@@ -1,3 +1,4 @@
+id: CultureMech:014276
 preferred_term: Main sol. J1232
 term:
   id: mediadive.solution:5364
@@ -21,3 +22,8 @@ preparation_notes: 'Aseptically combine. Cultivate with shaking (150 - 200 rpm) 
 
 
   Original volume: 110 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.756611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014276'

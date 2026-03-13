@@ -1,3 +1,4 @@
+id: CultureMech:009098
 name: Desulfobulbus SP. Medium (Freshwater) (For DSM 14880)
 original_name: Desulfobulbus SP. Medium (Freshwater) (For DSM 14880)
 category: bacterial
@@ -339,6 +340,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 11 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:02.544289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009098'
 high_metal: true
 solutions:
 - preferred_term: Solution A

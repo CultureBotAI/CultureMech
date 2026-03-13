@@ -1,3 +1,4 @@
+id: CultureMech:006294
 name: THIOBACILLUS NEAPOLITANUS MEDIUM
 original_name: THIOBACILLUS NEAPOLITANUS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:68
     label: THIOBACILLUS NEAPOLITANUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 68 | DSMZ Medium: 68 (mediadive.medium:68) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 68 | DSMZ Medium: 68 (mediadive.medium:68)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -125,3 +127,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 68
+- timestamp: '2026-03-13T06:19:39.586822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006294'

@@ -1,3 +1,4 @@
+id: CultureMech:015020
 preferred_term: BBM + V Vitamine Mix
 term:
   id: mediadive.solution:6406
@@ -46,3 +47,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''30''>30</spa
 
 
   Original volume: 30 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.402205Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015020'

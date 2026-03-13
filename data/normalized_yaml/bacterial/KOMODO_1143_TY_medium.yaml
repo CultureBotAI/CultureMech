@@ -1,3 +1,4 @@
+id: CultureMech:003854
 name: TY medium
 original_name: TY medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1143
     label: TY medium
-notes: 'Source: KOMODO ModelSEED | ID: 1143 | DSMZ Medium: 1143 (mediadive.medium:1143) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1143 | DSMZ Medium: 1143 (mediadive.medium:1143)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -37,3 +39,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1143
+- timestamp: '2026-03-13T06:19:22.730100Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003854'

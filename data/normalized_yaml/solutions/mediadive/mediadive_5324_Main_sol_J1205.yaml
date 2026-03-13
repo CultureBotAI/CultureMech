@@ -1,3 +1,4 @@
+id: CultureMech:014236
 preferred_term: Main sol. J1205
 term:
   id: mediadive.solution:5324
@@ -116,3 +117,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 7.0 and autoclave un
   \ solutions from anaerobic stocks (autoclaved or *filter-sterilized): \nDistribute\
   \ the medium into culture vessels (e.g., 20 ml in Balch tubes) and seal with butyl\
   \ rubber stoppers.\n\nOriginal volume: 1006 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.514332Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014236'

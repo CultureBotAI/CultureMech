@@ -1,3 +1,4 @@
+id: CultureMech:002635
 name: NAM AGAR
 original_name: NAM AGAR
 category: bacterial
@@ -21,11 +22,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After preparing the Trypticase soy agar plate with 5%sheep blood, spreading the subculture
-    on the agar surface and place one NAM disk aseptically. Incubate the agar plate under a H2-CO2-N2
-    (1:1:8) gas mixture. To prepare the NAM disk, impregnate with 20 ï¿½l filter-sterilized 1.5% NAM (<I>N</I>-acetylmuramic
-    acid, Sigma) aqueous solution to a sterile paper disk (0.64 cm in diameter). Stored the air-dried
-    disk at room temperature.
+  description: After preparing the Trypticase soy agar plate with 5%sheep blood, spreading
+    the subculture on the agar surface and place one NAM disk aseptically. Incubate
+    the agar plate under a H2-CO2-N2 (1:1:8) gas mixture. To prepare the NAM disk,
+    impregnate with 20 ï¿½l filter-sterilized 1.5% NAM (<I>N</I>-acetylmuramic acid,
+    Sigma) aqueous solution to a sterile paper disk (0.64 cm in diameter). Stored
+    the air-dried disk at room temperature.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +35,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J278'
+- timestamp: '2026-03-13T06:19:14.684918Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002635'

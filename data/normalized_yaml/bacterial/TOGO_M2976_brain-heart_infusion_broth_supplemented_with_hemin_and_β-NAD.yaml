@@ -1,3 +1,4 @@
+id: CultureMech:009499
 name: brain-heart infusion broth (supplemented with hemin and β-NAD)
 original_name: brain-heart infusion broth (supplemented with hemin and β-NAD)
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
 - preferred_term: Difco brain-heart infusion broth (BD Biosciences)
   concentration:
     value: '1'
@@ -48,3 +51,7 @@ curation_history:
   date: '2026-02-03T11:20:56.932686'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.419741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009499'

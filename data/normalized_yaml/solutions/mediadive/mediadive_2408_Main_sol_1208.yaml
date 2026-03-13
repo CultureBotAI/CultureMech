@@ -1,3 +1,4 @@
+id: CultureMech:011786
 preferred_term: Main sol. 1208
 term:
   id: mediadive.solution:2408
@@ -130,3 +131,8 @@ preparation_notes: Dissolve ingredients except ammonium chloride, magnesium chlo
   yeast extract, trace elements, vitamins, from sterile, anoxic stock solution prepared
   under N2. The vitamin solution should be sterilized by filtration. Adjust pH of
   final medium to 10.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.899098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011786'

@@ -1,3 +1,4 @@
+id: CultureMech:012646
 preferred_term: Trace element solution
 term:
   id: mediadive.solution:3544
@@ -116,3 +117,8 @@ preparation_notes: 'The trace element solution was prepared by dissolving the sa
 
   NaOH was used to adjust the pH to 6.5. The solution was added up to 1000 mL with
   H2Obidest and autoclaved.'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.051049Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012646'

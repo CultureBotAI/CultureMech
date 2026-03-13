@@ -1,3 +1,4 @@
+id: CultureMech:013155
 preferred_term: Main sol. J388
 term:
   id: mediadive.solution:4115
@@ -156,3 +157,8 @@ preparation_notes: 'Mix ingredients, except sodium lactate, NaHCO3 and Na2S x 9H
 
 
   Original volume: 1012 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.755863Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013155'

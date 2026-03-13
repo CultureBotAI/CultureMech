@@ -1,3 +1,4 @@
+id: CultureMech:010832
 preferred_term: Main sol. 632
 term:
   id: mediadive.solution:1349
@@ -113,3 +114,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 6.8. Autoclave at 121°C for 15 min. Methanol is added
   from a sterile stock solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.807530Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010832'

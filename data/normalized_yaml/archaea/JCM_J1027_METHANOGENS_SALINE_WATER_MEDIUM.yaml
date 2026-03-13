@@ -1,3 +1,4 @@
+id: CultureMech:000286
 name: METHANOGENS SALINE WATER MEDIUM
 original_name: METHANOGENS SALINE WATER MEDIUM
 category: archaea
@@ -237,20 +238,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and distribute the medium into culture vessels (e.g., 20 ml
-    medium in 100 ml serum bottles or 5.0 ml medium in Hungate tubes) under a stream of H2-CO2 (80:20,
-    v/v), seal with butyl rubber stoppers and autoclave. Allow to stand the autoclaved medium overnight.
-    Add per liter the following solution from a sterile anaerobic stock (filter-sterilized and stored
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and distribute the medium into culture vessels
+    (e.g., 20 ml medium in 100 ml serum bottles or 5.0 ml medium in Hungate tubes)
+    under a stream of H2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave.
+    Allow to stand the autoclaved medium overnight. Add per liter the following solution
+    from a sterile anaerobic stock (filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to inoculation, add per liter the following solutions aseptically and anaerobically
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Prior to inoculation, add per liter the following solutions aseptically
+    and anaerobically (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
-  description: 'Comments: For strain JCM 19935, replace trimethylamine with yeast extract (final 0.1 g/L)
-    and pressurize to 100 kPa H2-CO2 (80:20, v/v). For strain JCM 19936, prepare the medium without trimethylamine.
-    Pressurize inoculated culture vessels to 100 kPa H2-CO2 (80:20, v/v).'
+  description: 'Comments: For strain JCM 19935, replace trimethylamine with yeast
+    extract (final 0.1 g/L) and pressurize to 100 kPa H2-CO2 (80:20, v/v). For strain
+    JCM 19936, prepare the medium without trimethylamine. Pressurize inoculated culture
+    vessels to 100 kPa H2-CO2 (80:20, v/v).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -258,3 +260,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1027'
+- timestamp: '2026-03-13T06:18:54.133495Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000286'

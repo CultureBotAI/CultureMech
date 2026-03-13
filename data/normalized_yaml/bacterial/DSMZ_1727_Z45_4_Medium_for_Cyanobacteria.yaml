@@ -1,3 +1,4 @@
+id: CultureMech:001204
 name: Z45/4 Medium for Cyanobacteria
 original_name: Z45/4 Medium for Cyanobacteria
 category: bacterial
@@ -165,4 +166,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1727'
+- timestamp: '2026-03-13T06:19:02.208252Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001204'
 high_metal: true

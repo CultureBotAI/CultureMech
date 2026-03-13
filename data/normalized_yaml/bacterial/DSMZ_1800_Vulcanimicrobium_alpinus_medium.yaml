@@ -1,3 +1,4 @@
+id: CultureMech:001242
 name: Vulcanimicrobium alpinus medium
 original_name: Vulcanimicrobium alpinus medium
 category: bacterial
@@ -241,15 +242,15 @@ preparation_steps:
   description: Dissolve the vitamins in 10mM phosphate buffer, pH7.2.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Titrate with NaOH until vitamins are dissolved, filter sterilize afterwards, and freeze
-    in appropriate aliquots until usage.
+  description: Titrate with NaOH until vitamins are dissolved, filter sterilize afterwards,
+    and freeze in appropriate aliquots until usage.
 - step_number: 8
   action: DISSOLVE
   description: Dissolve the vitamin B12 in water.
 - step_number: 9
   action: FILTER_STERILIZE
-  description: Titrate with HCl until vitamin B12 is dissolved, filter sterilize afterwards, and freeze
-    in appropriate aliquots until usage.
+  description: Titrate with HCl until vitamin B12 is dissolved, filter sterilize afterwards,
+    and freeze in appropriate aliquots until usage.
 - step_number: 10
   action: MIX
   description: pH 6.8
@@ -264,3 +265,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:02.508540Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001242'

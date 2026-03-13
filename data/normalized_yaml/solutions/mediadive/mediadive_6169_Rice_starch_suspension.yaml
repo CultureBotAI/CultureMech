@@ -1,3 +1,4 @@
+id: CultureMech:014871
 preferred_term: Rice starch suspension
 term:
   id: mediadive.solution:6169
@@ -31,3 +32,8 @@ preparation_notes: "Place dry  rice starch into a dry 50 ml bottle, and cap. Pla
   \ 20 ml\r\ndeionised water into a separate bottle. Autoclave separately  at 15 \r\
   \npsi for 15 minutes.  When cool, aseptically combine the contents of \r\nthe two\
   \ bottles.  Mix thoroughly by shaking.\n\nOriginal volume: 20 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.853931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014871'

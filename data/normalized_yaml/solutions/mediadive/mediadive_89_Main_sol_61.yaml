@@ -1,3 +1,4 @@
+id: CultureMech:015256
 preferred_term: Main sol. 61
 term:
   id: mediadive.solution:89
@@ -106,3 +107,8 @@ preparation_notes: Dissolve ingredients (except ferrous sulfate, sucrose, sulfit
   After sterilization add sucrose, sulfite, and thiosulfate from anoxic stock solutions
   prepared under 100% N2 gas and sterilized by filtration. The stock solution of sulfite
   should be freshly prepared.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.510461Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015256'

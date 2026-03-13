@@ -1,3 +1,4 @@
+id: CultureMech:005220
 name: Solution A (medium 858)
 original_name: Solution A (medium 858)
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:4050
     label: Solution A (medium 858)
-notes: 'Source: KOMODO ModelSEED | ID: 4050 | DSMZ Medium: 4050 (mediadive.medium:4050) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4050 | DSMZ Medium: 4050 (mediadive.medium:4050)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 4050'
+- timestamp: '2026-03-13T06:19:31.140514Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005220'

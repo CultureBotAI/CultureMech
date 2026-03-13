@@ -1,3 +1,4 @@
+id: CultureMech:014528
 preferred_term: Main sol. 631
 term:
   id: mediadive.solution:5660
@@ -82,3 +83,8 @@ preparation_notes: The ethanol and acetic acid are sterilized separately by filt
   35 ml) is poured into a plate and allowed to solidify. A thin layer (5-10 ml) of
   the growth medium containing 1% agar is then poured on top. Carefully streak the
   plates, which are best incubated in closed containers (e.g. plastic boxes) at 30°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.278532Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014528'

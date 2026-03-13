@@ -1,3 +1,4 @@
+id: CultureMech:012350
 preferred_term: Main sol. 1516
 term:
   id: mediadive.solution:3140
@@ -23,3 +24,8 @@ preparation_notes: "Prepare the liquid medium. Boil the medium in a water bath a
   \ to pH 5.8-6.2. Dispense the medium into Hungate tubes or serum\r\nbottles under\
   \ gassing with N2. Sterilize by autoclaving. Before inoculation add from\r\nsterile\
   \ stock solutions:"
+curation_history:
+- timestamp: '2026-03-13T06:20:25.349505Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012350'

@@ -1,3 +1,4 @@
+id: CultureMech:010837
 preferred_term: Main sol. 634b
 term:
   id: mediadive.solution:1354
@@ -52,3 +53,8 @@ preparation_notes: Dissolve dehydrated RCM medium (available from BD BBL, OXOID,
   with 100% N2 gas. Dispense the medium under the same gas atmosphere into anoxic
   Hungate-type tubes or serum vials and autoclave for 15 min at 121°C. Adjust the
   pH of the complete medium to 6.8.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.837260Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010837'

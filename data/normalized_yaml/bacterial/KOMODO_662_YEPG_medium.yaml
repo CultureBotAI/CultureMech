@@ -1,3 +1,4 @@
+id: CultureMech:006244
 name: YEPG medium
 original_name: YEPG medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:662
     label: YEPG medium
-notes: 'Source: KOMODO ModelSEED | ID: 662 | DSMZ Medium: 662 (mediadive.medium:662) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 662 | DSMZ Medium: 662 (mediadive.medium:662)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 662
+- timestamp: '2026-03-13T06:19:39.218096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006244'

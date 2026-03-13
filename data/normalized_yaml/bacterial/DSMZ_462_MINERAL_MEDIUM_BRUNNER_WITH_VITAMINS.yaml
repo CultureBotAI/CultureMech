@@ -1,3 +1,4 @@
+id: CultureMech:001579
 name: MINERAL MEDIUM (BRUNNER) WITH VITAMINS
 original_name: MINERAL MEDIUM (BRUNNER) WITH VITAMINS
 category: bacterial
@@ -230,3 +231,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.333405Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001579'

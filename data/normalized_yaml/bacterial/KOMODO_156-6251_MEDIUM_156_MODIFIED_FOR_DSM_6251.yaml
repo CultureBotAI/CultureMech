@@ -1,3 +1,4 @@
+id: CultureMech:004178
 name: MEDIUM 156 MODIFIED FOR DSM 6251
 original_name: MEDIUM 156 MODIFIED FOR DSM 6251
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:156_6251
     label: MEDIUM 156 MODIFIED FOR DSM 6251
-notes: 'Source: KOMODO ModelSEED | ID: 156_6251 | DSMZ Medium: 156 (mediadive.medium:156) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 156_6251 | DSMZ Medium: 156 (mediadive.medium:156)
+  | Aerobic: No'
 ingredients:
 - preferred_term: L-Alanine
   term:
@@ -79,3 +81,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 156
+- timestamp: '2026-03-13T06:19:25.665018Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004178'

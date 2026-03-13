@@ -1,3 +1,4 @@
+id: CultureMech:004179
 name: CLOSTRIDIUM PROPIONICUM medium
 original_name: CLOSTRIDIUM PROPIONICUM medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:156
     label: CLOSTRIDIUM PROPIONICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 156 | DSMZ Medium: 156 (mediadive.medium:156) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 156 | DSMZ Medium: 156 (mediadive.medium:156)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: L-Alanine
   term:
@@ -79,3 +81,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 156
+- timestamp: '2026-03-13T06:19:25.669960Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004179'

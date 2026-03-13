@@ -1,3 +1,4 @@
+id: CultureMech:000370
 name: MWC
 original_name: MWC
 category: bacterial
@@ -133,7 +134,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 - step_number: 2
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -149,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C59'
+- timestamp: '2026-03-13T06:18:54.815861Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000370'

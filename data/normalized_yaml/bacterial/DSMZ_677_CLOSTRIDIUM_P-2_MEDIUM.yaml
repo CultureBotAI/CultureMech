@@ -1,3 +1,4 @@
+id: CultureMech:001816
 name: CLOSTRIDIUM (P-2) MEDIUM
 original_name: CLOSTRIDIUM (P-2) MEDIUM
 category: bacterial
@@ -78,10 +79,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose, cysteine and sulfide. Sparge medium with 100% N2 gas
-    for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add glucose, cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas. Adjust pH of the complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients except glucose, cysteine and sulfide. Sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic, then dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose,
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
+    gas. Adjust pH of the complete medium to 7.0 - 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +91,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 677'
+- timestamp: '2026-03-13T06:19:07.423576Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001816'

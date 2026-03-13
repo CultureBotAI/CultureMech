@@ -1,3 +1,4 @@
+id: CultureMech:013324
 preferred_term: Main sol. J524
 term:
   id: mediadive.solution:4319
@@ -190,3 +191,8 @@ preparation_notes: "Mix components, adjust pH to 6.0 - 6.5 and autoclave. After 
   \ to 200 kPa with methane gas. Finally add O2 gas to make up 2% O2 concentration\
   \ in the gas phase. Readjust pH to 6.0 - 6.3, if necessary.\n\nOriginal volume:\
   \ 1016 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:30.690111Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013324'

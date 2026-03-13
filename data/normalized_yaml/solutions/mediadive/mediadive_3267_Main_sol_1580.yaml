@@ -1,3 +1,4 @@
+id: CultureMech:012446
 preferred_term: Main sol. 1580
 term:
   id: mediadive.solution:3267
@@ -67,3 +68,8 @@ composition:
     label: Sheep blood
 preparation_notes: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50
   ml sheep blood.
+curation_history:
+- timestamp: '2026-03-13T06:20:25.984902Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012446'

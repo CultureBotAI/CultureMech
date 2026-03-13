@@ -1,3 +1,4 @@
+id: CultureMech:014070
 preferred_term: Main sol. 251
 term:
   id: mediadive.solution:515
@@ -80,3 +81,8 @@ preparation_notes: Adjust pH to 7.0. Soil extract is prepared by sieving air dri
   water at 121°C for one hour. After the mixture is cool and settled, the supernatant
   is carefully decanted, filtered through paper, autoclaved in 200 ml quantities,
   and stored at room temperature until cleared by sedimentation.
+curation_history:
+- timestamp: '2026-03-13T06:20:35.409814Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014070'

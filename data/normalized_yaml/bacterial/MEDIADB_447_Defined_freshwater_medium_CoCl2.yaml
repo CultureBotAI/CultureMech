@@ -1,3 +1,4 @@
+id: CultureMech:007351
 name: '''Defined freshwater medium (CoCl2'
 original_name: '''Defined freshwater medium (CoCl2'
 category: bacterial
@@ -203,6 +204,10 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T06:19:48.168979Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007351'
 media_term:
   preferred_term: MediaDB Medium 447
   term:

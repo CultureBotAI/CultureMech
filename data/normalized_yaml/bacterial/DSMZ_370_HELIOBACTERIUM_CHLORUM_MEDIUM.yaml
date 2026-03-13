@@ -1,3 +1,4 @@
+id: CultureMech:001472
 name: HELIOBACTERIUM CHLORUM MEDIUM
 original_name: HELIOBACTERIUM CHLORUM MEDIUM
 category: bacterial
@@ -42,14 +43,15 @@ preparation_steps:
   description: Adjust pH to 7.0 .
 - step_number: 2
   action: HEAT
-  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate (0.5 g) and\r\
-    \ncontinue to bubble with nitrogen gas."
+  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate\
+    \ (0.5 g) and\r\ncontinue to bubble with nitrogen gas."
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8.
 - step_number: 4
   action: MIX
-  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with rubber septum).
+  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with rubber
+    septum).
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -60,3 +62,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 370'
+- timestamp: '2026-03-13T06:19:04.428968Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001472'

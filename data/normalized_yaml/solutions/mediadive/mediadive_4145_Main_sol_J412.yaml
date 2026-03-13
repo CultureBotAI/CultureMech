@@ -1,3 +1,4 @@
+id: CultureMech:013179
 preferred_term: Main sol. J412
 term:
   id: mediadive.solution:4145
@@ -125,3 +126,8 @@ preparation_notes: 'Add components except L-cysteine x HCl x H2O and FeCl2 x 4H2
 
 
   Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.886697Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013179'

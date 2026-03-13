@@ -1,3 +1,4 @@
+id: CultureMech:004368
 name: DESULFOVIBRIO BAARSII MEDIUM
 original_name: DESULFOVIBRIO BAARSII MEDIUM
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:208
     label: DESULFOVIBRIO BAARSII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 208 | DSMZ Medium: 208 (mediadive.medium:208) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 208 | DSMZ Medium: 208 (mediadive.medium:208)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 208'
+- timestamp: '2026-03-13T06:19:26.682466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004368'

@@ -1,3 +1,4 @@
+id: CultureMech:014227
 preferred_term: Solution B
 term:
   id: mediadive.solution:5316
@@ -42,3 +43,8 @@ composition:
 preparation_notes: "Adjust pH to 2.5 and filter-sterilize. Prepare the solution just\
   \ prior to use.\nAseptically combine solution A and solution B (freshly prepared).\
   \ Then, add the following solutions (autoclaved): \n\nOriginal volume: 101 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.440808Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014227'

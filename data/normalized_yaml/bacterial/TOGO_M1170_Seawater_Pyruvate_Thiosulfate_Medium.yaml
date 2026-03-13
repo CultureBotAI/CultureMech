@@ -1,3 +1,4 @@
+id: CultureMech:007695
 name: Seawater Pyruvate Thiosulfate Medium
 original_name: Seawater Pyruvate Thiosulfate Medium
 category: bacterial
@@ -185,6 +186,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:50.682776Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007695'
 solutions:
 - preferred_term: RST trace elements (see Medium [M979])
   composition: []

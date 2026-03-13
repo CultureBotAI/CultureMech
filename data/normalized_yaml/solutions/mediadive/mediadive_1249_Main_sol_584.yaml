@@ -1,3 +1,4 @@
+id: CultureMech:010743
 preferred_term: Main sol. 584
 term:
   id: mediadive.solution:1249
@@ -22,3 +23,8 @@ preparation_notes: 'Prepare Brucella agar (e.g. Merck). Cool to 50°C after auto
 
 
   Original volume: 1100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.294347Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010743'

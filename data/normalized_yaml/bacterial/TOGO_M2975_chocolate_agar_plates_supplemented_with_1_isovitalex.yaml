@@ -1,3 +1,4 @@
+id: CultureMech:009498
 name: chocolate agar plates (supplemented with 1% isovitalex)
 original_name: chocolate agar plates (supplemented with 1% isovitalex)
 category: bacterial
@@ -33,5 +34,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.930359'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
-    chocolate agar plates'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: chocolate agar plates'
+- timestamp: '2026-03-13T06:20:06.416526Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009498'

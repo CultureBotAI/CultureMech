@@ -1,3 +1,4 @@
+id: CultureMech:013744
 preferred_term: Main sol. J839
 term:
   id: mediadive.solution:4803
@@ -114,3 +115,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.2.
 
   Comment: The premixed powder is available from Nihon Pharm. Co. as R2A broth ''DAIGO''.'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.221569Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013744'

@@ -1,3 +1,4 @@
+id: CultureMech:002925
 name: DESULFATIRHABDIUM BUTYRATIVORANS MEDIUM
 original_name: DESULFATIRHABDIUM BUTYRATIVORANS MEDIUM
 category: bacterial
@@ -18,11 +19,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 284 supplemented with 2.8 g Na2SO4and 0.2 g (final) yeast extract in Solution
-    A (per 900 ml), and with 1.72 g crotonic acid and 0.43 g sodium benzoate in Solution B (per 100 ml)
-    instead of sodium pyruvate. Prior to inoculation, aseptically and anaerobically add 0.01 volume of
-    5% Na2S x 9H2O solution (autoclaved and stored under a N2 atmosphere) to the medium. Pressurize the
-    inoculated bottles to 170 kPa with N2-CO2 (80:20, v/v).
+  description: Use Medium No. 284 supplemented with 2.8 g Na2SO4and 0.2 g (final)
+    yeast extract in Solution A (per 900 ml), and with 1.72 g crotonic acid and 0.43
+    g sodium benzoate in Solution B (per 100 ml) instead of sodium pyruvate. Prior
+    to inoculation, aseptically and anaerobically add 0.01 volume of 5% Na2S x 9H2O
+    solution (autoclaved and stored under a N2 atmosphere) to the medium. Pressurize
+    the inoculated bottles to 170 kPa with N2-CO2 (80:20, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,5 +36,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.616023Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002925'
 data_quality_flags:
 - incomplete_composition

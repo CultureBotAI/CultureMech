@@ -1,3 +1,4 @@
+id: CultureMech:001881
 name: DSIC MEDIUM (modified)
 original_name: DSIC MEDIUM (modified)
 category: bacterial
@@ -190,4 +191,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:08.104388Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001881'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:010688
 preferred_term: Main sol. 539
 term:
   id: mediadive.solution:1193
@@ -173,3 +174,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, cellobiose and sulfi
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.038087Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010688'

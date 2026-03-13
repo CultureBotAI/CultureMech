@@ -1,3 +1,4 @@
+id: CultureMech:002000
 name: BACTERIOVORAX MEDIUM
 original_name: BACTERIOVORAX MEDIUM
 category: bacterial
@@ -43,9 +44,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium chloride
-    and calcium chloride after autoclaving from sterile stock solutions of 5% (w/v) each. For agar plates
-    add 1.2% Bacto agar
+  description: Dissolve ingredients except magnesium chloride and calcium chloride.
+    Add magnesium chloride and calcium chloride after autoclaving from sterile stock
+    solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -53,3 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 844'
+- timestamp: '2026-03-13T06:19:09.273538Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002000'

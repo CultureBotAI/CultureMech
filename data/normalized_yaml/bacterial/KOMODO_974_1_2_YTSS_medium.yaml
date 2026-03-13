@@ -1,3 +1,4 @@
+id: CultureMech:006932
 name: 1/2 YTSS medium
 original_name: 1/2 YTSS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:974
     label: 1/2 YTSS medium
-notes: 'Source: KOMODO ModelSEED | ID: 974 | DSMZ Medium: 974 (mediadive.medium:974) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 974 | DSMZ Medium: 974 (mediadive.medium:974)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -42,3 +44,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 974
+- timestamp: '2026-03-13T06:19:45.076145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006932'

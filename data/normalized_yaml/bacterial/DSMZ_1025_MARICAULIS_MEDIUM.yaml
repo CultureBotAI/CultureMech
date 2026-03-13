@@ -1,3 +1,4 @@
+id: CultureMech:000447
 name: MARICAULIS MEDIUM
 original_name: MARICAULIS MEDIUM
 category: bacterial
@@ -46,8 +47,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave and cool the medium. Aseptically add from sterile stock solutions, 20 ml 50xPYE
-    and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2 ml 50% glucose per liter of medium.
+  description: Autoclave and cool the medium. Aseptically add from sterile stock solutions,
+    20 ml 50xPYE and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2 ml 50% glucose
+    per liter of medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -55,3 +57,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1025'
+- timestamp: '2026-03-13T06:18:55.390933Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000447'

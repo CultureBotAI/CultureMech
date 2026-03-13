@@ -1,3 +1,4 @@
+id: CultureMech:001460
 name: THIOMONAS MEDIUM
 original_name: THIOMONAS MEDIUM
 category: bacterial
@@ -61,9 +62,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Solutions A, B and D are sterilized separately by autoclaving. Solution C is sterilized
-    by filtration. After autoclaving the solutions A and B are combined and then supplemented with the
-    sterile solutions C and D. Best growth is observed in the syneresis water of slant agar tubes.
+  description: Solutions A, B and D are sterilized separately by autoclaving. Solution
+    C is sterilized by filtration. After autoclaving the solutions A and B are combined
+    and then supplemented with the sterile solutions C and D. Best growth is observed
+    in the syneresis water of slant agar tubes.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with NaOH.
@@ -74,3 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 35a'
+- timestamp: '2026-03-13T06:19:04.379961Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001460'

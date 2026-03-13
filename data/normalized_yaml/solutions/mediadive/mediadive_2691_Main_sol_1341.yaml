@@ -1,3 +1,4 @@
+id: CultureMech:012008
 preferred_term: Main sol. 1341
 term:
   id: mediadive.solution:2691
@@ -57,3 +58,8 @@ preparation_notes: 'Add 100 ml of sterile phosphate buffer after autoclaving.
   Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately and combine
   after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter sterilized
   vitamin B12 (250 mg/l). The medium may be solidified by adding 15 g/l agar.'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.266118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012008'

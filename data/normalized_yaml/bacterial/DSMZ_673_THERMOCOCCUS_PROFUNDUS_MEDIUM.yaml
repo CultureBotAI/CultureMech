@@ -1,3 +1,4 @@
+id: CultureMech:001814
 name: THERMOCOCCUS PROFUNDUS MEDIUM
 original_name: THERMOCOCCUS PROFUNDUS MEDIUM
 category: bacterial
@@ -124,9 +125,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared
-    separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled
-    for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
+  description: 'Prepare the medium anaerobically under 100% nitrogen. The following
+    constituents are prepared separately and added to the autoclaved mineral salt
+    solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not
+    autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
     days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.'
 - step_number: 2
   action: ADJUST_PH
@@ -138,3 +140,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 673'
+- timestamp: '2026-03-13T06:19:07.414064Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001814'

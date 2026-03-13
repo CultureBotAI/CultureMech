@@ -1,3 +1,4 @@
+id: CultureMech:002875
 name: METHANE OXIDIZING BACTERIUM MEDIUM
 original_name: METHANE OXIDIZING BACTERIUM MEDIUM
 category: bacterial
@@ -235,18 +236,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 6.0 - 6.5 and autoclave. After cooling, add the following
-    solutions (filter-sterilized) to the medium:'
+  description: 'Mix components, adjust pH to 6.0 - 6.5 and autoclave. After cooling,
+    add the following solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Distribute the medium into culture vessels (leave >80% volume gas phase) under a N2-CO2
-    (4:1) gas mixture and seal with butyl rubber stoppers. Pressurize the culture vessels to 200 kPa with
-    methane gas. Finally add O2 gas to make up 2% O2 concentration in the gas phase. Readjust pH to 6.0
-    - 6.3, if necessary.
+  description: Distribute the medium into culture vessels (leave >80% volume gas phase)
+    under a N2-CO2 (4:1) gas mixture and seal with butyl rubber stoppers. Pressurize
+    the culture vessels to 200 kPa with methane gas. Finally add O2 gas to make up
+    2% O2 concentration in the gas phase. Readjust pH to 6.0 - 6.3, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -254,3 +255,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J524'
+- timestamp: '2026-03-13T06:19:16.265853Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002875'

@@ -1,3 +1,4 @@
+id: CultureMech:015289
 preferred_term: Main sol. 465d
 term:
   id: mediadive.solution:951
@@ -30,3 +31,8 @@ composition:
 preparation_notes: Prepare and autoclave medium 465 without ammonium sulfate. Add
   120 mg/l benzylcyanide (not sterilized) to the incubation atmosphere or directly
   to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.658657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015289'

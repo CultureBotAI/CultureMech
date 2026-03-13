@@ -1,3 +1,4 @@
+id: CultureMech:014209
 preferred_term: Main sol. J1184
 term:
   id: mediadive.solution:5297
@@ -189,3 +190,8 @@ preparation_notes: "Mix components thoroughly and adjust pH to 4.0. Bring to a b
   \ rubber stoppers and autoclave. After cooling, aseptically and anaerobically add\
   \ per liter the following solutions (autoclaved or *filter-sterilized and stored\
   \ under a N2 atmosphere): \n\nOriginal volume: 1044 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.347445Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014209'

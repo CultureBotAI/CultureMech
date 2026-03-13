@@ -1,3 +1,4 @@
+id: CultureMech:011389
 preferred_term: Main sol. 964
 term:
   id: mediadive.solution:1988
@@ -118,3 +119,8 @@ preparation_notes: Dissolve ingredients (except sulfur, peptone, yeast extract, 
   amount of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone, yeast extract
   and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The
   pH of the complete medium should be 7.5.
+curation_history:
+- timestamp: '2026-03-13T06:20:19.350117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011389'

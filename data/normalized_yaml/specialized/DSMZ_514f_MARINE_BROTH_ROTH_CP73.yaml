@@ -1,3 +1,4 @@
+id: CultureMech:015361
 name: MARINE BROTH (ROTH CP73)
 original_name: MARINE BROTH (ROTH CP73)
 category: specialized
@@ -128,8 +129,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADD_AGAR
-  description: Final pH should be 7.6 ± 0.2 at 25°C. Add 15.0 g/l agar for solid media. We recommend using
-    the medium supplied by Carl Roth GmbH + Co. KG for Marinomonas mediterranea DSM 23531.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. Add 15.0 g/l agar for solid media.
+    We recommend using the medium supplied by Carl Roth GmbH + Co. KG for Marinomonas
+    mediterranea DSM 23531.
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514f'
+- timestamp: '2026-03-13T06:20:42.173904Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015361'

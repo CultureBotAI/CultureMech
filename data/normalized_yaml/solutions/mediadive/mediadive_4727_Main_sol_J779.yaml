@@ -1,3 +1,4 @@
+id: CultureMech:013676
 preferred_term: Main sol. J779
 term:
   id: mediadive.solution:4727
@@ -79,3 +80,8 @@ preparation_notes: "Add components to distilled water and bring volume to 1.0 L.
   \ pH 8.0 with NaOH. Autoclave under a N2 atmosphere. After cooling, add anaerobically\
   \ the following solutions (autoclaved or *filter-sterilized): \nReadjust pH to 8.0,\
   \ if necessary.\n\nOriginal volume: 70 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.763741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013676'

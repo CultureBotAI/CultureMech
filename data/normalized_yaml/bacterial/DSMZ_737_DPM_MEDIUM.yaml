@@ -1,3 +1,4 @@
+id: CultureMech:001873
 name: DPM MEDIUM
 original_name: DPM MEDIUM
 category: bacterial
@@ -106,3 +107,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 737'
+- timestamp: '2026-03-13T06:19:08.006611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001873'

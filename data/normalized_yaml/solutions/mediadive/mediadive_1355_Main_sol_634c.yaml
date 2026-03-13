@@ -1,3 +1,4 @@
+id: CultureMech:010838
 preferred_term: Main sol. 634c
 term:
   id: mediadive.solution:1355
@@ -59,3 +60,8 @@ preparation_notes: Dissolve dehydrated RCM medium (available from BD BBL, OXOID,
   sodium carbonate per liter medium from a sterile anoxic stock solution prepared
   under an 80% N2 and 20% CO2 gas mixture. Check the pH of the medium after autoclaving
   and adjust the pH to 6.8 if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:15.841520Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010838'

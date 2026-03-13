@@ -1,3 +1,4 @@
+id: CultureMech:012530
 preferred_term: Main sol. 1630a
 term:
   id: mediadive.solution:3384
@@ -132,3 +133,8 @@ preparation_notes: 'Dissolve ingredients (except trace elements, HEPES buffer, a
   (5% w/v) or 1 N HCl.
 
   Note: Use at least 5% (v/v) inoculum and incubate in the dark without shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:26.383572Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012530'

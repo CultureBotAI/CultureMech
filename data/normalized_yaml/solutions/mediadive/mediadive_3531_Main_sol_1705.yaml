@@ -1,3 +1,4 @@
+id: CultureMech:012634
 preferred_term: Main sol. 1705
 term:
   id: mediadive.solution:3531
@@ -175,3 +176,8 @@ preparation_notes: "Mix components and autoclave. Cool the medium under a N2/CO2
   \ v/v) gas stream. Add anaerobically the following solutions: \nAdjust to pH 7.1-7.2\
   \ with Na2CO3 or HCl. Distribute the medium into culture vessels under the N2/CO2\
   \ (4:1, v/v) gas stream and seal with a butyl stopper."
+curation_history:
+- timestamp: '2026-03-13T06:20:26.973774Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012634'

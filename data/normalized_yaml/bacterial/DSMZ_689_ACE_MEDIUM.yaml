@@ -1,3 +1,4 @@
+id: CultureMech:001825
 name: ACE MEDIUM
 original_name: ACE MEDIUM
 category: bacterial
@@ -169,12 +170,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, bicarbonate, glucose and vitamins, then sparge medium
-    with 100% N2 gas to make it anoxic. Add cysteine and sodium bicarbonate, then adjust pH to 7.5. Dispense
-    medium in anoxic Hungate-type tubes under 100% N2 gas and autoclave. A precipitate forms which will
-    redissolve slowly over about 3 days. Before use inject separately sterile glucose solution (20% w/v)
-    and vitamins prepared under 100% N2 gas atmosphere. Vitamins should be sterilized by filtration. Check
-    medium pH and adjust pH to 7.6, if necessary.
+  description: Dissolve ingredients except cysteine, bicarbonate, glucose and vitamins,
+    then sparge medium with 100% N2 gas to make it anoxic. Add cysteine and sodium
+    bicarbonate, then adjust pH to 7.5. Dispense medium in anoxic Hungate-type tubes
+    under 100% N2 gas and autoclave. A precipitate forms which will redissolve slowly
+    over about 3 days. Before use inject separately sterile glucose solution (20%
+    w/v) and vitamins prepared under 100% N2 gas atmosphere. Vitamins should be sterilized
+    by filtration. Check medium pH and adjust pH to 7.6, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,4 +191,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.287097Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:07.518584Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001825'

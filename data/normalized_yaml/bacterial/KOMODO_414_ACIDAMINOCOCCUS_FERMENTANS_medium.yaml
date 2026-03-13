@@ -1,3 +1,4 @@
+id: CultureMech:005241
 name: ACIDAMINOCOCCUS FERMENTANS medium
 original_name: ACIDAMINOCOCCUS FERMENTANS medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:414
     label: ACIDAMINOCOCCUS FERMENTANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 414 | DSMZ Medium: 414 (mediadive.medium:414) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 414 | DSMZ Medium: 414 (mediadive.medium:414)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -93,3 +95,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 414
+- timestamp: '2026-03-13T06:19:31.275352Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005241'

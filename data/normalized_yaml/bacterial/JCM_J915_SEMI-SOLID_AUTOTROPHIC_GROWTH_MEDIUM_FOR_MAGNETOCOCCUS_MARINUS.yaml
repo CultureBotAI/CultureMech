@@ -1,3 +1,4 @@
+id: CultureMech:003263
 name: SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR MAGNETOCOCCUS MARINUS
 original_name: SEMI-SOLID AUTOTROPHIC GROWTH MEDIUM FOR MAGNETOCOCCUS MARINUS
 category: bacterial
@@ -168,31 +169,34 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, except agar, and adjust pH to 7.0. Add agarose to the medium
-    and autoclave under a N2 gas atmosphere. After cooling to 50C, add the following solutions to the
-    medium aseptically and anaerobically (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, except agar, and adjust pH to 7.0. Add
+    agarose to the medium and autoclave under a N2 gas atmosphere. After cooling to
+    50C, add the following solutions to the medium aseptically and anaerobically (autoclaved
+    or *filter-sterilized):'
 - step_number: 3
   action: MIX
-  description: Keep the medium temperature at 50C until the medium is distributed into sterile screw-capped
-    test tubes as described below.
+  description: Keep the medium temperature at 50C until the medium is distributed
+    into sterile screw-capped test tubes as described below.
 - step_number: 4
   action: AUTOCLAVE
-  description: 'Adjust pH to 7.0 - 7.2 with sterile HCl or NaOH solution. Then, aseptically and anaerobically,
-    add the following solution (autoclaved):'
+  description: 'Adjust pH to 7.0 - 7.2 with sterile HCl or NaOH solution. Then, aseptically
+    and anaerobically, add the following solution (autoclaved):'
 - step_number: 5
   action: POUR_PLATES
-  description: Dispense the medium to sterile screw-capped test tubes (typically 12 ml medium into 125
-    by 15 mm test tubes) under air and cap. Allow to stand until the medium is solidified and a O2-gradient
-    formed (as evidenced by a pink upper oxic zone and a colorless lower anoxic zone). Inoculate cells
-    just below the pink-colorless interface in the medium tube using a syringe.
+  description: Dispense the medium to sterile screw-capped test tubes (typically 12
+    ml medium into 125 by 15 mm test tubes) under air and cap. Allow to stand until
+    the medium is solidified and a O2-gradient formed (as evidenced by a pink upper
+    oxic zone and a colorless lower anoxic zone). Inoculate cells just below the pink-colorless
+    interface in the medium tube using a syringe.
 - step_number: 6
   action: MIX
-  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4 x 2H2O, 0.02 g/L CuSO4
-    x 5H2O and 0.01 g/L NiCl2 x 6H2O.
+  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4
+    x 2H2O, 0.02 g/L CuSO4 x 5H2O and 0.01 g/L NiCl2 x 6H2O.
 - step_number: 7
   action: MIX
-  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere. In this case, prior
-    to use, fill the head space with air and allow to stand until the O2 gradient is formed.'
+  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere.
+    In this case, prior to use, fill the head space with air and allow to stand until
+    the O2 gradient is formed.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -200,3 +204,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J915'
+- timestamp: '2026-03-13T06:19:19.027518Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003263'

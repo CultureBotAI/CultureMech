@@ -1,3 +1,4 @@
+id: CultureMech:011810
 preferred_term: Main sol. 1223
 term:
   id: mediadive.solution:2431
@@ -178,3 +179,8 @@ preparation_notes: 'Adjust to pH 9.0
   and adjust the pH to 9.0 with 10 M KOH. Dispense into tubes or bottle fitted with
   rubber stoppers. Sterilize by autoclaving and add the Na2S (neutralized), Cysteine-HCl,
   CaCl2 x 2 H2O and MgCl2 x 6 H2O from sterile stock solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.084089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011810'

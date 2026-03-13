@@ -1,3 +1,4 @@
+id: CultureMech:005997
 name: GLUCOSE Yeast extract medium
 original_name: GLUCOSE Yeast extract medium
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:54
     label: GLUCOSE Yeast extract medium
-notes: 'Source: KOMODO ModelSEED | ID: 54 | DSMZ Medium: 54 (mediadive.medium:54) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 54 | DSMZ Medium: 54 (mediadive.medium:54)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -47,3 +49,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 54
+- timestamp: '2026-03-13T06:19:37.521562Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005997'

@@ -1,3 +1,4 @@
+id: CultureMech:003539
 name: YEAST STARCH AGAR (A)
 original_name: YEAST STARCH AGAR (A)
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1027
     label: YEAST STARCH AGAR (A)
-notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -40,3 +42,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1027
+- timestamp: '2026-03-13T06:19:20.519975Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003539'

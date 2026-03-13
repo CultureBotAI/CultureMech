@@ -1,3 +1,4 @@
+id: CultureMech:010639
 preferred_term: Main sol. 514f
 term:
   id: mediadive.solution:1141
@@ -223,3 +224,8 @@ composition:
 preparation_notes: Final pH should be 7.6 ± 0.2 at 25°C. Add 15.0 g/l agar for solid
   media. We recommend using the medium supplied by Carl Roth GmbH + Co. KG for Marinomonas
   mediterranea DSM 23531.
+curation_history:
+- timestamp: '2026-03-13T06:20:14.762660Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010639'

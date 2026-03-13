@@ -1,3 +1,4 @@
+id: CultureMech:006756
 name: For DSM 18346 and DSM 18979
 original_name: For DSM 18346 and DSM 18979
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:898.3
     label: For DSM 18346 and DSM 18979
-notes: 'Source: KOMODO ModelSEED | ID: 898.3 | DSMZ Medium: 898 (mediadive.medium:898) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 898.3 | DSMZ Medium: 898 (mediadive.medium:898)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -233,4 +235,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.333698Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:43.681961Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006756'

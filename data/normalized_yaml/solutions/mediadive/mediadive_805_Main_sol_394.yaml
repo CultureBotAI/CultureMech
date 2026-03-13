@@ -1,3 +1,4 @@
+id: CultureMech:015177
 preferred_term: Main sol. 394
 term:
   id: mediadive.solution:805
@@ -102,3 +103,8 @@ composition:
 preparation_notes: "Autoclave, cool, and then add: \nMagnesium chloride should be\
   \ sterilized separately by autoclaving, and the other ingredients should be sterilized\
   \ separately by filtration.\n\nOriginal volume: 1070 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:41.149775Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015177'

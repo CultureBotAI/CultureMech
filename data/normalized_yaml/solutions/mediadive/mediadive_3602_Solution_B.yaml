@@ -1,3 +1,4 @@
+id: CultureMech:012689
 preferred_term: Solution B
 term:
   id: mediadive.solution:3602
@@ -29,3 +30,8 @@ composition:
     match_type: exact_match
 preparation_notes: Dissolve the ingredients listed above (in that order) in about
   700 ml of distilled water, and then make up to 1 litre
+curation_history:
+- timestamp: '2026-03-13T06:20:27.256069Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012689'

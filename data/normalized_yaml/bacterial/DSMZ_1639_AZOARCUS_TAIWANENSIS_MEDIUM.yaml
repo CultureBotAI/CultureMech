@@ -1,3 +1,4 @@
+id: CultureMech:001123
 name: AZOARCUS TAIWANENSIS MEDIUM
 original_name: AZOARCUS TAIWANENSIS MEDIUM
 category: bacterial
@@ -126,16 +127,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate and pyruvate) and sparge medium with 100% N2 gas
-    for 30 - 45 min to make it anoxic. Then, add and dissolve bicarbonate, adjust pH to 8.5 - 9.0, dispense
-    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials, and autoclave. After sterilization,
-    add pyruvate from a sterile, anoxic stock solution that has been prepared under a 100% N2 gas atmosphere
+  description: Dissolve ingredients (except bicarbonate and pyruvate) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Then, add and dissolve bicarbonate,
+    adjust pH to 8.5 - 9.0, dispense under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials, and autoclave. After sterilization, add pyruvate from a
+    sterile, anoxic stock solution that has been prepared under a 100% N2 gas atmosphere
     and sterilized by filtration. Adjust pH of complete medium to 8.5 - 9.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
-    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
-    volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -143,3 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1639'
+- timestamp: '2026-03-13T06:19:01.402953Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001123'

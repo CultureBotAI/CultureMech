@@ -1,3 +1,4 @@
+id: CultureMech:002989
 name: MOORELLA AN10 MEDIUM
 original_name: MOORELLA AN10 MEDIUM
 category: bacterial
@@ -198,9 +199,10 @@ preparation_steps:
   description: Filter-sterilize and store under a N2-CO2 (4:1, v/v) atmosphere.
 - step_number: 4
   action: AUTOCLAVE
-  description: To complete the medium, mix Solutions A, B and C under a N2-CO2 (4:1, v/v) atmosphere.
-    Reduce the medium with 0.3 g/L L-cysteine x HCl x H2O and 0.3 g/L Na2S x 9H2O from sterile stock solutions
-    (autoclaved and stored under a N2 atmosphere).
+  description: To complete the medium, mix Solutions A, B and C under a N2-CO2 (4:1,
+    v/v) atmosphere. Reduce the medium with 0.3 g/L L-cysteine x HCl x H2O and 0.3
+    g/L Na2S x 9H2O from sterile stock solutions (autoclaved and stored under a N2
+    atmosphere).
 - step_number: 5
   action: MIX
   description: Use Trace element solution of Medium No. 243 without Na2SeO3 x 5H2O.
@@ -211,3 +213,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J642'
+- timestamp: '2026-03-13T06:19:16.994836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002989'

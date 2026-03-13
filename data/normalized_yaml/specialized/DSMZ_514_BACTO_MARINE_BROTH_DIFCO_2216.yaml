@@ -1,3 +1,4 @@
+id: CultureMech:015357
 name: BACTO MARINE BROTH (DIFCO 2216)
 original_name: BACTO MARINE BROTH (DIFCO 2216)
 category: specialized
@@ -120,12 +121,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
-    g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
+    from Difco add 37.40 g to 1 litre water.
 - step_number: 2
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
-    they refer to Difco2216) have not been tested and might not support growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
+    brands (even if they refer to Difco2216) have not been tested and might not support
+    growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514'
+- timestamp: '2026-03-13T06:20:42.146918Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015357'

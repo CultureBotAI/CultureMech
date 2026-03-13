@@ -1,3 +1,4 @@
+id: CultureMech:003029
 name: FRR MEDIUM
 original_name: FRR MEDIUM
 category: bacterial
@@ -137,13 +138,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 7.0. Dispense the solution into culture vessels (e.g.,
-    10 ml in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream, seal with butyl rubber stoppers
-    and autoclave.
+  description: Mix components and adjust pH to 7.0. Dispense the solution into culture
+    vessels (e.g., 10 ml in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream,
+    seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, anaerobically and aseptically add the following solutions (autoclaved
-    under a N2 atmosphere) to the medium (per 10 ml):'
+  description: 'To complete the medium, anaerobically and aseptically add the following
+    solutions (autoclaved under a N2 atmosphere) to the medium (per 10 ml):'
 - step_number: 3
   action: MIX
   description: 'Comment: Sodium nitrate can be substituted by ferric citrate (20 mM).'
@@ -154,3 +155,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J683'
+- timestamp: '2026-03-13T06:19:17.294310Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003029'

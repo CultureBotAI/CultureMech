@@ -1,3 +1,4 @@
+id: CultureMech:001789
 name: CENTENUM MEDIUM
 original_name: CENTENUM MEDIUM
 category: bacterial
@@ -56,7 +57,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM pyruvate after autoclaving.
+  description: Boil under nitrogen gas and autoclave at 121°C for 15 min. Add 20 mM
+    pyruvate after autoclaving.
 applications:
 - Microbial cultivation
 curation_history:
@@ -64,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 650'
+- timestamp: '2026-03-13T06:19:07.236599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001789'

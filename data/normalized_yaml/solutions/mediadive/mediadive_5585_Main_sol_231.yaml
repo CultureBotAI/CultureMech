@@ -1,3 +1,4 @@
+id: CultureMech:014463
 preferred_term: Main sol. 231
 term:
   id: mediadive.solution:5585
@@ -150,3 +151,8 @@ composition:
 preparation_notes: 'Medium should be filled up into crew capped tubes (Wheaton).
 
   Adjust pH to 5.2.'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.939072Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014463'

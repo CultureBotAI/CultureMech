@@ -1,3 +1,4 @@
+id: CultureMech:004855
 name: For DSM 2805
 original_name: For DSM 2805
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:307.1
     label: For DSM 2805
-notes: 'Source: KOMODO ModelSEED | ID: 307.1 | DSMZ Medium: 307 (mediadive.medium:307) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 307.1 | DSMZ Medium: 307 (mediadive.medium:307)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 307.1'
+- timestamp: '2026-03-13T06:19:28.907758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004855'

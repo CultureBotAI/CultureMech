@@ -1,3 +1,4 @@
+id: CultureMech:015117
 preferred_term: Main sol. 371
 term:
   id: mediadive.solution:711
@@ -156,3 +157,8 @@ preparation_notes: 'Add distilled water to give a final volume of 1000 ml.
   - 9.5.
 
   If agar medium is prepared, heat and dissolve agar before adding sodium chloride.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.845722Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015117'

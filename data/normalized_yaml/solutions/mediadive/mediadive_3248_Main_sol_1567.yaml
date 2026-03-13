@@ -1,3 +1,4 @@
+id: CultureMech:012433
 preferred_term: Main sol. 1567
 term:
   id: mediadive.solution:3248
@@ -23,3 +24,8 @@ preparation_notes: "Bring to 1 liter with distilled water.\nDilute 100 ml soluti
   \nFilter sterilized the vitamin solution. When the growth medium is cool 1.0 ml/l\
   \ vitamin\r\nsolution and 10 ml/l of the phosphate buffer are added - if too warm\
   \ the phosphate will\r\nprecipitate. Liquid cultures should be grown with shaking."
+curation_history:
+- timestamp: '2026-03-13T06:20:25.905411Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012433'

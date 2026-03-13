@@ -1,3 +1,4 @@
+id: CultureMech:004982
 name: Zeikus trace elements solution (medium 1343)
 original_name: Zeikus trace elements solution (medium 1343)
 category: bacterial
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3134'
+- timestamp: '2026-03-13T06:19:29.302066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004982'

@@ -1,3 +1,4 @@
+id: CultureMech:002278
 name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
 original_name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
 category: bacterial
@@ -28,8 +29,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except horse blood, autoclave and cool to about 50C. Aseptically add 5%
-    (final) sterile defibrinated horse blood. Mix and quickly dispense into sterile petri dishes.
+  description: Mix ingredients except horse blood, autoclave and cool to about 50C.
+    Aseptically add 5% (final) sterile defibrinated horse blood. Mix and quickly dispense
+    into sterile petri dishes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -37,3 +39,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1099'
+- timestamp: '2026-03-13T06:19:11.901068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002278'

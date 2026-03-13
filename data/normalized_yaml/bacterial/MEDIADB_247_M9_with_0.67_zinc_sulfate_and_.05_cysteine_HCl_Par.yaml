@@ -1,3 +1,4 @@
+id: CultureMech:007144
 name: M9 with 0.67% zinc sulfate and .05% cysteine HCl; Park et al
 original_name: M9 with 0.67% zinc sulfate and .05% cysteine HCl; Park et al
 category: bacterial
@@ -73,14 +74,19 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.874643Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 247, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 247, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.426996Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007144'
 media_term:
   preferred_term: MediaDB Medium 247
   term:
     id: MEDIADB:247
     label: M9 with 0.67% zinc sulfate and .05% cysteine HCl; Park et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

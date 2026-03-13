@@ -1,3 +1,4 @@
+id: CultureMech:015236
 preferred_term: Main sol. 430
 term:
   id: mediadive.solution:877
@@ -135,3 +136,8 @@ preparation_notes: 'Dissolve and bring to the boil.
   Autoclave at 121 °C for 15 min.
 
   After autoclaving add sterile-filtered vitamin and sulfide solutions.'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.421213Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015236'

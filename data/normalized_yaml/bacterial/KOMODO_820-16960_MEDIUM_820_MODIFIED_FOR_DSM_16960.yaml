@@ -1,3 +1,4 @@
+id: CultureMech:006546
 name: MEDIUM 820 MODIFIED FOR DSM 16960
 original_name: MEDIUM 820 MODIFIED FOR DSM 16960
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:820_16960
     label: MEDIUM 820 MODIFIED FOR DSM 16960
-notes: 'Source: KOMODO ModelSEED | ID: 820_16960 | DSMZ Medium: 820 (mediadive.medium:820) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 820_16960 | DSMZ Medium: 820 (mediadive.medium:820)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 820_16960'
+- timestamp: '2026-03-13T06:19:41.750334Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006546'

@@ -1,3 +1,4 @@
+id: CultureMech:013393
 preferred_term: MDS salt water
 term:
   id: mediadive.solution:4404
@@ -65,3 +66,8 @@ composition:
     match_type: exact_match
 preparation_notes: Add components to distilled water and bring volume to 1.0 L. Adjust
   pH to 7.5 with 1 M Tris base.
+curation_history:
+- timestamp: '2026-03-13T06:20:31.090891Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013393'

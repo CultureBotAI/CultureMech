@@ -1,3 +1,4 @@
+id: CultureMech:010441
 name: YEAST STARCH AGAR (A)
 original_name: YEAST STARCH AGAR (A)
 category: fungal
@@ -40,3 +41,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1027'
+- timestamp: '2026-03-13T06:20:13.838175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010441'

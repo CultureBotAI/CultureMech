@@ -1,3 +1,4 @@
+id: CultureMech:012968
 preferred_term: Solution A
 term:
   id: mediadive.solution:38
@@ -44,3 +45,8 @@ preparation_notes: 'Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO
 
 
   Original volume: 460 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.616080Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012968'

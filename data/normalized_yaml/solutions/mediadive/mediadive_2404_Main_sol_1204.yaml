@@ -1,3 +1,4 @@
+id: CultureMech:011782
 preferred_term: Main sol. 1204
 term:
   id: mediadive.solution:2404
@@ -178,3 +179,8 @@ preparation_notes: Dissolve ingredients except carbonate, maltose and DTT, then 
   prepared under 100% N2 gas and sterilized by filtration and carbonate from a sterile
   stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Check pH of complete
   medium and adjust to 7.4, if necessary.
+curation_history:
+- timestamp: '2026-03-13T06:20:21.871003Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011782'

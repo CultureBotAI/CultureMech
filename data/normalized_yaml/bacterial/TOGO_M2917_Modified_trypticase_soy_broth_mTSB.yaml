@@ -1,3 +1,4 @@
+id: CultureMech:009452
 name: Modified trypticase soy broth (mTSB)
 original_name: Modified trypticase soy broth (mTSB)
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   date: '2026-02-03T11:20:56.818110'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.241079Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009452'

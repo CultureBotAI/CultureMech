@@ -1,3 +1,4 @@
+id: CultureMech:001830
 name: COLUMBIA BLOOD MEDIUM
 original_name: COLUMBIA BLOOD MEDIUM
 category: bacterial
@@ -85,3 +86,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 693'
+- timestamp: '2026-03-13T06:19:07.572080Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001830'

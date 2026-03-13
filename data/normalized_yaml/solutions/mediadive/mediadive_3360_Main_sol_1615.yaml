@@ -1,3 +1,4 @@
+id: CultureMech:012510
 preferred_term: Main sol. 1615
 term:
   id: mediadive.solution:3360
@@ -66,3 +67,8 @@ composition:
 preparation_notes: "pH 7.0-7.2\nAfter sterilization add from sterile stock solutions:\n\
   might result in colloid formation, especially when added into\r\nhot medium, but\
   \ dissolves after vigorous shaking"
+curation_history:
+- timestamp: '2026-03-13T06:20:26.285699Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012510'

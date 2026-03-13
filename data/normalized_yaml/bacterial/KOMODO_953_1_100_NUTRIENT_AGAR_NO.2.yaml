@@ -1,3 +1,4 @@
+id: CultureMech:006896
 name: 1/100 NUTRIENT AGAR NO.2
 original_name: 1/100 NUTRIENT AGAR NO.2
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:953
     label: 1/100 NUTRIENT AGAR NO.2
-notes: 'Source: KOMODO ModelSEED | ID: 953 | DSMZ Medium: 953 (mediadive.medium:953) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 953 | DSMZ Medium: 953 (mediadive.medium:953)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -44,3 +46,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 953
+- timestamp: '2026-03-13T06:19:44.735129Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006896'

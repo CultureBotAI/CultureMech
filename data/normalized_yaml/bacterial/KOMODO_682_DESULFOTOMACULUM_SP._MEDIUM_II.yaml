@@ -1,3 +1,4 @@
+id: CultureMech:006282
 name: DESULFOTOMACULUM SP. MEDIUM II
 original_name: DESULFOTOMACULUM SP. MEDIUM II
 category: bacterial
@@ -8,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:682
     label: DESULFOTOMACULUM SP. MEDIUM II
-notes: 'Source: KOMODO ModelSEED | ID: 682 | DSMZ Medium: 682 (mediadive.medium:682) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 682 | DSMZ Medium: 682 (mediadive.medium:682)
+  | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -17,3 +19,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 682'
+- timestamp: '2026-03-13T06:19:39.443451Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006282'

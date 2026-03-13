@@ -1,3 +1,4 @@
+id: CultureMech:001918
 name: OM-2 MEDIUM
 original_name: OM-2 MEDIUM
 category: bacterial
@@ -81,9 +82,9 @@ preparation_steps:
   description: pH 6.8-7.0
 - step_number: 2
   action: DISSOLVE
-  description: The first three salts must be dissolved in the indicated sequence. After autoclaving for
-    20 min at 121°C the pH of the medium shifted to 8.5-9.0. Solid medium contained 1.5 to 2.0% (w/v)
-    of Bacto-Agar (Difco).
+  description: The first three salts must be dissolved in the indicated sequence.
+    After autoclaving for 20 min at 121°C the pH of the medium shifted to 8.5-9.0.
+    Solid medium contained 1.5 to 2.0% (w/v) of Bacto-Agar (Difco).
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +92,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 782'
+- timestamp: '2026-03-13T06:19:08.397913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001918'

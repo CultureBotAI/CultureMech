@@ -1,3 +1,4 @@
+id: CultureMech:001758
 name: SEAWATER LEMCO
 original_name: SEAWATER LEMCO
 category: bacterial
@@ -47,3 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 627'
+- timestamp: '2026-03-13T06:19:06.998518Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001758'

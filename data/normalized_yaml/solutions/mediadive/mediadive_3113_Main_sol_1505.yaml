@@ -1,3 +1,4 @@
+id: CultureMech:012333
 preferred_term: Main sol. 1505
 term:
   id: mediadive.solution:3113
@@ -120,3 +121,8 @@ preparation_notes: 'Dissolve ingredients (except carbonates and thioglycolate), 
 
 
   Original volume: 1001 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.250560Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012333'

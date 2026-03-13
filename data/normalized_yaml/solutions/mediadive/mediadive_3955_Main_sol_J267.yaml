@@ -1,3 +1,4 @@
+id: CultureMech:013015
 preferred_term: Main sol. J267
 term:
   id: mediadive.solution:3955
@@ -93,3 +94,8 @@ preparation_notes: Mix ingredients, except sodium thioglycolate and sulfur, and 
   of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture vessels
   and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
   solution to the medium anaerobically.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.906553Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013015'

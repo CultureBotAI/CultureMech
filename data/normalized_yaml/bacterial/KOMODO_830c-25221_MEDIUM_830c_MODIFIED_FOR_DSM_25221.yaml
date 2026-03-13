@@ -1,3 +1,4 @@
+id: CultureMech:006623
 name: MEDIUM 830c MODIFIED FOR DSM 25221
 original_name: MEDIUM 830c MODIFIED FOR DSM 25221
 category: bacterial
@@ -8,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:830c_25221
     label: MEDIUM 830c MODIFIED FOR DSM 25221
-notes: 'Source: KOMODO ModelSEED | ID: 830c_25221 | DSMZ Medium: 830c (mediadive.medium:830c) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 830c_25221 | DSMZ Medium: 830c (mediadive.medium:830c)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -142,3 +143,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 830
+- timestamp: '2026-03-13T06:19:42.445049Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006623'

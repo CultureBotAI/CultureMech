@@ -1,3 +1,4 @@
+id: CultureMech:002772
 name: INORGANIC MINERAL MEDIUM WITH THIOSULFATE
 original_name: INORGANIC MINERAL MEDIUM WITH THIOSULFATE
 category: bacterial
@@ -235,14 +236,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Trace vitamins and NaHCO3, and adjust pH to 7.0. Distribute the
-    medium into culture vessels (e.g., 20 ml of medium in 120 ml serum bottles) under a stream of N2-CO2
-    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. Filter-sterilize Trace vitamins
-    and 5% NaHCO3 solution and add to the medium. Finally add O2 gas to make 5% (v/v) in the gas phase.
+  description: Mix ingredients, except Trace vitamins and NaHCO3, and adjust pH to
+    7.0. Distribute the medium into culture vessels (e.g., 20 ml of medium in 120
+    ml serum bottles) under a stream of N2-CO2 (4:1, v/v) gas mixture, seal with butyl
+    rubber stoppers and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3 solution
+    and add to the medium. Finally add O2 gas to make 5% (v/v) in the gas phase.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -250,3 +252,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J419'
+- timestamp: '2026-03-13T06:19:15.619886Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002772'

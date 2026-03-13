@@ -1,3 +1,4 @@
+id: CultureMech:013568
 preferred_term: Main sol. J699
 term:
   id: mediadive.solution:4608
@@ -115,3 +116,8 @@ preparation_notes: 'Add NaHCO3 buffer (see below) and adjust pH to 7.2 - 7.4, if
 
 
   Original volume: 952 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:32.072092Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013568'

@@ -1,3 +1,4 @@
+id: CultureMech:011174
 preferred_term: Main sol. 842
 term:
   id: mediadive.solution:1724
@@ -154,3 +155,8 @@ preparation_notes: 'Final pH 7.2 - 7.4
   under anaerobic gas mixture of N2:CO2 (80:20). Dispense medium into Hungate tubes
   or serum bottles using the same gas mixture. Autoclave. Add the remaining components
   to the medium once it has cooled and check the final pH.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.950854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011174'

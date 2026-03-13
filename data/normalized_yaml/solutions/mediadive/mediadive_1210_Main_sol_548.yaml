@@ -1,3 +1,4 @@
+id: CultureMech:010706
 preferred_term: Main sol. 548
 term:
   id: mediadive.solution:1210
@@ -79,3 +80,8 @@ preparation_notes: 'Adjust pH to 7.3 with NaOH.
 
   Modified Bennett''s agar can also be used. In it, glucose is replaced by glycerol
   (10.0 g) and N-Z amine by Bacto casein (2.0 g, Difco).'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.112007Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010706'

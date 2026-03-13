@@ -1,3 +1,4 @@
+id: CultureMech:010455
 name: TRYPTONE YEAST EXTRACT GLUCOSE MEDIUM (TYG)
 original_name: TRYPTONE YEAST EXTRACT GLUCOSE MEDIUM (TYG)
 category: fungal
@@ -114,3 +115,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1618'
+- timestamp: '2026-03-13T06:20:13.900156Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010455'

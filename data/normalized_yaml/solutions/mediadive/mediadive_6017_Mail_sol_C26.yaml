@@ -1,3 +1,4 @@
+id: CultureMech:014753
 preferred_term: Mail sol. C26
 term:
   id: mediadive.solution:6017
@@ -91,3 +92,8 @@ composition:
 preparation_notes: "Add constituents above and make up to 1 litre with deionized water.\
   \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
   \ 15 psi for 15 minutes."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.410369Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014753'

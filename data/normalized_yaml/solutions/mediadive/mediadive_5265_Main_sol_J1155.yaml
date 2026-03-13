@@ -1,3 +1,4 @@
+id: CultureMech:014176
 preferred_term: Main sol. J1155
 term:
   id: mediadive.solution:5265
@@ -178,3 +179,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 7.6 with KOH and aut
   \ a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Then, add\
   \ per liter the following solution (autoclaved and stored under N2): \nReadjust\
   \ pH to 7.6, if necessary.\n\nOriginal volume: 1010 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.095152Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014176'

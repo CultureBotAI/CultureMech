@@ -1,3 +1,4 @@
+id: CultureMech:006652
 name: For DSM 12260
 original_name: For DSM 12260
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:846.2
     label: For DSM 12260
-notes: 'Source: KOMODO ModelSEED | ID: 846.2 | DSMZ Medium: 846 (mediadive.medium:846) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 846.2 | DSMZ Medium: 846 (mediadive.medium:846)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -261,4 +263,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.884447Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:42.718070Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006652'

@@ -1,3 +1,4 @@
+id: CultureMech:013829
 preferred_term: Main sol. J901
 term:
   id: mediadive.solution:4900
@@ -49,3 +50,8 @@ composition:
 preparation_notes: Mix ingredients except rabbit blood, autoclave and cool to about
   50C. Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly
   dispense into sterile petri dishes.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.746942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013829'

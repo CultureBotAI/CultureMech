@@ -1,3 +1,4 @@
+id: CultureMech:000418
 name: ECTOTHIORHODOSYNUS MEDIUM
 original_name: ECTOTHIORHODOSYNUS MEDIUM
 category: bacterial
@@ -144,8 +145,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a single sterile stock
-    solution and add to the sterile medium after autoclaving. The pH should be adjust to 9-9.5.
+  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a single
+    sterile stock solution and add to the sterile medium after autoclaving. The pH
+    should be adjust to 9-9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -153,3 +155,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1002'
+- timestamp: '2026-03-13T06:18:55.081504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000418'

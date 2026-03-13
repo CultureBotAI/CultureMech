@@ -1,3 +1,4 @@
+id: CultureMech:012033
 preferred_term: Main sol. 1353
 term:
   id: mediadive.solution:2722
@@ -140,3 +141,8 @@ preparation_notes: Prepare the liquid medium without Na2S and cysteine-HCl. Boil
   to pH 7.0 with 10 M NaOH solution. Dispense the medium into Hungate tubes or serum
   bottles. Sterilize by autoclaving. Before inoculatiing add Na2S and cysteine-HCl
   from sterile stock solutions.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.412587Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012033'

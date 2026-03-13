@@ -1,3 +1,4 @@
+id: CultureMech:003889
 name: METHYLONATRUM MEDIUM
 original_name: METHYLONATRUM MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1170
     label: METHYLONATRUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1170 | DSMZ Medium: 1170 (mediadive.medium:1170) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1170 | DSMZ Medium: 1170 (mediadive.medium:1170)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -134,3 +136,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1170
+- timestamp: '2026-03-13T06:19:23.036507Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003889'

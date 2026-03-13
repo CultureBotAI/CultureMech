@@ -1,3 +1,4 @@
+id: CultureMech:014380
 preferred_term: Main sol. J1316
 term:
   id: mediadive.solution:5476
@@ -166,3 +167,8 @@ preparation_notes: "Mix components thoroughly, except NaHCO3, and adjust pH to 7
   \ rubber stoppers and autoclave. Aseptically and anaerobically add the following\
   \ solutions (autoclaved and stored under N2): \nPressurize inoculated bottles to\
   \ 100 KPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1030 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.459716Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014380'

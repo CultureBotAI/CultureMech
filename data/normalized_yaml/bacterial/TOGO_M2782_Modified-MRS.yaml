@@ -1,3 +1,4 @@
+id: CultureMech:009331
 name: Modified-MRS
 original_name: Modified-MRS
 category: bacterial
@@ -135,3 +136,7 @@ curation_history:
   curator: unit-conflict-resolver-v1.0
   action: Resolved unit conflicts
   notes: Flagged Cysteine-HCl for manual review (PERCENT_W_V conflict)
+- timestamp: '2026-03-13T06:20:05.694918Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009331'

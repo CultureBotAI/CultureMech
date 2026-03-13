@@ -1,3 +1,4 @@
+id: CultureMech:011426
 preferred_term: FeSO4 solution 5%(w/v)
 term:
   id: mediadive.solution:2023
@@ -27,3 +28,8 @@ composition:
     label: magnesium dichloride
     confidence: 0.7
     match_type: kg_fallback
+curation_history:
+- timestamp: '2026-03-13T06:20:19.611732Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011426'

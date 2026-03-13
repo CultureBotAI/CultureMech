@@ -1,3 +1,4 @@
+id: CultureMech:010814
 preferred_term: Main sol. 620
 term:
   id: mediadive.solution:1329
@@ -100,3 +101,8 @@ composition:
     confidence: 0.9
     match_type: synonym_match_ambiguous
 preparation_notes: pH 7-7.5
+curation_history:
+- timestamp: '2026-03-13T06:20:15.692837Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010814'

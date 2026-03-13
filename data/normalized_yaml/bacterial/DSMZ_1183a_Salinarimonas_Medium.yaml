@@ -1,3 +1,4 @@
+id: CultureMech:000626
 name: Salinarimonas Medium
 original_name: Salinarimonas Medium
 category: bacterial
@@ -188,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1183a'
+- timestamp: '2026-03-13T06:18:56.901469Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000626'

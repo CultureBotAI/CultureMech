@@ -1,3 +1,4 @@
+id: CultureMech:011457
 preferred_term: Main sol. 1010
 term:
   id: mediadive.solution:2057
@@ -170,3 +171,8 @@ preparation_notes: 'Dissolve ingredients (except dihydrogenphosphate, ammonium c
 
 
   Original volume: 1004 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.830745Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011457'

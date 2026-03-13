@@ -1,3 +1,4 @@
+id: CultureMech:014017
 preferred_term: Main sol. J1045
 term:
   id: mediadive.solution:5105
@@ -152,3 +153,8 @@ preparation_notes: "Mix components, adjust pH 7.2 and autoclave. Cool medium und
   \ \nAseptically and anaerobically distribute the medium into culture vessels under\
   \ the same gas mixture and seal with butyl rubber stoppers. Readjust pH to 7.0 -\
   \ 7.2.\n\nOriginal volume: 1004 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:35.035661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014017'

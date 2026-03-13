@@ -1,3 +1,4 @@
+id: CultureMech:002174
 name: BACILLUS FILIFORMIS MEDIUM
 original_name: BACILLUS FILIFORMIS MEDIUM
 category: bacterial
@@ -67,7 +68,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sodium carbonate and sodium chloride should separately be autoclaved. pH 9.0.
+  description: Sodium carbonate and sodium chloride should separately be autoclaved.
+    pH 9.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -75,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 992'
+- timestamp: '2026-03-13T06:19:10.970282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002174'

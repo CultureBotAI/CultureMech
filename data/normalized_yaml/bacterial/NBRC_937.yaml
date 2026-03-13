@@ -1,3 +1,4 @@
+id: CultureMech:007506
 name: '937'
 original_name: '937'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 90 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.288100Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007506'
 solutions:
 - preferred_term: KP buffer*10mlMgCl2·6H2O0.75gCaCl2·2H2O0.15gNH4Cl0.54gNa2S2O31.6gTrace
     elements solution**2mlVitamin solution***2mlNa2CO30.5gDistilled water1LMix ingredients

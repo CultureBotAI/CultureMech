@@ -1,3 +1,4 @@
+id: CultureMech:001784
 name: RABBIT BLOOD AGAR
 original_name: RABBIT BLOOD AGAR
 category: bacterial
@@ -21,9 +22,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare Blood Agar Base from Difco 0045 according to directions on the bottle (40.0 g/l).
-    Sterilize and cool to 45°C. Aseptically add 5% sterile defibrinated rabbit blood or sheep blood, mix
-    well.
+  description: Prepare Blood Agar Base from Difco 0045 according to directions on
+    the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
+    defibrinated rabbit blood or sheep blood, mix well.
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,3 +32,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 646'
+- timestamp: '2026-03-13T06:19:07.189552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001784'

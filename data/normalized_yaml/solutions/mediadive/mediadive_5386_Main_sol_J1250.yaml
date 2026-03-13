@@ -1,3 +1,4 @@
+id: CultureMech:014296
 preferred_term: Main sol. J1250
 term:
   id: mediadive.solution:5386
@@ -154,3 +155,8 @@ preparation_notes: "Mix components thoroughly, adjust pH to 5.7 with HCl and aut
   \ to the culture vessels to give a 30% concentration by volume in the gas phase\
   \ (overpressured). Check final pH of the medium to be 6.4-6.8.\n\nOriginal volume:\
   \ 1006 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.890179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014296'

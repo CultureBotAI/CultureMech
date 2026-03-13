@@ -1,3 +1,4 @@
+id: CultureMech:002596
 name: THERMOCLADIUM MEDIUM
 original_name: THERMOCLADIUM MEDIUM
 category: bacterial
@@ -197,15 +198,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Combine Modified Brock's salt base solution, trisodium citrate and resazurin, and adjust
-    pH to 3.5 with 10 N H2SO4. Autoclave under a N2 atmosphere. Separately autoclave yeast extract and
-    Na2S x 9H2O as 10% and 5% solutions, respectively, under a N2 atmosphere. Filter-sterilize Trace vitamins.
-    Steam sulfur for 3 hr on each of 3 successive days. Aseptically mix components except Na2S x 9H2O
-    in suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) while gassing with
-    H2-CO2 (80:20) gas mixture and seal with butyl rubber stoppers. Prior to inoculation, aseptically
-    and anaerobically add the Na2S x 9H2O solutions and adjust pH to 4.0-4.5, if necessary. When the indicator
-    (resazurin) turns to colorless, inoculate the culture and pressurize the vessels to 100 kPa H2-CO2
-    (80:20).
+  description: Combine Modified Brock's salt base solution, trisodium citrate and
+    resazurin, and adjust pH to 3.5 with 10 N H2SO4. Autoclave under a N2 atmosphere.
+    Separately autoclave yeast extract and Na2S x 9H2O as 10% and 5% solutions, respectively,
+    under a N2 atmosphere. Filter-sterilize Trace vitamins. Steam sulfur for 3 hr
+    on each of 3 successive days. Aseptically mix components except Na2S x 9H2O in
+    suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) while
+    gassing with H2-CO2 (80:20) gas mixture and seal with butyl rubber stoppers. Prior
+    to inoculation, aseptically and anaerobically add the Na2S x 9H2O solutions and
+    adjust pH to 4.0-4.5, if necessary. When the indicator (resazurin) turns to colorless,
+    inoculate the culture and pressurize the vessels to 100 kPa H2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:
@@ -217,3 +219,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:14.430617Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002596'

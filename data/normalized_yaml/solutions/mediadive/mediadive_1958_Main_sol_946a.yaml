@@ -1,3 +1,4 @@
+id: CultureMech:011361
 preferred_term: Main sol. 946a
 term:
   id: mediadive.solution:1958
@@ -98,3 +99,8 @@ preparation_notes: 'Dissolve ingredients (except carbonate, yeast extract, vitam
 
 
   Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:19.153464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011361'

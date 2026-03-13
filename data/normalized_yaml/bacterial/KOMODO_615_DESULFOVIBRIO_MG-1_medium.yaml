@@ -1,3 +1,4 @@
+id: CultureMech:006106
 name: DESULFOVIBRIO MG-1 medium
 original_name: DESULFOVIBRIO MG-1 medium
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:615
     label: DESULFOVIBRIO MG-1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 615 | DSMZ Medium: 615 (mediadive.medium:615) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 615 | DSMZ Medium: 615 (mediadive.medium:615)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -93,3 +95,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 615
+- timestamp: '2026-03-13T06:19:38.338363Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006106'

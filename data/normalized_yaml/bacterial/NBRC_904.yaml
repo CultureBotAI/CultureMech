@@ -1,3 +1,4 @@
+id: CultureMech:007503
 name: '904'
 original_name: '904'
 category: bacterial
@@ -33,6 +34,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 92 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.278821Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007503'
 solutions:
 - preferred_term: NaCl30gKCl0.33gNH4Cl0.25gMgCl2·6H2O2.8gMgSO4·7H2O3.4gFeSO4·7H2O0.025gK2HPO40.3gNaBr0.01gTrace
     minerals*10mlVitamin solution**10mlBacto Yeast Extract (Difco)3gBacto Tryptone

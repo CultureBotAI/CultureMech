@@ -1,3 +1,4 @@
+id: CultureMech:003972
 name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
 original_name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:122_replace_Cellulose_with_Cellobiose
     label: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
-notes: 'Source: KOMODO ModelSEED | ID: 122_replace_Cellulose_with_Cellobiose | DSMZ Medium: 122 (mediadive.medium:122)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 122_replace_Cellulose_with_Cellobiose | DSMZ
+  Medium: 122 (mediadive.medium:122) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -96,3 +97,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 122
+- timestamp: '2026-03-13T06:19:23.774890Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003972'

@@ -1,3 +1,4 @@
+id: CultureMech:014220
 preferred_term: Main sol. J1194
 term:
   id: mediadive.solution:5307
@@ -166,3 +167,8 @@ preparation_notes: "Mix components thoroughly. Bring to a boil and cool down und
   \ per liter the following solutions (autoclaved or *filter-sterilized): \nPressurize\
   \ the inoculated bottles to 200 kPa H2-CO2 (80:20, v/v).\n\nOriginal volume: 1043\
   \ mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:36.418109Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014220'

@@ -1,3 +1,4 @@
+id: CultureMech:000870
 name: METHYLOCYSTIS MEDIUM
 original_name: METHYLOCYSTIS MEDIUM
 category: bacterial
@@ -98,9 +99,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium into serum bottles with
-    a medium to headspace ratio of about 1:4. Add 20% methane to the gas phase. Sterilize by autoclaving.
-    Incubate the cultures with shaking.
+  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium into
+    serum bottles with a medium to headspace ratio of about 1:4. Add 20% methane to
+    the gas phase. Sterilize by autoclaving. Incubate the cultures with shaking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -108,3 +109,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1409'
+- timestamp: '2026-03-13T06:18:59.049160Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000870'

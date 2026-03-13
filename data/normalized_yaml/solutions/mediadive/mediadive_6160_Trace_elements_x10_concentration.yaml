@@ -1,3 +1,4 @@
+id: CultureMech:014862
 preferred_term: Trace elements (x10 concentration)
 term:
   id: mediadive.solution:6160
@@ -88,3 +89,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.824073Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014862'

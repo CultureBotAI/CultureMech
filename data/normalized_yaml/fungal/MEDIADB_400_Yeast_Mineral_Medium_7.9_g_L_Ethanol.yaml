@@ -1,3 +1,4 @@
+id: CultureMech:010558
 name: '''Yeast Mineral Medium (7.9 g/L Ethanol'
 original_name: '''Yeast Mineral Medium (7.9 g/L Ethanol'
 category: fungal
@@ -146,8 +147,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:46.256945Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 400, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 400, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:44.326052Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -155,13 +156,19 @@ curation_history:
 - timestamp: '2026-02-06T05:10:57.014329Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:14.382860Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010558'
 media_term:
   preferred_term: MediaDB Medium 400
   term:
     id: MEDIADB:400
     label: '''Yeast Mineral Medium (7.9 g/L Ethanol'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

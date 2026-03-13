@@ -1,3 +1,4 @@
+id: CultureMech:003054
 name: DEFINED MEDIUM FOR SULFATE-REDUCING BACTERIA WITH BUTYRATE
 original_name: DEFINED MEDIUM FOR SULFATE-REDUCING BACTERIA WITH BUTYRATE
 category: bacterial
@@ -140,9 +141,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.5. Distribute the medium into culture vessels under
-    a N2-CO2 (95:5, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. Anaerobically and
-    aseptically add per liter the following solutions (autoclaved or *filter-sterilized) to the medium:'
+  description: 'Mix ingredients and adjust pH to 7.5. Distribute the medium into culture
+    vessels under a N2-CO2 (95:5, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave. Anaerobically and aseptically add per liter the following solutions
+    (autoclaved or *filter-sterilized) to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 7.5, if necessary.
@@ -156,3 +158,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J708'
+- timestamp: '2026-03-13T06:19:17.468516Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003054'

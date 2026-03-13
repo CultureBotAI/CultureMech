@@ -1,3 +1,4 @@
+id: CultureMech:013618
 preferred_term: Solution C
 term:
   id: mediadive.solution:4661
@@ -56,3 +57,8 @@ preparation_notes: "Filter-sterilize and store under a N2-CO2 (4:1, v/v) atmosph
   \ with a N2-CO2 (4:1, v/v) gas mixture. Finally, add the following solutions from\
   \ anaerobic stocks: \nAdjust pH of the medium to 7.0, if necessary.\n\nOriginal\
   \ volume: 70 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:32.362878Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013618'

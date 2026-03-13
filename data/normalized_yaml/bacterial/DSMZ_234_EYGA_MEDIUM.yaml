@@ -1,3 +1,4 @@
+id: CultureMech:001337
 name: EYGA MEDIUM
 original_name: EYGA MEDIUM
 category: bacterial
@@ -138,3 +139,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 234'
+- timestamp: '2026-03-13T06:19:03.276559Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001337'

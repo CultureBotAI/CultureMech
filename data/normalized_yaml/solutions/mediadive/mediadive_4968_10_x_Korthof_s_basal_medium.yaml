@@ -1,3 +1,4 @@
+id: CultureMech:013891
 preferred_term: 10 x Korthof's basal medium
 term:
   id: mediadive.solution:4968
@@ -105,3 +106,8 @@ preparation_notes: 'Mix ingredients except CaCl2 and autoclave. Dissolve CaCl2 i
 
 
   Original volume: 450 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:34.133431Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013891'

@@ -1,3 +1,4 @@
+id: CultureMech:002871
 name: RHODOVULUM IMHOFFII MEDIUM
 original_name: RHODOVULUM IMHOFFII MEDIUM
 category: bacterial
@@ -145,3 +146,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J520'
+- timestamp: '2026-03-13T06:19:16.231004Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002871'

@@ -1,3 +1,4 @@
+id: CultureMech:012114
 preferred_term: Main sol. 1398
 term:
   id: mediadive.solution:2834
@@ -83,3 +84,8 @@ preparation_notes: 'pH 7.0
   to the sterile medium.
 
   SII '
+curation_history:
+- timestamp: '2026-03-13T06:20:23.958144Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012114'

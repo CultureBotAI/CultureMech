@@ -1,3 +1,4 @@
+id: CultureMech:000366
 name: MHY
 original_name: MHY
 category: bacterial
@@ -106,9 +107,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "To make up to 1 litre with distilled water. First disperse trace elements in 800ml distilled\
-    \ water.\r\nAdd the other stock solutions and make up to 1 litre. Adjust pH to 6.8 with 1M NaOH or\
-    \ 1M\r\nHCl, prior to autoclaving. Autoclave at 15 psi for 15 minutes."
+  description: "To make up to 1 litre with distilled water. First disperse trace elements\
+    \ in 800ml distilled water.\r\nAdd the other stock solutions and make up to 1\
+    \ litre. Adjust pH to 6.8 with 1M NaOH or 1M\r\nHCl, prior to autoclaving. Autoclave\
+    \ at 15 psi for 15 minutes."
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 15 psi for 15 minutes.
@@ -126,24 +128,28 @@ preparation_steps:
   description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
 - step_number: 7
   action: MIX
-  description: "Site selection for a good soil is very important and for most purposes a soil from undisturbed\r\
-    \ndeciduous woodland is best. Sites to avoid are those showing obvious signs of man's activity\r\n\
-    and particular care should be taken to avoid areas where fertilizers, crop sprays or other toxic\r\
-    \nchemicals may have been used."
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
 - step_number: 8
   action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots and larger\r\ninvertebrates\
-    \ should be removed during an initial sieving through a 1 cm mesh. The sieved\r\nsoil should be spread\
-    \ to air dry and handpicked for smaller invertebrates and roots. It should\r\nbe turned periodically\
-    \ and picked over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an airtight\
-    \ container away from light and heat."
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
 - step_number: 9
   action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of supernatant distilled\
-    \ water\r\nare autoclaved together at 15 psi for 2 hours and left to cool. The supernatant is then\r\
-    \ndecanted and then distributed to containers in volumes suitable for making up batches of\r\nmedia.\
-    \ The aliquots and their containers are autoclaved for an appropriate length of time\r\n(e.g. 1 litre\
-    \ or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator) until\r\nrequired."
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
+    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
+    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
+    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
+    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
+    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
+    \ until\r\nrequired."
 applications:
 - Microbial cultivation
 curation_history:
@@ -155,3 +161,7 @@ curation_history:
   date: '2026-02-03T11:20:17.125415'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T06:18:54.791630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000366'

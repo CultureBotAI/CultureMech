@@ -1,3 +1,4 @@
+id: CultureMech:003637
 name: For DSM 15074
 original_name: For DSM 15074
 category: bacterial
@@ -184,4 +185,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1058
+- timestamp: '2026-03-13T06:19:21.256175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003637'
 high_metal: true

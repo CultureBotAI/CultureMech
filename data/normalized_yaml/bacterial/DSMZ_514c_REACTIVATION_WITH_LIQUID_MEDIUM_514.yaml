@@ -1,3 +1,4 @@
+id: CultureMech:001647
 name: REACTIVATION WITH LIQUID MEDIUM 514
 original_name: REACTIVATION WITH LIQUID MEDIUM 514
 category: bacterial
@@ -127,12 +128,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid medium 514. Subsequent
-    subculturing may be carried out in liquid medium or on agar plates.
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    medium 514. Subsequent subculturing may be carried out in liquid medium or on
+    agar plates.
 - step_number: 2
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.4
-    g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
+    from Difco add 37.4 g to 1 litre water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 514c'
+- timestamp: '2026-03-13T06:19:06.152577Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001647'

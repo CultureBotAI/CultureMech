@@ -1,3 +1,4 @@
+id: CultureMech:013867
 preferred_term: Main sol. J930
 term:
   id: mediadive.solution:4941
@@ -43,3 +44,8 @@ preparation_notes: 'Filter-sterilize with 0.22 ï¿½m PES filter.
 
 
   Original volume: 1100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:33.981500Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013867'

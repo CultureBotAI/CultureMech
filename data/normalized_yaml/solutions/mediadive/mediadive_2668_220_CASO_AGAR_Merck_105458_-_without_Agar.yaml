@@ -1,3 +1,4 @@
+id: CultureMech:011989
 preferred_term: 220. CASO AGAR (Merck 105458) - without Agar
 term:
   id: mediadive.solution:2668
@@ -53,3 +54,8 @@ composition:
     match_type: kg_fallback
 preparation_notes: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
   Cm131).
+curation_history:
+- timestamp: '2026-03-13T06:20:23.154074Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011989'

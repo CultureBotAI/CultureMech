@@ -1,3 +1,4 @@
+id: CultureMech:001234
 name: DG18 Dichloran 18 % Glycerol agar
 original_name: DG18 Dichloran 18 % Glycerol agar
 category: bacterial
@@ -40,10 +41,14 @@ preparation_steps:
 applications:
 - Microbial cultivation
 references:
-- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen, B. (2019). Food and
-    indoor fungi. Westerdijk Fungal Biodiversity Institute.
+- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen,
+    B. (2019). Food and indoor fungi. Westerdijk Fungal Biodiversity Institute.
 curation_history:
 - timestamp: '2026-01-26T17:53:15.450393Z'
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1775'
+- timestamp: '2026-03-13T06:19:02.452098Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001234'

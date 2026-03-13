@@ -1,3 +1,4 @@
+id: CultureMech:004839
 name: Synthetic sea water (medium 79)
 original_name: Synthetic sea water (medium 79)
 category: bacterial
@@ -9,8 +10,8 @@ media_term:
   term:
     id: komodo.medium:3056
     label: Synthetic sea water (medium 79)
-notes: 'Source: KOMODO ModelSEED | ID: 3056 | DSMZ Medium: 3056 (mediadive.medium:3056) | Aerobic: No
-  | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3056 | DSMZ Medium: 3056 (mediadive.medium:3056)
+  | Aerobic: No | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -19,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 3056'
+- timestamp: '2026-03-13T06:19:28.881338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004839'

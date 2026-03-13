@@ -1,3 +1,4 @@
+id: CultureMech:013922
 preferred_term: Main sol. J975
 term:
   id: mediadive.solution:4999
@@ -103,3 +104,8 @@ preparation_notes: "Add components to distilled water and bring volume to 970 ml
   \ For preparation of solid medium, add 20.0 g/L agar. Autoclave and cool (to 50\
   \ - 60C for agar medium). Then, add the following solution (separately autoclaved):\
   \ \nCheck the final pH to be around 9.0."
+curation_history:
+- timestamp: '2026-03-13T06:20:34.390791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013922'

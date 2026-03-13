@@ -1,3 +1,4 @@
+id: CultureMech:000774
 name: FRESHWATER HD MEDIUM
 original_name: FRESHWATER HD MEDIUM
 category: bacterial
@@ -93,8 +94,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve carbonates in 900 ml distilled water by stirring for 5 h or longer. Add other
-    components while stirring, adjust pH to 7.2 with KOH. Autoclave.
+  description: Dissolve carbonates in 900 ml distilled water by stirring for 5 h or
+    longer. Add other components while stirring, adjust pH to 7.2 with KOH. Autoclave.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave solution A and B separately and combine after cooling.
@@ -105,3 +106,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1312'
+- timestamp: '2026-03-13T06:18:58.261637Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000774'

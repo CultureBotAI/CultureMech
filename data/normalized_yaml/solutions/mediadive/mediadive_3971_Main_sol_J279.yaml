@@ -1,3 +1,4 @@
+id: CultureMech:013030
 preferred_term: Main sol. J279
 term:
   id: mediadive.solution:3971
@@ -154,3 +155,8 @@ preparation_notes: 'Adjust pH to 7.0 with H2SO4. Distribute 20 ml of medium into
 
 
   Original volume: 1010 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:28.996145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013030'

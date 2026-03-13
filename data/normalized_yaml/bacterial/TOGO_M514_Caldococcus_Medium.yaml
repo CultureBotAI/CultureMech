@@ -1,3 +1,4 @@
+id: CultureMech:009905
 name: Caldococcus Medium
 original_name: Caldococcus Medium
 category: bacterial
@@ -170,6 +171,10 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:09.846192Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009905'
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

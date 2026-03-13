@@ -1,3 +1,4 @@
+id: CultureMech:003189
 name: RSULFAC1 MEDIUM
 original_name: RSULFAC1 MEDIUM
 category: bacterial
@@ -175,14 +176,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture.
-    After cooling, add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components except sulfur thoroughly and autoclave under a N2-CO2
+    (4:1, v/v) gas mixture. After cooling, add per liter the following solutions (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Steam sulfur for 3 hr on each of 3 successive days. Aseptically distribute the medium
-    and sulfur into culture vessels under a stream of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers.
-    Prior to inoculation, add per liter the following solution from an anaerobic stock (autoclaved and
-    stored under a N2 atmosphere):'
+  description: 'Steam sulfur for 3 hr on each of 3 successive days. Aseptically distribute
+    the medium and sulfur into culture vessels under a stream of N2-CO2 (4:1, v/v)
+    and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following
+    solution from an anaerobic stock (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,3 +192,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J844'
+- timestamp: '2026-03-13T06:19:18.450390Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003189'

@@ -1,3 +1,4 @@
+id: CultureMech:008779
 name: Anoxic bicarbonate-buffered basal medium (BBM) with 10 mM sodium nitrate and
   various concentrations of sodium acetate
 original_name: Anoxic bicarbonate-buffered basal medium (BBM) with 10 mM sodium nitrate
@@ -291,3 +292,7 @@ curation_history:
   curator: data-quality-cleanup-v1.0
   action: Data quality fixes
   notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.258279Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008779'

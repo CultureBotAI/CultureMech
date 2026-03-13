@@ -1,3 +1,4 @@
+id: CultureMech:002622
 name: T2U MEDIUM
 original_name: T2U MEDIUM
 category: bacterial
@@ -50,7 +51,8 @@ preparation_steps:
   description: Adjust pH to 7.0-7.2 with NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: Aseptically add 1 ml of erythromycin solution (10 mg/ml 50% ethanol) to the medium autoclaved.
+  description: Aseptically add 1 ml of erythromycin solution (10 mg/ml 50% ethanol)
+    to the medium autoclaved.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +60,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J264'
+- timestamp: '2026-03-13T06:19:14.585504Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002622'

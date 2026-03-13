@@ -1,3 +1,4 @@
+id: CultureMech:013073
 preferred_term: Trace elements solution
 term:
   id: mediadive.solution:4014
@@ -100,3 +101,8 @@ composition:
     confidence: 0.7
     match_type: kg_fallback
 preparation_notes: 'Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.237914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013073'

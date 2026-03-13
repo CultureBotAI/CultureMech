@@ -1,3 +1,4 @@
+id: CultureMech:012053
 preferred_term: Main sol. 1363
 term:
   id: mediadive.solution:2746
@@ -91,3 +92,8 @@ composition:
 preparation_notes: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize
   by autoclaving. Add sterile ethanol to the sterile cooled medium. The medium may
   be solidified by adding 15.0 g/l agar.
+curation_history:
+- timestamp: '2026-03-13T06:20:23.561370Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012053'

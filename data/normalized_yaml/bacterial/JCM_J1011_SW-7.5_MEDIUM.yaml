@@ -1,3 +1,4 @@
+id: CultureMech:002196
 name: SW-7.5 MEDIUM
 original_name: SW-7.5 MEDIUM
 category: bacterial
@@ -79,4 +80,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1011'
+- timestamp: '2026-03-13T06:19:11.153234Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002196'
 high_metal: true

@@ -1,3 +1,4 @@
+id: CultureMech:002561
 name: MMYS-III MEDIUM
 original_name: MMYS-III MEDIUM
 category: bacterial
@@ -30,5 +31,9 @@ curation_history:
   curator: quality-tagger-v1.0
   action: Added data quality flag
   notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.178250Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002561'
 data_quality_flags:
 - incomplete_composition

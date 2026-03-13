@@ -1,3 +1,4 @@
+id: CultureMech:011822
 preferred_term: Main sol. 1231
 term:
   id: mediadive.solution:2452
@@ -104,3 +105,8 @@ preparation_notes: Prepare the medium without the Na2S x 9 H2O by boiling and co
   or serum bottles fitted with butyl rubber stoppers. Autoclave and reduce the medium
   before use by adding the appropriate amount of Na2S x 9 H2O from a neutralised,
   sterile stock solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:22.178142Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011822'

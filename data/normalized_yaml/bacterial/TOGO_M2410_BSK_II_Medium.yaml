@@ -1,3 +1,4 @@
+id: CultureMech:008994
 name: BSK II Medium
 original_name: BSK II Medium
 category: bacterial
@@ -111,3 +112,7 @@ curation_history:
   date: '2026-02-03T11:20:53.677801'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-13T06:20:01.880605Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008994'

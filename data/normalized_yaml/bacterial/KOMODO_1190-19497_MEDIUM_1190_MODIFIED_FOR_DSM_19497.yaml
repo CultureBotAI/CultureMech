@@ -1,3 +1,4 @@
+id: CultureMech:003925
 name: MEDIUM 1190 MODIFIED FOR DSM 19497
 original_name: MEDIUM 1190 MODIFIED FOR DSM 19497
 category: bacterial
@@ -76,4 +77,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1190
+- timestamp: '2026-03-13T06:19:23.365692Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003925'
 high_metal: true

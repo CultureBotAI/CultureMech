@@ -1,3 +1,4 @@
+id: CultureMech:015266
 preferred_term: Main sol. 456
 term:
   id: mediadive.solution:910
@@ -57,3 +58,8 @@ preparation_notes: 'Combine components, except white table wine. Adjust pH to 5.
 
 
   Original volume: 1141 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:41.561230Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015266'

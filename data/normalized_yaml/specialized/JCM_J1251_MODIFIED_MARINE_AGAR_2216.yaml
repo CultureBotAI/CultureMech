@@ -1,3 +1,4 @@
+id: CultureMech:015396
 name: MODIFIED MARINE AGAR 2216
 original_name: MODIFIED MARINE AGAR 2216
 category: specialized
@@ -41,3 +42,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1251'
+- timestamp: '2026-03-13T06:20:42.415975Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015396'

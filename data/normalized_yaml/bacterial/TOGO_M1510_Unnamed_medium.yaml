@@ -1,3 +1,4 @@
+id: CultureMech:008055
 name: TOGO Medium M1510
 original_name: (Unnamed medium)
 category: bacterial
@@ -8,7 +9,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -18,7 +20,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
@@ -50,3 +53,7 @@ curation_history:
   date: '2026-02-03T11:20:47.956133'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-13T06:19:53.262015Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008055'

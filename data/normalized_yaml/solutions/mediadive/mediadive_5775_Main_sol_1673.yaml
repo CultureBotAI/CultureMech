@@ -1,3 +1,4 @@
+id: CultureMech:014626
 preferred_term: Main sol. 1673
 term:
   id: mediadive.solution:5775
@@ -153,3 +154,8 @@ preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000<
   Autoclave at 121 °C for 20 min.
 
   After cooling, add the following filter-sterilized components:'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.701448Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014626'

@@ -1,3 +1,4 @@
+id: CultureMech:002815
 name: BHI/2 MEDIUM
 original_name: BHI/2 MEDIUM
 category: bacterial
@@ -36,3 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J467'
+- timestamp: '2026-03-13T06:19:15.888570Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002815'

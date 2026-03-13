@@ -1,3 +1,4 @@
+id: CultureMech:012886
 preferred_term: Main sol. J155
 term:
   id: mediadive.solution:3808
@@ -90,3 +91,8 @@ composition:
 preparation_notes: Adjust pH to 7.2. Autoclave and dispense into slopes. When the
   agar has solidified, place a strip of sterile filter paper onto the surface of each
   slope. Inoculate onto the filter paper.
+curation_history:
+- timestamp: '2026-03-13T06:20:28.145583Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012886'

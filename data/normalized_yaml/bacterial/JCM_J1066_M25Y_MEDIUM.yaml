@@ -1,3 +1,4 @@
+id: CultureMech:002246
 name: M25Y MEDIUM
 original_name: M25Y MEDIUM
 category: bacterial
@@ -173,11 +174,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 5.5. Autoclave under a N2 atmosphere. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved or *filter sterilized):'
+  description: 'Adjust pH to 5.5. Autoclave under a N2 atmosphere. After cooling,
+    aseptically and anaerobically add per liter the following solutions (autoclaved
+    or *filter sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
+    minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,3 +192,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:11.592689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002246'

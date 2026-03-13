@@ -1,3 +1,4 @@
+id: CultureMech:004015
 name: NAUTILIA NITRATIREDUCENS MEDIUM
 original_name: NAUTILIA NITRATIREDUCENS MEDIUM
 category: bacterial
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:1254
     label: NAUTILIA NITRATIREDUCENS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1254 | DSMZ Medium: 1254 (mediadive.medium:1254) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1254 | DSMZ Medium: 1254 (mediadive.medium:1254)
+  | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation
@@ -18,3 +20,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1254'
+- timestamp: '2026-03-13T06:19:24.141599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004015'

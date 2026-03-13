@@ -1,3 +1,4 @@
+id: CultureMech:011619
 preferred_term: Main sol. 1108
 term:
   id: mediadive.solution:2228
@@ -198,3 +199,8 @@ composition:
 preparation_notes: "Add 100 µl each of Trace Metal solutions according to the following\
   \ order: \nAdjust to pH 7.5 at room temperature and add water to the final volume\
   \ of 1 liter. Sterilize with and autoclave at 121°C for 15 min."
+curation_history:
+- timestamp: '2026-03-13T06:20:20.825339Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011619'

@@ -1,3 +1,4 @@
+id: CultureMech:014659
 preferred_term: Main sol. 315
 term:
   id: mediadive.solution:582
@@ -162,3 +163,8 @@ composition:
 preparation_notes: 'Adjust pH to 7.0. Gas atmosphere: 80% N2 + 20% CO2.
 
   Filter sterilize cellobiose separately.'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.914624Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014659'
