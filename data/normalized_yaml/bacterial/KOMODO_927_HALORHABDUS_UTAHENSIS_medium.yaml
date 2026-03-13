@@ -90,7 +90,7 @@ ingredients:
   concentration:
     value: '100'
     unit: MG_PER_L
-  notes: ' [WARNING: 2 duplicates with conflicting units]'
+  notes: ' [Unit conflict resolved: assumed G_PER_L was data entry error, kept MG_PER_L]'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -173,4 +173,8 @@ curation_history:
   action: Data quality fixes
   notes: 'Merged 1 duplicate ingredient(s); WARNING: Duplicate ''MnCl2 x 4 H2O'' with
     different units: {''MG_PER_L'', ''G_PER_L''}; Added pH buffer: NaOH'
+- timestamp: '2026-03-13T04:23:43.716412Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Resolved trace metal unit conflict for MnCl2 x 4 H2O
 high_metal: true

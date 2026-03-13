@@ -88,7 +88,8 @@ ingredients:
     value: '0.3'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component [WARNING:
-    2 duplicates with conflicting units]'
+    2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible
+    with absolute units]'
 - preferred_term: Meat extract
   concentration:
     value: '10'
@@ -130,3 +131,7 @@ curation_history:
   action: Data quality fixes
   notes: 'Merged 1 duplicate ingredient(s); WARNING: Duplicate ''Cysteine-HCl'' with
     different units: {''G_PER_L'', ''PERCENT_W_V''}'
+- timestamp: '2026-03-13T04:23:43.789626Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Flagged Cysteine-HCl for manual review (PERCENT_W_V conflict)

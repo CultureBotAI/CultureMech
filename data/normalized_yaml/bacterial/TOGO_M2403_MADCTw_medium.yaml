@@ -27,7 +27,8 @@ ingredients:
     value: '90'
     unit: PERCENT_W_V
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component [WARNING: 2 duplicates with conflicting units]'
+    Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW
+    REQUIRED: PERCENT_W_V incompatible with absolute units]'
 - preferred_term: Middlebrook 7H9 broth
   concentration:
     value: '4.7'
@@ -182,3 +183,7 @@ curation_history:
   action: Data quality fixes
   notes: 'Merged 1 duplicate ingredient(s); WARNING: Duplicate ''DI Water'' with different
     units: {''G_PER_L'', ''PERCENT_W_V''}'
+- timestamp: '2026-03-13T04:23:43.780684Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Flagged DI Water for manual review (PERCENT_W_V conflict)

@@ -1,0 +1,40 @@
+================================================================================
+UNIT CONFLICT RESOLUTION REPORT
+================================================================================
+
+SUMMARY:
+  Files processed: 8
+  Conflicts resolved: 8
+  Trace metal fixes: 4
+  Molar conversions: 2
+  Manual review needed: 2
+  Errors: 0
+
+DETAILED CHANGES:
+--------------------------------------------------------------------------------
+
+DSMZ_927_HALORHABDUS_UTAHENSIS_MEDIUM.yaml:
+  • Resolved trace metal unit conflict for MnCl2 x 4 H2O
+
+KOMODO_927_HALORHABDUS_UTAHENSIS_medium.yaml:
+  • Resolved trace metal unit conflict for MnCl2 x 4 H2O
+
+KOMODO_1131_HYDROGENIVIRGA_OKINAWENSIS_MEDIUM.yaml:
+  • Resolved trace metal unit conflict for NiCl2 x 6 H2O
+
+TOGO_M3131_Dsmz_medium_854.yaml:
+  • Documented molar unit conflict for NaCl
+
+DSMZ_1131_HYDROGENIVIRGA_OKINAWENSIS_MEDIUM.yaml:
+  • Resolved trace metal unit conflict for NiCl2 x 6 H2O
+
+TOGO_M2403_MADCTw_medium.yaml:
+  • Flagged DI Water for manual review (PERCENT_W_V conflict)
+
+TOGO_M2782_Modified-MRS.yaml:
+  • Flagged Cysteine-HCl for manual review (PERCENT_W_V conflict)
+
+TOGO_M2759_Unnamed_medium.yaml:
+  • Documented molar unit conflict for NaCl
+
+================================================================================

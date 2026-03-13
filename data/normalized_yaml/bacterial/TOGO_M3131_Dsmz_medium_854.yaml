@@ -23,7 +23,8 @@ ingredients:
     value: '427.8'
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component [WARNING: 2 duplicates with conflicting units]'
+    Simple component [Unit conflict noted: both MILLIMOLAR and G_PER_L present; MW=58.44
+    for conversion]'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -347,6 +348,10 @@ curation_history:
   action: Data quality fixes
   notes: 'Merged 3 duplicate ingredient(s); WARNING: Duplicate ''NaCl'' with different
     units: {''MILLIMOLAR'', ''G_PER_L''}'
+- timestamp: '2026-03-13T04:23:43.749691Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Documented molar unit conflict for NaCl
 high_metal: true
 solutions:
 - preferred_term: Trace element solution

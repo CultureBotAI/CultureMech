@@ -100,7 +100,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
-  notes: ' [WARNING: 2 duplicates with conflicting units]'
+  notes: ' [Unit conflict resolved: assumed G_PER_L was data entry error, kept MG_PER_L]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -257,3 +257,7 @@ curation_history:
   notes: 'Merged 6 duplicate ingredient(s); WARNING: Duplicate ''NiCl2 x 6 H2O'' with
     different units: {''MG_PER_L'', ''G_PER_L''}; WARNING: Duplicate ''Na2SeO3 x 5
     H2O'' with different units: {''MG_PER_L'', ''G_PER_L''}; Added pH buffer: NaOH'
+- timestamp: '2026-03-13T04:23:43.730765Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Resolved trace metal unit conflict for NiCl2 x 6 H2O
