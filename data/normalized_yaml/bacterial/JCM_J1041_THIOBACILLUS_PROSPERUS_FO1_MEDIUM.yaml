@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.14'
+    value: '0.24000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.14, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '20'
+    value: '21.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.0, 1.0]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -79,8 +81,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '20'
+    value: '20.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.0, 0.1]'
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -106,31 +109,10 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -172,15 +154,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 6.0 and autoclave. After cooling, aseptically add the following solutions
-    (filter-sterilized):'
+  description: 'Adjust pH to 6.0 and autoclave. After cooling, aseptically add the
+    following solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Prepare just before use.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -188,3 +170,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1041'
+- timestamp: '2026-03-13T03:09:41.199043Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

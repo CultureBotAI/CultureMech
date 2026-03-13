@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '940'
+    value: '941.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    Inorganic compound [Merged 2 duplicates: 940.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -20,10 +20,10 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
   concentration:
-    value: '2'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+    component [Merged 2 duplicates: 2.0, 1.0]'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -73,15 +73,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -112,15 +103,6 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
 - preferred_term: NaHCO3
   concentration:
     value: '10'
@@ -155,6 +137,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:47.906326Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 solutions:
 - preferred_term: Salt solution (see below)
   composition: []

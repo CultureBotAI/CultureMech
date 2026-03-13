@@ -15,10 +15,10 @@ ingredients:
     label: polysorbate 80
 - preferred_term: DI Water
   concentration:
-    value: '900'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 900.0, 100.0]'
 - preferred_term: Mycobactin J
   concentration:
     value: '2'
@@ -157,12 +157,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: DI Water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: 'Oleic Acid (Sigma Cat # O-1008)'
   concentration:
     value: '0.05'
@@ -193,3 +187,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:37.697290Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

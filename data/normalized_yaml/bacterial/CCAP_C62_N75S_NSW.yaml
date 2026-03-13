@@ -12,15 +12,12 @@ notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S_N
 ingredients:
 - preferred_term: Natural sea water
   concentration:
-    value: '750'
+    value: '1750.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 750.0, 1000.0]'
 - preferred_term: Cerophyll
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: Natural sea water
-  concentration:
-    value: '1000'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -47,3 +44,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C62'
+- timestamp: '2026-03-13T03:09:27.144803Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

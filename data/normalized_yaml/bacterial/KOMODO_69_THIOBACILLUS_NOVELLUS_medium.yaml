@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 8.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 69 | DSMZ Medium: 69 (mediadive.medium:69) |
-  Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 69 | DSMZ Medium: 69 (mediadive.medium:69)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 69
   term:
@@ -119,6 +119,11 @@ ingredients:
   concentration:
     value: '1.61'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -134,6 +139,10 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: THIOBACILLUS NOVELLUS, culture_type: isolate'
+- timestamp: '2026-03-13T03:08:37.501411Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: THIOBACILLUS NOVELLUS

@@ -29,22 +29,25 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.599401'
+    value: '3.599401'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.599401, 3.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.3996'
+    value: '1.3996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.3996, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0999001'
+    value: '0.19990010000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0999001, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.1998'
@@ -102,23 +105,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -131,13 +120,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -179,17 +161,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and bring to a boil for 5-10 sec, then, cool down under a N2-CO2 (80:20,
-    v/v) gas stream. Dispense the medium into culture vessels under the same gas mixture, seal with butyl
-    rubber stoppers and autoclave. After cooling, add per liter the following solutions from sterile anaerobic
-    stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components and bring to a boil for 5-10 sec, then, cool down under
+    a N2-CO2 (80:20, v/v) gas stream. Dispense the medium into culture vessels under
+    the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions from sterile anaerobic stocks (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml of 1 M phosphate buffer.
+  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml
+    of 1 M phosphate buffer.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -197,3 +181,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J822'
+- timestamp: '2026-03-13T03:08:49.306236Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

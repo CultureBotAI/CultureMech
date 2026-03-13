@@ -60,8 +60,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1'
+    value: '1.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -178,13 +179,6 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -244,28 +238,30 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "<b>Reducing agents</b>: \r\nFlush each solution under N2 for 30 minutes, stopper and autoclave.\r\
-    \nL-Cysteine-HCL x H2O solution (10%): add 12.5 µl per 10 ml medium\r\nNa2S x 9 H2O solution (3%):\
-    \ add 40 µl per 10 ml medium."
+  description: "<b>Reducing agents</b>: \r\nFlush each solution under N2 for 30 minutes,\
+    \ stopper and autoclave.\r\nL-Cysteine-HCL x H2O solution (10%): add 12.5 µl per\
+    \ 10 ml medium\r\nNa2S x 9 H2O solution (3%): add 40 µl per 10 ml medium."
 - step_number: 2
   action: DISSOLVE
-  description: "<b>Colloidal chitin preparation</b>: \r\nCut 5 gram commercial crab (shrimp) shell flakes\
-    \ into small pieces, and dissolve in 100\r\nml of 12M HCL while stirring in a fume hood at room temperature.\
-    \ Add chitin-HCL\r\nmixture slowly into pre-cooled water to obtain the colloidal chitin, centrifuge\
-    \ and wash in\r\npre-cooled water till the colloidal chitin reaches a pH of 6 to 6.5. Mix 0.5% with\
-    \ MS\r\nmedium as the sole carbon source. As an alternative commercial available chitin powder\r\n\
-    can be used."
+  description: "<b>Colloidal chitin preparation</b>: \r\nCut 5 gram commercial crab\
+    \ (shrimp) shell flakes into small pieces, and dissolve in 100\r\nml of 12M HCL\
+    \ while stirring in a fume hood at room temperature. Add chitin-HCL\r\nmixture\
+    \ slowly into pre-cooled water to obtain the colloidal chitin, centrifuge and\
+    \ wash in\r\npre-cooled water till the colloidal chitin reaches a pH of 6 to 6.5.\
+    \ Mix 0.5% with MS\r\nmedium as the sole carbon source. As an alternative commercial\
+    \ available chitin powder\r\ncan be used."
 - step_number: 3
   action: AUTOCLAVE
-  description: "<b>Prepare MS medium with chitin</b>: \r\nDissolve the ingredients of MS medium (except\
-    \ NaHCO3 and vitamins), boil medium\r\nunder CO2 until the resazurin indicator changes from pink to\
-    \ colourless. Cool down under\r\nCO2, add NaHCO3 and adjust pH to 7.0. Switch to N2 to prevent further\
-    \ lowering of the\r\npH. Fill up into Hungate tubes under N2 and autoclave. Before use add vitamins\r\
-    \n(sterilized by filtration) and reducing agents."
+  description: "<b>Prepare MS medium with chitin</b>: \r\nDissolve the ingredients\
+    \ of MS medium (except NaHCO3 and vitamins), boil medium\r\nunder CO2 until the\
+    \ resazurin indicator changes from pink to colourless. Cool down under\r\nCO2,\
+    \ add NaHCO3 and adjust pH to 7.0. Switch to N2 to prevent further lowering of\
+    \ the\r\npH. Fill up into Hungate tubes under N2 and autoclave. Before use add\
+    \ vitamins\r\n(sterilized by filtration) and reducing agents."
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -276,4 +272,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.758494Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:40.351173Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

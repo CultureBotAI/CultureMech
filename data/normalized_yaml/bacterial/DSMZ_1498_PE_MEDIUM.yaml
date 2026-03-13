@@ -69,8 +69,9 @@ ingredients:
     id: CHEBI:63125
     label: Na3-EDTA
   concentration:
-    value: '4.532'
+    value: '6.532'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4.532, 2.0]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -211,13 +212,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: Na3-EDTA
-  term:
-    id: CHEBI:63125
-    label: Na3-EDTA
-  concentration:
-    value: '2'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -245,4 +239,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:07.274745Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

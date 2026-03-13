@@ -61,15 +61,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '3.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -83,13 +85,6 @@ ingredients:
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -113,13 +108,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -231,13 +219,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH 6.2. Autoclave under a N2 atmosphere. After cooling,
-    add the following solutions anaerobically and aseptically (autoclaved or *filter-sterilized and stored
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH 6.2. Autoclave under a N2
+    atmosphere. After cooling, add the following solutions anaerobically and aseptically
+    (autoclaved or *filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,3 +233,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1279'
+- timestamp: '2026-03-13T03:08:59.178348Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

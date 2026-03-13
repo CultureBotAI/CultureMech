@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '981'
+    value: '983.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -113,15 +113,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -194,15 +185,6 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.02'
@@ -305,6 +287,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:54.268243Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 solutions:
 - preferred_term: Trace mineral solution (see below)
   composition: []

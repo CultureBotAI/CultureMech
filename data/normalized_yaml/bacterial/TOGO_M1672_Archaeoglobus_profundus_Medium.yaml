@@ -6,28 +6,28 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '4.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 30.0, 1.0]'
   term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
-    value: '0.15'
+    value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.15, 0.1]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -136,15 +136,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '119'
@@ -163,38 +154,6 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.024'
@@ -296,15 +255,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -409,6 +359,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:18.923924Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
 solutions:
 - preferred_term: KP buffer*
   composition: []

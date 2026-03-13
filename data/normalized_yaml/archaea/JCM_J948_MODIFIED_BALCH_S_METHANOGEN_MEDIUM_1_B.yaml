@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.576923'
+    value: '1.5769229999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.576923, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -50,15 +51,17 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00192308'
+    value: '0.10192308'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00192308, 0.1]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.00769231'
+    value: '0.10769231'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00769231, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.192308'
@@ -123,31 +126,10 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -259,18 +241,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients, except NaHCO3, and bring to a boil for 5-10 sec. Cool down under a stream
-    of H2-CO2 (80:20, v/v), and add NaHCO3 to the medium. Dispense the medium into suitable culture vessels
-    (e.g., serum bottles, Hungate tubes) under the same gas mixture, seal with butyl rubber stoppers and
-    autoclave. Allow to stand the autoclaved medium overnight. Prior to inoculation, add per liter the
-    following solutions aseptically and anaerobically (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix ingredients, except NaHCO3, and bring to a boil for 5-10 sec.
+    Cool down under a stream of H2-CO2 (80:20, v/v), and add NaHCO3 to the medium.
+    Dispense the medium into suitable culture vessels (e.g., serum bottles, Hungate
+    tubes) under the same gas mixture, seal with butyl rubber stoppers and autoclave.
+    Allow to stand the autoclaved medium overnight. Prior to inoculation, add per
+    liter the following solutions aseptically and anaerobically (autoclaved and stored
+    under a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20, v/v).
+  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20,
+    v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -278,3 +263,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J948'
+- timestamp: '2026-03-13T03:09:47.195044Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

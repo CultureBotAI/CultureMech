@@ -52,15 +52,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '27.7'
+    value: '28.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 27.7, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -87,8 +89,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.03'
+    value: '0.04'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.03, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -115,8 +118,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '2.25'
+    value: '2.35'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.25, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -124,26 +128,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -158,13 +148,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -186,13 +169,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -292,15 +268,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, sulfide, and cysteine) and adjust pH to 6.5. Boil
-    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense under the same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of volume and autoclave. Add vitamins,
-    sulfide, and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Sterilize vitamins
-    by filtration. Adjust the pH of the complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except vitamins, sulfide, and cysteine) and adjust
+    pH to 6.5. Boil medium for 1 min, then cool to room temperature under 100% N2
+    gas atmosphere. Dispense under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of volume and autoclave. Add vitamins, sulfide, and
+    cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Sterilize
+    vitamins by filtration. Adjust the pH of the complete medium to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -311,4 +288,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.320880Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:16.977811Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

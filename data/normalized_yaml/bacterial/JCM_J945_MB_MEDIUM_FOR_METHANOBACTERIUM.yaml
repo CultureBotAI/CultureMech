@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.118577'
+    value: '3.118577'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.118577, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -87,13 +88,6 @@ ingredients:
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -214,20 +208,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
-    cooling, aseptically and anaerobically add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v)
+    gas atmosphere. After cooling, aseptically and anaerobically add the following
+    solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (leave >80% gas phase by volume) under a H2-CO2
-    (80:20, v/v) gas mixture, seal with butyl rubber stoppers. Finally, add per liter the following solutions
-    from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels (leave >80% gas phase by
+    volume) under a H2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber stoppers.
+    Finally, add per liter the following solutions from anaerobic stocks (autoclaved
+    and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -235,3 +231,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J945'
+- timestamp: '2026-03-13T03:09:41.187076Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 945.1 | DSMZ Medium: 945 (mediadive.medium:945)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 945.1 | DSMZ Medium: 945
+  (mediadive.medium:945) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 945.1
   term:
@@ -108,6 +108,11 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -119,3 +124,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 945
+- timestamp: '2026-03-13T03:08:52.947986Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'

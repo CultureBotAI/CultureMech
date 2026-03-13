@@ -50,8 +50,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.00524659'
+    value: '0.03524659'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00524659, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -162,13 +163,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -228,15 +222,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Sterilize solution A separately at 121°C for 15 min., cool to 50°C and then mix aseptically
-    with filter-sterilized solution B and 5.0 ml of filter-sterilized standard vitamin solution (see medium
-    428).
+  description: Sterilize solution A separately at 121°C for 15 min., cool to 50°C
+    and then mix aseptically with filter-sterilized solution B and 5.0 ml of filter-sterilized
+    standard vitamin solution (see medium 428).
 - step_number: 2
   action: MIX
-  description: RBA is an ammonium-free medium which has successfully been used for the isolation, growth
-    and purity check of a broad spectrum of nitrogen fixing bacteria (Ref. 3363). For microaerophilic
-    nitrogen-fixing bacteria use semisolid medium with 0.3% end concentration of agar and incubate the
-    liquid cultures under 10% (v/v) air and 90% (v/v) N2.
+  description: RBA is an ammonium-free medium which has successfully been used for
+    the isolation, growth and purity check of a broad spectrum of nitrogen fixing
+    bacteria (Ref. 3363). For microaerophilic nitrogen-fixing bacteria use semisolid
+    medium with 0.3% end concentration of agar and incubate the liquid cultures under
+    10% (v/v) air and 90% (v/v) N2.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.3.
@@ -253,3 +248,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 441'
+- timestamp: '2026-03-13T03:09:18.894551Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

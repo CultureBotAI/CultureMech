@@ -1,16 +1,17 @@
-name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebrook albumin/dextrose/catalase and
-  Tween 80
-original_name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebrook albumin/dextrose/catalase
+name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebrook albumin/dextrose/catalase
   and Tween 80
+original_name: Middlebrook 7H9 (Difco) liquid medium supplemented with Middlebrook
+  albumin/dextrose/catalase and Tween 80
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '450'
+    value: '500.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component [Merged 2 duplicates: 450.0, 50.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -28,19 +29,12 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Dextrose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -75,3 +69,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:25.757020Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

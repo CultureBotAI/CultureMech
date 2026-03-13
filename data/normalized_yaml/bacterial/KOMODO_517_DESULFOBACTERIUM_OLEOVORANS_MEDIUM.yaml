@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:517
     label: DESULFOBACTERIUM OLEOVORANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 517 | DSMZ Medium: 517 (mediadive.medium:517) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 517 | DSMZ Medium: 517 (mediadive.medium:517)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -76,15 +77,17 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.63'
+    value: '1.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.63, 0.5]'
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '1'
+    value: '1.001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 0.001]'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -155,13 +158,6 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -222,13 +218,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -257,4 +246,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.351510Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:13.834391Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

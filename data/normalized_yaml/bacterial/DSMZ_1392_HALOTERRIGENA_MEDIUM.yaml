@@ -13,11 +13,12 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Casamino acids
   concentration:
-    value: '5'
+    value: '10.0'
     unit: G_PER_L
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -60,13 +61,6 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: Casamino acids
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -91,4 +85,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:38.460629Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

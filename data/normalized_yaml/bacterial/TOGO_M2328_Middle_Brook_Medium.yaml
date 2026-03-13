@@ -6,10 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '900'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component [Merged 2 duplicates: 900.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -31,15 +31,6 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '0.85'
@@ -96,3 +87,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:40.149264Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

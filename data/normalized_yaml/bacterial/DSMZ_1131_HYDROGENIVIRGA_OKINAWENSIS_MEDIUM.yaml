@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -65,8 +67,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4'
+    value: '6.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -86,8 +89,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.01'
+    value: '0.11'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 0.1]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -95,6 +99,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  notes: ' [WARNING: 2 duplicates with conflicting units]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -102,6 +107,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  notes: ' [WARNING: 2 duplicates with conflicting units]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -179,13 +185,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -193,33 +192,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -256,20 +234,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.0003'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -282,19 +246,19 @@ preparation_steps:
   description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense the medium (10 mL) into 100 mL serum bottles, containing 0,03g sulfur (powder)
-    under a stream of H2/CO2 (80:20) and seal with butyl rubber stoppers.
+  description: Dispense the medium (10 mL) into 100 mL serum bottles, containing 0,03g
+    sulfur (powder) under a stream of H2/CO2 (80:20) and seal with butyl rubber stoppers.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Prior to inoculation, add vitamins, NaNO3, and NaHCO3 (from filter sterilized stock solutions
-    under a N2 gas atmosphere) to the medium.
+  description: Prior to inoculation, add vitamins, NaNO3, and NaHCO3 (from filter
+    sterilized stock solutions under a N2 gas atmosphere) to the medium.
 - step_number: 7
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -306,3 +270,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:06.442561Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 6 duplicate ingredient(s); WARNING: Duplicate ''NiCl2 x 6 H2O'' with
+    different units: {''MG_PER_L'', ''G_PER_L''}; WARNING: Duplicate ''Na2SeO3 x 5
+    H2O'' with different units: {''MG_PER_L'', ''G_PER_L''}'

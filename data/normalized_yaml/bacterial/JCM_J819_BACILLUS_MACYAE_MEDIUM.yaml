@@ -97,43 +97,49 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.1'
+    value: '0.10010000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.0001]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
   concentration:
-    value: '0.08'
+    value: '0.085'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.08, 0.005]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.02'
+    value: '0.022'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.002]'
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.2'
+    value: '0.20500000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.005]'
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
   concentration:
-    value: '0.1'
+    value: '0.10500000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.005]'
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
     label: Pyridoxine hydrochloride
   concentration:
-    value: '0.3'
+    value: '0.31'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.3, 0.01]'
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -204,26 +210,12 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
     label: Folic acid
   concentration:
     value: '0.002'
-    unit: G_PER_L
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Thiamine HCl
   term:
@@ -239,34 +231,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: Calcium pantothenate
-  term:
-    id: CHEBI:31345
-    label: Calcium pantothenate
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
 - preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
@@ -277,12 +241,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium anaerobically under 100% N2. Add vitamins (filter-sterilized), sodium
-    lactate and nitrate from sterile, anaerobic stock solutions. Adjust final pH to 7.4 - 7.8.
+  description: Prepare the medium anaerobically under 100% N2. Add vitamins (filter-sterilized),
+    sodium lactate and nitrate from sterile, anaerobic stock solutions. Adjust final
+    pH to 7.4 - 7.8.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
-    salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
+    and add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -290,3 +255,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J819'
+- timestamp: '2026-03-13T03:09:35.810175Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

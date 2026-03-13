@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:561
     label: THIOBACILLUS PLUMBOPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 561 | DSMZ Medium: 561 (mediadive.medium:561) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 561 | DSMZ Medium: 561 (mediadive.medium:561)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.39901'
+    value: '6.3990100000000005'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.39901, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.137931'
+    value: '0.237931'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.137931, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,22 +61,25 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.492611'
+    value: '1.4926110000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.492611, 1.0]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00492611'
+    value: '0.034926109999999996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00492611, 0.03]'
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
     label: Na2WO4 x 2 H2O
   concentration:
-    value: '0.000492611'
+    value: '0.000892611'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000492611, 0.0004]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -81,26 +87,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -115,13 +107,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -158,26 +143,12 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
     value: '0.0003'
-    unit: G_PER_L
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.0004'
     unit: G_PER_L
 applications:
 - Microbial cultivation
@@ -190,3 +161,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 561
+- timestamp: '2026-03-13T03:09:42.862484Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

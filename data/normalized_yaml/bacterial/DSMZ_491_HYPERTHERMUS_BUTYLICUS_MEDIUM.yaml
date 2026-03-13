@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '16.5531'
+    value: '17.5531'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 16.5531, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.40798'
+    value: '6.40798'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.40798, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +53,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0146056'
+    value: '0.0246056'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0146056, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -93,8 +96,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.730282'
+    value: '0.830282'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.730282, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -107,8 +111,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00194742'
+    value: '0.03194742'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00194742, 0.03]'
 - preferred_term: Tryptone
   concentration:
     value: '5.84226'
@@ -138,26 +143,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -172,13 +163,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -201,26 +185,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -239,21 +209,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur and sulfide and adjust pH to 6.0 with sulfuric acid.
-    Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, dispense under the same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur, only to
-    30% of their volume to allow for a large headspace. Sterilize medium by heating for 2 - 3 hours in
-    a boiling water bath on each of 3 successive days. Before use reduce the medium by adding sulfide
-    from a sterile anoxic stock solution prepared under 100% N2 gas atmosphere. Check pH and adjust to
-    pH 6.5 - 7.0, if necessary.
+  description: Dissolve ingredients except sulfur and sulfide and adjust pH to 6.0
+    with sulfuric acid. Sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic, dispense under the same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials containing the appropriate amount of sulfur, only to 30% of their
+    volume to allow for a large headspace. Sterilize medium by heating for 2 - 3 hours
+    in a boiling water bath on each of 3 successive days. Before use reduce the medium
+    by adding sulfide from a sterile anoxic stock solution prepared under 100% N2
+    gas atmosphere. Check pH and adjust to pH 6.5 - 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize culture vessels to 1 bar overpressure with a sterile 80% H2
-    and 20% CO2 gas mixture.
+  description: After inoculation pressurize culture vessels to 1 bar overpressure
+    with a sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,3 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 491'
+- timestamp: '2026-03-13T03:09:27.026432Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

@@ -80,8 +80,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: 4e-05
+    value: '0.05004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4e-05, 0.05]'
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -177,13 +178,6 @@ ingredients:
   concentration:
     value: '83.3333'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -225,24 +219,27 @@ preparation_steps:
   description: pH 8.3
 - step_number: 2
   action: AUTOCLAVE
-  description: Mix ingredients vitamin B12, vitamin mixture, bicarbonate solution and neutralized sulfide
-    solution. Dispense the medium into suitable culture vessels under a stream of nitrogen gas, seal with
-    butyl rubber stoppers and autoclave at 121°C for 15 min. Separately autoclave neutralized sulfide
-    solution under a N2 atmosphere. Sterilize Vitamin B12 solution, vitamin mixture, bicarbonate solution
-    by filtration. Prior to inoculation, aseptically and anaerobically add vitamin B12 solution, vitamin
-    mixture, bicarbonate solution and neutralized sulfide solution.
+  description: Mix ingredients vitamin B12, vitamin mixture, bicarbonate solution
+    and neutralized sulfide solution. Dispense the medium into suitable culture vessels
+    under a stream of nitrogen gas, seal with butyl rubber stoppers and autoclave
+    at 121°C for 15 min. Separately autoclave neutralized sulfide solution under a
+    N2 atmosphere. Sterilize Vitamin B12 solution, vitamin mixture, bicarbonate solution
+    by filtration. Prior to inoculation, aseptically and anaerobically add vitamin
+    B12 solution, vitamin mixture, bicarbonate solution and neutralized sulfide solution.
 - step_number: 3
   action: DISSOLVE
-  description: EDTA should be fully dissolved before adding the other components. Store at 4°C.
+  description: EDTA should be fully dissolved before adding the other components.
+    Store at 4°C.
 - step_number: 4
   action: MIX
   description: The sulfide solution is prepared in a vessel sealed with a butyl rubber.
 - step_number: 5
   action: AUTOCLAVE
-  description: Autoclave at 121°C for 15 min under a N2 atmosphere. After cooling to room temperature
-    the pH is adjusted to about 7.3 by adding of sterile 2N H2SO4 drop-wise with a syringe without opening
-    the bottle. The vessel should be shaken continuously to avoid precipitation of elemental sulfur. The
-    final solution should be transparent yellow.
+  description: Autoclave at 121°C for 15 min under a N2 atmosphere. After cooling
+    to room temperature the pH is adjusted to about 7.3 by adding of sterile 2N H2SO4
+    drop-wise with a syringe without opening the bottle. The vessel should be shaken
+    continuously to avoid precipitation of elemental sulfur. The final solution should
+    be transparent yellow.
 applications:
 - Microbial cultivation
 curation_history:
@@ -250,3 +247,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1344'
+- timestamp: '2026-03-13T03:09:31.565640Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

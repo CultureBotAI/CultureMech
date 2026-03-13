@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1.0395'
+    value: '11.0395'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0395, 10.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.155925'
+    value: '1.155925'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.155925, 1.0]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000519751'
@@ -85,13 +87,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -105,13 +100,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -246,23 +234,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% CO2 gas for 30 – 45 min to make it anoxic, distribute under
-    the same gas atmosphere into anoxic serum vials to 20% of their volume, and autoclave. Solution B
-    is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, D, and E are prepared
-    under 100% N2 gas and sterilized by filtration. To complete the medium, appropriate amounts of solutions
-    B to E are added to the sterile solution A in the sequence as indicated. Adjust the pH of the complete
-    medium to 6.0 - 6.5, if necessary.
+  description: Sparge solution A with 100% CO2 gas for 30 – 45 min to make it anoxic,
+    distribute under the same gas atmosphere into anoxic serum vials to 20% of their
+    volume, and autoclave. Solution B is autoclaved separately under 80% N2 and 20%
+    CO2 gas atmosphere. Solutions C, D, and E are prepared under 100% N2 gas and sterilized
+    by filtration. To complete the medium, appropriate amounts of solutions B to E
+    are added to the sterile solution A in the sequence as indicated. Adjust the pH
+    of the complete medium to 6.0 - 6.5, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: The addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly
-    prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use
-    5 - 10% (v/v) inoculum.
+  description: The addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5%
+    (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For transfers use 5 - 10% (v/v) inoculum.
 - step_number: 3
   action: MIX
   description: After inoculation add sterile H2 gas to 1 bar overpressure.
 - step_number: 4
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 - step_number: 5
   action: MIX
   description: Adjust to pH 2 with HCl.
@@ -276,4 +266,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.190650Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:49.069344Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -80,16 +80,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M781
   term:
@@ -121,6 +111,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 9 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:39.530452Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

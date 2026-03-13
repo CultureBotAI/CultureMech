@@ -52,8 +52,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '25'
+    value: '26.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -85,13 +86,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -173,13 +167,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine), bring medium to the boil, then cool to room temperature
-    under 100% N2 gas atmosphere. Add and dissolve cysteine, adjust pH to 7.0 and dispense medium under
-    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients (except cysteine), bring medium to the boil, then
+    cool to room temperature under 100% N2 gas atmosphere. Add and dissolve cysteine,
+    adjust pH to 7.0 and dispense medium under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +186,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:52.614113Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

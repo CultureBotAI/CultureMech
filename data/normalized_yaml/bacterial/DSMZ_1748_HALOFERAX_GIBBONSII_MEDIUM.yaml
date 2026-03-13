@@ -13,50 +13,30 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
     label: Tap water
   concentration:
-    value: '1000'
+    value: '2000.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1000.0, 1000.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '20'
+    value: '40.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Tap water
-  term:
-    id: CHEBI:15377
-    label: Tap water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' (for solid medium) [Merged 2 duplicates: 20.0, 20.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -114,4 +94,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1748'
+- timestamp: '2026-03-13T03:09:41.118927Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 high_metal: true

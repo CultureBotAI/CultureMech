@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '0.04'
+    value: '0.043000000000000003'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.04, 0.003]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -59,13 +60,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '0.003'
     unit: G_PER_L
 - preferred_term: H3BO3
   term:
@@ -105,9 +99,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium in tubes or flasks fitted
-    with screw caps. Sterilize by autoclaving. Before inoculation add filter sterilized CH3OH to a final
-    concentration of 0.5% v/v.
+  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium in
+    tubes or flasks fitted with screw caps. Sterilize by autoclaving. Before inoculation
+    add filter sterilized CH3OH to a final concentration of 0.5% v/v.
 applications:
 - Microbial cultivation
 curation_history:
@@ -115,3 +109,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1403'
+- timestamp: '2026-03-13T03:08:39.219580Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

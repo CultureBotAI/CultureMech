@@ -69,8 +69,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.02'
+    value: '0.32'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.3]'
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -127,13 +128,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -165,12 +159,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust to pH 7.2, check and adjust pH after autoclaving. Add vitamin B12 from a filter
-    sterilized stock solution after autoclaving.
+  description: Adjust to pH 7.2, check and adjust pH after autoclaving. Add vitamin
+    B12 from a filter sterilized stock solution after autoclaving.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,3 +172,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1102'
+- timestamp: '2026-03-13T03:08:38.220907Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

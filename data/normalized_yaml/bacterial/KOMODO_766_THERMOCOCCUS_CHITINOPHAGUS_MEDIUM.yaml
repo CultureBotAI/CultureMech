@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:766
     label: THERMOCOCCUS CHITINOPHAGUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 766 | DSMZ Medium: 766 (mediadive.medium:766) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 766 | DSMZ Medium: 766 (mediadive.medium:766)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -23,8 +24,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.2'
+    value: '0.392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.192]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -83,8 +85,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '23.47'
+    value: '24.47'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 23.47, 1.0]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -106,13 +109,6 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.192'
-    unit: G_PER_L
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -132,8 +128,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.026'
+    value: '0.036'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.026, 0.01]'
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -168,13 +165,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -218,13 +208,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -257,3 +240,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 766
+- timestamp: '2026-03-13T03:08:45.069660Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

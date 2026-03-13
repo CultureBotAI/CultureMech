@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '19.7044'
+    value: '48.404399999999995'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 19.7044, 27.7, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.492611'
@@ -57,20 +58,14 @@ ingredients:
   concentration:
     value: '0.492611'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '27.7'
-    unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -97,8 +92,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.03'
+    value: '0.04'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.03, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -125,8 +121,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '2.25'
+    value: '2.35'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.25, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -134,23 +131,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -163,13 +146,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -194,13 +170,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -211,13 +180,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except Na2S x 9H2O, adjust pH to 6.5 and autoclave under a N2 atmosphere.
-    Separately autoclave a 5% Na2S x 9H2O solution (pH 7.0) under a N2 atmosphere. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution to the medium.
+  description: Mix components except Na2S x 9H2O, adjust pH to 6.5 and autoclave under
+    a N2 atmosphere. Separately autoclave a 5% Na2S x 9H2O solution (pH 7.0) under
+    a N2 atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O solution to
+    the medium.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -225,3 +195,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J237'
+- timestamp: '2026-03-13T03:09:03.324256Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

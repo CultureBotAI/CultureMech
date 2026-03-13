@@ -15,10 +15,10 @@ ingredients:
     label: methanol
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '1200.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1000.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -33,10 +33,10 @@ ingredients:
     label: magnesium sulfate
 - preferred_term: NaCl
   concentration:
-    value: '24'
+    value: '24.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 24.0, 0.1]'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -60,10 +60,10 @@ ingredients:
     label: potassium chloride
 - preferred_term: CaCl2
   concentration:
-    value: '1'
+    value: '11.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 1.0, 10.0]'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -77,21 +77,12 @@ ingredients:
     label: agar
 - preferred_term: Bis-Tris
   concentration:
-    value: '0.5'
+    value: '10.5'
     unit: G_PER_L
-  notes: 'Role: Buffer'
+  notes: 'Role: Buffer [Merged 2 duplicates: 0.5, 10.0]'
   term:
     id: CHEBI:41250
     label: Bis-Tris
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '0.7'
@@ -119,32 +110,6 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
-- preferred_term: Bis-Tris
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer'
-  term:
-    id: CHEBI:41250
-    label: Bis-Tris
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '0.15'
@@ -154,15 +119,6 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
-- preferred_term: CaCl2
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
 - preferred_term: AlK(SO4)2
   concentration:
     value: '1'
@@ -270,6 +226,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:49.858507Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
 solutions:
 - preferred_term: vitamin B12 solution
   term:

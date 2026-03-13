@@ -36,29 +36,33 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.588235'
+    value: '1.588235'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.588235, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.127451'
+    value: '3.127451'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.127451, 3.0]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00196078'
+    value: '0.10196078'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00196078, 0.1]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.00784314'
+    value: '0.10784314'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00784314, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '1.96078'
@@ -116,42 +120,14 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -263,17 +239,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, L-Cysteine x HCl x H2O and Na2S x 9H2O, and bring to a
-    boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20), and add NaHCO3 to the medium. Dispense
-    the medium into suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under
-    a stream of H2-CO2 (80:20) and seal with butyl rubber stoppers. Separately autoclave cysteine x HCl
-    and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior to inoculation, aseptically
-    and anaerobically add the cysteine x HCl and Na2S x 9H2O solutions. Pressurize the inoculated vessels
-    to 200 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except NaHCO3, L-Cysteine x HCl x H2O and Na2S x 9H2O,
+    and bring to a boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20),
+    and add NaHCO3 to the medium. Dispense the medium into suitable culture vessels
+    (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20)
+    and seal with butyl rubber stoppers. Separately autoclave cysteine x HCl and Na2S
+    x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior to inoculation,
+    aseptically and anaerobically add the cysteine x HCl and Na2S x 9H2O solutions.
+    Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -281,3 +258,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J242'
+- timestamp: '2026-03-13T03:09:43.037422Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

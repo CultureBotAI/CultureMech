@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '19.7824'
+    value: '20.7824'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 19.7824, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.95648'
+    value: '6.95648'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.95648, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -103,26 +105,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -271,22 +259,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except thiosulfate, bicarbonate and vitamins), then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 6.8 with NaOH,
-    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials up to a volume
-    of 20% and autoclave. Add thiosulfate, vitamins and bicarbonate to the autoclaved medium from sterile
-    anoxic stock solutions. The stock solutions of thiosulfate and vitamins are sterilized by filtration
-    and stored under 100% N2 gas, whereas the stock solution of bicarbonate is prepared under 80% N2 and
-    20% CO2 gas mixture and autoclaved. Adjust pH of the complete medium to 6.5.
+  description: Dissolve ingredients (except thiosulfate, bicarbonate and vitamins),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Adjust pH to 6.8 with NaOH, then dispense under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials up to a volume of 20% and autoclave.
+    Add thiosulfate, vitamins and bicarbonate to the autoclaved medium from sterile
+    anoxic stock solutions. The stock solutions of thiosulfate and vitamins are sterilized
+    by filtration and stored under 100% N2 gas, whereas the stock solution of bicarbonate
+    is prepared under 80% N2 and 20% CO2 gas mixture and autoclaved. Adjust pH of
+    the complete medium to 6.5.
 - step_number: 2
   action: MIX
-  description: After inoculation add 1% (v/v) sterile O2 gas (e.g., by adding 1.50 ml sterile air to 5
-    ml medium in a Balch-type tube) and pressurize vials to 2 bar overpressure with sterile   80% N2 and
-    20% CO2 gas mixture.
+  description: After inoculation add 1% (v/v) sterile O2 gas (e.g., by adding 1.50
+    ml sterile air to 5 ml medium in a Balch-type tube) and pressurize vials to 2
+    bar overpressure with sterile   80% N2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -297,4 +287,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.364117Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:03.013714Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

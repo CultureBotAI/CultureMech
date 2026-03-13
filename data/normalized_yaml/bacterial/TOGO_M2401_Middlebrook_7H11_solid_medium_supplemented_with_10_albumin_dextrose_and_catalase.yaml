@@ -1,14 +1,16 @@
 name: Middlebrook 7H11 solid medium supplemented with 10% albumin, dextrose, and catalase
-original_name: Middlebrook 7H11 solid medium supplemented with 10% albumin, dextrose, and catalase
+original_name: Middlebrook 7H11 solid medium supplemented with 10% albumin, dextrose,
+  and catalase
 category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '450'
+    value: '500.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 2 duplicates: 450.0, 50.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +18,8 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -32,7 +35,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -48,7 +52,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -56,7 +61,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -64,7 +70,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -80,7 +87,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
@@ -88,7 +96,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:16015
     label: L-glutamic acid
@@ -104,8 +113,8 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'Role: pH indicator, Selective agent; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: pH indicator, Selective agent; Properties: Organic compound, Defined
+    component, Simple component'
   term:
     id: CHEBI:72449
     label: Malachite green
@@ -122,19 +131,12 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Dextrose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -155,7 +157,8 @@ media_term:
   preferred_term: TOGO Medium M2401
   term:
     id: TOGO:M2401
-    label: Middlebrook 7H11 solid medium supplemented with 10% albumin, dextrose, and catalase
+    label: Middlebrook 7H11 solid medium supplemented with 10% albumin, dextrose,
+      and catalase
 notes: 'Source: https://togomedium.org/medium/M2401'
 applications:
 - Microbial cultivation
@@ -168,3 +171,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:47.670059Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

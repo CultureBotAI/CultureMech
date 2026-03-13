@@ -90,15 +90,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: 2e-05
+    value: '0.05004'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: 2e-05
-    unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 2e-05, 2e-05, 0.05]'
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -204,23 +198,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
   description: Adjust ph to 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium under N2 gas without the NaHCO3, Na2S x 9 H2O, VA-Vitamin solution and
-    vitamin B12. Autoclave and add the VA-Vitamin solution and vitamin B12 from a filter-sterilised stock
-    solution and the NaHCO3, Na2S x 9 H2O, from sterile stock solutions. The final pH of the medium should
-    be 7.0.
+  description: Prepare the medium under N2 gas without the NaHCO3, Na2S x 9 H2O, VA-Vitamin
+    solution and vitamin B12. Autoclave and add the VA-Vitamin solution and vitamin
+    B12 from a filter-sterilised stock solution and the NaHCO3, Na2S x 9 H2O, from
+    sterile stock solutions. The final pH of the medium should be 7.0.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 2.0 - 3.0.
@@ -231,3 +218,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1390'
+- timestamp: '2026-03-13T03:08:39.406104Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

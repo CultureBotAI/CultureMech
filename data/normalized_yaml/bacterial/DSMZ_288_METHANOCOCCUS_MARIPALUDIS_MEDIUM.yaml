@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '34.6192'
+    value: '35.6192'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 34.6192, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -112,13 +113,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -267,17 +261,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide) and sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate,
-    adjust pH to 6.8 and then dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum bottles to 30% of their volume and autoclave. After sterilization add cysteine and
-    sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas. Vitamins are prepared under
-    100% N2 gas atmosphere and sterilized by filtration. Adjust pH of final medium to 6.8 - 7.0. For incubation
-    use sterile 80% H2 and 20% CO2 gas mixture at one atmospheres of pressure.
+  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide)
+    and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Add and dissolve bicarbonate, adjust pH to 6.8 and then dispense medium
+    under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
+    bottles to 30% of their volume and autoclave. After sterilization add cysteine
+    and sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas.
+    Vitamins are prepared under 100% N2 gas atmosphere and sterilized by filtration.
+    Adjust pH of final medium to 6.8 - 7.0. For incubation use sterile 80% H2 and
+    20% CO2 gas mixture at one atmospheres of pressure.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -288,4 +284,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.497185Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:34.118307Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

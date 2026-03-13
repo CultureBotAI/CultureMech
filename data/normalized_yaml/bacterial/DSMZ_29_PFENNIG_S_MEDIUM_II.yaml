@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '30'
+    value: '44.8148'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 14.8148]'
 - preferred_term: HCl
   term:
     id: CHEBI:17883
     label: HCl
   concentration:
-    value: '1.925'
+    value: '3.85'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.925, 1.925]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -37,50 +39,57 @@ ingredients:
     id: CHEBI:49976
     label: ZnCl2
   concentration:
-    value: '0.07'
+    value: '0.14'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.07, 0.07]'
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.3'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.3, 0.3]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
-    value: '0.19'
+    value: '0.38'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.19, 0.19]'
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
     label: CuCl2 x 2 H2O
   concentration:
-    value: '0.002'
+    value: '0.004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.002, 0.002]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.024'
+    value: '0.048'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.024, 0.024]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.036'
+    value: '0.072'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.036, 0.036]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -91,13 +100,6 @@ ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '0.543478'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '14.8148'
     unit: G_PER_L
 - preferred_term: NaHCO3
   term:
@@ -169,13 +171,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '1.925'
-    unit: G_PER_L
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -183,105 +178,62 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: ZnCl2
-  term:
-    id: CHEBI:49976
-    label: ZnCl2
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.19'
-    unit: G_PER_L
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.036'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL each. Bubble with N2/CO2
-    and autoclave at 121°C for 15 min (as decribed below).
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).
 - step_number: 2
   action: MIX
-  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's heterotrophic salts)
-    and sterilize as given below.
+  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's
+    heterotrophic salts) and sterilize as given below.
 - step_number: 3
   action: COOL
-  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin (complete volumina,
-    i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic salts solution). Bubble with CO2
-    in an ice bath under sterile conditions.
+  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin
+    (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic
+    salts solution). Bubble with CO2 in an ice bath under sterile conditions.
 - step_number: 4
   action: MIX
-  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50 mL).
+  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50
+    mL).
 - step_number: 5
   action: MIX
-  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12 solution to each 100
-    mL bottle.
+  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12
+    solution to each 100 mL bottle.
 - step_number: 6
   action: MIX
-  description: During the first 24 h, the iron of the medium precipitates in the form of black flocks.
-    No other sediment should arise in the otherwise clear medium. Feed periodically with neutralized 3%
-    solution of sodium sulfide to replenish sulfide and with other supplement solutions (see Ref. 3365).
+  description: During the first 24 h, the iron of the medium precipitates in the form
+    of black flocks. No other sediment should arise in the otherwise clear medium.
+    Feed periodically with neutralized 3% solution of sodium sulfide to replenish
+    sulfide and with other supplement solutions (see Ref. 3365).
 - step_number: 7
   action: FILTER_STERILIZE
   description: Adjust pH to 6.8-7.1 with 1M Na2CO3 (filter-sterilized).
 - step_number: 8
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
-    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
-    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
-    M H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 - step_number: 9
   action: AUTOCLAVE
-  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL each. Bubble with N2/CO2
-    and autoclave at 121°C for 15 min.
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min.
 - step_number: 10
   action: AUTOCLAVE
-  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close tightly and autoclave.
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
+    tightly and autoclave.
 - step_number: 11
   action: FILTER_STERILIZE
-  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
+    screw-cap bottle.
 - step_number: 12
   action: AUTOCLAVE
-  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube for medium, connected
-    to a glass outlet at the bottom of the vessel and has, at the other end, a silicon rubber tube with
-    a pinch cock and a bell for aseptic dispensing of the medium into bottles.
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
+    for medium, connected to a glass outlet at the bottom of the vessel and has, at
+    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+    dispensing of the medium into bottles.
 - step_number: 13
   action: COOL
   description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
@@ -293,8 +245,8 @@ preparation_steps:
   description: Filter sterilized
 - step_number: 16
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -302,3 +254,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 29'
+- timestamp: '2026-03-13T03:09:09.714437Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 9 duplicate ingredient(s)

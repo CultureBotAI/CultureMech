@@ -73,8 +73,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.00356436'
+    value: '0.03356436'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00356436, 0.03]'
 - preferred_term: Glycine-NaOH buffer
   concentration:
     value: '100'
@@ -85,13 +86,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: H3BO3
   term:
@@ -151,4 +145,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:39.985219Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

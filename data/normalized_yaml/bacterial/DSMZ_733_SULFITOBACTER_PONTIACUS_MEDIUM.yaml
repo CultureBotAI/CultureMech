@@ -52,22 +52,25 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '14.985'
+    value: '15.985'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.985, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.999001'
+    value: '3.999001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.999001, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.04995'
+    value: '0.14995'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.04995, 0.1]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -82,26 +85,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -116,13 +105,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -183,12 +165,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt solution, adjusting the pH to
-    7.5-7.8 with NaOH before sterilisation. All other components are added from sterile stock solutions.
+  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt solution,
+    adjusting the pH to 7.5-7.8 with NaOH before sterilisation. All other components
+    are added from sterile stock solutions.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -196,3 +179,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 733'
+- timestamp: '2026-03-13T03:09:15.342961Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '23.908'
+    value: '24.908'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 23.908, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -44,15 +45,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.229885'
+    value: '3.229885'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.229885, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0229885'
+    value: '30.1229885'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.0229885, 30.0, 0.1]'
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '1.56322'
@@ -67,13 +70,6 @@ ingredients:
     label: MgCl2 x 6 H2O
   concentration:
     value: '212'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '30'
     unit: G_PER_L
 - preferred_term: Na2CO3
   term:
@@ -96,26 +92,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -130,13 +112,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -278,26 +253,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    distribute under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Solution B is autoclaved separately under 100% N2 gas atmosphere. Solutions C and F are prepared under
-    80% N2 and 20% CO2 gas atmosphere. Solutions D and E are prepared under 100% N2 gas atmosphere. Solution
-    C is autoclaved and solutions D, E and F are sterilized by filtration. To complete the medium appropriate
-    amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Adjust
-    pH of complete medium to 6.9, if necessary.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic, distribute under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Solution B is autoclaved separately under
+    100% N2 gas atmosphere. Solutions C and F are prepared under 80% N2 and 20% CO2
+    gas atmosphere. Solutions D and E are prepared under 100% N2 gas atmosphere. Solution
+    C is autoclaved and solutions D, E and F are sterilized by filtration. To complete
+    the medium appropriate amounts of solutions B to F are added to the sterile solution
+    A in the sequence as indicated. Adjust pH of complete medium to 6.9, if necessary.
 - step_number: 2
   action: MIX
   description: 'Note: For transfers use 5 - 10% (v/v) inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging with 100% N2 gas.
-    Then dissolve the Na-dithionite and filter-sterilize the solution into anoxic Hungate tubes. The final
-    pH of the solution should be between 9 and 10. Store the prepared solution in a dark and cool place.
-    Prepare only small amounts of stock solution, as Na-dithionite decomposes rapidly.
+  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging
+    with 100% N2 gas. Then dissolve the Na-dithionite and filter-sterilize the solution
+    into anoxic Hungate tubes. The final pH of the solution should be between 9 and
+    10. Store the prepared solution in a dark and cool place. Prepare only small amounts
+    of stock solution, as Na-dithionite decomposes rapidly.
 applications:
 - Microbial cultivation
 curation_history:
@@ -308,4 +285,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.402995Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:47.806981Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

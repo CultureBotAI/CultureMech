@@ -129,8 +129,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.2'
+    value: '0.224'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.024]'
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -173,13 +174,6 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -204,8 +198,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After
-    cooling, add the following solutions from anaerobic stocks (autoclaved):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    gas atmosphere. After cooling, add the following solutions from anaerobic stocks
+    (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.8-4.0 with HCl.
@@ -216,3 +211,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1243'
+- timestamp: '2026-03-13T03:08:55.419209Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

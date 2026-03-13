@@ -5,35 +5,11 @@ description: 245. NBRC 244.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar (if needed)20gpH
-    7.6
+- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar
+    (if needed)20gpH 7.6
 - preferred_term: ''
   concentration:
     value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Malt extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Glucose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Seawater
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar (if needed)
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 7.6
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -51,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 244, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=244.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:44.847214Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

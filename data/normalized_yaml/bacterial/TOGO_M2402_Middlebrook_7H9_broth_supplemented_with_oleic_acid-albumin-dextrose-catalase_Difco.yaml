@@ -17,10 +17,10 @@ ingredients:
     label: sn-glycerol 3-phosphate
 - preferred_term: DI Water
   concentration:
-    value: '900'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 900.0, 100.0]'
 - preferred_term: Middlebrook 7H9 broth
   concentration:
     value: '4.7'
@@ -154,12 +154,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: DI Water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: 'Oleic Acid (Sigma Cat # O-1008)'
   concentration:
     value: '0.05'
@@ -189,3 +183,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:17.131415Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

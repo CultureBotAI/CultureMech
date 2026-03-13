@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:836_13498
     label: MEDIUM 836 MODIFIED FOR DSM 13498
-notes: 'Source: KOMODO ModelSEED | ID: 836_13498 | DSMZ Medium: 836 (mediadive.medium:836) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 836_13498 | DSMZ Medium: 836 (mediadive.medium:836)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '0.002'
+    value: '1.502'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.002, 1.5]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -95,13 +96,6 @@ ingredients:
     label: HCl
   concentration:
     value: '2.5'
-    unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -163,4 +157,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 836
+- timestamp: '2026-03-13T03:08:51.394801Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.5

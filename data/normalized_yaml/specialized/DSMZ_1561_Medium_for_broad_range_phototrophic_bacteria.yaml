@@ -55,15 +55,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.5'
+    value: '1.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.05'
+    value: '0.15000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.1]'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -106,13 +108,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -126,13 +121,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -259,12 +247,12 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave at 121°C for 15 min. Before inoculation add 1.0 ml/ l 5% sulfide solution pH
-    7.5 and 1.0 ml/l vitamin solution.
+  description: Autoclave at 121°C for 15 min. Before inoculation add 1.0 ml/ l 5%
+    sulfide solution pH 7.5 and 1.0 ml/l vitamin solution.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:
@@ -276,3 +264,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:45.723496Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

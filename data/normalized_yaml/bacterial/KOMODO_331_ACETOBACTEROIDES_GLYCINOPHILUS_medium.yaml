@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.13'
+    value: '0.23'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.13, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -106,13 +107,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.17'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -230,6 +224,11 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -244,4 +243,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.529373Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:01.699656Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaOH'

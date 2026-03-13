@@ -6,10 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '2950.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1000.0, 950.0, 1000.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -54,15 +54,6 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '29.7'
@@ -83,10 +74,10 @@ ingredients:
     label: calcium chloride dihydrate
 - preferred_term: FeSO4 x 7 H2O
   concentration:
-    value: '99'
+    value: '599.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 99.0, 500.0]'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
@@ -125,24 +116,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: FeSO4 x 7 H2O
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1095'
@@ -226,4 +199,8 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: NaOH; Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-13T03:08:40.013710Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 high_metal: true

@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '105.634'
+    value: '106.634'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 105.634, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.704225'
@@ -99,13 +100,6 @@ ingredients:
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -187,4 +181,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J543'
+- timestamp: '2026-03-13T03:09:22.593745Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

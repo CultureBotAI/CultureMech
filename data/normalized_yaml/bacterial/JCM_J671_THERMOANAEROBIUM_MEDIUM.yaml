@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.878906'
+    value: '1.878906'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.878906, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -152,13 +153,6 @@ ingredients:
   concentration:
     value: '0.026'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3
   term:
     id: CHEBI:48843
@@ -239,16 +233,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.0. Distribute the medium into culture vessels under
-    a N2 atmosphere, seal with butyl rubber stoppers and autoclave. Separately autoclave the following
-    solutions under a N2 atmosphere and add to the medium (per 950 ml):'
+  description: 'Mix ingredients and adjust pH to 7.0. Distribute the medium into culture
+    vessels under a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
+    Separately autoclave the following solutions under a N2 atmosphere and add to
+    the medium (per 950 ml):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 7.2 - 7.4 with sterile NaOH, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH 6.5 with
-    KOH. Then add the remaining salts and adjust volume to 1000 ml.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
+    and adjust pH 6.5 with KOH. Then add the remaining salts and adjust volume to
+    1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -256,3 +252,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J671'
+- timestamp: '2026-03-13T03:09:36.789805Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

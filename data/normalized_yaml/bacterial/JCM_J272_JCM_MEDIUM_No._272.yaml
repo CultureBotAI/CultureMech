@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '9.80392'
+    value: '10.80392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.80392, 1.0]'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -207,13 +208,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -231,18 +225,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2CO3, L-cysteine x HCl x H2O and Na2S x 9H2O. Bring to a boil
-    for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20, v/v) and add Na2CO3. Dispense the medium
-    into suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of
-    H2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight.
-    Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere.
-    Prior to inoculation, aseptically and anaerobically add the L-cysteine x HCl x H2O and Na2S x 9H2O
-    solutions. Check pH of the medium to be around 7.5. Pressurize the inoculated bottles to 200 kPa H2-CO2
-    (80:20, v/v).
+  description: Mix ingredients, except Na2CO3, L-cysteine x HCl x H2O and Na2S x 9H2O.
+    Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20,
+    v/v) and add Na2CO3. Dispense the medium into suitable culture vessels (e.g.,
+    20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20,
+    v/v) and seal with butyl rubber stoppers. After autoclaving, stand the medium
+    overnight. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions,
+    respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically
+    add the L-cysteine x HCl x H2O and Na2S x 9H2O solutions. Check pH of the medium
+    to be around 7.5. Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20,
+    v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
-    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
+    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
+    to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'
@@ -253,3 +250,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J272'
+- timestamp: '2026-03-13T03:08:40.946716Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

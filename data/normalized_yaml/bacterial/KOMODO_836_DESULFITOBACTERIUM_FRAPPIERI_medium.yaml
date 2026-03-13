@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
-notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 836 | DSMZ Medium: 836 (mediadive.medium:836)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 836 | DSMZ Medium: 836
+  (mediadive.medium:836) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 836
   term:
@@ -45,8 +45,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '0.002'
+    value: '1.502'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.002, 1.5]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -97,13 +98,6 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -153,6 +147,11 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogen carbonate
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -164,3 +163,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 836
+- timestamp: '2026-03-13T03:08:39.704970Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaHCO3'

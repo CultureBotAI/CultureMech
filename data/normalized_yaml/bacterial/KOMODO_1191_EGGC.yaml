@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:15377
     label: Demineralized water
   concentration:
-    value: '1000'
+    value: '2120.0'
     unit: G_PER_L
+  notes: ' [Merged 4 duplicates: 1000.0, 1000.0, 20.0, 100.0]'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -88,13 +89,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
-    label: Demineralized water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -108,13 +102,6 @@ ingredients:
     label: NaH2PO4
   concentration:
     value: '15.4'
-    unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
-    label: Demineralized water
-  concentration:
-    value: '20'
     unit: G_PER_L
 - preferred_term: Riboflavin
   term:
@@ -172,13 +159,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
-    label: Demineralized water
-  concentration:
-    value: '100'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,3 +170,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1191
+- timestamp: '2026-03-13T03:09:29.453575Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '121.495'
+    value: '122.495'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 121.495, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -209,13 +210,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -239,4 +233,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:27.421912Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

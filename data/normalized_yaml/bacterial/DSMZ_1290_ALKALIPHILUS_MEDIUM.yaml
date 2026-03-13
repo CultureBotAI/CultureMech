@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '78.9474'
+    value: '79.9474'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 78.9474, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '9.26316'
+    value: '12.26316'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.26316, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -68,26 +70,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -236,16 +224,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, adjust pH to 8.0 with 1 N NaOH and boil medium for
-    1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense solution A under same
-    gas atmosphere in anoxic culture vessels (e.g., Hungate-type tubes) and autoclave. Prior to inoculation
-    complete the medium by adding appropriate amounts of solutions B, C and D prepared under 100% N2 gas
-    and sterilized by filtration. Adjust pH of the completed medium to 8.0 with a sterile anoxic solution
-    of 0.1 N HCl or 0.1 N NaOH, if necessary.
+  description: Dissolve ingredients of solution A, adjust pH to 8.0 with 1 N NaOH
+    and boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Dispense solution A under same gas atmosphere in anoxic culture vessels (e.g.,
+    Hungate-type tubes) and autoclave. Prior to inoculation complete the medium by
+    adding appropriate amounts of solutions B, C and D prepared under 100% N2 gas
+    and sterilized by filtration. Adjust pH of the completed medium to 8.0 with a
+    sterile anoxic solution of 0.1 N HCl or 0.1 N NaOH, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -256,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.390116Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:15.468129Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

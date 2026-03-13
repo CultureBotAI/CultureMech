@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.105263'
+    value: '3.440263'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.105263, 3.335]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -127,13 +128,6 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.335'
-    unit: G_PER_L
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -143,8 +137,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -158,13 +153,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -218,8 +206,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 9
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -227,3 +215,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1440'
+- timestamp: '2026-03-13T03:09:13.522144Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

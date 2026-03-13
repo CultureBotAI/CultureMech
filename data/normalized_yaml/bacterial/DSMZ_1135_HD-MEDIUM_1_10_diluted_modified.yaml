@@ -38,28 +38,15 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '2000.0'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
     value: '15'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '500'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -79,3 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1135'
+- timestamp: '2026-03-13T03:08:38.431634Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

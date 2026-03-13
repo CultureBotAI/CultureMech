@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:690
     label: DMA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 690 | DSMZ Medium: 690 (mediadive.medium:690) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 690 | DSMZ Medium: 690 (mediadive.medium:690)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -36,8 +37,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.000988142'
+    value: '0.100988142'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000988142, 0.1]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000494071'
@@ -47,8 +49,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.247036'
+    value: '3.247036'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.247036, 3.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -77,13 +80,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -97,13 +93,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -256,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.361550Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:35.382031Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

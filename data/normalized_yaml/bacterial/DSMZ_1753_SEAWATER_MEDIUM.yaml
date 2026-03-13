@@ -13,12 +13,14 @@ notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_
 ingredients:
 - preferred_term: Bacto peptone
   concentration:
-    value: '2.5'
+    value: '5.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5, 2.5]'
 - preferred_term: Yeast extract
   concentration:
-    value: '0.5'
+    value: '1.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.5]'
 - preferred_term: Fe(III) citrate
   term:
     id: CHEBI:144421
@@ -117,14 +119,6 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
-- preferred_term: Bacto peptone
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Sea water
   concentration:
     value: '1000'
@@ -146,3 +140,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1753'
+- timestamp: '2026-03-13T03:09:36.998265Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

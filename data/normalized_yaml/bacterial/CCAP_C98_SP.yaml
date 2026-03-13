@@ -71,15 +71,17 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.02'
+    value: '0.72'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.7]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
     label: Na2-EDTA
   concentration:
-    value: '0.16'
+    value: '0.9600000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.16, 0.8]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -121,20 +123,6 @@ ingredients:
     label: CuSO4 x 5 H2O
   concentration:
     value: 5e-05
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '0.8'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -192,12 +180,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "This medium is made up in 2 parts to reduce precipitation when autoclaving. For\r\neach\
-    \ part add the components to around 900 mls deionised water and then top up\r\nto 1 litre with deionised\
-    \ water."
+  description: "This medium is made up in 2 parts to reduce precipitation when autoclaving.\
+    \ For\r\neach part add the components to around 900 mls deionised water and then\
+    \ top up\r\nto 1 litre with deionised water."
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave parts 1 and 2 separately at 15 psi, allow to cool then mix 1:1 aseptically.
+  description: Autoclave parts 1 and 2 separately at 15 psi, allow to cool then mix
+    1:1 aseptically.
 - step_number: 3
   action: HEAT
   description: May be stored frozen at -20 °C.
@@ -211,3 +200,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C98'
+- timestamp: '2026-03-13T03:09:30.197016Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

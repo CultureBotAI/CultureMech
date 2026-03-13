@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-8.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 778.2 | DSMZ Medium: 778 (mediadive.medium:778)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 778.2 | DSMZ Medium: 778
+  (mediadive.medium:778) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 778.2
   term:
@@ -49,8 +49,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.000199402'
+    value: '0.024199402000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000199402, 0.024]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.997009'
@@ -117,13 +118,6 @@ ingredients:
     label: CuCl2 x 2 H2O
   concentration:
     value: '0.002'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -234,5 +228,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.881255Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:16.278799Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.2

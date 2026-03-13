@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '4.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -78,10 +78,10 @@ ingredients:
     label: sodium hydrogencarbonate
 - preferred_term: Ammonium acetate
   concentration:
-    value: '0.5'
+    value: '25.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.5, 25.0]'
   term:
     id: CHEBI:62947
     label: ammonium acetate
@@ -100,15 +100,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.03'
@@ -166,15 +157,6 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Fructose
   concentration:
     value: '25'
@@ -184,15 +166,6 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
-- preferred_term: Ammonium acetate
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:62947
-    label: ammonium acetate
 - preferred_term: Magnesium acetate
   concentration:
     value: '25'
@@ -207,15 +180,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2S·9H2O
   concentration:
     value: '15'
@@ -265,6 +229,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:52.105079Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 solutions:
 - preferred_term: Vitamin B12 solution (0.001%)
   composition: []

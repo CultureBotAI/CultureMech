@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '14.6771'
+    value: '15.6771'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.6771, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00195695'
+    value: '0.03195695'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00195695, 0.03]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.489237'
@@ -95,13 +97,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -159,13 +154,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -183,15 +171,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, methanol and sulfide, then sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate and adjust pH to 9.0 - 9.2, then
-    dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Prior to inoculation add methanol (50% v/v solution) and sulfide from anoxic stock solutions autoclaved
+  description: Dissolve ingredients except carbonate, methanol and sulfide, then sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate
+    and adjust pH to 9.0 - 9.2, then dispense medium under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Prior to inoculation
+    add methanol (50% v/v solution) and sulfide from anoxic stock solutions autoclaved
     under 100% N2 gas. Adjust pH of complete medium to 9.2 - 9.4.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,3 +188,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 692'
+- timestamp: '2026-03-13T03:08:39.777167Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

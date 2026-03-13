@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.40909'
+    value: '6.40909'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.40909, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.13834'
+    value: '0.23834'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.13834, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,8 +60,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '17.7866'
+    value: '18.7866'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 17.7866, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.494071'
@@ -103,26 +106,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -137,13 +126,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -204,18 +186,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate and sulfide, then sparge medium with 80% H2 and
-    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add bicarbonate and adjust pH to 6.9, then
-    dispense medium under 80% H2 and 20% CO2 gas atmosphere into serum vials (e.g., 20 ml per 100 ml bottle),
-    seal and autoclave. Before use reduce the medium with sodium sulfide from a sterile anoxic stock solution
-    prepared under 100% N2 gas.
+  description: Dissolve ingredients except bicarbonate and sulfide, then sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add bicarbonate
+    and adjust pH to 6.9, then dispense medium under 80% H2 and 20% CO2 gas atmosphere
+    into serum vials (e.g., 20 ml per 100 ml bottle), seal and autoclave. Before use
+    reduce the medium with sodium sulfide from a sterile anoxic stock solution prepared
+    under 100% N2 gas.
 - step_number: 2
   action: MIX
-  description: After inoculation, add 2 bar overpressure of sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation, add 2 bar overpressure of sterile 80% H2 and 20%
+    CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -227,3 +211,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:57.822496Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

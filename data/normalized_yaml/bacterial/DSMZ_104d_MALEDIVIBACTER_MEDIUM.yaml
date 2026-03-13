@@ -28,15 +28,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '60'
+    value: '62.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 60.0, 2.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '5'
+    value: '5.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 0.5]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -62,13 +64,6 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -90,21 +85,15 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except betaine and cysteine), boil medium for 1 min, then cool to
-    room temperature under 100% N2 gas atmosphere. Adjust the pH to 7.2. Thereafter, dispense under 100%
-    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add betaine and cysteine
-    from sterile, anoxic stock solutions prepared under 100% N2. Adjust the pH of the complete medium
-    to 7.3 - 7.5.
+  description: Dissolve ingredients (except betaine and cysteine), boil medium for
+    1 min, then cool to room temperature under 100% N2 gas atmosphere. Adjust the
+    pH to 7.2. Thereafter, dispense under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add betaine and cysteine from sterile, anoxic
+    stock solutions prepared under 100% N2. Adjust the pH of the complete medium to
+    7.3 - 7.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +101,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 104d'
+- timestamp: '2026-03-13T03:08:38.347984Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 203.1 | DSMZ Medium: 203 (mediadive.medium:203)
-  | Aerobic: Yes'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 203.1 | DSMZ Medium: 203
+  (mediadive.medium:203) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 203.1
   term:
@@ -17,15 +17,17 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00099108'
+    value: '0.030991079999999997'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00099108, 0.03]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00198216'
+    value: '0.10198216'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00198216, 0.1]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -92,35 +94,31 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '12'
+    value: '13.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 12.0, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '2.4'
+    value: '5.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.4, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.6'
+    value: '1.7000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.6, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -129,33 +127,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -191,13 +168,6 @@ ingredients:
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -280,6 +250,11 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -294,4 +269,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.812896Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:30.330463Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 5 duplicate ingredient(s); Added pH buffer: H2SO4'

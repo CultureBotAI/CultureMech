@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.4-7.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 479.1 | DSMZ Medium: 479 (mediadive.medium:479)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 479.1 | DSMZ Medium: 479
+  (mediadive.medium:479) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 479.1
   term:
@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '86.1386'
+    value: '87.1386'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 86.1386, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -38,8 +39,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.39604'
+    value: '0.49604000000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.39604, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -115,13 +117,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -135,13 +130,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -199,6 +187,11 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -210,3 +203,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 479
+- timestamp: '2026-03-13T03:08:44.056417Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: NaOH'

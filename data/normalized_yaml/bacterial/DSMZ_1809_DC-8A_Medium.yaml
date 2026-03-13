@@ -34,8 +34,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.01'
+    value: '37.51'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 37.5]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -71,13 +72,6 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '37.5'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -88,10 +82,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 9.0. Distribute the medium into culture vessels
-    (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2, seal with butyl rubber stoppers, and
-    autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 9.0. Distribute the medium
+    into culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with
+    N2, seal with butyl rubber stoppers, and autoclave. After cooling, aseptically
+    and anaerobically add per 900 ml the following solution (autoclaved under a N2
+    atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,3 +94,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1809'
+- timestamp: '2026-03-13T03:09:45.131203Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

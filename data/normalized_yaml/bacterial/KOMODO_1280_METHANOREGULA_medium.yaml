@@ -53,15 +53,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '18'
+    value: '18.109432'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.109432'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 18.0, 0.109432]'
 - preferred_term: Nitrilotriacetate
   term:
     id: CHEBI:25548
@@ -249,4 +243,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.809227Z'
   curator: invalid-chebi-removal
   action: Removed 2 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:42.003295Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

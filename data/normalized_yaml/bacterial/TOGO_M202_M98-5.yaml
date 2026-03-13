@@ -11,10 +11,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
-    value: '430'
+    value: '530.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    Inorganic compound [Merged 2 duplicates: 430.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -74,15 +74,6 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.25'
@@ -156,6 +147,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:43.079845Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 solutions:
 - preferred_term: 0.05% Resazurin solution
   composition: []

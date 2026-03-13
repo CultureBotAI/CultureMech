@@ -11,34 +11,6 @@ ingredients:
   concentration:
     value: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
     unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Glucose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: L-Leucine
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: L-Histidine
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: L-Tryptophan
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: L-Methionine
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -55,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 114, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=114.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:32.448360Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)

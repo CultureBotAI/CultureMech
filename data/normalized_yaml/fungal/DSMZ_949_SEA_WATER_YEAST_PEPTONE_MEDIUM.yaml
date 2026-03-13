@@ -17,17 +17,15 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Peptone
   concentration:
-    value: '5'
+    value: '15.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 10.0]'
 - preferred_term: Sea water
   concentration:
-    value: '750'
+    value: '1500.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 750.0, 750.0]'
 - preferred_term: Beef extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
@@ -44,10 +42,6 @@ ingredients:
     label: Tap water
   concentration:
     value: '250'
-    unit: G_PER_L
-- preferred_term: Sea water
-  concentration:
-    value: '750'
     unit: G_PER_L
 - preferred_term: NaCl
   term:
@@ -113,3 +107,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 949'
+- timestamp: '2026-03-13T03:09:46.437432Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

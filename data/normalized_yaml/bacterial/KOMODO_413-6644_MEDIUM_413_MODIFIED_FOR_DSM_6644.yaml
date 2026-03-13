@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:413_6644
     label: MEDIUM 413 MODIFIED FOR DSM 6644
-notes: 'Source: KOMODO ModelSEED | ID: 413_6644 | DSMZ Medium: 413 (mediadive.medium:413) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 413_6644 | DSMZ Medium: 413 (mediadive.medium:413)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na-formiate
   term:
@@ -33,8 +34,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '25'
+    value: '26.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
 - preferred_term: Casitone
   concentration:
     value: '29.2683'
@@ -79,13 +81,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
@@ -95,21 +90,15 @@ ingredients:
     id: CHEBI:16236
     label: Ethanol
   concentration:
-    value: '9.5'
+    value: '959.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.5, 950.0]'
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
     label: Vitamin K1
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Ethanol
-  term:
-    id: CHEBI:16236
-    label: Ethanol
-  concentration:
-    value: '950'
     unit: G_PER_L
 applications:
 - Microbial cultivation
@@ -122,4 +111,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 413
+- timestamp: '2026-03-13T03:08:54.638808Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 ph_value: 7.0

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1133
     label: ENRICHED CYTOPHAGA AGAR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1133 | DSMZ Medium: 1133 (mediadive.medium:1133) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1133 | DSMZ Medium: 1133 (mediadive.medium:1133)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -35,16 +36,9 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '19.0'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' [Merged 2 duplicates: 15.0, 4.0]'
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +50,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1133
+- timestamp: '2026-03-13T03:08:42.752134Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -23,15 +23,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0731949'
+    value: '0.17319489999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0731949, 0.1]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.276954'
+    value: '3.276954'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.276954, 3.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -86,13 +88,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -120,13 +115,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -187,16 +175,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferric chloride, cysteine, starch and sulfide), sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Add ferric chloride and solid cysteine, then adjust
-    pH to 6.3. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to inoculation add starch and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
-    necessary.
+  description: Dissolve ingredients (except ferric chloride, cysteine, starch and
+    sulfide), sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
+    ferric chloride and solid cysteine, then adjust pH to 6.3. Dispense medium under
+    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g., 20
+    ml medium in 50 ml bottles) and autoclave. Prior to inoculation add starch and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust
+    pH of complete medium to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +193,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1043'
+- timestamp: '2026-03-13T03:09:24.891594Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

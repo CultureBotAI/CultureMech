@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1245_18691
     label: MEDIUM 1245 MODIFIED FOR DSM 18691
-notes: 'Source: KOMODO ModelSEED | ID: 1245_18691 | DSMZ Medium: 1245 (mediadive.medium:1245) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1245_18691 | DSMZ Medium: 1245 (mediadive.medium:1245)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Proteose peptone no. 2
   concentration:
@@ -139,15 +139,9 @@ ingredients:
     id: CHEBI:17306
     label: Maltose
   concentration:
-    value: '8'
+    value: '16.0'
     unit: G_PER_L
-- preferred_term: Maltose
-  term:
-    id: CHEBI:17306
-    label: Maltose
-  concentration:
-    value: '8'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 8.0]'
 - preferred_term: Ribose
   term:
     id: CHEBI:33942
@@ -201,3 +195,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1245
+- timestamp: '2026-03-13T03:08:46.517884Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

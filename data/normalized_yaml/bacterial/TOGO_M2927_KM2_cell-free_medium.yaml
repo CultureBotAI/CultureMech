@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '365'
+    value: '369.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 5 duplicates: 365.0, 1.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -46,15 +46,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '2'
@@ -100,15 +91,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '1.2'
@@ -138,29 +120,11 @@ ingredients:
   term:
     id: CHEBI:31991
     label: Phenol red
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: azlocillin
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: flucloxacillin
   concentration:
     value: '100'
@@ -191,6 +155,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:37.355561Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: Fresh baker's yeast extract solution

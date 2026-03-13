@@ -66,8 +66,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '2.71003'
+    value: '16.71003'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.71003, 14.0]'
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.451671'
@@ -77,8 +78,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.903342'
+    value: '56.303342'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.903342, 55.4]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -98,8 +100,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0903342'
+    value: '1.5903342'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0903342, 1.5]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -126,8 +129,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.00903342'
+    value: '0.06903342'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00903342, 0.06]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -156,20 +160,6 @@ ingredients:
   concentration:
     value: '0.00903342'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '55.4'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '14'
-    unit: G_PER_L
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -191,13 +181,6 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -211,13 +194,6 @@ ingredients:
     label: KI
   concentration:
     value: '0.0001'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1.5'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -292,12 +268,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components thoroughly, boil for a few seconds and cool down under a stream of a N2-CO2(4:1,
-    v/v) gas mixture. After cooling, add the following components and adjust pH to 7.0:'
+  description: 'Mix components thoroughly, boil for a few seconds and cool down under
+    a stream of a N2-CO2(4:1, v/v) gas mixture. After cooling, add the following components
+    and adjust pH to 7.0:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into culture vessels anaerobically under the same gas mixture, seal
-    with butyl rubber stoppers and autoclave.
+  description: Dispense the medium into culture vessels anaerobically under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 3
   action: MIX
   description: '<I>Modified Wolfe''s minerals (10 x): </I>'
@@ -311,3 +288,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J971'
+- timestamp: '2026-03-13T03:08:55.810255Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

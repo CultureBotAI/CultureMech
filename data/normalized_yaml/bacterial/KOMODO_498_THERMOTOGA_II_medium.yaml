@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:498
     label: THERMOTOGA II medium
-notes: 'Source: KOMODO ModelSEED | ID: 498 | DSMZ Medium: 498 (mediadive.medium:498) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 498 | DSMZ Medium: 498 (mediadive.medium:498)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -20,8 +21,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3.37891'
+    value: '4.378909999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.37891, 1.0]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -34,8 +36,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.859375'
+    value: '3.859375'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.859375, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -48,8 +51,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.136719'
+    value: '0.236719'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.136719, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -69,8 +73,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.00390625'
+    value: '0.01390625'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00390625, 0.01]'
 - preferred_term: (NH4)2Ni(SO4)2
   term:
     id: CHEBI:86149
@@ -124,26 +129,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -158,13 +149,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -186,13 +170,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -233,3 +210,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 498
+- timestamp: '2026-03-13T03:09:38.621436Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

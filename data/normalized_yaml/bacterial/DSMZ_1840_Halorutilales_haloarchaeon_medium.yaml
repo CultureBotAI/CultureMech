@@ -167,8 +167,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '100'
+    value: '100.04'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 0.04]'
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -186,13 +187,6 @@ ingredients:
 - preferred_term: B12
   concentration:
     value: '0.005'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.04'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -252,4 +246,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:08:37.993426Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

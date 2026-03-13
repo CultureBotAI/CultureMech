@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '19.6078'
+    value: '20.6078'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 19.6078, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.196078'
+    value: '3.196078'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.196078, 3.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -61,23 +63,9 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   notes: ' ( trisodium salt)'
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -91,8 +79,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '30.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 30.4]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -226,13 +215,6 @@ ingredients:
   concentration:
     value: '212'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '30.4'
-    unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -250,10 +232,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix ingredients except NaHCO3, adjust pH to 6.8 and add NaHCO3 to the medium. Dispense
-    the medium (9 ml) into 26-ml anaerobic pressure tubes under a stream of oxygen-free N2-CO2 (80:20)
-    and seal. After autoclaving, aseptically and anaerobically add 0.2 ml APM salts solution and 0.1 ml
-    Sulfide stock solution and 0.1 ml Galactose stock solution.
+  description: Mix ingredients except NaHCO3, adjust pH to 6.8 and add NaHCO3 to the
+    medium. Dispense the medium (9 ml) into 26-ml anaerobic pressure tubes under a
+    stream of oxygen-free N2-CO2 (80:20) and seal. After autoclaving, aseptically
+    and anaerobically add 0.2 ml APM salts solution and 0.1 ml Sulfide stock solution
+    and 0.1 ml Galactose stock solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,3 +244,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J512'
+- timestamp: '2026-03-13T03:08:59.008390Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

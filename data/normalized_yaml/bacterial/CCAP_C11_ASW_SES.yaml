@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '1'
+    value: '21.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 20.0]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -91,13 +92,6 @@ ingredients:
     label: Thymine
   concentration:
     value: '0.6'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '20'
     unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -172,3 +166,7 @@ curation_history:
   date: '2026-02-03T11:20:16.887952'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T03:09:06.132164Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

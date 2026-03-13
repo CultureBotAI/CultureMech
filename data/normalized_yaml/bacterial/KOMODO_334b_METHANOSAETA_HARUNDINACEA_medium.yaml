@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:334b
     label: METHANOSAETA HARUNDINACEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 334b | DSMZ Medium: 334b (mediadive.medium:334b) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 334b | DSMZ Medium: 334b (mediadive.medium:334b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -55,15 +56,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '11'
+    value: '11.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 11.0, 0.1]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -87,18 +90,12 @@ ingredients:
     id: CHEBI:17790
     label: Methanol
   concentration:
-    value: '792'
+    value: '1584.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 792.0, 792.0]'
 - preferred_term: L-α-Phosphatidylcholine
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: Methanol
-  term:
-    id: CHEBI:17790
-    label: Methanol
-  concentration:
-    value: '792'
     unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
@@ -135,13 +132,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -176,13 +166,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.12'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -272,5 +255,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.731858Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:52.904293Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 ph_value: 7.2

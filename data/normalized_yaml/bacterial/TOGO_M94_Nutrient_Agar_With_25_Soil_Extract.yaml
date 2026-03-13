@@ -6,9 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tap water
   concentration:
-    value: '750'
+    value: '751.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
+  notes: 'Role: Solvating media; Properties: Undefined component [Merged 2 duplicates:
+    750.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Tap water
@@ -33,14 +34,6 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
-- preferred_term: Tap water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
-  term:
-    id: CHEBI:15377
-    label: Tap water
 - preferred_term: air-dried garden soil
   concentration:
     value: '400'
@@ -67,3 +60,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:43.726638Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

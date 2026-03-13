@@ -28,8 +28,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '7.79727'
+    value: '9.797270000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.79727, 2.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -93,23 +94,16 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing,
-    add the following solutions and adjust pH to 7.0:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
+    of N2. While gassing, add the following solutions and adjust pH to 7.0:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2,
-    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Balch type
+    tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -117,3 +111,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1242'
+- timestamp: '2026-03-13T03:09:16.231698Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

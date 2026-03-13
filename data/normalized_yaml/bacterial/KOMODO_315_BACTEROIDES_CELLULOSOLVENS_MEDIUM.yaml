@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:315
     label: BACTEROIDES CELLULOSOLVENS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 315 | DSMZ Medium: 315 (mediadive.medium:315) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 315 | DSMZ Medium: 315 (mediadive.medium:315)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -44,22 +45,25 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.12'
+    value: '3.12'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.12, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.06'
+    value: '0.16'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 0.1]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.02'
+    value: '0.12000000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.1]'
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -102,13 +106,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -123,26 +120,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -274,3 +257,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 315
+- timestamp: '2026-03-13T03:09:18.306658Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

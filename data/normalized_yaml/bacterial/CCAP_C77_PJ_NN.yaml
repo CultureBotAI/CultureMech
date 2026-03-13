@@ -22,8 +22,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '1.8'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 0.8]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -52,13 +53,6 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -86,11 +80,13 @@ preparation_steps:
   description: Biphasic.  See separate recipes below.
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 - step_number: 3
   action: HEAT
-  description: "Thoroughly disperse the agar in cold amoeba saline solution and then slowly bring \r\n\
-    to the boil.  Transfer the molten agar to suitable vessels and sterilize at 15 psi for \r\n15 minutes."
+  description: "Thoroughly disperse the agar in cold amoeba saline solution and then\
+    \ slowly bring \r\nto the boil.  Transfer the molten agar to suitable vessels\
+    \ and sterilize at 15 psi for \r\n15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,3 +94,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C77'
+- timestamp: '2026-03-13T03:08:59.236044Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

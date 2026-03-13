@@ -16,141 +16,84 @@ ingredients:
     id: CHEBI:16015
     label: L-Glutamic acid
   concentration:
-    value: '2'
+    value: '4.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
-    value: '2'
+    value: '4.0'
     unit: G_PER_L
   term:
     id: CHEBI:53258
     label: sodium citrate
+  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: K2SO4
   term:
     id: CHEBI:32036
     label: K2SO4
   concentration:
-    value: '5'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
 - preferred_term: MgCl2 x 7 H2O
   concentration:
-    value: '40'
+    value: '80.0'
     unit: G_PER_L
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  notes: ' [Merged 2 duplicates: 40.0, 40.0]'
 - preferred_term: Casamino acids
   concentration:
-    value: '4'
+    value: '8.0'
     unit: G_PER_L
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  notes: ' [Merged 2 duplicates: 4.0, 4.0]'
 - preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '4.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 2.0]'
 - preferred_term: FeSO4
   term:
     id: CHEBI:75832
     label: FeSO4
   concentration:
-    value: '0.004'
+    value: '0.008'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.004, 0.004]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '200'
+    value: '400.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 200.0, 200.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
     value: '40'
-    unit: G_PER_L
-- preferred_term: L-Glutamic acid
-  term:
-    id: CHEBI:16015
-    label: L-Glutamic acid
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: Trisodium citrate x 2 H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: K2SO4
-  term:
-    id: CHEBI:32036
-    label: K2SO4
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 7 H2O
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '200'
-    unit: G_PER_L
-- preferred_term: Casamino acids
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
-- preferred_term: Yeast extract
-  concentration:
-    value: '2'
-    unit: G_PER_L
-- preferred_term: FeSO4
-  term:
-    id: CHEBI:75832
-    label: FeSO4
-  concentration:
-    value: '0.004'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -251,4 +194,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:05.875779Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 10 duplicate ingredient(s)
 high_metal: true

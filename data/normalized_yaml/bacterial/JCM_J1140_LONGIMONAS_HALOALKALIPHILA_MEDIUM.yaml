@@ -23,15 +23,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '120000'
+    value: '122285.71'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 120000.0, 2285.71]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '1250'
+    value: '1535.714'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1250.0, 285.714]'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:6636
     label: MgCl2
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -60,33 +63,12 @@ ingredients:
   concentration:
     value: '4285.71'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2285.71'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '285.714'
-    unit: G_PER_L
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
     value: '4'
-    unit: G_PER_L
-- preferred_term: MgCl2
-  term:
-    id: CHEBI:6636
-    label: MgCl2
-  concentration:
-    value: '1'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -110,4 +92,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1140'
+- timestamp: '2026-03-13T03:09:35.917671Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 high_metal: true

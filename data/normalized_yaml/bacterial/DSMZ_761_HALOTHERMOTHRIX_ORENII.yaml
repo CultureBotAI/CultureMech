@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.2'
+    value: '0.30000000000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -79,8 +80,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '100'
+    value: '101.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 1.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -109,13 +111,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -129,13 +124,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -189,14 +177,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium and boil, cool under N2:CO2 (80:20 v/v). Dispense medium into Hungate
-    tubes or serum bottles under N2:CO2 (80:20 v/v), autoclave. To the sterile medium add from sterile
-    stock solutions 2% Na2S x 9 H2O (0.1ml/10ml), 10% NaHCO3 (0.5ml/10ml), and 0.2% sodium dithionite
-    (0.05ml/10ml). Final pH 7.0
+  description: Prepare the medium and boil, cool under N2:CO2 (80:20 v/v). Dispense
+    medium into Hungate tubes or serum bottles under N2:CO2 (80:20 v/v), autoclave.
+    To the sterile medium add from sterile stock solutions 2% Na2S x 9 H2O (0.1ml/10ml),
+    10% NaHCO3 (0.5ml/10ml), and 0.2% sodium dithionite (0.05ml/10ml). Final pH 7.0
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -208,3 +196,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:31.246631Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

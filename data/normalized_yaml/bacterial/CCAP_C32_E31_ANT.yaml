@@ -12,15 +12,17 @@ notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_E31_AN
 ingredients:
 - preferred_term: Natural sea water
   concentration:
-    value: '500'
+    value: '1300.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 500.0, 800.0]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
     label: KNO3
   concentration:
-    value: '0.2'
+    value: '0.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.05]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -37,33 +39,29 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Cyanocobalamine
   concentration:
-    value: '0.1'
+    value: '2.1'
     unit: MICROG_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 2.0]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
   concentration:
-    value: '50'
+    value: '550.0'
     unit: MICROG_PER_L
+  notes: ' [Merged 2 duplicates: 50.0, 500.0]'
 - preferred_term: Biotine
   term:
     id: CHEBI:15956
     label: Biotine
   concentration:
-    value: '0.1'
+    value: '1.1'
     unit: MICROG_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 1.0]'
 - preferred_term: Soil
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: KNO3
-  term:
-    id: CHEBI:58242
-    label: KNO3
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: NaH2PO4 x 2 H2O
   term:
     id: CHEBI:37585
@@ -84,28 +82,6 @@ ingredients:
     label: Glycine
   concentration:
     value: '0.3'
-    unit: G_PER_L
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '500'
-    unit: MICROG_PER_L
-- preferred_term: Cyanocobalamine
-  concentration:
-    value: '2'
-    unit: MICROG_PER_L
-- preferred_term: Biotine
-  term:
-    id: CHEBI:15956
-    label: Biotine
-  concentration:
-    value: '1'
-    unit: MICROG_PER_L
-- preferred_term: Natural sea water
-  concentration:
-    value: '800'
     unit: G_PER_L
 - preferred_term: Na2-EDTA x 2 H2O
   term:
@@ -218,3 +194,7 @@ curation_history:
   date: '2026-02-03T11:20:17.005270'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T03:09:23.824882Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

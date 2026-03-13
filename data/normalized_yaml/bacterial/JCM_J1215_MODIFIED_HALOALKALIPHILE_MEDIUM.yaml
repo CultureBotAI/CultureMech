@@ -61,21 +61,15 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '100'
+    value: '200.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 100.0]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
     label: Na2CO3
   concentration:
     value: '80'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '100'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -101,4 +95,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:52.954982Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

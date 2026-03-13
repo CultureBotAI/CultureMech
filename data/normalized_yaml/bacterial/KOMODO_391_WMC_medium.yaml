@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:391
     label: WMC medium
-notes: 'Source: KOMODO ModelSEED | ID: 391 | DSMZ Medium: 391 (mediadive.medium:391) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 391 | DSMZ Medium: 391 (mediadive.medium:391)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na-acetate
   term:
@@ -48,8 +49,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '40'
+    value: '41.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 40.0, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -62,8 +64,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.7'
+    value: '3.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.7, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -90,8 +93,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.28'
+    value: '0.38'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.28, 0.1]'
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -138,26 +142,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -172,13 +162,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -247,3 +230,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 391
+- timestamp: '2026-03-13T03:09:22.146563Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

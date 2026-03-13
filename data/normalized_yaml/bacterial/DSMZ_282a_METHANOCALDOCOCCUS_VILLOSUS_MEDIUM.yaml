@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.13834'
+    value: '0.23834'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.13834, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -37,8 +38,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.35968'
+    value: '6.35968'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.35968, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -58,15 +60,17 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.000494071'
+    value: '0.030494070999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000494071, 0.03]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '17.7866'
+    value: '18.7866'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 17.7866, 1.0]'
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00988142'
@@ -106,26 +110,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -140,13 +130,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -182,13 +165,6 @@ ingredients:
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -274,19 +250,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, vitamins, cysteine and sulfide. Sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate,
-    then dispense medium into anoxic tubes to 30% of their volume under  80%  H2 and 20% CO2 gas atmosphere
-    and autoclave. Add vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas. Prior to use check pH of complete medium and adjust to 6.0,
-    if necessary.
+  description: Dissolve ingredients except bicarbonate, vitamins, cysteine and sulfide.
+    Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve bicarbonate, then dispense medium into anoxic tubes to 30% of
+    their volume under  80%  H2 and 20% CO2 gas atmosphere and autoclave. Add vitamins
+    (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. Prior to use check pH of complete medium and adjust
+    to 6.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar
+    overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -301,4 +279,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.490340Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:46.351574Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

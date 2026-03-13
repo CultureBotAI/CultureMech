@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1236
     label: SPOROLITUUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1236 | DSMZ Medium: 1236 (mediadive.medium:1236) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1236 | DSMZ Medium: 1236 (mediadive.medium:1236)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.886699'
+    value: '1.8866990000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.886699, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -93,20 +95,14 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.1'
+    value: '1.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 1.0]'
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
@@ -244,13 +240,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -272,4 +261,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.836080Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:03.723986Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '27.7'
+    value: '48.15'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 27.7, 1.0, 19.45]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -37,8 +39,9 @@ ingredients:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '0.65'
+    value: '1.2000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.65, 0.55]'
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -51,8 +54,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.03'
+    value: '0.062'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.03, 0.01, 0.022]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -79,8 +83,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '2.25'
+    value: '2.35'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.25, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -88,26 +93,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -122,13 +113,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -150,13 +134,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -201,13 +178,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '19.45'
-    unit: G_PER_L
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -229,13 +199,6 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -256,13 +219,6 @@ ingredients:
     label: SrCl2
   concentration:
     value: '0.034'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.022'
     unit: G_PER_L
 - preferred_term: Na-silicate
   term:
@@ -295,24 +251,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix ingredients and adjust pH of the final solution to 7.5 - 8.0. Sterilize by autoclaving
-    at 121°C for 20 min. Grow prey bacterium (DSM 15416) on agar plates using medium 514. For 50 ml prey
-    medium suspension use one agar plate incubated for 24 hours and wash off grown cells in 3 - 5 ml medium.
-    The prey medium suspension should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells. Inoculate
-    the complete medium immediately after preparation and incubate the suspension with shaking until a
-    decrease in turbidity is visible.
+  description: Mix ingredients and adjust pH of the final solution to 7.5 - 8.0. Sterilize
+    by autoclaving at 121°C for 20 min. Grow prey bacterium (DSM 15416) on agar plates
+    using medium 514. For 50 ml prey medium suspension use one agar plate incubated
+    for 24 hours and wash off grown cells in 3 - 5 ml medium. The prey medium suspension
+    should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells. Inoculate the complete
+    medium immediately after preparation and incubate the suspension with shaking
+    until a decrease in turbidity is visible.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
-    g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
+    from Difco add 37.40 g to 1 litre water.
 - step_number: 4
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
-    they refer to Difco2216) have not been tested and might not support growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
+    brands (even if they refer to Difco2216) have not been tested and might not support
+    growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -320,3 +278,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1013'
+- timestamp: '2026-03-13T03:09:27.125822Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)

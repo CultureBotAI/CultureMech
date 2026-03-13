@@ -1,5 +1,6 @@
 name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
-original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
+original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and
+  DSM17508
 category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
@@ -9,7 +10,8 @@ media_term:
   term:
     id: komodo.medium:141.2
     label: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
-notes: 'Source: KOMODO ModelSEED | ID: 141.2 | DSMZ Medium: 141 (mediadive.medium:141) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 141.2 | DSMZ Medium: 141 (mediadive.medium:141)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -30,8 +32,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.40573'
+    value: '6.40573'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.40573, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +47,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.138203'
+    value: '0.238203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.138203, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,8 +62,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '17.769'
+    value: '18.769'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 17.769, 1.0]'
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00197433'
@@ -114,26 +119,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -148,13 +139,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -293,4 +277,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.610501Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:31.329259Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

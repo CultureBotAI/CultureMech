@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
-notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1072 | DSMZ Medium: 1072 (mediadive.medium:1072)
-  | Aerobic: No'
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1072 | DSMZ Medium: 1072
+  (mediadive.medium:1072) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1072
   term:
@@ -114,6 +114,11 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogen carbonate
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -125,3 +130,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1072
+- timestamp: '2026-03-13T03:09:42.191493Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaHCO3'

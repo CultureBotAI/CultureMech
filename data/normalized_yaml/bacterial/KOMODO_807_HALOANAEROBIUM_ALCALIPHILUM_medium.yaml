@@ -9,22 +9,25 @@ media_term:
   term:
     id: komodo.medium:807
     label: HALOANAEROBIUM ALCALIPHILUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 807 | DSMZ Medium: 807 (mediadive.medium:807) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 807 | DSMZ Medium: 807 (mediadive.medium:807)
+  | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '17'
+    value: '19.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 17.0, 2.6]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '100'
+    value: '112.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 12.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -76,8 +79,9 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '6'
+    value: '6.28'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 6.0, 0.28]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -92,20 +96,6 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '12'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '2.6'
-    unit: G_PER_L
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -117,13 +107,6 @@ ingredients:
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.28'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
   concentration:
     value: '0.28'
     unit: G_PER_L
@@ -201,3 +184,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 807
+- timestamp: '2026-03-13T03:09:32.730498Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

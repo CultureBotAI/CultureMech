@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.7'
+    value: '3.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.7, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -65,8 +67,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -88,26 +91,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -122,13 +111,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -185,19 +167,20 @@ preparation_steps:
   description: Adjust pH to 7.0 using H2SO4.
 - step_number: 2
   action: HEAT
-  description: Prepare the medium under H2 gas and fill 20 ml medium into 100 ml serum bottles and seal
-    with a rubber stopper. Steam/heat medium in an almost boiling waterbath for 3 hours on each of 3 successive
-    days to sterilize.
+  description: Prepare the medium under H2 gas and fill 20 ml medium into 100 ml serum
+    bottles and seal with a rubber stopper. Steam/heat medium in an almost boiling
+    waterbath for 3 hours on each of 3 successive days to sterilize.
 - step_number: 3
   action: AUTOCLAVE
   description: Add bicarbonate from a autoclaved, neutralized stock solution.
 - step_number: 4
   action: MIX
-  description: Give an atmosphere of H2/CO2/O2 (78/20/2) with an overpressure of two atmospheres.
+  description: Give an atmosphere of H2/CO2/O2 (78/20/2) with an overpressure of two
+    atmospheres.
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -205,3 +188,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 891'
+- timestamp: '2026-03-13T03:09:07.494652Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

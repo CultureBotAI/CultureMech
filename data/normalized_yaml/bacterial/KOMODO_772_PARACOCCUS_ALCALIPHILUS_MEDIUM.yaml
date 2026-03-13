@@ -4,8 +4,8 @@ category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 772 | DSMZ Medium: 772 (mediadive.medium:772)
-  | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 772 | DSMZ Medium: 772
+  (mediadive.medium:772) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 772
   term:
@@ -89,6 +89,11 @@ ingredients:
   concentration:
     value: '7.92'
     unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,3 +105,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 772
+- timestamp: '2026-03-13T03:08:59.651453Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: Na2CO3'

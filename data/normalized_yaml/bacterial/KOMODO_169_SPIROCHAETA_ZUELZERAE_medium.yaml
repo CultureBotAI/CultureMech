@@ -77,6 +77,11 @@ ingredients:
   concentration:
     value: '0.269448'
     unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -88,3 +93,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 169
+- timestamp: '2026-03-13T03:08:41.895938Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'

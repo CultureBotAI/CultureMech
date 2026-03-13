@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '0.049554'
+    value: '40.049554'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.049554, 40.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -77,13 +78,6 @@ ingredients:
     label: Na2HPO4
   concentration:
     value: '20'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '40'
     unit: G_PER_L
 - preferred_term: Fructose
   term:
@@ -169,10 +163,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, distribute the medium into culture vessels (e.g., 4.5 ml of
-    the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
-    and autoclave. After cooling, add the following solutions (per 900 ml medium) from anaerobic stocks
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, distribute the medium into culture vessels
+    (e.g., 4.5 ml of the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas
+    mixture, seal with butyl rubber stoppers and autoclave. After cooling, add the
+    following solutions (per 900 ml medium) from anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Check final pH of the medium to be around 5.8.
@@ -183,3 +177,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J784'
+- timestamp: '2026-03-13T03:08:53.119781Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

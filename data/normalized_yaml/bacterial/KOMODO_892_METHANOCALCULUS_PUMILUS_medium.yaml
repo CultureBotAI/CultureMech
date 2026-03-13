@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:892
     label: METHANOCALCULUS PUMILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 892 | DSMZ Medium: 892 (mediadive.medium:892) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 892 | DSMZ Medium: 892 (mediadive.medium:892)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -37,8 +38,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '9.8912'
+    value: '10.8912'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.8912, 1.0]'
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -149,13 +151,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -251,4 +246,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.965247Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:48.724126Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.14245'
+    value: '0.24245'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.14245, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -114,13 +115,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -232,17 +226,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down under a N2-CO2 (4:1,
-    v/v) gas stream. Distribute the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles)
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
-    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down
+    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
+    (e.g., 20 ml medium in 60 ml serum bottles) under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.0, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -254,3 +249,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:36.058985Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

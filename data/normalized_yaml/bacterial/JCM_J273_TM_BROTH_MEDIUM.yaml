@@ -24,8 +24,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.990099'
+    value: '1.0685304'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.990099, 0.0784314]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -46,13 +47,6 @@ ingredients:
     label: MgSO4 x 7 H2O
   concentration:
     value: '0.980392'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '0.0784314'
     unit: G_PER_L
 - preferred_term: KNO3
   term:
@@ -142,3 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J273'
+- timestamp: '2026-03-13T03:09:01.404256Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

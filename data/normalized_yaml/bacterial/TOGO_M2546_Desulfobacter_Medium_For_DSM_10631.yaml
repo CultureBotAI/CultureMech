@@ -6,10 +6,11 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '940'
+    value: '3980.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 7 duplicates: 940.0, 1000.0, 990.0, 30.0, 10.0, 1000.0,
+    10.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -86,15 +87,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '3'
@@ -121,15 +113,6 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-- preferred_term: Distilled water
-  concentration:
-    value: '990'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -210,15 +193,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2CO3
   concentration:
     value: '1.5'
@@ -228,25 +202,6 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -261,20 +216,6 @@ ingredients:
   term:
     id: CHEBI:232798
     label: ''
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -353,20 +294,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.4'
@@ -376,11 +303,6 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2546
   term:
@@ -413,6 +335,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 8 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:07.703467Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 11 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: Solution A

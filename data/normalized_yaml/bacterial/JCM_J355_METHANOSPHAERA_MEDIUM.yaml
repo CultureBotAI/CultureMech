@@ -57,8 +57,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00295276'
+    value: '0.10295276'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00295276, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -92,22 +93,25 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.590551'
+    value: '1.590551'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.590551, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.147638'
+    value: '3.147638'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.147638, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0748032'
+    value: '0.1748032'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0748032, 0.1]'
 - preferred_term: Methanol
   term:
     id: CHEBI:17790
@@ -143,42 +147,14 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -290,19 +266,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except methanol, L-cysteine x HCl x H2O and Na2S x 9H2O, and adjust pH
-    to 7.0. Bring to a boil for 5-10 sec, then, cool down under a stream of N2 and add methanol to the
-    medium. Dispense the medium into suitable culture vessels (e.g., 20 ml of the medium in a 100-ml serum
-    bottle) under a stream of N2 and seal. After autoclaving, stand the medium overnight. Separately autoclave
-    L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior
-    to inoculation, replace the gas phase with H2-CO2 (80:20, v/v), and add the L-cysteine x HCl x H2O
-    and Na2S x 9H2O solutions aseptically and anaerobically. Pressurize the inoculated bottles to 200
-    kPa H2-CO2 (80:20, v/v). To prepare the clarified rumen fluid, preheat rumen content at 120C for 15
-    min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
+  description: Mix ingredients, except methanol, L-cysteine x HCl x H2O and Na2S x
+    9H2O, and adjust pH to 7.0. Bring to a boil for 5-10 sec, then, cool down under
+    a stream of N2 and add methanol to the medium. Dispense the medium into suitable
+    culture vessels (e.g., 20 ml of the medium in a 100-ml serum bottle) under a stream
+    of N2 and seal. After autoclaving, stand the medium overnight. Separately autoclave
+    L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a
+    N2 atmosphere. Prior to inoculation, replace the gas phase with H2-CO2 (80:20,
+    v/v), and add the L-cysteine x HCl x H2O and Na2S x 9H2O solutions aseptically
+    and anaerobically. Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20,
+    v/v). To prepare the clarified rumen fluid, preheat rumen content at 120C for
+    15 min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -310,3 +288,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J355'
+- timestamp: '2026-03-13T03:09:32.401195Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

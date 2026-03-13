@@ -82,8 +82,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '900'
+    value: '1243.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 900.0, 200.0, 143.0]'
 - preferred_term: Gelatine
   term:
     id: CHEBI:5291
@@ -91,28 +92,19 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '200'
-    unit: G_PER_L
 - preferred_term: Bovine serum albumin
   concentration:
     value: '350'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '143'
     unit: G_PER_L
 - preferred_term: Rabbit serum
   concentration:
     value: '86'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -124,3 +116,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 403
+- timestamp: '2026-03-13T03:09:33.578816Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: NaOH'

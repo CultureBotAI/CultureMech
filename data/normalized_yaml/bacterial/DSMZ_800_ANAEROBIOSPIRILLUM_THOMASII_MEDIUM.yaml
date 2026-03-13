@@ -31,26 +31,20 @@ ingredients:
     id: CHEBI:30764
     label: 3-Hydroxybenzoic acid
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
-- preferred_term: 3-Hydroxybenzoic acid
-  term:
-    id: CHEBI:30764
-    label: 3-Hydroxybenzoic acid
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it anaerobically under
-    80% N2 + 20% CO2 gas. After autoclaving and cooling to room temperature add per 10 ml the following
-    sterile, anaerobic solutions:'
+  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it
+    anaerobically under 80% N2 + 20% CO2 gas. After autoclaving and cooling to room
+    temperature add per 10 ml the following sterile, anaerobic solutions:'
 - step_number: 2
   action: MIX
-  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar plates, Columbia
-    sheep blood agar plates (BBL) may be used and incubated under an anaerobic atmosphere containig 5
-    - 10% CO2.
+  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar
+    plates, Columbia sheep blood agar plates (BBL) may be used and incubated under
+    an anaerobic atmosphere containig 5 - 10% CO2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -58,3 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 800'
+- timestamp: '2026-03-13T03:08:43.976609Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -40,8 +40,9 @@ ingredients:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '16'
+    value: '16.52'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 16.0, 0.52]'
 - preferred_term: Yeast extract
   concentration:
     value: '100'
@@ -52,13 +53,6 @@ ingredients:
     label: Sucrose
   concentration:
     value: '75'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.52'
     unit: G_PER_L
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -86,28 +80,32 @@ preparation_steps:
   description: 'Maintenance conditions:'
 - step_number: 4
   action: HEAT
-  description: "Infected amoeba cultures can be maintained e.g. in 25 cm2\r\nflasks (e.g. Nunc flasks,\r\
-    \nVWR, 734-2081, Thermo-Scientific, 156340) at 20-30°C in an incubator (no special\r\nrequirements\
-    \ concerning CO2 or light)."
+  description: "Infected amoeba cultures can be maintained e.g. in 25 cm2\r\nflasks\
+    \ (e.g. Nunc flasks,\r\nVWR, 734-2081, Thermo-Scientific, 156340) at 20-30°C in\
+    \ an incubator (no special\r\nrequirements concerning CO2 or light)."
 - step_number: 5
   action: MIX
   description: 'Maintenance/Passage of infected amoeba cultures:'
 - step_number: 6
   action: ALIQUOT
-  description: "Infected Acanthamoeba cultures don’t have to be transferred to fresh culture flasks as\r\
-    \nfrequently as usually done for mammalian cell cultures. Amoeba cultures can be\r\nmaintained in\
-    \ the same flask for several weeks or months. However, if the cultures reach\r\na high cell density,\
-    \ medium should be exchanged. For that purpose amoebae are\r\ndetached from the surface of the flask\
-    \ by knocking at the culture flask (no trypsin\r\nrequired, amoebae are only weakly adherent compared\
-    \ to most mammalian cells) and\r\nthe medium (containing the majority of cells) is then completely\
-    \ removed. Fresh medium\r\nis added and the few remaining attached amoebae will continue to grow.\r\
-    \nAlternatively, cultures can also be passaged regularly (e.g. weekly) by transfer of a small\r\n\
-    aliquot of a densely grown culture (after cell detachment, as described above) to a fresh\r\nflask\
-    \ containing medium. If cultures contain few attached cells, but high amounts of cell debris, medium\
-    \ should be\r\nexchanged without prior cell detachment. Cultures usually recover fast.\r\nDepending\
-    \ on the host cell strain, the bacteria may cause host cell lysis. To maintain\r\nsuch cultures, bacteria\
-    \ have to be transferred by adding culture supernatant\r\n(approximately 0.5 ml) to fresh culture\
-    \ flasks containing uninfected host cells\r\n(approximately semi-confluent culture) each 7-10 days."
+  description: "Infected Acanthamoeba cultures don’t have to be transferred to fresh\
+    \ culture flasks as\r\nfrequently as usually done for mammalian cell cultures.\
+    \ Amoeba cultures can be\r\nmaintained in the same flask for several weeks or\
+    \ months. However, if the cultures reach\r\na high cell density, medium should\
+    \ be exchanged. For that purpose amoebae are\r\ndetached from the surface of the\
+    \ flask by knocking at the culture flask (no trypsin\r\nrequired, amoebae are\
+    \ only weakly adherent compared to most mammalian cells) and\r\nthe medium (containing\
+    \ the majority of cells) is then completely removed. Fresh medium\r\nis added\
+    \ and the few remaining attached amoebae will continue to grow.\r\nAlternatively,\
+    \ cultures can also be passaged regularly (e.g. weekly) by transfer of a small\r\
+    \naliquot of a densely grown culture (after cell detachment, as described above)\
+    \ to a fresh\r\nflask containing medium. If cultures contain few attached cells,\
+    \ but high amounts of cell debris, medium should be\r\nexchanged without prior\
+    \ cell detachment. Cultures usually recover fast.\r\nDepending on the host cell\
+    \ strain, the bacteria may cause host cell lysis. To maintain\r\nsuch cultures,\
+    \ bacteria have to be transferred by adding culture supernatant\r\n(approximately\
+    \ 0.5 ml) to fresh culture flasks containing uninfected host cells\r\n(approximately\
+    \ semi-confluent culture) each 7-10 days."
 - step_number: 7
   action: AUTOCLAVE
   description: Adjust pH to > 8.0, autoclave at 110°C
@@ -125,7 +123,8 @@ preparation_steps:
   description: at -80°C for several months.
 - step_number: 12
   action: STORE
-  description: Infected cell cultures (supplemented with 10% DMSO) are best stored in liquid nitrogen.
+  description: Infected cell cultures (supplemented with 10% DMSO) are best stored
+    in liquid nitrogen.
 applications:
 - Microbial cultivation
 curation_history:
@@ -133,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1512'
+- timestamp: '2026-03-13T03:09:15.709235Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

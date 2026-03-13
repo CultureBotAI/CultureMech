@@ -133,18 +133,15 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Sodium phosphate buffer
   concentration:
-    value: '100'
+    value: '200.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 100.0]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Sodium phosphate buffer
-  concentration:
-    value: '100'
     unit: G_PER_L
 - preferred_term: Vitamin B12
   term:
@@ -233,4 +230,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J403'
+- timestamp: '2026-03-13T03:09:44.508068Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

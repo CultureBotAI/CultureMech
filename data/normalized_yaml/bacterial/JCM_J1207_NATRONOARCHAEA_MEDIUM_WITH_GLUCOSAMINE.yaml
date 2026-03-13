@@ -34,8 +34,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '240'
+    value: '256.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 240.0, 16.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -48,8 +49,9 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '2.5'
+    value: '3.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -70,20 +72,6 @@ ingredients:
     label: NaHCO3
   concentration:
     value: '30'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '16'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -240,4 +228,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1207'
+- timestamp: '2026-03-13T03:09:04.909576Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

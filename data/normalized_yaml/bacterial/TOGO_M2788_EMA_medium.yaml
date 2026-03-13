@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '980'
+    value: '981.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    Inorganic compound [Merged 2 duplicates: 980.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -48,15 +48,6 @@ ingredients:
   term:
     id: CHEBI:7916
     label: pantothenic acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '10'
@@ -96,4 +87,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:28.501246Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0684932'
+    value: '0.1684932'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0684932, 0.1]'
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -135,13 +136,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -180,21 +174,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Bring to a boil for 5-10 sec, then, cool down under
-    a N2-CO2 (80:20, v/v) gas stream. Dispense the medium into culture vessels (e.g., 20 ml/100 ml serum
-    bottle) under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
-    add per liter the following solutions aseptically and anaerobically (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.0. Bring to a boil for 5-10 sec,
+    then, cool down under a N2-CO2 (80:20, v/v) gas stream. Dispense the medium into
+    culture vessels (e.g., 20 ml/100 ml serum bottle) under the same gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the
+    following solutions aseptically and anaerobically (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Just before use, replace the gas phase with a H2-CO2 (80:20, v/v) gas mixture, and add
-    per liter the following solution from sterile anaerobic stock (autoclaved and stored under a N2 atmosphere):'
+  description: 'Just before use, replace the gas phase with a H2-CO2 (80:20, v/v)
+    gas mixture, and add per liter the following solution from sterile anaerobic stock
+    (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
-  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20, v/v).
+  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20,
+    v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -202,3 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J955'
+- timestamp: '2026-03-13T03:09:26.812552Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

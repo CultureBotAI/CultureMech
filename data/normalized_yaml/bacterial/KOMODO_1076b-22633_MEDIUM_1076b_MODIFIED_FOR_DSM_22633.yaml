@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1076b_22633
     label: MEDIUM 1076b MODIFIED FOR DSM 22633
-notes: 'Source: KOMODO ModelSEED | ID: 1076b_22633 | DSMZ Medium: 1076b (mediadive.medium:1076b) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1076b_22633 | DSMZ Medium: 1076b (mediadive.medium:1076b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -33,12 +33,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '3.5'
+    value: '4.5'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 1.0]'
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -64,4 +61,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1076
+- timestamp: '2026-03-13T03:09:07.683938Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.4

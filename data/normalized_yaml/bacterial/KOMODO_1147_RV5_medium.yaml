@@ -4,8 +4,8 @@ category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1147 | DSMZ Medium: 1147 (mediadive.medium:1147)
-  | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1147 | DSMZ Medium: 1147
+  (mediadive.medium:1147) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1147
   term:
@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.01'
+    value: '5.21'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 5.2]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -88,13 +89,6 @@ ingredients:
     label: Biotin
   concentration:
     value: 3e-05
-    unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '5.2'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -170,6 +164,11 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -181,3 +180,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1147
+- timestamp: '2026-03-13T03:09:30.773477Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaOH'

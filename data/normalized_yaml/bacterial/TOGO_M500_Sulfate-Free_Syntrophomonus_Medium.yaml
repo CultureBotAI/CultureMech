@@ -16,10 +16,10 @@ ingredients:
     unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
-    value: '810'
+    value: '902.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 6 duplicates: 810.0, 70.0, 10.0, 10.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -46,15 +46,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '70'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NaHCO3
   concentration:
     value: '3.5'
@@ -64,15 +55,6 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.3'
@@ -83,35 +65,12 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '8'
@@ -151,15 +110,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '0.25'
@@ -230,6 +180,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 8 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:52.068571Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
 solutions:
 - preferred_term: Solution A
   term:

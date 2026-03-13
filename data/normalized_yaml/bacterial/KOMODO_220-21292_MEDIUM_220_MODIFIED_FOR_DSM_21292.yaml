@@ -8,24 +8,27 @@ media_term:
   term:
     id: komodo.medium:220_21292
     label: MEDIUM 220 MODIFIED FOR DSM 21292
-notes: 'Source: KOMODO ModelSEED | ID: 220_21292 | DSMZ Medium: 220 (mediadive.medium:220) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 220_21292 | DSMZ Medium: 220 (mediadive.medium:220)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
-    value: '15'
+    value: '32.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 15.0, 17.0]'
 - preferred_term: Soy peptone
   concentration:
-    value: '5'
+    value: '8.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 3.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '5'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -33,27 +36,12 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-- preferred_term: Casein peptone
-  concentration:
-    value: '17'
-    unit: G_PER_L
-- preferred_term: Soy peptone
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: D(+)-Glucose
   term:
     id: CHEBI:17634
     label: D(+)-Glucose
   concentration:
     value: '2.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '5'
     unit: G_PER_L
 - preferred_term: K2HPO4
   term:
@@ -73,4 +61,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 220
+- timestamp: '2026-03-13T03:09:33.761095Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 ph_value: 7.3

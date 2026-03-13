@@ -65,8 +65,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '2.52021'
+    value: '202.52021'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 2.52021, 100.0, 100.0]'
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -167,8 +168,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.5'
+    value: '300.5'
     unit: G_PER_L
+  notes: ' [Merged 4 duplicates: 0.5, 100.0, 100.0, 100.0]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -239,13 +241,6 @@ ingredients:
   concentration:
     value: '0.0013986'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -281,13 +276,6 @@ ingredients:
   concentration:
     value: '0.0615385'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Phenyl acetic acid
   term:
     id: CHEBI:103822
@@ -316,13 +304,6 @@ ingredients:
   concentration:
     value: '0.0246154'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Menadione
   term:
     id: CHEBI:28869
@@ -330,26 +311,12 @@ ingredients:
   concentration:
     value: '0.027972'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '100'
-    unit: G_PER_L
 - preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
     label: Lipoic acid
   concentration:
     value: '0.00559441'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '100'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -374,4 +341,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:53.491175Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
 high_metal: true

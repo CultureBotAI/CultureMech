@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.000199402'
+    value: '0.024199402000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000199402, 0.024]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.997009'
@@ -137,13 +138,6 @@ ingredients:
     label: CuCl2 x 2 H2O
   concentration:
     value: '0.002'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -243,17 +237,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, calcium chloride, fumarate, thiosulfate, vitamins
-    and sulfide). Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    add solid bicarbonate and adjust pH to 7.2. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add calcium chloride, fumarate, thiosulfate, vitamins
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Stock solutions
-    of fumarate, thiosulfate and vitamins are sterilized by filtration. Adjust pH of complete medium to
-    7.0 - 7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate, calcium chloride, fumarate,
+    thiosulfate, vitamins and sulfide). Sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic, add solid bicarbonate and adjust pH
+    to 7.2. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Add calcium chloride, fumarate, thiosulfate, vitamins
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
+    Stock solutions of fumarate, thiosulfate and vitamins are sterilized by filtration.
+    Adjust pH of complete medium to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -264,4 +259,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.121445Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:53.522647Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

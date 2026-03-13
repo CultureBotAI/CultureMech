@@ -64,8 +64,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00857143'
+    value: '0.03257143'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00857143, 0.024]'
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00248848'
@@ -150,13 +151,6 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -237,9 +231,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and distribute the medium into culture vessels (e.g., 10 ml
-    medium in Balch-type tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
-    and autoclave. After cooling, aseptically and anaerobically add per liter the following solutions:'
+  description: 'Mix components thoroughly and distribute the medium into culture vessels
+    (e.g., 10 ml medium in Balch-type tubes) under a N2-CO2 (4:1, v/v) gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
+    anaerobically add per liter the following solutions:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -251,3 +246,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:30.893374Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

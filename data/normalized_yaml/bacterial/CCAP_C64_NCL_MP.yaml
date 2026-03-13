@@ -26,8 +26,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -40,8 +41,9 @@ ingredients:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '1.6'
+    value: '2.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.6, 1.0]'
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
@@ -49,24 +51,10 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
     label: Na2HPO4 x 2 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
   concentration:
     value: '1'
     unit: G_PER_L
@@ -90,18 +78,22 @@ preparation_steps:
   description: 3:1 mixture
 - step_number: 2
   action: AUTOCLAVE
-  description: See separate recipes.  Autoclave separately.  Mix aseptically when cool.
+  description: See separate recipes.  Autoclave separately.  Mix aseptically when
+    cool.
 - step_number: 3
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue to boil for 5\
-    \ minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized water.  Filter through\
-    \ GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
+    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
+    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+    \ 15 minutes."
 - step_number: 4
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 - step_number: 5
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,3 +101,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C64'
+- timestamp: '2026-03-13T03:08:52.850497Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

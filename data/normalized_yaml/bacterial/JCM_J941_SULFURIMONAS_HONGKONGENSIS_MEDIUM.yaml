@@ -62,8 +62,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '0.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.2]'
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -77,13 +78,6 @@ ingredients:
     label: EDTA
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.2'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -140,8 +134,9 @@ preparation_steps:
   description: Adjust pH to 7.0 with NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Solutions A, B, C and E under a N2 atmosphere. Filter-sterilize Solution
-    D. After sterilization, combine all solutions and store under a N2 atmosphere.
+  description: Separately autoclave Solutions A, B, C and E under a N2 atmosphere.
+    Filter-sterilize Solution D. After sterilization, combine all solutions and store
+    under a N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,3 +144,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J941'
+- timestamp: '2026-03-13T03:09:38.524720Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

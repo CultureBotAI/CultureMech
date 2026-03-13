@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:733
     label: SULFITOBACTER PONTIACUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 733 | DSMZ Medium: 733 (mediadive.medium:733) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 733 | DSMZ Medium: 733 (mediadive.medium:733)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na-acetate
   term:
@@ -52,22 +53,25 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '14.985'
+    value: '15.985'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.985, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.999001'
+    value: '3.999001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.999001, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.04995'
+    value: '0.14995'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.04995, 0.1]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -82,26 +86,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -116,13 +106,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -191,3 +174,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 733
+- timestamp: '2026-03-13T03:08:52.833352Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

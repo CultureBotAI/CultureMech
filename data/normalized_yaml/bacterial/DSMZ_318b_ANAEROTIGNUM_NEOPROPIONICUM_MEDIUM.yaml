@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.5923'
+    value: '1.5923'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5923, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -37,8 +38,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0789733'
+    value: '0.1789733'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0789733, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -114,13 +116,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -155,13 +150,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -247,16 +235,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, ethanol, vitamins, cysteine and sulfide), then
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve
-    bicarbonate and adjust pH to 7.0, then dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. After sterilization add ethanol, cysteine and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins are prepared under 100% N2
-    gas and sterilized by filtration. Adjust pH of complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate, ethanol, vitamins, cysteine
+    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
+    45 min to make it anoxic. Add and dissolve bicarbonate and adjust pH to 7.0, then
+    dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. After sterilization add ethanol, cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins are prepared
+    under 100% N2 gas and sterilized by filtration. Adjust pH of complete medium to
+    7.0 - 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -267,4 +258,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.843590Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:53.081597Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

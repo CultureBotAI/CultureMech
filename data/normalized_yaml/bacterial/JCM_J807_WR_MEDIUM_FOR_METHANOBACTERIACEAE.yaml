@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.143976'
+    value: '0.243976'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.143976, 0.1]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -106,13 +107,6 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -153,8 +147,9 @@ ingredients:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
-    value: '0.026'
+    value: '0.03'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.026, 0.004]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -225,13 +220,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.004'
-    unit: G_PER_L
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -242,17 +230,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O, and adjust pH to
-    7.0. Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3.
-    Dispense the medium into suitable culture vessels (e.g., 5 ml in Hungate tubes) under the same gas
-    mixture and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately
-    autoclave L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere.
-    Prior to inoculation, aseptically and anaerobically add L-cysteine x HCl x H2O and Na2S x 9H2O solutions.
-    Readjust pH to 6.7, if necessary. Pressurize the inoculated bottles to 150 kPa H2-CO2 (80:20, v/v).
+  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
+    and adjust pH to 7.0. Bring to a boil for 5-10 sec, then, cool down under a stream
+    of H2-CO2 (80:20, v/v) and add NaHCO3. Dispense the medium into suitable culture
+    vessels (e.g., 5 ml in Hungate tubes) under the same gas mixture and seal with
+    butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately
+    autoclave L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively,
+    under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add
+    L-cysteine x HCl x H2O and Na2S x 9H2O solutions. Readjust pH to 6.7, if necessary.
+    Pressurize the inoculated bottles to 150 kPa H2-CO2 (80:20, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
-    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
+    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
+    to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'
@@ -263,3 +254,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J807'
+- timestamp: '2026-03-13T03:08:44.628116Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -189,8 +189,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.4'
+    value: '12.200000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4, 11.8]'
 - preferred_term: Na2SeO4
   term:
     id: CHEBI:59160
@@ -218,13 +219,6 @@ ingredients:
     label: HEPES
   concentration:
     value: '95.3'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '11.8'
     unit: G_PER_L
 - preferred_term: Na2HPO4
   term:
@@ -274,4 +268,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1739'
+- timestamp: '2026-03-13T03:09:34.268843Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_ree: true

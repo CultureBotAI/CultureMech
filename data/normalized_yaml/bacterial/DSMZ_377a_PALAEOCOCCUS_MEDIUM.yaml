@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '29.97'
+    value: '30.97'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.97, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4965'
+    value: '6.4965'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4965, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +53,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.014985'
+    value: '0.024985'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.014985, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -86,8 +89,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.749251'
+    value: '0.849251'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.749251, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -100,8 +104,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.001998'
+    value: '0.031998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.001998, 0.03]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0004995'
@@ -128,26 +133,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -162,13 +153,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -191,26 +175,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -303,23 +273,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur, peptone, yeast extract, vitamins, and sulfide, adjust
-    the pH to 6.5 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Distribute medium
-    under the same gas atmosphere into anoxic Hungate-type tubes or serum vials that already contain the
-    appropriate amount of sulfur. Sterilize the medium by autoclaving at <b>110°C</b> for 20 min. After
-    sterilization add peptone, yeast extract, and vitamins from sterile stock solutions prepared under
-    100% N2 gas atmosphere and sulfide from a neutralized stock solution. Vitamins should be sterilized
-    by filtration.
+  description: Dissolve ingredients except sulfur, peptone, yeast extract, vitamins,
+    and sulfide, adjust the pH to 6.5 and sparge medium with 100% N2 gas for 30 -
+    45 min to make it anoxic. Distribute medium under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials that already contain the appropriate
+    amount of sulfur. Sterilize the medium by autoclaving at <b>110°C</b> for 20 min.
+    After sterilization add peptone, yeast extract, and vitamins from sterile stock
+    solutions prepared under 100% N2 gas atmosphere and sulfide from a neutralized
+    stock solution. Vitamins should be sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
-    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
-    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
-    M H2SO4 drop-wise with a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -330,4 +302,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.217457Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:37.964990Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

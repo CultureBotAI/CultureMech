@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:428
     label: HETEROTROPHIC medium H3P
-notes: 'Source: KOMODO ModelSEED | ID: 428 | DSMZ Medium: 428 (mediadive.medium:428) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 428 | DSMZ Medium: 428 (mediadive.medium:428)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.00584795'
+    value: '0.035847949999999996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00584795, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -191,13 +193,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -244,3 +239,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 428
+- timestamp: '2026-03-13T03:08:39.321835Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

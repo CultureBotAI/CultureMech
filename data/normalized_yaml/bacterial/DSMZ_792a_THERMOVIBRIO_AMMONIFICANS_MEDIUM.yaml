@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '20.2224'
+    value: '30.2224'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.2224, 10.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.53893'
+    value: '33.53893'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.53893, 30.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -37,8 +39,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.758342'
+    value: '1.7583419999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.758342, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +61,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0151668'
+    value: '0.1151668'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0151668, 0.1]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -99,26 +103,12 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -133,13 +123,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -161,13 +144,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -200,22 +176,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles)
-    and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution
-    C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C
-    are added to solution A. Adjust pH of the complete medium to 5.7.
+  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials
+    (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under
+    100% N2 gas. To complete the medium appropriate amounts of solutions B and C are
+    added to solution A. Adjust pH of the complete medium to 5.7.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2 and 20% CO2
-    gas mixture.
+  description: After inoculation pressurize vials to 2 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: STORE
-  description: 'Note: Solution A has to be prepared freshly. It cannot be stored for a long period of
-    time.'
+  description: 'Note: Solution A has to be prepared freshly. It cannot be stored for
+    a long period of time.'
 - step_number: 4
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -223,3 +201,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 792a'
+- timestamp: '2026-03-13T03:09:02.637498Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

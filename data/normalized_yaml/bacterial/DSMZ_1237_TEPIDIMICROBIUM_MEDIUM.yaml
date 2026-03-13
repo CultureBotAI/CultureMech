@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '24.6792'
+    value: '25.6792'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 24.6792, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.00987167'
+    value: '0.10987167'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00987167, 0.1]'
 - preferred_term: Tryptone
   concentration:
     value: '1.97433'
@@ -125,13 +127,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -145,13 +140,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -279,17 +267,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous chloride, carbonate, glucose, vitamins, cysteine and
-    sulfide), adjust pH to 7.5 with NaOH and sparge medium with 100% N2 gas for 30 - 45 min to make it
-    anoxic. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Add glucose, vitamins, ferrous chloride, cysteine and sulfide form sterile anoxic stock
-    solutions prepared under 100% N2 gas and carbonate from a sterile stock solution prepared under 80%
-    N2 and 20% CO2 gas mixture. Solutions of ferrous chloride and vitamins should be sterilized by filtration.
-    Adjust pH of the complete medium to 8.5, if necessary.
+  description: Dissolve ingredients (except ferrous chloride, carbonate, glucose,
+    vitamins, cysteine and sulfide), adjust pH to 7.5 with NaOH and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under 100%
+    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add glucose, vitamins, ferrous chloride, cysteine and sulfide form sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile stock
+    solution prepared under 80% N2 and 20% CO2 gas mixture. Solutions of ferrous chloride
+    and vitamins should be sterilized by filtration. Adjust pH of the complete medium
+    to 8.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -300,4 +290,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.889833Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:21.270783Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

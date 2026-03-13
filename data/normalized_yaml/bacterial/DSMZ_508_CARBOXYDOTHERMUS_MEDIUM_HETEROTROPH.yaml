@@ -143,15 +143,17 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.1'
+    value: '0.101'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.001]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
   concentration:
-    value: '0.08'
+    value: '0.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.08, 0.05]'
 - preferred_term: D-(+)-biotin
   term:
     id: CHEBI:15956
@@ -164,8 +166,9 @@ ingredients:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.2'
+    value: '0.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.05]'
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -178,8 +181,9 @@ ingredients:
     id: CHEBI:30961
     label: Pyridoxine hydrochloride
   concentration:
-    value: '0.3'
+    value: '0.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.3, 0.1]'
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -201,13 +205,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -222,28 +219,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -257,17 +233,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, vitamins and sulfide, then
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate,
-    yeast extract, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
-    atmosphere and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
-    mixture. Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing the
-    medium adjust pH to 6.8-7.0 with a sterile anoxic stock solution of Na2CO3 (5% w/v), if necessary.
+  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, vitamins
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add pyruvate, yeast extract, vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere
+    and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Stock solutions of pyruvate and vitamins are sterilized by filtration.
+    After completing the medium adjust pH to 6.8-7.0 with a sterile anoxic stock solution
+    of Na2CO3 (5% w/v), if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -278,4 +256,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.908129Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:14.695211Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

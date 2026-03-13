@@ -30,29 +30,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '16'
+    value: '256.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 16.0, 240.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '1'
+    value: '3.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '240'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 2.5]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -280,4 +268,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:02.972971Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.149551'
+    value: '0.249551'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.149551, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '4.98504'
@@ -109,13 +110,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.03'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -243,16 +237,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, thiosulfate, vitamins and reducing agents) and
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate,
-    vitamin solution, sulfide and cysteine from sterile anoxic stock solutions prepared under 100% N2
-    gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    The pH of the complete medium should be at 6.5 - 6.8.
+  description: Dissolve ingredients (except carbonate, thiosulfate, vitamins and reducing
+    agents) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add thiosulfate, vitamin solution, sulfide
+    and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. The pH of the complete medium should be at 6.5 - 6.8.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,4 +259,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.096723Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:40.857879Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

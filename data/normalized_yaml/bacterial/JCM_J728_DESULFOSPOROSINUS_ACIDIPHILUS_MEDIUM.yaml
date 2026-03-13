@@ -69,8 +69,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '25'
+    value: '28.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 3.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -91,13 +92,6 @@ ingredients:
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -204,12 +198,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix thoroughly, adjust to pH 5.5 with H2SO4 and autoclave under a N2 atmosphere. After
-    cooling, aseptically and anaerobically add the following solutions (filter-sterilized) to the medium:'
+  description: 'Mix thoroughly, adjust to pH 5.5 with H2SO4 and autoclave under a
+    N2 atmosphere. After cooling, aseptically and anaerobically add the following
+    solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -217,3 +212,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J728'
+- timestamp: '2026-03-13T03:09:21.122801Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

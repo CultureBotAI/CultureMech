@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:630_22673
     label: MEDIUM 630 MODIFIED FOR DSM 22673
-notes: 'Source: KOMODO ModelSEED | ID: 630_22673 | DSMZ Medium: 630 (mediadive.medium:630) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 630_22673 | DSMZ Medium: 630 (mediadive.medium:630)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
-    value: '0.1'
+    value: '12.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 12.8]'
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
@@ -67,13 +68,6 @@ ingredients:
     label: Na2HPO4 x 12 H2O
   concentration:
     value: '43'
-    unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '12.8'
     unit: G_PER_L
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -135,4 +129,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 630
+- timestamp: '2026-03-13T03:09:12.824369Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.2

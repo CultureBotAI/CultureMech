@@ -54,8 +54,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '0.978474'
+    value: '4.978474'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.978474, 4.0]'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -97,10 +98,6 @@ ingredients:
     label: L-Cysteine HCl x H2O
   concentration:
     value: '10'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4'
     unit: G_PER_L
 - preferred_term: Sludge
   concentration:
@@ -226,3 +223,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J872'
+- timestamp: '2026-03-13T03:09:33.678027Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

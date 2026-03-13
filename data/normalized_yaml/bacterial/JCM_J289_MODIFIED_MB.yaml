@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1.98216'
+    value: '2.98216'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.98216, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.049554'
+    value: '0.14955400000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.049554, 0.1]'
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -100,13 +102,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -118,13 +113,6 @@ ingredients:
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -169,8 +157,9 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: After boiling, cool down under a stream of oxygen-free N2 gas, dispense into glass tube
-    anaerobically and autoclave. Before inoculation, add the sterile stock solution of 20 mM Na2S2O3.
+  description: After boiling, cool down under a stream of oxygen-free N2 gas, dispense
+    into glass tube anaerobically and autoclave. Before inoculation, add the sterile
+    stock solution of 20 mM Na2S2O3.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,3 +167,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J289'
+- timestamp: '2026-03-13T03:09:29.967085Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

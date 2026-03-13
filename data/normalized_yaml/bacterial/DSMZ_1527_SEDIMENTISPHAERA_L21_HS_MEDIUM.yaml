@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '118.694'
+    value: '119.694'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 118.694, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.395648'
+    value: '0.495648'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.395648, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -113,13 +115,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -133,13 +128,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -267,19 +255,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, glucose, vitamins, cysteine and sulfide, then sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
-    the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose,
-    vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas (vitamins
-    are sterilized by filtration) and carbonate from a sterile anoxic stock solution prepared under 80%
-    N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium to 7.5, if necessary.
+  description: Dissolve ingredients except carbonate, glucose, vitamins, cysteine
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas (vitamins
+    are sterilized by filtration) and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete
+    medium to 7.5, if necessary.
 - step_number: 2
   action: MIX
   description: 'Note: Use at least 5-10% (v/v) inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -290,4 +280,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.816349Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:43.734432Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

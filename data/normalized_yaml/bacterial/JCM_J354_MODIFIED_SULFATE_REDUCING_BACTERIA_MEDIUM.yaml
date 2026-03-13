@@ -97,8 +97,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '4.95049e-05'
+    value: '0.0001495049'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4.95049e-05, 0.0001]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -162,13 +163,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -186,12 +180,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.7 with HCl. After autoclaving under
-    a N2 atmosphere, distribute the medium into sterile culture vessels (e.g., 20 ml of the medium in
-    120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
-    Neutralize 5% Na2S x 9H2O solution, and autoclave under a N2 atmosphere. Prior to inoculation, add
-    the sterile Na2S x 9H2O solution to the medium. Pressurize the inoculated vessels to 200 kPa H2-CO2
-    (4:1, v/v).
+  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.7 with HCl.
+    After autoclaving under a N2 atmosphere, distribute the medium into sterile culture
+    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of
+    H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Neutralize
+    5% Na2S x 9H2O solution, and autoclave under a N2 atmosphere. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution to the medium. Pressurize the inoculated
+    vessels to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,3 +194,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J354'
+- timestamp: '2026-03-13T03:08:46.365236Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

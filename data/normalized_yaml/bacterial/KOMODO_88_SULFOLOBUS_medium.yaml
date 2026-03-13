@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88 | DSMZ Medium: 88 (mediadive.medium:88) |
-  Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88 | DSMZ Medium: 88 (mediadive.medium:88)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 88
   term:
@@ -111,6 +111,11 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -122,3 +127,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 88
+- timestamp: '2026-03-13T03:08:49.204008Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: H2SO4'

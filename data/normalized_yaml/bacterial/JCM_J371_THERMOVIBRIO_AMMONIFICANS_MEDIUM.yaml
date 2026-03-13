@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '6.08911'
+    value: '62.48911'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 6.08911, 55.4, 1.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.371287'
+    value: '1.971287'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.371287, 1.5, 0.1]'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:74559
     label: KI
   concentration:
-    value: '2.47525e-05'
+    value: '0.0001247525'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.47525e-05, 0.0001]'
 - preferred_term: Na2WO2 x 2 H2O
   concentration:
     value: '9.90099e-05'
@@ -85,20 +88,14 @@ ingredients:
   concentration:
     value: '0.000990099'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '55.4'
-    unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '14'
+    value: '17.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -125,21 +122,15 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.06'
+    value: '0.06999999999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
     label: SrCl2 x 6 H2O
   concentration:
     value: '0.03'
-    unit: G_PER_L
-- preferred_term: KI
-  term:
-    id: CHEBI:74559
-    label: KI
-  concentration:
-    value: '0.0001'
     unit: G_PER_L
 - preferred_term: Trisodium citrate
   term:
@@ -148,13 +139,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -162,23 +146,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -191,13 +161,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -222,13 +185,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -239,16 +195,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil, and cool under a H2-CO2
-    (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O solution to the medium, wait for the medium to become
-    colorless, then adjust pH to 5.5. Distribute medium into culture vessels under the same gas mixture,
-    seal with butyl rubber stoppers, and autoclave. Separately autoclave 10% KNO3 and 20% MES solutions
-    (pH 5.5) under a N2 atmosphere. Prior to inoculation, add the sterile KNO3 and MES solutions. Pressurize
-    the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil, and
+    cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O solution
+    to the medium, wait for the medium to become colorless, then adjust pH to 5.5.
+    Distribute medium into culture vessels under the same gas mixture, seal with butyl
+    rubber stoppers, and autoclave. Separately autoclave 10% KNO3 and 20% MES solutions
+    (pH 5.5) under a N2 atmosphere. Prior to inoculation, add the sterile KNO3 and
+    MES solutions. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v)
+    gas mixture.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -256,3 +214,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J371'
+- timestamp: '2026-03-13T03:09:31.747663Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)

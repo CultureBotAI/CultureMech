@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '80'
+    value: '107.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 80.0, 27.7]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -54,13 +55,6 @@ ingredients:
     label: Resazurin
   concentration:
     value: 5e-07
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '27.7'
     unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -136,3 +130,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1231
+- timestamp: '2026-03-13T03:08:45.819343Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.15'
+    value: '0.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.15, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -173,13 +174,6 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -225,11 +219,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine hydrochloride, vitamin
-    solution and Na2S x 9 H2O. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v). Dispense
-    the medium into Hungate tubes or serum bottles under gassing with N2:CO2 (80:20 v/v) and add the NaHCO3.
-    The final pH should be 7.0. Autoclave the medium and add from sterile stock solutions yeast extract,
-    glucose, cysteine hydrochloride, vitamin solution and Na2S x 9 H2O.The final pH should be 7.0.
+  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine
+    hydrochloride, vitamin solution and Na2S x 9 H2O. Boil and then cool under a gas
+    atmosphere of N2:CO2 (80:20 v/v). Dispense the medium into Hungate tubes or serum
+    bottles under gassing with N2:CO2 (80:20 v/v) and add the NaHCO3. The final pH
+    should be 7.0. Autoclave the medium and add from sterile stock solutions yeast
+    extract, glucose, cysteine hydrochloride, vitamin solution and Na2S x 9 H2O.The
+    final pH should be 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -241,3 +237,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:30.437424Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

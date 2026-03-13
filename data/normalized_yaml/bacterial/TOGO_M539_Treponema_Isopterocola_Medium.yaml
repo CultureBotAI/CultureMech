@@ -14,10 +14,10 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -112,15 +112,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '80'
@@ -165,15 +156,6 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Folic acid
   concentration:
     value: '2.5'
@@ -294,6 +276,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:43.760311Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 solutions:
 - preferred_term: NaHCO3 solution (10%, w/v)
   composition: []

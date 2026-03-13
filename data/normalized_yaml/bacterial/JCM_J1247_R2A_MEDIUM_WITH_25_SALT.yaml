@@ -59,8 +59,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.05'
+    value: '61.05'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 61.0]'
 - preferred_term: Sea water
   concentration:
     value: '833'
@@ -78,13 +79,6 @@ ingredients:
     label: MgCl2 x 6 H2O
   concentration:
     value: '39'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '61'
     unit: G_PER_L
 - preferred_term: KCl
   term:
@@ -135,4 +129,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:45.607803Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

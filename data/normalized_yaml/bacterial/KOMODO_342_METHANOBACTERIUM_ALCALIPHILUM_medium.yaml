@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:342
     label: METHANOBACTERIUM ALCALIPHILUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 342 | DSMZ Medium: 342 (mediadive.medium:342) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 342 | DSMZ Medium: 342 (mediadive.medium:342)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.126263'
+    value: '0.226263'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.126263, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
-    value: '0.000252525'
+    value: '0.000552525'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000252525, 0.0003]'
 - preferred_term: Yeast extract
   concentration:
     value: '2.52525'
@@ -125,13 +128,6 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -174,13 +170,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.0003'
-    unit: G_PER_L
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -199,3 +188,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 342
+- timestamp: '2026-03-13T03:08:39.152265Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

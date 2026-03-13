@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '18.8867'
+    value: '19.8867'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 18.8867, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -45,8 +46,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.149105'
+    value: '3.149105'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.149105, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -124,23 +126,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -281,14 +269,15 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: AUTOCLAVE
-  description: Mix ingredients, except L-cysteine x HCl x H2O, and bring to the boil while gassing with
-    N2-H2 (95:5) gas mixture. When the color turns from blue to reddish pink, add L-cysteine x HCl x H2O
-    during continuous gassing and boiling. Anaerobically dispense the medium in tubes under a N2-H2 (95:5)
-    atmosphere. Stopper the tubes and autoclave.
+  description: Mix ingredients, except L-cysteine x HCl x H2O, and bring to the boil
+    while gassing with N2-H2 (95:5) gas mixture. When the color turns from blue to
+    reddish pink, add L-cysteine x HCl x H2O during continuous gassing and boiling.
+    Anaerobically dispense the medium in tubes under a N2-H2 (95:5) atmosphere. Stopper
+    the tubes and autoclave.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals
-    in the order listed.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals in the order listed.
 - step_number: 4
   action: STORE
   description: Store at -20C or 4C in the absence of light.
@@ -299,3 +288,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1002'
+- timestamp: '2026-03-13T03:08:50.194890Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

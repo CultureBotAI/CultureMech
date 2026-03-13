@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.40573'
+    value: '6.40573'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.40573, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.138203'
+    value: '0.238203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.138203, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,8 +60,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '5.923'
+    value: '6.923'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.923, 1.0]'
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00197433'
@@ -114,26 +117,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -148,13 +137,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -282,23 +264,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide), sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate
-    and adjust pH to 7.0, then dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. After sterilization add cysteine and sulfide
-    from sterile anoxic stock solutions autoclaved under 100% N2 gas atmosphere. Vitamins are prepared
-    under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of final medium to 6.8 - 7.0.
+  description: Dissolve ingredients (except bicarbonate, vitamins, cysteine and sulfide),
+    sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve bicarbonate and adjust pH to 7.0, then dispense medium under
+    80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    to 30% of their volume and autoclave. After sterilization add cysteine and sulfide
+    from sterile anoxic stock solutions autoclaved under 100% N2 gas atmosphere. Vitamins
+    are prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust
+    pH of final medium to 6.8 - 7.0.
 - step_number: 2
   action: MIX
-  description: For incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres of pressure.
+  description: For incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres
+    of pressure.
 - step_number: 3
   action: ADJUST_PH
-  description: 'Note: If the medium is being used without overpressure then adjust pH with a small amount
-    of sterile anoxic 1 N HCl, if necessary.'
+  description: 'Note: If the medium is being used without overpressure then adjust
+    pH with a small amount of sterile anoxic 1 N HCl, if necessary.'
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -313,4 +298,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.646058Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:49.752679Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

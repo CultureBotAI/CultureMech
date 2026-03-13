@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.353288'
+    value: '0.453288'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.353288, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -80,13 +81,6 @@ ingredients:
     label: FeCl2 x 4 H2O
   concentration:
     value: '0.4'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -203,13 +197,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, Trace vitamins, Na2S x 9H2O and L-cysteine x HCl x H2O,
-    and autoclave under a H2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as 8% solution and Trace
-    vitamins while gassing with N2. Separately autoclave Na2S x 9H2O and L-cysteine x HCl x H2O as 5%
-    solutions under a N2 atmosphere. Aseptically and anaerobically add the NaHCO3 solution and Trace vitamins
-    to the medium under a H2-CO2 (80:20) atmosphere. Prior to inoculation, add sterile the Na2S x 9H2O
-    and L-cysteine x HCl solutions, and adjust pH to 7.4. Pressurize inoculated bottles to 200 kPa H2-CO2
-    (80:20).
+  description: Mix ingredients, except NaHCO3, Trace vitamins, Na2S x 9H2O and L-cysteine
+    x HCl x H2O, and autoclave under a H2-CO2 (80:20) atmosphere. Filter-sterilize
+    NaHCO3 as 8% solution and Trace vitamins while gassing with N2. Separately autoclave
+    Na2S x 9H2O and L-cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
+    Aseptically and anaerobically add the NaHCO3 solution and Trace vitamins to the
+    medium under a H2-CO2 (80:20) atmosphere. Prior to inoculation, add sterile the
+    Na2S x 9H2O and L-cysteine x HCl solutions, and adjust pH to 7.4. Pressurize inoculated
+    bottles to 200 kPa H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 with 1 N KOH.
@@ -220,3 +215,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J198'
+- timestamp: '2026-03-13T03:09:37.802584Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

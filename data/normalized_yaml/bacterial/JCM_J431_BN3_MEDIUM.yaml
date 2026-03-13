@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '5'
+    value: '5.0001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 0.0001]'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -236,13 +237,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -260,13 +254,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Basal medium supplemented with Trace element solution, Selenite-tungstate solution
-    and resazurin under N2-CO2 (4:1, v/v). Separately autoclave glucose, yeast extract and tryptone (10%
-    each) and add to the medium. Filter-sterilize Trace vitamins and NaHCO3 (8%) solution and add to the
-    medium. Steam sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture vessels
-    containing sulfur under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Before
-    inoculation, reduce the medium with 5% Na2S x 9H2O solution (autoclaved under a N2 atmosphere). Readjust
-    pH to 7.2, if necessary.
+  description: Autoclave Basal medium supplemented with Trace element solution, Selenite-tungstate
+    solution and resazurin under N2-CO2 (4:1, v/v). Separately autoclave glucose,
+    yeast extract and tryptone (10% each) and add to the medium. Filter-sterilize
+    Trace vitamins and NaHCO3 (8%) solution and add to the medium. Steam sulfur for
+    3 hr on each of 3 successive days. Distribute the medium into culture vessels
+    containing sulfur under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
+    stoppers. Before inoculation, reduce the medium with 5% Na2S x 9H2O solution (autoclaved
+    under a N2 atmosphere). Readjust pH to 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -274,3 +269,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J431'
+- timestamp: '2026-03-13T03:08:41.008106Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

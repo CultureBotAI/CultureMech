@@ -5,34 +5,11 @@ description: 382. NBRC 380.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled water1LpH 7.0
+- preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled
+    water1LpH 7.0
 - preferred_term: ''
   concentration:
     value: Pepton
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Beef extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: NaCl
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar (if needed)
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 7.0
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -50,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 380, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=380.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:42.618105Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

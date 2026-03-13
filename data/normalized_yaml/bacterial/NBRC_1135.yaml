@@ -5,26 +5,13 @@ description: 1135. NBRC 1132.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured by Asahi Breweries,
-    Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd., Osaka, Japan.
+- preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured
+    by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd.,
+    Osaka, Japan.
 - preferred_term: ''
   concentration:
     value: Malt extract
     unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Ebios (tablets)*
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar
-    unit: G_PER_L
-- preferred_term: ''
-- preferred_term: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -41,3 +28,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1132, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1132.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:10.003723Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

@@ -15,10 +15,10 @@ ingredients:
     unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
-    value: '1050'
+    value: '2350.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 5 duplicates: 1050.0, 100.0, 1000.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -90,20 +90,6 @@ ingredients:
   term:
     id: CHEBI:17201
     label: Glycyl-glycine
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Fe(III) citrate
   concentration:
     value: '0.1'
@@ -113,15 +99,6 @@ ingredients:
   term:
     id: CHEBI:4991
     label: iron(III) dicitrate(3-)
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.03'
@@ -182,15 +159,6 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '1.5'
@@ -200,20 +168,6 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '5'
@@ -314,6 +268,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:48.742972Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
 solutions:
 - preferred_term: Neutralized sulfide solution
   composition: []

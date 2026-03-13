@@ -50,8 +50,9 @@ ingredients:
     id: CHEBI:64734
     label: Na2-EDTA
   concentration:
-    value: '0.5'
+    value: '0.872'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.372]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -72,13 +73,6 @@ ingredients:
     label: FeCl3 x 6 H2O
   concentration:
     value: '0.27'
-    unit: G_PER_L
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '0.372'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -132,13 +126,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. For preparation of agar medium, add 15.0 g/L agar. Autoclave
-    and, after cooling to 60C, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of agar medium, add 15.0
+    g/L agar. Autoclave and, after cooling to 60C, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: pH of the medium should be around 6.8. Cultivate under an air containing methane in gastight
-    flasks or jars leaving &;80% gas phase by volume (20% methane for liquid cultures; 50% methane for
-    agar plate cultures).
+  description: pH of the medium should be around 6.8. Cultivate under an air containing
+    methane in gastight flasks or jars leaving &;80% gas phase by volume (20% methane
+    for liquid cultures; 50% methane for agar plate cultures).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.
@@ -149,3 +143,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J992'
+- timestamp: '2026-03-13T03:09:26.966512Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

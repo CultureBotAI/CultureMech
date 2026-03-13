@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.391389'
+    value: '1.391389'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.391389, 1.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -106,13 +107,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -254,24 +248,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, crotonate, coenzyme M, vitamins and sulfide), then
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into Hungate-type tubes or serum vials (e.g., 5 ml medium in Balch-type
-    tubes) and autoclave. Add crotonate, coenzyme M, vitamins and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
-    and 20% CO2 gas mixture. Stock solutions of crotonate, coenzyme M and vitamins should be sterilized
-    by filtration. Adjust pH of the complete medium to 7.0 - 7.2.
+  description: Dissolve ingredients (except carbonate, crotonate, coenzyme M, vitamins
+    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
+    45 min to make it anoxic. Dispense medium under same gas atmosphere into Hungate-type
+    tubes or serum vials (e.g., 5 ml medium in Balch-type tubes) and autoclave. Add
+    crotonate, coenzyme M, vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of crotonate, coenzyme
+    M and vitamins should be sterilized by filtration. Adjust pH of the complete medium
+    to 7.0 - 7.2.
 - step_number: 2
   action: MIX
   description: 'Note: Use 10% (v/v) as inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust
-    pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2
-    gas atmosphere.
+  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml
+    of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000
+    ml. Sterilize by filtration under 100% N2 gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -282,4 +279,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.769592Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:44.829753Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

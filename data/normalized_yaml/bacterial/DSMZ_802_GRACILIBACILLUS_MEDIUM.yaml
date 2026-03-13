@@ -84,8 +84,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '1.9802'
+    value: '21.9802'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.9802, 20.0]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -98,8 +99,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.0990099'
+    value: '20.0990099'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0990099, 20.0]'
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -149,30 +151,17 @@ ingredients:
   concentration:
     value: '0.00594059'
     unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.8 (with NaOH) before autoclaving. To the sterile medium, from sterile stock
-    solutions, add 10 ml KH2PO4 (50 g/l), 5 ml CaCl2 (100 g/l), 2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l
-    and MnCl2 x 4 H2O, 20 g/l), and glucose to a final concentration of 2 g/l.
+  description: Adjust pH to 7.8 (with NaOH) before autoclaving. To the sterile medium,
+    from sterile stock solutions, add 10 ml KH2PO4 (50 g/l), 5 ml CaCl2 (100 g/l),
+    2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l and MnCl2 x 4 H2O, 20 g/l), and glucose
+    to a final concentration of 2 g/l.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve salts in the HCl in the oder given above, then make up the solution to 1 litre
-    with distilled water.
+  description: Dissolve salts in the HCl in the oder given above, then make up the
+    solution to 1 litre with distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -183,4 +172,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.160652Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:59.529875Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

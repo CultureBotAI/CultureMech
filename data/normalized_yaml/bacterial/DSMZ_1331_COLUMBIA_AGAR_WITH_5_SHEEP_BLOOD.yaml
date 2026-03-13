@@ -17,12 +17,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Bacto peptone
   concentration:
-    value: '9.52381'
+    value: '19.04762'
     unit: G_PER_L
-- preferred_term: Bacto peptone
-  concentration:
-    value: '9.52381'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.52381, 9.52381]'
 - preferred_term: Tryptic Digest of beef heart
   concentration:
     value: '2.85714'
@@ -39,8 +36,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '4.7619'
+    value: '9.7619'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4.7619, 5.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -56,18 +54,11 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: 1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to boiling to dissolve
-    completely.
+  description: 1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat
+    to boiling to dissolve completely.
 - step_number: 2
   action: HEAT
   description: 2. Sterilize by autoclaving for 15 min at 121°C.
@@ -76,10 +67,12 @@ preparation_steps:
   description: 3. Cool to 45°C. Add 5% sterile defibrinated sheep blood and mix well.
 - step_number: 4
   action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see below).
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see
+    below).
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid Cm131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    Cm131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +84,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:40.744826Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

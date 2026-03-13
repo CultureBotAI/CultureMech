@@ -15,8 +15,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '18'
+    value: '38.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 18.0, 20.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -123,13 +124,6 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: Fe(III)-EDTA
   term:
     id: CHEBI:30729
@@ -147,10 +141,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml of solution 3, 1 ml
-    of the trace elements, and 0.1 ml of solution 2. If solid media is required add 1.5% agar. Autoclave
-    the phosphate buffer separately. When the growth medium is cool 10 ml/l of the phosphate buffer is
-    added - if too warm the phosphate will precipitate.
+  description: Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml
+    of solution 3, 1 ml of the trace elements, and 0.1 ml of solution 2. If solid
+    media is required add 1.5% agar. Autoclave the phosphate buffer separately. When
+    the growth medium is cool 10 ml/l of the phosphate buffer is added - if too warm
+    the phosphate will precipitate.
 - step_number: 2
   action: FILTER_STERILIZE
   description: Add filter-sterilized methanol to produce 1% (final concentration).
@@ -159,11 +154,12 @@ preparation_steps:
   description: May be stored at 4°C in the dark
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up to 1 litre.
+  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up
+    to 1 litre.
 - step_number: 5
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700 ml of 2% NaCl, and then
-    make up to 1 litre with 2% NaCl.
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of 2% NaCl, and then make up to 1 litre with 2% NaCl.
 applications:
 - Microbial cultivation
 curation_history:
@@ -171,3 +167,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1488'
+- timestamp: '2026-03-13T03:09:19.691602Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

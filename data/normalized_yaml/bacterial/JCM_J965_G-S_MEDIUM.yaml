@@ -41,8 +41,9 @@ ingredients:
     id: CHEBI:91248
     label: L-Cysteine HCl x H2O
   concentration:
-    value: '2.9703'
+    value: '3.000003'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.9703, 0.029703]'
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -92,19 +93,13 @@ ingredients:
   concentration:
     value: '0.00990099'
     unit: G_PER_L
-- preferred_term: L-Cysteine HCl x H2O
-  term:
-    id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
-  concentration:
-    value: '0.029703'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.4. Distribute the medium into culture vessels
-    under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
-    add per liter 1 ml following sterile solution from anaerobic stock.
+  description: Mix components thoroughly and adjust pH to 7.4. Distribute the medium
+    into culture vessels under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber
+    stoppers and autoclave. After cooling, add per liter 1 ml following sterile solution
+    from anaerobic stock.
 - step_number: 2
   action: MIX
   description: '<I>Mineral solution</I>:'
@@ -115,3 +110,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J965'
+- timestamp: '2026-03-13T03:08:38.454122Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

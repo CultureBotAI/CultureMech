@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1057
     label: ETHANOLIGENES medium
-notes: 'Source: KOMODO ModelSEED | ID: 1057 | DSMZ Medium: 1057 (mediadive.medium:1057) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1057 | DSMZ Medium: 1057 (mediadive.medium:1057)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -28,8 +29,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3.99202'
+    value: '4.99202'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.99202, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -139,13 +141,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -241,4 +236,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.054749Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:59.368661Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

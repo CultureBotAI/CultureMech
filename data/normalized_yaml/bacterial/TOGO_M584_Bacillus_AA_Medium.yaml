@@ -11,10 +11,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Solution, Organic compound'
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '11.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
+    Inorganic compound [Merged 2 duplicates: 1.0, 10.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -78,15 +78,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.5'
@@ -138,6 +129,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:44.009843Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 solutions:
 - preferred_term: 5% NaHCO3 solution (filter--sterilized)
   composition: []

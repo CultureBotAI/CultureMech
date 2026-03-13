@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.13'
+    value: '0.23'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.13, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -105,13 +106,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.17'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -235,13 +229,14 @@ preparation_steps:
   description: Adjust pH to 7.2 - 7.4 with NaOH.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Prepare concentrated solutions each
-    of yeast extract, glycine, phosphates, NaHCO3 and Na2S separately and sterilize under nitrogen by
-    autoclaving.
+  description: Prepare the medium anaerobically under 100% nitrogen. Prepare concentrated
+    solutions each of yeast extract, glycine, phosphates, NaHCO3 and Na2S separately
+    and sterilize under nitrogen by autoclaving.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,4 +247,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.747993Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:38.822499Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

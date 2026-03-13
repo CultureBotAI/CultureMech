@@ -44,22 +44,25 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.12'
+    value: '3.12'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.12, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.06'
+    value: '0.16'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 0.1]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.02'
+    value: '0.12000000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.1]'
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -102,13 +105,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -123,26 +119,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -272,8 +254,8 @@ preparation_steps:
   description: Filter sterilize cellobiose separately.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:
@@ -285,3 +267,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:42.220009Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

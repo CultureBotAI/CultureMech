@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1086
     label: DESULFATIRHABDIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1086 | DSMZ Medium: 1086 (mediadive.medium:1086) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1086 | DSMZ Medium: 1086 (mediadive.medium:1086)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -157,8 +158,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.5'
+    value: '100.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 100.0]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -179,13 +181,6 @@ ingredients:
     label: Crotonic acid
   concentration:
     value: '86'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '100'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -268,4 +263,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.542944Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:44.866634Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

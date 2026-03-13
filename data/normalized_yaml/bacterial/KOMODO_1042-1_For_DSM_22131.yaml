@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1042.1
     label: For DSM 22131
-notes: 'Source: KOMODO ModelSEED | ID: 1042.1 | DSMZ Medium: 1042 (mediadive.medium:1042) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1042.1 | DSMZ Medium: 1042 (mediadive.medium:1042)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -38,8 +39,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0995025'
+    value: '1.0995025'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0995025, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -78,13 +80,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '10'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -237,4 +232,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:34.725599Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:12.890492Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

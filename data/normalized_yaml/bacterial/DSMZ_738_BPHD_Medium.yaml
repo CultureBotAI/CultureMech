@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.04'
+    value: '0.14'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.04, 0.1]'
 - preferred_term: Cresol
   concentration:
     value: '1'
@@ -159,26 +161,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -239,15 +227,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve phosphates separately, Adjust pH to 6.5. Add cresol/phenol and vitamin solution
-    after autoclaving.
+  description: Dissolve phosphates separately, Adjust pH to 6.5. Add cresol/phenol
+    and vitamin solution after autoclaving.
 - step_number: 2
   action: MIX
   description: '(e.g.: 20 ml/l of a 4.7 g/l phenol-solution)'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -258,4 +246,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.402812Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:44.281255Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

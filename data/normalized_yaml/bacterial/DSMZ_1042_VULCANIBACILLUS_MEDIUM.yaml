@@ -38,8 +38,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0995025'
+    value: '1.0995025'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0995025, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -78,13 +79,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '10'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -226,22 +220,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast extract, pyruvate and
-    vitamins), adjust pH to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense the medium under same gas atmosphere into Hungate-type tubes or serum vials and autoclave.
-    Add ferrous sulfate, bicarbonate, yeast extract, pyruvate and vitamins from sterile anoxic stock solutions
-    prepared under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under 80%
-    N2 and 20% CO2 gas atmosphere. Prepare the stock solution of ferrous sulfate by dissolving 1% (w/v)
-    FeSO4 x 7 H2O in 0.1 N H2SO4. The stock solutions of pyruvate and vitamins should be sterilized by
-    filtration. Adjust pH of the complete medium to 6.8-7.0.
+  description: Dissolve ingredients (except ferrous sulfate, bicarbonate, yeast extract,
+    pyruvate and vitamins), adjust pH to 7.0 and sparge medium with 100% N2 gas for
+    30 - 45 min to make it anoxic. Dispense the medium under same gas atmosphere into
+    Hungate-type tubes or serum vials and autoclave. Add ferrous sulfate, bicarbonate,
+    yeast extract, pyruvate and vitamins from sterile anoxic stock solutions prepared
+    under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas atmosphere. Prepare the stock solution of ferrous
+    sulfate by dissolving 1% (w/v) FeSO4 x 7 H2O in 0.1 N H2SO4. The stock solutions
+    of pyruvate and vitamins should be sterilized by filtration. Adjust pH of the
+    complete medium to 6.8-7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: It may be necessary to add 10-20 mg sodium dithionite per liter (e.g. from 5% (w/v)
-    solution, freshly prepared under 100% N2 and filter-sterilized), if the medium is not completely reduced
-    after inoculation.'
+  description: 'Note: It may be necessary to add 10-20 mg sodium dithionite per liter
+    (e.g. from 5% (w/v) solution, freshly prepared under 100% N2 and filter-sterilized),
+    if the medium is not completely reduced after inoculation.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,4 +249,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.800303Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:45.275960Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

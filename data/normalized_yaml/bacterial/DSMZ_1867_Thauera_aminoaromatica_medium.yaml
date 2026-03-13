@@ -30,22 +30,25 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.4928'
+    value: '3.4928'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4928, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.01468'
+    value: '0.11468'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01468, 0.1]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.01'
+    value: '1.01'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 1.0]'
 - preferred_term: Acetate
   term:
     id: CHEBI:30089
@@ -65,8 +68,9 @@ ingredients:
     id: CHEBI:29377
     label: Na2CO3
   concentration:
-    value: '1.75'
+    value: '51.75'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.75, 50.0]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -141,26 +145,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -175,13 +165,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -253,39 +236,34 @@ ingredients:
   concentration:
     value: '90'
     unit: G_PER_L
-- preferred_term: Na2CO3
-  term:
-    id: CHEBI:29377
-    label: Na2CO3
-  concentration:
-    value: '50'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 2
   action: MIX
-  description: Sparge medium with 80% N2 and 20% CO2 gas mixture , flush headspace with gas phase to remove
-    oxygen.
+  description: Sparge medium with 80% N2 and 20% CO2 gas mixture , flush headspace
+    with gas phase to remove oxygen.
 - step_number: 3
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with anaerobic distilled
-    water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    anaerobic distilled water.
 - step_number: 4
   action: AUTOCLAVE
-  description: 'aliquot medium into autoclaved sterilized serum vials, pressurized with 80% N2 : 20% CO2'
+  description: 'aliquot medium into autoclaved sterilized serum vials, pressurized
+    with 80% N2 : 20% CO2'
 - step_number: 5
   action: ALIQUOT
-  description: Prior to the cultivation supplement media aliquot with 30 mM acetate, 25 mM NO-3, and 1.75
-    g/L Na2CO3.
+  description: Prior to the cultivation supplement media aliquot with 30 mM acetate,
+    25 mM NO-3, and 1.75 g/L Na2CO3.
 - step_number: 6
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 7
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 - step_number: 8
   action: FILTER_STERILIZE
   description: Filtrate (pore size 0.22 µm).
@@ -294,10 +272,12 @@ preparation_steps:
   description: Sparge medium with 80% N2 and 20% CO2 gas mixture or 100% N2.
 - step_number: 10
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 - step_number: 11
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
 applications:
 - Microbial cultivation
 references:
@@ -310,4 +290,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.754372Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:14.483564Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

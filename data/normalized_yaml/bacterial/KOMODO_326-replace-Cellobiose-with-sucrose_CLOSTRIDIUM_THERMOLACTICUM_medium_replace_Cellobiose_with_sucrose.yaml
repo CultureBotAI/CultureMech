@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:326_replace_Cellobiose_with_sucrose
     label: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
-notes: 'Source: KOMODO ModelSEED | ID: 326_replace_Cellobiose_with_sucrose | DSMZ Medium: 326 (mediadive.medium:326)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 326_replace_Cellobiose_with_sucrose | DSMZ
+  Medium: 326 (mediadive.medium:326) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
-    value: '0.011976'
+    value: '0.201976'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.011976, 0.19]'
 - preferred_term: Yeast extract
   concentration:
     value: '1.99601'
@@ -107,13 +108,6 @@ ingredients:
     label: H3BO3
   concentration:
     value: '0.006'
-    unit: G_PER_L
-- preferred_term: CoCl2 x 6 H2O
-  term:
-    id: CHEBI:35696
-    label: CoCl2 x 6 H2O
-  concentration:
-    value: '0.19'
     unit: G_PER_L
 - preferred_term: CuCl2 x 2 H2O
   term:
@@ -217,11 +211,16 @@ curation_history:
 - timestamp: '2026-02-06T05:10:11.877531Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-02-20T07:49:55.000000Z'
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: CLOSTRIDIUM THERMOLACTICUM, culture_type: isolate'
+- timestamp: '2026-03-13T03:08:37.392662Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: CLOSTRIDIUM THERMOLACTICUM

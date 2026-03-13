@@ -6,15 +6,16 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 1N NaOH
   concentration:
-    value: '25'
+    value: '26.0'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Properties: Defined component, Inorganic compound, Solution [Merged 2 duplicates:
+    25.0, 1.0]'
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '101.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+    Inorganic compound [Merged 2 duplicates: 1.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -89,20 +90,6 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
-- preferred_term: 1N NaOH
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Inorganic compound, Solution, Defined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Hemin
   concentration:
     value: '50'
@@ -141,6 +128,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:54.607757Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 solutions:
 - preferred_term: Hemin Solution
   term:

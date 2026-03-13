@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.5'
+    value: '3.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 3.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -71,21 +72,15 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.03'
+    value: '0.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.03, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -100,13 +95,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -181,14 +169,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except tetrathionate and ferrous sulfate), adjust pH to 2.5 with
-    H2SO4 and autoclave. After cooling, add tetrathionate from a 100 mM stock solution and FeSO4 from
-    a 10 mM stock solution (prepared in water adjusted to pH 2.0 with H2SO4). Both solutions should be
-    freshly prepared and sterilized by filtration.
+  description: Dissolve ingredients (except tetrathionate and ferrous sulfate), adjust
+    pH to 2.5 with H2SO4 and autoclave. After cooling, add tetrathionate from a 100
+    mM stock solution and FeSO4 from a 10 mM stock solution (prepared in water adjusted
+    to pH 2.0 with H2SO4). Both solutions should be freshly prepared and sterilized
+    by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -200,3 +189,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:01.712905Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

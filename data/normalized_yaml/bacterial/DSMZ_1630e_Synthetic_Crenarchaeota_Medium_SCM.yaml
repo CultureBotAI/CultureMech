@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '5100.0'
     unit: G_PER_L
+  notes: ' [Merged 7 duplicates: 1000.0, 1000.0, 1000.0, 50.0, 50.0, 1000.0, 1000.0]'
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -123,23 +124,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: FeNa-EDTA
   concentration:
     value: '2.753'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
     unit: G_PER_L
 - preferred_term: NaHCO3
   term:
@@ -148,26 +135,12 @@ ingredients:
   concentration:
     value: '84'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
     value: '53.4'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
     unit: G_PER_L
 - preferred_term: KH2PO4
   term:
@@ -176,24 +149,10 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: alpha-ketoglutamate
   concentration:
     value: '20'
     unit: MILLIMOLAR
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -245,3 +204,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1630e'
+- timestamp: '2026-03-13T03:09:05.619214Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

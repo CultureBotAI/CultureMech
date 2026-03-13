@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.44311'
+    value: '6.44311'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.44311, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.139721'
+    value: '0.23972100000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.139721, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -65,35 +67,31 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.499002'
+    value: '1.499002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.499002, 1.0]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00199601'
+    value: '0.03199601'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00199601, 0.03]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '19.9601'
+    value: '20.060100000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 19.9601, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -102,33 +100,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -165,13 +142,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -189,13 +159,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.5 with 4 N H2SO4. Sterilize
-    medium by autoclaving for 15 min at 121°C. Prior to inoculation add FeSO4 x 7 H2O from a 40% (w/v)
-    stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere.
+  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.5 with
+    4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Prior to inoculation
+    add FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and
+    filter-sterilized under 100% N2 gas atmosphere.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -203,3 +174,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 477'
+- timestamp: '2026-03-13T03:08:38.070837Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

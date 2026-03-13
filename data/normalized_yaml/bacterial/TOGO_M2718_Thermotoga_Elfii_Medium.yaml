@@ -6,28 +6,28 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '2000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 10.0, 1.0]'
   term:
     id: CHEBI:26710
     label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.1, 0.1]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -147,15 +147,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '3'
@@ -165,24 +156,6 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
@@ -320,6 +293,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:01.843354Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []

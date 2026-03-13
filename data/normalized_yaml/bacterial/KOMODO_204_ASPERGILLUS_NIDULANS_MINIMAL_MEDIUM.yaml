@@ -68,6 +68,11 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,5 +87,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:33.659857'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default concentration for ingredient:
-    ZnSO4 x 7 H2O'
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
+    concentration for ingredient: ZnSO4 x 7 H2O'
+- timestamp: '2026-03-13T03:08:38.268255Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'

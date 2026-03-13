@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -72,8 +74,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4'
+    value: '6.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -93,8 +96,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.01'
+    value: '0.11'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 0.1]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -186,42 +190,14 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -263,16 +239,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, sulfur and Na2S x 9H2O, adjust pH to 7.0 with NaOH and autoclave
-    under a N2 atmosphere. Filter-sterilize 8% NaHCO3 solution and add to the medium. Steam sulfur for
-    3 hr on each of 3 successive days. Distribute the medium into culture vessels (e.g., 20 ml in 120
-    ml serum bottles) containing sulfur under a stream of a H2-CO2 (4:1, v/v) gas mixture and seal with
-    butyl rubber stoppers. Prior to inoculation, add 5% Na2S x 9H2O (autoclaved and stocked under a N2
-    atmosphere) to the medium. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except NaHCO3, sulfur and Na2S x 9H2O, adjust pH to
+    7.0 with NaOH and autoclave under a N2 atmosphere. Filter-sterilize 8% NaHCO3
+    solution and add to the medium. Steam sulfur for 3 hr on each of 3 successive
+    days. Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum
+    bottles) containing sulfur under a stream of a H2-CO2 (4:1, v/v) gas mixture and
+    seal with butyl rubber stoppers. Prior to inoculation, add 5% Na2S x 9H2O (autoclaved
+    and stocked under a N2 atmosphere) to the medium. Pressurize the inoculated bottles
+    to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -280,3 +258,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J492'
+- timestamp: '2026-03-13T03:08:37.440537Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1.88147'
+    value: '2.88147'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.88147, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -50,8 +51,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0940734'
+    value: '0.1940734'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0940734, 0.1]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -130,13 +132,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -148,13 +143,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -196,15 +184,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, and autoclave under a N2-CO2 (4:1, v/v) gas mixture. Steam
-    sulfur for 3 hr on each of 3 successive days. Aseptically distribute the medium into culture vessels
-    containing appropriate amount of sulfur while gassing with a N2-CO2 (4:1, v/v) gas mixture and seal
-    with butyl rubber stoppers. Add per liter the following solutions (autoclaved and stored under N2,
-    or *filter-sterilized and stored under N2-CO2, 4:1, v/v):'
+  description: 'Mix components except sulfur, and autoclave under a N2-CO2 (4:1, v/v)
+    gas mixture. Steam sulfur for 3 hr on each of 3 successive days. Aseptically distribute
+    the medium into culture vessels containing appropriate amount of sulfur while
+    gassing with a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
+    Add per liter the following solutions (autoclaved and stored under N2, or *filter-sterilized
+    and stored under N2-CO2, 4:1, v/v):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -212,3 +201,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J875'
+- timestamp: '2026-03-13T03:09:23.184184Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

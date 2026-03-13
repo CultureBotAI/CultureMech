@@ -5,33 +5,12 @@ description: 1063. NBRC 1062.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Tryptone5gYeast extract3gNaCl10gUrea1gDistilled water1LAgar (if needed)15gAdjust pH
-    to 8.5 with 50 mM Tris-HCl buffer.
+- preferred_term: Tryptone5gYeast extract3gNaCl10gUrea1gDistilled water1LAgar (if
+    needed)15gAdjust pH to 8.5 with 50 mM Tris-HCl buffer.
 - preferred_term: ''
   concentration:
     value: Tryptone
     unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: NaCl
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Urea
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar (if needed)
-    unit: G_PER_L
-- preferred_term: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -48,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1062, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1062.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:36.095728Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

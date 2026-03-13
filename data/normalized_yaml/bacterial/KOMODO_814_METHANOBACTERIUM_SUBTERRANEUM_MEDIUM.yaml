@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:814
     label: METHANOBACTERIUM SUBTERRANEUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 814 | DSMZ Medium: 814 (mediadive.medium:814) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 814 | DSMZ Medium: 814 (mediadive.medium:814)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.444225'
+    value: '1.4442249999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.444225, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0029615'
+    value: '0.10296150000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0029615, 0.1]'
 - preferred_term: Tryptone
   concentration:
     value: '0.987167'
@@ -109,20 +112,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -205,3 +194,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 814
+- timestamp: '2026-03-13T03:09:20.746401Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -38,8 +38,9 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '2'
+    value: '3.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -103,13 +104,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -134,16 +128,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The vitamin K1, haemin solution and the cysteine are added after the medium has been boiled
-    and cooled under CO2. Adjust pH to 7.2 using 8 N NaOH. Distribute under N2 and autoclave.
+  description: The vitamin K1, haemin solution and the cysteine are added after the
+    medium has been boiled and cooled under CO2. Adjust pH to 7.2 using 8 N NaOH.
+    Distribute under N2 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
-    sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
-    in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -151,3 +146,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 228'
+- timestamp: '2026-03-13T03:09:08.517744Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.2'
+    value: '0.392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.192]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -83,8 +84,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '23.47'
+    value: '24.47'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 23.47, 1.0]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -106,13 +108,6 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.192'
-    unit: G_PER_L
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -132,8 +127,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.026'
+    value: '0.036'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.026, 0.01]'
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -168,13 +164,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -218,13 +207,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -249,22 +231,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without Na2S x 9 H2O and NaHCO3, boil and cool under N2. Add the NaHCO3
-    to the cooled medium and adjust the pH to 6.7. Dispense into Hungate tubes or serum bottles under
-    N2 and autoclave. Reduce the medium before use from a sterile stock solution of neutralised Na2S x
-    9 H2O.
+  description: Prepare the medium without Na2S x 9 H2O and NaHCO3, boil and cool under
+    N2. Add the NaHCO3 to the cooled medium and adjust the pH to 6.7. Dispense into
+    Hungate tubes or serum bottles under N2 and autoclave. Reduce the medium before
+    use from a sterile stock solution of neutralised Na2S x 9 H2O.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'The chitin solution is prepared as follows: mix 20 g chitin (practical grade from crab
-    shells) with 200 ml of 37% HCl (pre-cooled to 4°C) and stir for 1 hr at 4°C. Pour the suspension into
-    1 litre of distilled water (pre-cooled to 4°C) and filter through filter paper (Schleicher and Schüll
-    Nr. 311853). Wash the residue five times with 500 ml distilled water and resuspend in 1 litre of distilled
-    water. Neutralise the suspension with 10 ml of 5M KOH (final pH 6.5). Filter and wash with 3 litres
-    of distilled water to remove KCl.'
+  description: 'The chitin solution is prepared as follows: mix 20 g chitin (practical
+    grade from crab shells) with 200 ml of 37% HCl (pre-cooled to 4°C) and stir for
+    1 hr at 4°C. Pour the suspension into 1 litre of distilled water (pre-cooled to
+    4°C) and filter through filter paper (Schleicher and Schüll Nr. 311853). Wash
+    the residue five times with 500 ml distilled water and resuspend in 1 litre of
+    distilled water. Neutralise the suspension with 10 ml of 5M KOH (final pH 6.5).
+    Filter and wash with 3 litres of distilled water to remove KCl.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -272,3 +255,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 766'
+- timestamp: '2026-03-13T03:09:07.590061Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -37,15 +37,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.098912'
+    value: '3.098912'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.098912, 3.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.00791296'
+    value: '1.00791296'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00791296, 1.0]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -85,26 +87,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -253,14 +241,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose, peptone and vitamins) and adjust pH to 8.1. Dispense
-    medium under air atmosphere into culture vessels suitable for anaerobic cultivation (e.g., 10 ml medium
-    per Balch-type tube), seal and autoclave. Add glucose, peptone and vitamins from sterile stock solutions
-    sterilized by filtration. Adjust pH of complete medium to 7.5, if necessary.
+  description: Dissolve ingredients (except glucose, peptone and vitamins) and adjust
+    pH to 8.1. Dispense medium under air atmosphere into culture vessels suitable
+    for anaerobic cultivation (e.g., 10 ml medium per Balch-type tube), seal and autoclave.
+    Add glucose, peptone and vitamins from sterile stock solutions sterilized by filtration.
+    Adjust pH of complete medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -271,4 +260,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.085198Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:19.968522Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -60,10 +60,10 @@ ingredients:
     label: sodium citrate dihydrate
 - preferred_term: DI Water
   concentration:
-    value: '400'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component [Merged 3 duplicates: 400.0, 200.0, 400.0]'
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -73,12 +73,6 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: DI Water
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
 - preferred_term: Yeast Extract
   concentration:
     value: '1'
@@ -93,12 +87,6 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
-- preferred_term: DI Water
-  concentration:
-    value: '400'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
 media_term:
   preferred_term: TOGO Medium M2616
   term:
@@ -123,3 +111,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: H2'
+- timestamp: '2026-03-13T03:09:18.764637Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

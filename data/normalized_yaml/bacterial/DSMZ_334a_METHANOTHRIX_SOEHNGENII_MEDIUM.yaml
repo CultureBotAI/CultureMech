@@ -55,15 +55,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '11'
+    value: '11.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 11.0, 0.1]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -87,18 +89,12 @@ ingredients:
     id: CHEBI:17790
     label: Methanol
   concentration:
-    value: '792'
+    value: '1584.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 792.0, 792.0]'
 - preferred_term: L-α-Phosphatidylcholine
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: Methanol
-  term:
-    id: CHEBI:17790
-    label: Methanol
-  concentration:
-    value: '792'
     unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
@@ -135,13 +131,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -176,13 +165,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.12'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -261,31 +243,35 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    dispense under same gas atmosphere into anoxic serum vials or balch tubes (e.g., 20 ml medium in 50
-    ml bottles) and autoclave. Prior to inoculation complete the medium by adding sterile solutions C
-    - H prepared under 100% N2 gas and solution B prepared under 80% N2 and 20% CO2 gas atmosphere. Solutions
-    E, F and G are sterilized by filtration. Adjust the pH of the complete medium to 7.2.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic, dispense under same gas atmosphere into anoxic serum vials
+    or balch tubes (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to inoculation
+    complete the medium by adding sterile solutions C - H prepared under 100% N2 gas
+    and solution B prepared under 80% N2 and 20% CO2 gas atmosphere. Solutions E,
+    F and G are sterilized by filtration. Adjust the pH of the complete medium to
+    7.2.
 - step_number: 2
   action: MIX
-  description: 'Notes: Medium is only stable for a few weeks and has to be prepared freshly. Use 20% (v/v)
-    inoculum. Sodium sulfide should be as pure as possible (use only clean crystals for the preparation
-    of stock solutions). It has been noted that impurities of sulfide stock solutions can inhibit growth.'
+  description: 'Notes: Medium is only stable for a few weeks and has to be prepared
+    freshly. Use 20% (v/v) inoculum. Sodium sulfide should be as pure as possible
+    (use only clean crystals for the preparation of stock solutions). It has been
+    noted that impurities of sulfide stock solutions can inhibit growth.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 - step_number: 4
   action: HEAT
-  description: Cultivate <i>Sphaerochaeta associata</i> DSM 26261 in DSM medium 119 supplemented with
-    1.00 g/l glucose at 28°C until stationary phase is reached (7-10 days). Centrifuge culture at 3500
-    xg for 30 min, then sterilize supernatant by filtration and add it to the anoxic solution A before
-    autoclaving.
+  description: Cultivate <i>Sphaerochaeta associata</i> DSM 26261 in DSM medium 119
+    supplemented with 1.00 g/l glucose at 28°C until stationary phase is reached (7-10
+    days). Centrifuge culture at 3500 xg for 30 min, then sterilize supernatant by
+    filtration and add it to the anoxic solution A before autoclaving.
 - step_number: 5
   action: MIX
-  description: 'Note: It is also possible to add 50.00 ml/l of a grown <i>S. associata</i> culture to
-    solution A before autoclaving, provided bacterial DNA from dead cells is not a problem in the downstream
-    processing of the Methanothrix culture.'
+  description: 'Note: It is also possible to add 50.00 ml/l of a grown <i>S. associata</i>
+    culture to solution A before autoclaving, provided bacterial DNA from dead cells
+    is not a problem in the downstream processing of the Methanothrix culture.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -296,4 +282,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.490538Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:22.200968Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

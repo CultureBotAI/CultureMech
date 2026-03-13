@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '0.643777'
+    value: '575.643777'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.643777, 575.0]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000536481'
@@ -77,13 +78,6 @@ ingredients:
     label: CaCl2 x 2 H2O
   concentration:
     value: '75'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '575'
     unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
@@ -252,4 +246,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 193b'
+- timestamp: '2026-03-13T03:09:01.387992Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

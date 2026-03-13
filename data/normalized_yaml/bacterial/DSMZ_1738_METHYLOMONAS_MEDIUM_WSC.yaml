@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.08'
+    value: '0.09'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.08, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -176,13 +177,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: La(NO3)3 x 6 H2O
   concentration:
     value: '0.06'
@@ -196,8 +190,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.4'
+    value: '12.200000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4, 11.8]'
 - preferred_term: Na2SeO4
   term:
     id: CHEBI:59160
@@ -225,13 +220,6 @@ ingredients:
     label: HEPES
   concentration:
     value: '95.3'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '11.8'
     unit: G_PER_L
 - preferred_term: Na2HPO4
   term:
@@ -281,4 +269,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1738'
+- timestamp: '2026-03-13T03:09:31.065743Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_ree: true

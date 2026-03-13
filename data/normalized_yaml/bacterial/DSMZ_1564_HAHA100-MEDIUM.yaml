@@ -16,19 +16,22 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.17'
+    value: '2.17'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.17, 2.0]'
 - preferred_term: α-D-Glucose monohydrate
   concentration:
-    value: '0.4'
+    value: '1.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4, 1.0]'
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
     label: Cellobiose
   concentration:
-    value: '0.4'
+    value: '1.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4, 1.0]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -62,8 +65,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.062'
+    value: '0.082'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.062, 0.02]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -148,13 +152,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -183,24 +180,6 @@ ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: α-D-Glucose monohydrate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Cellobiose
-  term:
-    id: CHEBI:17057
-    label: Cellobiose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '2'
     unit: G_PER_L
 - preferred_term: NaOH
   term:
@@ -253,3 +232,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:22.424996Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

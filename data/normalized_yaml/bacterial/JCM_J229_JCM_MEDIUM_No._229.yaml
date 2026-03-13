@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '98.0392'
+    value: '99.0392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 98.0392, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1.96078'
+    value: '4.96078'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.96078, 3.0]'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -82,23 +84,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -232,7 +220,8 @@ preparation_steps:
   description: Check final pH to be about 10.0.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve nitrilotriacetic acid with KOH to pH 6.5, then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid with KOH to pH 6.5, then proceed to
+    add minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -240,3 +229,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J229'
+- timestamp: '2026-03-13T03:09:02.303205Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

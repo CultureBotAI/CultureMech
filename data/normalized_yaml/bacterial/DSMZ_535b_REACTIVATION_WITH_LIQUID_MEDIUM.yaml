@@ -45,24 +45,19 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '35.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 15.0, 20.0]'
 - preferred_term: Trypticase soy broth
   concentration:
     value: '30'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid broth 545. Subsequent
-    subculturing may be carried out in liquid medium 545 or on agar plates.
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    broth 545. Subsequent subculturing may be carried out in liquid medium 545 or
+    on agar plates.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.3.
@@ -82,3 +77,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 535b'
+- timestamp: '2026-03-13T03:08:38.105371Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

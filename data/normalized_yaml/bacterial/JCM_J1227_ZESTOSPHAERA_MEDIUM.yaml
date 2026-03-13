@@ -94,8 +94,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.0018'
+    value: '0.1018'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0018, 0.1]'
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0045'
@@ -112,15 +113,17 @@ ingredients:
     id: CHEBI:86318
     label: CuCl2 x 2 H2O
   concentration:
-    value: 5e-05
+    value: '0.020050000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5e-05, 0.02]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: 3e-05
+    value: '0.01003'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3e-05, 0.01]'
 - preferred_term: VOSO4 x n H2O
   term:
     id: CHEBI:87020
@@ -149,13 +152,6 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -181,13 +177,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CuCl2 x 2 H2O
-  term:
-    id: CHEBI:86318
-    label: CuCl2 x 2 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
 - preferred_term: NiSO4 x 6 H2O
   term:
     id: CHEBI:53001
@@ -209,24 +198,17 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Heat the medium to boiling while bubbling with a N2-CO2 (4:1, v/v) gas mixture. After
-    boiling, cool the medium in a water bath. Continue bubbling with the same gas mixture. While the medium
-    is still warm, add the following:'
+  description: 'Heat the medium to boiling while bubbling with a N2-CO2 (4:1, v/v)
+    gas mixture. After boiling, cool the medium in a water bath. Continue bubbling
+    with the same gas mixture. While the medium is still warm, add the following:'
 - step_number: 2
   action: AUTOCLAVE
-  description: After the medium is cooled to room temperature, adjust pH to 6.0 - 6.1. Dispense the medium
-    into culture vessels (e.g., 10 ml in Balch type tubes) under the same gas mixture, seal with butyl
-    rubber stoppers and autoclave.
+  description: After the medium is cooled to room temperature, adjust pH to 6.0 -
+    6.1. Dispense the medium into culture vessels (e.g., 10 ml in Balch type tubes)
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
@@ -238,3 +220,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:36.370720Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

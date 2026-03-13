@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:465_12585
     label: MEDIUM 465 MODIFIED FOR DSM 12585
-notes: 'Source: KOMODO ModelSEED | ID: 465_12585 | DSMZ Medium: 465 (mediadive.medium:465) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 465_12585 | DSMZ Medium: 465 (mediadive.medium:465)
+  | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:
@@ -126,9 +126,9 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '65.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' (for solid medium) [Merged 4 duplicates: 15.0, 15.0, 20.0, 15.0]'
 - preferred_term: Casein peptone
   concentration:
     value: '15'
@@ -144,23 +144,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
 - preferred_term: Trypticase soy broth
   concentration:
     value: '30'
-    unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '20'
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
@@ -212,13 +198,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -230,3 +209,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 465
+- timestamp: '2026-03-13T03:08:54.900210Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

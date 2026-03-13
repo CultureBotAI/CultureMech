@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.00584795'
+    value: '0.035847949999999996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00584795, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -191,13 +192,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -236,13 +230,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: H3P is a heterotrophic medium for growth, purity checking and isolation of a broad spectrum
-    of aerobic bacteria (Ref. 3367).
+  description: H3P is a heterotrophic medium for growth, purity checking and isolation
+    of a broad spectrum of aerobic bacteria (Ref. 3367).
 - step_number: 2
   action: AUTOCLAVE
-  description: Solutions A, B, C and D are autoclaved separately for 15 min at 121°C, cooled down to 50°C
-    and then mixed aseptically with filter-sterilized solution E (at 50°C) and 5.0 ml of standard vitamin
-    solution. The final pH of this medium should be 6.8 without adjustment.
+  description: Solutions A, B, C and D are autoclaved separately for 15 min at 121°C,
+    cooled down to 50°C and then mixed aseptically with filter-sterilized solution
+    E (at 50°C) and 5.0 ml of standard vitamin solution. The final pH of this medium
+    should be 6.8 without adjustment.
 - step_number: 3
   action: MIX
   description: pH 7.0
@@ -262,3 +257,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 428'
+- timestamp: '2026-03-13T03:08:45.718006Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

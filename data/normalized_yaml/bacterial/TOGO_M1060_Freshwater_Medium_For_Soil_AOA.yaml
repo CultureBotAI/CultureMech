@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '1489.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 4 duplicates: 1.0, 987.0, 1.0, 500.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -58,15 +58,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Solution, Inorganic compound, Defined
     component'
-- preferred_term: Distilled water
-  concentration:
-    value: '987'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '36'
@@ -112,15 +103,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '20'
@@ -198,15 +180,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: HEPES (free acid)
   concentration:
     value: '119.2'
@@ -220,14 +193,6 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M1060
   term:
@@ -258,6 +223,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 7 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:00.128251Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: 1 M NaHCO3 solution*

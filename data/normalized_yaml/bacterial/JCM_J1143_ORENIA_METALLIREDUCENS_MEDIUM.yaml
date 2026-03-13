@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0478927'
+    value: '5.0478927'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0478927, 5.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -57,8 +58,9 @@ ingredients:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '0.335249'
+    value: '12.835249'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.335249, 12.5]'
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -105,26 +107,12 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '12.5'
     unit: G_PER_L
 - preferred_term: K2HPO4
   term:
@@ -290,13 +278,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (80:20, v/v) gas
-    mixture. When the medium is cooled to around 50C, add the following components:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
+    (80:20, v/v) gas mixture. When the medium is cooled to around 50C, add the following
+    components:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Continue flushing with the gas mixture until the chemicals are dissolved completely. Distribute
-    the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave.
-    After cooling, add per liter the following solutions (autoclave and stored under a N2 atmosphere):'
+  description: 'Continue flushing with the gas mixture until the chemicals are dissolved
+    completely. Distribute the medium into culture vessels under the same gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the
+    following solutions (autoclave and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -304,3 +294,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1143'
+- timestamp: '2026-03-13T03:09:20.556669Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

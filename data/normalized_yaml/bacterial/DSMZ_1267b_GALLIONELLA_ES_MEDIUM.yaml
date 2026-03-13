@@ -23,15 +23,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.221976'
+    value: '30.221976'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.221976, 30.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.110988'
+    value: '1.110988'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.110988, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -53,13 +55,6 @@ ingredients:
   concentration:
     value: '1.66482'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -79,21 +74,15 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '155.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 154.0]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -218,13 +207,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '154'
-    unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -279,4 +261,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:16.516801Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 high_metal: true

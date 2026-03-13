@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:629
     label: STALEY'S MAINTENANCE medium
-notes: 'Source: KOMODO ModelSEED | ID: 629 | DSMZ Medium: 629 (mediadive.medium:629) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 629 | DSMZ Medium: 629 (mediadive.medium:629)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -57,8 +58,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -122,13 +124,6 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -165,3 +160,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 629
+- timestamp: '2026-03-13T03:08:44.214868Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

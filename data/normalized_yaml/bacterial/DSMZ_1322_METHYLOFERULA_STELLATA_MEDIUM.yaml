@@ -72,8 +72,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '3.54'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.54]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -102,13 +103,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1.54'
-    unit: G_PER_L
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -122,13 +116,14 @@ preparation_steps:
   description: Final pH 5.0-5.8.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Prepare the medium without methanol  in closed vessels. Adjust pH to 5.0-5.8 and sterilize.
-    Allow to cool to about 30°C before adding 10 mL filter-sterilized methanol per litre medium.
+  description: Prepare the medium without methanol  in closed vessels. Adjust pH to
+    5.0-5.8 and sterilize. Allow to cool to about 30°C before adding 10 mL filter-sterilized
+    methanol per litre medium.
 - step_number: 3
   action: MIX
-  description: The medium is fairly weakly buffered so the pH should be checked before and after autoclaving.
-    The pH should be adjusted with H3PO4 (sterilised if added to sterile medium). The strain should be
-    grown with shaking.
+  description: The medium is fairly weakly buffered so the pH should be checked before
+    and after autoclaving. The pH should be adjusted with H3PO4 (sterilised if added
+    to sterile medium). The strain should be grown with shaking.
 applications:
 - Microbial cultivation
 curation_history:
@@ -136,3 +131,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1322'
+- timestamp: '2026-03-13T03:08:48.099777Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

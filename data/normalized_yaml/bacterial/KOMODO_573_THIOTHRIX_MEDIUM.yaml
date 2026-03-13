@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:573
     label: THIOTHRIX MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 573 | DSMZ Medium: 573 (mediadive.medium:573) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 573 | DSMZ Medium: 573 (mediadive.medium:573)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -115,15 +116,9 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '30'
+    value: '40.0'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 10.0]'
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +130,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 573
+- timestamp: '2026-03-13T03:09:21.030480Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

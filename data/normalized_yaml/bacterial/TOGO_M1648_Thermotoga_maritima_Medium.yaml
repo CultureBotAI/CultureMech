@@ -6,19 +6,19 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '750'
+    value: '752.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 750.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: NaCl
   concentration:
-    value: '20'
+    value: '48.7'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 20.0, 1.0, 27.7]'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -63,39 +63,21 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
-    value: '3'
+    value: '10.0'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 3.0, 7.0]'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
-    value: '0.1'
+    value: '2.35'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.1, 2.25]'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -110,10 +92,10 @@ ingredients:
     label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
-    value: '0.01'
+    value: '30.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.01, 30.0]'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -206,42 +188,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '27.7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '2.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '5.5'
@@ -251,15 +197,6 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
-- preferred_term: H3BO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
 - preferred_term: KCl
   concentration:
     value: '0.65'
@@ -334,6 +271,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:40.784185Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)
 solutions:
 - preferred_term: Na2S·9H2O**
   composition: []

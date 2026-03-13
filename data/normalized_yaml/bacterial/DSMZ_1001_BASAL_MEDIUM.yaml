@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '2.5'
+    value: '3.34007'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5, 0.84007]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -38,13 +39,6 @@ ingredients:
     label: KCl
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.84007'
     unit: G_PER_L
 - preferred_term: Na acetate
   term:
@@ -231,23 +225,26 @@ preparation_steps:
   description: Add all basal medium ingredients without vitamins.
 - step_number: 2
   action: MIX
-  description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble the medium with N2:CO2
-    (80:20) to make anoxic.
+  description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min Bubble
+    the medium with N2:CO2 (80:20) to make anoxic.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8-7.0.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense into serum bottles (using 10ml medium in 100 ml bottles with N2:CO2 headspace).
+  description: Dispense into serum bottles (using 10ml medium in 100 ml bottles with
+    N2:CO2 headspace).
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 6
   action: MIX
-  description: After autoclaving, add the following solutions to a final volume of 10ml/L each.
+  description: After autoclaving, add the following solutions to a final volume of
+    10ml/L each.
 - step_number: 7
   action: STORE
-  description: 'Note: This medium should not be exposed to direct sunlight! Store out of direct light.'
+  description: 'Note: This medium should not be exposed to direct sunlight! Store
+    out of direct light.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -258,4 +255,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.267595Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:29.698532Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

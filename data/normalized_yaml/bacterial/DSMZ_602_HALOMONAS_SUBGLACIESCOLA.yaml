@@ -23,8 +23,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '9.5'
+    value: '39.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.5, 29.7]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -37,8 +38,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.2'
+    value: '3.535'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 3.335]'
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -127,20 +129,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '29.7'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.335'
-    unit: G_PER_L
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -150,8 +138,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -165,13 +154,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -204,8 +186,8 @@ preparation_steps:
   description: pH 8.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave and add, on cooling 20.0 ml sterile Hutner's salts (see medium 590), 1.0 ml vitamin
-    solution, and 20.0 ml sterile phosphate supplement.
+  description: Autoclave and add, on cooling 20.0 ml sterile Hutner's salts (see medium
+    590), 1.0 ml vitamin solution, and 20.0 ml sterile phosphate supplement.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter-sterilized.
@@ -223,8 +205,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -232,3 +214,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 602'
+- timestamp: '2026-03-13T03:08:45.460099Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

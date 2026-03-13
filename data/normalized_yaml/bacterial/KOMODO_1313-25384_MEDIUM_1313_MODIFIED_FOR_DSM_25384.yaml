@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1313_25384
     label: MEDIUM 1313 MODIFIED FOR DSM 25384
-notes: 'Source: KOMODO ModelSEED | ID: 1313_25384 | DSMZ Medium: 1313 (mediadive.medium:1313) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 1313_25384 | DSMZ Medium: 1313 (mediadive.medium:1313)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -58,8 +58,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.0222222'
+    value: '0.0580431'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0222222, 0.0358209]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -129,13 +130,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.0238806'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.0358209'
     unit: G_PER_L
 - preferred_term: Para-aminobenzoic acid
   term:
@@ -218,3 +212,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1313
+- timestamp: '2026-03-13T03:09:41.242415Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

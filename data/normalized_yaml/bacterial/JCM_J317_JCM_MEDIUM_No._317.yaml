@@ -40,8 +40,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.149402'
+    value: '0.249402'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.149402, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -104,13 +105,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.024'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -234,8 +228,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and adjust pH to 6.5
-    with KOH. Then add the remaining salts and bring volume to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and
+    adjust pH to 6.5 with KOH. Then add the remaining salts and bring volume to 1.0
+    L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -243,3 +238,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J317'
+- timestamp: '2026-03-13T03:09:23.291090Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -77,35 +77,31 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.59'
+    value: '1.5899999999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.59, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1.2'
+    value: '4.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.2, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.72'
+    value: '0.82'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.72, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -114,33 +110,20 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.1'
+    value: '1.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 1.0]'
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -197,13 +180,6 @@ ingredients:
     label: Na2WO4 x 2 H2O
   concentration:
     value: '0.0004'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: H2SO4
   term:
@@ -282,18 +258,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Dissolve ingredients except carbonate, cellobiose, vitamins, cysteine and sulfide, then\
-    \ sparge medium with\r\n80% N2 and 20% CO2 gas mixture for 30 – 45 min to make it anoxic. Dispense\
-    \ medium under the same gas atmosphere into anoxic Hungate-type tubes and autoclave. Add cellobiose,\
-    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\r\nunder 100% N2 gas\
-    \ and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.\
-    \ Cellobiose and vitamins have to be sterilized by filtration. Prior to use adjust pH of complete\
-    \ medium to 7.2 - 7.4. Cellulose (MN 300, Whatman CF II, Kleenex tissue paper, or HCl treated cotton)\
-    \ can be used as an alternative to cellobiose."
+  description: "Dissolve ingredients except carbonate, cellobiose, vitamins, cysteine\
+    \ and sulfide, then sparge medium with\r\n80% N2 and 20% CO2 gas mixture for 30\
+    \ – 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
+    \ anoxic Hungate-type tubes and autoclave. Add cellobiose, vitamins, cysteine\
+    \ and sulfide from sterile anoxic stock solutions prepared\r\nunder 100% N2 gas\
+    \ and carbonate from a sterile anoxic stock solution prepared under 80% N2 and\
+    \ 20% CO2 gas mixture. Cellobiose and vitamins have to be sterilized by filtration.\
+    \ Prior to use adjust pH of complete medium to 7.2 - 7.4. Cellulose (MN 300, Whatman\
+    \ CF II, Kleenex tissue paper, or HCl treated cotton) can be used as an alternative\
+    \ to cellobiose."
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: The ferrous sulfate solution is not stable and should be freshly prepared.
@@ -307,4 +285,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.188874Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:18.337390Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

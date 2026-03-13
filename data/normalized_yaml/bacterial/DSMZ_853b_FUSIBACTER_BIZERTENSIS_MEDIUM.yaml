@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0990099'
+    value: '0.19900990000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0990099, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '2.9703'
+    value: '3.9703'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.9703, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.990099'
@@ -128,13 +130,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -148,13 +143,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -215,17 +203,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except thiosulfate, cysteine, carbonate, glucose, and sulfide, then
-    sparge medium for 30 - 45 min with 80% N2 and 20% CO2 gas mixture to make it anoxic. Add thiosulfate
-    and cysteine, then adjust pH to 7.0 and dispense medium under 80% N2 and 20% CO2 gas atmosphere into
-    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. After autoclaving,
-    add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust the
-    pH of the complete medium to 7.2 - 7.4, if necessary.
+  description: Dissolve ingredients, except thiosulfate, cysteine, carbonate, glucose,
+    and sulfide, then sparge medium for 30 - 45 min with 80% N2 and 20% CO2 gas mixture
+    to make it anoxic. Add thiosulfate and cysteine, then adjust pH to 7.0 and dispense
+    medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials to 30% of their volume and autoclave. After autoclaving, add glucose
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas atmosphere. Adjust the pH of the complete medium to 7.2 - 7.4, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -233,3 +222,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 853b'
+- timestamp: '2026-03-13T03:08:51.700454Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

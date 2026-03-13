@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '21.5264'
+    value: '22.5264'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 21.5264, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.37573'
+    value: '6.37573'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.37573, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +53,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.136986'
+    value: '0.236986'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.136986, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -73,8 +76,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0166341'
+    value: '0.1166341'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0166341, 0.1]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -117,42 +121,14 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -264,18 +240,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave under a N2-CO2 (80:20, v/v)
-    gas mixture. After cooling, add the following solutions (autoclaved or *filter sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave under a
+    N2-CO2 (80:20, v/v) gas mixture. After cooling, add the following solutions (autoclaved
+    or *filter sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml
-    in 60 ml serum bottles) under the same gas mixture and seal with butyl rubber stoppers. Prior to use,
-    reduce the medium by the addition of the following solutions (per liter, autoclaved and stored under
-    a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels
+    (e.g., 20 ml in 60 ml serum bottles) under the same gas mixture and seal with
+    butyl rubber stoppers. Prior to use, reduce the medium by the addition of the
+    following solutions (per liter, autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -283,3 +260,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1144'
+- timestamp: '2026-03-13T03:09:34.385153Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

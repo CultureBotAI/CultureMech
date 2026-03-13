@@ -40,12 +40,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '3.5'
+    value: '4.5'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 1.0]'
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -77,3 +74,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1076a'
+- timestamp: '2026-03-13T03:08:50.355711Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0297915'
+    value: '0.1297915'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0297915, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -102,13 +103,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.17'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -229,16 +223,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine and sulfide), then
-    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, thiosulfate, vitamins,
-    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions
-    of pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5 by adding sterile anoxic
-    1 N NaOH.
+  description: Dissolve ingredients (except pyruvate, thiosulfate, vitamins, cysteine
+    and sulfide), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add pyruvate, thiosulfate, vitamins, cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Stock solutions
+    of pyruvate and vitamins are sterilized by filtration. Adjust medium pH to 7.5
+    by adding sterile anoxic 1 N NaOH.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -249,4 +245,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.402866Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:55.459133Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

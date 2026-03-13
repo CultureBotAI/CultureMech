@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:962
     label: THERMOVENABULUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 962 | DSMZ Medium: 962 (mediadive.medium:962) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 962 | DSMZ Medium: 962 (mediadive.medium:962)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2-9,10-anthraquinone-2,6-disulfonate
   concentration:
@@ -41,8 +42,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.326409'
+    value: '0.42640900000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.326409, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -109,13 +111,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -254,5 +249,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.226610Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:21.811371Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.0

@@ -28,11 +28,6 @@ ingredients:
     value: '0.015'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -83,6 +78,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 9 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:22.890268Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 solutions:
 - preferred_term: Major metals (see Medium [M969])
   composition: []

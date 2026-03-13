@@ -8,60 +8,40 @@ media_term:
   term:
     id: komodo.medium:840
     label: SERPULINA MURDOCHII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 840 | DSMZ Medium: 840 (mediadive.medium:840) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 840 | DSMZ Medium: 840 (mediadive.medium:840)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
-    value: '5'
+    value: '15.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 10.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.03'
+    value: '0.09'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.03, 0.06]'
 - preferred_term: Bovine serum
   concentration:
-    value: '0.35'
+    value: '1.0499999999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.35, 0.7]'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: Glucose
   concentration:
-    value: '0.015'
+    value: '0.045'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.015, 0.03]'
 - preferred_term: Air
   concentration:
-    value: '0.5'
+    value: '5.5'
     unit: G_PER_L
-- preferred_term: Trypticase soy broth
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-- preferred_term: Bovine serum
-  concentration:
-    value: '0.7'
-    unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
-- preferred_term: Air
-  concentration:
-    value: '5'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 5.0]'
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 840
+- timestamp: '2026-03-13T03:08:42.263954Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

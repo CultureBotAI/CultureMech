@@ -5,40 +5,13 @@ description: 355. NBRC 352.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if needed)15gDistilled
-    water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize separately by filtration.
+- preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if
+    needed)15gDistilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize
+    separately by filtration.
 - preferred_term: ''
   concentration:
     value: Hipolypepton*
     unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Methanol**
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: MgSO4·7H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar (if needed)
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 7.0
-    unit: G_PER_L
-- preferred_term: ''
-- preferred_term: ''
-- preferred_term: ''
-- preferred_term: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -55,3 +28,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 352, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=352.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:08:51.097452Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 10 duplicate ingredient(s)

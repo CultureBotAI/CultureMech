@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    Simple component [Merged 2 duplicates: 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -62,15 +62,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: H3BO3
   concentration:
     value: '30'
@@ -149,6 +140,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:56.552209Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: Trace element solution

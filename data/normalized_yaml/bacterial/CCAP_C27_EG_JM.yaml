@@ -38,9 +38,9 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '30.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
 - preferred_term: Ca(NO3)2 x 4 H2O
   term:
     id: CHEBI:86159
@@ -83,14 +83,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
 - preferred_term: FeNa-EDTA
   concentration:
     value: '2.25'
@@ -141,15 +133,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 1:1 mixture. See separate recipes. Mix then autoclave at 15 psi for 15 minutes.
+  description: 1:1 mixture. See separate recipes. Mix then autoclave at 15 psi for
+    15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Add constituents above and make up to 1 litre with deionized water. For agar add 15 g\
-    \ per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at 15 psi for 15 minutes."
+  description: "Add constituents above and make up to 1 litre with deionized water.\
+    \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
+    \ 15 psi for 15 minutes."
 - step_number: 3
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per litre of Bacterial Agar
-    (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per
+    litre of Bacterial Agar (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -157,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C27'
+- timestamp: '2026-03-13T03:09:02.595165Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

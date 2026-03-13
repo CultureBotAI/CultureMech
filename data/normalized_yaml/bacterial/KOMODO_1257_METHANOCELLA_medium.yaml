@@ -9,15 +9,17 @@ media_term:
   term:
     id: komodo.medium:1257
     label: METHANOCELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1257 | DSMZ Medium: 1257 (mediadive.medium:1257) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1257 | DSMZ Medium: 1257 (mediadive.medium:1257)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.998004'
+    value: '1.998004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.998004, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -30,8 +32,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0998004'
+    value: '0.1998004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0998004, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -117,13 +120,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -158,13 +154,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -261,4 +250,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.442830Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:54.008185Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -35,24 +35,18 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '19.0'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' [Merged 2 duplicates: 15.0, 4.0]'
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
   description: Adjust to pH 7.2-7.4 and autoclave at 121°C/15 min.
 - step_number: 2
   action: POUR_PLATES
-  description: For soft agar for the maintenance of active cultures reduce agar content to 4.0 g/l. Dispense
-    in 3 to 4 ml amounts in 7 ml screw-capped bottles (bijou bottles).
+  description: For soft agar for the maintenance of active cultures reduce agar content
+    to 4.0 g/l. Dispense in 3 to 4 ml amounts in 7 ml screw-capped bottles (bijou
+    bottles).
 applications:
 - Microbial cultivation
 curation_history:
@@ -60,3 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1133'
+- timestamp: '2026-03-13T03:09:16.796132Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

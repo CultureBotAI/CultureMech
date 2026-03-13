@@ -52,8 +52,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.000984252'
+    value: '0.10098425200000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000984252, 0.1]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000492126'
@@ -92,13 +93,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -240,14 +234,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide), adjust pH to 7.0, bring medium to the boil, then
-    cool to room temperature under 100% carbon monoxide gas. Dispense under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials to 30% of their volume and autoclave. After sterilization add sulfide
-    from a sterile anoxic stock solution prepared under 100% N2 gas.
+  description: Dissolve ingredients (except sulfide), adjust pH to 7.0, bring medium
+    to the boil, then cool to room temperature under 100% carbon monoxide gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials to 30%
+    of their volume and autoclave. After sterilization add sulfide from a sterile
+    anoxic stock solution prepared under 100% N2 gas.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -258,4 +253,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.998725Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:57.807802Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

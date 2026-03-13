@@ -37,15 +37,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.1'
+    value: '29.8'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 29.7]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.02'
+    value: '3.36'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 3.34]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -71,20 +73,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '29.7'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.34'
-    unit: G_PER_L
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -94,8 +82,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -109,13 +98,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -211,12 +193,13 @@ preparation_steps:
   description: Adjust pH to 5.8 - 6.5.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 7.3 g). Dissolve
-    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).
@@ -231,3 +214,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:38.728497Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

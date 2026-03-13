@@ -63,36 +63,33 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.055'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.005]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
   concentration:
-    value: '0.025'
+    value: '0.030000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.025, 0.005]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.0005'
+    value: '0.0025'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0005, 0.002]'
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -107,24 +104,10 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Thiamine HCl
-  term:
-    id: CHEBI:49105
-    label: Thiamine HCl
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
     label: Riboflavin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
   concentration:
     value: '0.005'
     unit: G_PER_L
@@ -170,13 +153,6 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.154'
@@ -208,9 +184,9 @@ preparation_steps:
   description: For preparation of solid medium, add 15.0 g/L agar.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled water with the addition
-    of KOH. Add the remaining chemicals in order listed. Adjust pH to 6.8 and bring volume to 1.0 L with
-    distilled water.
+  description: Dissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled
+    water with the addition of KOH. Add the remaining chemicals in order listed. Adjust
+    pH to 6.8 and bring volume to 1.0 L with distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,3 +194,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J631'
+- timestamp: '2026-03-13T03:08:39.064655Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

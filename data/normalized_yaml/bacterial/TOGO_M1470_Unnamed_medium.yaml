@@ -6,10 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '738'
+    value: '741.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 4 duplicates: 738.0, 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -93,10 +93,10 @@ ingredients:
     label: cellobiose
 - preferred_term: myo-Inositol
   concentration:
-    value: '1'
+    value: '201.0'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+    component [Merged 2 duplicates: 1.0, 200.0]'
   term:
     id: CHEBI:17268
     label: myo-inositol
@@ -128,15 +128,6 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '3'
@@ -239,14 +230,6 @@ ingredients:
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: DL-α-Methylbutyric acid
   concentration:
     value: '1'
@@ -307,15 +290,6 @@ ingredients:
   term:
     id: CHEBI:30768
     label: propionic acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '0.2'
@@ -397,24 +371,6 @@ ingredients:
   term:
     id: CHEBI:133341
     label: choline chloride
-- preferred_term: myo-Inositol
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:17268
-    label: myo-inositol
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Cellulose
   concentration:
     value: '30'
@@ -454,6 +410,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:16.699860Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
 solutions:
 - preferred_term: Wolfe's modified mineral solution*
   composition: []

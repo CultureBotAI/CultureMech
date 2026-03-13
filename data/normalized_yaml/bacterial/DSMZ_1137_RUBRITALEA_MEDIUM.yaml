@@ -49,8 +49,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '3.335'
+    value: '7.685'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.335, 4.35]'
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -60,8 +61,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -75,13 +77,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -150,13 +145,6 @@ ingredients:
   concentration:
     value: '31.86'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '4.35'
-    unit: G_PER_L
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -170,15 +158,17 @@ preparation_steps:
   description: Adjust to pH 7.5
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 7.3 g). Dissolve
-    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add NaHCO3 from a filter-sterilized stock solution when the medium has cooled.
+  description: Add NaHCO3 from a filter-sterilized stock solution when the medium
+    has cooled.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,4 +179,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:45.150065Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:29.540392Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

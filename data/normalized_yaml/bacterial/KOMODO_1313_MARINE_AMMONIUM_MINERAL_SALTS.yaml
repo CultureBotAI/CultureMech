@@ -4,8 +4,8 @@ category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1313 | DSMZ Medium: 1313 (mediadive.medium:1313)
-  | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1313 | DSMZ Medium: 1313
+  (mediadive.medium:1313) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1313
   term:
@@ -59,8 +59,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.0222222'
+    value: '0.0580431'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0222222, 0.0358209]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -130,13 +131,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.0238806'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.0358209'
     unit: G_PER_L
 - preferred_term: Para-aminobenzoic acid
   term:
@@ -208,6 +202,11 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -219,3 +218,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1313
+- timestamp: '2026-03-13T03:09:15.792697Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaOH'

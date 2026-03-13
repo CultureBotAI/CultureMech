@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:678.1
     label: For DSM 9219
-notes: 'Source: KOMODO ModelSEED | ID: 678.1 | DSMZ Medium: 678 (mediadive.medium:678) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 678.1 | DSMZ Medium: 678 (mediadive.medium:678)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.4'
+    value: '0.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.4, 0.1]'
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -114,13 +116,6 @@ ingredients:
   concentration:
     value: '0.18'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -188,3 +183,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 678
+- timestamp: '2026-03-13T03:09:34.668227Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

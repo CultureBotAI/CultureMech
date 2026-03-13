@@ -6,10 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '800'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
+    Inorganic compound [Merged 3 duplicates: 800.0, 100.0, 100.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -47,15 +47,6 @@ ingredients:
     value: '8'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Ca(NO3)2·4H2O
   concentration:
     value: '236.15'
@@ -65,15 +56,6 @@ ingredients:
   term:
     id: CHEBI:86159
     label: calcium nitrate tetrahydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.979'
@@ -101,4 +83,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:58.157641Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

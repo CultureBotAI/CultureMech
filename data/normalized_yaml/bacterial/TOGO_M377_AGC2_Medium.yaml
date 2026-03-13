@@ -19,10 +19,10 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Distilled water
   concentration:
-    value: '700'
+    value: '1000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component [Merged 2 duplicates: 700.0, 300.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -74,15 +74,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
-- preferred_term: Distilled water
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '44.2'
@@ -110,3 +101,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:00.430756Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

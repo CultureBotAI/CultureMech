@@ -15,19 +15,13 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '100'
+    value: '100.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 0.9]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
-  concentration:
-    value: '0.9'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
   concentration:
     value: '0.9'
     unit: G_PER_L
@@ -158,14 +152,16 @@ preparation_steps:
   description: Use medium no. 144 supplemented with 100 g/l of NaCl.
 - step_number: 2
   action: AUTOCLAVE
-  description: Sterilize glucose, yeast extract and sodium sulfide separately (autoclave under nitrogen
-    atmosphere).
+  description: Sterilize glucose, yeast extract and sodium sulfide separately (autoclave
+    under nitrogen atmosphere).
 - step_number: 3
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge medium with 100% N2
-    gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration) and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2 - 7.4.
+  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add glucose, vitamins (sterilized by filtration) and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2
+    - 7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,4 +172,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.308041Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:10.715009Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

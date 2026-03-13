@@ -177,34 +177,29 @@ ingredients:
     id: CHEBI:34683
     label: Na2HPO4
   concentration:
-    value: '48.95'
+    value: '60.82'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 48.95, 11.87]'
 - preferred_term: FeNa-EDTA
   concentration:
     value: '4.5'
     unit: G_PER_L
-- preferred_term: Na2HPO4
-  term:
-    id: CHEBI:34683
-    label: Na2HPO4
-  concentration:
-    value: '11.87'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the vitamin solution and the phosphate buffer. Dispense the
-    medium into the growth vessels. If using sealed vessels it is appropriate to add 50% methane to the
-    gas phase and autoclave at 121°C for 15 minutes. Autoclave the phosphate buffer separately. When the
-    growth medium is cool add 0.1 ml/l of vitamin solution (filter sterilized) and 2 ml/l of the phosphate
-    buffer - if too warm the phosphate will precipitate. Liquid cultures should be grown with shaking.
+  description: Prepare the medium without the vitamin solution and the phosphate buffer.
+    Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
+    to add 50% methane to the gas phase and autoclave at 121°C for 15 minutes. Autoclave
+    the phosphate buffer separately. When the growth medium is cool add 0.1 ml/l of
+    vitamin solution (filter sterilized) and 2 ml/l of the phosphate buffer - if too
+    warm the phosphate will precipitate. Liquid cultures should be grown with shaking.
 - step_number: 2
   action: MIX
   description: pH 6.7
 - step_number: 3
   action: DISSOLVE
-  description: After the disodium phosphate has been dissolved in distilled water, pH should be between
-    8-9 without adjustment.
+  description: After the disodium phosphate has been dissolved in distilled water,
+    pH should be between 8-9 without adjustment.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -215,3 +210,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1376'
+- timestamp: '2026-03-13T03:09:14.775523Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

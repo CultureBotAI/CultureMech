@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:137
     label: MINERAL LACTATE MEDIUM (low carbon content)
-notes: 'Source: KOMODO ModelSEED | ID: 137 | DSMZ Medium: 137 (mediadive.medium:137) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 137 | DSMZ Medium: 137 (mediadive.medium:137)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na-lactate
   term:
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.005'
+    value: '5.545'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.005, 5.54]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -73,13 +75,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '22'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '5.54'
     unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -124,3 +119,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 137
+- timestamp: '2026-03-13T03:08:52.192122Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

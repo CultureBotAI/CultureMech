@@ -75,8 +75,9 @@ ingredients:
     id: CHEBI:36385
     label: SrCl2 x 6 H2O
   concentration:
-    value: '0.0117878'
+    value: '0.0217878'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0117878, 0.01]'
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -174,13 +175,6 @@ ingredients:
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: SrCl2 x 6 H2O
-  term:
-    id: CHEBI:36385
-    label: SrCl2 x 6 H2O
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: NaBr
   term:
@@ -304,19 +298,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and distribute the medium into culture vessels (e.g., 20 ml
-    medium in 100 ml serum bottles or 5.0 ml medium in Hungate tubes) under a stream of N2-CO2 (80:20,
-    v/v), seal with butyl rubber stoppers and autoclave. Allow to stand the autoclaved medium overnight.
-    Add per liter the following solution from a sterile anaerobic stock (filter-sterilized and stored
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and distribute the medium into culture vessels
+    (e.g., 20 ml medium in 100 ml serum bottles or 5.0 ml medium in Hungate tubes)
+    under a stream of N2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave.
+    Allow to stand the autoclaved medium overnight. Add per liter the following solution
+    from a sterile anaerobic stock (filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to inoculation, add per liter the following solutions aseptically and anaerobically
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Prior to inoculation, add per liter the following solutions aseptically
+    and anaerobically (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
-  description: 'Comment: For strain JCM 32479, replace trimethylamine with sodium lactate (final 0.55
-    g/L) and yeast extract (1.0 g/L).'
+  description: 'Comment: For strain JCM 32479, replace trimethylamine with sodium
+    lactate (final 0.55 g/L) and yeast extract (1.0 g/L).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -324,3 +318,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1126'
+- timestamp: '2026-03-13T03:08:49.547864Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

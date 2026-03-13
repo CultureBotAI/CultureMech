@@ -58,8 +58,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '2.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 0.2]'
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -73,13 +74,6 @@ ingredients:
     label: Na2-EDTA
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.2'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -133,15 +127,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Solution A is sterilized by autoclaving at 121°C for 15 min under a 100% N2 gas atmosphere.
-    Solutions B and D are sterilized by filtration under a 100% N2 gas atmosphere. Solution C is sterilized
-    by autoclaving under an atmosphere of 80% N2 and 20% CO2 gas mixture. Appropriate amounts of solutions
-    B to D are added to the sterile solution A in the sequence as indicated. Check the pH of the complete
-    medium and adjust it to 7.0 - 7.2, if necessary.
+  description: Solution A is sterilized by autoclaving at 121°C for 15 min under a
+    100% N2 gas atmosphere. Solutions B and D are sterilized by filtration under a
+    100% N2 gas atmosphere. Solution C is sterilized by autoclaving under an atmosphere
+    of 80% N2 and 20% CO2 gas mixture. Appropriate amounts of solutions B to D are
+    added to the sterile solution A in the sequence as indicated. Check the pH of
+    the complete medium and adjust it to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
-    compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -149,3 +144,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 113'
+- timestamp: '2026-03-13T03:09:21.332851Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

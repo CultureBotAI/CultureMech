@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:58_16839
     label: MEDIUM 58 MODIFIED FOR DSM 16839
-notes: 'Source: KOMODO ModelSEED | ID: 58_16839 | DSMZ Medium: 58 (mediadive.medium:58) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 58_16839 | DSMZ Medium: 58 (mediadive.medium:58)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:
@@ -41,15 +42,17 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '2'
+    value: '3.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '0.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.5]'
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -69,8 +72,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '5'
+    value: '7.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 2.0]'
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -92,20 +96,6 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -120,13 +110,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -138,4 +121,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 58
+- timestamp: '2026-03-13T03:09:41.126222Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
 ph_value: 6.8

@@ -127,8 +127,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -142,13 +143,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -190,3 +184,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J900'
+- timestamp: '2026-03-13T03:09:17.196761Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.323529'
+    value: '0.42352900000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.323529, 0.1]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '29.4118'
+    value: '30.4118'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.4118, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.294118'
@@ -89,13 +91,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -107,13 +102,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -225,13 +213,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except CaCl2 x 2H2O and MgCl2 x 6H2O, adjust pH to 6.5, and autoclave.
-    Separately autoclave CaCl2 x 2H2O and MgCl2 x 6H2O, and add to the medium. Dispense the medium into
-    culture vessels under a N2 atmosphere, and seal with butyl rubber stoppers.
+  description: Mix ingredients except CaCl2 x 2H2O and MgCl2 x 6H2O, adjust pH to
+    6.5, and autoclave. Separately autoclave CaCl2 x 2H2O and MgCl2 x 6H2O, and add
+    to the medium. Dispense the medium into culture vessels under a N2 atmosphere,
+    and seal with butyl rubber stoppers.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,3 +228,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J366'
+- timestamp: '2026-03-13T03:09:44.035064Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

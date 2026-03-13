@@ -16,71 +16,41 @@ ingredients:
     id: CHEBI:39010
     label: MES
   concentration:
-    value: '1.95'
+    value: '5.85'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.95, 3.9]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.0492952'
+    value: '5.047885600000001'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.0492952, 0.0985904, 4.9]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0441045'
+    value: '4.532313500000001'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.0441045, 0.088209, 4.4]'
 - preferred_term: (NH4)2HPO4
   term:
     id: CHEBI:62476
     label: (NH4)2HPO4
   concentration:
-    value: '0.026412'
+    value: '2.679236'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.026412, 0.052824, 2.6]'
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
     label: Glucose
   concentration:
-    value: '0.36032'
+    value: '0.72064'
     unit: G_PER_L
-- preferred_term: MES
-  term:
-    id: CHEBI:39010
-    label: MES
-  concentration:
-    value: '3.9'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '0.0985904'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.088209'
-    unit: G_PER_L
-- preferred_term: (NH4)2HPO4
-  term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
-  concentration:
-    value: '0.052824'
-    unit: G_PER_L
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '0.36032'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.36032, 0.36032]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -88,47 +58,20 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '4.9'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '4.4'
-    unit: G_PER_L
-- preferred_term: (NH4)2HPO4
-  term:
-    id: CHEBI:62476
-    label: (NH4)2HPO4
-  concentration:
-    value: '2.6'
-    unit: G_PER_L
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '8'
+    value: '8.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 0.5]'
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: KOH
   concentration:
     value: '5.6'
-    unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -292,8 +235,8 @@ preparation_steps:
   description: Autoclave in 250ml lots, with a magnetic stirring bar in each bottle.
 - step_number: 6
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 7
   action: FILTER_STERILIZE
   description: Filter sterilize the solution.
@@ -304,3 +247,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1266'
+- timestamp: '2026-03-13T03:08:39.834308Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 9 duplicate ingredient(s)

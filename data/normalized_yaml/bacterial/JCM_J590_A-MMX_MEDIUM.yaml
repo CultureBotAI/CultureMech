@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.19'
+    value: '1.69'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.19, 1.5]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '113'
+    value: '168.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 113.0, 55.4]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -60,13 +62,6 @@ ingredients:
     label: Starch
   concentration:
     value: '50'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '55.4'
     unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
@@ -117,13 +112,6 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -141,4 +129,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J590'
+- timestamp: '2026-03-13T03:09:41.738704Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

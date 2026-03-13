@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '172.536'
+    value: '180.026'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 172.536, 7.49]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -126,13 +127,6 @@ ingredients:
     label: NaNO3
   concentration:
     value: '149.58'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '7.49'
     unit: G_PER_L
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -237,4 +231,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:52.158663Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

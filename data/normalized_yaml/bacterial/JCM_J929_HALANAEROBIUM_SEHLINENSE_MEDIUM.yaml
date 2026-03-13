@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '185.529'
+    value: '186.529'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 185.529, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0927644'
+    value: '0.1927644'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0927644, 0.1]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -110,13 +112,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -128,13 +123,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -193,4 +181,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J929'
+- timestamp: '2026-03-13T03:09:11.153566Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

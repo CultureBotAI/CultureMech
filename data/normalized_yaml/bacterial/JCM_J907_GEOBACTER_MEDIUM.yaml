@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.143976'
+    value: '0.243976'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.143976, 0.1]'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -58,15 +59,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '30'
+    value: '31.64'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '1.64'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.64]'
 - preferred_term: Nitrilotriacetic acid trisodium salt monohydrate
   concentration:
     value: '2.75'
@@ -76,21 +71,15 @@ ingredients:
     id: CHEBI:86254
     label: FeCl3 x 6 H2O
   concentration:
-    value: '2.7'
+    value: '4.050000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.7, 1.35]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '12.8'
-    unit: G_PER_L
-- preferred_term: FeCl3 x 6 H2O
-  term:
-    id: CHEBI:86254
-    label: FeCl3 x 6 H2O
-  concentration:
-    value: '1.35'
     unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -105,13 +94,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.024'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -153,8 +135,9 @@ ingredients:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
-    value: '0.026'
+    value: '0.03'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.026, 0.004]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -225,13 +208,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.004'
-    unit: G_PER_L
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -242,27 +218,29 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas mixture. After
-    cooling, add aseptically and anaerobically the following solutions to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
+    gas mixture. After cooling, add aseptically and anaerobically the following solutions
+    to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 - 7.2, if necessary.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add NTA and FeCl3 x 6H2O to the
-    solution and bring volume to 100 ml with distilled water. Adjust pH to 7.0 with NaOH. Filter-sterilize
-    and store under a N2 atmosphere.
+  description: Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add NTA and
+    FeCl3 x 6H2O to the solution and bring volume to 100 ml with distilled water.
+    Adjust pH to 7.0 with NaOH. Filter-sterilize and store under a N2 atmosphere.
 - step_number: 4
   action: MIX
   description: 'Comment:'
 - step_number: 5
   action: AUTOCLAVE
-  description: 100 mM Fe NTA solution can be replaced with Iron(III)citrate solution (see Medium No. 1014,
-    autoclaved and stored under N2).
+  description: 100 mM Fe NTA solution can be replaced with Iron(III)citrate solution
+    (see Medium No. 1014, autoclaved and stored under N2).
 - step_number: 6
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
-    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
+    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
+    to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 7
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'
@@ -273,3 +251,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J907'
+- timestamp: '2026-03-13T03:09:44.195898Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

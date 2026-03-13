@@ -29,8 +29,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.884086'
+    value: '1.884086'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.884086, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -144,13 +145,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -231,13 +225,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil, cool down and distribute into culture vessels
-    under a N2 gas stream. Seal with butyl rubber stoppers and autoclave. Prior to inoculation, add the
-    following solution (autoclaved under a N2 atmosphere) into the medium (per liter):'
+  description: 'Mix components thoroughly. Bring to a boil, cool down and distribute
+    into culture vessels under a N2 gas stream. Seal with butyl rubber stoppers and
+    autoclave. Prior to inoculation, add the following solution (autoclaved under
+    a N2 atmosphere) into the medium (per liter):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH. Then proceed to
-    add the minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH.
+    Then proceed to add the minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,3 +240,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J718'
+- timestamp: '2026-03-13T03:09:46.810612Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

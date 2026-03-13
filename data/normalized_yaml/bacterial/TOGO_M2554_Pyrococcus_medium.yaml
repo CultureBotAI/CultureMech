@@ -6,10 +6,10 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Na2S . 9H2O
   concentration:
-    value: '0.5'
+    value: '1.0'
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 0.5, 0.5]'
 - preferred_term: Powdered sulfur
   concentration:
     value: '0.18'
@@ -38,12 +38,6 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
-- preferred_term: Na2S . 9H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: NiCl2 . 6H2O
   concentration:
     value: '2'
@@ -200,6 +194,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:38.651571Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 solutions:
 - preferred_term: Wolfe's Mineral Solution
   term:

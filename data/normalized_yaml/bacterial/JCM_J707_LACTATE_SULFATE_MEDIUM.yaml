@@ -146,8 +146,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.0001'
+    value: '0.050100000000000006'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0001, 0.05]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -161,13 +162,6 @@ ingredients:
     label: Lipoic acid
   concentration:
     value: '0.005'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.05'
     unit: G_PER_L
 - preferred_term: Nitrilotriacetic acid
   term:
@@ -231,12 +225,13 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave under a N2 gas atmosphere. After cooling, add the following sterile solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Autoclave under a N2 gas atmosphere. After cooling, add the following
+    sterile solutions (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
-    Then proceed to add the minerals and bring volume to 1.0 L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
+    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
+    L.
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,6 +243,10 @@ curation_history:
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: LACTATE SULFATE, culture_type: isolate'
+- timestamp: '2026-03-13T03:08:37.596025Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: LACTATE SULFATE

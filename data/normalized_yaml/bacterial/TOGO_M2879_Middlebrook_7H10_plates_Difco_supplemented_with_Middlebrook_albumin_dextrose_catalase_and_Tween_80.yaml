@@ -1,5 +1,5 @@
-name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase and Tween
-  80
+name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+  and Tween 80
 original_name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
   and Tween 80
 category: bacterial
@@ -8,9 +8,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '450'
+    value: '500.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component [Merged 2 duplicates: 450.0, 50.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -28,19 +29,12 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Dextrose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -61,8 +55,8 @@ media_term:
   preferred_term: TOGO Medium M2879
   term:
     id: TOGO:M2879
-    label: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase and
-      Tween 80
+    label: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+      and Tween 80
 notes: 'Source: https://togomedium.org/medium/M2879'
 applications:
 - Microbial cultivation
@@ -75,3 +69,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:33.180535Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

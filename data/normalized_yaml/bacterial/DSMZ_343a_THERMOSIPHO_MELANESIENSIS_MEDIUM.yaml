@@ -30,15 +30,17 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.002'
+    value: '0.032'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.002, 0.03]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '20'
+    value: '48.7'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 20.0, 1.0, 27.7]'
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -73,21 +75,15 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.0, 7.0]'
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -108,8 +104,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '2.35'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 2.25]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -136,21 +133,15 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.01'
+    value: '0.04'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 0.03]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -165,20 +156,6 @@ ingredients:
     label: Na2WO4 x 2 H2O
   concentration:
     value: '0.0004'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '27.7'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '7'
     unit: G_PER_L
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -201,13 +178,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -229,25 +199,19 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '2.25'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide and cysteine) and adjust pH to 6.5. Boil medium for
-    1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials to 30% of volume and autoclave. Add sulfide and cysteine
-    from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5,
-    if necessary.
+  description: Dissolve ingredients (except sulfide and cysteine) and adjust pH to
+    6.5. Boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    to 30% of volume and autoclave. Add sulfide and cysteine from sterile anoxic stock
+    solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
+    necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -255,3 +219,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 343a'
+- timestamp: '2026-03-13T03:09:19.990684Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

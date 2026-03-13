@@ -156,8 +156,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.0001'
+    value: '0.050100000000000006'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0001, 0.05]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -171,13 +172,6 @@ ingredients:
     label: Lipoic acid
   concentration:
     value: '0.005'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.05'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -231,21 +225,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling, combine the
-    solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Then, add the following
-    autoclaved or *filter-sterilized solutions to the medium:'
+  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling,
+    combine the solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture.
+    Then, add the following autoclaved or *filter-sterilized solutions to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Check the final pH to be around 7.3.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Distribute appropriate amount of the medium into culture vessels under the same gas mixture
-    (e.g., 40.0 ml in 120 ml serum bottle) and seal with Viton rubber stoppers. Finally add per liter
-    the following solution from an anaerobic stock (autoclaved):'
+  description: 'Distribute appropriate amount of the medium into culture vessels under
+    the same gas mixture (e.g., 40.0 ml in 120 ml serum bottle) and seal with Viton
+    rubber stoppers. Finally add per liter the following solution from an anaerobic
+    stock (autoclaved):'
 - step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum. When toluene is depleted,
-    re-add the toluene solution (normally every 3 to 4 days, until enough cell growth is seen).'
+  description: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum. When
+    toluene is depleted, re-add the toluene solution (normally every 3 to 4 days,
+    until enough cell growth is seen).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -257,3 +253,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:33.329017Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

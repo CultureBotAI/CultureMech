@@ -19,8 +19,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Cereal leaves
   concentration:
-    value: '0.1'
+    value: '1.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -32,10 +33,6 @@ ingredients:
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Cereal leaves
   concentration:
     value: '1'
     unit: G_PER_L
@@ -59,22 +56,25 @@ preparation_steps:
   description: Biphasic.  See separate recipes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up 1 litre of New Cereal Leaf-­Prescott Liquid (NCL ­- see separate recipe), but\r\
-    \nuse only 0.1 g of cereal leaves.  Mix with 15 g of Bacteriological Agar (Oxoid L11).\r\nAutoclave\
-    \ at 15 psi for 15 minutes."
+  description: "Make up 1 litre of New Cereal Leaf-­Prescott Liquid (NCL ­- see separate\
+    \ recipe), but\r\nuse only 0.1 g of cereal leaves.  Mix with 15 g of Bacteriological\
+    \ Agar (Oxoid L11).\r\nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue to boil for 5\
-    \ minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized water.  Filter through\
-    \ GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
+    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
+    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+    \ 15 minutes."
 - step_number: 4
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
 - step_number: 5
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue to boil for 5\
-    \ minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized water.  Filter through\
-    \ GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
+    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
+    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+    \ 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -82,3 +82,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C66'
+- timestamp: '2026-03-13T03:08:50.072673Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

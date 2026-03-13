@@ -44,22 +44,25 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.45'
+    value: '6.45'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.45, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.14'
+    value: '0.24000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.14, 0.1]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '6'
+    value: '7.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 6.0, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -103,26 +106,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -137,13 +126,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -284,13 +266,14 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare medium except vitamin solution, NaHCO3 und Na2S-cysteine solution under N2/CO2
-    gas. Add vitamin solution (filter sterilized), NaHCO3 (filter sterilized) and Na2S-cysteine solution(autoclaved)
-    as sterile stock solutions to sterile medium after autoclaving. Adjust pH to 7.0.
+  description: Prepare medium except vitamin solution, NaHCO3 und Na2S-cysteine solution
+    under N2/CO2 gas. Add vitamin solution (filter sterilized), NaHCO3 (filter sterilized)
+    and Na2S-cysteine solution(autoclaved) as sterile stock solutions to sterile medium
+    after autoclaving. Adjust pH to 7.0.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Final pH 7.0 (with KOH).
 - step_number: 4
   action: MIX
   description: Prepare under N2 gas.
@@ -305,3 +288,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:42.923776Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

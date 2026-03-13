@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '0.75'
+    value: '8.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.75, 7.5]'
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
@@ -45,8 +46,9 @@ ingredients:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.0166667'
+    value: '5.2166667'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0166667, 5.2]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -102,20 +104,6 @@ ingredients:
     label: NaHCO3
   concentration:
     value: '3.33333'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '7.5'
-    unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '5.2'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -200,13 +188,15 @@ preparation_steps:
   description: Prepare solution 2
 - step_number: 3
   action: ALIQUOT
-  description: Combine solutions 1 + 2. If desired aliquot into  hungate tubes, filling them up fully.
+  description: Combine solutions 1 + 2. If desired aliquot into  hungate tubes, filling
+    them up fully.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 5
   action: MIX
-  description: Before inoculation add the following from anaerobic, sterile stock solutions.
+  description: Before inoculation add the following from anaerobic, sterile stock
+    solutions.
 - step_number: 6
   action: MIX
   description: check pH and adjust to 7.0 if necessary
@@ -221,13 +211,14 @@ preparation_steps:
   description: allow to cool before combining with solution 2
 - step_number: 10
   action: FILTER_STERILIZE
-  description: "Boil briefly and bubble with CO2 for 30 minutes and filter sterilize into a sterile, gas-tight\r\
-    \nscrew-cap bottle."
+  description: "Boil briefly and bubble with CO2 for 30 minutes and filter sterilize\
+    \ into a sterile, gas-tight\r\nscrew-cap bottle."
 - step_number: 11
   action: HEAT
-  description: "Degas water by bringing to a boil for a minute or two. Meanwhile, wash sulfide before\r\
-    \nweighing – using plastic-forceps, dip a small chunk into dd H2O and dry sulfide and\r\nforceps with\
-    \ lint-free wipes. Drop weighed sulfide chunk into the degassed water."
+  description: "Degas water by bringing to a boil for a minute or two. Meanwhile,\
+    \ wash sulfide before\r\nweighing – using plastic-forceps, dip a small chunk into\
+    \ dd H2O and dry sulfide and\r\nforceps with lint-free wipes. Drop weighed sulfide\
+    \ chunk into the degassed water."
 - step_number: 12
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -241,3 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1469'
+- timestamp: '2026-03-13T03:09:28.531749Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

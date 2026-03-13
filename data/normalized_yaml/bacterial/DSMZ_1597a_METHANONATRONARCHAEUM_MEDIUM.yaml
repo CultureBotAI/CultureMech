@@ -30,29 +30,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '16.6667'
+    value: '266.6667'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 16.6667, 250.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '1.04167'
+    value: '3.6458399999999997'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '250'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '2.60417'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.04167, 2.60417]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -111,8 +99,9 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '25'
+    value: '148.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 123.0]'
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -125,8 +114,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2.2'
+    value: '156.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.2, 154.0]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -196,20 +186,6 @@ ingredients:
     label: Na2WO4 x 2 H2O
   concentration:
     value: '0.004'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '154'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '123'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -325,4 +301,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:02.327219Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 high_metal: true

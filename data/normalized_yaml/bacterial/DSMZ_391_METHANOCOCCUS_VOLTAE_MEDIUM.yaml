@@ -48,8 +48,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '40'
+    value: '41.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 40.0, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -62,8 +63,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.7'
+    value: '3.7'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.7, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -90,8 +92,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.28'
+    value: '0.38'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.28, 0.1]'
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -138,26 +141,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -172,13 +161,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -239,12 +221,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except TYC solution, carbonate, cystein and sulfide. Sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before use add TYC solution,
-    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete
-    medium to 7.2, if necessary.
+  description: Dissolve ingredients except TYC solution, carbonate, cystein and sulfide.
+    Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Before use add TYC solution, cysteine and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH
+    of complete medium to 7.2, if necessary.
 - step_number: 2
   action: STORE
   description: May be stored frozen without sterilization.
@@ -253,8 +236,8 @@ preparation_steps:
   description: Prepare and autoclave under 100% N2 gas.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,3 +249,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:07.846201Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

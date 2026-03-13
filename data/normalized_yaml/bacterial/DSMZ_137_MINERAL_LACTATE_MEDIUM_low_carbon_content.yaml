@@ -58,8 +58,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.005'
+    value: '5.545'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.005, 5.54]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -73,13 +74,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '22'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '5.54'
     unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -119,8 +113,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
-    Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -128,3 +122,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 137'
+- timestamp: '2026-03-13T03:08:56.815902Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

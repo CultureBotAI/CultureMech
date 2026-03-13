@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3500'
+    value: '3500.980392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3500.0, 0.980392]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -41,29 +42,17 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '37.5'
+    value: '42.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 37.5, 5.0]'
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
     label: L-Cysteine
   concentration:
-    value: '30'
+    value: '42.0'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: L-Cysteine
-  term:
-    id: CHEBI:17561
-    label: L-Cysteine
-  concentration:
-    value: '12'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 12.0]'
 - preferred_term: NH4NO3
   concentration:
     value: '0.05'
@@ -97,15 +86,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0042'
+    value: '0.1022392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0042, 0.0980392]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0018'
+    value: '0.0998392'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0018, 0.0980392]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -124,13 +115,6 @@ ingredients:
   concentration:
     value: '1.59804'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '0.980392'
-    unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -145,20 +129,6 @@ ingredients:
   concentration:
     value: '0.127451'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.0980392'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.0980392'
-    unit: G_PER_L
 - preferred_term: NiSO4 x 6 H2O
   term:
     id: CHEBI:53001
@@ -171,15 +141,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.0245098'
+    value: '0.0490196'
     unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.0245098'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0245098, 0.0245098]'
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
     id: CHEBI:86465
@@ -219,4 +183,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:48.489441Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
 high_metal: true

@@ -17,12 +17,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Sheep blood
   concentration:
-    value: '50'
+    value: '51.5'
     unit: G_PER_L
-- preferred_term: Sheep blood
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 50.0, 1.5]'
 applications:
 - Microbial cultivation
 curation_history:
@@ -34,3 +31,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 439
+- timestamp: '2026-03-13T03:09:43.190453Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

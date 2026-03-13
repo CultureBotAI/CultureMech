@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '50'
+    value: '51.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 50.0, 1.0]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -105,13 +106,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -256,16 +250,17 @@ preparation_steps:
   description: Final pH 9.5-10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without adding the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3,
-    and NaHCO3 using anaerobic conditions, under nitrogen. If the medium has been boiled to remove oxygen
-    add the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes stopper with rubber
-    stoppers (serum tubes or bottles, or screw capped tubes). Autoclave, and to the cooled medium add
-    the vitamins (filter sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic,
+  description: Prepare the medium without adding the vitamins, sucrose, yeast extract,
+    NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under nitrogen. If the medium
+    has been boiled to remove oxygen add the NH4Cl, Na2CO3, and NaHCO3 after the medium
+    had cooled. Dispense into tubes stopper with rubber stoppers (serum tubes or bottles,
+    or screw capped tubes). Autoclave, and to the cooled medium add the vitamins (filter
+    sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic,
     sterile stock solutions.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -276,4 +271,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.954468Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:26.256393Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

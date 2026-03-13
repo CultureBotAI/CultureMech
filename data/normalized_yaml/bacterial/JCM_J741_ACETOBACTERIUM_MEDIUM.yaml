@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.0961538'
+    value: '3.0961538'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0961538, 3.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '1.92308'
@@ -84,13 +85,6 @@ ingredients:
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
@@ -246,16 +240,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except NaHCO3, fructose, cysteine and sodium sulfide, bring to a boil
-    for a few minutes and cool to room temperature under a N2-CO2 (80:20, v/v) gas mixture. Add NaHCO3
-    (solid) and equilibrate the medium with the gas until pH reaches ca. 7.4. Then distribute and autoclave
-    under the same gas atmosphere. Before use, adjust pH to 8.2 by adding sterile anaerobic Na2CO3 solution
-    (ca. 0.25 ml of 5% Na2CO3 per 10 ml medium) and add fructose, cysteine and sodium sulfide from anaerobic
-    sterile stock solutions.
+  description: Dissolve ingredients except NaHCO3, fructose, cysteine and sodium sulfide,
+    bring to a boil for a few minutes and cool to room temperature under a N2-CO2
+    (80:20, v/v) gas mixture. Add NaHCO3 (solid) and equilibrate the medium with the
+    gas until pH reaches ca. 7.4. Then distribute and autoclave under the same gas
+    atmosphere. Before use, adjust pH to 8.2 by adding sterile anaerobic Na2CO3 solution
+    (ca. 0.25 ml of 5% Na2CO3 per 10 ml medium) and add fructose, cysteine and sodium
+    sulfide from anaerobic sterile stock solutions.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH, then add the remaining
-    minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH,
+    then add the remaining minerals.
 - step_number: 3
   action: MIX
   description: Adjust final pH of the medium to 7.0 with KOH.
@@ -266,3 +261,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J741'
+- timestamp: '2026-03-13T03:09:00.255915Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -91,8 +91,9 @@ ingredients:
     id: CHEBI:17883
     label: HCl
   concentration:
-    value: '0.06'
+    value: '2.56'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 2.5]'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -120,13 +121,6 @@ ingredients:
     label: Na2WO4 x 2 H2O
   concentration:
     value: '0.004'
-    unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '2.5'
     unit: G_PER_L
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -265,4 +259,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.596620Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:44.949361Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

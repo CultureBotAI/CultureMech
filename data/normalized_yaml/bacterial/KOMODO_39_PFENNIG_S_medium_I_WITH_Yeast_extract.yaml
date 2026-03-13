@@ -8,20 +8,18 @@ media_term:
   term:
     id: komodo.medium:39
     label: PFENNIG'S medium I WITH Yeast extract
-notes: 'Source: KOMODO ModelSEED | ID: 39 | DSMZ Medium: 39 (mediadive.medium:39) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 39 | DSMZ Medium: 39 (mediadive.medium:39)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '0.5'
+    value: '1.043478'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.543478]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.543478'
-    unit: G_PER_L
-- preferred_term: Yeast extract
   concentration:
     value: '0.543478'
     unit: G_PER_L
@@ -30,8 +28,9 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '14.8148'
+    value: '44.8148'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.8148, 30.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -102,13 +101,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -120,3 +112,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 39
+- timestamp: '2026-03-13T03:09:12.273689Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

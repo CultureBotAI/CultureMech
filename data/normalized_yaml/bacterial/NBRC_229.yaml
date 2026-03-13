@@ -5,34 +5,11 @@ description: 229. NBRC 228.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH 7.3
+- preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH
+    7.3
 - preferred_term: ''
   concentration:
     value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Beef extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: N-Z-Amine A
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Glucose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 7.3
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -50,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 228, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=228.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:30.945229Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '0.002'
+    value: '1.502'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.002, 1.5]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -95,13 +96,6 @@ ingredients:
     label: HCl
   concentration:
     value: '2.5'
-    unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -155,17 +149,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, sulfite and sulfide), adjust pH of solution to
-    7.0 and sparge with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Prior to use add sulfite and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The stock solution of sulfite should
-    by freshly prepared and sterilized by filtration. Prior to use check pH of complete medium and adjust
-    to 7.5, if necessary.
+  description: Dissolve ingredients (except carbonate, sulfite and sulfide), adjust
+    pH of solution to 7.0 and sparge with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Prior to use add sulfite and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas atmosphere. The stock solution
+    of sulfite should by freshly prepared and sterilized by filtration. Prior to use
+    check pH of complete medium and adjust to 7.5, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -173,3 +168,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 836'
+- timestamp: '2026-03-13T03:09:09.693164Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

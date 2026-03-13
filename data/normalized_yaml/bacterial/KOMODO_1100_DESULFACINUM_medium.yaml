@@ -174,6 +174,11 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: hydrochloric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -185,3 +190,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1100
+- timestamp: '2026-03-13T03:09:18.632826Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: HCl'

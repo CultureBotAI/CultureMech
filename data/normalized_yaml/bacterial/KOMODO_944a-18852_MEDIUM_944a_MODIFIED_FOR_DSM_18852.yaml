@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:944a_18852
     label: MEDIUM 944a MODIFIED FOR DSM 18852
-notes: 'Source: KOMODO ModelSEED | ID: 944a_18852 | DSMZ Medium: 944a (mediadive.medium:944a) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 944a_18852 | DSMZ Medium: 944a (mediadive.medium:944a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -139,8 +139,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.036'
+    value: '0.039'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.036, 0.003]'
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -159,13 +160,6 @@ ingredients:
   term:
     id: CHEBI:63939
     label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.003'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.003'
     unit: G_PER_L
@@ -254,4 +248,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 944
+- timestamp: '2026-03-13T03:09:42.611113Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 8.5

@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:701_replace_Glucose_with_chitin
     label: HALOANAEROBACTER CHITINOVORANS medium_replace_Glucose_with_chitin
-notes: 'Source: KOMODO ModelSEED | ID: 701_replace_Glucose_with_chitin | DSMZ Medium: 701 (mediadive.medium:701)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 701_replace_Glucose_with_chitin | DSMZ Medium:
+  701 (mediadive.medium:701) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -31,15 +31,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '9.6'
+    value: '12.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.6, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -59,8 +61,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -111,26 +114,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -145,13 +134,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -213,3 +195,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 701
+- timestamp: '2026-03-13T03:09:22.924092Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

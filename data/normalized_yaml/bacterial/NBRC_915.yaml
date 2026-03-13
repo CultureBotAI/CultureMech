@@ -11,38 +11,6 @@ ingredients:
   concentration:
     value: Casamino Acids (Difco)
     unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Bacto Peptone (Difco)
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: K2HPO4
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: KCl
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: MgSO4·7H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: FeSO4·7H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Sucrose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -59,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 913, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=913.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:00.219545Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)

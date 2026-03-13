@@ -195,8 +195,9 @@ ingredients:
     id: CHEBI:30961
     label: Pyridoxine hydrochloride
   concentration:
-    value: '0.1'
+    value: '0.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.3]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -216,8 +217,9 @@ ingredients:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.2]'
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -227,35 +229,23 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.101'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.001, 0.1]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
   concentration:
-    value: '0.05'
+    value: '0.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.08]'
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
   concentration:
     value: '0.05'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.08'
     unit: G_PER_L
 - preferred_term: D-(+)-biotin
   term:
@@ -264,26 +254,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.3'
     unit: G_PER_L
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -295,20 +271,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients except carbonate, caproate, butyrate, vitamins and sulfide, then
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add caproate,
-    butyrate, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins
-    should be sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.9, if necessary.
+  description: Dissolve all ingredients except carbonate, caproate, butyrate, vitamins
+    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add caproate, butyrate, vitamins and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
+    Vitamins should be sterilized by filtration. Adjust pH of complete medium to 6.7
+    - 6.9, if necessary.
 - step_number: 2
   action: MIX
-  description: 'Note: Growth can be stimulated by supplementing the medium with 1% (v/v) of fatty acid
-    mixture (see medium 119).'
+  description: 'Note: Growth can be stimulated by supplementing the medium with 1%
+    (v/v) of fatty acid mixture (see medium 119).'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -319,4 +297,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.359643Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:47.738406Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

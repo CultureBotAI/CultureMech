@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '75'
+    value: '76.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 75.0, 1.0]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -59,8 +60,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.2'
+    value: '0.30000000000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -118,13 +120,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -138,13 +133,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -195,6 +183,11 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -206,3 +199,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1223
+- timestamp: '2026-03-13T03:08:43.818498Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: KOH'

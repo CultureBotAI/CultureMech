@@ -22,177 +22,102 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.543478'
+    value: '1.086956'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.543478, 0.543478]'
 - preferred_term: Yeast extract
   concentration:
-    value: '0.543478'
+    value: '1.086956'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.543478, 0.543478]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '30'
+    value: '60.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 30.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
     label: Resazurin
   concentration:
-    value: '0.005'
+    value: '0.0161111'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.005, 0.0111111]'
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
     label: Ammonium chloride
   concentration:
-    value: '14'
+    value: '27.4615'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 13.4615]'
 - preferred_term: Ammonium acetate
   term:
     id: CHEBI:62947
     label: Ammonium acetate
   concentration:
-    value: '10'
+    value: '19.615389999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 9.61539]'
 - preferred_term: Pyruvic acid sodium salt
   term:
     id: CHEBI:113246
     label: Pyruvic acid sodium salt
   concentration:
-    value: '10'
+    value: '19.615389999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 9.61539]'
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
     label: Dextrose
   concentration:
-    value: '10'
+    value: '19.615389999999998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 9.61539]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '20'
+    value: '39.2308'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.0, 19.2308]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '14'
+    value: '27.4615'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 13.4615]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '14'
+    value: '27.4615'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 13.4615]'
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.543478'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.543478'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '14.8148'
+    value: '44.8148'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '30'
-    unit: G_PER_L
-- preferred_term: Resazurin
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-  concentration:
-    value: '0.0111111'
-    unit: G_PER_L
-- preferred_term: Ammonium chloride
-  term:
-    id: CHEBI:31206
-    label: Ammonium chloride
-  concentration:
-    value: '13.4615'
-    unit: G_PER_L
-- preferred_term: Ammonium acetate
-  term:
-    id: CHEBI:62947
-    label: Ammonium acetate
-  concentration:
-    value: '9.61539'
-    unit: G_PER_L
-- preferred_term: Pyruvic acid sodium salt
-  term:
-    id: CHEBI:113246
-    label: Pyruvic acid sodium salt
-  concentration:
-    value: '9.61539'
-    unit: G_PER_L
-- preferred_term: Dextrose
-  term:
-    id: CHEBI:4167
-    label: Dextrose
-  concentration:
-    value: '9.61539'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '19.2308'
-    unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '13.4615'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '13.4615'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.8148, 30.0]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -392,4 +317,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 40'
+- timestamp: '2026-03-13T03:08:58.558457Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 13 duplicate ingredient(s)
 high_metal: true

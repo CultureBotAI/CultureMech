@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:651
     label: R 8 A H medium
-notes: 'Source: KOMODO ModelSEED | ID: 651 | DSMZ Medium: 651 (mediadive.medium:651) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 651 | DSMZ Medium: 651 (mediadive.medium:651)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Malic acid
   term:
@@ -41,15 +42,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.07'
+    value: '0.27'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.07, 0.2]'
 - preferred_term: Fe(III) citrate
   term:
     id: CHEBI:144421
     label: Fe(III) citrate
   concentration:
-    value: '0.01'
+    value: '3.01'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 3.0]'
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -70,13 +73,6 @@ ingredients:
     label: K2HPO4
   concentration:
     value: '0.9'
-    unit: G_PER_L
-- preferred_term: Fe(III) citrate
-  term:
-    id: CHEBI:144421
-    label: Fe(III) citrate
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -117,13 +113,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -163,3 +152,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 651
+- timestamp: '2026-03-13T03:09:31.533521Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

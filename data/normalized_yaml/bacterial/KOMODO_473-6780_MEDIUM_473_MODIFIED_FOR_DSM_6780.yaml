@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:473_6780
     label: MEDIUM 473 MODIFIED FOR DSM 6780
-notes: 'Source: KOMODO ModelSEED | ID: 473_6780 | DSMZ Medium: 473 (mediadive.medium:473) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 473_6780 | DSMZ Medium: 473 (mediadive.medium:473)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -64,8 +65,9 @@ ingredients:
     id: CHEBI:15956
     label: Biotin
   concentration:
-    value: '0.8'
+    value: '0.802'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.8, 0.002]'
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -136,13 +138,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Biotin
-  term:
-    id: CHEBI:15956
-    label: Biotin
-  concentration:
-    value: '0.002'
-    unit: G_PER_L
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -189,3 +184,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 473
+- timestamp: '2026-03-13T03:08:56.307042Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

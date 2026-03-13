@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 7.2
-notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 9 | DSMZ Medium: 9 (mediadive.medium:9) | Aerobic:
-  No'
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 9 | DSMZ Medium: 9 (mediadive.medium:9)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 9
   term:
@@ -37,6 +37,11 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +53,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 9
+- timestamp: '2026-03-13T03:09:23.499369Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'

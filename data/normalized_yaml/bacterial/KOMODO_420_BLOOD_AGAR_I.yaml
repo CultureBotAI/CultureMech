@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:420
     label: BLOOD AGAR I
-notes: 'Source: KOMODO ModelSEED | ID: 420 | DSMZ Medium: 420 (mediadive.medium:420) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 420 | DSMZ Medium: 420 (mediadive.medium:420)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Blood agar No 2
   concentration:
@@ -31,9 +32,9 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '30.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
 - preferred_term: Brain heart infusion
   concentration:
     value: '37'
@@ -53,13 +54,6 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +65,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 420
+- timestamp: '2026-03-13T03:08:56.533799Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

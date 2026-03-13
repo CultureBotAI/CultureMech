@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '20.8768'
+    value: '30.8768'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.8768, 10.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.65344'
+    value: '33.65344'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.65344, 30.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -37,8 +39,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.782881'
+    value: '1.7828810000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.782881, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +61,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0156576'
+    value: '0.1156576'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0156576, 0.1]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -102,26 +106,12 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -136,13 +126,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -164,13 +147,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -302,4 +278,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:08:39.935409Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
 high_metal: true

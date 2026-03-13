@@ -31,9 +31,9 @@ ingredients:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '30.0'
     unit: G_PER_L
-  notes: ' (for solid medium)'
+  notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
 - preferred_term: Brain heart infusion
   concentration:
     value: '37'
@@ -53,31 +53,27 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Agar
-  term:
-    id: CHEBI:2509
-    label: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50°C, then add 40 ml/l of
-    sterile horse blood.
+  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50°C,
+    then add 40 ml/l of sterile horse blood.
 - step_number: 2
   action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For rehydration of
-    Helicobacter and Campylobacter spp., use medium 215 (brain heart infusion).
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or
+    1. For rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain
+    heart infusion).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 4
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +81,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 420'
+- timestamp: '2026-03-13T03:09:26.134461Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

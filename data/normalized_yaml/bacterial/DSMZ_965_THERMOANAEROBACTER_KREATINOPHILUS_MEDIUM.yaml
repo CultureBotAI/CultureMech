@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1.9802'
+    value: '2.9802'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.9802, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.049505'
+    value: '0.149505'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.049505, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.990099'
@@ -114,13 +116,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -134,13 +129,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -201,15 +189,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and thiosulfate), bring medium to the boil then cool
-    to room temperature under 100% N2 gas atmosphere. Add cysteine and adjust pH to 7.5, then dispense
-    medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before
-    inoculation, add thiosulfate from a sterile anoxic stock solution prepared under 100% N2 gas and sterilized
+  description: Dissolve ingredients (except cysteine and thiosulfate), bring medium
+    to the boil then cool to room temperature under 100% N2 gas atmosphere. Add cysteine
+    and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add thiosulfate
+    from a sterile anoxic stock solution prepared under 100% N2 gas and sterilized
     by filtration. Adjust pH of complete medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -217,3 +206,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 965'
+- timestamp: '2026-03-13T03:09:24.304646Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

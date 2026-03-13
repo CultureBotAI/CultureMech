@@ -59,15 +59,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '55.4'
+    value: '56.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 55.4, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '14'
+    value: '17.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -94,8 +96,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.06'
+    value: '0.06999999999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -122,8 +125,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.5'
+    value: '1.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.5, 0.1]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -166,23 +170,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -195,13 +185,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -226,13 +209,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -243,17 +219,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.0 with H2SO4. Sterilize
-    the medium by filtration. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O
-    as a 5% solution, and autoclave under a N2 atmosphere. Distribute the medium and sulfur into culture
-    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas
-    mixture and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O solution,
-    and readjust pH to 6.0 with sterile 1 N H2SO4. Pressurize the inoculated bottles to 200 kPa H2-CO2
-    (4:1, v/v).
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.0
+    with H2SO4. Sterilize the medium by filtration. Steam sulfur for 3 hr on each
+    of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under
+    a N2 atmosphere. Distribute the medium and sulfur into culture vessels (e.g.,
+    20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v)
+    gas mixture and seal with butyl rubber stoppers. Prior to inoculation, add the
+    sterile Na2S x 9H2O solution, and readjust pH to 6.0 with sterile 1 N H2SO4. Pressurize
+    the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -261,3 +238,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J244'
+- timestamp: '2026-03-13T03:08:54.552023Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

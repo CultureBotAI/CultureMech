@@ -72,8 +72,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '160'
+    value: '161.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 160.0, 1.5]'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -124,13 +125,6 @@ ingredients:
     label: HCl
   concentration:
     value: '2.5'
-    unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '1.5'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -265,4 +259,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1841'
+- timestamp: '2026-03-13T03:09:13.071473Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

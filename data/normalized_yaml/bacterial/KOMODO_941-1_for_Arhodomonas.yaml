@@ -9,22 +9,17 @@ media_term:
   term:
     id: komodo.medium:941.1
     label: for Arhodomonas
-notes: 'Source: KOMODO ModelSEED | ID: 941.1 | DSMZ Medium: 941 (mediadive.medium:941) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 941.1 | DSMZ Medium: 941 (mediadive.medium:941)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '150'
+    value: '156.0'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '6'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 150.0, 6.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -215,4 +210,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.748975Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:16.063435Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

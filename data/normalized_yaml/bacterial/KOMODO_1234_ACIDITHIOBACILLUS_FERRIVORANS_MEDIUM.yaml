@@ -4,8 +4,8 @@ category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1234 | DSMZ Medium: 1234 (mediadive.medium:1234)
-  | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1234 | DSMZ Medium: 1234
+  (mediadive.medium:1234) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1234
   term:
@@ -38,8 +38,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.5'
+    value: '3.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 3.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -73,21 +74,15 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.03'
+    value: '0.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.03, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
     unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
@@ -102,13 +97,6 @@ ingredients:
     label: NaCl
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -180,6 +168,11 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -191,3 +184,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1234
+- timestamp: '2026-03-13T03:08:38.808150Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: H2SO4'

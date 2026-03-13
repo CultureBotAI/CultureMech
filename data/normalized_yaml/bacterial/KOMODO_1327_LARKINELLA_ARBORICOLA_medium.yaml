@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1327
     label: LARKINELLA ARBORICOLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1327 | DSMZ Medium: 1327 (mediadive.medium:1327) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1327 | DSMZ Medium: 1327 (mediadive.medium:1327)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -85,100 +86,54 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '1.099'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.099, 0.5, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
     label: Na-EDTA
   concentration:
-    value: '0.25'
+    value: '0.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.25, 0.25]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
   concentration:
-    value: '1.095'
+    value: '2.19'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.095, 1.095]'
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
-    value: '0.154'
+    value: '0.308'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.154, 0.154]'
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.0392'
+    value: '0.0784'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0392, 0.0392]'
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
   concentration:
-    value: '0.0248'
+    value: '0.0496'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0248, 0.0248]'
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
-    value: '0.0177'
+    value: '0.0354'
     unit: G_PER_L
-- preferred_term: Na-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na-EDTA
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-- preferred_term: ZnSO4 x 7 H2O
-  term:
-    id: CHEBI:32312
-    label: ZnSO4 x 7 H2O
-  concentration:
-    value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '0.154'
-    unit: G_PER_L
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.0392'
-    unit: G_PER_L
-- preferred_term: Co(NO3)2 x 6 H2O
-  term:
-    id: CHEBI:86214
-    label: Co(NO3)2 x 6 H2O
-  concentration:
-    value: '0.0248'
-    unit: G_PER_L
-- preferred_term: Na2B4O7 x 10 H2O
-  concentration:
-    value: '0.0177'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0177, 0.0177]'
 applications:
 - Microbial cultivation
 curation_history:
@@ -190,3 +145,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1327
+- timestamp: '2026-03-13T03:08:49.330870Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)

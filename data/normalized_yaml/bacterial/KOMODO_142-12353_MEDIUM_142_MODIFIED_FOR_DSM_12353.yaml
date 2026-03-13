@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:142_12353
     label: MEDIUM 142 MODIFIED FOR DSM 12353
-notes: 'Source: KOMODO ModelSEED | ID: 142_12353 | DSMZ Medium: 142 (mediadive.medium:142) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 142_12353 | DSMZ Medium: 142 (mediadive.medium:142)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -38,8 +38,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.41791'
+    value: '5.95791'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.41791, 5.54]'
 - preferred_term: Bromothymol blue
   term:
     id: CHEBI:86155
@@ -74,13 +75,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '22'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '5.54'
     unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
   term:
@@ -174,4 +168,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 142
+- timestamp: '2026-03-13T03:09:37.839162Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.2

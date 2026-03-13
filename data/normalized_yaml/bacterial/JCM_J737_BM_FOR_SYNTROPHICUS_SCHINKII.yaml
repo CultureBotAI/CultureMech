@@ -163,8 +163,9 @@ ingredients:
     id: CHEBI:63939
     label: Na2WO4 x 2 H2O
   concentration:
-    value: '0.00594059'
+    value: '0.01394059'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00594059, 0.008]'
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -179,19 +180,13 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-- preferred_term: Na2WO4 x 2 H2O
-  term:
-    id: CHEBI:63939
-    label: Na2WO4 x 2 H2O
-  concentration:
-    value: '0.008'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components under a N2-CO2 (80:20, v/v) gas mixture and autoclave under the same gas
-    mixture in bottles sealed with butyl rubber stoppers. After cooling, aseptically and anaerobically
-    add the following solutions from anaerobic stocks (autoclaved or *filter-sterilized) to the medium:'
+  description: 'Mix components under a N2-CO2 (80:20, v/v) gas mixture and autoclave
+    under the same gas mixture in bottles sealed with butyl rubber stoppers. After
+    cooling, aseptically and anaerobically add the following solutions from anaerobic
+    stocks (autoclaved or *filter-sterilized) to the medium:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -199,3 +194,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J737'
+- timestamp: '2026-03-13T03:09:07.958358Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

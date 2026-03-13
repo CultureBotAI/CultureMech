@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:916
     label: DESULFOMUSA HANSENII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 916 | DSMZ Medium: 916 (mediadive.medium:916) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 916 | DSMZ Medium: 916 (mediadive.medium:916)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -97,8 +98,9 @@ ingredients:
     id: CHEBI:86249
     label: FeCl2 x 4 H2O
   concentration:
-    value: '1.5'
+    value: '53.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.5, 52.0]'
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -236,13 +238,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: FeCl2 x 4 H2O
-  term:
-    id: CHEBI:86249
-    label: FeCl2 x 4 H2O
-  concentration:
-    value: '52'
-    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -257,4 +252,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.597439Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:17.429242Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -4,8 +4,8 @@ category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1131 | DSMZ Medium: 1131 (mediadive.medium:1131)
-  | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1131 | DSMZ Medium: 1131
+  (mediadive.medium:1131) | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 1131
   term:
@@ -38,8 +38,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -52,8 +53,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -66,8 +68,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4'
+    value: '6.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -87,8 +90,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.01'
+    value: '0.11'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 0.1]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -96,6 +100,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  notes: ' [WARNING: 2 duplicates with conflicting units]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -103,6 +108,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MG_PER_L
+  notes: ' [WARNING: 2 duplicates with conflicting units]'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -180,13 +186,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -194,33 +193,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -257,20 +235,11 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
+- preferred_term: NaOH
   term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.0003'
-    unit: G_PER_L
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -282,3 +251,9 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1131
+- timestamp: '2026-03-13T03:08:58.263355Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 6 duplicate ingredient(s); WARNING: Duplicate ''NiCl2 x 6 H2O'' with
+    different units: {''MG_PER_L'', ''G_PER_L''}; WARNING: Duplicate ''Na2SeO3 x 5
+    H2O'' with different units: {''MG_PER_L'', ''G_PER_L''}; Added pH buffer: NaOH'

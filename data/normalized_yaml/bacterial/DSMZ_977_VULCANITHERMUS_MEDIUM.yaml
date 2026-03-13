@@ -16,29 +16,33 @@ ingredients:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
-    value: '0.33'
+    value: '0.48'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.33, 0.15]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '0.33'
+    value: '5.83'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.33, 5.5]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.33'
+    value: '0.93'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 0.33, 0.5, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '0.33'
+    value: '0.98'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.33, 0.65]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -51,8 +55,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '25'
+    value: '56.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 25.0, 30.0, 1.0]'
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -142,34 +147,14 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '5.5'
-    unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.65'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -177,26 +162,12 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
     value: '0.15'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.5'
     unit: G_PER_L
 - preferred_term: (NH4)2Ni(SO4)2
   term:
@@ -240,26 +211,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -274,13 +231,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -334,15 +284,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2, MgCl2, KNO3, tryptone,
-    yeast extract, vitamins and sucrose. The pH should be 6.8. Dispense the medium into vessels suitable
-    for anaerobic growth (Hungate tubes or serum bottles) under an atmosphere of nitrogen and autoclave.
-    To the sterile, cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
-    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract, and sucrose
-    stock solutions should be autoclaved, while the vitamin solution is sterile filtered. This strain
-    grows anaerobically in the presence of nitrate, but aerobic growth has been reported provided the
-    oxygen concentration does not exceed 16% (v/v). Under anaerobic conditions a redox agent, such as
-    sulphide is not required.
+  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2,
+    MgCl2, KNO3, tryptone, yeast extract, vitamins and sucrose. The pH should be 6.8.
+    Dispense the medium into vessels suitable for anaerobic growth (Hungate tubes
+    or serum bottles) under an atmosphere of nitrogen and autoclave. To the sterile,
+    cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
+    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract,
+    and sucrose stock solutions should be autoclaved, while the vitamin solution is
+    sterile filtered. This strain grows anaerobically in the presence of nitrate,
+    but aerobic growth has been reported provided the oxygen concentration does not
+    exceed 16% (v/v). Under anaerobic conditions a redox agent, such as sulphide is
+    not required.
 - step_number: 2
   action: MIX
   description: Sparge medium with 100% N2 gas mixture for 20 min to make it anoxic.
@@ -351,8 +303,8 @@ preparation_steps:
   description: Adjust pH to 6.5-6.8 with 1N H2SO4.
 - step_number: 4
   action: MIX
-  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2 atmosphere and
-    tightly stopper.
+  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2
+    atmosphere and tightly stopper.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -361,12 +313,12 @@ preparation_steps:
   description: after autoclaving add the following filter-sterilized solutions.
 - step_number: 7
   action: MIX
-  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific conditions need to\
-    \ be applied)"
+  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific\
+    \ conditions need to be applied)"
 - step_number: 8
   action: MIX
-  description: For more details on the medium see the original description (Huber et al. System. Appl.
-    Microbiol. 15:340-351 (1992)).
+  description: For more details on the medium see the original description (Huber
+    et al. System. Appl. Microbiol. 15:340-351 (1992)).
 - step_number: 9
   action: MIX
   description: 'To 1000.0 ml trace element solution in medium 141 add:'
@@ -378,8 +330,8 @@ preparation_steps:
   description: Prepared under N2,autoclave 121°C, 15 min
 - step_number: 12
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -390,4 +342,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.637167Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:48.223782Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)

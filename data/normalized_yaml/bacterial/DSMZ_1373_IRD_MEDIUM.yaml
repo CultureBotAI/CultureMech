@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -121,13 +123,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -141,13 +136,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -201,7 +189,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Autoclave and add the following components after autoclaving from sterile stock solutions:'
+  description: 'Autoclave and add the following components after autoclaving from
+    sterile stock solutions:'
 - step_number: 2
   action: MIX
   description: pH 7.2
@@ -213,8 +202,8 @@ preparation_steps:
   description: The final pH of the medium should be 7.2.
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -222,3 +211,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1373'
+- timestamp: '2026-03-13T03:09:28.315228Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

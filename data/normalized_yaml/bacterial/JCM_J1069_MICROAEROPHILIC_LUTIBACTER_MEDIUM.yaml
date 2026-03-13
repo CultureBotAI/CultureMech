@@ -27,8 +27,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '27.5'
+    value: '28.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 27.5, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -41,8 +42,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '6.78'
+    value: '9.780000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 6.78, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -62,8 +64,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.4'
+    value: '1.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.4, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -176,23 +179,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -205,13 +194,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -253,12 +235,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.2 to 6.5. Distribute the medium into culture vessels,
-    replace the gas phase with N2-CO2-O2 (90:10:2, v/v/v), seal with butyl rubber stoppers and autoclave.
+  description: Mix components and adjust pH to 6.2 to 6.5. Distribute the medium into
+    culture vessels, replace the gas phase with N2-CO2-O2 (90:10:2, v/v/v), seal with
+    butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,3 +249,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1069'
+- timestamp: '2026-03-13T03:08:45.301173Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

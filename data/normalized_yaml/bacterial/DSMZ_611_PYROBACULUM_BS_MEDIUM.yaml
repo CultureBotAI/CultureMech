@@ -55,8 +55,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '47.15'
+    value: '48.15'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 47.15, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -69,15 +70,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '3.13'
+    value: '3.23'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.13, 0.1]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -125,8 +128,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.052'
+    value: '0.062'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.052, 0.01]'
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -162,26 +166,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -196,13 +186,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -224,13 +207,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -263,19 +239,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except nitrate, yeast extract and bicarbonate) and sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to 7.0 and dispense under 100% N2 gas
-    atmosphere into serum vials (e.g., 20 ml medium per 100 ml bottle). Replace gas phase with 80% H2
-    and 20% CO2 gas mixture and autoclave. Prior to inoculation add nitrate and yeast extract from sterile
-    anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic stock solution
-    prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to 7.0 - 7.2.
+  description: Dissolve ingredients (except nitrate, yeast extract and bicarbonate)
+    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH
+    to 7.0 and dispense under 100% N2 gas atmosphere into serum vials (e.g., 20 ml
+    medium per 100 ml bottle). Replace gas phase with 80% H2 and 20% CO2 gas mixture
+    and autoclave. Prior to inoculation add nitrate and yeast extract from sterile
+    anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH
+    of complete medium to 7.0 - 7.2.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 2 bar
+    overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -287,3 +266,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:45.994265Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

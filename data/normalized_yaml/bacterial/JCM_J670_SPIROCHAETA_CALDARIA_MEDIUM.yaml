@@ -73,8 +73,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.006'
+    value: '0.016'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.006, 0.01]'
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -101,8 +102,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.036'
+    value: '0.046'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.036, 0.01]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -170,33 +172,19 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and distribute into culture vessels under a N2 atmosphere, seal with butyl
-    rubber stoppers, and autoclave. Separately autoclave or *filter-sterilize the following solutions
-    under a N2 atmosphere and add to the medium (per liter):'
+  description: 'Mix ingredients and distribute into culture vessels under a N2 atmosphere,
+    seal with butyl rubber stoppers, and autoclave. Separately autoclave or *filter-sterilize
+    the following solutions under a N2 atmosphere and add to the medium (per liter):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of the medium to 7.0 with sterile NaOH, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +192,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J670'
+- timestamp: '2026-03-13T03:09:05.921516Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

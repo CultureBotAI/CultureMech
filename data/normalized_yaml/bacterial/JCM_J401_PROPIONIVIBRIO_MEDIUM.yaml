@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '76.9231'
+    value: '77.9231'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 76.9231, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '11.5385'
+    value: '11.6385'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 11.5385, 0.1]'
 - preferred_term: Quinic acid
   term:
     id: CHEBI:26493
@@ -106,13 +108,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -124,13 +119,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -255,4 +243,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J401'
+- timestamp: '2026-03-13T03:08:41.666095Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

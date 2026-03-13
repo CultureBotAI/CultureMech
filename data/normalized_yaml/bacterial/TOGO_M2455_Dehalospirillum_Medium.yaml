@@ -6,10 +6,11 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: Distilled water
   concentration:
-    value: '875'
+    value: '4961.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 9 duplicates: 875.0, 990.0, 1000.0, 1000.0, 1000.0, 35.0,
+    20.0, 40.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -86,15 +87,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '990'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '36'
@@ -170,15 +162,6 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '3'
@@ -211,25 +194,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Complex
     component, Solution'
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -240,9 +204,10 @@ ingredients:
     label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
-    value: '5'
+    value: '85.0'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+    [Merged 2 duplicates: 5.0, 80.0]'
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
@@ -272,9 +237,10 @@ ingredients:
     label: folic acid
 - preferred_term: Vitamin B12
   concentration:
-    value: '0.1'
+    value: '100.1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+    [Merged 2 duplicates: 0.1, 100.0]'
   term:
     id: CHEBI:176843
     label: vitamin B12
@@ -288,9 +254,10 @@ ingredients:
     label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
-    value: '5'
+    value: '205.0'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component
+    [Merged 2 duplicates: 5.0, 200.0]'
   term:
     id: CHEBI:15940
     label: nicotinic acid
@@ -308,23 +275,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: p-Aminobenzoic acid
-  concentration:
-    value: '80'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -341,22 +291,6 @@ ingredients:
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
-- preferred_term: Vitamin B12
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '200'
@@ -373,15 +307,6 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-- preferred_term: Distilled water
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2CO3
   concentration:
     value: '1.75'
@@ -401,15 +326,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na-pyruvate
   concentration:
     value: '4.5'
@@ -419,20 +335,6 @@ ingredients:
   term:
     id: CHEBI:50144
     label: Na-pyruvate
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2-fumarate
   concentration:
     value: '6.4'
@@ -441,11 +343,6 @@ ingredients:
   term:
     id: CHEBI:115156
     label: Na2-fumarate
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: 0.1 N H2SO4
   concentration:
     value: '1'
@@ -461,20 +358,6 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '50'
@@ -483,11 +366,6 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2455
   term:
@@ -520,6 +398,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 13 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:51.529840Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 17 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: 'Solution A:'

@@ -76,15 +76,17 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.63'
+    value: '1.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.63, 0.5]'
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '1'
+    value: '1.001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 0.001]'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -155,13 +157,6 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -222,13 +217,6 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -246,27 +234,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
-    45 min), then distributed under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions
-    C and F are autoclaved under 100% N2 gas. Solutions D and E are prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added
-    to the sterile solution A in the sequence as indicated. Adjust pH of complete medium to 7.1 - 7.4,
-    if necessary.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 45 min), then distributed under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and F are autoclaved
+    under 100% N2 gas. Solutions D and E are prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To complete the medium appropriate amounts of solutions
+    B to F are added to the sterile solution A in the sequence as indicated. Adjust
+    pH of complete medium to 7.1 - 7.4, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
-    freshly prepared under N2 and filter-sterilized) may stimulate growth of some strains at the beginning.
-    For transfers use 5 - 10% inoculum.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth of some strains at the beginning. For transfers use 5 - 10% inoculum.'
 - step_number: 3
   action: AUTOCLAVE
-  description: Heat the suspension in a closed bottle (with 100% N2 gas atmosphere in head space) in a
-    boiling water bath. Shake until stearate has dissolved, then autoclave. Stored stearate solution has
-    to be remelted before use.
+  description: Heat the suspension in a closed bottle (with 100% N2 gas atmosphere
+    in head space) in a boiling water bath. Shake until stearate has dissolved, then
+    autoclave. Stored stearate solution has to be remelted before use.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,4 +266,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.617660Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:44.982122Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

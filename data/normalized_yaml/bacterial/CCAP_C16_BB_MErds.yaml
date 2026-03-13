@@ -15,15 +15,17 @@ ingredients:
     id: CHEBI:59148
     label: NaNO3
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '10'
+    value: '30.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 20.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -36,8 +38,9 @@ ingredients:
     id: CHEBI:131527
     label: K2HPO4
   concentration:
-    value: '10'
+    value: '30.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 20.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -122,13 +125,6 @@ ingredients:
   concentration:
     value: '0.49'
     unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:59148
-    label: NaNO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -139,20 +135,6 @@ ingredients:
 - preferred_term: Sea water
   concentration:
     value: '1000'
-    unit: G_PER_L
-- preferred_term: K2HPO4
-  term:
-    id: CHEBI:131527
-    label: K2HPO4
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '20'
     unit: G_PER_L
 - preferred_term: KNO3
   term:
@@ -165,10 +147,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Soil
-  concentration:
-    value: '159.091'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -249,3 +227,7 @@ curation_history:
   date: '2026-02-03T11:20:16.916031'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-03-13T03:08:46.576608Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

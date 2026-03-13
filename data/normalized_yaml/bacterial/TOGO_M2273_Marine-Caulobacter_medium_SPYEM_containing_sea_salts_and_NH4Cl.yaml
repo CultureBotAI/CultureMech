@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -19,9 +20,10 @@ ingredients:
   notes: 'Role: Mineral source; Properties: Defined component, Complex component'
 - preferred_term: Deionized water
   concentration:
-    value: '1'
+    value: '12.0'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 10.0]'
 - preferred_term: Glucose (50%)
   concentration:
     value: '2'
@@ -40,11 +42,6 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Deionized water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: Peptone
   concentration:
     value: '100'
@@ -53,15 +50,11 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:17015
     label: riboflavin
-- preferred_term: Deionized water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component, Inorganic compound'
 media_term:
   preferred_term: TOGO Medium M2273
   term:
@@ -79,3 +72,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:46.981780Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

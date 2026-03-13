@@ -79,8 +79,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '9.68992e-05'
+    value: '0.00019689920000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.68992e-05, 0.0001]'
 - preferred_term: Capronic acid
   term:
     id: CHEBI:30776
@@ -221,13 +222,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -273,13 +267,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except capronic acid, Trace vitamins, vitamin B12, NaHCO3, and Na2 x 9H2O,
-    and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Add capronic acid to 10 ml distilled water and
-    adjust pH to 7.5 with NaOH. Filter-sterilize the capronic acid solution, Fatty acid mixture and Trace
-    vitamins with vitamin B12, and store under a N2 atmosphere. Filter-sterilize 5% NaHCO3 solution and
-    store under a N2-CO2 (4:1, v/v) atmosphere. Add the capronic acid solution, Fatty acid mixture, Trace
-    vitamins and 5% NaHCO3 solution to the medium. Prior to inoculation, add a 5% Na2S x 9H2O solution
-    (anaerobically autoclaved) to the medium. Adjust pH of the medium to 6.7 - 6.9, if necessary.
+  description: Mix ingredients, except capronic acid, Trace vitamins, vitamin B12,
+    NaHCO3, and Na2 x 9H2O, and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Add
+    capronic acid to 10 ml distilled water and adjust pH to 7.5 with NaOH. Filter-sterilize
+    the capronic acid solution, Fatty acid mixture and Trace vitamins with vitamin
+    B12, and store under a N2 atmosphere. Filter-sterilize 5% NaHCO3 solution and
+    store under a N2-CO2 (4:1, v/v) atmosphere. Add the capronic acid solution, Fatty
+    acid mixture, Trace vitamins and 5% NaHCO3 solution to the medium. Prior to inoculation,
+    add a 5% Na2S x 9H2O solution (anaerobically autoclaved) to the medium. Adjust
+    pH of the medium to 6.7 - 6.9, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH solution.
@@ -290,3 +286,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J397'
+- timestamp: '2026-03-13T03:08:40.764242Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

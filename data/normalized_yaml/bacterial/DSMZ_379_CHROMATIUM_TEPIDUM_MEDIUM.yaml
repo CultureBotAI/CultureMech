@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:64734
     label: Na2-EDTA
   concentration:
-    value: '0.01'
+    value: '5.21'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 5.2]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -73,13 +74,6 @@ ingredients:
     label: Na2S x 9 H2O
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '5.2'
     unit: G_PER_L
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -154,9 +148,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare bicarbonate and sulfide as separate solutions. Sterilize all solutions by autoclaving.
-    After cooling mix all three solutions, adding the sulfide last. Adjust pH to 7.0 and dispense in completely
-    filled screw-capped tubes or bottles. Incubate at 500 - 1000 Lux light intensity.
+  description: Prepare bicarbonate and sulfide as separate solutions. Sterilize all
+    solutions by autoclaving. After cooling mix all three solutions, adding the sulfide
+    last. Adjust pH to 7.0 and dispense in completely filled screw-capped tubes or
+    bottles. Incubate at 500 - 1000 Lux light intensity.
 applications:
 - Microbial cultivation
 curation_history:
@@ -164,3 +159,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 379'
+- timestamp: '2026-03-13T03:08:57.509258Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

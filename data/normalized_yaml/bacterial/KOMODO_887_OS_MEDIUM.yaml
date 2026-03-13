@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.256'
+    value: '1.256'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.256, 1.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -31,15 +32,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0008'
+    value: '0.1008'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0008, 0.1]'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0103'
+    value: '0.0203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0103, 0.01]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -110,13 +113,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -130,13 +126,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -159,13 +148,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -187,6 +169,11 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,3 +185,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 887
+- timestamp: '2026-03-13T03:09:05.782240Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 3 duplicate ingredient(s); Added pH buffer: H2SO4'

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:81.2
     label: For growth on nitrogen-free medium
-notes: 'Source: KOMODO ModelSEED | ID: 81.2 | DSMZ Medium: 81 (mediadive.medium:81) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 81.2 | DSMZ Medium: 81 (mediadive.medium:81)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.00543478'
+    value: '0.03543478'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00543478, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -138,13 +140,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -191,3 +186,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 81
+- timestamp: '2026-03-13T03:09:02.559379Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

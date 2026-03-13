@@ -59,15 +59,9 @@ ingredients:
     id: CHEBI:32149
     label: Na2SO4
   concentration:
-    value: '4'
+    value: '8.0'
     unit: G_PER_L
-- preferred_term: Na2SO4
-  term:
-    id: CHEBI:32149
-    label: Na2SO4
-  concentration:
-    value: '4'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4.0, 4.0]'
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -87,8 +81,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.024736'
+    value: '0.025336'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.024736, 0.0006]'
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -178,13 +173,6 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.0006'
-    unit: G_PER_L
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -197,8 +185,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '990'
+    value: '1990.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 990.0, 1000.0]'
 - preferred_term: Para-aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -266,13 +255,6 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -293,3 +275,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:21.321299Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:58242
     label: KNO3
   concentration:
-    value: '20'
+    value: '30.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.0, 10.0]'
 - preferred_term: MES
   term:
     id: CHEBI:39010
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '4'
+    value: '8.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 4.0, 4.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -131,13 +133,6 @@ ingredients:
   concentration:
     value: '0.000953289'
     unit: G_PER_L
-- preferred_term: KNO3
-  term:
-    id: CHEBI:58242
-    label: KNO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -145,28 +140,25 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Use Medium No. 744. Before autoclaving, adjust pH of the medium to 5.5. After autoclaving,
-    add per liter the following solutions aseptically and anaerobically from anaerobic stocks:'
+  description: 'Use Medium No. 744. Before autoclaving, adjust pH of the medium to
+    5.5. After autoclaving, add per liter the following solutions aseptically and
+    anaerobically from anaerobic stocks:'
 - step_number: 2
   action: MIX
-  description: Otherwise, prepare the medium as described in the recipe of Medium No. 744.
+  description: Otherwise, prepare the medium as described in the recipe of Medium
+    No. 744.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly
-    add 10 ml 5% Na2S x 9H2O solution to the medium, wait for the medium to become colorless, then adjust
-    pH to 7.0 with NaOH. Distribute medium into culture vessels under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. Before inoculation, aseptically and anaerobically add per liter
-    the following solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v)
+    gas mixture. Slowly add 10 ml 5% Na2S x 9H2O solution to the medium, wait for
+    the medium to become colorless, then adjust pH to 7.0 with NaOH. Distribute medium
+    into culture vessels under the same gas mixture, seal with butyl rubber stoppers
+    and autoclave. Before inoculation, aseptically and anaerobically add per liter
+    the following solutions from anaerobic stocks (autoclaved and stored under a N2
+    atmosphere):'
 - step_number: 4
   action: MIX
   description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (4:1, v/v).
@@ -177,3 +169,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1003'
+- timestamp: '2026-03-13T03:08:46.964303Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

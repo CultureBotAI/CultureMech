@@ -62,15 +62,9 @@ ingredients:
     id: CHEBI:64734
     label: Na2-EDTA
   concentration:
-    value: '0.6'
+    value: '1.6'
     unit: G_PER_L
-- preferred_term: Na2-EDTA
-  term:
-    id: CHEBI:64734
-    label: Na2-EDTA
-  concentration:
-    value: '1'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.6, 1.0]'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -105,19 +99,21 @@ preparation_steps:
   description: Prepare the following primary stocks solutions first.
 - step_number: 2
   action: MIX
-  description: "To prepare the final stock solution, Using the primary stocks as shown below, make up\
-    \ to\r\n1 litre of deionised water."
+  description: "To prepare the final stock solution, Using the primary stocks as shown\
+    \ below, make up to\r\n1 litre of deionised water."
 - step_number: 3
   action: AUTOCLAVE
-  description: Dispense the final stock solution into 10ml aliquots. Autoclave at 15 psi for 15 minutes.
+  description: Dispense the final stock solution into 10ml aliquots. Autoclave at
+    15 psi for 15 minutes.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: "Finally, to use add 20 ml per litre to sterile 30 ppt filtered seawater (950mls filtered\
-    \ seawater:\r\n30mls deionised water)"
+  description: "Finally, to use add 20 ml per litre to sterile 30 ppt filtered seawater\
+    \ (950mls filtered seawater:\r\n30mls deionised water)"
 - step_number: 5
   action: FILTER_STERILIZE
-  description: "For 1/2 strength Modified Provasoli add 10 ml sterile stock per litre of sterile 30 ppt\
-    \ filtered\r\nseawater (950mls filtered seawater: 40mls deionised water)"
+  description: "For 1/2 strength Modified Provasoli add 10 ml sterile stock per litre\
+    \ of sterile 30 ppt filtered\r\nseawater (950mls filtered seawater: 40mls deionised\
+    \ water)"
 - step_number: 6
   action: MIX
   description: For agar add 15g per litre Bacteriological Agar.
@@ -134,3 +130,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:03.193333Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -24,8 +24,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '5'
+    value: '33.129999999999995'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 28.13]'
 - preferred_term: D(+)-Trehalose
   term:
     id: CHEBI:27082
@@ -51,13 +52,6 @@ ingredients:
 - preferred_term: Natural sea water
   concentration:
     value: '750'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '28.13'
     unit: G_PER_L
 - preferred_term: KCl
   term:
@@ -112,3 +106,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1588'
+- timestamp: '2026-03-13T03:08:59.784870Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

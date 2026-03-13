@@ -5,35 +5,11 @@ description: 1401. NBRC 1396.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Maltose20gYeast extract3gTween 800.3gTrypticase peptone6gDistilled water1LAgar (if needed)15gpH
-    5.6
+- preferred_term: Maltose20gYeast extract3gTween 800.3gTrypticase peptone6gDistilled
+    water1LAgar (if needed)15gpH 5.6
 - preferred_term: ''
   concentration:
     value: Maltose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Tween 80
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Trypticase peptone
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Agar (if needed)
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 5.6
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -51,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 1396, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1396.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:00.869138Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)

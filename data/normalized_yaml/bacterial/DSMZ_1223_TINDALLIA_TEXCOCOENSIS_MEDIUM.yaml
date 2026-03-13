@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '75'
+    value: '76.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 75.0, 1.0]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -58,8 +59,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.2'
+    value: '0.30000000000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -117,13 +119,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -137,13 +132,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -200,14 +188,15 @@ preparation_steps:
   description: Adjust to pH 9.0
 - step_number: 2
   action: ADJUST_PH
-  description: Prepare the medium omitting Na2CO3, NaHCO3, Na2S, Cysteine-HCl, CaCl2 x 2 H2O and MgCl2
-    x 6 H2O. Boil the medium and cool under nitrogen, add the Na2CO3 and NaHCO3 and adjust the pH to 9.0
-    with 10 M KOH. Dispense into tubes or bottle fitted with rubber stoppers. Sterilize by autoclaving
-    and add the Na2S (neutralized), Cysteine-HCl, CaCl2 x 2 H2O and MgCl2 x 6 H2O from sterile stock solutions.
+  description: Prepare the medium omitting Na2CO3, NaHCO3, Na2S, Cysteine-HCl, CaCl2
+    x 2 H2O and MgCl2 x 6 H2O. Boil the medium and cool under nitrogen, add the Na2CO3
+    and NaHCO3 and adjust the pH to 9.0 with 10 M KOH. Dispense into tubes or bottle
+    fitted with rubber stoppers. Sterilize by autoclaving and add the Na2S (neutralized),
+    Cysteine-HCl, CaCl2 x 2 H2O and MgCl2 x 6 H2O from sterile stock solutions.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -215,3 +204,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1223'
+- timestamp: '2026-03-13T03:09:23.965260Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -29,8 +29,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '8'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 2.0]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -91,13 +92,11 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: NaCl
+- preferred_term: NaOH
   term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -109,3 +108,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 104
+- timestamp: '2026-03-13T03:08:54.197974Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaOH'

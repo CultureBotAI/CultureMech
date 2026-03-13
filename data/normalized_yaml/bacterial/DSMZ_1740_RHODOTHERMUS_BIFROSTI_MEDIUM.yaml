@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -111,13 +112,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -194,7 +188,8 @@ preparation_steps:
   description: Adjust to pH 7.0. Autoclave at 121°C for 20 min.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals.
 - step_number: 3
   action: MIX
   description: Adjust to pH 7.0 with KOH
@@ -205,3 +200,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1740'
+- timestamp: '2026-03-13T03:09:30.529283Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

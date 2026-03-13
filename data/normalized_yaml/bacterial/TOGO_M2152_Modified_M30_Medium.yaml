@@ -11,10 +11,10 @@ ingredients:
   notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
 - preferred_term: Distilled water
   concentration:
-    value: '180'
+    value: '1172.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 5 duplicates: 180.0, 950.0, 1.0, 40.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -47,15 +47,6 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4⋅7H2O
   concentration:
     value: '29.7'
@@ -70,10 +61,10 @@ ingredients:
     Simple component'
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
-    value: '10'
+    value: '22.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
+    component [Merged 2 duplicates: 10.0, 12.8]'
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
@@ -104,15 +95,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -176,15 +158,6 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
-- preferred_term: Nitrilotriacetic acid (NTA)
-  concentration:
-    value: '12.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
 - preferred_term: FeCl2⋅6H2O
   concentration:
     value: '1.35'
@@ -203,23 +176,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Complex component'
-- preferred_term: NaOH
-  notes: 'Properties: Solution, Inorganic compound, Defined component'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2HPO4⋅2H2O
   concentration:
     value: '0.01'
@@ -235,15 +191,6 @@ ingredients:
   term:
     id: CHEBI:59640
     label: N-acetylglucosamine
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -313,14 +260,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2152
   term:
@@ -352,6 +291,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:40.314295Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)
 solutions:
 - preferred_term: Solution 1*
   term:

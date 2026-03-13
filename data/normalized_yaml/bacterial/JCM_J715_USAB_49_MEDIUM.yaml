@@ -37,15 +37,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.986193'
+    value: '1.986193'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.986193, 1.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0986193'
+    value: '0.1986193'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0986193, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -110,13 +112,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -145,13 +140,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -162,13 +150,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.8 - 7.0 with NaOH. Bring to a boil, cool down under a
-    N2 gas stream and add 2 ml of 5% Na2S x 9H2O solution. Anaerobically distribute the medium into culture
-    vessels, seal with butyl rubber stoppers and autoclave.
+  description: Mix components and adjust pH to 6.8 - 7.0 with NaOH. Bring to a boil,
+    cool down under a N2 gas stream and add 2 ml of 5% Na2S x 9H2O solution. Anaerobically
+    distribute the medium into culture vessels, seal with butyl rubber stoppers and
+    autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH. Then proceed to
-    add the minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH.
+    Then proceed to add the minerals.
 applications:
 - Microbial cultivation
 curation_history:
@@ -176,3 +165,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J715'
+- timestamp: '2026-03-13T03:08:56.840818Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

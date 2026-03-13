@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:973
     label: MARINITHERMUS HYDROTHERMALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 973 | DSMZ Medium: 973 (mediadive.medium:973) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 973 | DSMZ Medium: 973 (mediadive.medium:973)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -24,8 +25,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -38,8 +40,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.14'
+    value: '0.24000000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.14, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -52,8 +55,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4'
+    value: '6.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -73,8 +77,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.0005'
+    value: '0.025500000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0005, 0.025]'
 - preferred_term: Na2Se3 x 5 H2O
   concentration:
     value: '0.0005'
@@ -93,26 +98,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -127,13 +118,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -170,13 +154,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -195,3 +172,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 973
+- timestamp: '2026-03-13T03:09:41.046728Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

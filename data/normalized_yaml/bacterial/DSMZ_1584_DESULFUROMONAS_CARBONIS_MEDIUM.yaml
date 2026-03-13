@@ -62,8 +62,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00886699'
+    value: '0.03286699'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00886699, 0.024]'
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -126,13 +127,6 @@ ingredients:
     label: CuCl2 x 2 H2O
   concentration:
     value: '0.002'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.024'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -232,16 +226,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, fumarate and vitamins) and sparge medium with 80%
-    N2 and 20% CO2 gas mixture to make it anoxic. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. After autoclaving complete the medium by adding fumarate
-    and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of fumarate and
-    vitamins are sterilized by filtration. Adjust pH of the complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients (except carbonate, fumarate and vitamins) and
+    sparge medium with 80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After autoclaving complete the medium by adding fumarate and vitamins
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Stock solutions of fumarate and vitamins are sterilized by filtration. Adjust
+    pH of the complete medium to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,4 +248,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.201464Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:20.133494Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

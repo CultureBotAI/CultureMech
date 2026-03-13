@@ -35,8 +35,9 @@ ingredients:
     id: CHEBI:15377
     label: Tap water
   concentration:
-    value: '600'
+    value: '1000.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 600.0, 300.0, 100.0]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -65,13 +66,6 @@ ingredients:
   concentration:
     value: '0.333333'
     unit: G_PER_L
-- preferred_term: Tap water
-  term:
-    id: CHEBI:15377
-    label: Tap water
-  concentration:
-    value: '300'
-    unit: G_PER_L
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
@@ -79,13 +73,11 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-- preferred_term: Tap water
+- preferred_term: KOH
   term:
-    id: CHEBI:15377
-    label: Tap water
-  concentration:
-    value: '100'
-    unit: G_PER_L
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -97,3 +89,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 938
+- timestamp: '2026-03-13T03:08:54.775464Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: KOH'

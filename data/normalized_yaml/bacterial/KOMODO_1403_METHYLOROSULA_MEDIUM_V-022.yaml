@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:1403
     label: METHYLOROSULA MEDIUM V-022
-notes: 'Source: KOMODO ModelSEED | ID: 1403 | DSMZ Medium: 1403 (mediadive.medium:1403) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1403 | DSMZ Medium: 1403 (mediadive.medium:1403)
+  | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -22,8 +23,9 @@ ingredients:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '0.04'
+    value: '0.043000000000000003'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.04, 0.003]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -58,13 +60,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '0.003'
     unit: G_PER_L
 - preferred_term: H3BO3
   term:
@@ -112,4 +107,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1403
+- timestamp: '2026-03-13T03:08:38.926851Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 6.0

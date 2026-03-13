@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:708
     label: DESULFORHABDUS AMNIGENUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 708 | DSMZ Medium: 708 (mediadive.medium:708) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 708 | DSMZ Medium: 708 (mediadive.medium:708)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:
@@ -188,8 +189,9 @@ ingredients:
     id: CHEBI:30961
     label: Pyridoxine hydrochloride
   concentration:
-    value: '0.1'
+    value: '0.4'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.3]'
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -209,8 +211,9 @@ ingredients:
     id: CHEBI:15940
     label: Nicotinic acid
   concentration:
-    value: '0.05'
+    value: '0.25'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.2]'
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
@@ -220,35 +223,23 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.101'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.001, 0.1]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
     label: p-Aminobenzoic acid
   concentration:
-    value: '0.05'
+    value: '0.13'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.08]'
 - preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
     label: (DL)-alpha-Lipoic acid
   concentration:
     value: '0.05'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: p-Aminobenzoic acid
-  term:
-    id: CHEBI:30753
-    label: p-Aminobenzoic acid
-  concentration:
-    value: '0.08'
     unit: G_PER_L
 - preferred_term: D-(+)-biotin
   term:
@@ -257,26 +248,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Nicotinic acid
-  term:
-    id: CHEBI:15940
-    label: Nicotinic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Pyridoxine hydrochloride
-  term:
-    id: CHEBI:30961
-    label: Pyridoxine hydrochloride
-  concentration:
-    value: '0.3'
     unit: G_PER_L
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
@@ -299,4 +276,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.432268Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:44.718717Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.01'
+    value: '5.21'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 5.2]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -87,13 +88,6 @@ ingredients:
     label: Biotin
   concentration:
     value: 3e-05
-    unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '5.2'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -175,10 +169,11 @@ preparation_steps:
   description: 'Filter-sterilize and add after autoclaving:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: The pH of the medium was adjusted to 9.5 by addition of NaOH and then sterilized by autoclaving.
-    Before inoculating medium RV5, 0.1% (w/v) NaHCO3 was added to tubes, bottles, or molten media from
-    a 5% (w/v) filter-sterilized stock solution. For routine culture, medium RV5 supplemented with 0.05%
-    (w/v) Difco yeast extract was used.
+  description: The pH of the medium was adjusted to 9.5 by addition of NaOH and then
+    sterilized by autoclaving. Before inoculating medium RV5, 0.1% (w/v) NaHCO3 was
+    added to tubes, bottles, or molten media from a 5% (w/v) filter-sterilized stock
+    solution. For routine culture, medium RV5 supplemented with 0.05% (w/v) Difco
+    yeast extract was used.
 applications:
 - Microbial cultivation
 curation_history:
@@ -186,3 +181,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1147'
+- timestamp: '2026-03-13T03:08:38.037572Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

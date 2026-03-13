@@ -9,22 +9,25 @@ media_term:
   term:
     id: komodo.medium:377.1
     label: For DSM 19918
-notes: 'Source: KOMODO ModelSEED | ID: 377.1 | DSMZ Medium: 377 (mediadive.medium:377) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 377.1 | DSMZ Medium: 377 (mediadive.medium:377)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '13.5122'
+    value: '14.5122'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 13.5122, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.41463'
+    value: '6.41463'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.41463, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -51,8 +54,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0146341'
+    value: '0.0246341'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0146341, 0.01]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -86,8 +90,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.731707'
+    value: '0.831707'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.731707, 0.1]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -100,8 +105,9 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.00195122'
+    value: '0.03195122'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00195122, 0.03]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000487805'
@@ -142,26 +148,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -176,13 +168,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -205,26 +190,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -251,3 +222,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 377
+- timestamp: '2026-03-13T03:09:35.437954Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

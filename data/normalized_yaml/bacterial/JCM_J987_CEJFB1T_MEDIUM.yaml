@@ -59,8 +59,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Tryptone
   concentration:
-    value: '0.49554'
+    value: '50.49554'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.49554, 50.0]'
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -93,10 +94,6 @@ ingredients:
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Tryptone
   concentration:
     value: '50'
     unit: G_PER_L
@@ -189,4 +186,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J987'
+- timestamp: '2026-03-13T03:09:13.033729Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 high_metal: true

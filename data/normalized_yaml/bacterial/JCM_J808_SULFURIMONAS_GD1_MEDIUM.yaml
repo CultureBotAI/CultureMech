@@ -65,8 +65,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.00551791'
+    value: '0.01151791'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00551791, 0.006]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -143,13 +144,6 @@ ingredients:
     label: MnCl2 x 4 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.006'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -273,9 +267,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.3. Fill the medium in a glass bottle, bubble with N2
-    for 30 min, then, seal with butyl rubber stoppers and autoclave. After cooling, add the following
-    solutions from anaerobic stocks (filter-sterilized):'
+  description: 'Mix ingredients and adjust pH to 7.3. Fill the medium in a glass bottle,
+    bubble with N2 for 30 min, then, seal with butyl rubber stoppers and autoclave.
+    After cooling, add the following solutions from anaerobic stocks (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -283,3 +277,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J808'
+- timestamp: '2026-03-13T03:08:50.914754Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

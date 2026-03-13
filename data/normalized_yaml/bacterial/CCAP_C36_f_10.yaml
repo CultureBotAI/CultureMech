@@ -12,8 +12,9 @@ notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf
 ingredients:
 - preferred_term: Natural sea water
   concentration:
-    value: '800'
+    value: '1800.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 800.0, 1000.0]'
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -27,10 +28,6 @@ ingredients:
     label: NaH2PO4 x 2 H2O
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: Natural sea water
-  concentration:
-    value: '1000'
     unit: G_PER_L
 - preferred_term: Agar
   term:
@@ -132,3 +129,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C36'
+- timestamp: '2026-03-13T03:08:45.915710Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

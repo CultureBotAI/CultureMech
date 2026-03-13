@@ -6,10 +6,10 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
   concentration:
-    value: '500'
+    value: '700.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+    Defined component [Merged 2 duplicates: 500.0, 200.0]'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -38,12 +38,6 @@ ingredients:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: DI water
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -105,6 +99,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:44.876633Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 solutions:
 - preferred_term: Phenol red solution (0.1% soln.)
   composition: []

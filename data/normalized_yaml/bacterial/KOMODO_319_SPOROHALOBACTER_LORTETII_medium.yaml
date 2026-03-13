@@ -39,8 +39,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '103.653'
+    value: '104.653'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 103.653, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -53,8 +54,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00197433'
+    value: '0.10197433'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00197433, 0.1]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000493583'
@@ -78,8 +80,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '3.65252'
+    value: '3.75252'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.65252, 0.1]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -101,33 +104,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -252,6 +234,11 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,11 +253,16 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.035476Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-02-20T07:49:55.000000Z'
   curator: organism-data-backfill
   action: Added curated organism data
   notes: 'Added organism: SPOROHALOBACTER LORTETII, culture_type: isolate'
+- timestamp: '2026-03-13T03:08:37.653719Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 3 duplicate ingredient(s); Added pH buffer: NaOH'
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: SPOROHALOBACTER LORTETII

@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '2.5e-06'
+    value: '0.0001040099'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 2.5e-06, 2.5e-06, 9.90099e-05]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -51,20 +52,13 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.2'
+    value: '29.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.2, 29.7]'
 - preferred_term: Bacto peptone
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '2.5e-06'
-    unit: G_PER_L
-  notes: ' (add after autoclaving)'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -78,22 +72,25 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.99'
+    value: '5.325'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.99, 3.335]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '1.599'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1.0, 0.099, 0.5]'
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
-    value: '0.35'
+    value: '0.504'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.35, 0.154]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -108,30 +105,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '29.7'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.335'
-    unit: G_PER_L
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.099'
     unit: G_PER_L
 - preferred_term: Na-EDTA
   term:
@@ -146,20 +122,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '1.095'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '0.154'
     unit: G_PER_L
 - preferred_term: CuSO4 x 5 H2O
   term:
@@ -228,13 +190,6 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '9.90099e-05'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -248,7 +203,8 @@ preparation_steps:
   description: Autoclave solution A and B separately and combine after cooling.
 - step_number: 2
   action: MIX
-  description: 'Prepare the liquid medium. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Before inoculation add from sterile stock
+    solutions:'
 - step_number: 3
   action: MIX
   description: For solid media add 15.0 g agar to solution B
@@ -272,8 +228,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 10
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -285,3 +241,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:00.861110Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 7 duplicate ingredient(s)

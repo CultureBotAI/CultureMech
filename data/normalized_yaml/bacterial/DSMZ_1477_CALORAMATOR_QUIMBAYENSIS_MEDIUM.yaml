@@ -44,15 +44,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0998004'
+    value: '0.1998004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0998004, 0.1]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '19.9601'
+    value: '20.9601'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 19.9601, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -110,13 +112,6 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -151,13 +146,6 @@ ingredients:
     label: NiCl2 x 6 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
@@ -243,16 +231,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, glucose and vitamins, then sparge medium with
-    100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Add glucose and vitamins (sterilized by filtration)
-    from sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium
-    to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients except bicarbonate, glucose and vitamins, then
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium
+    under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. Add glucose and vitamins (sterilized by filtration) from sterile anoxic
+    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust
+    pH of complete medium to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
-    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,4 +253,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.739301Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:58.901885Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

@@ -48,8 +48,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '0.996016'
+    value: '4.996016'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.996016, 4.0]'
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -180,10 +181,6 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4'
-    unit: G_PER_L
 - preferred_term: Sludge
   concentration:
     value: '1000'
@@ -273,3 +270,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 119b'
+- timestamp: '2026-03-13T03:09:43.316548Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -37,36 +37,41 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.997009'
+    value: '1.997009'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.997009, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.0897308'
+    value: '3.0897308'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0897308, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0598205'
+    value: '0.1598205'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0598205, 0.1]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00199402'
+    value: '0.10199402'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00199402, 0.1]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.000199402'
+    value: '0.030199402'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.000199402, 0.03]'
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000498504'
@@ -99,13 +104,6 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -113,33 +111,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -176,13 +153,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -200,21 +170,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except nitrate, carbonate, and dithiothreitol), then sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same
-    gas atmosphere into anoxic serum vials (e.g., 10 ml medium in 25 ml Balch-type tubes) and autoclave.
-    Before use, add nitrate from a sterile anoxic stock solution prepared under 100% N2 gas and carbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Before inoculation
-    add dithiothreitol from an anoxic stock solution sterilized by filtration under 100% N2 gas and adjust
-    the pH of the medium to 7.2.
+  description: Dissolve ingredients (except nitrate, carbonate, and dithiothreitol),
+    then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Dispense medium under the same gas atmosphere into anoxic serum vials
+    (e.g., 10 ml medium in 25 ml Balch-type tubes) and autoclave. Before use, add
+    nitrate from a sterile anoxic stock solution prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Before inoculation add dithiothreitol from an anoxic stock solution sterilized
+    by filtration under 100% N2 gas and adjust the pH of the medium to 7.2.
 - step_number: 2
   action: MIX
-  description: After growth has started pressurize vials to 0.5 bar overpressure with a sterile 80% H2
-    and 20% CO2 gas mixture.
+  description: After growth has started pressurize vials to 0.5 bar overpressure with
+    a sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -222,3 +193,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 716'
+- timestamp: '2026-03-13T03:08:51.090603Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

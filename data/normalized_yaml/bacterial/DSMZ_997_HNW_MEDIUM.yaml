@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:59148
     label: NaNO3
   concentration:
-    value: '1'
+    value: '101.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 100.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '1'
+    value: '101.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.0, 100.0]'
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -37,36 +39,17 @@ ingredients:
     id: CHEBI:76208
     label: Na2S
   concentration:
-    value: '0.5'
+    value: '100.5'
     unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:59148
-    label: NaNO3
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Na2S
-  term:
-    id: CHEBI:76208
-    label: Na2S
-  concentration:
-    value: '100'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 100.0]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3000'
+    value: '3001.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3000.0, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -79,8 +62,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '14'
+    value: '14.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 14.0, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -93,8 +77,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '340'
+    value: '343.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 340.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -114,15 +99,17 @@ ingredients:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.05'
+    value: '0.07500000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.025]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
-    value: '0.05'
+    value: '0.050300000000000004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.05, 0.0003]'
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '1'
@@ -137,26 +124,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x 2 H2O
   term:
     id: CHEBI:86356
     label: MnSO4 x 2 H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -171,13 +144,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -213,20 +179,6 @@ ingredients:
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.025'
-    unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.0003'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -320,4 +272,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:27.476584Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)
 high_metal: true

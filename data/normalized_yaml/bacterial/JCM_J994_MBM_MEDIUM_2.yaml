@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '78.2779'
+    value: '79.2779'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 78.2779, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '5.87084'
+    value: '8.870840000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.87084, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -44,8 +46,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.391389'
+    value: '0.49138899999999996'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.391389, 0.1]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -99,23 +102,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -128,13 +117,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -246,21 +228,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil for a few seconds, cool down under a N2-CO2
-    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add the following
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. Bring to a boil for a few seconds, cool
+    down under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels (e.g., 5 ml of the medium in the
-    Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Add per
-    liter the following solutions from anaerobic stocks (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels (e.g., 5 ml
+    of the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture and
+    seal with butyl rubber stoppers. Add per liter the following solutions from anaerobic
+    stocks (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.5, if necessary.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -268,3 +251,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J994'
+- timestamp: '2026-03-13T03:08:54.492893Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

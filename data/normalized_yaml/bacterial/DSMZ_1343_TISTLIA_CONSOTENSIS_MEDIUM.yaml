@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '20'
+    value: '21.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 20.0, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.1'
+    value: '0.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -69,8 +71,9 @@ ingredients:
     id: CHEBI:17234
     label: Glucose
   concentration:
-    value: '3.6032'
+    value: '7.2064'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.6032, 3.6032]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -79,13 +82,6 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: Optional ingredient (for solid medium)
-- preferred_term: Glucose
-  term:
-    id: CHEBI:17234
-    label: Glucose
-  concentration:
-    value: '3.6032'
-    unit: G_PER_L
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -135,26 +131,12 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: Na2SeO3
   term:
@@ -172,8 +154,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 3
   action: MIX
-  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before adding the other trace
-    elements.
+  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before
+    adding the other trace elements.
 applications:
 - Microbial cultivation
 curation_history:
@@ -181,3 +163,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1343'
+- timestamp: '2026-03-13T03:09:30.149765Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

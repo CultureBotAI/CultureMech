@@ -115,25 +115,20 @@ ingredients:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '30'
+    value: '40.0'
     unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '10'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 10.0]'
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v) solution of Na2S
-    x 9 H2O; add the following amount of this solution to the medium after autoclaving (= shortly before
-    using the medium).
+  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v)
+    solution of Na2S x 9 H2O; add the following amount of this solution to the medium
+    after autoclaving (= shortly before using the medium).
 - step_number: 2
   action: MIX
-  description: 'Note: For small volumes, such as 5 mL agar slants, you can use the respective volume of
-    a sterile neutralized 3% Na2S x 9 H2O solution (e.g., 50µL/5 mL = 0.3g/L)'
+  description: 'Note: For small volumes, such as 5 mL agar slants, you can use the
+    respective volume of a sterile neutralized 3% Na2S x 9 H2O solution (e.g., 50µL/5
+    mL = 0.3g/L)'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
@@ -147,3 +142,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 573'
+- timestamp: '2026-03-13T03:08:49.157559Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

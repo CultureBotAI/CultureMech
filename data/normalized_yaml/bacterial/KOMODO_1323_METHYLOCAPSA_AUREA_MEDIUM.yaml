@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1323
     label: METHYLOCAPSA AUREA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1323 | DSMZ Medium: 1323 (mediadive.medium:1323) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1323 | DSMZ Medium: 1323 (mediadive.medium:1323)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaNO3
   term:
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '3.54'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 1.54]'
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -80,13 +82,6 @@ ingredients:
     label: Na2MoO4
   concentration:
     value: '0.03'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1.54'
     unit: G_PER_L
 - preferred_term: Na2-EDTA
   term:
@@ -120,3 +115,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1323
+- timestamp: '2026-03-13T03:08:49.192136Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

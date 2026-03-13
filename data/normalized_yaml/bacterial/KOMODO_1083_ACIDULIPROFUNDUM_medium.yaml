@@ -9,22 +9,25 @@ media_term:
   term:
     id: komodo.medium:1083
     label: ACIDULIPROFUNDUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1083 | DSMZ Medium: 1083 (mediadive.medium:1083) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1083 | DSMZ Medium: 1083 (mediadive.medium:1083)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '29.97'
+    value: '39.97'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.97, 10.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.4965'
+    value: '33.4965'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.4965, 30.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -37,8 +40,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.37962'
+    value: '1.37962'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.37962, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -100,26 +104,12 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -134,13 +124,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -209,3 +192,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1083
+- timestamp: '2026-03-13T03:08:42.256777Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

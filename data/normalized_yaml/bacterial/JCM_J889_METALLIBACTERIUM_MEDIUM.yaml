@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.145401'
+    value: '1.1454010000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.145401, 1.0]'
 - preferred_term: VOSO4 x n H2O
   term:
     id: CHEBI:87020
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0098912'
+    value: '1.0098912'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0098912, 1.0]'
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.38477'
@@ -75,26 +77,12 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -225,8 +213,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, except Trace vitamins, adjust pH to 5.5 and autoclave. After cooling, aseptically
-    add filter-sterilized Trace vitamins solution.
+  description: Mix components, except Trace vitamins, adjust pH to 5.5 and autoclave.
+    After cooling, aseptically add filter-sterilized Trace vitamins solution.
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.
@@ -237,3 +225,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J889'
+- timestamp: '2026-03-13T03:09:15.043673Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

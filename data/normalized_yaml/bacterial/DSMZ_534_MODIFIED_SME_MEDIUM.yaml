@@ -16,15 +16,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '7'
+    value: '10.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 7.0, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -65,8 +67,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: (NH4)2Ni(SO4)2
   term:
     id: CHEBI:86149
@@ -109,26 +112,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -143,13 +132,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -209,8 +191,8 @@ preparation_steps:
   description: Adjust pH to 6.5-6.8 with 1N H2SO4.
 - step_number: 3
   action: MIX
-  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2 atmosphere and
-    tightly stopper.
+  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2
+    atmosphere and tightly stopper.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -219,12 +201,12 @@ preparation_steps:
   description: after autoclaving add the following filter-sterilized solutions.
 - step_number: 6
   action: MIX
-  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific conditions need to\
-    \ be applied)"
+  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific\
+    \ conditions need to be applied)"
 - step_number: 7
   action: MIX
-  description: For more details on the medium see the original description (Huber et al. System. Appl.
-    Microbiol. 15:340-351 (1992)).
+  description: For more details on the medium see the original description (Huber
+    et al. System. Appl. Microbiol. 15:340-351 (1992)).
 - step_number: 8
   action: MIX
   description: 'To 1000.0 ml trace element solution in medium 141 add:'
@@ -236,8 +218,8 @@ preparation_steps:
   description: Prepared under N2,autoclave 121°C, 15 min
 - step_number: 11
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,3 +227,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 534'
+- timestamp: '2026-03-13T03:09:42.591574Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

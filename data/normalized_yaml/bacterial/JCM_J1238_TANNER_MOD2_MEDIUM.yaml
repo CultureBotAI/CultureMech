@@ -213,8 +213,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.0001'
+    value: '0.050100000000000006'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0001, 0.05]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -229,23 +230,17 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH 7.0. Dispense the medium into culture vessels
-    under a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave. After cooling, add per liter
-    the following solutions from sterile anaerobic stocks (filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH 7.0. Dispense the medium into
+    culture vessels under a N2 gas atmosphere, seal with butyl rubber stoppers and
+    autoclave. After cooling, add per liter the following solutions from sterile anaerobic
+    stocks (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
-    Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -257,3 +252,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:47.698289Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

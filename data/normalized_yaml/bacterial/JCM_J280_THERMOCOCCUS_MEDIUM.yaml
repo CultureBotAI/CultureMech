@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.33333'
+    value: '6.33333'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.33333, 3.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '24.5098'
+    value: '25.5098'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 24.5098, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -66,8 +68,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.0245098'
+    value: '0.1245098'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0245098, 0.1]'
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -103,30 +106,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: CoSO4 x 7 H2O
   term:
@@ -250,22 +232,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0-7.2 and autoclave under
-    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5%
-    solution and autoclave under a N2 gas atmosphere. Distribute the medium and sulfur into culture vessels
-    under a N2 stream, and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S
-    x 9H2O solution, and readjust pH to 7.0-7.2, if necessary.
+  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0-7.2
+    and autoclave under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
+    days. Neutralize Na2S x 9H2O as a 5% solution and autoclave under a N2 gas atmosphere.
+    Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
+    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
+    solution, and readjust pH to 7.0-7.2, if necessary.
 - step_number: 2
   action: MIX
   description: 'Comment:'
 - step_number: 3
   action: MIX
-  description: Most of <I>Thermococcus</I> strains will grow in this medium supplemented with 5.0 g/L
-    maltodextrin and omitted sulfur.
+  description: Most of <I>Thermococcus</I> strains will grow in this medium supplemented
+    with 5.0 g/L maltodextrin and omitted sulfur.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -273,3 +256,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J280'
+- timestamp: '2026-03-13T03:09:22.052501Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

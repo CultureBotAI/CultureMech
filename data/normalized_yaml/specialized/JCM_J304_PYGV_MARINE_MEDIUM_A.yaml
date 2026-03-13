@@ -52,15 +52,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '3.34'
+    value: '4.442'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.34, 1.102]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -152,13 +154,6 @@ ingredients:
   concentration:
     value: '4.981'
     unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1.102'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -215,13 +210,6 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.154'
@@ -247,14 +235,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except the glucose solution and Vitamin solution, to artificial seawater
-    and mix thoroughly. Gently heat and bring to a boil. Autoclave and then cool to 45 - 50C. Aseptically
-    add the filter-sterilized glucose solution and Vitamin solution. Adjust pH to 7.5 with sterile KOH,
-    if necessary.
+  description: Add components except the glucose solution and Vitamin solution, to
+    artificial seawater and mix thoroughly. Gently heat and bring to a boil. Autoclave
+    and then cool to 45 - 50C. Aseptically add the filter-sterilized glucose solution
+    and Vitamin solution. Adjust pH to 7.5 with sterile KOH, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by adjusting pH to 6.5
-    with KOH. Add the remaining components and distilled water. Readjust pH to 7.2.
+  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by
+    adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
+    Readjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
@@ -262,3 +251,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J304'
+- timestamp: '2026-03-13T03:09:45.355474Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

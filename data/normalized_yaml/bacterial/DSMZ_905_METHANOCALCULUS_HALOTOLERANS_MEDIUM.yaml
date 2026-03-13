@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '49.505'
+    value: '50.505'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 49.505, 1.0]'
 - preferred_term: Na-acetate
   term:
     id: CHEBI:32954
@@ -87,8 +88,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.594059'
+    value: '0.694059'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.594059, 0.1]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -124,13 +126,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -144,13 +139,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -211,20 +199,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, cysteine, calcium chloride, magnesium chloride
-    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Add and dissolve solid bicarbonate and cysteine, then adjust pH to 7.5 with 10 N KOH. Dispense medium
-    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials (to 30% of volume)
-    and autoclave. Add calcium chloride, magnesium chloride and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas. The pH of the complete medium should be between 7.2 and 7.6.
+  description: Dissolve ingredients (except bicarbonate, cysteine, calcium chloride,
+    magnesium chloride and sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Add and dissolve solid bicarbonate
+    and cysteine, then adjust pH to 7.5 with 10 N KOH. Dispense medium under 80% N2
+    and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials (to 30%
+    of volume) and autoclave. Add calcium chloride, magnesium chloride and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. The pH of the
+    complete medium should be between 7.2 and 7.6.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vessels with sterile 80% H2 and 20% CO2 gas mixture to 1 bar
-    overpressure.
+  description: After inoculation pressurize vessels with sterile 80% H2 and 20% CO2
+    gas mixture to 1 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -236,3 +226,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:15.428711Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

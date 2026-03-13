@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '5'
+    value: '8.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '150'
+    value: '151.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 150.0, 1.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -99,26 +101,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -211,4 +199,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1375'
+- timestamp: '2026-03-13T03:09:33.046712Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

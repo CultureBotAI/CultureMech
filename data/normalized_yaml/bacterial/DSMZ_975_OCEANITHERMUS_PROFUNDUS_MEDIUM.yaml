@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.33'
+    value: '0.43000000000000005'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.33, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '30'
+    value: '31.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 30.0, 1.0]'
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -163,13 +165,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -183,13 +178,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -250,19 +238,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2, MgCl2, KNO3, tryptone,
-    yeast extract, vitamins and sucrose. The pH should be 7.0-7.5. Dispense the medium into vessels suitable
-    for anaerobic growth (Hungate tubes or serum bottles) under an atmosphere of nitrogen and autoclave.
-    To the sterile, cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
-    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract, and sucrose
-    stock solutions should be autoclaved, while the vitamin solution is sterile filtered. This strain
-    grows anaerobically in the presence of nitrate, but microaerophilic growth has been reported provided
-    the oxygen concentration does not exceed 6 % (v/v). Under anaerobic conditions a redox agent, such
-    as sulphide is not required.
+  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2,
+    MgCl2, KNO3, tryptone, yeast extract, vitamins and sucrose. The pH should be 7.0-7.5.
+    Dispense the medium into vessels suitable for anaerobic growth (Hungate tubes
+    or serum bottles) under an atmosphere of nitrogen and autoclave. To the sterile,
+    cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
+    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract,
+    and sucrose stock solutions should be autoclaved, while the vitamin solution is
+    sterile filtered. This strain grows anaerobically in the presence of nitrate,
+    but microaerophilic growth has been reported provided the oxygen concentration
+    does not exceed 6 % (v/v). Under anaerobic conditions a redox agent, such as sulphide
+    is not required.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -273,4 +263,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.250291Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:55.221560Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

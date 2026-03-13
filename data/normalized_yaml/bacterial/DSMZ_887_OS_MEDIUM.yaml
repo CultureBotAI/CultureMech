@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.256'
+    value: '1.256'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.256, 1.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -30,15 +31,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0008'
+    value: '0.1008'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0008, 0.1]'
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.0103'
+    value: '0.0203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0103, 0.01]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -109,13 +112,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -129,13 +125,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -157,13 +146,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -195,8 +177,8 @@ preparation_steps:
   description: Adjust pH to 7.0 with H2SO4.
 - step_number: 3
   action: MIX
-  description: Fill 10 ml medium into 100 ml Serum bottles under a stream of H2/CO2 gas and seal with
-    a rubber stopper.
+  description: Fill 10 ml medium into 100 ml Serum bottles under a stream of H2/CO2
+    gas and seal with a rubber stopper.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -208,8 +190,8 @@ preparation_steps:
   description: Adjust the gas atmosphere strain specifically.
 - step_number: 7
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -217,3 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 887'
+- timestamp: '2026-03-13T03:09:32.175086Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:829.3
     label: For DSM 21157
-notes: 'Source: KOMODO ModelSEED | ID: 829.3 | DSMZ Medium: 829 (mediadive.medium:829) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 829.3 | DSMZ Medium: 829 (mediadive.medium:829)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -165,8 +166,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '0.5'
+    value: '1.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.5]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -230,13 +232,6 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Na2S2O4
   term:
     id: CHEBI:61278
@@ -255,3 +250,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 829
+- timestamp: '2026-03-13T03:09:35.717224Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

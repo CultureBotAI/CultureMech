@@ -37,8 +37,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -177,13 +178,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -264,16 +258,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, and sulfide), adjust pH to 8.0, boil for 10 min.
-    and sparge medium with 100% N2 gas for 30 min to make it anoxic. Distribute under N2 into Hungate
-    tubes (10 ml) and autoclave. Add sulfide from a sterile anoxic stock solution prepared under 100%
-    N2 gas and carbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Filter sterilize vitamin solution and aseptically add 100 µl per Hungate tube. Adjust pH of the complete
-    medium to 8.0, if necessary.
+  description: Dissolve ingredients (except carbonate, and sulfide), adjust pH to
+    8.0, boil for 10 min. and sparge medium with 100% N2 gas for 30 min to make it
+    anoxic. Distribute under N2 into Hungate tubes (10 ml) and autoclave. Add sulfide
+    from a sterile anoxic stock solution prepared under 100% N2 gas and carbonate
+    from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Filter
+    sterilize vitamin solution and aseptically add 100 µl per Hungate tube. Adjust
+    pH of the complete medium to 8.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,4 +279,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.613066Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:40.189395Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

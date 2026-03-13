@@ -36,8 +36,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '29.7619'
+    value: '30.7619'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.7619, 1.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -50,15 +51,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0992064'
+    value: '0.1992064'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0992064, 0.1]'
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
     label: Sodium acetate
   concentration:
-    value: '0.0496032'
+    value: '20.0496032'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0496032, 20.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '0.0992064'
@@ -98,13 +101,6 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-- preferred_term: Sodium acetate
-  term:
-    id: CHEBI:32954
-    label: Sodium acetate
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -130,13 +126,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -148,13 +137,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -196,17 +178,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,
-    add the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    gas mixture. After cooling, add the following solutions from anaerobic stocks
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a stream of N2-CO2 (4:1,
-    v/v) and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution
-    from an anaerobic stock (autoclave and store under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under a stream
+    of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
+    add per liter the following solution from an anaerobic stock (autoclave and store
+    under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -214,3 +198,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J882'
+- timestamp: '2026-03-13T03:09:26.274178Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

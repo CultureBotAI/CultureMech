@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:64755
     label: EDTA
   concentration:
-    value: '0.01'
+    value: '5.21'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01, 5.2]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -99,13 +100,6 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
-- preferred_term: EDTA
-  term:
-    id: CHEBI:64755
-    label: EDTA
-  concentration:
-    value: '5.2'
-    unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -183,8 +177,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide as single sterile
-    stock solutions to sterile medium after autoclaving. Adjust pH to 9 - 9.5.
+  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide
+    as single sterile stock solutions to sterile medium after autoclaving. Adjust
+    pH to 9 - 9.5.
 applications:
 - Microbial cultivation
 curation_history:
@@ -192,3 +187,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1381'
+- timestamp: '2026-03-13T03:08:51.018089Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

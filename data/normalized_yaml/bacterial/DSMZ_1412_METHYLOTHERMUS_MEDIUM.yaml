@@ -23,176 +23,105 @@ ingredients:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.249686'
+    value: '0.259686'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.249686, 0.01]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '3'
+    value: '32.8805'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.0, 29.8805]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '0.014'
+    value: '0.15344200000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.014, 0.139442]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.08'
+    value: '0.876813'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.08, 0.796813]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.34'
+    value: '3.72645'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.34, 3.38645]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '0.42'
+    value: '4.58335'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.42, 4.16335]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
   concentration:
-    value: '33'
+    value: '33.328685'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 33.0, 0.328685]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
-    value: '0.25'
+    value: '0.499004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.25, 0.249004]'
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
     label: NaNO3
   concentration:
-    value: '0.25'
+    value: '0.499004'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.25, 0.249004]'
 - preferred_term: Na2SiO3 x 9 H2O
   term:
     id: CHEBI:132108
     label: Na2SiO3 x 9 H2O
   concentration:
-    value: '0.0002'
+    value: '0.000399203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0002, 0.000199203]'
 - preferred_term: Fe2(SO4)3 x n H2O
   term:
     id: CHEBI:53438
     label: Fe2(SO4)3 x n H2O
   concentration:
-    value: '0.02'
+    value: '0.0399203'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.0199203]'
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
     label: Na2SeO3 x 5 H2O
   concentration:
-    value: '0.0005'
+    value: '0.0009980079999999999'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0005, 0.000498008]'
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
     label: NiCl2 x 6 H2O
   concentration:
-    value: '0.0005'
+    value: '0.0009980079999999999'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '29.8805'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.139442'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.796813'
-    unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3.38645'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '4.16335'
-    unit: G_PER_L
-- preferred_term: KCl
-  term:
-    id: CHEBI:32588
-    label: KCl
-  concentration:
-    value: '0.328685'
-    unit: G_PER_L
-- preferred_term: NH4Cl
-  term:
-    id: CHEBI:31206
-    label: NH4Cl
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
-- preferred_term: NaNO3
-  term:
-    id: CHEBI:59148
-    label: NaNO3
-  concentration:
-    value: '0.249004'
-    unit: G_PER_L
-- preferred_term: Na2SiO3 x 9 H2O
-  term:
-    id: CHEBI:132108
-    label: Na2SiO3 x 9 H2O
-  concentration:
-    value: '0.000199203'
-    unit: G_PER_L
-- preferred_term: Fe2(SO4)3 x n H2O
-  term:
-    id: CHEBI:53438
-    label: Fe2(SO4)3 x n H2O
-  concentration:
-    value: '0.0199203'
-    unit: G_PER_L
-- preferred_term: Na2SeO3 x 5 H2O
-  term:
-    id: CHEBI:131361
-    label: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.000498008'
-    unit: G_PER_L
-- preferred_term: NiCl2 x 6 H2O
-  term:
-    id: CHEBI:34887
-    label: NiCl2 x 6 H2O
-  concentration:
-    value: '0.000498008'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0005, 0.000498008]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -220,13 +149,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -322,15 +244,16 @@ preparation_steps:
   description: or
 - step_number: 2
   action: POUR_PLATES
-  description: Prepare the liquid medium. Adjust to pH 6.2 with HCl or NaOH. Dispense the medium into
-    serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute. 20% methane and 5% air is added
-    to the gas phase
+  description: Prepare the liquid medium. Adjust to pH 6.2 with HCl or NaOH. Dispense
+    the medium into serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute.
+    20% methane and 5% air is added to the gas phase
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.2.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense the medium into serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute.
+  description: Dispense the medium into serum bottles under gassing with N2:CO2 (80:20
+    v/v) for one minute.
 - step_number: 5
   action: MIX
   description: 20% methane and 5% air is added to the gas phase.
@@ -351,3 +274,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:06.390639Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 13 duplicate ingredient(s)

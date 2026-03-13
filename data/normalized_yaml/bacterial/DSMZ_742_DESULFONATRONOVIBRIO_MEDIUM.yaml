@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '9.8912'
+    value: '10.8912'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.8912, 1.0]'
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -102,13 +103,6 @@ ingredients:
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -257,16 +251,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, carbonate, yeast extract, vitamins, formate, and
-    sulfide. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add bicarbonate and
-    carbonate and adjust pH to 9.5. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add yeast extract, vitamins, formate and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration. The
-    pH of the complete medium should be at 9.5 - 9.7.
+  description: Dissolve ingredients except bicarbonate, carbonate, yeast extract,
+    vitamins, formate, and sulfide. Sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic, then add bicarbonate and carbonate and adjust pH to 9.5. Dispense
+    medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add yeast extract, vitamins, formate and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
+    The pH of the complete medium should be at 9.5 - 9.7.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,4 +272,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.874284Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:36.145519Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

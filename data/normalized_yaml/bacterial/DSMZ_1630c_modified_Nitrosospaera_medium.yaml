@@ -58,8 +58,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '3150.0'
     unit: G_PER_L
+  notes: ' [Merged 6 duplicates: 1000.0, 1000.0, 1000.0, 50.0, 50.0, 50.0]'
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -116,13 +117,6 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -141,26 +135,12 @@ ingredients:
   concentration:
     value: '2.753'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
     value: '84'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
     unit: G_PER_L
 - preferred_term: NH4Cl
   term:
@@ -169,26 +149,12 @@ ingredients:
   concentration:
     value: '53.4'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
     label: Sodium pyruvate
   concentration:
     value: '110'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -243,4 +209,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1630c'
+- timestamp: '2026-03-13T03:08:45.225218Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
 high_metal: true

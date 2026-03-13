@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.940734'
+    value: '1.940734'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.940734, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.14111'
+    value: '0.24111000000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.14111, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -215,13 +217,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -233,13 +228,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -281,21 +269,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, except iron metal, and autoclave under a N2 gas atmosphere.
-    After cooling, add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, except iron metal, and autoclave under
+    a N2 gas atmosphere. After cooling, add the following solutions from sterile anaerobic
+    stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Separately autoclave and dry iron metal (powder). Aseptically distribute the medium and
-    iron metal into culture vessels (e.g., 10 ml medium and 100 mg iron in Hungate tubes) under a N2 gas
-    stream and seal with butyl rubber stoppers. Prior to use, aseptically and anaerobically add per liter
-    the following solution (filter-sterilized):'
+  description: 'Separately autoclave and dry iron metal (powder). Aseptically distribute
+    the medium and iron metal into culture vessels (e.g., 10 ml medium and 100 mg
+    iron in Hungate tubes) under a N2 gas stream and seal with butyl rubber stoppers.
+    Prior to use, aseptically and anaerobically add per liter the following solution
+    (filter-sterilized):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 8.0, if necessary.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -303,3 +293,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1320'
+- timestamp: '2026-03-13T03:09:34.839405Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

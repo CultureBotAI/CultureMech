@@ -39,15 +39,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '2000.0'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -55,13 +49,11 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-- preferred_term: Double distilled water
+- preferred_term: NaOH
   term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,3 +65,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1135
+- timestamp: '2026-03-13T03:09:43.125148Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: NaOH'

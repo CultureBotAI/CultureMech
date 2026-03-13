@@ -99,15 +99,9 @@ ingredients:
     id: CHEBI:17883
     label: HCl
   concentration:
-    value: '0.06'
+    value: '2.56'
     unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.06, 2.5]'
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -258,11 +252,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
-    mixture. Distribute the medium into culture vessels (e.g., 10 ml in Balch tubes) under the same gas
-    mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved or *filter-sterilized and stored under a N2 gas
-    atmosphere; **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
+    (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g., 10 ml
+    in Balch tubes) under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. After cooling, aseptically and anaerobically add per liter the following
+    solutions (autoclaved or *filter-sterilized and stored under a N2 gas atmosphere;
+    **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
 - step_number: 2
   action: FILTER_STERILIZE
   description: Filter-sterilize. Use always freshly prepared solution prior to inoculation.
@@ -273,3 +268,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1257'
+- timestamp: '2026-03-13T03:08:48.247293Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

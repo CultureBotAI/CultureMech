@@ -16,8 +16,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.436893'
+    value: '10.436893'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.436893, 10.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.776699'
+    value: '30.776699'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.776699, 30.0]'
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -58,22 +60,25 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0582524'
+    value: '1.0582524'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0582524, 1.0]'
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   term:
     id: CHEBI:86149
     label: (NH4)2Ni(SO4)2 x 6 H2O
   concentration:
-    value: '0.00194175'
+    value: '2.8019417499999997'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00194175, 2.8]'
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.00194175'
+    value: '1.00194175'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00194175, 1.0]'
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -95,30 +100,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '30'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -126,13 +110,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '1.8'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -168,13 +145,6 @@ ingredients:
     label: Na2MoO4 x 2 H2O
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
-  term:
-    id: CHEBI:86149
-    label: (NH4)2Ni(SO4)2 x 6 H2O
-  concentration:
-    value: '2.8'
     unit: G_PER_L
 - preferred_term: Na2WO4 x 2 H2O
   term:
@@ -263,10 +233,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, except NaHCO3, and adjust pH to 7.0. Bring to a boil for a
-    seconds, cool down under a stream of N2-CO2 (80:20, v/v) and NaHCO3 to the medium. Dispense the medium
-    into culture vessels (e.g., 20 ml in 120 ml serum bottles) under a H2-CO2 (80:20, v/v) gas mixture,
-    seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically add the following solutions
+  description: 'Mix components thoroughly, except NaHCO3, and adjust pH to 7.0. Bring
+    to a boil for a seconds, cool down under a stream of N2-CO2 (80:20, v/v) and NaHCO3
+    to the medium. Dispense the medium into culture vessels (e.g., 20 ml in 120 ml
+    serum bottles) under a H2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber
+    stoppers and autoclave. Aseptically and anaerobically add the following solutions
     (autoclaved and stored under N2):'
 - step_number: 2
   action: MIX
@@ -281,3 +252,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1316'
+- timestamp: '2026-03-13T03:08:41.484119Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

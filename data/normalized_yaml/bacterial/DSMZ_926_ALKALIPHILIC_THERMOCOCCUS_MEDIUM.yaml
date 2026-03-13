@@ -15,15 +15,17 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '13.85'
+    value: '14.85'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 13.85, 1.0]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.5'
+    value: '6.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -64,8 +66,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '2.5e-05'
+    value: '0.100025'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5e-05, 0.1]'
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -78,8 +81,9 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.015'
+    value: '0.025'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.015, 0.01]'
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -87,26 +91,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -121,13 +111,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -149,13 +132,6 @@ ingredients:
     label: AlK(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
-    unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: Na2MoO4 x 2 H2O
   term:
@@ -181,16 +157,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the medium anaerobically under nitrogen. Do not adjust the pH.
+  description: Prepare the medium anaerobically under nitrogen. Do not adjust the
+    pH.
 - step_number: 2
   action: MIX
-  description: Prepare separate anaerobic stock solutions of, Casamino acids(10%), Yeast extract (10%),
-    and glycine (2M = 150 g/l). A 0.5M polysulphide solution is prepared by dissolving 12.0 g Na2S x 9
-    H2O in oxygen free water, followed by adding 1.6 g sulphur - the solution will be dark yellow.
+  description: Prepare separate anaerobic stock solutions of, Casamino acids(10%),
+    Yeast extract (10%), and glycine (2M = 150 g/l). A 0.5M polysulphide solution
+    is prepared by dissolving 12.0 g Na2S x 9 H2O in oxygen free water, followed by
+    adding 1.6 g sulphur - the solution will be dark yellow.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -198,3 +176,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 926'
+- timestamp: '2026-03-13T03:09:32.905870Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

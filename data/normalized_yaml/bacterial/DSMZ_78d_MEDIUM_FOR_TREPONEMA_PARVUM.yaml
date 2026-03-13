@@ -129,8 +129,9 @@ ingredients:
     id: CHEBI:32145
     label: NaOH
   concentration:
-    value: '1'
+    value: '27.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1.0, 25.0, 1.0]'
 - preferred_term: Tryptone peptone
   concentration:
     value: '32'
@@ -144,8 +145,9 @@ ingredients:
     label: heptacosanoate
 - preferred_term: Yeast extract
   concentration:
-    value: '32'
+    value: '36.87805'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 32.0, 4.87805]'
 - preferred_term: Ascorbic acid
   term:
     id: CHEBI:22652
@@ -178,20 +180,9 @@ ingredients:
   concentration:
     value: '487.805'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '25'
-    unit: G_PER_L
 - preferred_term: Casitone
   concentration:
     value: '29.2683'
-    unit: G_PER_L
-- preferred_term: Yeast extract
-  concentration:
-    value: '4.87805'
     unit: G_PER_L
 - preferred_term: K2HPO4
   term:
@@ -229,13 +220,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaOH
-  term:
-    id: CHEBI:32145
-    label: NaOH
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
@@ -245,21 +229,15 @@ ingredients:
     id: CHEBI:16236
     label: Ethanol
   concentration:
-    value: '9.5'
+    value: '959.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.5, 950.0]'
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
     label: Vitamin K1
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: Ethanol
-  term:
-    id: CHEBI:16236
-    label: Ethanol
-  concentration:
-    value: '950'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -340,3 +318,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:09.963139Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

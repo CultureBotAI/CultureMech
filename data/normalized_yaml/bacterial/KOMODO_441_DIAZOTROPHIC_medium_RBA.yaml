@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:441
     label: DIAZOTROPHIC medium (RBA)
-notes: 'Source: KOMODO ModelSEED | ID: 441 | DSMZ Medium: 441 (mediadive.medium:441) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 441 | DSMZ Medium: 441 (mediadive.medium:441)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -51,8 +52,9 @@ ingredients:
     id: CHEBI:75213
     label: Na2MoO4 x 2 H2O
   concentration:
-    value: '0.00524659'
+    value: '0.03524659'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00524659, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -163,13 +165,6 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-- preferred_term: Na2MoO4 x 2 H2O
-  term:
-    id: CHEBI:75213
-    label: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -237,3 +232,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 441
+- timestamp: '2026-03-13T03:09:29.745290Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:347a
     label: SYNTROPHOMONAS ZEHNDERI medium
-notes: 'Source: KOMODO ModelSEED | ID: 347a | DSMZ Medium: 347a (mediadive.medium:347a) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 347a | DSMZ Medium: 347a (mediadive.medium:347a)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -43,8 +44,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0542888'
+    value: '184.0542888'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0542888, 184.0]'
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.08578'
@@ -73,13 +75,6 @@ ingredients:
     label: Na-laurate
   concentration:
     value: '111.2'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '184'
     unit: G_PER_L
 - preferred_term: L-Cysteine HCl x H2O
   term:
@@ -218,4 +213,8 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 347
+- timestamp: '2026-03-13T03:09:19.288679Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 7.2

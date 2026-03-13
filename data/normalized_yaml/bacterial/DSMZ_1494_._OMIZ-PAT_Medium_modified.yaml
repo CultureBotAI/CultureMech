@@ -548,8 +548,9 @@ ingredients:
     id: CHEBI:16236
     label: Ethanol
   concentration:
-    value: '0.9'
+    value: '1.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.9, 1.0]'
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
@@ -594,21 +595,15 @@ ingredients:
     id: CHEBI:17883
     label: HCl
   concentration:
-    value: '0.03646'
+    value: '0.47397999999999996'
     unit: G_PER_L
+  notes: ' [Merged 4 duplicates: 0.03646, 0.03646, 0.03646, 0.3646]'
 - preferred_term: Na2SeO3
   term:
     id: CHEBI:48843
     label: Na2SeO3
   concentration:
     value: '1.73'
-    unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '0.03646'
     unit: G_PER_L
 - preferred_term: NiSO4 x 6 H2O
   term:
@@ -635,26 +630,12 @@ ingredients:
   concentration:
     value: '12.4'
     unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '0.03646'
-    unit: G_PER_L
 - preferred_term: Fe SO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: Fe SO4 x 7 H2O
   concentration:
     value: '2.78015'
-    unit: G_PER_L
-- preferred_term: HCl
-  term:
-    id: CHEBI:17883
-    label: HCl
-  concentration:
-    value: '0.3646'
     unit: G_PER_L
 - preferred_term: Ascorbic acid
   term:
@@ -674,13 +655,6 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Ethanol
-  term:
-    id: CHEBI:16236
-    label: Ethanol
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -691,91 +665,92 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add 10 ml rabbit serum, flush the medium with N2CO2, adjust the pH to 6.9 and filter-sterilize
-    the completed medium into tubes.
+  description: Add 10 ml rabbit serum, flush the medium with N2CO2, adjust the pH
+    to 6.9 and filter-sterilize the completed medium into tubes.
 - step_number: 2
   action: HEAT
-  description: This recipe describes the preparation of 200 ml medium, which can be used for about 4 weeks
-    when kept at 4°C.
+  description: This recipe describes the preparation of 200 ml medium, which can be
+    used for about 4 weeks when kept at 4°C.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Prepare Solutions A, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions A, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Prepare Solutions B, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions B, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Prepare Solutions C, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions C, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Prepare Solutions D, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions D, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Prepare Solutions E, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions E, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 8
   action: FILTER_STERILIZE
-  description: Prepare Solution F, flush with nitrogen to make it anoxic, filter-sterilize and store at
-    4°C
+  description: Prepare Solution F, flush with nitrogen to make it anoxic, filter-sterilize
+    and store at 4°C
 - step_number: 9
   action: FILTER_STERILIZE
-  description: Prepare Solutions G, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Solutions G, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 10
   action: FILTER_STERILIZE
-  description: Prepare Solutions H, flush each with nitrogen to make them anoxic, filter-sterilize and
-    store at -20°C
+  description: Prepare Solutions H, flush each with nitrogen to make them anoxic,
+    filter-sterilize and store at -20°C
 - step_number: 11
   action: HEAT
   description: Prepare Solution I and store at -20°C
 - step_number: 12
   action: HEAT
-  description: D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol (1:10); store at -20°C
+  description: D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol (1:10);
+    store at -20°C
 - step_number: 13
   action: MIX
   description: Hemin (0.2 mM) in NaOH (10 mM)
 - step_number: 14
   action: FILTER_STERILIZE
-  description: Homogenize 42 g fresh baker yeast in 140 ml distilled water, incubate for 24h at 56°C and
-    centrifuge to harvest the supernatant. Adjust pH to 7 with NaOH, make anoxic, filter-sterilize and
-    store at -80°C
+  description: Homogenize 42 g fresh baker yeast in 140 ml distilled water, incubate
+    for 24h at 56°C and centrifuge to harvest the supernatant. Adjust pH to 7 with
+    NaOH, make anoxic, filter-sterilize and store at -80°C
 - step_number: 15
   action: FILTER_STERILIZE
-  description: Prepare Trace elements I, flush with nitrogen to make them anoxic, filter-sterilize and
-    store at 4°C
+  description: Prepare Trace elements I, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
 - step_number: 16
   action: FILTER_STERILIZE
-  description: Prepare Trace elements II, flush with nitrogen to make them anoxic, filter-sterilize and
-    store at 4°C
+  description: Prepare Trace elements II, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
 - step_number: 17
   action: FILTER_STERILIZE
-  description: Prepare Trace elements III, flush with nitrogen to make them anoxic, filter-sterilize and
-    store at 4°C
+  description: Prepare Trace elements III, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
 - step_number: 18
   action: MIX
   description: FeSO4 x 7H2O (10 mM) in HCl (10 mM)
 - step_number: 19
   action: FILTER_STERILIZE
-  description: Prepare Supplements 1, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Supplements 1, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 20
   action: MIX
   description: Ascorbic acid (10%; w/v); in distilled water, neutralize with NaOH
 - step_number: 21
   action: FILTER_STERILIZE
-  description: Prepare Supplements 2, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Supplements 2, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 22
   action: MIX
   description: Glutathion (0.5 M); in distilled water, neutralize with NaOH
 - step_number: 23
   action: FILTER_STERILIZE
-  description: Prepare Supplements 3, flush with nitrogen to make them anoxic, filter-sterilize and store
-    at -20°C
+  description: Prepare Supplements 3, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
 - step_number: 24
   action: HEAT
   description: Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C
@@ -796,4 +771,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.033935Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:50.310070Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)

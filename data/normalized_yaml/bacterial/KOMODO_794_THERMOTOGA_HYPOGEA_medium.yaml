@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:794
     label: THERMOTOGA HYPOGEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 794 | DSMZ Medium: 794 (mediadive.medium:794) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 794 | DSMZ Medium: 794 (mediadive.medium:794)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -44,8 +45,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0990099'
+    value: '0.19900990000000002'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0990099, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -65,8 +67,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '9.90099'
+    value: '10.90099'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.90099, 1.0]'
 - preferred_term: Yeast extract
   concentration:
     value: '1.9802'
@@ -135,13 +138,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -155,13 +151,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -230,3 +219,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 794
+- timestamp: '2026-03-13T03:09:17.269034Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

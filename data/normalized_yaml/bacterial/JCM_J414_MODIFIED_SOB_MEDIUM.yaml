@@ -37,15 +37,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '100'
+    value: '107.3'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 100.0, 7.3]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
     label: MgCl2 x 6 H2O
   concentration:
-    value: '200'
+    value: '202.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 200.0, 2.5]'
 - preferred_term: Na2S2O3 x 5 H2O
   term:
     id: CHEBI:32150
@@ -73,20 +75,6 @@ ingredients:
     label: ZnSO4 x 7 H2O
   concentration:
     value: '2.2'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '7.3'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '2.5'
     unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
   term:
@@ -138,4 +126,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J414'
+- timestamp: '2026-03-13T03:08:52.975477Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

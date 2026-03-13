@@ -50,15 +50,17 @@ ingredients:
     id: CHEBI:33118
     label: H3BO3
   concentration:
-    value: '0.01998'
+    value: '0.02998'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.01998, 0.01]'
 - preferred_term: KBr
   term:
     id: CHEBI:32030
     label: KBr
   concentration:
-    value: '0.0799201'
+    value: '0.0999201'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0799201, 0.02]'
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -129,20 +131,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: H3BO3
-  term:
-    id: CHEBI:33118
-    label: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-- preferred_term: KBr
-  term:
-    id: CHEBI:32030
-    label: KBr
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -157,7 +145,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Use Medium No. 341 with the following seawater solution instead of the artificial seawater:'
+  description: 'Use Medium No. 341 with the following seawater solution instead of
+    the artificial seawater:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -165,3 +154,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J373'
+- timestamp: '2026-03-13T03:09:12.263751Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

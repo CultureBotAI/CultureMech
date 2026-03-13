@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:15377
     label: Demineralized water
   concentration:
-    value: '50'
+    value: '60.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 50.0, 10.0]'
 - preferred_term: Cycloheximid
   term:
     id: CHEBI:27641
@@ -39,34 +40,28 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: Demineralized water
-  term:
-    id: CHEBI:15377
-    label: Demineralized water
-  concentration:
-    value: '10'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at room temperature to
-    facilitate detection of contamination.
+  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
+    room temperature to facilitate detection of contamination.
 - step_number: 2
   action: HEAT
-  description: Prepare a 25 cm2 flask and seed cells according to standard protocols. Incubate at 37°C
-    plus 5% CO2. When a confluent layer has formed, infection can be carried out.
+  description: Prepare a 25 cm2 flask and seed cells according to standard protocols.
+    Incubate at 37°C plus 5% CO2. When a confluent layer has formed, infection can
+    be carried out.
 - step_number: 3
   action: HEAT
-  description: Exchange medium with Infection Medium (as above with the addition of cycloheximide) and
-    add 500 - 1000 µl of EB stock solution (thawed quickly to 37°C).
+  description: Exchange medium with Infection Medium (as above with the addition of
+    cycloheximide) and add 500 - 1000 µl of EB stock solution (thawed quickly to 37°C).
 - step_number: 4
   action: HEAT
   description: Centrifuge for 1 h onto the cell layer at 1000 x g at >20°C.
 - step_number: 5
   action: HEAT
-  description: Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions. Not all Chlamydiae
-    form well-visible inclusions, ultimately, immunofluorescence or in situ-hybridization techniques are
-    necessary to visualize inclusions.
+  description: Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions.
+    Not all Chlamydiae form well-visible inclusions, ultimately, immunofluorescence
+    or in situ-hybridization techniques are necessary to visualize inclusions.
 - step_number: 6
   action: MIX
   description: Filtrate.
@@ -80,3 +75,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1793'
+- timestamp: '2026-03-13T03:09:09.700248Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

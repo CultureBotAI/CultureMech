@@ -30,15 +30,17 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '9.6'
+    value: '12.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.6, 3.0]'
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.5'
+    value: '0.6'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.5, 0.1]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -58,8 +60,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '10'
+    value: '11.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 10.0, 1.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -110,26 +113,12 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -144,13 +133,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -207,16 +189,18 @@ preparation_steps:
   description: pH 7.2
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine and substrate. Boil the
-    medium and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 . Adjust the pH to 7.2. If chitin
-    is used as the substrate it must be added before autoclaving. Autoclave the medium and add the Na2S
-    (from a sterile, neutralized stock solution prepared under nitrogen), L-cysteine (from a stock solution
-    prepared under nitrogen), and the glucose or N-acetylglucosamine (if used as substrate) from sterile
-    stock solution prepared under nitrogen. Check the final pH.
+  description: Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine and
+    substrate. Boil the medium and cool under a stream of nitrogen. Add the Na2CO3
+    and NaHCO3 . Adjust the pH to 7.2. If chitin is used as the substrate it must
+    be added before autoclaving. Autoclave the medium and add the Na2S (from a sterile,
+    neutralized stock solution prepared under nitrogen), L-cysteine (from a stock
+    solution prepared under nitrogen), and the glucose or N-acetylglucosamine (if
+    used as substrate) from sterile stock solution prepared under nitrogen. Check
+    the final pH.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -224,3 +208,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 701'
+- timestamp: '2026-03-13T03:09:09.195380Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

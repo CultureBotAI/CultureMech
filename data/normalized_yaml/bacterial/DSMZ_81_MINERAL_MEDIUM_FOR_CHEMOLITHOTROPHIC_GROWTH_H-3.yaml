@@ -51,8 +51,9 @@ ingredients:
     id: CHEBI:86368
     label: MnCl2 x 4 H2O
   concentration:
-    value: '0.00543478'
+    value: '0.03543478'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00543478, 0.03]'
 - preferred_term: NaVO3 x H2O
   term:
     id: CHEBI:132095
@@ -138,13 +139,6 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-- preferred_term: MnCl2 x 4 H2O
-  term:
-    id: CHEBI:86368
-    label: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -183,15 +177,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solutions A, B, C are autoclaved separately for 15 min at 121°C, cooled down to 50°C and
-    then mixed aseptically with 5.0 ml filter-sterilized standard vitamin solution (see below).The final
-    pH of this medium should be 6.8 without adjustment.
+  description: Solutions A, B, C are autoclaved separately for 15 min at 121°C, cooled
+    down to 50°C and then mixed aseptically with 5.0 ml filter-sterilized standard
+    vitamin solution (see below).The final pH of this medium should be 6.8 without
+    adjustment.
 - step_number: 2
   action: MIX
-  description: For chemolithotrophic growth incubate the culture under an atmosphere of 2% (v/v) O2, 10%
-    CO2, 60% H2 and 28% N2. For heterotrophic growth supplement the mineral medium with an appropriate
-    carbon source (0.2% carbohydrate or 0.1% organic acid). For growth on nitrogen-free medium, omit NH4Cl
-    and incubate the culture under an atmosphere of 2% (v/v) O2, 10% CO2, 10% H2 and 78% N2 or heterotrophically
+  description: For chemolithotrophic growth incubate the culture under an atmosphere
+    of 2% (v/v) O2, 10% CO2, 60% H2 and 28% N2. For heterotrophic growth supplement
+    the mineral medium with an appropriate carbon source (0.2% carbohydrate or 0.1%
+    organic acid). For growth on nitrogen-free medium, omit NH4Cl and incubate the
+    culture under an atmosphere of 2% (v/v) O2, 10% CO2, 10% H2 and 78% N2 or heterotrophically
     under 2% (v/v) O2 and 98% N2. For more details see Ref. 1515 and Ref. 3363.
 applications:
 - Microbial cultivation
@@ -200,3 +196,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 81'
+- timestamp: '2026-03-13T03:09:16.410040Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

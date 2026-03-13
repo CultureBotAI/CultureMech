@@ -97,18 +97,12 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '2050.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1000.0, 1000.0, 50.0]'
 - preferred_term: FeNa-EDTA
   concentration:
     value: '2.753'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
     unit: G_PER_L
 - preferred_term: NaOH
   term:
@@ -137,13 +131,6 @@ ingredients:
     label: NH4Cl
   concentration:
     value: '53.4'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -198,3 +185,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1845'
+- timestamp: '2026-03-13T03:08:45.958356Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

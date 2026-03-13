@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:960.9
     label: For DSM 17771
-notes: 'Source: KOMODO ModelSEED | ID: 960.9 | DSMZ Medium: 960 (mediadive.medium:960) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 960.9 | DSMZ Medium: 960 (mediadive.medium:960)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -30,8 +31,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.149701'
+    value: '0.249701'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.149701, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -102,13 +104,6 @@ ingredients:
     label: CoCl2 x 6 H2O
   concentration:
     value: '0.03'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnCl2
   term:
@@ -247,4 +242,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.834590Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:14.605175Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

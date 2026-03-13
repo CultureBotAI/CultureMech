@@ -31,10 +31,10 @@ ingredients:
     unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
-    value: '1'
+    value: '3.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 3 duplicates: 1.0, 1.0, 1.0]'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -89,15 +89,6 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Paraamino benzoic acid
   concentration:
     value: '5'
@@ -182,15 +173,6 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '2'
@@ -287,6 +269,10 @@ curation_history:
   curator: solution-migrator-v1.0
   action: Migrated solutions from ingredients to solutions array
   notes: Moved 5 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:02.513459Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true
 solutions:
 - preferred_term: 0.1% Resazurin solution

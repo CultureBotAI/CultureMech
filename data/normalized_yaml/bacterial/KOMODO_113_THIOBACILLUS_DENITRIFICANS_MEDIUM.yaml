@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:113
     label: THIOBACILLUS DENITRIFICANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 113 | DSMZ Medium: 113 (mediadive.medium:113) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 113 | DSMZ Medium: 113 (mediadive.medium:113)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -64,8 +65,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '2.2'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.0, 0.2]'
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -79,13 +81,6 @@ ingredients:
     label: Na2-EDTA
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.2'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -217,4 +212,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.470952Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:32.614296Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

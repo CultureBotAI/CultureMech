@@ -9,15 +9,17 @@ media_term:
   term:
     id: komodo.medium:1001
     label: BASAL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '2.5'
+    value: '3.34007'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 2.5, 0.84007]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -38,13 +40,6 @@ ingredients:
     label: KCl
   concentration:
     value: '0.1'
-    unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.84007'
     unit: G_PER_L
 - preferred_term: Na acetate
   term:
@@ -239,5 +234,10 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.658024Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:09:24.362682Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
 ph_value: 6.9

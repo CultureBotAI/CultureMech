@@ -57,10 +57,10 @@ ingredients:
     label: ferric ammonium citrate
 - preferred_term: DI Water
   concentration:
-    value: '1000'
+    value: '2000.0'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+    Simple component [Merged 2 duplicates: 1000.0, 1000.0]'
 - preferred_term: Agar
   concentration:
     value: '12'
@@ -134,12 +134,6 @@ ingredients:
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
-- preferred_term: DI Water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
 media_term:
   preferred_term: TOGO Medium M2178
   term:
@@ -159,3 +153,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:05.098334Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

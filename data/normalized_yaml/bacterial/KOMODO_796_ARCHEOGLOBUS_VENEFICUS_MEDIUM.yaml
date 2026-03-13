@@ -17,8 +17,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '17.9462'
+    value: '27.9462'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 17.9462, 10.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -45,8 +46,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.139581'
+    value: '1.139581'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.139581, 1.0]'
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -100,13 +102,6 @@ ingredients:
   concentration:
     value: '5.8'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
 - preferred_term: (NH4)2Ni(SO4)2
   term:
     id: CHEBI:86149
@@ -125,13 +120,6 @@ ingredients:
   term:
     id: CHEBI:35696
     label: CoCl2 x 6 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '1'
     unit: G_PER_L
@@ -184,6 +172,11 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: hydrochloric acid
+  notes: pH adjustment (extracted from notes)
 applications:
 - Microbial cultivation
 curation_history:
@@ -195,3 +188,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 796
+- timestamp: '2026-03-13T03:08:40.522291Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 2 duplicate ingredient(s); Added pH buffer: HCl'

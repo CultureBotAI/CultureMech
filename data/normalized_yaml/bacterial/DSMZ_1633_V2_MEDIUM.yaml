@@ -45,15 +45,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.015'
+    value: '3.355'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.015, 3.34]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '0.049'
+    value: '29.749'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.049, 29.7]'
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -87,8 +89,9 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '956'
+    value: '2956.0'
     unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 956.0, 1000.0, 1000.0]'
 - preferred_term: N-Acetylglucosamine
   term:
     id: CHEBI:59640
@@ -110,20 +113,6 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '29.7'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '3.34'
-    unit: G_PER_L
 - preferred_term: Na2MoO7O4 x 2 H2O
   concentration:
     value: '0.01267'
@@ -133,8 +122,9 @@ ingredients:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.099'
+    value: '0.599'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.099, 0.5]'
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -149,34 +139,30 @@ ingredients:
   concentration:
     value: '1.095'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
     label: MnSO4 x H2O
   concentration:
-    value: '0.154'
+    value: '0.654'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.154, 0.5]'
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
     label: CuSO4 x 5 H2O
   concentration:
-    value: '0.0392'
+    value: '0.0492'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0392, 0.01]'
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
   concentration:
-    value: '0.0248'
+    value: '0.12480000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0248, 0.1]'
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0177'
@@ -185,24 +171,10 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MnSO4 x H2O
-  term:
-    id: CHEBI:86364
-    label: MnSO4 x H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
 - preferred_term: Fe SO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: Fe SO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Co(NO3)2 x 6 H2O
-  term:
-    id: CHEBI:86214
-    label: Co(NO3)2 x 6 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -226,13 +198,6 @@ ingredients:
     label: H2SeO3
   concentration:
     value: '0.05'
-    unit: G_PER_L
-- preferred_term: CuSO4 x 5 H2O
-  term:
-    id: CHEBI:31440
-    label: CuSO4 x 5 H2O
-  concentration:
-    value: '0.01'
     unit: G_PER_L
 - preferred_term: AlK(SO4)2 x 12 H2O
   term:
@@ -261,13 +226,6 @@ ingredients:
     label: Na2WO4 x 2 H2O
   concentration:
     value: '0.01'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
     unit: G_PER_L
 - preferred_term: Biotin
   term:
@@ -332,13 +290,6 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
 preparation_steps:
 - step_number: 1
   action: HEAT
@@ -362,3 +313,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:08:53.308907Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 8 duplicate ingredient(s)

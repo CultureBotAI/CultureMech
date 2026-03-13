@@ -15,8 +15,9 @@ ingredients:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
-    value: '0.839161'
+    value: '1.039161'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.839161, 0.2]'
 - preferred_term: Modified trace vitamins
   concentration:
     value: '1'
@@ -96,15 +97,17 @@ ingredients:
     id: CHEBI:63036
     label: KH2PO4
   concentration:
-    value: '0.44955'
+    value: '0.49955'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.44955, 0.05]'
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '27.5'
+    value: '28.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 27.5, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -117,8 +120,9 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '6.78'
+    value: '9.780000000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 6.78, 3.0]'
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -126,33 +130,20 @@ ingredients:
   concentration:
     value: '0.72'
     unit: G_PER_L
-- preferred_term: NaHCO3
-  term:
-    id: CHEBI:32139
-    label: NaHCO3
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '1.4'
+    value: '1.5'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.4, 0.1]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
     label: NH4Cl
   concentration:
     value: '1'
-    unit: G_PER_L
-- preferred_term: KH2PO4
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-  concentration:
-    value: '0.05'
     unit: G_PER_L
 - preferred_term: NiCl2 x 6 H2O
   term:
@@ -182,23 +173,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -211,13 +188,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -259,20 +229,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Gas with N2-CO2 (4:1, v/v) to establish pH 6.5. Dispense the
-    medium in culture vessels (e.g., 20 ml in 30 ml serum bottles) under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. After cooling add per liter the following solution (filter-sterilized):'
+  description: 'Mix components thoroughly. Gas with N2-CO2 (4:1, v/v) to establish
+    pH 6.5. Dispense the medium in culture vessels (e.g., 20 ml in 30 ml serum bottles)
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After
+    cooling add per liter the following solution (filter-sterilized):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Prior to inoculation, add filter-sterilized 5% H2 and 5% air to the gas phase (by volume).
-    Incubate statically. Replenish H2 and air every two days.
+  description: Prior to inoculation, add filter-sterilized 5% H2 and 5% air to the
+    gas phase (by volume). Incubate statically. Replenish H2 and air every two days.
 - step_number: 3
   action: MIX
   description: 'Modified trace vitamins:'
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -280,3 +251,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1158'
+- timestamp: '2026-03-13T03:09:17.489357Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)

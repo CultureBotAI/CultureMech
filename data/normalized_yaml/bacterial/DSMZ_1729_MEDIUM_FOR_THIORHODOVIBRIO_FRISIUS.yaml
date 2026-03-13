@@ -72,28 +72,23 @@ ingredients:
     id: CHEBI:15377
     label: Double distilled water
   concentration:
-    value: '1000'
+    value: '1050.0'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1000.0, 50.0]'
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
     label: Na2S x 9 H2O
   concentration:
-    value: '0.300227'
+    value: '28.300227'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.300227, 28.0]'
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
     label: NaHCO3
   concentration:
     value: '30'
-    unit: G_PER_L
-- preferred_term: Double distilled water
-  term:
-    id: CHEBI:15377
-    label: Double distilled water
-  concentration:
-    value: '50'
     unit: G_PER_L
 - preferred_term: Na2-EDTA
   term:
@@ -209,8 +204,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.001'
+    value: '0.021'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.001, 0.02]'
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -224,20 +220,6 @@ ingredients:
     label: Lipoic acid
   concentration:
     value: '0.05'
-    unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-- preferred_term: Na2S x 9 H2O
-  term:
-    id: CHEBI:76209
-    label: Na2S x 9 H2O
-  concentration:
-    value: '28'
     unit: G_PER_L
 - preferred_term: Na2CO3
   term:
@@ -301,3 +283,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1729'
+- timestamp: '2026-03-13T03:08:52.735432Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)

@@ -20,8 +20,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '9.94036'
+    value: '10.94036'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.94036, 1.0]'
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -41,8 +42,9 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.0298211'
+    value: '0.1298211'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0298211, 0.1]'
 - preferred_term: Yeast extract
   concentration:
     value: '9.94036'
@@ -107,13 +109,6 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -127,13 +122,6 @@ ingredients:
     label: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
     unit: G_PER_L
 - preferred_term: ZnSO4 x 7 H2O
   term:
@@ -287,4 +275,8 @@ curation_history:
   action: Removed 1 invalid CHEBI ID(s)
   notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
     source data
+- timestamp: '2026-03-13T03:09:09.415461Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
 high_metal: true

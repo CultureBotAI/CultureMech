@@ -5,51 +5,11 @@ description: 310. NBRC 309.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4·7H2O0.4gNaCl30mgCaCl2·2H2O3mgFeSO4·7H2O1mgYeast extract3gRhamnose10gDistilled
-    water1LpH 7.0
+- preferred_term: K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4·7H2O0.4gNaCl30mgCaCl2·2H2O3mgFeSO4·7H2O1mgYeast
+    extract3gRhamnose10gDistilled water1LpH 7.0
 - preferred_term: ''
   concentration:
     value: K2HPO4
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: KH2PO4
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: NH4Cl
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: MgSO4·7H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: NaCl
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: CaCl2·2H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: FeSO4·7H2O
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Yeast extract
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Rhamnose
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: Distilled water
-    unit: G_PER_L
-- preferred_term: ''
-  concentration:
-    value: pH 7.0
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
@@ -67,3 +27,7 @@ curation_history:
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. 309, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=309.
     Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:22.615369Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 10 duplicate ingredient(s)

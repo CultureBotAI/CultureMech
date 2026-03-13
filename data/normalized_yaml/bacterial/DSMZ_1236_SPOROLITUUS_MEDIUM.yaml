@@ -30,8 +30,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '0.886699'
+    value: '1.8866990000000001'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.886699, 1.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -93,20 +94,14 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
   concentration:
-    value: '0.1'
+    value: '1.1'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 1.0]'
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
@@ -244,13 +239,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: FeSO4 x 7 H2O
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -261,15 +249,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous sulfate, citrate, vitamins and sulfide), adjust pH
-    to 6.5 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add ferrous sulfate and
-    dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add citrate, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared
+  description: Dissolve ingredients (except ferrous sulfate, citrate, vitamins and
+    sulfide), adjust pH to 6.5 and sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Add ferrous sulfate and dispense medium under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add citrate, vitamins
+    (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared
     under 100% N2 gas and adjust pH of complete medium to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
-    Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: The ferrous sulfate solution is not stable and should be freshly prepared.
@@ -283,4 +272,9 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.564322Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T03:08:38.517751Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)

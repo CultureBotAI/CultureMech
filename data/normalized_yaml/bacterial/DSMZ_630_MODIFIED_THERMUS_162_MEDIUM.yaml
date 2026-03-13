@@ -31,8 +31,9 @@ ingredients:
     id: CHEBI:44557
     label: Nitrilotriacetic acid
   concentration:
-    value: '0.1'
+    value: '12.9'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 12.8]'
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
@@ -67,13 +68,6 @@ ingredients:
     label: Na2HPO4 x 12 H2O
   concentration:
     value: '43'
-    unit: G_PER_L
-- preferred_term: Nitrilotriacetic acid
-  term:
-    id: CHEBI:44557
-    label: Nitrilotriacetic acid
-  concentration:
-    value: '12.8'
     unit: G_PER_L
 - preferred_term: FeCl2 x 4 H2O
   term:
@@ -127,15 +121,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave the phosphate buffer
-    separately and then add to the medium.
+  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave
+    the phosphate buffer separately and then add to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 8 - 9 g). Dissolve
-    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    8 - 9 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -143,3 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 630'
+- timestamp: '2026-03-13T03:09:34.405849Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

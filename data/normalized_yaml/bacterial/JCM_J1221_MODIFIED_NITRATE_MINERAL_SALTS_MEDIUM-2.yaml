@@ -65,8 +65,9 @@ ingredients:
     id: CHEBI:17439
     label: Vitamin B12
   concentration:
-    value: '0.02'
+    value: '0.0201'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.02, 0.0001]'
 - preferred_term: L-Ascorbic acid
   term:
     id: CHEBI:29073
@@ -193,13 +194,6 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-- preferred_term: Vitamin B12
-  term:
-    id: CHEBI:17439
-    label: Vitamin B12
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -217,21 +211,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (autoclaved)
-    to the medium:'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following
+    solutions (autoclaved) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Adjust pH to 6.8, if necessary. Cultivate with methane or methanol as a substrate as described
-    below:'
+  description: 'Adjust pH to 6.8, if necessary. Cultivate with methane or methanol
+    as a substrate as described below:'
 - step_number: 3
   action: MIX
-  description: 'Methane: Aseptically distribute the medium into sterile serum bottles (leave &; 80% gas
-    phase by volume) and seal with rubber stoppers. Replace the gas phase with an air-methane gas mixture
-    (75:25, v/v). Cultivate with shaking.'
+  description: 'Methane: Aseptically distribute the medium into sterile serum bottles
+    (leave &; 80% gas phase by volume) and seal with rubber stoppers. Replace the
+    gas phase with an air-methane gas mixture (75:25, v/v). Cultivate with shaking.'
 - step_number: 4
   action: FILTER_STERILIZE
-  description: 'Methanol: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 60 ml
-    serum bottles), supplement with 4.0 ml per liter filter-sterilized methanol and seal with rubber stoppers.'
+  description: 'Methanol: Aseptically distribute the medium into culture vessels (e.g.,
+    20 ml in 60 ml serum bottles), supplement with 4.0 ml per liter filter-sterilized
+    methanol and seal with rubber stoppers.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,3 +234,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1221'
+- timestamp: '2026-03-13T03:09:14.102215Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)

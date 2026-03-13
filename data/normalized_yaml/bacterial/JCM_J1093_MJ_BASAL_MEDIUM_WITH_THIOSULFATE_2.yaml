@@ -44,8 +44,9 @@ ingredients:
     id: CHEBI:26710
     label: NaCl
   concentration:
-    value: '29.703'
+    value: '30.703'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 29.703, 1.0]'
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -58,15 +59,17 @@ ingredients:
     id: CHEBI:86158
     label: CaCl2 x 2 H2O
   concentration:
-    value: '0.138614'
+    value: '0.238614'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.138614, 0.1]'
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '3.36634'
+    value: '6.36634'
     unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.36634, 3.0]'
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -179,23 +182,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
-    unit: G_PER_L
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '1'
     unit: G_PER_L
 - preferred_term: FeSO4 x 7 H2O
   term:
@@ -208,13 +197,6 @@ ingredients:
   term:
     id: CHEBI:53470
     label: CoSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: CaCl2 x 2 H2O
-  term:
-    id: CHEBI:86158
-    label: CaCl2 x 2 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -256,16 +238,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following
+    solutions (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
-    and seal with butyl rubber stoppers. Replace the gas phase with a N2-CO2 (80:20, v/v) gas mixture,
-    and pressurize to 200 kPa. Adjust pH to 6.0, if necessary.
+  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
+    in 120 ml serum bottles) and seal with butyl rubber stoppers. Replace the gas
+    phase with a N2-CO2 (80:20, v/v) gas mixture, and pressurize to 200 kPa. Adjust
+    pH to 6.0, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,3 +261,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:01.342356Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
