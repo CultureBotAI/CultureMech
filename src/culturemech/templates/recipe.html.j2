@@ -271,6 +271,13 @@
                 {% endif %}
 
                 <div class="info-grid" style="margin-top: 1rem;">
+                    {% if recipe.id %}
+                    <div class="info-item">
+                        <div class="info-label">CultureMech ID</div>
+                        <div class="info-value"><strong>{{ recipe.id }}</strong></div>
+                    </div>
+                    {% endif %}
+
                     {% if recipe.ph_value %}
                     <div class="info-item">
                         <div class="info-label">pH</div>
