@@ -47,6 +47,7 @@ dependencies = [
     "umap-learn>=0.5.0",  # UMAP dimensionality reduction
     "tqdm>=4.66.0",  # Progress bars for embedding loading
     "scikit-learn>=1.3.0",  # Required by umap-learn
+    "rapidfuzz>=3.0.0",  # Fuzzy string matching for ingredient name matching
 ]
 
 [project.optional-dependencies]

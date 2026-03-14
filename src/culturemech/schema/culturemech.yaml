@@ -380,6 +380,12 @@ classes:
         recommended: true
         inlined: true
 
+      mediaingredientmech_term:
+        description: MediaIngredientMech identifier for this ingredient
+        range: MediaIngredientMechTerm
+        recommended: false
+        inlined: true
+
       concentration:
         description: Amount of ingredient
         range: ConcentrationValue
@@ -437,6 +443,12 @@ classes:
       term:
         description: Ontology term if available
         range: Term
+        inlined: true
+
+      mediaingredientmech_term:
+        description: MediaIngredientMech identifier for this solution component
+        range: MediaIngredientMechTerm
+        recommended: false
         inlined: true
 
       composition:
@@ -964,6 +976,15 @@ classes:
       - TOGO
       - ATCC
       - NCIT
+
+  MediaIngredientMechTerm:
+    is_a: Term
+    description: A MediaIngredientMech identifier for a media ingredient
+    slot_usage:
+      id:
+        pattern: "^MediaIngredientMech:\\d{6}$"
+    id_prefixes:
+      - MediaIngredientMech
 
 # ================================================================
 # ENUMERATIONS
