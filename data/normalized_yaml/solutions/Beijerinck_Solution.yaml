@@ -1,0 +1,54 @@
+id: CultureMech:015440
+preferred_term: Beijerinck's Solution
+term:
+  id: MediaIngredientMech:UNMAPPED_0074
+  label: Beijerinck's Solution
+composition:
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000178
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Magnesium sulfate heptahydrate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
+notes: |
+  Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture media.
+  Provides macrominerals (N, Ca, Mg, S) for freshwater algae.
+  Standard formulation used in Chlamydomonas reinhardtii culture.
+
+  Preparation: Add components to approximately 900 mL distilled water, dissolve completely,
+  then bring to 1 L total volume. Store at room temperature.
+
+  Final stock concentrations: NH4Cl (7.5 mM), CaCl2·2H2O (0.35 mM), MgSO4·7H2O (0.4 mM)
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0074
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/beijerincks-solution
+- reference_id: UTEX:beijerincks-solution
+- reference_id: MediaIngredientMech:UNMAPPED_0074

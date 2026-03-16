@@ -1,0 +1,37 @@
+id: CultureMech:015442
+preferred_term: Boron Stock
+term:
+  id: MediaIngredientMech:UNMAPPED_0064
+  label: Boron Stock
+composition:
+- preferred_term: Boric acid
+  concentration:
+    value: '11.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+notes: |
+  Boron stock solution for Bold Basal Medium (BBM) and related algae culture media.
+  Provides boron as an essential micronutrient for algae growth.
+
+  Preparation: Dissolve 11 g boric acid in approximately 900 mL distilled water,
+  then bring to 1 L total volume.
+
+  Storage: Room temperature in darkness.
+
+  Final stock concentration: H3BO3 (~9 µM)
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0064
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/bbm-boron-stock-solution
+- reference_id: UTEX:bbm-boron-stock-solution
+- reference_id: MediaIngredientMech:UNMAPPED_0064

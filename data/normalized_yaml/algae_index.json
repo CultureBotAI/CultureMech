@@ -1,0 +1,2427 @@
+{
+  "generated": "2026-03-16T05:29:34.133442+00:00",
+  "category": "algae",
+  "count": 242,
+  "recipes": {
+    "CultureMech:000001": {
+      "name": "1:1 DYIII/PEA + Gr+ Medium",
+      "filename": "1_1_DYIII_PEA_+_Gr+_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000001",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000002": {
+      "name": "1/2 CHEV Diatom Medium",
+      "filename": "1_2_CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000002",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000003": {
+      "name": "1/2 Enriched Seawater",
+      "filename": "1_2_Enriched_Seawater.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000003",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000004": {
+      "name": "1/2 Erdschreiber Medium",
+      "filename": "1_2_Erdschreiber_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000004",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000005": {
+      "name": "1/2 Soil + Seawater Medium",
+      "filename": "1_2_Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000005",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000006": {
+      "name": "1/3 CHEV Diatom Medium",
+      "filename": "1_3_CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000006",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000007": {
+      "name": "1/3 Soil + Seawater Medium",
+      "filename": "1_3_Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000007",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000008": {
+      "name": "1/4 Erdschreiber's Medium",
+      "filename": "1_4_Erdschreiber_s_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000008",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000009": {
+      "name": "1/4 Soil + Seawater Medium",
+      "filename": "1_4_Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000009",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000010": {
+      "name": "1/5 CHEV Diatom Medium",
+      "filename": "1_5_CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000010",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000011": {
+      "name": "1/5 Soil + Seawater Medium",
+      "filename": "1_5_Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000011",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000012": {
+      "name": "1% F/2 Medium",
+      "filename": "1_F_2_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000012",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000013": {
+      "name": "20% Allen + 80% Erdschreiber (1:4) Medium",
+      "filename": "20_Allen_+_80_Erdschreiber_1_4_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000013",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000014": {
+      "name": "2X CHEV Diatom Medium",
+      "filename": "2X_CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000014",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000015": {
+      "name": "2X Erdschreiber's Medium",
+      "filename": "2X_Erdschreiber_s_Medium.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000015",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000016": {
+      "name": "2X Soil + Seawater Medium",
+      "filename": "2X_Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000016",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000017": {
+      "name": "2/3 CHEV Diatom Medium",
+      "filename": "2_3_CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000017",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000018": {
+      "name": "2/3 Enriched Seawater",
+      "filename": "2_3_Enriched_Seawater.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000018",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000019": {
+      "name": "5/3 Soil + Seawater Agar Medium",
+      "filename": "5_3_Soil_+_Seawater_Agar_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000019",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000020": {
+      "name": "5% F/2 Medium",
+      "filename": "5_F_2_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000020",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000021": {
+      "name": "8 ppt F/2 Medium",
+      "filename": "8_ppt_F_2_Medium.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:000021",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000022": {
+      "name": "A+ Medium",
+      "filename": "A+_Medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000022",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000023": {
+      "name": "Ag Diatom Medium",
+      "filename": "Ag_Diatom_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000023",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000024": {
+      "name": "Allen Medium",
+      "filename": "Allen_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000024",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000025": {
+      "name": "Artificial Seawater Medium",
+      "filename": "Artificial_Seawater_Medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000025",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000026": {
+      "name": "BG-11 + 0.36% NaCl Medium",
+      "filename": "BG-11_+_0.36_NaCl_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000026",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000027": {
+      "name": "BG-11 + 1% NaCl Medium",
+      "filename": "BG-11_+_1_NaCl_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000027",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000028": {
+      "name": "BG-11(-N) Medium",
+      "filename": "BG-11_-N_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000028",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000029": {
+      "name": "BG-11 Medium",
+      "filename": "BG-11_Medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000029",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000030": {
+      "name": "Bold 1NV:Erdshreiber (1:1) Medium",
+      "filename": "Bold_1NV_Erdshreiber_1_1_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000030",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000031": {
+      "name": "Bold 1NV:Erdshreiber (4:1) Medium",
+      "filename": "Bold_1NV_Erdshreiber_4_1_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000031",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000032": {
+      "name": "Bold 1NV Medium",
+      "filename": "Bold_1NV_Medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000032",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000033": {
+      "name": "Bold 3N Medium",
+      "filename": "Bold_3N_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000033",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000034": {
+      "name": "Bold Basal Medium",
+      "filename": "Bold_Basal_Medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000034",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000035": {
+      "name": "Botryococcus Medium",
+      "filename": "Botryococcus_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000035",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000036": {
+      "name": "Bristol-NaCl Medium",
+      "filename": "Bristol-NaCl_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000036",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000037": {
+      "name": "Bristol Medium",
+      "filename": "Bristol_Medium.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000037",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000038": {
+      "name": "2ASW",
+      "filename": "CCAP_2ASW.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000038",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000039": {
+      "name": "3N-BBM+V",
+      "filename": "CCAP_3N-BBM+V.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000039",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000040": {
+      "name": "ABM",
+      "filename": "CCAP_ABM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000040",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000041": {
+      "name": "AJS",
+      "filename": "CCAP_AJS.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000041",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000042": {
+      "name": "ANT",
+      "filename": "CCAP_ANT.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000042",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000043": {
+      "name": "ASW + barley",
+      "filename": "CCAP_ASW + barley.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000043",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000044": {
+      "name": "ASW 150 + barley",
+      "filename": "CCAP_ASW 150 + barley  + barley grain.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000044",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000045": {
+      "name": "ASW 150 + barley",
+      "filename": "CCAP_ASW 150 + barley  + barley grain_).yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000045",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000046": {
+      "name": "ASW 225 + barley",
+      "filename": "CCAP_ASW 225 + barley  + barley grain.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000046",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000047": {
+      "name": "ASW 225 + barley",
+      "filename": "CCAP_ASW 225 + barley  + barley grain_).yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000047",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000048": {
+      "name": "ASW 300 + barley",
+      "filename": "CCAP_ASW 300 + barley  + barley grain.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000048",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000049": {
+      "name": "ASW 300 + barley",
+      "filename": "CCAP_ASW 300 + barley  + barley grain_).yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000049",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000050": {
+      "name": "ASW",
+      "filename": "CCAP_ASW.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000050",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000051": {
+      "name": "ASWP",
+      "filename": "CCAP_ASWP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000051",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000052": {
+      "name": "ASW:SES",
+      "filename": "CCAP_ASW_SES.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000052",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000053": {
+      "name": "BB",
+      "filename": "CCAP_BB.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000053",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000054": {
+      "name": "BB:MErds",
+      "filename": "CCAP_BB_MErd.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000054",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000055": {
+      "name": "BG",
+      "filename": "CCAP_BG.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000055",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000056": {
+      "name": "C Medium, Modified",
+      "filename": "CCAP_C Medium, Modified.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000056",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000057": {
+      "name": "C Medium, Modified",
+      "filename": "CCAP_C Medium_ Modified.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000057",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000058": {
+      "name": "CGM",
+      "filename": "CCAP_CGM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000058",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000059": {
+      "name": "CH",
+      "filename": "CCAP_CH.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000059",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000060": {
+      "name": "CHM",
+      "filename": "CCAP_CHM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000060",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000061": {
+      "name": "CMA",
+      "filename": "CCAP_CMA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000061",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000062": {
+      "name": "Chapman-Andresen's Modified Pringsheim's Solution",
+      "filename": "CCAP_Chapman-Andre_en'_ Modified Pring_heim'_ Solution.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000062",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000063": {
+      "name": "DM",
+      "filename": "CCAP_DM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000063",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000064": {
+      "name": "E26 + Biotin",
+      "filename": "CCAP_E26 + Biotin.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000064",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000065": {
+      "name": "E26 + Biotin:ANT",
+      "filename": "CCAP_E26 + Biotin_ANT.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000065",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000066": {
+      "name": "E27",
+      "filename": "CCAP_E27.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000066",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000067": {
+      "name": "E31",
+      "filename": "CCAP_E31.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000067",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000068": {
+      "name": "E31:ANT",
+      "filename": "CCAP_E31_ANT.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000068",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000069": {
+      "name": "EA",
+      "filename": "CCAP_EA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000069",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000070": {
+      "name": "EG",
+      "filename": "CCAP_EG.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000070",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000071": {
+      "name": "EG:JM",
+      "filename": "CCAP_EG_JM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000071",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000072": {
+      "name": "FDMed",
+      "filename": "CCAP_FDMed.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000072",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000073": {
+      "name": "HSM",
+      "filename": "CCAP_HSM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000073",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000074": {
+      "name": "JM",
+      "filename": "CCAP_JM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000074",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000075": {
+      "name": "JM:SE",
+      "filename": "CCAP_JM_SE.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000075",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000076": {
+      "name": "K Medium",
+      "filename": "CCAP_K Medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000076",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000077": {
+      "name": "K Minimum",
+      "filename": "CCAP_K Minimum.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000077",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000078": {
+      "name": "K35",
+      "filename": "CCAP_K35.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000078",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000079": {
+      "name": "L1",
+      "filename": "CCAP_L1.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000079",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000080": {
+      "name": "LB",
+      "filename": "CCAP_LB.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000080",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000081": {
+      "name": "MAF6:SE",
+      "filename": "CCAP_MAF6_SE.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000081",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000082": {
+      "name": "MASM",
+      "filename": "CCAP_MASM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000082",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000083": {
+      "name": "MBBM",
+      "filename": "CCAP_MBBM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000083",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000084": {
+      "name": "MC II",
+      "filename": "CCAP_MC II ).yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000084",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000085": {
+      "name": "MC II",
+      "filename": "CCAP_MC II .yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000085",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000086": {
+      "name": "MC",
+      "filename": "CCAP_MC.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000086",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000087": {
+      "name": "MCH",
+      "filename": "CCAP_MCH.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000087",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000088": {
+      "name": "MDY-V",
+      "filename": "CCAP_MDY-V.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000088",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000089": {
+      "name": "MErds",
+      "filename": "CCAP_MErd.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000089",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000090": {
+      "name": "MErds/MY75S",
+      "filename": "CCAP_MErd_MY75S.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000090",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000091": {
+      "name": "MHY",
+      "filename": "CCAP_MHY.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000091",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000092": {
+      "name": "MP",
+      "filename": "CCAP_MP  Medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000092",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000093": {
+      "name": "MW",
+      "filename": "CCAP_MW.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000093",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000094": {
+      "name": "MWC",
+      "filename": "CCAP_MWC.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000094",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000095": {
+      "name": "MY75S",
+      "filename": "CCAP_MY75S.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000095",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000096": {
+      "name": "Met-44",
+      "filename": "CCAP_Met-44.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000096",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000097": {
+      "name": "N75S",
+      "filename": "CCAP_N75S.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000097",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000098": {
+      "name": "N75S:NSW",
+      "filename": "CCAP_N75S_NSW.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000098",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000099": {
+      "name": "NCL",
+      "filename": "CCAP_NCL.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000099",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000100": {
+      "name": "NCL75S",
+      "filename": "CCAP_NCL75S.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000100",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000101": {
+      "name": "NCL: PJ",
+      "filename": "CCAP_NCL_ PJ.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000101",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000102": {
+      "name": "NCL/0.01%NPA",
+      "filename": "CCAP_NCL_0.01_NPA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000102",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000103": {
+      "name": "NCL:MP",
+      "filename": "CCAP_NCL_MP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000103",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000104": {
+      "name": "NCL:PJ/0.01%NPA",
+      "filename": "CCAP_NCL_PJ_0.01_NPA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000104",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000105": {
+      "name": "NN",
+      "filename": "CCAP_NN  Agar).yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000105",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000106": {
+      "name": "NN",
+      "filename": "CCAP_NN  Agar.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000106",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000107": {
+      "name": "NSS Low",
+      "filename": "CCAP_NSS Low.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000107",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000108": {
+      "name": "PAS",
+      "filename": "CCAP_PAS.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000108",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000109": {
+      "name": "PC",
+      "filename": "CCAP_PC.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000109",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000110": {
+      "name": "PE",
+      "filename": "CCAP_PE.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000110",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000111": {
+      "name": "PER",
+      "filename": "CCAP_PER.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000111",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000112": {
+      "name": "PJ",
+      "filename": "CCAP_PJ.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000112",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000113": {
+      "name": "PJ/NN",
+      "filename": "CCAP_PJ_NN.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000113",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000114": {
+      "name": "PM",
+      "filename": "CCAP_PM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000114",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000115": {
+      "name": "PP",
+      "filename": "CCAP_PP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000115",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000116": {
+      "name": "PPG",
+      "filename": "CCAP_PPG.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000116",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000117": {
+      "name": "PPY",
+      "filename": "CCAP_PPY.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000117",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000118": {
+      "name": "R75S",
+      "filename": "CCAP_R75S.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000118",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000119": {
+      "name": "R75S:NSW",
+      "filename": "CCAP_R75S_NSW.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000119",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000120": {
+      "name": "RPL",
+      "filename": "CCAP_RPL.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000120",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000121": {
+      "name": "RPL/0.01%RPA",
+      "filename": "CCAP_RPL_0.01_RPA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000121",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000122": {
+      "name": "RPL:MP",
+      "filename": "CCAP_RPL_MP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000122",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000123": {
+      "name": "RPL:PJ",
+      "filename": "CCAP_RPL_PJ.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000123",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000124": {
+      "name": "RPL:PJ/0.01%RPA",
+      "filename": "CCAP_RPL_PJ_0.01_RPA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000124",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000125": {
+      "name": "S77 + vitamins",
+      "filename": "CCAP_S77 + vitamin.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000125",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000126": {
+      "name": "S88 + vitamins",
+      "filename": "CCAP_S88 + vitamin.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000126",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000127": {
+      "name": "SBBM",
+      "filename": "CCAP_SBBM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000127",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000128": {
+      "name": "SE1",
+      "filename": "CCAP_SE1.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000128",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000129": {
+      "name": "SE2",
+      "filename": "CCAP_SE2.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000129",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000130": {
+      "name": "SES",
+      "filename": "CCAP_SES.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000130",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000131": {
+      "name": "SES: PJ",
+      "filename": "CCAP_SES_ PJ.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000131",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000132": {
+      "name": "SES:MP",
+      "filename": "CCAP_SES_MP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000132",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000133": {
+      "name": "SNA",
+      "filename": "CCAP_SNA.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000133",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000134": {
+      "name": "SNA/5",
+      "filename": "CCAP_SNA_5.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000134",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000135": {
+      "name": "SP",
+      "filename": "CCAP_SP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000135",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000136": {
+      "name": "S/W + AMP",
+      "filename": "CCAP_S_W + AMP.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000136",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000137": {
+      "name": "S/W + Ca",
+      "filename": "CCAP_S_W + Ca.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000137",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000138": {
+      "name": "S/W",
+      "filename": "CCAP_S_W.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000138",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000139": {
+      "name": "TAP Medium",
+      "filename": "CCAP_TAP Medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000139",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000140": {
+      "name": "UCM",
+      "filename": "CCAP_UCM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000140",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000141": {
+      "name": "UM",
+      "filename": "CCAP_UM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000141",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000142": {
+      "name": "Walne's",
+      "filename": "CCAP_Walne'.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000142",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000143": {
+      "name": "Waris-H",
+      "filename": "CCAP_Wari_-H.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000143",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000144": {
+      "name": "YEL",
+      "filename": "CCAP_YEL.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000144",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000145": {
+      "name": "YPD Agar",
+      "filename": "CCAP_YPD Agar.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000145",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000146": {
+      "name": "ZM/10",
+      "filename": "CCAP_ZM_10.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000146",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000147": {
+      "name": "f/2 + Si for heterotrophic growth",
+      "filename": "CCAP_f_2 + Si for heterotrophic growth.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000147",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000148": {
+      "name": "f/2 + Si",
+      "filename": "CCAP_f_2 + Si.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000148",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000149": {
+      "name": "f/2",
+      "filename": "CCAP_f_2.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000149",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000150": {
+      "name": "wMY",
+      "filename": "CCAP_wMY.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000150",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000151": {
+      "name": "CHEV Diatom Medium",
+      "filename": "CHEV_Diatom_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000151",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000152": {
+      "name": "CR1+ Diatom Medium",
+      "filename": "CR1+_Diatom_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000152",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000153": {
+      "name": "CR1-S Diatom Medium",
+      "filename": "CR1-S_Diatom_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000153",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000154": {
+      "name": "CR1 Diatom Medium",
+      "filename": "CR1_Diatom_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000154",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000155": {
+      "name": "Chu's Medium",
+      "filename": "Chu_s_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000155",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000156": {
+      "name": "Combo Diatom Medium",
+      "filename": "Combo_Diatom_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000156",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000157": {
+      "name": "Cyanidium Medium",
+      "filename": "Cyanidium_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000157",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000158": {
+      "name": "Cyanophycean Medium",
+      "filename": "Cyanophycean_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000158",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000159": {
+      "name": "DYIII Medium",
+      "filename": "DYIII_Medium.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:000159",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000160": {
+      "name": "DYV Medium",
+      "filename": "DYV_Medium.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000160",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000161": {
+      "name": "Dasycladales Seawater Medium",
+      "filename": "Dasycladales_Seawater_Medium.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:000161",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000162": {
+      "name": "Desmid Medium",
+      "filename": "Desmid_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000162",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000163": {
+      "name": "ES/10 Enriched Seawater Medium",
+      "filename": "ES_10_Enriched_Seawater_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000163",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000164": {
+      "name": "ES/2 Enriched Seawater Medium",
+      "filename": "ES_2_Enriched_Seawater_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000164",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000165": {
+      "name": "ES/4 Enriched Seawater Medium",
+      "filename": "ES_4_Enriched_Seawater_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000165",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000166": {
+      "name": "Enriched Seawater Medium",
+      "filename": "Enriched_Seawater_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000166",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000167": {
+      "name": "Erdschreiber's Medium",
+      "filename": "Erdschreiber_s_Medium.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000167",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000168": {
+      "name": "Euglena Medium",
+      "filename": "Euglena_Medium.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:000168",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000169": {
+      "name": "F/2 + NH4 Medium",
+      "filename": "F_2_+_NH4_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000169",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000170": {
+      "name": "F/2 Medium",
+      "filename": "F_2_Medium.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:000170",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000171": {
+      "name": "HEPES Medium",
+      "filename": "HEPES_Medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:000171",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000172": {
+      "name": "J Medium",
+      "filename": "J_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000172",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000173": {
+      "name": "LDM Medium",
+      "filename": "LDM_Medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000173",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000174": {
+      "name": "MES-Volvox Medium",
+      "filename": "MES-Volvox_Medium.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000174",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000175": {
+      "name": "Malt Medium",
+      "filename": "Malt_Medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000175",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000176": {
+      "name": "Modified 2X CHEV + Soil Medium",
+      "filename": "Modified_2X_CHEV_+_Soil_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000176",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000177": {
+      "name": "Modified 2X CHEV Medium",
+      "filename": "Modified_2X_CHEV_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000177",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000178": {
+      "name": "Modified Artificial Seawater Medium",
+      "filename": "Modified_Artificial_Seawater_Medium.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000178",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000179": {
+      "name": "Modified Bolds 3N Medium",
+      "filename": "Modified_Bolds_3N_Medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000179",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000180": {
+      "name": "Modified CHEV Medium",
+      "filename": "Modified_CHEV_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000180",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000181": {
+      "name": "Modified COMBO Medium",
+      "filename": "Modified_COMBO_Medium.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:000181",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000182": {
+      "name": "Modified Desmidiacean Medium",
+      "filename": "Modified_Desmidiacean_Medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:000182",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000183": {
+      "name": "N/20 Medium",
+      "filename": "N_20_Medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000183",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000184": {
+      "name": "Ochromonas Medium",
+      "filename": "Ochromonas_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000184",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000185": {
+      "name": "P49 Medium",
+      "filename": "P49_Medium.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:000185",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000186": {
+      "name": "Polytomella Medium",
+      "filename": "Polytomella_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000186",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000187": {
+      "name": "Porphryridium Medium",
+      "filename": "Porphryridium_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000187",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000188": {
+      "name": "Proteose Medium",
+      "filename": "Proteose_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000188",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000189": {
+      "name": "Artificial_Seawater",
+      "filename": "SAG_Artificial_Seawater.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000189",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000190": {
+      "name": "BG11",
+      "filename": "SAG_BG11.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000190",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000191": {
+      "name": "Basal",
+      "filename": "SAG_Ba_al.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000191",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000192": {
+      "name": "Bacillariophycean",
+      "filename": "SAG_Bacillariophycean.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000192",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000193": {
+      "name": "Beggiatoa",
+      "filename": "SAG_Beggiatoa.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000193",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000194": {
+      "name": "Bold_Modified_Basal",
+      "filename": "SAG_Bold_Modified_Ba_al.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000194",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000195": {
+      "name": "Bold_Modified_Basal&TOM",
+      "filename": "SAG_Bold_Modified_Ba_al_TOM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000195",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000196": {
+      "name": "Brackish_water_medium",
+      "filename": "SAG_Bracki_h_water_medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000196",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000197": {
+      "name": "Chilomonas",
+      "filename": "SAG_Chilomona.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000197",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000198": {
+      "name": "Cyanidium",
+      "filename": "SAG_Cyanidium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000198",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000199": {
+      "name": "Desmidiacean",
+      "filename": "SAG_De_midiacean.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000199",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000200": {
+      "name": "Dunaliella",
+      "filename": "SAG_Dunaliella.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000200",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000201": {
+      "name": "Dunaliella_acid",
+      "filename": "SAG_Dunaliella_acid.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000201",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000202": {
+      "name": "Enriched_Seawater",
+      "filename": "SAG_Enriched_Seawater.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000202",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000203": {
+      "name": "Euglena",
+      "filename": "SAG_Euglena.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000203",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000204": {
+      "name": "Malt_Peptone",
+      "filename": "SAG_Malt_Peptone.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000204",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000205": {
+      "name": "Note_on_biphasic_soilwater_media_20081216",
+      "filename": "SAG_Note_on_bipha_ic_oilwater_media_20081216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000205",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000206": {
+      "name": "Ochromonas",
+      "filename": "SAG_Ochromona.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000206",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000207": {
+      "name": "PES",
+      "filename": "SAG_PES.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000207",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000208": {
+      "name": "Polytoma",
+      "filename": "SAG_Polytoma.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000208",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000209": {
+      "name": "Polytomella",
+      "filename": "SAG_Polytomella.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000209",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000210": {
+      "name": "Porphyridium",
+      "filename": "SAG_Porphyridium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000210",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000211": {
+      "name": "Seawater",
+      "filename": "SAG_Seawater.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000211",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000212": {
+      "name": "Soil_Water_Media",
+      "filename": "SAG_Soil_Water_Media.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000212",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000213": {
+      "name": "Spirulina",
+      "filename": "SAG_Spirulina.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000213",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000214": {
+      "name": "Unicellular_Green_Algae",
+      "filename": "SAG_Unicellular_Green_Algae.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000214",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000215": {
+      "name": "Volvox",
+      "filename": "SAG_Volvox.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000215",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000216": {
+      "name": "WEES",
+      "filename": "SAG_WEES.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000216",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000217": {
+      "name": "Woods Hole MBL Medium",
+      "filename": "SAG_Wood_ Hole MBL Medium.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000217",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000218": {
+      "name": "Z-Medium_for_Cyanos",
+      "filename": "SAG_Z-Medium_for_Cyano.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000218",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000219": {
+      "name": "SS Diatom Medium",
+      "filename": "SS_Diatom_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000219",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000220": {
+      "name": "Snow Algae Medium",
+      "filename": "Snow_Algae_Medium.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000220",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000221": {
+      "name": "Soil + Seawater Medium",
+      "filename": "Soil_+_Seawater_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000221",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000222": {
+      "name": "Soil Extract + Sodium Metasilicate Medium",
+      "filename": "Soil_Extract_+_Sodium_Metasilicate_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000222",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000223": {
+      "name": "Soil Extract Medium",
+      "filename": "Soil_Extract_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000223",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000224": {
+      "name": "Soilwater: BAR Medium",
+      "filename": "Soilwater_BAR_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000224",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000225": {
+      "name": "Soilwater: GR+ Medium",
+      "filename": "Soilwater_GR+_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000225",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000226": {
+      "name": "Soilwater: GR+/NH4 Medium",
+      "filename": "Soilwater_GR+_NH4_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000226",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000227": {
+      "name": "Soilwater: GR- Medium",
+      "filename": "Soilwater_GR-_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000227",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000228": {
+      "name": "Soilwater: GR-/NH4 Medium",
+      "filename": "Soilwater_GR-_NH4_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000228",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000229": {
+      "name": "Soilwater: PEA Medium",
+      "filename": "Soilwater_PEA_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000229",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000230": {
+      "name": "Soilwater: Peat Medium",
+      "filename": "Soilwater_Peat_Medium.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000230",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000231": {
+      "name": "Soilwater: VT Medium",
+      "filename": "Soilwater_VT_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000231",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000232": {
+      "name": "Spirulina Medium",
+      "filename": "Spirulina_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000232",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000233": {
+      "name": "TAP Medium",
+      "filename": "TAP_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000233",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000234": {
+      "name": "Trebouxia Medium",
+      "filename": "Trebouxia_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000234",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000235": {
+      "name": "Volvocacean-3N Medium",
+      "filename": "Volvocacean-3N_Medium.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000235",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000236": {
+      "name": "Volvocacean Medium",
+      "filename": "Volvocacean_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000236",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000237": {
+      "name": "Volvox-Dextrose Medium",
+      "filename": "Volvox-Dextrose_Medium.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:000237",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000238": {
+      "name": "Volvox Medium",
+      "filename": "Volvox_Medium.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:000238",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000239": {
+      "name": "WC+ Medium",
+      "filename": "WC+_Medium.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:000239",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000240": {
+      "name": "WC Medium",
+      "filename": "WC_Medium.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000240",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000241": {
+      "name": "Waris + Soil Extract Medium",
+      "filename": "Waris_+_Soil_Extract_Medium.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:000241",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    },
+    "CultureMech:000242": {
+      "name": "Waris Medium",
+      "filename": "Waris_Medium.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:000242",
+      "source": "unknown",
+      "categories": [
+        "ALGAE"
+      ]
+    }
+  }
+}

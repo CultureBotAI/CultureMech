@@ -1,0 +1,64 @@
+id: CultureMech:015448
+preferred_term: Macro Component 2 for J medium
+term:
+  id: MediaIngredientMech:UNMAPPED_0096
+  label: Macro Component 2 for J medium
+composition:
+- preferred_term: Disodium EDTA dihydrate
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64734
+    label: edetate disodium
+- preferred_term: Magnesium sulfate heptahydrate
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Ferric chloride hexahydrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:82824
+    label: ferric chloride hexahydrate
+notes: |
+  Macro Component 2 for J Medium (UTEX).
+  Second of two macronutrient stock solutions for J Medium.
+  Provides magnesium, iron, and EDTA chelator for metal bioavailability.
+
+  Preparation: Add components to approximately 850 mL deionized water in the order
+  listed while stirring continuously. Adjust pH to 7.5 with NaOH or HCl.
+  Bring to 1 L total volume.
+
+  Storage: Refrigerator temperature (4°C).
+
+  Final stock concentrations: Na2EDTA·2H2O (0.12 mM), MgSO4·7H2O (0.41 mM),
+  MgCl2·6H2O (0.24 mM), FeCl3·6H2O (0.02 mM)
+
+  Note: EDTA chelates iron and trace metals, improving their bioavailability and
+  preventing precipitation in the alkaline pH range of the medium.
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0096
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/macro-component-2-for-j-medium
+- reference_id: UTEX:macro-component-2-for-j-medium
+- reference_id: MediaIngredientMech:UNMAPPED_0096

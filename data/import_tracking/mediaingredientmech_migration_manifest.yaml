@@ -1,0 +1,404 @@
+# MediaIngredientMech Complex Media Migration Manifest
+# Created: 2026-03-15
+# Purpose: Track migration of 19 missing complex media/solutions from MediaIngredientMech to CultureMech
+#
+# Background: 61 complex media were identified in MediaIngredientMech's UNMAPPED_COMPLEX_MEDIA.md
+# - 40 already exist in CultureMech (20 as media, 20 as solutions)
+# - 19 are missing and need to be created (this manifest)
+# - 2 may remain as simple ingredients after review
+
+migration_metadata:
+  manifest_version: "1.0"
+  created_date: "2026-03-15"
+  total_items: 19
+  categorization:
+    solutions: 10
+    simple_ingredients: 6
+    soil_ingredients: 3
+  source_file: "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MediaIngredientMech/data/curated/UNMAPPED_COMPLEX_MEDIA.md"
+  target_directory: "data/normalized_yaml/solutions/"
+
+# Items categorized as SOLUTIONS (need full SolutionDescriptor records)
+solutions:
+  - name: "Beijerinck's Solution"
+    mediaingredientmech_id: UNMAPPED_0074
+    occurrences: 1
+    source_media:
+      - algae/TAP_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: HIGH
+    composition_source: "UTEX TAP medium protocol, Chlamydomonas protocols"
+    research_notes: |
+      Standard mineral stock for TAP medium (Tris-Acetate-Phosphate).
+      Widely used for Chlamydomonas reinhardtii culture.
+      Composition should include NH4Cl, CaCl2, MgSO4.
+      Reference: Harris EH (1989) The Chlamydomonas Sourcebook
+    status: PENDING_RESEARCH
+
+  - name: "Bold Trace Stock"
+    mediaingredientmech_id: UNMAPPED_0065
+    occurrences: 1
+    source_media:
+      - algae/Bold_Basal_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: HIGH
+    composition_source: "Bold's Basal Medium original formulation"
+    research_notes: |
+      Trace metal stock for Bold media variants.
+      Should contain: ZnSO4, MnCl2, MoO3, CuSO4, Co(NO3)2
+      Reference: Bold HC (1949) Morphology of Chlamydomonas chlamydogama
+    status: PENDING_RESEARCH
+
+  - name: "Boron Stock"
+    mediaingredientmech_id: UNMAPPED_0064
+    occurrences: 1
+    source_media:
+      - algae/Bold_Basal_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: HIGH
+    composition_source: "Bold's Basal Medium original formulation"
+    research_notes: |
+      Boron supplement stock for Bold media.
+      Typically H3BO3 (boric acid) solution.
+      Standard concentration needs verification from UTEX protocols.
+    status: PENDING_RESEARCH
+
+  - name: "DAS Macro Solution"
+    mediaingredientmech_id: UNMAPPED_0081
+    occurrences: 1
+    source_media:
+      - algae/Dasycladales_Seawater_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: MEDIUM
+    composition_source: "UTEX Dasycladales medium protocol"
+    research_notes: |
+      Macronutrient stock for Dasycladales algae (marine).
+      DAS = Dasycladales-specific formulation.
+      Likely contains N, P sources for marine algae.
+      Check UTEX website for full composition.
+    status: PENDING_RESEARCH
+
+  - name: "DAS Vitamin Cocktail"
+    mediaingredientmech_id: UNMAPPED_0045
+    occurrences: 2
+    source_media:
+      - algae/Dasycladales_Seawater_Medium.yaml
+      - algae/1_1_DYIII_PEA_+_Gr+_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: MEDIUM
+    composition_source: "UTEX Dasycladales medium protocol"
+    research_notes: |
+      Vitamin mixture for Dasycladales algae.
+      Typical vitamins: B12, biotin, thiamine.
+      May be similar to other algal vitamin solutions.
+    status: PENDING_RESEARCH
+
+  - name: "EDTA Stock"
+    mediaingredientmech_id: UNMAPPED_0062
+    occurrences: 1
+    source_media:
+      - algae/Bold_Basal_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: HIGH
+    composition_source: "Standard EDTA stock formulations"
+    research_notes: |
+      Chelating agent stock for Bold media.
+      Typically Na2EDTA or Na2EDTA·2H2O.
+      Standard concentrations: 0.5-5.0 g/L in stock.
+      Check against existing EDTA-containing solutions.
+    status: PENDING_RESEARCH
+
+  - name: "G9 Trace Metals for J medium"
+    mediaingredientmech_id: UNMAPPED_0097
+    occurrences: 1
+    source_media:
+      - algae/J_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: MEDIUM
+    composition_source: "UTEX J medium protocol"
+    research_notes: |
+      Trace metal mixture specific to J medium.
+      G9 = specific trace metal formulation.
+      Needs research from UTEX documentation or literature.
+    status: PENDING_RESEARCH
+
+  - name: "Macro Component 1 for J Medium"
+    mediaingredientmech_id: UNMAPPED_0095
+    occurrences: 1
+    source_media:
+      - algae/J_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: MEDIUM
+    composition_source: "UTEX J medium protocol"
+    research_notes: |
+      Macronutrient stock 1 for J medium.
+      Likely contains nitrate and/or phosphate salts.
+      Part of two-component macronutrient system.
+      Check UTEX J medium protocol for composition.
+    status: PENDING_RESEARCH
+
+  - name: "Macro Component 2 for J medium"
+    mediaingredientmech_id: UNMAPPED_0096
+    occurrences: 1
+    source_media:
+      - algae/J_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: MEDIUM
+    composition_source: "UTEX J medium protocol"
+    research_notes: |
+      Macronutrient stock 2 for J medium.
+      Likely contains additional macronutrients (Ca, Mg, S sources).
+      Part of two-component macronutrient system.
+      Check UTEX J medium protocol for composition.
+    status: PENDING_RESEARCH
+
+  - name: "Minor Nutrients"
+    mediaingredientmech_id: UNMAPPED_0099
+    occurrences: 1
+    source_media:
+      - algae/Snow_Algae_Medium.yaml
+    item_type: solution
+    solution_type: STOCK
+    physical_state: LIQUID
+    priority: LOW
+    composition_source: "Snow algae culture protocols"
+    research_notes: |
+      Micronutrient mixture for snow algae.
+      Likely contains trace metals and possibly vitamins.
+      Check UTEX or CCAP protocols for snow algae.
+    status: PENDING_RESEARCH
+
+# Items categorized as SIMPLE INGREDIENTS (may just need MediaIngredientMech IDs)
+simple_ingredients:
+  - name: "Beef extract"
+    mediaingredientmech_id: UNMAPPED_0068
+    occurrences: 1  # in UNMAPPED list, but 302 actual occurrences in media files
+    actual_file_count: 302
+    source_media_note: "Used in 302+ files, mostly bacterial media and mediadive solutions"
+    item_type: simple_ingredient
+    priority: HIGH
+    composition_source: "Commercial product - no composition needed"
+    research_notes: |
+      Commercial complex extract from beef tissue.
+      Widely used in bacterial culture media.
+      Should remain as simple ingredient with MediaIngredientMech ID.
+      May already be in mapped_ingredients.yaml - CHECK FIRST.
+      Standard suppliers: Oxoid, BD, Sigma.
+    status: VERIFY_MAPPING
+    action_needed: "Check if already in mapped_ingredients.yaml; if not, add mapping to FOODON or other ontology"
+
+  - name: "Malt extract"
+    mediaingredientmech_id: UNMAPPED_0089
+    occurrences: 1  # in UNMAPPED list
+    actual_file_count: 298
+    source_media_note: "Used in 298+ files, mostly fungal/yeast media"
+    item_type: simple_ingredient
+    priority: HIGH
+    composition_source: "Commercial product - no composition needed"
+    research_notes: |
+      Commercial extract from malted barley.
+      Widely used in fungal and yeast culture media.
+      Should remain as simple ingredient with MediaIngredientMech ID.
+      May already be in mapped_ingredients.yaml - CHECK FIRST.
+      Standard suppliers: Oxoid, BD, Sigma.
+    status: VERIFY_MAPPING
+    action_needed: "Check if already in mapped_ingredients.yaml; if not, add mapping to FOODON"
+
+  - name: "Proteose Peptone"
+    mediaingredientmech_id: UNMAPPED_0055
+    occurrences: 2  # in UNMAPPED list
+    actual_file_count: 383
+    source_media_note: "Used in 383+ files, mostly bacterial media"
+    item_type: simple_ingredient
+    priority: HIGH
+    composition_source: "Commercial product - no composition needed"
+    research_notes: |
+      Commercial peptone product (enzymatic digest).
+      Widely used in bacterial culture media.
+      Should remain as simple ingredient with MediaIngredientMech ID.
+      May already be in mapped_ingredients.yaml - CHECK FIRST.
+      Standard suppliers: BD, Oxoid.
+    status: VERIFY_MAPPING
+    action_needed: "Check if already in mapped_ingredients.yaml; if not, add mapping to FOODON"
+
+  - name: "Sphagnum extract"
+    mediaingredientmech_id: UNMAPPED_0087
+    occurrences: 1
+    source_media:
+      - algae/CR1-S_Diatom_Medium.yaml
+    item_type: simple_ingredient
+    priority: LOW
+    composition_source: "Natural extract - variable composition"
+    research_notes: |
+      Extract from Sphagnum moss.
+      Used in some diatom culture media.
+      Variable composition depending on source.
+      Should remain as simple ingredient.
+    status: KEEP_AS_INGREDIENT
+    action_needed: "Ensure MediaIngredientMech ID is assigned; no solution record needed"
+
+  - name: "Spir solution"
+    mediaingredientmech_id: UNMAPPED_0043
+    occurrences: 2
+    source_media:
+      - algae/Spirulina_Medium.yaml
+    item_type: uncertain  # Could be solution or simple ingredient
+    priority: MEDIUM
+    composition_source: "Spirulina medium formulations"
+    research_notes: |
+      Referenced in Spirulina medium.
+      Could be a stock solution or might refer to a commercial product.
+      Need to check Spirulina_Medium.yaml in detail and research.
+      May need to become a solution if it has defined composition.
+    status: PENDING_RESEARCH
+    action_needed: "Research composition; determine if solution or simple ingredient"
+
+  - name: "CaSO4•2H2O saturated solution"
+    mediaingredientmech_id: UNMAPPED_0091
+    occurrences: 1
+    source_media:
+      - algae/Modified_Desmidiacean_Medium.yaml
+    item_type: simple_ingredient  # saturated solution of a single compound
+    priority: LOW
+    composition_source: "Saturated solution - simple preparation"
+    research_notes: |
+      Saturated solution of calcium sulfate dihydrate (gypsum).
+      Simple preparation - dissolve until saturated.
+      Could be treated as simple ingredient or minimal solution.
+      Solubility: ~2.4 g/L at 25°C.
+    status: KEEP_AS_INGREDIENT
+    action_needed: "Document as simple ingredient; note preparation method in ingredient notes"
+
+# Items categorized as SOIL INGREDIENTS (environmental samples)
+soil_ingredients:
+  - name: "CR1 Soil"
+    mediaingredientmech_id: UNMAPPED_0012
+    occurrences: 14
+    source_media:
+      - algae/SS_Diatom_Medium.yaml
+      - algae/Modified_CHEV_Medium.yaml
+      - algae/Modified_2X_CHEV_+_Soil_Medium.yaml
+      - algae/Combo_Diatom_Medium.yaml
+      - algae/CR1_Diatom_Medium.yaml
+      - algae/CR1-S_Diatom_Medium.yaml
+      - algae/CR1+_Diatom_Medium.yaml
+      - algae/CHEV_Diatom_Medium.yaml
+      - algae/Ag_Diatom_Medium.yaml
+      - algae/2_3_CHEV_Diatom_Medium.yaml
+      - algae/2X_CHEV_Diatom_Medium.yaml
+      - algae/1_5_CHEV_Diatom_Medium.yaml
+      - algae/1_3_CHEV_Diatom_Medium.yaml
+      - algae/1_2_CHEV_Diatom_Medium.yaml
+    item_type: soil_ingredient
+    priority: MEDIUM
+    composition_source: "Environmental sample - no defined composition"
+    research_notes: |
+      CR1 = specific soil sample/type used in diatom culture.
+      Environmental sample with variable, undefined composition.
+      Used to provide natural nutrients and microbes.
+      Should remain as simple ingredient (no solution record).
+      Note provenance/source in MediaIngredientMech if possible.
+    status: KEEP_AS_INGREDIENT
+    action_needed: "Document as environmental sample; add notes about soil source if available"
+
+  - name: "Green House Soil"
+    mediaingredientmech_id: UNMAPPED_0015
+    occurrences: 11
+    source_media:
+      - algae/Soilwater_Peat_Medium.yaml
+      - algae/Soilwater_PEA_Medium.yaml
+      - algae/Soilwater_GR-_Medium.yaml
+      - algae/Soilwater_GR+_Medium.yaml
+      - algae/Soilwater_BAR_Medium.yaml
+      - algae/Soil_+_Seawater_Medium.yaml
+      - algae/2X_Soil_+_Seawater_Medium.yaml
+      - algae/1_5_Soil_+_Seawater_Medium.yaml
+      - algae/1_4_Soil_+_Seawater_Medium.yaml
+      - algae/1_3_Soil_+_Seawater_Medium.yaml
+      - algae/1_2_Soil_+_Seawater_Medium.yaml
+    item_type: soil_ingredient
+    priority: MEDIUM
+    composition_source: "Environmental sample - no defined composition"
+    research_notes: |
+      Greenhouse soil sample used in soil-water media.
+      Environmental sample with variable composition.
+      Provides organic nutrients and natural microbial community.
+      Should remain as simple ingredient (no solution record).
+    status: KEEP_AS_INGREDIENT
+    action_needed: "Document as environmental sample; add source/preparation notes if available"
+
+  - name: "Vermont Soil"
+    mediaingredientmech_id: UNMAPPED_0060
+    occurrences: 1
+    source_media:
+      - algae/Soilwater_VT_Medium.yaml
+    item_type: soil_ingredient
+    priority: LOW
+    composition_source: "Environmental sample - no defined composition"
+    research_notes: |
+      Vermont soil sample used in VT (Vermont) soil-water medium.
+      VT = Vermont, indicating geographic origin.
+      Environmental sample with variable composition.
+      Should remain as simple ingredient (no solution record).
+    status: KEEP_AS_INGREDIENT
+    action_needed: "Document as environmental sample from Vermont; add provenance notes"
+
+# Next steps by category
+next_steps:
+  solutions:
+    - "Research compositions for 10 solution items using UTEX protocols, literature, and culture collection databases"
+    - "Create SolutionDescriptor YAML files in data/normalized_yaml/solutions/"
+    - "Assign CultureMech IDs using mint_next_id utility"
+    - "Validate against schema"
+    - "Update ID registry"
+
+  simple_ingredients:
+    - "Check mapped_ingredients.yaml for Beef extract, Malt extract, Proteose Peptone"
+    - "If missing, add ontology mappings (FOODON, CHEBI)"
+    - "Document Sphagnum extract, CaSO4 saturated solution with preparation notes"
+    - "Research Spir solution to determine final categorization"
+
+  soil_ingredients:
+    - "Add descriptive notes to MediaIngredientMech entries"
+    - "Document geographic/source information where available"
+    - "Keep as simple ingredients (no solution records needed)"
+    - "Ensure MediaIngredientMech IDs are properly assigned"
+
+# Research resources
+research_resources:
+  - "UTEX Culture Collection: https://utex.org/"
+  - "CCAP Culture Collection: https://www.ccap.ac.uk/"
+  - "SAG Culture Collection: https://sagdb.uni-goettingen.de/"
+  - "Algae Culture Techniques (Andersen 2005)"
+  - "Handbook of Phycological Methods (Stein 1973)"
+  - "The Chlamydomonas Sourcebook (Harris 1989)"
+  - "Freshwater Algae: Identification and Use as Bioindicators (Bellinger & Sigee 2010)"
+
+# Progress tracking
+progress:
+  manifest_created: true
+  compositions_researched: false
+  solution_records_created: 0
+  solutions_validated: 0
+  ids_assigned: false
+  simple_ingredients_verified: false
+  total_completed: 0
+  total_items: 19

@@ -1,0 +1,84 @@
+id: CultureMech:015445
+preferred_term: DAS Vitamin Cocktail
+term:
+  id: MediaIngredientMech:UNMAPPED_0045
+  label: DAS Vitamin Cocktail
+composition:
+- preferred_term: Tricine (pH 8)
+  concentration:
+    value: '0.9'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:9750
+    label: tricine
+  notes: Buffer adjusted to pH 8.0
+- preferred_term: Thiamine (Vitamin B1)
+  concentration:
+    value: '0.067'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:18385
+    label: thiamine
+- preferred_term: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Vitamin B12 (Cobalamin)
+  concentration:
+    value: '0.0008'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  notes: Add after autoclaving
+- preferred_term: Pantothenate (Pantothenic acid)
+  concentration:
+    value: '0.002'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:7916
+    label: pantothenic acid
+- preferred_term: PABA (Para-aminobenzoic acid)
+  concentration:
+    value: '0.004'
+    unit: G_PER_100ML
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoic acid
+notes: |
+  DAS Vitamin Cocktail for Dasycladales Seawater Medium.
+  Provides essential vitamins for marine algae culture.
+
+  Preparation: Add Tricine to approximately 85 mL deionized water while stirring
+  continuously. Adjust pH to 8.0 with NaOH or HCl. Add remaining vitamin components
+  sequentially: thiamine, biotin, pantothenate, PABA. Bring to 100 mL total volume.
+
+  IMPORTANT: Add Vitamin B12 AFTER autoclaving (heat-sensitive).
+
+  Sterilization: Filter sterilize through 0.45 µm Millipore filter.
+  DO NOT AUTOCLAVE (vitamins are heat-sensitive).
+
+  Storage: Freezer temperature (-20°C) in darkness.
+
+  Final stock concentrations: Thiamine (2.0 mM), Biotin (0.041 mM),
+  Vitamin B12 (0.0059 mM), Pantothenate (0.091 mM), PABA (0.291 mM)
+
+  Final concentrations in medium: Thiamine (0.99 µM), Biotin (0.02 µM),
+  Vitamin B12 (0.0029 µM), Pantothenate (0.046 µM), PABA (0.15 µM)
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0045
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/das-vitamin-cocktail
+- reference_id: UTEX:das-vitamin-cocktail
+- reference_id: MediaIngredientMech:UNMAPPED_0045

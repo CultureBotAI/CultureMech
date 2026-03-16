@@ -1,0 +1,108 @@
+[
+  {
+    "media_name": "Glycerol Fermentation Medium for DIET Coculture",
+    "culturemech_id": "CultureMech:015432",
+    "community_ids": [
+      "CommunityMech:000031"
+    ],
+    "source_files": [
+      "kb/communities/Geobacter_Clostridium_DIET.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.378726"
+  },
+  {
+    "media_name": "Half-strength Murashige-Skoog medium for Arabidopsis growth",
+    "culturemech_id": "CultureMech:015433",
+    "community_ids": [
+      "CommunityMech:000003",
+      "CommunityMech:000022"
+    ],
+    "source_files": [
+      "kb/communities/At_RSPHERE_SynCom.yaml",
+      "kb/communities/Dangl_SynComm_35.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Half_strength_Murashige_Skoog_medium_for_Arabidopsis_growth.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.394770"
+  },
+  {
+    "media_name": "Modified DSM 120 Medium for DIET Coculture",
+    "culturemech_id": "CultureMech:015434",
+    "community_ids": [
+      "CommunityMech:000033"
+    ],
+    "source_files": [
+      "kb/communities/Geobacter_Methanosarcina_DIET.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Modified_DSM_120_Medium_for_DIET_Coculture.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.406921"
+  },
+  {
+    "media_name": "Modified Freshwater Medium for DIET Coculture",
+    "culturemech_id": "CultureMech:015435",
+    "community_ids": [
+      "CommunityMech:000032"
+    ],
+    "source_files": [
+      "kb/communities/Geobacter_Methanosaeta_DIET.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Modified_Freshwater_Medium_for_DIET_Coculture.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.417180"
+  },
+  {
+    "media_name": "Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum",
+    "culturemech_id": "CultureMech:015436",
+    "community_ids": [
+      "CommunityMech:000059"
+    ],
+    "source_files": [
+      "kb/communities/Richmond_Mine_AMD_Biofilm.yaml"
+    ],
+    "output_path": "data/normalized_yaml/bacterial/Nitrogen_Free_Medium_for_Leptospirillum_ferrodiazotrophum.yaml",
+    "category": "bacterial",
+    "import_timestamp": "2026-03-15T00:15:00.447367"
+  },
+  {
+    "media_name": "Nitrogen-free B&D medium for Lotus japonicus growth",
+    "culturemech_id": "CultureMech:015437",
+    "community_ids": [
+      "CommunityMech:000040"
+    ],
+    "source_files": [
+      "kb/communities/Lotus_LjSC3.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Nitrogen_free_B&D_medium_for_Lotus_japonicus_growth.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.466591"
+  },
+  {
+    "media_name": "Nitrogen-free plant nutrient solution for soybean growth",
+    "culturemech_id": "CultureMech:015438",
+    "community_ids": [
+      "CommunityMech:000064"
+    ],
+    "source_files": [
+      "kb/communities/Soybean_N_Fixation_sfSynCom.yaml"
+    ],
+    "output_path": "data/normalized_yaml/specialized/Nitrogen_free_plant_nutrient_solution_for_soybean_growth.yaml",
+    "category": "specialized",
+    "import_timestamp": "2026-03-15T00:15:00.481465"
+  },
+  {
+    "media_name": "PCS-FP medium for thermophilic cellulose degradation",
+    "culturemech_id": "CultureMech:015439",
+    "community_ids": [
+      "CommunityMech:000061"
+    ],
+    "source_files": [
+      "kb/communities/SF356_Cellulose_Degrader.yaml"
+    ],
+    "output_path": "data/normalized_yaml/bacterial/PCS_FP_medium_for_thermophilic_cellulose_degradation.yaml",
+    "category": "bacterial",
+    "import_timestamp": "2026-03-15T00:15:00.494552"
+  }
+]

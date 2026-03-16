@@ -1,0 +1,703 @@
+{
+  "generated": "2026-03-16T05:29:34.598662+00:00",
+  "category": "archaea",
+  "count": 63,
+  "recipes": {
+    "CultureMech:000243": {
+      "name": "THIOALKALIVIBRIO HALOPHILUS MEDIUM",
+      "filename": "DSMZ_1014_THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:000243",
+      "source_id": "mediadive.medium:1014",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000244": {
+      "name": "THIOHALOPHILUS MEDIUM",
+      "filename": "DSMZ_1058_THIOHALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:000244",
+      "source_id": "mediadive.medium:1058",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000245": {
+      "name": "THIOHALOSPIRA HALOPHILA MEDIUM",
+      "filename": "DSMZ_1058a_THIOHALOSPIRA_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:000245",
+      "source_id": "mediadive.medium:1058a",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000246": {
+      "name": "METHERMICOCCUS (METHANOGEN) MEDIUM",
+      "filename": "DSMZ_1084_METHERMICOCCUS_METHANOGEN_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000246",
+      "source_id": "mediadive.medium:1084",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000247": {
+      "name": "HALOPHILIC MEDIUM",
+      "filename": "DSMZ_1125_HALOPHILIC_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000247",
+      "source_id": "mediadive.medium:1125",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000248": {
+      "name": "HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM",
+      "filename": "DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000248",
+      "source_id": "mediadive.medium:1156",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000249": {
+      "name": "MEDIUM FOR HALOPHILIC ARCHAEA",
+      "filename": "DSMZ_1184_MEDIUM_FOR_HALOPHILIC_ARCHAEA.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000249",
+      "source_id": "mediadive.medium:1184",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000250": {
+      "name": "THIOALKALIBACTER HALOPHILUS MEDIUM",
+      "filename": "DSMZ_1225_THIOALKALIBACTER_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:000250",
+      "source_id": "mediadive.medium:1225",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000251": {
+      "name": "SYMBIOBACTERIUM THERMOPHILUM MEDIUM",
+      "filename": "DSMZ_1293_SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:000251",
+      "source_id": "mediadive.medium:1293",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000252": {
+      "name": "HALOPHILIC MEDIUM",
+      "filename": "DSMZ_1399_HALOPHILIC_MEDIUM.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:000252",
+      "source_id": "mediadive.medium:1399",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000253": {
+      "name": "SALINIBACTER HALOPHILIC MEDIUM",
+      "filename": "DSMZ_1400_SALINIBACTER_HALOPHILIC_MEDIUM.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000253",
+      "source_id": "mediadive.medium:1400",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000254": {
+      "name": "METHANOGENIUM MEDIUM (H2/CO2)",
+      "filename": "DSMZ_141_METHANOGENIUM_MEDIUM_H2_CO2.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:000254",
+      "source_id": "mediadive.medium:141",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000255": {
+      "name": "ALKALOPHILIC HALOPHILE MEDIUM",
+      "filename": "DSMZ_1431_ALKALOPHILIC_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000255",
+      "source_id": "mediadive.medium:1431",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000256": {
+      "name": "ACIDO-THERMOPHILE MEDIUM",
+      "filename": "DSMZ_1433_ACIDO-THERMOPHILE_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000256",
+      "source_id": "mediadive.medium:1433",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000257": {
+      "name": "HALOACTINOMYCES HALOPHILUS MEDIUM",
+      "filename": "DSMZ_1742_HALOACTINOMYCES_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000257",
+      "source_id": "mediadive.medium:1742",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000258": {
+      "name": "PEDIOCOCCUS HALOPHILUS MEDIUM",
+      "filename": "DSMZ_227_PEDIOCOCCUS_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000258",
+      "source_id": "mediadive.medium:227",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000259": {
+      "name": "METHANOSARCINA THERMOPHILA MEDIUM",
+      "filename": "DSMZ_317_METHANOSARCINA_THERMOPHILA_MEDIUM.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:000259",
+      "source_id": "mediadive.medium:317",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000260": {
+      "name": "METHANOSARCINA THERMOPHILA (BCYT) MEDIUM",
+      "filename": "DSMZ_318_METHANOSARCINA_THERMOPHILA_BCYT_MEDIUM.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:000260",
+      "source_id": "mediadive.medium:318",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000261": {
+      "name": "METHANOHALOPHILUS HALOPHILUS MEDIUM",
+      "filename": "DSMZ_329_METHANOHALOPHILUS_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:000261",
+      "source_id": "mediadive.medium:329",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000262": {
+      "name": "METHANOHALOPHILUS PORTUCALENSIS MEDIUM",
+      "filename": "DSMZ_348_METHANOHALOPHILUS_PORTUCALENSIS_MEDIUM.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:000262",
+      "source_id": "mediadive.medium:348",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000263": {
+      "name": "METHANOGENIUM CV MEDIUM",
+      "filename": "DSMZ_373_METHANOGENIUM_CV_MEDIUM.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:000263",
+      "source_id": "mediadive.medium:373",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000264": {
+      "name": "MEDIUM FOR BACILLUS STEAROTHERMOPHILUS",
+      "filename": "DSMZ_458_MEDIUM_FOR_BACILLUS_STEAROTHERMOPHILUS.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:000264",
+      "source_id": "mediadive.medium:458",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000265": {
+      "name": "PSEUDOMONAS HALOPHILA MEDIUM",
+      "filename": "DSMZ_470_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:000265",
+      "source_id": "mediadive.medium:470",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000266": {
+      "name": "METHANOHALOPHILUS MEDIUM",
+      "filename": "DSMZ_479_METHANOHALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:000266",
+      "source_id": "mediadive.medium:479",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000267": {
+      "name": "METHANOHALOPHILUS PROFUNDI MEDIUM",
+      "filename": "DSMZ_479a_METHANOHALOPHILUS_PROFUNDI_MEDIUM.yaml",
+      "ingredient_count": 26,
+      "id": "CultureMech:000267",
+      "source_id": "mediadive.medium:479a",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000268": {
+      "name": "SPIROCHAETA THERMOPHILA MEDIUM",
+      "filename": "DSMZ_509_SPIROCHAETA_THERMOPHILA_MEDIUM.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:000268",
+      "source_id": "mediadive.medium:509",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000269": {
+      "name": "METHANOHALOPHILUS (MG) MEDIUM",
+      "filename": "DSMZ_525_METHANOHALOPHILUS_MG_MEDIUM.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:000269",
+      "source_id": "mediadive.medium:525",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000270": {
+      "name": "METHANOHALOPHILUS (MG+NaCl) MEDIUM",
+      "filename": "DSMZ_525a_METHANOHALOPHILUS_MG_NaCl_MEDIUM.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:000270",
+      "source_id": "mediadive.medium:525a",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000271": {
+      "name": "THERMOPHILIC HYDROGEN BACTERIA MEDIUM",
+      "filename": "DSMZ_533_THERMOPHILIC_HYDROGEN_BACTERIA_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000271",
+      "source_id": "mediadive.medium:533",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000272": {
+      "name": "THIOCAPSA HALOPHILA MEDIUM",
+      "filename": "DSMZ_536_THIOCAPSA_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:000272",
+      "source_id": "mediadive.medium:536",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000273": {
+      "name": "MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)",
+      "filename": "DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000273",
+      "source_id": "mediadive.medium:570",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000274": {
+      "name": "DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM",
+      "filename": "DSMZ_590_DICHOTOMICROBIUM_THERMOHALOPHILUM_MEDIUM.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:000274",
+      "source_id": "mediadive.medium:590",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000275": {
+      "name": "HP 101 HALOPHILE MEDIUM",
+      "filename": "DSMZ_625_HP_101_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000275",
+      "source_id": "mediadive.medium:625",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000276": {
+      "name": "HALOPHILE MEDIUM",
+      "filename": "DSMZ_652_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000276",
+      "source_id": "mediadive.medium:652",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000277": {
+      "name": "MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS",
+      "filename": "DSMZ_674_MEDIUM_FOR_ACIDURIC_THERMOPHILIC_BACILLUS_STRAINS.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:000277",
+      "source_id": "mediadive.medium:674",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000278": {
+      "name": "METHANOHALOPHILUS EUHALOBIUS MEDIUM",
+      "filename": "DSMZ_713_METHANOHALOPHILUS_EUHALOBIUS_MEDIUM.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:000278",
+      "source_id": "mediadive.medium:713",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000279": {
+      "name": "PETROTOGA HALOPHILA MEDIUM",
+      "filename": "DSMZ_718a_PETROTOGA_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 35,
+      "id": "CultureMech:000279",
+      "source_id": "mediadive.medium:718a",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000280": {
+      "name": "MEDIUM FOR HALOPHILIC BACILLI",
+      "filename": "DSMZ_73_MEDIUM_FOR_HALOPHILIC_BACILLI.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000280",
+      "source_id": "mediadive.medium:73",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000281": {
+      "name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
+      "filename": "DSMZ_744_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000281",
+      "source_id": "mediadive.medium:744",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000282": {
+      "name": "THERMUS THERMOPHILUS MEDIUM",
+      "filename": "DSMZ_74_THERMUS_THERMOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:000282",
+      "source_id": "mediadive.medium:74",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000283": {
+      "name": "DESULFOCELLA HALOPHILA MEDIUM",
+      "filename": "DSMZ_815a_DESULFOCELLA_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:000283",
+      "source_id": "mediadive.medium:815a",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000284": {
+      "name": "HALOPHILE STARCH-CASEIN MEDIUM",
+      "filename": "JCM_J1005_HALOPHILE_STARCH-CASEIN_MEDIUM.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:000284",
+      "source_id": "mediadive.medium:J1005",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000285": {
+      "name": "HALOPHILIC SOB MEDIUM",
+      "filename": "JCM_J1006_HALOPHILIC_SOB_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:000285",
+      "source_id": "mediadive.medium:J1006",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000286": {
+      "name": "METHANOGENS SALINE WATER MEDIUM",
+      "filename": "JCM_J1027_METHANOGENS_SALINE_WATER_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:000286",
+      "source_id": "mediadive.medium:J1027",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000287": {
+      "name": "METHANOGEN HIGH SALT MEDIUM",
+      "filename": "JCM_J1048_METHANOGEN_HIGH_SALT_MEDIUM.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:000287",
+      "source_id": "mediadive.medium:J1048",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000288": {
+      "name": "MARINE METHANOGENIC MEDIUM",
+      "filename": "JCM_J1106_MARINE_METHANOGENIC_MEDIUM.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:000288",
+      "source_id": "mediadive.medium:J1106",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000289": {
+      "name": "MODIFIED METHANOHALOPHILUS MEDIUM",
+      "filename": "JCM_J1218_MODIFIED_METHANOHALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:000289",
+      "source_id": "mediadive.medium:J1218",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000290": {
+      "name": "MODERATE HALOPHILE MEDIUM 2",
+      "filename": "JCM_J1220_MODERATE_HALOPHILE_MEDIUM_2.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000290",
+      "source_id": "mediadive.medium:J1220",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000291": {
+      "name": "TREPONEMA THERMOPHILUM MEDIUM",
+      "filename": "JCM_J1237_TREPONEMA_THERMOPHILUM_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:000291",
+      "source_id": "mediadive.medium:J1237",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000292": {
+      "name": "HYDROGENOBACTER HALOPHILUS MEDIUM",
+      "filename": "JCM_J128_HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:000292",
+      "source_id": "mediadive.medium:J128",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000293": {
+      "name": "METHANOGEN MS-I MEDIUM",
+      "filename": "JCM_J1315_METHANOGEN_MS-I_MEDIUM.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:000293",
+      "source_id": "mediadive.medium:J1315",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000294": {
+      "name": "HYDROGENOBACTER THERMOPHILUS MEDIUM",
+      "filename": "JCM_J154_HYDROGENOBACTER_THERMOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:000294",
+      "source_id": "mediadive.medium:J154",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000295": {
+      "name": "METHANOGENIUM MEDIUM",
+      "filename": "JCM_J265_METHANOGENIUM_MEDIUM.yaml",
+      "ingredient_count": 37,
+      "id": "CultureMech:000295",
+      "source_id": "mediadive.medium:J265",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000296": {
+      "name": "METHANOSAETA THERMOPHILA MEDIUM",
+      "filename": "JCM_J285_METHANOSAETA_THERMOPHILA_MEDIUM.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:000296",
+      "source_id": "mediadive.medium:J285",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000297": {
+      "name": "PSEUDOMONAS HALOPHILA MEDIUM",
+      "filename": "JCM_J433_PSEUDOMONAS_HALOPHILA_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:000297",
+      "source_id": "mediadive.medium:J433",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000298": {
+      "name": "ARTIFICIAL SEAWATER FOR HALOPHILES",
+      "filename": "JCM_J457_ARTIFICIAL_SEAWATER_FOR_HALOPHILES.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:000298",
+      "source_id": "mediadive.medium:J457",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000299": {
+      "name": "HP 101 HALOPHILE MEDIUM",
+      "filename": "JCM_J464_HP_101_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:000299",
+      "source_id": "mediadive.medium:J464",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000300": {
+      "name": "MODIFIED BALCH'S METHANOGENS MEDIUM",
+      "filename": "JCM_J530_MODIFIED_BALCH_S_METHANOGENS_MEDIUM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:000300",
+      "source_id": "mediadive.medium:J530",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000301": {
+      "name": "MODERATE HALOPHILE MEDIUM",
+      "filename": "JCM_J599_MODERATE_HALOPHILE_MEDIUM.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:000301",
+      "source_id": "mediadive.medium:J599",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000302": {
+      "name": "EXILISPIRA THERMOPHILA MEDIUM",
+      "filename": "JCM_J622_EXILISPIRA_THERMOPHILA_MEDIUM.yaml",
+      "ingredient_count": 22,
+      "id": "CultureMech:000302",
+      "source_id": "mediadive.medium:J622",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000303": {
+      "name": "SPOROLITUUS THERMOPHILUS MEDIUM",
+      "filename": "JCM_J718_SPOROLITUUS_THERMOPHILUS_MEDIUM.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:000303",
+      "source_id": "mediadive.medium:J718",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000304": {
+      "name": "MODIFIED BALCH'S METHANOGEN MEDIUM 1/B",
+      "filename": "JCM_J948_MODIFIED_BALCH_S_METHANOGEN_MEDIUM_1_B.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:000304",
+      "source_id": "mediadive.medium:J948",
+      "source": "MediaDive",
+      "categories": [
+        "ARCHAEA"
+      ]
+    },
+    "CultureMech:000305": {
+      "name": "THERMANAEROBACTER THERMOPHILA MEDIUM",
+      "filename": "JCM_J959_THERMANAEROBACTER_THERMOPHILA_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:000305",
+      "source_id": "mediadive.medium:J959",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "ARCHAEA"
+      ]
+    }
+  }
+}

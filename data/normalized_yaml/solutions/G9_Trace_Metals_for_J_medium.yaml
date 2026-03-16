@@ -1,0 +1,81 @@
+id: CultureMech:015446
+preferred_term: G9 Trace Metals for J medium
+term:
+  id: MediaIngredientMech:UNMAPPED_0097
+  label: G9 Trace Metals for J medium
+composition:
+- preferred_term: Boric acid
+  concentration:
+    value: '3.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: Manganese sulfate monohydrate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86374
+    label: manganese(II) sulfate monohydrate
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62985
+    label: zinc sulfate heptahydrate
+- preferred_term: Ammonium molybdate tetrahydrate
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: CHEBI:79321
+    label: ammonium heptamolybdate tetrahydrate
+- preferred_term: Copper sulfate pentahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: Cobalt nitrate hexahydrate
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78034
+    label: cobalt dinitrate hexahydrate
+- preferred_term: Potassium iodide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8346
+    label: potassium iodide
+notes: |
+  G9 Trace Metals solution for J Medium (UTEX).
+  Provides essential micronutrients for freshwater algae culture.
+
+  Preparation: Add components to approximately 900 mL deionized water in the order
+  listed while stirring continuously. Bring to 1 L total volume.
+
+  Storage: Refrigerator temperature (4°C).
+
+  Final stock concentrations: H3BO3 (0.053 mM), MnSO4·H2O (8.6 µM),
+  ZnSO4·7H2O (1 µM), (NH4)6Mo7O24·4H2O (0.065 µM), CuSO4·5H2O (0.2 µM),
+  Co(NO3)2·6H2O (0.52 µM), KI (0.06 µM)
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0097
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/g9-trace-metals-for-j-medium
+- reference_id: UTEX:g9-trace-metals-for-j-medium
+- reference_id: MediaIngredientMech:UNMAPPED_0097

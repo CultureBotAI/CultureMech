@@ -1,0 +1,78 @@
+# Manifest of unmapped CommunityMech media requiring CultureMech records
+# Created: 2026-03-14
+# Purpose: Track 8 unique media that need new CultureMech YAML records
+
+media:
+  - name: "Glycerol Fermentation Medium for DIET Coculture"
+    community_ids:
+      - CommunityMech:000031
+    source_files:
+      - kb/communities/Geobacter_Clostridium_DIET.yaml
+    category_hint: specialized
+    notes: "DIET coculture medium for Geobacter-Clostridium syntrophic partnership"
+
+  - name: "Half-strength Murashige-Skoog medium for Arabidopsis growth"
+    community_ids:
+      - CommunityMech:000003
+      - CommunityMech:000022
+    source_files:
+      - kb/communities/At_RSPHERE_SynCom.yaml
+      - kb/communities/Dangl_SynComm_35.yaml
+    category_hint: specialized
+    notes: "Plant growth medium for Arabidopsis thaliana; appears in 2 communities"
+
+  - name: "Modified DSM 120 Medium for DIET Coculture"
+    community_ids:
+      - CommunityMech:000033
+    source_files:
+      - kb/communities/Geobacter_Methanosarcina_DIET.yaml
+    category_hint: specialized
+    notes: "DIET coculture medium for Geobacter-Methanosarcina syntrophic partnership"
+
+  - name: "Modified Freshwater Medium for DIET Coculture"
+    community_ids:
+      - CommunityMech:000032
+    source_files:
+      - kb/communities/Geobacter_Methanosaeta_DIET.yaml
+    category_hint: specialized
+    notes: "DIET coculture medium for Geobacter-Methanosaeta syntrophic partnership"
+
+  - name: "Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum"
+    community_ids:
+      - CommunityMech:000059
+    source_files:
+      - kb/communities/Richmond_Mine_AMD_Biofilm.yaml
+    category_hint: archaea
+    notes: "Acidophilic medium for nitrogen-fixing iron oxidizer in AMD biofilm"
+
+  - name: "Nitrogen-free B&D medium for Lotus japonicus growth"
+    community_ids:
+      - CommunityMech:000040
+    source_files:
+      - kb/communities/Lotus_LjSC3.yaml
+    category_hint: specialized
+    notes: "Plant growth medium for Lotus japonicus rhizosphere studies"
+
+  - name: "Nitrogen-free plant nutrient solution for soybean growth"
+    community_ids:
+      - CommunityMech:000064
+    source_files:
+      - kb/communities/Soybean_N_Fixation_sfSynCom.yaml
+    category_hint: specialized
+    notes: "Plant growth medium for soybean nitrogen fixation studies"
+
+  - name: "PCS-FP medium for thermophilic cellulose degradation"
+    community_ids:
+      - CommunityMech:000061
+    source_files:
+      - kb/communities/SF356_Cellulose_Degrader.yaml
+    category_hint: archaea
+    notes: "Thermophilic medium (60°C) for cellulose degradation consortium"
+
+# Summary statistics
+summary:
+  total_media: 8
+  total_community_references: 9
+  communitymech_repo_path: "../CommunityMech/CommunityMech"
+  culturemech_output_dir: "data/normalized_yaml"
+  import_date: "2026-03-14"

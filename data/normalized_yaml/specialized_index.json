@@ -1,0 +1,1165 @@
+{
+  "generated": "2026-03-16T05:30:17.554236+00:00",
+  "category": "specialized",
+  "count": 105,
+  "recipes": {
+    "CultureMech:015333": {
+      "name": "PHOTOTROPHIC MEDIUM",
+      "filename": "DSMZ_1129_PHOTOTROPHIC_MEDIUM.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015333",
+      "source_id": "mediadive.medium:1129",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015334": {
+      "name": "1/2 TRYPTIC SOY BROTH (ANAEROBIC)",
+      "filename": "DSMZ_1205_1_2_TRYPTIC_SOY_BROTH_ANAEROBIC.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015334",
+      "source_id": "mediadive.medium:1205",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015335": {
+      "name": "MARINE AGAR",
+      "filename": "DSMZ_123_MARINE_AGAR.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015335",
+      "source_id": "mediadive.medium:123",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015336": {
+      "name": "MARINE MEDIUM WITH PYRUVATE",
+      "filename": "DSMZ_1303_MARINE_MEDIUM_WITH_PYRUVATE.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015336",
+      "source_id": "mediadive.medium:1303",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015337": {
+      "name": "MARINE AMMONIUM MINERAL SALTS",
+      "filename": "DSMZ_1313_MARINE_AMMONIUM_MINERAL_SALTS.yaml",
+      "ingredient_count": 27,
+      "id": "CultureMech:015337",
+      "source_id": "mediadive.medium:1313",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015338": {
+      "name": "ANAEROBIC THAUERA MEDIUM",
+      "filename": "DSMZ_1315_ANAEROBIC_THAUERA_MEDIUM.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015338",
+      "source_id": "mediadive.medium:1315",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015339": {
+      "name": "BACTO MARINE BROTH WITH NA-ACETATE",
+      "filename": "DSMZ_1354_BACTO_MARINE_BROTH_WITH_NA-ACETATE.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015339",
+      "source_id": "mediadive.medium:1354",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015340": {
+      "name": "ACETOBACTERIUM MEDIUM (MARINE)",
+      "filename": "DSMZ_135a_ACETOBACTERIUM_MEDIUM_MARINE.yaml",
+      "ingredient_count": 34,
+      "id": "CultureMech:015340",
+      "source_id": "mediadive.medium:135a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015341": {
+      "name": "MODIFIED BACTO MARINE BROTH (DIFCO 2216)",
+      "filename": "DSMZ_1517_MODIFIED_BACTO_MARINE_BROTH_DIFCO_2216.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015341",
+      "source_id": "mediadive.medium:1517",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015342": {
+      "name": "SPIRIBACTER MEDIUM (830 + 12% Marine salts)",
+      "filename": "DSMZ_1537_SPIRIBACTER_MEDIUM_830_12_Marine_salts.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015342",
+      "source_id": "mediadive.medium:1537",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015343": {
+      "name": "MARINES PLANCTOMYCES MEDIUM",
+      "filename": "DSMZ_1560_MARINES_PLANCTOMYCES_MEDIUM.yaml",
+      "ingredient_count": 45,
+      "id": "CultureMech:015343",
+      "source_id": "mediadive.medium:1560",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015344": {
+      "name": "Medium for broad range phototrophic bacteria",
+      "filename": "DSMZ_1561_Medium_for_broad_range_phototrophic_bacteria.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015344",
+      "source_id": "mediadive.medium:1561",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015345": {
+      "name": "MARINES PLANCTOMYCES MEDIUM MODIFIED I",
+      "filename": "DSMZ_1695_MARINES_PLANCTOMYCES_MEDIUM_MODIFIED_I.yaml",
+      "ingredient_count": 45,
+      "id": "CultureMech:015345",
+      "source_id": "mediadive.medium:1695",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015346": {
+      "name": "ANAEROBIC AZOSPIRILLUM MEDIUM",
+      "filename": "DSMZ_1701_ANAEROBIC_AZOSPIRILLUM_MEDIUM.yaml",
+      "ingredient_count": 20,
+      "id": "CultureMech:015346",
+      "source_id": "mediadive.medium:1701",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015347": {
+      "name": "GAM Broth (Gifu Anaerobic Medium Broth)",
+      "filename": "DSMZ_1713_GAM_Broth_Gifu_Anaerobic_Medium_Broth.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015347",
+      "source_id": "mediadive.medium:1713",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015348": {
+      "name": "GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)",
+      "filename": "DSMZ_1715_GAM_Broth_mod._Gifu_Anaerobic_Medium_Broth_modified.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015348",
+      "source_id": "mediadive.medium:1715",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015349": {
+      "name": "CYTOPHAGA (marine) MEDIUM",
+      "filename": "DSMZ_172_CYTOPHAGA_marine_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015349",
+      "source_id": "mediadive.medium:172",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015350": {
+      "name": "DESULFOBULBUS SP. MEDIUM (MARINE)",
+      "filename": "DSMZ_195b_DESULFOBULBUS_SP._MEDIUM_MARINE.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015350",
+      "source_id": "mediadive.medium:195b",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015351": {
+      "name": "PROPIONIGENIUM MODESTUM MEDIUM (MARINE)",
+      "filename": "DSMZ_293_PROPIONIGENIUM_MODESTUM_MEDIUM_MARINE.yaml",
+      "ingredient_count": 19,
+      "id": "CultureMech:015351",
+      "source_id": "mediadive.medium:293",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015352": {
+      "name": "SPOROMUSA MEDIUM (MARINE)",
+      "filename": "DSMZ_311b_SPOROMUSA_MEDIUM_MARINE.yaml",
+      "ingredient_count": 36,
+      "id": "CultureMech:015352",
+      "source_id": "mediadive.medium:311b",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015353": {
+      "name": "PHOTOBACTERIUM MEDIUM",
+      "filename": "DSMZ_32_PHOTOBACTERIUM_MEDIUM.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:015353",
+      "source_id": "mediadive.medium:32",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015354": {
+      "name": "ACIDIANUS MEDIUM (ANAEROBIC)",
+      "filename": "DSMZ_358a_ACIDIANUS_MEDIUM_ANAEROBIC.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:015354",
+      "source_id": "mediadive.medium:358a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015355": {
+      "name": "ANAEROBIC FRESHWATER (FWM) MEDIUM",
+      "filename": "DSMZ_503_ANAEROBIC_FRESHWATER_FWM_MEDIUM.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015355",
+      "source_id": "mediadive.medium:503",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015356": {
+      "name": "ANAEROBIC SEAWATER (SWM) MEDIUM",
+      "filename": "DSMZ_504_ANAEROBIC_SEAWATER_SWM_MEDIUM.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015356",
+      "source_id": "mediadive.medium:504",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015357": {
+      "name": "BACTO MARINE BROTH (DIFCO 2216)",
+      "filename": "DSMZ_514_BACTO_MARINE_BROTH_DIFCO_2216.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015357",
+      "source_id": "mediadive.medium:514",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015358": {
+      "name": "HALF STRENGTH BACTO MARINE BROTH",
+      "filename": "DSMZ_514a_HALF_STRENGTH_BACTO_MARINE_BROTH.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015358",
+      "source_id": "mediadive.medium:514a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015359": {
+      "name": "MODIFIED BACTO MARINE BROTH",
+      "filename": "DSMZ_514d_MODIFIED_BACTO_MARINE_BROTH.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:015359",
+      "source_id": "mediadive.medium:514d",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015360": {
+      "name": "MARINE BROTH (ANAEROB)",
+      "filename": "DSMZ_514e_MARINE_BROTH_ANAEROB.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015360",
+      "source_id": "mediadive.medium:514e",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015361": {
+      "name": "MARINE BROTH (ROTH CP73)",
+      "filename": "DSMZ_514f_MARINE_BROTH_ROTH_CP73.yaml",
+      "ingredient_count": 17,
+      "id": "CultureMech:015361",
+      "source_id": "mediadive.medium:514f",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015362": {
+      "name": "HALF STRENGTH BACTO MARINE BROTH with 50% Seawater",
+      "filename": "DSMZ_514g_HALF_STRENGTH_BACTO_MARINE_BROTH_with_50_Seawater.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015362",
+      "source_id": "mediadive.medium:514g",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015363": {
+      "name": "MARINE CAULOBACTER MEDIUM",
+      "filename": "DSMZ_601_MARINE_CAULOBACTER_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015363",
+      "source_id": "mediadive.medium:601",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015364": {
+      "name": "BACTO MARINE AGAR",
+      "filename": "DSMZ_604_BACTO_MARINE_AGAR.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015364",
+      "source_id": "mediadive.medium:604",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015365": {
+      "name": "BACTO PHOTOBACTERIUM BROTH",
+      "filename": "DSMZ_608_BACTO_PHOTOBACTERIUM_BROTH.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015365",
+      "source_id": "mediadive.medium:608",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015366": {
+      "name": "MEDIUM FOR MARINE METHYLOTROPHS",
+      "filename": "DSMZ_750_MEDIUM_FOR_MARINE_METHYLOTROPHS.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:015366",
+      "source_id": "mediadive.medium:750",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015367": {
+      "name": "MARINE THERMOCOCCUS MEDIUM",
+      "filename": "DSMZ_760_MARINE_THERMOCOCCUS_MEDIUM.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015367",
+      "source_id": "mediadive.medium:760",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015368": {
+      "name": "ANAEROBIC CHOLESTEROL MEDIUM",
+      "filename": "DSMZ_858_ANAEROBIC_CHOLESTEROL_MEDIUM.yaml",
+      "ingredient_count": 29,
+      "id": "CultureMech:015368",
+      "source_id": "mediadive.medium:858",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015369": {
+      "name": "ANAEROBIC TRYPTIC SOY BROTH MEDIUM",
+      "filename": "DSMZ_869_ANAEROBIC_TRYPTIC_SOY_BROTH_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015369",
+      "source_id": "mediadive.medium:869",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015370": {
+      "name": "SULFOLOBUS MEDIUM (ANAEROBIC)",
+      "filename": "DSMZ_88a_SULFOLOBUS_MEDIUM_ANAEROBIC.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015370",
+      "source_id": "mediadive.medium:88a",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015432": {
+      "name": "Glycerol Fermentation Medium for DIET Coculture",
+      "filename": "Glycerol_Fermentation_Medium_for_DIET_Coculture.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015432",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015433": {
+      "name": "Half-strength Murashige-Skoog medium for Arabidopsis growth",
+      "filename": "Half_strength_Murashige_Skoog_medium_for_Arabidopsis_growth.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015433",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015371": {
+      "name": "MARINE AGAR 2216 (pH 8.5)",
+      "filename": "JCM_J1001_MARINE_AGAR_2216_pH_8.5.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015371",
+      "source_id": "mediadive.medium:J1001",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015372": {
+      "name": "MARINE AGAR 2216 WITH  8.0% NaCl",
+      "filename": "JCM_J1015_MARINE_AGAR_2216_WITH_8.0_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015372",
+      "source_id": "mediadive.medium:J1015",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015373": {
+      "name": "MARINE AGAR 2216 (pH 9.0)",
+      "filename": "JCM_J1016_MARINE_AGAR_2216_pH_9.0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015373",
+      "source_id": "mediadive.medium:J1016",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015374": {
+      "name": "IRD MARINE DESULFOVIBRIO MEDIUM",
+      "filename": "JCM_J1043_IRD_MARINE_DESULFOVIBRIO_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015374",
+      "source_id": "mediadive.medium:J1043",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015375": {
+      "name": "QUARTER STRENGTH MARINE BROTH 2216",
+      "filename": "JCM_J1049_QUARTER_STRENGTH_MARINE_BROTH_2216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015375",
+      "source_id": "mediadive.medium:J1049",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015376": {
+      "name": "MARINE AOB MEDIUM (A)",
+      "filename": "JCM_J1055_MARINE_AOB_MEDIUM_A.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015376",
+      "source_id": "mediadive.medium:J1055",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015377": {
+      "name": "MARINE AOB MEDIUM (B)",
+      "filename": "JCM_J1056_MARINE_AOB_MEDIUM_B.yaml",
+      "ingredient_count": 16,
+      "id": "CultureMech:015377",
+      "source_id": "mediadive.medium:J1056",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015378": {
+      "name": "PYGV MARINE MEDIUM (B)",
+      "filename": "JCM_J1059_PYGV_MARINE_MEDIUM_B.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015378",
+      "source_id": "mediadive.medium:J1059",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015379": {
+      "name": "MARINE SRB MEDIUM",
+      "filename": "JCM_J1073_MARINE_SRB_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015379",
+      "source_id": "mediadive.medium:J1073",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015380": {
+      "name": "ANAEROBIC NATURAL SEAWATER MEDIUM",
+      "filename": "JCM_J1102_ANAEROBIC_NATURAL_SEAWATER_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015380",
+      "source_id": "mediadive.medium:J1102",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015381": {
+      "name": "ANAEROBIC ALKALINE LB MEDIUM",
+      "filename": "JCM_J1111_ANAEROBIC_ALKALINE_LB_MEDIUM.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015381",
+      "source_id": "mediadive.medium:J1111",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015382": {
+      "name": "IRD MARINE DESULFOVIBRIO MEDIUM-2",
+      "filename": "JCM_J1116_IRD_MARINE_DESULFOVIBRIO_MEDIUM-2.yaml",
+      "ingredient_count": 22,
+      "id": "CultureMech:015382",
+      "source_id": "mediadive.medium:J1116",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015383": {
+      "name": "IRD MARINE DESULFOVIBRIO MEDIUM-3",
+      "filename": "JCM_J1117_IRD_MARINE_DESULFOVIBRIO_MEDIUM-3.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015383",
+      "source_id": "mediadive.medium:J1117",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015384": {
+      "name": "ARTFICIAL MARINE WATER MEDIUM",
+      "filename": "JCM_J1123_ARTFICIAL_MARINE_WATER_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015384",
+      "source_id": "mediadive.medium:J1123",
+      "source": "MediaDive",
+      "solution_count": 3,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015385": {
+      "name": "MARINE BROTH 2216 WITH CELLOBIOSE",
+      "filename": "JCM_J1127_MARINE_BROTH_2216_WITH_CELLOBIOSE.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015385",
+      "source_id": "mediadive.medium:J1127",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015386": {
+      "name": "MEDIUM FOR MARINE SPIROCHAETES",
+      "filename": "JCM_J1150_MEDIUM_FOR_MARINE_SPIROCHAETES.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:015386",
+      "source_id": "mediadive.medium:J1150",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015387": {
+      "name": "MARINE AGAR 2216 WITH 1% STARCH",
+      "filename": "JCM_J1164_MARINE_AGAR_2216_WITH_1_STARCH.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015387",
+      "source_id": "mediadive.medium:J1164",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015388": {
+      "name": "MODIFIED MEDIUM FOR MARINE SPIROCHAETES",
+      "filename": "JCM_J1172_MODIFIED_MEDIUM_FOR_MARINE_SPIROCHAETES.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015388",
+      "source_id": "mediadive.medium:J1172",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015389": {
+      "name": "MARINE METHANOBACTERIUM MEDIUM",
+      "filename": "JCM_J1186_MARINE_METHANOBACTERIUM_MEDIUM.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015389",
+      "source_id": "mediadive.medium:J1186",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015390": {
+      "name": "MARINE CLOSTRIDIUM MEDIUM",
+      "filename": "JCM_J1187_MARINE_CLOSTRIDIUM_MEDIUM.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015390",
+      "source_id": "mediadive.medium:J1187",
+      "source": "MediaDive",
+      "solution_count": 1,
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015391": {
+      "name": "MARINE CHLOROFLEXI MEDIUM",
+      "filename": "JCM_J1188_MARINE_CHLOROFLEXI_MEDIUM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015391",
+      "source_id": "mediadive.medium:J1188",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015392": {
+      "name": "MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)",
+      "filename": "JCM_J1189_MODIFIED_MARINE_AGAR_2216_WITH_5_NaCl_pH_9.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015392",
+      "source_id": "mediadive.medium:J1189",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015393": {
+      "name": "MARINE AGAR 2216",
+      "filename": "JCM_J118_MARINE_AGAR_2216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015393",
+      "source_id": "mediadive.medium:J118",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015394": {
+      "name": "ANAEROBIC ALKALINE GLUCOSE MEDIUM",
+      "filename": "JCM_J1228_ANAEROBIC_ALKALINE_GLUCOSE_MEDIUM.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015394",
+      "source_id": "mediadive.medium:J1228",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015395": {
+      "name": "MARINE BROTH 2216 WITH PYRUVATE",
+      "filename": "JCM_J1244_MARINE_BROTH_2216_WITH_PYRUVATE.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015395",
+      "source_id": "mediadive.medium:J1244",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015396": {
+      "name": "MODIFIED MARINE AGAR 2216",
+      "filename": "JCM_J1251_MODIFIED_MARINE_AGAR_2216.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015396",
+      "source_id": "mediadive.medium:J1251",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015397": {
+      "name": "ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM",
+      "filename": "JCM_J1325_ANAEROBIC_DOUBLE-STRENGTH_R2A_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:015397",
+      "source_id": "mediadive.medium:J1325",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015398": {
+      "name": "SWMTY-MARINE MEDIUM",
+      "filename": "JCM_J227_SWMTY-MARINE_MEDIUM.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015398",
+      "source_id": "mediadive.medium:J227",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015399": {
+      "name": "PYGV MARINE MEDIUM (A)",
+      "filename": "JCM_J304_PYGV_MARINE_MEDIUM_A.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:015399",
+      "source_id": "mediadive.medium:J304",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015400": {
+      "name": "MARINE AGAR 2216 WITH  3.1% NaCl",
+      "filename": "JCM_J357_MARINE_AGAR_2216_WITH_3.1_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015400",
+      "source_id": "mediadive.medium:J357",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015401": {
+      "name": "MARINE MEDIUM WITH SULFUR",
+      "filename": "JCM_J375_MARINE_MEDIUM_WITH_SULFUR.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:015401",
+      "source_id": "mediadive.medium:J375",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015402": {
+      "name": "MARINE MEDIUM WITH THIOSULFATE",
+      "filename": "JCM_J376_MARINE_MEDIUM_WITH_THIOSULFATE.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015402",
+      "source_id": "mediadive.medium:J376",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015403": {
+      "name": "MARINE DESULFOSARCINA MEDIUM",
+      "filename": "JCM_J391_MARINE_DESULFOSARCINA_MEDIUM.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015403",
+      "source_id": "mediadive.medium:J391",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015404": {
+      "name": "Fe(III)-REDUCER MARINE ENRICHMENT MEDIUM",
+      "filename": "JCM_J411_Fe_III_-REDUCER_MARINE_ENRICHMENT_MEDIUM.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015404",
+      "source_id": "mediadive.medium:J411",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015405": {
+      "name": "MODIFIED MARINE MEDIUM",
+      "filename": "JCM_J416_MODIFIED_MARINE_MEDIUM.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015405",
+      "source_id": "mediadive.medium:J416",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015406": {
+      "name": "MARINE BROTH 2216",
+      "filename": "JCM_J41_MARINE_BROTH_2216.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015406",
+      "source_id": "mediadive.medium:J41",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015407": {
+      "name": "A1 MARINE MEDIUM",
+      "filename": "JCM_J425_A1_MARINE_MEDIUM.yaml",
+      "ingredient_count": 18,
+      "id": "CultureMech:015407",
+      "source_id": "mediadive.medium:J425",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015408": {
+      "name": "MODIFIED MARINE MEDIUM FOR DETHIOSULFOBACTER",
+      "filename": "JCM_J501_MODIFIED_MARINE_MEDIUM_FOR_DETHIOSULFOBACTER.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015408",
+      "source_id": "mediadive.medium:J501",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015409": {
+      "name": "MODIFIED MARINE MEDIUM FOR DESULFOVIBRIO TOKYOENSIS",
+      "filename": "JCM_J502_MODIFIED_MARINE_MEDIUM_FOR_DESULFOVIBRIO_TOKYOENSIS.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:015409",
+      "source_id": "mediadive.medium:J502",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015410": {
+      "name": "MARINE AGAR 2216 WITH 8% NaCl",
+      "filename": "JCM_J532_MARINE_AGAR_2216_WITH_8_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015410",
+      "source_id": "mediadive.medium:J532",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015411": {
+      "name": "DILUTED MARINE AGAR",
+      "filename": "JCM_J644_DILUTED_MARINE_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015411",
+      "source_id": "mediadive.medium:J644",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015412": {
+      "name": "BREWER ANAEROBIC AGAR WITH 2% NaCl",
+      "filename": "JCM_J667_BREWER_ANAEROBIC_AGAR_WITH_2_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015412",
+      "source_id": "mediadive.medium:J667",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015413": {
+      "name": "ANAEROBIC TYEG MEDIUM",
+      "filename": "JCM_J684_ANAEROBIC_TYEG_MEDIUM.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015413",
+      "source_id": "mediadive.medium:J684",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015414": {
+      "name": "ANAEROBIC SULFOLOBALES MEDIUM",
+      "filename": "JCM_J692_ANAEROBIC_SULFOLOBALES_MEDIUM.yaml",
+      "ingredient_count": 15,
+      "id": "CultureMech:015414",
+      "source_id": "mediadive.medium:J692",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015415": {
+      "name": "ANAEROBIC MARINE BROTH 2216",
+      "filename": "JCM_J719_ANAEROBIC_MARINE_BROTH_2216.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015415",
+      "source_id": "mediadive.medium:J719",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015416": {
+      "name": "ANAEROBIC BRAIN HEART INFUSION BROTH",
+      "filename": "JCM_J723_ANAEROBIC_BRAIN_HEART_INFUSION_BROTH.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015416",
+      "source_id": "mediadive.medium:J723",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015417": {
+      "name": "MARINE AGAR 2216 with 5% NaCl",
+      "filename": "JCM_J732_MARINE_AGAR_2216_with_5_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015417",
+      "source_id": "mediadive.medium:J732",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015418": {
+      "name": "MARINE AGAR 2216 WITH 10% NaCl",
+      "filename": "JCM_J733_MARINE_AGAR_2216_WITH_10_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015418",
+      "source_id": "mediadive.medium:J733",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015419": {
+      "name": "DESULFOVIBRIO MARINE MEDIUM",
+      "filename": "JCM_J750_DESULFOVIBRIO_MARINE_MEDIUM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015419",
+      "source_id": "mediadive.medium:J750",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015420": {
+      "name": "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl",
+      "filename": "JCM_J762_HALF_STRENGTH_MARINE_MEDIUM_WITH_1.0_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015420",
+      "source_id": "mediadive.medium:J762",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015421": {
+      "name": "MARINE AGAR WITH 1% TWEEN 20",
+      "filename": "JCM_J768_MARINE_AGAR_WITH_1_TWEEN_20.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015421",
+      "source_id": "mediadive.medium:J768",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015422": {
+      "name": "ANAEROBIC TYECas MEDIUM",
+      "filename": "JCM_J858_ANAEROBIC_TYECas_MEDIUM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015422",
+      "source_id": "mediadive.medium:J858",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015423": {
+      "name": "IRD MARINE CLOSTRIDA MEDIUM",
+      "filename": "JCM_J909_IRD_MARINE_CLOSTRIDA_MEDIUM.yaml",
+      "ingredient_count": 23,
+      "id": "CultureMech:015423",
+      "source_id": "mediadive.medium:J909",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015424": {
+      "name": "MODIFIED MARINE AGAR 2216",
+      "filename": "JCM_J913_MODIFIED_MARINE_AGAR_2216.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015424",
+      "source_id": "mediadive.medium:J913",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015425": {
+      "name": "HALF STRENGTH MARINE AGAR",
+      "filename": "JCM_J916_HALF_STRENGTH_MARINE_AGAR.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015425",
+      "source_id": "mediadive.medium:J916",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015426": {
+      "name": "MARINE AGAR 2216 WITH 1% NaCl",
+      "filename": "JCM_J922_MARINE_AGAR_2216_WITH_1_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:015426",
+      "source_id": "mediadive.medium:J922",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015427": {
+      "name": "IRD MARINE CLOSTRIDIA MEDIUM-2",
+      "filename": "JCM_J938_IRD_MARINE_CLOSTRIDIA_MEDIUM-2.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:015427",
+      "source_id": "mediadive.medium:J938",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015428": {
+      "name": "ANAEROBIC BICARBONATE-BUFFERED MEDIUM WITH PHENOL",
+      "filename": "JCM_J981_ANAEROBIC_BICARBONATE-BUFFERED_MEDIUM_WITH_PHENOL.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:015428",
+      "source_id": "mediadive.medium:J981",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015429": {
+      "name": "ANAEROBIC ALKALINE YE MEDIUM",
+      "filename": "JCM_J993_ANAEROBIC_ALKALINE_YE_MEDIUM.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:015429",
+      "source_id": "mediadive.medium:J993",
+      "source": "MediaDive",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015430": {
+      "name": "Tris-buffered artificial seawater with nh4cl and sulfolactate",
+      "filename": "MEDIADB_16_Tris-buffered_artificial_seawater_with_nh4cl_and_s.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015430",
+      "source_id": "MEDIADB:16",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015431": {
+      "name": "Tris-buffered artificial seawater with NH4Cl and acetate",
+      "filename": "MEDIADB_17_Tris-buffered_artificial_seawater_with_NH4Cl_and_a.yaml",
+      "ingredient_count": 24,
+      "id": "CultureMech:015431",
+      "source_id": "MEDIADB:17",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ]
+    },
+    "CultureMech:015434": {
+      "name": "Modified DSM 120 Medium for DIET Coculture",
+      "filename": "Modified_DSM_120_Medium_for_DIET_Coculture.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015434",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015435": {
+      "name": "Modified Freshwater Medium for DIET Coculture",
+      "filename": "Modified_Freshwater_Medium_for_DIET_Coculture.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015435",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015437": {
+      "name": "Nitrogen-free B&D medium for Lotus japonicus growth",
+      "filename": "Nitrogen_free_B&D_medium_for_Lotus_japonicus_growth.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015437",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015438": {
+      "name": "Nitrogen-free plant nutrient solution for soybean growth",
+      "filename": "Nitrogen_free_plant_nutrient_solution_for_soybean_growth.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:015438",
+      "source": "unknown",
+      "categories": [
+        "specialized"
+      ],
+      "has_hierarchy_enrichment": true
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "migration_metadata": {
+    "migration_date": "2026-03-15",
+    "migration_version": "1.0",
+    "total_items_processed": 19,
+    "total_solutions_created": 10,
+    "total_simple_ingredients": 6,
+    "total_soil_ingredients": 3,
+    "source_file": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MediaIngredientMech/data/curated/UNMAPPED_COMPLEX_MEDIA.md",
+    "target_directory": "data/normalized_yaml/solutions/"
+  },
+
+  "solutions_created": [
+    {
+      "culturemech_id": "CultureMech:015440",
+      "name": "Beijerinck's Solution",
+      "mediaingredientmech_id": "UNMAPPED_0074",
+      "file_path": "data/normalized_yaml/solutions/Beijerinck_Solution.yaml",
+      "source_media": ["algae/TAP_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/beijerincks-solution",
+      "ingredient_count": 3,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015441",
+      "name": "Bold Trace Stock",
+      "mediaingredientmech_id": "UNMAPPED_0065",
+      "file_path": "data/normalized_yaml/solutions/Bold_Trace_Stock.yaml",
+      "source_media": ["algae/Bold_Basal_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/bbm-bold-trace-stock-solution",
+      "ingredient_count": 6,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015442",
+      "name": "Boron Stock",
+      "mediaingredientmech_id": "UNMAPPED_0064",
+      "file_path": "data/normalized_yaml/solutions/Boron_Stock.yaml",
+      "source_media": ["algae/Bold_Basal_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/bbm-boron-stock-solution",
+      "ingredient_count": 1,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015443",
+      "name": "EDTA Stock",
+      "mediaingredientmech_id": "UNMAPPED_0062",
+      "file_path": "data/normalized_yaml/solutions/EDTA_Stock.yaml",
+      "source_media": ["algae/Bold_Basal_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/bbm-edta-stock-solution",
+      "ingredient_count": 2,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015444",
+      "name": "DAS Macro Solution",
+      "mediaingredientmech_id": "UNMAPPED_0081",
+      "file_path": "data/normalized_yaml/solutions/DAS_Macro_Solution.yaml",
+      "source_media": ["algae/Dasycladales_Seawater_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/das-macro-solution",
+      "ingredient_count": 2,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015445",
+      "name": "DAS Vitamin Cocktail",
+      "mediaingredientmech_id": "UNMAPPED_0045",
+      "file_path": "data/normalized_yaml/solutions/DAS_Vitamin_Cocktail.yaml",
+      "source_media": [
+        "algae/Dasycladales_Seawater_Medium.yaml",
+        "algae/1_1_DYIII_PEA_+_Gr+_Medium.yaml"
+      ],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/das-vitamin-cocktail",
+      "ingredient_count": 6,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015446",
+      "name": "G9 Trace Metals for J medium",
+      "mediaingredientmech_id": "UNMAPPED_0097",
+      "file_path": "data/normalized_yaml/solutions/G9_Trace_Metals_for_J_medium.yaml",
+      "source_media": ["algae/J_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/g9-trace-metals-for-j-medium",
+      "ingredient_count": 7,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015447",
+      "name": "Macro Component 1 for J Medium",
+      "mediaingredientmech_id": "UNMAPPED_0095",
+      "file_path": "data/normalized_yaml/solutions/Macro_Component_1_for_J_Medium.yaml",
+      "source_media": ["algae/J_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/macro-component-1-for-j-medium",
+      "ingredient_count": 4,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015448",
+      "name": "Macro Component 2 for J medium",
+      "mediaingredientmech_id": "UNMAPPED_0096",
+      "file_path": "data/normalized_yaml/solutions/Macro_Component_2_for_J_medium.yaml",
+      "source_media": ["algae/J_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/macro-component-2-for-j-medium",
+      "ingredient_count": 4,
+      "status": "CREATED"
+    },
+    {
+      "culturemech_id": "CultureMech:015449",
+      "name": "Minor Nutrients",
+      "mediaingredientmech_id": "UNMAPPED_0099",
+      "file_path": "data/normalized_yaml/solutions/Minor_Nutrients.yaml",
+      "source_media": ["algae/Snow_Algae_Medium.yaml"],
+      "composition_source": "UTEX Culture Collection",
+      "utex_url": "https://utex.org/products/minor-nutrients",
+      "ingredient_count": 9,
+      "status": "CREATED"
+    }
+  ],
+
+  "simple_ingredients": [
+    {
+      "name": "Beef extract",
+      "mediaingredientmech_id": "UNMAPPED_0068",
+      "occurrences": 302,
+      "status": "IN_UNMAPPED_LIST",
+      "action_needed": "Map in MediaIngredientMech to FOODON",
+      "notes": "Commercial complex extract, widely used in bacterial media"
+    },
+    {
+      "name": "Malt extract",
+      "mediaingredientmech_id": "UNMAPPED_0089",
+      "occurrences": 298,
+      "status": "IN_UNMAPPED_LIST",
+      "action_needed": "Map in MediaIngredientMech to FOODON",
+      "notes": "Commercial complex extract, widely used in fungal/yeast media"
+    },
+    {
+      "name": "Proteose Peptone",
+      "mediaingredientmech_id": "UNMAPPED_0055",
+      "occurrences": 383,
+      "status": "IN_UNMAPPED_LIST",
+      "action_needed": "Map in MediaIngredientMech to FOODON",
+      "notes": "Commercial peptone product, widely used in bacterial media"
+    },
+    {
+      "name": "Sphagnum extract",
+      "mediaingredientmech_id": "UNMAPPED_0087",
+      "occurrences": 1,
+      "status": "IN_UNMAPPED_LIST",
+      "action_needed": "Keep as simple ingredient in MediaIngredientMech",
+      "notes": "Natural extract from Sphagnum moss, variable composition"
+    },
+    {
+      "name": "Spir solution",
+      "mediaingredientmech_id": "UNMAPPED_0043",
+      "occurrences": 2,
+      "status": "IN_UNMAPPED_LIST",
+      "action_needed": "Research composition to determine if solution or ingredient",
+      "notes": "Used in Spirulina medium, needs further investigation"
+    },
+    {
+      "name": "CaSO4·2H2O saturated solution",
+      "mediaingredientmech_id": "UNMAPPED_0091",
+      "occurrences": 1,
+      "status": "DOCUMENTED",
+      "action_needed": "Keep as simple ingredient with preparation notes",
+      "notes": "Saturated solution of calcium sulfate dihydrate (gypsum), solubility ~2.4 g/L at 25°C"
+    }
+  ],
+
+  "soil_ingredients": [
+    {
+      "name": "CR1 Soil",
+      "mediaingredientmech_id": "UNMAPPED_0012",
+      "occurrences": 14,
+      "status": "DOCUMENTED",
+      "action_needed": "Document as environmental sample in MediaIngredientMech",
+      "notes": "Specific soil sample/type used in diatom culture, undefined composition"
+    },
+    {
+      "name": "Green House Soil",
+      "mediaingredientmech_id": "UNMAPPED_0015",
+      "occurrences": 11,
+      "status": "DOCUMENTED",
+      "action_needed": "Document as environmental sample in MediaIngredientMech",
+      "notes": "Greenhouse soil sample used in soil-water media, variable composition"
+    },
+    {
+      "name": "Vermont Soil",
+      "mediaingredientmech_id": "UNMAPPED_0060",
+      "occurrences": 1,
+      "status": "DOCUMENTED",
+      "action_needed": "Document as environmental sample from Vermont",
+      "notes": "Vermont soil sample used in VT soil-water medium, geographic origin specified"
+    }
+  ],
+
+  "summary_statistics": {
+    "total_ingredients_analyzed": 44,
+    "solutions_created": 10,
+    "simple_ingredients_identified": 6,
+    "soil_ingredients_identified": 3,
+    "total_composition_entries": 44,
+    "chebi_terms_added": 44,
+    "mediaingredientmech_ids_added": 3,
+    "utex_references_added": 10
+  },
+
+  "validation_status": {
+    "schema_validation": "PENDING",
+    "id_registry_updated": true,
+    "duplicate_check": "PENDING",
+    "indexes_regenerated": "PENDING"
+  },
+
+  "next_steps": [
+    "Validate all solution YAML files against schema",
+    "Check for duplicate solutions using fingerprinting",
+    "Regenerate all indexes (recipe, ingredient, etc.)",
+    "Update ingredient aggregation",
+    "Map simple ingredients in MediaIngredientMech",
+    "Document soil ingredients in MediaIngredientMech",
+    "Optional: Update media files to reference new solutions"
+  ]
+}

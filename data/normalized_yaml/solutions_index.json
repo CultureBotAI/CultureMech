@@ -1,0 +1,77 @@
+{
+  "generated": "2026-03-16T05:30:17.534612+00:00",
+  "category": "solutions",
+  "count": 10,
+  "recipes": {
+    "CultureMech:015440": {
+      "name": null,
+      "filename": "Beijerinck_Solution.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015440",
+      "source": "unknown"
+    },
+    "CultureMech:015441": {
+      "name": null,
+      "filename": "Bold_Trace_Stock.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015441",
+      "source": "unknown"
+    },
+    "CultureMech:015442": {
+      "name": null,
+      "filename": "Boron_Stock.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015442",
+      "source": "unknown"
+    },
+    "CultureMech:015444": {
+      "name": null,
+      "filename": "DAS_Macro_Solution.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015444",
+      "source": "unknown"
+    },
+    "CultureMech:015445": {
+      "name": null,
+      "filename": "DAS_Vitamin_Cocktail.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015445",
+      "source": "unknown"
+    },
+    "CultureMech:015443": {
+      "name": null,
+      "filename": "EDTA_Stock.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015443",
+      "source": "unknown"
+    },
+    "CultureMech:015446": {
+      "name": null,
+      "filename": "G9_Trace_Metals_for_J_medium.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015446",
+      "source": "unknown"
+    },
+    "CultureMech:015447": {
+      "name": null,
+      "filename": "Macro_Component_1_for_J_Medium.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015447",
+      "source": "unknown"
+    },
+    "CultureMech:015448": {
+      "name": null,
+      "filename": "Macro_Component_2_for_J_medium.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015448",
+      "source": "unknown"
+    },
+    "CultureMech:015449": {
+      "name": null,
+      "filename": "Minor_Nutrients.yaml",
+      "ingredient_count": 0,
+      "id": "CultureMech:015449",
+      "source": "unknown"
+    }
+  }
+}

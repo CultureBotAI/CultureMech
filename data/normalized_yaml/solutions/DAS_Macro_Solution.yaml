@@ -1,0 +1,54 @@
+id: CultureMech:015444
+preferred_term: DAS Macro Solution
+term:
+  id: MediaIngredientMech:UNMAPPED_0081
+  label: DAS Macro Solution
+composition:
+- preferred_term: Sodium nitrate (0.70 M stock)
+  concentration:
+    value: '10'
+    unit: ML_PER_40ML
+  term:
+    id: CHEBI:65246
+    label: sodium nitrate
+  notes: Add 10 mL of 0.70 M NaNO3 stock solution
+- preferred_term: Disodium phosphate heptahydrate (0.02 M stock)
+  concentration:
+    value: '30'
+    unit: ML_PER_40ML
+  term:
+    id: CHEBI:131825
+    label: disodium hydrogen phosphate heptahydrate
+  notes: Add 30 mL of 0.02 M Na2HPO4·7H2O stock solution
+notes: |
+  DAS Macro Solution for Dasycladales Seawater Medium.
+  DAS = Dasycladales-specific formulation for marine algae.
+  Provides macronutrients (nitrogen and phosphorus) for marine algae culture.
+
+  Preparation: This is a composite solution made from two component stocks:
+  - Component 1: 0.70 M sodium nitrate (NaNO3) stock solution
+  - Component 2: 0.02 M disodium phosphate heptahydrate (Na2HPO4·7H2O) stock solution
+
+  Autoclave both component stocks separately before preparing the DAS Macro Solution.
+  Aseptically add 10 mL of NaNO3 stock + 30 mL of Na2HPO4·7H2O stock.
+  Total volume: 40 mL. Swirl gently to mix.
+
+  Usage: Add 40 mL per 3 L of medium.
+
+  Final concentrations in medium: NaNO3 (2.3 mM), Na2HPO4·7H2O (0.2 mM)
+
+  Storage: Refrigerator temperature (4°C).
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0081
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/das-macro-solution
+- reference_id: UTEX:das-macro-solution
+- reference_id: MediaIngredientMech:UNMAPPED_0081

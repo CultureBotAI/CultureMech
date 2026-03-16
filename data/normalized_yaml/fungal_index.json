@@ -1,0 +1,1316 @@
+{
+  "generated": "2026-03-16T05:30:17.245230+00:00",
+  "category": "fungal",
+  "count": 119,
+  "recipes": {
+    "CultureMech:010440": {
+      "name": "wMalt Yeast Extract Medium (wMY)",
+      "filename": "CCAP_C109_wMalt_Yeast_Extract_Medium_wMY.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010440",
+      "source_id": "mediadive.medium:C109",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010441": {
+      "name": "YEAST STARCH AGAR (A)",
+      "filename": "DSMZ_1027_YEAST_STARCH_AGAR_A.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010441",
+      "source_id": "mediadive.medium:1027",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010442": {
+      "name": "MANNITOL-YEAST EXTRACT-PEPTONE (MYP)",
+      "filename": "DSMZ_1087_MANNITOL-YEAST_EXTRACT-PEPTONE_MYP.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010442",
+      "source_id": "mediadive.medium:1087",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010443": {
+      "name": "FERROUS SULFATE/YEAST EXTRACT MEDIUM",
+      "filename": "DSMZ_1190_FERROUS_SULFATE_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010443",
+      "source_id": "mediadive.medium:1190",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010444": {
+      "name": "YEAST EXTRACT-STARCH AGAR (50% MARINE WATER)",
+      "filename": "DSMZ_1274_YEAST_EXTRACT-STARCH_AGAR_50_MARINE_WATER.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010444",
+      "source_id": "mediadive.medium:1274",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010445": {
+      "name": "POTATO DEXTROSE AGAR",
+      "filename": "DSMZ_129_POTATO_DEXTROSE_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010445",
+      "source_id": "mediadive.medium:129",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010446": {
+      "name": "CZAPEK-DOX AGAR",
+      "filename": "DSMZ_130_CZAPEK-DOX_AGAR.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010446",
+      "source_id": "mediadive.medium:130",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010447": {
+      "name": "YEAST EXTRACT-STARCH AGAR (NBRC MED. 266)",
+      "filename": "DSMZ_1314_YEAST_EXTRACT-STARCH_AGAR_NBRC_MED._266.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010447",
+      "source_id": "mediadive.medium:1314",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010448": {
+      "name": "1/10 R2A MEDIUM MODIFIED (+ Yeast Extract)",
+      "filename": "DSMZ_1365a_1_10_R2A_MEDIUM_MODIFIED_Yeast_Extract.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010448",
+      "source_id": "mediadive.medium:1365a",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010449": {
+      "name": "GAUZE 1 WITH ADDITIONAL YEAST EXTRACT",
+      "filename": "DSMZ_1366_GAUZE_1_WITH_ADDITIONAL_YEAST_EXTRACT.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010449",
+      "source_id": "mediadive.medium:1366",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010450": {
+      "name": "TRYPTONE YEASTEXTRAKT MEDIUM",
+      "filename": "DSMZ_1379_TRYPTONE_YEASTEXTRAKT_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010450",
+      "source_id": "mediadive.medium:1379",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010451": {
+      "name": "YEASTEXTRAKT MANNITOL MEDIUM",
+      "filename": "DSMZ_1380_YEASTEXTRAKT_MANNITOL_MEDIUM.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010451",
+      "source_id": "mediadive.medium:1380",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010452": {
+      "name": "DILUTE FILTERED MALT EXTRACT AGAR",
+      "filename": "DSMZ_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010452",
+      "source_id": "mediadive.medium:1427",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010453": {
+      "name": "SABOURAUD GLUCOSE MEDIUM",
+      "filename": "DSMZ_1429_SABOURAUD_GLUCOSE_MEDIUM.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010453",
+      "source_id": "mediadive.medium:1429",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010454": {
+      "name": "Glycerol-Yeast extract-Peptone Medium",
+      "filename": "DSMZ_1484_Glycerol-Yeast_extract-Peptone_Medium.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:010454",
+      "source_id": "mediadive.medium:1484",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010455": {
+      "name": "TRYPTONE YEAST EXTRACT GLUCOSE MEDIUM (TYG)",
+      "filename": "DSMZ_1618_TRYPTONE_YEAST_EXTRACT_GLUCOSE_MEDIUM_TYG.yaml",
+      "ingredient_count": 14,
+      "id": "CultureMech:010455",
+      "source_id": "mediadive.medium:1618",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010456": {
+      "name": "TAP WATER YEAST EXTRACT MEDIUM (TWYE)",
+      "filename": "DSMZ_1625_TAP_WATER_YEAST_EXTRACT_MEDIUM_TWYE.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010456",
+      "source_id": "mediadive.medium:1625",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010457": {
+      "name": "YEAST EXTRACT MANITOL MEDIUM (YEM)",
+      "filename": "DSMZ_1626_YEAST_EXTRACT_MANITOL_MEDIUM_YEM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010457",
+      "source_id": "mediadive.medium:1626",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010458": {
+      "name": "Yeast nitrogen base glucose (YNBG)",
+      "filename": "DSMZ_1682_Yeast_nitrogen_base_glucose_YNBG.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010458",
+      "source_id": "mediadive.medium:1682",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010459": {
+      "name": "YEAST EXTRACT - SKIM MILK MEDIUM",
+      "filename": "DSMZ_170_YEAST_EXTRACT_-_SKIM_MILK_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010459",
+      "source_id": "mediadive.medium:170",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010460": {
+      "name": "TRYPTONE-YEAST EXTRACT MEDIUM modified",
+      "filename": "DSMZ_1725_TRYPTONE-YEAST_EXTRACT_MEDIUM_modified.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010460",
+      "source_id": "mediadive.medium:1725",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010461": {
+      "name": "modified Yeast nitrogen base",
+      "filename": "DSMZ_1837_modified_Yeast_nitrogen_base.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010461",
+      "source_id": "mediadive.medium:1837",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010462": {
+      "name": "CZAPEK PEPTONE AGAR + 12% NACL",
+      "filename": "DSMZ_1857_CZAPEK_PEPTONE_AGAR_12_NACL.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:010462",
+      "source_id": "mediadive.medium:1857",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010463": {
+      "name": "UNIVERSAL MEDIUM FOR YEASTS (YM)",
+      "filename": "DSMZ_186_UNIVERSAL_MEDIUM_FOR_YEASTS_YM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010463",
+      "source_id": "mediadive.medium:186",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010464": {
+      "name": "TRYPTONE YEAST EXTRACT MINERAL MEDIUM",
+      "filename": "DSMZ_230_TRYPTONE_YEAST_EXTRACT_MINERAL_MEDIUM.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:010464",
+      "source_id": "mediadive.medium:230",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010465": {
+      "name": "SEAWATER YEAST PEPTONE AGAR",
+      "filename": "DSMZ_243_SEAWATER_YEAST_PEPTONE_AGAR.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:010465",
+      "source_id": "mediadive.medium:243",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010466": {
+      "name": "OAT FLAKES AGAR WITH YEAST EXTRACT",
+      "filename": "DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010466",
+      "source_id": "mediadive.medium:248",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010467": {
+      "name": "YEAST EXTRACT MINERAL MEDIUM",
+      "filename": "DSMZ_259_YEAST_EXTRACT_MINERAL_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010467",
+      "source_id": "mediadive.medium:259",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010468": {
+      "name": "PFENNIG'S MEDIUM I WITH YEAST EXTRACT",
+      "filename": "DSMZ_39_PFENNIG_S_MEDIUM_I_WITH_YEAST_EXTRACT.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:010468",
+      "source_id": "mediadive.medium:39",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010469": {
+      "name": "GLUCOSE YEAST EXTRACT MEDIUM",
+      "filename": "DSMZ_54_GLUCOSE_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010469",
+      "source_id": "mediadive.medium:54",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010470": {
+      "name": "EMERSON'S YEAST STARCH AGAR (EYS)",
+      "filename": "DSMZ_551_EMERSON_S_YEAST_STARCH_AGAR_EYS.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010470",
+      "source_id": "mediadive.medium:551",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010471": {
+      "name": "TRYPTONE-YEAST EXTRACT MEDIUM",
+      "filename": "DSMZ_578_TRYPTONE-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010471",
+      "source_id": "mediadive.medium:578",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010472": {
+      "name": "STANDARD I + MALT AGAR",
+      "filename": "DSMZ_637_STANDARD_I_MALT_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010472",
+      "source_id": "mediadive.medium:637",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010473": {
+      "name": "YEAST-STARCH-AGAR(B)",
+      "filename": "DSMZ_656_YEAST-STARCH-AGAR_B.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010473",
+      "source_id": "mediadive.medium:656",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010474": {
+      "name": "TRYPTONE YEAST EXTRACT AGAR (TYG)",
+      "filename": "DSMZ_680_TRYPTONE_YEAST_EXTRACT_AGAR_TYG.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010474",
+      "source_id": "mediadive.medium:680",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010475": {
+      "name": "MALT EXTRACT GLUCOSE AGAR",
+      "filename": "DSMZ_735_MALT_EXTRACT_GLUCOSE_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010475",
+      "source_id": "mediadive.medium:735",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010476": {
+      "name": "INORGANIC SALTS-MALTOSE MEDIUM",
+      "filename": "DSMZ_754_INORGANIC_SALTS-MALTOSE_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010476",
+      "source_id": "mediadive.medium:754",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010477": {
+      "name": "PEPTONE-YEAST MEDIUM with MgSO4",
+      "filename": "DSMZ_790_PEPTONE-YEAST_MEDIUM_with_MgSO4.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010477",
+      "source_id": "mediadive.medium:790",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010478": {
+      "name": "MALTEXTRACT/CHARCOAL MEDIUM",
+      "filename": "DSMZ_801_MALTEXTRACT_CHARCOAL_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010478",
+      "source_id": "mediadive.medium:801",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010479": {
+      "name": "CZAPEK PEPTONE AGAR",
+      "filename": "DSMZ_83_CZAPEK_PEPTONE_AGAR.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:010479",
+      "source_id": "mediadive.medium:83",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010480": {
+      "name": "GYP GLUCOSE-YEAST-PEPTONE MEDIUM",
+      "filename": "DSMZ_852_GYP_GLUCOSE-YEAST-PEPTONE_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:010480",
+      "source_id": "mediadive.medium:852",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010481": {
+      "name": "MALT EXTRACT PEPTONE AGAR",
+      "filename": "DSMZ_90_MALT_EXTRACT_PEPTONE_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010481",
+      "source_id": "mediadive.medium:90",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010482": {
+      "name": "TRYPTICASE SOY YEAST EXTRACT MEDIUM",
+      "filename": "DSMZ_92_TRYPTICASE_SOY_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010482",
+      "source_id": "mediadive.medium:92",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010483": {
+      "name": "SEA WATER YEAST PEPTONE MEDIUM",
+      "filename": "DSMZ_949_SEA_WATER_YEAST_PEPTONE_MEDIUM.yaml",
+      "ingredient_count": 12,
+      "id": "CultureMech:010483",
+      "source_id": "mediadive.medium:949",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010484": {
+      "name": "YEAST-PEPTONE-SUCCINATE MEDIUM",
+      "filename": "DSMZ_988_YEAST-PEPTONE-SUCCINATE_MEDIUM.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010484",
+      "source_id": "mediadive.medium:988",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010485": {
+      "name": "SEA SALTS YEAST EXTRACT GLUCOSE MEDIUM",
+      "filename": "JCM_J1063_SEA_SALTS_YEAST_EXTRACT_GLUCOSE_MEDIUM.yaml",
+      "ingredient_count": 9,
+      "id": "CultureMech:010485",
+      "source_id": "mediadive.medium:J1063",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010486": {
+      "name": "1/10 YEAST EXTRACT-MALT EXTRACT AGAR",
+      "filename": "JCM_J107_1_10_YEAST_EXTRACT-MALT_EXTRACT_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010486",
+      "source_id": "mediadive.medium:J107",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010487": {
+      "name": "HALF STRENGTH YEAST-STARCH AGAR",
+      "filename": "JCM_J108_HALF_STRENGTH_YEAST-STARCH_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010487",
+      "source_id": "mediadive.medium:J108",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010488": {
+      "name": "VAN NIEL'S YEAST AGAR",
+      "filename": "JCM_J1094_VAN_NIEL_S_YEAST_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010488",
+      "source_id": "mediadive.medium:J1094",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010489": {
+      "name": "CASAMINO ACIDS-PEPTONE-CZAPEK'S AGAR",
+      "filename": "JCM_J109_CASAMINO_ACIDS-PEPTONE-CZAPEK_S_AGAR.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010489",
+      "source_id": "mediadive.medium:J109",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010490": {
+      "name": "NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl",
+      "filename": "JCM_J1109_NUTRIENT_AGAR_WITH_0.05_YEAST_EXTRACT_AND_3_NaCl.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010490",
+      "source_id": "mediadive.medium:J1109",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010491": {
+      "name": "ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT",
+      "filename": "JCM_J1113_ANAEROBIC_MINERAL_MEDIUM_WITH_YEAST_EXTRACT.yaml",
+      "ingredient_count": 33,
+      "id": "CultureMech:010491",
+      "source_id": "mediadive.medium:J1113",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010492": {
+      "name": "SEA SALTS YEAST EXTRACT PEPTONE MEDIUM",
+      "filename": "JCM_J1141_SEA_SALTS_YEAST_EXTRACT_PEPTONE_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010492",
+      "source_id": "mediadive.medium:J1141",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010493": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl",
+      "filename": "JCM_J1152_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_2_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010493",
+      "source_id": "mediadive.medium:J1152",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010494": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)",
+      "filename": "JCM_J1174_YEAST_EXTRACT-MALT_EXTRACT_AGAR_pH_5.5.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010494",
+      "source_id": "mediadive.medium:J1174",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010495": {
+      "name": "FERROUS IRON YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J1182_FERROUS_IRON_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 20,
+      "id": "CultureMech:010495",
+      "source_id": "mediadive.medium:J1182",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010496": {
+      "name": "MARINE TRYPTONE YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J1208_MARINE_TRYPTONE_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:010496",
+      "source_id": "mediadive.medium:J1208",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010497": {
+      "name": "AEROBIC MARINE TRYPTONE YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J1222_AEROBIC_MARINE_TRYPTONE_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010497",
+      "source_id": "mediadive.medium:J1222",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010498": {
+      "name": "MALT EXTRACT AGAR WITH 15% NaCl",
+      "filename": "JCM_J125_MALT_EXTRACT_AGAR_WITH_15_NaCl.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010498",
+      "source_id": "mediadive.medium:J125",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010499": {
+      "name": "ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM",
+      "filename": "JCM_J1269_ARTIFICIAL_SEAWATER_YEAST_EXTRACT-TRYPTONE_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:010499",
+      "source_id": "mediadive.medium:J1269",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010500": {
+      "name": "HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE",
+      "filename": "JCM_J1284_HALANAEROARCHAEA_MEDIUM_WITH_YEAST_EXTRACT_AND_FORMATE.yaml",
+      "ingredient_count": 30,
+      "id": "CultureMech:010500",
+      "source_id": "mediadive.medium:J1284",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010501": {
+      "name": "NATRONOARCHAEA MEDIA WITH YEAST EXTRACT AND LACTATE",
+      "filename": "JCM_J1285_NATRONOARCHAEA_MEDIA_WITH_YEAST_EXTRACT_AND_LACTATE.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:010501",
+      "source_id": "mediadive.medium:J1285",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010502": {
+      "name": "HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND GLUCOSE",
+      "filename": "JCM_J1286_HALANAEROARCHAEA_MEDIUM_WITH_YEAST_EXTRACT_AND_GLUCOSE.yaml",
+      "ingredient_count": 31,
+      "id": "CultureMech:010502",
+      "source_id": "mediadive.medium:J1286",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010503": {
+      "name": "NATRONOANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND GLUCOSE",
+      "filename": "JCM_J1287_NATRONOANAEROARCHAEA_MEDIUM_WITH_YEAST_EXTRACT_AND_GLUCOSE.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:010503",
+      "source_id": "mediadive.medium:J1287",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010504": {
+      "name": "NATRONOANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE",
+      "filename": "JCM_J1288_NATRONOANAEROARCHAEA_MEDIUM_WITH_YEAST_EXTRACT_AND_FORMATE.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:010504",
+      "source_id": "mediadive.medium:J1288",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010505": {
+      "name": "1/10 YEAST-STARCH AGAR",
+      "filename": "JCM_J137_1_10_YEAST-STARCH_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010505",
+      "source_id": "mediadive.medium:J137",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010506": {
+      "name": "TRYPTONE-YEAST EXTRACT AGAR",
+      "filename": "JCM_J140_TRYPTONE-YEAST_EXTRACT_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010506",
+      "source_id": "mediadive.medium:J140",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010507": {
+      "name": "ALKALINE MALT EXTRACT AGAR",
+      "filename": "JCM_J147_ALKALINE_MALT_EXTRACT_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010507",
+      "source_id": "mediadive.medium:J147",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010508": {
+      "name": "1/5 YEAST-STARCH AGAR",
+      "filename": "JCM_J202_1_5_YEAST-STARCH_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010508",
+      "source_id": "mediadive.medium:J202",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010509": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl",
+      "filename": "JCM_J207_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010509",
+      "source_id": "mediadive.medium:J207",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010510": {
+      "name": "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT",
+      "filename": "JCM_J217_INORGANIC_SALTS-STARCH_AGAR_ISP-4_WITH_0.05_YEAST_EXTRACT.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010510",
+      "source_id": "mediadive.medium:J217",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010511": {
+      "name": "CZAPEK YEAST EXTRACT AGAR (CYA)",
+      "filename": "JCM_J226_CZAPEK_YEAST_EXTRACT_AGAR_CYA.yaml",
+      "ingredient_count": 10,
+      "id": "CultureMech:010511",
+      "source_id": "mediadive.medium:J226",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010512": {
+      "name": "YEAST EXTRACT MEDIUM (YE)",
+      "filename": "JCM_J249_YEAST_EXTRACT_MEDIUM_YE.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010512",
+      "source_id": "mediadive.medium:J249",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010513": {
+      "name": "YEAST EXTRACT MANNITOL AGAR MEDIUM",
+      "filename": "JCM_J250_YEAST_EXTRACT_MANNITOL_AGAR_MEDIUM.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010513",
+      "source_id": "mediadive.medium:J250",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010514": {
+      "name": "4% MALT AGAR",
+      "filename": "JCM_J253_4_MALT_AGAR.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010514",
+      "source_id": "mediadive.medium:J253",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010515": {
+      "name": "MANNITOL-YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J254_MANNITOL-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010515",
+      "source_id": "mediadive.medium:J254",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010516": {
+      "name": "GLUCOSE-YEAST-PEPTONE MEDIUM",
+      "filename": "JCM_J259_GLUCOSE-YEAST-PEPTONE_MEDIUM.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010516",
+      "source_id": "mediadive.medium:J259",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010517": {
+      "name": "CZAPEK SOLUTION AGAR (B)",
+      "filename": "JCM_J271_CZAPEK_SOLUTION_AGAR_B.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010517",
+      "source_id": "mediadive.medium:J271",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010518": {
+      "name": "MRS MALTOSE MEDIUM",
+      "filename": "JCM_J293_MRS_MALTOSE_MEDIUM.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010518",
+      "source_id": "mediadive.medium:J293",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010519": {
+      "name": "CZAPEK SOLUTION AGAR (A)",
+      "filename": "JCM_J29_CZAPEK_SOLUTION_AGAR_A.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010519",
+      "source_id": "mediadive.medium:J29",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010520": {
+      "name": "MALT EXTRACT AGAR",
+      "filename": "JCM_J31_MALT_EXTRACT_AGAR.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010520",
+      "source_id": "mediadive.medium:J31",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010521": {
+      "name": "1/10 SABOURAUD'S AGAR",
+      "filename": "JCM_J35_1_10_SABOURAUD_S_AGAR.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010521",
+      "source_id": "mediadive.medium:J35",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010522": {
+      "name": "2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR",
+      "filename": "JCM_J37_2_GLUCOSE-YEAST_EXTRACT-PEPTONE_AGAR.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010522",
+      "source_id": "mediadive.medium:J37",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010523": {
+      "name": "2% MALT AGAR",
+      "filename": "JCM_J38_2_MALT_AGAR.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010523",
+      "source_id": "mediadive.medium:J38",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010524": {
+      "name": "CZAPEK'S SOLUTION AGAR WITH 200 g SUCROSE",
+      "filename": "JCM_J39_CZAPEK_S_SOLUTION_AGAR_WITH_200_g_SUCROSE.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010524",
+      "source_id": "mediadive.medium:J39",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010525": {
+      "name": "ACIDIC YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.0)",
+      "filename": "JCM_J415_ACIDIC_YEAST_EXTRACT-MALT_EXTRACT_AGAR_pH_5.0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010525",
+      "source_id": "mediadive.medium:J415",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010526": {
+      "name": "BL WITH 0.5% MALTOSE",
+      "filename": "JCM_J418_BL_WITH_0.5_MALTOSE.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010526",
+      "source_id": "mediadive.medium:J418",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010527": {
+      "name": "YEAST-STARCH AGAR (A)",
+      "filename": "JCM_J42_YEAST-STARCH_AGAR_A.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010527",
+      "source_id": "mediadive.medium:J42",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010528": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2)",
+      "filename": "JCM_J43_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010528",
+      "source_id": "mediadive.medium:J43",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010529": {
+      "name": "SUCROSE-NITRATE AGAR (CZAPEK-DOX AGAR)",
+      "filename": "JCM_J441_SUCROSE-NITRATE_AGAR_CZAPEK-DOX_AGAR.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010529",
+      "source_id": "mediadive.medium:J441",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010530": {
+      "name": "MALTOSE-BENNETT'S AGAR",
+      "filename": "JCM_J45_MALTOSE-BENNETT_S_AGAR.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010530",
+      "source_id": "mediadive.medium:J45",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010531": {
+      "name": "OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT",
+      "filename": "JCM_J51_OATMEAL_AGAR_ISP-3_WITH_0.1_YEAST_EXTRACT.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010531",
+      "source_id": "mediadive.medium:J51",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010532": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)",
+      "filename": "JCM_J527_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl_pH_9.0.yaml",
+      "ingredient_count": 2,
+      "id": "CultureMech:010532",
+      "source_id": "mediadive.medium:J527",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010533": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)",
+      "filename": "JCM_J528_YEAST_EXTRACT-MALT_EXTRACT_AGAR_pH_9.0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010533",
+      "source_id": "mediadive.medium:J528",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010534": {
+      "name": "MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J542_MODIFIED_BROCK_S_BASAL_SALTS-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 13,
+      "id": "CultureMech:010534",
+      "source_id": "mediadive.medium:J542",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010535": {
+      "name": "HALOPHILE YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J546_HALOPHILE_YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 8,
+      "id": "CultureMech:010535",
+      "source_id": "mediadive.medium:J546",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010536": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH ARTIFICIAL SEAWATER",
+      "filename": "JCM_J569_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_ARTIFICIAL_SEAWATER.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010536",
+      "source_id": "mediadive.medium:J569",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010537": {
+      "name": "ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J571_ALKALINE_TRYPTONE-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:010537",
+      "source_id": "mediadive.medium:J571",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010538": {
+      "name": "YEAST-KRAINSKY'S AGAR",
+      "filename": "JCM_J57_YEAST-KRAINSKY_S_AGAR.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010538",
+      "source_id": "mediadive.medium:J57",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010539": {
+      "name": "MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDEIUM (B)",
+      "filename": "JCM_J585_MODIFIED_BROCK_S_BASAL_SALTS-YEAST_EXTRACT_MEDEIUM_B.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010539",
+      "source_id": "mediadive.medium:J585",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010540": {
+      "name": "MALTOSE-YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J606_MALTOSE-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010540",
+      "source_id": "mediadive.medium:J606",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010541": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (pH 6.0)",
+      "filename": "JCM_J613_YEAST_EXTRACT-MALT_EXTRACT_AGAR_pH_6.0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010541",
+      "source_id": "mediadive.medium:J613",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010542": {
+      "name": "YEAST-STARCH AGAR (B)",
+      "filename": "JCM_J61_YEAST-STARCH_AGAR_B.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010542",
+      "source_id": "mediadive.medium:J61",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010543": {
+      "name": "TRYPTONE-PEPTONE-YEAST EXTRACT-GLUCOSE MEDIUM",
+      "filename": "JCM_J638_TRYPTONE-PEPTONE-YEAST_EXTRACT-GLUCOSE_MEDIUM.yaml",
+      "ingredient_count": 11,
+      "id": "CultureMech:010543",
+      "source_id": "mediadive.medium:J638",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010544": {
+      "name": "PEPTONE-CZAPEK'S AGAR",
+      "filename": "JCM_J64_PEPTONE-CZAPEK_S_AGAR.yaml",
+      "ingredient_count": 7,
+      "id": "CultureMech:010544",
+      "source_id": "mediadive.medium:J64",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010545": {
+      "name": "TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O",
+      "filename": "JCM_J656_TRYPTONE-YEAST_EXTRACT_BROTH_ISP-1_WITH_0.2_MgSO_sub_4_sub_183_7H_sub_2_sub_O.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010545",
+      "source_id": "mediadive.medium:J656",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010546": {
+      "name": "SALINE TRYPTONE-YEAST EXTRACT BROTH",
+      "filename": "JCM_J668_SALINE_TRYPTONE-YEAST_EXTRACT_BROTH.yaml",
+      "ingredient_count": 4,
+      "id": "CultureMech:010546",
+      "source_id": "mediadive.medium:J668",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010547": {
+      "name": "EMERSON'S YEAST-STARCH AGAR",
+      "filename": "JCM_J73_EMERSON_S_YEAST-STARCH_AGAR.yaml",
+      "ingredient_count": 5,
+      "id": "CultureMech:010547",
+      "source_id": "mediadive.medium:J73",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010548": {
+      "name": "HEPES PEPTONE-YEAST EXTRACT MEDIUM",
+      "filename": "JCM_J764_HEPES_PEPTONE-YEAST_EXTRACT_MEDIUM.yaml",
+      "ingredient_count": 32,
+      "id": "CultureMech:010548",
+      "source_id": "mediadive.medium:J764",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010549": {
+      "name": "ACIDIC YEAST-STARCH AGAR (pH 5.0)",
+      "filename": "JCM_J800_ACIDIC_YEAST-STARCH_AGAR_pH_5.0.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010549",
+      "source_id": "mediadive.medium:J800",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010550": {
+      "name": "MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM",
+      "filename": "JCM_J812_MODIFIED_BROCK_S_BASAL_SALTS-YEAST_EXTRACT-TRYPTONE_MEDIUM.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010550",
+      "source_id": "mediadive.medium:J812",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010551": {
+      "name": "TRYPTONE-YEAST EXTRACT (ISP-1) AGAR",
+      "filename": "JCM_J821_TRYPTONE-YEAST_EXTRACT_ISP-1_AGAR.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:010551",
+      "source_id": "mediadive.medium:J821",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010552": {
+      "name": "ALKALINE YEAST EXTRACT-MALT EXTRACT AGAR",
+      "filename": "JCM_J82_ALKALINE_YEAST_EXTRACT-MALT_EXTRACT_AGAR.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010552",
+      "source_id": "mediadive.medium:J82",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010553": {
+      "name": "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)",
+      "filename": "JCM_J895_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_pH_8.5.yaml",
+      "ingredient_count": 1,
+      "id": "CultureMech:010553",
+      "source_id": "mediadive.medium:J895",
+      "source": "MediaDive",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010554": {
+      "name": "'Yeast Optimized Defined Medium (Glucose",
+      "filename": "MEDIADB_396_Yeast_Optimized_Defined_Medium_Glucose.yaml",
+      "ingredient_count": 28,
+      "id": "CultureMech:010554",
+      "source_id": "MEDIADB:396",
+      "source": "unknown",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010555": {
+      "name": "'Yeast Mineral Medium (10 g/L Glucose",
+      "filename": "MEDIADB_397_Yeast_Mineral_Medium_10_g_L_Glucose.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:010555",
+      "source_id": "MEDIADB:397",
+      "source": "unknown",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010556": {
+      "name": "'Yeast Mineral Medium (7.5 g/L Ethanol",
+      "filename": "MEDIADB_398_Yeast_Mineral_Medium_7.5_g_L_Ethanol.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:010556",
+      "source_id": "MEDIADB:398",
+      "source": "unknown",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010557": {
+      "name": "'Yeast Mineral Medium (25 g/L Glucose",
+      "filename": "MEDIADB_399_Yeast_Mineral_Medium_25_g_L_Glucose.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:010557",
+      "source_id": "MEDIADB:399",
+      "source": "unknown",
+      "categories": [
+        "fungal"
+      ]
+    },
+    "CultureMech:010558": {
+      "name": "'Yeast Mineral Medium (7.9 g/L Ethanol",
+      "filename": "MEDIADB_400_Yeast_Mineral_Medium_7.9_g_L_Ethanol.yaml",
+      "ingredient_count": 21,
+      "id": "CultureMech:010558",
+      "source_id": "MEDIADB:400",
+      "source": "unknown",
+      "categories": [
+        "fungal"
+      ]
+    }
+  }
+}

@@ -1,0 +1,75 @@
+id: CultureMech:015441
+preferred_term: Bold Trace Stock
+term:
+  id: MediaIngredientMech:UNMAPPED_0065
+  label: Bold Trace Stock
+composition:
+- preferred_term: Sulfuric acid (concentrated)
+  concentration:
+    value: '10'
+    unit: ML_PER_L
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '8.82'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62985
+    label: zinc sulfate heptahydrate
+- preferred_term: Manganese chloride tetrahydrate
+  concentration:
+    value: '1.44'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86344
+    label: manganese(II) chloride tetrahydrate
+- preferred_term: Molybdenum trioxide
+  concentration:
+    value: '0.71'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30627
+    label: molybdenum trioxide
+- preferred_term: Copper sulfate pentahydrate
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: Cobalt nitrate hexahydrate
+  concentration:
+    value: '0.49'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78034
+    label: cobalt dinitrate hexahydrate
+notes: |
+  Trace metal stock solution for Bold Basal Medium (BBM) and related algae culture media.
+  Provides essential micronutrients (Zn, Mn, Mo, Cu, Co) for freshwater algae.
+
+  Preparation: Add components to approximately 900 mL deionized water in the order specified
+  while stirring continuously. Add H2SO4 FIRST to acidify the solution before adding metals.
+  This prevents precipitation. Bring to 1 L total volume.
+
+  Storage: Room temperature in darkness. The acidic pH keeps metals in solution.
+
+  Final stock concentrations: ZnSO4·7H2O (1.50 µM), MnCl2·4H2O (0.36 µM),
+  MoO3 (0.26 µM), CuSO4·5H2O (0.31 µM), Co(NO3)2·6H2O (0.084 µM)
+source_data:
+  origin: MediaIngredientMech
+  mediaingredientmech_id: UNMAPPED_0065
+  import_date: '2026-03-15'
+  notes: Migrated from MediaIngredientMech complex media list
+curation_history:
+- timestamp: '2026-03-15T00:00:00Z'
+  curator: mediaingredientmech-migrator-v1.0
+  action: Created from MediaIngredientMech migration
+  notes: Composition extracted from UTEX Culture Collection protocols
+references:
+- reference_id: https://utex.org/products/bbm-bold-trace-stock-solution
+- reference_id: UTEX:bbm-bold-trace-stock-solution
+- reference_id: MediaIngredientMech:UNMAPPED_0065
+- reference_id: https://cccryo.fraunhofer.de/sources/files/medien/BBM.pdf
