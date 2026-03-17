@@ -23,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: PPLO Broth w/o Crystal Violet (BD 255420)
   concentration:
     value: '3.5'
@@ -104,25 +107,38 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008773'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.392081'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Additive Solution
   composition: []
   concentration:
     value: '500'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: TC Yeastolate 10% solution (BD 255772)
   composition: []
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Yeast Extract Solution
   composition: []
   concentration:
     value: '35'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phenol Red Solution
   composition: []
   concentration:
     value: '20'
     unit: G_PER_L
+  name: Unknown solution

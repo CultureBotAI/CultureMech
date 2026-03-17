@@ -58,6 +58,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009322'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.405631'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
 solutions:
 - preferred_term: sterile 10% w/v NaHCO3 solution
   composition: []
@@ -65,9 +69,11 @@ solutions:
     value: '0.6'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: sterile 30% w/v glucose solution
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution

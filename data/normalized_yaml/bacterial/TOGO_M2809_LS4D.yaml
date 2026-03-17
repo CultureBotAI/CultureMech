@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '20'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2SO4
   concentration:
     value: '50'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: CaCl2
   concentration:
     value: '0.6'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Sodium lactate
   concentration:
     value: '60'
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: MgCl2
   concentration:
     value: '8'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: PIPES buffer
   concentration:
     value: '30'
@@ -78,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Thauers vitamins
   concentration:
     value: '1'
@@ -98,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -106,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine hydrochloride
   concentration:
     value: '5'
@@ -113,6 +140,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:49105
+    label: Thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
     label: Thiamine hydrochloride
 - preferred_term: Pyridoxine hydrochloride
   concentration:
@@ -122,6 +152,9 @@ ingredients:
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -130,6 +163,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -138,6 +174,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -146,6 +185,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -154,6 +196,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Choline chloride
   concentration:
     value: '200'
@@ -163,6 +208,9 @@ ingredients:
   term:
     id: CHEBI:133341
     label: choline chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000437
+    label: Choline chloride
 - preferred_term: DL-Pantothenic acid
   concentration:
     value: '5'
@@ -170,6 +218,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:7916
+    label: DL-Pantothenic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000242
     label: DL-Pantothenic acid
 - preferred_term: Thioctic acid (lipoic acid)
   concentration:
@@ -191,6 +242,9 @@ ingredients:
   term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4.2H2O
 - preferred_term: H3BO3
   concentration:
     value: '20'
@@ -200,6 +254,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2.4H2O
   concentration:
     value: '0.5'
@@ -221,6 +278,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '12.8'
@@ -230,6 +290,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: FeCl2.4H2O
   concentration:
     value: '1'
@@ -291,6 +354,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009357'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.553050'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Resazurin (0.1% solution)
@@ -299,15 +371,18 @@ solutions:
     value: '640'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: 1M KOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: NaOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution

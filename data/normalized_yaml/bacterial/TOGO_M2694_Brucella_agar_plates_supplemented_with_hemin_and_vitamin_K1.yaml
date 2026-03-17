@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
     value: '2'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Sheep Blood, defibrinated
   concentration:
     value: '5'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Vitamin K1
   concentration:
     value: '0.01'
@@ -58,6 +70,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:18067
+    label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
     label: Vitamin K1
 - preferred_term: Agar
   concentration:
@@ -67,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Sodium Bisulfite
   concentration:
     value: '0.1'
@@ -103,3 +121,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009246'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -38,9 +38,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007462'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.815330'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KNO30.50gNa-glycerophosphate0.10gTris HCl1.00gTryptone (Difco 0123)2.00gYeast
     extract2.00gTrace elements (see below)1.00mlArtificial sea water999.00mlpH 7.0Artificial
     sea water is prepared from a marine aquarium salts mixture.Trace elements:H3BO32.85gMnCl2·4H2O1.80gFeSO41.36gNa-tartrate1.77gCuCl2·2H2O26.90mgZnCl220.80mgCoCl2·6H2O40.40mgNa2MoO4·2H2O25.20mgDistilled
     water1000.00ml
   composition: []
+  name: Unknown solution

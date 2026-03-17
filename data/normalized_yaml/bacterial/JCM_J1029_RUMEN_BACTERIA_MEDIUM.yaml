@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.2997'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Trypticase peptone
   concentration:
     value: '1.998'
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.000999001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -63,6 +78,9 @@ ingredients:
     value: '0.499501'
     unit: G_PER_L
   notes: ' ( soluble)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -70,6 +88,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '3.996'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -84,6 +108,9 @@ ingredients:
   concentration:
     value: '0.000999001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -91,6 +118,9 @@ ingredients:
   concentration:
     value: '0.24975'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -98,6 +128,9 @@ ingredients:
   concentration:
     value: '0.24975'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -105,6 +138,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -112,6 +148,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -119,6 +158,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -126,6 +168,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -133,6 +178,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
@@ -140,6 +188,9 @@ ingredients:
   concentration:
     value: '17'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000342
+    label: Acetic acid
 - preferred_term: Propionic acid
   term:
     id: CHEBI:30768
@@ -147,6 +198,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000366
+    label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
@@ -154,6 +208,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000471
+    label: n-Butyric acid
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
@@ -161,6 +218,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: iso-Butyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
@@ -168,6 +228,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:503742
@@ -175,6 +238,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000378
+    label: iso-Valeric acid
 - preferred_term: DL-alpha-Methyl butyric acid
   term:
     id: CHEBI:37070
@@ -182,6 +248,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: DL-alpha-Methyl butyric acid
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -205,3 +274,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002212'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

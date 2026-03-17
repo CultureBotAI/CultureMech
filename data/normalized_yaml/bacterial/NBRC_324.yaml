@@ -38,8 +38,13 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007487'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.883446'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
     water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions
     A and B are separately sterilized by autoclaving and mixed.
   composition: []
+  name: Unknown solution

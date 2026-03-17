@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '4.5'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -42,6 +48,9 @@ ingredients:
     compound, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -64,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4・3H2O
   concentration:
     value: '7.2'
@@ -85,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:16856
     label: glutathione
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000466
+    label: Glutathione
 - preferred_term: Sodium β--glycerophosphate
   concentration:
     value: '6'
@@ -131,3 +146,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010000'
+- timestamp: '2026-03-17T06:30:16.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

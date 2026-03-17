@@ -12,6 +12,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000459
+    label: L-cysteine hydrochloride
 - preferred_term: MRS medium (Scharlau Chemie)
   concentration:
     value: '1'
@@ -40,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -54,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: Dipotassium phosphate
 - preferred_term: D(+)-Glucose
   concentration:
     value: '20'
@@ -63,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: D(+)-Glucose
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
@@ -71,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Polysorbate 80
   concentration:
     value: '1'
@@ -86,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Triammonium citrate
   concentration:
     value: '2'
@@ -101,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Meat extract
   concentration:
     value: '8'
@@ -139,3 +160,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009325'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

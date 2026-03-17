@@ -13,6 +13,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:succ'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000420
+    label: Succinate
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -20,6 +23,9 @@ ingredients:
   concentration:
     value: '0.008554'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.603712'
@@ -39,6 +45,9 @@ ingredients:
   concentration:
     value: '1.151'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -46,6 +55,9 @@ ingredients:
   concentration:
     value: '4.8186'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '0.009111'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.03114'
@@ -64,6 +79,9 @@ ingredients:
   concentration:
     value: '0.038082'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -71,6 +89,9 @@ ingredients:
   concentration:
     value: '7.5677'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0015698'
@@ -107,6 +128,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007229'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 32
   term:

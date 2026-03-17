@@ -22,6 +22,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -37,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -46,6 +52,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: NaHCO3
   concentration:
     value: '0.5'
@@ -55,6 +64,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2HPO4・6H2O
   concentration:
     value: '2.9'
@@ -111,6 +123,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010215'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.181375'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: SL-6 trace element solution (see Medium [M158])
   composition: []
@@ -118,6 +138,7 @@ solutions:
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 0.5% MgSO4・7H2O solution
   composition: []
   concentration:
@@ -125,3 +146,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution

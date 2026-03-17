@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaOH 1 N
   concentration:
     value: '25'
@@ -38,6 +41,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: D-Glucose
   concentration:
     value: '4'
@@ -47,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: D-Glucose
 - preferred_term: Cellobiose
   concentration:
     value: '1'
@@ -56,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Maltose
   concentration:
     value: '1'
@@ -65,6 +77,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: Starch (soluble)
   concentration:
     value: '1'
@@ -80,6 +95,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000459
+    label: L-cysteine hydrochloride
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -99,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: haemin
 - preferred_term: 95% ethanol
   concentration:
     value: '20'
@@ -113,6 +134,9 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: vitamin K1
 media_term:
   preferred_term: TOGO Medium M2744
   term:
@@ -148,6 +172,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009295'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.176045'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []
@@ -155,6 +188,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: Haemin solution
   term:
     id: mediadive.solution:1628
@@ -163,6 +197,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_1628_Haemin_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin K1 solution
   term:
     id: mediadive.solution:2227
@@ -171,3 +206,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
+  name: Unknown solution

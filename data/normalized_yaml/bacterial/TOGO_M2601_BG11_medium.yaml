@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: CaCl2. 2H2O
   concentration:
     value: '0.036'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaNO3
   concentration:
     value: '1.5'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: K2HPO4.3H2O
   concentration:
     value: '0.04'
@@ -53,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Deionized water
   concentration:
     value: '2000.0'
@@ -67,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Citric acid
 - preferred_term: EDTA (disodium magnesium salt)
   concentration:
     value: '0.001'
@@ -82,6 +97,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000498
+    label: Na2MoO4. 2H2O
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -91,6 +109,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2.4H2O
   concentration:
     value: '1.81'
@@ -106,12 +127,18 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4.7H2O
 - preferred_term: CuSO4 .5H2O
   concentration:
     value: '0.079'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000423
+    label: CuSO4 .5H2O
 - preferred_term: Co(NO3)2 . 6H2O
   concentration:
     value: '0.0494'
@@ -143,3 +170,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009170'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007457'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.802086'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KH2PO40.5gMgSO4·7H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2·2H2O0.25gSodium
     pyruvate0.5gSodium succinate0.5gSodium acetate0.5gYeast extract0.5gFerric citrate
@@ -51,3 +55,4 @@ solutions:
     water990mlInitially, dissolve FeCl2·4H2O in 25% HCl, then add distilled water
     followed by the other components.
   composition: []
+  name: Unknown solution

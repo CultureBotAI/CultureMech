@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '0.3043'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '0.04626'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '0.003422'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001616'
@@ -55,6 +64,9 @@ ingredients:
   concentration:
     value: '0.0007721'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cobalt nitrate
   concentration:
     value: '0.0001697'
@@ -66,6 +78,9 @@ ingredients:
   concentration:
     value: '6.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Sodium carbonate
   concentration:
     value: '1.887'
@@ -73,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Sodium carbonate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -80,6 +98,9 @@ ingredients:
   concentration:
     value: '56.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Manganese chloride
   concentration:
     value: '0.009145'
@@ -91,6 +112,9 @@ ingredients:
   concentration:
     value: '10.03'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
 - preferred_term: sodium silicate
   term:
     id: CHEBI:60720
@@ -98,6 +122,9 @@ ingredients:
   concentration:
     value: '0.2041'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: sodium silicate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0003164'
@@ -126,6 +153,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007290'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 386
   term:

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Glycerol
   concentration:
     value: '60'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '50'
@@ -47,12 +56,18 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: L--Asparagine
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L--Asparagine
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -61,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Citric acid
   concentration:
     value: '2'
@@ -69,6 +87,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Citric acid
 - preferred_term: NH4OH
   concentration:
     value: variable
@@ -102,3 +123,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009954'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

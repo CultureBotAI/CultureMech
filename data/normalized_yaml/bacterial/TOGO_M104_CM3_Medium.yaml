@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '1'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MOPS
   concentration:
     value: '20'
@@ -57,6 +66,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:39074
+    label: MOPS
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
     label: MOPS
 - preferred_term: Cellobiose or Cellulose MN 300
   concentration:
@@ -77,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '1'
@@ -107,3 +122,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007566'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

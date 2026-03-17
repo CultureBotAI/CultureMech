@@ -30,6 +30,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007575'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.359380'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
 solutions:
 - preferred_term: MODIFIED HB-1 MEDIUM (see Medium [M769])
   composition: []
@@ -37,6 +42,7 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% KNO3 solution
   composition: []
   concentration:
@@ -44,6 +50,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 3% Na2S・9H2O solution (neutralized)
   composition: []
   concentration:
@@ -51,9 +58,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 20% MES (pH 5.5) solution
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Solution, Organic compound, Defined component'
+  name: Unknown solution

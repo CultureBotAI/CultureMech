@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '125'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Yeast extract
   concentration:
     value: '250'
@@ -65,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:183882
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000906
+    label: CAPSO
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -72,6 +93,9 @@ ingredients:
   concentration:
     value: '2000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
@@ -79,6 +103,9 @@ ingredients:
   concentration:
     value: '1120'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -86,6 +113,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Sodium dithionite
   term:
     id: CHEBI:66870
@@ -93,6 +123,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000496
+    label: Sodium dithionite
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -100,6 +133,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Na2SeO3 x 5 H2O
   term:
     id: CHEBI:131361
@@ -107,6 +143,9 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -114,6 +153,9 @@ ingredients:
   concentration:
     value: '0.008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -144,6 +186,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002789'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:26.956845'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace element solution
@@ -154,3 +204,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution

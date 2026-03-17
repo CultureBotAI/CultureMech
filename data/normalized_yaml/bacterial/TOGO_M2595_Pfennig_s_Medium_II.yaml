@@ -30,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extrakt
   concentration:
     value: '0.25'
@@ -44,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -63,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -77,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: H2O
 - preferred_term: NaHCO3
   concentration:
     value: '1.5'
@@ -86,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin (0,1%)
   concentration:
     value: '0.5'
@@ -100,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4x7H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.35'
@@ -108,6 +126,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Ammonium chloride
   concentration:
@@ -118,6 +139,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Dextrose
   concentration:
     value: '0.25'
@@ -127,6 +151,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: KCL
   concentration:
     value: '0.35'
@@ -136,6 +163,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCL
 - preferred_term: Pyruvic acid sodium salt
   concentration:
     value: '0.25'
@@ -144,6 +174,9 @@ ingredients:
     component'
   term:
     id: CHEBI:113246
+    label: Pyruvic acid sodium salt
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000399
     label: Pyruvic acid sodium salt
 - preferred_term: Ammonium acetate
   concentration:
@@ -154,6 +187,9 @@ ingredients:
   term:
     id: CHEBI:62947
     label: ammonium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium acetate
 - preferred_term: Vitamin B12
   concentration:
     value: '0.01'
@@ -162,6 +198,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: HCl (25%)
   concentration:
     value: '7.7'
@@ -177,6 +216,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   concentration:
     value: '300'
@@ -186,6 +228,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '1.5'
@@ -195,12 +240,18 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'
@@ -210,6 +261,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '24'
@@ -219,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '2'
@@ -228,6 +285,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: ZnCl2
   concentration:
     value: '70'
@@ -237,6 +297,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: 2N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
@@ -286,6 +349,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009162'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.699708'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution A
@@ -296,11 +370,13 @@ solutions:
     value: '46'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D+C+E
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -309,6 +385,7 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution F
   term:
     id: mediadive.solution:6293
@@ -317,11 +394,13 @@ solutions:
     value: '0.1'
     unit: G_PER_L
   notes: See mediadive_6293_Solution_F.yaml for composition
+  name: Unknown solution
 - preferred_term: Neutralized sulfide solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
+  name: Unknown solution
 - preferred_term: Solution D
   term:
     id: mediadive.solution:5313
@@ -330,6 +409,7 @@ solutions:
     value: '450.5'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -338,6 +418,7 @@ solutions:
     value: '50'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution E
   term:
     id: mediadive.solution:4959
@@ -346,6 +427,7 @@ solutions:
     value: '26'
     unit: G_PER_L
   notes: See mediadive_4959_Solution_E.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace element solution SL-10 B
   term:
     id: mediadive.solution:2396
@@ -354,3 +436,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_2396_Trace_element_solution_SL-10_B.yaml for composition
+  name: Unknown solution

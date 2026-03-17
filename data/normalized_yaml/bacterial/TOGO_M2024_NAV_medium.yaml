@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -45,6 +51,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '200'
@@ -53,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamin-HCl
   concentration:
     value: '400'
@@ -61,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamin-HCl
 - preferred_term: Ca-pantothenate
   concentration:
     value: '400'
@@ -69,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000219
+    label: Ca-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '400'
@@ -77,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine-HCl
 - preferred_term: Cyanocobalamin
   concentration:
     value: '500'
@@ -85,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Cyanocobalamin
 - preferred_term: Niacin
   concentration:
     value: '400'
@@ -93,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Niacin
 - preferred_term: Inositol
   concentration:
     value: '200'
@@ -102,6 +129,9 @@ ingredients:
   term:
     id: CHEBI:24848
     label: inositol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000421
+    label: Inositol
 media_term:
   preferred_term: TOGO Medium M2024
   term:
@@ -135,6 +165,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008612'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.225385'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Vitamin mixture*
   term:
@@ -144,3 +182,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_5209_Vitamin_mixture.yaml for composition
+  name: Unknown solution

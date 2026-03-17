@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Sodium acetate
   concentration:
     value: '0.5'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.5'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Sodium glutamate
   concentration:
     value: '0.5'
@@ -49,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Sodium glutamate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -62,6 +77,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '0.5'
@@ -82,6 +100,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '2.94'
@@ -109,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '78'
@@ -118,6 +142,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Biotin
   concentration:
     value: '5'
@@ -126,11 +153,17 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '100'
@@ -143,6 +176,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
@@ -157,6 +193,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
@@ -165,6 +204,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '100'
@@ -173,6 +215,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '1.21'
@@ -188,6 +233,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '1.44'
@@ -245,6 +293,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009509'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.944569'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Basal salts solution (see below)
@@ -252,18 +309,22 @@ solutions:
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phosphate solution (see below)
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution (see below)
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace elements solution (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

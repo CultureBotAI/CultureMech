@@ -8,6 +8,9 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Hipolypepton*5gYeast extract5gGlucose5gLactose5gTween 800.5gMgSO4·7H2O1gDistilled
     water1LAgar (if needed)15gpH 6.5 - 6.8*Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Hipolypepton*
@@ -36,3 +39,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007494'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.901757'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Hipolypepton*5gYeast extract5gGlucose5gLactose5gTween
+    800.5gMgSO4·7H2O1gDistilled water1LAgar (if needed)15gpH 6.5 - 6.8*Wako Pure Chemical
+    Ind., Ltd., Osaka, Japan.'

@@ -45,6 +45,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008086'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.287171'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Seawater*
   term:
@@ -54,3 +58,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_1801_Seawater.yaml for composition
+  name: Unknown solution

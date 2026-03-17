@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '1.73469'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 2 H2O
   term:
     id: CHEBI:131394
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '1.02041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000419
+    label: MgCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '1.02041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.306122'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '1.02041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '0.306122'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '0.0510204'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -68,6 +89,9 @@ ingredients:
   concentration:
     value: '0.0510204'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '0.0204082'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -82,6 +109,9 @@ ingredients:
   concentration:
     value: '0.102041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: Iron(III) citrate
   term:
     id: CHEBI:144421
@@ -89,6 +119,9 @@ ingredients:
   concentration:
     value: '0.102041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Iron(III) citrate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -96,6 +129,9 @@ ingredients:
   concentration:
     value: '0.306122'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -103,6 +139,9 @@ ingredients:
   concentration:
     value: '0.00102041'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -118,6 +157,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Na2SeO3
   term:
     id: CHEBI:48843
@@ -125,6 +167,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -133,6 +178,9 @@ ingredients:
     value: '0.224'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.2, 0.024]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -140,6 +188,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -147,6 +198,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -154,6 +208,9 @@ ingredients:
   concentration:
     value: '2.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -161,6 +218,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -168,6 +228,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -175,6 +238,9 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -182,6 +248,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -189,6 +258,9 @@ ingredients:
   concentration:
     value: '0.144'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -196,6 +268,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -220,3 +295,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002410'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

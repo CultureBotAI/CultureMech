@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -33,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.2'
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.02'
@@ -59,6 +71,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
     label: FeSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   concentration:
@@ -69,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Na-formate
   concentration:
     value: '3'
@@ -76,6 +94,9 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:62965
+    label: Na-formate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
     label: Na-formate
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
@@ -85,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine-HCl x H2O
 - preferred_term: Na2-fumarate
   concentration:
     value: '4'
@@ -92,6 +116,9 @@ ingredients:
   notes: 'Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:115156
+    label: Na2-fumarate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
     label: Na2-fumarate
 - preferred_term: N2
   notes: 'Properties: Gas'
@@ -125,3 +152,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009184'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

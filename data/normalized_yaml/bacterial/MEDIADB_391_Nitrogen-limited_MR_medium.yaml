@@ -17,6 +17,9 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000344
+    label: D-Fructose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.09011'
@@ -28,6 +31,9 @@ ingredients:
   concentration:
     value: '0.03825'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '4.587'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Citrate
   concentration:
     value: '4.164'
@@ -51,6 +60,9 @@ ingredients:
   concentration:
     value: '0.01121'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02002'
@@ -74,6 +86,9 @@ ingredients:
   concentration:
     value: '33.65'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -94,6 +109,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007295'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 391
   term:

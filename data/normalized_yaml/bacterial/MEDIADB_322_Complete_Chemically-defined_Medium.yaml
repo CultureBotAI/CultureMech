@@ -16,6 +16,9 @@ ingredients:
   concentration:
     value: '0.002965'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Xanthine
   concentration:
     value: '0.06574'
@@ -28,6 +31,9 @@ ingredients:
   concentration:
     value: '0.0007378'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -36,6 +42,9 @@ ingredients:
     value: '0.04093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thymidine
   term:
     id: CHEBI:17748
@@ -44,6 +53,9 @@ ingredients:
     value: '0.0221'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thymd'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000575
+    label: Thymidine
 - preferred_term: Lipoate
   concentration:
     value: '0.01212'
@@ -76,10 +88,16 @@ ingredients:
     value: '2.398'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: DL-Tyrosine
   concentration:
     value: '1.601'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: DL-Tyrosine
 - preferred_term: Nicotinate
   concentration:
     value: '0.008123'
@@ -109,6 +127,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356
@@ -116,6 +137,9 @@ ingredients:
   concentration:
     value: '2.063'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -123,6 +147,9 @@ ingredients:
   concentration:
     value: '0.2448'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -130,6 +157,9 @@ ingredients:
   concentration:
     value: '0.9667'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -137,6 +167,9 @@ ingredients:
   concentration:
     value: '0.8713'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.9838'
@@ -144,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.01051'
@@ -159,6 +195,9 @@ ingredients:
   concentration:
     value: '12.19'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Ferrous chloride
   concentration:
     value: '0.2515'
@@ -178,6 +217,9 @@ ingredients:
   concentration:
     value: '5.906'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000396
+    label: Proline
 - preferred_term: Arginine
   term:
     id: CHEBI:29016
@@ -185,6 +227,9 @@ ingredients:
   concentration:
     value: '0.7463'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: Ammonium citrate
   concentration:
     value: '28.69'
@@ -196,6 +241,9 @@ ingredients:
   concentration:
     value: '0.002099'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Guanine
   concentration:
     value: '0.06617'
@@ -209,6 +257,9 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Ascorbate
   concentration:
     value: '2.839'
@@ -226,6 +277,9 @@ ingredients:
     value: '29.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: Uracil
   term:
     id: CHEBI:17568
@@ -234,6 +288,9 @@ ingredients:
     value: '0.08921'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ura'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000501
+    label: Uracil
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.04'
@@ -259,6 +316,9 @@ ingredients:
     value: '0.002657'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -266,6 +326,9 @@ ingredients:
   concentration:
     value: '0.1657'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0004005'
@@ -281,6 +344,9 @@ ingredients:
   concentration:
     value: '2.649'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
+    label: Asparagine
 - preferred_term: Threonine
   concentration:
     value: '1.931'
@@ -292,6 +358,9 @@ ingredients:
   concentration:
     value: '0.1739'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -321,6 +390,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007222'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 322
   term:

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.36'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Vitamin B12
   concentration:
     value: '5'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Sulfur (powder)
   concentration:
     value: '20'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:14258
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
 - preferred_term: Glucose
   concentration:
     value: '3.6'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -88,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -97,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.075'
@@ -112,6 +133,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -121,6 +145,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.4'
@@ -136,6 +163,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: 25% HCl
   concentration:
     value: '12.5'
@@ -157,6 +187,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '2.1'
@@ -213,6 +246,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M431
   term:
@@ -251,6 +287,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009817'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.897255'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace element solution (see below)
@@ -258,14 +303,17 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see below)
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

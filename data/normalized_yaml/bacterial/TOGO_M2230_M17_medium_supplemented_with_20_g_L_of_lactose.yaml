@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:36218
     label: beta-lactose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001003
+    label: Lactose
 - preferred_term: M17 medium (Scharlau)
   concentration:
     value: '1'
@@ -39,3 +42,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008819'
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

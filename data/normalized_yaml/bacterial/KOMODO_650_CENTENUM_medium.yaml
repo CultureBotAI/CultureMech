@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
@@ -45,6 +54,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '1.741'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000367
+    label: Pyruvate
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,3 +82,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006227'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

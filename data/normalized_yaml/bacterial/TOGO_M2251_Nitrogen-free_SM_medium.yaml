@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
     value: '0.2'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: NaCl
   concentration:
     value: '0.1'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -40,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.002'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:75213
     label: sodium molybdate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4.2H2O
 - preferred_term: Biotin
   concentration:
     value: '0.1'
@@ -67,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: CaCl2
   concentration:
     value: '0.02'
@@ -76,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MnSO4.H2O
   concentration:
     value: '0.01'
@@ -91,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: DL-malic acid
   concentration:
     value: '5'
@@ -100,6 +127,9 @@ ingredients:
   term:
     id: CHEBI:6650
     label: malic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000610
+    label: DL-malic acid
 - preferred_term: Agar
   concentration:
     value: '2'
@@ -108,6 +138,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Fe(III)-EDTA (0.66% [wt/vol] in water)
   concentration:
     value: '10'
@@ -120,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:30729
     label: ethylenediaminetetraacetatoferrate(1-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000348
+    label: Fe(III)-EDTA
 media_term:
   preferred_term: TOGO Medium M2251
   term:
@@ -145,3 +181,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008840'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

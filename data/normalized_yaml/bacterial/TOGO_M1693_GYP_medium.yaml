@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
     value: '2'
@@ -22,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: CaCO3
   concentration:
     value: '5'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -48,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
@@ -82,6 +97,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008253'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.429920'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -89,15 +113,18 @@ solutions:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: '**Tween 80 solution (see Medium [M1692])'
   composition: []
   notes: Cross-reference to Medium M1692
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: '***Salts solution (see Medium [M1692])'
   composition: []
   notes: Cross-reference to Medium M1692
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution

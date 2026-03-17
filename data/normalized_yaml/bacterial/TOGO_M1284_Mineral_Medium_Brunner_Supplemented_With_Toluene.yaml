@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: KH2PO4
   concentration:
     value: '1.52'
@@ -51,6 +60,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2HPO4・2H2O
   concentration:
@@ -91,6 +103,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007818'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.977076'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: SL--4 trace element solution (see Medium [M335])
   composition: []
@@ -98,8 +118,10 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phosphates solution
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
+  name: Unknown solution

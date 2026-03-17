@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -46,6 +52,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: Tris-HCl buffer
   notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
   concentration:
@@ -80,3 +89,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008401'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

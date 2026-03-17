@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Glycerol
   concentration:
     value: '5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Bacto Middlebrook 7H10 agar (Difco 262710)
   concentration:
     value: '19'
@@ -41,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Dextrose
   concentration:
     value: '2'
@@ -50,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: Albumin fraction V, bovine
   concentration:
     value: '5'
@@ -63,6 +75,9 @@ ingredients:
     component'
   term:
     id: CHEBI:16196
+    label: Oleic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001012
     label: Oleic acid
 - preferred_term: Catalase (beef)
   concentration:
@@ -96,3 +111,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008914'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -32,6 +32,9 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: ' (dibasic)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Potassium Phosphate
 - preferred_term: Sodium Chloride
   term:
     id: CHEBI:26710
@@ -39,6 +42,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -46,6 +52,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Acetic acid
   term:
     id: CHEBI:15366
@@ -53,6 +62,9 @@ ingredients:
   concentration:
     value: '1.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000342
+    label: Acetic acid
 - preferred_term: Propionic acid
   term:
     id: CHEBI:30768
@@ -60,6 +72,9 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000366
+    label: Propionic acid
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
@@ -67,6 +82,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000471
+    label: n-Butyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
@@ -74,6 +92,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: n-Valeric acid
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
@@ -81,6 +102,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
@@ -88,6 +112,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
 - preferred_term: 2-Methylbutyric acid
   term:
     id: CHEBI:37070
@@ -95,6 +122,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: 2-Methylbutyric acid
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -102,6 +132,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
@@ -109,6 +142,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
 - preferred_term: Fetal bovine serum
   concentration:
     value: '100'
@@ -121,6 +157,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
@@ -128,6 +167,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -135,6 +177,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -143,6 +188,9 @@ ingredients:
     value: '16.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 8.0, 8.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Ribose
   term:
     id: CHEBI:33942
@@ -150,6 +198,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000672
+    label: Ribose
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
@@ -157,6 +208,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000900
+    label: Xylose
 - preferred_term: Pectin
   term:
     id: CHEBI:17309
@@ -164,6 +218,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000531
+    label: Pectin
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -171,6 +228,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -178,6 +238,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Thiamine pyrophosphate
   term:
     id: CHEBI:18290
@@ -185,6 +248,9 @@ ingredients:
   concentration:
     value: '0.00075'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000431
+    label: Thiamine pyrophosphate
 applications:
 - Microbial cultivation
 curation_history:
@@ -204,3 +270,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004002'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

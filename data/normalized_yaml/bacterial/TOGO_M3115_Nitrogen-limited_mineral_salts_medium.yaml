@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -22,6 +25,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4.12H2O
   concentration:
     value: '9'
@@ -71,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4.5H2O
 - preferred_term: CaCl2
   concentration:
     value: '7.8'
@@ -80,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: FeCl3
   concentration:
     value: '9.7'
@@ -89,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: CrCl3.6H2O
   concentration:
     value: '0.105'
@@ -104,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 media_term:
   preferred_term: TOGO Medium M3115
   term:
@@ -133,12 +154,21 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009587'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.429729'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Fructose solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution
   term:
     id: mediadive.solution:6187
@@ -147,3 +177,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution

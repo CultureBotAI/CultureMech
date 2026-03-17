@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '1.55087'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.148883'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Mg-citrate
   term:
     id: CHEBI:131389
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.372208'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000655
+    label: Mg-citrate
 - preferred_term: L-Asparagin
   term:
     id: CHEBI:17196
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '2.23325'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagin
 - preferred_term: Potato flour
   concentration:
     value: '18.6104'
@@ -51,6 +63,9 @@ ingredients:
   concentration:
     value: '0.248139'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000835
+    label: Malachite green
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -58,6 +73,9 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Fresh egg mixture
   concentration:
     value: '1000'
@@ -89,3 +107,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001454'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -18,6 +18,9 @@ ingredients:
   concentration:
     value: '15.2284'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '2.03046'
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000342
+    label: Acetic acid
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -56,3 +65,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003318'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '7'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '29'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.4'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.2'
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '1.36'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -68,12 +86,18 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: K2HPO4x 3 H2O
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4x 3 H2O
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '2'
@@ -82,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: NaOH
   concentration:
     value: '2'
@@ -90,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -99,6 +129,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: CO2
   notes: 'Properties: ガス'
   concentration:
@@ -123,6 +156,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   concentration:
     value: '10'
@@ -132,6 +168,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '100'
@@ -141,12 +180,18 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '150'
@@ -156,6 +201,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: ZnCl2
   concentration:
     value: '100'
@@ -165,6 +213,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: Na2O4W x 2 H2O
   concentration:
     value: '30'
@@ -186,6 +237,9 @@ ingredients:
   term:
     id: CHEBI:30115
     label: aluminium trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000728
+    label: AlCl3 x 6 H2O
 - preferred_term: H2SeO3(selenous acid)
   concentration:
     value: '10'
@@ -200,6 +254,9 @@ ingredients:
   term:
     id: CHEBI:53472
     label: copper(I) chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000579
+    label: CuCl
 - preferred_term: Na-EDTA x 2 H2O
   concentration:
     value: '500'
@@ -207,6 +264,9 @@ ingredients:
   notes: 'Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:64734
+    label: Na-EDTA x 2 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
     label: Na-EDTA x 2 H2O
 media_term:
   preferred_term: TOGO Medium M2284
@@ -241,6 +301,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008870'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.890076'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace element solution (see below)
@@ -248,3 +316,4 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

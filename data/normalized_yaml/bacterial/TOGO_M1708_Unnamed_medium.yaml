@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -67,6 +73,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008270'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.592872'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Rifampicin solution (500 μg/ml)*
   composition: []
@@ -75,6 +89,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
     component'
+  name: Unknown solution
 - preferred_term: Spectinomycin solution (500 μg/ml)*
   composition: []
   concentration:
@@ -82,3 +97,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex
     component'
+  name: Unknown solution

@@ -15,6 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: HEPES
   concentration:
     value: '2.4'
@@ -22,6 +25,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
@@ -31,6 +37,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3.75'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Citric acid
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.39'
@@ -66,6 +78,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '1.81'
@@ -99,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '12'
@@ -108,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: 2-Oxoglutarate
   concentration:
     value: '14.6'
@@ -116,6 +137,9 @@ ingredients:
   term:
     id: CHEBI:16810
     label: 2-oxoglutarate(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000877
+    label: 2-Oxoglutarate
 - preferred_term: NaHCO3
   concentration:
     value: '0.625'
@@ -125,6 +149,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.125'
@@ -133,6 +160,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: Bacto peptone (BD--Difco)
   concentration:
     value: '10'
@@ -144,6 +174,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001082
+    label: L--Cysteine
 - preferred_term: Glycine
   concentration:
     value: '100'
@@ -153,12 +186,18 @@ ingredients:
   term:
     id: CHEBI:57305
     label: glycine zwitterion
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: L--Glutamic acid
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L--Glutamic acid
 - preferred_term: L--Alanine
   concentration:
     value: '100'
@@ -171,24 +210,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L--Arginine
 - preferred_term: L--Aspartic acid
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000735
+    label: L--Aspartic acid
 - preferred_term: L--Glutamine
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L--Glutamine
 - preferred_term: L--Isoleucine
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L--Isoleucine
 - preferred_term: L--Leucine
   concentration:
     value: '100'
@@ -207,6 +258,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L--Phenylalanine
 - preferred_term: L--Proline
   concentration:
     value: '100'
@@ -225,18 +279,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000310
+    label: L--Threonine
 - preferred_term: L--Tryptophan
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001063
+    label: L--Tryptophan
 - preferred_term: L--Tyrosine
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: L--Tyrosine
 - preferred_term: L--Valine
   concentration:
     value: '100'
@@ -249,17 +312,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L--Asparagine
 - preferred_term: L--Histidine
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000272
+    label: L--Histidine
 - preferred_term: L--Methionine
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nitrogen source'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L--Methionine
 - preferred_term: 10 mM Potassium phosphate buffer (pH 7.2)
   concentration:
     value: '100'
@@ -274,6 +346,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '100'
@@ -282,6 +357,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '100'
@@ -294,6 +372,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
@@ -308,6 +389,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Riboflavin
   concentration:
     value: '10'
@@ -316,6 +400,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '100'
@@ -324,6 +411,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Nicotinamide
   concentration:
     value: '100'
@@ -333,6 +423,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: Nicotinamide
 - preferred_term: Thiamine pyrophosphate
   concentration:
     value: '100'
@@ -341,6 +434,9 @@ ingredients:
   term:
     id: CHEBI:9532
     label: thiamine(1+) diphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001095
+    label: Thiamine pyrophosphate
 - preferred_term: β-NAD
   concentration:
     value: '100'
@@ -356,11 +452,17 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
 - preferred_term: L--Ascorbic acid
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001080
+    label: L--Ascorbic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '100'
@@ -369,6 +471,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 media_term:
   preferred_term: TOGO Medium M1173
   term:
@@ -406,6 +511,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007698'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.147498'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution 1 (see below)
@@ -413,21 +529,25 @@ solutions:
   concentration:
     value: '20'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution 2 (see below)
   composition: []
   concentration:
     value: '3'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution 3 (see below)
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution 4 (see below)
   composition: []
   concentration:
     value: '2.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Mixed solution
   term:
     id: mediadive.solution:5182
@@ -436,34 +556,41 @@ solutions:
     value: '30'
     unit: G_PER_L
   notes: See mediadive_5182_Mixed_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: 0.25 M EDTA・2Na solution (pH 8.0)
   composition: []
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace metal solution (see below)
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution 5 (see below)
   composition: []
   concentration:
     value: '0.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Solution 6 (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution A (see below)
   composition: []
   concentration:
     value: '0.25'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution B (see below)
   composition: []
   concentration:
     value: '0.25'
     unit: G_PER_L
+  name: Unknown solution

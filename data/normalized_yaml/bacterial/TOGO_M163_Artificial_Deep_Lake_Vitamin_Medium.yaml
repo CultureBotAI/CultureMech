@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '7.4'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Sodium succinate
   concentration:
     value: '10'
@@ -59,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Noble Agar (BD-Difco)
   concentration:
     value: '20'
@@ -98,6 +110,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008195'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.009414'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:22.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Vitamin solution (see Medium [M162])
@@ -106,3 +126,4 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

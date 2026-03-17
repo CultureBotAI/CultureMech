@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007473'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.847002'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution
     (0.1 M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter
@@ -49,3 +53,4 @@ solutions:
     sterilize by autoclaving.****Sterilized by filtration. The use of DMSO-safe filters
     is recommended.
   composition: []
+  name: Unknown solution

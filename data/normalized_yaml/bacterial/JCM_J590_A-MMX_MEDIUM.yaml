@@ -20,6 +20,9 @@ ingredients:
     value: '1.69'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.19, 1.5]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -28,6 +31,9 @@ ingredients:
     value: '168.4'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 113.0, 55.4]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -50,6 +59,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -57,6 +69,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -64,6 +79,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -71,6 +89,9 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -78,6 +99,9 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -85,6 +109,9 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -92,6 +119,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -99,6 +129,9 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -106,6 +139,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -113,6 +149,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -138,4 +177,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002938'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

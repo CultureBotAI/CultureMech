@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Lactobacilli MRS broth (BD-Difco)
   concentration:
     value: '55'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '5'
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin chloride
 - preferred_term: Triethanolamine
   concentration:
     value: '4'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:28621
     label: triethanolamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000660
+    label: Triethanolamine
 media_term:
   preferred_term: TOGO Medium M286
   term:
@@ -84,14 +96,24 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009403'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.683324'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Maltose--hemin solution
   composition: []
   concentration:
     value: '18'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Hemin solution (see below)
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution

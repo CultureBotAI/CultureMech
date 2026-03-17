@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -36,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.1'
@@ -61,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2CO3
   concentration:
     value: '3.5'
@@ -70,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na2SO4
   concentration:
     value: '4'
@@ -79,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -92,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '10'
@@ -100,6 +124,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '10'
@@ -118,6 +145,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '20'
@@ -126,6 +156,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: DL-Calcium pantothenate
   concentration:
     value: '5'
@@ -134,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: DL-Calcium pantothenate
 media_term:
   preferred_term: TOGO Medium M1239
   term:
@@ -171,6 +207,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007768'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.645797'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []
@@ -178,24 +224,28 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Fe--Ni--WO--Se solution (see Medium [M1199])
   composition: []
   notes: Cross-reference to Medium M1199
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1 M Sodium lactate solution
   composition: []
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: 5% Na2S・9H2O solution
   composition: []
   concentration:
@@ -203,8 +253,10 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution
 - preferred_term: Vitamin solution* (see below)
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

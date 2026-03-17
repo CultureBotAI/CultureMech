@@ -13,6 +13,9 @@ ingredients:
     value: '11.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: L-Tryptophan
   term:
     id: CHEBI:16828
@@ -21,6 +24,9 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001063
+    label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
@@ -29,6 +35,9 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
     id: CHEBI:17895
@@ -37,6 +46,9 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: L-Tyrosine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -45,6 +57,9 @@ ingredients:
     value: '0.22'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: Citrate
   concentration:
     value: '9.5'
@@ -61,6 +76,9 @@ ingredients:
   concentration:
     value: '0.33'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -68,6 +86,9 @@ ingredients:
   concentration:
     value: '0.81'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '26.0'
@@ -92,6 +113,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007053'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 162
   term:

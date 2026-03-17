@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '7'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.4'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium bicarbonate
 - preferred_term: Starch
   concentration:
     value: '1'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.5'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Arginine
   concentration:
     value: '1'
@@ -82,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:32696
     label: argininium(1+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: Haemin
   concentration:
     value: '0.005'
@@ -90,6 +114,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:50385
+    label: Haemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
     label: Haemin
 - preferred_term: Vitamin K
   concentration:
@@ -110,6 +137,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: Sodium thioglycollate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycollate
 - preferred_term: Dithiothreitol
   concentration:
     value: '1'
@@ -118,11 +148,17 @@ ingredients:
   term:
     id: CHEBI:18320
     label: Dithiothreitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: Dithiothreitol
 - preferred_term: L-Cysteine HCl
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Peptone
   concentration:
     value: '16'
@@ -148,3 +184,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009243'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

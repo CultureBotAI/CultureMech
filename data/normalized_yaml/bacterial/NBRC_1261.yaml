@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007467'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.828919'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KH2PO40.2gNH4Cl0.25gNaCl1gMgCl2·6H2O0.4gKCl0.5gCaCl2·2H2O0.15gNa2SO44gYeast
     extract1gResazurin1mgSodium acetate2.73gTrace element mixture*1mlSelenite-tungstate
@@ -54,3 +58,4 @@ solutions:
     and then sterilized by autoclaving.****Sulfide solution (1.0 M)Na2S·9H2O12gDistilled
     water50mlSterilized by filtration and stored under N2gas.
   composition: []
+  name: Unknown solution

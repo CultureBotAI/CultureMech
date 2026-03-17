@@ -8,6 +8,9 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH
     7.3
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Yeast extract
@@ -36,3 +39,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007479'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.863346'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Yeast extract1gBeef extract1gN-Z-Amine
+    A2gGlucose10gDistilled water1LAgar20gpH 7.3'

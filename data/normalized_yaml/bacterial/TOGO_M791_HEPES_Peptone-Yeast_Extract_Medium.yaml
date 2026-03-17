@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2.7'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.14'
@@ -49,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -58,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '4.3'
@@ -73,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: HEPES
   concentration:
     value: '2.38'
@@ -80,6 +95,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: 0.2% Fe(NH4)2(SO4)2・6H2O (in 0.037% HCl)
   concentration:
@@ -121,6 +139,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010201'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.097882'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace elements (see Medium [M631])
   composition: []
@@ -128,9 +154,11 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

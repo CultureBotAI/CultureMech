@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Peptone
   concentration:
     value: '0.5'
@@ -37,6 +43,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '2.38'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -56,6 +68,9 @@ ingredients:
     value: '14'
     unit: G_PER_L
   notes: ' (if appropriate)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -63,6 +78,9 @@ ingredients:
   concentration:
     value: '0.0053'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -70,6 +88,9 @@ ingredients:
   concentration:
     value: '0.014'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -84,6 +108,9 @@ ingredients:
   concentration:
     value: '0.493'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -91,6 +118,9 @@ ingredients:
   concentration:
     value: '0.147'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -110,3 +140,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000774'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

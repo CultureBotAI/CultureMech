@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.05'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.2'
@@ -49,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -58,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCO3
   concentration:
     value: '0.1'
@@ -67,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:3311
     label: calcium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.1'
@@ -76,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:77732
     label: cadmium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000859
+    label: Ca(NO3)2
 - preferred_term: Glucose
   concentration:
     value: '0.15'
@@ -85,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -93,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -101,11 +125,17 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '5'
@@ -113,6 +143,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
@@ -127,6 +160,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.01'
@@ -135,6 +171,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -143,6 +182,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -151,6 +193,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine・HCl・2H2O
   concentration:
     value: '5'
@@ -162,6 +207,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000500
+    label: myo--Inositol
 media_term:
   preferred_term: TOGO Medium M515
   term:
@@ -195,9 +243,18 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009906'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.429333'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Vitamin solution (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

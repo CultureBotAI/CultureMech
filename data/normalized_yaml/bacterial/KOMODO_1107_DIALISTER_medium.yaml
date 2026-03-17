@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:232798
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001017
+    label: Na-L-lactate
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Cystein-HCl x 2 H2O
   concentration:
     value: '0.0025'
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '0.000771255'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: DTT
 - preferred_term: Na-formate
   term:
     id: CHEBI:62965
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formate
 - preferred_term: Na-fumarate
   term:
     id: CHEBI:115156
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Na-fumarate
 - preferred_term: Horse blood
   concentration:
     value: '0.5'
@@ -77,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -88,6 +112,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -95,6 +122,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -102,6 +132,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -109,6 +142,9 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 applications:
 - Microbial cultivation
 curation_history:
@@ -124,3 +160,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003807'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

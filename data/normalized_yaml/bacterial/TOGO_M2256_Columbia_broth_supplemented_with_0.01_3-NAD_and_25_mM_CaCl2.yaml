@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2
   concentration:
     value: '25'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: β-NAD
   concentration:
     value: '0.01'
@@ -47,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Dextrose
   concentration:
     value: '2.5'
@@ -56,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: Sodium Carbonate
   concentration:
     value: '0.6'
@@ -65,11 +77,17 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Sodium Carbonate
 - preferred_term: Tris (Hydroxymethyl) Aminomethane
   concentration:
     value: '0.83'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000643
+    label: Tris (Hydroxymethyl) Aminomethane
 - preferred_term: Ferrous Sulfate
   concentration:
     value: '0.02'
@@ -102,6 +120,9 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Tryptic Digest of Beef Heart
   concentration:
     value: '3'
@@ -128,3 +149,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008843'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

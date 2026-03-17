@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000725
+    label: 5-Aminovaleric acid
 - preferred_term: Fildes Enrichment
   concentration:
     value: '1'
@@ -35,6 +38,9 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000662
+    label: 3-Hydroxybenzoic acid
 preparation_steps:
 - step_number: 1
   action: COOL
@@ -61,3 +67,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001945'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

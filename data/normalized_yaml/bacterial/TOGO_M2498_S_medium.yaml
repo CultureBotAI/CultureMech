@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCI
   concentration:
     value: '0.2'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '0.6'
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -56,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: sodium succinate
   concentration:
     value: '1'
@@ -65,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: sodium succinate
 - preferred_term: gelatin
   concentration:
     value: '7'
@@ -72,6 +90,9 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Undefined component'
   term:
     id: CHEBI:5291
+    label: gelatin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
     label: gelatin
 - preferred_term: Agar Noble (Difco)
   concentration:
@@ -84,6 +105,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001006
+    label: Na2MoO42H2O
 - preferred_term: H3BO3
   concentration:
     value: '100'
@@ -93,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl24H2O
   concentration:
     value: '100'
@@ -120,6 +147,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: ZnCl2
   concentration:
     value: '100'
@@ -129,6 +159,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: FeCl36H2O
   concentration:
     value: '2000'
@@ -144,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3
 - preferred_term: EDTA-2Na
   concentration:
     value: '1000'
@@ -157,6 +193,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: biotin
 - preferred_term: p-aminobenzoic acid
   concentration:
     value: '30'
@@ -165,6 +204,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-aminobenzoic acid
 - preferred_term: thiamine-HCl
   concentration:
     value: '50'
@@ -173,6 +215,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: thiamine-HCl
 - preferred_term: pyridoxine-HCl
   concentration:
     value: '10'
@@ -181,6 +226,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: pyridoxine-HCl
 - preferred_term: vitamin B12
   concentration:
     value: '5'
@@ -188,6 +236,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
     label: vitamin B12
 - preferred_term: niacin
   concentration:
@@ -197,6 +248,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: niacin
 media_term:
   preferred_term: TOGO Medium M2498
   term:
@@ -226,6 +280,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009071'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.909686'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: CaCl2 solution
@@ -235,6 +298,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: trace element solution
   term:
     id: mediadive.solution:6187
@@ -243,6 +307,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: vitamin solution
   term:
     id: mediadive.solution:6241
@@ -251,3 +316,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution

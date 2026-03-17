@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.5'
@@ -64,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.1'
@@ -72,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:22652
     label: ascorbic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000326
+    label: Ascorbic acid
 - preferred_term: Thioglycollic acid
   concentration:
     value: '0.1'
@@ -103,3 +118,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009989'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

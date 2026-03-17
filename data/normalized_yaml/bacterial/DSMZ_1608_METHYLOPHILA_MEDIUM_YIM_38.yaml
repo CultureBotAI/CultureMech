@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L-Phenylalanine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 preparation_steps:
 - step_number: 1
   action: HEAT
@@ -97,3 +121,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001089'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

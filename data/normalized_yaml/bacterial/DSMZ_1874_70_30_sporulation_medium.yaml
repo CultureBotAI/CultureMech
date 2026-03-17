@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
 - preferred_term: Tris base
   term:
     id: CHEBI:9754
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '1.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
 - preferred_term: Brain heart infusion broth
   concentration:
     value: '11.1'
@@ -48,6 +54,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
@@ -55,6 +64,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -81,3 +93,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001277'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

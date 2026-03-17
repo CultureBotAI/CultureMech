@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -57,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 media_term:
   preferred_term: TOGO Medium M575
   term:
@@ -90,6 +102,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009971'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.836216'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -99,6 +119,7 @@ solutions:
     value: '800'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -107,3 +128,4 @@ solutions:
     value: '200'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution

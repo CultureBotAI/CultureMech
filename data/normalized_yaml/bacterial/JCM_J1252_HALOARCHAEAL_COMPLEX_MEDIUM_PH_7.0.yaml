@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Sodium lactate
   term:
     id: CHEBI:75228
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Sodium succinate
   term:
     id: CHEBI:63675
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Sodium malate
   term:
     id: CHEBI:91261
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium malate
 - preferred_term: Sodium fumarate
   term:
     id: CHEBI:115156
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Sodium fumarate
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -83,6 +107,9 @@ ingredients:
   concentration:
     value: '5.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -90,6 +117,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: CaCl2 x H2O
   term:
     id: CHEBI:3312
@@ -97,6 +127,9 @@ ingredients:
   concentration:
     value: '0.29'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2 x H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -104,6 +137,9 @@ ingredients:
   concentration:
     value: '0.27'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -111,6 +147,9 @@ ingredients:
   concentration:
     value: '26.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -118,6 +157,9 @@ ingredients:
   concentration:
     value: '23'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -125,6 +167,9 @@ ingredients:
   concentration:
     value: '184'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -142,4 +187,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002418'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

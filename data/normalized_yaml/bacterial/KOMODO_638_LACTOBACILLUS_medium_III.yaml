@@ -32,6 +32,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
@@ -39,6 +42,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -46,6 +52,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Na-gluconate
   term:
     id: CHEBI:84997
@@ -53,6 +62,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001052
+    label: Na-gluconate
 - preferred_term: Na-acetate x 3 H2O
   concentration:
     value: '5'
@@ -64,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:63076
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000400
+    label: (NH4)2 citrate
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -71,6 +86,9 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -78,6 +96,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x 4 H2O
   term:
     id: CHEBI:86358
@@ -85,6 +106,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000711
+    label: MnSO4 x 4 H2O
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -92,6 +116,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -99,6 +126,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 applications:
 - Microbial cultivation
 curation_history:
@@ -114,3 +144,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006159'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

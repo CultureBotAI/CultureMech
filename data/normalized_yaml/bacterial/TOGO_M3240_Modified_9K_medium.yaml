@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.4'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.4'
@@ -31,6 +37,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Fe2(SO4)3
   concentration:
     value: '2.5'
@@ -72,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '68'
@@ -81,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '66'
@@ -90,6 +108,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: MnCl2·2H2O
   concentration:
     value: '62'
@@ -105,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4
 - preferred_term: NaVO3
   concentration:
     value: '30'
@@ -114,6 +138,9 @@ ingredients:
   term:
     id: CHEBI:75221
     label: sodium metavanadate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000637
+    label: NaVO3
 media_term:
   preferred_term: TOGO Medium M3240
   term:
@@ -149,6 +176,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009678'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.126695'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace element solution
@@ -159,3 +194,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution

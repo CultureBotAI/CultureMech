@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.5'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2MoO4 · 2H2O
   concentration:
     value: '47'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -71,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: biotin
   concentration:
     value: '20'
@@ -78,6 +90,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
     label: biotin
 - preferred_term: thiamine hydrochloride
   concentration:
@@ -87,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: Thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: thiamine hydrochloride
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3.6'
@@ -96,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: folic acid
   concentration:
     value: '20'
@@ -103,6 +124,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:27470
+    label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
     label: folic acid
 - preferred_term: vitamin B12
   concentration:
@@ -112,6 +136,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: vitamin B12
 - preferred_term: riboflavin
   concentration:
     value: '50'
@@ -119,6 +146,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
     label: riboflavin
 - preferred_term: CuSO4·5H2O
   concentration:
@@ -129,6 +159,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4·5H2O
 - preferred_term: MnSO4·H2O
   concentration:
     value: '200'
@@ -144,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: nicotinamide
 - preferred_term: NaH2PO4·H2O
   concentration:
     value: '2.8'
@@ -158,6 +194,9 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: D-calcium pantothenate
 media_term:
   preferred_term: TOGO Medium M2415
   term:
@@ -179,4 +218,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008998'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

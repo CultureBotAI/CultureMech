@@ -27,6 +27,9 @@ ingredients:
     value: '122285.71'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 120000.0, 2285.71]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -35,6 +38,9 @@ ingredients:
     value: '1535.714'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1250.0, 285.714]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -50,6 +59,9 @@ ingredients:
     value: '2.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -57,6 +69,9 @@ ingredients:
   concentration:
     value: '27142.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -64,6 +79,9 @@ ingredients:
   concentration:
     value: '4285.71'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -71,6 +89,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -101,4 +122,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002314'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

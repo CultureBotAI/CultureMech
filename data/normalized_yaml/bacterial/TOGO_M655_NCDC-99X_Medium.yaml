@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2CO3
   concentration:
     value: '4'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Histidine
   concentration:
     value: '1.55'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:27570
     label: histidine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: Arginine
   concentration:
     value: '2.11'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32696
     label: argininium(1+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -84,6 +99,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1.2'
@@ -99,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1.2'
@@ -114,6 +135,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '12'
@@ -123,6 +147,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 media_term:
   preferred_term: TOGO Medium M655
   term:
@@ -161,14 +188,24 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010057'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.294652'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Mineral solution 1 (see below)
   composition: []
   concentration:
     value: '37.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Mineral solution 2 (see below)
   composition: []
   concentration:
     value: '37.5'
     unit: G_PER_L
+  name: Unknown solution

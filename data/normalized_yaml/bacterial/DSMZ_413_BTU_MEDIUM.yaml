@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formiate
 - preferred_term: Na-fumarate
   term:
     id: CHEBI:115156
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Na-fumarate
 - preferred_term: Ground beef
   concentration:
     value: '487.805'
@@ -38,6 +44,9 @@ ingredients:
     value: '26.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 25.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Casitone
   concentration:
     value: '29.2683'
@@ -53,6 +62,9 @@ ingredients:
   concentration:
     value: '4.87805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -60,6 +72,9 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: L-Cysteine HCl
   term:
     id: CHEBI:52891
@@ -67,6 +82,9 @@ ingredients:
   concentration:
     value: '0.487805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -75,6 +93,9 @@ ingredients:
     value: '14.6341'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Haemin
   term:
     id: CHEBI:50385
@@ -82,6 +103,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
 - preferred_term: Vitamin K3
   concentration:
     value: '0.05'
@@ -94,6 +118,9 @@ ingredients:
     value: '959.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 9.5, 950.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -101,6 +128,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -154,3 +184,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001522'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007499'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.917248'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KP buffer*10mlMgCl2·6H2O0.75gCaCl2·2H2O0.15gNH4Cl0.54gNa2S2O31.6gNa2SO41.4gTrace
     elements solution**2mlVitamin solution***2mlResazurin1mgNa2CO30.5gNa2S·9H2O0.36gDistilled
@@ -53,3 +57,4 @@ solutions:
     then add minerals. Final pH 7.0.***Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
     acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L
   composition: []
+  name: Unknown solution

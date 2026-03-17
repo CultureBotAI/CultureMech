@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:5291
     label: gelatin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
+    label: gelatin
 - preferred_term: Distilled water
   concentration:
     value: '900'
@@ -21,6 +24,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: NaHCO3
   concentration:
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.8'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: HEPES
   concentration:
     value: '6'
@@ -47,6 +59,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: Trisodium citrate
   concentration:
@@ -56,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
 - preferred_term: N--Acetyl--D--glucosamine
   concentration:
     value: '0.4'
@@ -76,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: CMRL 1066 (Gibco 330--1540)
   concentration:
     value: '100'
@@ -120,3 +141,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008529'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

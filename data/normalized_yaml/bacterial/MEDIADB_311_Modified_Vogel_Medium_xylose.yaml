@@ -12,6 +12,9 @@ ingredients:
   concentration:
     value: '133.2'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000900
+    label: Xylose
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0002066'
@@ -36,6 +39,9 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -43,6 +49,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -50,6 +59,9 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
@@ -62,6 +74,9 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -69,6 +84,9 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.68'
@@ -80,6 +98,9 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
@@ -104,6 +125,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007210'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 311
   term:

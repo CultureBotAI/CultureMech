@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Sodium resazurin
   concentration:
     value: '1'
@@ -59,6 +71,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -66,6 +81,9 @@ ingredients:
   concentration:
     value: '0.298805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -73,6 +91,9 @@ ingredients:
   concentration:
     value: '14.9402'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -93,6 +114,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002722'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:26.704159'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt Solution I
   term:
@@ -102,6 +131,7 @@ solutions:
     value: '75'
     unit: G_PER_L
   notes: See mediadive_5691_Salt_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Salt Solution II
   term:
     id: mediadive.solution:2571
@@ -110,3 +140,4 @@ solutions:
     value: '75'
     unit: G_PER_L
   notes: See mediadive_2571_Salt_Solution_II.yaml for composition
+  name: Unknown solution

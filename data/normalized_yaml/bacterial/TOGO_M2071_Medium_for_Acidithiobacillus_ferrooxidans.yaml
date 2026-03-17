@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
@@ -50,6 +62,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '50'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Ca(NO3)2·4H2O
   concentration:
     value: '1.44'
@@ -68,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:86159
     label: calcium nitrate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2·4H2O
 - preferred_term: 0.25 N H2SO4
   concentration:
     value: '1'
@@ -118,6 +139,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008660'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.578746'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution I*
@@ -128,6 +157,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution II**
   term:
     id: mediadive.solution:5336
@@ -136,3 +166,4 @@ solutions:
     value: '100'
     unit: G_PER_L
   notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution

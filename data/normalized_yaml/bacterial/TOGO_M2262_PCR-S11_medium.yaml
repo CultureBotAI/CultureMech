@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Vitamin B12
   concentration:
     value: '10'
@@ -22,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Seawater (autoclaved)
   concentration:
     value: '1000'
@@ -52,6 +58,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Hepes
   concentration:
     value: '119.15'
@@ -60,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: Hepes
 - preferred_term: H3BO3
   concentration:
     value: '300'
@@ -69,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: NiCl2.6H2O
   concentration:
     value: '3'
@@ -84,6 +99,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4.7H2O
 - preferred_term: CuSO4.5H2O
   concentration:
     value: '3'
@@ -93,6 +111,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4.5H2O
 - preferred_term: KAI(SO4)2.12H2O
   concentration:
     value: '6'
@@ -120,6 +141,9 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+    label: KI
 - preferred_term: KBr
   concentration:
     value: '6'
@@ -129,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: Co(NO3)2.6H2O
   concentration:
     value: '3'
@@ -138,6 +165,9 @@ ingredients:
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000525
+    label: Co(NO3)2.6H2O
 - preferred_term: (NH4)6Mo7O24.4H2O
   concentration:
     value: '0.4'
@@ -185,6 +215,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: Na2HPO4
   concentration:
     value: '3.55'
@@ -194,6 +227,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: 0.1N HCl
   concentration:
     value: '40'
@@ -209,6 +245,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: 0.1N NaOH
   concentration:
     value: '40'
@@ -222,6 +261,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 media_term:
   preferred_term: TOGO Medium M2262
   term:
@@ -251,14 +293,24 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008849'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.766586'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: FeCl3 solution
   composition: []
   concentration:
     value: '40'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Na2-EDTA solution
   composition: []
   concentration:
     value: '40'
     unit: G_PER_L
+  name: Unknown solution

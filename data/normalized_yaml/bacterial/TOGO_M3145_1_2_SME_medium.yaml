@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
     value: '3.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: NaCl
   concentration:
     value: '13.85'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2.2H2O
   concentration:
     value: '0.38'
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: MgCl2.6H2O
   concentration:
     value: '2.75'
@@ -56,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2.6H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.015'
@@ -65,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -74,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '0.16'
@@ -83,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.25'
@@ -92,6 +116,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Elemental sulfur
   concentration:
     value: '5'
@@ -100,6 +127,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:33403
+    label: Elemental sulfur
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000677
     label: Elemental sulfur
 - preferred_term: NaBr
   concentration:
@@ -110,6 +140,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: SrCl2.6H2O
   concentration:
     value: '7.5'
@@ -119,6 +152,9 @@ ingredients:
   term:
     id: CHEBI:36385
     label: strontium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2.6H2O
 - preferred_term: KI
   concentration:
     value: '25'
@@ -128,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+    label: KI
 - preferred_term: Na2S
   concentration:
     value: '0.5'
@@ -137,6 +176,9 @@ ingredients:
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000783
+    label: Na2S
 - preferred_term: sulfuric acid
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -180,3 +222,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009611'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

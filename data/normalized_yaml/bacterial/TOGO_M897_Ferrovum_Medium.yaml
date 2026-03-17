@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '12.32'
@@ -29,6 +32,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 media_term:
   preferred_term: TOGO Medium M897
   term:
@@ -62,6 +68,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010314'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.768284'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Modified UBS solution (see Medium [M896])
   composition: []
@@ -69,6 +84,7 @@ solutions:
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1.0 M FeSO4 solution (pH 2.0)
   composition: []
   concentration:
@@ -76,9 +92,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
   composition: []
   notes: Cross-reference to Medium M773
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

@@ -28,6 +28,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (if necessary)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -58,3 +67,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001343'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

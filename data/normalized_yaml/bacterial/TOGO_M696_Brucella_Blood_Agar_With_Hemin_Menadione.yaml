@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Horse blood
   concentration:
     value: '50'
@@ -53,6 +56,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010102'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.517598'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Hemin solution (see Medium [M470])
   composition: []
@@ -60,9 +71,11 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Menadione solution (see Medium [M470])
   composition: []
   notes: Cross-reference to Medium M470
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

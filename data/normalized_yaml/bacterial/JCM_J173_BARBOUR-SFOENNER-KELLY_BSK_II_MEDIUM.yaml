@@ -28,6 +28,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -49,6 +58,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: N-Acetyl-D-glucosamine
   term:
     id: CHEBI:506227
@@ -56,6 +68,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000994
+    label: N-Acetyl-D-glucosamine
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -63,6 +78,9 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -78,6 +96,9 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
+    label: Gelatin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -96,3 +117,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002533'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

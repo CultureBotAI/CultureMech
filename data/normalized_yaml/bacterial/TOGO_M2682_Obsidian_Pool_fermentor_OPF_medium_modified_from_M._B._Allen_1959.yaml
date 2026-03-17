@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000815
+    label: MgSO4 x7H2O
 - preferred_term: Yeast Extract
   concentration:
     value: '0.1'
@@ -73,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
@@ -81,6 +87,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2Sx6H2O
   concentration:
@@ -97,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: FeCl3 x6H2O
   concentration:
     value: '0.02'
@@ -112,6 +124,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KNO3
   concentration:
     value: '0.1'
@@ -121,6 +136,9 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: CaSO4 x2H2O
   concentration:
     value: '0.17'
@@ -135,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3
 - preferred_term: Peptone
   concentration:
     value: '0.5'
@@ -162,6 +183,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Na2WO4
   concentration:
     value: '1'
@@ -171,6 +195,9 @@ ingredients:
   term:
     id: CHEBI:63940
     label: sodium tungstate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000240
+    label: Na2WO4
 - preferred_term: NaSeO3
   concentration:
     value: '1'
@@ -186,6 +213,9 @@ ingredients:
   term:
     id: CHEBI:48607
     label: lithium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000516
+    label: LiCl
 - preferred_term: Ni(NH4)2(SO4)
   concentration:
     value: '1'
@@ -221,6 +251,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009237'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.586343'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Wolfe's Vitamin Solution (1,000X_x0008_)
@@ -229,3 +267,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Complex component'
+  name: Unknown solution

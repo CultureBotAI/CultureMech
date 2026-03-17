@@ -36,6 +36,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010036'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.170708'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
   composition: []
@@ -43,3 +47,4 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

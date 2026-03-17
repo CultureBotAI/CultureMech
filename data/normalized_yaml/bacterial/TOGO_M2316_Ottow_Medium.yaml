@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Tap water
   concentration:
     value: '1000'
@@ -26,6 +29,9 @@ ingredients:
   notes: 'Role: Solvating media; Properties: Undefined component'
   term:
     id: CHEBI:15377
+    label: Tap water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Tap water
 - preferred_term: Glucose
   concentration:
@@ -36,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Meat extract
   concentration:
     value: '5'
@@ -49,6 +58,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Peptone
   concentration:
     value: '7.5'
@@ -76,3 +88,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008903'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

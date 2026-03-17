@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '6.4'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.24000000000000002'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '4.18'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -82,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.53'
@@ -91,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '10'
@@ -100,12 +127,18 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000429
+    label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: Na2Se3 x 5 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2Se3 x 5 H2O
 - preferred_term: Tryptone
   concentration:
     value: '1'
@@ -120,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -129,6 +165,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -137,6 +176,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
     label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
@@ -147,6 +189,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '0.01'
@@ -156,6 +201,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: Na2SeO3 x 5 H2O
   concentration:
     value: '0.3'
@@ -165,6 +213,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3 x 5 H2O
 - preferred_term: CoSO4 x 7 H2O
   concentration:
     value: '0.18'
@@ -174,6 +225,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
 - preferred_term: KAl(SO4)2 x 12 H2O
   concentration:
     value: '0.02'
@@ -183,6 +237,9 @@ ingredients:
   term:
     id: CHEBI:86465
     label: potassium aluminium sulfate dodecahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000293
+    label: KAl(SO4)2 x 12 H2O
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -192,6 +249,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Na2WO4 x 2 H2O
   concentration:
     value: '0.4'
@@ -201,6 +261,9 @@ ingredients:
   term:
     id: CHEBI:63939
     label: sodium tungstate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.5'
@@ -210,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -218,6 +284,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 media_term:
   preferred_term: TOGO Medium M2295
   term:
@@ -253,6 +322,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008881'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.933208'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution
   term:
@@ -262,3 +339,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution

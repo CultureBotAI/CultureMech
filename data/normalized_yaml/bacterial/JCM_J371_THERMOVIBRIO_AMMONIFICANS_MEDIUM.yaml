@@ -20,6 +20,9 @@ ingredients:
     value: '62.48911'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 6.08911, 55.4, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -35,6 +41,9 @@ ingredients:
     value: '1.971287'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.371287, 1.5, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -42,6 +51,9 @@ ingredients:
   concentration:
     value: '0.00990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -50,6 +62,9 @@ ingredients:
     value: '0.0001247525'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.47525e-05, 0.0001]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
 - preferred_term: Na2WO2 x 2 H2O
   concentration:
     value: '9.90099e-05'
@@ -61,6 +76,9 @@ ingredients:
   concentration:
     value: '0.0019802'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -68,6 +86,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: MES
   term:
     id: CHEBI:39010
@@ -75,6 +96,9 @@ ingredients:
   concentration:
     value: '4.9505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -82,6 +106,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -89,6 +116,9 @@ ingredients:
   concentration:
     value: '0.000990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -97,6 +127,9 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 14.0, 3.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -104,6 +137,9 @@ ingredients:
   concentration:
     value: '11'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -111,6 +147,9 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -118,6 +157,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -126,6 +168,9 @@ ingredients:
     value: '0.06999999999999999'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.06, 0.01]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -133,6 +178,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -140,6 +188,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -147,6 +198,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.5'
@@ -158,6 +212,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
@@ -165,6 +222,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -172,6 +232,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -179,6 +242,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: AlK(SO4)2
   term:
     id: CHEBI:86463
@@ -186,6 +252,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001074
+    label: AlK(SO4)2
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -193,6 +262,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -223,3 +295,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002730'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

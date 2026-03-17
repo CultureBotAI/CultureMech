@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000826
+    label: ampicillin
 - preferred_term: erythromycin
   concentration:
     value: '30'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:48923
     label: Erythromycin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000937
+    label: erythromycin
 - preferred_term: chloramphenicol
   concentration:
     value: '50'
@@ -60,3 +66,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009493'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

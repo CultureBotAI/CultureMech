@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: Urea
   term:
     id: CHEBI:16199
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.0499002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0012475'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Morpholinopropane sulfonic acid
   term:
     id: CHEBI:44115
@@ -62,6 +80,9 @@ ingredients:
   concentration:
     value: '9.98004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001061
+    label: Morpholinopropane sulfonic acid
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000499002'
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -84,6 +108,9 @@ ingredients:
   concentration:
     value: '4.99002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 applications:
 - Microbial cultivation
 curation_history:
@@ -99,3 +126,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004659'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

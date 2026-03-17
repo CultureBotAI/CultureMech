@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -27,6 +30,9 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Sea salts (Sigma-Aldrich)
   concentration:
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: L-Cysteine・HCl・H2O
   concentration:
     value: '0.2'
@@ -90,6 +99,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007934'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.690932'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 0.1% Na2SeO3 solution
   composition: []
@@ -97,21 +115,25 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1M Sodium thiosulfate solution
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

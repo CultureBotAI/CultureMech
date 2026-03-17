@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KNO3
   concentration:
     value: '2'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Na2S2O3 . 5H2O
   concentration:
     value: '5'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaHCO3
   concentration:
     value: '2'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.8'
@@ -76,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: CuSO4
   concentration:
     value: '1.57'
@@ -85,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
 - preferred_term: CoCl2
   concentration:
     value: '1.61'
@@ -94,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2
 - preferred_term: FeSO4
   concentration:
     value: '4.99'
@@ -103,6 +127,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
 - preferred_term: MnCl2
   concentration:
     value: '5.06'
@@ -118,6 +145,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
 - preferred_term: Ammonium molybdate
   concentration:
     value: '1.1'
@@ -127,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:91249
     label: ammonium molybdate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001093
+    label: Ammonium molybdate
 - preferred_term: EDTA
   concentration:
     value: '50'
@@ -135,6 +168,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 media_term:
   preferred_term: TOGO Medium M2235
   term:
@@ -175,6 +211,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008823'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.625630'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -184,6 +230,7 @@ solutions:
     value: '250'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -192,6 +239,7 @@ solutions:
     value: '250'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -200,6 +248,7 @@ solutions:
     value: '250'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D
   term:
     id: mediadive.solution:5313
@@ -208,6 +257,7 @@ solutions:
     value: '250'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace Metals Solution
   term:
     id: mediadive.solution:1633
@@ -216,9 +266,11 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_1633_Trace_metals_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: KOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution

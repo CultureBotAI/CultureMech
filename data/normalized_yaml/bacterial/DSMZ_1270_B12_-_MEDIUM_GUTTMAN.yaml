@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '14'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Trisodium citrate x 2 H2O
   concentration:
     value: '1'
@@ -33,6 +39,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: DL-Asparagine x H2O
   term:
     id: CHEBI:22653
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
+    label: DL-Asparagine x H2O
 - preferred_term: L-Arginine x HCl
   concentration:
     value: '0.2'
@@ -54,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:31235
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000576
+    label: L-Arginine x HCl
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: Glycine
   term:
     id: CHEBI:15428
@@ -68,6 +89,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: L-Histidine
   term:
     id: CHEBI:15971
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000272
+    label: L-Histidine
 - preferred_term: L-Tryptophan
   term:
     id: CHEBI:16828
@@ -82,6 +109,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001063
+    label: L-Tryptophan
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -89,6 +119,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -96,6 +129,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -103,6 +139,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -110,6 +149,9 @@ ingredients:
   concentration:
     value: 4e-05
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -132,3 +174,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000732'
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -33,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Hemin
   concentration:
     value: '5'
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Vitamin K1
   concentration:
     value: '1'
@@ -49,6 +58,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:18067
+    label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
     label: Vitamin K1
 - preferred_term: Agar
   concentration:
@@ -58,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Trypticase
   concentration:
     value: '30'
@@ -66,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
 - preferred_term: Oxoid Lab-Lemco Powder
   concentration:
     value: '20'
@@ -85,6 +103,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -135,3 +156,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009304'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

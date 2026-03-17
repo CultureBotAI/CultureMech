@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:28971
     label: Ampicillin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000826
+    label: Ampicillin
 - preferred_term: Kanamycin
   concentration:
     value: '50'
@@ -28,6 +31,9 @@ ingredients:
     Organic compound'
   term:
     id: CHEBI:28077
+    label: Rifampicin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000912
     label: Rifampicin
 - preferred_term: Tetracycline
   concentration:
@@ -65,3 +71,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009658'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

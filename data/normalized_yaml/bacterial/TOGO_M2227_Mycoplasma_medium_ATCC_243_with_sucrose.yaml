@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Horse serum
   concentration:
     value: '200'
@@ -62,6 +65,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008815'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.560820'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Yeast extract solution (15%)
   composition: []
@@ -69,3 +80,4 @@ solutions:
     value: '150'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution

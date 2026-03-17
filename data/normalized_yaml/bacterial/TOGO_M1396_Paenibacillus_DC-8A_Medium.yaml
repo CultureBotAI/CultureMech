@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -42,6 +48,9 @@ ingredients:
     compound, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2CO3
   concentration:
@@ -52,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Urea
   concentration:
     value: '4.2'
@@ -60,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: L-Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -119,6 +134,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007931'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.670817'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Mineral solution (see below)
@@ -126,9 +149,11 @@ solutions:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% (w/v) Xylose solution
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  name: Unknown solution

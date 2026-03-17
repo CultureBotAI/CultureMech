@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
 - preferred_term: Glycerol
   concentration:
     value: '12'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.24'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium Sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.6'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium Citrate
 - preferred_term: 'Whole Egg '
   concentration:
     value: '1000'
@@ -54,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:17196
     label: L-asparagine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Malachite green
   concentration:
     value: '0.4'
@@ -62,6 +77,9 @@ ingredients:
     component, Organic compound'
   term:
     id: CHEBI:72449
+    label: Malachite green
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000835
     label: Malachite green
 - preferred_term: Potato Flour
   concentration:
@@ -91,3 +109,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008979'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

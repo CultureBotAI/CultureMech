@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 media_term:
   preferred_term: TOGO Medium M1280
   term:
@@ -43,6 +46,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007814'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.952100'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])
   composition: []
@@ -50,3 +61,4 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

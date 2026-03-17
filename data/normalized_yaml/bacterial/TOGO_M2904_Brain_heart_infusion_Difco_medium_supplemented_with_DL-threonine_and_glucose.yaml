@@ -12,6 +12,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000310
+    label: DL-threonine
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -21,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Brain heart infusion (Difco) medium
   concentration:
     value: '1'
@@ -48,3 +54,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009442'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

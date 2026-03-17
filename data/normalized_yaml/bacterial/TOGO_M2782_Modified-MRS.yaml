@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
     value: '0.575'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '3'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.034'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4.7H2O
 - preferred_term: Polysorbate 80
   concentration:
     value: '1'
@@ -70,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:86358
     label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000711
+    label: MnSO4.4H2O
 - preferred_term: Tri-ammonium citrate
   concentration:
     value: '2'
@@ -84,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:32816
     label: Pyruvic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000680
+    label: Pyruvic acid
 - preferred_term: Cysteine-HCl
   concentration:
     value: '0.3'
@@ -91,6 +112,9 @@ ingredients:
   notes: 'Properties: Organic compound, Simple component, Defined component [WARNING:
     2 duplicates with conflicting units] [MANUAL REVIEW REQUIRED: PERCENT_W_V incompatible
     with absolute units]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000389
+    label: Cysteine-HCl
 - preferred_term: Meat extract
   concentration:
     value: '10'
@@ -110,6 +134,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 media_term:
   preferred_term: TOGO Medium M2782
   term:
@@ -140,3 +167,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009331'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '20'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '4'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: FeSO4 · 7H2O
   concentration:
     value: '1'
@@ -59,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaNO3
   concentration:
     value: '250'
@@ -68,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: K2SO4
   concentration:
     value: '100'
@@ -77,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: Na2EDTA · 2H2O
   concentration:
     value: '8'
@@ -101,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: ZnSO4 · 7H2O
   concentration:
     value: '22.2'
@@ -154,6 +175,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009080'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.933459'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: A5 solution
@@ -164,3 +193,4 @@ solutions:
     value: '0.1'
     unit: G_PER_L
   notes: See mediadive_4987_A5_solution.yaml for composition
+  name: Unknown solution

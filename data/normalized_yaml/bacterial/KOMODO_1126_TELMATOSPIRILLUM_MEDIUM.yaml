@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -62,6 +80,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -69,6 +90,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -76,6 +100,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -83,6 +110,9 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
@@ -90,6 +120,9 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
 - preferred_term: H3BO2
   term:
     id: CHEBI:38267
@@ -97,6 +130,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000920
+    label: H3BO2
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -104,6 +140,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CuCl2
   term:
     id: CHEBI:49553
@@ -111,6 +150,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000821
+    label: CuCl2
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -118,6 +160,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -125,6 +170,16 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
+- preferred_term: H3PO4
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
 applications:
 - Microbial cultivation
 curation_history:
@@ -140,3 +195,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003830'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:30.766480'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H3PO4'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

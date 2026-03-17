@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.4485'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000735
+    label: L-Aspartic acid
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: alpha-ketoglutaric acid
   term:
     id: CHEBI:30915
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.4485'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000825
+    label: alpha-ketoglutaric acid
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '18.018'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '0.199985'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Fetal bovine serum
   concentration:
     value: '100'
@@ -80,6 +101,9 @@ ingredients:
   concentration:
     value: '5.9575'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -87,6 +111,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -134,3 +161,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001032'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

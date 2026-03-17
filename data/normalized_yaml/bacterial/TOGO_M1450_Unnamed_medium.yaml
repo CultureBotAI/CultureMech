@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '2'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '1'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Fe(NH4)2(SO4)2·6H2O
   concentration:
     value: '2'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000429
+    label: Fe(NH4)2(SO4)2·6H2O
 - preferred_term: CaSO4·2H2O
   concentration:
     value: '0.1'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:32583
     label: calcium sulfate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000465
+    label: CaSO4·2H2O
 - preferred_term: Sodium lactate
   concentration:
     value: '3.5'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -107,3 +128,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007991'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

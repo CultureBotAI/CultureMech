@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Starch
   concentration:
     value: '1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:85248
     label: gellan gum
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
 - preferred_term: Cellobiose
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Maltose
   concentration:
     value: '1'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: Rumen fluid
   concentration:
     value: '150'
@@ -60,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -68,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '30'
@@ -84,6 +102,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
+    label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
     label: Cysteine
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
@@ -137,6 +158,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009264'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.782257'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Resazurin Solution (0.025%)
   composition: []
@@ -144,3 +173,4 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution

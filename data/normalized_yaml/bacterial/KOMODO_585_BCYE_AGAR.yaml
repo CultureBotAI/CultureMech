@@ -28,6 +28,9 @@ ingredients:
   concentration:
     value: '20.4082'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000555
+    label: ACES
 - preferred_term: Activated charcoal
   concentration:
     value: '4.08163'
@@ -39,6 +42,9 @@ ingredients:
   concentration:
     value: '30.6122'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -46,6 +52,9 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Fe4(PO4)2
   term:
     id: CHEBI:132767
@@ -53,11 +62,20 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000760
+    label: Fe4(PO4)2
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: potassium hydroxide
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 applications:
 - Microbial cultivation
 curation_history:
@@ -77,3 +95,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006055'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:39.407705'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

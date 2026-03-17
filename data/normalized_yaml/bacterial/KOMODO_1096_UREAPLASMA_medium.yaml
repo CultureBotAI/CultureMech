@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '0.142857'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Fish-Sperm DNA
   concentration:
     value: '0.285714'
@@ -31,6 +34,9 @@ ingredients:
   term:
     id: CHEBI:16991
     label: deoxyribonucleic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000732
+    label: Fish-Sperm DNA
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: '0.0285714'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
 - preferred_term: Urea
   term:
     id: CHEBI:16199
@@ -45,6 +54,9 @@ ingredients:
   concentration:
     value: '0.571429'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -62,6 +74,12 @@ ingredients:
     id: CHEBI:17883
     label: hydrochloric acid
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +99,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003748'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:30.386156'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

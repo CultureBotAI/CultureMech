@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Fe(III) citrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '9.725'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '2.95'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '1.62'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.275'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: SrCl2
   term:
     id: CHEBI:36383
@@ -83,6 +107,9 @@ ingredients:
   concentration:
     value: '0.017'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000196
+    label: SrCl2
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -90,6 +117,9 @@ ingredients:
   concentration:
     value: '0.011'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: Na-silicate
   term:
     id: CHEBI:60720
@@ -97,6 +127,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: Na-silicate
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -104,6 +137,9 @@ ingredients:
   concentration:
     value: '0.0012'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000182
+    label: NaF
 - preferred_term: (NH4)NO3
   term:
     id: CHEBI:63038
@@ -111,6 +147,9 @@ ingredients:
   concentration:
     value: '0.0008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: (NH4)NO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -118,6 +157,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Sea water
   concentration:
     value: '500'
@@ -130,6 +172,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -145,4 +190,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:005844'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 ph_value: 7.6

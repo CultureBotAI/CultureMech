@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.1'
@@ -52,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Sodium acetate
   concentration:
     value: '0.2'
@@ -60,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: NaNO3
   concentration:
     value: '0.5'
@@ -69,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.2'
@@ -78,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Sodium succinate
   concentration:
     value: '0.2'
@@ -87,6 +108,9 @@ ingredients:
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
 - preferred_term: Sodium lactate
   concentration:
     value: '0.2'
@@ -96,6 +120,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Sodium citrate
   concentration:
     value: '0.2'
@@ -104,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium citrate
 - preferred_term: CaCl2・H2O
   concentration:
     value: '0.1'
@@ -123,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: agar
 - preferred_term: Sodium formate
   concentration:
     value: '0.2'
@@ -131,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
 - preferred_term: Sodium malate
   concentration:
     value: '0.2'
@@ -139,6 +175,9 @@ ingredients:
   term:
     id: CHEBI:91261
     label: disodium (S)-malate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium malate
 - preferred_term: Sodium fumarate
   concentration:
     value: '0.2'
@@ -147,6 +186,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Sodium fumarate
 media_term:
   preferred_term: TOGO Medium M1350
   term:
@@ -180,6 +222,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007887'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.378937'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution
@@ -188,3 +238,4 @@ solutions:
     value: variable
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution

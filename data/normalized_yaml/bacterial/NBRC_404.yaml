@@ -8,6 +8,9 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium
     glutamate6gAgar (if needed)15gDistilled water1LpH 6.7±0.2
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: K2HPO4
@@ -36,3 +39,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007493'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.899422'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast
+    extract0.6gArabinose4gSodium glutamate6gAgar (if needed)15gDistilled water1LpH
+    6.7±0.2'

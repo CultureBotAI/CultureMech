@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007498'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.914103'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: (NH4)2SO41.3gKH2PO40.28gMgSO4·7H2O0.25gCaCl2·2H2O0.07gFeCl3·6H2O0.02gMnCl2·4H2O1.8mgNa2B4O7·10H2O4.5mgZnSO4·7H2O0.22mgCuCl2·2H2O0.05mgNa2MoO4·2H2O0.03mgVOSO4·nH2O0.03mgCoSO4·7H2O0.01mgBacto
     Yeast Extract (Difco)1gSulfur (powder)5gNa2S·9H2O0.5gResazurin1mgDistilled water1LMix
@@ -48,3 +52,4 @@ solutions:
     and sulfur to the medium. Prior to inoculation, add sterile Na2S·9H2O solution,
     and adjust pH to 4.5-5.0 with sterile 1 N H2SO4.
   composition: []
+  name: Unknown solution

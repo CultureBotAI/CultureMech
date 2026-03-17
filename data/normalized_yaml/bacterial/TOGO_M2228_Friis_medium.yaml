@@ -42,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Water
 - preferred_term: Bacto brain heart infusion
   concentration:
     value: '15'
@@ -76,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 . 6H2O
   concentration:
     value: '1'
@@ -91,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 (anhydrous)
   concentration:
     value: '1.4'
@@ -105,6 +114,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2HPO4 . 12H2O
   concentration:
@@ -141,6 +153,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008816'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.567445'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Phenol red solution
   composition: []
@@ -148,6 +169,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Solution 1
   term:
     id: mediadive.solution:6108
@@ -156,8 +178,10 @@ solutions:
     value: '557'
     unit: G_PER_L
   notes: See mediadive_6108_Solution_1.yaml for composition
+  name: Unknown solution
 - preferred_term: Hanks' balanced salt solution
   composition: []
   concentration:
     value: '2500'
     unit: G_PER_L
+  name: Unknown solution

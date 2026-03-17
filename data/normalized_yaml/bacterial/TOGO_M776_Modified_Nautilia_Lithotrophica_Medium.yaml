@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '25'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.33'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -46,6 +55,9 @@ ingredients:
     component, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -62,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaNO3
   concentration:
     value: '1'
@@ -71,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Sulfur (powder)
   concentration:
     value: '12'
@@ -80,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:14258
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
 - preferred_term: HEPES
   concentration:
     value: '2.38'
@@ -87,6 +108,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
@@ -132,6 +156,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010184'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.998143'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
@@ -139,18 +173,21 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 5% NaHCO3 solution*
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 3% Na2S・9H2O solution
   composition: []
   concentration:
@@ -158,15 +195,18 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
     compound'
+  name: Unknown solution
 - preferred_term: 15% Sodium formate solution
   composition: []
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

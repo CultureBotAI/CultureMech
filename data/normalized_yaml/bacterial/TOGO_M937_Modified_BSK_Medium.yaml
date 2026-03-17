@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaHCO3
   concentration:
     value: '1.1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.4'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: HEPES
   concentration:
     value: '3'
@@ -39,6 +48,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: N-Acetyl-D-glucosamine
   concentration:
@@ -49,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:8006
     label: Peptidoglycan(N-acetyl-D-glucosamine)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000994
+    label: N-Acetyl-D-glucosamine
 - preferred_term: Probumin Universal Grade (Millipore)
   concentration:
     value: '25'
@@ -69,6 +84,9 @@ ingredients:
     value: '0.35'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate・2H2O
 - preferred_term: Glucose
   concentration:
     value: '2.5'
@@ -78,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: MEM alpha Modification (BioWest)
   concentration:
     value: '5.2'
@@ -96,6 +117,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M937
   term:
@@ -125,3 +149,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010359'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

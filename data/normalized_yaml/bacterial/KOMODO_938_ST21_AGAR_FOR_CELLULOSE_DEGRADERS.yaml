@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '1.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Yeast extract
   concentration:
     value: '0.0333333'
@@ -31,6 +34,9 @@ ingredients:
   concentration:
     value: '23.3333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Tap water
   term:
     id: CHEBI:15377
@@ -39,6 +45,9 @@ ingredients:
     value: '1000.0'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 600.0, 300.0, 100.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -46,6 +55,9 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -60,6 +75,9 @@ ingredients:
   concentration:
     value: '3.33333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MnSO4 x 7 H2O
   term:
     id: CHEBI:86360
@@ -67,6 +85,9 @@ ingredients:
   concentration:
     value: '0.333333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000605
+    label: MnSO4 x 7 H2O
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
@@ -74,11 +95,20 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: potassium hydroxide
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 applications:
 - Microbial cultivation
 curation_history:
@@ -98,3 +128,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006861'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:43.217323'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

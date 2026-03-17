@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '1.95'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
@@ -42,6 +48,9 @@ ingredients:
     value: '2000.0'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -49,6 +58,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -75,3 +87,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000571'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

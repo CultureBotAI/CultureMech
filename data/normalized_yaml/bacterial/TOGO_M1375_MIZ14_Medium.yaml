@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium acetate
   concentration:
     value: '1.36'
@@ -22,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1.1'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: MES
   concentration:
     value: '1.95'
@@ -38,6 +47,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
     label: MES
 - preferred_term: N2
   notes: 'Properties: Gas'
@@ -77,6 +89,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007914'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.548340'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []
@@ -84,27 +105,32 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% (w/v) Yeast extract solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: 5% L-Cysteine・HCl・H2O solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

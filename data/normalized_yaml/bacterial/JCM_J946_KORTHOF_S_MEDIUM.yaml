@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '15.5556'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -29,6 +32,9 @@ ingredients:
   concentration:
     value: '9.77778'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Polypeptone
   concentration:
     value: '8.88889'
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '2.66667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -47,6 +56,9 @@ ingredients:
   concentration:
     value: '0.222222'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -54,6 +66,9 @@ ingredients:
   concentration:
     value: '0.444444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -61,6 +76,9 @@ ingredients:
   concentration:
     value: '0.444444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -83,3 +101,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003294'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

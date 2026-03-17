@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: DNA (fish sperm; SERVA)
   concentration:
     value: '0.04'
@@ -81,6 +84,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009031'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.679205'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Arginine HCl (50% aqueous solution)
   composition: []
@@ -88,3 +99,4 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Nitrogen source'
+  name: Unknown solution

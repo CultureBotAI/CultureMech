@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -36,6 +42,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Tween 80
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Beef extract
   concentration:
     value: '5'
@@ -73,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: Cysteine-HCl x H2O
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -101,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -110,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.25'
@@ -119,6 +143,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -127,6 +154,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NaHCO3
   concentration:
@@ -137,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: 1N NaOH
   concentration:
     value: '1'
@@ -151,6 +184,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
 - preferred_term: 95% ethanol
   concentration:
     value: '20'
@@ -164,6 +200,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:18067
+    label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
     label: Vitamin K1
 media_term:
   preferred_term: TOGO Medium M2585
@@ -201,6 +240,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009153'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.603357'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt solution
   term:
@@ -210,6 +258,7 @@ solutions:
     value: '40'
     unit: G_PER_L
   notes: See mediadive_6218_Salt_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin K1 solution
   term:
     id: mediadive.solution:2227
@@ -218,6 +267,7 @@ solutions:
     value: '0.2'
     unit: G_PER_L
   notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Haemin solution
   term:
     id: mediadive.solution:1628
@@ -226,3 +276,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_1628_Haemin_solution.yaml for composition
+  name: Unknown solution

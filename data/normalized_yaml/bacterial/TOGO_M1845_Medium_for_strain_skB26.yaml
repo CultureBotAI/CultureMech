@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.1'
@@ -31,6 +37,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.2'
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaNO3
   concentration:
     value: '1.7'
@@ -68,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -92,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '30'
@@ -101,6 +125,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2100'
@@ -128,6 +155,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '144'
@@ -137,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '2'
@@ -146,6 +179,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: HCl (25%; 7.7 M)
   concentration:
     value: '12.5'
@@ -161,6 +197,9 @@ ingredients:
   term:
     id: CHEBI:48843
     label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3·5H2O
 - preferred_term: Na2WO4·2H2O
   concentration:
     value: '8'
@@ -170,6 +209,9 @@ ingredients:
   term:
     id: CHEBI:63939
     label: sodium tungstate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4·2H2O
 - preferred_term: NaOH
   concentration:
     value: '0.4'
@@ -178,6 +220,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: NaHCO3
   concentration:
     value: '8.4'
@@ -187,6 +232,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -205,6 +253,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '4'
@@ -213,6 +264,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Ca-pantothenate
   concentration:
     value: '5'
@@ -221,6 +275,9 @@ ingredients:
   term:
     id: CHEBI:29032
     label: (R)-pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000219
+    label: Ca-pantothenate
 - preferred_term: Pyridoxine-HCl
   concentration:
     value: '15'
@@ -229,6 +286,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine-HCl
 - preferred_term: Nicotinic acid
   concentration:
     value: '10'
@@ -237,6 +297,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Sodium phosphate buffer (25 mM; pH 3.4)
   concentration:
     value: '100'
@@ -250,6 +313,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Cyanocobalamin
   concentration:
     value: '5'
@@ -258,6 +324,9 @@ ingredients:
   term:
     id: CHEBI:17439
     label: cyanocob(III)alamin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Cyanocobalamin
 - preferred_term: Na2S2O3·5H2O
   concentration:
     value: '24.8'
@@ -266,6 +335,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3·5H2O
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -311,6 +383,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008419'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:51.738386'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace element mixture*
@@ -318,6 +400,7 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite-tungstate solution**
   term:
     id: mediadive.solution:5543
@@ -326,6 +409,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_5543_Selenite-tungstate_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Bicarbonate solution***
   term:
     id: mediadive.solution:29
@@ -334,6 +418,7 @@ solutions:
     value: '30'
     unit: G_PER_L
   notes: See mediadive_29_Bicarbonate_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin solution****
   term:
     id: mediadive.solution:6241
@@ -342,6 +427,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Thiamine solution*****
   term:
     id: mediadive.solution:4133
@@ -350,6 +436,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_4133_Thiamine_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin B12 solution******
   term:
     id: mediadive.solution:6105
@@ -358,8 +445,10 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Thiosulfate solution*******
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

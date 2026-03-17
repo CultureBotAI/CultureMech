@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -40,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.5'
@@ -55,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.5'
@@ -70,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine・HCl
   concentration:
     value: '1'
@@ -84,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2'
@@ -99,11 +114,17 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Sodium glutamate
 - preferred_term: Sodium L--malate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000875
+    label: Sodium L--malate
 media_term:
   preferred_term: TOGO Medium M87
   term:
@@ -129,3 +150,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010298'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

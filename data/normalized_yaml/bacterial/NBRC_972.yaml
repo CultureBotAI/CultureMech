@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007509'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.945191'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KH2PO44.4gNa2HPO44.8gNH4Cl1gMgSO4·7H2O0.5gSolution A*10mlSolution
     B**10mlDistilled water980mlAgar (if needed)20gpH unadjustedSolution A and B are
@@ -45,3 +49,4 @@ solutions:
     A.Ferric ammonium citrate5gCaCl20.5gDistilled water1L**Solution B.Sucrose100gDistilled
     water1L
   composition: []
+  name: Unknown solution

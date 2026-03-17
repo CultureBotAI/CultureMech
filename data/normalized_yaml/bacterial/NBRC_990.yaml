@@ -39,6 +39,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007510'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.948060'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Trypticase Peptone (BBL)2gBacto Yeast Extract (Difco)2g50% Sodium
     lactate25mlBiotin solution*2mlK solution**10mlM solution***2.5mlC solution****2.5mlResazurin1mg15%
@@ -50,3 +54,4 @@ solutions:
     solutionKH2PO490gNaCl90g(NH4)2SO490gDistilled water1L***M solutionMnCl2·4H2O4gCoCl2·6H2O4gDistilled
     water1L****C solutionCaCl2·2H2O10.6gDistilled water1L
   composition: []
+  name: Unknown solution

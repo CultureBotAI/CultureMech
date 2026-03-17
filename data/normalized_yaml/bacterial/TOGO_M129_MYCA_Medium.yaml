@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '3'
@@ -33,6 +39,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000524
+    label: Sodium DL--malate
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '2'
@@ -63,3 +72,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007833'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

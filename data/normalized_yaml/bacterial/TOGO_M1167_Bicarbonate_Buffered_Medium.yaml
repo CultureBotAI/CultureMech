@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
@@ -36,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -54,6 +66,9 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2HPO4・2H2O
   concentration:
@@ -111,6 +126,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007691'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.087837'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []
@@ -118,24 +144,28 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '0.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 8% NaHCO3 solution*
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+  name: Unknown solution
 - preferred_term: 10% CaCl2・2H2O solution
   composition: []
   concentration:
@@ -143,6 +173,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 10% MgCl2・6H2O solution
   composition: []
   concentration:
@@ -150,17 +181,20 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Substrate solution (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 5% Na2S・9H2O solution
   composition: []
   concentration:
@@ -168,9 +202,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: trisodium citrate solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution

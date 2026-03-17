@@ -13,6 +13,9 @@ ingredients:
     value: '8.2e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: '''(S'
   concentration:
     value: '27.0'
@@ -26,6 +29,9 @@ ingredients:
     value: '5.3e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -34,6 +40,9 @@ ingredients:
     value: '0.00012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -42,6 +51,9 @@ ingredients:
     value: '0.00015'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -61,6 +73,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -68,6 +83,9 @@ ingredients:
   concentration:
     value: '6.6e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.9'
@@ -79,6 +97,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.001'
@@ -90,6 +111,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -97,6 +121,9 @@ ingredients:
   concentration:
     value: '40.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -117,6 +144,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007119'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 224
   term:

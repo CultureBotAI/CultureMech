@@ -38,9 +38,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007483'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.873494'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Soluble starch10gK2HPO4(anhydrous base)1gMgSO4·7H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace
     salts solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should
     be 7.0 - 7.4*Trace salts solutionFeSO4·7H2O0.1gMnCl2·4H2O0.1gZnSO4·7H2O0.1gDistilled
     water100ml
   composition: []
+  name: Unknown solution

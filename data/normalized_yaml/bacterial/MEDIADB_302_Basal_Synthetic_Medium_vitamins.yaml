@@ -17,6 +17,9 @@ ingredients:
     value: '1.3'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Glutamine
   term:
     id: CHEBI:18050
@@ -25,6 +28,9 @@ ingredients:
     value: '1.03'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gln-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: L-Glutamate
   concentration:
     value: '1.02'
@@ -38,6 +44,9 @@ ingredients:
     value: '0.861'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -46,6 +55,9 @@ ingredients:
     value: '1.14'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -54,6 +66,9 @@ ingredients:
     value: '233.7'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lcts'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: Ammonium phosphate
   concentration:
     value: '121.2'
@@ -69,6 +84,9 @@ ingredients:
   concentration:
     value: '0.0812'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.072'
@@ -101,6 +119,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007205'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 302
   term:

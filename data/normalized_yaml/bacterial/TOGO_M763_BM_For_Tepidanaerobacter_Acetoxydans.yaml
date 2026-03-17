@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -51,6 +60,9 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -102,6 +114,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010170'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.904972'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace metal solution (see Medium [M288])
   composition: []
@@ -109,24 +131,28 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 8% NaHCO3 solution*
   composition: []
   concentration:
     value: '40'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: glucose solution
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: 5% Na2S・9H2O solution
   composition: []
   concentration:
@@ -134,15 +160,18 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
     component'
+  name: Unknown solution
 - preferred_term: Phosphate solution (see Medium [M762])
   composition: []
   notes: Cross-reference to Medium M762
   concentration:
     value: '25'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

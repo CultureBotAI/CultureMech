@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Distilled water
   concentration:
     value: '200.0'
@@ -21,6 +24,9 @@ ingredients:
     Defined component [Merged 2 duplicates: 100.0, 100.0]'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: hemin
   concentration:
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: hemin
 - preferred_term: ethanol
   concentration:
     value: '1'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: ethanol
 - preferred_term: menadione
   concentration:
     value: '5'
@@ -48,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:28869
     label: Menadione
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000903
+    label: menadione
 media_term:
   preferred_term: TOGO Medium M470
   term:
@@ -81,6 +96,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009859'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.116226'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
   composition: []
@@ -88,6 +112,7 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: hemin solution
   term:
     id: mediadive.solution:5229
@@ -96,6 +121,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5229_Hemin_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: menadione solution
   term:
     id: mediadive.solution:5549
@@ -104,3 +130,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5549_Menadione_solution.yaml for composition
+  name: Unknown solution

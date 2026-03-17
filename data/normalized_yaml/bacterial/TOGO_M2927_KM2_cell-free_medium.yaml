@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Brain Heart Infusion (BHI) (Difco)
   concentration:
     value: '1.5'
@@ -56,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '160'
@@ -65,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '3.7'
@@ -74,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '2'
@@ -83,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: KCl
   concentration:
     value: '4'
@@ -92,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   concentration:
     value: '1.2'
@@ -101,12 +119,18 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4·12H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4·12H2O
 - preferred_term: 0.1 M NaOH
   concentration:
     value: '10'
@@ -120,6 +144,9 @@ ingredients:
     component'
   term:
     id: CHEBI:31991
+    label: Phenol red
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
     label: Phenol red
 - preferred_term: azlocillin
   concentration:
@@ -164,6 +191,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009462'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.825678'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:29:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Fresh baker's yeast extract solution
@@ -172,18 +208,22 @@ solutions:
     value: '18'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Sterile solution A
   composition: []
   concentration:
     value: '12.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Sterile solution B
   composition: []
   concentration:
     value: '12.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phenol red solution
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

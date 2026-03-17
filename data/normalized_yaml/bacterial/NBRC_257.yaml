@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007481'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.868167'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4·7H2O0.24gCaSO4·2H2O0.17gSodium
     glutamate1gNa2CO35gNaCl250gDistilled water, make up to1LAgar (if needed)*20gAdjust
@@ -45,3 +49,4 @@ solutions:
     to other autoclaved ingredients. Check the final pH is between 9.0 - 9.5.*Dissolve
     agar by heating before adding NaCl.
   composition: []
+  name: Unknown solution

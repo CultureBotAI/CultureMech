@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -33,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
@@ -41,6 +47,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '0.52'
@@ -60,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '0.3'
@@ -69,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -78,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2CO3
   concentration:
     value: '1'
@@ -87,6 +108,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na-pyruvate
   concentration:
     value: '2.5'
@@ -95,6 +119,9 @@ ingredients:
     component'
   term:
     id: CHEBI:50144
+    label: Na-pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
     label: Na-pyruvate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
@@ -115,6 +142,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.3'
@@ -124,6 +154,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '0.2'
@@ -133,12 +166,18 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.2'
@@ -148,6 +187,9 @@ ingredients:
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: NiCl2 x 6 H2O
   concentration:
     value: '0.02'
@@ -157,6 +199,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '0.1'
@@ -166,6 +211,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '0.01'
@@ -175,6 +223,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: Na2-EDTA
   concentration:
     value: '0.5'
@@ -183,6 +234,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: 2 N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -197,6 +251,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -204,6 +261,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine hydrochloride
   concentration:
@@ -214,6 +274,9 @@ ingredients:
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Vitamin B12
   concentration:
     value: '101.0'
@@ -223,6 +286,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '250.0'
@@ -232,6 +298,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
   concentration:
     value: '200'
@@ -239,6 +308,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
     label: Thiamine-HCl x 2 H2O
 - preferred_term: D(+)-Biotin
   concentration:
@@ -248,6 +320,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D(+)-Biotin
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -261,6 +336,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine-HCl
   concentration:
     value: '50'
@@ -269,6 +347,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Folic acid
   concentration:
     value: '20'
@@ -277,6 +358,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Riboflavin
   concentration:
     value: '50'
@@ -285,6 +369,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: (DL)-alpha-Lipoic acid
   concentration:
     value: '50'
@@ -293,6 +380,9 @@ ingredients:
     component'
   term:
     id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
     label: (DL)-alpha-Lipoic acid
 - preferred_term: Calcium D-(+)-pantothenate
   concentration:
@@ -342,6 +432,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009178'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.889027'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution SL-4
   term:
@@ -351,6 +450,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_2248_Trace_element_solution_SL-4.yaml for composition
+  name: Unknown solution
 - preferred_term: 'Seven vitamins solution '
   term:
     id: mediadive.solution:4611
@@ -359,6 +459,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_4611_Seven_vitamins_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Wolin's vitamin solution (10x)
   term:
     id: mediadive.solution:5980
@@ -367,3 +468,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_5980_Wolin_s_vitamin_solution_10x.yaml for composition
+  name: Unknown solution

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaHCO3
   concentration:
     value: '0.4'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Hemin
   concentration:
     value: '0.01'
@@ -50,12 +62,18 @@ ingredients:
   term:
     id: CHEBI:50385
     label: hemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: L--Arginine
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
     Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L--Arginine
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -65,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Soluble starch
   concentration:
     value: '1'
@@ -87,6 +108,9 @@ ingredients:
   term:
     id: CHEBI:71240
     label: sodium diphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000786
+    label: Sodium pyrophosphate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -131,6 +155,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007630'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.703831'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 250 mM Dithiothreitol solution
   composition: []
@@ -138,3 +170,4 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution

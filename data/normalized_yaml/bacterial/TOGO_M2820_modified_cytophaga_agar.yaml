@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: potassium chloride
 - preferred_term: sodium acetate
   concentration:
     value: '0.02'
@@ -26,6 +29,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:32954
+    label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
     label: sodium acetate
 - preferred_term: magnesium chloride
   concentration:
@@ -36,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: magnesium chloride
 - preferred_term: gelatin
   concentration:
     value: '0.02'
@@ -43,6 +52,9 @@ ingredients:
   notes: 'Role: Solidifying component; Properties: Undefined component'
   term:
     id: CHEBI:5291
+    label: gelatin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
     label: gelatin
 - preferred_term: anhydrous calcium chloride
   concentration:
@@ -57,6 +69,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: beef extract
   concentration:
@@ -89,3 +104,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009366'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

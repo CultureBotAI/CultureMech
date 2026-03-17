@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Uracil
   concentration:
     value: '100'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:17568
     label: uracil
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000501
+    label: Uracil
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -63,6 +75,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: ethanol
   concentration:
     value: '1'
@@ -72,6 +87,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: ethanol
 - preferred_term: erythromycin
   concentration:
     value: '10'
@@ -80,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:48923
     label: Erythromycin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000937
+    label: erythromycin
 media_term:
   preferred_term: TOGO Medium M256
   term:
@@ -113,9 +134,18 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009138'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.505832'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: erythromycin solution
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

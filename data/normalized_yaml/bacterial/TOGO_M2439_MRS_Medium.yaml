@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.2'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na-acetate
   concentration:
     value: '5'
@@ -44,6 +53,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:32954
+    label: Na-acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
     label: Na-acetate
 - preferred_term: Tween 80
   concentration:
@@ -54,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '0.05'
@@ -63,6 +78,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: (NH4)3 citrate
   concentration:
     value: '2'
@@ -72,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:63037
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000335
+    label: (NH4)3 citrate
 - preferred_term: Glucose
   concentration:
     value: '20'
@@ -81,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Meat extract
   concentration:
     value: '10'
@@ -114,3 +138,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009018'
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

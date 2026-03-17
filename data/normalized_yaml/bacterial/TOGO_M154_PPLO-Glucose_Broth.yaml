@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Sterile horse serum
   concentration:
     value: '200'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: PPLO broth (BD-Difco)
   concentration:
     value: '21'
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001085
+    label: Penicillin
 media_term:
   preferred_term: TOGO Medium M154
   term:
@@ -75,6 +84,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008098'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.330153'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 0.4% Phenol red solution
   composition: []
@@ -82,9 +99,11 @@ solutions:
     value: '5'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: 25% Solution of fresh baker's yeast extract (Gibco 360-8180)
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution

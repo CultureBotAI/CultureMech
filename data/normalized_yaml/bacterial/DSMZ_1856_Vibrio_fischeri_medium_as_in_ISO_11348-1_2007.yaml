@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaH2PO4 x H2O
   term:
     id: CHEBI:37585
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '6.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4 x H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '2.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.204'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2HPO4
   term:
     id: CHEBI:62476
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000385
+    label: (NH4)2HPO4
 - preferred_term: glycerin
   term:
     id: CHEBI:17754
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: glycerin
 - preferred_term: Casein peptone
   concentration:
     value: '5'
@@ -89,3 +107,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001274'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

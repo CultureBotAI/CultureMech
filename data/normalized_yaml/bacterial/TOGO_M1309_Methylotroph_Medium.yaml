@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.07'
@@ -28,6 +31,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Na2SO4
   concentration:
     value: '0.014'
@@ -53,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: HEPES
   concentration:
     value: '4.77'
@@ -60,6 +72,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:46756
+    label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
     label: HEPES
 - preferred_term: agar
   concentration:
@@ -69,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: agar
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -77,6 +95,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: Methanol
   concentration:
     value: '0.81'
@@ -86,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
 media_term:
   preferred_term: TOGO Medium M1309
   term:
@@ -119,6 +143,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007844'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.144087'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution (see Medium [M278])
   composition: []
@@ -126,27 +159,32 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Se/W solution (see Medium [M278])
   composition: []
   notes: Cross-reference to Medium M278
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10 mM CuCl2 solution
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution
 - preferred_term: 10 mM CeCl3 solution
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution

@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '4.97512'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -30,6 +33,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
 - preferred_term: Horse serum
   concentration:
     value: '200'
@@ -45,6 +51,9 @@ ingredients:
   concentration:
     value: '1000000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001085
+    label: Penicillin
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -60,3 +69,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002522'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

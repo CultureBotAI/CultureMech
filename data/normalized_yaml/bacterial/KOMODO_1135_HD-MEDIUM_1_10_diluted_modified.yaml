@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '0.25'
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '1.95'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
@@ -43,6 +49,9 @@ ingredients:
     value: '2000.0'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -50,11 +59,20 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
     label: sodium hydroxide
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 applications:
 - Microbial cultivation
 curation_history:
@@ -74,3 +92,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003844'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:30.828156'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -17,6 +17,9 @@ ingredients:
   concentration:
     value: '80.5542'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000374
+    label: Ethylene glycol
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.00901024'
@@ -32,6 +35,9 @@ ingredients:
   concentration:
     value: '2.43437'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.00359648'
@@ -43,6 +49,9 @@ ingredients:
   concentration:
     value: '0.0034779'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0044829'
@@ -54,6 +63,9 @@ ingredients:
   concentration:
     value: '24.9838'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -74,6 +86,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007173'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 273
   term:

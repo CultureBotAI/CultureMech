@@ -24,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '4.5'
@@ -38,6 +41,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -46,6 +52,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: FeSO4·7H2O
   concentration:
@@ -62,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4·3H2O
   concentration:
     value: '7.2'
@@ -77,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '2.6'
@@ -86,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: Sodium glycerophosphate
   concentration:
     value: '6'
@@ -101,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Glutathione
   concentration:
     value: '0.25'
@@ -110,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:16856
     label: glutathione
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000466
+    label: Glutathione
 media_term:
   preferred_term: TOGO Medium M2000
   term:
@@ -149,6 +173,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008587'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.044595'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A*
   term:
@@ -158,6 +191,7 @@ solutions:
     value: '440'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B**
   term:
     id: mediadive.solution:5343
@@ -166,6 +200,7 @@ solutions:
     value: '200'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C***
   term:
     id: mediadive.solution:5312
@@ -174,6 +209,7 @@ solutions:
     value: '300'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D****
   term:
     id: mediadive.solution:5313
@@ -182,6 +218,7 @@ solutions:
     value: '50'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution E*****
   term:
     id: mediadive.solution:4959
@@ -190,3 +227,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_4959_Solution_E.yaml for composition
+  name: Unknown solution

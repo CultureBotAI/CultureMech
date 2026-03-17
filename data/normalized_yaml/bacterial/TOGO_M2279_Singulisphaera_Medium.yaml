@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: N-acetylglucosamine
   concentration:
     value: '1'
@@ -36,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:59640
+    label: N-acetylglucosamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000797
     label: N-acetylglucosamine
 - preferred_term: Na-ampicillin (may be omitted for pure cultures)
   concentration:
@@ -64,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '3.34'
@@ -73,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '599.0'
@@ -81,6 +96,9 @@ ingredients:
     Simple component [Merged 2 duplicates: 99.0, 500.0]'
   term:
     id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
     label: FeSO4 x 7 H2O
 - preferred_term: Nitrilotriacetic acid (NTA)
   concentration:
@@ -91,6 +109,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid (NTA)
 - preferred_term: (NH4)MoO7O24 x 4H2O
   concentration:
     value: '9.25'
@@ -109,6 +130,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -117,6 +141,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '1095'
@@ -126,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '39.2'
@@ -135,6 +165,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: MnSO4 x H2O
   concentration:
     value: '154'
@@ -144,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   concentration:
     value: '24.8'
@@ -152,6 +188,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000525
     label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
@@ -167,6 +206,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na-EDTA
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -176,6 +218,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 media_term:
   preferred_term: TOGO Medium M2279
   term:
@@ -208,4 +253,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008864'
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

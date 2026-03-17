@@ -12,6 +12,9 @@ ingredients:
   concentration:
     value: '0.1779'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -20,6 +23,9 @@ ingredients:
     value: '625.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:etoh'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Tromethamine
   concentration:
     value: '49.7'
@@ -31,6 +37,9 @@ ingredients:
   concentration:
     value: '2.16'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.006199'
@@ -43,6 +52,9 @@ ingredients:
     value: '0.07292'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.17'
@@ -54,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -61,6 +76,9 @@ ingredients:
   concentration:
     value: '138.3'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.02526'
@@ -88,6 +106,9 @@ ingredients:
   concentration:
     value: '0.07651'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -112,6 +133,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007246'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 345
   term:

@@ -38,6 +38,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009049'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.811760'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
 solutions:
 - preferred_term: Phenol red solution, 1% stock solution
   composition: []
@@ -45,20 +50,24 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: Glucose (20% solution)*
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: Bovine serum*
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Nutrient source'
+  name: Unknown solution
 - preferred_term: Yeast Extract Solution (GIBCO 18180)
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
+  name: Unknown solution

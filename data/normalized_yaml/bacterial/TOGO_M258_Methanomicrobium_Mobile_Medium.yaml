@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.13'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '8'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -53,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -61,6 +73,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
@@ -83,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.3'
@@ -92,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -144,6 +165,9 @@ ingredients:
   term:
     id: CHEBI:17418
     label: valeric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: Valeric acid
 - preferred_term: Isovaleric acid
   concentration:
     value: '0.5'
@@ -153,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:28484
     label: isovaleric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
 - preferred_term: Isobutyric acid
   concentration:
     value: '0.5'
@@ -162,6 +189,9 @@ ingredients:
   term:
     id: CHEBI:16135
     label: isobutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
 - preferred_term: α-Methylbutyric acid
   concentration:
     value: '0.5'
@@ -171,6 +201,9 @@ ingredients:
   term:
     id: CHEBI:37070
     label: 2-methylbutyric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: α-Methylbutyric acid
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -179,6 +212,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M258
   term:
@@ -219,6 +255,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009157'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.643616'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
@@ -226,9 +270,11 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

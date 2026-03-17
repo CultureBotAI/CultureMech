@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   concentration:
     value: '0.6'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.6'
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
@@ -62,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -71,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: FeCl2・4H2O
   concentration:
     value: '36'
@@ -82,6 +100,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate・2H2O
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -121,6 +142,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007650'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.824002'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: 0.5 M Tris--HCl solution (pH 8.0)
@@ -129,9 +158,11 @@ solutions:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+  name: Unknown solution
 - preferred_term: SL-6 trace element solution (see Medium [M158])
   composition: []
   notes: Cross-reference to Medium M158
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
@@ -49,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Na2S2O3・5H2O
   concentration:
     value: '0.5'
@@ -62,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:91261
     label: disodium (S)-malate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium DL-malate
 - preferred_term: 20 mM Potassium phosphate buffer (pH 7.8)
   concentration:
     value: '500'
@@ -97,6 +109,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008454'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.027841'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution I
@@ -107,6 +128,7 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution II
   term:
     id: mediadive.solution:5336
@@ -115,9 +137,11 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace element solution SL8 (see Medium [M183])
   composition: []
   notes: Cross-reference to Medium M183
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

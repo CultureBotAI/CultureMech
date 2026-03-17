@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '3.77358'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Citric acid
   term:
     id: CHEBI:30769
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '1.88679'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000283
+    label: Citric acid
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.471698'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.471698'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.0471698'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '14.1509'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -76,3 +97,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002986'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

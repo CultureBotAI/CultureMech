@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: D-Calcium pantothenate
   concentration:
     value: '0.005'
@@ -76,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: D-Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -83,6 +107,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -90,6 +117,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Lipoic acid
   term:
     id: CHEBI:16494
@@ -97,6 +127,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -105,6 +138,9 @@ ingredients:
     value: '101.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 100.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -112,6 +148,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Maltose
   term:
     id: CHEBI:17306
@@ -119,6 +158,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -126,6 +168,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -133,6 +178,9 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 - preferred_term: Vitamin K1
   term:
     id: CHEBI:18067
@@ -140,6 +188,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -147,6 +198,9 @@ ingredients:
   concentration:
     value: '6.804'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -154,6 +208,9 @@ ingredients:
   concentration:
     value: '6.721'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -161,6 +218,9 @@ ingredients:
   concentration:
     value: '4.675'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -168,6 +228,9 @@ ingredients:
   concentration:
     value: '1.605'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -175,6 +238,9 @@ ingredients:
   concentration:
     value: '0.089'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -182,6 +248,9 @@ ingredients:
   concentration:
     value: '0.095'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -189,6 +258,9 @@ ingredients:
   concentration:
     value: '0.028'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: MgCl2 x 2 H2O
   term:
     id: CHEBI:131394
@@ -196,6 +268,9 @@ ingredients:
   concentration:
     value: '0.971'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000419
+    label: MgCl2 x 2 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -203,6 +278,9 @@ ingredients:
   concentration:
     value: '0.273'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: CoCl2
   term:
     id: CHEBI:35696
@@ -210,6 +288,9 @@ ingredients:
   concentration:
     value: '0.104'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -217,6 +298,9 @@ ingredients:
   concentration:
     value: '0.048'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2 MoO4 x 2 H2O
 - preferred_term: Na2SeO3
   term:
     id: CHEBI:48843
@@ -224,6 +308,9 @@ ingredients:
   concentration:
     value: '0.035'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -231,6 +318,9 @@ ingredients:
   concentration:
     value: '0.237'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2WO4 x 2 H2O
   term:
     id: CHEBI:63939
@@ -238,6 +328,9 @@ ingredients:
   concentration:
     value: '0.066'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000309
+    label: Na2WO4 x 2 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -278,3 +371,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001152'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

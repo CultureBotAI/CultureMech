@@ -27,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Marine Broth
   concentration:
     value: '0.5'
@@ -45,6 +51,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Inosin
   term:
     id: CHEBI:17596
@@ -52,6 +61,9 @@ ingredients:
   concentration:
     value: '0.00134113'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000468
+    label: Inosin
 applications:
 - Microbial cultivation
 curation_history:
@@ -67,3 +79,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:005899'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

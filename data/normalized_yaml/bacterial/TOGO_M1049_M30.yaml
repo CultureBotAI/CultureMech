@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Aged seawater
   concentration:
     value: '700'
@@ -50,11 +53,17 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '10'
@@ -62,6 +71,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
@@ -76,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.2'
@@ -84,6 +99,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '10'
@@ -92,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinamide
   concentration:
     value: '10'
@@ -101,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: Nicotinamide
 - preferred_term: Thiamine・HCl・2H2O
   concentration:
     value: '10'
@@ -139,6 +163,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007565'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.302444'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution 1
   term:
@@ -148,6 +181,7 @@ solutions:
     value: '1030'
     unit: G_PER_L
   notes: See mediadive_6108_Solution_1.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 2
   term:
     id: mediadive.solution:6109
@@ -156,14 +190,17 @@ solutions:
     value: '0.2'
     unit: G_PER_L
   notes: See mediadive_6109_Solution_2.yaml for composition
+  name: Unknown solution
 - preferred_term: Modified Hutner's basal salts (see Medium [M941])
   composition: []
   notes: Cross-reference to Medium M941
   concentration:
     value: '20'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution No. 6 (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

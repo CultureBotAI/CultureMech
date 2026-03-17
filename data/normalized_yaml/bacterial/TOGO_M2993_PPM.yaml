@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: MES
   concentration:
     value: '2'
@@ -30,6 +36,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
     label: MES
 - preferred_term: NH4H2PO4
   concentration:
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:62982
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000515
+    label: NH4H2PO4
 - preferred_term: Gelrite (if needed)
   concentration:
     value: '8'
@@ -51,6 +63,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
     Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000731
+    label: Cycloheximide
 - preferred_term: Pectin
   concentration:
     value: '0.05'
@@ -59,6 +74,9 @@ ingredients:
     component'
   term:
     id: CHEBI:17309
+    label: Pectin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000531
     label: Pectin
 - preferred_term: Xylan from Beechwood
   concentration:
@@ -104,6 +122,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009511'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.956013'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: '*Trace element solution (SL-10) (see Medium [M2073])'
   composition: []
@@ -111,9 +137,11 @@ solutions:
   concentration:
     value: '2'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: '**Se/W solution (see Medium [M2073])'
   composition: []
   notes: Cross-reference to Medium M2073
   concentration:
     value: '2'
     unit: G_PER_L
+  name: Unknown solution

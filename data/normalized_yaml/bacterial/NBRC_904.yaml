@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007503'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.928193'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: NaCl30gKCl0.33gNH4Cl0.25gMgCl2·6H2O2.8gMgSO4·7H2O3.4gFeSO4·7H2O0.025gK2HPO40.3gNaBr0.01gTrace
     minerals*10mlVitamin solution**10mlBacto Yeast Extract (Difco)3gBacto Tryptone
@@ -53,3 +57,4 @@ solutions:
     acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgVitamin
     B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled water1L
   composition: []
+  name: Unknown solution

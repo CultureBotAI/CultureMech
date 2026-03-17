@@ -28,6 +28,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Monopotassium Phosphate
   concentration:
     value: '1'
@@ -37,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
 - preferred_term: Dipotassium Phosphate
   concentration:
     value: '4'
@@ -46,6 +52,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: Dipotassium Phosphate
 - preferred_term: Agar
   concentration:
     value: '10'
@@ -54,6 +63,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Corn Starch
   concentration:
     value: '1'
@@ -62,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:28017
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Corn Starch
 - preferred_term: Proteose Peptone No. 3
   concentration:
     value: '15'
@@ -103,6 +118,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008798'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.485600'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -112,6 +135,7 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -120,3 +144,4 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution

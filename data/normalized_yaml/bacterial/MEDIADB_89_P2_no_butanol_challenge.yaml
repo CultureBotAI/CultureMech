@@ -13,6 +13,9 @@ ingredients:
     value: '123.21'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -21,6 +24,9 @@ ingredients:
     value: '4.5429e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -29,6 +35,9 @@ ingredients:
     value: '0.00368963'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -37,6 +46,9 @@ ingredients:
     value: '0.00809302'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '3.18564'
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.189918'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '4.07785'
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '0.900619'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '0.0656655'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0399165'
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '31.6775'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium Acetate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -97,6 +121,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007436'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 89
   term:

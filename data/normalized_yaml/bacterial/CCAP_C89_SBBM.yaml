@@ -19,6 +19,9 @@ ingredients:
     value: '10.7'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 10.0, 0.7]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -34,6 +40,9 @@ ingredients:
     value: '10.7'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 10.0, 0.7]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -49,6 +61,9 @@ ingredients:
     value: '25.037999999999997'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 23.4, 1.638]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -56,6 +71,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -64,6 +82,9 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' (for solid medium) [Merged 2 duplicates: 15.0, 15.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Thiamine hydrochloride
   term:
     id: CHEBI:49105
@@ -71,6 +92,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine hydrochloride
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -79,6 +103,9 @@ ingredients:
     value: '3.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.75, 2.25]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -86,6 +113,9 @@ ingredients:
   concentration:
     value: '0.097'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -94,6 +124,9 @@ ingredients:
     value: '1.4309999999999998'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.041, 1.39]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -101,6 +134,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -108,6 +144,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: Na2 MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -115,11 +154,17 @@ ingredients:
   concentration:
     value: '0.004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2 MoO4 x 2 H2O
 - preferred_term: Cyanocobalamine
   concentration:
     value: '1.04'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.0, 0.04]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001039
+    label: Cyanocobalamine
 - preferred_term: Soil
   concentration:
     value: '159.091'
@@ -131,6 +176,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000586
+    label: Ca(NO3)2 x 4 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -138,6 +186,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2HPO4 x 12 H2O
   term:
     id: CHEBI:34683
@@ -145,6 +196,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 12 H2O
 - preferred_term: FeNa-EDTA
   concentration:
     value: '2.25'
@@ -156,6 +210,9 @@ ingredients:
   concentration:
     value: '2.48'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '1'
@@ -167,6 +224,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Biotine
   term:
     id: CHEBI:15956
@@ -174,6 +234,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotine
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -270,3 +333,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000403'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

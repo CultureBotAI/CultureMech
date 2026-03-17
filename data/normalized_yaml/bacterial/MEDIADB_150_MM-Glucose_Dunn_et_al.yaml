@@ -13,6 +13,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -21,6 +24,9 @@ ingredients:
     value: '4.09316e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.360425'
@@ -36,6 +42,9 @@ ingredients:
   concentration:
     value: '0.000331323'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -43,6 +52,9 @@ ingredients:
   concentration:
     value: '0.40572'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.123304'
@@ -54,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Sodium Glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -78,6 +93,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007041'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 150
   term:

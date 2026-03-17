@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '47.7'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -40,6 +49,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
@@ -99,6 +111,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: KCl
   concentration:
     value: '0.65'
@@ -108,6 +123,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   concentration:
     value: '0.1'
@@ -117,6 +135,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: SrCl2・6H2O
   concentration:
     value: '15'
@@ -132,6 +153,9 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+    label: KI
 - preferred_term: Citric acid
   concentration:
     value: '10'
@@ -140,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Citric acid
 media_term:
   preferred_term: TOGO Medium M229
   term:
@@ -177,6 +204,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008885'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.966005'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
@@ -184,3 +219,4 @@ solutions:
   concentration:
     value: '15'
     unit: G_PER_L
+  name: Unknown solution

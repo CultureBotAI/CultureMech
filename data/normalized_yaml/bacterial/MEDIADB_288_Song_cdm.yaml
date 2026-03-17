@@ -13,6 +13,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
@@ -21,6 +24,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
 - preferred_term: dTMP
   notes: 'Cross-references: KEGG:dtmp'
   concentration:
@@ -33,6 +39,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.205'
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '17.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine HCl
   term:
     id: CHEBI:131531
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '0.0112'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.329'
@@ -87,6 +111,9 @@ ingredients:
   concentration:
     value: '0.0383'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -94,6 +121,9 @@ ingredients:
   concentration:
     value: '15.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02'
@@ -138,6 +168,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007188'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 288
   term:

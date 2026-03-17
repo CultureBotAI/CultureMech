@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: L--cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -57,6 +60,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009843'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.048613'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: PYG MEDIUM (B) (see Medium [M423])
   composition: []
@@ -64,3 +75,4 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

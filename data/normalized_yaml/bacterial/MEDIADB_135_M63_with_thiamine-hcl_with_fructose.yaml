@@ -13,6 +13,9 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:fru'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000344
+    label: D-Fructose
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
@@ -24,6 +27,9 @@ ingredients:
   concentration:
     value: '0.0033'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -31,6 +37,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
@@ -39,6 +48,9 @@ ingredients:
   concentration:
     value: '11.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -46,6 +58,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -66,6 +81,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007024'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 135
   term:

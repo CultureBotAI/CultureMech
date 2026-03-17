@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: yeast extract
   concentration:
     value: '2'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: sodium pyruvate
   concentration:
     value: '2'
@@ -36,6 +42,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:50144
+    label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
     label: sodium pyruvate
 - preferred_term: KNO3
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: CaCl2
   concentration:
     value: '0.03'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4
   concentration:
     value: '0.1'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Na2HPO4.7H2O
   concentration:
     value: '2'
@@ -101,3 +119,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009061'
+- timestamp: '2026-03-17T06:29:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

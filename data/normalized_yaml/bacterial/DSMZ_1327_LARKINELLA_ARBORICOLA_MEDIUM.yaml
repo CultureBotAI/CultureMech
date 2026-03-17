@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: N-Acetylglucosamine
   term:
     id: CHEBI:59640
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000797
+    label: N-Acetylglucosamine
 - preferred_term: Peptone
   concentration:
     value: '0.1'
@@ -41,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -56,6 +68,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -63,6 +78,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -70,6 +88,9 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '3.335'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: (NH4)6Mo7O24 x 4 H2O
   concentration:
     value: '0.00925'
@@ -89,6 +113,9 @@ ingredients:
     value: '1.099'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.099, 0.5, 0.5]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Na-EDTA
   term:
     id: CHEBI:64734
@@ -97,6 +124,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.25, 0.25]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na-EDTA
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -105,6 +135,9 @@ ingredients:
     value: '2.19'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.095, 1.095]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -113,6 +146,9 @@ ingredients:
     value: '0.308'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.154, 0.154]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -121,6 +157,9 @@ ingredients:
     value: '0.0784'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0392, 0.0392]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
@@ -129,6 +168,9 @@ ingredients:
     value: '0.0496'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0248, 0.0248]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000525
+    label: Co(NO3)2 x 6 H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0354'
@@ -178,3 +220,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000784'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

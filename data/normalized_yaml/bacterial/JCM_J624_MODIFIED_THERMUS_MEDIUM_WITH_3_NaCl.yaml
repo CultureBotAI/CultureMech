@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000493
+    label: Sodium glutamate monohydrate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -35,6 +38,9 @@ ingredients:
     value: '29.7814314'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 29.703, 0.0784314]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '0.980392'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: CaSO4 x 2 H2O
   term:
     id: CHEBI:32583
@@ -49,6 +58,9 @@ ingredients:
   concentration:
     value: '0.588235'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000465
+    label: CaSO4 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -56,6 +68,9 @@ ingredients:
   concentration:
     value: '0.980392'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -63,6 +78,9 @@ ingredients:
   concentration:
     value: '1.0098'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -70,6 +88,9 @@ ingredients:
   concentration:
     value: '6.7549'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '1.08824'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -84,6 +108,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -109,3 +136,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002970'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

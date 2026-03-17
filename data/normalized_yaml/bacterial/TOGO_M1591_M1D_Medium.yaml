@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: water
 - preferred_term: Sucrose
   concentration:
     value: '1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Fructose
   concentration:
     value: '0.1'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Phenol red
   concentration:
     value: '6'
@@ -40,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:31991
+    label: Phenol red
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
     label: Phenol red
 - preferred_term: Sorbitol
   concentration:
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:30911
     label: glucitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000447
+    label: Sorbitol
 - preferred_term: Fetal bovine serum (heat-inactivated)
   concentration:
     value: '50'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Penicillin G (100,000 U/ml)
   concentration:
     value: '2.5'
@@ -113,3 +131,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008142'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

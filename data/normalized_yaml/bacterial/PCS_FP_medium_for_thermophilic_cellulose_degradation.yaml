@@ -1,0 +1,89 @@
+name: PCS-FP medium for thermophilic cellulose degradation
+original_name: PCS-FP medium for thermophilic cellulose degradation
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015439
+ingredients:
+- preferred_term: Filter paper (cellulose substrate)
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18246
+    label: cellulose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000114
+    label: Filter paper (cellulose substrate)
+- preferred_term: Calcium carbonate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000839
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000187
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+ph_value: 8.0
+temperature_value: 50.0
+incubation_atmosphere: AEROBIC
+notes: 'Vessel type: test tubes with loose caps
+
+
+  PCS basal medium (peptone-cellulose-salt) supplemented with filter paper as cellulose
+  substrate and calcium carbonate buffer. Medium prepared with loose caps to allow
+  oxygen entry while maintaining high humidity. Static (non-shaking) incubation. The
+  aerobic members (Pseudoxanthomonas, Brevibacillus, Bordetella) consume oxygen to
+  create localized anaerobic microenvironments for the cellulolytic Clostridium species.
+  Inoculum volume: 40 microliters per 4 mL medium. Subculture protocol: 40-700 microliters
+  transferred to fresh medium after 6 days.
+
+  '
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000061
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000061
+  evidence:
+  - reference: PMID:16269746
+    supports: SUPPORT
+    snippet: A cellulose-degrading defined mixed culture (designated SF356) consisting
+      of five bacterial strains (Clostridium straminisolvens CSK1, Clostridium sp.
+      strain FG4, Pseudoxanthomonas sp. strain M1-3, Brevibacillus sp. strain M1-5,
+      and Bordetella sp. strain M1-6) exhibited both functional and structural stability
+    explanation: Establishes SF356 as a defined cellulose-degrading community (detailed
+      medium composition in methods section includes PCS-FP medium with filter paper,
+      yeast extract, peptone, NaCl, CaCO3 at pH 8.0, 50°C)
+  - reference: PMID:15545431
+    supports: SUPPORT
+    snippet: The optimum temperature and initial pH for its growth and cellulose degradation
+      are 50-55 degrees C and pH 7.5
+    explanation: Establishes optimal growth parameters for C. straminisolvens CSK1,
+      the primary cellulolytic member
+curation_history:
+- timestamp: '2026-03-15T00:15:00.492730Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000061 growth_media record
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

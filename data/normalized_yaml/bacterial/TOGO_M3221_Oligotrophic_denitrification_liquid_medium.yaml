@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgCl2∙6H2O
   concentration:
     value: '0.01'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: CaCl2
   concentration:
     value: '0.01'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: K2HPO4·3H2O
   concentration:
     value: '0.02'
@@ -76,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
 - preferred_term: EDTA
   concentration:
     value: '0.5'
@@ -84,6 +96,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 media_term:
   preferred_term: TOGO Medium M3221
   term:
@@ -113,6 +128,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009661'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.078361'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution
   term:
@@ -122,3 +145,4 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution

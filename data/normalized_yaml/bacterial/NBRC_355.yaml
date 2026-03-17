@@ -9,6 +9,9 @@ ingredients:
 - preferred_term: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar (if
     needed)15gDistilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize
     separately by filtration.
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Hipolypepton*
@@ -37,3 +40,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007489'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.888736'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Hipolypepton*10gYeast extract2gMethanol**5mlMgSO4·7H2O1gAgar
+    (if needed)15gDistilled water1LpH 7.0*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Sterilize
+    separately by filtration.'

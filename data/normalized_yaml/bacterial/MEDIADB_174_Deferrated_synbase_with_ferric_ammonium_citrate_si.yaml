@@ -13,6 +13,9 @@ ingredients:
     value: '410.79'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Cl-
   concentration:
     value: '0.141'
@@ -25,6 +28,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '28.7'
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.6265'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '35.22'
@@ -44,6 +53,9 @@ ingredients:
   concentration:
     value: '22.059'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0202'
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '35.69'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium Succinate
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '1.432'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -86,6 +104,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007065'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 174
   term:

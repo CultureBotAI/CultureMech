@@ -29,6 +29,9 @@ ingredients:
   concentration:
     value: '0.44375'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 7 H2O
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -36,6 +39,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -44,6 +50,9 @@ ingredients:
     value: '16.52'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 16.0, 0.52]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Yeast extract
   concentration:
     value: '100'
@@ -55,6 +64,9 @@ ingredients:
   concentration:
     value: '75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
@@ -62,6 +74,9 @@ ingredients:
   concentration:
     value: '1.53'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
 - preferred_term: Glutamic acid
   term:
     id: CHEBI:18237
@@ -69,6 +84,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000946
+    label: Glutamic acid
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -141,3 +159,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000984'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

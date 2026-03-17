@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgCl2.6H2O
   concentration:
     value: '0.2'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2.6H2O
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.01'
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:77732
     label: cadmium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000859
+    label: Ca(NO3)2
 - preferred_term: Deionized water
   concentration:
     value: '1'
@@ -70,6 +85,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 media_term:
   preferred_term: TOGO Medium M3248
   term:
@@ -95,3 +113,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009680'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

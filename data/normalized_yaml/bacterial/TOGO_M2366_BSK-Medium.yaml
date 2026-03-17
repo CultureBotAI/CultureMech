@@ -26,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: Na-pyruvate
   concentration:
     value: '0.8'
@@ -35,11 +38,17 @@ ingredients:
   term:
     id: CHEBI:50144
     label: Na-pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
 - preferred_term: Na-citrate
   concentration:
     value: '0.7'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000794
+    label: Na-citrate
 - preferred_term: N-Acetylglucosamine
   concentration:
     value: '0.4'
@@ -49,6 +58,9 @@ ingredients:
   term:
     id: CHEBI:59640
     label: N-acetylglucosamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000797
+    label: N-Acetylglucosamine
 - preferred_term: Proteose yeastolate (TC) (DIFCO 5577-15)
   concentration:
     value: '1'
@@ -68,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:18050
     label: L-glutamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
 - preferred_term: Proteose tryptone (DIFCO 0123-01)
   concentration:
     value: '1'
@@ -91,6 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: gelatine
   concentration:
     value: '14'
@@ -99,6 +117,9 @@ ingredients:
   term:
     id: CHEBI:5291
     label: Gelatine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
+    label: gelatine
 - preferred_term: bidest. Water
   concentration:
     value: '343.0'
@@ -150,24 +171,37 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008950'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.307749'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 'Solution A:'
   composition: []
   concentration:
     value: '1000'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 'Solution B:'
   composition: []
   concentration:
     value: '200'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 'Solution C:'
   composition: []
   concentration:
     value: '143'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 'Solution D:'
   composition: []
   concentration:
     value: '86'
     unit: G_PER_L
+  name: Unknown solution

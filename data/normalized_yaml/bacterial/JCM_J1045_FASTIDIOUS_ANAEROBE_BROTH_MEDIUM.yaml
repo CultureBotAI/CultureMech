@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '4.98008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -30,6 +33,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -37,6 +43,9 @@ ingredients:
   concentration:
     value: '0.398406'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -44,6 +53,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Sodium pyruvate
   term:
     id: CHEBI:50144
@@ -51,6 +63,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -58,6 +73,9 @@ ingredients:
   concentration:
     value: '0.498008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Sodium pyrophosphate
   term:
     id: CHEBI:71240
@@ -65,6 +83,9 @@ ingredients:
   concentration:
     value: '0.249004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000786
+    label: Sodium pyrophosphate
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -72,6 +93,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: Hemin
   term:
     id: CHEBI:50385
@@ -79,6 +103,9 @@ ingredients:
   concentration:
     value: '0.00996016'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Hemin
 - preferred_term: Dithiothreitol
   term:
     id: CHEBI:18320
@@ -86,6 +113,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: Dithiothreitol
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -107,3 +137,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002229'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.05'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '0.2'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Na2S2O3·5H2O
   concentration:
     value: '0.5'
@@ -63,6 +78,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3·5H2O
 - preferred_term: Sodium DL-malate
   concentration:
     value: '3.6'
@@ -71,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:91261
     label: disodium (S)-malate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000450
+    label: Sodium DL-malate
 - preferred_term: 20 mM Potassium phosphate buffer
   concentration:
     value: '500'
@@ -86,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '62'
@@ -95,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '100'
@@ -116,6 +143,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '17'
@@ -125,6 +155,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: ZnCl2
   concentration:
     value: '70'
@@ -134,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: FeCl2·4H2O
   concentration:
     value: '1.5'
@@ -143,6 +179,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2·4H2O
 - preferred_term: 2Na-EDTA
   concentration:
     value: '5.2'
@@ -151,6 +190,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: 2Na-EDTA
 media_term:
   preferred_term: TOGO Medium M1569
   term:
@@ -184,6 +226,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008117'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.433220'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution I*
@@ -194,6 +245,7 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution II**
   term:
     id: mediadive.solution:5336
@@ -202,6 +254,7 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace element solution SL8***
   term:
     id: mediadive.solution:3851
@@ -210,3 +263,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_3851_Trace_element_solution_SL8.yaml for composition
+  name: Unknown solution

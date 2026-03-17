@@ -13,6 +13,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
@@ -21,6 +24,9 @@ ingredients:
     value: '3.78444'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:asn-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Ethylene glycol
   term:
     id: CHEBI:30742
@@ -28,6 +34,9 @@ ingredients:
   concentration:
     value: '0.134257'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000374
+    label: Ethylene glycol
 - preferred_term: Potassium hydroxide
   concentration:
     value: '5.34706'
@@ -43,6 +52,9 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0359648'
@@ -67,6 +79,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007163'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 264
   term:

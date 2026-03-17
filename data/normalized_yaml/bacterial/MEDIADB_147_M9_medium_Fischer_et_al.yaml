@@ -13,6 +13,9 @@ ingredients:
     value: '16.6518'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1'
@@ -28,6 +31,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '0.0033132'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
@@ -46,6 +55,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '0.00709975'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -60,6 +75,9 @@ ingredients:
   concentration:
     value: '14.9558'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.00756525'
@@ -71,6 +89,9 @@ ingredients:
   concentration:
     value: '0.00626022'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00703894'
@@ -103,6 +124,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007037'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 147
   term:

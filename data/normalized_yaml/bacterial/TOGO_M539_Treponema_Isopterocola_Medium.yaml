@@ -22,6 +22,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '4'
@@ -36,6 +39,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -51,6 +57,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.3'
@@ -60,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -68,6 +80,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -84,6 +99,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2SO4
   concentration:
     value: '0.15'
@@ -93,6 +111,9 @@ ingredients:
   term:
     id: CHEBI:32149
     label: sodium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: Peptone from casein
   concentration:
     value: '2'
@@ -118,6 +139,9 @@ ingredients:
     value: '80'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '100'
@@ -125,6 +149,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
@@ -139,6 +166,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '200'
@@ -147,6 +177,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine・HCl・2H2O
   concentration:
     value: '200'
@@ -157,6 +190,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000435
+    label: D(+)--Biotin
 - preferred_term: Folic acid
   concentration:
     value: '2.5'
@@ -165,6 +201,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Riboflavin
   concentration:
     value: '0.5'
@@ -173,6 +212,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinamide
   concentration:
     value: '25'
@@ -182,6 +224,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: Nicotinamide
 - preferred_term: Pyridoxal・HCl
   concentration:
     value: '250'
@@ -207,6 +252,9 @@ ingredients:
   term:
     id: CHEBI:15346
     label: coenzyme A
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000592
+    label: Coenzyme A
 - preferred_term: FAD
   concentration:
     value: '50'
@@ -216,6 +264,9 @@ ingredients:
   term:
     id: CHEBI:16238
     label: FAD
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000593
+    label: FAD
 - preferred_term: Pyridoxal phosphate
   concentration:
     value: '250'
@@ -224,6 +275,9 @@ ingredients:
   term:
     id: CHEBI:18405
     label: pyridoxal 5'-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000565
+    label: Pyridoxal phosphate
 - preferred_term: Thiamine pyrophosphate
   concentration:
     value: '2.5'
@@ -232,6 +286,9 @@ ingredients:
   term:
     id: CHEBI:9532
     label: thiamine(1+) diphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001095
+    label: Thiamine pyrophosphate
 - preferred_term: β--NAD
   concentration:
     value: '50'
@@ -246,6 +303,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M539
   term:
@@ -285,6 +345,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009931'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.575225'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: NaHCO3 solution (10%, w/v)
   composition: []
@@ -292,25 +361,30 @@ solutions:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: Sugar solution (250 mM each of xylose, maltose and cellobiose)
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Complex component, Solution'
+  name: Unknown solution
 - preferred_term: Trace element solution SL--10 (see Medium [M433])
   composition: []
   notes: Cross-reference to Medium M433
   concentration:
     value: '0.05'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution** (see below), 10--fold diluted
   composition: []
   concentration:
     value: '0.05'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Co--factors solution*** (see below)
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution

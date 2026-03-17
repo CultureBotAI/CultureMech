@@ -24,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: L--Lysine
   concentration:
     value: '5'
@@ -67,11 +70,17 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '5'
@@ -86,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
@@ -95,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -103,6 +118,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pyridoxamine・2HCl
   concentration:
     value: '15'
@@ -146,6 +164,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007600'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.501975'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt solution No. 1 (see Medium [M124])
   composition: []
@@ -153,9 +179,11 @@ solutions:
   concentration:
     value: '75'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Salt solution No. 2 (see Medium [M124])
   composition: []
   notes: Cross-reference to Medium M124
   concentration:
     value: '75'
     unit: G_PER_L
+  name: Unknown solution

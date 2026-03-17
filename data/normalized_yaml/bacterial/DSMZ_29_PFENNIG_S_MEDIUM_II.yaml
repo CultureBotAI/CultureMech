@@ -20,6 +20,9 @@ ingredients:
     value: '44.8148'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 30.0, 14.8148]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -28,6 +31,9 @@ ingredients:
     value: '3.85'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 1.925, 1.925]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -43,6 +52,9 @@ ingredients:
     value: '0.14'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.07, 0.07]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -51,6 +63,9 @@ ingredients:
     value: '0.2'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -59,6 +74,9 @@ ingredients:
     value: '0.6'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.3, 0.3]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -67,6 +85,9 @@ ingredients:
     value: '0.38'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.19, 0.19]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
@@ -75,6 +96,9 @@ ingredients:
     value: '0.004'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.002, 0.002]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -83,6 +107,9 @@ ingredients:
     value: '0.048'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.024, 0.024]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -91,6 +118,9 @@ ingredients:
     value: '0.072'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.036, 0.036]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -98,6 +128,9 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.543478'
@@ -109,6 +142,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -116,6 +152,9 @@ ingredients:
   concentration:
     value: '0.0111111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -123,6 +162,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
     id: CHEBI:62947
@@ -130,6 +172,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
     id: CHEBI:113246
@@ -137,6 +182,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000399
+    label: Pyruvic acid sodium salt
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
@@ -144,6 +192,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -151,6 +202,9 @@ ingredients:
   concentration:
     value: '19.2308'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -158,6 +212,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -165,6 +222,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -172,6 +232,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -179,6 +242,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -263,3 +329,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001397'
+- timestamp: '2026-03-17T06:30:16.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

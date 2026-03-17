@@ -35,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -44,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: crotonic acid
   concentration:
     value: '1.7'
@@ -52,6 +58,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:41131
+    label: crotonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000624
     label: crotonic acid
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
@@ -102,6 +111,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009953'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.729562'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: NaHCO3 solution
   composition: []
@@ -109,6 +128,7 @@ solutions:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: Solution A
   term:
     id: mediadive.solution:5342
@@ -117,33 +137,39 @@ solutions:
     value: '902'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Mineral solution (see Medium [M520])
   composition: []
   notes: Cross-reference to Medium M520
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Rumen fluid, clarified (see Medium [M258])
   composition: []
   notes: Cross-reference to Medium M258
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution (see Medium [M520])
   composition: []
   notes: Cross-reference to Medium M520
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution

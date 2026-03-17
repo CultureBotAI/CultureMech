@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:39010
     label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '2'
@@ -68,6 +71,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007660'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.884971'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Artificial saltwater (see Medium [M642])
   composition: []
@@ -75,15 +87,18 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Wolfe's mineral solution (see Medium [M257])
   composition: []
   notes: Cross-reference to Medium M257
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

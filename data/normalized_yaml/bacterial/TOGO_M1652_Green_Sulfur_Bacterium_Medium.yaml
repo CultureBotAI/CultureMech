@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.05'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -40,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -58,6 +73,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: KCl
   concentration:
@@ -68,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '1.5'
@@ -77,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Ammonium acetate
   concentration:
     value: '25.5'
@@ -86,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:62947
     label: ammonium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium acetate
 - preferred_term: Na2S2O3 (if needed)
   concentration:
     value: '0.5'
@@ -110,6 +137,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.3'
@@ -119,6 +149,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.03'
@@ -140,6 +173,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.1'
@@ -149,6 +185,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.01'
@@ -158,6 +197,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: Fructose
   concentration:
     value: '25'
@@ -167,6 +209,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Magnesium acetate
   concentration:
     value: '25'
@@ -176,6 +221,9 @@ ingredients:
   term:
     id: CHEBI:62964
     label: magnesium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000723
+    label: Magnesium acetate
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -190,6 +238,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S·9H2O
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -199,6 +250,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 media_term:
   preferred_term: TOGO Medium M1652
   term:
@@ -238,6 +292,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008209'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.109403'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Vitamin B12 solution (0.001%)
   composition: []
@@ -245,12 +308,14 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Ferric citrate solution (0.1%)*
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
+  name: Unknown solution
 - preferred_term: Trace element solution SL-6**
   term:
     id: mediadive.solution:25
@@ -259,13 +324,16 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: See mediadive_25_Trace_element_solution_SL-6.yaml for composition
+  name: Unknown solution
 - preferred_term: Acetate solution***
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Na2S·9H2O (neutralized)****
   composition: []
   concentration:
     value: '0.6'
     unit: G_PER_L
+  name: Unknown solution

@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: thiamine
 - preferred_term: rabbit serum
   concentration:
     value: '10'
@@ -41,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '0.6'
@@ -49,6 +55,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2HPO4
   concentration:
@@ -59,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 media_term:
   preferred_term: TOGO Medium M2825
   term:
@@ -84,3 +96,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009371'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

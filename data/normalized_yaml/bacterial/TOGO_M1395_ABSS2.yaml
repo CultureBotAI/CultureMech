@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '11.8'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.3'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -62,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '100'
@@ -70,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine-HCl
   concentration:
     value: '2'
@@ -78,6 +93,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Folic acid
   concentration:
     value: '10'
@@ -86,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '10'
@@ -94,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '1'
@@ -102,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Inositol
   concentration:
     value: '10'
@@ -111,6 +138,9 @@ ingredients:
   term:
     id: CHEBI:24848
     label: inositol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000421
+    label: Inositol
 - preferred_term: DL-Calcium pantothenate
   concentration:
     value: '1'
@@ -119,6 +149,9 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: DL-Calcium pantothenate
 media_term:
   preferred_term: TOGO Medium M1395
   term:
@@ -157,6 +190,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007930'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.662446'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 1 M NaHCO3 solution*
   composition: []
@@ -164,6 +207,7 @@ solutions:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 100 mM NH4Cl solution
   composition: []
   concentration:
@@ -171,32 +215,38 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 10 mM Na2HPO4 solution
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+  name: Unknown solution
 - preferred_term: 500 mM MnO2 solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution
 - preferred_term: 300 mM Na2S2O3 solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: SL--7 trace element solution (see Medium [M538])
   composition: []
   notes: Cross-reference to Medium M538
   concentration:
     value: '100'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution* (see below)
   composition: []
   concentration:
     value: '420'
     unit: G_PER_L
+  name: Unknown solution

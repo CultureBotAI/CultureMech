@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '5'
@@ -22,6 +25,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: p-aminobenzoic acid
   concentration:
     value: '10'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-aminobenzoic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
@@ -48,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '1'
@@ -56,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '1'
@@ -64,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: CaCl2
   concentration:
     value: '50'
@@ -73,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: CuSO4
   concentration:
     value: '2.5'
@@ -82,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
 - preferred_term: FeCl3
   concentration:
     value: '3'
@@ -91,6 +118,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: MgCl2
   concentration:
     value: '200'
@@ -100,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: Histidine
   concentration:
     value: '0.15'
@@ -109,6 +142,9 @@ ingredients:
   term:
     id: CHEBI:27570
     label: histidine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: Asparagine
   concentration:
     value: '0.1'
@@ -117,6 +153,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:22653
+    label: Asparagine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
     label: Asparagine
 - preferred_term: Arginine
   concentration:
@@ -127,6 +166,9 @@ ingredients:
   term:
     id: CHEBI:32696
     label: argininium(1+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: Ammonium citrate
   concentration:
     value: '0.6'
@@ -142,6 +184,9 @@ ingredients:
   term:
     id: CHEBI:27897
     label: Tryptophan
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 - preferred_term: Thiamine
   concentration:
     value: '1'
@@ -150,6 +195,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: FeCl2
   concentration:
     value: '5'
@@ -159,6 +207,9 @@ ingredients:
   term:
     id: CHEBI:30812
     label: iron dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000566
+    label: FeCl2
 - preferred_term: Cysteine
   concentration:
     value: '0.13'
@@ -167,6 +218,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
+    label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
     label: Cysteine
 - preferred_term: Methionine
   concentration:
@@ -195,6 +249,9 @@ ingredients:
   term:
     id: CHEBI:57305
     label: glycine zwitterion
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: MnCl2
   concentration:
     value: '16'
@@ -209,6 +266,9 @@ ingredients:
   term:
     id: CHEBI:16454
     label: Pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
 - preferred_term: pyridoxamine-HCl
   concentration:
     value: '5'
@@ -217,6 +277,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: pyridoxamine-HCl
 - preferred_term: Pyridoxine
   concentration:
     value: '2'
@@ -225,6 +288,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Uracil
   concentration:
     value: '22'
@@ -234,6 +300,9 @@ ingredients:
   term:
     id: CHEBI:17568
     label: uracil
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000501
+    label: Uracil
 - preferred_term: Lipoic acid
   concentration:
     value: '2.5'
@@ -243,6 +312,9 @@ ingredients:
   term:
     id: CHEBI:16494
     label: lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
 - preferred_term: ZnSO4
   concentration:
     value: '5'
@@ -252,6 +324,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
 - preferred_term: Aspartic acid
   concentration:
     value: '0.42'
@@ -267,6 +342,9 @@ ingredients:
   term:
     id: CHEBI:18237
     label: glutamic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000946
+    label: Glutamic acid
 - preferred_term: Glutamine
   concentration:
     value: '0.2'
@@ -323,6 +401,9 @@ ingredients:
   term:
     id: CHEBI:29073
     label: L-ascorbic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001080
+    label: L-ascorbic acid
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -332,6 +413,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Thymidine
   concentration:
     value: '5'
@@ -340,6 +424,9 @@ ingredients:
     component'
   term:
     id: CHEBI:17748
+    label: Thymidine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000575
     label: Thymidine
 - preferred_term: Acetate
   concentration:
@@ -350,6 +437,9 @@ ingredients:
   term:
     id: CHEBI:30089
     label: Acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: Acetate
 - preferred_term: CoSO4
   concentration:
     value: '2.5'
@@ -359,6 +449,9 @@ ingredients:
   term:
     id: CHEBI:53470
     label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4
 - preferred_term: D-biotin
   concentration:
     value: '2.5'
@@ -367,6 +460,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-biotin
 - preferred_term: (NH4)6Mo7O24
   concentration:
     value: '2.5'
@@ -416,6 +512,9 @@ ingredients:
   term:
     id: CHEBI:26271
     label: Proline
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000396
+    label: Proline
 - preferred_term: MOPS buffer
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
   term:
@@ -424,6 +523,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001061
+    label: MOPS buffer
 media_term:
   preferred_term: TOGO Medium M2239
   term:
@@ -454,4 +556,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008827'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

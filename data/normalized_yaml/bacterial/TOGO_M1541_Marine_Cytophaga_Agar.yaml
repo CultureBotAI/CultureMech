@@ -18,6 +18,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -62,6 +65,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008089'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.295806'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Seawater*
   term:
@@ -71,3 +82,4 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_1801_Seawater.yaml for composition
+  name: Unknown solution

@@ -17,6 +17,9 @@ ingredients:
     value: '2.296'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '5.741'
@@ -28,6 +31,9 @@ ingredients:
   concentration:
     value: '171.12'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -35,6 +41,9 @@ ingredients:
   concentration:
     value: '22.2'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.007194'
@@ -46,6 +55,9 @@ ingredients:
   concentration:
     value: '0.5477'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '0.004197'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -60,6 +75,9 @@ ingredients:
   concentration:
     value: '0.01186'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Threonine
   concentration:
     value: '16.79'
@@ -71,6 +89,9 @@ ingredients:
   concentration:
     value: '2.681'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: Isoleucine
   concentration:
     value: '3.049'
@@ -86,6 +107,9 @@ ingredients:
   concentration:
     value: '1.269'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: Cysteine-HCl
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -94,6 +118,9 @@ ingredients:
     value: '3.049'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000278
+    label: L-Leucine
 - preferred_term: Valine
   concentration:
     value: '3.414'
@@ -106,6 +133,9 @@ ingredients:
     value: '1.289'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000272
+    label: L-Histidine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -114,6 +144,9 @@ ingredients:
     value: '17.37'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: L-Aspartate
   concentration:
     value: '3.005'
@@ -127,6 +160,9 @@ ingredients:
     value: '2.736'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000318
+    label: L-Lysine
 - preferred_term: DL-Serine
   concentration:
     value: '3.806'
@@ -139,6 +175,9 @@ ingredients:
     value: '2.208'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: L-Tyrosine
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -159,6 +198,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007212'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 313
   term:

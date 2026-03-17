@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Casitone
   concentration:
     value: '29.2683'
@@ -38,6 +41,9 @@ ingredients:
   concentration:
     value: '4.87805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -45,6 +51,9 @@ ingredients:
   concentration:
     value: '0.00097561'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -73,3 +82,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002810'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

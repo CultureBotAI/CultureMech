@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -27,6 +30,9 @@ ingredients:
     component, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Natural seawater (filtrated)
   concentration:
@@ -76,6 +82,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007700'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.168322'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 5% Na2S・9H2O solution
   composition: []
@@ -84,9 +98,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 5% L-Cysteine・HCl・H2O solution
   composition: []
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution

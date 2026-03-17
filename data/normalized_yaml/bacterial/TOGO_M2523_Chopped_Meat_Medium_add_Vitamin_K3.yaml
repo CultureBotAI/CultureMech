@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Ground beef (fat free)
   concentration:
     value: '500'
@@ -38,6 +41,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -46,6 +52,9 @@ ingredients:
     component, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Casitone
   concentration:
@@ -56,6 +65,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000459
+    label: L-cysteine hydrochloride
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -69,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: haemin
   concentration:
     value: '50'
@@ -78,6 +93,9 @@ ingredients:
   term:
     id: CHEBI:50385
     label: Haemin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: haemin
 - preferred_term: vitamin K3
   concentration:
     value: '5'
@@ -125,6 +143,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009093'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:55.973239'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Haemin solution
   term:
@@ -134,6 +160,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_1628_Haemin_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin K3 solution
   term:
     id: mediadive.solution:5540
@@ -142,3 +169,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5540_Vitamin_K3_solution.yaml for composition
+  name: Unknown solution

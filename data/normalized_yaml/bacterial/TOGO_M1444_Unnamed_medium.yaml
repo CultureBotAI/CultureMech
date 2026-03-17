@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 media_term:
   preferred_term: TOGO Medium M1444
   term:
@@ -43,6 +46,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007984'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.850641'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Ethyl alcohol**
   composition: []
@@ -51,9 +62,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Organic compound'
+  name: Unknown solution
 - preferred_term: SI Medium Dehydrated*
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
+  name: Unknown solution

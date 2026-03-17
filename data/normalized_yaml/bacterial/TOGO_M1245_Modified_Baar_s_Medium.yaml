@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Sodium lactate
   concentration:
     value: '3.5'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: (NH4)2Ni(SO4)2・6H2O
   concentration:
     value: '1'
@@ -54,6 +63,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate・2H2O
 - preferred_term: CaSO4
   concentration:
     value: '1'
@@ -62,6 +74,9 @@ ingredients:
     Defined component'
   term:
     id: CHEBI:31346
+    label: CaSO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000924
     label: CaSO4
 - preferred_term: N2
   notes: 'Properties: Gas'
@@ -97,3 +112,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007775'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

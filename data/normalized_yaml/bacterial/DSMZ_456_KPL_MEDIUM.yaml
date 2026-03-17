@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Galactose
   term:
     id: CHEBI:28260
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '8.76424'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000523
+    label: Galactose
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '13.1464'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Skim milk
   concentration:
     value: '100'
@@ -74,3 +86,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001566'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

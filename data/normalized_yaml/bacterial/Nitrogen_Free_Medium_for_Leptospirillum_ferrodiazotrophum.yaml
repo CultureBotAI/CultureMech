@@ -1,0 +1,88 @@
+name: Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum
+original_name: Nitrogen-Free Medium for Leptospirillum ferrodiazotrophum
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015436
+ingredients:
+- preferred_term: Iron(II) sulfate
+  concentration:
+    value: '30.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29033
+    label: iron(2+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000115
+    label: Iron(II) sulfate
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000174
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate heptahydrate
+- preferred_term: Monopotassium phosphate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000485
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogenphosphate
+ph_value: 1.7
+temperature_value: 33.0
+incubation_atmosphere: AEROBIC
+notes: '
+
+  Nitrogen-free medium developed for selective isolation of Leptospirillum ferrodiazotrophum
+  (Leptospirillum group III), the nitrogen-fixing member of Richmond Mine biofilm.
+  Richmond Mine AMD biofilm sample naturally abundant in group III was homogenized,
+  filtered, and serially diluted into nitrogen-free liquid medium. Culture grew autotrophically
+  to maximum density ~10^6 cells/ml, oxidizing ferrous iron as sole energy source.
+  Ammonium sulfate deliberately omitted to select for diazotrophic organisms capable
+  of nitrogen fixation. This selective isolation strategy was guided by metagenomic
+  data showing a single nif operon on a Leptospirillum group III genome fragment.
+  Axenic culture confirmed by 16S rRNA-ITS clone library analysis. Note: This medium
+  supports L. ferrodiazotrophum but not the complete biofilm community.'
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000059
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000059
+  evidence:
+  - reference: PMID:16204553
+    supports: SUPPORT
+    snippet: An AMD biofilm sample naturally abundant in Leptospirillum group III
+      cells was homogenized, filtered, and serially diluted into a nitrogen-free liquid
+      medium. The resulting culture in the terminal dilution grew autotrophically
+      to a maximum cell density of approximately 10(6) cells/ml, oxidizing ferrous
+      iron as the sole energy source
+    explanation: Describes selective cultivation strategy and growth characteristics
+      of L. ferrodiazotrophum
+  - reference: PMID:16204553
+    supports: SUPPORT
+    snippet: Based on the prediction that this organism is solely responsible for
+      nitrogen fixation in the community, we pursued a selective isolation strategy
+      to obtain the organism in pure culture
+    explanation: Explains nitrogen-free medium design rationale for isolating the
+      nitrogen fixer
+  - reference: PMID:16204553
+    supports: SUPPORT
+    snippet: We propose the name Leptospirillum ferrodiazotrophum sp. nov. for this
+      iron-oxidizing, free-living diazotroph
+    explanation: Confirms successful cultivation and characterization as iron-oxidizing
+      diazotroph
+curation_history:
+- timestamp: '2026-03-15T00:15:00.445462Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000059 growth_media record
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

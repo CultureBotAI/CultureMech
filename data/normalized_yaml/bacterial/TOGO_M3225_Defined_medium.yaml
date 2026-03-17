@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4•7H2O
   concentration:
     value: '1'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Glycerol
   concentration:
     value: '16'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: 1 M Phosphate buffer
   concentration:
     value: '35.2'
@@ -57,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.5'
@@ -66,6 +78,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4.7H2O
 - preferred_term: CoCl2.6H2O
   concentration:
     value: '0.05'
@@ -87,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4.7H2O
 - preferred_term: CuCl2.2H2O
   concentration:
     value: '0.005'
@@ -107,12 +125,18 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: NaMoO4.2H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000498
+    label: NaMoO4.2H2O
 - preferred_term: FeNa.EDTA
   concentration:
     value: '5'
@@ -126,6 +150,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '113'
@@ -135,6 +162,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 media_term:
   preferred_term: TOGO Medium M3225
   term:
@@ -164,6 +194,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009665'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.091168'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution
   term:
@@ -173,8 +211,10 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Stock A solution
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

@@ -35,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaHCO3
   concentration:
     value: '2.4'
@@ -44,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Agar
   concentration:
     value: '8'
@@ -52,6 +58,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Cysteine-Sulfide Reducing Agent
   concentration:
     value: '16'
@@ -75,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '5.6'
@@ -90,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '0.16'
@@ -105,6 +120,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '6'
@@ -114,6 +132,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Yeast extract
   concentration:
     value: '20'
@@ -154,6 +175,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -181,6 +205,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 . 5H2O
 - preferred_term: AlK(SO4)2 . 12H2O
   concentration:
     value: '0.01'
@@ -196,6 +223,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: CaCl2
   concentration:
     value: '0.1'
@@ -205,6 +235,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MnSO4 . H2O
   concentration:
     value: '0.5'
@@ -248,6 +281,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009208'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.164635'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Wolfe's Vitamin Solution
   composition: []
@@ -255,21 +298,25 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Complex component'
+  name: Unknown solution
 - preferred_term: 'Mineral Solution #1'
   composition: []
   concentration:
     value: '15'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 'Mineral Solution #2'
   composition: []
   concentration:
     value: '15'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 20% Yeast Extract - Trypticase Solution
   composition: []
   concentration:
     value: '4'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Wolfe's Mineral Solution
   term:
     id: mediadive.solution:3952
@@ -278,6 +325,7 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: See mediadive_3952_Wolfe_s_mineral_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: 12.5% Na2S stock solution
   composition: []
   concentration:
@@ -285,9 +333,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: KOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution

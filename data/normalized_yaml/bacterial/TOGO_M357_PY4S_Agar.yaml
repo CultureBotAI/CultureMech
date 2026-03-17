@@ -24,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Cellobiose
   concentration:
     value: '0.25'
@@ -33,6 +36,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Maltose
   concentration:
     value: '0.25'
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:18167
     label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
 - preferred_term: Glucose
   concentration:
     value: '0.25'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.25'
@@ -120,6 +132,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009737'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.432857'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt solution No. 1 (see Medium [M124])
   composition: []
@@ -127,9 +147,11 @@ solutions:
   concentration:
     value: '75'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Salt solution No. 2 (see Medium [M124])
   composition: []
   notes: Cross-reference to Medium M124
   concentration:
     value: '75'
     unit: G_PER_L
+  name: Unknown solution

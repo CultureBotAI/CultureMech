@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007461'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.812352'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: NH4Cl0.33gKH2PO40.33gKCl0.33gCaCl2·2H2O0.33gMgCl2·6H2O0.33gMgSO4·7H2O4gNaCl250gCoenzyme
     M0.142gBacto Yeast Extract (Difco)0.5gVitamin solution*10mlTrace elements solution**1mlTrimethylamine-HCl5gResazurin1mgNaHCO35gNa2S·9H2O0.5gDistilled
@@ -53,3 +57,4 @@ solutions:
     water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and
     then add minerals. Final pH 7.0.
   composition: []
+  name: Unknown solution

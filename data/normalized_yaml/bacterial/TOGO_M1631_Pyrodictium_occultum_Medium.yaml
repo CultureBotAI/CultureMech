@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '6.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '14.85'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -40,6 +49,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Resazurin
   concentration:
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '2.75'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: Na2S·9H2O
   concentration:
     value: '0.3'
@@ -68,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S·9H2O
 - preferred_term: H3BO3
   concentration:
     value: '15.01'
@@ -77,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: KCl
   concentration:
     value: '0.325'
@@ -86,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: CaCl2
   concentration:
     value: '0.75'
@@ -95,6 +122,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: Sulfur (powder)
   concentration:
     value: '30'
@@ -104,6 +134,9 @@ ingredients:
   term:
     id: CHEBI:14258
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001072
+    label: Sulfur (powder)
 - preferred_term: NaBr
   concentration:
     value: '0.05'
@@ -113,6 +146,9 @@ ingredients:
   term:
     id: CHEBI:63004
     label: sodium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: SrCl2·6H2O
   concentration:
     value: '7.5'
@@ -122,6 +158,9 @@ ingredients:
   term:
     id: CHEBI:36385
     label: strontium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2·6H2O
 - preferred_term: KI
   concentration:
     value: '0.05'
@@ -131,6 +170,9 @@ ingredients:
   term:
     id: CHEBI:8346
     label: potassium iodide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+    label: KI
 - preferred_term: (NH4)2Ni(SO4)2·6H2O
   concentration:
     value: '2'
@@ -140,6 +182,9 @@ ingredients:
   term:
     id: CHEBI:86149
     label: ammonium nickel sulfate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001059
+    label: (NH4)2Ni(SO4)2·6H2O
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '2'
@@ -153,6 +198,9 @@ ingredients:
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3·5H2O
 - preferred_term: Citric acid
   concentration:
     value: '5'
@@ -161,6 +209,9 @@ ingredients:
   term:
     id: CHEBI:53258
     label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Citric acid
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
@@ -170,6 +221,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -189,6 +243,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.01'
@@ -198,6 +255,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.1'
@@ -213,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.01'
@@ -222,6 +285,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4·5H2O
 - preferred_term: CoSO4·7H20
   concentration:
     value: '0.1'
@@ -237,6 +303,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MnSO4·xH2O
   concentration:
     value: '0.5'
@@ -252,6 +321,9 @@ ingredients:
   term:
     id: CHEBI:86463
     label: potassium aluminium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001074
+    label: AlK(SO4)2
 media_term:
   preferred_term: TOGO Medium M1631
   term:
@@ -291,6 +363,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008187'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:49.941166'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace minerals*
   term:
@@ -300,9 +380,11 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5363_Trace_minerals.yaml for composition
+  name: Unknown solution
 - preferred_term: KOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution

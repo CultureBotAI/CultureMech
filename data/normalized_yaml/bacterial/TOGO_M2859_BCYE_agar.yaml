@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: BCYE agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: BCYE agar
 media_term:
   preferred_term: TOGO Medium M2859
   term:
@@ -34,3 +37,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009399'
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

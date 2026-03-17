@@ -16,6 +16,9 @@ ingredients:
   concentration:
     value: '0.001617'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -24,6 +27,9 @@ ingredients:
     value: '0.0003646'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -31,6 +37,9 @@ ingredients:
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: '''Fe(III'
   concentration:
     value: '56.0'
@@ -54,6 +63,9 @@ ingredients:
     value: '0.0001329'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -61,10 +73,16 @@ ingredients:
   concentration:
     value: '5.551'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0003873'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001109
+    label: Aluminum potassium sulfate
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.003597'
@@ -84,6 +102,9 @@ ingredients:
   concentration:
     value: '0.006194'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.007702'
@@ -95,10 +116,16 @@ ingredients:
   concentration:
     value: '0.02673'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '4.348'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -107,6 +134,9 @@ ingredients:
     value: '8.186e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -114,6 +144,9 @@ ingredients:
   concentration:
     value: '0.0001049'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -121,6 +154,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Lactate
   term:
     id: CHEBI:24996
@@ -128,6 +164,9 @@ ingredients:
   concentration:
     value: '11.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000561
+    label: Lactate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -135,6 +174,9 @@ ingredients:
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -142,6 +184,9 @@ ingredients:
   concentration:
     value: '0.0001482'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '29.76'
@@ -149,6 +194,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium bicarbonate
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -156,6 +204,9 @@ ingredients:
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00101'
@@ -171,6 +222,9 @@ ingredients:
   concentration:
     value: '0.1711'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '1.341'
@@ -178,6 +232,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -185,6 +242,9 @@ ingredients:
   concentration:
     value: '2.921'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Citrate
   concentration:
     value: '10.0'
@@ -198,6 +258,9 @@ ingredients:
     value: '5.551'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:man'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000998
+    label: D-Mannose
 - preferred_term: Nitrate
   concentration:
     value: '20.0'
@@ -216,6 +279,9 @@ ingredients:
     value: '10.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: Acetate
 - preferred_term: Sucrose
   term:
     id: CHEBI:17992
@@ -224,6 +290,9 @@ ingredients:
     value: '2.921'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Glycolate
   concentration:
     value: '10.0'
@@ -241,6 +310,9 @@ ingredients:
   concentration:
     value: '0.1217'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -270,6 +342,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007294'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 390
   term:

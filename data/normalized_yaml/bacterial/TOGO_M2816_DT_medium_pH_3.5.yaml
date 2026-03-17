@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: K2SO4
   concentration:
     value: '3'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: dextrin
   concentration:
     value: '0.1'
@@ -37,6 +43,9 @@ ingredients:
     component'
   term:
     id: CHEBI:28675
+    label: dextrin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001048
     label: dextrin
 - preferred_term: NaH2PO4
   concentration:
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: EZMix-N-Z-amine A
   concentration:
     value: '0.1'
@@ -78,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: FeCl3
   concentration:
     value: '3'
@@ -87,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:30808
     label: iron trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 media_term:
   preferred_term: TOGO Medium M2816
   term:
@@ -112,6 +130,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009364'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.583344'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: trace mineral stock solution
   term:
@@ -121,3 +147,4 @@ solutions:
     value: '20'
     unit: G_PER_L
   notes: See mediadive_5478_Trace_mineral_stock_solution.yaml for composition
+  name: Unknown solution

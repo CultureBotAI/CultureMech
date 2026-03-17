@@ -15,6 +15,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled Water
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '8.4'
@@ -24,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium bicarbonate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -48,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   concentration:
     value: '1.5'
@@ -57,12 +66,18 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 7H2O
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000490
+    label: MgCl2 x 7H2O
 - preferred_term: Trypticase peptone
   concentration:
     value: '2'
@@ -81,18 +96,27 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000116
+    label: Magnesium chloride hexahydrate
 - preferred_term: Calcium chloride dehydrate
   concentration:
     value: '40'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: Calcium chloride dehydrate
 - preferred_term: Potassium dibasic phosphate trihydrate
   concentration:
     value: '200'
@@ -107,6 +131,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgSO4 . 7H2O
   concentration:
@@ -129,6 +156,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -156,6 +186,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 . 5H2O
 - preferred_term: Na2WO4 . 2H2O
   concentration:
     value: '0.01'
@@ -200,6 +233,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: 'Co-enzyme M (mercaptoethanesulfonic acid) '
   concentration:
     value: '5'
@@ -217,6 +253,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000119
+    label: Sodium sulfide
 - preferred_term: Cysteine
   concentration:
     value: '3'
@@ -225,6 +264,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15356
+    label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
     label: Cysteine
 media_term:
   preferred_term: TOGO Medium M2646
@@ -263,6 +305,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009202'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.095513'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution A
@@ -273,6 +324,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -281,6 +333,7 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -289,11 +342,13 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: 'Co-enzyme M (mercaptoethanesulfonic acid) (100 X solution):'
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: HCl solution
   composition: []
   concentration:
@@ -301,3 +356,4 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution

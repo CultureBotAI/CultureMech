@@ -13,6 +13,9 @@ ingredients:
     value: '2.57815'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:his-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000272
+    label: L-Histidine
 - preferred_term: Citrate
   concentration:
     value: '5.20497'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -36,6 +42,9 @@ ingredients:
   concentration:
     value: '0.405729'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '8.32187'
@@ -64,6 +73,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007130'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 234
   term:

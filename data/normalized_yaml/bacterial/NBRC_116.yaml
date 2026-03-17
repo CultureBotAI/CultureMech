@@ -8,6 +8,9 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
     water1LAgar15g
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
@@ -36,3 +39,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007460'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.809514'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Bacto-Yeast Nitrogen Base w/o
+    Amino acids (Difco)6.7gGlucose20gL-Leucine60mgL-Histidine20mgL-Tryptophan20mgL-Methionine20mgDistilled
+    water1LAgar15g'

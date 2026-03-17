@@ -20,6 +20,9 @@ ingredients:
     value: '11.48515'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 10.0, 1.48515]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000909
+    label: Agarose
 - preferred_term: Trace minerals (see Medium No. 197
   concentration:
     value: '1'
@@ -31,6 +34,9 @@ ingredients:
   concentration:
     value: '1.93069'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: '0.415842'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -45,6 +54,9 @@ ingredients:
   concentration:
     value: '154'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '132'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -73,6 +94,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -80,6 +104,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -128,3 +155,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002974'
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

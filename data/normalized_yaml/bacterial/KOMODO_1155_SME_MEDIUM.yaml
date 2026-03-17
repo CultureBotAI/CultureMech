@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '27.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '5.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.66'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -62,6 +80,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -69,6 +90,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -76,6 +100,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -83,6 +110,9 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: KJ
   concentration:
     value: '50'
@@ -94,6 +124,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000677
+    label: Elemental sulfur
 - preferred_term: Double distilled water
   term:
     id: CHEBI:15377
@@ -101,6 +134,9 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
 - preferred_term: Na2S
   term:
     id: CHEBI:76208
@@ -109,6 +145,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: ' (used for reduction of the medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000783
+    label: Na2S
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
@@ -118,6 +157,12 @@ ingredients:
     id: CHEBI:26836
     label: sulfuric acid
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,3 +182,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003864'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:30.918788'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

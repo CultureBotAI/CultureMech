@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: 1 M Sodium acetate
 - preferred_term: 1 M Sodium butyrate
   concentration:
     value: '20'
@@ -21,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:64103
     label: sodium butyrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000529
+    label: 1 M Sodium butyrate
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
@@ -65,6 +71,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007686'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.055108'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Soda based mineral medium (see Medium [M1150])
   composition: []
@@ -72,15 +87,18 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% Yeast extract solution
   composition: []
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

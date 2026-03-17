@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '6'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
@@ -36,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: MgCl2 x 6 H2O
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6 H2O
 - preferred_term: K2HPO4 x 3 H2O
   concentration:
     value: '1'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: Cellobiose
   concentration:
     value: '5'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: 'Morpholinopropane sulfonic acid '
   concentration:
     value: '10'
@@ -72,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:44115
     label: Morpholinopropane sulfonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001061
+    label: 'Morpholinopropane sulfonic acid '
 - preferred_term: Urea
   concentration:
     value: '2'
@@ -80,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:16199
     label: urea
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: L-Cysteine-HCl x H2O
   concentration:
     value: '1'
@@ -88,6 +112,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine-HCl x H2O
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
   concentration:
@@ -124,6 +151,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009292'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.153886'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []
@@ -131,6 +166,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: FeSO4 x 7 H2O solution (0.1% w/v in 0.1 N H2SO4)
   composition: []
   concentration:
@@ -138,3 +174,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution

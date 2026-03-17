@@ -28,6 +28,9 @@ ingredients:
   concentration:
     value: '9.99001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Fructose
   term:
     id: CHEBI:28757
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '4.99501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '0.1998'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.04995'
@@ -53,6 +62,9 @@ ingredients:
   concentration:
     value: '3.4965'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000400
+    label: Diammonium Citrate
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -60,6 +72,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Tomato juice
   concentration:
     value: '100'
@@ -72,6 +87,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -87,3 +105,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002502'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

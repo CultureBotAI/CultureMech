@@ -22,6 +22,9 @@ ingredients:
     value: '58.43'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:malt'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -29,6 +32,9 @@ ingredients:
   concentration:
     value: '0.8115'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -36,6 +42,9 @@ ingredients:
   concentration:
     value: '0.0008087'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Uridine
   concentration:
     value: '9.992'
@@ -56,6 +65,9 @@ ingredients:
   concentration:
     value: '0.0002189'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -67,6 +79,9 @@ ingredients:
   concentration:
     value: '0.01739'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001002'
@@ -78,6 +93,9 @@ ingredients:
   concentration:
     value: '9.691'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038
@@ -85,6 +103,9 @@ ingredients:
   concentration:
     value: '24.99'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -105,6 +126,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007245'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 344
   term:

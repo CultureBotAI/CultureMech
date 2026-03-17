@@ -28,6 +28,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Bromothymol blue
   term:
     id: CHEBI:86155
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '25'
     unit: MG_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001021
+    label: Bromothymol blue
 applications:
 - Microbial cultivation
 curation_history:
@@ -50,3 +56,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003392'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

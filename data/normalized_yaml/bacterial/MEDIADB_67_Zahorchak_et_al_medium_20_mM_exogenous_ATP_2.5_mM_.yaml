@@ -22,6 +22,9 @@ ingredients:
     value: '2.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gly'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: L-Lysine
   term:
     id: CHEBI:18019
@@ -30,6 +33,9 @@ ingredients:
     value: '1.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lys-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000318
+    label: L-Lysine
 - preferred_term: L-Arginine
   term:
     id: CHEBI:16467
@@ -38,6 +44,9 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:arg-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000289
+    label: L-Arginine
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
@@ -46,6 +55,9 @@ ingredients:
     value: '1.6'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
 - preferred_term: L-Tryptophan
   term:
     id: CHEBI:16828
@@ -54,6 +66,9 @@ ingredients:
     value: '0.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:trp-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001063
+    label: L-Tryptophan
 - preferred_term: L-Phenylalanine
   term:
     id: CHEBI:17295
@@ -62,6 +77,9 @@ ingredients:
     value: '2.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:phe-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000312
+    label: L-Phenylalanine
 - preferred_term: L-Tyrosine
   term:
     id: CHEBI:17895
@@ -70,6 +88,9 @@ ingredients:
     value: '1.1'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:tyr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: L-Tyrosine
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
@@ -78,6 +99,9 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:cys-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -86,6 +110,9 @@ ingredients:
     value: '0.002'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: L-Leucine
   term:
     id: CHEBI:15603
@@ -94,6 +121,9 @@ ingredients:
     value: '2.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:leu-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000278
+    label: L-Leucine
 - preferred_term: L-Proline
   term:
     id: CHEBI:17203
@@ -102,6 +132,9 @@ ingredients:
     value: '7.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: Citrate
   concentration:
     value: '10.0'
@@ -115,6 +148,9 @@ ingredients:
     value: '6.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:val-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000304
+    label: L-Valine
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -123,6 +159,9 @@ ingredients:
     value: '1.4'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thr-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000310
+    label: L-Threonine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -131,6 +170,9 @@ ingredients:
     value: '0.003'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191
@@ -139,6 +181,9 @@ ingredients:
     value: '3.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ile-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000294
+    label: L-Isoleucine
 - preferred_term: Alanine
   concentration:
     value: '4.5'
@@ -150,6 +195,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.5'
@@ -161,6 +209,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -168,6 +219,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.01'
@@ -179,6 +233,9 @@ ingredients:
   concentration:
     value: '25.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Ferrous chloride
   concentration:
     value: '0.1'
@@ -211,6 +268,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007414'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 67
   term:

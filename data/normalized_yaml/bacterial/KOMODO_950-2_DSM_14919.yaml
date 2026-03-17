@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '45.58'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '7.96'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Na2SO4
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '1.44'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.166'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.062'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.054'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: NaF
   term:
     id: CHEBI:28741
@@ -62,6 +80,9 @@ ingredients:
   concentration:
     value: '0.0052'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000182
+    label: NaF
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -69,6 +90,9 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4 x 7 H2O
   term:
     id: CHEBI:34683
@@ -76,6 +100,9 @@ ingredients:
   concentration:
     value: '0.178'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 7 H2O
 - preferred_term: TAPSO
   term:
     id: CHEBI:84015
@@ -83,6 +110,9 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000513
+    label: TAPSO
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -91,6 +121,9 @@ ingredients:
     value: '30'
     unit: G_PER_L
   notes: ' (for solid medium, alternative)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Agarose
   term:
     id: CHEBI:2511
@@ -99,6 +132,9 @@ ingredients:
     value: '24'
     unit: G_PER_L
   notes: ' (for solid medium, alternative)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000909
+    label: Agarose
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -106,6 +142,9 @@ ingredients:
   concentration:
     value: '24.8444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -113,6 +152,9 @@ ingredients:
   concentration:
     value: '3.24444'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -120,6 +162,9 @@ ingredients:
   concentration:
     value: '0.0533333'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: FeCl2 x 4 H2O
   term:
     id: CHEBI:86249
@@ -127,11 +172,20 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2 x 4 H2O
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
     label: sodium hydroxide
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 applications:
 - Microbial cultivation
 curation_history:
@@ -151,3 +205,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006892'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:43.390517'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:30:06.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -13,6 +13,9 @@ ingredients:
     value: '27.7531'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Citrate
   concentration:
     value: '9.51728'
@@ -26,6 +29,9 @@ ingredients:
     value: '0.113053'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Histidine
   term:
     id: CHEBI:27570
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '1.92926'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '57.405'
@@ -44,6 +53,9 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Sodium ammonium phosphate
   concentration:
     value: '16.7394'
@@ -68,6 +80,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007002'
+- timestamp: '2026-03-17T06:30:29.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 115
   term:

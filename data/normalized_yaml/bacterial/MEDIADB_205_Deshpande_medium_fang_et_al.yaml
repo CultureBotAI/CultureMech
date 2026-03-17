@@ -28,6 +28,9 @@ ingredients:
   concentration:
     value: '0.00061931'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: '0.000313803'
@@ -43,6 +46,9 @@ ingredients:
   concentration:
     value: '15.5003'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000123305'
@@ -75,6 +81,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007098'
+- timestamp: '2026-03-17T06:29:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 205
   term:

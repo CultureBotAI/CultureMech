@@ -16,6 +16,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000115
+    label: CaCl2 x 2H2O
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -24,6 +27,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Resazurin
   concentration:
@@ -34,6 +40,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgCl2 x 6H2O
   concentration:
     value: '1'
@@ -43,6 +52,9 @@ ingredients:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2 x 6H2O
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
@@ -52,12 +64,18 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4 x 3H2O
   concentration:
     value: '2.9'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3H2O
 - preferred_term: Cellulose
   concentration:
     value: '7.5'
@@ -66,6 +84,9 @@ ingredients:
     component'
   term:
     id: CHEBI:18246
+    label: Cellulose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000114
     label: Cellulose
 - preferred_term: FeSO4
   concentration:
@@ -76,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001045
+    label: FeSO4
 - preferred_term: DI Water
   concentration:
     value: '1'
@@ -124,6 +148,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009254'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.696413'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: NaOH solution
   composition: []
@@ -131,3 +163,4 @@ solutions:
     value: variable
     unit: VARIABLE
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution

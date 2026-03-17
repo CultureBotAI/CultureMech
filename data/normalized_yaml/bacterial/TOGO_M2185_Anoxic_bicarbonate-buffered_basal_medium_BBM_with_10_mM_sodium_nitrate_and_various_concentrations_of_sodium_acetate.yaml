@@ -15,6 +15,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'
@@ -24,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: sodium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
 - preferred_term: Bicarbonate-buffered basal medium (BBM)
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   concentration:
     value: '0.1'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '2.52'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaH2PO4
   concentration:
     value: '0.6'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: Vitamins
   concentration:
     value: '10'
@@ -89,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -97,6 +121,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '10'
@@ -105,6 +132,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -113,6 +143,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -121,6 +154,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -129,6 +165,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -137,6 +176,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine
   concentration:
     value: '5'
@@ -145,6 +187,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pantothenic acid
   concentration:
     value: '5'
@@ -153,6 +198,9 @@ ingredients:
   term:
     id: CHEBI:7916
     label: pantothenic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000242
+    label: Pantothenic acid
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
@@ -162,6 +210,9 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000817
+    label: Thioctic acid
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -171,6 +222,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2.2H2O
   concentration:
     value: '0.1'
@@ -186,6 +240,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.1'
@@ -195,6 +252,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4.7H2O
 - preferred_term: CoCl2.6H2O
   concentration:
     value: '0.1'
@@ -216,6 +276,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: AlK(SO4)2.12H2O
   concentration:
     value: '0.01'
@@ -231,6 +294,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Na2WO4.2H2O
   concentration:
     value: '0.025'
@@ -252,6 +318,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: CuSO4
   concentration:
     value: '0.01'
@@ -261,6 +330,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
 - preferred_term: Na2MoO4
   concentration:
     value: '0.025'
@@ -270,6 +342,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4
 media_term:
   preferred_term: TOGO Medium M2185
   term:
@@ -296,3 +371,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008779'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

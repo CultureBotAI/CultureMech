@@ -18,6 +18,9 @@ ingredients:
   concentration:
     value: '20.9945'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Bacto Middlebrook 7H10 agar
 - preferred_term: Glycerol
   term:
     id: CHEBI:17754
@@ -25,6 +28,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -32,6 +38,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -39,6 +48,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Na2HPO4
   term:
     id: CHEBI:34683
@@ -46,6 +58,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -53,6 +68,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -60,6 +78,9 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -67,6 +88,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: ZnSO4
   term:
     id: CHEBI:35176
@@ -74,6 +98,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
 - preferred_term: CuSO4
   term:
     id: CHEBI:23414
@@ -81,6 +108,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
 - preferred_term: L-Glutamic acid
   term:
     id: CHEBI:16015
@@ -88,6 +118,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic acid
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
@@ -95,6 +128,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -102,6 +138,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -109,6 +148,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Malachite green
   term:
     id: CHEBI:72449
@@ -116,6 +158,9 @@ ingredients:
   concentration:
     value: '0.00025'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000835
+    label: Malachite green
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -123,6 +168,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Oleic acid
   term:
     id: CHEBI:16196
@@ -130,6 +178,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001012
+    label: Oleic acid
 - preferred_term: Bovine albumin
   concentration:
     value: '50'
@@ -141,6 +192,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: Catalase
   term:
     id: CHEBI:3463
@@ -155,6 +209,9 @@ ingredients:
   concentration:
     value: '8.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: HEAT
@@ -178,3 +235,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001782'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

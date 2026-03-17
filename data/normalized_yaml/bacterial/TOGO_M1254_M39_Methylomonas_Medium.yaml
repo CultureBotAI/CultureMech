@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.099'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: K2SO4
   concentration:
     value: '0.349'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32036
     label: potassium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001064
+    label: K2SO4
 - preferred_term: agarose
   concentration:
     value: '15'
@@ -51,6 +60,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2511
+    label: agarose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000909
     label: agarose
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
@@ -61,6 +73,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: methane
   notes: 'Properties: Gas'
   concentration:
@@ -100,6 +115,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007785'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.755703'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 1.0 M NaHCO3 solution*
   composition: []
@@ -107,33 +132,39 @@ solutions:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 1.0 M KH2PO4 solution
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+  name: Unknown solution
 - preferred_term: 0.2 M CeCl3 solution*
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution (see Medium [M1253])
   composition: []
   notes: Cross-reference to Medium M1253
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamins solution (see Medium [M1253])
   composition: []
   notes: Cross-reference to Medium M1253
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution

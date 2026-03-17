@@ -28,6 +28,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -35,6 +38,9 @@ ingredients:
   concentration:
     value: '3.6'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: DL-Dithiothreitol
   term:
     id: CHEBI:18320
@@ -42,11 +48,20 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: DL-Dithiothreitol
 - preferred_term: HCl
   term:
     id: CHEBI:17883
     label: hydrochloric acid
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 applications:
 - Microbial cultivation
 curation_history:
@@ -66,3 +81,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003953'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:31.358123'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -13,6 +13,9 @@ ingredients:
     value: '11.1012'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: L-Methionine
   term:
     id: CHEBI:16643
@@ -21,6 +24,9 @@ ingredients:
     value: '0.26807'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:met-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
 - preferred_term: Thymine
   term:
     id: CHEBI:17821
@@ -29,6 +35,9 @@ ingredients:
     value: '0.031717'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000503
+    label: Thymine
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.983719'
@@ -36,6 +45,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0901024'
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '1.40805'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '13.4136'
@@ -55,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '30.8628'
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '14.0211'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0017982'
@@ -94,6 +115,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007035'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 145
   term:

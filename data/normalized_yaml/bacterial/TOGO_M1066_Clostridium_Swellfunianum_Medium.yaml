@@ -22,6 +22,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '0.33'
@@ -30,6 +33,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -40,6 +46,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -49,6 +58,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.5'
@@ -108,6 +120,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007583'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.411129'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 1% CaCl2・2H2O solution
   composition: []
@@ -116,6 +138,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution
 - preferred_term: 2% MgCl2・6H2O solution
   composition: []
   concentration:
@@ -123,36 +146,42 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 1% Resazurin solution
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: Trace element solution SL--10 (see Medium [M433])
   composition: []
   notes: Cross-reference to Medium M433
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% (w/v) NaHCO3 solution*
   composition: []
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 20% (w/v) Glucose solution
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
+  name: Unknown solution
 - preferred_term: 3% (w/v) Na2S・9H2O solution
   composition: []
   concentration:
@@ -160,3 +189,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
     compound'
+  name: Unknown solution

@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '4.9505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.00049505'
@@ -38,6 +41,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -45,6 +51,9 @@ ingredients:
   concentration:
     value: '1.48515'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Ground beef
   concentration:
     value: '500'
@@ -56,6 +65,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -63,6 +75,9 @@ ingredients:
   concentration:
     value: '400'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -70,6 +85,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: D-Maltose
   term:
     id: CHEBI:17306
@@ -77,6 +95,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: D-Maltose
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -84,6 +105,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -112,3 +136,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000545'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007474'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.850294'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Mineral base 1*500mlMineral base 2**500mlMgCl2·6H2O0.2gBacto Yeast
     Extract (Difco)0.02gCoenzyme M0.014gVitamin solution***5mlTrace element solution****10mlMethanol2mlSodium
@@ -62,3 +66,4 @@ solutions:
     0.5 M Na2S·9H2O solutions, wash with pure water several times, finally resuspend
     the FeS precipitate as 20% solution and autoclave (110°C, 30 min) under a N2atmosphere.
   composition: []
+  name: Unknown solution

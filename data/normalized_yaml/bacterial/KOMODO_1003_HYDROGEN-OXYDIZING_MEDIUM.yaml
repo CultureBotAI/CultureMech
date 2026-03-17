@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NaS2O3
   concentration:
     value: '2'
@@ -27,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:132112
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000669
+    label: NaS2O3
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -35,6 +41,9 @@ ingredients:
     value: '40.4'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.4, 40.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -42,6 +51,9 @@ ingredients:
   concentration:
     value: '0.48'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -49,6 +61,9 @@ ingredients:
   concentration:
     value: '0.78'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: MES
   term:
     id: CHEBI:39010
@@ -56,6 +71,9 @@ ingredients:
   concentration:
     value: '1.95'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -63,6 +81,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MgCl2 x H2O
   term:
     id: CHEBI:86355
@@ -70,6 +91,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000879
+    label: MgCl2 x H2O
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -77,6 +101,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4 x 3 H2O
 - preferred_term: Na-EDTA x 2 H2O
   term:
     id: CHEBI:64734
@@ -84,6 +111,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na-EDTA x 2 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -91,6 +121,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -98,6 +131,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -105,6 +141,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -112,6 +151,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: AlCl3 x 6 H2O
   term:
     id: CHEBI:30115
@@ -119,6 +161,9 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000728
+    label: AlCl3 x 6 H2O
 - preferred_term: Na-tungstate x 2 H2O
   concentration:
     value: '0.03'
@@ -130,6 +175,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000579
+    label: CuCl
 - preferred_term: NiSO4 x 6 H2O
   term:
     id: CHEBI:53001
@@ -137,6 +185,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000599
+    label: NiSO4 x 6 H2O
 - preferred_term: Se-acid
   concentration:
     value: '0.01'
@@ -152,6 +203,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -171,4 +225,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003500'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

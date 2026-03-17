@@ -30,6 +30,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010037'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:02.173133'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
 solutions:
 - preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
   composition: []
@@ -37,9 +41,11 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Monopotassium Phosphate
   concentration:
     value: '1.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
 - preferred_term: Biotin
   concentration:
     value: '0.5'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '0.5'
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
 - preferred_term: Calcium Chloride
   concentration:
     value: '0.5'
@@ -49,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: Calcium Chloride
 - preferred_term: Disodium Phosphate
   concentration:
     value: '1.5'
@@ -58,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium Phosphate
 - preferred_term: Glycerol
   concentration:
     value: '5'
@@ -67,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Monosodium Glutamate
   concentration:
     value: '0.5'
@@ -76,6 +97,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Monosodium Glutamate
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.05'
@@ -85,6 +109,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium Sulfate
 - preferred_term: Copper Sulfate
   concentration:
     value: '1'
@@ -94,6 +121,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: Copper Sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.4'
@@ -102,6 +132,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium Citrate
 - preferred_term: Ferric Ammonium Citrate
   concentration:
     value: '0.04'
@@ -111,6 +144,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric Ammonium Citrate
 - preferred_term: Pyridoxine
   concentration:
     value: '1'
@@ -119,6 +155,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Zinc Sulfate
   concentration:
     value: '1'
@@ -128,6 +167,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc Sulfate
 - preferred_term: Malachite Green
   concentration:
     value: '0.25'
@@ -137,6 +179,9 @@ ingredients:
   term:
     id: CHEBI:72449
     label: Malachite green
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000835
+    label: Malachite Green
 - preferred_term: Agar
   concentration:
     value: '13.5'
@@ -145,6 +190,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Pancreatic Digest of Casein
   concentration:
     value: '1'
@@ -163,6 +211,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Dextrose
   concentration:
     value: '20'
@@ -172,6 +223,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
 - preferred_term: Bovine Albumin (Fraction V)
   concentration:
     value: '50'
@@ -186,6 +240,9 @@ ingredients:
   term:
     id: CHEBI:16196
     label: Oleic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001012
+    label: Oleic Acid
 - preferred_term: Catalase
   concentration:
     value: '0.03'
@@ -219,3 +276,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008990'
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

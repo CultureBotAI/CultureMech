@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:2682
     label: Amphotericin B
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001049
+    label: amphotericin B
 - preferred_term: calf blood
   concentration:
     value: '10'
@@ -74,3 +77,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009396'
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

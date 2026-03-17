@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '126.2'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.6802'
@@ -31,6 +34,9 @@ ingredients:
   concentration:
     value: '17.11'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.005006'
@@ -42,6 +48,9 @@ ingredients:
   concentration:
     value: '0.02487'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -49,6 +58,9 @@ ingredients:
   concentration:
     value: '4.057'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '11.02'
@@ -60,6 +72,9 @@ ingredients:
   concentration:
     value: '55.24'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -80,6 +95,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007211'
+- timestamp: '2026-03-17T06:30:35.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 312
   term:

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -36,6 +42,9 @@ ingredients:
     compound, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Tween 80
   concentration:
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Beef extract
   concentration:
     value: '5'
@@ -88,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:16236
     label: ethanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: ethanol
 - preferred_term: vitamin K1
   concentration:
     value: '0.1'
@@ -96,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:18067
     label: Vitamin K1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: vitamin K1
 media_term:
   preferred_term: TOGO Medium M1300
   term:
@@ -130,6 +151,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007835'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.089714'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt solution (see Medium [M695])
   composition: []
@@ -137,26 +167,31 @@ solutions:
   concentration:
     value: '40'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 5% L-Cysteine・HCl・H2O solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Rumen fluid, clarified (see Medium [M258])
   composition: []
   notes: Cross-reference to Medium M258
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Hemin solution (see Medium [M470])
   composition: []
   notes: Cross-reference to Medium M470
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin K1 solution (see below)
   composition: []
   concentration:
     value: '0.2'
     unit: G_PER_L
+  name: Unknown solution

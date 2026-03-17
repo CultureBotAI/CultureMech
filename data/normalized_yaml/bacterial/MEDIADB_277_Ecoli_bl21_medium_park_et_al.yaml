@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '0.04852'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.10333'
@@ -37,6 +40,9 @@ ingredients:
   concentration:
     value: '0.01491'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '97.7323'
@@ -48,6 +54,9 @@ ingredients:
   concentration:
     value: '4.86874'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.019254'
@@ -92,6 +101,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007177'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 277
   term:

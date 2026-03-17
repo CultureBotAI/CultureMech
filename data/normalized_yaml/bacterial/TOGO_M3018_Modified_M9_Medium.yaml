@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '21.0'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NH4Cl
   concentration:
     value: '0.31'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KCl
   concentration:
     value: '0.13'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na2HPO4
   concentration:
     value: '4.33'
@@ -50,6 +62,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: NaH2PO4
   concentration:
     value: '2.69'
@@ -59,6 +74,9 @@ ingredients:
   term:
     id: CHEBI:37585
     label: sodium dihydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -77,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:133341
     label: choline chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000437
+    label: Choline chloride
 - preferred_term: Nicotinamide
   concentration:
     value: '5'
@@ -86,6 +107,9 @@ ingredients:
   term:
     id: CHEBI:17154
     label: nicotinamide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000539
+    label: Nicotinamide
 - preferred_term: myo-Inositol
   concentration:
     value: '5'
@@ -95,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:17268
     label: myo-inositol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000500
+    label: myo-Inositol
 - preferred_term: Sodium ascorbate
   concentration:
     value: '5'
@@ -103,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:113451
     label: sodium ascorbate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Sodium ascorbate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.1'
@@ -112,6 +142,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.01'
@@ -121,6 +154,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '3'
@@ -130,6 +166,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2·6H2O
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -139,6 +178,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.1'
@@ -154,6 +196,9 @@ ingredients:
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
 - preferred_term: ZnCl2
   concentration:
     value: '0.1'
@@ -163,6 +208,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -172,6 +220,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: MnCl2·2H2O
   concentration:
     value: '0.5'
@@ -187,6 +238,9 @@ ingredients:
   term:
     id: CHEBI:30114
     label: aluminium trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000292
+    label: AlCl3
 - preferred_term: FeCl2·4H2O
   concentration:
     value: '0.1'
@@ -196,6 +250,9 @@ ingredients:
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2·4H2O
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -204,6 +261,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: NaHCO3
   concentration:
     value: '1.64'
@@ -213,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: FeCl3·6H2O
   concentration:
     value: '2.7'
@@ -222,6 +285,9 @@ ingredients:
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3·6H2O
 - preferred_term: Nitrilotriacetic acid trisodium salt monohydrate
   concentration:
     value: '2.75'
@@ -236,6 +302,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 media_term:
   preferred_term: TOGO Medium M3018
   term:
@@ -275,6 +344,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009533'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.105253'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: 10% Na2CO3 solution
@@ -283,25 +361,30 @@ solutions:
     value: '40'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Solution'
+  name: Unknown solution
 - preferred_term: 1 M Sodium acetate solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Solution'
+  name: Unknown solution
 - preferred_term: Modified trace vitamins solution* (see below)
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Fe NTA solution (see below)
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

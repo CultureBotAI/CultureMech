@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Yeast extract
   concentration:
     value: '8'
@@ -31,6 +34,9 @@ ingredients:
     value: '7'
     unit: G_PER_L
   notes: Optional ingredient
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -39,6 +45,9 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: Optional ingredient
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Ethanol
   term:
     id: CHEBI:16236
@@ -47,6 +56,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: ' (non-methylated)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -68,3 +80,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001259'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

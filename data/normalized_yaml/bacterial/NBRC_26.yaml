@@ -7,6 +7,9 @@ medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Proteose peptone1gYeast extract1gGlucose1gDistilled water1LAgar15g
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Proteose peptone
@@ -35,3 +38,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007482'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.870701'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Proteose peptone1gYeast extract1gGlucose1gDistilled
+    water1LAgar15g'

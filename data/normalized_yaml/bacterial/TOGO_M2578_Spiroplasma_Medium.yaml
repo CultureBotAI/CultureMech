@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Tryptone (Difco)
   concentration:
     value: '10'
@@ -48,6 +51,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
   concentration:
     value: '50'
@@ -60,6 +66,9 @@ ingredients:
     Simple component'
   term:
     id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
     label: Distilled water
 - preferred_term: CMRL-1066 (ATCC 20-2206)
   concentration:
@@ -108,6 +117,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009147'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.577683'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Phenol red solution (0.1% soln.)
   composition: []
@@ -115,8 +132,10 @@ solutions:
     value: '20'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
+  name: Unknown solution
 - preferred_term: Yeast Extract Solution
   composition: []
   concentration:
     value: '35'
     unit: G_PER_L
+  name: Unknown solution

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007449'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.777193'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: MgSO4·7H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1LAdjust
     pH to 2.0 with H2SO4.Heterotrophic growth on yeast extract:Add 10 mg/l of FeSO4·7H2O
@@ -46,3 +50,4 @@ solutions:
     g/l of FeSO4·7H2O to the medium, and adjust medium pH to 1.7 with H2SO4prior to
     autoclaving.
   composition: []
+  name: Unknown solution

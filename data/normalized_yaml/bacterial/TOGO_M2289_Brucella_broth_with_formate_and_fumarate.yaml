@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:18012
     label: fumaric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000984
+    label: fumaric acid
 - preferred_term: sodium formate
   concentration:
     value: '0.25'
@@ -20,6 +23,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Solution'
   term:
     id: CHEBI:62965
+    label: sodium formate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
     label: sodium formate
 - preferred_term: Brucella Broth (BD 211088)
   concentration:
@@ -49,3 +55,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008875'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

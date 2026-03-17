@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Tween 80
   concentration:
     value: '0.5'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Na-glutamate
   concentration:
     value: '4'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:29988
     label: L-glutamate(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000886
+    label: Na-glutamate
 - preferred_term: Arginine
   concentration:
     value: '1'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32696
     label: argininium(1+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: DL-Tryptophan
   concentration:
     value: '0.1'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:57912
     label: L-tryptophan zwitterion
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000712
+    label: DL-Tryptophan
 - preferred_term: Glycine
   concentration:
     value: '1'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:57305
     label: glycine zwitterion
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: Glucose
   concentration:
     value: '5'
@@ -82,6 +103,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Trypticase peptone
   concentration:
     value: '5'
@@ -95,6 +119,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Cysteine-HCl x H2O
   concentration:
     value: '0.5'
@@ -103,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: Cysteine-HCl x H2O
 media_term:
   preferred_term: TOGO Medium M2686
   term:
@@ -126,3 +156,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009241'
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

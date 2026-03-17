@@ -13,6 +13,9 @@ ingredients:
     value: '22.202'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -20,6 +23,9 @@ ingredients:
   concentration:
     value: '9.7928'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 - preferred_term: Magnesium chloride
   concentration:
     value: '12.0997'
@@ -27,6 +33,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '1.0'
@@ -35,6 +44,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '1.006'
@@ -42,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '69.9557'
@@ -53,6 +68,9 @@ ingredients:
   concentration:
     value: '9.3473'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Manganese chloride
   concentration:
     value: '0.39917'
@@ -64,6 +82,9 @@ ingredients:
   concentration:
     value: '4.6704'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0039955'
@@ -75,6 +96,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -99,6 +123,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007067'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 176
   term:

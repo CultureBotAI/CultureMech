@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
     value: '2'
@@ -22,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Mannitol
   concentration:
     value: '10'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:29864
     label: mannitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
 - preferred_term: Ager
   concentration:
     value: '15'
@@ -50,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '40'
@@ -59,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: NaCl
   concentration:
     value: '2'
@@ -68,6 +83,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -89,6 +107,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
 media_term:
   preferred_term: TOGO Medium M3286
   term:
@@ -126,6 +147,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009700'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.247430'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Hipolypepton*
   composition: []
@@ -133,11 +163,13 @@ solutions:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Tween 80 solution**
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Salts solution***
   term:
     id: mediadive.solution:4429
@@ -146,3 +178,4 @@ solutions:
     value: '5'
     unit: G_PER_L
   notes: See mediadive_4429_Salts_solution.yaml for composition
+  name: Unknown solution

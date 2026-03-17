@@ -34,6 +34,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008463'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.087006'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: CHROMagerTM Malassezia/Candida*
   composition: []
@@ -41,3 +45,4 @@ solutions:
     value: variable
     unit: VARIABLE
   notes: 'Properties: Undefined component, Complex component'
+  name: Unknown solution

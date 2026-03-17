@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -35,6 +38,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (alternative)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -43,6 +49,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: ' (alternative)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -64,3 +73,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001091'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

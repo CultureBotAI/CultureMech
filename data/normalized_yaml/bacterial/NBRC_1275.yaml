@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007468'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.832143'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: NaCl30gK2HPO40.14gCaCl2·2H2O0.14gNH4Cl0.25gMgSO4·7H2O3.4gMgCl2·6H2O4.2gKCl0.33gFe(NH4)2(SO4)2·6H2O0.01gBacto
     Yeast Extract (Difco)1gTrace elements solution*10mlVitamin solution**2mlNaHCO32.5gSulfur
@@ -53,3 +57,4 @@ solutions:
     then add minerals. Final pH is 7.0.**Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
     acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L
   composition: []
+  name: Unknown solution

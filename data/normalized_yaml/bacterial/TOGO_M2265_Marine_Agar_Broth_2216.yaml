@@ -29,6 +29,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: Sodium Chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium Chloride
 - preferred_term: Boric Acid
   concentration:
     value: '0.022'
@@ -38,6 +41,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: Boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric Acid
 - preferred_term: Potassium Chloride
   concentration:
     value: '0.55'
@@ -47,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium Chloride
 - preferred_term: Sodium Bicarbonate
   concentration:
     value: '0.16'
@@ -56,12 +65,18 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium Bicarbonate
 - preferred_term: Sodium Sulfate
   concentration:
     value: '3.24'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium Sulfate
 - preferred_term: Calcium Chloride
   concentration:
     value: '1.8'
@@ -71,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: Calcium Chloride
 - preferred_term: Disodium Phosphate
   concentration:
     value: '0.008'
@@ -80,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium Phosphate
 - preferred_term: Ammonium Nitrate
   concentration:
     value: '0.0016'
@@ -89,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: Ammonium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium Nitrate
 - preferred_term: Sodium Fluoride
   concentration:
     value: '0.0024'
@@ -101,12 +125,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: Potassium Bromide
 - preferred_term: Ferric Citrate
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000281
+    label: Ferric Citrate
 - preferred_term: Strontium Chloride
   concentration:
     value: '0.034'
@@ -122,6 +152,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium Chloride
 - preferred_term: Sodium Silicate
   concentration:
     value: '0.004'
@@ -131,6 +164,9 @@ ingredients:
   term:
     id: CHEBI:60720
     label: sodium silicate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: Sodium Silicate
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -139,6 +175,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -166,3 +205,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008852'
+- timestamp: '2026-03-17T06:30:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

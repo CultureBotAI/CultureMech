@@ -9,6 +9,9 @@ ingredients:
 - preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured
     by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd.,
     Osaka, Japan.
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Malt extract
@@ -37,3 +40,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007458'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.804716'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Malt extract20gEbios (tablets)*1gDistilled
+    water1LAgar15g*Manufactured by Asahi Breweries, Ltd., Tokyo, Japan. Distributed
+    by Tanabe Seiyaku Co. Ltd., Osaka, Japan.'

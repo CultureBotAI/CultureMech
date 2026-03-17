@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Sorbitol
   concentration:
     value: '70'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:30911
     label: glucitol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000447
+    label: Sorbitol
 - preferred_term: Tryptone (BD 211705)
   concentration:
     value: '10'
@@ -71,6 +77,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008776'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.402048'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 0.1% Phenol red solution
   composition: []
@@ -78,27 +93,32 @@ solutions:
     value: '20'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Solution, Organic compound, Defined component'
+  name: Unknown solution
 - preferred_term: 50% Fructose solution
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: 50% Glucose solution
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: 50% Sucrose solution
   composition: []
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  name: Unknown solution
 - preferred_term: Yeast Extract Solution (GIBCO 360-8180)
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution

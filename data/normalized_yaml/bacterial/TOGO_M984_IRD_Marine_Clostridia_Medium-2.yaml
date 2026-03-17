@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: sodium acetate
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '2'
@@ -47,6 +50,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010411'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:04.313014'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: IRD MARINE CLOSTRIDA MEDIUM (see Medium [M953])
   composition: []
@@ -54,3 +65,4 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

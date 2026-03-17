@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '2.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x 7 H2O
 - preferred_term: NaCl
   concentration:
     value: '250'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Na3-citrate x 2 H2O
   concentration:
     value: '3'
@@ -49,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Na3-citrate x 2 H2O
 - preferred_term: Glutamic acid
   concentration:
     value: '2.5'
@@ -58,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:18237
     label: glutamic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000946
+    label: Glutamic acid
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -66,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Casamino acids
   concentration:
     value: '15'
@@ -74,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Na2CO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -82,6 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 media_term:
   preferred_term: TOGO Medium M2321
   term:
@@ -109,4 +136,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008909'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

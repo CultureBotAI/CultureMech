@@ -13,6 +13,9 @@ ingredients:
     value: '17.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.00038'
@@ -20,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -27,6 +33,9 @@ ingredients:
   concentration:
     value: '0.013'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '220.0'
@@ -46,6 +55,9 @@ ingredients:
   concentration:
     value: '86.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -60,6 +75,9 @@ ingredients:
   concentration:
     value: '187.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0039'
@@ -68,6 +86,9 @@ ingredients:
   concentration:
     value: '194.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'
@@ -100,6 +121,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007088'
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 197
   term:

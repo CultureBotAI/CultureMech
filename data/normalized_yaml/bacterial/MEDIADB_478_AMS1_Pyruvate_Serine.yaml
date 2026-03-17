@@ -13,6 +13,9 @@ ingredients:
     value: '0.006'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pyruvate
   term:
     id: CHEBI:15361
@@ -21,6 +24,9 @@ ingredients:
     value: '1.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pyr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000367
+    label: Pyruvate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -29,6 +35,9 @@ ingredients:
     value: 4e-06
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Nickel chloride
   concentration:
     value: 1e-06
@@ -40,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: L-Serine
   term:
     id: CHEBI:17115
@@ -48,6 +60,9 @@ ingredients:
     value: '0.05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ser-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000270
+    label: L-Serine
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '6.0'
@@ -55,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: Sodium bicarbonate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '10.0'
@@ -70,6 +88,9 @@ ingredients:
   concentration:
     value: '28.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: Sodium selenite
   concentration:
     value: 1e-06
@@ -88,6 +112,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: 5e-07
@@ -99,10 +126,16 @@ ingredients:
   concentration:
     value: '481.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '0.05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -110,6 +143,9 @@ ingredients:
   concentration:
     value: '0.4'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Manganese chloride
   concentration:
     value: 9e-06
@@ -121,6 +157,9 @@ ingredients:
   concentration:
     value: 8e-07
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'
@@ -149,6 +188,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007385'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 478
   term:

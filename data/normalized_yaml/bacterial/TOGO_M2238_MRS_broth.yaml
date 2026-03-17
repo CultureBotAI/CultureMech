@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4.7H2O
   concentration:
     value: '200'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31795
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4.7H2O
 - preferred_term: K2HPO4
   concentration:
     value: '2'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: polyoxyethylene sorbitan mono-oleate (Tween 80)
   concentration:
     value: '1'
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:86358
     label: manganese(II) sulfate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000711
+    label: MnSO4.4H2O
 - preferred_term: Triammonium citrate
   concentration:
     value: '2'
@@ -67,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Yeast extract (Difco or Oxoid)
   concentration:
     value: '5'
@@ -103,4 +118,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008826'
+- timestamp: '2026-03-17T06:30:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

@@ -36,6 +36,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000326
+    label: Ascorbic acid
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -43,6 +46,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na2-ß-glycerolphosphate
   term:
     id: CHEBI:132089
@@ -50,6 +56,9 @@ ingredients:
   concentration:
     value: '9.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000486
+    label: Na2-ß-glycerolphosphate
 - preferred_term: Lactose
   term:
     id: CHEBI:17716
@@ -57,6 +66,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000339
+    label: Lactose
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -64,6 +76,9 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -79,3 +94,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006236'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

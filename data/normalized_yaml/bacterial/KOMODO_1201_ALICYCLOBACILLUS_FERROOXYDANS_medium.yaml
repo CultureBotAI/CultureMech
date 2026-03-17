@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.537634'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.430108'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '0.215054'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: K2S4O6
   concentration:
     value: '0.16129'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:86466
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001076
+    label: K2S4O6
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.107527'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0107527'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Yeast extract
   concentration:
     value: '0.215054'
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,4 +102,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003949'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

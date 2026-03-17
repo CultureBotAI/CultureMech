@@ -20,6 +20,9 @@ ingredients:
     value: '30.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 20.0, 10.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: MES
   term:
     id: CHEBI:39010
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -35,6 +41,9 @@ ingredients:
     value: '8.0'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 4.0, 4.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -42,6 +51,9 @@ ingredients:
   concentration:
     value: '19.0658'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -49,6 +61,9 @@ ingredients:
   concentration:
     value: '3.33651'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -56,6 +71,9 @@ ingredients:
   concentration:
     value: '2.62154'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -63,6 +81,9 @@ ingredients:
   concentration:
     value: '0.309819'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -70,6 +91,9 @@ ingredients:
   concentration:
     value: '0.0476644'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -77,6 +101,9 @@ ingredients:
   concentration:
     value: '0.0142993'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -84,6 +111,9 @@ ingredients:
   concentration:
     value: '0.00714967'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -91,6 +121,9 @@ ingredients:
   concentration:
     value: '0.00953289'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -98,6 +131,9 @@ ingredients:
   concentration:
     value: '0.000476644'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
 - preferred_term: Na2WO2 x 2 H2O
   concentration:
     value: '9.53289e-05'
@@ -109,6 +145,9 @@ ingredients:
   concentration:
     value: '0.714967'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -116,6 +155,9 @@ ingredients:
   concentration:
     value: '0.476644'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NiCl2 x 6 H2O
   term:
     id: CHEBI:34887
@@ -123,6 +165,9 @@ ingredients:
   concentration:
     value: '0.00190658'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
 - preferred_term: Trace minerals (see Medium No. 151
   concentration:
     value: '10'
@@ -134,6 +179,9 @@ ingredients:
   concentration:
     value: '0.000953289'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -141,6 +189,9 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -178,3 +229,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002189'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

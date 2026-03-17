@@ -35,6 +35,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: ACES
   term:
     id: CHEBI:65994
@@ -42,6 +45,9 @@ ingredients:
   concentration:
     value: '3.64'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000555
+    label: ACES
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -50,6 +56,9 @@ ingredients:
     value: '14'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Charcoal
   term:
     id: CHEBI:91090
@@ -57,6 +66,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000781
+    label: Charcoal
 - preferred_term: Na-ascorbate
   term:
     id: CHEBI:113451
@@ -64,6 +76,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Na-ascorbate
 preparation_steps:
 - step_number: 1
   action: COOL
@@ -80,3 +95,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001136'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:78018
     label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -31,6 +34,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Na-(DL)-lactate
 - preferred_term: Na-thioglycolate
   term:
     id: CHEBI:86481
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -45,6 +54,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Putrescine
   term:
     id: CHEBI:17148
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000628
+    label: Putrescine
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -66,6 +84,19 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: K2CO3
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000596
+    label: K2CO3
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +112,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004109'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:32.133730'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2CO3'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

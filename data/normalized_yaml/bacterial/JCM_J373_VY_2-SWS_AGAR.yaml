@@ -18,6 +18,9 @@ ingredients:
   concentration:
     value: '0.0999001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000864
+    label: Ferric citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -25,6 +28,9 @@ ingredients:
   concentration:
     value: '7.99201'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -32,6 +38,9 @@ ingredients:
   concentration:
     value: '0.999001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -39,6 +48,9 @@ ingredients:
   concentration:
     value: '0.499501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -46,6 +58,9 @@ ingredients:
   concentration:
     value: '0.15984'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -54,6 +69,9 @@ ingredients:
     value: '0.02998'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.01998, 0.01]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: KBr
   term:
     id: CHEBI:32030
@@ -62,6 +80,9 @@ ingredients:
     value: '0.0999201'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0799201, 0.02]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: SrCl2 x 6 H2O
   term:
     id: CHEBI:36385
@@ -69,6 +90,9 @@ ingredients:
   concentration:
     value: '0.02997'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000463
+    label: SrCl2 x 6 H2O
 - preferred_term: Sodium beta-glycerophosphate
   term:
     id: CHEBI:132089
@@ -76,6 +100,9 @@ ingredients:
   concentration:
     value: '0.00999001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000486
+    label: Sodium beta-glycerophosphate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -83,6 +110,9 @@ ingredients:
   concentration:
     value: '19.98'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -90,6 +120,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -97,6 +130,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -104,6 +140,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -111,6 +150,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -118,6 +160,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: LiCl
   term:
     id: CHEBI:48607
@@ -125,6 +170,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000516
+    label: LiCl
 - preferred_term: SnCl2 x 2 H2O
   term:
     id: CHEBI:78074
@@ -132,6 +180,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000905
+    label: SnCl2 x 2 H2O
 - preferred_term: KI
   term:
     id: CHEBI:74559
@@ -139,6 +190,9 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000232
+    label: KI
 - preferred_term: FeNa-EDTA
   concentration:
     value: '8'
@@ -163,3 +217,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002732'
+- timestamp: '2026-03-17T06:30:19.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -13,6 +13,9 @@ ingredients:
   term:
     id: CHEBI:46756
     label: HEPES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: UPW
   concentration:
     value: '100'
@@ -48,6 +51,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009705'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.278204'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: CaCl2 solution
   composition: []
@@ -56,9 +67,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
     component'
+  name: Unknown solution
 - preferred_term: MgCl2 solution
   composition: []
   concentration:
     value: '333'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  name: Unknown solution

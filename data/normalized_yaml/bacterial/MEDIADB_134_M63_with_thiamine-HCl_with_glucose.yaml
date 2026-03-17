@@ -12,6 +12,9 @@ ingredients:
   concentration:
     value: '0.16'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -20,6 +23,9 @@ ingredients:
     value: '22.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -27,6 +33,9 @@ ingredients:
   concentration:
     value: '0.0033'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0039'
@@ -35,6 +44,9 @@ ingredients:
   concentration:
     value: '100.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
@@ -46,6 +58,9 @@ ingredients:
   concentration:
     value: '15.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -66,6 +81,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007023'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 134
   term:

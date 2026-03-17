@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '10'
@@ -22,6 +25,9 @@ ingredients:
     compound'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Sodium glutamate
   concentration:
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:64220
     label: monosodium glutamate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000432
+    label: Sodium glutamate
 - preferred_term: Glycerol
   concentration:
     value: '6'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Whole egg
   concentration:
     value: '200'
@@ -75,6 +87,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010210'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.151429'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution I
   term:
@@ -84,6 +105,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_5335_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution II
   term:
     id: mediadive.solution:5336
@@ -92,6 +114,7 @@ solutions:
     value: '212'
     unit: G_PER_L
   notes: See mediadive_5336_Solution_II.yaml for composition
+  name: Unknown solution
 - preferred_term: 2% Malachite green solution
   composition: []
   concentration:
@@ -99,3 +122,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Selective agent, pH indicator; Properties: Defined component, Organic
     compound, Solution'
+  name: Unknown solution

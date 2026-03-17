@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Peptone
   concentration:
     value: '5'
@@ -27,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaHCO3
   concentration:
     value: '20'
@@ -36,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Fructose
   concentration:
     value: '10'
@@ -45,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:28645
     label: beta-D-fructofuranose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
 - preferred_term: Sodium thioglycollate
   concentration:
     value: '0.75'
@@ -52,6 +64,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:86481
+    label: Sodium thioglycollate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
     label: Sodium thioglycollate
 - preferred_term: CO2
   notes: 'Properties: Gas'
@@ -73,6 +88,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.2'
@@ -117,6 +135,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: Biotin
   concentration:
     value: '1'
@@ -125,6 +146,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -133,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '2'
@@ -141,6 +168,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Nicotinic acid
   concentration:
     value: '0.05'
@@ -149,6 +179,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thiamine
   concentration:
     value: '0.1'
@@ -157,6 +190,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pantothenic acid
   concentration:
     value: '0.025'
@@ -165,6 +201,9 @@ ingredients:
   term:
     id: CHEBI:7916
     label: pantothenic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000242
+    label: Pantothenic acid
 - preferred_term: Pyridoxine
   concentration:
     value: '0.05'
@@ -173,6 +212,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 media_term:
   preferred_term: TOGO Medium M2726
   term:
@@ -208,6 +250,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009276'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.939965'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution 1
   term:
@@ -217,6 +268,7 @@ solutions:
     value: '600'
     unit: G_PER_L
   notes: See mediadive_6108_Solution_1.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 2
   term:
     id: mediadive.solution:6109
@@ -225,6 +277,7 @@ solutions:
     value: '400'
     unit: G_PER_L
   notes: See mediadive_6109_Solution_2.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace Element Solution
   term:
     id: mediadive.solution:6187
@@ -233,6 +286,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin Solution
   term:
     id: mediadive.solution:6241
@@ -241,3 +295,4 @@ solutions:
     value: '14'
     unit: G_PER_L
   notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution

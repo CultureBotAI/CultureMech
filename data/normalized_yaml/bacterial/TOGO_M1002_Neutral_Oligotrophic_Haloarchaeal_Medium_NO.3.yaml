@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -27,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.25'
@@ -36,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: Sodium lactate
   concentration:
     value: '0.25'
@@ -45,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: sodium lactate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Sodium lactate
 - preferred_term: Fish peptone (Fluka)
   concentration:
     value: '0.25'
@@ -58,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: agar
 - preferred_term: Sodium formate
   concentration:
     value: '0.25'
@@ -66,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:62965
     label: sodium formate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Sodium formate
 media_term:
   preferred_term: TOGO Medium M1002
   term:
@@ -95,6 +113,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007515'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.970760'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: MDS salt water (see Medium [M578])
   composition: []
@@ -102,6 +129,7 @@ solutions:
   concentration:
     value: '767'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1 M NH4Cl solution*
   composition: []
   concentration:
@@ -109,9 +137,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: Potassium phosphate buffer (see Medium [M578])
   composition: []
   notes: Cross-reference to Medium M578
   concentration:
     value: '2'
     unit: G_PER_L
+  name: Unknown solution

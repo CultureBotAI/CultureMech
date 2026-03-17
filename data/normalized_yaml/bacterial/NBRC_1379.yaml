@@ -7,6 +7,9 @@ medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Malt extract20gYeast extract5gSucrose500gDistilled water1LAgar20g
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Malt extract
@@ -35,3 +38,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007475'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.853262'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Malt extract20gYeast extract5gSucrose500gDistilled
+    water1LAgar20g'

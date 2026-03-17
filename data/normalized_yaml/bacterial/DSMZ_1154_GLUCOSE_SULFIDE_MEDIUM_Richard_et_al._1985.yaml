@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -33,10 +39,16 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
 - preferred_term: Ca(NO3)2
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000470
+    label: Ca(NO3)2
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -44,6 +56,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -51,6 +66,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -58,6 +76,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -65,6 +86,9 @@ ingredients:
   concentration:
     value: '0.187'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -73,6 +97,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -80,6 +107,9 @@ ingredients:
   concentration:
     value: 6e-06
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -87,6 +117,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Co-carboxylase
   concentration:
     value: 1e-07
@@ -98,6 +131,9 @@ ingredients:
   concentration:
     value: 6e-06
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Cyanocobalamin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -105,6 +141,9 @@ ingredients:
   concentration:
     value: 6e-06
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Inositol
   term:
     id: CHEBI:24848
@@ -112,6 +151,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000421
+    label: Inositol
 - preferred_term: Niacin
   term:
     id: CHEBI:15940
@@ -119,6 +161,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Niacin
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -126,6 +171,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709
@@ -133,6 +181,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Riboflavine
   term:
     id: CHEBI:17015
@@ -140,6 +191,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -147,6 +201,9 @@ ingredients:
   concentration:
     value: 1e-07
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 preparation_steps:
 - step_number: 1
   action: HEAT
@@ -170,3 +227,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000593'
+- timestamp: '2026-03-17T06:30:17.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

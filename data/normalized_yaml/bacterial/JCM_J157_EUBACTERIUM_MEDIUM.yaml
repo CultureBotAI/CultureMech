@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '29.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000649
+    label: Thioglycolate
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,3 +50,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002515'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

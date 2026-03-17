@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MES
   concentration:
     value: '1.95'
@@ -30,6 +36,9 @@ ingredients:
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
     label: MES
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
@@ -50,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: KNO3
   concentration:
     value: '1'
@@ -59,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -109,6 +124,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010312'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.756367'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -118,6 +142,7 @@ solutions:
     value: '1001'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -126,6 +151,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -134,15 +160,18 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Synthetic seawater (2 x) (see Medium [M236])
   composition: []
   notes: Cross-reference to Medium M236
   concentration:
     value: '250'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Wolfe's mineral elixir (see Medium [M471])
   composition: []
   notes: Cross-reference to Medium M471
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

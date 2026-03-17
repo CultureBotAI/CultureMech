@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium acetate
   concentration:
     value: '0.164'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Na2CO3
   concentration:
     value: '4.24'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaNO3
   concentration:
     value: '0.425'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:63005
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: NaNO3
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.22'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: NaNO2
   concentration:
     value: '0.345'
@@ -73,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:78870
     label: sodium nitrite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
 - preferred_term: Disodium succinate・6H2O
   concentration:
     value: '0.54'
@@ -85,6 +106,9 @@ ingredients:
   term:
     id: CHEBI:132764
     label: sodium oxalate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000883
+    label: Disodium oxalate
 media_term:
   preferred_term: TOGO Medium M1358
   term:
@@ -118,6 +142,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007895'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.432749'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Na2CO3 solution
   composition: []
@@ -125,3 +157,4 @@ solutions:
     value: variable
     unit: VARIABLE
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '8.8'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   concentration:
     value: '1'
@@ -43,6 +49,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '10'
@@ -56,6 +65,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -69,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: Sodium ascorbate
   concentration:
     value: '0.5'
@@ -77,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:113451
     label: sodium ascorbate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001044
+    label: Sodium ascorbate
 media_term:
   preferred_term: TOGO Medium M809
   term:
@@ -115,6 +133,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010221'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.223574'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:27.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
@@ -122,20 +149,24 @@ solutions:
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% Glucose solution
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: Thioglycolate--ascorbate solution* (see below)
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
+  name: Unknown solution

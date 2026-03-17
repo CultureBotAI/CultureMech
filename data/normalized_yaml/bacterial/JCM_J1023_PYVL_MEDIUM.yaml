@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '4.98008'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000318
+    label: L-Lysine
 - preferred_term: Sodium resazurin
   concentration:
     value: '1'
@@ -38,6 +41,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -45,6 +51,9 @@ ingredients:
   concentration:
     value: '0.298805'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -52,6 +61,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -59,6 +71,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: p-Aminobenzoic acid
   term:
     id: CHEBI:30753
@@ -66,6 +81,9 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -73,6 +91,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -80,6 +101,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -87,6 +111,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pyridoxamine hydrochloride
   term:
     id: CHEBI:131531
@@ -94,6 +121,9 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxamine hydrochloride
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -114,6 +144,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002207'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:24.443785'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:11.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Salt Solution I
   term:
@@ -123,6 +161,7 @@ solutions:
     value: '75'
     unit: G_PER_L
   notes: See mediadive_5691_Salt_Solution_I.yaml for composition
+  name: Unknown solution
 - preferred_term: Salt Solution II
   term:
     id: mediadive.solution:2571
@@ -131,3 +170,4 @@ solutions:
     value: '75'
     unit: G_PER_L
   notes: See mediadive_2571_Salt_Solution_II.yaml for composition
+  name: Unknown solution

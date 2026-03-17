@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: L-Cysteine
   concentration:
     value: '1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:17561
     label: L-cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: ACES Buffer
   concentration:
     value: '10'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.25'
@@ -85,6 +97,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009559'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.300513'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Marine Broth 2216**
   composition: []
@@ -92,9 +112,11 @@ solutions:
     value: '37.4'
     unit: G_PER_L
   notes: 'Properties: Complex component, Undefined component'
+  name: Unknown solution
 - preferred_term: Legionella CYE Agar Base*
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
   notes: 'Properties: Complex component'
+  name: Unknown solution

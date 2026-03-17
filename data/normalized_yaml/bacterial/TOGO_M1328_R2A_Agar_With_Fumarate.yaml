@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Disodium fumarate
   concentration:
     value: '3.2'
@@ -22,6 +25,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Disodium fumarate
 - preferred_term: R2A agar (BD-Difco)
   concentration:
     value: '18.2'
@@ -61,3 +67,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007863'
+- timestamp: '2026-03-17T06:29:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

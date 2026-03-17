@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007501'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.922708'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween
     80 solution**10mlSalts solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and
@@ -46,3 +50,4 @@ solutions:
     solutionMgSO4·7H2O40gMnSO4·4H2O2gFeSO4·7H2O2gNaCl2gDistilled water1LAdd a drop
     of 12 N HCl to 500 ml of the salts solution.
   composition: []
+  name: Unknown solution

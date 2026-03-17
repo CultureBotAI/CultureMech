@@ -25,6 +25,9 @@ ingredients:
     value: '0.09'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.03, 0.06]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Bovine serum
   concentration:
     value: '1.0499999999999998'
@@ -38,6 +41,9 @@ ingredients:
     value: '0.045'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.015, 0.03]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Air
   concentration:
     value: '5.5'
@@ -62,3 +68,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006643'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

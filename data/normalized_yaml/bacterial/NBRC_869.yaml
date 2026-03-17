@@ -9,6 +9,9 @@ ingredients:
 - preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea
     water*800mlDistilled water200mlpH 7.6*Filtered, aged seawater or artificial seawater
     (Daigo's Artificial Seawater SP**)**Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Bacto Marine Broth 2216 (Difco)
@@ -37,3 +40,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007500'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.920055'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Bacto Marine Broth 2216 (Difco)7.5gSodium
+    pyruvate5gAgar (if needed)15gSea water*800mlDistilled water200mlpH 7.6*Filtered,
+    aged seawater or artificial seawater (Daigo''s Artificial Seawater SP**)**Wako
+    Pure Chemical Ind., Ltd., Osaka, Japan.'

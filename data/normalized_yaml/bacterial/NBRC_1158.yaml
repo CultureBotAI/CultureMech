@@ -7,7 +7,13 @@ medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tryptone (Diffico)10gGlucose3gAgar10gDistilled water1L
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -32,3 +38,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007459'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.806932'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Tryptone (Diffico)10gGlucose3gAgar10gDistilled
+    water1L; Added default concentration for ingredient: '

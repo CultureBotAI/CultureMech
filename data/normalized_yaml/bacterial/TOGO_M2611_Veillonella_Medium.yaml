@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Tween 80
   concentration:
     value: '1'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: Putrescine
   concentration:
     value: '3'
@@ -46,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:326268
     label: 1,4-butanediammonium
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000628
+    label: Putrescine
 - preferred_term: Na-(DL)-lactate
   concentration:
     value: '7.5'
@@ -55,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:75228
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Na-(DL)-lactate
 - preferred_term: Glucose
   concentration:
     value: '1'
@@ -64,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Trypticase (BBL)
   concentration:
     value: '5'
@@ -77,6 +95,9 @@ ingredients:
   term:
     id: CHEBI:30066
     label: thioglycolate(1-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000267
+    label: Na-thioglycolate
 - preferred_term: K2CO3
   notes: 'Properties: Defined component, Simple component'
   term:
@@ -85,6 +106,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000596
+    label: K2CO3
 media_term:
   preferred_term: TOGO Medium M2611
   term:
@@ -112,3 +136,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009179'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

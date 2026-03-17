@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.25'
@@ -39,6 +42,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
@@ -79,6 +85,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CoSO4 . 7H2O
   concentration:
     value: '10'
@@ -106,6 +115,9 @@ ingredients:
   term:
     id: CHEBI:17909
     label: Sulphur
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000629
+    label: Sulphur
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -119,6 +131,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Tryptone (BD 211705)
   concentration:
@@ -169,6 +184,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009227'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.457962'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Solution A
@@ -179,6 +203,7 @@ solutions:
     value: '300'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -187,6 +212,7 @@ solutions:
     value: '450'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -195,6 +221,7 @@ solutions:
     value: '500'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D
   term:
     id: mediadive.solution:5313
@@ -203,3 +230,4 @@ solutions:
     value: '50'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution

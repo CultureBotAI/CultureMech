@@ -13,6 +13,9 @@ ingredients:
     value: '0.86858'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pro-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000280
+    label: L-Proline
 - preferred_term: beta-D-Glucose
   concentration:
     value: '77.7087'
@@ -28,6 +31,9 @@ ingredients:
   concentration:
     value: '0.0009704'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'
@@ -43,6 +49,9 @@ ingredients:
   concentration:
     value: '8.55578'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -50,6 +59,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '22.0449'
@@ -61,6 +73,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -68,6 +83,9 @@ ingredients:
   concentration:
     value: '0.010595'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -75,6 +93,9 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -82,6 +103,9 @@ ingredients:
   concentration:
     value: '0.004799'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.001264'
@@ -110,6 +134,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007006'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 119
   term:

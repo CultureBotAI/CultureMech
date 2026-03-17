@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '1.48515'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -30,6 +33,9 @@ ingredients:
   concentration:
     value: '2.87129'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Urea
   term:
     id: CHEBI:16199
@@ -37,6 +43,9 @@ ingredients:
   concentration:
     value: '2.87129'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -45,6 +54,9 @@ ingredients:
     value: '3.000003'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 2.9703, 0.029703]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '20.6931'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000285
+    label: MOPS
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '9.90099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '0.000990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -73,6 +94,9 @@ ingredients:
   concentration:
     value: '2.47525'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -80,6 +104,9 @@ ingredients:
   concentration:
     value: '0.371287'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -87,6 +114,9 @@ ingredients:
   concentration:
     value: '0.0306931'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -94,6 +124,9 @@ ingredients:
   concentration:
     value: '0.00990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -119,3 +152,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003313'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

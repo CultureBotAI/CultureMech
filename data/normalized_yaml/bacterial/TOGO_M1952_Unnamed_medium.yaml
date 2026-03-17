@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '8'
@@ -62,6 +68,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008532'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.626948'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Ethanol**
   composition: []
@@ -70,6 +85,7 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
     component'
+  name: Unknown solution
 - preferred_term: Acetic acid**
   composition: []
   concentration:
@@ -77,9 +93,11 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  name: Unknown solution
 - preferred_term: Hipolypepton*
   composition: []
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution

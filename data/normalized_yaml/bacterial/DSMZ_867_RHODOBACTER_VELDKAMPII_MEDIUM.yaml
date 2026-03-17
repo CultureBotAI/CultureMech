@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -31,6 +34,9 @@ ingredients:
     value: '0.112'
     unit: G_PER_L
   notes: ' [Merged 3 duplicates: 0.002, 0.1, 0.01]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: '0.543478'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -46,6 +55,9 @@ ingredients:
     value: '44.8148'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 14.8148, 30.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -53,6 +65,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -60,6 +75,9 @@ ingredients:
   concentration:
     value: '0.0111111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -67,6 +85,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ammonium acetate
   term:
     id: CHEBI:62947
@@ -74,6 +95,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000701
+    label: Ammonium acetate
 - preferred_term: Pyruvic acid sodium salt
   term:
     id: CHEBI:113246
@@ -81,6 +105,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000399
+    label: Pyruvic acid sodium salt
 - preferred_term: Dextrose
   term:
     id: CHEBI:4167
@@ -88,6 +115,9 @@ ingredients:
   concentration:
     value: '9.61539'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -95,6 +125,9 @@ ingredients:
   concentration:
     value: '19.2308'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -102,6 +135,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -109,6 +145,9 @@ ingredients:
   concentration:
     value: '13.4615'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -116,6 +155,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Thiamine-HCl x 2 H2O
   term:
     id: CHEBI:132751
@@ -123,6 +165,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
 - preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
@@ -130,6 +175,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Pyridoxine hydrochloride
   term:
     id: CHEBI:30961
@@ -137,6 +185,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -144,6 +195,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -151,6 +205,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Folic acid
   term:
     id: CHEBI:27470
@@ -158,6 +215,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -249,3 +309,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002025'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

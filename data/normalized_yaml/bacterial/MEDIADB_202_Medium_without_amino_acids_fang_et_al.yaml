@@ -13,6 +13,9 @@ ingredients:
     value: '27.147'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Starch
   term:
     id: CHEBI:28017
@@ -20,6 +23,9 @@ ingredients:
   concentration:
     value: '154.32'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0090106'
@@ -32,6 +38,9 @@ ingredients:
   concentration:
     value: '1.408'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '14.6965'
@@ -43,6 +52,9 @@ ingredients:
   concentration:
     value: '0.16229'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -50,6 +62,9 @@ ingredients:
   concentration:
     value: '0.008965'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -57,6 +72,9 @@ ingredients:
   concentration:
     value: '18.6947'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.0071929'
@@ -68,6 +86,9 @@ ingredients:
   concentration:
     value: '2.49837'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -88,6 +109,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007095'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 202
   term:

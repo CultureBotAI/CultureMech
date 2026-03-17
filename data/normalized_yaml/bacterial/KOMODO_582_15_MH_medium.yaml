@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '121.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '10.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '14.4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: NaBr
   term:
     id: CHEBI:63004
@@ -62,6 +80,9 @@ ingredients:
   concentration:
     value: '0.039'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000189
+    label: NaBr
 - preferred_term: Proteose peptone no. 3
   concentration:
     value: '5'
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 applications:
 - Microbial cultivation
 curation_history:
@@ -92,3 +116,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006053'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

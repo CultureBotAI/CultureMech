@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.02'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: NH4Cl
   concentration:
     value: '0.1'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Methane gas
   notes: 'Properties: ガス'
   concentration:
@@ -86,6 +98,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009693'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.213714'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution (see Medium [M850])
   composition: []
@@ -93,18 +114,21 @@ solutions:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Iron stock solution (see Medium [M850])
   composition: []
   notes: Cross-reference to Medium M850
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phosphate buffer stock solution (see Medium [M850])
   composition: []
   notes: Cross-reference to Medium M850
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1 N HCl solution
   composition: []
   concentration:
@@ -112,3 +136,4 @@ solutions:
     unit: VARIABLE
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution

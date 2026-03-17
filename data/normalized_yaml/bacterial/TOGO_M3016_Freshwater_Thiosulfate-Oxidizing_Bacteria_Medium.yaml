@@ -51,6 +51,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009532'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.094415'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
 solutions:
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []
@@ -58,33 +64,39 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 1M NaHCO3 solution*
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 1M MES solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: 1 M Na2S2O3·5H2O solution*
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007465'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.823497'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: NH4Cl1gKH2PO40.27gMgSO4·7H2O0.25gCaCl2·2H2O0.15gNaHCO32.5gGlucose10gYeast
     extract3gNa2S·9H2O30gCysteine-HCl30gResazurin1mgTrace element solution*1mlVitamin
@@ -53,3 +57,4 @@ solutions:
     acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B125mgLipoic acid5mgDistilled
     water1L
   composition: []
+  name: Unknown solution

@@ -30,6 +30,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009961'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.777959'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
 solutions:
 - preferred_term: vitamin B12 solution
   term:
@@ -39,9 +43,11 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6105_Vitamin_B12_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: THIORHODOCOCCUS BHEEMLICUM MEDIUM (see Medium [M565])
   composition: []
   notes: Cross-reference to Medium M565
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

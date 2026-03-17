@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.496524'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.19861'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.178749'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.0993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: HEPES
   term:
     id: CHEBI:46756
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '4.76663'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
 - preferred_term: Na2HPO4 x 7 H2O
   term:
     id: CHEBI:34683
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '0.0536246'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 7 H2O
 - preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
   concentration:
     value: '0.00397219'
@@ -61,6 +79,9 @@ ingredients:
   term:
     id: CHEBI:76181
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000429
+    label: Fe(NH4)2(SO4)2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -68,6 +89,9 @@ ingredients:
   concentration:
     value: '0.0019861'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '0.000993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '4.96524'
@@ -94,6 +121,9 @@ ingredients:
   concentration:
     value: '0.993049'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -101,6 +131,9 @@ ingredients:
   concentration:
     value: '4.96524'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -129,3 +162,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000692'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,11 +31,17 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Cysteine-HCl
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000389
+    label: Cysteine-HCl
 - preferred_term: Vitamins
   concentration:
     value: '10'
@@ -56,6 +65,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Sodium tungstate
   concentration:
     value: '20'
@@ -101,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:86364
     label: manganese(II) sulfate monohydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Zinc sulfate
   concentration:
     value: '0.2'
@@ -110,6 +125,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.8'
@@ -131,6 +149,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '10'
@@ -140,6 +161,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Calcium chloride
   concentration:
     value: '4'
@@ -149,6 +173,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: Calcium chloride
 - preferred_term: Magnesium sulfate
   concentration:
     value: '20'
@@ -158,11 +185,17 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Paraamino benzoic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: Paraamino benzoic acid
 - preferred_term: Calcium pantothenate
   concentration:
     value: '5'
@@ -170,6 +203,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:31345
+    label: Calcium pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
     label: Calcium pantothenate
 - preferred_term: Folic acid
   concentration:
@@ -179,6 +215,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '5'
@@ -187,6 +226,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -195,6 +237,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -203,6 +248,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: 2-Mercaptoethanesulfonic acid
   concentration:
     value: '2'
@@ -212,6 +260,9 @@ ingredients:
   term:
     id: CHEBI:17905
     label: 2-Mercaptoethanesulfonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000392
+    label: 2-Mercaptoethanesulfonic acid
 - preferred_term: Thiamine
   concentration:
     value: '5'
@@ -220,6 +271,9 @@ ingredients:
   term:
     id: CHEBI:26948
     label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Pyridoxine
   concentration:
     value: '10'
@@ -228,6 +282,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
@@ -237,6 +294,9 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000817
+    label: Thioctic acid
 - preferred_term: D-biotin
   concentration:
     value: '2'
@@ -245,6 +305,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-biotin
 media_term:
   preferred_term: TOGO Medium M3160
   term:
@@ -279,6 +342,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009619'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:59.823414'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Mineral solution
@@ -289,6 +360,7 @@ solutions:
     value: '25'
     unit: G_PER_L
   notes: See mediadive_5281_Mineral_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace metal solution
   term:
     id: mediadive.solution:6140
@@ -297,3 +369,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_6140_Trace_metal_solution.yaml for composition
+  name: Unknown solution

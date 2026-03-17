@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '2.99401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -30,6 +33,9 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: MgSO4 x H2O
   term:
     id: CHEBI:32599
@@ -37,6 +43,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4 x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -44,6 +53,9 @@ ingredients:
   concentration:
     value: '2.99401'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -51,6 +63,9 @@ ingredients:
   concentration:
     value: '99.8004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MnCl2 x 4 H2O
   term:
     id: CHEBI:86368
@@ -58,6 +73,9 @@ ingredients:
   concentration:
     value: '0.36'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
 - preferred_term: FeSO4 x H2O
   term:
     id: CHEBI:75834
@@ -65,6 +83,9 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000602
+    label: FeSO4 x H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -80,3 +101,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002880'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

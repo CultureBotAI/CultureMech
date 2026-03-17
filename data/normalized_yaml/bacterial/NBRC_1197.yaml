@@ -9,6 +9,9 @@ ingredients:
 - preferred_term: Substrates*10mMKH2PO40.85gNa2HPO4·7H2O4.9g(NH4)2SO40.5gMgSO4·7H2O0.1gFeSO4·7H2O9.5mgMgO10.75mgCaCO32mgZnSO4·7H2O1.44mgMnSO4·4H2O1.12mgCuSO4·5H2O0.25mgCoSO4·7H2O0.28mgH3BO40.06mgConcentrated
     HCl51.3μlDistilled water1LAgar (if needed)15g*Vanillic acid and syringic acid
     etc.
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Substrates*
@@ -37,3 +40,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007463'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.818124'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Substrates*10mMKH2PO40.85gNa2HPO4·7H2O4.9g(NH4)2SO40.5gMgSO4·7H2O0.1gFeSO4·7H2O9.5mgMgO10.75mgCaCO32mgZnSO4·7H2O1.44mgMnSO4·4H2O1.12mgCuSO4·5H2O0.25mgCoSO4·7H2O0.28mgH3BO40.06mgConcentrated
+    HCl51.3μlDistilled water1LAgar (if needed)15g*Vanillic acid and syringic acid
+    etc.'

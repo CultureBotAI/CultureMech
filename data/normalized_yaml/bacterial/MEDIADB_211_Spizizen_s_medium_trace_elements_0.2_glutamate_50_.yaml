@@ -20,6 +20,9 @@ ingredients:
     value: '108.589'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
 - preferred_term: Tryptophan
   term:
     id: CHEBI:27897
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.244822'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
 - preferred_term: Phenylalanine
   concentration:
     value: '0.302682'
@@ -54,6 +60,9 @@ ingredients:
   concentration:
     value: '0.811458'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -61,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0044828'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0046211'
@@ -72,6 +84,9 @@ ingredients:
   concentration:
     value: '15.1355'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0025222'
@@ -87,6 +102,9 @@ ingredients:
   concentration:
     value: '3.4002'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.04994'
@@ -119,6 +137,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007105'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 211
   term:

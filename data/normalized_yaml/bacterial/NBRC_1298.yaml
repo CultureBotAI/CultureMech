@@ -9,6 +9,9 @@ ingredients:
 - preferred_term: Nutrient Broth Powder (Kyokuto*)6gPyruvic acid sodium salt1gDistilled
     water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical Industrial Co., LTD.,
     Code; 551-02480-7
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Nutrient Broth Powder (Kyokuto*)
@@ -37,3 +40,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007470'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.837543'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Nutrient Broth Powder (Kyokuto*)6gPyruvic
+    acid sodium salt1gDistilled water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical
+    Industrial Co., LTD., Code; 551-02480-7'

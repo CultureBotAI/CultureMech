@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: L-Glutamate
   concentration:
     value: '1.767'
@@ -32,6 +35,9 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Folate
   concentration:
     value: '2.266e-06'
@@ -49,6 +55,9 @@ ingredients:
     value: '199.8'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:urea'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
 - preferred_term: L-Sorbose
   concentration:
     value: '444.0'
@@ -62,6 +71,9 @@ ingredients:
     value: '0.0007093'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pydxn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: DL-methionine
   term:
     id: CHEBI:16811
@@ -69,6 +81,9 @@ ingredients:
   concentration:
     value: '0.2681'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000774
+    label: DL-methionine
 - preferred_term: Isoleucine
   concentration:
     value: '0.4574'
@@ -80,6 +95,9 @@ ingredients:
   concentration:
     value: '0.3222'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -88,6 +106,9 @@ ingredients:
     value: '1.507e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.1567'
@@ -99,6 +120,9 @@ ingredients:
   concentration:
     value: '0.08254'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
 - preferred_term: Potassium chloride
   concentration:
     value: '5.937'
@@ -106,6 +130,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Alanine
   concentration:
     value: '2.133'
@@ -121,6 +148,9 @@ ingredients:
   concentration:
     value: '0.287'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
 - preferred_term: Cupric chloride
   concentration:
     value: '0.0004463'
@@ -133,6 +163,9 @@ ingredients:
   concentration:
     value: '0.1656'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000316
+    label: DL-Tyrosine
 - preferred_term: Lysine
   concentration:
     value: '0.342'
@@ -149,6 +182,9 @@ ingredients:
     value: '7.971e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Pantothenate
   term:
     id: CHEBI:16454
@@ -157,6 +193,9 @@ ingredients:
     value: '0.0005246'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:pnto-R'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
 - preferred_term: Aspartate
   concentration:
     value: '0.7513'
@@ -172,6 +211,9 @@ ingredients:
   concentration:
     value: '4.427e-06'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -179,6 +221,9 @@ ingredients:
   concentration:
     value: '0.7651'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -203,6 +248,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007214'
+- timestamp: '2026-03-17T06:30:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 315
   term:

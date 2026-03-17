@@ -32,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.01'
@@ -41,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: (NH4)2SO4
   concentration:
     value: '2.6'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Sodium acetate
   concentration:
     value: '7.5'
@@ -58,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32954
     label: sodium acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 - preferred_term: Potassium phosphate buffer (0.02 M, pH 7.0)
   concentration:
     value: '980'
@@ -72,6 +84,9 @@ ingredients:
   term:
     id: CHEBI:86481
     label: sodium thioglycolate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: nitrogen gas
   notes: 'Properties: Gas'
   concentration:
@@ -110,6 +125,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007985'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.855722'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:02.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Yeast extract*
@@ -118,6 +141,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Ethyl alcohol (99.5%)*
   composition: []
   concentration:
@@ -125,3 +149,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
+  name: Unknown solution

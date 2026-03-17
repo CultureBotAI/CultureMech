@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
 - preferred_term: KH2PO4
   concentration:
     value: '0.272'
@@ -28,6 +31,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: KNO3
   concentration:
@@ -38,12 +44,18 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: Na2HPO4·12H2O
   concentration:
     value: '0.717'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4·12H2O
 - preferred_term: CaCl2·6H2O
   concentration:
     value: '0.2'
@@ -79,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: HCl (concentrated)
   concentration:
     value: '0.3'
@@ -99,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '3'
@@ -108,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000183
+    label: Na2MoO4·2H2O
 - preferred_term: H3BO3
   concentration:
     value: '30'
@@ -117,6 +138,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '200'
@@ -144,6 +168,9 @@ ingredients:
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '10'
@@ -153,6 +180,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: EDTA
   concentration:
     value: '500'
@@ -161,6 +191,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 media_term:
   preferred_term: TOGO Medium M1871
   term:
@@ -199,6 +232,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008446'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:51.945533'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:09.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Chelated Iron Solution*
@@ -209,6 +251,7 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: See mediadive_4790_Chelated_iron_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace Element Solution**
   term:
     id: mediadive.solution:6187
@@ -217,6 +260,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: See mediadive_6187_Trace_element_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Ferric ammonium citrate***
   composition: []
   concentration:
@@ -224,3 +268,4 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  name: Unknown solution

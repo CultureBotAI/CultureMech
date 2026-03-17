@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 - preferred_term: Press yeast
   concentration:
     value: '30'
@@ -34,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -73,6 +79,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007981'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.838198'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Potato*
   composition: []
@@ -80,15 +95,18 @@ solutions:
     value: '200'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Liver infusion from*
   composition: []
   concentration:
     value: '25'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: Thioglycolate Medium Dehydrated**
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  name: Unknown solution

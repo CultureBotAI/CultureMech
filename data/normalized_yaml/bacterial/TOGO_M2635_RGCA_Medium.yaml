@@ -18,6 +18,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
   concentration:
@@ -32,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: DI Water
   concentration:
     value: '1500.0'
@@ -47,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
@@ -55,6 +64,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
@@ -65,6 +77,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: CaCl2
   concentration:
     value: '0.3'
@@ -74,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4
   concentration:
     value: '0.3'
@@ -83,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Resazurin
   concentration:
     value: '0.05'
@@ -91,6 +112,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Cellobiose
   concentration:
@@ -101,6 +125,9 @@ ingredients:
   term:
     id: CHEBI:17057
     label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Glucose
   concentration:
     value: '3'
@@ -110,11 +137,17 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
 - preferred_term: CysteineHCl
   concentration:
     value: '0.75'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000389
+    label: CysteineHCl
 - preferred_term: Na2CO3
   concentration:
     value: '6'
@@ -124,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 media_term:
   preferred_term: TOGO Medium M2635
   term:
@@ -160,6 +196,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009192'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:56.993905'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution 1
   term:
@@ -169,6 +215,7 @@ solutions:
     value: '150'
     unit: G_PER_L
   notes: See mediadive_6108_Solution_1.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 2
   term:
     id: mediadive.solution:6109
@@ -177,6 +224,7 @@ solutions:
     value: '150'
     unit: G_PER_L
   notes: See mediadive_6109_Solution_2.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 3
   term:
     id: mediadive.solution:6110
@@ -185,6 +233,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_6110_Solution_3.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 4
   term:
     id: mediadive.solution:5181
@@ -193,6 +242,7 @@ solutions:
     value: '220'
     unit: G_PER_L
   notes: See mediadive_5181_Solution_4.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 5
   term:
     id: mediadive.solution:5183
@@ -201,6 +251,7 @@ solutions:
     value: '17'
     unit: G_PER_L
   notes: See mediadive_5183_Solution_5.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution 6
   term:
     id: mediadive.solution:5184
@@ -209,3 +260,4 @@ solutions:
     value: '66'
     unit: G_PER_L
   notes: See mediadive_5184_Solution_6.yaml for composition
+  name: Unknown solution

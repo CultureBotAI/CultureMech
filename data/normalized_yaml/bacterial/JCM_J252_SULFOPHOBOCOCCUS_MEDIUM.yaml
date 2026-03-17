@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '0.032'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.066'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '0.031'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.031'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.0021'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnSO4 x n H2O
   concentration:
     value: '0.0023'
@@ -77,6 +95,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -84,6 +105,9 @@ ingredients:
   concentration:
     value: '0.23'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -91,6 +115,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -98,6 +125,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -120,3 +150,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002612'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

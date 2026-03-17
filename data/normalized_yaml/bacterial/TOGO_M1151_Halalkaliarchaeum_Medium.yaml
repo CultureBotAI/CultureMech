@@ -30,6 +30,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007675'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.987353'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
 high_metal: true
 solutions:
 - preferred_term: Basal mineral NaCl medium (see Medium [M1148])
@@ -38,27 +43,32 @@ solutions:
   concentration:
     value: '937.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Soda based mineral medium (see Medium [M1150])
   composition: []
   notes: Cross-reference to Medium M1150
   concentration:
     value: '62.5'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10% Yeast extract solution
   composition: []
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: 2 M Sodium pyruvate solution*
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

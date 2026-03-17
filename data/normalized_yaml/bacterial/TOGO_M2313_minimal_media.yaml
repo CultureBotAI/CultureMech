@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: D-glucose
   concentration:
     value: '0.2'
@@ -28,6 +31,9 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: D-glucose
 - preferred_term: N-acetyl-D-glucosamine
   concentration:
     value: '0.2'
@@ -37,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:8006
     label: Peptidoglycan(N-acetyl-D-glucosamine)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000994
+    label: N-acetyl-D-glucosamine
 - preferred_term: Tris-HCl
   concentration:
     value: '50'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:12936
     label: D-galactose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000995
+    label: D-galactose
 - preferred_term: D-xylose
   concentration:
     value: '0.2'
@@ -60,6 +72,9 @@ ingredients:
   term:
     id: CHEBI:65327
     label: D-xylose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000996
+    label: D-xylose
 - preferred_term: D-galacturonic acid
   concentration:
     value: '0.2'
@@ -68,6 +83,9 @@ ingredients:
     component'
   term:
     id: CHEBI:18024
+    label: D-galacturonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000844
     label: D-galacturonic acid
 - preferred_term: L-arabinose
   concentration:
@@ -84,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:62345
     label: L-Rhamnose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000997
+    label: L-rhamnose
 - preferred_term: D-mannose
   concentration:
     value: '0.2'
@@ -93,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:16024
     label: D-Mannose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000998
+    label: D-mannose
 - preferred_term: D-trehalose
   concentration:
     value: '0.2'
@@ -102,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:27082
     label: D-Trehalose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000545
+    label: D-trehalose
 - preferred_term: xylan (oat spelts)
   concentration:
     value: '0.2'
@@ -185,3 +212,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008900'
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

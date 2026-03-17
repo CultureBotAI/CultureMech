@@ -8,6 +8,9 @@ physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Brain Heart Infusion (Difco)37gNaCl20gDistilled water1LAgar
     (if needed)15g
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: Bacto Brain Heart Infusion (Difco)
@@ -36,3 +39,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007466'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.826155'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Bacto Brain Heart Infusion (Difco)37gNaCl20gDistilled
+    water1LAgar (if needed)15g'

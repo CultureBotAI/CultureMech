@@ -12,6 +12,9 @@ ingredients:
   concentration:
     value: '308.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -19,6 +22,9 @@ ingredients:
   concentration:
     value: '20.3'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Potassium chloride
   concentration:
     value: '8.05'
@@ -26,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.901'
@@ -37,6 +46,9 @@ ingredients:
   concentration:
     value: '0.588'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '0.0287'
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '1.48e-06'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '0.131'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.00493'
@@ -86,6 +104,9 @@ ingredients:
   concentration:
     value: '9.7e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -93,6 +114,9 @@ ingredients:
   concentration:
     value: '0.00166'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Nicotinate
   concentration:
     value: '0.000812'
@@ -105,6 +129,9 @@ ingredients:
   concentration:
     value: '0.000456'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -113,6 +140,9 @@ ingredients:
     value: '7.29e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -121,6 +151,9 @@ ingredients:
     value: '4.09e-06'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: L-Inositol
   concentration:
     value: '0.0278'
@@ -138,6 +171,9 @@ ingredients:
     value: '0.0238'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:thym'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000503
+    label: Thymine
 - preferred_term: sodium silicate
   term:
     id: CHEBI:60720
@@ -145,6 +181,9 @@ ingredients:
   concentration:
     value: '1.23'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000833
+    label: sodium silicate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -174,6 +213,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007196'
+- timestamp: '2026-03-17T06:30:18.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 295
   term:

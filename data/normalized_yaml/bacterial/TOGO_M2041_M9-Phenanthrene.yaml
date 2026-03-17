@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: distilled water
 - preferred_term: agar
   concentration:
     value: '15'
@@ -21,6 +24,9 @@ ingredients:
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
     label: agar
 - preferred_term: NaCl
   concentration:
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '30'
@@ -39,6 +48,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -49,6 +61,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4
   concentration:
     value: '60'
@@ -58,6 +73,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: dimethyl sulfoxide (DMSO)
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
@@ -102,6 +120,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008631'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.394556'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: CaCl2 solution (0.1 M)***
   composition: []
@@ -110,30 +138,36 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
+  name: Unknown solution
 - preferred_term: MgSO4 solution (1 M)***
   composition: []
   concentration:
     value: '2.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound'
+  name: Unknown solution
 - preferred_term: Agar solution*
   composition: []
   concentration:
     value: '900'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 10xM9 solution**
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phenanthrene solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Carbon source'
+  name: Unknown solution

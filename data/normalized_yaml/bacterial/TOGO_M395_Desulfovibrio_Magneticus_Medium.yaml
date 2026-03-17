@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '0.06'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
@@ -32,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.44'
@@ -41,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:50144
     label: sodium pyruvate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Sodium pyruvate
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.05'
@@ -54,6 +66,9 @@ ingredients:
   term:
     id: CHEBI:115156
     label: disodium fumarate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Sodium fumarate
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
@@ -74,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:26493
     label: quinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000544
+    label: Quinic acid
 media_term:
   preferred_term: TOGO Medium M395
   term:
@@ -111,21 +129,33 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009777'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:00.683436'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Fe(III) quinate solution (see below)
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '4'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '8'
     unit: G_PER_L
+  name: Unknown solution

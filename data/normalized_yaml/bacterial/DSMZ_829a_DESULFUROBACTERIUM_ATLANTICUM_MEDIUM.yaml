@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '29.4118'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '2.94118'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.147059'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.490196'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
   concentration:
     value: '1.91176'
@@ -54,6 +69,9 @@ ingredients:
   term:
     id: CHEBI:39005
     label: 2-(N-morpholino)ethanesulfonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000942
+    label: MES [2-(N-morpholino) ethane sulfonic acid]
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '0.196078'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000490196'
@@ -72,6 +93,9 @@ ingredients:
   concentration:
     value: '2.45098'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -79,6 +103,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -115,3 +142,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:001979'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

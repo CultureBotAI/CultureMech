@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '25.5152'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.490677'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.490677'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.294406'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -48,6 +60,9 @@ ingredients:
     value: '4.3981354'
     unit: G_PER_L
   notes: ' [Merged 2 duplicates: 0.0981354, 4.3]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0981354'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: Sodium acetate x 3 H2O
   concentration:
     value: '0.814524'
@@ -74,6 +92,9 @@ ingredients:
   concentration:
     value: '1.96271'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -81,6 +102,9 @@ ingredients:
   concentration:
     value: '3.23847'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
 - preferred_term: Sulfur
   term:
     id: CHEBI:26833
@@ -88,6 +112,9 @@ ingredients:
   concentration:
     value: '4.90677'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -95,6 +122,9 @@ ingredients:
   concentration:
     value: '0.000981354'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -102,6 +132,9 @@ ingredients:
   concentration:
     value: '4.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -109,6 +142,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -136,3 +172,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003068'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

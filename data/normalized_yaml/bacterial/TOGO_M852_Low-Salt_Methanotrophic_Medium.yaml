@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.1'
@@ -35,6 +38,9 @@ ingredients:
   term:
     id: CHEBI:17632
     label: nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: KBr
   concentration:
     value: '0.1'
@@ -44,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 - preferred_term: Biotin
   concentration:
     value: '1'
@@ -52,11 +61,17 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000729
+    label: p--Aminobenzoic acid
 - preferred_term: Thiamine・HCl
   concentration:
     value: '10'
@@ -76,6 +91,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '20'
@@ -84,6 +102,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '20'
@@ -93,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 media_term:
   preferred_term: TOGO Medium M852
   term:
@@ -126,6 +150,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010268'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.456626'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Trace element solution (see Medium [M850])
   composition: []
@@ -133,26 +166,31 @@ solutions:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Iron stock solution (see Medium [M850])
   composition: []
   notes: Cross-reference to Medium M850
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution* (see below)
   composition: []
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Phosphate buffer stock solution (see Medium [M850])
   composition: []
   notes: Cross-reference to Medium M850
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '0.1'
     unit: G_PER_L
+  name: Unknown solution

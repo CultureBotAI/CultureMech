@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '5'
@@ -29,6 +32,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1.5'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:32030
     label: potassium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
+    label: KBr
 media_term:
   preferred_term: TOGO Medium M1283
   term:
@@ -79,6 +88,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007817'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.971402'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:36.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 1 M NaHCO3 solution*
   composition: []
@@ -86,6 +105,7 @@ solutions:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 1 M NH4Cl solution
   composition: []
   concentration:
@@ -93,27 +113,32 @@ solutions:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Solution'
+  name: Unknown solution
 - preferred_term: 3 mM KH2PO4 solution
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+  name: Unknown solution
 - preferred_term: 7.5 mM FeNaEDTA solution* (pH 7.0)
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  name: Unknown solution
 - preferred_term: HEPES solution (see Medium [M1060])
   composition: []
   notes: Cross-reference to Medium M1060
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Modified trace element mixture (see Medium [M1060])
   composition: []
   notes: Cross-reference to Medium M1060
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

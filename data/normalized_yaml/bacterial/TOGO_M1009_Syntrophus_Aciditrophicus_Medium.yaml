@@ -24,6 +24,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Resazurin
   concentration:
     value: '1'
@@ -32,6 +35,9 @@ ingredients:
     compound, Defined component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: Crotonic acid
   concentration:
@@ -42,6 +48,9 @@ ingredients:
   term:
     id: CHEBI:41131
     label: crotonic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000624
+    label: Crotonic acid
 - preferred_term: NaHCO3
   concentration:
     value: '3.5'
@@ -51,6 +60,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.3'
@@ -107,6 +119,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007522'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.018607'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -116,6 +138,7 @@ solutions:
     value: '866'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -124,6 +147,7 @@ solutions:
     value: '70'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -132,6 +156,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D
   term:
     id: mediadive.solution:5313
@@ -140,21 +165,25 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
 - preferred_term: Mineral solution (see Medium [M500])
   composition: []
   notes: Cross-reference to Medium M500
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace element solution SL--10 (see Medium [M433])
   composition: []
   notes: Cross-reference to Medium M433
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Vitamin solution (see Medium [M500])
   composition: []
   notes: Cross-reference to Medium M500
   concentration:
     value: '5'
     unit: G_PER_L
+  name: Unknown solution

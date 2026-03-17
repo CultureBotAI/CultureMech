@@ -18,6 +18,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgSO4
   concentration:
     value: '12.3'
@@ -27,6 +30,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: DI Water
   concentration:
     value: '970'
@@ -41,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino Acids
 - preferred_term: 3N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   concentration:
@@ -67,6 +76,9 @@ ingredients:
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
 media_term:
   preferred_term: TOGO Medium M2267
   term:
@@ -98,9 +110,18 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008854'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.788513'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Stock Solutions
   composition: []
   concentration:
     value: '30'
     unit: G_PER_L
+  name: Unknown solution

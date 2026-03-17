@@ -20,6 +20,9 @@ ingredients:
   term:
     id: CHEBI:17992
     label: sucrose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Bacto Agar (Difco)
   concentration:
     value: '20'
@@ -64,6 +67,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007960'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:48.780208'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Murashige & Skoog's plant salt mixture*
   composition: []
@@ -71,3 +82,4 @@ solutions:
     value: '1.15'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+  name: Unknown solution

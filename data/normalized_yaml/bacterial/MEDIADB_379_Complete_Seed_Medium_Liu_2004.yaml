@@ -13,6 +13,9 @@ ingredients:
     value: '0.0001329'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -21,6 +24,9 @@ ingredients:
     value: '4.093e-05'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -28,6 +34,9 @@ ingredients:
   concentration:
     value: '555.1'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Nicotinate
   concentration:
     value: '0.03249'
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -47,6 +59,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '4.447e-05'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '36.74'
@@ -65,6 +83,9 @@ ingredients:
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -72,6 +93,9 @@ ingredients:
   concentration:
     value: '73.14'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Sodium acetate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -101,6 +125,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007282'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 379
   term:

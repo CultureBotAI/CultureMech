@@ -39,8 +39,13 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007454'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.793087'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4·7H2O0.2g20%
     NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave
     NaCl and Na2CO3solutions separately and add the solutions to the medium aseptically.
   composition: []
+  name: Unknown solution

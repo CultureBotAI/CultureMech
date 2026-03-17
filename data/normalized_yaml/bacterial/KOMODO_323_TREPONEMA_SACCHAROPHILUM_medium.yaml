@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.11976'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.189621'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '0.449102'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.449102'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.898204'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.898204'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Yeast extract
   concentration:
     value: '1.99601'
@@ -74,6 +92,9 @@ ingredients:
   concentration:
     value: '0.998004'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -81,6 +102,9 @@ ingredients:
   concentration:
     value: '2.49501'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: D-Glucose
   term:
     id: CHEBI:17634
@@ -88,6 +112,9 @@ ingredients:
   concentration:
     value: '1.99601'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -96,6 +123,9 @@ ingredients:
     value: '11.976'
     unit: G_PER_L
   notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: n-Butyric acid
   term:
     id: CHEBI:30772
@@ -103,6 +133,9 @@ ingredients:
   concentration:
     value: '5.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000471
+    label: n-Butyric acid
 - preferred_term: iso-Butyric acid
   term:
     id: CHEBI:16135
@@ -110,6 +143,9 @@ ingredients:
   concentration:
     value: '275.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: iso-Butyric acid
 - preferred_term: DL-2-Methylbutyric acid
   term:
     id: CHEBI:37070
@@ -117,6 +153,9 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: DL-2-Methylbutyric acid
 - preferred_term: n-Valeric acid
   term:
     id: CHEBI:17418
@@ -124,6 +163,9 @@ ingredients:
   concentration:
     value: '131.46'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: n-Valeric acid
 - preferred_term: iso-Valeric acid
   term:
     id: CHEBI:503742
@@ -131,11 +173,20 @@ ingredients:
   concentration:
     value: '130.34'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000378
+    label: iso-Valeric acid
 - preferred_term: KOH
   term:
     id: CHEBI:32035
     label: potassium hydroxide
   notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
 applications:
 - Microbial cultivation
 curation_history:
@@ -155,4 +206,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:005014'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:34.781464'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-17T06:30:53.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 ph_value: 7.0

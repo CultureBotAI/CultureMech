@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.0329897'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '0.0680412'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -41,6 +50,9 @@ ingredients:
   concentration:
     value: '0.0319588'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: ZnCl2
   term:
     id: CHEBI:49976
@@ -48,6 +60,9 @@ ingredients:
   concentration:
     value: '0.0021'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnSO4 x H2O
   term:
     id: CHEBI:86364
@@ -55,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0023'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '0.0018'
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '1.54639'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -77,6 +98,9 @@ ingredients:
   concentration:
     value: '0.237113'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Yeast extract
   concentration:
     value: '100'
@@ -92,6 +116,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: H2SO4
   term:
     id: CHEBI:26836
@@ -99,6 +126,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
+    label: H2SO4
 - preferred_term: Dithiothreitol
   term:
     id: CHEBI:18320
@@ -106,6 +136,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000793
+    label: Dithiothreitol
 applications:
 - Microbial cultivation
 curation_history:
@@ -121,3 +154,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006427'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

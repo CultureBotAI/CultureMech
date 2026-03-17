@@ -12,6 +12,9 @@ ingredients:
   concentration:
     value: '0.1581'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000669
+    label: Sodium thiosulfate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.7752'
@@ -31,6 +34,9 @@ ingredients:
   concentration:
     value: '28.04'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -38,6 +44,9 @@ ingredients:
   concentration:
     value: '5.551'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -45,6 +54,9 @@ ingredients:
   concentration:
     value: '0.006623'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -52,6 +64,9 @@ ingredients:
   concentration:
     value: '0.4057'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '14.7'
@@ -76,6 +91,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007299'
+- timestamp: '2026-03-17T06:30:05.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 395
   term:

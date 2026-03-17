@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -37,6 +43,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na acetate
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -44,6 +53,9 @@ ingredients:
   concentration:
     value: '17.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Na2B4O7
   concentration:
     value: '4'
@@ -51,6 +63,9 @@ ingredients:
   term:
     id: CHEBI:38892
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000554
+    label: Na2B4O7
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -70,3 +85,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000616'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

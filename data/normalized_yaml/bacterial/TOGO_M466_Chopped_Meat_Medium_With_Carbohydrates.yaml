@@ -13,6 +13,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: glucose
 - preferred_term: cellobiose
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
   term:
@@ -21,6 +24,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: cellobiose
 - preferred_term: soluble starch
   notes: 'Role: Carbon source; Properties: Undefined component'
   concentration:
@@ -34,6 +40,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: maltose
 media_term:
   preferred_term: TOGO Medium M466
   term:
@@ -69,6 +78,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009854'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:01.101261'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: CHOPPED MEAT MEDIUM (see Medium [M461])
   composition: []
@@ -76,3 +93,4 @@ solutions:
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution

@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007456'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.799038'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: NaNO31gMgSO4·7H2O0.1gNa2HPO4·2H2O0.5gKH2PO40.22gCaCl2·6H2O0.03gFeSO4·7H2O2mgTrace
     metal solution*1mlDistilled water1LpH 7Dispense the medium into suitable culture
@@ -48,3 +52,4 @@ solutions:
     in the headspace is about 1:4. Methane should be of high purity.*Trace metal solutionZnSO4·7H2O0.44gCuSO4·5H2O0.2gMnSO4·2H2O0.17gNa2MoO4·2H2O0.06gH3BO30.1gCoCl2·6H2O0.08gDistilled
     water1L
   composition: []
+  name: Unknown solution

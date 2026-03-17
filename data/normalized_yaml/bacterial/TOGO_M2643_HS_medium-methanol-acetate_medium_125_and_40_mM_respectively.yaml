@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:17790
     label: methanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: methanol
 - preferred_term: acetate
   concentration:
     value: '40'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:30089
     label: Acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: acetate
 - preferred_term: HS medium
   concentration:
     value: '1'
@@ -36,6 +42,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled Water
 - preferred_term: NaCl
   concentration:
     value: '0.4'
@@ -45,6 +54,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '5'
@@ -53,6 +65,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -63,6 +78,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: resazurin
   concentration:
     value: '4'
@@ -72,6 +90,9 @@ ingredients:
   term:
     id: CHEBI:8806
     label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: resazurin
 - preferred_term: MgCl2 . 6H2O
   concentration:
     value: '54'
@@ -93,6 +114,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: NaHCO3
   concentration:
     value: '45'
@@ -102,6 +126,9 @@ ingredients:
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: CaCl2
   concentration:
     value: '2'
@@ -111,6 +138,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: cysteine . HCl
   concentration:
     value: '2.8'
@@ -137,3 +167,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009200'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4NO3
   concentration:
     value: '0.1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:63038
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
 - preferred_term: Fe(III)-EDTA
   concentration:
     value: '2.5'
@@ -31,6 +37,9 @@ ingredients:
   term:
     id: CHEBI:30729
     label: ethylenediaminetetraacetatoferrate(1-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000348
+    label: Fe(III)-EDTA
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
@@ -39,6 +48,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 - preferred_term: Methane gas
   notes: 'Properties: Gas'
   concentration:
@@ -58,6 +70,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '0.25'
@@ -67,6 +82,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Thiamine-HCl
   concentration:
     value: '50'
@@ -75,6 +93,9 @@ ingredients:
   term:
     id: CHEBI:49105
     label: thiamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine-HCl
 - preferred_term: Vitamin B12
   concentration:
     value: '0.275'
@@ -83,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.455'
@@ -104,6 +128,9 @@ ingredients:
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.025'
@@ -113,6 +140,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4·5H2O
 - preferred_term: (NH4)6Mo7O24·4H2O
   concentration:
     value: '0.027'
@@ -127,6 +157,9 @@ ingredients:
   term:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: 2Na-EDTA
 media_term:
   preferred_term: TOGO Medium M1915
   term:
@@ -165,6 +198,15 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008493'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:52.369935'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Seawater***
   term:
@@ -174,6 +216,7 @@ solutions:
     value: '980'
     unit: G_PER_L
   notes: See mediadive_1801_Seawater.yaml for composition
+  name: Unknown solution
 - preferred_term: Vitamin solution*
   term:
     id: mediadive.solution:6241
@@ -182,6 +225,7 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_6241_Vitamin_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Trace elements solution**
   term:
     id: mediadive.solution:6129
@@ -190,3 +234,4 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_6129_Trace_elements_solution.yaml for composition
+  name: Unknown solution

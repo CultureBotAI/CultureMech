@@ -38,6 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007497'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.910801'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
 solutions:
 - preferred_term: KH2PO40.75gK2HPO40.75gMgCl2·6H2O0.36gNH4Cl1gBacto Yeast Extract
     (Difco)0.1gHipolypepton*0.1gSodium acetate2.5gTrimethylamine-HCl8gTrace mineral
@@ -52,3 +56,4 @@ solutions:
     acid5mgCa-pantothenate5mgVitamin B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled
     water1L
   composition: []
+  name: Unknown solution

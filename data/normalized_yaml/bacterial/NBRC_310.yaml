@@ -8,6 +8,9 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4·7H2O0.4gNaCl30mgCaCl2·2H2O3mgFeSO4·7H2O1mgYeast
     extract3gRhamnose10gDistilled water1LpH 7.0
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ''
   concentration:
     value: K2HPO4
@@ -36,3 +39,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007486'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:45.880717'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4·7H2O0.4gNaCl30mgCaCl2·2H2O3mgFeSO4·7H2O1mgYeast
+    extract3gRhamnose10gDistilled water1LpH 7.0'

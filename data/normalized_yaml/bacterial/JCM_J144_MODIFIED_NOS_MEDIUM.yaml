@@ -30,6 +30,9 @@ ingredients:
   concentration:
     value: '0.49505'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: L-Cysteine HCl x H2O
   term:
     id: CHEBI:91248
@@ -37,6 +40,9 @@ ingredients:
   concentration:
     value: '0.990099'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
 - preferred_term: L-Asparagine
   term:
     id: CHEBI:17196
@@ -44,6 +50,9 @@ ingredients:
   concentration:
     value: '2.47525'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -51,6 +60,9 @@ ingredients:
   concentration:
     value: '1.9802'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -58,6 +70,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -65,6 +80,9 @@ ingredients:
   concentration:
     value: '2.67'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Rabbit serum
   concentration:
     value: '2'
@@ -76,6 +94,9 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000431
+    label: Thiamine pyrophosphate
 - preferred_term: Isobutyric acid
   term:
     id: CHEBI:16135
@@ -83,6 +104,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
 - preferred_term: 2-Methylbutyric acid
   term:
     id: CHEBI:37070
@@ -90,6 +114,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: 2-Methylbutyric acid
 - preferred_term: Isovaleric acid
   term:
     id: CHEBI:28484
@@ -97,6 +124,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
 - preferred_term: Valeric acid
   term:
     id: CHEBI:17418
@@ -104,6 +134,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: Valeric acid
 - preferred_term: NaOH
   term:
     id: CHEBI:32145
@@ -111,6 +144,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -138,3 +174,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002503'
+- timestamp: '2026-03-17T06:30:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

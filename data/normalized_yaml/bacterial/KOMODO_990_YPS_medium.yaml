@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '3.46'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -39,6 +42,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000677
+    label: Elemental sulphur
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -46,6 +52,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -53,6 +62,9 @@ ingredients:
   concentration:
     value: '0.35'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -60,6 +72,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: FeCl3
   term:
     id: CHEBI:30808
@@ -67,6 +82,9 @@ ingredients:
   concentration:
     value: '0.0067'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
 - preferred_term: Na2WO4
   term:
     id: CHEBI:63940
@@ -74,6 +92,9 @@ ingredients:
   concentration:
     value: '0.0029'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000240
+    label: Na2WO4
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -81,6 +102,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -88,6 +112,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 applications:
 - Microbial cultivation
 curation_history:
@@ -103,3 +130,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006962'
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

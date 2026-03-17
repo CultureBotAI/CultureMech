@@ -13,6 +13,9 @@ ingredients:
     value: '111.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:man'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000998
+    label: D-Mannose
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -21,6 +24,9 @@ ingredients:
     value: '0.0001228'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -29,6 +35,9 @@ ingredients:
     value: '0.0003986'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -36,6 +45,9 @@ ingredients:
   concentration:
     value: '3.246'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.001459'
@@ -43,6 +55,9 @@ ingredients:
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
 - preferred_term: Nicotinate
   concentration:
     value: '0.09747'
@@ -59,6 +74,9 @@ ingredients:
   concentration:
     value: '0.0001334'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -66,6 +84,9 @@ ingredients:
   concentration:
     value: '130.9'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -95,6 +116,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007251'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 350
   term:

@@ -21,6 +21,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '20'
@@ -47,6 +50,9 @@ ingredients:
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
     value: '0.1'
@@ -80,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 . 5H2O
 - preferred_term: NaNO2
   concentration:
     value: '41.4'
@@ -89,6 +98,9 @@ ingredients:
   term:
     id: CHEBI:78870
     label: sodium nitrite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
 - preferred_term: K2HPO4
   concentration:
     value: '1.74'
@@ -98,6 +110,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 media_term:
   preferred_term: TOGO Medium M2236
   term:
@@ -133,6 +148,16 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008824'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.635467'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Solution A
   term:
@@ -142,6 +167,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution B
   term:
     id: mediadive.solution:5343
@@ -150,6 +176,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution C
   term:
     id: mediadive.solution:5312
@@ -158,6 +185,7 @@ solutions:
     value: '1'
     unit: G_PER_L
   notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution D
   term:
     id: mediadive.solution:5313
@@ -166,6 +194,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution E
   term:
     id: mediadive.solution:4959
@@ -174,6 +203,7 @@ solutions:
     value: '0.5'
     unit: G_PER_L
   notes: See mediadive_4959_Solution_E.yaml for composition
+  name: Unknown solution
 - preferred_term: Solution F
   term:
     id: mediadive.solution:6293
@@ -182,3 +212,4 @@ solutions:
     value: variable
     unit: VARIABLE
   notes: See mediadive_6293_Solution_F.yaml for composition
+  name: Unknown solution

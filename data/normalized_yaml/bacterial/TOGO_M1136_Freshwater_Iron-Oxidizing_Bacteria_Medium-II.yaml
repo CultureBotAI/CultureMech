@@ -58,6 +58,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007658'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.875575'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
 solutions:
 - preferred_term: FeS solution (see Medium [M641])
   composition: []
@@ -65,33 +71,39 @@ solutions:
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []
   notes: Cross-reference to Medium M641
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []
   notes: Cross-reference to Medium M641
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []
   notes: Cross-reference to Medium M142
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 8% NaHCO3 solution
   composition: []
   concentration:
     value: '5.25'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []
   notes: Cross-reference to Medium M190
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

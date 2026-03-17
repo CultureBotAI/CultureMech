@@ -13,6 +13,9 @@ ingredients:
     value: '25.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ac'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: Acetate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.45'
@@ -24,6 +27,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '25.0'
@@ -39,6 +45,9 @@ ingredients:
   concentration:
     value: '0.041'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: Nickel chloride
   concentration:
     value: '0.0003'
@@ -54,6 +63,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -61,6 +73,9 @@ ingredients:
   concentration:
     value: '18.0'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.0003'
@@ -109,6 +124,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007080'
+- timestamp: '2026-03-17T06:30:56.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 18
   term:

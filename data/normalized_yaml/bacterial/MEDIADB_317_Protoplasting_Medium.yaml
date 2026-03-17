@@ -13,6 +13,9 @@ ingredients:
     value: '200.0'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:sucr'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: Magnesium chloride
   concentration:
     value: '22.99'
@@ -20,6 +23,9 @@ ingredients:
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -27,6 +33,9 @@ ingredients:
   concentration:
     value: '18.7'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
 - preferred_term: Potassium chloride
   concentration:
     value: '0.4695'
@@ -34,6 +43,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
 - preferred_term: Tromethamine
   concentration:
     value: '99.06'
@@ -42,6 +54,9 @@ ingredients:
   concentration:
     value: '0.9311'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -49,6 +64,9 @@ ingredients:
   concentration:
     value: '0.9925'
     unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -73,6 +91,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007216'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 media_term:
   preferred_term: MediaDB Medium 317
   term:

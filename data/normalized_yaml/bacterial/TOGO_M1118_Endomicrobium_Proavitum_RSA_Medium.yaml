@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -23,6 +26,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
@@ -38,6 +44,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.3'
@@ -47,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Resazurin
   concentration:
     value: '0.4'
@@ -55,6 +67,9 @@ ingredients:
     component, Simple component'
   term:
     id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
     label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
@@ -71,6 +86,9 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -91,6 +109,9 @@ ingredients:
     value: '76'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000752
+    label: 4--Hydroxyphenyl acetic acid
 - preferred_term: Phenyl propionic acid
   concentration:
     value: '75'
@@ -99,6 +120,9 @@ ingredients:
   term:
     id: CHEBI:501520
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000689
+    label: Phenyl propionic acid
 - preferred_term: Phenyl acetic acid
   concentration:
     value: '68'
@@ -107,11 +131,17 @@ ingredients:
   term:
     id: CHEBI:30745
     label: phenylacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000688
+    label: Phenyl acetic acid
 - preferred_term: 3--Indolyl acetic acid
   concentration:
     value: '88'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000753
+    label: 3--Indolyl acetic acid
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
@@ -152,6 +182,18 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:007638'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:46.756342'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name; Added default solution name; Added default solution name;
+    Added default solution name
+- timestamp: '2026-03-17T06:30:03.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: 8% NaHCO3 solution*
   composition: []
@@ -159,68 +201,80 @@ solutions:
     value: '30'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution
 - preferred_term: 10% Yeast extract solution*
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  name: Unknown solution
 - preferred_term: 1 M Glucose solution*
   composition: []
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Solution, Defined component, Organic compound'
+  name: Unknown solution
 - preferred_term: 10% Casamino acids solution*
   composition: []
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Solution, Undefined component'
+  name: Unknown solution
 - preferred_term: Trace element solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []
   notes: Cross-reference to Medium M180
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Selenite--tungstate solution (see Medium [M431])
   composition: []
   notes: Cross-reference to Medium M431
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Trace vitamins solution (see Medium [M278])
   composition: []
   notes: Cross-reference to Medium M278
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Fatty acid mixture (see Medium [M258])
   composition: []
   notes: Cross-reference to Medium M258
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Aromatic fatty acids solution (see below)
   composition: []
   concentration:
     value: '1'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: 250 mM Dithiothreitol solution
   composition: []
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Properties: Solution, Defined component, Organic compound'
+  name: Unknown solution
 - preferred_term: 20 mM NaOH solution
   composition: []
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  name: Unknown solution

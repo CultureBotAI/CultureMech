@@ -14,6 +14,9 @@ ingredients:
   term:
     id: CHEBI:53426
     label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
 - preferred_term: DI Water
   concentration:
     value: '1000.0'
@@ -42,6 +45,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
 - preferred_term: Biotin
   concentration:
     value: '0.5'
@@ -50,6 +56,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '0.5'
@@ -59,6 +68,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
 - preferred_term: Calcium Chloride
   concentration:
     value: '0.5'
@@ -68,6 +80,9 @@ ingredients:
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: Calcium Chloride
 - preferred_term: Disodium Phosphate
   concentration:
     value: '2.5'
@@ -77,6 +92,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium Phosphate
 - preferred_term: Magnesium Sulfate
   concentration:
     value: '0.05'
@@ -86,6 +104,9 @@ ingredients:
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium Sulfate
 - preferred_term: Copper Sulfate
   concentration:
     value: '1'
@@ -95,6 +116,9 @@ ingredients:
   term:
     id: CHEBI:23414
     label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: Copper Sulfate
 - preferred_term: Sodium Citrate
   concentration:
     value: '0.1'
@@ -103,6 +127,9 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium Citrate
 - preferred_term: Ferric Ammonium Citrate
   concentration:
     value: '0.04'
@@ -112,6 +139,9 @@ ingredients:
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric Ammonium Citrate
 - preferred_term: L-Glutamic Acid
   concentration:
     value: '0.5'
@@ -121,6 +151,9 @@ ingredients:
   term:
     id: CHEBI:16015
     label: L-glutamic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic Acid
 - preferred_term: Pyridoxine
   concentration:
     value: '1'
@@ -129,6 +162,9 @@ ingredients:
   term:
     id: CHEBI:16709
     label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
 - preferred_term: Zinc Sulfate
   concentration:
     value: '1'
@@ -138,6 +174,9 @@ ingredients:
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc Sulfate
 - preferred_term: NaCl
   concentration:
     value: '0.85'
@@ -147,6 +186,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Dextrose (BD 215530)
   concentration:
     value: '2'
@@ -196,3 +238,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008987'
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

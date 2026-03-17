@@ -16,6 +16,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: Agar
   concentration:
     value: '20'
@@ -24,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:2509
     label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Cysteine-Sulfide Reducing Agent
   concentration:
     value: '20'
@@ -47,6 +53,9 @@ ingredients:
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '5.4'
@@ -62,6 +71,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 . 2H2O
   concentration:
     value: '1.6'
@@ -77,6 +89,9 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '6'
@@ -86,6 +101,9 @@ ingredients:
   term:
     id: CHEBI:62946
     label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
 - preferred_term: Na2CO3
   concentration:
     value: '8'
@@ -95,6 +113,9 @@ ingredients:
   term:
     id: CHEBI:29377
     label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 - preferred_term: Na2MoO4 . 2H2O
   concentration:
     value: '0.01'
@@ -110,6 +131,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.1'
@@ -137,6 +161,9 @@ ingredients:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 . 5H2O
 - preferred_term: AlK(SO4)2 . 12H2O
   concentration:
     value: '0.01'
@@ -152,6 +179,9 @@ ingredients:
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
 - preferred_term: CaCl2
   concentration:
     value: '0.1'
@@ -161,6 +191,9 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: MnSO4 . H2O
   concentration:
     value: '0.5'
@@ -175,6 +208,9 @@ ingredients:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
@@ -183,6 +219,9 @@ ingredients:
   term:
     id: CHEBI:30753
     label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
 - preferred_term: Thiamine . HCl
   concentration:
     value: '5'
@@ -201,6 +240,9 @@ ingredients:
   term:
     id: CHEBI:30961
     label: pyridoxine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
@@ -209,6 +251,9 @@ ingredients:
   term:
     id: CHEBI:27470
     label: folic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
@@ -217,6 +262,9 @@ ingredients:
   term:
     id: CHEBI:176843
     label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
@@ -225,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:17015
     label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
@@ -233,6 +284,9 @@ ingredients:
   term:
     id: CHEBI:15940
     label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
@@ -242,6 +296,9 @@ ingredients:
   term:
     id: CHEBI:30314
     label: (R)-lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000817
+    label: Thioctic acid
 - preferred_term: L-Cysteine . HCl
   concentration:
     value: '300'
@@ -298,6 +355,17 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009258'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.733906'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name; Added default solution name; Added default solution name; Added
+    default solution name
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 solutions:
 - preferred_term: Resazurin (0.025% solution)
   composition: []
@@ -305,6 +373,7 @@ solutions:
     value: '4'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: Mineral Solution 2
   term:
     id: mediadive.solution:4674
@@ -313,6 +382,7 @@ solutions:
     value: '50'
     unit: G_PER_L
   notes: See mediadive_4674_Mineral_solution_2.yaml for composition
+  name: Unknown solution
 - preferred_term: Mineral Solution 1
   term:
     id: mediadive.solution:883
@@ -321,11 +391,13 @@ solutions:
     value: '25'
     unit: G_PER_L
   notes: See mediadive_883_Mineral_solution_1.yaml for composition
+  name: Unknown solution
 - preferred_term: Sodium Carbonate Solution
   composition: []
   concentration:
     value: '50'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Wolfe's Mineral Solution
   term:
     id: mediadive.solution:3952
@@ -334,24 +406,29 @@ solutions:
     value: '10'
     unit: G_PER_L
   notes: See mediadive_3952_Wolfe_s_mineral_solution.yaml for composition
+  name: Unknown solution
 - preferred_term: Wolfe's Vitamin Solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: KOH solution
   composition: []
   concentration:
     value: variable
     unit: VARIABLE
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  name: Unknown solution
 - preferred_term: L-Cysteine . HCl solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution
 - preferred_term: Na2S . 9H2O solution
   composition: []
   concentration:
     value: '10'
     unit: G_PER_L
+  name: Unknown solution

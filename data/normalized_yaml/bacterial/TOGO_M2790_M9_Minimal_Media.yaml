@@ -35,6 +35,9 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
 - preferred_term: x5 M9 salt (Sigma)
   concentration:
     value: '20'
@@ -48,6 +51,9 @@ ingredients:
   term:
     id: CHEBI:26710
     label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: KH2PO4
   concentration:
     value: '15'
@@ -56,6 +62,9 @@ ingredients:
     component'
   term:
     id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
     label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
@@ -66,6 +75,9 @@ ingredients:
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4
   concentration:
     value: '33.9'
@@ -75,6 +87,9 @@ ingredients:
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
 - preferred_term: H3BO3
   concentration:
     value: '1'
@@ -84,6 +99,9 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '1'
@@ -93,6 +111,9 @@ ingredients:
   term:
     id: CHEBI:75836
     label: iron(2+) sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4.7H2O
 - preferred_term: CuCl2.2H2O
   concentration:
     value: '0.25'
@@ -108,6 +129,9 @@ ingredients:
   term:
     id: CHEBI:49976
     label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
 - preferred_term: MnSO4.H2O
   concentration:
     value: '1'
@@ -123,6 +147,9 @@ ingredients:
   term:
     id: CHEBI:86214
     label: cobalt dinitrate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000525
+    label: Co(NO3)2.6H2O
 - preferred_term: Ca(NO3)2
   concentration:
     value: '2.5'
@@ -132,6 +159,9 @@ ingredients:
   term:
     id: CHEBI:77732
     label: cadmium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000859
+    label: Ca(NO3)2
 - preferred_term: (NH4)6Mo7O24.4H2O
   concentration:
     value: '0.25'
@@ -172,6 +202,14 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009338'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.501920'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true
 solutions:
 - preferred_term: Trace elements
@@ -182,3 +220,4 @@ solutions:
     value: '100'
     unit: G_PER_L
   notes: See mediadive_6183_Trace_elements.yaml for composition
+  name: Unknown solution

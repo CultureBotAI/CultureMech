@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '1.11111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '11.1111'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '16.6667'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -47,6 +56,9 @@ ingredients:
   concentration:
     value: '29'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -54,6 +66,9 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -69,3 +84,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002275'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
