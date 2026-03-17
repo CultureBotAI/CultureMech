@@ -1,5 +1,5 @@
 id: CultureMech:008092
-name: Cytophaga (Marine) Medium
+name: cytophaga_marine_medium
 original_name: Cytophaga (Marine) Medium
 category: bacterial
 medium_type: COMPLEX
@@ -49,6 +49,11 @@ curation_history:
   date: '2026-03-14T21:06:49.309309'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:11.986440+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Cytophaga (Marine) Medium" to "cytophaga_marine_medium"
+    for consistent matching
 solutions:
 - preferred_term: Seawater*
   term:

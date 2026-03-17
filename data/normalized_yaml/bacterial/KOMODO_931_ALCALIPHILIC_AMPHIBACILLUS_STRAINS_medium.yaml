@@ -1,5 +1,5 @@
 id: CultureMech:006851
-name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
+name: alcaliphilic_amphibacillus_strains_medium
 original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
 category: bacterial
 medium_type: COMPLEX
@@ -276,3 +276,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.240218+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALCALIPHILIC AMPHIBACILLUS STRAINS medium" to "alcaliphilic_amphibacillus_strains_medium"
+    for consistent matching

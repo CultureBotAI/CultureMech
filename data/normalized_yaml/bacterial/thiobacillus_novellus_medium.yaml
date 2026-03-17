@@ -1,0 +1,214 @@
+id: CultureMech:006324
+name: thiobacillus_novellus_medium
+original_name: THIOBACILLUS NOVELLUS medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 8.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 69 | DSMZ Medium: 69 (mediadive.medium:69)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 69
+  term:
+    id: komodo.medium:69
+    label: THIOBACILLUS NOVELLUS medium
+ingredients:
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '11.7517'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 12 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.66297'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.332594'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.332594'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.00221729'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.6297'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000492
+    label: Na2S2O3 x 5 H2O
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '5.06'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.61'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 69'
+- timestamp: '2026-02-03T11:18:54.176627'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 69
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: THIOBACILLUS NOVELLUS, culture_type: isolate'
+- timestamp: '2026-03-13T03:08:37.501411Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:39.741056Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006324'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:40.475691'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:29:39.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.893542+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOBACILLUS NOVELLUS medium" to "thiobacillus_novellus_medium"
+    for consistent matching
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: THIOBACILLUS NOVELLUS

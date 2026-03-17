@@ -1,0 +1,152 @@
+id: CultureMech:003005
+name: cellulose_agar
+original_name: CELLULOSE AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J65
+  term:
+    id: mediadive.medium:J65
+    label: CELLULOSE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=65'
+ingredients:
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000301
+    label: Urea
+- preferred_term: Casein
+  term:
+    id: CHEBI:3448
+    label: Casein
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000114
+    label: Cellulose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH unadjusted.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.672290Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J65'
+- timestamp: '2026-01-28T19:48:26.498751Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.096475Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003005'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.743839+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CELLULOSE AGAR" to "cellulose_agar" for consistent
+    matching

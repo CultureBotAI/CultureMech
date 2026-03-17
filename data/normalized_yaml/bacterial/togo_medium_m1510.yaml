@@ -1,0 +1,74 @@
+id: CultureMech:008055
+name: togo_medium_m1510
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
+media_term:
+  preferred_term: TOGO Medium M1510
+  term:
+    id: TOGO:M1510
+    label: TOGO Medium M1510
+notes: 'Source: https://togomedium.org/medium/M1510
+
+  Original source: NBRC - NBRC_M294
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=294'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.777493Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1510'
+- timestamp: '2026-01-28T19:48:41.901176Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.956133'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-13T06:19:53.262015Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008055'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.781286+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TOGO Medium M1510" to "togo_medium_m1510" for consistent
+    matching

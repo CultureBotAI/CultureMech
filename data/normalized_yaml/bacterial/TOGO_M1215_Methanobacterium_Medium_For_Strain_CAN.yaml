@@ -1,5 +1,5 @@
 id: CultureMech:007743
-name: Methanobacterium Medium For Strain CAN
+name: methanobacterium_medium_for_strain_can
 original_name: Methanobacterium Medium For Strain CAN
 category: bacterial
 medium_type: COMPLEX
@@ -214,6 +214,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.515860+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanobacterium Medium For Strain CAN" to "methanobacterium_medium_for_strain_can"
+    for consistent matching
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

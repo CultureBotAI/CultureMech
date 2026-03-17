@@ -1,5 +1,5 @@
 id: CultureMech:009822
-name: N-Z Amine With Soluble Starch And Glucose
+name: n_z_amine_with_soluble_starch_and_glucose
 original_name: N-Z Amine With Soluble Starch And Glucose
 category: bacterial
 medium_type: COMPLEX
@@ -96,3 +96,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.142719+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "N-Z Amine With Soluble Starch And Glucose" to "n_z_amine_with_soluble_starch_and_glucose"
+    for consistent matching

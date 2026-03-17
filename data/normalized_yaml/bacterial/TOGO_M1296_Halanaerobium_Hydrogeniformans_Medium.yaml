@@ -1,5 +1,5 @@
 id: CultureMech:007829
-name: Halanaerobium Hydrogeniformans Medium
+name: halanaerobium_hydrogeniformans_medium
 original_name: Halanaerobium Hydrogeniformans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -176,6 +176,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.229328+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halanaerobium Hydrogeniformans Medium" to "halanaerobium_hydrogeniformans_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Solution A

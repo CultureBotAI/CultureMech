@@ -1,0 +1,212 @@
+id: CultureMech:009274
+name: PY-glucose (ATCC medium 1524) with 10 g glucose per liter of medium
+original_name: PY-glucose (ATCC medium 1524) with 10 g glucose per liter of medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.025% Resazurin, aqueous
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1051.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 3 duplicates: 950.0, 1.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Peptone, Bacto (BD 211677)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase Peptone (BD 211921)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine . HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: CaCl2
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: MgSO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Hemin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: N NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 95% Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Vitamin K1
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+media_term:
+  preferred_term: TOGO Medium M2724
+  term:
+    id: TOGO:M2724
+    label: PY-glucose (ATCC medium 1524) with 10 g glucose per liter of medium
+notes: 'Source: https://togomedium.org/medium/M2724
+
+  Original URL: https://www.atcc.org/~/media/3F8B6BDFCC2D44F88C84F6E1FE4DE6A2.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.145364Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2724'
+- timestamp: '2026-01-28T19:48:23.102641Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.919422'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+- timestamp: '2026-03-09T08:04:38.370539+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 3 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:08.160036Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:04.989149Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009274'
+solutions:
+- preferred_term: Salt Solution
+  term:
+    id: mediadive.solution:6218
+    label: Salt solution
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: See mediadive_6218_Salt_solution.yaml for composition
+- preferred_term: Hemin Solution
+  term:
+    id: mediadive.solution:5229
+    label: Hemin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5229_Hemin_solution.yaml for composition
+- preferred_term: Vitamin K1 Solution
+  term:
+    id: mediadive.solution:2227
+    label: Vitamin K1 solution
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: See mediadive_2227_Vitamin_K1_solution.yaml for composition
+merge_fingerprint: 352b6f8f2f0b5449269f7b5b34e863410038cdfd80d4dd45ffe2e84a90cd91be
+merged_from:
+- TOGO_M2724_PY-glucose_ATCC_medium_1524_with_10_g_glucose_per_liter_of_medium

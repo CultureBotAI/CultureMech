@@ -1,6 +1,6 @@
 id: CultureMech:000024
-name: Allen Medium
-category: algae
+name: allen_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -96,6 +96,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000024'
+- timestamp: '2026-03-17T19:45:03.882079+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Allen Medium" to "allen_medium" for consistent matching
 references:
 - reference_id: UTEX:allen-medium
 - reference_id: https://utex.org/products/allen-medium
+original_name: Allen Medium

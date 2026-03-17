@@ -1,6 +1,6 @@
 id: CultureMech:000165
-name: ES/4 Enriched Seawater Medium
-category: algae
+name: es_4_enriched_seawater_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -62,6 +62,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000165'
+- timestamp: '2026-03-17T19:45:04.311249+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ES/4 Enriched Seawater Medium" to "es_4_enriched_seawater_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:es-over-4-enriched-seawater-medium
 - reference_id: https://utex.org/products/es-over-4-enriched-seawater-medium
+original_name: ES/4 Enriched Seawater Medium

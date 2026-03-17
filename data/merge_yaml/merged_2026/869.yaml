@@ -1,0 +1,42 @@
+id: CultureMech:007500
+name: '869'
+original_name: '869'
+category: bacterial
+description: 869. NBRC 868.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea
+    water*800mlDistilled water200mlpH 7.6*Filtered, aged seawater or artificial seawater
+    (Daigo's Artificial Seawater SP**)**Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+- preferred_term: ''
+  concentration:
+    value: Bacto Marine Broth 2216 (Difco)
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.979642Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 868, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=868.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:24.689761Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 9 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.270356Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007500'
+merge_fingerprint: dbc30c4aa7188347d2ae0739be89ac9e0fb3eb7a74e9b8da528a59e336e3353f
+merged_from:
+- NBRC_869

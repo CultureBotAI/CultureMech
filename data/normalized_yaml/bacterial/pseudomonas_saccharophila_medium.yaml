@@ -1,0 +1,173 @@
+id: CultureMech:008323
+name: pseudomonas_saccharophila_medium
+original_name: Pseudomonas saccharophila medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '982.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound [Merged 3 duplicates: 980.0, 1.0, 1.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
+- preferred_term: KH2PO4
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: Na2HPO4
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
+- preferred_term: Sucrose
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
+media_term:
+  preferred_term: TOGO Medium M1759
+  term:
+    id: TOGO:M1759
+    label: Pseudomonas saccharophila medium
+notes: 'Source: https://togomedium.org/medium/M1759
+
+  Original source: NBRC - NBRC_M971
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=971'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.294900Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1759'
+- timestamp: '2026-01-28T19:48:35.732691Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:59.489553+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:31.234196Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:55.700552Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008323'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.970656'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:14.241938+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pseudomonas saccharophila medium" to "pseudomonas_saccharophila_medium"
+    for consistent matching
+solutions:
+- preferred_term: Solution A*
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B**
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution

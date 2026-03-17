@@ -1,5 +1,5 @@
 id: CultureMech:004106
-name: FUCHSIELLA ALKALIACETIGENA medium
+name: fuchsiella_alkaliacetigena_medium
 original_name: FUCHSIELLA ALKALIACETIGENA medium
 category: bacterial
 medium_type: COMPLEX
@@ -335,3 +335,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.705592+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FUCHSIELLA ALKALIACETIGENA medium" to "fuchsiella_alkaliacetigena_medium"
+    for consistent matching

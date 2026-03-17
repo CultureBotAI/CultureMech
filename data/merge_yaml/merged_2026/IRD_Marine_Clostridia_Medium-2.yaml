@@ -1,0 +1,59 @@
+id: CultureMech:010411
+name: IRD Marine Clostridia Medium-2
+original_name: IRD Marine Clostridia Medium-2
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: sodium acetate
+  concentration:
+    value: '0.164'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M984
+  term:
+    id: TOGO:M984
+    label: IRD Marine Clostridia Medium-2
+notes: 'Source: https://togomedium.org/medium/M984
+
+  Original source: JCM - JCM_M938
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=938'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.085661Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M984'
+- timestamp: '2026-01-28T19:48:22.281981Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:37.174451+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:13.661706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010411'
+solutions:
+- preferred_term: IRD MARINE CLOSTRIDA MEDIUM (see Medium [M953])
+  composition: []
+  notes: Cross-reference to Medium M953
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: b29e94d3b8ed4dcdb13544b6012c73fff9dde6ae8134c62b4d95b1c4c3b48ccb
+merged_from:
+- TOGO_M984_IRD_Marine_Clostridia_Medium-2

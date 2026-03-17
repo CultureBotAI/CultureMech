@@ -1,0 +1,120 @@
+id: CultureMech:008081
+name: TOGO Medium M1534
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Gelrite
+  notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
+  term:
+    id: CHEBI:85248
+    label: Gelrite
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1534
+  term:
+    id: TOGO:M1534
+    label: TOGO Medium M1534
+notes: 'Source: https://togomedium.org/medium/M1534
+
+  Original source: NBRC - NBRC_M324-2
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=324'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.807297Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1534'
+- timestamp: '2026-01-28T19:48:23.501970Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.036136'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Gelrite; Added default concentration
+    for ingredient: H2SO4'
+- timestamp: '2026-03-09T08:04:39.073724+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.402321Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008081'
+solutions:
+- preferred_term: Yeast extract*
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose*
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+merge_fingerprint: cb603ef8b30258cab2ea367f48dd1d5df4f687a007b0a086aa5f6b8e516476f8
+merged_from:
+- TOGO_M1534_Unnamed_medium

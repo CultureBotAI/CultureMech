@@ -1,5 +1,5 @@
 id: CultureMech:008144
-name: CYC Agar
+name: cyc_agar
 original_name: CYC Agar
 category: bacterial
 medium_type: COMPLEX
@@ -72,3 +72,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.442695+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CYC Agar" to "cyc_agar" for consistent matching

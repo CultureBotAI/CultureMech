@@ -1,0 +1,89 @@
+id: CultureMech:000508
+name: sp4_medium
+original_name: SP4 MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1076
+  term:
+    id: mediadive.medium:1076
+    label: SP4 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.70874'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '3.39806'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '90'
+    unit: G_PER_L
+- preferred_term: CMRL 1066
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 1.0]'
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.0496876'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.4; autoclave at 121°C for 15 minutes.
+- step_number: 2
+  action: MIX
+  description: 'Add aseptically:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.305654Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1076'
+- timestamp: '2026-03-13T03:09:39.155795Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:55.941578Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000508'
+- timestamp: '2026-03-17T06:30:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.967698+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SP4 MEDIUM" to "sp4_medium" for consistent matching

@@ -1,0 +1,31 @@
+id: CultureMech:004389
+name: artificial_sea_water_3_times_concentrated_medium_590
+original_name: Artificial sea water, 3 times concentrated (medium 590)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2109
+  term:
+    id: komodo.medium:2109
+    label: Artificial sea water, 3 times concentrated (medium 590)
+notes: 'Source: KOMODO ModelSEED | ID: 2109 | DSMZ Medium: 2109 (mediadive.medium:2109)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2109'
+- timestamp: '2026-03-13T06:19:26.718244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004389'
+- timestamp: '2026-03-17T19:45:41.858518+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial sea water, 3 times concentrated (medium
+    590)" to "artificial_sea_water_3_times_concentrated_medium_590" for consistent
+    matching

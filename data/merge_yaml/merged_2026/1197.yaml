@@ -1,0 +1,42 @@
+id: CultureMech:007463
+name: '1197'
+original_name: '1197'
+category: bacterial
+description: 1197. NBRC 1196.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Substrates*10mMKH2PO40.85gNa2HPO4·7H2O4.9g(NH4)2SO40.5gMgSO4·7H2O0.1gFeSO4·7H2O9.5mgMgO10.75mgCaCO32mgZnSO4·7H2O1.44mgMnSO4·4H2O1.12mgCuSO4·5H2O0.25mgCoSO4·7H2O0.28mgH3BO40.06mgConcentrated
+    HCl51.3μlDistilled water1LAgar (if needed)15g*Vanillic acid and syringic acid
+    etc.
+- preferred_term: ''
+  concentration:
+    value: Substrates*
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.035486Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1196, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1196.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:06.729391Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 17 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.162145Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007463'
+merge_fingerprint: 009c1fe915c76c4afc31be866685c9a945273a5b78bf3bb097f9ebfa76ab0799
+merged_from:
+- NBRC_1197

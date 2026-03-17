@@ -1,5 +1,5 @@
 id: CultureMech:007637
-name: Halomonas/CUG Medium
+name: halomonas_cug_medium
 original_name: Halomonas/CUG Medium
 category: bacterial
 medium_type: COMPLEX
@@ -178,3 +178,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.611150+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halomonas/CUG Medium" to "halomonas_cug_medium" for
+    consistent matching

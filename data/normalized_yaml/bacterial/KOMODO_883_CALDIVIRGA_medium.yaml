@@ -1,5 +1,5 @@
 id: CultureMech:006733
-name: CALDIVIRGA medium
+name: caldivirga_medium
 original_name: CALDIVIRGA medium
 category: bacterial
 medium_type: COMPLEX
@@ -302,3 +302,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.212270+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CALDIVIRGA medium" to "caldivirga_medium" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:007936
-name: Lactobacillus Sakei Medium
+name: lactobacillus_sakei_medium
 original_name: Lactobacillus Sakei Medium
 category: bacterial
 medium_type: COMPLEX
@@ -72,3 +72,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.078480+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Lactobacillus Sakei Medium" to "lactobacillus_sakei_medium"
+    for consistent matching

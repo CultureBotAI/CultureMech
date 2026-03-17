@@ -1,0 +1,30 @@
+id: CultureMech:004317
+name: trace_element_solution_medium_533
+original_name: Trace element solution (medium 533)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2045
+  term:
+    id: komodo.medium:2045
+    label: Trace element solution (medium 533)
+notes: 'Source: KOMODO ModelSEED | ID: 2045 | DSMZ Medium: 2045 (mediadive.medium:2045)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2045'
+- timestamp: '2026-03-13T06:19:26.572099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004317'
+- timestamp: '2026-03-17T19:45:41.676946+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trace element solution (medium 533)" to "trace_element_solution_medium_533"
+    for consistent matching

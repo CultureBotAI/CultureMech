@@ -1,5 +1,5 @@
 id: CultureMech:008469
-name: Thermotoga hypogea medium
+name: thermotoga_hypogea_medium
 original_name: Thermotoga hypogea medium
 category: bacterial
 medium_type: COMPLEX
@@ -389,6 +389,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.771235+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermotoga hypogea medium" to "thermotoga_hypogea_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace element solution*
   term:

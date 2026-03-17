@@ -1,0 +1,160 @@
+id: CultureMech:002115
+name: lactobacillus_medium_ii
+original_name: LACTOBACILLUS MEDIUM II
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 5.2
+media_term:
+  preferred_term: DSMZ Medium 93
+  term:
+    id: mediadive.medium:93
+    label: LACTOBACILLUS MEDIUM II
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium93.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: MnSO4 x H2O
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
+- preferred_term: DL-mevalonic acid
+  term:
+    id: CHEBI:150970
+    label: DL-mevalonic acid
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000769
+    label: DL-mevalonic acid
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.159153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 93'
+- timestamp: '2026-03-13T06:19:10.452727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002115'
+- timestamp: '2026-03-17T06:30:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:23.120609+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LACTOBACILLUS MEDIUM II" to "lactobacillus_medium_ii"
+    for consistent matching

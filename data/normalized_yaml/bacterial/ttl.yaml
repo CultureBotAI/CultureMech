@@ -1,0 +1,73 @@
+id: CultureMech:008740
+name: ttl
+original_name: TTL
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Tween80
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Trypticase Soy Broth (Difco)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Lecithine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+media_term:
+  preferred_term: TOGO Medium M2146
+  term:
+    id: TOGO:M2146
+    label: TTL
+notes: 'Source: https://togomedium.org/medium/M2146
+
+  Original source: NBRC - NBRC_M1498
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1498'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.165202Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2146'
+- timestamp: '2026-01-28T19:48:12.550097Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:59.952744Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008740'
+- timestamp: '2026-03-17T06:29:52.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.601913+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TTL" to "ttl" for consistent matching

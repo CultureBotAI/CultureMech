@@ -1,5 +1,5 @@
 id: CultureMech:009381
-name: Modified MB
+name: modified_mb
 original_name: Modified MB
 category: bacterial
 medium_type: COMPLEX
@@ -243,6 +243,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.897727+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified MB" to "modified_mb" for consistent matching
 solutions:
 - preferred_term: Trace element solution (see below)
   composition: []

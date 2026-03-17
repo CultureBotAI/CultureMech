@@ -1,6 +1,6 @@
 id: CultureMech:000231
-name: 'Soilwater: VT Medium'
-category: algae
+name: soilwater_vt_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -61,6 +61,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000231'
+- timestamp: '2026-03-17T19:45:04.560661+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: 'Normalized name from "Soilwater: VT Medium" to "soilwater_vt_medium" for
+    consistent matching'
 references:
 - reference_id: UTEX:soilwater-vt-medium
 - reference_id: https://utex.org/products/soilwater-vt-medium
+original_name: 'Soilwater: VT Medium'

@@ -1,0 +1,113 @@
+id: CultureMech:008276
+name: TOGO Medium M1713
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.87'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1713
+  term:
+    id: TOGO:M1713
+    label: TOGO Medium M1713
+notes: 'Source: https://togomedium.org/medium/M1713
+
+  Original source: NBRC - NBRC_M920
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=920'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.200185Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1713'
+- timestamp: '2026-01-28T19:48:34.595863Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:57.467637+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:55.139941Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008276'
+- timestamp: '2026-03-15T03:04:03.109817+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1708_Unnamed_medium, TOGO_M1709_Unnamed_medium, TOGO_M1710_Unnamed_medium,
+    TOGO_M1711_Unnamed_medium, TOGO_M1712_Unnamed_medium, TOGO_M1713_Unnamed_medium'
+solutions:
+- preferred_term: Kanamycin solution (500 μg/ml)*
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
+    component'
+synonyms:
+- name: TOGO Medium M1708
+  source: TOGO
+  source_id: TOGO:M1708
+  original_category: bacterial
+- name: TOGO Medium M1709
+  source: TOGO
+  source_id: TOGO:M1709
+  original_category: bacterial
+- name: TOGO Medium M1710
+  source: TOGO
+  source_id: TOGO:M1710
+  original_category: bacterial
+- name: TOGO Medium M1711
+  source: TOGO
+  source_id: TOGO:M1711
+  original_category: bacterial
+- name: TOGO Medium M1712
+  source: TOGO
+  source_id: TOGO:M1712
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1708_Unnamed_medium
+- TOGO_M1709_Unnamed_medium
+- TOGO_M1710_Unnamed_medium
+- TOGO_M1711_Unnamed_medium
+- TOGO_M1712_Unnamed_medium
+- TOGO_M1713_Unnamed_medium
+merge_fingerprint: 6030f6f1a312c14da047b65c79bca1b1aaaaf450c4a00955c1f02fe72d4c1142

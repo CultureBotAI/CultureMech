@@ -1,0 +1,3193 @@
+@prefix NCIT: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix UO: <http://purl.obolibrary.org/obo/UO_> .
+@prefix culturemech: <https://w3id.org/culturemech/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix linkml: <https://w3id.org/linkml/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+culturemech:CofactorRequirement a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "CofactorRequirement" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:confidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:can_biosynthesize ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:can_biosynthesize ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:genes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:cofactor ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Boolean ;
+            owl:onProperty culturemech:can_biosynthesize ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:confidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:genes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CofactorDescriptor ;
+            owl:onProperty culturemech:cofactor ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:cofactor ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:confidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ] ;
+    skos:definition "Cofactor requirement for an organism" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:CurationEvent a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "CurationEvent" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:timestamp ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:curator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:timestamp ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:curator ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:curator ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:timestamp ] ;
+    skos:definition "Audit trail entry for curation" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:Dataset a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Dataset" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:dataset_id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:dataset_id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Uri ;
+            owl:onProperty culturemech:url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:dataset_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:dataset_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:dataset_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:dataset_id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:url ] ;
+    skos:definition "Omics dataset generated using this medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:GTDBTerm a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "GTDBTerm" ;
+    rdfs:subClassOf culturemech:Term ;
+    skos:definition "A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:IngredientReference a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "IngredientReference" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:intersectionOf ( linkml:String [ a rdfs:Datatype ;
+                                owl:onDatatype xsd:string ;
+                                owl:withRestrictions ( [ xsd:pattern "^MediaIngredientMech:\\d{6}$" ] ) ] ) ] ;
+            owl:onProperty culturemech:mediaingredientmech_id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:mediaingredientmech_id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:mediaingredientmech_id ] ;
+    skos:definition "Reference to canonical ingredient" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:MediaDatabaseTerm a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MediaDatabaseTerm" ;
+    rdfs:subClassOf culturemech:Term ;
+    skos:definition "Identifier from authoritative media database" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:MediaRecipe a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MediaRecipe" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:aeration ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:variants ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:IngredientDescriptor ;
+            owl:onProperty culturemech:ingredients ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:PhysicalStateEnum ;
+            owl:onProperty culturemech:physical_state ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Boolean ;
+            owl:onProperty culturemech:high_ree ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:target_organisms ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:merge_fingerprint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:ph_range ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:applications ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:preparation_steps ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:datasets ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:storage ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:salinity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:ph_value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:original_name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:physical_state ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:light_intensity ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:source_data ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:ph_range ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SterilizationDescriptor ;
+            owl:onProperty culturemech:sterilization ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:medium_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:curation_history ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediumTypeEnum ;
+            owl:onProperty culturemech:medium_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:light_intensity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merged_from ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:organism_culture_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:high_ree ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:salinity ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_metadata ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:variant_fingerprint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:references ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:medium_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:ingredients ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:chemical_fingerprint ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:temperature_range ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:culture_vessel ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:light_intensity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:incubation_atmosphere ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:media_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:categories ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_fingerprint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:source_data ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:culture_vessel ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:solutions ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CurationEvent ;
+            owl:onProperty culturemech:curation_history ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:light_cycle ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:PublicationReference ;
+            owl:onProperty culturemech:references ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediaVariant ;
+            owl:onProperty culturemech:variants ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:StorageConditions ;
+            owl:onProperty culturemech:storage ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:fingerprint_version ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:ph_value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:AtmosphereEnum ;
+            owl:onProperty culturemech:incubation_atmosphere ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MergeMetadata ;
+            owl:onProperty culturemech:merge_metadata ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:light_cycle ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:OrganismDescriptor ;
+            owl:onProperty culturemech:target_organisms ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:aeration ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:temperature_range ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:RecipeSynonym ;
+            owl:onProperty culturemech:synonyms ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:organism_culture_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SourceData ;
+            owl:onProperty culturemech:source_data ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:storage ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:light_quality ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:incubation_atmosphere ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:physical_state ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:PreparationStep ;
+            owl:onProperty culturemech:preparation_steps ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:aeration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:high_ree ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:merged_from ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:light_cycle ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:Dataset ;
+            owl:onProperty culturemech:datasets ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SolutionDescriptor ;
+            owl:onProperty culturemech:solutions ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:temperature_value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:fingerprint_version ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_fingerprint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CategoryEnum ;
+            owl:onProperty culturemech:categories ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:fingerprint_version ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:sterilization ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:sterilization ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:ph_range ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:original_name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:variant_fingerprint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:OrganismCultureTypeEnum ;
+            owl:onProperty culturemech:organism_culture_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Boolean ;
+            owl:onProperty culturemech:high_metal ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:salinity ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:synonyms ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:variant_fingerprint ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:light_quality ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediaTypeDescriptor ;
+            owl:onProperty culturemech:media_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:ph_value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:light_quality ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:applications ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:chemical_fingerprint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:high_metal ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:high_metal ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:temperature_value ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_metadata ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:media_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:culture_vessel ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:data_quality_flags ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CategoryEnum ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:chemical_fingerprint ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:temperature_value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:original_name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:temperature_range ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:data_quality_flags ] ;
+    skos:definition "A complete growth medium formulation for culturing microorganisms. This is the root entity - one per YAML file." ;
+    skos:exactMatch culturemech:MediaRecipe ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:MediaTypeDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MediaTypeDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediaDatabaseTerm ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:term ],
+        culturemech:Descriptor ;
+    skos:definition "Classification and authoritative database reference for the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:MediaVariant a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MediaVariant" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:purpose ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:purpose ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:supplier_info ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:modifications ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:purpose ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SupplierInfo ;
+            owl:onProperty culturemech:supplier_info ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:supplier_info ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:modifications ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:name ] ;
+    skos:definition "A variant or modification of the base recipe" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:MergeMetadata a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MergeMetadata" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:hierarchy_conflicts ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_reason ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_mode ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_confidence ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_mode ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:fingerprint_mode ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_confidence ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:fingerprint_mode ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:merge_mode ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MergeReasonEnum ;
+            owl:onProperty culturemech:merge_reason ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:merge_version ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:hierarchy_conflicts ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:merge_confidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:merge_version ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_version ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:merge_reason ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:fingerprint_mode ] ;
+    skos:definition "Metadata about merge process and quality" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:OrganismDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "OrganismDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:target_abundance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:OrganismTerm ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:growth_phase ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:gtdb_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:growth_phase ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:strain ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TransporterAnnotation ;
+            owl:onProperty culturemech:transporters ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:gtdb_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:target_abundance ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:community_function ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:target_abundance ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:cofactor_requirements ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:transporters ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:strain ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CellularRoleEnum ;
+            owl:onProperty culturemech:community_role ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CofactorRequirement ;
+            owl:onProperty culturemech:cofactor_requirements ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:strain ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:community_role ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:GTDBTerm ;
+            owl:onProperty culturemech:gtdb_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:community_function ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:growth_phase ],
+        culturemech:Descriptor ;
+    skos:definition "Target organism for the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:OrganismTerm a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "OrganismTerm" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^NCBITaxon:\\d+$" ] ) ] ;
+            owl:onProperty culturemech:id ],
+        culturemech:Term ;
+    skos:definition "An NCBITaxon term representing an organism" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:PreparationStep a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PreparationStep" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:equipment ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:step_number ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:PreparationActionEnum ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty culturemech:step_number ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:equipment ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:step_number ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:equipment ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TemperatureValue ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:description ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:action ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ] ;
+    skos:definition "A step in medium preparation" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:PublicationReference a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "PublicationReference" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:authors ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:title ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Integer ;
+            owl:onProperty culturemech:year ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:year ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:title ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:year ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:reference ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:authors ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:reference ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:authors ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:reference ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:title ] ;
+    skos:definition "Literature reference" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:RecipeSynonym a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "RecipeSynonym" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:source ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:source_id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:original_category ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:source ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:source ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CategoryEnum ;
+            owl:onProperty culturemech:original_category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:original_category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:source_id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:source_id ] ;
+    skos:definition "An alternate name for a recipe from a specific source" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:SolutionDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SolutionDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:StorageConditions ;
+            owl:onProperty culturemech:storage_conditions ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preparation_notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ConcentrationValue ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:shelf_life ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:storage_conditions ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:IngredientDescriptor ;
+            owl:onProperty culturemech:composition ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:shelf_life ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:storage_conditions ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:preparation_notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:shelf_life ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediaIngredientMechTerm ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:composition ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preparation_notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:Term ;
+            owl:onProperty culturemech:term ],
+        culturemech:Descriptor ;
+    skos:definition "A pre-prepared stock solution used as an ingredient" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:SourceData a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SourceData" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:origin ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:community_ids ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:origin ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:import_date ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:import_date ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:community_ids ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:import_date ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:origin ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ] ;
+    skos:definition "Provenance information for imported records" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:SterilizationDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SterilizationDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:method ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:duration ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SterilizationMethodEnum ;
+            owl:onProperty culturemech:method ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:pressure ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:pressure ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TemperatureValue ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:pressure ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:method ] ;
+    skos:definition "Sterilization method and parameters" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:TransporterAnnotation a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "TransporterAnnotation" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:ec_number ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:substrate_terms ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:direction ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:direction ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:transporter_type ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:direction ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:genes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:ec_number ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ChemicalEntityTerm ;
+            owl:onProperty culturemech:substrate_terms ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:transporter_type ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:ec_number ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:genes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TransporterTypeEnum ;
+            owl:onProperty culturemech:transporter_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:substrates ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:substrates ] ;
+    skos:definition "Annotation of a transporter or transport system" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+NCIT:C64371 a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "COMPLEX" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+NCIT:C64372 a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "DEFINED" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+UO:0000012 a owl:Class,
+        culturemech:TemperatureUnitEnum ;
+    rdfs:label "KELVIN" ;
+    rdfs:subClassOf culturemech:TemperatureUnitEnum .
+
+UO:0000027 a owl:Class,
+        culturemech:TemperatureUnitEnum ;
+    rdfs:label "CELSIUS" ;
+    rdfs:subClassOf culturemech:TemperatureUnitEnum .
+
+UO:0000062 a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "MOLAR" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+UO:0000175 a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "G_PER_L" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/AtmosphereEnum#AEROBIC> a owl:Class,
+        culturemech:AtmosphereEnum ;
+    rdfs:label "AEROBIC" ;
+    rdfs:subClassOf culturemech:AtmosphereEnum .
+
+<https://w3id.org/culturemech/AtmosphereEnum#ANAEROBIC> a owl:Class,
+        culturemech:AtmosphereEnum ;
+    rdfs:label "ANAEROBIC" ;
+    rdfs:subClassOf culturemech:AtmosphereEnum .
+
+<https://w3id.org/culturemech/AtmosphereEnum#MICROAEROPHILIC> a owl:Class,
+        culturemech:AtmosphereEnum ;
+    rdfs:label "MICROAEROPHILIC" ;
+    rdfs:subClassOf culturemech:AtmosphereEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#algae> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "algae" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#archaea> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "archaea" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#bacterial> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "bacterial" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#fungal> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "fungal" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#imported> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "imported" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CategoryEnum#specialized> a owl:Class,
+        culturemech:CategoryEnum ;
+    rdfs:label "specialized" ;
+    rdfs:subClassOf culturemech:CategoryEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#BIOTRANSFORMER> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "BIOTRANSFORMER" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#BRIDGE_ORGANISM> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "BRIDGE_ORGANISM" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#COMMENSAL> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "COMMENSAL" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#COMPETITOR> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "COMPETITOR" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#DETOXIFIER> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "DETOXIFIER" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#ELECTRON_SHUTTLE> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "ELECTRON_SHUTTLE" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#OXIDATIVE_DEGRADER> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "OXIDATIVE_DEGRADER" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#PRIMARY_DEGRADER> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "PRIMARY_DEGRADER" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#REDUCTIVE_DEGRADER> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "REDUCTIVE_DEGRADER" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CellularRoleEnum#SYNERGIST> a owl:Class,
+        culturemech:CellularRoleEnum ;
+    rdfs:label "SYNERGIST" ;
+    rdfs:subClassOf culturemech:CellularRoleEnum .
+
+<https://w3id.org/culturemech/CofactorCategoryEnum#ENERGY_TRANSFER> a owl:Class,
+        culturemech:CofactorCategoryEnum ;
+    rdfs:label "ENERGY_TRANSFER" ;
+    rdfs:subClassOf culturemech:CofactorCategoryEnum .
+
+<https://w3id.org/culturemech/CofactorCategoryEnum#METALS> a owl:Class,
+        culturemech:CofactorCategoryEnum ;
+    rdfs:label "METALS" ;
+    rdfs:subClassOf culturemech:CofactorCategoryEnum .
+
+<https://w3id.org/culturemech/CofactorCategoryEnum#NUCLEOTIDES> a owl:Class,
+        culturemech:CofactorCategoryEnum ;
+    rdfs:label "NUCLEOTIDES" ;
+    rdfs:subClassOf culturemech:CofactorCategoryEnum .
+
+<https://w3id.org/culturemech/CofactorCategoryEnum#OTHER_SPECIALIZED> a owl:Class,
+        culturemech:CofactorCategoryEnum ;
+    rdfs:label "OTHER_SPECIALIZED" ;
+    rdfs:subClassOf culturemech:CofactorCategoryEnum .
+
+<https://w3id.org/culturemech/CofactorCategoryEnum#VITAMINS> a owl:Class,
+        culturemech:CofactorCategoryEnum ;
+    rdfs:label "VITAMINS" ;
+    rdfs:subClassOf culturemech:CofactorCategoryEnum .
+
+culturemech:CofactorDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "CofactorDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:bioavailability ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:biosynthesis_genes ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:precursor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:kegg_pathways ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:enzyme_examples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:bioavailability ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:biosynthesis_genes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:enzyme_examples ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ChemicalEntityTerm ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CofactorCategoryEnum ;
+            owl:onProperty culturemech:category ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:kegg_pathways ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:precursor ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:ec_associations ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ChemicalEntityTerm ;
+            owl:onProperty culturemech:precursor_term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:precursor_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:bioavailability ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:precursor_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:precursor ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:ec_associations ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:term ],
+        culturemech:Descriptor ;
+    skos:definition "A cofactor or coenzyme required for enzymatic activity" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#MG_PER_L> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "MG_PER_L" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#MICROG_PER_L> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "MICROG_PER_L" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#MICROMOLAR> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "MICROMOLAR" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#MILLIMOLAR> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "MILLIMOLAR" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_V_V> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "PERCENT_V_V" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_W_V> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "PERCENT_W_V" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+<https://w3id.org/culturemech/ConcentrationUnitEnum#VARIABLE> a owl:Class,
+        culturemech:ConcentrationUnitEnum ;
+    rdfs:label "VARIABLE" ;
+    rdfs:subClassOf culturemech:ConcentrationUnitEnum .
+
+culturemech:ConcentrationValue a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "ConcentrationValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:per_volume ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:per_volume ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ConcentrationUnitEnum ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:per_volume ] ;
+    skos:definition "Quantified concentration with units" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+<https://w3id.org/culturemech/EvidenceItemSupportEnum#NO_EVIDENCE> a owl:Class,
+        culturemech:EvidenceItemSupportEnum ;
+    rdfs:label "NO_EVIDENCE" ;
+    rdfs:subClassOf culturemech:EvidenceItemSupportEnum .
+
+<https://w3id.org/culturemech/EvidenceItemSupportEnum#PARTIAL> a owl:Class,
+        culturemech:EvidenceItemSupportEnum ;
+    rdfs:label "PARTIAL" ;
+    rdfs:subClassOf culturemech:EvidenceItemSupportEnum .
+
+<https://w3id.org/culturemech/EvidenceItemSupportEnum#REFUTE> a owl:Class,
+        culturemech:EvidenceItemSupportEnum ;
+    rdfs:label "REFUTE" ;
+    rdfs:subClassOf culturemech:EvidenceItemSupportEnum .
+
+<https://w3id.org/culturemech/EvidenceItemSupportEnum#SUPPORT> a owl:Class,
+        culturemech:EvidenceItemSupportEnum ;
+    rdfs:label "SUPPORT" ;
+    rdfs:subClassOf culturemech:EvidenceItemSupportEnum .
+
+<https://w3id.org/culturemech/EvidenceItemSupportEnum#WRONG_STATEMENT> a owl:Class,
+        culturemech:EvidenceItemSupportEnum ;
+    rdfs:label "WRONG_STATEMENT" ;
+    rdfs:subClassOf culturemech:EvidenceItemSupportEnum .
+
+culturemech:IngredientDescriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "IngredientDescriptor" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ConcentrationValue ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:parent_ingredient ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:supplier_catalog ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ModifierEnum ;
+            owl:onProperty culturemech:modifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:variant_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:molecular_weight ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:chemical_formula ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:molecular_weight ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:CofactorDescriptor ;
+            owl:onProperty culturemech:cofactors_provided ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:chemical_formula ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:modifier ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:ChemicalEntityTerm ;
+            owl:onProperty culturemech:term ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:chemical_formula ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:role ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:concentration ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:IngredientRoleEnum ;
+            owl:onProperty culturemech:role ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:VariantTypeEnum ;
+            owl:onProperty culturemech:variant_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:MediaIngredientMechTerm ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:parent_ingredient ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:variant_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:IngredientReference ;
+            owl:onProperty culturemech:parent_ingredient ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:SupplierInfo ;
+            owl:onProperty culturemech:supplier_catalog ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:modifier ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:mediaingredientmech_term ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItem ;
+            owl:onProperty culturemech:evidence ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:supplier_catalog ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:molecular_weight ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:preferred_term ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:cofactors_provided ],
+        culturemech:Descriptor ;
+    skos:definition "Chemical or biological ingredient in a medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#AMINO_ACID_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "AMINO_ACID_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#BUFFER> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "BUFFER" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#CARBON_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "CARBON_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#COFACTOR_PROVIDER> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "COFACTOR_PROVIDER" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_ACCEPTOR> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "ELECTRON_ACCEPTOR" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_DONOR> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "ELECTRON_DONOR" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#ENERGY_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "ENERGY_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#MINERAL> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "MINERAL" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#NITROGEN_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "NITROGEN_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#PROTEIN_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "PROTEIN_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#SALT> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "SALT" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#SOLIDIFYING_AGENT> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "SOLIDIFYING_AGENT" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#TRACE_ELEMENT> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "TRACE_ELEMENT" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/IngredientRoleEnum#VITAMIN_SOURCE> a owl:Class,
+        culturemech:IngredientRoleEnum ;
+    rdfs:label "VITAMIN_SOURCE" ;
+    rdfs:subClassOf culturemech:IngredientRoleEnum .
+
+<https://w3id.org/culturemech/LightConditionEnum#AMBIENT> a owl:Class,
+        culturemech:LightConditionEnum ;
+    rdfs:label "AMBIENT" ;
+    rdfs:subClassOf culturemech:LightConditionEnum .
+
+<https://w3id.org/culturemech/LightConditionEnum#DARK> a owl:Class,
+        culturemech:LightConditionEnum ;
+    rdfs:label "DARK" ;
+    rdfs:subClassOf culturemech:LightConditionEnum .
+
+<https://w3id.org/culturemech/LightConditionEnum#LIGHT_PROTECTED> a owl:Class,
+        culturemech:LightConditionEnum ;
+    rdfs:label "LIGHT_PROTECTED" ;
+    rdfs:subClassOf culturemech:LightConditionEnum .
+
+culturemech:MediaIngredientMechTerm a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "MediaIngredientMechTerm" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^MediaIngredientMech:\\d{6}$" ] ) ] ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        culturemech:Term ;
+    skos:definition "A MediaIngredientMech identifier for a media ingredient" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+<https://w3id.org/culturemech/MediumTypeEnum#DIFFERENTIAL> a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "DIFFERENTIAL" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+<https://w3id.org/culturemech/MediumTypeEnum#ENRICHMENT> a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "ENRICHMENT" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+<https://w3id.org/culturemech/MediumTypeEnum#MINIMAL> a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "MINIMAL" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+<https://w3id.org/culturemech/MediumTypeEnum#SELECTIVE> a owl:Class,
+        culturemech:MediumTypeEnum ;
+    rdfs:label "SELECTIVE" ;
+    rdfs:subClassOf culturemech:MediumTypeEnum .
+
+<https://w3id.org/culturemech/MergeReasonEnum#EXPLICIT_MERGE_RULE> a owl:Class,
+        culturemech:MergeReasonEnum ;
+    rdfs:label "EXPLICIT_MERGE_RULE" ;
+    rdfs:subClassOf culturemech:MergeReasonEnum .
+
+<https://w3id.org/culturemech/MergeReasonEnum#HYDRATION_VARIANT_ONLY> a owl:Class,
+        culturemech:MergeReasonEnum ;
+    rdfs:label "HYDRATION_VARIANT_ONLY" ;
+    rdfs:subClassOf culturemech:MergeReasonEnum .
+
+<https://w3id.org/culturemech/MergeReasonEnum#IDENTICAL_FINGERPRINT> a owl:Class,
+        culturemech:MergeReasonEnum ;
+    rdfs:label "IDENTICAL_FINGERPRINT" ;
+    rdfs:subClassOf culturemech:MergeReasonEnum .
+
+<https://w3id.org/culturemech/MergeReasonEnum#NO_MATCH> a owl:Class,
+        culturemech:MergeReasonEnum ;
+    rdfs:label "NO_MATCH" ;
+    rdfs:subClassOf culturemech:MergeReasonEnum .
+
+<https://w3id.org/culturemech/MergeReasonEnum#SAME_PARENT_INGREDIENTS> a owl:Class,
+        culturemech:MergeReasonEnum ;
+    rdfs:label "SAME_PARENT_INGREDIENTS" ;
+    rdfs:subClassOf culturemech:MergeReasonEnum .
+
+<https://w3id.org/culturemech/ModifierEnum#ABSENT> a owl:Class,
+        culturemech:ModifierEnum ;
+    rdfs:label "ABSENT" ;
+    rdfs:subClassOf culturemech:ModifierEnum .
+
+<https://w3id.org/culturemech/ModifierEnum#DECREASED> a owl:Class,
+        culturemech:ModifierEnum ;
+    rdfs:label "DECREASED" ;
+    rdfs:subClassOf culturemech:ModifierEnum .
+
+<https://w3id.org/culturemech/ModifierEnum#INCREASED> a owl:Class,
+        culturemech:ModifierEnum ;
+    rdfs:label "INCREASED" ;
+    rdfs:subClassOf culturemech:ModifierEnum .
+
+<https://w3id.org/culturemech/OrganismCultureTypeEnum#community> a owl:Class,
+        culturemech:OrganismCultureTypeEnum ;
+    rdfs:label "community" ;
+    rdfs:subClassOf culturemech:OrganismCultureTypeEnum .
+
+<https://w3id.org/culturemech/OrganismCultureTypeEnum#isolate> a owl:Class,
+        culturemech:OrganismCultureTypeEnum ;
+    rdfs:label "isolate" ;
+    rdfs:subClassOf culturemech:OrganismCultureTypeEnum .
+
+<https://w3id.org/culturemech/PhysicalStateEnum#BIPHASIC> a owl:Class,
+        culturemech:PhysicalStateEnum ;
+    rdfs:label "BIPHASIC" ;
+    rdfs:subClassOf culturemech:PhysicalStateEnum .
+
+<https://w3id.org/culturemech/PhysicalStateEnum#LIQUID> a owl:Class,
+        culturemech:PhysicalStateEnum ;
+    rdfs:label "LIQUID" ;
+    rdfs:subClassOf culturemech:PhysicalStateEnum .
+
+<https://w3id.org/culturemech/PhysicalStateEnum#SEMISOLID> a owl:Class,
+        culturemech:PhysicalStateEnum ;
+    rdfs:label "SEMISOLID" ;
+    rdfs:subClassOf culturemech:PhysicalStateEnum .
+
+<https://w3id.org/culturemech/PhysicalStateEnum#SOLID_AGAR> a owl:Class,
+        culturemech:PhysicalStateEnum ;
+    rdfs:label "SOLID_AGAR" ;
+    rdfs:subClassOf culturemech:PhysicalStateEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#ADD_AGAR> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "ADD_AGAR" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#ADJUST_PH> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "ADJUST_PH" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#ALIQUOT> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "ALIQUOT" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#AUTOCLAVE> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "AUTOCLAVE" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#COOL> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "COOL" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#DISSOLVE> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "DISSOLVE" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#FILTER_STERILIZE> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "FILTER_STERILIZE" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#HEAT> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "HEAT" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#MIX> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "MIX" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#POUR_PLATES> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "POUR_PLATES" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/PreparationActionEnum#STORE> a owl:Class,
+        culturemech:PreparationActionEnum ;
+    rdfs:label "STORE" ;
+    rdfs:subClassOf culturemech:PreparationActionEnum .
+
+<https://w3id.org/culturemech/SterilizationMethodEnum#AUTOCLAVE> a owl:Class,
+        culturemech:SterilizationMethodEnum ;
+    rdfs:label "AUTOCLAVE" ;
+    rdfs:subClassOf culturemech:SterilizationMethodEnum .
+
+<https://w3id.org/culturemech/SterilizationMethodEnum#DRY_HEAT> a owl:Class,
+        culturemech:SterilizationMethodEnum ;
+    rdfs:label "DRY_HEAT" ;
+    rdfs:subClassOf culturemech:SterilizationMethodEnum .
+
+<https://w3id.org/culturemech/SterilizationMethodEnum#FILTER> a owl:Class,
+        culturemech:SterilizationMethodEnum ;
+    rdfs:label "FILTER" ;
+    rdfs:subClassOf culturemech:SterilizationMethodEnum .
+
+<https://w3id.org/culturemech/SterilizationMethodEnum#NONE> a owl:Class,
+        culturemech:SterilizationMethodEnum ;
+    rdfs:label "NONE" ;
+    rdfs:subClassOf culturemech:SterilizationMethodEnum .
+
+<https://w3id.org/culturemech/SterilizationMethodEnum#TYNDALLIZATION> a owl:Class,
+        culturemech:SterilizationMethodEnum ;
+    rdfs:label "TYNDALLIZATION" ;
+    rdfs:subClassOf culturemech:SterilizationMethodEnum .
+
+culturemech:StorageConditions a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "StorageConditions" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:container_type ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:light_condition ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:container_type ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:shelf_life ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TemperatureValue ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:light_condition ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:temperature ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:LightConditionEnum ;
+            owl:onProperty culturemech:light_condition ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:shelf_life ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:container_type ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:shelf_life ] ;
+    skos:definition "Storage requirements for prepared medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:SupplierInfo a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "SupplierInfo" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:catalog_number ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:product_url ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:supplier_name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:catalog_number ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Uri ;
+            owl:onProperty culturemech:product_url ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:catalog_number ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:supplier_name ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:supplier_name ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:notes ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:product_url ] ;
+    skos:definition "Commercial supplier information" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+<https://w3id.org/culturemech/TemperatureUnitEnum#FAHRENHEIT> a owl:Class,
+        culturemech:TemperatureUnitEnum ;
+    rdfs:label "FAHRENHEIT" ;
+    rdfs:subClassOf culturemech:TemperatureUnitEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#ABC> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "ABC" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#ANTIPORTER> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "ANTIPORTER" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#DEHALOGENASE> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "DEHALOGENASE" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#FLUORIDE_EXPORTER> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "FLUORIDE_EXPORTER" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#MFS> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "MFS" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#PORIN> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "PORIN" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#PTS> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "PTS" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#SIDEROPHORE_RECEPTOR> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "SIDEROPHORE_RECEPTOR" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#SYMPORTER> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "SYMPORTER" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#TONB> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "TONB" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/TransporterTypeEnum#UNIPORTER> a owl:Class,
+        culturemech:TransporterTypeEnum ;
+    rdfs:label "UNIPORTER" ;
+    rdfs:subClassOf culturemech:TransporterTypeEnum .
+
+<https://w3id.org/culturemech/VariantTypeEnum#ANHYDROUS> a owl:Class,
+        culturemech:VariantTypeEnum ;
+    rdfs:label "ANHYDROUS" ;
+    rdfs:subClassOf culturemech:VariantTypeEnum .
+
+<https://w3id.org/culturemech/VariantTypeEnum#CHEMICAL_VARIANT> a owl:Class,
+        culturemech:VariantTypeEnum ;
+    rdfs:label "CHEMICAL_VARIANT" ;
+    rdfs:subClassOf culturemech:VariantTypeEnum .
+
+<https://w3id.org/culturemech/VariantTypeEnum#HYDRATE> a owl:Class,
+        culturemech:VariantTypeEnum ;
+    rdfs:label "HYDRATE" ;
+    rdfs:subClassOf culturemech:VariantTypeEnum .
+
+<https://w3id.org/culturemech/VariantTypeEnum#NAMED_HYDRATE> a owl:Class,
+        culturemech:VariantTypeEnum ;
+    rdfs:label "NAMED_HYDRATE" ;
+    rdfs:subClassOf culturemech:VariantTypeEnum .
+
+<https://w3id.org/culturemech/VariantTypeEnum#SALT_FORM> a owl:Class,
+        culturemech:VariantTypeEnum ;
+    rdfs:label "SALT_FORM" ;
+    rdfs:subClassOf culturemech:VariantTypeEnum .
+
+culturemech:applications a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "applications" ;
+    skos:definition "Use cases and applications" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:biosynthesis_genes a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "biosynthesis_genes" ;
+    skos:definition "Genes involved in cofactor biosynthesis" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:categories a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "categories" ;
+    skos:definition "All categories this recipe appears in (for cross-category merges)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Preserves all original category assignments",
+        "Used when recipes from different categories are merged based on identical ingredients" .
+
+culturemech:cofactor_requirements a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "cofactor_requirements" ;
+    skos:definition "Cofactors required by this organism" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:cofactors_provided a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "cofactors_provided" ;
+    skos:definition "Cofactors supplied by this ingredient" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:community_function a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "community_function" ;
+    skos:definition "Specific functional contribution to community" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:community_ids a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "community_ids" ;
+    skos:definition "List of CommunityMech IDs this recipe was derived from" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables bidirectional linking from CultureMech to CommunityMech",
+        "Format CommunityMech:NNNNNN" .
+
+culturemech:community_role a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "community_role" ;
+    skos:definition "Functional role in microbial community" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:composition a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "composition" ;
+    skos:definition "Ingredients in the stock solution" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:curation_history a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "curation_history" ;
+    skos:definition "Audit trail of curation events" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:data_quality_flags a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "data_quality_flags" ;
+    skos:definition "Data quality indicators for transparency" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Used to mark recipes with known quality issues",
+        "{'Common values': 'incomplete_composition, pending_curation, low_confidence'}" .
+
+culturemech:datasets a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "datasets" ;
+    skos:definition "Omics datasets generated using this medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:ec_associations a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ec_associations" ;
+    skos:definition "EC numbers of enzymes using this cofactor" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:enzyme_examples a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "enzyme_examples" ;
+    skos:definition "Example enzymes requiring this cofactor" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:hierarchy_conflicts a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "hierarchy_conflicts" ;
+    skos:definition "Ingredients with conflicting merge signals" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Example \"CaCl2 has multiple parent assignments\"",
+        "Used to flag potential quality issues" .
+
+culturemech:ingredients a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ingredients" ;
+    skos:definition "Chemical and biological ingredients" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:kegg_pathways a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "kegg_pathways" ;
+    skos:definition "KEGG pathway IDs for biosynthesis" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:merged_from a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merged_from" ;
+    skos:definition "Original recipe IDs that were merged into this record" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "List of recipe file IDs that were consolidated into this canonical record",
+        "{'Format': 'source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)'}" .
+
+culturemech:modifications a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "modifications" ;
+    skos:definition "What differs from base recipe" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:preparation_steps a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "preparation_steps" ;
+    skos:definition "Ordered steps to prepare the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:references a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "references" ;
+    skos:definition "Original literature sources" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:role a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "role" ;
+    skos:definition "Functional role(s) in the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:solutions a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "solutions" ;
+    skos:definition "Pre-prepared stock solutions used as ingredients" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:substrate_terms a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "substrate_terms" ;
+    skos:definition "CHEBI terms for substrates" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:substrates a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "substrates" ;
+    skos:definition "Transported substrates" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:synonyms a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "synonyms" ;
+    skos:definition "Alternate names from merged duplicate recipes" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Populated during merge process when duplicate recipes are consolidated",
+        "Tracks all non-canonical names with their source provenance" .
+
+culturemech:target_organisms a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "target_organisms" ;
+    skos:definition "Organisms for which this medium is designed" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:transporters a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "transporters" ;
+    skos:definition "Annotated transport systems" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:variants a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "variants" ;
+    skos:definition "Related formulations or modifications" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:TemperatureValue a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "TemperatureValue" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:value ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:value ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:TemperatureUnitEnum ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:unit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:Float ;
+            owl:onProperty culturemech:value ] ;
+    skos:definition "Temperature with units" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:aeration a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "aeration" ;
+    skos:definition "Gas exchange method (e.g., \"0.5% CO2 in air\", \"bubbling\", \"shaking at 150 rpm\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:authors a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "authors" ;
+    skos:definition "Author list" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:bioavailability a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "bioavailability" ;
+    skos:definition "Uptake and availability characteristics" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:can_biosynthesize a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "can_biosynthesize" ;
+    skos:definition "Whether organism can synthesize this cofactor" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:catalog_number a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "catalog_number" ;
+    skos:definition "Product catalog number" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:chemical_fingerprint a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "chemical_fingerprint" ;
+    skos:definition "SHA256 hash using parent ingredients (hierarchy-aware)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables smart merging of hydrates, salt forms, and anhydrous variants",
+        "Generated only when hierarchy enrichment is available",
+        "Treats chemical variants as equivalent (CaCl2·2H2O = CaCl2)",
+        "Uses parent CHEBI IDs from MediaIngredientMech hierarchy" .
+
+culturemech:chemical_formula a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "chemical_formula" ;
+    skos:definition "Molecular formula (e.g., \"C6H12O6\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:cofactor a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "cofactor" ;
+    skos:definition "Required cofactor" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:confidence a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "confidence" ;
+    skos:definition "Confidence level (0.0-1.0) based on genome annotation" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:container_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "container_type" ;
+    skos:definition "Recommended container (e.g., \"glass bottle\", \"polypropylene tube\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:culture_vessel a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "culture_vessel" ;
+    skos:definition "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:curator a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "curator" ;
+    skos:definition "Name or identifier of curator" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:dataset_id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dataset_id" ;
+    skos:definition "Dataset identifier (GEO, SRA, etc.)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:dataset_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "dataset_type" ;
+    skos:definition "Type of omics data (genomics, transcriptomics, metabolomics, etc.)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:direction a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "direction" ;
+    skos:definition "Transport direction (import, export, bidirectional)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:ec_number a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ec_number" ;
+    skos:definition "EC number if enzymatic" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:equipment a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "equipment" ;
+    skos:definition "Required equipment (e.g., \"autoclave\", \"magnetic stirrer\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:explanation a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "explanation" ;
+    skos:definition "Why this evidence supports the claim" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:fingerprint_mode a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "fingerprint_mode" ;
+    skos:definition "Fingerprinting mode used (chemical/variant/original)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables comparing merge results across modes",
+        "Indicates which fingerprint algorithm was used" .
+
+culturemech:fingerprint_version a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "fingerprint_version" ;
+    skos:definition "Version of fingerprinting algorithm used" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables tracking algorithm changes over time",
+        "Example \"hierarchy-chemical-v1.0\" or \"original-v1.0\"",
+        "Used to determine which fingerprints are comparable" .
+
+culturemech:growth_phase a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "growth_phase" ;
+    skos:definition "Target growth phase (e.g., \"exponential\", \"stationary\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:gtdb_term a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "gtdb_term" ;
+    skos:definition "GTDB genome or lineage identifier (alternative to NCBITaxon)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:high_metal a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "high_metal" ;
+    skos:definition "Indicates media with total metal concentration above the 90th percentile threshold (≥1049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition." ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Threshold computed from distribution of 9,599 media with detectable metal content",
+        "Useful for identifying high-metal media for metal toxicity studies or bioremediation applications" .
+
+culturemech:high_ree a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "high_ree" ;
+    skos:definition "Indicates media with total rare earth element (REE) concentration above the 90th percentile threshold (≥1030.48 mM). REEs include lanthanides (La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu) plus Sc and Y. Based on automated concentration analysis of ingredient composition." ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Threshold computed from distribution of 9,130 media with detectable REE content",
+        "Useful for identifying specialized media for REE extraction or bioaccumulation research" .
+
+culturemech:import_date a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "import_date" ;
+    skos:definition "Date of import (ISO 8601)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "ISO 8601 date format YYYY-MM-DD" .
+
+culturemech:incubation_atmosphere a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "incubation_atmosphere" ;
+    skos:definition "Atmospheric conditions for incubation" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Imported from CommunityMech when available",
+        "Indicates whether the organism requires aerobic, anaerobic, or microaerophilic conditions" .
+
+culturemech:label a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "label" ;
+    skos:definition "Ontology term label" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:light_condition a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "light_condition" ;
+    skos:definition "Light exposure requirement" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:light_cycle a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "light_cycle" ;
+    skos:definition "Photoperiod light:dark cycle (e.g., \"16:8\", \"continuous light\", \"24:0\")" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "For algae and cyanobacteria cultures",
+        "{'Format': 'hours_light:hours_dark'}" .
+
+culturemech:light_intensity a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "light_intensity" ;
+    skos:definition "Light intensity for photosynthetic organisms (e.g., \"50 µmol photons m⁻² s⁻¹\")" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "For algae and cyanobacteria cultures",
+        "{'Common units': 'µE/m²/s, µmol photons m⁻² s⁻¹, lux, or foot-candles'}" .
+
+culturemech:light_quality a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "light_quality" ;
+    skos:definition "Light spectrum or wavelength (e.g., \"cool white fluorescent\", \"red LED 660nm\")" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "For algae and cyanobacteria cultures" .
+
+culturemech:media_term a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "media_term" ;
+    skos:definition "Reference to authoritative media database" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:mediaingredientmech_id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "mediaingredientmech_id" ;
+    skos:definition "MediaIngredientMech ID" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:medium_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "medium_type" ;
+    skos:definition "Classification of the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:merge_confidence a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_confidence" ;
+    skos:definition "Confidence score for merge decision (0.0-1.0)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "0.7 = Hydration variant only",
+        "0.8 = Same parent ingredients",
+        "0.9 = Identical fingerprint",
+        "1.0 = Explicit merge rule (highest confidence)" .
+
+culturemech:merge_fingerprint a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_fingerprint" ;
+    skos:definition "SHA256 hash of ingredient set for deduplication tracking" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Generated from sorted list of CHEBI IDs and normalized ingredient names",
+        "Includes both direct ingredients and solution compositions",
+        "Order-independent, concentration-independent" .
+
+culturemech:merge_metadata a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_metadata" ;
+    skos:definition "Metadata about merge process and quality" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables quality analysis and debugging",
+        "Populated during hierarchy-aware merge pipeline",
+        "Provides transparency about merge decisions" .
+
+culturemech:merge_mode a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_mode" ;
+    skos:definition "Merge mode used (conservative/aggressive/variant-aware)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "aggressive - Merge all variants with same parent",
+        "conservative - Only merge with explicit rules or exact match",
+        "variant-aware - Balanced approach, merge some variants" .
+
+culturemech:merge_reason a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_reason" ;
+    skos:definition "Why these recipes were merged together" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Indicates which merge rule triggered the merge",
+        "Used for quality analysis and debugging" .
+
+culturemech:merge_version a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "merge_version" ;
+    skos:definition "Version of merge pipeline used" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Enables tracking pipeline changes",
+        "Example \"hierarchy-v1.0\"" .
+
+culturemech:method a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "method" ;
+    skos:definition "Sterilization technique" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:modifier a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "modifier" ;
+    skos:definition "Modification in variants (INCREASED, DECREASED)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:molecular_weight a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "molecular_weight" ;
+    skos:definition "Molecular weight in g/mol" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:organism_culture_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "organism_culture_type" ;
+    skos:definition "Whether this medium targets a pure isolate culture or a mixed microbial community" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:origin a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "origin" ;
+    skos:definition "Source repository name" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Indicates which X-Mech repository this record was imported from" .
+
+culturemech:original_category a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "original_category" ;
+    skos:definition "Original category assignment before merge" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:original_name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "original_name" ;
+    skos:definition "Original name from source database before filename sanitization. May contain special characters like /, :, %, (, ), ', \", <, >, &, #, etc. This field preserves the exact name as it appears in the source database." ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:parent_ingredient a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "parent_ingredient" ;
+    skos:definition "Reference to parent chemical entity from MediaIngredientMech" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Example CaCl2·2H2O → parent is \"Calcium chloride\"",
+        "Links to canonical parent in MediaIngredientMech hierarchy" .
+
+culturemech:per_volume a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "per_volume" ;
+    skos:definition "Volume basis (e.g., \"per liter\", \"per 100 mL\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:ph_range a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ph_range" ;
+    skos:definition "Acceptable pH range (e.g., \"6.8-7.2\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:ph_value a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "ph_value" ;
+    skos:definition "Target pH value" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:physical_state a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "physical_state" ;
+    skos:definition "Physical form of the medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:precursor a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "precursor" ;
+    skos:definition "Precursor molecule (e.g., thiamine → TPP)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:precursor_term a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "precursor_term" ;
+    skos:definition "CHEBI term for precursor" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:preparation_notes a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "preparation_notes" ;
+    skos:definition "How to prepare the stock solution" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:pressure a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "pressure" ;
+    skos:definition "Pressure in psi or kPa (for autoclaving)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:product_url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "product_url" ;
+    skos:definition "Direct product link" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:purpose a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "purpose" ;
+    skos:definition "Why this variant exists" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:salinity a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "salinity" ;
+    skos:definition "Salt concentration for marine/brackish media (e.g., \"35 ppt\", \"3.5%\")" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "For marine algae and halophilic organisms" .
+
+culturemech:snippet a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "snippet" ;
+    skos:definition "Exact quote from paper (if PMID/DOI available)" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Must be an exact substring of the cited paper's text.",
+        "This is automatically validated by the linkml-reference-validator tool." .
+
+culturemech:source a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "source" ;
+    skos:definition "Source database (KOMODO, MediaDive, TOGO, etc.)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:source_data a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "source_data" ;
+    skos:definition "Provenance tracking for records imported from other repositories" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Preserves bidirectional linking between repositories",
+        "Records imported from CommunityMech include community IDs and evidence" .
+
+culturemech:source_id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "source_id" ;
+    skos:definition "Original identifier in source database" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:step_number a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "step_number" ;
+    skos:definition "Sequential order" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:sterilization a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "sterilization" ;
+    skos:definition "Sterilization method and parameters" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:storage a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "storage" ;
+    skos:definition "Storage conditions for prepared medium" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:storage_conditions a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "storage_conditions" ;
+    skos:definition "Storage requirements for the stock" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:strain a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "strain" ;
+    skos:definition "Specific strain designation (e.g., \"K-12\", \"MG1655\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:supplier_catalog a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "supplier_catalog" ;
+    skos:definition "Supplier information for sourcing" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:supplier_info a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "supplier_info" ;
+    skos:definition "Commercial supplier if premix" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:supplier_name a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "supplier_name" ;
+    skos:definition "Vendor name (e.g., \"Sigma-Aldrich\", \"Thermo Fisher\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:supports a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "supports" ;
+    skos:definition "Level of support" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:target_abundance a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "target_abundance" ;
+    skos:definition "Target relative abundance in community (0.0-1.0)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:temperature_range a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "temperature_range" ;
+    skos:definition "Optimal temperature range (e.g., \"20-25°C\", \"room temperature\")" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:temperature_value a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "temperature_value" ;
+    skos:definition "Specific culture temperature in Celsius" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:timestamp a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "timestamp" ;
+    skos:definition "ISO 8601 timestamp" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:title a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "title" ;
+    skos:definition "Publication title" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:transporter_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "transporter_type" ;
+    skos:definition "Classification of transporter" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:url a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "url" ;
+    skos:definition "Direct link to dataset" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:variant_fingerprint a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "variant_fingerprint" ;
+    skos:definition "SHA256 hash preserving variant distinctions" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Generated only when hierarchy enrichment is available",
+        "Keeps hydrates separate from anhydrous forms",
+        "Preserves important chemical specificity during merge",
+        "Uses parent CHEBI + variant type (HYDRATE, ANHYDROUS, SALT_FORM, etc.)" .
+
+culturemech:variant_type a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "variant_type" ;
+    skos:definition "Type of chemical variant" ;
+    skos:inScheme <https://w3id.org/culturemech> ;
+    skos:note "Describes relationship to parent (HYDRATE, SALT_FORM, ANHYDROUS, etc.)",
+        "Populated from MediaIngredientMech metadata" .
+
+culturemech:year a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "year" ;
+    skos:definition "Publication year" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:ChemicalEntityTerm a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "ChemicalEntityTerm" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a rdfs:Datatype ;
+                    owl:onDatatype xsd:string ;
+                    owl:withRestrictions ( [ xsd:pattern "^CHEBI:\\d+$" ] ) ] ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        culturemech:Term ;
+    skos:definition "A CHEBI term representing a chemical entity" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:genes a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:Descriptor a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Descriptor" ;
+    skos:definition "Base class for descriptor pattern. Descriptors have a human-readable preferred_term and optional ontology term." ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:OrganismCultureTypeEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/OrganismCultureTypeEnum#isolate> <https://w3id.org/culturemech/OrganismCultureTypeEnum#community> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/OrganismCultureTypeEnum#community>,
+        <https://w3id.org/culturemech/OrganismCultureTypeEnum#isolate> .
+
+culturemech:EvidenceItem a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "EvidenceItem" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:snippet ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:reference ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:snippet ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:explanation ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:explanation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:snippet ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:supports ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom culturemech:EvidenceItemSupportEnum ;
+            owl:onProperty culturemech:supports ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:explanation ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:supports ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:reference ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:reference ] ;
+    skos:definition "Evidence supporting a claim about media formulation or performance" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:Term a owl:Class,
+        linkml:ClassDefinition ;
+    rdfs:label "Term" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:label ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:minCardinality 1 ;
+            owl:onProperty culturemech:id ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty culturemech:label ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty culturemech:label ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom linkml:String ;
+            owl:onProperty culturemech:id ] ;
+    skos:definition "Base class for ontology term references. Subclasses specify id_prefixes for validation." ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:action a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:category a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:concentration a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:duration a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:mediaingredientmech_term a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:reference a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:shelf_life a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:unit a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:value a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:AtmosphereEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/AtmosphereEnum#AEROBIC> <https://w3id.org/culturemech/AtmosphereEnum#ANAEROBIC> <https://w3id.org/culturemech/AtmosphereEnum#MICROAEROPHILIC> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/AtmosphereEnum#AEROBIC>,
+        <https://w3id.org/culturemech/AtmosphereEnum#ANAEROBIC>,
+        <https://w3id.org/culturemech/AtmosphereEnum#MICROAEROPHILIC> .
+
+culturemech:LightConditionEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/LightConditionEnum#DARK> <https://w3id.org/culturemech/LightConditionEnum#LIGHT_PROTECTED> <https://w3id.org/culturemech/LightConditionEnum#AMBIENT> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/LightConditionEnum#AMBIENT>,
+        <https://w3id.org/culturemech/LightConditionEnum#DARK>,
+        <https://w3id.org/culturemech/LightConditionEnum#LIGHT_PROTECTED> .
+
+culturemech:ModifierEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/ModifierEnum#INCREASED> <https://w3id.org/culturemech/ModifierEnum#DECREASED> <https://w3id.org/culturemech/ModifierEnum#ABSENT> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/ModifierEnum#ABSENT>,
+        <https://w3id.org/culturemech/ModifierEnum#DECREASED>,
+        <https://w3id.org/culturemech/ModifierEnum#INCREASED> .
+
+culturemech:TemperatureUnitEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( UO:0000027 <https://w3id.org/culturemech/TemperatureUnitEnum#FAHRENHEIT> UO:0000012 ) ;
+    linkml:permissible_values UO:0000012,
+        UO:0000027,
+        <https://w3id.org/culturemech/TemperatureUnitEnum#FAHRENHEIT> .
+
+culturemech:PhysicalStateEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/PhysicalStateEnum#LIQUID> <https://w3id.org/culturemech/PhysicalStateEnum#SOLID_AGAR> <https://w3id.org/culturemech/PhysicalStateEnum#SEMISOLID> <https://w3id.org/culturemech/PhysicalStateEnum#BIPHASIC> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/PhysicalStateEnum#BIPHASIC>,
+        <https://w3id.org/culturemech/PhysicalStateEnum#LIQUID>,
+        <https://w3id.org/culturemech/PhysicalStateEnum#SEMISOLID>,
+        <https://w3id.org/culturemech/PhysicalStateEnum#SOLID_AGAR> .
+
+culturemech:temperature a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:CofactorCategoryEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/CofactorCategoryEnum#VITAMINS> <https://w3id.org/culturemech/CofactorCategoryEnum#METALS> <https://w3id.org/culturemech/CofactorCategoryEnum#NUCLEOTIDES> <https://w3id.org/culturemech/CofactorCategoryEnum#ENERGY_TRANSFER> <https://w3id.org/culturemech/CofactorCategoryEnum#OTHER_SPECIALIZED> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/CofactorCategoryEnum#ENERGY_TRANSFER>,
+        <https://w3id.org/culturemech/CofactorCategoryEnum#METALS>,
+        <https://w3id.org/culturemech/CofactorCategoryEnum#NUCLEOTIDES>,
+        <https://w3id.org/culturemech/CofactorCategoryEnum#OTHER_SPECIALIZED>,
+        <https://w3id.org/culturemech/CofactorCategoryEnum#VITAMINS> .
+
+culturemech:EvidenceItemSupportEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/EvidenceItemSupportEnum#SUPPORT> <https://w3id.org/culturemech/EvidenceItemSupportEnum#REFUTE> <https://w3id.org/culturemech/EvidenceItemSupportEnum#PARTIAL> <https://w3id.org/culturemech/EvidenceItemSupportEnum#NO_EVIDENCE> <https://w3id.org/culturemech/EvidenceItemSupportEnum#WRONG_STATEMENT> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/EvidenceItemSupportEnum#NO_EVIDENCE>,
+        <https://w3id.org/culturemech/EvidenceItemSupportEnum#PARTIAL>,
+        <https://w3id.org/culturemech/EvidenceItemSupportEnum#REFUTE>,
+        <https://w3id.org/culturemech/EvidenceItemSupportEnum#SUPPORT>,
+        <https://w3id.org/culturemech/EvidenceItemSupportEnum#WRONG_STATEMENT> .
+
+culturemech:MergeReasonEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/MergeReasonEnum#EXPLICIT_MERGE_RULE> <https://w3id.org/culturemech/MergeReasonEnum#IDENTICAL_FINGERPRINT> <https://w3id.org/culturemech/MergeReasonEnum#SAME_PARENT_INGREDIENTS> <https://w3id.org/culturemech/MergeReasonEnum#HYDRATION_VARIANT_ONLY> <https://w3id.org/culturemech/MergeReasonEnum#NO_MATCH> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/MergeReasonEnum#EXPLICIT_MERGE_RULE>,
+        <https://w3id.org/culturemech/MergeReasonEnum#HYDRATION_VARIANT_ONLY>,
+        <https://w3id.org/culturemech/MergeReasonEnum#IDENTICAL_FINGERPRINT>,
+        <https://w3id.org/culturemech/MergeReasonEnum#NO_MATCH>,
+        <https://w3id.org/culturemech/MergeReasonEnum#SAME_PARENT_INGREDIENTS> .
+
+culturemech:SterilizationMethodEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/SterilizationMethodEnum#AUTOCLAVE> <https://w3id.org/culturemech/SterilizationMethodEnum#FILTER> <https://w3id.org/culturemech/SterilizationMethodEnum#DRY_HEAT> <https://w3id.org/culturemech/SterilizationMethodEnum#TYNDALLIZATION> <https://w3id.org/culturemech/SterilizationMethodEnum#NONE> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/SterilizationMethodEnum#AUTOCLAVE>,
+        <https://w3id.org/culturemech/SterilizationMethodEnum#DRY_HEAT>,
+        <https://w3id.org/culturemech/SterilizationMethodEnum#FILTER>,
+        <https://w3id.org/culturemech/SterilizationMethodEnum#NONE>,
+        <https://w3id.org/culturemech/SterilizationMethodEnum#TYNDALLIZATION> .
+
+culturemech:VariantTypeEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/VariantTypeEnum#HYDRATE> <https://w3id.org/culturemech/VariantTypeEnum#SALT_FORM> <https://w3id.org/culturemech/VariantTypeEnum#ANHYDROUS> <https://w3id.org/culturemech/VariantTypeEnum#NAMED_HYDRATE> <https://w3id.org/culturemech/VariantTypeEnum#CHEMICAL_VARIANT> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/VariantTypeEnum#ANHYDROUS>,
+        <https://w3id.org/culturemech/VariantTypeEnum#CHEMICAL_VARIANT>,
+        <https://w3id.org/culturemech/VariantTypeEnum#HYDRATE>,
+        <https://w3id.org/culturemech/VariantTypeEnum#NAMED_HYDRATE>,
+        <https://w3id.org/culturemech/VariantTypeEnum#SALT_FORM> .
+
+culturemech:description a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:evidence a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:id a owl:ObjectProperty,
+        linkml:SlotDefinition ;
+    rdfs:label "id" ;
+    skos:definition "Ontology identifier (CURIE)" ;
+    skos:inScheme <https://w3id.org/culturemech> .
+
+culturemech:name a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:MediumTypeEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( NCIT:C64372 NCIT:C64371 <https://w3id.org/culturemech/MediumTypeEnum#SELECTIVE> <https://w3id.org/culturemech/MediumTypeEnum#DIFFERENTIAL> <https://w3id.org/culturemech/MediumTypeEnum#ENRICHMENT> <https://w3id.org/culturemech/MediumTypeEnum#MINIMAL> ) ;
+    linkml:permissible_values NCIT:C64371,
+        NCIT:C64372,
+        <https://w3id.org/culturemech/MediumTypeEnum#DIFFERENTIAL>,
+        <https://w3id.org/culturemech/MediumTypeEnum#ENRICHMENT>,
+        <https://w3id.org/culturemech/MediumTypeEnum#MINIMAL>,
+        <https://w3id.org/culturemech/MediumTypeEnum#SELECTIVE> .
+
+culturemech:CategoryEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/CategoryEnum#bacterial> <https://w3id.org/culturemech/CategoryEnum#fungal> <https://w3id.org/culturemech/CategoryEnum#archaea> <https://w3id.org/culturemech/CategoryEnum#specialized> <https://w3id.org/culturemech/CategoryEnum#algae> <https://w3id.org/culturemech/CategoryEnum#imported> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/CategoryEnum#algae>,
+        <https://w3id.org/culturemech/CategoryEnum#archaea>,
+        <https://w3id.org/culturemech/CategoryEnum#bacterial>,
+        <https://w3id.org/culturemech/CategoryEnum#fungal>,
+        <https://w3id.org/culturemech/CategoryEnum#imported>,
+        <https://w3id.org/culturemech/CategoryEnum#specialized> .
+
+culturemech:term a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:preferred_term a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+culturemech:ConcentrationUnitEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( UO:0000175 <https://w3id.org/culturemech/ConcentrationUnitEnum#MG_PER_L> <https://w3id.org/culturemech/ConcentrationUnitEnum#MICROG_PER_L> UO:0000062 <https://w3id.org/culturemech/ConcentrationUnitEnum#MILLIMOLAR> <https://w3id.org/culturemech/ConcentrationUnitEnum#MICROMOLAR> <https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_W_V> <https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_V_V> <https://w3id.org/culturemech/ConcentrationUnitEnum#VARIABLE> ) ;
+    linkml:permissible_values UO:0000062,
+        UO:0000175,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#MG_PER_L>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#MICROG_PER_L>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#MICROMOLAR>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#MILLIMOLAR>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_V_V>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#PERCENT_W_V>,
+        <https://w3id.org/culturemech/ConcentrationUnitEnum#VARIABLE> .
+
+culturemech:CellularRoleEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/CellularRoleEnum#PRIMARY_DEGRADER> <https://w3id.org/culturemech/CellularRoleEnum#REDUCTIVE_DEGRADER> <https://w3id.org/culturemech/CellularRoleEnum#OXIDATIVE_DEGRADER> <https://w3id.org/culturemech/CellularRoleEnum#BIOTRANSFORMER> <https://w3id.org/culturemech/CellularRoleEnum#SYNERGIST> <https://w3id.org/culturemech/CellularRoleEnum#BRIDGE_ORGANISM> <https://w3id.org/culturemech/CellularRoleEnum#ELECTRON_SHUTTLE> <https://w3id.org/culturemech/CellularRoleEnum#DETOXIFIER> <https://w3id.org/culturemech/CellularRoleEnum#COMMENSAL> <https://w3id.org/culturemech/CellularRoleEnum#COMPETITOR> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/CellularRoleEnum#BIOTRANSFORMER>,
+        <https://w3id.org/culturemech/CellularRoleEnum#BRIDGE_ORGANISM>,
+        <https://w3id.org/culturemech/CellularRoleEnum#COMMENSAL>,
+        <https://w3id.org/culturemech/CellularRoleEnum#COMPETITOR>,
+        <https://w3id.org/culturemech/CellularRoleEnum#DETOXIFIER>,
+        <https://w3id.org/culturemech/CellularRoleEnum#ELECTRON_SHUTTLE>,
+        <https://w3id.org/culturemech/CellularRoleEnum#OXIDATIVE_DEGRADER>,
+        <https://w3id.org/culturemech/CellularRoleEnum#PRIMARY_DEGRADER>,
+        <https://w3id.org/culturemech/CellularRoleEnum#REDUCTIVE_DEGRADER>,
+        <https://w3id.org/culturemech/CellularRoleEnum#SYNERGIST> .
+
+culturemech:PreparationActionEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/PreparationActionEnum#DISSOLVE> <https://w3id.org/culturemech/PreparationActionEnum#MIX> <https://w3id.org/culturemech/PreparationActionEnum#HEAT> <https://w3id.org/culturemech/PreparationActionEnum#COOL> <https://w3id.org/culturemech/PreparationActionEnum#AUTOCLAVE> <https://w3id.org/culturemech/PreparationActionEnum#FILTER_STERILIZE> <https://w3id.org/culturemech/PreparationActionEnum#ADJUST_PH> <https://w3id.org/culturemech/PreparationActionEnum#ADD_AGAR> <https://w3id.org/culturemech/PreparationActionEnum#POUR_PLATES> <https://w3id.org/culturemech/PreparationActionEnum#ALIQUOT> <https://w3id.org/culturemech/PreparationActionEnum#STORE> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/PreparationActionEnum#ADD_AGAR>,
+        <https://w3id.org/culturemech/PreparationActionEnum#ADJUST_PH>,
+        <https://w3id.org/culturemech/PreparationActionEnum#ALIQUOT>,
+        <https://w3id.org/culturemech/PreparationActionEnum#AUTOCLAVE>,
+        <https://w3id.org/culturemech/PreparationActionEnum#COOL>,
+        <https://w3id.org/culturemech/PreparationActionEnum#DISSOLVE>,
+        <https://w3id.org/culturemech/PreparationActionEnum#FILTER_STERILIZE>,
+        <https://w3id.org/culturemech/PreparationActionEnum#HEAT>,
+        <https://w3id.org/culturemech/PreparationActionEnum#MIX>,
+        <https://w3id.org/culturemech/PreparationActionEnum#POUR_PLATES>,
+        <https://w3id.org/culturemech/PreparationActionEnum#STORE> .
+
+culturemech:TransporterTypeEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/TransporterTypeEnum#ABC> <https://w3id.org/culturemech/TransporterTypeEnum#MFS> <https://w3id.org/culturemech/TransporterTypeEnum#PTS> <https://w3id.org/culturemech/TransporterTypeEnum#TONB> <https://w3id.org/culturemech/TransporterTypeEnum#SYMPORTER> <https://w3id.org/culturemech/TransporterTypeEnum#ANTIPORTER> <https://w3id.org/culturemech/TransporterTypeEnum#UNIPORTER> <https://w3id.org/culturemech/TransporterTypeEnum#PORIN> <https://w3id.org/culturemech/TransporterTypeEnum#SIDEROPHORE_RECEPTOR> <https://w3id.org/culturemech/TransporterTypeEnum#DEHALOGENASE> <https://w3id.org/culturemech/TransporterTypeEnum#FLUORIDE_EXPORTER> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/TransporterTypeEnum#ABC>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#ANTIPORTER>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#DEHALOGENASE>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#FLUORIDE_EXPORTER>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#MFS>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#PORIN>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#PTS>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#SIDEROPHORE_RECEPTOR>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#SYMPORTER>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#TONB>,
+        <https://w3id.org/culturemech/TransporterTypeEnum#UNIPORTER> .
+
+culturemech:IngredientRoleEnum a owl:Class,
+        linkml:EnumDefinition ;
+    owl:unionOf ( <https://w3id.org/culturemech/IngredientRoleEnum#CARBON_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#NITROGEN_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#MINERAL> <https://w3id.org/culturemech/IngredientRoleEnum#TRACE_ELEMENT> <https://w3id.org/culturemech/IngredientRoleEnum#BUFFER> <https://w3id.org/culturemech/IngredientRoleEnum#VITAMIN_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#SALT> <https://w3id.org/culturemech/IngredientRoleEnum#PROTEIN_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#AMINO_ACID_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#SOLIDIFYING_AGENT> <https://w3id.org/culturemech/IngredientRoleEnum#ENERGY_SOURCE> <https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_ACCEPTOR> <https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_DONOR> <https://w3id.org/culturemech/IngredientRoleEnum#COFACTOR_PROVIDER> ) ;
+    linkml:permissible_values <https://w3id.org/culturemech/IngredientRoleEnum#AMINO_ACID_SOURCE>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#BUFFER>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#CARBON_SOURCE>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#COFACTOR_PROVIDER>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_ACCEPTOR>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#ELECTRON_DONOR>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#ENERGY_SOURCE>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#MINERAL>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#NITROGEN_SOURCE>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#PROTEIN_SOURCE>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#SALT>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#SOLIDIFYING_AGENT>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#TRACE_ELEMENT>,
+        <https://w3id.org/culturemech/IngredientRoleEnum#VITAMIN_SOURCE> .
+
+culturemech:notes a owl:ObjectProperty,
+        linkml:SlotDefinition .
+
+<https://w3id.org/culturemech> a owl:Ontology ;
+    rdfs:label "culturemech" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "CultureMech - Microbial Growth Media Schema" ;
+    skos:definition """LinkML schema for modeling microbial culture media recipes and formulations.
+Follows the dismech architecture pattern with descriptor classes for ontology grounding.
+""" .
+

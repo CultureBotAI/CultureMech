@@ -1,5 +1,5 @@
 id: CultureMech:009727
-name: Modified Sulfate Reducing Bacteria Medium
+name: modified_sulfate_reducing_bacteria_medium
 original_name: Modified Sulfate Reducing Bacteria Medium
 category: bacterial
 medium_type: COMPLEX
@@ -233,6 +233,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.385509+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Sulfate Reducing Bacteria Medium" to "modified_sulfate_reducing_bacteria_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

@@ -1,0 +1,87 @@
+id: CultureMech:001792
+name: spirillum_gracile_medium
+original_name: SPIRILLUM GRACILE MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 654
+  term:
+    id: mediadive.medium:654
+    label: SPIRILLUM GRACILE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium654.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if required)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.848954Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 654'
+- timestamp: '2026-03-13T06:19:07.253464Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001792'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.536211+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SPIRILLUM GRACILE MEDIUM" to "spirillum_gracile_medium"
+    for consistent matching

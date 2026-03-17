@@ -1,0 +1,49 @@
+id: CultureMech:004349
+name: trace_metals_solution_pfennig_lippert_1966
+original_name: Trace metals solution (Pfennig & Lippert, 1966)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 3-4
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072 | DSMZ Medium: 2072 (mediadive.medium:2072)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2072
+  term:
+    id: komodo.medium:2072
+    label: Trace metals solution (Pfennig & Lippert, 1966)
+ingredients:
+- preferred_term: HCl
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000150
+    label: HCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2072'
+- timestamp: '2026-03-13T06:19:26.641177Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004349'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:33.148880'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:41.768152+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trace metals solution (Pfennig & Lippert, 1966)" to
+    "trace_metals_solution_pfennig_lippert_1966" for consistent matching

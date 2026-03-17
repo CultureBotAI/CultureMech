@@ -1,0 +1,41 @@
+id: CultureMech:007493
+name: '404'
+original_name: '404'
+category: bacterial
+description: 404. NBRC 403.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium
+    glutamate6gAgar (if needed)15gDistilled water1LpH 6.7±0.2
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.959767Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 403, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=403.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:20.830923Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 10 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.248371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007493'
+merge_fingerprint: 67a3b7e56b9352f682e3dcf986438cf055a98c1117299efff5ac3c2f90b87e5b
+merged_from:
+- NBRC_404

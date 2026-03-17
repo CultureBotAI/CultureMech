@@ -1,5 +1,5 @@
 id: CultureMech:010288
-name: Modified Desulfovibrio Medium
+name: modified_desulfovibrio_medium
 original_name: Modified Desulfovibrio Medium
 category: bacterial
 medium_type: COMPLEX
@@ -39,6 +39,11 @@ curation_history:
   date: '2026-03-14T21:07:03.598082'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:31.666209+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Desulfovibrio Medium" to "modified_desulfovibrio_medium"
+    for consistent matching
 solutions:
 - preferred_term: DESULFOVIBRIO MEDIUM (see Medium [M384])
   composition: []

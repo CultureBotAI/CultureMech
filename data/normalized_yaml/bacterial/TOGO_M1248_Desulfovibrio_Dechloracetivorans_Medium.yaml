@@ -1,5 +1,5 @@
 id: CultureMech:007778
-name: Desulfovibrio Dechloracetivorans Medium
+name: desulfovibrio_dechloracetivorans_medium
 original_name: Desulfovibrio Dechloracetivorans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -172,6 +172,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.805094+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfovibrio Dechloracetivorans Medium" to "desulfovibrio_dechloracetivorans_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace metal solution SL12 (see Medium [M581])
   composition: []

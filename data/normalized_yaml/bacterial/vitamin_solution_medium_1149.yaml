@@ -1,0 +1,30 @@
+id: CultureMech:004946
+name: vitamin_solution_medium_1149
+original_name: Vitamin solution (medium 1149)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3108
+  term:
+    id: komodo.medium:3108
+    label: Vitamin solution (medium 1149)
+notes: 'Source: KOMODO ModelSEED | ID: 3108 | DSMZ Medium: 3108 (mediadive.medium:3108)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3108'
+- timestamp: '2026-03-13T06:19:29.138942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004946'
+- timestamp: '2026-03-17T19:45:44.669402+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vitamin solution (medium 1149)" to "vitamin_solution_medium_1149"
+    for consistent matching

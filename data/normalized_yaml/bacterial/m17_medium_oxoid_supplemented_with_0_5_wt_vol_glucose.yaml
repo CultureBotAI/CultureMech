@@ -1,0 +1,98 @@
+id: CultureMech:009418
+name: m17_medium_oxoid_supplemented_with_0_5_wt_vol_glucose
+original_name: M17 medium (Oxoid) supplemented with 0.5% (wt/vol) glucose
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1050.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 2 duplicates: 950.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: M17 broth (Oxoid)
+  concentration:
+    value: '37.25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Lactose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:36218
+    label: beta-lactose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001003
+    label: Lactose
+media_term:
+  preferred_term: TOGO Medium M2883
+  term:
+    id: TOGO:M2883
+    label: M17 medium (Oxoid) supplemented with 0.5% (wt/vol) glucose
+notes: 'Source: https://togomedium.org/medium/M2883'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.377109Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2883'
+- timestamp: '2026-01-28T19:48:12.141272Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:20.028398+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:08:47.981064Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.110473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009418'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:58.717128'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.060950+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M17 medium (Oxoid) supplemented with 0.5% (wt/vol)
+    glucose" to "m17_medium_oxoid_supplemented_with_0_5_wt_vol_glucose" for consistent
+    matching
+solutions:
+- preferred_term: Lactose solution 10% (w/v)
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  name: Unknown solution

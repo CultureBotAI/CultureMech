@@ -1,5 +1,5 @@
 id: CultureMech:004623
-name: Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)
+name: peptone_meat_extract_soil_extract_agar_pfe
 original_name: Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)
 category: bacterial
 medium_type: COMPLEX
@@ -64,3 +64,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.988419+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Peptone - MEAT EXTRACT - SOIL EXTRACT AGAR (PFE)" to
+    "peptone_meat_extract_soil_extract_agar_pfe" for consistent matching

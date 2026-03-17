@@ -1,5 +1,5 @@
 id: CultureMech:009593
-name: Modified SME medium
+name: modified_sme_medium
 original_name: Modified SME medium
 category: bacterial
 medium_type: COMPLEX
@@ -316,6 +316,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.189534+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified SME medium" to "modified_sme_medium" for consistent
+    matching
 solutions:
 - preferred_term: Ttrace element solution
   composition: []

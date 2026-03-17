@@ -1,0 +1,46 @@
+id: CultureMech:002775
+name: acidic_glycerol_asparagine_agar_ph_5_0
+original_name: ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.0
+media_term:
+  preferred_term: JCM Medium J422
+  term:
+    id: mediadive.medium:J422
+    label: ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=422'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Glycerol-asparagine agar (ISP-5) (see Medium No. 60) and adjust
+    pH to 5.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.575976Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J422'
+- timestamp: '2026-02-03T11:26:54.882653'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.650338Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002775'
+- timestamp: '2026-03-17T19:45:29.075265+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)" to "acidic_glycerol_asparagine_agar_ph_5_0"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

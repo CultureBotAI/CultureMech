@@ -1,5 +1,5 @@
 id: CultureMech:001759
-name: MMB MEDIUM
+name: mmb_medium
 original_name: MMB MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -261,3 +261,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:19.257850+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMB MEDIUM" to "mmb_medium" for consistent matching

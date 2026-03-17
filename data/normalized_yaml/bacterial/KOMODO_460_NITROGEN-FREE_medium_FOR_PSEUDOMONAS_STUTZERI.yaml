@@ -1,5 +1,5 @@
 id: CultureMech:005466
-name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+name: nitrogen_free_medium_for_pseudomonas_stutzeri
 original_name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
 category: bacterial
 medium_type: COMPLEX
@@ -86,3 +86,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.216620+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI" to "nitrogen_free_medium_for_pseudomonas_stutzeri"
+    for consistent matching

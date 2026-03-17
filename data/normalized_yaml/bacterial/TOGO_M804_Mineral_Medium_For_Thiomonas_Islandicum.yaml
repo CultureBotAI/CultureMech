@@ -1,5 +1,5 @@
 id: CultureMech:010216
-name: Mineral Medium For Thiomonas Islandicum
+name: mineral_medium_for_thiomonas_islandicum
 original_name: Mineral Medium For Thiomonas Islandicum
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:03.185150'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:31.119057+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral Medium For Thiomonas Islandicum" to "mineral_medium_for_thiomonas_islandicum"
+    for consistent matching
 solutions:
 - preferred_term: MINERAL MEDIUM FOR HYDROGENOPHILUS ISLANDICUM (see Medium [M803])
   composition: []

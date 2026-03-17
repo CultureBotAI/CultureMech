@@ -1,0 +1,98 @@
+id: CultureMech:000571
+name: hd_medium_1_10_diluted_modified
+original_name: HD-MEDIUM, 1:10 diluted, modified
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 5.5
+media_term:
+  preferred_term: DSMZ Medium 1135
+  term:
+    id: mediadive.medium:1135
+    label: HD-MEDIUM, 1:10 diluted, modified
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1135.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '2000.0'
+    unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 1000.0, 500.0, 500.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 5.5 (with NaOh/HCl)
+- step_number: 2
+  action: HEAT
+  description: Sterilize separately. For solid medium combine solution A with solution
+    B at 50°C.
+- step_number: 3
+  action: HEAT
+  description: Liquid and solid medium possible. Incubation at 20°C, 4 days.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.479899Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1135'
+- timestamp: '2026-03-13T03:08:38.431634Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:56.464914Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000571'
+- timestamp: '2026-03-17T06:29:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:07.554485+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HD-MEDIUM, 1:10 diluted, modified" to "hd_medium_1_10_diluted_modified"
+    for consistent matching

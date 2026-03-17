@@ -1,5 +1,5 @@
 id: CultureMech:001140
-name: AIDINGIMONAS MEDIUM
+name: aidingimonas_medium
 original_name: AIDINGIMONAS MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -59,4 +59,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:13.288274+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AIDINGIMONAS MEDIUM" to "aidingimonas_medium" for consistent
+    matching
 high_metal: true

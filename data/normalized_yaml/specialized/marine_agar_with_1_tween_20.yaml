@@ -1,0 +1,53 @@
+id: CultureMech:015421
+name: marine_agar_with_1_tween_20
+original_name: MARINE AGAR WITH 1% TWEEN 20
+category: specialized
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J768
+  term:
+    id: mediadive.medium:J768
+    label: MARINE AGAR WITH 1% TWEEN 20
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Marine agar 2216
+- preferred_term: Tween 20
+  term:
+    id: CHEBI:9784
+    label: Tween 20
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000804
+    label: Tween 20
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.541357Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J768'
+- timestamp: '2026-03-13T06:20:42.576972Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015421'
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:34.236214+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINE AGAR WITH 1% TWEEN 20" to "marine_agar_with_1_tween_20"
+    for consistent matching

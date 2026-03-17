@@ -1,5 +1,5 @@
 id: CultureMech:009191
-name: Gnys Medium
+name: gnys_medium
 original_name: Gnys Medium
 category: bacterial
 medium_type: COMPLEX
@@ -118,6 +118,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.544261+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Gnys Medium" to "gnys_medium" for consistent matching
 solutions:
 - preferred_term: Trace element solution SL8 (see Medium [M183])
   composition: []

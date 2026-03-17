@@ -1,5 +1,5 @@
 id: CultureMech:003826
-name: MEDIUM K
+name: medium_k
 original_name: MEDIUM K
 category: bacterial
 medium_type: DEFINED
@@ -112,3 +112,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.954453+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM K" to "medium_k" for consistent matching

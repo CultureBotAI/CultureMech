@@ -1,5 +1,5 @@
 id: CultureMech:009518
-name: Xylose-YP Broth
+name: xylose_yp_broth
 original_name: Xylose-YP Broth
 category: bacterial
 medium_type: COMPLEX
@@ -109,3 +109,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.538003+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Xylose-YP Broth" to "xylose_yp_broth" for consistent
+    matching

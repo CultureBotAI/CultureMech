@@ -1,0 +1,82 @@
+id: CultureMech:008056
+name: V-8 Juice Tap Water Agar
+original_name: V-8 Juice Tap Water Agar
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Tap water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M1511
+  term:
+    id: TOGO:M1511
+    label: V-8 Juice Tap Water Agar
+notes: 'Source: https://togomedium.org/medium/M1511
+
+  Original source: NBRC - NBRC_M296
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=296'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.778251Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1511'
+- timestamp: '2026-01-28T19:48:28.527710Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:47.228065+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.265723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008056'
+- timestamp: '2026-03-15T03:04:01.471440+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1511_V-8_Juice_Tap_Water_Agar, TOGO_M1749_Unnamed_medium'
+high_metal: true
+solutions:
+- preferred_term: CaCO3*
+  composition: []
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
+    compound, Simple component'
+- preferred_term: V-8 Juice*
+  composition: []
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+synonyms:
+- name: TOGO Medium M1749
+  source: TOGO
+  source_id: TOGO:M1749
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1511_V-8_Juice_Tap_Water_Agar
+- TOGO_M1749_Unnamed_medium
+merge_fingerprint: ea6b07fcfbd18d750e65c102f8729b15491e6d77a1539c68bea8e26b5a5cf509

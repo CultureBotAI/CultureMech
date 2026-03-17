@@ -1,0 +1,34 @@
+id: CultureMech:009077
+name: tryptic_soy_broth_tsb
+original_name: tryptic soy broth (TSB)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: tryptic soy broth (TSB)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2506
+  term:
+    id: TOGO:M2506
+    label: tryptic soy broth (TSB)
+notes: 'Source: https://togomedium.org/medium/M2506'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.592964Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2506'
+- timestamp: '2026-03-13T06:20:02.388865Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009077'
+- timestamp: '2026-03-17T19:46:21.164761+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "tryptic soy broth (TSB)" to "tryptic_soy_broth_tsb"
+    for consistent matching

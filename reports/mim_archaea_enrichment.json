@@ -1,0 +1,454 @@
+{
+  "parameters": {
+    "yaml_dir": "data/normalized_yaml",
+    "category": "archaea",
+    "limit": null,
+    "dry_run": false,
+    "fuzzy_threshold": 0.95
+  },
+  "statistics": {
+    "files_processed": 62,
+    "ingredients_matched": 1150,
+    "solutions_matched": 0,
+    "no_match": 108,
+    "already_linked": 0,
+    "errors": 0,
+    "match_methods": {
+      "chebi_id": 1150
+    }
+  },
+  "unmatched_ingredients": [
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sigmacell alpha Type 50",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Meat peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone no. 3",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casein hydrolysate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sludge",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casein",
+      "chebi_id": "CHEBI:3448"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnCl2 x 2 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Maize extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "(NH4)6Mo7O24 x 4 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone no. 3",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casein peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Meat extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone no. 3",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    }
+  ]
+}

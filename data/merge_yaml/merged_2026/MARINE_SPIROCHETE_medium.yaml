@@ -1,0 +1,72 @@
+id: CultureMech:003513
+name: MARINE SPIROCHETE medium
+original_name: MARINE SPIROCHETE medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1008 | DSMZ Medium: 1008 (mediadive.medium:1008)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1008
+  term:
+    id: komodo.medium:1008
+    label: MARINE SPIROCHETE medium
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Charcoal-filtered, natural seawater
+  concentration:
+    value: '800'
+    unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1008'
+- timestamp: '2026-02-03T11:19:00.282816'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1008
+- timestamp: '2026-03-13T03:08:52.437636Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: KOH'
+- timestamp: '2026-03-13T06:19:20.308298Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003513'
+merge_fingerprint: 5d82f89be4776e5e2b0aecdd44e2a5ac15bb1af863e7ced8e0f090e4e36699e8
+merged_from:
+- KOMODO_1008_MARINE_SPIROCHETE_medium

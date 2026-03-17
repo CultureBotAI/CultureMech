@@ -1,4 +1,4 @@
-name: Glycerol Fermentation Medium for DIET Coculture
+name: glycerol_fermentation_medium_for_diet_coculture
 original_name: Glycerol Fermentation Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
@@ -136,3 +136,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.841080+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Glycerol Fermentation Medium for DIET Coculture" to
+    "glycerol_fermentation_medium_for_diet_coculture" for consistent matching

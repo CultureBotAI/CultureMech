@@ -1,0 +1,49 @@
+id: CultureMech:010249
+name: acidic_yeast_starch_agar_ph_5_0
+original_name: Acidic Yeast-Starch Agar (pH 5.0)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients: []
+media_term:
+  preferred_term: TOGO Medium M835
+  term:
+    id: TOGO:M835
+    label: Acidic Yeast-Starch Agar (pH 5.0)
+notes: 'Source: https://togomedium.org/medium/M835
+
+  Original source: JCM - JCM_M800
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=800'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.802635Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M835'
+- timestamp: '2026-03-09T08:04:33.859682+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:12.419787Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010249'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:03.369383'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T19:46:31.363045+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidic Yeast-Starch Agar (pH 5.0)" to "acidic_yeast_starch_agar_ph_5_0"
+    for consistent matching
+solutions:
+- preferred_term: Yeast--starch agar (A) (see Medium [M34])
+  composition: []
+  notes: Cross-reference to Medium M34
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution

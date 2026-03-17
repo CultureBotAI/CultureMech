@@ -1,0 +1,127 @@
+id: CultureMech:004176
+name: fluid_thioglycolate_medium
+original_name: FLUID THIOGLYCOLATE medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.1
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 153 | DSMZ Medium: 153
+  (mediadive.medium:153) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 153
+  term:
+    id: komodo.medium:153
+    label: FLUID THIOGLYCOLATE medium
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
+- preferred_term: L-Cystine
+  term:
+    id: CHEBI:16283
+    label: L-Cystine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001062
+    label: L-Cystine
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  notes: pH adjustment (extracted from notes)
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 153'
+- timestamp: '2026-02-03T11:18:55.717125'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 153
+- timestamp: '2026-03-13T03:08:41.514732Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: Na2CO3'
+- timestamp: '2026-03-13T06:19:25.652513Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004176'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:32.543737'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2CO3'
+- timestamp: '2026-03-17T06:29:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.590715+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FLUID THIOGLYCOLATE medium" to "fluid_thioglycolate_medium"
+    for consistent matching

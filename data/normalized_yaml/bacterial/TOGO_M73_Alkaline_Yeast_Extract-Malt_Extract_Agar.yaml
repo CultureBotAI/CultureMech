@@ -1,5 +1,5 @@
 id: CultureMech:010146
-name: Alkaline Yeast Extract-Malt Extract Agar
+name: alkaline_yeast_extract_malt_extract_agar
 original_name: Alkaline Yeast Extract-Malt Extract Agar
 category: bacterial
 medium_type: COMPLEX
@@ -38,6 +38,11 @@ curation_history:
   date: '2026-03-14T21:07:02.797573'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:30.611023+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaline Yeast Extract-Malt Extract Agar" to "alkaline_yeast_extract_malt_extract_agar"
+    for consistent matching
 solutions:
 - preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
   composition: []

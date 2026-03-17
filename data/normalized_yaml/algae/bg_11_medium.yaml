@@ -1,0 +1,130 @@
+id: CultureMech:000029
+name: bg_11_medium
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: K2HPO4(Sigma P 3786)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Citric Acid•H2O(Fisher A 104)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Ferric Ammonium Citrate'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2EDTA•2H2O(Sigma ED255)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2CO3(Baker 3604)'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: BG-11 Trace Metals Solution'
+- preferred_term: '10'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
+    3946)'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+notes: BG-11 MediumImproved recipe as of March 2009DirectionsFor 1 L TotalLiquid media:To
+  approximately 900 mL of dH2O add the first 9 components in the order specified while
+  stirring continuously.Bring total volume to 1 L with dH2O.Cover and autoclave medium.Allow
+  to cool then store at refrigerator temperature.Agar media:To approximately 400 mL
+  of dH2O add the first 9 components in the order specified while stirring continuously.Bring
+  total volume to 500 mL with dH2O.In a separate container add 15 g of agar to 500
+  mL of dH2O.Cover and autoclave both solutions.In a water bath allow both solutions
+  to cool to 45-50°C.Add sterile Sodium Thiosulfate (Component 10) to agar solution
+  and mix well.Combine both agar and liquid solutions, mix well. Note the agar can
+  solidify quickly.Allow to cool then store at refrigerator temperature.#ComponentAmountStock
+  Solution ConcentrationFinal Concentration1NaNO3(Fisher BP360-500)10 mL/L30 g/200
+  mL dH2O17.6 mM2K2HPO4(Sigma P 3786)10 mL/L0.8 g/200 mL dH2O0.23 mM3MgSO4•7H2O(Sigma
+  230391)10 mL/L1.5 g/200 mL dH2O0.3 mM4CaCl2•2H2O(Sigma C-3881)10 mL/L0.72 g/200
+  mL dH2O0.24 mM5Citric Acid•H2O(Fisher A 104)10 mL/L0.12 g/200 mL dH2O0.031 mM6Ferric
+  Ammonium Citrate10 mL/L0.12 g/200 mL dH2O0.021 mM7Na2EDTA•2H2O(Sigma ED255)10 mL/L0.02
+  g/200 mL dH2O0.0027 mM8Na2CO3(Baker 3604)10 mL/L0.4 g/200 mL dH2O0.19 mM9BG-11 Trace
+  Metals Solution1 mL/L10Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
+  3946)1 mL/L49.8 g/200 mL dH2O1 mM
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: bg-11-medium, URL: https://utex.org/products/bg-11-medium'
+- timestamp: '2026-03-13T06:18:52.945671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000029'
+- timestamp: '2026-03-17T19:45:03.909331+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BG-11 Medium" to "bg_11_medium" for consistent matching
+references:
+- reference_id: UTEX:bg-11-medium
+- reference_id: https://utex.org/products/bg-11-medium
+original_name: BG-11 Medium

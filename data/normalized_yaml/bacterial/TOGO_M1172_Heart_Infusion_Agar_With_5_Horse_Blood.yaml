@@ -1,5 +1,5 @@
 id: CultureMech:007697
-name: Heart Infusion Agar With 5% Horse Blood
+name: heart_infusion_agar_with_5_horse_blood
 original_name: Heart Infusion Agar With 5% Horse Blood
 category: bacterial
 medium_type: COMPLEX
@@ -67,3 +67,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.105275+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Heart Infusion Agar With 5% Horse Blood" to "heart_infusion_agar_with_5_horse_blood"
+    for consistent matching

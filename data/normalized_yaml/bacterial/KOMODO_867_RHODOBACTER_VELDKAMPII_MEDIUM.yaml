@@ -1,5 +1,5 @@
 id: CultureMech:006697
-name: RHODOBACTER VELDKAMPII MEDIUM
+name: rhodobacter_veldkampii_medium
 original_name: RHODOBACTER VELDKAMPII MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -242,3 +242,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.842428+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOBACTER VELDKAMPII MEDIUM" to "rhodobacter_veldkampii_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:004075
-name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
+name: half_strength_r2a_medium_in_75_seawater
 original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 category: bacterial
 medium_type: COMPLEX
@@ -109,3 +109,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.399097+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH R2A MEDIUM IN 75% SEAWATER" to "half_strength_r2a_medium_in_75_seawater"
+    for consistent matching

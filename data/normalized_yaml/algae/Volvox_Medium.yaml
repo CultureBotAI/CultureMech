@@ -1,6 +1,6 @@
 id: CultureMech:000238
-name: Volvox Medium
-category: algae
+name: volvox_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -91,6 +91,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000238'
+- timestamp: '2026-03-17T19:45:04.590968+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Volvox Medium" to "volvox_medium" for consistent matching
 references:
 - reference_id: UTEX:volvox-medium
 - reference_id: https://utex.org/products/volvox-medium
+original_name: Volvox Medium

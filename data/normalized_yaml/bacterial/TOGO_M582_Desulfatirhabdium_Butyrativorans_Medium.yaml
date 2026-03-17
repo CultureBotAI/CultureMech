@@ -1,5 +1,5 @@
 id: CultureMech:009978
-name: Desulfatirhabdium Butyrativorans Medium
+name: desulfatirhabdium_butyrativorans_medium
 original_name: Desulfatirhabdium Butyrativorans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -188,6 +188,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.399342+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfatirhabdium Butyrativorans Medium" to "desulfatirhabdium_butyrativorans_medium"
+    for consistent matching
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []

@@ -1,0 +1,43 @@
+id: CultureMech:009427
+name: complete_pleuropneumonia_like_organism_pplo_medium
+original_name: Complete pleuropneumonia-like organism (PPLO) medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: PPLO medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2891
+  term:
+    id: TOGO:M2891
+    label: Complete pleuropneumonia-like organism (PPLO) medium
+notes: 'Source: https://togomedium.org/medium/M2891'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.385457Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2891'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.770783'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2'
+- timestamp: '2026-03-13T06:20:06.153521Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009427'
+- timestamp: '2026-03-17T19:46:25.106476+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Complete pleuropneumonia-like organism (PPLO) medium"
+    to "complete_pleuropneumonia_like_organism_pplo_medium" for consistent matching

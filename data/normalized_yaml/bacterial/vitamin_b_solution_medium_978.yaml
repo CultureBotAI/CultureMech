@@ -1,0 +1,30 @@
+id: CultureMech:004940
+name: vitamin_b_solution_medium_978
+original_name: Vitamin B solution (medium 978)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3102
+  term:
+    id: komodo.medium:3102
+    label: Vitamin B solution (medium 978)
+notes: 'Source: KOMODO ModelSEED | ID: 3102 | DSMZ Medium: 3102 (mediadive.medium:3102)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3102'
+- timestamp: '2026-03-13T06:19:29.130401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004940'
+- timestamp: '2026-03-17T19:45:44.659649+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vitamin B solution (medium 978)" to "vitamin_b_solution_medium_978"
+    for consistent matching

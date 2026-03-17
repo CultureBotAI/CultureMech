@@ -1,5 +1,5 @@
 id: CultureMech:009659
-name: Medium ''A'' For Alkaliphiles
+name: medium_a_for_alkaliphiles
 original_name: Medium ''A'' For Alkaliphiles
 category: bacterial
 medium_type: COMPLEX
@@ -121,3 +121,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.949705+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium ''A'' For Alkaliphiles" to "medium_a_for_alkaliphiles"
+    for consistent matching

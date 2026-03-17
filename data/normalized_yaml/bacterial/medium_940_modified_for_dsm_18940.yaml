@@ -1,0 +1,97 @@
+id: CultureMech:006868
+name: medium_940_modified_for_dsm_18940
+original_name: MEDIUM 940 MODIFIED FOR DSM 18940
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 940_18940
+  term:
+    id: komodo.medium:940_18940
+    label: MEDIUM 940 MODIFIED FOR DSM 18940
+notes: 'Source: KOMODO ModelSEED | ID: 940_18940 | DSMZ Medium: 940 (mediadive.medium:940)
+  | Aerobic: No'
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 940_18940'
+- timestamp: '2026-02-03T11:19:07.855823'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 940
+- timestamp: '2026-03-13T06:19:44.473311Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006868'
+- timestamp: '2026-03-17T06:30:20.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.403141+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 940 MODIFIED FOR DSM 18940" to "medium_940_modified_for_dsm_18940"
+    for consistent matching
+ph_value: 9.0

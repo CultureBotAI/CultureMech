@@ -1,0 +1,186 @@
+id: CultureMech:006893
+name: ONR7a MEDIUM
+original_name: ONR7a MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ph_value: 7.6
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950 | DSMZ Medium: 950 (mediadive.medium:950)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 950
+  term:
+    id: komodo.medium:950
+    label: ONR7a MEDIUM
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '45.58'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '7.96'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.44'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.166'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.062'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.054'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0052'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.178'
+    unit: G_PER_L
+- preferred_term: TAPSO
+  term:
+    id: CHEBI:84015
+    label: TAPSO
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: ' (for solid medium, alternative)'
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: ' (for solid medium, alternative)'
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '24.8444'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.24444'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.0533333'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 950'
+- timestamp: '2026-02-03T11:19:08.443405'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 950
+- timestamp: '2026-03-13T03:09:14.336601Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:44.716055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006893'
+- timestamp: '2026-03-15T03:03:54.633586+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_950-1_DSM_13489, KOMODO_950-2-replace-Sodium acetate-with-Tween
+    80_DSM_14919_replace_Sodium_acetate_with_Tween_80, KOMODO_950-2-replace-Sodium
+    acetate-with-tetradecane_DSM_14919_replace_Sodium_acetate_with_tetradecane, KOMODO_950-2_DSM_14919,
+    KOMODO_950_ONR7a_MEDIUM'
+synonyms:
+- name: DSM 13489
+  source: KOMODO
+  source_id: komodo.medium:950.1
+  original_category: bacterial
+- name: DSM 14919_replace_Sodium acetate_with_Tween 80
+  source: KOMODO
+  source_id: komodo.medium:950.2_replace_Sodium acetate_with_Tween 80
+  original_category: bacterial
+- name: DSM 14919_replace_Sodium acetate_with_tetradecane
+  source: KOMODO
+  source_id: komodo.medium:950.2_replace_Sodium acetate_with_tetradecane
+  original_category: bacterial
+- name: DSM 14919
+  source: KOMODO
+  source_id: komodo.medium:950.2
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_950-1_DSM_13489
+- KOMODO_950-2-replace-Sodium acetate-with-Tween 80_DSM_14919_replace_Sodium_acetate_with_Tween_80
+- KOMODO_950-2-replace-Sodium acetate-with-tetradecane_DSM_14919_replace_Sodium_acetate_with_tetradecane
+- KOMODO_950-2_DSM_14919
+- KOMODO_950_ONR7a_MEDIUM
+merge_fingerprint: 1fd831cc3848188e3dd762bbc00fb3afd8fc9cbd292a899c5c6a8e22d1284141

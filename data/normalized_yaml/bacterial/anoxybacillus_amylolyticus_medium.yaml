@@ -1,0 +1,62 @@
+id: CultureMech:000469
+name: anoxybacillus_amylolyticus_medium
+original_name: ANOXYBACILLUS AMYLOLYTICUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 1046
+  term:
+    id: mediadive.medium:1046
+    label: ANOXYBACILLUS AMYLOLYTICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1046.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: adjust pH 5.6
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.198478Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1046'
+- timestamp: '2026-03-13T06:18:55.583096Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000469'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.587677+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANOXYBACILLUS AMYLOLYTICUS MEDIUM" to "anoxybacillus_amylolyticus_medium"
+    for consistent matching

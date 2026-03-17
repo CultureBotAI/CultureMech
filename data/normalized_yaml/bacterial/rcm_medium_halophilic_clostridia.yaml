@@ -1,0 +1,57 @@
+id: CultureMech:006150
+name: rcm_medium_halophilic_clostridia
+original_name: RCM medium (halophilic clostridia)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 634b
+  term:
+    id: komodo.medium:634b
+    label: RCM medium (halophilic clostridia)
+notes: 'Source: KOMODO ModelSEED | ID: 634b | DSMZ Medium: 634b (mediadive.medium:634b)
+  | Aerobic: No'
+ingredients:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sodium carbonate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Sodium carbonate
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 634b'
+- timestamp: '2026-02-03T11:19:00.780244'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 634
+- timestamp: '2026-03-13T06:19:38.630523Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006150'
+- timestamp: '2026-03-17T06:29:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.585253+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RCM medium (halophilic clostridia)" to "rcm_medium_halophilic_clostridia"
+    for consistent matching
+ph_value: 6.8

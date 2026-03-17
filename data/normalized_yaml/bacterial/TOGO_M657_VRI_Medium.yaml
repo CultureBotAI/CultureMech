@@ -1,5 +1,5 @@
 id: CultureMech:010059
-name: VRI Medium
+name: vri_medium
 original_name: VRI Medium
 category: bacterial
 medium_type: COMPLEX
@@ -261,6 +261,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.973628+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VRI Medium" to "vri_medium" for consistent matching
 solutions:
 - preferred_term: Trace element solution (see below)
   composition: []

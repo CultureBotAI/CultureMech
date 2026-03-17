@@ -1,5 +1,5 @@
 id: CultureMech:004613
-name: CORYNEBACTERIUM medium WITH BLOOD
+name: corynebacterium_medium_with_blood
 original_name: CORYNEBACTERIUM medium WITH BLOOD
 category: bacterial
 medium_type: COMPLEX
@@ -73,3 +73,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.938133+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CORYNEBACTERIUM medium WITH BLOOD" to "corynebacterium_medium_with_blood"
+    for consistent matching

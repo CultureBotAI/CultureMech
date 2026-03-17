@@ -1,5 +1,5 @@
 id: CultureMech:009715
-name: Brain Heart Infusion Agar With Soil Extract
+name: brain_heart_infusion_agar_with_soil_extract
 original_name: Brain Heart Infusion Agar With Soil Extract
 category: bacterial
 medium_type: COMPLEX
@@ -58,6 +58,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.319063+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Brain Heart Infusion Agar With Soil Extract" to "brain_heart_infusion_agar_with_soil_extract"
+    for consistent matching
 solutions:
 - preferred_term: Soil extract (see Medium [M94])
   composition: []

@@ -1,5 +1,5 @@
 id: CultureMech:009204
-name: Methanosalsum Zhilinae Medium
+name: methanosalsum_zhilinae_medium
 original_name: Methanosalsum Zhilinae Medium
 category: bacterial
 medium_type: COMPLEX
@@ -364,6 +364,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.724633+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanosalsum Zhilinae Medium" to "methanosalsum_zhilinae_medium"
+    for consistent matching
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []

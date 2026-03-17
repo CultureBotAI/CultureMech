@@ -1,0 +1,148 @@
+id: CultureMech:000470
+name: difco_raka_ray_no_3_medium
+original_name: DIFCO RAKA-RAY NO.3 MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 5.4
+media_term:
+  preferred_term: DSMZ Medium 1047
+  term:
+    id: mediadive.medium:1047
+    label: DIFCO RAKA-RAY NO.3 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1047.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Liver Concentrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000288
+    label: Fructose
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Betaine Hydrochloride
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Diammonium Citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000400
+    label: Diammonium Citrate
+- preferred_term: Potassium Aspartate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.98'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
+- preferred_term: Manganese Sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese Sulfate
+- preferred_term: Dipotassium Phosphate
+  term:
+    id: CHEBI:131527
+    label: Dipotassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: Dipotassium Phosphate
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000797
+    label: N-Acetylglucosamine
+- preferred_term: Potassium Glutamate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.199753Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1047'
+- timestamp: '2026-03-13T06:18:55.588466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000470'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:06.593064+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DIFCO RAKA-RAY NO.3 MEDIUM" to "difco_raka_ray_no_3_medium"
+    for consistent matching

@@ -1,0 +1,568 @@
+id: CultureMech:008827
+name: cdm_lab_medium
+original_name: CDM-LAB medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: p-aminobenzoic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-aminobenzoic acid
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001027
+    label: Vitamin B12
+- preferred_term: Riboflavin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+- preferred_term: CaCl2
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: CuSO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: CuSO4
+- preferred_term: FeCl3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000705
+    label: FeCl3
+- preferred_term: MgCl2
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
+- preferred_term: Histidine
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:27570
+    label: histidine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000355
+    label: Histidine
+- preferred_term: Asparagine
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:22653
+    label: Asparagine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
+    label: Asparagine
+- preferred_term: Arginine
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32696
+    label: argininium(1+)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000341
+    label: Arginine
+- preferred_term: Ammonium citrate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Tryptophan
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
+- preferred_term: Thiamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
+- preferred_term: FeCl2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:30812
+    label: iron dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000566
+    label: FeCl2
+- preferred_term: Cysteine
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
+- preferred_term: Methionine
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Adenine sulfate
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Leucine
+  concentration:
+    value: '0.475'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Glycine
+  concentration:
+    value: '0.175'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000244
+    label: Glycine
+- preferred_term: MnCl2
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Pantothenate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
+- preferred_term: pyridoxamine-HCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: pyridoxamine-HCl
+- preferred_term: Pyridoxine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16709
+    label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
+- preferred_term: Uracil
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:17568
+    label: uracil
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000501
+    label: Uracil
+- preferred_term: Lipoic acid
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
+- preferred_term: ZnSO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: ZnSO4
+- preferred_term: Aspartic acid
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Glutamic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:18237
+    label: glutamic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000946
+    label: Glutamic acid
+- preferred_term: Glutamine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Isoleucine
+  concentration:
+    value: '0.21'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Lysine
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Phenylalanine
+  concentration:
+    value: '0.275'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Serine
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Threonine
+  concentration:
+    value: '0.225'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Tyrosine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Valine
+  concentration:
+    value: '0.325'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: L-ascorbic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001080
+    label: L-ascorbic acid
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Thymidine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:17748
+    label: Thymidine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000575
+    label: Thymidine
+- preferred_term: Acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: Acetate
+- preferred_term: CoSO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000158
+    label: CoSO4
+- preferred_term: D-biotin
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-biotin
+- preferred_term: (NH4)6Mo7O24
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Guanine
+  concentration:
+    value: '27'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Xanthine
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Inosine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Orotic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Cystine
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Alanine
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source'
+- preferred_term: Proline
+  concentration:
+    value: '0.675'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source'
+  term:
+    id: CHEBI:26271
+    label: Proline
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000396
+    label: Proline
+- preferred_term: MOPS buffer
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:44115
+    label: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001061
+    label: MOPS buffer
+media_term:
+  preferred_term: TOGO Medium M2239
+  term:
+    id: TOGO:M2239
+    label: CDM-LAB medium
+notes: 'Source: https://togomedium.org/medium/M2239'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.203957Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2239'
+- timestamp: '2026-01-28T19:48:36.009793Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.834879'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: MOPS buffer'
+- timestamp: '2026-02-06T05:10:46.923831Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:20:00.577985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008827'
+- timestamp: '2026-03-17T06:30:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.254009+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CDM-LAB medium" to "cdm_lab_medium" for consistent
+    matching
+high_metal: true

@@ -1,0 +1,47 @@
+id: CultureMech:002923
+name: syntrophomonas_palmiticicum_medium
+original_name: SYNTROPHOMONAS PALMITICICUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J575
+  term:
+    id: mediadive.medium:J575
+    label: SYNTROPHOMONAS PALMITICICUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=575'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 0.5 g yeast extract and
+    1.0 ml Trace vitamins solution in Solution A (per 900 ml), and with 0.86 g crotonic
+    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 284.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.980207Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J575'
+- timestamp: '2026-02-03T11:26:55.374176'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.597779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002923'
+- timestamp: '2026-03-17T19:45:30.169119+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTROPHOMONAS PALMITICICUM MEDIUM" to "syntrophomonas_palmiticicum_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

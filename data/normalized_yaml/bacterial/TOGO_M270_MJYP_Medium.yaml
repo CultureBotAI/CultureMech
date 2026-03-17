@@ -1,5 +1,5 @@
 id: CultureMech:009261
-name: MJYP* Medium
+name: mjyp_medium
 original_name: MJYP* Medium
 category: bacterial
 medium_type: COMPLEX
@@ -97,6 +97,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.565207+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MJYP* Medium" to "mjyp_medium" for consistent matching
 solutions:
 - preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
   composition: []

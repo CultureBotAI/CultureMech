@@ -1,0 +1,162 @@
+id: CultureMech:005239
+name: btu_medium_replace_formiate_with_fumarate
+original_name: BTU medium_replace_Formiate_with_Fumarate
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 413_replace_Formiate_with_Fumarate
+  term:
+    id: komodo.medium:413_replace_Formiate_with_Fumarate
+    label: BTU medium_replace_Formiate_with_Fumarate
+notes: 'Source: KOMODO ModelSEED | ID: 413_replace_Formiate_with_Fumarate | DSMZ Medium:
+  413 (mediadive.medium:413) | Aerobic: No'
+ingredients:
+- preferred_term: Na-formiate
+  term:
+    id: CHEBI:62965
+    label: Na-formiate
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000985
+    label: Na-formiate
+- preferred_term: Na-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na-fumarate
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000656
+    label: Na-fumarate
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '26.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.6341'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '959.5'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 9.5, 950.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 413_replace_Formiate_with_Fumarate'
+- timestamp: '2026-02-03T11:19:01.609064'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 413
+- timestamp: '2026-03-13T03:08:55.863434Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:31.262941Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005239'
+- timestamp: '2026-03-17T06:30:00.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.133392+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BTU medium_replace_Formiate_with_Fumarate" to "btu_medium_replace_formiate_with_fumarate"
+    for consistent matching
+ph_value: 7.0

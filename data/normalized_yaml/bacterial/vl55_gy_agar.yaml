@@ -1,0 +1,285 @@
+id: CultureMech:008663
+name: vl55_gy_agar
+original_name: VL55 GY agar
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 4 duplicates: 1.0, 1.0, 1.0, 1.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Agar
+  concentration:
+    value: '43'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.049'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4·7H2O
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.044'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+- preferred_term: MES
+  concentration:
+    value: '3.9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:39010
+    label: MES
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000269
+    label: MES
+- preferred_term: (NH4)2HPO4
+  concentration:
+    value: '0.0264'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62476
+    label: (NH4)2HPO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000385
+    label: (NH4)2HPO4
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+- preferred_term: HCl (25%)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: H4MoNa2O6·2H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: B(OH)3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2·6H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2·6H2O
+- preferred_term: CuCl2·2H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2·2H2O
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000141
+    label: ZnCl2
+- preferred_term: FeCl2·4H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000329
+    label: FeCl2·4H2O
+- preferred_term: Na2WO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63940
+    label: sodium tungstate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000240
+    label: Na2WO4
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000315
+    label: Na2SeO3
+media_term:
+  preferred_term: TOGO Medium M2074
+  term:
+    id: TOGO:M2074
+    label: VL55 GY agar
+notes: 'Source: https://togomedium.org/medium/M2074
+
+  Original source: NBRC - NBRC_M1382
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1382'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.002272Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2074'
+- timestamp: '2026-01-28T19:48:34.050120Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.903525'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:56.498239+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 4 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:28.061645Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:59.169943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008663'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:53.609906'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.800744+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VL55 GY agar" to "vl55_gy_agar" for consistent matching
+solutions:
+- preferred_term: 2x GY agar*
+  composition: []
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: 2x VL55 buffer (pH5.5)**
+  composition: []
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Trace element solution (SL-10)***
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  name: Unknown solution
+- preferred_term: Se/W solution****
+  term:
+    id: mediadive.solution:4826
+    label: Se/W solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: See mediadive_4826_Se_W_solution.yaml for composition
+  name: Unknown solution

@@ -1,0 +1,40 @@
+id: CultureMech:002822
+name: nb_fumarate_nbaf_medium
+original_name: NB FUMARATE (NBAF) MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J473
+  term:
+    id: mediadive.medium:J473
+    label: NB FUMARATE (NBAF) MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=473'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.698747Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J473'
+- timestamp: '2026-02-03T11:26:55.023832'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.919381Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002822'
+- timestamp: '2026-03-17T19:45:29.380605+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NB FUMARATE (NBAF) MEDIUM" to "nb_fumarate_nbaf_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

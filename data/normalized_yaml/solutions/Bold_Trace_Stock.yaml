@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:26836
     label: sulfuric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001125
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '8.82'
@@ -25,6 +27,8 @@ composition:
   term:
     id: CHEBI:86344
     label: manganese(II) chloride tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001117
 - preferred_term: Molybdenum trioxide
   concentration:
     value: '0.71'
@@ -32,6 +36,8 @@ composition:
   term:
     id: CHEBI:30627
     label: molybdenum trioxide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001119
 - preferred_term: Copper sulfate pentahydrate
   concentration:
     value: '1.57'
@@ -39,6 +45,8 @@ composition:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001112
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.49'
@@ -46,18 +54,31 @@ composition:
   term:
     id: CHEBI:78034
     label: cobalt dinitrate hexahydrate
-notes: |
-  Trace metal stock solution for Bold Basal Medium (BBM) and related algae culture media.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001111
+notes: 'Trace metal stock solution for Bold Basal Medium (BBM) and related algae culture
+  media.
+
   Provides essential micronutrients (Zn, Mn, Mo, Cu, Co) for freshwater algae.
 
-  Preparation: Add components to approximately 900 mL deionized water in the order specified
-  while stirring continuously. Add H2SO4 FIRST to acidify the solution before adding metals.
+
+  Preparation: Add components to approximately 900 mL deionized water in the order
+  specified
+
+  while stirring continuously. Add H2SO4 FIRST to acidify the solution before adding
+  metals.
+
   This prevents precipitation. Bring to 1 L total volume.
+
 
   Storage: Room temperature in darkness. The acidic pH keeps metals in solution.
 
+
   Final stock concentrations: ZnSO4·7H2O (1.50 µM), MnCl2·4H2O (0.36 µM),
+
   MoO3 (0.26 µM), CuSO4·5H2O (0.31 µM), Co(NO3)2·6H2O (0.084 µM)
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0065

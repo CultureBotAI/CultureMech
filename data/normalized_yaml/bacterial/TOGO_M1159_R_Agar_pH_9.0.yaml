@@ -1,5 +1,5 @@
 id: CultureMech:007682
-name: R Agar (pH 9.0)
+name: r_agar_ph_9_0
 original_name: R Agar (pH 9.0)
 category: bacterial
 medium_type: COMPLEX
@@ -38,6 +38,11 @@ curation_history:
   date: '2026-03-14T21:06:47.033203'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:08.980747+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R Agar (pH 9.0)" to "r_agar_ph_9_0" for consistent
+    matching
 solutions:
 - preferred_term: R agar (see Medium [M19])
   composition: []

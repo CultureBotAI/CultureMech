@@ -1,5 +1,5 @@
 id: CultureMech:008809
-name: Methanococcus McC Medium
+name: methanococcus_mcc_medium
 original_name: Methanococcus McC Medium
 category: bacterial
 medium_type: COMPLEX
@@ -287,6 +287,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.097375+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanococcus McC Medium" to "methanococcus_mcc_medium"
+    for consistent matching
 solutions:
 - preferred_term: General salts solution (see below)
   composition: []

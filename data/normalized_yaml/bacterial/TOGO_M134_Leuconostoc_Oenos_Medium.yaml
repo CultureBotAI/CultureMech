@@ -1,5 +1,5 @@
 id: CultureMech:007886
-name: Leuconostoc Oenos Medium
+name: leuconostoc_oenos_medium
 original_name: Leuconostoc Oenos Medium
 category: bacterial
 medium_type: COMPLEX
@@ -126,3 +126,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.669659+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Leuconostoc Oenos Medium" to "leuconostoc_oenos_medium"
+    for consistent matching

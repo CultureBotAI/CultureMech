@@ -1,0 +1,83 @@
+id: CultureMech:005998
+name: medium_550_modified_for_dsm_17572
+original_name: MEDIUM 550 MODIFIED FOR DSM 17572
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 550_17572
+  term:
+    id: komodo.medium:550_17572
+    label: MEDIUM 550 MODIFIED FOR DSM 17572
+notes: 'Source: KOMODO ModelSEED | ID: 550_17572 | DSMZ Medium: 550 (mediadive.medium:550)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Czapek Dox agar
+  term:
+    id: CHEBI:2509
+    label: Czapek Dox agar
+  concentration:
+    value: '48'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Czapek Dox agar
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '6.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 550_17572'
+- timestamp: '2026-02-03T11:19:14.701788'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 550
+- timestamp: '2026-03-13T06:19:37.524853Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005998'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.315933+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 550 MODIFIED FOR DSM 17572" to "medium_550_modified_for_dsm_17572"
+    for consistent matching
+ph_value: 7.2

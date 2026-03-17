@@ -1,0 +1,53 @@
+id: CultureMech:002786
+name: anaerolinea_medium_b
+original_name: ANAEROLINEA MEDIUM-B
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J435
+  term:
+    id: mediadive.medium:J435
+    label: ANAEROLINEA MEDIUM-B
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=435'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Solution A of Medium No. 284 supplemented with final 1.0 ml Trace
+    vitamins solution and 1.0 g yeast extract, and dissolved in 1.0 L distilled water.
+    Dispense the medium into culture vessels (e.g., 20 ml of the medium in 50 ml serum
+    bottle) under a stream of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers.
+    After autoclaving, stand the medium overnight. Prior to inoculation, aseptically
+    and anaerobically add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions
+    to the medium (3% solutions, autoclaved and stored under a N2 atmosphere).
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 12579, incubate with a 2% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.610594Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J435'
+- timestamp: '2026-02-03T11:26:54.916541'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.711905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002786'
+- timestamp: '2026-03-17T19:45:29.144361+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROLINEA MEDIUM-B" to "anaerolinea_medium_b" for
+    consistent matching
+data_quality_flags:
+- incomplete_composition

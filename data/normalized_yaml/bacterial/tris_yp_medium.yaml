@@ -1,0 +1,47 @@
+id: CultureMech:004661
+name: tris_yp_medium
+original_name: TRIS - YP medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 257
+  term:
+    id: komodo.medium:257
+    label: TRIS - YP medium
+notes: 'Source: KOMODO ModelSEED | ID: 257 | DSMZ Medium: 257 (mediadive.medium:257)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 257'
+- timestamp: '2026-02-03T11:18:57.020748'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 257
+- timestamp: '2026-03-13T06:19:27.928586Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004661'
+- timestamp: '2026-03-17T19:45:43.234507+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRIS - YP medium" to "tris_yp_medium" for consistent
+    matching
+ph_value: 7.5

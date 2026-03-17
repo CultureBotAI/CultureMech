@@ -1,5 +1,5 @@
 id: CultureMech:008723
-name: CYC Agar (pH 8.0)
+name: cyc_agar_ph_8_0
 original_name: CYC Agar (pH 8.0)
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:06:54.103576'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:18.457303+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CYC Agar (pH 8.0)" to "cyc_agar_ph_8_0" for consistent
+    matching
 solutions:
 - preferred_term: CYC agar (see Medium [M41])
   composition: []

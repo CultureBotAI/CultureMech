@@ -1,5 +1,5 @@
 id: CultureMech:006886
-name: OXOID NUTRIENT BROTH
+name: oxoid_nutrient_broth
 original_name: OXOID NUTRIENT BROTH
 category: bacterial
 medium_type: COMPLEX
@@ -57,4 +57,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.620291+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OXOID NUTRIENT BROTH" to "oxoid_nutrient_broth" for
+    consistent matching
 ph_value: 7.2

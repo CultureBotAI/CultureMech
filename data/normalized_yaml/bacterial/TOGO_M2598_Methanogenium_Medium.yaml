@@ -1,5 +1,5 @@
 id: CultureMech:009165
-name: Methanogenium Medium
+name: methanogenium_medium
 original_name: Methanogenium Medium
 category: bacterial
 medium_type: COMPLEX
@@ -379,6 +379,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.224035+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanogenium Medium" to "methanogenium_medium" for
+    consistent matching
 solutions:
 - preferred_term: Trace Elements
   term:

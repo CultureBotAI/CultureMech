@@ -1,5 +1,5 @@
 id: CultureMech:004984
-name: Fastidious Anaerobe Agar
+name: fastidious_anaerobe_agar
 original_name: Fastidious Anaerobe Agar
 category: bacterial
 medium_type: COMPLEX
@@ -24,3 +24,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004984'
+- timestamp: '2026-03-17T19:45:44.862683+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Fastidious Anaerobe Agar" to "fastidious_anaerobe_agar"
+    for consistent matching

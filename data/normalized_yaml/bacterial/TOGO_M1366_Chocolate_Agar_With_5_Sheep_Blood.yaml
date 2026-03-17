@@ -1,5 +1,5 @@
 id: CultureMech:007904
-name: Chocolate Agar With  5% Sheep Blood
+name: chocolate_agar_with_5_sheep_blood
 original_name: Chocolate Agar With  5% Sheep Blood
 category: bacterial
 medium_type: COMPLEX
@@ -56,3 +56,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.829897+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chocolate Agar With  5% Sheep Blood" to "chocolate_agar_with_5_sheep_blood"
+    for consistent matching

@@ -1,6 +1,6 @@
 id: CultureMech:000025
-name: Artificial Seawater Medium
-category: algae
+name: artificial_seawater_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -107,6 +107,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000025'
+- timestamp: '2026-03-17T19:45:03.887747+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial Seawater Medium" to "artificial_seawater_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:artificial-seawater-medium
 - reference_id: https://utex.org/products/artificial-seawater-medium
+original_name: Artificial Seawater Medium

@@ -1,0 +1,42 @@
+id: CultureMech:007458
+name: '1135'
+original_name: '1135'
+category: bacterial
+description: 1135. NBRC 1132.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured
+    by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd.,
+    Osaka, Japan.
+- preferred_term: ''
+  concentration:
+    value: Malt extract
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.027801Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1132, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1132.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:10.003723Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.147927Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007458'
+merge_fingerprint: d79ec29b1f83ae5dfe58903eec8101f0414c12ad6f575aa5ee71f1bf0b398ef7
+merged_from:
+- NBRC_1135

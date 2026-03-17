@@ -1,0 +1,100 @@
+id: CultureMech:008158
+name: TOGO Medium M1605
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M1605
+  term:
+    id: TOGO:M1605
+    label: TOGO Medium M1605
+notes: 'Source: https://togomedium.org/medium/M1605
+
+  Original source: NBRC - NBRC_M804
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=804'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.934804Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1605'
+- timestamp: '2026-01-28T19:48:14.682219Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:24.407218+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:54.002074Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008158'
+- timestamp: '2026-03-15T03:04:01.754920+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1562_Unnamed_medium, TOGO_M1605_Unnamed_medium, TOGO_M1816_802_5_Glucose'
+solutions:
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+synonyms:
+- name: TOGO Medium M1562
+  source: TOGO
+  source_id: TOGO:M1562
+  original_category: bacterial
+- name: 802 + 5% Glucose
+  source: TOGO
+  source_id: TOGO:M1816
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1562_Unnamed_medium
+- TOGO_M1605_Unnamed_medium
+- TOGO_M1816_802_5_Glucose
+merge_fingerprint: 259c27d247be8b91b43e5f7529e77708758c6ef8ffa8a36e1c0ed662e8ac7eb6

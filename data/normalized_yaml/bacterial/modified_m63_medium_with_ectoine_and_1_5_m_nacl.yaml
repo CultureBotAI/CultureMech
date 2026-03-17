@@ -1,0 +1,94 @@
+id: CultureMech:006996
+name: modified_m63_medium_with_ectoine_and_1_5_m_nacl
+original_name: Modified m63 medium with ectoine and 1.5 m nacl
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ectoine
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium hydroxide
+  concentration:
+    value: '75.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '100.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '1500.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.16'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0018'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '15.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium sulfate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.580960Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 10, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.506728Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006996'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.587436+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified m63 medium with ectoine and 1.5 m nacl" to
+    "modified_m63_medium_with_ectoine_and_1_5_m_nacl" for consistent matching
+media_term:
+  preferred_term: MediaDB Medium 10
+  term:
+    id: MEDIADB:10
+    label: Modified m63 medium with ectoine and 1.5 m nacl
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+high_metal: true

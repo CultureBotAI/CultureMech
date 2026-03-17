@@ -1,5 +1,5 @@
 id: CultureMech:006522
-name: HAEMOPHILUS medium
+name: haemophilus_medium
 original_name: HAEMOPHILUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -35,3 +35,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006522'
+- timestamp: '2026-03-17T19:45:58.990102+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HAEMOPHILUS medium" to "haemophilus_medium" for consistent
+    matching

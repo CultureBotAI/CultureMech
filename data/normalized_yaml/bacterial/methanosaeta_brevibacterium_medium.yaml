@@ -1,0 +1,47 @@
+id: CultureMech:002826
+name: methanosaeta_brevibacterium_medium
+original_name: METHANOSAETA BREVIBACTERIUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J477
+  term:
+    id: mediadive.medium:J477
+    label: METHANOSAETA BREVIBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=477'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 243 supplemented with 0.5 g/L yeast extract, 0.5 g/L
+    peptone, 0.5 g/L tryptone (BD-Difco) and 0.6 g/L (final) sodium acetate. Readjust
+    pH to 7.2 - 7.6, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.704066Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J477'
+- timestamp: '2026-02-03T11:26:55.029172'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.928829Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002826'
+- timestamp: '2026-03-17T19:45:29.391210+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOSAETA BREVIBACTERIUM MEDIUM" to "methanosaeta_brevibacterium_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

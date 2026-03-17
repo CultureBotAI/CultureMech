@@ -1,5 +1,5 @@
 id: CultureMech:009940
-name: Desulfotomaculum Lam5 Medium
+name: desulfotomaculum_lam5_medium
 original_name: Desulfotomaculum Lam5 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -211,6 +211,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.071020+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfotomaculum Lam5 Medium" to "desulfotomaculum_lam5_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

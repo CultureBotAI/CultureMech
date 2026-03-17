@@ -1,5 +1,5 @@
 id: CultureMech:003935
-name: RHODOBACTER /THIOCAPSA medium
+name: rhodobacter_thiocapsa_medium
 original_name: RHODOBACTER /THIOCAPSA medium
 category: bacterial
 medium_type: COMPLEX
@@ -186,3 +186,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.987319+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RHODOBACTER /THIOCAPSA medium" to "rhodobacter_thiocapsa_medium"
+    for consistent matching

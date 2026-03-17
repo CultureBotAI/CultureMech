@@ -1,5 +1,5 @@
 id: CultureMech:008865
-name: Pyse Medium
+name: pyse_medium
 original_name: Pyse Medium
 category: bacterial
 medium_type: COMPLEX
@@ -97,3 +97,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.527569+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pyse Medium" to "pyse_medium" for consistent matching

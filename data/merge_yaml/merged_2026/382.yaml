@@ -1,0 +1,41 @@
+id: CultureMech:007491
+name: '382'
+original_name: '382'
+category: bacterial
+description: 382. NBRC 380.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled
+    water1LpH 7.0
+- preferred_term: ''
+  concentration:
+    value: Pepton
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.955231Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 380, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=380.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:42.618105Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.242106Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007491'
+merge_fingerprint: fbdbc52cd366805cc046ac39b2e364695e5efc47389a2ba91441a3ae8eb25b98
+merged_from:
+- NBRC_382

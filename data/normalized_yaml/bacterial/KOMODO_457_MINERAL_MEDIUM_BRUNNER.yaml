@@ -1,5 +1,5 @@
 id: CultureMech:005455
-name: MINERAL MEDIUM (BRUNNER)
+name: mineral_medium_brunner
 original_name: MINERAL MEDIUM (BRUNNER)
 category: bacterial
 medium_type: DEFINED
@@ -231,3 +231,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.118118+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM (BRUNNER)" to "mineral_medium_brunner"
+    for consistent matching

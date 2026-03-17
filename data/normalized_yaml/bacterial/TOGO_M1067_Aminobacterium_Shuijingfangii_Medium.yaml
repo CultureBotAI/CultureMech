@@ -1,5 +1,5 @@
 id: CultureMech:007584
-name: Aminobacterium Shuijingfangii Medium
+name: aminobacterium_shuijingfangii_medium
 original_name: Aminobacterium Shuijingfangii Medium
 category: bacterial
 medium_type: COMPLEX
@@ -141,6 +141,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.212039+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Aminobacterium Shuijingfangii Medium" to "aminobacterium_shuijingfangii_medium"
+    for consistent matching
 solutions:
 - preferred_term: 1% CaCl2・2H2O solution
   composition: []

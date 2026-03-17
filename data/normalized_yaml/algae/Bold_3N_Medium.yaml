@@ -1,6 +1,6 @@
 id: CultureMech:000033
-name: Bold 3N Medium
-category: algae
+name: bold_3n_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -96,6 +96,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000033'
+- timestamp: '2026-03-17T19:45:03.928431+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bold 3N Medium" to "bold_3n_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:bold-3n-medium
 - reference_id: https://utex.org/products/bold-3n-medium
+original_name: Bold 3N Medium

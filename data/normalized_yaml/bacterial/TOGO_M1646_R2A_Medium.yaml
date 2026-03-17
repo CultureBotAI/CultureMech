@@ -1,5 +1,5 @@
 id: CultureMech:008202
-name: R2A Medium
+name: r2a_medium
 original_name: R2A Medium
 category: bacterial
 medium_type: COMPLEX
@@ -119,3 +119,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.993179+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A Medium" to "r2a_medium" for consistent matching

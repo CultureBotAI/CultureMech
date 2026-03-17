@@ -1,0 +1,71 @@
+id: CultureMech:009405
+name: pye_rich_medium
+original_name: PYE Rich medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast extract
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: MgSO4
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2871
+  term:
+    id: TOGO:M2871
+    label: PYE Rich medium
+notes: 'Source: https://togomedium.org/medium/M2871'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.364139Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2871'
+- timestamp: '2026-01-28T19:48:27.333602Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:06.057272Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009405'
+- timestamp: '2026-03-17T06:30:23.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.002498+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYE Rich medium" to "pye_rich_medium" for consistent
+    matching

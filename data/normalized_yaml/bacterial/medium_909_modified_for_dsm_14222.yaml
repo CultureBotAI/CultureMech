@@ -1,0 +1,180 @@
+id: CultureMech:006780
+name: medium_909_modified_for_dsm_14222
+original_name: MEDIUM 909 MODIFIED FOR DSM 14222
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 909_14222
+  term:
+    id: komodo.medium:909_14222
+    label: MEDIUM 909 MODIFIED FOR DSM 14222
+notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Na-thioglycolate
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '0.133333'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000431
+    label: Thiamine pyrophosphate
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '44.4444'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: Rabbit serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: KOH
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000286
+    label: Isobutyric acid
+- preferred_term: DL-2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-2-Methylbutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000939
+    label: DL-2-Methylbutyric acid
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000305
+    label: Isovaleric acid
+- preferred_term: Valeric acid
+  term:
+    id: CHEBI:17418
+    label: Valeric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000303
+    label: Valeric acid
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 909_14222'
+- timestamp: '2026-02-03T11:19:03.741004'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 909
+- timestamp: '2026-03-13T06:19:43.871683Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006780'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.705109+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 909 MODIFIED FOR DSM 14222" to "medium_909_modified_for_dsm_14222"
+    for consistent matching

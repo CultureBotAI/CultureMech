@@ -1,5 +1,5 @@
 id: CultureMech:010133
-name: Methanobacterium Medium (II) With Formae
+name: methanobacterium_medium_ii_with_formae
 original_name: Methanobacterium Medium (II) With Formae
 category: bacterial
 medium_type: COMPLEX
@@ -192,6 +192,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.505491+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanobacterium Medium (II) With Formae" to "methanobacterium_medium_ii_with_formae"
+    for consistent matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

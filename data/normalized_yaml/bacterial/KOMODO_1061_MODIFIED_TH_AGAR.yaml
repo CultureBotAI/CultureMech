@@ -1,5 +1,5 @@
 id: CultureMech:003644
-name: MODIFIED TH AGAR
+name: modified_th_agar
 original_name: MODIFIED TH AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -140,3 +140,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.561377+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED TH AGAR" to "modified_th_agar" for consistent
+    matching

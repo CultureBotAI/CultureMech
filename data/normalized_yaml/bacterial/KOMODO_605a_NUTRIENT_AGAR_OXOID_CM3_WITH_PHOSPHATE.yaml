@@ -1,5 +1,5 @@
 id: CultureMech:006094
-name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+name: nutrient_agar_oxoid_cm3_with_phosphate
 original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 category: bacterial
 medium_type: COMPLEX
@@ -84,3 +84,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.106640+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE" to "nutrient_agar_oxoid_cm3_with_phosphate"
+    for consistent matching

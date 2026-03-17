@@ -1,0 +1,1864 @@
+{
+    "$defs": {
+        "AtmosphereEnum": {
+            "description": "Atmospheric conditions for incubation",
+            "enum": [
+                "AEROBIC",
+                "ANAEROBIC",
+                "MICROAEROPHILIC"
+            ],
+            "title": "AtmosphereEnum",
+            "type": "string"
+        },
+        "CategoryEnum": {
+            "description": "Organizational category for media recipes",
+            "enum": [
+                "bacterial",
+                "fungal",
+                "archaea",
+                "specialized",
+                "algae",
+                "imported"
+            ],
+            "title": "CategoryEnum",
+            "type": "string"
+        },
+        "CellularRoleEnum": {
+            "description": "Functional role of organism in microbial community",
+            "enum": [
+                "PRIMARY_DEGRADER",
+                "REDUCTIVE_DEGRADER",
+                "OXIDATIVE_DEGRADER",
+                "BIOTRANSFORMER",
+                "SYNERGIST",
+                "BRIDGE_ORGANISM",
+                "ELECTRON_SHUTTLE",
+                "DETOXIFIER",
+                "COMMENSAL",
+                "COMPETITOR"
+            ],
+            "title": "CellularRoleEnum",
+            "type": "string"
+        },
+        "ChemicalEntityTerm": {
+            "additionalProperties": false,
+            "description": "A CHEBI term representing a chemical entity",
+            "properties": {
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^CHEBI:\\d+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "ChemicalEntityTerm",
+            "type": "object"
+        },
+        "CofactorCategoryEnum": {
+            "description": "High-level classification of cofactor types",
+            "enum": [
+                "VITAMINS",
+                "METALS",
+                "NUCLEOTIDES",
+                "ENERGY_TRANSFER",
+                "OTHER_SPECIALIZED"
+            ],
+            "title": "CofactorCategoryEnum",
+            "type": "string"
+        },
+        "CofactorDescriptor": {
+            "additionalProperties": false,
+            "description": "A cofactor or coenzyme required for enzymatic activity",
+            "properties": {
+                "bioavailability": {
+                    "description": "Uptake and availability characteristics",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "biosynthesis_genes": {
+                    "description": "Genes involved in cofactor biosynthesis",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "category": {
+                    "$ref": "#/$defs/CofactorCategoryEnum",
+                    "description": "High-level classification"
+                },
+                "ec_associations": {
+                    "description": "EC numbers of enzymes using this cofactor",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "enzyme_examples": {
+                    "description": "Example enzymes requiring this cofactor",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "kegg_pathways": {
+                    "description": "KEGG pathway IDs for biosynthesis",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional information about the cofactor",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "precursor": {
+                    "description": "Precursor molecule (e.g., thiamine \u2192 TPP)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "precursor_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI term for precursor"
+                },
+                "preferred_term": {
+                    "description": "Human-readable cofactor name (e.g., \"Thiamine pyrophosphate\", \"NAD\")",
+                    "type": "string"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI term for the cofactor"
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "CofactorDescriptor",
+            "type": "object"
+        },
+        "CofactorRequirement": {
+            "additionalProperties": false,
+            "description": "Cofactor requirement for an organism",
+            "properties": {
+                "can_biosynthesize": {
+                    "description": "Whether organism can synthesize this cofactor",
+                    "type": "boolean"
+                },
+                "cofactor": {
+                    "$ref": "#/$defs/CofactorDescriptor",
+                    "description": "Required cofactor"
+                },
+                "confidence": {
+                    "description": "Confidence level (0.0-1.0) based on genome annotation",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Supporting evidence for requirement",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "genes": {
+                    "description": "Genes related to biosynthesis or utilization",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "cofactor",
+                "can_biosynthesize"
+            ],
+            "title": "CofactorRequirement",
+            "type": "object"
+        },
+        "ConcentrationUnitEnum": {
+            "description": "Units for concentration",
+            "enum": [
+                "G_PER_L",
+                "MG_PER_L",
+                "MICROG_PER_L",
+                "MOLAR",
+                "MILLIMOLAR",
+                "MICROMOLAR",
+                "PERCENT_W_V",
+                "PERCENT_V_V",
+                "VARIABLE"
+            ],
+            "title": "ConcentrationUnitEnum",
+            "type": "string"
+        },
+        "ConcentrationValue": {
+            "additionalProperties": false,
+            "description": "Quantified concentration with units",
+            "properties": {
+                "per_volume": {
+                    "description": "Volume basis (e.g., \"per liter\", \"per 100 mL\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "unit": {
+                    "$ref": "#/$defs/ConcentrationUnitEnum",
+                    "description": "Concentration unit"
+                },
+                "value": {
+                    "description": "Numeric value or range",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ],
+            "title": "ConcentrationValue",
+            "type": "object"
+        },
+        "CurationEvent": {
+            "additionalProperties": false,
+            "description": "Audit trail entry for curation",
+            "properties": {
+                "action": {
+                    "description": "Action taken (created, updated, validated, etc.)",
+                    "type": "string"
+                },
+                "curator": {
+                    "description": "Name or identifier of curator",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Additional context",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "timestamp": {
+                    "description": "ISO 8601 timestamp",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "timestamp",
+                "curator",
+                "action"
+            ],
+            "title": "CurationEvent",
+            "type": "object"
+        },
+        "Dataset": {
+            "additionalProperties": false,
+            "description": "Omics dataset generated using this medium",
+            "properties": {
+                "dataset_id": {
+                    "description": "Dataset identifier (GEO, SRA, etc.)",
+                    "type": "string"
+                },
+                "dataset_type": {
+                    "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "Brief description of the dataset",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "url": {
+                    "description": "Direct link to dataset",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "dataset_id"
+            ],
+            "title": "Dataset",
+            "type": "object"
+        },
+        "EvidenceItem": {
+            "additionalProperties": false,
+            "description": "Evidence supporting a claim about media formulation or performance",
+            "properties": {
+                "explanation": {
+                    "description": "Why this evidence supports the claim",
+                    "type": "string"
+                },
+                "reference": {
+                    "description": "Citation (PMID, DOI, or historical reference)",
+                    "type": "string"
+                },
+                "snippet": {
+                    "description": "Exact quote from paper (if PMID/DOI available)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "supports": {
+                    "$ref": "#/$defs/EvidenceItemSupportEnum",
+                    "description": "Level of support"
+                }
+            },
+            "required": [
+                "reference",
+                "supports",
+                "explanation"
+            ],
+            "title": "EvidenceItem",
+            "type": "object"
+        },
+        "EvidenceItemSupportEnum": {
+            "description": "Level of evidence support",
+            "enum": [
+                "SUPPORT",
+                "REFUTE",
+                "PARTIAL",
+                "NO_EVIDENCE",
+                "WRONG_STATEMENT"
+            ],
+            "title": "EvidenceItemSupportEnum",
+            "type": "string"
+        },
+        "GTDBTerm": {
+            "additionalProperties": false,
+            "description": "A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)",
+            "properties": {
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "GTDBTerm",
+            "type": "object"
+        },
+        "IngredientDescriptor": {
+            "additionalProperties": false,
+            "description": "Chemical or biological ingredient in a medium",
+            "properties": {
+                "chemical_formula": {
+                    "description": "Molecular formula (e.g., \"C6H12O6\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "cofactors_provided": {
+                    "description": "Cofactors supplied by this ingredient",
+                    "items": {
+                        "$ref": "#/$defs/CofactorDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "concentration": {
+                    "$ref": "#/$defs/ConcentrationValue",
+                    "description": "Amount of ingredient"
+                },
+                "evidence": {
+                    "description": "Evidence for this ingredient's role",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "mediaingredientmech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "MediaIngredientMech identifier for this ingredient"
+                },
+                "modifier": {
+                    "$ref": "#/$defs/ModifierEnum",
+                    "description": "Modification in variants (INCREASED, DECREASED)"
+                },
+                "molecular_weight": {
+                    "description": "Molecular weight in g/mol",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Preparation notes specific to this ingredient",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "parent_ingredient": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/IngredientReference"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to parent chemical entity from MediaIngredientMech"
+                },
+                "preferred_term": {
+                    "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
+                    "type": "string"
+                },
+                "role": {
+                    "description": "Functional role(s) in the medium",
+                    "items": {
+                        "$ref": "#/$defs/IngredientRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "supplier_catalog": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SupplierInfo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Supplier information for sourcing"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "CHEBI term for the chemical entity"
+                },
+                "variant_type": {
+                    "$ref": "#/$defs/VariantTypeEnum",
+                    "description": "Type of chemical variant"
+                }
+            },
+            "required": [
+                "preferred_term",
+                "concentration"
+            ],
+            "title": "IngredientDescriptor",
+            "type": "object"
+        },
+        "IngredientReference": {
+            "additionalProperties": false,
+            "description": "Reference to canonical ingredient",
+            "properties": {
+                "mediaingredientmech_id": {
+                    "description": "MediaIngredientMech ID",
+                    "pattern": "^MediaIngredientMech:\\d{6}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "preferred_term": {
+                    "description": "Name of parent ingredient",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "IngredientReference",
+            "type": "object"
+        },
+        "IngredientRoleEnum": {
+            "description": "Functional role of an ingredient in growth medium",
+            "enum": [
+                "CARBON_SOURCE",
+                "NITROGEN_SOURCE",
+                "MINERAL",
+                "TRACE_ELEMENT",
+                "BUFFER",
+                "VITAMIN_SOURCE",
+                "SALT",
+                "PROTEIN_SOURCE",
+                "AMINO_ACID_SOURCE",
+                "SOLIDIFYING_AGENT",
+                "ENERGY_SOURCE",
+                "ELECTRON_ACCEPTOR",
+                "ELECTRON_DONOR",
+                "COFACTOR_PROVIDER"
+            ],
+            "title": "IngredientRoleEnum",
+            "type": "string"
+        },
+        "LightConditionEnum": {
+            "description": "Light exposure requirements",
+            "enum": [
+                "DARK",
+                "LIGHT_PROTECTED",
+                "AMBIENT"
+            ],
+            "title": "LightConditionEnum",
+            "type": "string"
+        },
+        "MediaDatabaseTerm": {
+            "additionalProperties": false,
+            "description": "Identifier from authoritative media database",
+            "properties": {
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MediaDatabaseTerm",
+            "type": "object"
+        },
+        "MediaIngredientMechTerm": {
+            "additionalProperties": false,
+            "description": "A MediaIngredientMech identifier for a media ingredient",
+            "properties": {
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^MediaIngredientMech:\\d{6}$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "MediaIngredientMechTerm",
+            "type": "object"
+        },
+        "MediaRecipe": {
+            "additionalProperties": false,
+            "description": "A complete growth medium formulation for culturing microorganisms. This is the root entity - one per YAML file.",
+            "properties": {
+                "aeration": {
+                    "description": "Gas exchange method (e.g., \"0.5% CO2 in air\", \"bubbling\", \"shaking at 150 rpm\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "applications": {
+                    "description": "Use cases and applications",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "categories": {
+                    "description": "All categories this recipe appears in (for cross-category merges)",
+                    "items": {
+                        "$ref": "#/$defs/CategoryEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "category": {
+                    "$ref": "#/$defs/CategoryEnum",
+                    "description": "Broad category for organization"
+                },
+                "chemical_fingerprint": {
+                    "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "culture_vessel": {
+                    "description": "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "curation_history": {
+                    "description": "Audit trail of curation events",
+                    "items": {
+                        "$ref": "#/$defs/CurationEvent"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "data_quality_flags": {
+                    "description": "Data quality indicators for transparency",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "datasets": {
+                    "description": "Omics datasets generated using this medium",
+                    "items": {
+                        "$ref": "#/$defs/Dataset"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "description": {
+                    "description": "Overview of the medium and its purpose",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Evidence supporting formulation claims",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "fingerprint_version": {
+                    "description": "Version of fingerprinting algorithm used",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "high_metal": {
+                    "description": "Indicates media with total metal concentration above the 90th percentile threshold (\u22651049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "high_ree": {
+                    "description": "Indicates media with total rare earth element (REE) concentration above the 90th percentile threshold (\u22651030.48 mM). REEs include lanthanides (La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu) plus Sc and Y. Based on automated concentration analysis of ingredient composition.",
+                    "type": [
+                        "boolean",
+                        "null"
+                    ]
+                },
+                "incubation_atmosphere": {
+                    "$ref": "#/$defs/AtmosphereEnum",
+                    "description": "Atmospheric conditions for incubation"
+                },
+                "ingredients": {
+                    "description": "Chemical and biological ingredients",
+                    "items": {
+                        "$ref": "#/$defs/IngredientDescriptor"
+                    },
+                    "type": "array"
+                },
+                "light_cycle": {
+                    "description": "Photoperiod light:dark cycle (e.g., \"16:8\", \"continuous light\", \"24:0\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "light_intensity": {
+                    "description": "Light intensity for photosynthetic organisms (e.g., \"50 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "light_quality": {
+                    "description": "Light spectrum or wavelength (e.g., \"cool white fluorescent\", \"red LED 660nm\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "media_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaTypeDescriptor"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Reference to authoritative media database"
+                },
+                "medium_type": {
+                    "$ref": "#/$defs/MediumTypeEnum",
+                    "description": "Classification of the medium"
+                },
+                "merge_fingerprint": {
+                    "description": "SHA256 hash of ingredient set for deduplication tracking",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "merge_metadata": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MergeMetadata"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Metadata about merge process and quality"
+                },
+                "merged_from": {
+                    "description": "Original recipe IDs that were merged into this record",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Human-readable medium name (e.g., \"LB Broth\", \"M9 Minimal Medium\")",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Additional context, historical notes, tips",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organism_culture_type": {
+                    "$ref": "#/$defs/OrganismCultureTypeEnum",
+                    "description": "Whether this medium targets a pure isolate culture or a mixed microbial community"
+                },
+                "original_name": {
+                    "description": "Original name from source database before filename sanitization. May contain special characters like /, :, %, (, ), ', \", <, >, &, #, etc. This field preserves the exact name as it appears in the source database.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ph_range": {
+                    "description": "Acceptable pH range (e.g., \"6.8-7.2\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ph_value": {
+                    "description": "Target pH value",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "physical_state": {
+                    "$ref": "#/$defs/PhysicalStateEnum",
+                    "description": "Physical form of the medium"
+                },
+                "preparation_steps": {
+                    "description": "Ordered steps to prepare the medium",
+                    "items": {
+                        "$ref": "#/$defs/PreparationStep"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "references": {
+                    "description": "Original literature sources",
+                    "items": {
+                        "$ref": "#/$defs/PublicationReference"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "salinity": {
+                    "description": "Salt concentration for marine/brackish media (e.g., \"35 ppt\", \"3.5%\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "solutions": {
+                    "description": "Pre-prepared stock solutions used as ingredients",
+                    "items": {
+                        "$ref": "#/$defs/SolutionDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "source_data": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SourceData"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Provenance tracking for records imported from other repositories"
+                },
+                "sterilization": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SterilizationDescriptor"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Sterilization method and parameters"
+                },
+                "storage": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/StorageConditions"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Storage conditions for prepared medium"
+                },
+                "synonyms": {
+                    "description": "Alternate names from merged duplicate recipes",
+                    "items": {
+                        "$ref": "#/$defs/RecipeSynonym"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "target_organisms": {
+                    "description": "Organisms for which this medium is designed",
+                    "items": {
+                        "$ref": "#/$defs/OrganismDescriptor"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "temperature_range": {
+                    "description": "Optimal temperature range (e.g., \"20-25\u00b0C\", \"room temperature\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "temperature_value": {
+                    "description": "Specific culture temperature in Celsius",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "variant_fingerprint": {
+                    "description": "SHA256 hash preserving variant distinctions",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "variants": {
+                    "description": "Related formulations or modifications",
+                    "items": {
+                        "$ref": "#/$defs/MediaVariant"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "medium_type",
+                "physical_state",
+                "ingredients"
+            ],
+            "title": "MediaRecipe",
+            "type": "object"
+        },
+        "MediaTypeDescriptor": {
+            "additionalProperties": false,
+            "description": "Classification and authoritative database reference for the medium",
+            "properties": {
+                "preferred_term": {
+                    "description": "Medium designation in source database (e.g., \"DSMZ Medium 1\", \"LB\")",
+                    "type": "string"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaDatabaseTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Authoritative media database identifier"
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "MediaTypeDescriptor",
+            "type": "object"
+        },
+        "MediaVariant": {
+            "additionalProperties": false,
+            "description": "A variant or modification of the base recipe",
+            "properties": {
+                "description": {
+                    "description": "Purpose and context",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Evidence supporting the variant",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "modifications": {
+                    "description": "What differs from base recipe",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Variant name (e.g., \"Low Salt LB\", \"LB + Ampicillin\")",
+                    "type": "string"
+                },
+                "purpose": {
+                    "description": "Why this variant exists",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "supplier_info": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/SupplierInfo"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Commercial supplier if premix"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "title": "MediaVariant",
+            "type": "object"
+        },
+        "MediumTypeEnum": {
+            "description": "Classification of culture medium",
+            "enum": [
+                "DEFINED",
+                "COMPLEX",
+                "SELECTIVE",
+                "DIFFERENTIAL",
+                "ENRICHMENT",
+                "MINIMAL"
+            ],
+            "title": "MediumTypeEnum",
+            "type": "string"
+        },
+        "MergeMetadata": {
+            "additionalProperties": false,
+            "description": "Metadata about merge process and quality",
+            "properties": {
+                "fingerprint_mode": {
+                    "description": "Fingerprinting mode used (chemical/variant/original)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "hierarchy_conflicts": {
+                    "description": "Ingredients with conflicting merge signals",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "merge_confidence": {
+                    "description": "Confidence score for merge decision (0.0-1.0)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "merge_mode": {
+                    "description": "Merge mode used (conservative/aggressive/variant-aware)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "merge_reason": {
+                    "$ref": "#/$defs/MergeReasonEnum",
+                    "description": "Why these recipes were merged together"
+                },
+                "merge_version": {
+                    "description": "Version of merge pipeline used",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "title": "MergeMetadata",
+            "type": "object"
+        },
+        "MergeReasonEnum": {
+            "description": "Reason why recipes were merged together",
+            "enum": [
+                "EXPLICIT_MERGE_RULE",
+                "IDENTICAL_FINGERPRINT",
+                "SAME_PARENT_INGREDIENTS",
+                "HYDRATION_VARIANT_ONLY",
+                "NO_MATCH"
+            ],
+            "title": "MergeReasonEnum",
+            "type": "string"
+        },
+        "ModifierEnum": {
+            "description": "Modification type for variants",
+            "enum": [
+                "INCREASED",
+                "DECREASED",
+                "ABSENT"
+            ],
+            "title": "ModifierEnum",
+            "type": "string"
+        },
+        "OrganismCultureTypeEnum": {
+            "description": "Whether the medium targets a pure isolate or a mixed microbial community",
+            "enum": [
+                "isolate",
+                "community"
+            ],
+            "title": "OrganismCultureTypeEnum",
+            "type": "string"
+        },
+        "OrganismDescriptor": {
+            "additionalProperties": false,
+            "description": "Target organism for the medium",
+            "properties": {
+                "cofactor_requirements": {
+                    "description": "Cofactors required by this organism",
+                    "items": {
+                        "$ref": "#/$defs/CofactorRequirement"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "community_function": {
+                    "description": "Specific functional contribution to community",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "community_role": {
+                    "description": "Functional role in microbial community",
+                    "items": {
+                        "$ref": "#/$defs/CellularRoleEnum"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Evidence supporting growth on this medium",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "growth_phase": {
+                    "description": "Target growth phase (e.g., \"exponential\", \"stationary\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "gtdb_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/GTDBTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "GTDB genome or lineage identifier (alternative to NCBITaxon)"
+                },
+                "preferred_term": {
+                    "description": "Organism name (e.g., \"Escherichia coli\")",
+                    "type": "string"
+                },
+                "strain": {
+                    "description": "Specific strain designation (e.g., \"K-12\", \"MG1655\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "target_abundance": {
+                    "description": "Target relative abundance in community (0.0-1.0)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/OrganismTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "NCBITaxon identifier"
+                },
+                "transporters": {
+                    "description": "Annotated transport systems",
+                    "items": {
+                        "$ref": "#/$defs/TransporterAnnotation"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "preferred_term"
+            ],
+            "title": "OrganismDescriptor",
+            "type": "object"
+        },
+        "OrganismTerm": {
+            "additionalProperties": false,
+            "description": "An NCBITaxon term representing an organism",
+            "properties": {
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^NCBITaxon:\\d+$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "Ontology term label",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "id"
+            ],
+            "title": "OrganismTerm",
+            "type": "object"
+        },
+        "PhysicalStateEnum": {
+            "description": "Physical form of the medium",
+            "enum": [
+                "LIQUID",
+                "SOLID_AGAR",
+                "SEMISOLID",
+                "BIPHASIC"
+            ],
+            "title": "PhysicalStateEnum",
+            "type": "string"
+        },
+        "PreparationActionEnum": {
+            "description": "Controlled vocabulary for preparation steps",
+            "enum": [
+                "DISSOLVE",
+                "MIX",
+                "HEAT",
+                "COOL",
+                "AUTOCLAVE",
+                "FILTER_STERILIZE",
+                "ADJUST_PH",
+                "ADD_AGAR",
+                "POUR_PLATES",
+                "ALIQUOT",
+                "STORE"
+            ],
+            "title": "PreparationActionEnum",
+            "type": "string"
+        },
+        "PreparationStep": {
+            "additionalProperties": false,
+            "description": "A step in medium preparation",
+            "properties": {
+                "action": {
+                    "$ref": "#/$defs/PreparationActionEnum",
+                    "description": "Action type"
+                },
+                "description": {
+                    "description": "Detailed instruction",
+                    "type": "string"
+                },
+                "duration": {
+                    "description": "Time duration (e.g., \"15 minutes\", \"overnight\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "equipment": {
+                    "description": "Required equipment (e.g., \"autoclave\", \"magnetic stirrer\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional tips or warnings",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "step_number": {
+                    "description": "Sequential order",
+                    "type": "integer"
+                },
+                "temperature": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TemperatureValue"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Temperature for this step"
+                }
+            },
+            "required": [
+                "step_number",
+                "action",
+                "description"
+            ],
+            "title": "PreparationStep",
+            "type": "object"
+        },
+        "PublicationReference": {
+            "additionalProperties": false,
+            "description": "Literature reference",
+            "properties": {
+                "authors": {
+                    "description": "Author list",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional context about the reference",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "reference": {
+                    "description": "Citation (PMID, DOI, or historical reference)",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "Publication title",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "year": {
+                    "description": "Publication year",
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "reference"
+            ],
+            "title": "PublicationReference",
+            "type": "object"
+        },
+        "RecipeSynonym": {
+            "additionalProperties": false,
+            "description": "An alternate name for a recipe from a specific source",
+            "properties": {
+                "name": {
+                    "description": "Alternate recipe name (non-canonical)",
+                    "type": "string"
+                },
+                "original_category": {
+                    "$ref": "#/$defs/CategoryEnum",
+                    "description": "Original category assignment before merge"
+                },
+                "source": {
+                    "description": "Source database (KOMODO, MediaDive, TOGO, etc.)",
+                    "type": "string"
+                },
+                "source_id": {
+                    "description": "Original identifier in source database",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "required": [
+                "name",
+                "source"
+            ],
+            "title": "RecipeSynonym",
+            "type": "object"
+        },
+        "SolutionDescriptor": {
+            "additionalProperties": false,
+            "description": "A pre-prepared stock solution used as an ingredient",
+            "properties": {
+                "composition": {
+                    "description": "Ingredients in the stock solution",
+                    "items": {
+                        "$ref": "#/$defs/IngredientDescriptor"
+                    },
+                    "type": "array"
+                },
+                "concentration": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ConcentrationValue"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Working concentration when added to medium"
+                },
+                "mediaingredientmech_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/MediaIngredientMechTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "MediaIngredientMech identifier for this solution component"
+                },
+                "preferred_term": {
+                    "description": "Solution name (e.g., \"Trace Metal Solution\", \"Vitamin Stock\")",
+                    "type": "string"
+                },
+                "preparation_notes": {
+                    "description": "How to prepare the stock solution",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "shelf_life": {
+                    "description": "Stability duration (e.g., \"6 months at 4\u00b0C\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "storage_conditions": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/StorageConditions"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Storage requirements for the stock"
+                },
+                "term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/Term"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Ontology term if available"
+                }
+            },
+            "required": [
+                "preferred_term",
+                "composition"
+            ],
+            "title": "SolutionDescriptor",
+            "type": "object"
+        },
+        "SourceData": {
+            "additionalProperties": false,
+            "description": "Provenance information for imported records",
+            "properties": {
+                "community_ids": {
+                    "description": "List of CommunityMech IDs this recipe was derived from",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Evidence records from source repository",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "import_date": {
+                    "description": "Date of import (ISO 8601)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Import notes and additional context",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "origin": {
+                    "description": "Source repository name",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "origin"
+            ],
+            "title": "SourceData",
+            "type": "object"
+        },
+        "SterilizationDescriptor": {
+            "additionalProperties": false,
+            "description": "Sterilization method and parameters",
+            "properties": {
+                "duration": {
+                    "description": "Sterilization duration",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "method": {
+                    "$ref": "#/$defs/SterilizationMethodEnum",
+                    "description": "Sterilization technique"
+                },
+                "notes": {
+                    "description": "Special instructions (e.g., \"Filter-sterilize heat-labile components separately\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "pressure": {
+                    "description": "Pressure in psi or kPa (for autoclaving)",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "temperature": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/TemperatureValue"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Temperature setting"
+                }
+            },
+            "required": [
+                "method"
+            ],
+            "title": "SterilizationDescriptor",
+            "type": "object"
+        },
+        "SterilizationMethodEnum": {
+            "description": "Sterilization techniques",
+            "enum": [
+                "AUTOCLAVE",
+                "FILTER",
+                "DRY_HEAT",
+                "TYNDALLIZATION",
+                "NONE"
+            ],
+            "title": "SterilizationMethodEnum",
+            "type": "string"
+        },
+        "StorageConditions": {
+            "additionalProperties": false,
+            "description": "Storage requirements for prepared medium",
+            "properties": {
+                "container_type": {
+                    "description": "Recommended container (e.g., \"glass bottle\", \"polypropylene tube\")",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "light_condition": {
+                    "$ref": "#/$defs/LightConditionEnum",
+                    "description": "Light exposure requirement"
+                },
+                "notes": {
+                    "description": "Additional storage tips",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "shelf_life": {
+                    "description": "Duration of stability",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "temperature": {
+                    "$ref": "#/$defs/TemperatureValue",
+                    "description": "Storage temperature"
+                }
+            },
+            "required": [
+                "temperature"
+            ],
+            "title": "StorageConditions",
+            "type": "object"
+        },
+        "SupplierInfo": {
+            "additionalProperties": false,
+            "description": "Commercial supplier information",
+            "properties": {
+                "catalog_number": {
+                    "description": "Product catalog number",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional sourcing notes",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "product_url": {
+                    "description": "Direct product link",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "supplier_name": {
+                    "description": "Vendor name (e.g., \"Sigma-Aldrich\", \"Thermo Fisher\")",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "supplier_name"
+            ],
+            "title": "SupplierInfo",
+            "type": "object"
+        },
+        "TemperatureUnitEnum": {
+            "description": "Units for temperature",
+            "enum": [
+                "CELSIUS",
+                "FAHRENHEIT",
+                "KELVIN"
+            ],
+            "title": "TemperatureUnitEnum",
+            "type": "string"
+        },
+        "TemperatureValue": {
+            "additionalProperties": false,
+            "description": "Temperature with units",
+            "properties": {
+                "unit": {
+                    "$ref": "#/$defs/TemperatureUnitEnum",
+                    "description": "Temperature unit"
+                },
+                "value": {
+                    "description": "Numeric temperature value",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "value",
+                "unit"
+            ],
+            "title": "TemperatureValue",
+            "type": "object"
+        },
+        "TransporterAnnotation": {
+            "additionalProperties": false,
+            "description": "Annotation of a transporter or transport system",
+            "properties": {
+                "direction": {
+                    "description": "Transport direction (import, export, bidirectional)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "ec_number": {
+                    "description": "EC number if enzymatic",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "genes": {
+                    "description": "Gene names or locus tags",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "name": {
+                    "description": "Transporter name or gene name",
+                    "type": "string"
+                },
+                "notes": {
+                    "description": "Additional functional notes",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "substrate_terms": {
+                    "description": "CHEBI terms for substrates",
+                    "items": {
+                        "$ref": "#/$defs/ChemicalEntityTerm"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "substrates": {
+                    "description": "Transported substrates",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "transporter_type": {
+                    "$ref": "#/$defs/TransporterTypeEnum",
+                    "description": "Classification of transporter"
+                }
+            },
+            "required": [
+                "name",
+                "transporter_type"
+            ],
+            "title": "TransporterAnnotation",
+            "type": "object"
+        },
+        "TransporterTypeEnum": {
+            "description": "Classification of membrane transporter systems",
+            "enum": [
+                "ABC",
+                "MFS",
+                "PTS",
+                "TONB",
+                "SYMPORTER",
+                "ANTIPORTER",
+                "UNIPORTER",
+                "PORIN",
+                "SIDEROPHORE_RECEPTOR",
+                "DEHALOGENASE",
+                "FLUORIDE_EXPORTER"
+            ],
+            "title": "TransporterTypeEnum",
+            "type": "string"
+        },
+        "VariantTypeEnum": {
+            "description": "Type of chemical variant relationship to parent",
+            "enum": [
+                "HYDRATE",
+                "SALT_FORM",
+                "ANHYDROUS",
+                "NAMED_HYDRATE",
+                "CHEMICAL_VARIANT"
+            ],
+            "title": "VariantTypeEnum",
+            "type": "string"
+        }
+    },
+    "$id": "https://w3id.org/culturemech",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "culturemech",
+    "type": "object",
+    "version": null
+}

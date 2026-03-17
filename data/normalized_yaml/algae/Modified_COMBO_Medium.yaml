@@ -1,6 +1,6 @@
 id: CultureMech:000181
-name: Modified COMBO Medium
-category: algae
+name: modified_combo_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -111,6 +111,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000181'
+- timestamp: '2026-03-17T19:45:04.389273+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified COMBO Medium" to "modified_combo_medium" for
+    consistent matching
 references:
 - reference_id: UTEX:modified-combo-medium
 - reference_id: https://utex.org/products/modified-combo-medium
+original_name: Modified COMBO Medium

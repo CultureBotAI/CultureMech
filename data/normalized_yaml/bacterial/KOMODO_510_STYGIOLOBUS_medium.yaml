@@ -1,5 +1,5 @@
 id: CultureMech:005712
-name: STYGIOLOBUS medium
+name: stygiolobus_medium
 original_name: STYGIOLOBUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -24,3 +24,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:005712'
+- timestamp: '2026-03-17T19:45:52.102128+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "STYGIOLOBUS medium" to "stygiolobus_medium" for consistent
+    matching

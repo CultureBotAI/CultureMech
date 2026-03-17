@@ -1,5 +1,5 @@
 id: CultureMech:000948
-name: MODIFIED TRYPTONE SOYA BROTH
+name: modified_tryptone_soya_broth
 original_name: MODIFIED TRYPTONE SOYA BROTH
 category: bacterial
 medium_type: COMPLEX
@@ -69,3 +69,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.371267+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED TRYPTONE SOYA BROTH" to "modified_tryptone_soya_broth"
+    for consistent matching

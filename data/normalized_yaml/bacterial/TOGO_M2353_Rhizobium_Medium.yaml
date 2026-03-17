@@ -1,5 +1,5 @@
 id: CultureMech:008938
-name: Rhizobium Medium
+name: rhizobium_medium
 original_name: Rhizobium Medium
 category: bacterial
 medium_type: COMPLEX
@@ -97,3 +97,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.160734+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Rhizobium Medium" to "rhizobium_medium" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:002785
-name: ANAEROLINEA MEDIUM
+name: anaerolinea_medium
 original_name: ANAEROLINEA MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -42,5 +42,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002785'
+- timestamp: '2026-03-17T19:45:29.141683+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROLINEA MEDIUM" to "anaerolinea_medium" for consistent
+    matching
 data_quality_flags:
 - incomplete_composition

@@ -1,0 +1,44 @@
+id: CultureMech:015402
+name: marine_medium_with_thiosulfate
+original_name: MARINE MEDIUM WITH THIOSULFATE
+category: specialized
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J376
+  term:
+    id: mediadive.medium:J376
+    label: MARINE MEDIUM WITH THIOSULFATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=376'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 375, replacing sulfur with 5.0 g/L sodium thiosulfate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.443773Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J376'
+- timestamp: '2026-02-03T11:27:23.806338'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:42.452690Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015402'
+- timestamp: '2026-03-17T19:46:34.098513+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINE MEDIUM WITH THIOSULFATE" to "marine_medium_with_thiosulfate"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

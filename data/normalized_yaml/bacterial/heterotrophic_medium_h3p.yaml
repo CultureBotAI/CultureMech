@@ -1,0 +1,367 @@
+id: CultureMech:001532
+name: heterotrophic_medium_h3p
+original_name: HETEROTROPHIC MEDIUM H3P
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 428
+  term:
+    id: mediadive.medium:428
+    label: HETEROTROPHIC MEDIUM H3P
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium428.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '46'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '58'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.16959'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.584795'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0116959'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.035847949999999996'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.00584795, 0.03]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: NaVO3 x H2O
+  term:
+    id: CHEBI:132095
+    label: NaVO3 x H2O
+  concentration:
+    value: '0.00584795'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000792
+    label: NaVO3 x H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '23.3918'
+    unit: G_PER_L
+  notes: ' (if required)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric ammonium citrate
+- preferred_term: Yeast extract
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000873
+    label: Na-acetate
+- preferred_term: Disodium succinate
+  term:
+    id: CHEBI:63675
+    label: Disodium succinate
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Disodium succinate
+- preferred_term: DL-Malate
+  term:
+    id: CHEBI:65947
+    label: DL-Malate
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000619
+    label: DL-Malate
+- preferred_term: Na-lactate
+  term:
+    id: CHEBI:75228
+    label: Na-lactate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001047
+    label: Na-lactate
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
+- preferred_term: D-Mannitol
+  term:
+    id: CHEBI:16899
+    label: D-Mannitol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000538
+    label: D-Mannitol
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000160
+    label: Thiamine-HCl x 2 H2O
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000205
+    label: CuCl2 x 2 H2O
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: H3P is a heterotrophic medium for growth, purity checking and isolation
+    of a broad spectrum of aerobic bacteria (Ref. 3367).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Solutions A, B, C and D are autoclaved separately for 15 min at 121°C,
+    cooled down to 50°C and then mixed aseptically with filter-sterilized solution
+    E (at 50°C) and 5.0 ml of standard vitamin solution. The final pH of this medium
+    should be 6.8 without adjustment.
+- step_number: 3
+  action: MIX
+  description: pH 7.0
+- step_number: 4
+  action: MIX
+  description: pH 7.0
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: filter-sterilized
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Filter sterilize (0.2 µm pore-size) and store at 4°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.100273Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 428'
+- timestamp: '2026-03-13T03:08:45.718006Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.004036Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001532'
+- timestamp: '2026-03-17T06:29:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:17.087409+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HETEROTROPHIC MEDIUM H3P" to "heterotrophic_medium_h3p"
+    for consistent matching

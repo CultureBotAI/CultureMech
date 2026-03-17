@@ -1,5 +1,5 @@
 id: CultureMech:008935
-name: 10% Mixotrophic Nitrobacter Medium
+name: 10_mixotrophic_nitrobacter_medium
 original_name: 10% Mixotrophic Nitrobacter Medium
 category: bacterial
 medium_type: COMPLEX
@@ -203,6 +203,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.139981+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "10% Mixotrophic Nitrobacter Medium" to "10_mixotrophic_nitrobacter_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Trace element solution

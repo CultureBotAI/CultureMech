@@ -1,5 +1,5 @@
 id: CultureMech:008121
-name: Ekho Lake Strains Medium
+name: ekho_lake_strains_medium
 original_name: Ekho Lake Strains Medium
 category: bacterial
 medium_type: COMPLEX
@@ -435,6 +435,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.189018+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ekho Lake Strains Medium" to "ekho_lake_strains_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Glucose solution (2.5%, filter-sterilized)

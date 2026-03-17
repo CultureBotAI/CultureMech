@@ -1,0 +1,31 @@
+id: CultureMech:003184
+name: GAM MEDIUM
+original_name: GAM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J83
+  term:
+    id: mediadive.medium:J83
+    label: GAM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=83'
+ingredients:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.700153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J83'
+- timestamp: '2026-03-13T06:19:18.417836Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003184'
+merge_fingerprint: d6da557bd09a743f541b8604a3da2dfa0128ee62b8eee0ef1d1ec495d88bf4dc
+merged_from:
+- JCM_J83_GAM_MEDIUM

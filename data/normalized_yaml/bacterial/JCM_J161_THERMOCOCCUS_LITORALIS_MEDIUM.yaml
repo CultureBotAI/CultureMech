@@ -1,5 +1,5 @@
 id: CultureMech:002520
-name: THERMOCOCCUS LITORALIS MEDIUM
+name: thermococcus_litoralis_medium
 original_name: THERMOCOCCUS LITORALIS MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -36,5 +36,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002520'
+- timestamp: '2026-03-17T19:45:27.116030+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOCOCCUS LITORALIS MEDIUM" to "thermococcus_litoralis_medium"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

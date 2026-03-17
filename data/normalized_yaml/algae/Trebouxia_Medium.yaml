@@ -1,6 +1,6 @@
 id: CultureMech:000234
-name: Trebouxia Medium
-category: algae
+name: trebouxia_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000234'
+- timestamp: '2026-03-17T19:45:04.573294+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trebouxia Medium" to "trebouxia_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:trebouxia-medium
 - reference_id: https://utex.org/products/trebouxia-medium
+original_name: Trebouxia Medium

@@ -1,5 +1,5 @@
 id: CultureMech:010268
-name: Low-Salt Methanotrophic Medium
+name: low_salt_methanotrophic_medium
 original_name: Low-Salt Methanotrophic Medium
 category: bacterial
 medium_type: COMPLEX
@@ -159,6 +159,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.489844+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Low-Salt Methanotrophic Medium" to "low_salt_methanotrophic_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace element solution (see Medium [M850])
   composition: []

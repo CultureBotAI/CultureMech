@@ -1,6 +1,6 @@
 id: CultureMech:000223
-name: Soil Extract Medium
-category: algae
+name: soil_extract_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -69,6 +69,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000223'
+- timestamp: '2026-03-17T19:45:04.528097+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Soil Extract Medium" to "soil_extract_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:soil-extract-medium
 - reference_id: https://utex.org/products/soil-extract-medium
+original_name: Soil Extract Medium

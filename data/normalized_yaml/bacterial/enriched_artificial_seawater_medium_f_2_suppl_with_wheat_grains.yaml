@@ -1,0 +1,186 @@
+id: CultureMech:001203
+name: enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains
+original_name: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1723a
+  term:
+    id: mediadive.medium:1723a
+    label: Enriched Artificial Seawater Medium f/2 suppl. with Wheat Grains
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Artificial Sea Salt
+  concentration:
+    value: '12.4'
+    unit: G_PER_L
+  notes: ' (~ 18 mS/cm = ~ 12 psu at 25°C)'
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: NaH2PO4 x H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000393
+    label: NaH2PO4 x H2O
+- preferred_term: Wheat Grains
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '4.16'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000790
+    label: Na2-EDTA x 2 H2O
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '3.15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '45'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.02196'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2 MoO4 x 2 H2O
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+- preferred_term: D-Biotin
+  term:
+    id: CHEBI:15956
+    label: D-Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: D-Biotin
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: "After cooling, add the following filter sterilized (0.2 µm) components\
+    \ to complete the\r\nmedium:"
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: 'The strain is cultivated in 25 cm2 plastic tissue culture flasks with
+    filter screw caps (T25, distributor: TPP, order number: 90026). The T25 flasks
+    are routinely filled with 20 ml of culture. Each T25 culture is supplemented with
+    a sterilized wheat grain as carbon source for ambient bacteria from the sampling
+    site.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.356783Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1723a'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:21.005230'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Wheat Grains'
+- timestamp: '2026-03-13T06:19:02.199225Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001203'
+- timestamp: '2026-03-17T06:30:31.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.006770+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Enriched Artificial Seawater Medium f/2 suppl. with
+    Wheat Grains" to "enriched_artificial_seawater_medium_f_2_suppl_with_wheat_grains"
+    for consistent matching

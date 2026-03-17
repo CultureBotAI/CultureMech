@@ -1,5 +1,5 @@
 id: CultureMech:005286
-name: BORDET-GENGOU-MEDIUM (DIFCO)
+name: bordet_gengou_medium_difco
 original_name: BORDET-GENGOU-MEDIUM (DIFCO)
 category: bacterial
 medium_type: COMPLEX
@@ -80,3 +80,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.407644+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BORDET-GENGOU-MEDIUM (DIFCO)" to "bordet_gengou_medium_difco"
+    for consistent matching

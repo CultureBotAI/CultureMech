@@ -1,5 +1,5 @@
 id: CultureMech:009225
-name: TM Broth Medium
+name: tm_broth_medium
 original_name: TM Broth Medium
 category: bacterial
 medium_type: COMPLEX
@@ -195,6 +195,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.128022+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TM Broth Medium" to "tm_broth_medium" for consistent
+    matching
 solutions:
 - preferred_term: Castenholz basal salt solution (see below)
   composition: []

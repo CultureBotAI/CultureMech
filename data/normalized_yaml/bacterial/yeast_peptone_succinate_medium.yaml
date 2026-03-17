@@ -1,0 +1,68 @@
+id: CultureMech:006959
+name: yeast_peptone_succinate_medium
+original_name: YEAST-Peptone-SUCCINATE medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 988
+  term:
+    id: komodo.medium:988
+    label: YEAST-Peptone-SUCCINATE medium
+notes: 'Source: KOMODO ModelSEED | ID: 988 | DSMZ Medium: 988 (mediadive.medium:988)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001088
+    label: Sodium succinate
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 988'
+- timestamp: '2026-02-03T11:19:19.806726'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 988
+- timestamp: '2026-03-13T06:19:45.277642Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006959'
+- timestamp: '2026-03-17T06:30:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.318929+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST-Peptone-SUCCINATE medium" to "yeast_peptone_succinate_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:002652
-name: CELLULOMONAS FERMENTANS MEDIUM
+name: cellulomonas_fermentans_medium
 original_name: CELLULOMONAS FERMENTANS MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -106,3 +106,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:28.091370+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CELLULOMONAS FERMENTANS MEDIUM" to "cellulomonas_fermentans_medium"
+    for consistent matching

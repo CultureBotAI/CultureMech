@@ -1,0 +1,101 @@
+id: CultureMech:007061
+name: mmt_succinate_with_nh4cl_and_thiamine_taboada_et_al
+original_name: MMT-Succinate with NH4Cl and thiamine; Taboada et al
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Succinate
+  term:
+    id: CHEBI:26806
+    label: Succinate
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:succ'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000420
+    label: Succinate
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.033243'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '1.49'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '1.26'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.83'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.0184'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.103389Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 170, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:45.848175Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007061'
+- timestamp: '2026-03-17T06:30:38.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.963657+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMT-Succinate with NH4Cl and thiamine; Taboada et al"
+    to "mmt_succinate_with_nh4cl_and_thiamine_taboada_et_al" for consistent matching
+media_term:
+  preferred_term: MediaDB Medium 170
+  term:
+    id: MEDIADB:170
+    label: MMT-Succinate with NH4Cl and thiamine; Taboada et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

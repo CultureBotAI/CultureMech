@@ -1,5 +1,5 @@
 id: CultureMech:002729
-name: TEPIDANAEROBACTER MEDIUM
+name: tepidanaerobacter_medium
 original_name: TEPIDANAEROBACTER MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -41,5 +41,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002729'
+- timestamp: '2026-03-17T19:45:28.705565+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TEPIDANAEROBACTER MEDIUM" to "tepidanaerobacter_medium"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

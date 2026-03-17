@@ -1,5 +1,5 @@
 id: CultureMech:006861
-name: ST21 AGAR FOR CELLULOSE DEGRADERS
+name: st21_agar_for_cellulose_degraders
 original_name: ST21 AGAR FOR CELLULOSE DEGRADERS
 category: bacterial
 medium_type: COMPLEX
@@ -136,3 +136,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.350755+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ST21 AGAR FOR CELLULOSE DEGRADERS" to "st21_agar_for_cellulose_degraders"
+    for consistent matching

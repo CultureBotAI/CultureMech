@@ -1,5 +1,5 @@
 id: CultureMech:009963
-name: PYG Medium (D)
+name: pyg_medium_d
 original_name: PYG Medium (D)
 category: bacterial
 medium_type: COMPLEX
@@ -48,6 +48,10 @@ curation_history:
   date: '2026-03-14T21:07:01.789335'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:29.266053+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYG Medium (D)" to "pyg_medium_d" for consistent matching
 solutions:
 - preferred_term: PYG MEDIUM (B) (see Medium [M423])
   composition: []

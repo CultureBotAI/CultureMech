@@ -1,5 +1,5 @@
 id: CultureMech:009976
-name: Syntrophomonas Palmiticicum Medium
+name: syntrophomonas_palmiticicum_medium
 original_name: Syntrophomonas Palmiticicum Medium
 category: bacterial
 medium_type: COMPLEX
@@ -163,6 +163,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.373159+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Syntrophomonas Palmiticicum Medium" to "syntrophomonas_palmiticicum_medium"
+    for consistent matching
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []

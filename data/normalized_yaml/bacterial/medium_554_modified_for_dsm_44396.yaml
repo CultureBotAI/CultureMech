@@ -1,0 +1,88 @@
+id: CultureMech:006002
+name: medium_554_modified_for_dsm_44396
+original_name: MEDIUM 554 MODIFIED FOR DSM 44396
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_range: 7.5-8.0
+media_term:
+  preferred_term: KOMODO Medium 554_44396
+  term:
+    id: komodo.medium:554_44396
+    label: MEDIUM 554 MODIFIED FOR DSM 44396
+notes: 'Source: KOMODO ModelSEED | ID: 554_44396 | DSMZ Medium: 554 (mediadive.medium:554)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: N-Z amine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 554_44396'
+- timestamp: '2026-02-03T11:19:18.885642'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 554
+- timestamp: '2026-03-13T06:19:37.538522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006002'
+- timestamp: '2026-03-17T06:30:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.332369+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 554 MODIFIED FOR DSM 44396" to "medium_554_modified_for_dsm_44396"
+    for consistent matching
+ph_value: 7.2

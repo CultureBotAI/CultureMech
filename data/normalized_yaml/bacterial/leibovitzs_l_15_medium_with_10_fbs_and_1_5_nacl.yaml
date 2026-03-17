@@ -1,0 +1,55 @@
+id: CultureMech:003278
+name: leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl
+original_name: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J930
+  term:
+    id: mediadive.medium:J930
+    label: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930'
+ingredients:
+- preferred_term: Leibovitz's L-15 medium
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13.6364'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Filter-sterilize with 0.22 ï¿½m PES filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.039905Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J930'
+- timestamp: '2026-03-13T06:19:19.142719Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003278'
+- timestamp: '2026-03-17T06:29:59.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:33.059344+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl"
+    to "leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl" for consistent matching

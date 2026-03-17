@@ -1,5 +1,5 @@
 id: CultureMech:010292
-name: MP Agar
+name: mp_agar
 original_name: MP Agar
 category: bacterial
 medium_type: COMPLEX
@@ -104,3 +104,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.697965+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MP Agar" to "mp_agar" for consistent matching

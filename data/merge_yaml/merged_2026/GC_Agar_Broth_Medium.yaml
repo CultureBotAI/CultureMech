@@ -1,0 +1,113 @@
+id: CultureMech:008799
+name: GC Agar/Broth Medium
+original_name: GC Agar/Broth Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: IsoVitaleX (BD 211876)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Dipotassium Phosphate
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: DI Water
+  concentration:
+    value: '1000.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component [Merged 2 duplicates: 500.0, 500.0]'
+- preferred_term: Corn Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: 'Proteose Peptone #3'
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Dried Bovine Hemoglobin (BD 212392)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2207
+  term:
+    id: TOGO:M2207
+    label: GC Agar/Broth Medium
+notes: 'Source: https://togomedium.org/medium/M2207
+
+  Original URL: https://www.atcc.org/~/media/7CD43F06265B4AD382D91947F95DF380.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.161945Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2207'
+- timestamp: '2026-01-28T19:48:19.441792Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:32.201430+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:01.438877Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.355658Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008799'
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+merge_fingerprint: 6c0786c2d7627c09b15ed9c02262b580d2e5c54565fb7ad3b1bbee378291dd91
+merged_from:
+- TOGO_M2207_GC_Agar_Broth_Medium

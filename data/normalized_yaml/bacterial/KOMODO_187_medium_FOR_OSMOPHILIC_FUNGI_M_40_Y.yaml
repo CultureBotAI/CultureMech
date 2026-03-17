@@ -1,5 +1,5 @@
 id: CultureMech:004211
-name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
+name: medium_for_osmophilic_fungi_m_40_y
 original_name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 category: bacterial
 medium_type: COMPLEX
@@ -59,4 +59,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.817901+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "medium FOR OSMOPHILIC FUNGI (M 40 Y)" to "medium_for_osmophilic_fungi_m_40_y"
+    for consistent matching
 ph_value: 5.4

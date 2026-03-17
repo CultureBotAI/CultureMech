@@ -1,5 +1,5 @@
 id: CultureMech:006087
-name: M14 (PIRELLULA MARINA) MEDIUM
+name: m14_pirellula_marina_medium
 original_name: M14 (PIRELLULA MARINA) MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -346,3 +346,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.049786+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M14 (PIRELLULA MARINA) MEDIUM" to "m14_pirellula_marina_medium"
+    for consistent matching

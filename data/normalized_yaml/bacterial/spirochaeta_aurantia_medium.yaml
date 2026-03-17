@@ -1,0 +1,31 @@
+id: CultureMech:004195
+name: spirochaeta_aurantia_medium
+original_name: SPIROCHAETA AURANTIA medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.3
+media_term:
+  preferred_term: KOMODO Medium 168
+  term:
+    id: komodo.medium:168
+    label: SPIROCHAETA AURANTIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 168 | DSMZ Medium: 168 (mediadive.medium:168)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 168'
+- timestamp: '2026-03-13T06:19:25.768415Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004195'
+- timestamp: '2026-03-17T19:45:40.723342+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SPIROCHAETA AURANTIA medium" to "spirochaeta_aurantia_medium"
+    for consistent matching

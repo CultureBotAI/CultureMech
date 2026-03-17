@@ -1,5 +1,5 @@
 id: CultureMech:008065
-name: Thermococcus Stetteri Medium
+name: thermococcus_stetteri_medium
 original_name: Thermococcus Stetteri Medium
 category: bacterial
 medium_type: COMPLEX
@@ -110,6 +110,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.845439+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermococcus Stetteri Medium" to "thermococcus_stetteri_medium"
+    for consistent matching
 solutions:
 - preferred_term: Modified Brock's salt base solution (see Medium [M156])
   composition: []

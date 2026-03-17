@@ -1,0 +1,41 @@
+id: CultureMech:007502
+name: '892'
+original_name: '892'
+category: bacterial
+description: 892. NBRC 891.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled water1LpH
+    7.1-7.5
+- preferred_term: ''
+  concentration:
+    value: Casein peptone
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.982294Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 891, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=891.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:04.524269Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 5 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.275698Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007502'
+merge_fingerprint: 0c666f1a498fadd42fc771ee03d800d52c62f321d4b9248fec285280bc534b85
+merged_from:
+- NBRC_892

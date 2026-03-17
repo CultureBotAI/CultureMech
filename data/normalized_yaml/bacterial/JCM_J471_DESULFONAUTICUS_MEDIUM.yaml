@@ -1,5 +1,5 @@
 id: CultureMech:002820
-name: DESULFONAUTICUS MEDIUM
+name: desulfonauticus_medium
 original_name: DESULFONAUTICUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -39,5 +39,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:002820'
+- timestamp: '2026-03-17T19:45:29.376147+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFONAUTICUS MEDIUM" to "desulfonauticus_medium"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

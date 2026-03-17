@@ -1,5 +1,5 @@
 id: CultureMech:010366
-name: MJ Medium For Microaerophilic Autotrophs
+name: mj_medium_for_microaerophilic_autotrophs
 original_name: MJ Medium For Microaerophilic Autotrophs
 category: bacterial
 medium_type: COMPLEX
@@ -76,6 +76,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.294311+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MJ Medium For Microaerophilic Autotrophs" to "mj_medium_for_microaerophilic_autotrophs"
+    for consistent matching
 solutions:
 - preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
   composition: []

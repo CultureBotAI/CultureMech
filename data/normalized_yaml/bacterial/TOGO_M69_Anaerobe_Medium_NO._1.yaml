@@ -1,5 +1,5 @@
 id: CultureMech:010106
-name: Anaerobe Medium NO. 1
+name: anaerobe_medium_no_1
 original_name: Anaerobe Medium NO. 1
 category: bacterial
 medium_type: COMPLEX
@@ -124,6 +124,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.290165+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Anaerobe Medium NO. 1" to "anaerobe_medium_no_1" for
+    consistent matching
 solutions:
 - preferred_term: 0.1% Resazurin solution
   composition: []

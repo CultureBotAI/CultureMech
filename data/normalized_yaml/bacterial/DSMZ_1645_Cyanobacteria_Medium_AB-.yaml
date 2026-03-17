@@ -1,5 +1,5 @@
 id: CultureMech:001128
-name: Cyanobacteria Medium AB-
+name: cyanobacteria_medium_ab
 original_name: Cyanobacteria Medium AB-
 category: bacterial
 medium_type: DEFINED
@@ -215,3 +215,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:13.152779+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Cyanobacteria Medium AB-" to "cyanobacteria_medium_ab"
+    for consistent matching

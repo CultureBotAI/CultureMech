@@ -1,5 +1,5 @@
 id: CultureMech:006932
-name: 1/2 YTSS medium
+name: 1_2_ytss_medium
 original_name: 1/2 YTSS medium
 category: bacterial
 medium_type: COMPLEX
@@ -55,3 +55,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.094726+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/2 YTSS medium" to "1_2_ytss_medium" for consistent
+    matching

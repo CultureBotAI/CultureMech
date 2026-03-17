@@ -1,5 +1,5 @@
 id: CultureMech:004015
-name: NAUTILIA NITRATIREDUCENS MEDIUM
+name: nautilia_nitratireducens_medium
 original_name: NAUTILIA NITRATIREDUCENS MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -24,3 +24,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004015'
+- timestamp: '2026-03-17T19:45:38.814157+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NAUTILIA NITRATIREDUCENS MEDIUM" to "nautilia_nitratireducens_medium"
+    for consistent matching

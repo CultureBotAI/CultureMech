@@ -1,0 +1,38 @@
+id: CultureMech:002435
+name: methanol_utilizing_bacteria_medium_d
+original_name: METHANOL-UTILIZING BACTERIA MEDIUM D
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J126
+  term:
+    id: mediadive.medium:J126
+    label: METHANOL-UTILIZING BACTERIA MEDIUM D
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126'
+ingredients:
+- preferred_term: Methanol-utilizing bacteria medium B
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.773224Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J126'
+- timestamp: '2026-03-13T06:19:13.295706Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002435'
+- timestamp: '2026-03-17T19:45:26.396493+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOL-UTILIZING BACTERIA MEDIUM D" to "methanol_utilizing_bacteria_medium_d"
+    for consistent matching

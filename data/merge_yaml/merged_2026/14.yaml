@@ -1,0 +1,41 @@
+id: CultureMech:007476
+name: '14'
+original_name: '14'
+category: bacterial
+description: 14. NBRC 13.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Soytone1gSoluble starch10gSeawater (2% Salinity)*1LAgar15gpH 8.2*Dilute
+    artificial seawater or natural seawater with distilled water.
+- preferred_term: ''
+  concentration:
+    value: Soytone
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.936139Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 13, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=13.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:00.145946Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.203268Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007476'
+merge_fingerprint: 63068d590cdd8fad01819da49fd9f5140aecb7ec8d62e7dae5a588ed1e6fb446
+merged_from:
+- NBRC_14

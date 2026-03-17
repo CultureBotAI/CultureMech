@@ -1,5 +1,5 @@
 id: CultureMech:010000
-name: Clostridium Thermocellum Medium
+name: clostridium_thermocellum_medium
 original_name: Clostridium Thermocellum Medium
 category: bacterial
 medium_type: COMPLEX
@@ -150,3 +150,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.551093+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium Thermocellum Medium" to "clostridium_thermocellum_medium"
+    for consistent matching

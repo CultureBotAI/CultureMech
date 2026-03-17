@@ -1,0 +1,53 @@
+id: CultureMech:002436
+name: chocolate_agar_with_5_sheep_blood
+original_name: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1270
+  term:
+    id: mediadive.medium:J1270
+    label: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1270'
+ingredients:
+- preferred_term: Columbia blood agar base
+  term:
+    id: CHEBI:2509
+    label: Columbia blood agar base
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Columbia blood agar base
+- preferred_term: Sheep blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except horse blood, autoclave and cool to about 70C.
+    Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for 15
+    minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.243540Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1270'
+- timestamp: '2026-03-13T06:19:13.297963Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002436'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:26.399207+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CHOCOLATE AGAR WITH  5% SHEEP BLOOD" to "chocolate_agar_with_5_sheep_blood"
+    for consistent matching

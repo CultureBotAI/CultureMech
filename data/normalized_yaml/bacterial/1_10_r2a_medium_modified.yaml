@@ -1,0 +1,101 @@
+id: CultureMech:000826
+name: 1_10_r2a_medium_modified
+original_name: 1/10 R2A MEDIUM MODIFIED
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_range: 4.5-5
+media_term:
+  preferred_term: DSMZ Medium 1365
+  term:
+    id: mediadive.medium:1365
+    label: 1/10 R2A MEDIUM MODIFIED
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1365.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Final pH 4.5 - 5.0; adjust with Alginic Acid before adding agar. Add
+    agar, heat medium to boiling to dissolve agar, and autoclave for 15 min at 121°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.210402Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1365'
+- timestamp: '2026-01-28T19:48:12.220181Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.676389Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000826'
+- timestamp: '2026-03-17T06:29:51.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:10.117852+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/10 R2A MEDIUM MODIFIED" to "1_10_r2a_medium_modified"
+    for consistent matching

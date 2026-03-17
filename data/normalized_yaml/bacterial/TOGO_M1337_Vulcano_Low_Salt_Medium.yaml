@@ -1,5 +1,5 @@
 id: CultureMech:007873
-name: Vulcano Low Salt Medium
+name: vulcano_low_salt_medium
 original_name: Vulcano Low Salt Medium
 category: bacterial
 medium_type: COMPLEX
@@ -272,6 +272,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.557332+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vulcano Low Salt Medium" to "vulcano_low_salt_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace element solution (see Medium [M439])
   composition: []

@@ -1,5 +1,5 @@
 id: CultureMech:002824
-name: TRYPTICASE SOY BROTH AGAR
+name: trypticase_soy_broth_agar
 original_name: TRYPTICASE SOY BROTH AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -40,3 +40,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.385002+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTICASE SOY BROTH AGAR" to "trypticase_soy_broth_agar"
+    for consistent matching

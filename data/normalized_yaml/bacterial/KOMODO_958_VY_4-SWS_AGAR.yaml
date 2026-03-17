@@ -1,5 +1,5 @@
 id: CultureMech:006902
-name: VY/4-SWS AGAR
+name: vy_4_sws_agar
 original_name: VY/4-SWS AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -253,3 +253,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.744287+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VY/4-SWS AGAR" to "vy_4_sws_agar" for consistent matching

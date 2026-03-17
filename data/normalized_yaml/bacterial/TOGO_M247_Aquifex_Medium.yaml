@@ -1,5 +1,5 @@
 id: CultureMech:009054
-name: Aquifex Medium
+name: aquifex_medium
 original_name: Aquifex Medium
 category: bacterial
 medium_type: COMPLEX
@@ -189,6 +189,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.071733+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Aquifex Medium" to "aquifex_medium" for consistent
+    matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

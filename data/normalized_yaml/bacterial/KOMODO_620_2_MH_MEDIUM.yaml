@@ -1,5 +1,5 @@
 id: CultureMech:006115
-name: 2% MH MEDIUM
+name: 2_mh_medium
 original_name: 2% MH MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -102,3 +102,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.293612+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2% MH MEDIUM" to "2_mh_medium" for consistent matching

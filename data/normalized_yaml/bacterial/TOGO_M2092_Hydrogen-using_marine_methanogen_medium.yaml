@@ -1,5 +1,5 @@
 id: CultureMech:008683
-name: Hydrogen-using marine methanogen medium
+name: hydrogen_using_marine_methanogen_medium
 original_name: Hydrogen-using marine methanogen medium
 category: bacterial
 medium_type: COMPLEX
@@ -479,6 +479,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.993549+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Hydrogen-using marine methanogen medium" to "hydrogen_using_marine_methanogen_medium"
+    for consistent matching
 solutions:
 - preferred_term: KP buffer*
   composition: []

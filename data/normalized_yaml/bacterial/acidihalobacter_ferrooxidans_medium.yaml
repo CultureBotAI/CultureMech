@@ -1,0 +1,122 @@
+id: CultureMech:000778
+name: acidihalobacter_ferrooxidans_medium
+original_name: ACIDIHALOBACTER FERROOXIDANS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1321
+  term:
+    id: mediadive.medium:1321
+    label: ACIDIHALOBACTER FERROOXIDANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1321.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.111111'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '139'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+- preferred_term: K2S4O6
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86466
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001076
+    label: K2S4O6
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: Combine solution A and solution B after cooling and add solutions C
+    and D to complete the medium.
+- step_number: 2
+  action: MIX
+  description: 'Note: Use 10% (v/v) as inoculum.'
+- step_number: 3
+  action: AUTOCLAVE
+  description: Adjust the pH to 1.7 with H2SO4 and autoclave at 121°C for 20 min.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Adjust the pH to 1.25 and autoclave solution at 115°C for 10 min or
+    sterilize by filtration.
+- step_number: 5
+  action: MIX
+  description: Sterilize by filtration.
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 20 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.092035Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1321'
+- timestamp: '2026-01-28T19:48:30.528278Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:18:58.292491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000778'
+- timestamp: '2026-03-17T06:30:30.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:09.683857+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACIDIHALOBACTER FERROOXIDANS MEDIUM" to "acidihalobacter_ferrooxidans_medium"
+    for consistent matching

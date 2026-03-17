@@ -1,5 +1,5 @@
 id: CultureMech:006501
-name: PYROLOBUS FUMARII MEDIUM
+name: pyrolobus_fumarii_medium
 original_name: PYROLOBUS FUMARII MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -264,3 +264,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.826796+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYROLOBUS FUMARII MEDIUM" to "pyrolobus_fumarii_medium"
+    for consistent matching

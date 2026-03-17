@@ -1,5 +1,5 @@
 id: CultureMech:006873
-name: medium FOR ARHODOMONAS AND MARINOBACTER
+name: medium_for_arhodomonas_and_marinobacter
 original_name: medium FOR ARHODOMONAS AND MARINOBACTER
 category: bacterial
 medium_type: COMPLEX
@@ -300,3 +300,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.449961+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "medium FOR ARHODOMONAS AND MARINOBACTER" to "medium_for_arhodomonas_and_marinobacter"
+    for consistent matching

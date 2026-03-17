@@ -1,0 +1,44 @@
+id: CultureMech:002737
+name: gelidivirgula_medium
+original_name: GELIDIVIRGULA MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J380
+  term:
+    id: mediadive.medium:J380
+    label: GELIDIVIRGULA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=380'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 379 with 5.0 g/L (final) peptone and omitted glucose.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.456232Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J380'
+- timestamp: '2026-02-03T11:26:54.745325'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.389041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002737'
+- timestamp: '2026-03-17T19:45:28.781089+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GELIDIVIRGULA MEDIUM" to "gelidivirgula_medium" for
+    consistent matching
+data_quality_flags:
+- incomplete_composition

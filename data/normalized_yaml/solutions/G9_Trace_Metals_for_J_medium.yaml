@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000211
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '1.5'
@@ -18,6 +20,8 @@ composition:
   term:
     id: CHEBI:86374
     label: manganese(II) sulfate monohydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001118
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.3'
@@ -32,6 +36,8 @@ composition:
   term:
     id: CHEBI:79321
     label: ammonium heptamolybdate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001110
 - preferred_term: Copper sulfate pentahydrate
   concentration:
     value: '0.05'
@@ -39,6 +45,8 @@ composition:
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001112
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.15'
@@ -46,6 +54,8 @@ composition:
   term:
     id: CHEBI:78034
     label: cobalt dinitrate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001111
 - preferred_term: Potassium iodide
   concentration:
     value: '0.01'
@@ -53,18 +63,28 @@ composition:
   term:
     id: CHEBI:8346
     label: potassium iodide
-notes: |
-  G9 Trace Metals solution for J Medium (UTEX).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000505
+notes: 'G9 Trace Metals solution for J Medium (UTEX).
+
   Provides essential micronutrients for freshwater algae culture.
 
+
   Preparation: Add components to approximately 900 mL deionized water in the order
+
   listed while stirring continuously. Bring to 1 L total volume.
+
 
   Storage: Refrigerator temperature (4°C).
 
+
   Final stock concentrations: H3BO3 (0.053 mM), MnSO4·H2O (8.6 µM),
+
   ZnSO4·7H2O (1 µM), (NH4)6Mo7O24·4H2O (0.065 µM), CuSO4·5H2O (0.2 µM),
+
   Co(NO3)2·6H2O (0.52 µM), KI (0.06 µM)
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0097

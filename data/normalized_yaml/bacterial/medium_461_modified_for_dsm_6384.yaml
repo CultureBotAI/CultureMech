@@ -1,0 +1,117 @@
+id: CultureMech:005473
+name: medium_461_modified_for_dsm_6384
+original_name: MEDIUM 461 MODIFIED FOR DSM 6384
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 461_6384
+  term:
+    id: komodo.medium:461_6384
+    label: MEDIUM 461 MODIFIED FOR DSM 6384
+notes: 'Source: KOMODO ModelSEED | ID: 461_6384 | DSMZ Medium: 461 (mediadive.medium:461)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.44135'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.248509'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.497018'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: MnSO4
+  term:
+    id: CHEBI:86360
+    label: MnSO4
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000605
+    label: MnSO4
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0497018'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Pyrrole-2-carboxylic acid
+  concentration:
+    value: '1111'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 461_6384'
+- timestamp: '2026-02-03T11:19:14.222482'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 461
+- timestamp: '2026-03-13T06:19:33.179860Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005473'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.256874+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 461 MODIFIED FOR DSM 6384" to "medium_461_modified_for_dsm_6384"
+    for consistent matching
+high_metal: true

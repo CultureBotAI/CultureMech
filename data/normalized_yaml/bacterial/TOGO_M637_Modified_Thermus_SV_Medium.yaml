@@ -1,5 +1,5 @@
 id: CultureMech:010037
-name: Modified Thermus SV Medium
+name: modified_thermus_sv_medium
 original_name: Modified Thermus SV Medium
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:02.173133'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:29.790652+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Thermus SV Medium" to "modified_thermus_sv_medium"
+    for consistent matching
 solutions:
 - preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
   composition: []

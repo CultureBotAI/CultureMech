@@ -1,0 +1,43 @@
+id: CultureMech:000373
+name: n75s
+original_name: N75S
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C61
+  term:
+    id: mediadive.medium:C61
+    label: N75S
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Cerophyll
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Bring 75% seawater to the boil, add the powdered cereal leaves and\
+    \ keep boiling \r\nfor  5 minutes.  Allow to cool and  restore  volume to 1 litre\
+    \ with deionized water. \r\nFilter through Whatman GF/C paper.  Autoclave at 15\
+    \ psi for 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.686104Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C61'
+- timestamp: '2026-03-13T06:18:54.832834Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000373'
+- timestamp: '2026-03-17T19:45:05.841207+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "N75S" to "n75s" for consistent matching

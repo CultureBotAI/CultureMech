@@ -1,5 +1,5 @@
 id: CultureMech:006432
-name: R - CW medium
+name: r_cw_medium
 original_name: R - CW medium
 category: bacterial
 medium_type: COMPLEX
@@ -114,3 +114,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.054870+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R - CW medium" to "r_cw_medium" for consistent matching

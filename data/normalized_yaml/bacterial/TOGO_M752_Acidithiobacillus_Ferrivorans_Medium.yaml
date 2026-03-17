@@ -1,5 +1,5 @@
 id: CultureMech:010158
-name: Acidithiobacillus Ferrivorans Medium
+name: acidithiobacillus_ferrivorans_medium
 original_name: Acidithiobacillus Ferrivorans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -135,6 +135,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.685014+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidithiobacillus Ferrivorans Medium" to "acidithiobacillus_ferrivorans_medium"
+    for consistent matching
 solutions:
 - preferred_term: UBS solution (see below)
   composition: []

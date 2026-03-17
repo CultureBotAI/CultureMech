@@ -1,5 +1,5 @@
 id: CultureMech:010424
-name: Gauze's Synthetic Medium NO. 1 (pH 5.3)
+name: gauzes_synthetic_medium_no_1_ph_5_3
 original_name: Gauze's Synthetic Medium NO. 1 (pH 5.3)
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:04.406923'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:32.751965+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Gauze's Synthetic Medium NO. 1 (pH 5.3)" to "gauzes_synthetic_medium_no_1_ph_5_3"
+    for consistent matching
 solutions:
 - preferred_term: Gauze's synthetic medium No. 1 (see Medium [M72])
   composition: []

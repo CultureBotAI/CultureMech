@@ -1,0 +1,45 @@
+id: CultureMech:002911
+name: lamprobacter_roseus_medium
+original_name: LAMPROBACTER ROSEUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J562
+  term:
+    id: mediadive.medium:J562
+    label: LAMPROBACTER ROSEUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=562'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 561 supplemented with 1.0 ml/L vitamin B12 solution
+    (2 mg/100 ml).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.942835Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J562'
+- timestamp: '2026-02-03T11:26:55.328231'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.511762Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002911'
+- timestamp: '2026-03-17T19:45:30.073511+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LAMPROBACTER ROSEUS MEDIUM" to "lamprobacter_roseus_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

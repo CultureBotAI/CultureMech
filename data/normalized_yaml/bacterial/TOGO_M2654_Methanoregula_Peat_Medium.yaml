@@ -1,5 +1,5 @@
 id: CultureMech:009209
-name: Methanoregula (Peat) Medium
+name: methanoregula_peat_medium
 original_name: Methanoregula (Peat) Medium
 category: bacterial
 medium_type: COMPLEX
@@ -399,6 +399,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.799455+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanoregula (Peat) Medium" to "methanoregula_peat_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Solution A

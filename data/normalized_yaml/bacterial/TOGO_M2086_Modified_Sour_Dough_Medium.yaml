@@ -1,5 +1,5 @@
 id: CultureMech:008676
-name: Modified Sour Dough Medium
+name: modified_sour_dough_medium
 original_name: Modified Sour Dough Medium
 category: bacterial
 medium_type: COMPLEX
@@ -85,3 +85,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:17.935524+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Sour Dough Medium" to "modified_sour_dough_medium"
+    for consistent matching

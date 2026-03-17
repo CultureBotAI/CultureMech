@@ -1,0 +1,46 @@
+id: CultureMech:002594
+name: picrophilus_medium
+original_name: PICROPHILUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 1.0
+media_term:
+  preferred_term: JCM Medium J233
+  term:
+    id: mediadive.medium:J233
+    label: PICROPHILUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=233'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 180 with 2.0 g/L (final) yeast extract, adjust pH to
+    1.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.041848Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J233'
+- timestamp: '2026-02-03T11:26:54.242113'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.417493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002594'
+- timestamp: '2026-03-17T19:45:27.681735+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PICROPHILUS MEDIUM" to "picrophilus_medium" for consistent
+    matching
+data_quality_flags:
+- incomplete_composition

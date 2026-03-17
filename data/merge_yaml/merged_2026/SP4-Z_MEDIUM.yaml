@@ -1,0 +1,108 @@
+id: CultureMech:009032
+name: SP4-Z Medium
+original_name: SP4-Z Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: distilled water
+  concentration:
+    value: '126'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: agar
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: DNA (fish sperm; SERVA)
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Growth factor'
+- preferred_term: Bacto-Peptone (BD)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: PPLO broth
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Fetal bovine serum (heat-inactivated)
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Yeastolate (BD; 2%, autoclaved)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Swine serum (heat-inactivated)
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+- preferred_term: CMRL-1066 medium (10x concentrated; GIBCO)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Defined component'
+media_term:
+  preferred_term: TOGO Medium M2452
+  term:
+    id: TOGO:M2452
+    label: SP4-Z Medium
+notes: 'Source: https://togomedium.org/medium/M2452
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.518524Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2452'
+- timestamp: '2026-01-28T19:48:07.067696Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:11.396352+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:02.057403Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009032'
+- timestamp: '2026-03-15T03:04:08.872541+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M2452_SP4-Z_Medium, TOGO_M2453_SP4-Z_Medium'
+solutions:
+- preferred_term: Glucose (50% aqueous solution)
+  composition: []
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+categories:
+- bacterial
+merged_from:
+- TOGO_M2452_SP4-Z_Medium
+- TOGO_M2453_SP4-Z_Medium
+merge_fingerprint: 0acf5485adf304204c8b041c9879c6860ae40d06bff0fca544b65c92cad89453

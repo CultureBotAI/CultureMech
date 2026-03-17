@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:64734
     label: edetate disodium
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001113
 - preferred_term: Magnesium sulfate heptahydrate
   concentration:
     value: '10.0'
@@ -18,6 +20,8 @@ composition:
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000614
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
     value: '5.0'
@@ -25,6 +29,8 @@ composition:
   term:
     id: CHEBI:6636
     label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000116
 - preferred_term: Ferric chloride hexahydrate
   concentration:
     value: '0.5'
@@ -32,22 +38,35 @@ composition:
   term:
     id: CHEBI:82824
     label: ferric chloride hexahydrate
-notes: |
-  Macro Component 2 for J Medium (UTEX).
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001116
+notes: 'Macro Component 2 for J Medium (UTEX).
+
   Second of two macronutrient stock solutions for J Medium.
+
   Provides magnesium, iron, and EDTA chelator for metal bioavailability.
 
+
   Preparation: Add components to approximately 850 mL deionized water in the order
+
   listed while stirring continuously. Adjust pH to 7.5 with NaOH or HCl.
+
   Bring to 1 L total volume.
+
 
   Storage: Refrigerator temperature (4°C).
 
+
   Final stock concentrations: Na2EDTA·2H2O (0.12 mM), MgSO4·7H2O (0.41 mM),
+
   MgCl2·6H2O (0.24 mM), FeCl3·6H2O (0.02 mM)
 
+
   Note: EDTA chelates iron and trace metals, improving their bioavailability and
+
   preventing precipitation in the alkaline pH range of the medium.
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0096

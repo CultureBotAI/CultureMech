@@ -1,0 +1,41 @@
+id: CultureMech:007466
+name: '1245'
+original_name: '1245'
+category: bacterial
+description: 1245. NBRC 1243.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Bacto Brain Heart Infusion (Difco)37gNaCl20gDistilled water1LAgar
+    (if needed)15g
+- preferred_term: ''
+  concentration:
+    value: Bacto Brain Heart Infusion (Difco)
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.042670Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1243, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1243.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:22.545661Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.170539Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007466'
+merge_fingerprint: 7d9a210ff2d656f554f52cd55e62fe549ef815b608301f1d940d0ea82b23c980
+merged_from:
+- NBRC_1245

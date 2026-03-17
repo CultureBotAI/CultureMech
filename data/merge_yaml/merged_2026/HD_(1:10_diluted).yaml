@@ -1,0 +1,62 @@
+id: CultureMech:000562
+name: HD (1:10 diluted)
+original_name: HD (1:10 diluted)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 5.0
+media_term:
+  preferred_term: DSMZ Medium 1124
+  term:
+    id: mediadive.medium:1124
+    label: HD (1:10 diluted)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1124.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if required)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 5.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.452717Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1124'
+- timestamp: '2026-03-13T06:18:56.399116Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000562'
+- timestamp: '2026-03-15T03:03:22.133058+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1124_HD_1_10_diluted, KOMODO_1124_HD_1_10_diluted'
+categories:
+- bacterial
+merged_from:
+- DSMZ_1124_HD_1_10_diluted
+- KOMODO_1124_HD_1_10_diluted
+merge_fingerprint: aefeec1eab81bc6ec50d123667e9d603358631c063f3b731f2e44cd888a8f678

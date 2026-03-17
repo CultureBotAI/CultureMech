@@ -1,5 +1,5 @@
 id: CultureMech:010182
-name: Desulfobulbus Medium With Lactate
+name: desulfobulbus_medium_with_lactate
 original_name: Desulfobulbus Medium With Lactate
 category: bacterial
 medium_type: COMPLEX
@@ -155,6 +155,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.866513+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfobulbus Medium With Lactate" to "desulfobulbus_medium_with_lactate"
+    for consistent matching
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

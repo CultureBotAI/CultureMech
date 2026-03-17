@@ -1,5 +1,5 @@
 id: CultureMech:008954
-name: Stetteria Medium
+name: stetteria_medium
 original_name: Stetteria Medium
 category: bacterial
 medium_type: COMPLEX
@@ -285,6 +285,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.275056+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Stetteria Medium" to "stetteria_medium" for consistent
+    matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

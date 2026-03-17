@@ -1,5 +1,5 @@
 id: CultureMech:004074
-name: METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
+name: methanobacterium_thermoautotrophicum_medium
 original_name: METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -24,3 +24,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004074'
+- timestamp: '2026-03-17T19:45:39.395019+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM" to "methanobacterium_thermoautotrophicum_medium"
+    for consistent matching

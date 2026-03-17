@@ -1,5 +1,5 @@
 id: CultureMech:003844
-name: HD-MEDIUM, 1:10 diluted, modified
+name: hd_medium_1_10_diluted_modified
 original_name: HD-MEDIUM, 1:10 diluted, modified
 category: bacterial
 medium_type: COMPLEX
@@ -100,3 +100,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.092083+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HD-MEDIUM, 1:10 diluted, modified" to "hd_medium_1_10_diluted_modified"
+    for consistent matching

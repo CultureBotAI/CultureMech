@@ -950,6 +950,26 @@ tag-placeholder-recipes dry_run="":
             --normalized-dir {{normalized_yaml_dir}}
     fi
 
+[group('Quality')]
+cleanup-recipe-ingredients dry_run="" report="":
+    #!/usr/bin/env bash
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be modified"
+        echo ""
+        .venv/bin/python scripts/cleanup_recipe_ingredients.py \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --dry-run \
+            --verbose
+    else
+        REPORT_FLAG=""
+        if [ -n "{{report}}" ]; then
+            REPORT_FLAG="--report {{report}}"
+        fi
+        .venv/bin/python scripts/cleanup_recipe_ingredients.py \
+            --normalized-dir {{normalized_yaml_dir}} \
+            $REPORT_FLAG
+    fi
+
 # ================================================================
 # FULL PIPELINE
 # ================================================================
@@ -965,13 +985,41 @@ fix-all-data-quality dry_run="":
     echo "Step 2: Track 2 - Resolve KOMODO compositions"
     just resolve-komodo-compositions {{dry_run}}
     echo ""
-    echo "Step 3: Track 1 - Tag placeholder recipes"
+    echo "Step 3: Cleanup recipe ingredients (duplicates, pH buffers)"
+    just cleanup-recipe-ingredients {{dry_run}}
+    echo ""
+    echo "Step 4: Track 1 - Tag placeholder recipes"
     just tag-placeholder-recipes {{dry_run}}
     echo ""
-    echo "Step 4: Validation report"
+    echo "Step 5: Validation report"
     just validation-stats
     echo ""
     echo "✓ Data quality pipeline complete!"
+
+# ================================================================
+# INDEXES
+# ================================================================
+
+[group('Indexes')]
+generate-indexes dir="data/normalized_yaml":
+    #!/usr/bin/env bash
+    echo "Generating recipe indexes for {{dir}}..."
+    .venv/bin/python scripts/generate_recipe_indexes.py \
+        --recipe-dir {{dir}}
+    echo "✓ Indexes generated!"
+
+[group('Indexes')]
+generate-all-indexes:
+    #!/usr/bin/env bash
+    echo "Generating indexes for all recipe collections..."
+    echo ""
+    echo "1. Normalized recipes"
+    just generate-indexes data/normalized_yaml
+    echo ""
+    echo "2. Merged recipes (2026 baseline)"
+    just generate-indexes data/merge_yaml/merged_2026
+    echo ""
+    echo "✓ All indexes generated!"
 
 # ================================================================
 # EXPORT
@@ -1869,3 +1917,37 @@ gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
         --force-reload
     echo ""
     echo "✓ UMAP visualization regenerated!"
+
+# Generate mapped ingredients file (ingredients with CHEBI/ontology IDs)
+[group('Ingredients')]
+aggregate-mapped-ingredients output="output/mapped_ingredients.yaml" min_occurrences="1":
+    #!/usr/bin/env bash
+    echo "Aggregating mapped ingredients from media YAML files..."
+    mkdir -p $(dirname {{output}})
+    uv run python scripts/aggregate_mapped_ingredients.py \
+        --output {{output}} \
+        --input-dir {{normalized_yaml_dir}} \
+        --min-occurrences {{min_occurrences}} \
+        --verbose
+    echo "✓ Mapped ingredients saved to {{output}}"
+
+# Generate unmapped ingredients file (ingredients without ontology mappings)
+[group('Ingredients')]
+aggregate-unmapped-ingredients output="output/unmapped_ingredients.yaml" min_occurrences="1":
+    #!/usr/bin/env bash
+    echo "Aggregating unmapped ingredients from media YAML files..."
+    mkdir -p $(dirname {{output}})
+    uv run python scripts/aggregate_unmapped_ingredients.py \
+        --output {{output}} \
+        --input-dir {{normalized_yaml_dir}} \
+        --min-occurrences {{min_occurrences}} \
+        --verbose
+    echo "✓ Unmapped ingredients saved to {{output}}"
+
+# Generate both mapped and unmapped ingredient files
+[group('Ingredients')]
+aggregate-all-ingredients: (aggregate-mapped-ingredients) (aggregate-unmapped-ingredients)
+    @echo ""
+    @echo "✓ Ingredient aggregation complete!"
+    @echo "  Mapped:   output/mapped_ingredients.yaml"
+    @echo "  Unmapped: output/unmapped_ingredients.yaml"

@@ -1,5 +1,5 @@
 id: CultureMech:010050
-name: Clostridium Bovis Medium
+name: clostridium_bovis_medium
 original_name: Clostridium Bovis Medium
 category: bacterial
 medium_type: COMPLEX
@@ -153,3 +153,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.884749+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium Bovis Medium" to "clostridium_bovis_medium"
+    for consistent matching

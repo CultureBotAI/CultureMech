@@ -1,0 +1,59 @@
+id: CultureMech:009715
+name: Brain Heart Infusion Agar With Soil Extract
+original_name: Brain Heart Infusion Agar With Soil Extract
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Brain heart infusion broth (BD-Difco)
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M337
+  term:
+    id: TOGO:M337
+    label: Brain Heart Infusion Agar With Soil Extract
+notes: 'Source: https://togomedium.org/medium/M337
+
+  Original source: JCM - JCM_M342
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=342'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.871580Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M337'
+- timestamp: '2026-01-28T19:48:22.346355Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:37.316708+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:08.328491Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009715'
+solutions:
+- preferred_term: Soil extract (see Medium [M94])
+  composition: []
+  notes: Cross-reference to Medium M94
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: 42818766a67eba4760cca23b51f2fed1e37771f2d60d13724212d0ddb7fc60c0
+merged_from:
+- TOGO_M337_Brain_Heart_Infusion_Agar_With_Soil_Extract

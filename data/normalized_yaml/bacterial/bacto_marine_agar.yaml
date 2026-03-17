@@ -1,0 +1,48 @@
+id: CultureMech:006092
+name: bacto_marine_agar
+original_name: BACTO MARINE AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 604
+  term:
+    id: komodo.medium:604
+    label: BACTO MARINE AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 604 | DSMZ Medium: 604 (mediadive.medium:604)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Marine agar 2216
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 604'
+- timestamp: '2026-02-03T11:19:00.929316'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 604
+- timestamp: '2026-03-13T06:19:38.209916Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006092'
+- timestamp: '2026-03-17T06:29:58.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.098779+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACTO MARINE AGAR" to "bacto_marine_agar" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:007581
-name: Modified Halobacteria Medium-2
+name: modified_halobacteria_medium_2
 original_name: Modified Halobacteria Medium-2
 category: bacterial
 medium_type: COMPLEX
@@ -145,6 +145,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.187614+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Halobacteria Medium-2" to "modified_halobacteria_medium_2"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution

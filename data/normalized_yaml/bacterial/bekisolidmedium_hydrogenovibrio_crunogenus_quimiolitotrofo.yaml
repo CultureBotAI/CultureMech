@@ -1,0 +1,42 @@
+id: CultureMech:010430
+name: bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo
+original_name: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.4
+media_term:
+  preferred_term: public Medium P10
+  term:
+    id: mediadive.medium:P10
+    label: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.849767Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P10'
+- timestamp: '2026-02-03T11:27:23.224827'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:13.812536Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010430'
+- timestamp: '2026-03-17T19:46:32.790140+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)"
+    to "bekisolidmedium_hydrogenovibrio_crunogenus_quimiolitotrofo" for consistent
+    matching
+data_quality_flags:
+- incomplete_composition

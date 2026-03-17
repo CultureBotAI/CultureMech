@@ -1,5 +1,5 @@
 id: CultureMech:008741
-name: PYG medium
+name: pyg_medium
 original_name: PYG medium
 category: bacterial
 medium_type: COMPLEX
@@ -105,6 +105,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.606739+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYG medium" to "pyg_medium" for consistent matching
 solutions:
 - preferred_term: Hipolypepton*
   composition: []

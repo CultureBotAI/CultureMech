@@ -1,0 +1,30 @@
+id: CultureMech:006014
+name: glutarate_medium
+original_name: GLUTARATE medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 562
+  term:
+    id: komodo.medium:562
+    label: GLUTARATE medium
+notes: 'Source: KOMODO ModelSEED | ID: 562 | DSMZ Medium: 562 (mediadive.medium:562)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 562'
+- timestamp: '2026-03-13T06:19:37.653718Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006014'
+- timestamp: '2026-03-17T19:45:54.463579+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GLUTARATE medium" to "glutarate_medium" for consistent
+    matching

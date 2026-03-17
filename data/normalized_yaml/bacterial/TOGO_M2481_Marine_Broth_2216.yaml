@@ -1,5 +1,5 @@
 id: CultureMech:009055
-name: Marine Broth 2216
+name: marine_broth_2216
 original_name: Marine Broth 2216
 category: bacterial
 medium_type: COMPLEX
@@ -35,3 +35,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009055'
+- timestamp: '2026-03-17T19:46:21.076774+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine Broth 2216" to "marine_broth_2216" for consistent
+    matching

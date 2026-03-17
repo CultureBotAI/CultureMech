@@ -1,5 +1,5 @@
 id: CultureMech:003983
-name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
+name: thioalkalivibrio_thiocyanodenitrificans_medium
 original_name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -192,3 +192,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.492291+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM" to
+    "thioalkalivibrio_thiocyanodenitrificans_medium" for consistent matching

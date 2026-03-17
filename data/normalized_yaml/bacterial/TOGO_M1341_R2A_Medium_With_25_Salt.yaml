@@ -1,5 +1,5 @@
 id: CultureMech:007877
-name: R2A Medium With 25% Salt
+name: r2a_medium_with_25_salt
 original_name: R2A Medium With 25% Salt
 category: bacterial
 medium_type: COMPLEX
@@ -180,6 +180,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.588522+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A Medium With 25% Salt" to "r2a_medium_with_25_salt"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: 30% Seawater solution (see below)

@@ -1,5 +1,5 @@
 id: CultureMech:010120
-name: Aerobic Sulfolobales Medium Without Sulfur
+name: aerobic_sulfolobales_medium_without_sulfur
 original_name: Aerobic Sulfolobales Medium Without Sulfur
 category: bacterial
 medium_type: COMPLEX
@@ -39,6 +39,11 @@ curation_history:
   date: '2026-03-14T21:07:02.642175'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:30.409500+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Aerobic Sulfolobales Medium Without Sulfur" to "aerobic_sulfolobales_medium_without_sulfur"
+    for consistent matching
 solutions:
 - preferred_term: Salt base solution (see Medium [M711])
   composition: []

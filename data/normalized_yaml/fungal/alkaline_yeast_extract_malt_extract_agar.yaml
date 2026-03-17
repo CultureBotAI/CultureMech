@@ -1,0 +1,46 @@
+id: CultureMech:010552
+name: alkaline_yeast_extract_malt_extract_agar
+original_name: ALKALINE YEAST EXTRACT-MALT EXTRACT AGAR
+category: fungal
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: JCM Medium J82
+  term:
+    id: mediadive.medium:J82
+    label: ALKALINE YEAST EXTRACT-MALT EXTRACT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=82'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43).
+    After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.698948Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J82'
+- timestamp: '2026-02-03T11:27:23.490248'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:14.330639Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010552'
+- timestamp: '2026-03-17T19:46:33.368682+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALKALINE YEAST EXTRACT-MALT EXTRACT AGAR" to "alkaline_yeast_extract_malt_extract_agar"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

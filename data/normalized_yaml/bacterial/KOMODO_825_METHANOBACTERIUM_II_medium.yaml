@@ -1,5 +1,5 @@
 id: CultureMech:006555
-name: METHANOBACTERIUM II medium
+name: methanobacterium_ii_medium
 original_name: METHANOBACTERIUM II medium
 category: bacterial
 medium_type: COMPLEX
@@ -385,3 +385,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:59.354429+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOBACTERIUM II medium" to "methanobacterium_ii_medium"
+    for consistent matching

@@ -1,0 +1,42 @@
+id: CultureMech:007490
+name: '367'
+original_name: '367'
+category: bacterial
+description: 367. NBRC 366.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Peptone10gMeat extract10gYeast extract5gGlucose20gTween 801gK2HPO42gSodium
+    acetate5gDiammonium hydrogencitrate2gMgSO4·7H2O0.2gMnSO4·nH2O0.05gDistilled water1LAgar
+    (if needed)15gpH 5.5
+- preferred_term: ''
+  concentration:
+    value: Peptone
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.953837Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 366, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=366.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:26.666003Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 12 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.239630Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007490'
+merge_fingerprint: 415da4131cbcad746497717a4c0aeaa6bb385c66b7e3bb09082f12fa23959ca3
+merged_from:
+- NBRC_367

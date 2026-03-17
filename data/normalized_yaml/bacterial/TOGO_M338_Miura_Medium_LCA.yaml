@@ -1,5 +1,5 @@
 id: CultureMech:009716
-name: Miura Medium (LCA)
+name: miura_medium_lca
 original_name: Miura Medium (LCA)
 category: bacterial
 medium_type: COMPLEX
@@ -116,3 +116,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.323864+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Miura Medium (LCA)" to "miura_medium_lca" for consistent
+    matching

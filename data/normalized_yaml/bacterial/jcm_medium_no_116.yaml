@@ -1,0 +1,60 @@
+id: CultureMech:002342
+name: jcm_medium_no_116
+original_name: JCM MEDIUM No. 116
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J116
+  term:
+    id: mediadive.medium:J116
+    label: JCM MEDIUM No. 116
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=116'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Boil potatoes for 20 min.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 5.4-5.6.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.757088Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J116'
+- timestamp: '2026-03-13T06:19:12.523054Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002342'
+- timestamp: '2026-03-17T06:30:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:25.512661+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JCM MEDIUM No. 116" to "jcm_medium_no_116" for consistent
+    matching

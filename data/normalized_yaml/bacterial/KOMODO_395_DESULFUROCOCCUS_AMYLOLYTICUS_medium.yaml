@@ -1,5 +1,5 @@
 id: CultureMech:005182
-name: DESULFUROCOCCUS AMYLOLYTICUS medium
+name: desulfurococcus_amylolyticus_medium
 original_name: DESULFUROCOCCUS AMYLOLYTICUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -313,3 +313,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:46.714502+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFUROCOCCUS AMYLOLYTICUS medium" to "desulfurococcus_amylolyticus_medium"
+    for consistent matching

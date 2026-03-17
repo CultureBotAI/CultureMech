@@ -1,5 +1,5 @@
 id: CultureMech:008272
-name: 2.5% NaCl-BPG Agar
+name: 2_5_nacl_bpg_agar
 original_name: 2.5% NaCl-BPG Agar
 category: bacterial
 medium_type: COMPLEX
@@ -109,3 +109,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:13.754206+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2.5% NaCl-BPG Agar" to "2_5_nacl_bpg_agar" for consistent
+    matching

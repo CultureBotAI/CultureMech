@@ -1,0 +1,86 @@
+id: CultureMech:002999
+name: symbiobacterium_medium
+original_name: SYMBIOBACTERIUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J653
+  term:
+    id: mediadive.medium:J653
+    label: SYMBIOBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=653'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: NH4HCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: CHEBI:184335
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000412
+    label: NH4HCO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 8.0. Distribute the medium into culture
+    vessels and replace the gas phase with a N2-CO2-H2 (80:10:10, v/v) gas mixture.
+    Seal with butyl rubber stoppers and autoclave. After cooling, aseptically add
+    the following solution (filter-sterilized) to the medium:'
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 10.0 g/L gellan gum.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.196642Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J653'
+- timestamp: '2026-01-28T19:48:38.731812Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.064172Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002999'
+- timestamp: '2026-03-17T06:30:48.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.705577+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYMBIOBACTERIUM MEDIUM" to "symbiobacterium_medium"
+    for consistent matching

@@ -1,0 +1,47 @@
+id: CultureMech:002516
+name: tryptose_phosphate_agar
+original_name: TRYPTOSE PHOSPHATE AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J158
+  term:
+    id: mediadive.medium:J158
+    label: TRYPTOSE PHOSPHATE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=158'
+ingredients:
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '29.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.841917Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J158'
+- timestamp: '2026-03-13T06:19:13.916341Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002516'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:27.092256+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTOSE PHOSPHATE AGAR" to "tryptose_phosphate_agar"
+    for consistent matching

@@ -1,0 +1,49 @@
+id: CultureMech:002666
+name: pyrobaculum_arsenaticum_medium
+original_name: PYROBACULUM ARSENATICUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J309
+  term:
+    id: mediadive.medium:J309
+    label: PYROBACULUM ARSENATICUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=309'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 184 without sulfur, and supplement with 2.0 g/L (final)
+    Na2S2O3.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.251491Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J309'
+- timestamp: '2026-02-03T11:26:54.484206'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.885758Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002666'
+- timestamp: '2026-03-17T19:45:28.200777+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYROBACULUM ARSENATICUM MEDIUM" to "pyrobaculum_arsenaticum_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

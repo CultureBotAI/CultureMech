@@ -1,0 +1,103 @@
+id: CultureMech:004322
+name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
+original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ph_value: 6.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 204 | DSMZ Medium: 204 (mediadive.medium:204)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 204
+  term:
+    id: komodo.medium:204
+    label: ASPERGILLUS NIDULANS MINIMAL MEDIUM
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3.04'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '3.04'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.08'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '60'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 204'
+- timestamp: '2026-02-03T11:18:54.553901'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 204
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:33.659857'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
+    concentration for ingredient: ZnSO4 x 7 H2O'
+- timestamp: '2026-03-13T03:08:38.268255Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:26.582308Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004322'
+merge_fingerprint: f6fd3ce1b9ef02f72228494487e9c2ab1f04babfcc7ac08df79d50ee7dfcc4e4
+merged_from:
+- KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM

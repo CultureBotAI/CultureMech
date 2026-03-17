@@ -1,0 +1,144 @@
+id: CultureMech:007067
+name: leitch_et_al
+original_name: Leitch et al
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '22.202'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '9.7928'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001025
+    label: Tryptophan
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '12.0997'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
+- preferred_term: Potassium chloride
+  concentration:
+    value: '1.006'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '69.9557'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '9.3473'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.39917'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '4.6704'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.0039955'
+    unit: MILLIMOLAR
+- preferred_term: Sodium nitrate
+  term:
+    id: CHEBI:63005
+    label: Sodium nitrate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
+    label: Sodium nitrate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.159465Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 176, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:23.011097Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:45.883316Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007067'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.000120+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Leitch et al" to "leitch_et_al" for consistent matching
+media_term:
+  preferred_term: MediaDB Medium 176
+  term:
+    id: MEDIADB:176
+    label: Leitch et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

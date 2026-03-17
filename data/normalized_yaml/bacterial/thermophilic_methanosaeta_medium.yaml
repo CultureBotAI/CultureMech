@@ -1,0 +1,31 @@
+id: CultureMech:005164
+name: thermophilic_methanosaeta_medium
+original_name: THERMOPHILIC METHANOSAETA MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 387
+  term:
+    id: komodo.medium:387
+    label: THERMOPHILIC METHANOSAETA MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 387 | DSMZ Medium: 387 (mediadive.medium:387)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 387'
+- timestamp: '2026-03-13T06:19:30.736847Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005164'
+- timestamp: '2026-03-17T19:45:46.533713+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOPHILIC METHANOSAETA MEDIUM" to "thermophilic_methanosaeta_medium"
+    for consistent matching

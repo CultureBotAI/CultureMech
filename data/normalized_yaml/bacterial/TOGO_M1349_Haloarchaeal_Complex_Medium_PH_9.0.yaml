@@ -1,5 +1,5 @@
 id: CultureMech:007885
-name: Haloarchaeal Complex Medium PH 9.0
+name: haloarchaeal_complex_medium_ph_9_0
 original_name: Haloarchaeal Complex Medium PH 9.0
 category: bacterial
 medium_type: COMPLEX
@@ -219,6 +219,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.661627+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Haloarchaeal Complex Medium PH 9.0" to "haloarchaeal_complex_medium_ph_9_0"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 solution

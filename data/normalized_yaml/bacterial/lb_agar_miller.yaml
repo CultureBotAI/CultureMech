@@ -1,0 +1,41 @@
+id: CultureMech:009025
+name: lb_agar_miller
+original_name: LB Agar, Miller
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: LB Agar (BD 244520)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2446
+  term:
+    id: TOGO:M2446
+    label: LB Agar, Miller
+notes: 'Source: https://togomedium.org/medium/M2446
+
+  Original URL: https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.512621Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2446'
+- timestamp: '2026-03-13T06:20:02.026034Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009025'
+- timestamp: '2026-03-17T19:46:20.784286+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LB Agar, Miller" to "lb_agar_miller" for consistent
+    matching

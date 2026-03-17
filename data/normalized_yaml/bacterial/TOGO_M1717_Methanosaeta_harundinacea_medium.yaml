@@ -1,5 +1,5 @@
 id: CultureMech:008280
-name: Methanosaeta harundinacea medium
+name: methanosaeta_harundinacea_medium
 original_name: Methanosaeta harundinacea medium
 category: bacterial
 medium_type: COMPLEX
@@ -417,6 +417,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:13.835052+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanosaeta harundinacea medium" to "methanosaeta_harundinacea_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace elements solution*
   term:

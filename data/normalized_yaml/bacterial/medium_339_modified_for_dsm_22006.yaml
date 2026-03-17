@@ -1,0 +1,56 @@
+id: CultureMech:005040
+name: medium_339_modified_for_dsm_22006
+original_name: MEDIUM 339 MODIFIED FOR DSM 22006
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 339_22006
+  term:
+    id: komodo.medium:339_22006
+    label: MEDIUM 339 MODIFIED FOR DSM 22006
+notes: 'Source: KOMODO ModelSEED | ID: 339_22006 | DSMZ Medium: 339 (mediadive.medium:339)
+  | Aerobic: No'
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000223
+    label: L-Cysteine HCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 339_22006'
+- timestamp: '2026-02-03T11:18:55.867623'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 339
+- timestamp: '2026-03-13T06:19:29.751945Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005040'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.371953+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 339 MODIFIED FOR DSM 22006" to "medium_339_modified_for_dsm_22006"
+    for consistent matching

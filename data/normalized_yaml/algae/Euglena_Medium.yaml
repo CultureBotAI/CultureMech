@@ -1,6 +1,6 @@
 id: CultureMech:000168
-name: Euglena Medium
-category: algae
+name: euglena_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -76,6 +76,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000168'
+- timestamp: '2026-03-17T19:45:04.324574+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Euglena Medium" to "euglena_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:euglena-medium
 - reference_id: https://utex.org/products/euglena-medium
+original_name: Euglena Medium

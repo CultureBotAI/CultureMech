@@ -1,5 +1,5 @@
 id: CultureMech:003500
-name: HYDROGEN-OXYDIZING MEDIUM
+name: hydrogen_oxydizing_medium
 original_name: HYDROGEN-OXYDIZING MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -229,4 +229,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:34.292192+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HYDROGEN-OXYDIZING MEDIUM" to "hydrogen_oxydizing_medium"
+    for consistent matching
 high_metal: true

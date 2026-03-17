@@ -1,0 +1,70 @@
+id: CultureMech:010196
+name: Mycoplasma Medium
+original_name: Mycoplasma Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Bacto agar (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Heart infusion broth (BD-Difco)
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Horse serum (heat--inactivated)
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M787
+  term:
+    id: TOGO:M787
+    label: Mycoplasma Medium
+notes: 'Source: https://togomedium.org/medium/M787
+
+  Original source: JCM - JCM_M761
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=761'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.714727Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M787'
+- timestamp: '2026-01-28T19:48:07.423575Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:11.961349+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:12.040747Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010196'
+solutions:
+- preferred_term: 25% Yeast Extract Solution
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+merge_fingerprint: 1f9ddd1c69a43f52b5f41b6c7cf9800de3f1ce4d3ac705bb05594ac2466a48fc
+merged_from:
+- TOGO_M787_Mycoplasma_Medium

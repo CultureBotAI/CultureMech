@@ -1,0 +1,57 @@
+id: CultureMech:002278
+name: heart_infusion_agar_with_5_horse_blood
+original_name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1099
+  term:
+    id: mediadive.medium:J1099
+    label: HEART INFUSION AGAR WITH 5% HORSE BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1099'
+ingredients:
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except horse blood, autoclave and cool to about 50C.
+    Aseptically add 5% (final) sterile defibrinated horse blood. Mix and quickly dispense
+    into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.625760Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1099'
+- timestamp: '2026-03-13T06:19:11.901068Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002278'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.785786+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HEART INFUSION AGAR WITH 5% HORSE BLOOD" to "heart_infusion_agar_with_5_horse_blood"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:006128
-name: EKHO LAKE STRAINS medium
+name: ekho_lake_strains_medium
 original_name: EKHO LAKE STRAINS medium
 category: bacterial
 medium_type: COMPLEX
@@ -208,6 +208,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.428946+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "EKHO LAKE STRAINS medium" to "ekho_lake_strains_medium"
+    for consistent matching
 ph_value: 7.5
 solutions:
 - preferred_term: Metall salt sol. 44

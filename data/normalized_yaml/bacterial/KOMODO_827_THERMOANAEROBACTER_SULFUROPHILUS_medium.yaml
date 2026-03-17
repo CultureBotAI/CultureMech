@@ -1,5 +1,5 @@
 id: CultureMech:006558
-name: THERMOANAEROBACTER SULFUROPHILUS medium
+name: thermoanaerobacter_sulfurophilus_medium
 original_name: THERMOANAEROBACTER SULFUROPHILUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -319,3 +319,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:59.399506+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOANAEROBACTER SULFUROPHILUS medium" to "thermoanaerobacter_sulfurophilus_medium"
+    for consistent matching

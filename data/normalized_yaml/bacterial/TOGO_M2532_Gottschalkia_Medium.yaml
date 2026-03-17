@@ -1,5 +1,5 @@
 id: CultureMech:009102
-name: Gottschalkia Medium
+name: gottschalkia_medium
 original_name: Gottschalkia Medium
 category: bacterial
 medium_type: COMPLEX
@@ -294,6 +294,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.369801+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Gottschalkia Medium" to "gottschalkia_medium" for consistent
+    matching
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

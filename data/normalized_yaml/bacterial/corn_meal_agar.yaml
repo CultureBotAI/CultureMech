@@ -1,0 +1,55 @@
+id: CultureMech:001283
+name: corn_meal_agar
+original_name: CORN MEAL AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 191
+  term:
+    id: mediadive.medium:191
+    label: CORN MEAL AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf'
+ingredients:
+- preferred_term: Corn meal
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
+    in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1
+    l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes.
+    pH 6.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.423799Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 191'
+- timestamp: '2026-03-13T06:19:02.794828Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001283'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.652611+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CORN MEAL AGAR" to "corn_meal_agar" for consistent
+    matching

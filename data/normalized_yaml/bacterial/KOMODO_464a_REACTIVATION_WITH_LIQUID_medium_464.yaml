@@ -1,5 +1,5 @@
 id: CultureMech:005520
-name: REACTIVATION WITH LIQUID medium 464
+name: reactivation_with_liquid_medium_464
 original_name: REACTIVATION WITH LIQUID medium 464
 category: bacterial
 medium_type: COMPLEX
@@ -59,4 +59,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.696930+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "REACTIVATION WITH LIQUID medium 464" to "reactivation_with_liquid_medium_464"
+    for consistent matching
 ph_value: 7.0

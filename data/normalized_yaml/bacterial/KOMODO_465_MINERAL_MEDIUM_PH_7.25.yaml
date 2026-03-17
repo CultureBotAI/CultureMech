@@ -1,5 +1,5 @@
 id: CultureMech:005566
-name: MINERAL MEDIUM PH 7.25
+name: mineral_medium_ph_7_25
 original_name: MINERAL MEDIUM PH 7.25
 category: bacterial
 medium_type: DEFINED
@@ -289,3 +289,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.314003+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM PH 7.25" to "mineral_medium_ph_7_25"
+    for consistent matching

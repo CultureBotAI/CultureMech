@@ -1,0 +1,61 @@
+id: CultureMech:002762
+name: HORIKOSHI-I MEDIUM WITH 5% NaCl
+original_name: HORIKOSHI-I MEDIUM WITH 5% NaCl
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J406
+  term:
+    id: mediadive.medium:J406
+    label: HORIKOSHI-I MEDIUM WITH 5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=406'
+ingredients:
+- preferred_term: Horikoshi-I medium
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '35'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.529591Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J406'
+- timestamp: '2026-03-13T06:19:15.559669Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002762'
+- timestamp: '2026-03-15T03:03:45.061381+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1028_HORIKOSHI-I_MEDIUM_WITH_3.5_NaCl, JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl,
+    JCM_J406_HORIKOSHI-I_MEDIUM_WITH_5_NaCl, JCM_J409_HORIKOSHI-I_MEDIUM_WITH_2_NaCl'
+synonyms:
+- name: HORIKOSHI-I MEDIUM WITH 3.5% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J1028
+  original_category: bacterial
+- name: HORIKOSHI-1 MEDIUM WITH 10% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J345
+  original_category: bacterial
+- name: HORIKOSHI-I MEDIUM WITH 2% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J409
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- JCM_J1028_HORIKOSHI-I_MEDIUM_WITH_3.5_NaCl
+- JCM_J345_HORIKOSHI-1_MEDIUM_WITH_10_NaCl
+- JCM_J406_HORIKOSHI-I_MEDIUM_WITH_5_NaCl
+- JCM_J409_HORIKOSHI-I_MEDIUM_WITH_2_NaCl
+merge_fingerprint: ed7dbd146da8e91238c1ef294cd59cf88972479b6df7189977345d5c83debc68

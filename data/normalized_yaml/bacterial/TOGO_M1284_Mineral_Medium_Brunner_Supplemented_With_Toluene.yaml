@@ -1,5 +1,5 @@
 id: CultureMech:007818
-name: Mineral Medium (Brunner) Supplemented With Toluene
+name: mineral_medium_brunner_supplemented_with_toluene
 original_name: Mineral Medium (Brunner) Supplemented With Toluene
 category: bacterial
 medium_type: COMPLEX
@@ -111,6 +111,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.142703+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral Medium (Brunner) Supplemented With Toluene"
+    to "mineral_medium_brunner_supplemented_with_toluene" for consistent matching
 solutions:
 - preferred_term: SL--4 trace element solution (see Medium [M335])
   composition: []

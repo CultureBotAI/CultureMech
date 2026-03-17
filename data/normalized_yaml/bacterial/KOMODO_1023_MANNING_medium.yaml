@@ -1,5 +1,5 @@
 id: CultureMech:003535
-name: MANNING medium
+name: manning_medium
 original_name: MANNING medium
 category: bacterial
 medium_type: COMPLEX
@@ -117,3 +117,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:34.639258+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MANNING medium" to "manning_medium" for consistent
+    matching

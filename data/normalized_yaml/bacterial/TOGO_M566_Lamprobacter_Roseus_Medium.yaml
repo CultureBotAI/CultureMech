@@ -1,5 +1,5 @@
 id: CultureMech:009961
-name: Lamprobacter Roseus Medium
+name: lamprobacter_roseus_medium
 original_name: Lamprobacter Roseus Medium
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:01.777959'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:29.252645+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Lamprobacter Roseus Medium" to "lamprobacter_roseus_medium"
+    for consistent matching
 solutions:
 - preferred_term: vitamin B12 solution
   term:

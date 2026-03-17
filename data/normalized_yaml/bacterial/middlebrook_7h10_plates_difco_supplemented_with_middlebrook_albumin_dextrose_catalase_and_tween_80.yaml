@@ -1,0 +1,95 @@
+id: CultureMech:009413
+name: middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80
+original_name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+  and Tween 80
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '500.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component [Merged 2 duplicates: 450.0, 50.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Tween 80 (BD)
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Surfactant'
+- preferred_term: Middlebrook 7H10 Agar (Difco)
+  concentration:
+    value: '9.7'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Middlebrook albumin/dextrose/catalase (Difco)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
+- preferred_term: 'Bovine albumin fraction V '
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Catalase
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:3463
+    label: Catalase
+media_term:
+  preferred_term: TOGO Medium M2879
+  term:
+    id: TOGO:M2879
+    label: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+      and Tween 80
+notes: 'Source: https://togomedium.org/medium/M2879'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.373444Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2879'
+- timestamp: '2026-01-28T19:48:36.741788Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:33.180535Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:06.094326Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009413'
+- timestamp: '2026-03-17T06:30:43.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.043219+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Middlebrook 7H10 plates (Difco) supplemented with Middlebrook
+    albumin/dextrose/catalase and Tween 80" to "middlebrook_7h10_plates_difco_supplemented_with_middlebrook_albumin_dextrose_catalase_and_tween_80"
+    for consistent matching

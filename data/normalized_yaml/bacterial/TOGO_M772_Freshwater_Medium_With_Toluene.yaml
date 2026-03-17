@@ -1,5 +1,5 @@
 id: CultureMech:010180
-name: Freshwater Medium With Toluene
+name: freshwater_medium_with_toluene
 original_name: Freshwater Medium With Toluene
 category: bacterial
 medium_type: COMPLEX
@@ -194,6 +194,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.846768+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Freshwater Medium With Toluene" to "freshwater_medium_with_toluene"
+    for consistent matching
 solutions:
 - preferred_term: Solution A
   term:

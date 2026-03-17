@@ -1,0 +1,164 @@
+id: CultureMech:001941
+name: modified_chopped_meat_medium
+original_name: MODIFIED CHOPPED MEAT MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 797
+  term:
+    id: mediadive.medium:797
+    label: MODIFIED CHOPPED MEAT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium797.pdf'
+ingredients:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '26.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 25.0, 1.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+- preferred_term: Trypticase
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000263
+    label: Trypticase
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (if required)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000567
+    label: Vitamin K1
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '28.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000686
+    label: Ethanol
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000811
+    label: Haemin
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: 'Mix meat, water and NaOH, and bring to a boil with stirring. Cool
+    to room temperature, skim fat off surface, and filter, retaining both meat particles
+    and filtrate. To the filtrate add sufficient distilled water to restore volume
+    to 1000 ml. To this filtrate add:'
+- step_number: 2
+  action: HEAT
+  description: 'Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:'
+- step_number: 3
+  action: POUR_PLATES
+  description: Adjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes
+    containing meat particles (use 1 part meat to 5 parts fluid) under the same gas
+    phase.
+- step_number: 4
+  action: STORE
+  description: Store solution in brown bottle under refrigeration. Discard after one
+    month.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.294764Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 797'
+- timestamp: '2026-01-28T19:48:28.645991Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:18.136575Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.678101Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001941'
+- timestamp: '2026-03-17T06:30:26.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.146274+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED CHOPPED MEAT MEDIUM" to "modified_chopped_meat_medium"
+    for consistent matching

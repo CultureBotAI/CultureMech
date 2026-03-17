@@ -1,5 +1,5 @@
 id: CultureMech:009527
-name: Methanosarcina Baltica Medium
+name: methanosarcina_baltica_medium
 original_name: Methanosarcina Baltica Medium
 category: bacterial
 medium_type: COMPLEX
@@ -70,6 +70,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.620861+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanosarcina Baltica Medium" to "methanosarcina_baltica_medium"
+    for consistent matching
 solutions:
 - preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
   composition: []

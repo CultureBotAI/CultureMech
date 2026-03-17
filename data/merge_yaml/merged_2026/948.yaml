@@ -1,0 +1,41 @@
+id: CultureMech:007507
+name: '948'
+original_name: '948'
+category: bacterial
+description: 948. NBRC 947.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Bacto Marine Broth 2216 (Difco)37.4gMethanol*5mlAgar (if needed)15gDistilled
+    water1LpH unadjusted*Sterilize separately by filtration.
+- preferred_term: ''
+  concentration:
+    value: Bacto Marine Broth 2216 (Difco)
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.997170Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 947, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=947.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:08:43.445251Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.291053Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007507'
+merge_fingerprint: ab668b0384ad36894c7b907b3f706b12720d283d47bfb69516a0bcecdc186180
+merged_from:
+- NBRC_948

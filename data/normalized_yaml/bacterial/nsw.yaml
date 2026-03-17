@@ -1,0 +1,37 @@
+id: CultureMech:000384
+name: nsw
+original_name: NSW
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C71
+  term:
+    id: mediadive.medium:C71
+    label: NSW
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.720930Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C71'
+- timestamp: '2026-03-13T06:18:54.880959Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000384'
+- timestamp: '2026-03-17T19:45:05.890337+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NSW" to "nsw" for consistent matching

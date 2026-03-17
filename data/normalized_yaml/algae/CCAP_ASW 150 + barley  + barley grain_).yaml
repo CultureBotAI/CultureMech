@@ -1,6 +1,6 @@
 id: CultureMech:000045
-name: ASW 150 + barley
-category: algae
+name: asw_150_barley
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
@@ -31,6 +31,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000045'
+- timestamp: '2026-03-17T19:45:03.968107+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ASW 150 + barley" to "asw_150_barley" for consistent
+    matching
 references:
 - reference_id: CCAP:ASW_150
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_150.pdf
@@ -41,3 +46,4 @@ ingredients:
     unit: VARIABLE
 data_quality_flags:
 - incomplete_composition
+original_name: ASW 150 + barley

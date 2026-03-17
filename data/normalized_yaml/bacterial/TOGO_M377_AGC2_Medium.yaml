@@ -1,5 +1,5 @@
 id: CultureMech:009758
-name: AGC2 Medium
+name: agc2_medium
 original_name: AGC2 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -129,3 +129,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.652253+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AGC2 Medium" to "agc2_medium" for consistent matching

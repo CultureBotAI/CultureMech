@@ -1,5 +1,5 @@
 id: CultureMech:007770
-name: Ghiorsea Bivora Medium
+name: ghiorsea_bivora_medium
 original_name: Ghiorsea Bivora Medium
 category: bacterial
 medium_type: COMPLEX
@@ -210,6 +210,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.748214+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ghiorsea Bivora Medium" to "ghiorsea_bivora_medium"
+    for consistent matching
 solutions:
 - preferred_term: Artificial saltwater (see Medium [M642])
   composition: []

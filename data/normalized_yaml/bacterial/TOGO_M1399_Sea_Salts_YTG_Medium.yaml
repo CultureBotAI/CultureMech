@@ -1,5 +1,5 @@
 id: CultureMech:007934
-name: Sea Salts YTG Medium
+name: sea_salts_ytg_medium
 original_name: Sea Salts YTG Medium
 category: bacterial
 medium_type: COMPLEX
@@ -108,6 +108,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.069812+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sea Salts YTG Medium" to "sea_salts_ytg_medium" for
+    consistent matching
 solutions:
 - preferred_term: 0.1% Na2SeO3 solution
   composition: []

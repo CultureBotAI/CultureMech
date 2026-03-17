@@ -1,0 +1,30 @@
+id: CultureMech:004783
+name: artificial_sea_water_medium_1075
+original_name: Artificial sea water (medium 1075)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3005
+  term:
+    id: komodo.medium:3005
+    label: Artificial sea water (medium 1075)
+notes: 'Source: KOMODO ModelSEED | ID: 3005 | DSMZ Medium: 3005 (mediadive.medium:3005)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3005'
+- timestamp: '2026-03-13T06:19:28.786257Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004783'
+- timestamp: '2026-03-17T19:45:44.252617+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial sea water (medium 1075)" to "artificial_sea_water_medium_1075"
+    for consistent matching

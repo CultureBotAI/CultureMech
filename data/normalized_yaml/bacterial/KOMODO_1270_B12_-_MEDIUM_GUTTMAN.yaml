@@ -1,5 +1,5 @@
 id: CultureMech:004025
-name: B12 - MEDIUM GUTTMAN
+name: b12_medium_guttman
 original_name: B12 - MEDIUM GUTTMAN
 category: bacterial
 medium_type: DEFINED
@@ -172,3 +172,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.942976+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "B12 - MEDIUM GUTTMAN" to "b12_medium_guttman" for consistent
+    matching

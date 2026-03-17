@@ -1,0 +1,30 @@
+id: CultureMech:004742
+name: syntrophus_medium_sulfate_free
+original_name: SYNTROPHUS medium - SULFATE FREE
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 285
+  term:
+    id: komodo.medium:285
+    label: SYNTROPHUS medium - SULFATE FREE
+notes: 'Source: KOMODO ModelSEED | ID: 285 | DSMZ Medium: 285 (mediadive.medium:285)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 285'
+- timestamp: '2026-03-13T06:19:28.451515Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004742'
+- timestamp: '2026-03-17T19:45:43.854859+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTROPHUS medium - SULFATE FREE" to "syntrophus_medium_sulfate_free"
+    for consistent matching

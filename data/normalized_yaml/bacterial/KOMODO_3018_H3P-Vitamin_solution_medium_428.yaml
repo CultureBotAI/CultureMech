@@ -1,5 +1,5 @@
 id: CultureMech:004797
-name: H3P-Vitamin solution (medium 428)
+name: h3p_vitamin_solution_medium_428
 original_name: H3P-Vitamin solution (medium 428)
 category: bacterial
 medium_type: DEFINED
@@ -23,3 +23,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004797'
+- timestamp: '2026-03-17T19:45:44.284760+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "H3P-Vitamin solution (medium 428)" to "h3p_vitamin_solution_medium_428"
+    for consistent matching

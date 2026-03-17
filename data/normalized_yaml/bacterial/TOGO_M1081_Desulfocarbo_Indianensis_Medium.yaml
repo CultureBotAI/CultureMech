@@ -1,5 +1,5 @@
 id: CultureMech:007597
-name: Desulfocarbo Indianensis Medium
+name: desulfocarbo_indianensis_medium
 original_name: Desulfocarbo Indianensis Medium
 category: bacterial
 medium_type: COMPLEX
@@ -195,6 +195,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.288642+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfocarbo Indianensis Medium" to "desulfocarbo_indianensis_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace element solution (see Medium [M180])
   composition: []

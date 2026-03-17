@@ -1,5 +1,5 @@
 id: CultureMech:009244
-name: Alkaline xylan medium
+name: alkaline_xylan_medium
 original_name: Alkaline xylan medium
 category: bacterial
 medium_type: COMPLEX
@@ -168,6 +168,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.379042+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaline xylan medium" to "alkaline_xylan_medium" for
+    consistent matching
 solutions:
 - preferred_term: 10% Na2CO3 solution
   composition: []

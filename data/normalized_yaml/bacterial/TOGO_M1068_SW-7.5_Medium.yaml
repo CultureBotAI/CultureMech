@@ -1,5 +1,5 @@
 id: CultureMech:007585
-name: SW-7.5 Medium
+name: sw_7_5_medium
 original_name: SW-7.5 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -129,6 +129,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.220252+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SW-7.5 Medium" to "sw_7_5_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: SW--25 solution (see below)

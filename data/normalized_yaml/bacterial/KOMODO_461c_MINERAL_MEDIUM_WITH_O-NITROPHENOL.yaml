@@ -1,5 +1,5 @@
 id: CultureMech:005483
-name: MINERAL MEDIUM WITH O-NITROPHENOL
+name: mineral_medium_with_o_nitrophenol
 original_name: MINERAL MEDIUM WITH O-NITROPHENOL
 category: bacterial
 medium_type: DEFINED
@@ -110,4 +110,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.311759+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM WITH O-NITROPHENOL" to "mineral_medium_with_o_nitrophenol"
+    for consistent matching
 high_metal: true

@@ -1,5 +1,5 @@
 id: CultureMech:007684
-name: MMJS Medium 2
+name: mmjs_medium_2
 original_name: MMJS Medium 2
 category: bacterial
 medium_type: COMPLEX
@@ -171,6 +171,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.995298+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMJS Medium 2" to "mmjs_medium_2" for consistent matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

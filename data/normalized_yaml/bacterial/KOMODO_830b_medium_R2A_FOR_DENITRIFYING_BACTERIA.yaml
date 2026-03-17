@@ -1,5 +1,5 @@
 id: CultureMech:006621
-name: medium R2A FOR DENITRIFYING BACTERIA
+name: medium_r2a_for_denitrifying_bacteria
 original_name: medium R2A FOR DENITRIFYING BACTERIA
 category: bacterial
 medium_type: COMPLEX
@@ -199,3 +199,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.050096+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "medium R2A FOR DENITRIFYING BACTERIA" to "medium_r2a_for_denitrifying_bacteria"
+    for consistent matching

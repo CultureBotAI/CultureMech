@@ -1,5 +1,5 @@
 id: CultureMech:010085
-name: MBG-20
+name: mbg_20
 original_name: MBG-20
 category: bacterial
 medium_type: COMPLEX
@@ -72,3 +72,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.119504+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MBG-20" to "mbg_20" for consistent matching

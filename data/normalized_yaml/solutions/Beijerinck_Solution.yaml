@@ -29,15 +29,25 @@ composition:
   term:
     id: CHEBI:32599
     label: magnesium sulfate heptahydrate
-notes: |
-  Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture media.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000614
+notes: 'Stock solution for TAP Medium (Tris-Acetate-Phosphate) and related algae culture
+  media.
+
   Provides macrominerals (N, Ca, Mg, S) for freshwater algae.
+
   Standard formulation used in Chlamydomonas reinhardtii culture.
 
+
   Preparation: Add components to approximately 900 mL distilled water, dissolve completely,
+
   then bring to 1 L total volume. Store at room temperature.
 
-  Final stock concentrations: NH4Cl (7.5 mM), CaCl2·2H2O (0.35 mM), MgSO4·7H2O (0.4 mM)
+
+  Final stock concentrations: NH4Cl (7.5 mM), CaCl2·2H2O (0.35 mM), MgSO4·7H2O (0.4
+  mM)
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0074

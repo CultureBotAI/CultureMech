@@ -1,0 +1,53 @@
+id: CultureMech:001281
+name: oat_flake_medium
+original_name: OAT FLAKE MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 189
+  term:
+    id: mediadive.medium:189
+    label: OAT FLAKE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium189.pdf'
+ingredients:
+- preferred_term: Oat flakes
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave
+    20 min at 121°C. Shake before pouring. pH 6.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.421773Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 189'
+- timestamp: '2026-03-13T06:19:02.789099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001281'
+- timestamp: '2026-03-17T06:30:25.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.646017+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OAT FLAKE MEDIUM" to "oat_flake_medium" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:005073
-name: THIOSPHAERA PANTOTROPHA medium
+name: thiosphaera_pantotropha_medium
 original_name: THIOSPHAERA PANTOTROPHA medium
 category: bacterial
 medium_type: COMPLEX
@@ -176,3 +176,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.604896+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOSPHAERA PANTOTROPHA medium" to "thiosphaera_pantotropha_medium"
+    for consistent matching

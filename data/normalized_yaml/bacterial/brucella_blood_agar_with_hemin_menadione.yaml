@@ -1,0 +1,52 @@
+id: CultureMech:003022
+name: brucella_blood_agar_with_hemin_menadione
+original_name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J677
+  term:
+    id: mediadive.medium:J677
+    label: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=677'
+ingredients:
+- preferred_term: Brucella agar
+  term:
+    id: CHEBI:2509
+    label: Brucella agar
+  concentration:
+    value: '40.1869'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Brucella agar
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
+    to 100 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.265163Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J677'
+- timestamp: '2026-03-13T06:19:17.228931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003022'
+- timestamp: '2026-03-17T06:29:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.888849+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE" to "brucella_blood_agar_with_hemin_menadione"
+    for consistent matching

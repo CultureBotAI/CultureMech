@@ -1,5 +1,5 @@
 id: CultureMech:008417
-name: Yeast Extract-Starch Agar (50% marine water)
+name: yeast_extract_starch_agar_50_marine_water
 original_name: Yeast Extract-Starch Agar (50% marine water)
 category: bacterial
 medium_type: COMPLEX
@@ -73,3 +73,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.213014+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Yeast Extract-Starch Agar (50% marine water)" to "yeast_extract_starch_agar_50_marine_water"
+    for consistent matching

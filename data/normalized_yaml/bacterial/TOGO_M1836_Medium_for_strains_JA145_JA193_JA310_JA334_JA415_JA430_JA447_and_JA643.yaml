@@ -1,5 +1,5 @@
 id: CultureMech:008409
-name: Medium for strains JA145, JA193, JA310, JA334, JA415, JA430, JA447 and JA643
+name: medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643
 original_name: Medium for strains JA145, JA193, JA310, JA334, JA415, JA430, JA447
   and JA643
 category: bacterial
@@ -159,6 +159,12 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.137567+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium for strains JA145, JA193, JA310, JA334, JA415,
+    JA430, JA447 and JA643" to "medium_for_strains_ja145_ja193_ja310_ja334_ja415_ja430_ja447_and_ja643"
+    for consistent matching
 solutions:
 - preferred_term: Ferric citrate solution* (0.1%)
   composition: []

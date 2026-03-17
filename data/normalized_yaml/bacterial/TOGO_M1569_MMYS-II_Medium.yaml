@@ -1,5 +1,5 @@
 id: CultureMech:008117
-name: MMYS-II Medium
+name: mmys_ii_medium
 original_name: MMYS-II Medium
 category: bacterial
 medium_type: COMPLEX
@@ -235,6 +235,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.149245+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMYS-II Medium" to "mmys_ii_medium" for consistent
+    matching
 high_metal: true
 solutions:
 - preferred_term: Solution I*

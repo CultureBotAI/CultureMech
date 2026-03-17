@@ -1,5 +1,5 @@
 id: CultureMech:009911
-name: CM+YE Medium
+name: cm_ye_medium
 original_name: CM+YE Medium
 category: bacterial
 medium_type: COMPLEX
@@ -123,6 +123,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.840471+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CM+YE Medium" to "cm_ye_medium" for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Fe(2+) solution (see below)

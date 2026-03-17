@@ -1,0 +1,87 @@
+id: CultureMech:001272
+name: p_medium
+original_name: P-medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1854
+  term:
+    id: mediadive.medium:1854
+    label: P-medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Soy peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
+- preferred_term: Calcium Chloride
+  term:
+    id: CHEBI:3312
+    label: Calcium Chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: Calcium Chloride
+- preferred_term: Magnesium sulfate heptahydrate
+  term:
+    id: CHEBI:31795
+    label: Magnesium sulfate heptahydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: Magnesium sulfate heptahydrate
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '11.9'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001034
+    label: HEPES
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '8'
+    unit: MG_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+references:
+- reference: https://doi.org/10.1007/s00203-002-0479-2
+curation_history:
+- timestamp: '2026-01-26T17:53:15.550483Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1854'
+- timestamp: '2026-03-13T06:19:02.726118Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001272'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.576294+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "P-medium" to "p_medium" for consistent matching

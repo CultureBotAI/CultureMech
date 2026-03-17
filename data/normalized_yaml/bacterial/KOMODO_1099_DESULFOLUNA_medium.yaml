@@ -1,5 +1,5 @@
 id: CultureMech:003751
-name: DESULFOLUNA medium
+name: desulfoluna_medium
 original_name: DESULFOLUNA medium
 category: bacterial
 medium_type: COMPLEX
@@ -210,3 +210,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.225790+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOLUNA medium" to "desulfoluna_medium" for consistent
+    matching

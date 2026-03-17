@@ -1,0 +1,33 @@
+id: CultureMech:003103
+name: trypticase_soy_agar
+original_name: TRYPTICASE SOY AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J75
+  term:
+    id: mediadive.medium:J75
+    label: TRYPTICASE SOY AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=75'
+ingredients:
+- preferred_term: Trypticase soy agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.685242Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J75'
+- timestamp: '2026-03-13T06:19:17.848471Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003103'
+- timestamp: '2026-03-17T19:45:31.622341+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTICASE SOY AGAR" to "trypticase_soy_agar" for consistent
+    matching

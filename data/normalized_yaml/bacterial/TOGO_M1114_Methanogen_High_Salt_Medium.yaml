@@ -1,5 +1,5 @@
 id: CultureMech:007634
-name: Methanogen High Salt Medium
+name: methanogen_high_salt_medium
 original_name: Methanogen High Salt Medium
 category: bacterial
 medium_type: COMPLEX
@@ -183,6 +183,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.591342+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanogen High Salt Medium" to "methanogen_high_salt_medium"
+    for consistent matching
 solutions:
 - preferred_term: Wolfe's mineral solution (see Medium [M257])
   composition: []

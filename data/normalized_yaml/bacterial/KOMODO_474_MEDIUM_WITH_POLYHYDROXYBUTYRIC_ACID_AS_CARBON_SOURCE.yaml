@@ -1,5 +1,5 @@
 id: CultureMech:005589
-name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
+name: medium_with_polyhydroxybutyric_acid_as_carbon_source
 original_name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
 category: bacterial
 medium_type: DEFINED
@@ -220,3 +220,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.566249+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE"
+    to "medium_with_polyhydroxybutyric_acid_as_carbon_source" for consistent matching

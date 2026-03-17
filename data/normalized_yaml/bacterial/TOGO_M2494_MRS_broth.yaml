@@ -1,5 +1,5 @@
 id: CultureMech:009068
-name: MRS broth
+name: mrs_broth
 original_name: MRS broth
 category: bacterial
 medium_type: COMPLEX
@@ -26,3 +26,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009068'
+- timestamp: '2026-03-17T19:46:21.122216+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MRS broth" to "mrs_broth" for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:009596
-name: Mineral Medium For Chemolithotrophic Growth (H-3)
+name: mineral_medium_for_chemolithotrophic_growth_h_3
 original_name: Mineral Medium For Chemolithotrophic Growth (H-3)
 category: bacterial
 medium_type: COMPLEX
@@ -341,6 +341,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.236781+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral Medium For Chemolithotrophic Growth (H-3)"
+    to "mineral_medium_for_chemolithotrophic_growth_h_3" for consistent matching
 solutions:
 - preferred_term: Solution A
   term:

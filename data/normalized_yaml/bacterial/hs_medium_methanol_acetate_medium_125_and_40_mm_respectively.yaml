@@ -1,0 +1,179 @@
+id: CultureMech:009200
+name: hs_medium_methanol_acetate_medium_125_and_40_mm_respectively
+original_name: HS medium-methanol-acetate medium (125 and 40 mM, respectively)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: methanol
+  concentration:
+    value: '125'
+    unit: MILLIMOLAR
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:17790
+    label: methanol
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: methanol
+- preferred_term: acetate
+  concentration:
+    value: '40'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000944
+    label: acetate
+- preferred_term: HS medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled Water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled Water
+- preferred_term: NaCl
+  concentration:
+    value: '0.4'
+    unit: MOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: KH2PO4
+  concentration:
+    value: '5'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '19'
+    unit: MILLIMOLAR
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: resazurin
+  concentration:
+    value: '4'
+    unit: MICROMOLAR
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: resazurin
+- preferred_term: MgCl2 . 6H2O
+  concentration:
+    value: '54'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Na2S . 9H2O
+  concentration:
+    value: '0.4'
+    unit: MILLIMOLAR
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KCl
+  concentration:
+    value: '13'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NaHCO3
+  concentration:
+    value: '45'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+- preferred_term: CaCl2
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: cysteine . HCl
+  concentration:
+    value: '2.8'
+    unit: MILLIMOLAR
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2643
+  term:
+    id: TOGO:M2643
+    label: HS medium-methanol-acetate medium (125 and 40 mM, respectively)
+notes: 'Source: https://togomedium.org/medium/M2643'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.915791Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2643'
+- timestamp: '2026-01-28T19:48:10.082144Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:03.926804Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009200'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:22.655330+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HS medium-methanol-acetate medium (125 and 40 mM, respectively)"
+    to "hs_medium_methanol_acetate_medium_125_and_40_mm_respectively" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:007320
-name: '''Defined freshwater medium (CoSO4'
+name: defined_freshwater_medium_coso4
 original_name: '''Defined freshwater medium (CoSO4'
 category: bacterial
 medium_type: DEFINED
@@ -270,6 +270,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:06.086678+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "'Defined freshwater medium (CoSO4" to "defined_freshwater_medium_coso4"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 419
   term:

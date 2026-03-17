@@ -1,5 +1,5 @@
 id: CultureMech:000325
-name: BG11₀
+name: bg11
 original_name: BG11₀
 category: bacterial
 medium_type: DEFINED
@@ -173,3 +173,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.454307+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BG11₀" to "bg11" for consistent matching

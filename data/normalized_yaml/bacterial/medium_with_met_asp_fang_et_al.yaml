@@ -1,0 +1,147 @@
+id: CultureMech:007096
+name: medium_with_met_asp_fang_et_al
+original_name: Medium with Met, Asp; Fang et al
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Aspartate
+  concentration:
+    value: '15.0263'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '2.68078'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000274
+    label: L-Methionine
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '27.147'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '154.32'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.0090106'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '34.443'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '1.408'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000118
+    label: Sodium sulfate
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '14.6965'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.16229'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium sulfate
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.008965'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000156
+    label: Manganese sulfate
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '18.6947'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0071929'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium nitrate
+  term:
+    id: CHEBI:63038
+    label: Ammonium nitrate
+  concentration:
+    value: '2.49837'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: Ammonium nitrate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.405783Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 203, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-03-13T06:19:46.110913Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007096'
+- timestamp: '2026-03-17T06:30:28.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.243031+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Medium with Met, Asp; Fang et al" to "medium_with_met_asp_fang_et_al"
+    for consistent matching
+media_term:
+  preferred_term: MediaDB Medium 203
+  term:
+    id: MEDIADB:203
+    label: Medium with Met, Asp; Fang et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

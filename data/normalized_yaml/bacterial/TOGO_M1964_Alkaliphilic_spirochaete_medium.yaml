@@ -1,5 +1,5 @@
 id: CultureMech:008545
-name: Alkaliphilic spirochaete medium
+name: alkaliphilic_spirochaete_medium
 original_name: Alkaliphilic spirochaete medium
 category: bacterial
 medium_type: COMPLEX
@@ -448,6 +448,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:16.541017+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaliphilic spirochaete medium" to "alkaliphilic_spirochaete_medium"
+    for consistent matching
 solutions:
 - preferred_term: Vitamin solution*
   term:

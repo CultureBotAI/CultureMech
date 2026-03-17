@@ -1,5 +1,5 @@
 id: CultureMech:009446
-name: EGGC Medium
+name: eggc_medium
 original_name: EGGC Medium
 category: bacterial
 medium_type: COMPLEX
@@ -251,6 +251,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.194648+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "EGGC Medium" to "eggc_medium" for consistent matching
 solutions:
 - preferred_term: Solution A (see below)
   composition: []

@@ -1,0 +1,41 @@
+id: CultureMech:007480
+name: '245'
+original_name: '245'
+category: bacterial
+description: 245. NBRC 244.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar
+    (if needed)20gpH 7.6
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.941875Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 244, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=244.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:44.847214Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.212537Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007480'
+merge_fingerprint: 5d8b92533f1590222899f3b195d6cf4a33d6031e0a9e3ec4d899da1fc9c2c52c
+merged_from:
+- NBRC_245

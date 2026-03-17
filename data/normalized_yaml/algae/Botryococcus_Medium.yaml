@@ -1,6 +1,6 @@
 id: CultureMech:000035
-name: Botryococcus Medium
-category: algae
+name: botryococcus_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -61,6 +61,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000035'
+- timestamp: '2026-03-17T19:45:03.938630+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Botryococcus Medium" to "botryococcus_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:botryococcus-medium
 - reference_id: https://utex.org/products/botryococcus-medium
+original_name: Botryococcus Medium

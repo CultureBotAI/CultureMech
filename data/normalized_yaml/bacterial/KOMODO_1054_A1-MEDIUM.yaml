@@ -1,5 +1,5 @@
 id: CultureMech:003630
-name: A1-MEDIUM
+name: a1_medium
 original_name: A1-MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -63,3 +63,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.383419+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "A1-MEDIUM" to "a1_medium" for consistent matching

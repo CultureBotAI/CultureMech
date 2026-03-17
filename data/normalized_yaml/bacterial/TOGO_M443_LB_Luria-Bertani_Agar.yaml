@@ -1,5 +1,5 @@
 id: CultureMech:009829
-name: LB (Luria-Bertani) Agar
+name: lb_luria_bertani_agar
 original_name: LB (Luria-Bertani) Agar
 category: bacterial
 medium_type: COMPLEX
@@ -79,3 +79,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.197934+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LB (Luria-Bertani) Agar" to "lb_luria_bertani_agar"
+    for consistent matching

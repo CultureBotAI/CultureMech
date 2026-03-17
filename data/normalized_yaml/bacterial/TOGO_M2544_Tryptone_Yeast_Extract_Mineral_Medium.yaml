@@ -1,5 +1,5 @@
 id: CultureMech:009113
-name: Tryptone Yeast Extract Mineral Medium
+name: tryptone_yeast_extract_mineral_medium
 original_name: Tryptone Yeast Extract Mineral Medium
 category: bacterial
 medium_type: COMPLEX
@@ -161,3 +161,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.509479+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Tryptone Yeast Extract Mineral Medium" to "tryptone_yeast_extract_mineral_medium"
+    for consistent matching

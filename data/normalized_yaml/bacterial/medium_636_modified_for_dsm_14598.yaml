@@ -1,0 +1,76 @@
+id: CultureMech:006152
+name: medium_636_modified_for_dsm_14598
+original_name: MEDIUM 636 MODIFIED FOR DSM 14598
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 636_14598
+  term:
+    id: komodo.medium:636_14598
+    label: MEDIUM 636 MODIFIED FOR DSM 14598
+notes: 'Source: KOMODO ModelSEED | ID: 636_14598 | DSMZ Medium: 636 (mediadive.medium:636)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000243
+    label: Dextrose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 636_14598'
+- timestamp: '2026-02-03T11:19:05.677376'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 636
+- timestamp: '2026-03-13T06:19:38.649038Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006152'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.606899+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 636 MODIFIED FOR DSM 14598" to "medium_636_modified_for_dsm_14598"
+    for consistent matching

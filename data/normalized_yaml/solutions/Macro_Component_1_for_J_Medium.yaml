@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:65246
     label: sodium nitrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000388
 - preferred_term: Disodium phosphate
   concentration:
     value: '0.67'
@@ -18,6 +20,8 @@ composition:
   term:
     id: CHEBI:34683
     label: disodium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000684
 - preferred_term: Dipotassium phosphate
   concentration:
     value: '3.8'
@@ -25,6 +29,8 @@ composition:
   term:
     id: CHEBI:63036
     label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000854
 - preferred_term: Tricine
   concentration:
     value: '25.0'
@@ -32,22 +38,33 @@ composition:
   term:
     id: CHEBI:9750
     label: tricine
-notes: |
-  Macro Component 1 for J Medium (UTEX).
+notes: 'Macro Component 1 for J Medium (UTEX).
+
   First of two macronutrient stock solutions for J Medium.
+
   Provides nitrogen and phosphorus sources, plus buffering capacity.
 
+
   Preparation: Add components to approximately 900 mL deionized water in the order
+
   listed while stirring continuously. Adjust pH to 8.5-8.8 with NaOH or HCl.
+
   Bring to 1 L total volume.
+
 
   Storage: Refrigerator temperature (4°C).
 
+
   Final stock concentrations: NaNO3 (7.9 mM), Na2HPO4 (0.05 mM),
+
   K2HPO4 (0.22 mM), Tricine (1.4 mM)
 
+
   Note: Tricine provides buffering capacity to maintain pH in the alkaline range
+
   suitable for freshwater algae.
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0095

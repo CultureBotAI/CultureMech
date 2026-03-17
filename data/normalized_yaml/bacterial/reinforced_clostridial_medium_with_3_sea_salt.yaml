@@ -1,0 +1,51 @@
+id: CultureMech:002831
+name: reinforced_clostridial_medium_with_3_sea_salt
+original_name: REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J481
+  term:
+    id: mediadive.medium:J481
+    label: REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=481'
+ingredients:
+- preferred_term: Reinforced clostridial medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.716390Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J481'
+- timestamp: '2026-03-13T06:19:15.965730Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002831'
+- timestamp: '2026-03-17T06:29:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.433970+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM WITH 3%  SEA SALT" to
+    "reinforced_clostridial_medium_with_3_sea_salt" for consistent matching

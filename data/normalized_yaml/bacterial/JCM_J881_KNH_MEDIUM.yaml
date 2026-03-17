@@ -1,5 +1,5 @@
 id: CultureMech:003229
-name: KNH MEDIUM
+name: knh_medium
 original_name: KNH MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -361,3 +361,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.634643+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "KNH MEDIUM" to "knh_medium" for consistent matching

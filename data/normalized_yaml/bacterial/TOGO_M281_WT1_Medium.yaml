@@ -1,5 +1,5 @@
 id: CultureMech:009365
-name: WT1 Medium
+name: wt1_medium
 original_name: WT1 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -185,3 +185,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.822190+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "WT1 Medium" to "wt1_medium" for consistent matching

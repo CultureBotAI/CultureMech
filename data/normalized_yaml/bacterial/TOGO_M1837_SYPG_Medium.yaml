@@ -1,5 +1,5 @@
 id: CultureMech:008410
-name: SYPG Medium
+name: sypg_medium
 original_name: SYPG Medium
 category: bacterial
 medium_type: COMPLEX
@@ -397,6 +397,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:15.152551+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYPG Medium" to "sypg_medium" for consistent matching
 solutions:
 - preferred_term: Wolfe's mineral elixier*
   composition: []

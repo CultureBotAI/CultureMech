@@ -1,0 +1,46 @@
+id: CultureMech:002964
+name: modified_py4s_agar
+original_name: MODIFIED PY4S AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: JCM Medium J617
+  term:
+    id: mediadive.medium:J617
+    label: MODIFIED PY4S AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=617'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 363 supplemented with 5 mg/L hemin and 10 ï¿½g/L vitamin
+    B12. Adjust pH to 7.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.100357Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J617'
+- timestamp: '2026-02-03T11:26:55.504674'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.853188Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002964'
+- timestamp: '2026-03-17T19:45:30.465296+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED PY4S AGAR" to "modified_py4s_agar" for consistent
+    matching
+data_quality_flags:
+- incomplete_composition

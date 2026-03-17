@@ -1,5 +1,5 @@
 id: CultureMech:005971
-name: PENNASSAY G-THY medium
+name: pennassay_g_thy_medium
 original_name: PENNASSAY G-THY medium
 category: bacterial
 medium_type: COMPLEX
@@ -55,3 +55,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.167895+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PENNASSAY G-THY medium" to "pennassay_g_thy_medium"
+    for consistent matching

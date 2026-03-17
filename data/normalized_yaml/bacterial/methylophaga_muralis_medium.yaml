@@ -1,0 +1,86 @@
+id: CultureMech:001105
+name: methylophaga_muralis_medium
+original_name: METHYLOPHAGA MURALIS MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: DSMZ Medium 1624
+  term:
+    id: mediadive.medium:1624
+    label: METHYLOPHAGA MURALIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1624.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.247191'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '33.7079'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 5.0
+- step_number: 2
+  action: AUTOCLAVE
+  description: pH is adjusted to 9.0 by adding 100 ml/l 1M sterilized NaHCO3 and 10
+    ml/l 1M sterilized Na2CO3. 5 ml/l sterile methanol is added to the cooled medium.
+    When preparing liquid media cool the mineral salts solution, Na2CO3 solution and
+    NaHCO3 solution to room temperature before mixing. When preparing agar add 2.0
+    % agar to the mineral salts solution and autoclave. Cool the Na2CO3 solution,
+    NaHCO3 solution and agar to 50-55°C before mixing.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.033607Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1624'
+- timestamp: '2026-03-13T06:19:01.220269Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001105'
+- timestamp: '2026-03-17T06:30:34.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.915371+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHYLOPHAGA MURALIS MEDIUM" to "methylophaga_muralis_medium"
+    for consistent matching

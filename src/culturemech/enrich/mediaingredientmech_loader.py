@@ -54,14 +54,19 @@ class MediaIngredientMechLoader:
         return target_dir
 
     def load_ingredients(self):
-        """Load ingredients from unmapped_ingredients.yaml."""
+        """Load ingredients from mapped_ingredients.yaml."""
         if not self.repo_path:
             raise ValueError("repo_path not set - cannot load ingredients")
 
-        yaml_file = self.repo_path / "unmapped_ingredients.yaml"
+        # Try mapped_ingredients.yaml first (preferred - has CHEBI mappings)
+        yaml_file = self.repo_path / "data" / "curated" / "mapped_ingredients.yaml"
+
+        # Fallback to old location for backwards compatibility
+        if not yaml_file.exists():
+            yaml_file = self.repo_path / "unmapped_ingredients.yaml"
 
         if not yaml_file.exists():
-            raise FileNotFoundError(f"unmapped_ingredients.yaml not found at {yaml_file}")
+            raise FileNotFoundError(f"mapped_ingredients.yaml not found at {yaml_file}")
 
         logger.info(f"Loading MediaIngredientMech data from {yaml_file}...")
 
@@ -90,16 +95,17 @@ class MediaIngredientMechLoader:
             if not mim_id:
                 continue
 
-            # Index by CHEBI ID
-            chebi_id = ingredient.get('chebi_id')
+            # Index by CHEBI ID (try both field names for compatibility)
+            chebi_id = ingredient.get('ontology_id') or ingredient.get('chebi_id')
             if chebi_id:
                 # Normalize CHEBI ID format
                 if not chebi_id.startswith('CHEBI:'):
                     chebi_id = f"CHEBI:{chebi_id}"
                 self.by_chebi[chebi_id] = ingredient
 
-            # Index by normalized name
-            name = ingredient.get('name', '').strip()
+            # Index by normalized name (try both field names)
+            name = ingredient.get('preferred_term') or ingredient.get('name', '')
+            name = name.strip()
             if name:
                 normalized_name = self._normalize_name(name)
                 self.by_name[normalized_name] = ingredient
@@ -108,8 +114,16 @@ class MediaIngredientMechLoader:
             synonyms = ingredient.get('synonyms', [])
             if isinstance(synonyms, list):
                 for syn in synonyms:
+                    # Handle both string and dict formats
                     if isinstance(syn, str):
-                        normalized_syn = self._normalize_name(syn)
+                        syn_text = syn
+                    elif isinstance(syn, dict):
+                        syn_text = syn.get('synonym_text', '')
+                    else:
+                        continue
+
+                    if syn_text:
+                        normalized_syn = self._normalize_name(syn_text)
                         if normalized_syn not in self.by_synonym:
                             self.by_synonym[normalized_syn] = []
                         self.by_synonym[normalized_syn].append(ingredient)

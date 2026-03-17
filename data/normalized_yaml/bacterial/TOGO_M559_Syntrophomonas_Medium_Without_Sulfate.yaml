@@ -1,5 +1,5 @@
 id: CultureMech:009953
-name: Syntrophomonas Medium Without Sulfate
+name: syntrophomonas_medium_without_sulfate
 original_name: Syntrophomonas Medium Without Sulfate
 category: bacterial
 medium_type: COMPLEX
@@ -121,6 +121,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.185664+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Syntrophomonas Medium Without Sulfate" to "syntrophomonas_medium_without_sulfate"
+    for consistent matching
 solutions:
 - preferred_term: NaHCO3 solution
   composition: []

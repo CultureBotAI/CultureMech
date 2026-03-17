@@ -1,0 +1,52 @@
+id: CultureMech:002953
+name: cooked_meat_medium
+original_name: COOKED MEAT MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J605
+  term:
+    id: mediadive.medium:J605
+    label: COOKED MEAT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=605'
+ingredients:
+- preferred_term: Cooked meat medium
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Check the final pH to be around 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.070878Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J605'
+- timestamp: '2026-03-13T06:19:16.796119Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002953'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:30.399588+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COOKED MEAT MEDIUM" to "cooked_meat_medium" for consistent
+    matching

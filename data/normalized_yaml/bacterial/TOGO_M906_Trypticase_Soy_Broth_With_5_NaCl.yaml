@@ -1,5 +1,5 @@
 id: CultureMech:010325
-name: Trypticase Soy Broth With 5% NaCl
+name: trypticase_soy_broth_with_5_nacl
 original_name: Trypticase Soy Broth With 5% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -63,3 +63,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.955634+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trypticase Soy Broth With 5% NaCl" to "trypticase_soy_broth_with_5_nacl"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:010094
-name: Spirochaeta Caldaria Medium
+name: spirochaeta_caldaria_medium
 original_name: Spirochaeta Caldaria Medium
 category: bacterial
 medium_type: COMPLEX
@@ -110,6 +110,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.174113+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Spirochaeta Caldaria Medium" to "spirochaeta_caldaria_medium"
+    for consistent matching
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

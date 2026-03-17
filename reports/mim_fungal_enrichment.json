@@ -1,0 +1,878 @@
+{
+  "parameters": {
+    "yaml_dir": "data/normalized_yaml",
+    "category": "fungal",
+    "limit": null,
+    "dry_run": false,
+    "fuzzy_threshold": 0.95
+  },
+  "statistics": {
+    "files_processed": 108,
+    "ingredients_matched": 692,
+    "solutions_matched": 0,
+    "no_match": 214,
+    "already_linked": 0,
+    "errors": 0,
+    "match_methods": {
+      "chebi_id": 692
+    }
+  },
+  "unmatched_ingredients": [
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Skim milk",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "SABOURAUD- Glucose-Bouillon",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dihydrogen phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast Nitrogen Base",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soy peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract-malt extract agar",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Leucine",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "DL-Serine",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dihydrogen phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "L-Glutamate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Aspartate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Oat flakes",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Beef extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase soy broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Standard I Broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone no. 3",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract-malt extract agar",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast Nitrogen Base",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MES Hydrat",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dihydrogen phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Beef extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "N-Z amine",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract-malt extract agar",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dihydrogen phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea Salt",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Lactobacilli MRS broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soy peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potato",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dihydrogen phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea Salt",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    }
+  ]
+}

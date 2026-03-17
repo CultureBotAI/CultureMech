@@ -1,5 +1,5 @@
 id: CultureMech:009645
-name: Defined minimal medium
+name: defined_minimal_medium
 original_name: Defined minimal medium
 category: bacterial
 medium_type: COMPLEX
@@ -233,6 +233,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.871746+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Defined minimal medium" to "defined_minimal_medium"
+    for consistent matching
 solutions:
 - preferred_term: Vishniac and Santer trace elements solution
   composition: []

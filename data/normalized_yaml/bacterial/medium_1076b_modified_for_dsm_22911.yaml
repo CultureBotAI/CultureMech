@@ -1,0 +1,88 @@
+id: CultureMech:003718
+name: medium_1076b_modified_for_dsm_22911
+original_name: MEDIUM 1076b MODIFIED FOR DSM 22911
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1076b_22911
+  term:
+    id: komodo.medium:1076b_22911
+    label: MEDIUM 1076b MODIFIED FOR DSM 22911
+notes: 'Source: KOMODO ModelSEED | ID: 1076b_22911 | DSMZ Medium: 1076b (mediadive.medium:1076b)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.70874'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '3.39806'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '90'
+    unit: G_PER_L
+- preferred_term: CMRL 1066
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 3.5, 1.0]'
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001075
+    label: Phenol red
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.0496876'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1076b_22911'
+- timestamp: '2026-02-03T11:19:19.734469'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1076
+- timestamp: '2026-03-13T03:09:44.357577Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:21.691493Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003718'
+- timestamp: '2026-03-17T06:30:57.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:35.965597+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 1076b MODIFIED FOR DSM 22911" to "medium_1076b_modified_for_dsm_22911"
+    for consistent matching
+ph_value: 7.4

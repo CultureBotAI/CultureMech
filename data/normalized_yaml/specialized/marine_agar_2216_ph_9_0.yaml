@@ -1,0 +1,46 @@
+id: CultureMech:015373
+name: marine_agar_2216_ph_9_0
+original_name: MARINE AGAR 2216 (pH 9.0)
+category: specialized
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J1016
+  term:
+    id: mediadive.medium:J1016
+    label: MARINE AGAR 2216 (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1016'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Marine agar 2216 (see Medium No. 118). After autoclaving, adjust
+    pH to 9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.329182Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1016'
+- timestamp: '2026-02-03T11:27:23.695740'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:42.236880Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015373'
+- timestamp: '2026-03-17T19:46:33.854156+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MARINE AGAR 2216 (pH 9.0)" to "marine_agar_2216_ph_9_0"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

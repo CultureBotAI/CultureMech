@@ -1,0 +1,30 @@
+id: CultureMech:004990
+name: sludge_fluid_medium_119
+original_name: Sludge fluid (medium 119)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3141
+  term:
+    id: komodo.medium:3141
+    label: Sludge fluid (medium 119)
+notes: 'Source: KOMODO ModelSEED | ID: 3141 | DSMZ Medium: 3141 (mediadive.medium:3141)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3141'
+- timestamp: '2026-03-13T06:19:29.313760Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004990'
+- timestamp: '2026-03-17T19:45:44.872863+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sludge fluid (medium 119)" to "sludge_fluid_medium_119"
+    for consistent matching

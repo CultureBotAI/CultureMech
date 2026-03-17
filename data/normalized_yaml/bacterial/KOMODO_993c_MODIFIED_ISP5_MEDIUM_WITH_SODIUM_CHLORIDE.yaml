@@ -1,5 +1,5 @@
 id: CultureMech:006976
-name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+name: modified_isp5_medium_with_sodium_chloride
 original_name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
 category: bacterial
 medium_type: COMPLEX
@@ -115,4 +115,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:03.421292+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE" to "modified_isp5_medium_with_sodium_chloride"
+    for consistent matching
 ph_value: 7.2

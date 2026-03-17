@@ -1,0 +1,44 @@
+id: CultureMech:003059
+name: lowenstein_jensen_medium
+original_name: LOWENSTEIN-JENSEN MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J712
+  term:
+    id: mediadive.medium:J712
+    label: LOWENSTEIN-JENSEN MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use commercially available Lowenstein-Jensen medium slants (BD 220908).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.370652Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J712'
+- timestamp: '2026-02-03T11:26:55.824599'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:17.486487Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003059'
+- timestamp: '2026-03-17T19:45:31.200552+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LOWENSTEIN-JENSEN MEDIUM" to "lowenstein_jensen_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

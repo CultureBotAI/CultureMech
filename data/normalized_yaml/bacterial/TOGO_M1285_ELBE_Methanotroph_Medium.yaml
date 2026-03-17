@@ -1,5 +1,5 @@
 id: CultureMech:007819
-name: ELBE Methanotroph Medium
+name: elbe_methanotroph_medium
 original_name: ELBE Methanotroph Medium
 category: bacterial
 medium_type: COMPLEX
@@ -105,6 +105,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.149314+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ELBE Methanotroph Medium" to "elbe_methanotroph_medium"
+    for consistent matching
 solutions:
 - preferred_term: Phosphate buffer (see Medium [M560])
   composition: []

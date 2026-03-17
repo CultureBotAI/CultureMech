@@ -1,0 +1,40 @@
+id: CultureMech:007482
+name: '26'
+original_name: '26'
+category: bacterial
+description: 26. NBRC 25.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Proteose peptone1gYeast extract1gGlucose1gDistilled water1LAgar15g
+- preferred_term: ''
+  concentration:
+    value: Proteose peptone
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.937541Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 25, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=25.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:33.140694Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.217900Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007482'
+merge_fingerprint: f2135594a4bc47bc99d0878cd10d82b1908d96dda5b0be6a3e12df6992096b12
+merged_from:
+- NBRC_26

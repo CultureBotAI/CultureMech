@@ -1,5 +1,5 @@
 id: CultureMech:007608
-name: Methanogens Saline Water Medium
+name: methanogens_saline_water_medium
 original_name: Methanogens Saline Water Medium
 category: bacterial
 medium_type: COMPLEX
@@ -164,6 +164,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.376917+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanogens Saline Water Medium" to "methanogens_saline_water_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace mineral solution (see Medium [M888])
   composition: []

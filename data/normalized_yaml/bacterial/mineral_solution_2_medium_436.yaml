@@ -1,0 +1,30 @@
+id: CultureMech:004817
+name: mineral_solution_2_medium_436
+original_name: Mineral solution 2 (medium 436)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3037
+  term:
+    id: komodo.medium:3037
+    label: Mineral solution 2 (medium 436)
+notes: 'Source: KOMODO ModelSEED | ID: 3037 | DSMZ Medium: 3037 (mediadive.medium:3037)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3037'
+- timestamp: '2026-03-13T06:19:28.846586Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004817'
+- timestamp: '2026-03-17T19:45:44.325014+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral solution 2 (medium 436)" to "mineral_solution_2_medium_436"
+    for consistent matching

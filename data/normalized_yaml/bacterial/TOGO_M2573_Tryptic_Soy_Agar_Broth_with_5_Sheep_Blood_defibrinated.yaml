@@ -1,5 +1,5 @@
 id: CultureMech:009142
-name: Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)
+name: tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated
 original_name: Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)
 category: bacterial
 medium_type: COMPLEX
@@ -72,3 +72,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.947717+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Tryptic Soy Agar/Broth with 5% Sheep Blood (defibrinated)"
+    to "tryptic_soy_agar_broth_with_5_sheep_blood_defibrinated" for consistent matching

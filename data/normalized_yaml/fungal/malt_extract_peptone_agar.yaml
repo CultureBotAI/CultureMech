@@ -1,0 +1,56 @@
+id: CultureMech:010481
+name: malt_extract_peptone_agar
+original_name: MALT EXTRACT PEPTONE AGAR
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 90
+  term:
+    id: mediadive.medium:90
+    label: MALT EXTRACT PEPTONE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium90.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.154387Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 90'
+- timestamp: '2026-03-13T06:20:14.002265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010481'
+- timestamp: '2026-03-17T17:06:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.003313+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MALT EXTRACT PEPTONE AGAR" to "malt_extract_peptone_agar"
+    for consistent matching

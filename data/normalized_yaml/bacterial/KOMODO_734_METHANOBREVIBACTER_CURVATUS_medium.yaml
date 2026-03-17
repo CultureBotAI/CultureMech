@@ -1,5 +1,5 @@
 id: CultureMech:006381
-name: METHANOBREVIBACTER CURVATUS medium
+name: methanobrevibacter_curvatus_medium
 original_name: METHANOBREVIBACTER CURVATUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -340,4 +340,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.556051+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOBREVIBACTER CURVATUS medium" to "methanobrevibacter_curvatus_medium"
+    for consistent matching
 ph_value: 7.7

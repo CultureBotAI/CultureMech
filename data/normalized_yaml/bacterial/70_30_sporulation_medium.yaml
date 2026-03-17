@@ -1,0 +1,104 @@
+id: CultureMech:001277
+name: 70_30_sporulation_medium
+original_name: 70:30 sporulation medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: DSMZ Medium 1874
+  term:
+    id: mediadive.medium:1874
+    label: 70:30 sporulation medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '63'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
+- preferred_term: Tris base
+  term:
+    id: CHEBI:9754
+    label: Tris base
+  concentration:
+    value: '1.06'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000880
+    label: Tris base
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '11.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000923
+    label: L-Cysteine
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 2
+  action: HEAT
+  description: Add cysteine solution after cooling to approximately 65°C.
+- step_number: 3
+  action: HEAT
+  description: Store plates at 4°C for up to 1 week.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filtrate (pore size 0.22 µm).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1371/journal.pgen.1003660
+curation_history:
+- timestamp: '2026-01-26T17:53:15.565440Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1874'
+- timestamp: '2026-03-13T06:19:02.764652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001277'
+- timestamp: '2026-03-17T06:29:47.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:14.617560+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "70:30 sporulation medium" to "70_30_sporulation_medium"
+    for consistent matching

@@ -1,0 +1,40 @@
+id: CultureMech:002488
+name: jcm_medium_no_1324
+original_name: JCM MEDIUM No. 1324
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1324
+  term:
+    id: mediadive.medium:J1324
+    label: JCM MEDIUM No. 1324
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1324'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.450245Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1324'
+- timestamp: '2026-02-03T11:26:53.895074'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:13.747401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002488'
+- timestamp: '2026-03-17T19:45:26.902495+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JCM MEDIUM No. 1324" to "jcm_medium_no_1324" for consistent
+    matching
+data_quality_flags:
+- incomplete_composition

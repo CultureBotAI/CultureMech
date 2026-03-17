@@ -1,0 +1,47 @@
+id: CultureMech:010493
+name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1152
+  term:
+    id: mediadive.medium:J1152
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1152'
+ingredients:
+- preferred_term: Yeast extract-malt extract agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.826123Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1152'
+- timestamp: '2026-03-13T06:20:14.057204Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010493'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.063428+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl"
+    to "yeast_extract_malt_extract_agar_isp_2_with_2_nacl" for consistent matching

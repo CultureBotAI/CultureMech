@@ -1,5 +1,5 @@
 id: CultureMech:007900
-name: GBS Salts Medium For Rhodothermus
+name: gbs_salts_medium_for_rhodothermus
 original_name: GBS Salts Medium For Rhodothermus
 category: bacterial
 medium_type: COMPLEX
@@ -127,6 +127,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.795343+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GBS Salts Medium For Rhodothermus" to "gbs_salts_medium_for_rhodothermus"
+    for consistent matching
 solutions:
 - preferred_term: Mineral solution (see Medium [M1029])
   composition: []

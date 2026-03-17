@@ -1,0 +1,247 @@
+id: CultureMech:008986
+name: madctw_medium
+original_name: MADCTw medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tween 80
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+- preferred_term: Glycerol
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
+- preferred_term: DI Water
+  concentration:
+    value: '90'
+    unit: PERCENT_W_V
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [WARNING: 2 duplicates with conflicting units] [MANUAL REVIEW
+    REQUIRED: PERCENT_W_V incompatible with absolute units]'
+- preferred_term: Middlebrook 7H9 broth
+  concentration:
+    value: '4.7'
+    unit: G_PER_L
+- preferred_term: ADC Enrichment
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: Monopotassium Phosphate
+- preferred_term: Biotin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: Ammonium Sulfate
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: Calcium Chloride
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Disodium Phosphate
+- preferred_term: Magnesium Sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: Magnesium Sulfate
+- preferred_term: Copper Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000855
+    label: Copper Sulfate
+- preferred_term: Sodium Citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000719
+    label: Sodium Citrate
+- preferred_term: Ferric Ammonium Citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000541
+    label: Ferric Ammonium Citrate
+- preferred_term: L-Glutamic Acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000562
+    label: L-Glutamic Acid
+- preferred_term: Pyridoxine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16709
+    label: pyridoxine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000317
+    label: Pyridoxine
+- preferred_term: Zinc Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc Sulfate
+- preferred_term: Dextrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Dextrose
+- preferred_term: Bovine Serum Albumin, Frac V
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Catalase (beef)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2403
+  term:
+    id: TOGO:M2403
+    label: MADCTw medium
+notes: 'Source: https://togomedium.org/medium/M2403'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.467371Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2403'
+- timestamp: '2026-01-28T19:48:22.695141Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T03:09:07.557575Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); WARNING: Duplicate ''DI Water'' with different
+    units: {''G_PER_L'', ''PERCENT_W_V''}'
+- timestamp: '2026-03-13T04:23:43.780684Z'
+  curator: unit-conflict-resolver-v1.0
+  action: Resolved unit conflicts
+  notes: Flagged DI Water for manual review (PERCENT_W_V conflict)
+- timestamp: '2026-03-13T06:20:01.827936Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008986'
+- timestamp: '2026-03-17T06:30:13.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.571992+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MADCTw medium" to "madctw_medium" for consistent matching

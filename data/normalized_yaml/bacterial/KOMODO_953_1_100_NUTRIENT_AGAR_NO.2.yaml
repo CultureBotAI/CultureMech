@@ -1,5 +1,5 @@
 id: CultureMech:006896
-name: 1/100 NUTRIENT AGAR NO.2
+name: 1_100_nutrient_agar_no_2
 original_name: 1/100 NUTRIENT AGAR NO.2
 category: bacterial
 medium_type: COMPLEX
@@ -60,3 +60,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.709808+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/100 NUTRIENT AGAR NO.2" to "1_100_nutrient_agar_no_2"
+    for consistent matching

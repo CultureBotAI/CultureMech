@@ -1,5 +1,5 @@
 id: CultureMech:006054
-name: CORYNEBACTERIUM medium CII
+name: corynebacterium_medium_cii
 original_name: CORYNEBACTERIUM medium CII
 category: bacterial
 medium_type: COMPLEX
@@ -65,4 +65,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.762062+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CORYNEBACTERIUM medium CII" to "corynebacterium_medium_cii"
+    for consistent matching
 ph_value: 7.0

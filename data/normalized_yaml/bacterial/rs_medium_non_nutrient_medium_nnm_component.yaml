@@ -1,0 +1,41 @@
+id: CultureMech:010434
+name: rs_medium_non_nutrient_medium_nnm_component
+original_name: RS Medium - Non-Nutrient Medium (NNM) Component
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: public Medium P4
+  term:
+    id: mediadive.medium:P4
+    label: RS Medium - Non-Nutrient Medium (NNM) Component
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.841685Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P4'
+- timestamp: '2026-02-03T11:27:23.231976'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:13.821679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010434'
+- timestamp: '2026-03-17T19:46:32.799544+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RS Medium - Non-Nutrient Medium (NNM) Component" to
+    "rs_medium_non_nutrient_medium_nnm_component" for consistent matching
+data_quality_flags:
+- incomplete_composition

@@ -1,5 +1,5 @@
 id: CultureMech:010040
-name: Brain Heart Infusion With 5% NaCl
+name: brain_heart_infusion_with_5_nacl
 original_name: Brain Heart Infusion With 5% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -63,3 +63,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.812170+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Brain Heart Infusion With 5% NaCl" to "brain_heart_infusion_with_5_nacl"
+    for consistent matching

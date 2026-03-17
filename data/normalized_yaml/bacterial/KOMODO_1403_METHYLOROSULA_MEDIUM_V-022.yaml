@@ -1,5 +1,5 @@
 id: CultureMech:004119
-name: METHYLOROSULA MEDIUM V-022
+name: methylorosula_medium_v_022
 original_name: METHYLOROSULA MEDIUM V-022
 category: bacterial
 medium_type: DEFINED
@@ -156,4 +156,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.827263+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHYLOROSULA MEDIUM V-022" to "methylorosula_medium_v_022"
+    for consistent matching
 ph_value: 6.0

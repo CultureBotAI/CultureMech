@@ -1,5 +1,5 @@
 id: CultureMech:009298
-name: Thermoanaerobacter Kivui Medium
+name: thermoanaerobacter_kivui_medium
 original_name: Thermoanaerobacter Kivui Medium
 category: bacterial
 medium_type: COMPLEX
@@ -348,6 +348,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:24.268485+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermoanaerobacter Kivui Medium" to "thermoanaerobacter_kivui_medium"
+    for consistent matching
 solutions:
 - preferred_term: CaCl2 x 2 H2O solution (0.1% w/v)
   composition: []

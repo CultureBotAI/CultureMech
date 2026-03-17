@@ -1,0 +1,68 @@
+id: CultureMech:001627
+name: C/10 MEDIUM
+original_name: C/10 MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 49
+  term:
+    id: mediadive.medium:49
+    label: C/10 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium49.pdf'
+ingredients:
+- preferred_term: Casitone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 before adding agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.047417Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 49'
+- timestamp: '2026-03-13T06:19:05.876122Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001627'
+- timestamp: '2026-03-15T03:03:36.458741+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_49_C_10_MEDIUM, KOMODO_49-435_MEDIUM_49_MODIFIED_FOR_DSM_435,
+    KOMODO_49_C_10_medium'
+synonyms:
+- name: MEDIUM 49 MODIFIED FOR DSM 435
+  source: KOMODO
+  source_id: komodo.medium:49_435
+  original_category: bacterial
+- name: C/10 medium
+  source: KOMODO
+  source_id: komodo.medium:49
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- DSMZ_49_C_10_MEDIUM
+- KOMODO_49-435_MEDIUM_49_MODIFIED_FOR_DSM_435
+- KOMODO_49_C_10_medium
+merge_fingerprint: d8ac2a9d1e0f45aa2d6f58569f13e223ac041e6b8ef482b1f380703f03e7970d

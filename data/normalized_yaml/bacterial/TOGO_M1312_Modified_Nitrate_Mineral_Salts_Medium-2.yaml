@@ -1,5 +1,5 @@
 id: CultureMech:007848
-name: Modified Nitrate  Mineral Salts Medium-2
+name: modified_nitrate_mineral_salts_medium_2
 original_name: Modified Nitrate  Mineral Salts Medium-2
 category: bacterial
 medium_type: COMPLEX
@@ -164,6 +164,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.379715+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Nitrate  Mineral Salts Medium-2" to "modified_nitrate_mineral_salts_medium_2"
+    for consistent matching
 solutions:
 - preferred_term: 1 M HEPES solution (pH 7.0)
   composition: []

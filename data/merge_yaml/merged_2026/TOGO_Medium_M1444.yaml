@@ -1,0 +1,79 @@
+id: CultureMech:007984
+name: TOGO Medium M1444
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+media_term:
+  preferred_term: TOGO Medium M1444
+  term:
+    id: TOGO:M1444
+    label: TOGO Medium M1444
+notes: 'Source: https://togomedium.org/medium/M1444
+
+  Original source: NBRC - NBRC_M209
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=209'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.684571Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1444'
+- timestamp: '2026-01-28T19:48:16.873466Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:27.885024+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.839696Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007984'
+- timestamp: '2026-03-15T03:04:01.017398+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1444_Unnamed_medium, TOGO_M1525_GAM_Medium, TOGO_M682_Distilled_Water'
+solutions:
+- preferred_term: Ethyl alcohol**
+  composition: []
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Organic compound'
+- preferred_term: SI Medium Dehydrated*
+  composition: []
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+synonyms:
+- name: GAM Medium
+  source: TOGO
+  source_id: TOGO:M1525
+  original_category: bacterial
+- name: Distilled Water
+  source: TOGO
+  source_id: TOGO:M682
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1444_Unnamed_medium
+- TOGO_M1525_GAM_Medium
+- TOGO_M682_Distilled_Water
+merge_fingerprint: f6481d0bcfa02ad682282ee3d57c5eac82754fe1de56a29860075f15c1842b69

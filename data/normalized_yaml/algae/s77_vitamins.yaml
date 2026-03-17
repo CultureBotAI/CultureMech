@@ -1,0 +1,47 @@
+id: CultureMech:000125
+name: s77_vitamins
+category: ALGAE
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_S77.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: S77, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_S77.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.699768'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.607779'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:53.228548Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000125'
+- timestamp: '2026-03-17T19:45:04.178866+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "S77 + vitamins" to "s77_vitamins" for consistent matching
+references:
+- reference_id: CCAP:S77
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_S77.pdf
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+original_name: S77 + vitamins

@@ -1,0 +1,32 @@
+id: CultureMech:004821
+name: methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol
+original_name: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 304_replace_Trimethylamine-HCl_with_Methanol
+  term:
+    id: komodo.medium:304_replace_Trimethylamine-HCl_with_Methanol
+    label: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
+notes: 'Source: KOMODO ModelSEED | ID: 304_replace_Trimethylamine-HCl_with_Methanol
+  | DSMZ Medium: 304 (mediadive.medium:304) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 304_replace_Trimethylamine-HCl_with_Methanol'
+- timestamp: '2026-03-13T06:19:28.854775Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004821'
+- timestamp: '2026-03-17T19:45:44.334047+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol"
+    to "methanosarcina_acetivorans_medium_replace_trimethylamine_hcl_with_methanol"
+    for consistent matching

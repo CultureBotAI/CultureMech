@@ -1,5 +1,5 @@
 id: CultureMech:003877
-name: HALOMICROBIUM KATESII medium
+name: halomicrobium_katesii_medium
 original_name: HALOMICROBIUM KATESII medium
 category: bacterial
 medium_type: COMPLEX
@@ -120,4 +120,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.371571+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALOMICROBIUM KATESII medium" to "halomicrobium_katesii_medium"
+    for consistent matching
 high_metal: true

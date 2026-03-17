@@ -1,0 +1,30 @@
+id: CultureMech:005648
+name: cmrl_1066_medium_10x_concentrated_gibco
+original_name: CMRL-1066 medium (10x concentrated; GIBCO)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 5008
+  term:
+    id: komodo.medium:5008
+    label: CMRL-1066 medium (10x concentrated; GIBCO)
+notes: 'Source: KOMODO ModelSEED | ID: 5008 | DSMZ Medium: 5008 (mediadive.medium:5008)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 5008'
+- timestamp: '2026-03-13T06:19:34.927659Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005648'
+- timestamp: '2026-03-17T19:45:51.259167+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CMRL-1066 medium (10x concentrated; GIBCO)" to "cmrl_1066_medium_10x_concentrated_gibco"
+    for consistent matching

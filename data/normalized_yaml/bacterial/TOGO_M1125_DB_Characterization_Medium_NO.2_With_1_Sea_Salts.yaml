@@ -1,5 +1,5 @@
 id: CultureMech:007646
-name: DB Characterization Medium NO.2 With 1% Sea Salts
+name: db_characterization_medium_no_2_with_1_sea_salts
 original_name: DB Characterization Medium NO.2 With 1% Sea Salts
 category: bacterial
 medium_type: COMPLEX
@@ -39,6 +39,11 @@ curation_history:
   date: '2026-03-14T21:06:46.806291'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:08.682586+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DB Characterization Medium NO.2 With 1% Sea Salts"
+    to "db_characterization_medium_no_2_with_1_sea_salts" for consistent matching
 solutions:
 - preferred_term: DB CHARACTERIZATION MEDIUM NO. 2 (see Medium [M578])
   composition: []

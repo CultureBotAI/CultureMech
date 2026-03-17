@@ -1,0 +1,96 @@
+id: CultureMech:001520
+name: clostridium_acetobutylicum_medium
+original_name: CLOSTRIDIUM ACETOBUTYLICUM MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 411
+  term:
+    id: mediadive.medium:411
+    label: CLOSTRIDIUM ACETOBUTYLICUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium411.pdf'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0006000000000000001'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.0005, 0.0001]'
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Milk
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix potatoes and CaCO3 then autoclave 30 min at 121°C. Filter through
+    cheese cloth, add glucose and cysteine, distribute under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 20 min.
+    Adjust pH of complete medium to 6.8.
+- step_number: 2
+  action: STORE
+  description: 'Note: For the reactivation of freeze-dried strains it is recommended
+    to use the following simple milk medium:'
+- step_number: 3
+  action: AUTOCLAVE
+  description: Adjust pH to 7.1. Tube and autoclave under 100% N2 gas atmosphere for
+    12 min at 121°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.074513Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 411'
+- timestamp: '2026-03-13T03:08:59.347042Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:04.921008Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001520'
+- timestamp: '2026-03-17T06:30:04.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.994685+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM ACETOBUTYLICUM MEDIUM" to "clostridium_acetobutylicum_medium"
+    for consistent matching

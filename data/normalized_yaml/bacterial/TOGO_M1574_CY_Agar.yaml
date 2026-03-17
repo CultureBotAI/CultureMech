@@ -1,5 +1,5 @@
 id: CultureMech:008123
-name: CY Agar
+name: cy_agar
 original_name: CY Agar
 category: bacterial
 medium_type: COMPLEX
@@ -79,3 +79,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.218319+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CY Agar" to "cy_agar" for consistent matching

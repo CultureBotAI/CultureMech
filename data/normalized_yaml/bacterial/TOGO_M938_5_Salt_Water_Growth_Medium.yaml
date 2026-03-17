@@ -1,5 +1,5 @@
 id: CultureMech:010360
-name: 5% Salt Water Growth Medium
+name: 5_salt_water_growth_medium
 original_name: 5% Salt Water Growth Medium
 category: bacterial
 medium_type: COMPLEX
@@ -79,6 +79,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.238153+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "5% Salt Water Growth Medium" to "5_salt_water_growth_medium"
+    for consistent matching
 solutions:
 - preferred_term: MDS salt water (see Medium [M578])
   composition: []

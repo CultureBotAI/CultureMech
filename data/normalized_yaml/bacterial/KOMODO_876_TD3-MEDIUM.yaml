@@ -1,5 +1,5 @@
 id: CultureMech:006713
-name: TD3-MEDIUM
+name: td3_medium
 original_name: TD3-MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -403,3 +403,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.003629+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TD3-MEDIUM" to "td3_medium" for consistent matching

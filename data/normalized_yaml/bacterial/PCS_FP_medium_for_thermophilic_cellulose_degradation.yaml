@@ -1,4 +1,4 @@
-name: PCS-FP medium for thermophilic cellulose degradation
+name: pcs_fp_medium_for_thermophilic_cellulose_degradation
 original_name: PCS-FP medium for thermophilic cellulose degradation
 category: bacterial
 medium_type: DEFINED
@@ -87,3 +87,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.629908+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PCS-FP medium for thermophilic cellulose degradation"
+    to "pcs_fp_medium_for_thermophilic_cellulose_degradation" for consistent matching

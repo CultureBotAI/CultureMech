@@ -1,0 +1,63 @@
+id: CultureMech:006699
+name: medium_869_modified_for_dsm_12992
+original_name: MEDIUM 869 MODIFIED FOR DSM 12992
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 869_12992
+  term:
+    id: komodo.medium:869_12992
+    label: MEDIUM 869 MODIFIED FOR DSM 12992
+notes: 'Source: KOMODO ModelSEED | ID: 869_12992 | DSMZ Medium: 869 (mediadive.medium:869)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 869_12992'
+- timestamp: '2026-02-03T11:19:12.156455'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 869
+- timestamp: '2026-03-13T06:19:43.130657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006699'
+- timestamp: '2026-03-17T06:30:33.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.851181+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 869 MODIFIED FOR DSM 12992" to "medium_869_modified_for_dsm_12992"
+    for consistent matching

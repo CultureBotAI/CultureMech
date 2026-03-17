@@ -1,5 +1,5 @@
 id: CultureMech:010030
-name: Blood Agar
+name: blood_agar
 original_name: Blood Agar
 category: bacterial
 medium_type: COMPLEX
@@ -41,3 +41,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010030'
+- timestamp: '2026-03-17T19:46:29.747843+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Blood Agar" to "blood_agar" for consistent matching

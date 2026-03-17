@@ -1,5 +1,5 @@
 id: CultureMech:005014
-name: TREPONEMA SACCHAROPHILUM medium
+name: treponema_saccharophilum_medium
 original_name: TREPONEMA SACCHAROPHILUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -214,4 +214,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.098043+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TREPONEMA SACCHAROPHILUM medium" to "treponema_saccharophilum_medium"
+    for consistent matching
 ph_value: 7.0

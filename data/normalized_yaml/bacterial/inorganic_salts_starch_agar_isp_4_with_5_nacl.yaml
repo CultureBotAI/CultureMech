@@ -1,0 +1,53 @@
+id: CultureMech:002328
+name: inorganic_salts_starch_agar_isp_4_with_5_nacl
+original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 5% NaCl
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J1156
+  term:
+    id: mediadive.medium:J1156
+    label: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1156'
+ingredients:
+- preferred_term: Inorganic salts-starch agar
+  term:
+    id: CHEBI:2509
+    label: Inorganic salts-starch agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Inorganic salts-starch agar
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.834746Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1156'
+- timestamp: '2026-03-13T06:19:12.391998Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002328'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:25.358252+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 5% NaCl" to
+    "inorganic_salts_starch_agar_isp_4_with_5_nacl" for consistent matching

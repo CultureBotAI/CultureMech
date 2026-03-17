@@ -1,0 +1,67 @@
+id: CultureMech:001842
+name: SEMISOLID BRUCELLA BROTH
+original_name: SEMISOLID BRUCELLA BROTH
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: DSMZ Medium 703
+  term:
+    id: mediadive.medium:703
+    label: SEMISOLID BRUCELLA BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium703.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.973118Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 703'
+- timestamp: '2026-03-13T06:19:07.655547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001842'
+- timestamp: '2026-03-15T03:03:39.643730+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_703_SEMISOLID_BRUCELLA_BROTH, KOMODO_703_SEMISOLID_BRUCELLA_BROTH'
+categories:
+- bacterial
+merged_from:
+- DSMZ_703_SEMISOLID_BRUCELLA_BROTH
+- KOMODO_703_SEMISOLID_BRUCELLA_BROTH
+merge_fingerprint: 42aa4c87395c1b927f6259a2fe40bd68d6db02e0121d4cfd9b14a0f09fbbf58b

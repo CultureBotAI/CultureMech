@@ -1,0 +1,40 @@
+id: CultureMech:002821
+name: ferric_citrate_fwmedia
+original_name: FERRIC CITRATE FWMEDIA
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J472
+  term:
+    id: mediadive.medium:J472
+    label: FERRIC CITRATE FWMEDIA
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=472'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.697603Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J472'
+- timestamp: '2026-02-03T11:26:55.022431'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.917350Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002821'
+- timestamp: '2026-03-17T19:45:29.378455+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "FERRIC CITRATE FWMEDIA" to "ferric_citrate_fwmedia"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

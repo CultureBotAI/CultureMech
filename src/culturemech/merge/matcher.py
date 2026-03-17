@@ -19,9 +19,13 @@ class RecipeMatcher:
     and are candidates for merging.
     """
 
-    def __init__(self):
-        """Initialize the matcher with a fingerprinter."""
-        self.fingerprinter = RecipeFingerprinter()
+    def __init__(self, fingerprinter=None):
+        """Initialize the matcher with a fingerprinter.
+
+        Args:
+            fingerprinter: Optional fingerprinter instance. If None, uses RecipeFingerprinter()
+        """
+        self.fingerprinter = fingerprinter or RecipeFingerprinter()
 
     def group_recipes(
         self,

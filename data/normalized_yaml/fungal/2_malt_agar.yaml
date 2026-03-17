@@ -1,0 +1,51 @@
+id: CultureMech:010523
+name: 2_malt_agar
+original_name: 2% MALT AGAR
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J38
+  term:
+    id: mediadive.medium:J38
+    label: 2% MALT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=38'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.625476Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J38'
+- timestamp: '2026-03-13T06:20:14.223404Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010523'
+- timestamp: '2026-03-17T17:06:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.251620+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2% MALT AGAR" to "2_malt_agar" for consistent matching

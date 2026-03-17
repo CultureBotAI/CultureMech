@@ -1,5 +1,5 @@
 id: CultureMech:005187
-name: THERMOPLASMA VOLCANIUM medium
+name: thermoplasma_volcanium_medium
 original_name: THERMOPLASMA VOLCANIUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -116,3 +116,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:46.762238+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THERMOPLASMA VOLCANIUM medium" to "thermoplasma_volcanium_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:009730
-name: MJ Basal Medium
+name: mj_basal_medium
 original_name: MJ Basal Medium
 category: bacterial
 medium_type: COMPLEX
@@ -92,6 +92,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.409456+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MJ Basal Medium" to "mj_basal_medium" for consistent
+    matching
 solutions:
 - preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
   composition: []

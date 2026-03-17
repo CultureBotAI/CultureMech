@@ -1,0 +1,483 @@
+# metamodel_version: 1.7.0
+enum AtmosphereEnum
+  {
+    AEROBIC
+    ANAEROBIC
+    MICROAEROPHILIC
+  }
+
+enum CategoryEnum
+  {
+    bacterial
+    fungal
+    archaea
+    specialized
+    algae
+    imported
+  }
+
+enum CellularRoleEnum
+  {
+    PRIMARY_DEGRADER
+    REDUCTIVE_DEGRADER
+    OXIDATIVE_DEGRADER
+    BIOTRANSFORMER
+    SYNERGIST
+    BRIDGE_ORGANISM
+    ELECTRON_SHUTTLE
+    DETOXIFIER
+    COMMENSAL
+    COMPETITOR
+  }
+
+enum CofactorCategoryEnum
+  {
+    VITAMINS
+    METALS
+    NUCLEOTIDES
+    ENERGY_TRANSFER
+    OTHER_SPECIALIZED
+  }
+
+enum ConcentrationUnitEnum
+  {
+    G_PER_L
+    MG_PER_L
+    MICROG_PER_L
+    MOLAR
+    MILLIMOLAR
+    MICROMOLAR
+    PERCENT_W_V
+    PERCENT_V_V
+    VARIABLE
+  }
+
+enum EvidenceItemSupportEnum
+  {
+    SUPPORT
+    REFUTE
+    PARTIAL
+    NO_EVIDENCE
+    WRONG_STATEMENT
+  }
+
+enum IngredientRoleEnum
+  {
+    CARBON_SOURCE
+    NITROGEN_SOURCE
+    MINERAL
+    TRACE_ELEMENT
+    BUFFER
+    VITAMIN_SOURCE
+    SALT
+    PROTEIN_SOURCE
+    AMINO_ACID_SOURCE
+    SOLIDIFYING_AGENT
+    ENERGY_SOURCE
+    ELECTRON_ACCEPTOR
+    ELECTRON_DONOR
+    COFACTOR_PROVIDER
+  }
+
+enum LightConditionEnum
+  {
+    DARK
+    LIGHT_PROTECTED
+    AMBIENT
+  }
+
+enum MediumTypeEnum
+  {
+    DEFINED
+    COMPLEX
+    SELECTIVE
+    DIFFERENTIAL
+    ENRICHMENT
+    MINIMAL
+  }
+
+enum MergeReasonEnum
+  {
+    EXPLICIT_MERGE_RULE
+    IDENTICAL_FINGERPRINT
+    SAME_PARENT_INGREDIENTS
+    HYDRATION_VARIANT_ONLY
+    NO_MATCH
+  }
+
+enum ModifierEnum
+  {
+    INCREASED
+    DECREASED
+    ABSENT
+  }
+
+enum OrganismCultureTypeEnum
+  {
+    isolate
+    community
+  }
+
+enum PhysicalStateEnum
+  {
+    LIQUID
+    SOLID_AGAR
+    SEMISOLID
+    BIPHASIC
+  }
+
+enum PreparationActionEnum
+  {
+    DISSOLVE
+    MIX
+    HEAT
+    COOL
+    AUTOCLAVE
+    FILTER_STERILIZE
+    ADJUST_PH
+    ADD_AGAR
+    POUR_PLATES
+    ALIQUOT
+    STORE
+  }
+
+enum SterilizationMethodEnum
+  {
+    AUTOCLAVE
+    FILTER
+    DRY_HEAT
+    TYNDALLIZATION
+    NONE
+  }
+
+enum TemperatureUnitEnum
+  {
+    CELSIUS
+    FAHRENHEIT
+    KELVIN
+  }
+
+enum TransporterTypeEnum
+  {
+    ABC
+    MFS
+    PTS
+    TONB
+    SYMPORTER
+    ANTIPORTER
+    UNIPORTER
+    PORIN
+    SIDEROPHORE_RECEPTOR
+    DEHALOGENASE
+    FLUORIDE_EXPORTER
+  }
+
+enum VariantTypeEnum
+  {
+    HYDRATE
+    SALT_FORM
+    ANHYDROUS
+    NAMED_HYDRATE
+    CHEMICAL_VARIANT
+  }
+
+type ChemicalEntityTerm
+  {
+    label: String
+    id: String!
+  }
+
+type CofactorDescriptor
+  {
+    preferredTerm: String!
+    term: ChemicalEntityTerm
+    category: CofactorCategoryEnum
+    precursor: String
+    precursorTerm: ChemicalEntityTerm
+    ecAssociations: [String]
+    keggPathways: [String]
+    enzymeExamples: [String]
+    biosynthesisGenes: [String]
+    bioavailability: String
+    notes: String
+  }
+
+type CofactorRequirement
+  {
+    cofactor: CofactorDescriptor!
+    canBiosynthesize: Boolean!
+    confidence: Float
+    evidence: [EvidenceItem]
+    genes: [String]
+  }
+
+type ConcentrationValue
+  {
+    value: String!
+    unit: ConcentrationUnitEnum!
+    perVolume: String
+  }
+
+type CurationEvent
+  {
+    timestamp: String!
+    curator: String!
+    action: String!
+    notes: String
+  }
+
+type Dataset
+  {
+    datasetId: String!
+    datasetType: String
+    description: String
+    url: Uri
+  }
+
+interface Descriptor
+  {
+  }
+
+type EvidenceItem
+  {
+    reference: String!
+    supports: EvidenceItemSupportEnum!
+    snippet: String
+    explanation: String!
+  }
+
+type GTDBTerm
+  {
+    id: String!
+    label: String
+  }
+
+type IngredientDescriptor
+  {
+    preferredTerm: String!
+    term: ChemicalEntityTerm
+    mediaingredientmechTerm: MediaIngredientMechTerm
+    parentIngredient: IngredientReference
+    variantType: VariantTypeEnum
+    concentration: ConcentrationValue!
+    modifier: ModifierEnum
+    chemicalFormula: String
+    molecularWeight: Float
+    supplierCatalog: SupplierInfo
+    notes: String
+    role: [IngredientRoleEnum]
+    cofactorsProvided: [CofactorDescriptor]
+    evidence: [EvidenceItem]
+  }
+
+type IngredientReference
+  {
+    preferredTerm: String!
+    mediaingredientmechId: String
+  }
+
+type MediaDatabaseTerm
+  {
+    id: String!
+    label: String
+  }
+
+type MediaIngredientMechTerm
+  {
+    label: String
+    id: String!
+  }
+
+type MediaRecipe
+  {
+    name: String!
+    originalName: String
+    category: CategoryEnum
+    categories: [CategoryEnum]
+    highMetal: Boolean
+    highRee: Boolean
+    synonyms: [RecipeSynonym]
+    mergedFrom: [String]
+    mergeFingerprint: String
+    chemicalFingerprint: String
+    variantFingerprint: String
+    fingerprintVersion: String
+    mergeMetadata: MergeMetadata
+    mediaTerm: MediaTypeDescriptor
+    description: String
+    targetOrganisms: [OrganismDescriptor]
+    organismCultureType: OrganismCultureTypeEnum
+    mediumType: MediumTypeEnum!
+    physicalState: PhysicalStateEnum!
+    phValue: Float
+    phRange: String
+    lightIntensity: String
+    lightCycle: String
+    lightQuality: String
+    temperatureRange: String
+    temperatureValue: Float
+    salinity: String
+    aeration: String
+    cultureVessel: String
+    ingredients: [IngredientDescriptor]!
+    solutions: [SolutionDescriptor]
+    preparationSteps: [PreparationStep]
+    sterilization: SterilizationDescriptor
+    storage: StorageConditions
+    applications: [String]
+    variants: [MediaVariant]
+    references: [PublicationReference]
+    notes: String
+    evidence: [EvidenceItem]
+    datasets: [Dataset]
+    curationHistory: [CurationEvent]
+    dataQualityFlags: [String]
+    incubationAtmosphere: AtmosphereEnum
+    sourceData: SourceData
+  }
+
+type MediaTypeDescriptor
+  {
+    preferredTerm: String!
+    term: MediaDatabaseTerm
+  }
+
+type MediaVariant
+  {
+    name: String!
+    description: String
+    modifications: [String]
+    purpose: String
+    supplierInfo: SupplierInfo
+    evidence: [EvidenceItem]
+  }
+
+type MergeMetadata
+  {
+    mergeVersion: String
+    mergeMode: String
+    mergeReason: MergeReasonEnum
+    mergeConfidence: Float
+    hierarchyConflicts: [String]
+    fingerprintMode: String
+  }
+
+type OrganismDescriptor
+  {
+    preferredTerm: String!
+    term: OrganismTerm
+    gtdbTerm: GTDBTerm
+    strain: String
+    growthPhase: String
+    communityRole: [CellularRoleEnum]
+    targetAbundance: Float
+    communityFunction: [String]
+    cofactorRequirements: [CofactorRequirement]
+    transporters: [TransporterAnnotation]
+    evidence: [EvidenceItem]
+  }
+
+type OrganismTerm
+  {
+    label: String
+    id: String!
+  }
+
+type PreparationStep
+  {
+    stepNumber: Integer!
+    action: PreparationActionEnum!
+    description: String!
+    temperature: TemperatureValue
+    duration: String
+    equipment: String
+    notes: String
+  }
+
+type PublicationReference
+  {
+    reference: String!
+    title: String
+    authors: String
+    year: Integer
+    notes: String
+  }
+
+type RecipeSynonym
+  {
+    name: String!
+    source: String!
+    sourceId: String
+    originalCategory: CategoryEnum
+  }
+
+type SolutionDescriptor
+  {
+    preferredTerm: String!
+    term: Term
+    mediaingredientmechTerm: MediaIngredientMechTerm
+    composition: [IngredientDescriptor]!
+    concentration: ConcentrationValue
+    preparationNotes: String
+    storageConditions: StorageConditions
+    shelfLife: String
+  }
+
+type SourceData
+  {
+    origin: String!
+    communityIds: [String]
+    importDate: String
+    evidence: [EvidenceItem]
+    notes: String
+  }
+
+type SterilizationDescriptor
+  {
+    method: SterilizationMethodEnum!
+    temperature: TemperatureValue
+    pressure: Float
+    duration: String
+    notes: String
+  }
+
+type StorageConditions
+  {
+    temperature: TemperatureValue!
+    lightCondition: LightConditionEnum
+    shelfLife: String
+    containerType: String
+    notes: String
+  }
+
+type SupplierInfo
+  {
+    supplierName: String!
+    catalogNumber: String
+    productUrl: Uri
+    notes: String
+  }
+
+type TemperatureValue
+  {
+    value: Float!
+    unit: TemperatureUnitEnum!
+  }
+
+interface Term
+  {
+    id: String!
+    label: String
+  }
+
+type TransporterAnnotation
+  {
+    name: String!
+    transporterType: TransporterTypeEnum!
+    substrates: [String]
+    substrateTerms: [ChemicalEntityTerm]
+    direction: String
+    genes: [String]
+    ecNumber: String
+    notes: String
+  }

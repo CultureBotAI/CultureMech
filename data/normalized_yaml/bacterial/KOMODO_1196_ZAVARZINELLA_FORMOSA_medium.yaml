@@ -1,5 +1,5 @@
 id: CultureMech:003932
-name: ZAVARZINELLA FORMOSA medium
+name: zavarzinella_formosa_medium
 original_name: ZAVARZINELLA FORMOSA medium
 category: bacterial
 medium_type: COMPLEX
@@ -185,3 +185,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.961057+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ZAVARZINELLA FORMOSA medium" to "zavarzinella_formosa_medium"
+    for consistent matching

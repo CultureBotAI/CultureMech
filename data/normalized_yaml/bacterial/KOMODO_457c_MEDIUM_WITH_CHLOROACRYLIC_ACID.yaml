@@ -1,5 +1,5 @@
 id: CultureMech:005461
-name: MEDIUM WITH CHLOROACRYLIC ACID
+name: medium_with_chloroacrylic_acid
 original_name: MEDIUM WITH CHLOROACRYLIC ACID
 category: bacterial
 medium_type: DEFINED
@@ -230,3 +230,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:49.183122+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM WITH CHLOROACRYLIC ACID" to "medium_with_chloroacrylic_acid"
+    for consistent matching

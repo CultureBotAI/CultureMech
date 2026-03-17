@@ -1,5 +1,5 @@
 id: CultureMech:009099
-name: EG Medium With 10% NaCl
+name: eg_medium_with_10_nacl
 original_name: EG Medium With 10% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -136,3 +136,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:21.326551+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "EG Medium With 10% NaCl" to "eg_medium_with_10_nacl"
+    for consistent matching

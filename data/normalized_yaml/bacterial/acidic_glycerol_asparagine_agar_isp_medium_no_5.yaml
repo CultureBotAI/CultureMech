@@ -1,0 +1,146 @@
+id: CultureMech:008198
+name: acidic_glycerol_asparagine_agar_isp_medium_no_5
+original_name: Acidic Glycerol-Asparagine Agar (ISP medium No.5)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '101.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component [Merged 2 duplicates: 1.0, 100.0]'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
+- preferred_term: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4·7H2O
+media_term:
+  preferred_term: TOGO Medium M1642
+  term:
+    id: TOGO:M1642
+    label: Acidic Glycerol-Asparagine Agar (ISP medium No.5)
+notes: 'Source: https://togomedium.org/medium/M1642
+
+  Original source: NBRC - NBRC_M845
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=845'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.035450Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1642'
+- timestamp: '2026-01-28T19:48:19.714395Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:32.644866+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:01.928813Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:54.374723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008198'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:50.026476'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.963199+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidic Glycerol-Asparagine Agar (ISP medium No.5)"
+    to "acidic_glycerol_asparagine_agar_isp_medium_no_5" for consistent matching
+solutions:
+- preferred_term: Trace salts solution*
+  term:
+    id: mediadive.solution:3683
+    label: Trace salts solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_3683_Trace_salts_solution.yaml for composition
+  name: Unknown solution

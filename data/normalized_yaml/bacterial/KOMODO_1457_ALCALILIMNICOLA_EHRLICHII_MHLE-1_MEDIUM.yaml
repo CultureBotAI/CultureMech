@@ -1,5 +1,5 @@
 id: CultureMech:004166
-name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
+name: alcalilimnicola_ehrlichii_mhle_1_medium
 original_name: ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -323,3 +323,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.502412+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALCALILIMNICOLA EHRLICHII MHLE-1 MEDIUM" to "alcalilimnicola_ehrlichii_mhle_1_medium"
+    for consistent matching

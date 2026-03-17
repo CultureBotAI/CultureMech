@@ -1,5 +1,5 @@
 id: CultureMech:006866
-name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
+name: methylotrophic_arthrobacter_and_hyphomicrobium_medium
 original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -156,3 +156,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:02.390387+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM"
+    to "methylotrophic_arthrobacter_and_hyphomicrobium_medium" for consistent matching

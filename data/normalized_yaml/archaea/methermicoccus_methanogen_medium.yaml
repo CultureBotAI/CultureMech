@@ -1,0 +1,169 @@
+id: CultureMech:000246
+name: methermicoccus_methanogen_medium
+original_name: METHERMICOCCUS (METHANOGEN) MEDIUM
+category: ARCHAEA
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6-6.5
+media_term:
+  preferred_term: DSMZ Medium 1084
+  term:
+    id: mediadive.medium:1084
+    label: METHERMICOCCUS (METHANOGEN) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1084.pdf'
+ingredients:
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.333007'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.244858'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.195886'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23.5064'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '9.99021'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.95886'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 1.95886, 4.0]'
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000489716'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.979432'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '12.4114'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000618
+    label: Methanol
+- preferred_term: 2-Mercaptoethanesulfonate
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '2.44858'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000392
+    label: 2-Mercaptoethanesulfonate
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
+- preferred_term: Sludge
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except carbonate, sludge fluid, methanol, coenzyme
+    M, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add sludge fluid, methanol
+    (50% v/v solution), coenzyme M (sterilized by filtration), cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Adjust pH of complete medium to 6.0 - 6.5, if necessary.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
+    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
+    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
+    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
+    8-12°C in the dark.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.328718Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1084'
+- timestamp: '2026-03-13T03:09:46.887871Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:18:53.748349Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000246'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:04.652847+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHERMICOCCUS (METHANOGEN) MEDIUM" to "methermicoccus_methanogen_medium"
+    for consistent matching

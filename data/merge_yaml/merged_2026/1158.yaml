@@ -1,0 +1,37 @@
+id: CultureMech:007459
+name: '1158'
+original_name: '1158'
+category: bacterial
+description: 1158. NBRC 1155.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Tryptone (Diffico)10gGlucose3gAgar10gDistilled water1L
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.028725Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1155, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1155.
+    Imported via ethical web scraping.'
+- timestamp: '2026-03-13T03:09:07.858555Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 4 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:49.150441Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007459'
+merge_fingerprint: 4028c137a1aafe1513e60df17f8abdd485d3f60d15d8a68ee3de3b9cb4fc3a87
+merged_from:
+- NBRC_1158

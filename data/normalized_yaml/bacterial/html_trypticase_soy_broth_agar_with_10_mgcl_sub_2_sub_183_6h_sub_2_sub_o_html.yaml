@@ -1,0 +1,76 @@
+id: CultureMech:009874
+name: html_trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o_html
+original_name: <html>TRYPTICASE Soy Broth Agar With 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O</html>
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Trypticase soy broth (BD-BBL)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M487
+  term:
+    id: TOGO:M487
+    label: <html>TRYPTICASE Soy Broth Agar With 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O</html>
+notes: 'Source: https://togomedium.org/medium/M487
+
+  Original source: JCM - JCM_M486
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=486'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.148510Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M487'
+- timestamp: '2026-01-28T19:48:22.075902Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:20:09.568998Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009874'
+- timestamp: '2026-03-17T06:30:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.533104+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "<html>TRYPTICASE Soy Broth Agar With 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O</html>"
+    to "html_trypticase_soy_broth_agar_with_10_mgcl_sub_2_sub_183_6h_sub_2_sub_o_html"
+    for consistent matching

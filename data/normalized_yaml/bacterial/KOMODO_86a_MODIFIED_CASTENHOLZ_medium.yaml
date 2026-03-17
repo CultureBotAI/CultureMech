@@ -1,5 +1,5 @@
 id: CultureMech:006702
-name: MODIFIED CASTENHOLZ medium
+name: modified_castenholz_medium
 original_name: MODIFIED CASTENHOLZ medium
 category: bacterial
 medium_type: COMPLEX
@@ -199,3 +199,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.869838+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED CASTENHOLZ medium" to "modified_castenholz_medium"
+    for consistent matching

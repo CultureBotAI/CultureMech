@@ -1,0 +1,75 @@
+id: CultureMech:008288
+name: marine_broth_2216_0_5_alginate
+original_name: Marine Broth 2216 + 0.5% Alginate
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+- preferred_term: Sodium alginate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Defined component, Simple component,
+    Organic compound'
+  term:
+    id: CHEBI:53311
+    label: Sodium alginate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000721
+    label: Sodium alginate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1725
+  term:
+    id: TOGO:M1725
+    label: Marine Broth 2216 + 0.5% Alginate
+notes: 'Source: https://togomedium.org/medium/M1725
+
+  Original source: NBRC - NBRC_M934
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=934'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.232359Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1725'
+- timestamp: '2026-01-28T19:48:09.656484Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:55.293689Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008288'
+- timestamp: '2026-03-17T06:29:45.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:13.929758+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine Broth 2216 + 0.5% Alginate" to "marine_broth_2216_0_5_alginate"
+    for consistent matching

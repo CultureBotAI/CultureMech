@@ -1,5 +1,5 @@
 id: CultureMech:006526
-name: ALCANIVORAX BORKUMENSIS MEDIUM
+name: alcanivorax_borkumensis_medium
 original_name: ALCANIVORAX BORKUMENSIS MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -112,3 +112,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:59.030450+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ALCANIVORAX BORKUMENSIS MEDIUM" to "alcanivorax_borkumensis_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:003948
-name: ANAEROMYXOBACTER-MEDIUM
+name: anaeromyxobacter_medium
 original_name: ANAEROMYXOBACTER-MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -381,4 +381,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.144937+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROMYXOBACTER-MEDIUM" to "anaeromyxobacter_medium"
+    for consistent matching
 ph_value: 7.2

@@ -1,0 +1,72 @@
+id: CultureMech:002111
+name: PYES MEDIUM
+original_name: PYES MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 937
+  term:
+    id: mediadive.medium:937
+    label: PYES MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium937.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 7.2. Liquid media may be solidified by adding 15 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.827093Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 937'
+- timestamp: '2026-03-13T06:19:10.431794Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002111'
+- timestamp: '2026-03-15T03:03:43.893114+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_937_PYES_MEDIUM, KOMODO_937_PYES_medium, KOMODO_937a_MODIFIED_PYES_medium'
+synonyms:
+- name: PYES medium
+  source: KOMODO
+  source_id: komodo.medium:937
+  original_category: bacterial
+- name: MODIFIED PYES medium
+  source: KOMODO
+  source_id: komodo.medium:937a
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- DSMZ_937_PYES_MEDIUM
+- KOMODO_937_PYES_medium
+- KOMODO_937a_MODIFIED_PYES_medium
+merge_fingerprint: b3ed3e9a651c44d979410e9a7fadc89016c6cf8e89ff11b71c1787a4255b962d

@@ -1,5 +1,5 @@
 id: CultureMech:007740
-name: Halobacteria Medium (pH 8.0)
+name: halobacteria_medium_ph_8_0
 original_name: Halobacteria Medium (pH 8.0)
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:06:47.464225'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:09.497821+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Halobacteria Medium (pH 8.0)" to "halobacteria_medium_ph_8_0"
+    for consistent matching
 solutions:
 - preferred_term: Halobacteria medium (see Medium [M159])
   composition: []

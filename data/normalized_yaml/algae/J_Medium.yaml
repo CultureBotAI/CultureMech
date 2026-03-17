@@ -1,6 +1,6 @@
 id: CultureMech:000172
-name: J Medium
-category: algae
+name: j_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000172'
+- timestamp: '2026-03-17T19:45:04.343090+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "J Medium" to "j_medium" for consistent matching
 references:
 - reference_id: UTEX:j-medium
 - reference_id: https://utex.org/products/j-medium
+original_name: J Medium

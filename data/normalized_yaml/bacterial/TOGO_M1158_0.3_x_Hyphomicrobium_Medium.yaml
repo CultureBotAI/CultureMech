@@ -1,5 +1,5 @@
 id: CultureMech:007681
-name: 0.3 x Hyphomicrobium Medium
+name: 0_3_x_hyphomicrobium_medium
 original_name: 0.3 x Hyphomicrobium Medium
 category: bacterial
 medium_type: COMPLEX
@@ -198,6 +198,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.975076+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "0.3 x Hyphomicrobium Medium" to "0_3_x_hyphomicrobium_medium"
+    for consistent matching
 solutions:
 - preferred_term: Visniac trace elements (see Medium [M925])
   composition: []

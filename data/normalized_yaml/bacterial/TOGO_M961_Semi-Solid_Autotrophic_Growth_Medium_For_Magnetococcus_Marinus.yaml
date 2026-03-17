@@ -1,5 +1,5 @@
 id: CultureMech:010386
-name: Semi-Solid Autotrophic Growth Medium For Magnetococcus Marinus
+name: semi_solid_autotrophic_growth_medium_for_magnetococcus_marinus
 original_name: Semi-Solid Autotrophic Growth Medium For Magnetococcus Marinus
 category: bacterial
 medium_type: COMPLEX
@@ -404,6 +404,12 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.436728+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Semi-Solid Autotrophic Growth Medium For Magnetococcus
+    Marinus" to "semi_solid_autotrophic_growth_medium_for_magnetococcus_marinus" for
+    consistent matching
 solutions:
 - preferred_term: Modified Wolfe's mineral solution (see below)
   composition: []

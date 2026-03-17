@@ -1,5 +1,5 @@
 id: CultureMech:009714
-name: VY/2-ASW Agar
+name: vy_2_asw_agar
 original_name: VY/2-ASW Agar
 category: bacterial
 medium_type: COMPLEX
@@ -68,3 +68,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.315492+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "VY/2-ASW Agar" to "vy_2_asw_agar" for consistent matching

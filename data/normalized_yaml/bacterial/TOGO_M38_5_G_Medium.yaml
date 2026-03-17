@@ -1,5 +1,5 @@
 id: CultureMech:009771
-name: 5 G Medium
+name: 5_g_medium
 original_name: 5 G Medium
 category: bacterial
 medium_type: COMPLEX
@@ -86,3 +86,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.759421+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "5 G Medium" to "5_g_medium" for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:010002
-name: Glucose Agar
+name: glucose_agar
 original_name: Glucose Agar
 category: bacterial
 medium_type: COMPLEX
@@ -91,3 +91,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.560582+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Glucose Agar" to "glucose_agar" for consistent matching

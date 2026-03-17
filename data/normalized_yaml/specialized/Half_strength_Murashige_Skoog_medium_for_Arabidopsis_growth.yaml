@@ -1,4 +1,4 @@
-name: Half-strength Murashige-Skoog medium for Arabidopsis growth
+name: half_strength_murashige_skoog_medium_for_arabidopsis_growth
 original_name: Half-strength Murashige-Skoog medium for Arabidopsis growth
 category: specialized
 medium_type: DEFINED
@@ -26,11 +26,18 @@ ingredients:
     id: MediaIngredientMech:000119
 ph_value: 5.7
 temperature_value: 22.0
-notes: "Vessel type: square petri plates (vertical orientation)\nLight regime: 16h\
-  \ light / 8h dark\nLight intensity: 120\n\nGnotobiotic plant growth system with\
-  \ 0.5\xD7 MS medium supplemented with 1% sucrose and 0.8% agar. Seeds surface-sterilized\
-  \ prior to inoculation. Plates oriented vertically to allow root observation and\
-  \ bacterial colonization tracking.\n"
+notes: 'Vessel type: square petri plates (vertical orientation)
+
+  Light regime: 16h light / 8h dark
+
+  Light intensity: 120
+
+
+  Gnotobiotic plant growth system with 0.5× MS medium supplemented with 1% sucrose
+  and 0.8% agar. Seeds surface-sterilized prior to inoculation. Plates oriented vertically
+  to allow root observation and bacterial colonization tracking.
+
+  '
 source_data:
   origin: CommunityMech
   community_ids:
@@ -49,3 +56,9 @@ curation_history:
   curator: communitymech-importer-v1.0
   action: Imported from CommunityMech
   notes: Created from CommunityMech:000003, CommunityMech:000022 growth_media record
+- timestamp: '2026-03-17T19:46:33.845908+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Half-strength Murashige-Skoog medium for Arabidopsis
+    growth" to "half_strength_murashige_skoog_medium_for_arabidopsis_growth" for consistent
+    matching

@@ -1,0 +1,89 @@
+id: CultureMech:002340
+name: lb_luria_bertani_agar_with_kanamycin_and_rifampicin
+original_name: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1168
+  term:
+    id: mediadive.medium:J1168
+    label: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1168'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Kanamycin sulfate
+  term:
+    id: CHEBI:6109
+    label: Kanamycin sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001101
+    label: Kanamycin sulfate
+- preferred_term: Rifampicin
+  term:
+    id: CHEBI:28077
+    label: Rifampicin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000912
+    label: Rifampicin
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'After autoclaving, aseptically add the following antibiotics (filter-sterilized):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.878945Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1168'
+- timestamp: '2026-03-13T06:19:12.515447Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002340'
+- timestamp: '2026-03-17T06:30:55.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:25.503233+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN"
+    to "lb_luria_bertani_agar_with_kanamycin_and_rifampicin" for consistent matching

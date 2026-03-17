@@ -1,5 +1,5 @@
 id: CultureMech:006159
-name: LACTOBACILLUS medium III
+name: lactobacillus_medium_iii
 original_name: LACTOBACILLUS medium III
 category: bacterial
 medium_type: COMPLEX
@@ -148,3 +148,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.642986+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "LACTOBACILLUS medium III" to "lactobacillus_medium_iii"
+    for consistent matching

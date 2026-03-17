@@ -1,5 +1,5 @@
 id: CultureMech:009263
-name: Clostridium Cellulolytic medium
+name: clostridium_cellulolytic_medium
 original_name: Clostridium Cellulolytic medium
 category: bacterial
 medium_type: COMPLEX
@@ -147,3 +147,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.578267+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium Cellulolytic medium" to "clostridium_cellulolytic_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:008786
-name: Nutrient Agar/Broth
+name: nutrient_agar_broth
 original_name: Nutrient Agar/Broth
 category: bacterial
 medium_type: COMPLEX
@@ -43,3 +43,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008786'
+- timestamp: '2026-03-17T19:46:18.964464+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nutrient Agar/Broth" to "nutrient_agar_broth" for consistent
+    matching

@@ -1,0 +1,37 @@
+id: CultureMech:002514
+name: trypticase_soy_blood_agar
+original_name: TRYPTICASE SOY BLOOD AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J156
+  term:
+    id: mediadive.medium:J156
+    label: TRYPTICASE SOY BLOOD AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=156'
+ingredients:
+- preferred_term: Trypticase soy agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.838647Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J156'
+- timestamp: '2026-03-13T06:19:13.911929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002514'
+- timestamp: '2026-03-17T19:45:27.086978+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TRYPTICASE SOY BLOOD AGAR" to "trypticase_soy_blood_agar"
+    for consistent matching

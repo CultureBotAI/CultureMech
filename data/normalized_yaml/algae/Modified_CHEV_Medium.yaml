@@ -1,6 +1,6 @@
 id: CultureMech:000180
-name: Modified CHEV Medium
-category: algae
+name: modified_chev_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000180'
+- timestamp: '2026-03-17T19:45:04.383898+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified CHEV Medium" to "modified_chev_medium" for
+    consistent matching
 references:
 - reference_id: UTEX:modified-chev-medium
 - reference_id: https://utex.org/products/modified-chev-medium
+original_name: Modified CHEV Medium

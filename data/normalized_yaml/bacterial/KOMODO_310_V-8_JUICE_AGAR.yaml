@@ -1,5 +1,5 @@
 id: CultureMech:004948
-name: V-8 JUICE AGAR
+name: v_8_juice_agar
 original_name: V-8 JUICE AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -56,4 +56,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.673959+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "V-8 JUICE AGAR" to "v_8_juice_agar" for consistent
+    matching
 high_metal: true

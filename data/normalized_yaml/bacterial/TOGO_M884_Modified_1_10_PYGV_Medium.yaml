@@ -1,5 +1,5 @@
 id: CultureMech:010303
-name: Modified 1/10 PYGV Medium
+name: modified_1_10_pygv_medium
 original_name: Modified 1/10 PYGV Medium
 category: bacterial
 medium_type: COMPLEX
@@ -215,6 +215,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.783360+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified 1/10 PYGV Medium" to "modified_1_10_pygv_medium"
+    for consistent matching
 solutions:
 - preferred_term: Solution I (see below)
   composition: []

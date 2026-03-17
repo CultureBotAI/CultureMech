@@ -1,5 +1,5 @@
 id: CultureMech:009069
-name: Man-Rogosa-Sharpe (MRS) broth
+name: man_rogosa_sharpe_mrs_broth
 original_name: Man-Rogosa-Sharpe (MRS) broth
 category: bacterial
 medium_type: COMPLEX
@@ -26,3 +26,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009069'
+- timestamp: '2026-03-17T19:46:21.123831+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Man-Rogosa-Sharpe (MRS) broth" to "man_rogosa_sharpe_mrs_broth"
+    for consistent matching

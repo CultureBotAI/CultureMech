@@ -1,5 +1,5 @@
 id: CultureMech:004001
-name: SCHLESNERIA PALUDICOLA medium
+name: schlesneria_paludicola_medium
 original_name: SCHLESNERIA PALUDICOLA medium
 category: bacterial
 medium_type: COMPLEX
@@ -185,3 +185,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.674603+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SCHLESNERIA PALUDICOLA medium" to "schlesneria_paludicola_medium"
+    for consistent matching

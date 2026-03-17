@@ -1,5 +1,5 @@
 id: CultureMech:010357
-name: Microaerophilic Thermus Medium
+name: microaerophilic_thermus_medium
 original_name: Microaerophilic Thermus Medium
 category: bacterial
 medium_type: COMPLEX
@@ -91,6 +91,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.222682+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Microaerophilic Thermus Medium" to "microaerophilic_thermus_medium"
+    for consistent matching
 solutions:
 - preferred_term: Castenholz basal salt solution (see Medium [M266])
   composition: []

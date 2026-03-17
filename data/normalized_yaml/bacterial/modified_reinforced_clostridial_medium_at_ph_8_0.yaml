@@ -1,0 +1,44 @@
+id: CultureMech:002442
+name: modified_reinforced_clostridial_medium_at_ph_8_0
+original_name: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1276
+  term:
+    id: mediadive.medium:J1276
+    label: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1276'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 1217 adjusted pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.261477Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1276'
+- timestamp: '2026-02-03T11:26:53.686644'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:13.337779Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002442'
+- timestamp: '2026-03-17T19:45:26.444052+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED REINFORCED CLOSTRIDIAL MEDIUM AT pH 8.0" to
+    "modified_reinforced_clostridial_medium_at_ph_8_0" for consistent matching
+data_quality_flags:
+- incomplete_composition

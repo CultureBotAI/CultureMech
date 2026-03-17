@@ -1,0 +1,707 @@
+{
+  "parameters": {
+    "yaml_dir": "data/normalized_yaml",
+    "category": "specialized",
+    "limit": null,
+    "dry_run": false,
+    "fuzzy_threshold": 0.95
+  },
+  "statistics": {
+    "files_processed": 88,
+    "ingredients_matched": 1302,
+    "solutions_matched": 0,
+    "no_match": 171,
+    "already_linked": 23,
+    "errors": 0,
+    "match_methods": {
+      "chebi_id": 1301,
+      "fuzzy_0.97": 1
+    }
+  },
+  "unmatched_ingredients": [
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "GAM Broth powder",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casitone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Phytone peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine Broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Difco marine broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Pancreatic digest of casein",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soy peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium phosphate buffer",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Hydrochloric acid",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tromethamine",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dibasic phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nickel chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Brain heart infusion broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Iron-EDTA",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "LB broth powder",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casitone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soytone",
+      "chebi_id": "CHEBI:8150"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2MoO7O4 x 2 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na-Nitrilotriacetat",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotine amide",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casitone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soytone",
+      "chebi_id": "CHEBI:8150"
+    },
+    {
+      "name": "Malt extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "R2A Broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "GAM Broth mod. powder",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Murashige-Skoog basal salts",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium glycerophosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnSO4 x n H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea Salt",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium phosphate buffer",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na-glycerol phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium phosphate buffer",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2MoO7O4 x 2 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na-Nitrilotriacetat",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotine amide",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase soy broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Na2B4O7 x 10 H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casitone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium D-(+)-pantothenate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "See source for composition",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase soy broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Marine broth 2216",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Hydrochloric acid",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tromethamine",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Potassium dibasic phosphate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nickel chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "3-Sulfolactate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Manganese chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Iron-EDTA",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Beef extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium phosphate buffer",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Proteose peptone no. 3",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sea water",
+      "chebi_id": "N/A"
+    }
+  ]
+}

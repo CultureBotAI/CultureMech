@@ -1,5 +1,5 @@
 id: CultureMech:009795
-name: Fe(III)-Reducer Freshwater Enrichment Medium
+name: fe_iii_reducer_freshwater_enrichment_medium
 original_name: Fe(III)-Reducer Freshwater Enrichment Medium
 category: bacterial
 medium_type: COMPLEX
@@ -159,6 +159,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.928202+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Fe(III)-Reducer Freshwater Enrichment Medium" to "fe_iii_reducer_freshwater_enrichment_medium"
+    for consistent matching
 solutions:
 - preferred_term: Poorly crystalline iron(III) oxide (see Medium [M409])
   composition: []

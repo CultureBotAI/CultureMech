@@ -1,0 +1,49 @@
+id: CultureMech:006698
+name: desulfovigra_adipica
+original_name: DESULFOVIGRA ADIPICA
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.2
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 868 | DSMZ Medium: 868
+  (mediadive.medium:868) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 868
+  term:
+    id: komodo.medium:868
+    label: DESULFOVIGRA ADIPICA
+ingredients:
+- preferred_term: Na2CO3
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000149
+    label: Na2CO3
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 868'
+- timestamp: '2026-03-13T06:19:43.128330Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006698'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:42.405150'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2CO3'
+- timestamp: '2026-03-17T06:30:32.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.848121+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOVIGRA ADIPICA" to "desulfovigra_adipica" for
+    consistent matching

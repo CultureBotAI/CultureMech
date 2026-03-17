@@ -1,6 +1,6 @@
 id: CultureMech:000170
-name: F/2 Medium
-category: algae
+name: f_2_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -87,6 +87,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000170'
+- timestamp: '2026-03-17T19:45:04.333217+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "F/2 Medium" to "f_2_medium" for consistent matching
 references:
 - reference_id: UTEX:f-2-medium
 - reference_id: https://utex.org/products/f-2-medium
+original_name: F/2 Medium

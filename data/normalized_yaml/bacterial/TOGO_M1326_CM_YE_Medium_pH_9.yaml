@@ -1,5 +1,5 @@
 id: CultureMech:007861
-name: CM+YE Medium (pH 9)
+name: cm_ye_medium_ph_9
 original_name: CM+YE Medium (pH 9)
 category: bacterial
 medium_type: COMPLEX
@@ -38,6 +38,11 @@ curation_history:
   date: '2026-03-14T21:06:48.237880'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:10.480600+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CM+YE Medium (pH 9)" to "cm_ye_medium_ph_9" for consistent
+    matching
 solutions:
 - preferred_term: CM+YE medium (see Medium [M51])
   composition: []

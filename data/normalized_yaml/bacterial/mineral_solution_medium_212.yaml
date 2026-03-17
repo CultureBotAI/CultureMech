@@ -1,0 +1,30 @@
+id: CultureMech:005195
+name: mineral_solution_medium_212
+original_name: Mineral solution (medium 212)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 4005
+  term:
+    id: komodo.medium:4005
+    label: Mineral solution (medium 212)
+notes: 'Source: KOMODO ModelSEED | ID: 4005 | DSMZ Medium: 4005 (mediadive.medium:4005)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 4005'
+- timestamp: '2026-03-13T06:19:30.971645Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005195'
+- timestamp: '2026-03-17T19:45:46.799576+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral solution (medium 212)" to "mineral_solution_medium_212"
+    for consistent matching

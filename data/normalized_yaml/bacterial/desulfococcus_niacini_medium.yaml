@@ -1,0 +1,31 @@
+id: CultureMech:004752
+name: desulfococcus_niacini_medium
+original_name: DESULFOCOCCUS NIACINI MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 290
+  term:
+    id: komodo.medium:290
+    label: DESULFOCOCCUS NIACINI MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 290 | DSMZ Medium: 290 (mediadive.medium:290)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 290'
+- timestamp: '2026-03-13T06:19:28.521126Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004752'
+- timestamp: '2026-03-17T19:45:43.934999+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOCOCCUS NIACINI MEDIUM" to "desulfococcus_niacini_medium"
+    for consistent matching

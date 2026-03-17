@@ -1,5 +1,5 @@
 id: CultureMech:001070
-name: Cyanobacteria Medium BG11+
+name: cyanobacteria_medium_bg11
 original_name: Cyanobacteria Medium BG11+
 category: bacterial
 medium_type: DEFINED
@@ -189,3 +189,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:12.582868+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Cyanobacteria Medium BG11+" to "cyanobacteria_medium_bg11"
+    for consistent matching

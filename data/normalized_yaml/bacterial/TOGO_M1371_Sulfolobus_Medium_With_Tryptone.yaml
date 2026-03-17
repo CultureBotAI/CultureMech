@@ -1,5 +1,5 @@
 id: CultureMech:007910
-name: Sulfolobus Medium With Tryptone
+name: sulfolobus_medium_with_tryptone
 original_name: Sulfolobus Medium With Tryptone
 category: bacterial
 medium_type: COMPLEX
@@ -63,6 +63,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.871933+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sulfolobus Medium With Tryptone" to "sulfolobus_medium_with_tryptone"
+    for consistent matching
 solutions:
 - preferred_term: Modified Brock's salt base solution (see Medium [M156])
   composition: []

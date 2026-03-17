@@ -1,5 +1,5 @@
 id: CultureMech:007390
-name: '''AMS1 (Pyruvate+Glycine'
+name: ams1_pyruvate_glycine
 original_name: '''AMS1 (Pyruvate+Glycine'
 category: bacterial
 medium_type: DEFINED
@@ -189,6 +189,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:06.976452+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "'AMS1 (Pyruvate+Glycine" to "ams1_pyruvate_glycine"
+    for consistent matching
 media_term:
   preferred_term: MediaDB Medium 482
   term:

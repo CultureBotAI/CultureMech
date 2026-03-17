@@ -1,5 +1,5 @@
 id: CultureMech:010302
-name: C5BEL Medium
+name: c5bel_medium
 original_name: C5BEL Medium
 category: bacterial
 medium_type: COMPLEX
@@ -171,6 +171,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.772808+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "C5BEL Medium" to "c5bel_medium" for consistent matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

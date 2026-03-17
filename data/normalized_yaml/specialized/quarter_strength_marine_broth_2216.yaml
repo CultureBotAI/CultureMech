@@ -1,0 +1,33 @@
+id: CultureMech:015375
+name: quarter_strength_marine_broth_2216
+original_name: QUARTER STRENGTH MARINE BROTH 2216
+category: specialized
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1049
+  term:
+    id: mediadive.medium:J1049
+    label: QUARTER STRENGTH MARINE BROTH 2216
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1049'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '9.35'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.446162Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1049'
+- timestamp: '2026-03-13T06:20:42.249331Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015375'
+- timestamp: '2026-03-17T19:46:33.869006+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "QUARTER STRENGTH MARINE BROTH 2216" to "quarter_strength_marine_broth_2216"
+    for consistent matching

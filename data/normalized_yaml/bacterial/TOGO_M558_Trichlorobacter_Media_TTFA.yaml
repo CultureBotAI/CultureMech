@@ -1,5 +1,5 @@
 id: CultureMech:009952
-name: Trichlorobacter Media (TTFA)
+name: trichlorobacter_media_ttfa
 original_name: Trichlorobacter Media (TTFA)
 category: bacterial
 medium_type: COMPLEX
@@ -202,6 +202,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.176246+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trichlorobacter Media (TTFA)" to "trichlorobacter_media_ttfa"
+    for consistent matching
 solutions:
 - preferred_term: Selenite--tungstate solution (see below)
   composition: []

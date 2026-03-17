@@ -1,5 +1,5 @@
 id: CultureMech:007575
-name: Acidic HB-1 Medium
+name: acidic_hb_1_medium
 original_name: Acidic HB-1 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -35,6 +35,11 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+- timestamp: '2026-03-17T19:46:08.137490+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidic HB-1 Medium" to "acidic_hb_1_medium" for consistent
+    matching
 solutions:
 - preferred_term: MODIFIED HB-1 MEDIUM (see Medium [M769])
   composition: []

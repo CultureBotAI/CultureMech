@@ -1,5 +1,5 @@
 id: CultureMech:010156
-name: Ravot Modified Medium For Thermosipho SP. G60
+name: ravot_modified_medium_for_thermosipho_sp_g60
 original_name: Ravot Modified Medium For Thermosipho SP. G60
 category: bacterial
 medium_type: COMPLEX
@@ -54,6 +54,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.668705+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ravot Modified Medium For Thermosipho SP. G60" to "ravot_modified_medium_for_thermosipho_sp_g60"
+    for consistent matching
 solutions:
 - preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium
     [M748])

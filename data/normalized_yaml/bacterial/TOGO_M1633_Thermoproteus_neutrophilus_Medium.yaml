@@ -1,5 +1,5 @@
 id: CultureMech:008188
-name: Thermoproteus neutrophilus Medium
+name: thermoproteus_neutrophilus_medium
 original_name: Thermoproteus neutrophilus Medium
 category: bacterial
 medium_type: COMPLEX
@@ -245,3 +245,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.860593+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermoproteus neutrophilus Medium" to "thermoproteus_neutrophilus_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:006405
-name: MY medium
+name: my_medium
 original_name: MY medium
 category: bacterial
 medium_type: COMPLEX
@@ -66,3 +66,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.797464+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MY medium" to "my_medium" for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:003061
-name: HEMIN MEDIUM FOR MYCOBACTERIUM
+name: hemin_medium_for_mycobacterium
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
 category: bacterial
 medium_type: COMPLEX
@@ -36,5 +36,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003061'
+- timestamp: '2026-03-17T19:45:31.222452+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HEMIN MEDIUM FOR MYCOBACTERIUM" to "hemin_medium_for_mycobacterium"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

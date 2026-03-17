@@ -1,6 +1,6 @@
 id: CultureMech:000085
-name: MC II
-category: algae
+name: mc_ii
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
@@ -30,6 +30,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000085'
+- timestamp: '2026-03-17T19:45:04.074889+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MC II" to "mc_ii" for consistent matching
 references:
 - reference_id: CCAP:MCII
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_MCII.pdf
@@ -40,3 +44,4 @@ ingredients:
     unit: VARIABLE
 data_quality_flags:
 - incomplete_composition
+original_name: MC II

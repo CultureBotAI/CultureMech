@@ -1,0 +1,46 @@
+id: CultureMech:003243
+name: microaerophilic_thermus_medium
+original_name: MICROAEROPHILIC THERMUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J894
+  term:
+    id: mediadive.medium:J894
+    label: MICROAEROPHILIC THERMUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=894'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2 (99:1,
+    v/v) gas atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.927530Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J894'
+- timestamp: '2026-02-03T11:26:56.519253'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:18.869066Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003243'
+- timestamp: '2026-03-17T19:45:32.753027+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MICROAEROPHILIC THERMUS MEDIUM" to "microaerophilic_thermus_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

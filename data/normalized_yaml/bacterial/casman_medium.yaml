@@ -1,0 +1,46 @@
+id: CultureMech:001547
+name: casman_medium
+original_name: CASMAN-MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: DSMZ Medium 439
+  term:
+    id: mediadive.medium:439
+    label: CASMAN-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium439.pdf'
+ingredients:
+- preferred_term: Casman-Agar-Base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Sheep blood
+  concentration:
+    value: '51.5'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 50.0, 1.5]'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
+    water-lysed sheep blood.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.136623Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 439'
+- timestamp: '2026-03-13T03:09:17.289554Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:05.106919Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001547'
+- timestamp: '2026-03-17T19:45:17.196973+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CASMAN-MEDIUM" to "casman_medium" for consistent matching

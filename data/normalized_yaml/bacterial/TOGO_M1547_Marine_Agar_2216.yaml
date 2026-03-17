@@ -1,5 +1,5 @@
 id: CultureMech:008095
-name: Marine Agar 2216
+name: marine_agar_2216
 original_name: Marine Agar 2216
 category: bacterial
 medium_type: COMPLEX
@@ -51,3 +51,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.996162+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Marine Agar 2216" to "marine_agar_2216" for consistent
+    matching

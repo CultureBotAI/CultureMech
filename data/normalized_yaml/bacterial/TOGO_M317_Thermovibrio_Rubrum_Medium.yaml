@@ -1,5 +1,5 @@
 id: CultureMech:009630
-name: Thermovibrio Rubrum Medium
+name: thermovibrio_rubrum_medium
 original_name: Thermovibrio Rubrum Medium
 category: bacterial
 medium_type: COMPLEX
@@ -141,6 +141,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.746404+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermovibrio Rubrum Medium" to "thermovibrio_rubrum_medium"
+    for consistent matching
 solutions:
 - preferred_term: Synthetic seawater (2 x) (see Medium [M236])
   composition: []

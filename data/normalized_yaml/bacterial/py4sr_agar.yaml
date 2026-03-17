@@ -1,0 +1,45 @@
+id: CultureMech:002723
+name: py4sr_agar
+original_name: PY4SR AGAR
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J364
+  term:
+    id: mediadive.medium:J364
+    label: PY4SR AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract.
+    To prepare the plant residue extract, autoclave rice straw in water (1:5) at 120C
+    for 20 min, and use the supernatant after centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.403424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J364'
+- timestamp: '2026-02-03T11:26:54.674375'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.261985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002723'
+- timestamp: '2026-03-17T19:45:28.634772+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PY4SR AGAR" to "py4sr_agar" for consistent matching
+data_quality_flags:
+- incomplete_composition

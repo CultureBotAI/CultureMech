@@ -1,5 +1,5 @@
 id: CultureMech:009253
-name: M40Y Agar
+name: m40y_agar
 original_name: M40Y Agar
 category: bacterial
 medium_type: COMPLEX
@@ -79,3 +79,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.462485+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M40Y Agar" to "m40y_agar" for consistent matching

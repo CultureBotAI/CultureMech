@@ -1,5 +1,5 @@
 id: CultureMech:010329
-name: Alkaline Lactose Agar
+name: alkaline_lactose_agar
 original_name: Alkaline Lactose Agar
 category: bacterial
 medium_type: COMPLEX
@@ -105,6 +105,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.972179+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaline Lactose Agar" to "alkaline_lactose_agar" for
+    consistent matching
 solutions:
 - preferred_term: 10% Na2CO3 solution
   composition: []

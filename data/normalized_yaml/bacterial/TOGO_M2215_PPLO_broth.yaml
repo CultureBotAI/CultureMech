@@ -1,5 +1,5 @@
 id: CultureMech:008805
-name: PPLO broth
+name: pplo_broth
 original_name: PPLO broth
 category: bacterial
 medium_type: COMPLEX
@@ -87,6 +87,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.056909+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PPLO broth" to "pplo_broth" for consistent matching
 solutions:
 - preferred_term: IsoVitaleX solution (Becton Dickinson)
   composition: []

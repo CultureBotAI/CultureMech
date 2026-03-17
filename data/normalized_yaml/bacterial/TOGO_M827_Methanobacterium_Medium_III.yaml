@@ -1,5 +1,5 @@
 id: CultureMech:010240
-name: Methanobacterium Medium (III)
+name: methanobacterium_medium_iii
 original_name: Methanobacterium Medium (III)
 category: bacterial
 medium_type: COMPLEX
@@ -162,6 +162,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.313473+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanobacterium Medium (III)" to "methanobacterium_medium_iii"
+    for consistent matching
 solutions:
 - preferred_term: Trace vitamins (see Medium [M190])
   composition: []

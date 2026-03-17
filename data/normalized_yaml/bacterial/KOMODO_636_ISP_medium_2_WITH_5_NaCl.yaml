@@ -1,5 +1,5 @@
 id: CultureMech:006155
-name: ISP medium 2 WITH 5% NaCl
+name: isp_medium_2_with_5_nacl
 original_name: ISP medium 2 WITH 5% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -70,3 +70,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.618744+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ISP medium 2 WITH 5% NaCl" to "isp_medium_2_with_5_nacl"
+    for consistent matching

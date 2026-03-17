@@ -1,0 +1,44 @@
+id: CultureMech:003308
+name: syntrophus_aciditrophicus_medium
+original_name: SYNTROPHUS ACIDITROPHICUS MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J960
+  term:
+    id: mediadive.medium:J960
+    label: SYNTROPHUS ACIDITROPHICUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=960'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 499 without rumen fluid and trypticase peptone.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.140278Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J960'
+- timestamp: '2026-02-03T11:26:56.781365'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:19.381305Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003308'
+- timestamp: '2026-03-17T19:45:33.329472+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTROPHUS ACIDITROPHICUS MEDIUM" to "syntrophus_aciditrophicus_medium"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

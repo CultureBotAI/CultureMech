@@ -1,5 +1,5 @@
 id: CultureMech:010124
-name: GAM Broth With 1% Lactose
+name: gam_broth_with_1_lactose
 original_name: GAM Broth With 1% Lactose
 category: bacterial
 medium_type: COMPLEX
@@ -63,3 +63,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.441253+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GAM Broth With 1% Lactose" to "gam_broth_with_1_lactose"
+    for consistent matching

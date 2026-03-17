@@ -1,5 +1,5 @@
 id: CultureMech:009544
-name: Chloroflexus Aggregans Medium
+name: chloroflexus_aggregans_medium
 original_name: Chloroflexus Aggregans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -269,6 +269,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.769944+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chloroflexus Aggregans Medium" to "chloroflexus_aggregans_medium"
+    for consistent matching
 solutions:
 - preferred_term: Fe(III) citrate solution (0.1 g in 100 ml)
   composition: []

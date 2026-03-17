@@ -1,5 +1,5 @@
 id: CultureMech:009044
-name: 'HI Plus Medium w/ YE #3'
+name: hi_plus_medium_w_ye_3
 original_name: 'HI Plus Medium w/ YE #3'
 category: bacterial
 medium_type: COMPLEX
@@ -57,3 +57,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009044'
+- timestamp: '2026-03-17T19:46:20.956762+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: 'Normalized name from "HI Plus Medium w/ YE #3" to "hi_plus_medium_w_ye_3"
+    for consistent matching'

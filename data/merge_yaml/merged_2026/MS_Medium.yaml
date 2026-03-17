@@ -1,0 +1,63 @@
+id: CultureMech:009187
+name: MS Medium
+original_name: MS Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M261
+  term:
+    id: TOGO:M261
+    label: MS Medium
+notes: 'Source: https://togomedium.org/medium/M261
+
+  Original source: JCM - JCM_M269
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=269'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.722501Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M261'
+- timestamp: '2026-01-28T19:48:18.807370Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.989284'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:31.197827+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:03.760328Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009187'
+solutions:
+- preferred_term: SULFOLOBUS MEDIUM (see Medium [M156])
+  composition: []
+  notes: Cross-reference to Medium M156
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: 8d375c6a60ac2a2fc4a9a98c09d0ba942fdb056db88f670831dd1f3dd71da5f1
+merged_from:
+- TOGO_M261_MS_Medium

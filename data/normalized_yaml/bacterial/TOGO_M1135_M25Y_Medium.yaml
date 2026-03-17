@@ -1,5 +1,5 @@
 id: CultureMech:007657
-name: M25Y Medium
+name: m25y_medium
 original_name: M25Y Medium
 category: bacterial
 medium_type: COMPLEX
@@ -177,6 +177,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.762339+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M25Y Medium" to "m25y_medium" for consistent matching
 solutions:
 - preferred_term: Trace elements (see Medium [M631])
   composition: []

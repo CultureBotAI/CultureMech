@@ -1,0 +1,46 @@
+id: CultureMech:002640
+name: columbia_blood_agar_with_5_horse_blood
+original_name: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J282
+  term:
+    id: mediadive.medium:J282
+    label: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=282'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction,
+    sterilize and cool to about 45C. Aseptically add 5% (final) sterile defibrinated
+    horse blood. Mix and quickly dispense into sterile test tubes or petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.173074Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J282'
+- timestamp: '2026-02-03T11:26:54.397226'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:14.717561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002640'
+- timestamp: '2026-03-17T19:45:28.014208+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD" to "columbia_blood_agar_with_5_horse_blood"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

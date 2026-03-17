@@ -1,5 +1,5 @@
 id: CultureMech:009555
-name: R2A + fumarate (anaerobic)
+name: r2a_fumarate_anaerobic
 original_name: R2A + fumarate (anaerobic)
 category: bacterial
 medium_type: COMPLEX
@@ -140,3 +140,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.894951+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A + fumarate (anaerobic)" to "r2a_fumarate_anaerobic"
+    for consistent matching

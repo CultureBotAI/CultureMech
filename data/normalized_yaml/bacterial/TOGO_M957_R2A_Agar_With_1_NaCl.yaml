@@ -1,5 +1,5 @@
 id: CultureMech:010381
-name: R2A Agar With 1% NaCl
+name: r2a_agar_with_1_nacl
 original_name: R2A Agar With 1% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -63,3 +63,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.401567+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A Agar With 1% NaCl" to "r2a_agar_with_1_nacl" for
+    consistent matching

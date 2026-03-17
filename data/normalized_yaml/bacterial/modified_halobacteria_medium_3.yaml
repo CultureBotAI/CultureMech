@@ -1,0 +1,46 @@
+id: CultureMech:002192
+name: modified_halobacteria_medium_3
+original_name: MODIFIED HALOBACTERIA MEDIUM-3
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J1008
+  term:
+    id: mediadive.medium:J1008
+    label: MODIFIED HALOBACTERIA MEDIUM-3
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1008'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0
+    g/L MgSO4 x 7H2O. Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.301275Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1008'
+- timestamp: '2026-02-03T11:26:52.545243'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:11.118644Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002192'
+- timestamp: '2026-03-17T19:45:23.870146+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MODIFIED HALOBACTERIA MEDIUM-3" to "modified_halobacteria_medium_3"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

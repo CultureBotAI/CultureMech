@@ -1,5 +1,5 @@
 id: CultureMech:007814
-name: Archaeoglobus MCR Medium
+name: archaeoglobus_mcr_medium
 original_name: Archaeoglobus MCR Medium
 category: bacterial
 medium_type: COMPLEX
@@ -54,6 +54,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.114157+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Archaeoglobus MCR Medium" to "archaeoglobus_mcr_medium"
+    for consistent matching
 solutions:
 - preferred_term: METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])
   composition: []

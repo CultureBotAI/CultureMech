@@ -1,5 +1,5 @@
 id: CultureMech:010260
-name: Thermococcales Rich Medium
+name: thermococcales_rich_medium
 original_name: Thermococcales Rich Medium
 category: bacterial
 medium_type: COMPLEX
@@ -208,3 +208,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.432182+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermococcales Rich Medium" to "thermococcales_rich_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:004426
-name: BHI/1 medium
+name: bhi_1_medium
 original_name: BHI/1 medium
 category: bacterial
 medium_type: COMPLEX
@@ -35,3 +35,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004426'
+- timestamp: '2026-03-17T19:45:42.017766+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BHI/1 medium" to "bhi_1_medium" for consistent matching

@@ -1,6 +1,6 @@
 id: CultureMech:000152
-name: CR1+ Diatom Medium
-category: algae
+name: cr1_diatom_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -66,6 +66,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000152'
+- timestamp: '2026-03-17T19:45:04.251136+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CR1+ Diatom Medium" to "cr1_diatom_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:cr1-plus-diatom-medium
 - reference_id: https://utex.org/products/cr1-plus-diatom-medium
+original_name: CR1+ Diatom Medium

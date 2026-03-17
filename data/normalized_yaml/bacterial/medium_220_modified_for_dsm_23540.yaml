@@ -1,0 +1,94 @@
+id: CultureMech:004561
+name: medium_220_modified_for_dsm_23540
+original_name: MEDIUM 220 MODIFIED FOR DSM 23540
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 220_23540
+  term:
+    id: komodo.medium:220_23540
+    label: MEDIUM 220 MODIFIED FOR DSM 23540
+notes: 'Source: KOMODO ModelSEED | ID: 220_23540 | DSMZ Medium: 220 (mediadive.medium:220)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '32.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 15.0, 17.0]'
+- preferred_term: Soy peptone
+  concentration:
+    value: '8.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 3.0]'
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 5.0, 5.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 220_23540'
+- timestamp: '2026-02-03T11:18:58.362348'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 220
+- timestamp: '2026-03-13T03:08:47.466497Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 3 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:27.417498Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004561'
+- timestamp: '2026-03-17T06:29:50.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.636930+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 220 MODIFIED FOR DSM 23540" to "medium_220_modified_for_dsm_23540"
+    for consistent matching
+ph_value: 7.3

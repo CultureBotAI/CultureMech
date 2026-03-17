@@ -1,0 +1,30 @@
+id: CultureMech:005652
+name: nutrient_broth_difco
+original_name: Nutrient broth (Difco)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 5011
+  term:
+    id: komodo.medium:5011
+    label: Nutrient broth (Difco)
+notes: 'Source: KOMODO ModelSEED | ID: 5011 | DSMZ Medium: 5011 (mediadive.medium:5011)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 5011'
+- timestamp: '2026-03-13T06:19:34.950951Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005652'
+- timestamp: '2026-03-17T19:45:51.281109+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nutrient broth (Difco)" to "nutrient_broth_difco" for
+    consistent matching

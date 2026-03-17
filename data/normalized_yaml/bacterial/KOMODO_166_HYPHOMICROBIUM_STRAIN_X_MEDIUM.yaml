@@ -1,5 +1,5 @@
 id: CultureMech:004193
-name: HYPHOMICROBIUM STRAIN X MEDIUM
+name: hyphomicrobium_strain_x_medium
 original_name: HYPHOMICROBIUM STRAIN X MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -166,3 +166,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.714019+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HYPHOMICROBIUM STRAIN X MEDIUM" to "hyphomicrobium_strain_x_medium"
+    for consistent matching

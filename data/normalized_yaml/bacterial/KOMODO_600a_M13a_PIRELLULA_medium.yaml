@@ -1,5 +1,5 @@
 id: CultureMech:006088
-name: M13a (PIRELLULA) medium
+name: m13a_pirellula_medium
 original_name: M13a (PIRELLULA) medium
 category: bacterial
 medium_type: COMPLEX
@@ -346,3 +346,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.065260+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "M13a (PIRELLULA) medium" to "m13a_pirellula_medium"
+    for consistent matching

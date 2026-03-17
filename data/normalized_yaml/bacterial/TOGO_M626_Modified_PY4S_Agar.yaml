@@ -1,5 +1,5 @@
 id: CultureMech:010026
-name: Modified PY4S Agar
+name: modified_py4s_agar
 original_name: Modified PY4S Agar
 category: bacterial
 medium_type: COMPLEX
@@ -65,6 +65,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.724356+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified PY4S Agar" to "modified_py4s_agar" for consistent
+    matching
 solutions:
 - preferred_term: PY4S AGAR (see Medium [M357])
   composition: []

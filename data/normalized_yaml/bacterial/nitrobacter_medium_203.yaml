@@ -1,0 +1,220 @@
+id: CultureMech:008824
+name: nitrobacter_medium_203
+original_name: Nitrobacter Medium 203
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '2500.0'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component [Merged 7 duplicates: 1000.0, 100.0, 100.0, 100.0, 1000.0, 100.0,
+    100.0]'
+- preferred_term: CaCl2
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: MgSO4 . 7H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: FeSO4 . 7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H2SO4 (conc.)
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: EDTA
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000165
+    label: EDTA
+- preferred_term: Na2MoO4 . 2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnCl2 . 4H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2 . 6H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4 . 7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuSO4 . 5H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 . 5H2O
+- preferred_term: NaNO2
+  concentration:
+    value: '41.4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:78870
+    label: sodium nitrite
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.74'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+media_term:
+  preferred_term: TOGO Medium M2236
+  term:
+    id: TOGO:M2236
+    label: Nitrobacter Medium 203
+notes: 'Source: https://togomedium.org/medium/M2236
+
+  Original URL: https://www.atcc.org/~/media/EFEAE949B63E4C389AF65FC792391EB2.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.197865Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2236'
+- timestamp: '2026-01-28T19:48:39.147157Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.812533'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Solution F'
+- timestamp: '2026-03-09T08:05:05.778279+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 6 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:37.575784Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 6 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:00.544151Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008824'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.635467'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name; Added default solution name; Added default solution
+    name; Added default solution name; Added default solution name; Added default
+    solution name
+- timestamp: '2026-03-17T06:30:49.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.220392+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nitrobacter Medium 203" to "nitrobacter_medium_203"
+    for consistent matching
+solutions:
+- preferred_term: Solution A
+  term:
+    id: mediadive.solution:5342
+    label: Solution A
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5342_Solution_A.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution B
+  term:
+    id: mediadive.solution:5343
+    label: Solution B
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5343_Solution_B.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution C
+  term:
+    id: mediadive.solution:5312
+    label: Solution C
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: See mediadive_5312_Solution_C.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution D
+  term:
+    id: mediadive.solution:5313
+    label: Solution D
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_5313_Solution_D.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution E
+  term:
+    id: mediadive.solution:4959
+    label: Solution E
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: See mediadive_4959_Solution_E.yaml for composition
+  name: Unknown solution
+- preferred_term: Solution F
+  term:
+    id: mediadive.solution:6293
+    label: Solution F
+  concentration:
+    value: variable
+    unit: VARIABLE
+  notes: See mediadive_6293_Solution_F.yaml for composition
+  name: Unknown solution

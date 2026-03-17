@@ -1,0 +1,78 @@
+id: CultureMech:001945
+name: anaerobiospirillum_thomasii_medium
+original_name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 800
+  term:
+    id: mediadive.medium:800
+    label: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium800.pdf'
+ingredients:
+- preferred_term: Wilkins Chalgrene Anaerobe Broth
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5-Aminovaleric acid
+  term:
+    id: CHEBI:15887
+    label: 5-Aminovaleric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000725
+    label: 5-Aminovaleric acid
+- preferred_term: Fildes Enrichment
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 3-Hydroxybenzoic acid
+  term:
+    id: CHEBI:30764
+    label: 3-Hydroxybenzoic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 0.1, 0.1]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000662
+    label: 3-Hydroxybenzoic acid
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it
+    anaerobically under 80% N2 + 20% CO2 gas. After autoclaving and cooling to room
+    temperature add per 10 ml the following sterile, anaerobic solutions:'
+- step_number: 2
+  action: MIX
+  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar
+    plates, Columbia sheep blood agar plates (BBL) may be used and incubated under
+    an anaerobic atmosphere containig 5 - 10% CO2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.300974Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 800'
+- timestamp: '2026-03-13T03:08:43.976609Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:08.704903Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001945'
+- timestamp: '2026-03-17T06:29:46.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:21.175224+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ANAEROBIOSPIRILLUM THOMASII MEDIUM" to "anaerobiospirillum_thomasii_medium"
+    for consistent matching

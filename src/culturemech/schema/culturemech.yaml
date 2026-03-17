@@ -138,6 +138,41 @@ classes:
           - Includes both direct ingredients and solution compositions
           - Order-independent, concentration-independent
 
+      chemical_fingerprint:
+        description: SHA256 hash using parent ingredients (hierarchy-aware)
+        range: string
+        comments:
+          - Treats chemical variants as equivalent (CaCl2·2H2O = CaCl2)
+          - Uses parent CHEBI IDs from MediaIngredientMech hierarchy
+          - Enables smart merging of hydrates, salt forms, and anhydrous variants
+          - Generated only when hierarchy enrichment is available
+
+      variant_fingerprint:
+        description: SHA256 hash preserving variant distinctions
+        range: string
+        comments:
+          - Keeps hydrates separate from anhydrous forms
+          - Uses parent CHEBI + variant type (HYDRATE, ANHYDROUS, SALT_FORM, etc.)
+          - Preserves important chemical specificity during merge
+          - Generated only when hierarchy enrichment is available
+
+      fingerprint_version:
+        description: Version of fingerprinting algorithm used
+        range: string
+        comments:
+          - Example "hierarchy-chemical-v1.0" or "original-v1.0"
+          - Enables tracking algorithm changes over time
+          - Used to determine which fingerprints are comparable
+
+      merge_metadata:
+        description: Metadata about merge process and quality
+        range: MergeMetadata
+        inlined: true
+        comments:
+          - Provides transparency about merge decisions
+          - Enables quality analysis and debugging
+          - Populated during hierarchy-aware merge pipeline
+
       media_term:
         description: Reference to authoritative media database
         range: MediaTypeDescriptor
@@ -301,6 +336,21 @@ classes:
           - Used to mark recipes with known quality issues
           - Common values: incomplete_composition, pending_curation, low_confidence
 
+      incubation_atmosphere:
+        description: Atmospheric conditions for incubation
+        range: AtmosphereEnum
+        comments:
+          - Indicates whether the organism requires aerobic, anaerobic, or microaerophilic conditions
+          - Imported from CommunityMech when available
+
+      source_data:
+        description: Provenance tracking for records imported from other repositories
+        range: SourceData
+        inlined: true
+        comments:
+          - Records imported from CommunityMech include community IDs and evidence
+          - Preserves bidirectional linking between repositories
+
   RecipeSynonym:
     description: An alternate name for a recipe from a specific source
     attributes:
@@ -321,6 +371,55 @@ classes:
       original_category:
         description: Original category assignment before merge
         range: CategoryEnum
+
+  MergeMetadata:
+    description: Metadata about merge process and quality
+    attributes:
+      merge_version:
+        description: Version of merge pipeline used
+        range: string
+        comments:
+          - Example "hierarchy-v1.0"
+          - Enables tracking pipeline changes
+
+      merge_mode:
+        description: Merge mode used (conservative/aggressive/variant-aware)
+        range: string
+        comments:
+          - conservative - Only merge with explicit rules or exact match
+          - aggressive - Merge all variants with same parent
+          - variant-aware - Balanced approach, merge some variants
+
+      merge_reason:
+        description: Why these recipes were merged together
+        range: MergeReasonEnum
+        comments:
+          - Indicates which merge rule triggered the merge
+          - Used for quality analysis and debugging
+
+      merge_confidence:
+        description: Confidence score for merge decision (0.0-1.0)
+        range: float
+        comments:
+          - 1.0 = Explicit merge rule (highest confidence)
+          - 0.9 = Identical fingerprint
+          - 0.8 = Same parent ingredients
+          - 0.7 = Hydration variant only
+
+      hierarchy_conflicts:
+        description: Ingredients with conflicting merge signals
+        range: string
+        multivalued: true
+        comments:
+          - Used to flag potential quality issues
+          - Example "CaCl2 has multiple parent assignments"
+
+      fingerprint_mode:
+        description: Fingerprinting mode used (chemical/variant/original)
+        range: string
+        comments:
+          - Indicates which fingerprint algorithm was used
+          - Enables comparing merge results across modes
 
 # ================================================================
 # BASE DESCRIPTOR PATTERN (following dismech)
@@ -385,6 +484,23 @@ classes:
         range: MediaIngredientMechTerm
         recommended: false
         inlined: true
+
+      parent_ingredient:
+        description: Reference to parent chemical entity from MediaIngredientMech
+        range: IngredientReference
+        recommended: false
+        inlined: true
+        comments:
+          - Links to canonical parent in MediaIngredientMech hierarchy
+          - Example CaCl2·2H2O → parent is "Calcium chloride"
+
+      variant_type:
+        description: Type of chemical variant
+        range: VariantTypeEnum
+        recommended: false
+        comments:
+          - Describes relationship to parent (HYDRATE, SALT_FORM, ANHYDROUS, etc.)
+          - Populated from MediaIngredientMech metadata
 
       concentration:
         description: Amount of ingredient
@@ -596,6 +712,19 @@ classes:
 # ================================================================
 # SUPPORTING CLASSES
 # ================================================================
+
+  IngredientReference:
+    description: Reference to canonical ingredient
+    attributes:
+      preferred_term:
+        description: Name of parent ingredient
+        required: true
+        range: string
+
+      mediaingredientmech_id:
+        description: MediaIngredientMech ID
+        range: string
+        pattern: "^MediaIngredientMech:\\d{6}$"
 
   ConcentrationValue:
     description: Quantified concentration with units
@@ -866,6 +995,45 @@ classes:
         description: Additional context
         range: string
 
+  SourceData:
+    description: Provenance information for imported records
+    attributes:
+      origin:
+        description: Source repository name
+        range: string
+        required: true
+        examples:
+          - value: CommunityMech
+        comments:
+          - Indicates which X-Mech repository this record was imported from
+
+      community_ids:
+        description: List of CommunityMech IDs this recipe was derived from
+        range: string
+        multivalued: true
+        comments:
+          - Enables bidirectional linking from CultureMech to CommunityMech
+          - Format CommunityMech:NNNNNN
+
+      import_date:
+        description: Date of import (ISO 8601)
+        range: string
+        comments:
+          - ISO 8601 date format YYYY-MM-DD
+
+      evidence:
+        description: Evidence records from source repository
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Preserves evidence from original CommunityMech record
+          - Maintains literature references and provenance
+
+      notes:
+        description: Import notes and additional context
+        range: string
+
   CofactorRequirement:
     description: Cofactor requirement for an organism
     attributes:
@@ -1056,6 +1224,16 @@ enums:
       KELVIN:
         description: Kelvin
         meaning: UO:0000012
+
+  AtmosphereEnum:
+    description: Atmospheric conditions for incubation
+    permissible_values:
+      AEROBIC:
+        description: Oxygen-rich atmosphere
+      ANAEROBIC:
+        description: Oxygen-free atmosphere
+      MICROAEROPHILIC:
+        description: Low oxygen atmosphere (typically 2-10% O2)
 
   PreparationActionEnum:
     description: Controlled vocabulary for preparation steps
@@ -1250,3 +1428,31 @@ enums:
         description: Dehalogenase enzyme for halogenated compounds
       FLUORIDE_EXPORTER:
         description: Fluoride-specific exporter
+
+  VariantTypeEnum:
+    description: Type of chemical variant relationship to parent
+    permissible_values:
+      HYDRATE:
+        description: Hydrated form of parent chemical
+      SALT_FORM:
+        description: Different salt form of parent chemical
+      ANHYDROUS:
+        description: Anhydrous form of parent chemical
+      NAMED_HYDRATE:
+        description: Named hydrate (monohydrate, heptahydrate, etc.)
+      CHEMICAL_VARIANT:
+        description: Other chemical variant of parent
+
+  MergeReasonEnum:
+    description: Reason why recipes were merged together
+    permissible_values:
+      EXPLICIT_MERGE_RULE:
+        description: Merged due to explicit rule from MediaIngredientMech
+      IDENTICAL_FINGERPRINT:
+        description: Merged due to identical ingredient fingerprints
+      SAME_PARENT_INGREDIENTS:
+        description: Merged due to same parent ingredients (aggressive mode)
+      HYDRATION_VARIANT_ONLY:
+        description: Merged due to only hydration differences (variant-aware mode)
+      NO_MATCH:
+        description: Not merged - no matching criteria met

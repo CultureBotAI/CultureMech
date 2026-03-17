@@ -1,5 +1,5 @@
 id: CultureMech:010367
-name: Thiomicrospira V2501 Medium
+name: thiomicrospira_v2501_medium
 original_name: Thiomicrospira V2501 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -241,6 +241,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.304295+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thiomicrospira V2501 Medium" to "thiomicrospira_v2501_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace metal solution (see below)
   composition: []

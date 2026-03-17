@@ -1,0 +1,173 @@
+id: CultureMech:001513
+name: bsk_medium
+original_name: BSK-MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 403
+  term:
+    id: mediadive.medium:403
+    label: BSK-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium403.pdf'
+ingredients:
+- preferred_term: CMRL 1066
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose yeastolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES buffer
+  term:
+    id: CHEBI:19708
+    label: HEPES buffer
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000426
+    label: HEPES buffer
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Sodium citrate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001060
+    label: Na-pyruvate
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000797
+    label: N-Acetylglucosamine
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000220
+    label: L-Glutamine
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1243.0'
+    unit: G_PER_L
+  notes: ' [Merged 3 duplicates: 900.0, 200.0, 143.0]'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Double distilled water
+- preferred_term: Gelatine
+  term:
+    id: CHEBI:5291
+    label: Gelatine
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000940
+    label: Gelatine
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '350'
+    unit: G_PER_L
+- preferred_term: Rabbit serum
+  concentration:
+    value: '86'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Combine the warm (37°C) solutions A, B, C, D, and filter-sterilize
+    the warm medium. Solution B can also be added after filtration.
+- step_number: 2
+  action: HEAT
+  description: Alternatively, buy supplemented or un-supplemented BSK-H medium (Fa.
+    Bio&SELL or Sigma) and supplement the medium according to manufacturer's advice.
+    Sterilize the mixed and warm (37°C) medium by filtration.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Stir slowly at 4 - 10°C for 3 hours, adjust pH to 7.6 with 5 M NaOH.
+    Filter sterilize.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Dissolve 14.0 g gelatine in 200 ml bidest. water, autoclave 15 minutes
+    at 115°C.
+- step_number: 5
+  action: DISSOLVE
+  description: 'Dissolve 50.05 g bovine serum albumine, fract. V (important: Sigma
+    No A9647) in 143 ml bidest. water, or use BSA-solution Sigma A7409.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.055344Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 403'
+- timestamp: '2026-03-13T03:09:08.053416Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 2 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:19:04.841594Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001513'
+- timestamp: '2026-03-17T06:30:14.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:16.910866+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BSK-MEDIUM" to "bsk_medium" for consistent matching

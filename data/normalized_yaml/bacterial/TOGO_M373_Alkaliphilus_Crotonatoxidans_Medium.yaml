@@ -1,5 +1,5 @@
 id: CultureMech:009754
-name: Alkaliphilus Crotonatoxidans Medium
+name: alkaliphilus_crotonatoxidans_medium
 original_name: Alkaliphilus Crotonatoxidans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -273,6 +273,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.615761+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Alkaliphilus Crotonatoxidans Medium" to "alkaliphilus_crotonatoxidans_medium"
+    for consistent matching
 solutions:
 - preferred_term: crotonic acid solution
   composition: []

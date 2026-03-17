@@ -1,0 +1,137 @@
+id: CultureMech:008554
+name: LB + Streptomycin, Rifampicin medium
+original_name: LB + Streptomycin, Rifampicin medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1972
+  term:
+    id: TOGO:M1972
+    label: LB + Streptomycin, Rifampicin medium
+notes: 'Source: https://togomedium.org/medium/M1972
+
+  Original source: NBRC - NBRC_M1250
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1250'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.762233Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1972'
+- timestamp: '2026-01-28T19:48:41.093805Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:09.165520+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:57.966423Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008554'
+- timestamp: '2026-03-15T03:04:04.757506+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1899_LB_Chloramphenicol_medium, TOGO_M1935_LB_Kanamycin_Hygromycin_medium,
+    TOGO_M1936_LB_Ampicilin_Hygromycin_medium, TOGO_M1970_LB_Streptomycin_medium,
+    TOGO_M1971_LB_Rifampicin_medium, TOGO_M1972_LB_Streptomycin_Rifampicin_medium,
+    TOGO_M2012_LB_Ampicillin_Cefpodoxime_Kanamycin_medium, TOGO_M2013_LB_Nalidixic_acid_Ciprofloxacin_medium,
+    TOGO_M2050_LB_Ampicillin_Kanamycin_medium'
+solutions:
+- preferred_term: Rifampicin solution (50 mg/ml)*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Solution'
+- preferred_term: Streptomycin solution (50 mg/ml)*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Solution'
+synonyms:
+- name: LB + Chloramphenicol medium
+  source: TOGO
+  source_id: TOGO:M1899
+  original_category: bacterial
+- name: LB + Kanamycin, Hygromycin medium
+  source: TOGO
+  source_id: TOGO:M1935
+  original_category: bacterial
+- name: LB + Ampicilin, Hygromycin medium
+  source: TOGO
+  source_id: TOGO:M1936
+  original_category: bacterial
+- name: LB + Streptomycin medium
+  source: TOGO
+  source_id: TOGO:M1970
+  original_category: bacterial
+- name: LB + Rifampicin medium
+  source: TOGO
+  source_id: TOGO:M1971
+  original_category: bacterial
+- name: LB + Ampicillin, Cefpodoxime, Kanamycin medium
+  source: TOGO
+  source_id: TOGO:M2012
+  original_category: bacterial
+- name: LB + Nalidixic acid, Ciprofloxacin medium
+  source: TOGO
+  source_id: TOGO:M2013
+  original_category: bacterial
+- name: LB + Ampicillin, Kanamycin medium
+  source: TOGO
+  source_id: TOGO:M2050
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1899_LB_Chloramphenicol_medium
+- TOGO_M1935_LB_Kanamycin_Hygromycin_medium
+- TOGO_M1936_LB_Ampicilin_Hygromycin_medium
+- TOGO_M1970_LB_Streptomycin_medium
+- TOGO_M1971_LB_Rifampicin_medium
+- TOGO_M1972_LB_Streptomycin_Rifampicin_medium
+- TOGO_M2012_LB_Ampicillin_Cefpodoxime_Kanamycin_medium
+- TOGO_M2013_LB_Nalidixic_acid_Ciprofloxacin_medium
+- TOGO_M2050_LB_Ampicillin_Kanamycin_medium
+merge_fingerprint: 99e3b177df198fce534b889fa8b5168357f0b85ef91ad229d32c60485c0c9f7d

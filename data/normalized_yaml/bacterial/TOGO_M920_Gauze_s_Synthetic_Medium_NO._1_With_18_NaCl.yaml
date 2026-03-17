@@ -1,5 +1,5 @@
 id: CultureMech:010341
-name: Gauze's Synthetic Medium NO. 1 With 18% NaCl
+name: gauzes_synthetic_medium_no_1_with_18_nacl
 original_name: Gauze's Synthetic Medium NO. 1 With 18% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -110,4 +110,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.108023+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Gauze's Synthetic Medium NO. 1 With 18% NaCl" to "gauzes_synthetic_medium_no_1_with_18_nacl"
+    for consistent matching
 high_metal: true

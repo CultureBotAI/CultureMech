@@ -1,5 +1,5 @@
 id: CultureMech:009667
-name: Defined medium
+name: defined_medium
 original_name: Defined medium
 category: bacterial
 medium_type: COMPLEX
@@ -202,3 +202,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.998832+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Defined medium" to "defined_medium" for consistent
+    matching

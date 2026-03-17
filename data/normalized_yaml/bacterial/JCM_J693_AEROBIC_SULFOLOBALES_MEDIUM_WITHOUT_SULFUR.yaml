@@ -1,5 +1,5 @@
 id: CultureMech:003038
-name: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
+name: aerobic_sulfolobales_medium_without_sulfur
 original_name: AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR
 category: bacterial
 medium_type: COMPLEX
@@ -35,5 +35,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003038'
+- timestamp: '2026-03-17T19:45:31.015877+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AEROBIC SULFOLOBALES MEDIUM WITHOUT SULFUR" to "aerobic_sulfolobales_medium_without_sulfur"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

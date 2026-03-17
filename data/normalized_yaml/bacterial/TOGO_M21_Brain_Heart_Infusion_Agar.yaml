@@ -1,5 +1,5 @@
 id: CultureMech:008793
-name: Brain Heart Infusion Agar
+name: brain_heart_infusion_agar
 original_name: Brain Heart Infusion Agar
 category: bacterial
 medium_type: COMPLEX
@@ -62,3 +62,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:18.994716+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Brain Heart Infusion Agar" to "brain_heart_infusion_agar"
+    for consistent matching

@@ -1,0 +1,31 @@
+id: CultureMech:005196
+name: desulfovibrio_giganteus_medium
+original_name: DESULFOVIBRIO GIGANTEUS MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 400
+  term:
+    id: komodo.medium:400
+    label: DESULFOVIBRIO GIGANTEUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 400 | DSMZ Medium: 400 (mediadive.medium:400)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 400'
+- timestamp: '2026-03-13T06:19:30.973178Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005196'
+- timestamp: '2026-03-17T19:45:46.801148+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFOVIBRIO GIGANTEUS MEDIUM" to "desulfovibrio_giganteus_medium"
+    for consistent matching

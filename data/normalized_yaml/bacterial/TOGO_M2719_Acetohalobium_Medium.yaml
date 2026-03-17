@@ -1,5 +1,5 @@
 id: CultureMech:009270
-name: Acetohalobium Medium
+name: acetohalobium_medium
 original_name: Acetohalobium Medium
 category: bacterial
 medium_type: COMPLEX
@@ -452,6 +452,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.693115+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acetohalobium Medium" to "acetohalobium_medium" for
+    consistent matching
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)
   composition: []

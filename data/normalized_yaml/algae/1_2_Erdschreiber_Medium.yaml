@@ -1,6 +1,6 @@
 id: CultureMech:000004
-name: 1/2 Erdschreiber Medium
-category: algae
+name: 1_2_erdschreiber_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -62,6 +62,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000004'
+- timestamp: '2026-03-17T19:45:03.789163+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/2 Erdschreiber Medium" to "1_2_erdschreiber_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:one-half-erdschreibers-medium
 - reference_id: https://utex.org/products/one-half-erdschreibers-medium
+original_name: 1/2 Erdschreiber Medium

@@ -1,6 +1,6 @@
 id: CultureMech:000220
-name: Snow Algae Medium
-category: algae
+name: snow_algae_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -101,6 +101,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000220'
+- timestamp: '2026-03-17T19:45:04.514633+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Snow Algae Medium" to "snow_algae_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:snow-algae-medium
 - reference_id: https://utex.org/products/snow-algae-medium
+original_name: Snow Algae Medium

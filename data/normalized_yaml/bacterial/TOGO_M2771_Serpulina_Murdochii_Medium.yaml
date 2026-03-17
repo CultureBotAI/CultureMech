@@ -1,5 +1,5 @@
 id: CultureMech:009319
-name: Serpulina Murdochii Medium
+name: serpulina_murdochii_medium
 original_name: Serpulina Murdochii Medium
 category: bacterial
 medium_type: COMPLEX
@@ -38,3 +38,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009319'
+- timestamp: '2026-03-17T19:46:24.509794+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Serpulina Murdochii Medium" to "serpulina_murdochii_medium"
+    for consistent matching

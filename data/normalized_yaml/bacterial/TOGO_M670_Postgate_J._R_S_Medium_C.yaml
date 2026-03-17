@@ -1,5 +1,5 @@
 id: CultureMech:010074
-name: Postgate J. R'S Medium C
+name: postgate_j_rs_medium_c
 original_name: Postgate J. R'S Medium C
 category: bacterial
 medium_type: COMPLEX
@@ -133,6 +133,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.058247+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Postgate J. R'S Medium C" to "postgate_j_rs_medium_c"
+    for consistent matching
 solutions:
 - preferred_term: 6.0% Sodium lactate solution (filter--sterilized)
   composition: []

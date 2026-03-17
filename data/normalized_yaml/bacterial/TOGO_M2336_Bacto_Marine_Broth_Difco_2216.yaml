@@ -1,5 +1,5 @@
 id: CultureMech:008923
-name: Bacto Marine Broth (Difco 2216)
+name: bacto_marine_broth_difco_2216
 original_name: Bacto Marine Broth (Difco 2216)
 category: bacterial
 medium_type: COMPLEX
@@ -216,3 +216,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.025486+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bacto Marine Broth (Difco 2216)" to "bacto_marine_broth_difco_2216"
+    for consistent matching

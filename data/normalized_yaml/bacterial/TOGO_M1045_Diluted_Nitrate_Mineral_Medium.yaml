@@ -1,5 +1,5 @@
 id: CultureMech:007561
-name: Diluted Nitrate Mineral Medium
+name: diluted_nitrate_mineral_medium
 original_name: Diluted Nitrate Mineral Medium
 category: bacterial
 medium_type: COMPLEX
@@ -109,6 +109,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.030680+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Diluted Nitrate Mineral Medium" to "diluted_nitrate_mineral_medium"
+    for consistent matching
 solutions:
 - preferred_term: Modified SL-4 trace element solution (see below)
   composition: []

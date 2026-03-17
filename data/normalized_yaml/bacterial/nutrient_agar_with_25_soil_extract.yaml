@@ -1,0 +1,71 @@
+id: CultureMech:002213
+name: nutrient_agar_with_25_soil_extract
+original_name: NUTRIENT AGAR WITH 25% SOIL EXTRACT
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J102
+  term:
+    id: mediadive.medium:J102
+    label: NUTRIENT AGAR WITH 25% SOIL EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=102'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Tap water
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave
+    at 121C for 1 hr. Use the clear supernatant after sedimentation for a few hours
+    and centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.733110Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J102'
+- timestamp: '2026-03-13T06:19:11.292628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002213'
+- timestamp: '2026-03-17T06:30:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.069395+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT AGAR WITH 25% SOIL EXTRACT" to "nutrient_agar_with_25_soil_extract"
+    for consistent matching

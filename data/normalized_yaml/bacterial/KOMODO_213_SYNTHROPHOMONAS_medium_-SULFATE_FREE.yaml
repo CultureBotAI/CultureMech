@@ -1,5 +1,5 @@
 id: CultureMech:004405
-name: SYNTHROPHOMONAS medium -SULFATE FREE
+name: synthrophomonas_medium_sulfate_free
 original_name: SYNTHROPHOMONAS medium -SULFATE FREE
 category: bacterial
 medium_type: COMPLEX
@@ -289,4 +289,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:41.968333+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNTHROPHOMONAS medium -SULFATE FREE" to "synthrophomonas_medium_sulfate_free"
+    for consistent matching
 ph_value: 7.2

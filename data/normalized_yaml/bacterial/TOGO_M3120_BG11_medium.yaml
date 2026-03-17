@@ -1,5 +1,5 @@
 id: CultureMech:009592
-name: BG11 medium
+name: bg11_medium
 original_name: BG11 medium
 category: bacterial
 medium_type: COMPLEX
@@ -190,6 +190,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.176160+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BG11 medium" to "bg11_medium" for consistent matching
 solutions:
 - preferred_term: Trace metal mix A5 + Co*
   composition: []

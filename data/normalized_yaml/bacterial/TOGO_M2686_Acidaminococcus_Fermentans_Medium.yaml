@@ -1,5 +1,5 @@
 id: CultureMech:009241
-name: Acidaminococcus Fermentans Medium
+name: acidaminococcus_fermentans_medium
 original_name: Acidaminococcus Fermentans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -160,3 +160,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.354659+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidaminococcus Fermentans Medium" to "acidaminococcus_fermentans_medium"
+    for consistent matching

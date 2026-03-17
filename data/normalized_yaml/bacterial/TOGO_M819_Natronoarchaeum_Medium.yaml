@@ -1,5 +1,5 @@
 id: CultureMech:010231
-name: Natronoarchaeum Medium
+name: natronoarchaeum_medium
 original_name: Natronoarchaeum Medium
 category: bacterial
 medium_type: COMPLEX
@@ -139,4 +139,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.249727+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Natronoarchaeum Medium" to "natronoarchaeum_medium"
+    for consistent matching
 high_metal: true

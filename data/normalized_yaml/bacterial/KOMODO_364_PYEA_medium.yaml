@@ -1,5 +1,5 @@
 id: CultureMech:005087
-name: PYEA medium
+name: pyea_medium
 original_name: PYEA medium
 category: bacterial
 medium_type: COMPLEX
@@ -60,3 +60,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:45.695555+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PYEA medium" to "pyea_medium" for consistent matching

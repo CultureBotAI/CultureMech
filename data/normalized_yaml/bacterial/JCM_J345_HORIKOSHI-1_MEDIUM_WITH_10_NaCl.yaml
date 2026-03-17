@@ -1,5 +1,5 @@
 id: CultureMech:002705
-name: HORIKOSHI-1 MEDIUM WITH 10% NaCl
+name: horikoshi_1_medium_with_10_nacl
 original_name: HORIKOSHI-1 MEDIUM WITH 10% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -40,3 +40,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:28.493270+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HORIKOSHI-1 MEDIUM WITH 10% NaCl" to "horikoshi_1_medium_with_10_nacl"
+    for consistent matching

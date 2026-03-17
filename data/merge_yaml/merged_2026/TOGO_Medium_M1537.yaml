@@ -1,0 +1,86 @@
+id: CultureMech:008084
+name: TOGO Medium M1537
+original_name: (Unnamed medium)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
+    compound, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Glycerol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: Keratin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M1537
+  term:
+    id: TOGO:M1537
+    label: TOGO Medium M1537
+notes: 'Source: https://togomedium.org/medium/M1537
+
+  Original source: NBRC - NBRC_M328
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=328'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.810755Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1537'
+- timestamp: '2026-01-28T19:48:21.750338Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:36.354934+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:53.415880Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008084'
+solutions:
+- preferred_term: Soil extract*
+  term:
+    id: mediadive.solution:5555
+    label: Soil extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: See mediadive_5555_Soil_extract.yaml for composition
+merge_fingerprint: a40941667f84272860bc99aa1915c7558fe5f8d49ae32c6ff17deb6817556a14
+merged_from:
+- TOGO_M1537_Unnamed_medium

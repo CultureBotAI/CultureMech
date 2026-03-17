@@ -1,0 +1,181 @@
+id: CultureMech:009264
+name: chopped_meat_carbohydrate_medium
+original_name: Chopped Meat Carbohydrate Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Complex
+    component'
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Starch
+- preferred_term: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
+- preferred_term: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000916
+    label: Maltose
+- preferred_term: Rumen fluid
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000359
+    label: Glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+- preferred_term: Peptone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Chopped Meat Broth
+  concentration:
+    value: '850'
+    unit: G_PER_L
+- preferred_term: Cysteine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001023
+    label: Cysteine
+- preferred_term: Nitrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: NaOH (1N)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Ground Beef (fat-free)
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2713
+  term:
+    id: TOGO:M2713
+    label: Chopped Meat Carbohydrate Medium
+notes: 'Source: https://togomedium.org/medium/M2713
+
+  Original URL: https://www.atcc.org/~/media/D452A885A4FB4443A9A107F6E539FA37.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.108918Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2713'
+- timestamp: '2026-01-28T19:48:28.005555Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.791897'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Nitrogen gas'
+- timestamp: '2026-03-09T08:04:46.356178+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:04.825401Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:009264'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:57.782257'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:23.587020+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chopped Meat Carbohydrate Medium" to "chopped_meat_carbohydrate_medium"
+    for consistent matching
+solutions:
+- preferred_term: Resazurin Solution (0.025%)
+  composition: []
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+  name: Unknown solution

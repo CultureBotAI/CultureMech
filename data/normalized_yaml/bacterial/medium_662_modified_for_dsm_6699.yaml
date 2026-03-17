@@ -1,0 +1,67 @@
+id: CultureMech:006242
+name: medium_662_modified_for_dsm_6699
+original_name: MEDIUM 662 MODIFIED FOR DSM 6699
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 662_6699
+  term:
+    id: komodo.medium:662_6699
+    label: MEDIUM 662 MODIFIED FOR DSM 6699
+notes: 'Source: KOMODO ModelSEED | ID: 662_6699 | DSMZ Medium: 662 (mediadive.medium:662)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Polypeptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000287
+    label: NH4NO3
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 662_6699'
+- timestamp: '2026-02-03T11:18:59.638792'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 662
+- timestamp: '2026-03-13T06:19:39.212376Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006242'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:56.282253+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 662 MODIFIED FOR DSM 6699" to "medium_662_modified_for_dsm_6699"
+    for consistent matching
+ph_value: 7.0

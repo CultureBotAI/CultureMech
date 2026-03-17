@@ -1,0 +1,49 @@
+id: CultureMech:004392
+name: hutners_salts_medium_590
+original_name: Hutner's salts (medium 590)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2110 | DSMZ Medium: 2110
+  (mediadive.medium:2110) | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2110
+  term:
+    id: komodo.medium:2110
+    label: Hutner's salts (medium 590)
+ingredients:
+- preferred_term: NaOH
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2110'
+- timestamp: '2026-03-13T06:19:26.746561Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004392'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:33.217919'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-17T06:30:41.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:41.892265+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Hutner's salts (medium 590)" to "hutners_salts_medium_590"
+    for consistent matching

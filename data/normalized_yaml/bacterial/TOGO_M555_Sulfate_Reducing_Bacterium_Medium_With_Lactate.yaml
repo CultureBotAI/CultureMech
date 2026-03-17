@@ -1,5 +1,5 @@
 id: CultureMech:009949
-name: Sulfate Reducing Bacterium Medium With Lactate
+name: sulfate_reducing_bacterium_medium_with_lactate
 original_name: Sulfate Reducing Bacterium Medium With Lactate
 category: bacterial
 medium_type: COMPLEX
@@ -172,6 +172,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.147583+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sulfate Reducing Bacterium Medium With Lactate" to
+    "sulfate_reducing_bacterium_medium_with_lactate" for consistent matching
 solutions:
 - preferred_term: Vitamin solution (see Medium [M554])
   composition: []

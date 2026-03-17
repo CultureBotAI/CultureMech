@@ -1,5 +1,5 @@
 id: CultureMech:009709
-name: PE Medium (pH 6.8)
+name: pe_medium_ph_6_8
 original_name: PE Medium (pH 6.8)
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:00.292726'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:27.288047+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PE Medium (pH 6.8)" to "pe_medium_ph_6_8" for consistent
+    matching
 solutions:
 - preferred_term: PE Medium (see Medium [M298])
   composition: []

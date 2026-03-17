@@ -1,5 +1,5 @@
 id: CultureMech:009150
-name: Columbia Blood Medium
+name: columbia_blood_medium
 original_name: Columbia Blood Medium
 category: bacterial
 medium_type: COMPLEX
@@ -33,3 +33,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009150'
+- timestamp: '2026-03-17T19:46:22.021409+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Columbia Blood Medium" to "columbia_blood_medium" for
+    consistent matching

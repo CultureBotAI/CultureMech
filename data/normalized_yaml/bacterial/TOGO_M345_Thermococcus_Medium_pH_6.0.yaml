@@ -1,5 +1,5 @@
 id: CultureMech:009724
-name: Thermococcus Medium (pH 6.0)
+name: thermococcus_medium_ph_6_0
 original_name: Thermococcus Medium (pH 6.0)
 category: bacterial
 medium_type: COMPLEX
@@ -58,6 +58,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:27.363114+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermococcus Medium (pH 6.0)" to "thermococcus_medium_ph_6_0"
+    for consistent matching
 solutions:
 - preferred_term: Thermococcus medium (see Medium [M273])
   composition: []

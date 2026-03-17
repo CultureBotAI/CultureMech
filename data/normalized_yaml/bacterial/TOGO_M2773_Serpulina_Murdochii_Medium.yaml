@@ -1,5 +1,5 @@
 id: CultureMech:009321
-name: Serpulina Murdochii Medium
+name: serpulina_murdochii_medium
 original_name: Serpulina Murdochii Medium
 category: bacterial
 medium_type: COMPLEX
@@ -62,6 +62,11 @@ curation_history:
   date: '2026-03-14T21:06:58.401649'
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:24.515417+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Serpulina Murdochii Medium" to "serpulina_murdochii_medium"
+    for consistent matching
 solutions:
 - preferred_term: sterile 10% w/v NaHCO3 solution
   composition: []

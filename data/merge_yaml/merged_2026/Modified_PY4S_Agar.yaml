@@ -1,0 +1,63 @@
+id: CultureMech:010026
+name: Modified PY4S Agar
+original_name: Modified PY4S Agar
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: vitamin B12
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: hemin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
+media_term:
+  preferred_term: TOGO Medium M626
+  term:
+    id: TOGO:M626
+    label: Modified PY4S Agar
+notes: 'Source: https://togomedium.org/medium/M626
+
+  Original source: JCM - JCM_M617
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=617'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.425515Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M626'
+- timestamp: '2026-01-28T19:48:39.767926Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:05:06.910427+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:10.797943Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010026'
+solutions:
+- preferred_term: PY4S AGAR (see Medium [M357])
+  composition: []
+  notes: Cross-reference to Medium M357
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: 2105ae5d71a2d69d895834d57be8d5969172edca40b5d06f1f1b25a492bc6088
+merged_from:
+- TOGO_M626_Modified_PY4S_Agar

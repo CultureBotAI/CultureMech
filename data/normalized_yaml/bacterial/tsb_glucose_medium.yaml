@@ -1,0 +1,63 @@
+id: CultureMech:000956
+name: tsb_glucose_medium
+original_name: TSB-GLUCOSE MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1489
+  term:
+    id: mediadive.medium:1489
+    label: TSB-GLUCOSE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1489.pdf'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: alpha-D-Glucose
+  term:
+    id: CHEBI:17925
+    label: alpha-D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000675
+    label: alpha-D-Glucose
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 6.5 and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.590102Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1489'
+- timestamp: '2026-03-13T06:18:59.891610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000956'
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:11.453362+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "TSB-GLUCOSE MEDIUM" to "tsb_glucose_medium" for consistent
+    matching

@@ -1,5 +1,5 @@
 id: CultureMech:010347
-name: Phosphate-Buffered Saline (pH 7.4)
+name: phosphate_buffered_saline_ph_7_4
 original_name: Phosphate-Buffered Saline (pH 7.4)
 category: bacterial
 medium_type: COMPLEX
@@ -88,3 +88,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.156316+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Phosphate-Buffered Saline (pH 7.4)" to "phosphate_buffered_saline_ph_7_4"
+    for consistent matching

@@ -1,0 +1,31 @@
+id: CultureMech:006435
+name: sporomusa_silvacetica_medium
+original_name: SPOROMUSA SILVACETICA medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-6.7
+media_term:
+  preferred_term: KOMODO Medium 777
+  term:
+    id: komodo.medium:777
+    label: SPOROMUSA SILVACETICA medium
+notes: 'Source: KOMODO ModelSEED | ID: 777 | DSMZ Medium: 777 (mediadive.medium:777)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 777'
+- timestamp: '2026-03-13T06:19:40.705473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006435'
+- timestamp: '2026-03-17T19:45:58.064640+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SPOROMUSA SILVACETICA medium" to "sporomusa_silvacetica_medium"
+    for consistent matching

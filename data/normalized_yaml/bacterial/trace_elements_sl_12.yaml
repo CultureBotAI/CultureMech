@@ -1,0 +1,31 @@
+id: CultureMech:004880
+name: trace_elements_sl_12
+original_name: Trace elements SL-12
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 3094
+  term:
+    id: komodo.medium:3094
+    label: Trace elements SL-12
+notes: 'Source: KOMODO ModelSEED | ID: 3094 | DSMZ Medium: 3094 (mediadive.medium:3094)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3094'
+- timestamp: '2026-03-13T06:19:28.945541Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004880'
+- timestamp: '2026-03-17T19:45:44.445095+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trace elements SL-12" to "trace_elements_sl_12" for
+    consistent matching

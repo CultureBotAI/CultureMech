@@ -1,0 +1,31 @@
+id: CultureMech:006547
+name: aeropyrum_jxt_medium
+original_name: AEROPYRUM-JXT medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 820
+  term:
+    id: komodo.medium:820
+    label: AEROPYRUM-JXT medium
+notes: 'Source: KOMODO ModelSEED | ID: 820 | DSMZ Medium: 820 (mediadive.medium:820)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 820'
+- timestamp: '2026-03-13T06:19:41.751821Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006547'
+- timestamp: '2026-03-17T19:45:59.258335+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "AEROPYRUM-JXT medium" to "aeropyrum_jxt_medium" for
+    consistent matching

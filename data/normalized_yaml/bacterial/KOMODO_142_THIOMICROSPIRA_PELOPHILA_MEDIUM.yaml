@@ -1,5 +1,5 @@
 id: CultureMech:004155
-name: THIOMICROSPIRA PELOPHILA MEDIUM
+name: thiomicrospira_pelophila_medium
 original_name: THIOMICROSPIRA PELOPHILA MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -256,3 +256,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.363841+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "THIOMICROSPIRA PELOPHILA MEDIUM" to "thiomicrospira_pelophila_medium"
+    for consistent matching

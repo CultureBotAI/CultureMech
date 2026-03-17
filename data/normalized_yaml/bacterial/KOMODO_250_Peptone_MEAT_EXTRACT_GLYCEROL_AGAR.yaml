@@ -1,5 +1,5 @@
 id: CultureMech:004622
-name: Peptone MEAT EXTRACT GLYCEROL AGAR
+name: peptone_meat_extract_glycerol_agar
 original_name: Peptone MEAT EXTRACT GLYCEROL AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -60,3 +60,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:42.985064+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Peptone MEAT EXTRACT GLYCEROL AGAR" to "peptone_meat_extract_glycerol_agar"
+    for consistent matching

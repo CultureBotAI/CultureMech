@@ -1,5 +1,5 @@
 id: CultureMech:006531
-name: For heterotrophic growth
+name: for_heterotrophic_growth
 original_name: For heterotrophic growth
 category: bacterial
 medium_type: DEFINED
@@ -268,3 +268,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:59.081218+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "For heterotrophic growth" to "for_heterotrophic_growth"
+    for consistent matching

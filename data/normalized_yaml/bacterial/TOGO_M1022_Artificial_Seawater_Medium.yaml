@@ -1,5 +1,5 @@
 id: CultureMech:007536
-name: Artificial Seawater Medium
+name: artificial_seawater_medium
 original_name: Artificial Seawater Medium
 category: bacterial
 medium_type: COMPLEX
@@ -85,3 +85,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.820800+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Artificial Seawater Medium" to "artificial_seawater_medium"
+    for consistent matching

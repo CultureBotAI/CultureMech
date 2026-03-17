@@ -1,4 +1,4 @@
-name: Nitrogen-free plant nutrient solution for soybean growth
+name: nitrogen_free_plant_nutrient_solution_for_soybean_growth
 original_name: Nitrogen-free plant nutrient solution for soybean growth
 category: specialized
 medium_type: DEFINED
@@ -69,3 +69,8 @@ curation_history:
   curator: communitymech-importer-v1.0
   action: Imported from CommunityMech
   notes: Created from CommunityMech:000064 growth_media record
+- timestamp: '2026-03-17T19:46:34.326504+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Nitrogen-free plant nutrient solution for soybean growth"
+    to "nitrogen_free_plant_nutrient_solution_for_soybean_growth" for consistent matching

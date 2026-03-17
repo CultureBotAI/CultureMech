@@ -1,5 +1,5 @@
 id: CultureMech:010290
-name: 8KG-4 Medium
+name: 8kg_4_medium
 original_name: 8KG-4 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -158,6 +158,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:31.683508+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "8KG-4 Medium" to "8kg_4_medium" for consistent matching
 solutions:
 - preferred_term: Na2S・9H2O solutions
   composition: []

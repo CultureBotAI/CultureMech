@@ -1,0 +1,30 @@
+id: CultureMech:004374
+name: vitamin_solution_medium_473
+original_name: Vitamin solution (medium 473)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2095
+  term:
+    id: komodo.medium:2095
+    label: Vitamin solution (medium 473)
+notes: 'Source: KOMODO ModelSEED | ID: 2095 | DSMZ Medium: 2095 (mediadive.medium:2095)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2095'
+- timestamp: '2026-03-13T06:19:26.691181Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004374'
+- timestamp: '2026-03-17T19:45:41.826366+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Vitamin solution (medium 473)" to "vitamin_solution_medium_473"
+    for consistent matching

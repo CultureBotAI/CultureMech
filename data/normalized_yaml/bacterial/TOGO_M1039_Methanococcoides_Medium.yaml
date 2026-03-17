@@ -1,5 +1,5 @@
 id: CultureMech:007554
-name: Methanococcoides Medium
+name: methanococcoides_medium
 original_name: Methanococcoides Medium
 category: bacterial
 medium_type: COMPLEX
@@ -55,6 +55,11 @@ curation_history:
   date: '2026-03-14T21:06:46.221566'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:07.972630+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanococcoides Medium" to "methanococcoides_medium"
+    for consistent matching
 solutions:
 - preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
   composition: []

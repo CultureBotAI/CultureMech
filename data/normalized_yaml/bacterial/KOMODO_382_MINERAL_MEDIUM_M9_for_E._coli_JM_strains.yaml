@@ -1,5 +1,5 @@
 id: CultureMech:005129
-name: MINERAL MEDIUM M9 for E. coli JM strains
+name: mineral_medium_m9_for_e_coli_jm_strains
 original_name: MINERAL MEDIUM M9 for E. coli JM strains
 category: bacterial
 medium_type: DEFINED
@@ -111,4 +111,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:46.007749+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM M9 for E. coli JM strains" to "mineral_medium_m9_for_e_coli_jm_strains"
+    for consistent matching
 ph_value: 7.4

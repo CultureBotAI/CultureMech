@@ -1,5 +1,5 @@
 id: CultureMech:008962
-name: Natronobacteria medium
+name: natronobacteria_medium
 original_name: Natronobacteria medium
 category: bacterial
 medium_type: COMPLEX
@@ -208,6 +208,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.342000+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Natronobacteria medium" to "natronobacteria_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Na2CO3 (sterilized as a separate solution)

@@ -1,5 +1,5 @@
 id: CultureMech:004809
-name: NUTRIENT BROTH WITH 10% HORSE SERUM
+name: nutrient_broth_with_10_horse_serum
 original_name: NUTRIENT BROTH WITH 10% HORSE SERUM
 category: bacterial
 medium_type: COMPLEX
@@ -54,4 +54,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.310406+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT BROTH WITH 10% HORSE SERUM" to "nutrient_broth_with_10_horse_serum"
+    for consistent matching
 ph_value: 7.0

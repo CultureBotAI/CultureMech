@@ -1,5 +1,5 @@
 id: CultureMech:010070
-name: Trypticase Soy Agar With 0.5 x Artificial Seawater
+name: trypticase_soy_agar_with_0_5_x_artificial_seawater
 original_name: Trypticase Soy Agar With 0.5 x Artificial Seawater
 category: bacterial
 medium_type: COMPLEX
@@ -39,6 +39,11 @@ curation_history:
   date: '2026-03-14T21:07:02.359184'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:30.037812+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Trypticase Soy Agar With 0.5 x Artificial Seawater"
+    to "trypticase_soy_agar_with_0_5_x_artificial_seawater" for consistent matching
 solutions:
 - preferred_term: 0.5 x Artificial seawater (see Medium [M666])
   composition: []

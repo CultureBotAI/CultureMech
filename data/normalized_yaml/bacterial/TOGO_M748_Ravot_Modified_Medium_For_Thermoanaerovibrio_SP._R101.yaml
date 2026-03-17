@@ -1,5 +1,5 @@
 id: CultureMech:010153
-name: Ravot Modified Medium For Thermoanaerovibrio SP. R101
+name: ravot_modified_medium_for_thermoanaerovibrio_sp_r101
 original_name: Ravot Modified Medium For Thermoanaerovibrio SP. R101
 category: bacterial
 medium_type: COMPLEX
@@ -155,6 +155,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.656574+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Ravot Modified Medium For Thermoanaerovibrio SP. R101"
+    to "ravot_modified_medium_for_thermoanaerovibrio_sp_r101" for consistent matching
 solutions:
 - preferred_term: 7% K2HPO4 solution
   composition: []

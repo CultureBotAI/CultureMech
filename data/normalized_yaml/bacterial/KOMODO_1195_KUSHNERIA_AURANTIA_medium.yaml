@@ -1,5 +1,5 @@
 id: CultureMech:003931
-name: KUSHNERIA AURANTIA medium
+name: kushneria_aurantia_medium
 original_name: KUSHNERIA AURANTIA medium
 category: bacterial
 medium_type: COMPLEX
@@ -117,3 +117,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:37.953083+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "KUSHNERIA AURANTIA medium" to "kushneria_aurantia_medium"
+    for consistent matching

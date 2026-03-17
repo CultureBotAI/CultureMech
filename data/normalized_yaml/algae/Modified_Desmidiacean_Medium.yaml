@@ -1,6 +1,6 @@
 id: CultureMech:000182
-name: Modified Desmidiacean Medium
-category: algae
+name: modified_desmidiacean_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -91,6 +91,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000182'
+- timestamp: '2026-03-17T19:45:04.394930+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Desmidiacean Medium" to "modified_desmidiacean_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:modified-desmidiacean-medium
 - reference_id: https://utex.org/products/modified-desmidiacean-medium
+original_name: Modified Desmidiacean Medium

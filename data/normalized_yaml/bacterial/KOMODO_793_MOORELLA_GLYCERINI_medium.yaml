@@ -1,5 +1,5 @@
 id: CultureMech:006502
-name: MOORELLA GLYCERINI medium
+name: moorella_glycerini_medium
 original_name: MOORELLA GLYCERINI medium
 category: bacterial
 medium_type: COMPLEX
@@ -339,3 +339,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.840852+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MOORELLA GLYCERINI medium" to "moorella_glycerini_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:005620
-name: CLOSTRIDIUM METHYLPENTOSUM MEDIUM
+name: clostridium_methylpentosum_medium
 original_name: CLOSTRIDIUM METHYLPENTOSUM MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -284,3 +284,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.918939+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM METHYLPENTOSUM MEDIUM" to "clostridium_methylpentosum_medium"
+    for consistent matching

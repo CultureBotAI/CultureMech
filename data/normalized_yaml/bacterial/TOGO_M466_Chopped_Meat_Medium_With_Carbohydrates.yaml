@@ -1,5 +1,5 @@
 id: CultureMech:009854
-name: Chopped Meat Medium With Carbohydrates
+name: chopped_meat_medium_with_carbohydrates
 original_name: Chopped Meat Medium With Carbohydrates
 category: bacterial
 medium_type: COMPLEX
@@ -86,6 +86,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.379633+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Chopped Meat Medium With Carbohydrates" to "chopped_meat_medium_with_carbohydrates"
+    for consistent matching
 solutions:
 - preferred_term: CHOPPED MEAT MEDIUM (see Medium [M461])
   composition: []

@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:33118
     label: boric acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000211
 - preferred_term: Manganese sulfate monohydrate
   concentration:
     value: '0.184'
@@ -18,6 +20,8 @@ composition:
   term:
     id: CHEBI:86374
     label: manganese(II) sulfate monohydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001118
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.023'
@@ -32,6 +36,8 @@ composition:
   term:
     id: CHEBI:79321
     label: ammonium heptamolybdate tetrahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001110
 - preferred_term: Cobalt nitrate hexahydrate
   concentration:
     value: '0.012'
@@ -39,6 +45,8 @@ composition:
   term:
     id: CHEBI:78034
     label: cobalt dinitrate hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001111
 - preferred_term: Potassium bromide
   concentration:
     value: '0.015'
@@ -46,6 +54,8 @@ composition:
   term:
     id: CHEBI:32030
     label: potassium bromide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001123
 - preferred_term: Nickel ammonium sulfate hexahydrate
   concentration:
     value: '0.016'
@@ -53,6 +63,8 @@ composition:
   term:
     id: CHEBI:90884
     label: ammonium nickel sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001120
 - preferred_term: Vanadyl sulfate dihydrate
   concentration:
     value: '0.0016'
@@ -60,6 +72,8 @@ composition:
   term:
     id: CHEBI:88217
     label: vanadyl sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001128
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0376'
@@ -67,22 +81,38 @@ composition:
   term:
     id: CHEBI:86463
     label: aluminium potassium sulfate dodecahydrate
-notes: |
-  Minor Nutrients solution for Snow Algae Medium and related cold-adapted algae culture.
-  Provides comprehensive micronutrient mixture including trace metals for psychrophilic algae.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001109
+notes: 'Minor Nutrients solution for Snow Algae Medium and related cold-adapted algae
+  culture.
+
+  Provides comprehensive micronutrient mixture including trace metals for psychrophilic
+  algae.
+
 
   Preparation: Add components to approximately 950 mL deionized water in the order
+
   listed while stirring continuously. Bring to 1 L total volume.
+
 
   Storage: Refrigerator temperature (4°C).
 
+
   Final stock concentrations: H3BO3 (1.01 mM), MnSO4·H2O (1.01 mM),
+
   ZnSO4·7H2O (0.08 mM), (NH4)6Mo7O24·4H2O (0.01 mM), Co(NO3)2·6H2O (0.04 mM),
+
   KBr (0.13 mM), NiSO4(NH4)SO4·6H2O (0.09 mM), VOSO4·2H2O (0.01 mM),
+
   Al2(SO4)3·K2SO4·24H2O (0.04 mM)
 
-  Note: This formulation includes a broader range of trace elements including Ni, V, and Al
+
+  Note: This formulation includes a broader range of trace elements including Ni,
+  V, and Al
+
   which may be beneficial for cold-adapted algae species.
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0099

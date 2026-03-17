@@ -1,5 +1,5 @@
 id: CultureMech:007680
-name: Peat Medium With Sucrose
+name: peat_medium_with_sucrose
 original_name: Peat Medium With Sucrose
 category: bacterial
 medium_type: COMPLEX
@@ -103,6 +103,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.966499+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Peat Medium With Sucrose" to "peat_medium_with_sucrose"
+    for consistent matching
 solutions:
 - preferred_term: Major metals (see Medium [M969])
   composition: []

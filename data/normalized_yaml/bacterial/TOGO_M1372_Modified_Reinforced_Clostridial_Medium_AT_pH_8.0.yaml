@@ -1,5 +1,5 @@
 id: CultureMech:007911
-name: Modified Reinforced Clostridial Medium AT pH 8.0
+name: modified_reinforced_clostridial_medium_at_ph_8_0
 original_name: Modified Reinforced Clostridial Medium AT pH 8.0
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:06:48.528515'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:10.875264+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Reinforced Clostridial Medium AT pH 8.0" to
+    "modified_reinforced_clostridial_medium_at_ph_8_0" for consistent matching
 solutions:
 - preferred_term: MODIFIED REINFORCED CLOSTRIDIAL MEDIUM (see Medium [M1305])
   composition: []

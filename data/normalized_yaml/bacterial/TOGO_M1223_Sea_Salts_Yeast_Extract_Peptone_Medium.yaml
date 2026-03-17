@@ -1,5 +1,5 @@
 id: CultureMech:007751
-name: Sea Salts Yeast Extract Peptone Medium
+name: sea_salts_yeast_extract_peptone_medium
 original_name: Sea Salts Yeast Extract Peptone Medium
 category: bacterial
 medium_type: COMPLEX
@@ -92,3 +92,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.572493+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Sea Salts Yeast Extract Peptone Medium" to "sea_salts_yeast_extract_peptone_medium"
+    for consistent matching

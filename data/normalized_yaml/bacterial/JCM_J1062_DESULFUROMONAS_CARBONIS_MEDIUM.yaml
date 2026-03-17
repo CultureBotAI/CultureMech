@@ -1,5 +1,5 @@
 id: CultureMech:002243
-name: DESULFUROMONAS CARBONIS MEDIUM
+name: desulfuromonas_carbonis_medium
 original_name: DESULFUROMONAS CARBONIS MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -322,3 +322,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:24.376685+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFUROMONAS CARBONIS MEDIUM" to "desulfuromonas_carbonis_medium"
+    for consistent matching

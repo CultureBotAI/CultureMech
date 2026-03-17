@@ -1,0 +1,294 @@
+ syntax="proto3";
+ package
+// metamodel_version: 1.7.0
+// A CHEBI term representing a chemical entity
+message ChemicalEntityTerm
+ {
+  string label = 0
+  string id = 0
+ }
+// A cofactor or coenzyme required for enzymatic activity
+message CofactorDescriptor
+ {
+  string preferredTerm = 0
+  chemicalEntityTerm term = 0
+  cofactorCategoryEnum category = 0
+  string precursor = 0
+  chemicalEntityTerm precursorTerm = 0
+ repeated  string ecAssociations = 0
+ repeated  string keggPathways = 0
+ repeated  string enzymeExamples = 0
+ repeated  string biosynthesisGenes = 0
+  string bioavailability = 0
+  string notes = 0
+ }
+// Cofactor requirement for an organism
+message CofactorRequirement
+ {
+  cofactorDescriptor cofactor = 0
+  boolean canBiosynthesize = 0
+  float confidence = 0
+ repeated  evidenceItem evidence = 0
+ repeated  string genes = 0
+ }
+// Quantified concentration with units
+message ConcentrationValue
+ {
+  string value = 0
+  concentrationUnitEnum unit = 0
+  string perVolume = 0
+ }
+// Audit trail entry for curation
+message CurationEvent
+ {
+  string timestamp = 0
+  string curator = 0
+  string action = 0
+  string notes = 0
+ }
+// Omics dataset generated using this medium
+message Dataset
+ {
+  string datasetId = 0
+  string datasetType = 0
+  string description = 0
+  uri url = 0
+ }
+// Evidence supporting a claim about media formulation or performance
+message EvidenceItem
+ {
+  string reference = 0
+  evidenceItemSupportEnum supports = 0
+  string snippet = 0
+  string explanation = 0
+ }
+// A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)
+message GTDBTerm
+ {
+  string id = 0
+  string label = 0
+ }
+// Chemical or biological ingredient in a medium
+message IngredientDescriptor
+ {
+  string preferredTerm = 0
+  chemicalEntityTerm term = 0
+  mediaIngredientMechTerm mediaingredientmechTerm = 0
+  ingredientReference parentIngredient = 0
+  variantTypeEnum variantType = 0
+  concentrationValue concentration = 0
+  modifierEnum modifier = 0
+  string chemicalFormula = 0
+  float molecularWeight = 0
+  supplierInfo supplierCatalog = 0
+  string notes = 0
+ repeated  ingredientRoleEnum role = 0
+ repeated  cofactorDescriptor cofactorsProvided = 0
+ repeated  evidenceItem evidence = 0
+ }
+// Reference to canonical ingredient
+message IngredientReference
+ {
+  string preferredTerm = 0
+  string mediaingredientmechId = 0
+ }
+// Identifier from authoritative media database
+message MediaDatabaseTerm
+ {
+  string id = 0
+  string label = 0
+ }
+// A MediaIngredientMech identifier for a media ingredient
+message MediaIngredientMechTerm
+ {
+  string label = 0
+  string id = 0
+ }
+// A complete growth medium formulation for culturing microorganisms. This is the root entity - one per YAML file.
+message MediaRecipe
+ {
+  string name = 0
+  string originalName = 0
+  categoryEnum category = 0
+ repeated  categoryEnum categories = 0
+  boolean highMetal = 0
+  boolean highRee = 0
+ repeated  recipeSynonym synonyms = 0
+ repeated  string mergedFrom = 0
+  string mergeFingerprint = 0
+  string chemicalFingerprint = 0
+  string variantFingerprint = 0
+  string fingerprintVersion = 0
+  mergeMetadata mergeMetadata = 0
+  mediaTypeDescriptor mediaTerm = 0
+  string description = 0
+ repeated  organismDescriptor targetOrganisms = 0
+  organismCultureTypeEnum organismCultureType = 0
+  mediumTypeEnum mediumType = 0
+  physicalStateEnum physicalState = 0
+  float phValue = 0
+  string phRange = 0
+  string lightIntensity = 0
+  string lightCycle = 0
+  string lightQuality = 0
+  string temperatureRange = 0
+  float temperatureValue = 0
+  string salinity = 0
+  string aeration = 0
+  string cultureVessel = 0
+ repeated  ingredientDescriptor ingredients = 0
+ repeated  solutionDescriptor solutions = 0
+ repeated  preparationStep preparationSteps = 0
+  sterilizationDescriptor sterilization = 0
+  storageConditions storage = 0
+ repeated  string applications = 0
+ repeated  mediaVariant variants = 0
+ repeated  publicationReference references = 0
+  string notes = 0
+ repeated  evidenceItem evidence = 0
+ repeated  dataset datasets = 0
+ repeated  curationEvent curationHistory = 0
+ repeated  string dataQualityFlags = 0
+  atmosphereEnum incubationAtmosphere = 0
+  sourceData sourceData = 0
+ }
+// Classification and authoritative database reference for the medium
+message MediaTypeDescriptor
+ {
+  string preferredTerm = 0
+  mediaDatabaseTerm term = 0
+ }
+// A variant or modification of the base recipe
+message MediaVariant
+ {
+  string name = 0
+  string description = 0
+ repeated  string modifications = 0
+  string purpose = 0
+  supplierInfo supplierInfo = 0
+ repeated  evidenceItem evidence = 0
+ }
+// Metadata about merge process and quality
+message MergeMetadata
+ {
+  string mergeVersion = 0
+  string mergeMode = 0
+  mergeReasonEnum mergeReason = 0
+  float mergeConfidence = 0
+ repeated  string hierarchyConflicts = 0
+  string fingerprintMode = 0
+ }
+// Target organism for the medium
+message OrganismDescriptor
+ {
+  string preferredTerm = 0
+  organismTerm term = 0
+  gTDBTerm gtdbTerm = 0
+  string strain = 0
+  string growthPhase = 0
+ repeated  cellularRoleEnum communityRole = 0
+  float targetAbundance = 0
+ repeated  string communityFunction = 0
+ repeated  cofactorRequirement cofactorRequirements = 0
+ repeated  transporterAnnotation transporters = 0
+ repeated  evidenceItem evidence = 0
+ }
+// An NCBITaxon term representing an organism
+message OrganismTerm
+ {
+  string label = 0
+  string id = 0
+ }
+// A step in medium preparation
+message PreparationStep
+ {
+  integer stepNumber = 0
+  preparationActionEnum action = 0
+  string description = 0
+  temperatureValue temperature = 0
+  string duration = 0
+  string equipment = 0
+  string notes = 0
+ }
+// Literature reference
+message PublicationReference
+ {
+  string reference = 0
+  string title = 0
+  string authors = 0
+  integer year = 0
+  string notes = 0
+ }
+// An alternate name for a recipe from a specific source
+message RecipeSynonym
+ {
+  string name = 0
+  string source = 0
+  string sourceId = 0
+  categoryEnum originalCategory = 0
+ }
+// A pre-prepared stock solution used as an ingredient
+message SolutionDescriptor
+ {
+  string preferredTerm = 0
+  term term = 0
+  mediaIngredientMechTerm mediaingredientmechTerm = 0
+ repeated  ingredientDescriptor composition = 0
+  concentrationValue concentration = 0
+  string preparationNotes = 0
+  storageConditions storageConditions = 0
+  string shelfLife = 0
+ }
+// Provenance information for imported records
+message SourceData
+ {
+  string origin = 0
+ repeated  string communityIds = 0
+  string importDate = 0
+ repeated  evidenceItem evidence = 0
+  string notes = 0
+ }
+// Sterilization method and parameters
+message SterilizationDescriptor
+ {
+  sterilizationMethodEnum method = 0
+  temperatureValue temperature = 0
+  float pressure = 0
+  string duration = 0
+  string notes = 0
+ }
+// Storage requirements for prepared medium
+message StorageConditions
+ {
+  temperatureValue temperature = 0
+  lightConditionEnum lightCondition = 0
+  string shelfLife = 0
+  string containerType = 0
+  string notes = 0
+ }
+// Commercial supplier information
+message SupplierInfo
+ {
+  string supplierName = 0
+  string catalogNumber = 0
+  uri productUrl = 0
+  string notes = 0
+ }
+// Temperature with units
+message TemperatureValue
+ {
+  float value = 0
+  temperatureUnitEnum unit = 0
+ }
+// Annotation of a transporter or transport system
+message TransporterAnnotation
+ {
+  string name = 0
+  transporterTypeEnum transporterType = 0
+ repeated  string substrates = 0
+ repeated  chemicalEntityTerm substrateTerms = 0
+  string direction = 0
+ repeated  string genes = 0
+  string ecNumber = 0
+  string notes = 0
+ }

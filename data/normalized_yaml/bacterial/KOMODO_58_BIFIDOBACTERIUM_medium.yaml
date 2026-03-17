@@ -1,5 +1,5 @@
 id: CultureMech:006069
-name: BIFIDOBACTERIUM medium
+name: bifidobacterium_medium
 original_name: BIFIDOBACTERIUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -183,3 +183,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.914793+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BIFIDOBACTERIUM medium" to "bifidobacterium_medium"
+    for consistent matching

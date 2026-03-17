@@ -1,5 +1,5 @@
 id: CultureMech:008930
-name: J-Agar
+name: j_agar
 original_name: J-Agar
 category: bacterial
 medium_type: COMPLEX
@@ -89,3 +89,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.064829+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "J-Agar" to "j_agar" for consistent matching

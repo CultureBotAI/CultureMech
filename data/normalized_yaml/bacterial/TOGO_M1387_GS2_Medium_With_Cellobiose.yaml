@@ -1,5 +1,5 @@
 id: CultureMech:007921
-name: GS2 Medium With Cellobiose
+name: gs2_medium_with_cellobiose
 original_name: GS2 Medium With Cellobiose
 category: bacterial
 medium_type: COMPLEX
@@ -168,6 +168,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.959003+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GS2 Medium With Cellobiose" to "gs2_medium_with_cellobiose"
+    for consistent matching
 solutions:
 - preferred_term: 0.2 M Cellobiose solution
   composition: []

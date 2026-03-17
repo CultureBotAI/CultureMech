@@ -1,5 +1,5 @@
 id: CultureMech:006422
-name: ERYTHROMICROBIUM AND ROSEOCOCCUS medium
+name: erythromicrobium_and_roseococcus_medium
 original_name: ERYTHROMICROBIUM AND ROSEOCOCCUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -180,3 +180,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.955986+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ERYTHROMICROBIUM AND ROSEOCOCCUS medium" to "erythromicrobium_and_roseococcus_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:009885
-name: Modified Biebl And Pfennig's Medium
+name: modified_biebl_and_pfennigs_medium
 original_name: Modified Biebl And Pfennig's Medium
 category: bacterial
 medium_type: COMPLEX
@@ -188,6 +188,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.609536+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified Biebl And Pfennig's Medium" to "modified_biebl_and_pfennigs_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Trace element solution SL-12 (see below)

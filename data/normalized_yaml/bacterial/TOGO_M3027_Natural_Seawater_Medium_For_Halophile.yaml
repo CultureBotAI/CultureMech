@@ -1,5 +1,5 @@
 id: CultureMech:009538
-name: Natural Seawater Medium For Halophile
+name: natural_seawater_medium_for_halophile
 original_name: Natural Seawater Medium For Halophile
 category: bacterial
 medium_type: COMPLEX
@@ -113,3 +113,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.707174+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Natural Seawater Medium For Halophile" to "natural_seawater_medium_for_halophile"
+    for consistent matching

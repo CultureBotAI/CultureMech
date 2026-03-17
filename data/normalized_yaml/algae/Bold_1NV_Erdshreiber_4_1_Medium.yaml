@@ -1,6 +1,6 @@
 id: CultureMech:000031
-name: Bold 1NV:Erdshreiber (4:1) Medium
-category: algae
+name: bold_1nv_erdshreiber_4_1_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -61,6 +61,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000031'
+- timestamp: '2026-03-17T19:45:03.918201+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bold 1NV:Erdshreiber (4:1) Medium" to "bold_1nv_erdshreiber_4_1_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:bold-1nv-erdschreibers-four-to-one-medium
 - reference_id: https://utex.org/products/bold-1nv-erdschreibers-four-to-one-medium
+original_name: Bold 1NV:Erdshreiber (4:1) Medium

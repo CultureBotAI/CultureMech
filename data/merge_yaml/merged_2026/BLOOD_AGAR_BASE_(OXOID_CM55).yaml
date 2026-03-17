@@ -1,0 +1,112 @@
+id: CultureMech:001747
+name: BLOOD AGAR BASE (OXOID CM55)
+original_name: BLOOD AGAR BASE (OXOID CM55)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 617a
+  term:
+    id: mediadive.medium:617a
+    label: BLOOD AGAR BASE (OXOID CM55)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium617a.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH of the medium should be 7.3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.748885Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 617a'
+- timestamp: '2026-03-13T06:19:06.928691Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001747'
+- timestamp: '2026-03-15T03:03:38.291499+00:00'
+  curator: recipe-merger
+  action: Merged 10 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_617_MARINOMONAS_VAGA_MEDIUM, DSMZ_617a_BLOOD_AGAR_BASE_OXOID_CM55,
+    KOMODO_617_MARINOMONAS_VAGA_medium, KOMODO_617a-1_For_DSM_7232, KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55,
+    TOGO_M15_Nutrient_Agar_NO._2, TOGO_M16_1_10_Nutrient_Agar_NO._2, TOGO_M17_1_100_Nutrient_Agar_NO._2,
+    TOGO_M2163_NA_medium, TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl'
+synonyms:
+- name: MARINOMONAS VAGA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:617
+  original_category: bacterial
+- name: MARINOMONAS VAGA medium
+  source: KOMODO
+  source_id: komodo.medium:617
+  original_category: bacterial
+- name: For DSM 7232
+  source: KOMODO
+  source_id: komodo.medium:617a.1
+  original_category: bacterial
+- name: Nutrient Agar NO. 2
+  source: TOGO
+  source_id: TOGO:M15
+  original_category: bacterial
+- name: 1/10 Nutrient Agar NO. 2
+  source: TOGO
+  source_id: TOGO:M16
+  original_category: bacterial
+- name: 1/100 Nutrient Agar NO. 2
+  source: TOGO
+  source_id: TOGO:M17
+  original_category: bacterial
+- name: NA medium
+  source: TOGO
+  source_id: TOGO:M2163
+  original_category: bacterial
+- name: Nutrient Agar With 50% Soil Extract And 5% NaCl
+  source: TOGO
+  source_id: TOGO:M405
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- DSMZ_617_MARINOMONAS_VAGA_MEDIUM
+- DSMZ_617a_BLOOD_AGAR_BASE_OXOID_CM55
+- KOMODO_617_MARINOMONAS_VAGA_medium
+- KOMODO_617a-1_For_DSM_7232
+- KOMODO_617a_BLOOD_AGAR_BASE_OXOID_CM55
+- TOGO_M15_Nutrient_Agar_NO._2
+- TOGO_M16_1_10_Nutrient_Agar_NO._2
+- TOGO_M17_1_100_Nutrient_Agar_NO._2
+- TOGO_M2163_NA_medium
+- TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl
+merge_fingerprint: 81f6c5d1e83b8e380fb9c8c5a21d6e990ef9a1328cd05475fac79c94b00cddcc

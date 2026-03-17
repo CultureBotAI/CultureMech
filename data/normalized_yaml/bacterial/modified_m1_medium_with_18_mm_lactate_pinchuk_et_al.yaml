@@ -1,0 +1,283 @@
+id: CultureMech:007070
+name: modified_m1_medium_with_18_mm_lactate_pinchuk_et_al
+original_name: Modified m1 medium with 18 mm lactate; pinchuk et al
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '8.1863e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.00040614'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.00013285'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.00016622'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000898
+    label: Thiamine
+- preferred_term: Folate
+  concentration:
+    value: '4.531e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.0003645'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+    label: 4-Aminobenzoate
+- preferred_term: Lipoate
+  concentration:
+    value: '0.0002423'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lipoate'
+- preferred_term: Pantothenate
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  concentration:
+    value: '0.00022807'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pnto-R'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000356
+    label: Pantothenate
+- preferred_term: Lactate
+  term:
+    id: CHEBI:24996
+    label: Lactate
+  concentration:
+    value: '18.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000561
+    label: Lactate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '7.3781e-07'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '3.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: Magnesium chloride
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.0068'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.000808669'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Boric acid
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '4.35'
+    unit: MILLIMOLAR
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.11196'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.00437084'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '30.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: Sodium chloride
+- preferred_term: Potassium chloride
+  concentration:
+    value: '1.34'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: Potassium chloride
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.00048626'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000703
+    label: Pyridoxine HCl
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '28.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: Ammonium chloride
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0107894'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.0114981'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.0069558'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000325
+    label: Zinc sulfate
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.0044829'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.00175974'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenate
+  concentration:
+    value: '0.001'
+    unit: MILLIMOLAR
+- preferred_term: Aluminum potassium sulfate
+  concentration:
+    value: '0.000105399'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001109
+    label: Aluminum potassium sulfate
+- preferred_term: Sodium tungstate
+  concentration:
+    value: '0.000606318'
+    unit: MILLIMOLAR
+- preferred_term: Nickel Sulfate
+  concentration:
+    value: '0.0041849'
+    unit: MILLIMOLAR
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '30.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.191661Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 179, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:17.040500Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:24.393848Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-03-13T06:19:45.913069Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007070'
+- timestamp: '2026-03-17T06:30:01.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:04.032281+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified m1 medium with 18 mm lactate; pinchuk et al"
+    to "modified_m1_medium_with_18_mm_lactate_pinchuk_et_al" for consistent matching
+media_term:
+  preferred_term: MediaDB Medium 179
+  term:
+    id: MEDIADB:179
+    label: Modified m1 medium with 18 mm lactate; pinchuk et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

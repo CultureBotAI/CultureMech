@@ -12,6 +12,8 @@ composition:
     id: CHEBI:9750
     label: tricine
   notes: Buffer adjusted to pH 8.0
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001127
 - preferred_term: Thiamine (Vitamin B1)
   concentration:
     value: '0.067'
@@ -19,6 +21,8 @@ composition:
   term:
     id: CHEBI:18385
     label: thiamine
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001126
 - preferred_term: Biotin
   concentration:
     value: '0.001'
@@ -26,6 +30,8 @@ composition:
   term:
     id: CHEBI:15956
     label: biotin
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000128
 - preferred_term: Vitamin B12 (Cobalamin)
   concentration:
     value: '0.0008'
@@ -34,6 +40,8 @@ composition:
     id: CHEBI:176843
     label: vitamin B12
   notes: Add after autoclaving
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001129
 - preferred_term: Pantothenate (Pantothenic acid)
   concentration:
     value: '0.002'
@@ -41,6 +49,8 @@ composition:
   term:
     id: CHEBI:7916
     label: pantothenic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001122
 - preferred_term: PABA (Para-aminobenzoic acid)
   concentration:
     value: '0.004'
@@ -48,26 +58,41 @@ composition:
   term:
     id: CHEBI:17836
     label: 4-aminobenzoic acid
-notes: |
-  DAS Vitamin Cocktail for Dasycladales Seawater Medium.
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001121
+notes: 'DAS Vitamin Cocktail for Dasycladales Seawater Medium.
+
   Provides essential vitamins for marine algae culture.
 
+
   Preparation: Add Tricine to approximately 85 mL deionized water while stirring
+
   continuously. Adjust pH to 8.0 with NaOH or HCl. Add remaining vitamin components
+
   sequentially: thiamine, biotin, pantothenate, PABA. Bring to 100 mL total volume.
+
 
   IMPORTANT: Add Vitamin B12 AFTER autoclaving (heat-sensitive).
 
+
   Sterilization: Filter sterilize through 0.45 µm Millipore filter.
+
   DO NOT AUTOCLAVE (vitamins are heat-sensitive).
+
 
   Storage: Freezer temperature (-20°C) in darkness.
 
+
   Final stock concentrations: Thiamine (2.0 mM), Biotin (0.041 mM),
+
   Vitamin B12 (0.0059 mM), Pantothenate (0.091 mM), PABA (0.291 mM)
 
+
   Final concentrations in medium: Thiamine (0.99 µM), Biotin (0.02 µM),
+
   Vitamin B12 (0.0029 µM), Pantothenate (0.046 µM), PABA (0.15 µM)
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0045

@@ -1,5 +1,5 @@
 id: CultureMech:007914
-name: MIZ14 Medium
+name: miz14_medium
 original_name: MIZ14 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -98,6 +98,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.900099+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MIZ14 Medium" to "miz14_medium" for consistent matching
 solutions:
 - preferred_term: Modified Wolfe's solution (see Medium [M641])
   composition: []

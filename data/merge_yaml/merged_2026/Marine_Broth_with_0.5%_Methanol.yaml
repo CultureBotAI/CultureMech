@@ -1,0 +1,89 @@
+id: CultureMech:008300
+name: Marine Broth with 0.5% Methanol
+original_name: Marine Broth with 0.5% Methanol
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1738
+  term:
+    id: TOGO:M1738
+    label: Marine Broth with 0.5% Methanol
+notes: 'Source: https://togomedium.org/medium/M1738
+
+  Original source: NBRC - NBRC_M947
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=947'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.255884Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1738'
+- timestamp: '2026-01-28T19:48:20.710632Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:34.343403+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:55.500244Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008300'
+- timestamp: '2026-03-15T03:04:03.338853+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1738_Marine_Broth_with_0.5_Methanol, TOGO_M1774_1_10_Marine_Broth_Agar,
+    TOGO_M1916_1_5_Marine_Agar_Broth, TOGO_M2164_1_2_Marine_Broth_Agar'
+solutions:
+- preferred_term: Methanol*
+  composition: []
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Solution, Organic
+    compound'
+synonyms:
+- name: 1/10 Marine Broth (Agar)
+  source: TOGO
+  source_id: TOGO:M1774
+  original_category: bacterial
+- name: 1/5 Marine Agar/Broth
+  source: TOGO
+  source_id: TOGO:M1916
+  original_category: bacterial
+- name: 1/2 Marine Broth (Agar)
+  source: TOGO
+  source_id: TOGO:M2164
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M1738_Marine_Broth_with_0.5_Methanol
+- TOGO_M1774_1_10_Marine_Broth_Agar
+- TOGO_M1916_1_5_Marine_Agar_Broth
+- TOGO_M2164_1_2_Marine_Broth_Agar
+merge_fingerprint: d5e67ebc3e43b20a2b5e584dc015360bd917a820d54848056a706b25e97739dd

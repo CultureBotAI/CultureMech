@@ -1,5 +1,5 @@
 id: CultureMech:009776
-name: Acidic Oatmeal Agar (pH 5.0)
+name: acidic_oatmeal_agar_ph_5_0
 original_name: Acidic Oatmeal Agar (pH 5.0)
 category: bacterial
 medium_type: COMPLEX
@@ -34,6 +34,11 @@ curation_history:
   date: '2026-03-14T21:07:00.678650'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:27.805503+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidic Oatmeal Agar (pH 5.0)" to "acidic_oatmeal_agar_ph_5_0"
+    for consistent matching
 solutions:
 - preferred_term: Oatmeal agar (ISP-3) (see Medium [M42])
   composition: []

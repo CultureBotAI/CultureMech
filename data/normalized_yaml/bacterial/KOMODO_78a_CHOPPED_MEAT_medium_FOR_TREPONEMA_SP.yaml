@@ -1,5 +1,5 @@
 id: CultureMech:006493
-name: CHOPPED MEAT medium FOR TREPONEMA SP
+name: chopped_meat_medium_for_treponema_sp
 original_name: CHOPPED MEAT medium FOR TREPONEMA SP
 category: bacterial
 medium_type: COMPLEX
@@ -268,3 +268,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:58.734517+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CHOPPED MEAT medium FOR TREPONEMA SP" to "chopped_meat_medium_for_treponema_sp"
+    for consistent matching

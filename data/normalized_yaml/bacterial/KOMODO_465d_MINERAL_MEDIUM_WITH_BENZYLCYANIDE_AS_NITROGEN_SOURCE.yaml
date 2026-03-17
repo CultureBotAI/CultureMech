@@ -1,5 +1,5 @@
 id: CultureMech:005573
-name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
+name: mineral_medium_with_benzylcyanide_as_nitrogen_source
 original_name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
 category: bacterial
 medium_type: DEFINED
@@ -288,3 +288,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.409198+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE"
+    to "mineral_medium_with_benzylcyanide_as_nitrogen_source" for consistent matching

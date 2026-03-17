@@ -1,5 +1,5 @@
 id: CultureMech:010098
-name: Methanopyrus Medium For Strain 116
+name: methanopyrus_medium_for_strain_116
 original_name: Methanopyrus Medium For Strain 116
 category: bacterial
 medium_type: COMPLEX
@@ -274,6 +274,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.214443+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Methanopyrus Medium For Strain 116" to "methanopyrus_medium_for_strain_116"
+    for consistent matching
 solutions:
 - preferred_term: Marine trace elements solution (see Medium [M209])
   composition: []

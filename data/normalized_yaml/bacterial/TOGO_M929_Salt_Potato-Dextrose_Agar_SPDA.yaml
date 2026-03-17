@@ -1,5 +1,5 @@
 id: CultureMech:010350
-name: Salt Potato-Dextrose Agar (SPDA)
+name: salt_potato_dextrose_agar_spda
 original_name: Salt Potato-Dextrose Agar (SPDA)
 category: bacterial
 medium_type: COMPLEX
@@ -86,3 +86,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.177449+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Salt Potato-Dextrose Agar (SPDA)" to "salt_potato_dextrose_agar_spda"
+    for consistent matching

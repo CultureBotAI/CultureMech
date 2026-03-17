@@ -1,5 +1,5 @@
 id: CultureMech:004204
-name: SELENOMONAS RUMINANTIUM medium
+name: selenomonas_ruminantium_medium
 original_name: SELENOMONAS RUMINANTIUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -116,3 +116,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:40.776505+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SELENOMONAS RUMINANTIUM medium" to "selenomonas_ruminantium_medium"
+    for consistent matching

@@ -1,6 +1,6 @@
 id: CultureMech:000018
-name: 2/3 Enriched Seawater
-category: algae
+name: 2_3_enriched_seawater
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -62,6 +62,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000018'
+- timestamp: '2026-03-17T19:45:03.852104+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2/3 Enriched Seawater" to "2_3_enriched_seawater" for
+    consistent matching
 references:
 - reference_id: UTEX:two-thirds-enriched-seawater-medium
 - reference_id: https://utex.org/products/two-thirds-enriched-seawater-medium
+original_name: 2/3 Enriched Seawater

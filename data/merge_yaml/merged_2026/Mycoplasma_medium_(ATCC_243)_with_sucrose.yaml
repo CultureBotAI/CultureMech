@@ -1,0 +1,74 @@
+id: CultureMech:008815
+name: Mycoplasma medium (ATCC 243) with sucrose
+original_name: Mycoplasma medium (ATCC 243) with sucrose
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled deionized water
+  concentration:
+    value: '650'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sucrose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar, Noble (BD 214230)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Defined component'
+- preferred_term: Heart Infusion Broth (BD 238400)
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2227
+  term:
+    id: TOGO:M2227
+    label: Mycoplasma medium (ATCC 243) with sucrose
+notes: 'Source: https://togomedium.org/medium/M2227
+
+  Original URL: https://www.atcc.org/~/media/DE32194753474A659F151E68B8BC8D04.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.179671Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2227'
+- timestamp: '2026-01-28T19:48:20.823381Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:34.534341+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:00.451672Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008815'
+solutions:
+- preferred_term: Yeast extract solution (15%)
+  composition: []
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+merge_fingerprint: 0c1efc9f71e0e6df0fe7daec25712c9dbbb186bb198fe608038df3d76a506f99
+merged_from:
+- TOGO_M2227_Mycoplasma_medium_ATCC_243_with_sucrose

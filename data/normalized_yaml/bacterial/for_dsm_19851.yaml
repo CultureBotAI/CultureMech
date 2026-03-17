@@ -1,0 +1,37 @@
+id: CultureMech:004424
+name: for_dsm_19851
+original_name: For DSM 19851
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 215c.3
+  term:
+    id: komodo.medium:215c.3
+    label: For DSM 19851
+notes: 'Source: KOMODO ModelSEED | ID: 215c.3 | DSMZ Medium: 215c (mediadive.medium:215c)
+  | Aerobic: Yes'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 215c.3'
+- timestamp: '2026-02-03T11:19:07.365786'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 215
+- timestamp: '2026-03-13T06:19:26.855046Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004424'
+- timestamp: '2026-03-17T19:45:42.013848+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "For DSM 19851" to "for_dsm_19851" for consistent matching

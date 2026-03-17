@@ -1,5 +1,5 @@
 id: CultureMech:009558
-name: Brain Heart Infusion (BHI) with Sodium Acetate
+name: brain_heart_infusion_bhi_with_sodium_acetate
 original_name: Brain Heart Infusion (BHI) with Sodium Acetate
 category: bacterial
 medium_type: COMPLEX
@@ -88,6 +88,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:25.918852+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Brain Heart Infusion (BHI) with Sodium Acetate" to
+    "brain_heart_infusion_bhi_with_sodium_acetate" for consistent matching
 solutions:
 - preferred_term: Antifoam solution (only for liquid medium)*
   composition: []

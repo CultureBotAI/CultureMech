@@ -1,5 +1,5 @@
 id: CultureMech:006745
-name: METHANOCALCULUS PUMILUS medium
+name: methanocalculus_pumilus_medium
 original_name: METHANOCALCULUS PUMILUS medium
 category: bacterial
 medium_type: COMPLEX
@@ -348,3 +348,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:01.340167+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOCALCULUS PUMILUS medium" to "methanocalculus_pumilus_medium"
+    for consistent matching

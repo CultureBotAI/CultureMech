@@ -1,0 +1,49 @@
+id: CultureMech:003075
+name: rye_bran_mrs
+original_name: RYE-BRAN MRS
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J730
+  term:
+    id: mediadive.medium:J730
+    label: RYE-BRAN MRS
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=730'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: Rye-bran
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Malted wheat meal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trypsin
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and incubate at 50C for 24 hr. Clarify the resulting
+    turbid liquid by centrifugation (500 x g, 15 min) followed by paper-filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.424434Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J730'
+- timestamp: '2026-03-13T06:19:17.607214Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003075'
+- timestamp: '2026-03-17T19:45:31.345241+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "RYE-BRAN MRS" to "rye_bran_mrs" for consistent matching

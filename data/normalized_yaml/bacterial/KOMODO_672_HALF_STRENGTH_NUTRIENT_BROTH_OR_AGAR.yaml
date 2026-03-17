@@ -1,5 +1,5 @@
 id: CultureMech:006268
-name: HALF STRENGTH NUTRIENT BROTH OR AGAR
+name: half_strength_nutrient_broth_or_agar
 original_name: HALF STRENGTH NUTRIENT BROTH OR AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -31,3 +31,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:006268'
+- timestamp: '2026-03-17T19:45:56.491180+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HALF STRENGTH NUTRIENT BROTH OR AGAR" to "half_strength_nutrient_broth_or_agar"
+    for consistent matching

@@ -1,0 +1,30 @@
+id: CultureMech:004277
+name: mineral_mix_medium_1001
+original_name: Mineral Mix (medium 1001)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2010
+  term:
+    id: komodo.medium:2010
+    label: Mineral Mix (medium 1001)
+notes: 'Source: KOMODO ModelSEED | ID: 2010 | DSMZ Medium: 2010 (mediadive.medium:2010)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2010'
+- timestamp: '2026-03-13T06:19:26.443290Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004277'
+- timestamp: '2026-03-17T19:45:41.518354+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral Mix (medium 1001)" to "mineral_mix_medium_1001"
+    for consistent matching

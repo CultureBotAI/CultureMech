@@ -1,5 +1,5 @@
 id: CultureMech:004425
-name: BHI medium FOR STRICT ANAEROBES
+name: bhi_medium_for_strict_anaerobes
 original_name: BHI medium FOR STRICT ANAEROBES
 category: bacterial
 medium_type: COMPLEX
@@ -31,3 +31,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:004425'
+- timestamp: '2026-03-17T19:45:42.015782+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BHI medium FOR STRICT ANAEROBES" to "bhi_medium_for_strict_anaerobes"
+    for consistent matching

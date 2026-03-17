@@ -1,0 +1,45 @@
+id: CultureMech:002890
+name: mv_pyruvate_medium
+original_name: MV/PYRUVATE MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J541
+  term:
+    id: mediadive.medium:J541
+    label: MV/PYRUVATE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=541'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 388 with 1.0 g/L sodium pyruvate instead of sodium lactate.
+    Otherwise, prepare the medium as described in the recipe of Medium No. 388.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.884084Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J541'
+- timestamp: '2026-02-03T11:26:55.254156'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:16.366994Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002890'
+- timestamp: '2026-03-17T19:45:29.909922+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MV/PYRUVATE MEDIUM" to "mv_pyruvate_medium" for consistent
+    matching
+data_quality_flags:
+- incomplete_composition

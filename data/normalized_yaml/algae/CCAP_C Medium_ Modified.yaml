@@ -1,6 +1,6 @@
 id: CultureMech:000057
-name: C Medium, Modified
-category: algae
+name: c_medium_modified
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
@@ -30,6 +30,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000057'
+- timestamp: '2026-03-17T19:45:03.999812+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "C Medium, Modified" to "c_medium_modified" for consistent
+    matching
 references:
 - reference_id: CCAP:C_Modified
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_C_Modified.pdf
@@ -40,3 +45,4 @@ ingredients:
     unit: VARIABLE
 data_quality_flags:
 - incomplete_composition
+original_name: C Medium, Modified

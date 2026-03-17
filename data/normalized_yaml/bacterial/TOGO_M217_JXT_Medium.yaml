@@ -1,5 +1,5 @@
 id: CultureMech:008774
-name: JXT Medium
+name: jxt_medium
 original_name: JXT Medium
 category: bacterial
 medium_type: COMPLEX
@@ -46,3 +46,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:008774'
+- timestamp: '2026-03-17T19:46:18.875606+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JXT Medium" to "jxt_medium" for consistent matching

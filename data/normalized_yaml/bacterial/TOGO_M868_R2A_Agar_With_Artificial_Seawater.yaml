@@ -1,5 +1,5 @@
 id: CultureMech:010285
-name: R2A Agar With Artificial Seawater
+name: r2a_agar_with_artificial_seawater
 original_name: R2A Agar With Artificial Seawater
 category: bacterial
 medium_type: COMPLEX
@@ -39,6 +39,11 @@ curation_history:
   date: '2026-03-14T21:07:03.580523'
   action: Applied schema defaults and normalizations
   notes: Added default solution name
+- timestamp: '2026-03-17T19:46:31.646236+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R2A Agar With Artificial Seawater" to "r2a_agar_with_artificial_seawater"
+    for consistent matching
 solutions:
 - preferred_term: Artificial seawater (see Medium [M761])
   composition: []

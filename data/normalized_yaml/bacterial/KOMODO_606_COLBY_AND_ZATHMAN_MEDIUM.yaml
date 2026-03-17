@@ -1,5 +1,5 @@
 id: CultureMech:006095
-name: COLBY AND ZATHMAN MEDIUM
+name: colby_and_zathman_medium
 original_name: COLBY AND ZATHMAN MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -182,3 +182,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:55.113652+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "COLBY AND ZATHMAN MEDIUM" to "colby_and_zathman_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:007920
-name: NRmbB1 Medium
+name: nrmbb1_medium
 original_name: NRmbB1 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -143,6 +143,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.949526+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NRmbB1 Medium" to "nrmbb1_medium" for consistent matching
 solutions:
 - preferred_term: Trace mineral solution (see Medium [M888])
   composition: []

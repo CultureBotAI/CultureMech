@@ -26,8 +26,11 @@ from pathlib import Path
 
 import yaml
 
+from culturemech.enrich.hierarchy_importer import MediaIngredientMechHierarchyImporter
 from culturemech.merge.fingerprint import RecipeFingerprinter
+from culturemech.merge.hierarchy_fingerprint import HierarchyAwareFingerprinter
 from culturemech.merge.matcher import RecipeMatcher
+from culturemech.merge.merge_rules import MergeRuleEngine
 from culturemech.merge.merger import RecipeMerger
 
 
@@ -222,11 +225,41 @@ Examples:
         help='Minimum group size to process (default: 1, set to 2 to only merge duplicates)'
     )
 
+    parser.add_argument(
+        '--mim-repo',
+        type=Path,
+        help='Path to MediaIngredientMech repository (enables hierarchy-aware features)'
+    )
+
+    parser.add_argument(
+        '--merge-mode',
+        type=str,
+        choices=['conservative', 'aggressive', 'variant-aware'],
+        help='Merge mode for hierarchy-aware merging (requires --mim-repo)'
+    )
+
+    parser.add_argument(
+        '--fingerprint-mode',
+        type=str,
+        choices=['chemical', 'variant', 'original'],
+        default='original',
+        help='Fingerprinting mode: chemical (merge variants), variant (preserve), original (baseline)'
+    )
+
     args = parser.parse_args()
 
     # Validate paths
     if not args.normalized_dir.exists():
         print(f"Error: Normalized directory not found: {args.normalized_dir}", file=sys.stderr)
+        return 1
+
+    # Validate hierarchy arguments
+    if args.merge_mode and not args.mim_repo:
+        print("Error: --merge-mode requires --mim-repo", file=sys.stderr)
+        return 1
+
+    if args.mim_repo and not args.mim_repo.exists():
+        print(f"Error: MediaIngredientMech repo not found: {args.mim_repo}", file=sys.stderr)
         return 1
 
     print("=" * 70)
@@ -238,6 +271,17 @@ Examples:
     print("This identifies recipes with the same base formulation (same chemicals).")
     print()
 
+    # Load hierarchy if provided
+    hierarchy = None
+    if args.mim_repo:
+        print(f"Loading MediaIngredientMech hierarchy from {args.mim_repo}...")
+        hierarchy = MediaIngredientMechHierarchyImporter(args.mim_repo)
+        hierarchy.load_hierarchy()
+        stats = hierarchy.get_stats()
+        print(f"  Loaded: {stats['total_ingredients']} ingredients, {stats['families']} families")
+        print(f"  Mode: fingerprint={args.fingerprint_mode}, merge={args.merge_mode or 'N/A'}")
+        print()
+
     # Find all recipes
     print(f"Scanning {args.normalized_dir} for recipes...")
     all_recipes = find_all_recipes(args.normalized_dir)
@@ -248,8 +292,14 @@ Examples:
     print(f"Found {len(all_recipes)} recipes")
     print()
 
-    # Initialize matcher
-    matcher = RecipeMatcher()
+    # Initialize matcher with appropriate fingerprinter
+    if hierarchy and args.fingerprint_mode != 'original':
+        fingerprinter = HierarchyAwareFingerprinter(hierarchy, mode=args.fingerprint_mode)
+        print(f"Using hierarchy-aware fingerprinting (mode: {args.fingerprint_mode})")
+        matcher = RecipeMatcher(fingerprinter=fingerprinter)
+    else:
+        print("Using original fingerprinting")
+        matcher = RecipeMatcher()
 
     # Group recipes by fingerprint
     print("Grouping recipes by ingredient fingerprint...")

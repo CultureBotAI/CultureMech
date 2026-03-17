@@ -1,0 +1,5512 @@
+{
+  "name": "culturemech",
+  "description": "LinkML schema for modeling microbial culture media recipes and formulations.\nFollows the dismech architecture pattern with descriptor classes for ontology grounding.\n",
+  "title": "CultureMech - Microbial Growth Media Schema",
+  "id": "https://w3id.org/culturemech",
+  "imports": [
+    "linkml:types"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "prefixes": [
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "culturemech",
+      "prefix_reference": "https://w3id.org/culturemech/"
+    },
+    {
+      "prefix_prefix": "biolink",
+      "prefix_reference": "https://w3id.org/biolink/vocab/"
+    },
+    {
+      "prefix_prefix": "CHEBI",
+      "prefix_reference": "http://purl.obolibrary.org/obo/CHEBI_"
+    },
+    {
+      "prefix_prefix": "NCBITaxon",
+      "prefix_reference": "http://purl.obolibrary.org/obo/NCBITaxon_"
+    },
+    {
+      "prefix_prefix": "DSMZ",
+      "prefix_reference": "https://mediadive.dsmz.de/medium/"
+    },
+    {
+      "prefix_prefix": "TOGO",
+      "prefix_reference": "http://togodb.org/db/medium/"
+    },
+    {
+      "prefix_prefix": "ATCC",
+      "prefix_reference": "https://www.atcc.org/products/"
+    },
+    {
+      "prefix_prefix": "NCIT",
+      "prefix_reference": "http://purl.obolibrary.org/obo/NCIT_"
+    },
+    {
+      "prefix_prefix": "UTEX",
+      "prefix_reference": "https://utex.org/products/"
+    },
+    {
+      "prefix_prefix": "CCAP",
+      "prefix_reference": "https://www.ccap.ac.uk/catalogue/strain-"
+    },
+    {
+      "prefix_prefix": "SAG",
+      "prefix_reference": "https://sagdb.uni-goettingen.de/detailedList.php?str_number="
+    },
+    {
+      "prefix_prefix": "OBI",
+      "prefix_reference": "http://purl.obolibrary.org/obo/OBI_"
+    },
+    {
+      "prefix_prefix": "ENVO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/ENVO_"
+    },
+    {
+      "prefix_prefix": "UO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/UO_"
+    },
+    {
+      "prefix_prefix": "UBERON",
+      "prefix_reference": "http://purl.obolibrary.org/obo/UBERON_"
+    },
+    {
+      "prefix_prefix": "PMID",
+      "prefix_reference": "http://www.ncbi.nlm.nih.gov/pubmed/"
+    },
+    {
+      "prefix_prefix": "DOI",
+      "prefix_reference": "https://doi.org/"
+    },
+    {
+      "prefix_prefix": "KEGG",
+      "prefix_reference": "https://www.genome.jp/entry/"
+    },
+    {
+      "prefix_prefix": "EC",
+      "prefix_reference": "https://enzyme.expasy.org/EC/"
+    },
+    {
+      "prefix_prefix": "geo",
+      "prefix_reference": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc="
+    },
+    {
+      "prefix_prefix": "sra",
+      "prefix_reference": "https://www.ncbi.nlm.nih.gov/sra/"
+    },
+    {
+      "prefix_prefix": "GTDB",
+      "prefix_reference": "https://gtdb.ecogenomic.org/genome?gid="
+    },
+    {
+      "prefix_prefix": "sigma",
+      "prefix_reference": "https://www.sigmaaldrich.com/catalog/product/"
+    },
+    {
+      "prefix_prefix": "thermofisher",
+      "prefix_reference": "https://www.thermofisher.com/order/catalog/product/"
+    }
+  ],
+  "default_prefix": "culturemech",
+  "default_range": "string",
+  "types": [
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "notes": [
+        "In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.   If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"string\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Text"
+      ],
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"integer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Integer"
+      ],
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"boolean\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Boolean"
+      ],
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"float\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"double\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:Float"
+      ],
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"decimal\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "broad_mappings": [
+        "schema:Number"
+      ],
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners do not work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"time\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Time"
+      ],
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#time",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time",
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:Date"
+      ],
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "exact_mappings": [
+        "schema:DateTime"
+      ],
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date_or_datetime",
+      "definition_uri": "https://w3id.org/linkml/DateOrDatetime",
+      "description": "Either a date or a datetime",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"date_or_datetime\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "https://w3id.org/linkml/DateOrDatetime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uriorcurie\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "curie",
+      "definition_uri": "https://w3id.org/linkml/Curie",
+      "conforms_to": "https://www.w3.org/TR/curie/",
+      "description": "a compact URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"curie\"."
+      ],
+      "comments": [
+        "in RDF serializations this MUST be expanded to a URI",
+        "in non-RDF serializations MAY be serialized as the compact representation"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Curie",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "conforms_to": "https://www.ietf.org/rfc/rfc3987.txt",
+      "description": "a complete URI",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"uri\"."
+      ],
+      "comments": [
+        "in RDF serializations a slot with range of uri is treated as a literal or type xsd:anyURI unless it is an identifier or a reference to an identifier, in which case it is translated directly to a node"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "close_mappings": [
+        "schema:URL"
+      ],
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"ncname\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"objectidentifier\"."
+      ],
+      "comments": [
+        "Used for inheritance and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"nodeidentifier\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpointer",
+      "definition_uri": "https://w3id.org/linkml/Jsonpointer",
+      "conforms_to": "https://datatracker.ietf.org/doc/html/rfc6901",
+      "description": "A string encoding a JSON Pointer. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to a valid object within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpointer\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "jsonpath",
+      "definition_uri": "https://w3id.org/linkml/Jsonpath",
+      "conforms_to": "https://www.ietf.org/archive/id/draft-goessner-dispatch-jsonpath-00.html",
+      "description": "A string encoding a JSON Path. The value of the string MUST conform to JSON Point syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded in tree form.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"jsonpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "sparqlpath",
+      "definition_uri": "https://w3id.org/linkml/Sparqlpath",
+      "conforms_to": "https://www.w3.org/TR/sparql11-query/#propertypaths",
+      "description": "A string encoding a SPARQL Property Path. The value of the string MUST conform to SPARQL syntax and SHOULD dereference to zero or more valid objects within the current instance document when encoded as RDF.",
+      "notes": [
+        "If you are authoring schemas in LinkML YAML, the type is referenced with the lower case \"sparqlpath\"."
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "enums": [
+    {
+      "name": "MediumTypeEnum",
+      "definition_uri": "https://w3id.org/culturemech/MediumTypeEnum",
+      "description": "Classification of culture medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "DEFINED",
+          "description": "Chemically defined medium with known composition",
+          "meaning": "NCIT:C64372"
+        },
+        {
+          "text": "COMPLEX",
+          "description": "Medium with undefined components (e.g., yeast extract)",
+          "meaning": "NCIT:C64371"
+        },
+        {
+          "text": "SELECTIVE",
+          "description": "Medium that selects for specific organisms"
+        },
+        {
+          "text": "DIFFERENTIAL",
+          "description": "Medium that differentiates organism types"
+        },
+        {
+          "text": "ENRICHMENT",
+          "description": "Medium that enriches for specific organisms"
+        },
+        {
+          "text": "MINIMAL",
+          "description": "Medium with minimal nutrients required for growth"
+        }
+      ]
+    },
+    {
+      "name": "PhysicalStateEnum",
+      "definition_uri": "https://w3id.org/culturemech/PhysicalStateEnum",
+      "description": "Physical form of the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "LIQUID",
+          "description": "Liquid broth medium"
+        },
+        {
+          "text": "SOLID_AGAR",
+          "description": "Solidified with agar"
+        },
+        {
+          "text": "SEMISOLID",
+          "description": "Reduced agar concentration for motility testing"
+        },
+        {
+          "text": "BIPHASIC",
+          "description": "Both liquid and solid phases"
+        }
+      ]
+    },
+    {
+      "name": "ConcentrationUnitEnum",
+      "definition_uri": "https://w3id.org/culturemech/ConcentrationUnitEnum",
+      "description": "Units for concentration",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "G_PER_L",
+          "description": "grams per liter",
+          "meaning": "UO:0000175"
+        },
+        {
+          "text": "MG_PER_L",
+          "description": "milligrams per liter"
+        },
+        {
+          "text": "MICROG_PER_L",
+          "description": "micrograms per liter"
+        },
+        {
+          "text": "MOLAR",
+          "description": "moles per liter",
+          "meaning": "UO:0000062"
+        },
+        {
+          "text": "MILLIMOLAR",
+          "description": "millimoles per liter"
+        },
+        {
+          "text": "MICROMOLAR",
+          "description": "micromoles per liter"
+        },
+        {
+          "text": "PERCENT_W_V",
+          "description": "percent weight per volume"
+        },
+        {
+          "text": "PERCENT_V_V",
+          "description": "percent volume per volume"
+        },
+        {
+          "text": "VARIABLE",
+          "description": "variable or unspecified concentration"
+        }
+      ]
+    },
+    {
+      "name": "TemperatureUnitEnum",
+      "definition_uri": "https://w3id.org/culturemech/TemperatureUnitEnum",
+      "description": "Units for temperature",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "CELSIUS",
+          "description": "Degrees Celsius",
+          "meaning": "UO:0000027"
+        },
+        {
+          "text": "FAHRENHEIT",
+          "description": "Degrees Fahrenheit"
+        },
+        {
+          "text": "KELVIN",
+          "description": "Kelvin",
+          "meaning": "UO:0000012"
+        }
+      ]
+    },
+    {
+      "name": "AtmosphereEnum",
+      "definition_uri": "https://w3id.org/culturemech/AtmosphereEnum",
+      "description": "Atmospheric conditions for incubation",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "AEROBIC",
+          "description": "Oxygen-rich atmosphere"
+        },
+        {
+          "text": "ANAEROBIC",
+          "description": "Oxygen-free atmosphere"
+        },
+        {
+          "text": "MICROAEROPHILIC",
+          "description": "Low oxygen atmosphere (typically 2-10% O2)"
+        }
+      ]
+    },
+    {
+      "name": "PreparationActionEnum",
+      "definition_uri": "https://w3id.org/culturemech/PreparationActionEnum",
+      "description": "Controlled vocabulary for preparation steps",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "DISSOLVE",
+          "description": "Dissolve ingredients in solvent"
+        },
+        {
+          "text": "MIX",
+          "description": "Mix or stir components"
+        },
+        {
+          "text": "HEAT",
+          "description": "Apply heat"
+        },
+        {
+          "text": "COOL",
+          "description": "Cool to specified temperature"
+        },
+        {
+          "text": "AUTOCLAVE",
+          "description": "Steam sterilization under pressure"
+        },
+        {
+          "text": "FILTER_STERILIZE",
+          "description": "Filter through 0.22 \u03bcm membrane"
+        },
+        {
+          "text": "ADJUST_PH",
+          "description": "Adjust pH with acid or base"
+        },
+        {
+          "text": "ADD_AGAR",
+          "description": "Add agar for solidification"
+        },
+        {
+          "text": "POUR_PLATES",
+          "description": "Dispense into petri dishes"
+        },
+        {
+          "text": "ALIQUOT",
+          "description": "Divide into smaller portions"
+        },
+        {
+          "text": "STORE",
+          "description": "Store under specified conditions"
+        }
+      ]
+    },
+    {
+      "name": "SterilizationMethodEnum",
+      "definition_uri": "https://w3id.org/culturemech/SterilizationMethodEnum",
+      "description": "Sterilization techniques",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "AUTOCLAVE",
+          "description": "Steam sterilization under pressure (121\u00b0C, 15 psi, 15-20 min)"
+        },
+        {
+          "text": "FILTER",
+          "description": "Filtration through 0.22 \u03bcm filter"
+        },
+        {
+          "text": "DRY_HEAT",
+          "description": "Dry heat sterilization (160-180\u00b0C)"
+        },
+        {
+          "text": "TYNDALLIZATION",
+          "description": "Intermittent sterilization for heat-sensitive media"
+        },
+        {
+          "text": "NONE",
+          "description": "No sterilization (non-sterile media)"
+        }
+      ]
+    },
+    {
+      "name": "LightConditionEnum",
+      "definition_uri": "https://w3id.org/culturemech/LightConditionEnum",
+      "description": "Light exposure requirements",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "DARK",
+          "description": "Store in complete darkness"
+        },
+        {
+          "text": "LIGHT_PROTECTED",
+          "description": "Protect from light (amber bottle or foil wrap)"
+        },
+        {
+          "text": "AMBIENT",
+          "description": "Normal laboratory lighting"
+        }
+      ]
+    },
+    {
+      "name": "ModifierEnum",
+      "definition_uri": "https://w3id.org/culturemech/ModifierEnum",
+      "description": "Modification type for variants",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "INCREASED",
+          "description": "Elevated concentration relative to base recipe"
+        },
+        {
+          "text": "DECREASED",
+          "description": "Reduced concentration relative to base recipe"
+        },
+        {
+          "text": "ABSENT",
+          "description": "Ingredient omitted in this variant"
+        }
+      ]
+    },
+    {
+      "name": "EvidenceItemSupportEnum",
+      "definition_uri": "https://w3id.org/culturemech/EvidenceItemSupportEnum",
+      "description": "Level of evidence support",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "SUPPORT",
+          "description": "Evidence supports the claim"
+        },
+        {
+          "text": "REFUTE",
+          "description": "Evidence refutes the claim"
+        },
+        {
+          "text": "PARTIAL",
+          "description": "Evidence partially supports the claim"
+        },
+        {
+          "text": "NO_EVIDENCE",
+          "description": "No evidence found"
+        },
+        {
+          "text": "WRONG_STATEMENT",
+          "description": "Statement is incorrect"
+        }
+      ]
+    },
+    {
+      "name": "CategoryEnum",
+      "definition_uri": "https://w3id.org/culturemech/CategoryEnum",
+      "description": "Organizational category for media recipes",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "bacterial",
+          "description": "Media for bacterial cultivation"
+        },
+        {
+          "text": "fungal",
+          "description": "Media for fungal cultivation"
+        },
+        {
+          "text": "archaea",
+          "description": "Media for archaeal cultivation"
+        },
+        {
+          "text": "specialized",
+          "description": "Specialized or multi-domain media"
+        },
+        {
+          "text": "algae",
+          "description": "Media for algal cultivation"
+        },
+        {
+          "text": "imported",
+          "description": "Imported from external sources (to be recategorized)"
+        }
+      ]
+    },
+    {
+      "name": "OrganismCultureTypeEnum",
+      "definition_uri": "https://w3id.org/culturemech/OrganismCultureTypeEnum",
+      "description": "Whether the medium targets a pure isolate or a mixed microbial community",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "isolate",
+          "description": "Pure culture of one or more specific strains"
+        },
+        {
+          "text": "community",
+          "description": "Mixed/consortium culture of multiple organisms"
+        }
+      ]
+    },
+    {
+      "name": "IngredientRoleEnum",
+      "definition_uri": "https://w3id.org/culturemech/IngredientRoleEnum",
+      "description": "Functional role of an ingredient in growth medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "CARBON_SOURCE",
+          "description": "Primary carbon source for metabolism"
+        },
+        {
+          "text": "NITROGEN_SOURCE",
+          "description": "Nitrogen source for biomass synthesis"
+        },
+        {
+          "text": "MINERAL",
+          "description": "Mineral nutrient (major element)"
+        },
+        {
+          "text": "TRACE_ELEMENT",
+          "description": "Trace element or micronutrient"
+        },
+        {
+          "text": "BUFFER",
+          "description": "pH buffering agent"
+        },
+        {
+          "text": "VITAMIN_SOURCE",
+          "description": "Provides vitamins or vitamin precursors"
+        },
+        {
+          "text": "SALT",
+          "description": "Salt for osmotic balance or ionic strength"
+        },
+        {
+          "text": "PROTEIN_SOURCE",
+          "description": "Complex protein source (e.g., peptone, casein)"
+        },
+        {
+          "text": "AMINO_ACID_SOURCE",
+          "description": "Provides amino acids"
+        },
+        {
+          "text": "SOLIDIFYING_AGENT",
+          "description": "Gelling agent (e.g., agar)"
+        },
+        {
+          "text": "ENERGY_SOURCE",
+          "description": "Energy source (often overlaps with carbon source)"
+        },
+        {
+          "text": "ELECTRON_ACCEPTOR",
+          "description": "Terminal electron acceptor for respiration"
+        },
+        {
+          "text": "ELECTRON_DONOR",
+          "description": "Electron donor for chemolithotrophs"
+        },
+        {
+          "text": "COFACTOR_PROVIDER",
+          "description": "Supplies essential cofactors or their precursors"
+        }
+      ]
+    },
+    {
+      "name": "CofactorCategoryEnum",
+      "definition_uri": "https://w3id.org/culturemech/CofactorCategoryEnum",
+      "description": "High-level classification of cofactor types",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "VITAMINS",
+          "description": "Vitamins and vitamin-derived cofactors"
+        },
+        {
+          "text": "METALS",
+          "description": "Metal ions and metal-containing cofactors"
+        },
+        {
+          "text": "NUCLEOTIDES",
+          "description": "Nucleotide cofactors"
+        },
+        {
+          "text": "ENERGY_TRANSFER",
+          "description": "Energy transfer and group transfer cofactors"
+        },
+        {
+          "text": "OTHER_SPECIALIZED",
+          "description": "Specialized cofactors (PQQ, F420, etc.)"
+        }
+      ]
+    },
+    {
+      "name": "CellularRoleEnum",
+      "definition_uri": "https://w3id.org/culturemech/CellularRoleEnum",
+      "description": "Functional role of organism in microbial community",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "PRIMARY_DEGRADER",
+          "description": "Primary degrader with direct substrate degradation capability (40-60% abundance)"
+        },
+        {
+          "text": "REDUCTIVE_DEGRADER",
+          "description": "Specialized degrader using reductive pathways"
+        },
+        {
+          "text": "OXIDATIVE_DEGRADER",
+          "description": "Specialized degrader using oxidative pathways"
+        },
+        {
+          "text": "BIOTRANSFORMER",
+          "description": "Converts substrates to intermediates without complete degradation"
+        },
+        {
+          "text": "SYNERGIST",
+          "description": "Provides complementary metabolic functions (15-30% abundance)"
+        },
+        {
+          "text": "BRIDGE_ORGANISM",
+          "description": "Biosynthesizes and provides essential cofactors to community"
+        },
+        {
+          "text": "ELECTRON_SHUTTLE",
+          "description": "Facilitates electron transfer between community members"
+        },
+        {
+          "text": "DETOXIFIER",
+          "description": "Handles and detoxifies metabolic intermediates"
+        },
+        {
+          "text": "COMMENSAL",
+          "description": "General commensal organism"
+        },
+        {
+          "text": "COMPETITOR",
+          "description": "Competitive organism"
+        }
+      ]
+    },
+    {
+      "name": "TransporterTypeEnum",
+      "definition_uri": "https://w3id.org/culturemech/TransporterTypeEnum",
+      "description": "Classification of membrane transporter systems",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "ABC",
+          "description": "ATP-binding cassette transporter"
+        },
+        {
+          "text": "MFS",
+          "description": "Major facilitator superfamily transporter"
+        },
+        {
+          "text": "PTS",
+          "description": "Phosphotransferase system"
+        },
+        {
+          "text": "TONB",
+          "description": "TonB-dependent receptor"
+        },
+        {
+          "text": "SYMPORTER",
+          "description": "Symporter or co-transporter"
+        },
+        {
+          "text": "ANTIPORTER",
+          "description": "Antiporter or exchanger"
+        },
+        {
+          "text": "UNIPORTER",
+          "description": "Uniporter or channel"
+        },
+        {
+          "text": "PORIN",
+          "description": "Porin or outer membrane protein"
+        },
+        {
+          "text": "SIDEROPHORE_RECEPTOR",
+          "description": "Siderophore receptor for iron uptake"
+        },
+        {
+          "text": "DEHALOGENASE",
+          "description": "Dehalogenase enzyme for halogenated compounds"
+        },
+        {
+          "text": "FLUORIDE_EXPORTER",
+          "description": "Fluoride-specific exporter"
+        }
+      ]
+    },
+    {
+      "name": "VariantTypeEnum",
+      "definition_uri": "https://w3id.org/culturemech/VariantTypeEnum",
+      "description": "Type of chemical variant relationship to parent",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "HYDRATE",
+          "description": "Hydrated form of parent chemical"
+        },
+        {
+          "text": "SALT_FORM",
+          "description": "Different salt form of parent chemical"
+        },
+        {
+          "text": "ANHYDROUS",
+          "description": "Anhydrous form of parent chemical"
+        },
+        {
+          "text": "NAMED_HYDRATE",
+          "description": "Named hydrate (monohydrate, heptahydrate, etc.)"
+        },
+        {
+          "text": "CHEMICAL_VARIANT",
+          "description": "Other chemical variant of parent"
+        }
+      ]
+    },
+    {
+      "name": "MergeReasonEnum",
+      "definition_uri": "https://w3id.org/culturemech/MergeReasonEnum",
+      "description": "Reason why recipes were merged together",
+      "from_schema": "https://w3id.org/culturemech",
+      "permissible_values": [
+        {
+          "text": "EXPLICIT_MERGE_RULE",
+          "description": "Merged due to explicit rule from MediaIngredientMech"
+        },
+        {
+          "text": "IDENTICAL_FINGERPRINT",
+          "description": "Merged due to identical ingredient fingerprints"
+        },
+        {
+          "text": "SAME_PARENT_INGREDIENTS",
+          "description": "Merged due to same parent ingredients (aggressive mode)"
+        },
+        {
+          "text": "HYDRATION_VARIANT_ONLY",
+          "description": "Merged due to only hydration differences (variant-aware mode)"
+        },
+        {
+          "text": "NO_MATCH",
+          "description": "Not merged - no matching criteria met"
+        }
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "name": "mediaRecipe__name",
+      "description": "Human-readable medium name (e.g., \"LB Broth\", \"M9 Minimal Medium\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/name",
+      "identifier": true,
+      "alias": "name",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__original_name",
+      "description": "Original name from source database before filename sanitization. May contain special characters like /, :, %, (, ), ', \", <, >, &, #, etc. This field preserves the exact name as it appears in the source database.",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/original_name",
+      "alias": "original_name",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__category",
+      "description": "Broad category for organization",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/category",
+      "alias": "category",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "CategoryEnum",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__categories",
+      "description": "All categories this recipe appears in (for cross-category merges)",
+      "comments": [
+        "Used when recipes from different categories are merged based on identical ingredients",
+        "Preserves all original category assignments"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/categories",
+      "alias": "categories",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "CategoryEnum",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__high_metal",
+      "description": "Indicates media with total metal concentration above the 90th percentile threshold (\u22651049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition.",
+      "comments": [
+        "Threshold computed from distribution of 9,599 media with detectable metal content",
+        "Useful for identifying high-metal media for metal toxicity studies or bioremediation applications"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/high_metal",
+      "alias": "high_metal",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__high_ree",
+      "description": "Indicates media with total rare earth element (REE) concentration above the 90th percentile threshold (\u22651030.48 mM). REEs include lanthanides (La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu) plus Sc and Y. Based on automated concentration analysis of ingredient composition.",
+      "comments": [
+        "Threshold computed from distribution of 9,130 media with detectable REE content",
+        "Useful for identifying specialized media for REE extraction or bioaccumulation research"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/high_ree",
+      "alias": "high_ree",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__synonyms",
+      "description": "Alternate names from merged duplicate recipes",
+      "comments": [
+        "Populated during merge process when duplicate recipes are consolidated",
+        "Tracks all non-canonical names with their source provenance"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/synonyms",
+      "alias": "synonyms",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "RecipeSynonym",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__merged_from",
+      "description": "Original recipe IDs that were merged into this record",
+      "comments": [
+        "List of recipe file IDs that were consolidated into this canonical record",
+        "{'Format': 'source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)'}"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merged_from",
+      "alias": "merged_from",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__merge_fingerprint",
+      "description": "SHA256 hash of ingredient set for deduplication tracking",
+      "comments": [
+        "Generated from sorted list of CHEBI IDs and normalized ingredient names",
+        "Includes both direct ingredients and solution compositions",
+        "Order-independent, concentration-independent"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_fingerprint",
+      "alias": "merge_fingerprint",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__chemical_fingerprint",
+      "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+      "comments": [
+        "Treats chemical variants as equivalent (CaCl2\u00b72H2O = CaCl2)",
+        "Uses parent CHEBI IDs from MediaIngredientMech hierarchy",
+        "Enables smart merging of hydrates, salt forms, and anhydrous variants",
+        "Generated only when hierarchy enrichment is available"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/chemical_fingerprint",
+      "alias": "chemical_fingerprint",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__variant_fingerprint",
+      "description": "SHA256 hash preserving variant distinctions",
+      "comments": [
+        "Keeps hydrates separate from anhydrous forms",
+        "Uses parent CHEBI + variant type (HYDRATE, ANHYDROUS, SALT_FORM, etc.)",
+        "Preserves important chemical specificity during merge",
+        "Generated only when hierarchy enrichment is available"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/variant_fingerprint",
+      "alias": "variant_fingerprint",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__fingerprint_version",
+      "description": "Version of fingerprinting algorithm used",
+      "comments": [
+        "Example \"hierarchy-chemical-v1.0\" or \"original-v1.0\"",
+        "Enables tracking algorithm changes over time",
+        "Used to determine which fingerprints are comparable"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/fingerprint_version",
+      "alias": "fingerprint_version",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__merge_metadata",
+      "description": "Metadata about merge process and quality",
+      "comments": [
+        "Provides transparency about merge decisions",
+        "Enables quality analysis and debugging",
+        "Populated during hierarchy-aware merge pipeline"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_metadata",
+      "alias": "merge_metadata",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "MergeMetadata",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__media_term",
+      "description": "Reference to authoritative media database",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/media_term",
+      "alias": "media_term",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "MediaTypeDescriptor",
+      "recommended": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__description",
+      "description": "Overview of the medium and its purpose",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/description",
+      "alias": "description",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__target_organisms",
+      "description": "Organisms for which this medium is designed",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/target_organisms",
+      "alias": "target_organisms",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "OrganismDescriptor",
+      "recommended": true,
+      "multivalued": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__organism_culture_type",
+      "description": "Whether this medium targets a pure isolate culture or a mixed microbial community",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/organism_culture_type",
+      "alias": "organism_culture_type",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "OrganismCultureTypeEnum",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__medium_type",
+      "description": "Classification of the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/medium_type",
+      "alias": "medium_type",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "MediumTypeEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__physical_state",
+      "description": "Physical form of the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/physical_state",
+      "alias": "physical_state",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "PhysicalStateEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__ph_value",
+      "description": "Target pH value",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/ph_value",
+      "alias": "ph_value",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__ph_range",
+      "description": "Acceptable pH range (e.g., \"6.8-7.2\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/ph_range",
+      "alias": "ph_range",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__light_intensity",
+      "description": "Light intensity for photosynthetic organisms (e.g., \"50 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\")",
+      "comments": [
+        "For algae and cyanobacteria cultures",
+        "{'Common units': '\u00b5E/m\u00b2/s, \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9, lux, or foot-candles'}"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/light_intensity",
+      "alias": "light_intensity",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__light_cycle",
+      "description": "Photoperiod light:dark cycle (e.g., \"16:8\", \"continuous light\", \"24:0\")",
+      "comments": [
+        "For algae and cyanobacteria cultures",
+        "{'Format': 'hours_light:hours_dark'}"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/light_cycle",
+      "alias": "light_cycle",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__light_quality",
+      "description": "Light spectrum or wavelength (e.g., \"cool white fluorescent\", \"red LED 660nm\")",
+      "comments": [
+        "For algae and cyanobacteria cultures"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/light_quality",
+      "alias": "light_quality",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__temperature_range",
+      "description": "Optimal temperature range (e.g., \"20-25\u00b0C\", \"room temperature\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/temperature_range",
+      "alias": "temperature_range",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__temperature_value",
+      "description": "Specific culture temperature in Celsius",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/temperature_value",
+      "alias": "temperature_value",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__salinity",
+      "description": "Salt concentration for marine/brackish media (e.g., \"35 ppt\", \"3.5%\")",
+      "comments": [
+        "For marine algae and halophilic organisms"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/salinity",
+      "alias": "salinity",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__aeration",
+      "description": "Gas exchange method (e.g., \"0.5% CO2 in air\", \"bubbling\", \"shaking at 150 rpm\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/aeration",
+      "alias": "aeration",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__culture_vessel",
+      "description": "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/culture_vessel",
+      "alias": "culture_vessel",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__ingredients",
+      "description": "Chemical and biological ingredients",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/ingredients",
+      "alias": "ingredients",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "IngredientDescriptor",
+      "required": true,
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__solutions",
+      "description": "Pre-prepared stock solutions used as ingredients",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/solutions",
+      "alias": "solutions",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "SolutionDescriptor",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__preparation_steps",
+      "description": "Ordered steps to prepare the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preparation_steps",
+      "alias": "preparation_steps",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "PreparationStep",
+      "recommended": true,
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__sterilization",
+      "description": "Sterilization method and parameters",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/sterilization",
+      "alias": "sterilization",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "SterilizationDescriptor",
+      "recommended": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__storage",
+      "description": "Storage conditions for prepared medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/storage",
+      "alias": "storage",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "StorageConditions",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__applications",
+      "description": "Use cases and applications",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/applications",
+      "alias": "applications",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__variants",
+      "description": "Related formulations or modifications",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/variants",
+      "alias": "variants",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "MediaVariant",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__references",
+      "description": "Original literature sources",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/references",
+      "alias": "references",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "PublicationReference",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__notes",
+      "description": "Additional context, historical notes, tips",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__evidence",
+      "description": "Evidence supporting formulation claims",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__datasets",
+      "description": "Omics datasets generated using this medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/datasets",
+      "alias": "datasets",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "Dataset",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__curation_history",
+      "description": "Audit trail of curation events",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/curation_history",
+      "alias": "curation_history",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "CurationEvent",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__data_quality_flags",
+      "description": "Data quality indicators for transparency",
+      "comments": [
+        "Used to mark recipes with known quality issues",
+        "{'Common values': 'incomplete_composition, pending_curation, low_confidence'}"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/data_quality_flags",
+      "alias": "data_quality_flags",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__incubation_atmosphere",
+      "description": "Atmospheric conditions for incubation",
+      "comments": [
+        "Indicates whether the organism requires aerobic, anaerobic, or microaerophilic conditions",
+        "Imported from CommunityMech when available"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/incubation_atmosphere",
+      "alias": "incubation_atmosphere",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "AtmosphereEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaRecipe__source_data",
+      "description": "Provenance tracking for records imported from other repositories",
+      "comments": [
+        "Records imported from CommunityMech include community IDs and evidence",
+        "Preserves bidirectional linking between repositories"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/source_data",
+      "alias": "source_data",
+      "owner": "MediaRecipe",
+      "domain_of": [
+        "MediaRecipe"
+      ],
+      "range": "SourceData",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "recipeSynonym__name",
+      "description": "Alternate recipe name (non-canonical)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/name",
+      "alias": "name",
+      "owner": "RecipeSynonym",
+      "domain_of": [
+        "RecipeSynonym"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "recipeSynonym__source",
+      "description": "Source database (KOMODO, MediaDive, TOGO, etc.)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/source",
+      "alias": "source",
+      "owner": "RecipeSynonym",
+      "domain_of": [
+        "RecipeSynonym"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "recipeSynonym__source_id",
+      "description": "Original identifier in source database",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/source_id",
+      "alias": "source_id",
+      "owner": "RecipeSynonym",
+      "domain_of": [
+        "RecipeSynonym"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "recipeSynonym__original_category",
+      "description": "Original category assignment before merge",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/original_category",
+      "alias": "original_category",
+      "owner": "RecipeSynonym",
+      "domain_of": [
+        "RecipeSynonym"
+      ],
+      "range": "CategoryEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__merge_version",
+      "description": "Version of merge pipeline used",
+      "comments": [
+        "Example \"hierarchy-v1.0\"",
+        "Enables tracking pipeline changes"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_version",
+      "alias": "merge_version",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__merge_mode",
+      "description": "Merge mode used (conservative/aggressive/variant-aware)",
+      "comments": [
+        "conservative - Only merge with explicit rules or exact match",
+        "aggressive - Merge all variants with same parent",
+        "variant-aware - Balanced approach, merge some variants"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_mode",
+      "alias": "merge_mode",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__merge_reason",
+      "description": "Why these recipes were merged together",
+      "comments": [
+        "Indicates which merge rule triggered the merge",
+        "Used for quality analysis and debugging"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_reason",
+      "alias": "merge_reason",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "MergeReasonEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__merge_confidence",
+      "description": "Confidence score for merge decision (0.0-1.0)",
+      "comments": [
+        "1.0 = Explicit merge rule (highest confidence)",
+        "0.9 = Identical fingerprint",
+        "0.8 = Same parent ingredients",
+        "0.7 = Hydration variant only"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/merge_confidence",
+      "alias": "merge_confidence",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__hierarchy_conflicts",
+      "description": "Ingredients with conflicting merge signals",
+      "comments": [
+        "Used to flag potential quality issues",
+        "Example \"CaCl2 has multiple parent assignments\""
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/hierarchy_conflicts",
+      "alias": "hierarchy_conflicts",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mergeMetadata__fingerprint_mode",
+      "description": "Fingerprinting mode used (chemical/variant/original)",
+      "comments": [
+        "Indicates which fingerprint algorithm was used",
+        "Enables comparing merge results across modes"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/fingerprint_mode",
+      "alias": "fingerprint_mode",
+      "owner": "MergeMetadata",
+      "domain_of": [
+        "MergeMetadata"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "term__id",
+      "description": "Ontology identifier (CURIE)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/id",
+      "identifier": true,
+      "alias": "id",
+      "owner": "Term",
+      "domain_of": [
+        "Term"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "term__label",
+      "description": "Ontology term label",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/label",
+      "alias": "label",
+      "owner": "Term",
+      "domain_of": [
+        "Term"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaTypeDescriptor__preferred_term",
+      "description": "Medium designation in source database (e.g., \"DSMZ Medium 1\", \"LB\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "MediaTypeDescriptor",
+      "domain_of": [
+        "MediaTypeDescriptor"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaTypeDescriptor__term",
+      "description": "Authoritative media database identifier",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/term",
+      "alias": "term",
+      "owner": "MediaTypeDescriptor",
+      "domain_of": [
+        "MediaTypeDescriptor"
+      ],
+      "range": "MediaDatabaseTerm",
+      "recommended": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__preferred_term",
+      "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__term",
+      "description": "CHEBI term for the chemical entity",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/term",
+      "alias": "term",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "ChemicalEntityTerm",
+      "recommended": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__mediaingredientmech_term",
+      "description": "MediaIngredientMech identifier for this ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/mediaingredientmech_term",
+      "alias": "mediaingredientmech_term",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "MediaIngredientMechTerm",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__parent_ingredient",
+      "description": "Reference to parent chemical entity from MediaIngredientMech",
+      "comments": [
+        "Links to canonical parent in MediaIngredientMech hierarchy",
+        "Example CaCl2\u00b72H2O \u2192 parent is \"Calcium chloride\""
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/parent_ingredient",
+      "alias": "parent_ingredient",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "IngredientReference",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__variant_type",
+      "description": "Type of chemical variant",
+      "comments": [
+        "Describes relationship to parent (HYDRATE, SALT_FORM, ANHYDROUS, etc.)",
+        "Populated from MediaIngredientMech metadata"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/variant_type",
+      "alias": "variant_type",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "VariantTypeEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__concentration",
+      "description": "Amount of ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/concentration",
+      "alias": "concentration",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "ConcentrationValue",
+      "required": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__modifier",
+      "description": "Modification in variants (INCREASED, DECREASED)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/modifier",
+      "alias": "modifier",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "ModifierEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__chemical_formula",
+      "description": "Molecular formula (e.g., \"C6H12O6\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/chemical_formula",
+      "alias": "chemical_formula",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__molecular_weight",
+      "description": "Molecular weight in g/mol",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/molecular_weight",
+      "alias": "molecular_weight",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__supplier_catalog",
+      "description": "Supplier information for sourcing",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/supplier_catalog",
+      "alias": "supplier_catalog",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "SupplierInfo",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__notes",
+      "description": "Preparation notes specific to this ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__role",
+      "description": "Functional role(s) in the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/role",
+      "alias": "role",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "IngredientRoleEnum",
+      "recommended": true,
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__cofactors_provided",
+      "description": "Cofactors supplied by this ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/cofactors_provided",
+      "alias": "cofactors_provided",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "CofactorDescriptor",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientDescriptor__evidence",
+      "description": "Evidence for this ingredient's role",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "IngredientDescriptor",
+      "domain_of": [
+        "IngredientDescriptor"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__preferred_term",
+      "description": "Solution name (e.g., \"Trace Metal Solution\", \"Vitamin Stock\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__term",
+      "description": "Ontology term if available",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/term",
+      "alias": "term",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "Term",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__mediaingredientmech_term",
+      "description": "MediaIngredientMech identifier for this solution component",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/mediaingredientmech_term",
+      "alias": "mediaingredientmech_term",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "MediaIngredientMechTerm",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__composition",
+      "description": "Ingredients in the stock solution",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/composition",
+      "alias": "composition",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "IngredientDescriptor",
+      "required": true,
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__concentration",
+      "description": "Working concentration when added to medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/concentration",
+      "alias": "concentration",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "ConcentrationValue",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__preparation_notes",
+      "description": "How to prepare the stock solution",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preparation_notes",
+      "alias": "preparation_notes",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__storage_conditions",
+      "description": "Storage requirements for the stock",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/storage_conditions",
+      "alias": "storage_conditions",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "StorageConditions",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "solutionDescriptor__shelf_life",
+      "description": "Stability duration (e.g., \"6 months at 4\u00b0C\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/shelf_life",
+      "alias": "shelf_life",
+      "owner": "SolutionDescriptor",
+      "domain_of": [
+        "SolutionDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__preferred_term",
+      "description": "Organism name (e.g., \"Escherichia coli\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__term",
+      "description": "NCBITaxon identifier",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/term",
+      "alias": "term",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "OrganismTerm",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__gtdb_term",
+      "description": "GTDB genome or lineage identifier (alternative to NCBITaxon)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/gtdb_term",
+      "alias": "gtdb_term",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "GTDBTerm",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__strain",
+      "description": "Specific strain designation (e.g., \"K-12\", \"MG1655\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/strain",
+      "alias": "strain",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__growth_phase",
+      "description": "Target growth phase (e.g., \"exponential\", \"stationary\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/growth_phase",
+      "alias": "growth_phase",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__community_role",
+      "description": "Functional role in microbial community",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/community_role",
+      "alias": "community_role",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "CellularRoleEnum",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__target_abundance",
+      "description": "Target relative abundance in community (0.0-1.0)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/target_abundance",
+      "alias": "target_abundance",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__community_function",
+      "description": "Specific functional contribution to community",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/community_function",
+      "alias": "community_function",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__cofactor_requirements",
+      "description": "Cofactors required by this organism",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/cofactor_requirements",
+      "alias": "cofactor_requirements",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "CofactorRequirement",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__transporters",
+      "description": "Annotated transport systems",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/transporters",
+      "alias": "transporters",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "TransporterAnnotation",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "organismDescriptor__evidence",
+      "description": "Evidence supporting growth on this medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "OrganismDescriptor",
+      "domain_of": [
+        "OrganismDescriptor"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__preferred_term",
+      "description": "Human-readable cofactor name (e.g., \"Thiamine pyrophosphate\", \"NAD\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__term",
+      "description": "CHEBI term for the cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/term",
+      "alias": "term",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "ChemicalEntityTerm",
+      "recommended": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__category",
+      "description": "High-level classification",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/category",
+      "alias": "category",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "CofactorCategoryEnum",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__precursor",
+      "description": "Precursor molecule (e.g., thiamine \u2192 TPP)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/precursor",
+      "alias": "precursor",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__precursor_term",
+      "description": "CHEBI term for precursor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/precursor_term",
+      "alias": "precursor_term",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "ChemicalEntityTerm",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__ec_associations",
+      "description": "EC numbers of enzymes using this cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/ec_associations",
+      "alias": "ec_associations",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__kegg_pathways",
+      "description": "KEGG pathway IDs for biosynthesis",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/kegg_pathways",
+      "alias": "kegg_pathways",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__enzyme_examples",
+      "description": "Example enzymes requiring this cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/enzyme_examples",
+      "alias": "enzyme_examples",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__biosynthesis_genes",
+      "description": "Genes involved in cofactor biosynthesis",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/biosynthesis_genes",
+      "alias": "biosynthesis_genes",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__bioavailability",
+      "description": "Uptake and availability characteristics",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/bioavailability",
+      "alias": "bioavailability",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorDescriptor__notes",
+      "description": "Additional information about the cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "CofactorDescriptor",
+      "domain_of": [
+        "CofactorDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientReference__preferred_term",
+      "description": "Name of parent ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/preferred_term",
+      "alias": "preferred_term",
+      "owner": "IngredientReference",
+      "domain_of": [
+        "IngredientReference"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ingredientReference__mediaingredientmech_id",
+      "description": "MediaIngredientMech ID",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/mediaingredientmech_id",
+      "alias": "mediaingredientmech_id",
+      "owner": "IngredientReference",
+      "domain_of": [
+        "IngredientReference"
+      ],
+      "range": "string",
+      "pattern": "^MediaIngredientMech:\\d{6}$",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "concentrationValue__value",
+      "description": "Numeric value or range",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/value",
+      "alias": "value",
+      "owner": "ConcentrationValue",
+      "domain_of": [
+        "ConcentrationValue"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "concentrationValue__unit",
+      "description": "Concentration unit",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/unit",
+      "alias": "unit",
+      "owner": "ConcentrationValue",
+      "domain_of": [
+        "ConcentrationValue"
+      ],
+      "range": "ConcentrationUnitEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "concentrationValue__per_volume",
+      "description": "Volume basis (e.g., \"per liter\", \"per 100 mL\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/per_volume",
+      "alias": "per_volume",
+      "owner": "ConcentrationValue",
+      "domain_of": [
+        "ConcentrationValue"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "temperatureValue__value",
+      "description": "Numeric temperature value",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/value",
+      "alias": "value",
+      "owner": "TemperatureValue",
+      "domain_of": [
+        "TemperatureValue"
+      ],
+      "range": "float",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "temperatureValue__unit",
+      "description": "Temperature unit",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/unit",
+      "alias": "unit",
+      "owner": "TemperatureValue",
+      "domain_of": [
+        "TemperatureValue"
+      ],
+      "range": "TemperatureUnitEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__step_number",
+      "description": "Sequential order",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/step_number",
+      "alias": "step_number",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "integer",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__action",
+      "description": "Action type",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/action",
+      "alias": "action",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "PreparationActionEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__description",
+      "description": "Detailed instruction",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/description",
+      "alias": "description",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__temperature",
+      "description": "Temperature for this step",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/temperature",
+      "alias": "temperature",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "TemperatureValue",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__duration",
+      "description": "Time duration (e.g., \"15 minutes\", \"overnight\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/duration",
+      "alias": "duration",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__equipment",
+      "description": "Required equipment (e.g., \"autoclave\", \"magnetic stirrer\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/equipment",
+      "alias": "equipment",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "preparationStep__notes",
+      "description": "Additional tips or warnings",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "PreparationStep",
+      "domain_of": [
+        "PreparationStep"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sterilizationDescriptor__method",
+      "description": "Sterilization technique",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/method",
+      "alias": "method",
+      "owner": "SterilizationDescriptor",
+      "domain_of": [
+        "SterilizationDescriptor"
+      ],
+      "range": "SterilizationMethodEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sterilizationDescriptor__temperature",
+      "description": "Temperature setting",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/temperature",
+      "alias": "temperature",
+      "owner": "SterilizationDescriptor",
+      "domain_of": [
+        "SterilizationDescriptor"
+      ],
+      "range": "TemperatureValue",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sterilizationDescriptor__pressure",
+      "description": "Pressure in psi or kPa (for autoclaving)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/pressure",
+      "alias": "pressure",
+      "owner": "SterilizationDescriptor",
+      "domain_of": [
+        "SterilizationDescriptor"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sterilizationDescriptor__duration",
+      "description": "Sterilization duration",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/duration",
+      "alias": "duration",
+      "owner": "SterilizationDescriptor",
+      "domain_of": [
+        "SterilizationDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sterilizationDescriptor__notes",
+      "description": "Special instructions (e.g., \"Filter-sterilize heat-labile components separately\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "SterilizationDescriptor",
+      "domain_of": [
+        "SterilizationDescriptor"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "storageConditions__temperature",
+      "description": "Storage temperature",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/temperature",
+      "alias": "temperature",
+      "owner": "StorageConditions",
+      "domain_of": [
+        "StorageConditions"
+      ],
+      "range": "TemperatureValue",
+      "required": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "storageConditions__light_condition",
+      "description": "Light exposure requirement",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/light_condition",
+      "alias": "light_condition",
+      "owner": "StorageConditions",
+      "domain_of": [
+        "StorageConditions"
+      ],
+      "range": "LightConditionEnum",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "storageConditions__shelf_life",
+      "description": "Duration of stability",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/shelf_life",
+      "alias": "shelf_life",
+      "owner": "StorageConditions",
+      "domain_of": [
+        "StorageConditions"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "storageConditions__container_type",
+      "description": "Recommended container (e.g., \"glass bottle\", \"polypropylene tube\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/container_type",
+      "alias": "container_type",
+      "owner": "StorageConditions",
+      "domain_of": [
+        "StorageConditions"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "storageConditions__notes",
+      "description": "Additional storage tips",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "StorageConditions",
+      "domain_of": [
+        "StorageConditions"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__name",
+      "description": "Variant name (e.g., \"Low Salt LB\", \"LB + Ampicillin\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/name",
+      "alias": "name",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__description",
+      "description": "Purpose and context",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/description",
+      "alias": "description",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__modifications",
+      "description": "What differs from base recipe",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/modifications",
+      "alias": "modifications",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__purpose",
+      "description": "Why this variant exists",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/purpose",
+      "alias": "purpose",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__supplier_info",
+      "description": "Commercial supplier if premix",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/supplier_info",
+      "alias": "supplier_info",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "SupplierInfo",
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "mediaVariant__evidence",
+      "description": "Evidence supporting the variant",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "MediaVariant",
+      "domain_of": [
+        "MediaVariant"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "supplierInfo__supplier_name",
+      "description": "Vendor name (e.g., \"Sigma-Aldrich\", \"Thermo Fisher\")",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/supplier_name",
+      "alias": "supplier_name",
+      "owner": "SupplierInfo",
+      "domain_of": [
+        "SupplierInfo"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "supplierInfo__catalog_number",
+      "description": "Product catalog number",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/catalog_number",
+      "alias": "catalog_number",
+      "owner": "SupplierInfo",
+      "domain_of": [
+        "SupplierInfo"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "supplierInfo__product_url",
+      "description": "Direct product link",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/product_url",
+      "alias": "product_url",
+      "owner": "SupplierInfo",
+      "domain_of": [
+        "SupplierInfo"
+      ],
+      "range": "uri",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "supplierInfo__notes",
+      "description": "Additional sourcing notes",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "SupplierInfo",
+      "domain_of": [
+        "SupplierInfo"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "publicationReference__reference",
+      "implements": [
+        "linkml:authoritative_reference"
+      ],
+      "description": "Citation (PMID, DOI, or historical reference)",
+      "comments": [
+        "Use format PMID:12345678 or doi:10.1038/... for automatic validation."
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/reference",
+      "alias": "reference",
+      "owner": "PublicationReference",
+      "domain_of": [
+        "PublicationReference"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "publicationReference__title",
+      "description": "Publication title",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/title",
+      "alias": "title",
+      "owner": "PublicationReference",
+      "domain_of": [
+        "PublicationReference"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "publicationReference__authors",
+      "description": "Author list",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/authors",
+      "alias": "authors",
+      "owner": "PublicationReference",
+      "domain_of": [
+        "PublicationReference"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "publicationReference__year",
+      "description": "Publication year",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/year",
+      "alias": "year",
+      "owner": "PublicationReference",
+      "domain_of": [
+        "PublicationReference"
+      ],
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "publicationReference__notes",
+      "description": "Additional context about the reference",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "PublicationReference",
+      "domain_of": [
+        "PublicationReference"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "evidenceItem__reference",
+      "implements": [
+        "linkml:authoritative_reference"
+      ],
+      "description": "Citation (PMID, DOI, or historical reference)",
+      "comments": [
+        "This is automatically validated by the linkml-reference-validator tool.",
+        "Use format PMID:12345678 or doi:10.1038/... for automatic validation."
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/reference",
+      "alias": "reference",
+      "owner": "EvidenceItem",
+      "domain_of": [
+        "EvidenceItem"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "evidenceItem__supports",
+      "description": "Level of support",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/supports",
+      "alias": "supports",
+      "owner": "EvidenceItem",
+      "domain_of": [
+        "EvidenceItem"
+      ],
+      "range": "EvidenceItemSupportEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "evidenceItem__snippet",
+      "implements": [
+        "linkml:excerpt"
+      ],
+      "description": "Exact quote from paper (if PMID/DOI available)",
+      "comments": [
+        "This is automatically validated by the linkml-reference-validator tool.",
+        "Must be an exact substring of the cited paper's text."
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/snippet",
+      "alias": "snippet",
+      "owner": "EvidenceItem",
+      "domain_of": [
+        "EvidenceItem"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "evidenceItem__explanation",
+      "description": "Why this evidence supports the claim",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/explanation",
+      "alias": "explanation",
+      "owner": "EvidenceItem",
+      "domain_of": [
+        "EvidenceItem"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dataset__dataset_id",
+      "description": "Dataset identifier (GEO, SRA, etc.)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/dataset_id",
+      "alias": "dataset_id",
+      "owner": "Dataset",
+      "domain_of": [
+        "Dataset"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dataset__dataset_type",
+      "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/dataset_type",
+      "alias": "dataset_type",
+      "owner": "Dataset",
+      "domain_of": [
+        "Dataset"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dataset__description",
+      "description": "Brief description of the dataset",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/description",
+      "alias": "description",
+      "owner": "Dataset",
+      "domain_of": [
+        "Dataset"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "dataset__url",
+      "description": "Direct link to dataset",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/url",
+      "alias": "url",
+      "owner": "Dataset",
+      "domain_of": [
+        "Dataset"
+      ],
+      "range": "uri",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "curationEvent__timestamp",
+      "description": "ISO 8601 timestamp",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/timestamp",
+      "alias": "timestamp",
+      "owner": "CurationEvent",
+      "domain_of": [
+        "CurationEvent"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "curationEvent__curator",
+      "description": "Name or identifier of curator",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/curator",
+      "alias": "curator",
+      "owner": "CurationEvent",
+      "domain_of": [
+        "CurationEvent"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "curationEvent__action",
+      "description": "Action taken (created, updated, validated, etc.)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/action",
+      "alias": "action",
+      "owner": "CurationEvent",
+      "domain_of": [
+        "CurationEvent"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "curationEvent__notes",
+      "description": "Additional context",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "CurationEvent",
+      "domain_of": [
+        "CurationEvent"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sourceData__origin",
+      "description": "Source repository name",
+      "comments": [
+        "Indicates which X-Mech repository this record was imported from"
+      ],
+      "examples": [
+        {
+          "value": "CommunityMech",
+          "@type": "Example"
+        }
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/origin",
+      "alias": "origin",
+      "owner": "SourceData",
+      "domain_of": [
+        "SourceData"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sourceData__community_ids",
+      "description": "List of CommunityMech IDs this recipe was derived from",
+      "comments": [
+        "Enables bidirectional linking from CultureMech to CommunityMech",
+        "Format CommunityMech:NNNNNN"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/community_ids",
+      "alias": "community_ids",
+      "owner": "SourceData",
+      "domain_of": [
+        "SourceData"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sourceData__import_date",
+      "description": "Date of import (ISO 8601)",
+      "comments": [
+        "ISO 8601 date format YYYY-MM-DD"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/import_date",
+      "alias": "import_date",
+      "owner": "SourceData",
+      "domain_of": [
+        "SourceData"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sourceData__evidence",
+      "description": "Evidence records from source repository",
+      "comments": [
+        "Preserves evidence from original CommunityMech record",
+        "Maintains literature references and provenance"
+      ],
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "SourceData",
+      "domain_of": [
+        "SourceData"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sourceData__notes",
+      "description": "Import notes and additional context",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "SourceData",
+      "domain_of": [
+        "SourceData"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorRequirement__cofactor",
+      "description": "Required cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/cofactor",
+      "alias": "cofactor",
+      "owner": "CofactorRequirement",
+      "domain_of": [
+        "CofactorRequirement"
+      ],
+      "range": "CofactorDescriptor",
+      "required": true,
+      "inlined": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorRequirement__can_biosynthesize",
+      "description": "Whether organism can synthesize this cofactor",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/can_biosynthesize",
+      "alias": "can_biosynthesize",
+      "owner": "CofactorRequirement",
+      "domain_of": [
+        "CofactorRequirement"
+      ],
+      "range": "boolean",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorRequirement__confidence",
+      "description": "Confidence level (0.0-1.0) based on genome annotation",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/confidence",
+      "alias": "confidence",
+      "owner": "CofactorRequirement",
+      "domain_of": [
+        "CofactorRequirement"
+      ],
+      "range": "float",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorRequirement__evidence",
+      "description": "Supporting evidence for requirement",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/evidence",
+      "alias": "evidence",
+      "owner": "CofactorRequirement",
+      "domain_of": [
+        "CofactorRequirement"
+      ],
+      "range": "EvidenceItem",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cofactorRequirement__genes",
+      "description": "Genes related to biosynthesis or utilization",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/genes",
+      "alias": "genes",
+      "owner": "CofactorRequirement",
+      "domain_of": [
+        "CofactorRequirement"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__name",
+      "description": "Transporter name or gene name",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/name",
+      "alias": "name",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__transporter_type",
+      "description": "Classification of transporter",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/transporter_type",
+      "alias": "transporter_type",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "TransporterTypeEnum",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__substrates",
+      "description": "Transported substrates",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/substrates",
+      "alias": "substrates",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__substrate_terms",
+      "description": "CHEBI terms for substrates",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/substrate_terms",
+      "alias": "substrate_terms",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "ChemicalEntityTerm",
+      "multivalued": true,
+      "inlined": true,
+      "inlined_as_list": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__direction",
+      "description": "Transport direction (import, export, bidirectional)",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/direction",
+      "alias": "direction",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__genes",
+      "description": "Gene names or locus tags",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/genes",
+      "alias": "genes",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "multivalued": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__ec_number",
+      "description": "EC number if enzymatic",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/ec_number",
+      "alias": "ec_number",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "transporterAnnotation__notes",
+      "description": "Additional functional notes",
+      "from_schema": "https://w3id.org/culturemech",
+      "slot_uri": "https://w3id.org/culturemech/notes",
+      "alias": "notes",
+      "owner": "TransporterAnnotation",
+      "domain_of": [
+        "TransporterAnnotation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ChemicalEntityTerm_id",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "term__id",
+      "domain": "ChemicalEntityTerm",
+      "slot_uri": "https://w3id.org/culturemech/id",
+      "identifier": true,
+      "alias": "id",
+      "owner": "ChemicalEntityTerm",
+      "domain_of": [
+        "ChemicalEntityTerm"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "pattern": "^CHEBI:\\d+$",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "OrganismTerm_id",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "term__id",
+      "domain": "OrganismTerm",
+      "slot_uri": "https://w3id.org/culturemech/id",
+      "identifier": true,
+      "alias": "id",
+      "owner": "OrganismTerm",
+      "domain_of": [
+        "OrganismTerm"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "pattern": "^NCBITaxon:\\d+$",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "MediaIngredientMechTerm_id",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "term__id",
+      "domain": "MediaIngredientMechTerm",
+      "slot_uri": "https://w3id.org/culturemech/id",
+      "identifier": true,
+      "alias": "id",
+      "owner": "MediaIngredientMechTerm",
+      "domain_of": [
+        "MediaIngredientMechTerm"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "id",
+      "range": "string",
+      "required": true,
+      "pattern": "^MediaIngredientMech:\\d{6}$",
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "MediaRecipe",
+      "definition_uri": "https://w3id.org/culturemech/MediaRecipe",
+      "description": "A complete growth medium formulation for culturing microorganisms. This is the root entity - one per YAML file.",
+      "from_schema": "https://w3id.org/culturemech",
+      "mappings": [
+        "culturemech:MediaRecipe"
+      ],
+      "slots": [
+        "mediaRecipe__name",
+        "mediaRecipe__original_name",
+        "mediaRecipe__category",
+        "mediaRecipe__categories",
+        "mediaRecipe__high_metal",
+        "mediaRecipe__high_ree",
+        "mediaRecipe__synonyms",
+        "mediaRecipe__merged_from",
+        "mediaRecipe__merge_fingerprint",
+        "mediaRecipe__chemical_fingerprint",
+        "mediaRecipe__variant_fingerprint",
+        "mediaRecipe__fingerprint_version",
+        "mediaRecipe__merge_metadata",
+        "mediaRecipe__media_term",
+        "mediaRecipe__description",
+        "mediaRecipe__target_organisms",
+        "mediaRecipe__organism_culture_type",
+        "mediaRecipe__medium_type",
+        "mediaRecipe__physical_state",
+        "mediaRecipe__ph_value",
+        "mediaRecipe__ph_range",
+        "mediaRecipe__light_intensity",
+        "mediaRecipe__light_cycle",
+        "mediaRecipe__light_quality",
+        "mediaRecipe__temperature_range",
+        "mediaRecipe__temperature_value",
+        "mediaRecipe__salinity",
+        "mediaRecipe__aeration",
+        "mediaRecipe__culture_vessel",
+        "mediaRecipe__ingredients",
+        "mediaRecipe__solutions",
+        "mediaRecipe__preparation_steps",
+        "mediaRecipe__sterilization",
+        "mediaRecipe__storage",
+        "mediaRecipe__applications",
+        "mediaRecipe__variants",
+        "mediaRecipe__references",
+        "mediaRecipe__notes",
+        "mediaRecipe__evidence",
+        "mediaRecipe__datasets",
+        "mediaRecipe__curation_history",
+        "mediaRecipe__data_quality_flags",
+        "mediaRecipe__incubation_atmosphere",
+        "mediaRecipe__source_data"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Human-readable medium name (e.g., \"LB Broth\", \"M9 Minimal Medium\")",
+          "identifier": true,
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "original_name",
+          "description": "Original name from source database before filename sanitization. May contain special characters like /, :, %, (, ), ', \", <, >, &, #, etc. This field preserves the exact name as it appears in the source database.",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "category",
+          "description": "Broad category for organization",
+          "range": "CategoryEnum",
+          "recommended": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "categories",
+          "description": "All categories this recipe appears in (for cross-category merges)",
+          "comments": [
+            "Used when recipes from different categories are merged based on identical ingredients",
+            "Preserves all original category assignments"
+          ],
+          "range": "CategoryEnum",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "high_metal",
+          "description": "Indicates media with total metal concentration above the 90th percentile threshold (\u22651049.84 mM). Metals include Fe, Cu, Zn, Mn, Co, Ni, Mo, Se, W, V, Cr, Ca, Mg, K, Na. Based on automated concentration analysis of ingredient composition.",
+          "comments": [
+            "Threshold computed from distribution of 9,599 media with detectable metal content",
+            "Useful for identifying high-metal media for metal toxicity studies or bioremediation applications"
+          ],
+          "range": "boolean",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "high_ree",
+          "description": "Indicates media with total rare earth element (REE) concentration above the 90th percentile threshold (\u22651030.48 mM). REEs include lanthanides (La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu) plus Sc and Y. Based on automated concentration analysis of ingredient composition.",
+          "comments": [
+            "Threshold computed from distribution of 9,130 media with detectable REE content",
+            "Useful for identifying specialized media for REE extraction or bioaccumulation research"
+          ],
+          "range": "boolean",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "synonyms",
+          "description": "Alternate names from merged duplicate recipes",
+          "comments": [
+            "Populated during merge process when duplicate recipes are consolidated",
+            "Tracks all non-canonical names with their source provenance"
+          ],
+          "range": "RecipeSynonym",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merged_from",
+          "description": "Original recipe IDs that were merged into this record",
+          "comments": [
+            "List of recipe file IDs that were consolidated into this canonical record",
+            "{'Format': 'source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)'}"
+          ],
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merge_fingerprint",
+          "description": "SHA256 hash of ingredient set for deduplication tracking",
+          "comments": [
+            "Generated from sorted list of CHEBI IDs and normalized ingredient names",
+            "Includes both direct ingredients and solution compositions",
+            "Order-independent, concentration-independent"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "chemical_fingerprint",
+          "description": "SHA256 hash using parent ingredients (hierarchy-aware)",
+          "comments": [
+            "Treats chemical variants as equivalent (CaCl2\u00b72H2O = CaCl2)",
+            "Uses parent CHEBI IDs from MediaIngredientMech hierarchy",
+            "Enables smart merging of hydrates, salt forms, and anhydrous variants",
+            "Generated only when hierarchy enrichment is available"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "variant_fingerprint",
+          "description": "SHA256 hash preserving variant distinctions",
+          "comments": [
+            "Keeps hydrates separate from anhydrous forms",
+            "Uses parent CHEBI + variant type (HYDRATE, ANHYDROUS, SALT_FORM, etc.)",
+            "Preserves important chemical specificity during merge",
+            "Generated only when hierarchy enrichment is available"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "fingerprint_version",
+          "description": "Version of fingerprinting algorithm used",
+          "comments": [
+            "Example \"hierarchy-chemical-v1.0\" or \"original-v1.0\"",
+            "Enables tracking algorithm changes over time",
+            "Used to determine which fingerprints are comparable"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merge_metadata",
+          "description": "Metadata about merge process and quality",
+          "comments": [
+            "Provides transparency about merge decisions",
+            "Enables quality analysis and debugging",
+            "Populated during hierarchy-aware merge pipeline"
+          ],
+          "range": "MergeMetadata",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "media_term",
+          "description": "Reference to authoritative media database",
+          "range": "MediaTypeDescriptor",
+          "recommended": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "description",
+          "description": "Overview of the medium and its purpose",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "target_organisms",
+          "description": "Organisms for which this medium is designed",
+          "range": "OrganismDescriptor",
+          "recommended": true,
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "organism_culture_type",
+          "description": "Whether this medium targets a pure isolate culture or a mixed microbial community",
+          "range": "OrganismCultureTypeEnum",
+          "recommended": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "medium_type",
+          "description": "Classification of the medium",
+          "range": "MediumTypeEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "physical_state",
+          "description": "Physical form of the medium",
+          "range": "PhysicalStateEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "ph_value",
+          "description": "Target pH value",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "ph_range",
+          "description": "Acceptable pH range (e.g., \"6.8-7.2\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "light_intensity",
+          "description": "Light intensity for photosynthetic organisms (e.g., \"50 \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9\")",
+          "comments": [
+            "For algae and cyanobacteria cultures",
+            "{'Common units': '\u00b5E/m\u00b2/s, \u00b5mol photons m\u207b\u00b2 s\u207b\u00b9, lux, or foot-candles'}"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "light_cycle",
+          "description": "Photoperiod light:dark cycle (e.g., \"16:8\", \"continuous light\", \"24:0\")",
+          "comments": [
+            "For algae and cyanobacteria cultures",
+            "{'Format': 'hours_light:hours_dark'}"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "light_quality",
+          "description": "Light spectrum or wavelength (e.g., \"cool white fluorescent\", \"red LED 660nm\")",
+          "comments": [
+            "For algae and cyanobacteria cultures"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "temperature_range",
+          "description": "Optimal temperature range (e.g., \"20-25\u00b0C\", \"room temperature\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "temperature_value",
+          "description": "Specific culture temperature in Celsius",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "salinity",
+          "description": "Salt concentration for marine/brackish media (e.g., \"35 ppt\", \"3.5%\")",
+          "comments": [
+            "For marine algae and halophilic organisms"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "aeration",
+          "description": "Gas exchange method (e.g., \"0.5% CO2 in air\", \"bubbling\", \"shaking at 150 rpm\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "culture_vessel",
+          "description": "Recommended culture container (e.g., \"Erlenmeyer flask\", \"test tube\", \"petri dish\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "ingredients",
+          "description": "Chemical and biological ingredients",
+          "range": "IngredientDescriptor",
+          "required": true,
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "solutions",
+          "description": "Pre-prepared stock solutions used as ingredients",
+          "range": "SolutionDescriptor",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "preparation_steps",
+          "description": "Ordered steps to prepare the medium",
+          "range": "PreparationStep",
+          "recommended": true,
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "sterilization",
+          "description": "Sterilization method and parameters",
+          "range": "SterilizationDescriptor",
+          "recommended": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "storage",
+          "description": "Storage conditions for prepared medium",
+          "range": "StorageConditions",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "applications",
+          "description": "Use cases and applications",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "variants",
+          "description": "Related formulations or modifications",
+          "range": "MediaVariant",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "references",
+          "description": "Original literature sources",
+          "range": "PublicationReference",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional context, historical notes, tips",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Evidence supporting formulation claims",
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "datasets",
+          "description": "Omics datasets generated using this medium",
+          "range": "Dataset",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "curation_history",
+          "description": "Audit trail of curation events",
+          "range": "CurationEvent",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "data_quality_flags",
+          "description": "Data quality indicators for transparency",
+          "comments": [
+            "Used to mark recipes with known quality issues",
+            "{'Common values': 'incomplete_composition, pending_curation, low_confidence'}"
+          ],
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "incubation_atmosphere",
+          "description": "Atmospheric conditions for incubation",
+          "comments": [
+            "Indicates whether the organism requires aerobic, anaerobic, or microaerophilic conditions",
+            "Imported from CommunityMech when available"
+          ],
+          "range": "AtmosphereEnum",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "source_data",
+          "description": "Provenance tracking for records imported from other repositories",
+          "comments": [
+            "Records imported from CommunityMech include community IDs and evidence",
+            "Preserves bidirectional linking between repositories"
+          ],
+          "range": "SourceData",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/MediaRecipe",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "RecipeSynonym",
+      "definition_uri": "https://w3id.org/culturemech/RecipeSynonym",
+      "description": "An alternate name for a recipe from a specific source",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "recipeSynonym__name",
+        "recipeSynonym__source",
+        "recipeSynonym__source_id",
+        "recipeSynonym__original_category"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Alternate recipe name (non-canonical)",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "source",
+          "description": "Source database (KOMODO, MediaDive, TOGO, etc.)",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "source_id",
+          "description": "Original identifier in source database",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "original_category",
+          "description": "Original category assignment before merge",
+          "range": "CategoryEnum",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/RecipeSynonym",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MergeMetadata",
+      "definition_uri": "https://w3id.org/culturemech/MergeMetadata",
+      "description": "Metadata about merge process and quality",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "mergeMetadata__merge_version",
+        "mergeMetadata__merge_mode",
+        "mergeMetadata__merge_reason",
+        "mergeMetadata__merge_confidence",
+        "mergeMetadata__hierarchy_conflicts",
+        "mergeMetadata__fingerprint_mode"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "merge_version",
+          "description": "Version of merge pipeline used",
+          "comments": [
+            "Example \"hierarchy-v1.0\"",
+            "Enables tracking pipeline changes"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merge_mode",
+          "description": "Merge mode used (conservative/aggressive/variant-aware)",
+          "comments": [
+            "conservative - Only merge with explicit rules or exact match",
+            "aggressive - Merge all variants with same parent",
+            "variant-aware - Balanced approach, merge some variants"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merge_reason",
+          "description": "Why these recipes were merged together",
+          "comments": [
+            "Indicates which merge rule triggered the merge",
+            "Used for quality analysis and debugging"
+          ],
+          "range": "MergeReasonEnum",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "merge_confidence",
+          "description": "Confidence score for merge decision (0.0-1.0)",
+          "comments": [
+            "1.0 = Explicit merge rule (highest confidence)",
+            "0.9 = Identical fingerprint",
+            "0.8 = Same parent ingredients",
+            "0.7 = Hydration variant only"
+          ],
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "hierarchy_conflicts",
+          "description": "Ingredients with conflicting merge signals",
+          "comments": [
+            "Used to flag potential quality issues",
+            "Example \"CaCl2 has multiple parent assignments\""
+          ],
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "fingerprint_mode",
+          "description": "Fingerprinting mode used (chemical/variant/original)",
+          "comments": [
+            "Indicates which fingerprint algorithm was used",
+            "Enables comparing merge results across modes"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/MergeMetadata",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Descriptor",
+      "definition_uri": "https://w3id.org/culturemech/Descriptor",
+      "description": "Base class for descriptor pattern. Descriptors have a human-readable preferred_term and optional ontology term.",
+      "from_schema": "https://w3id.org/culturemech",
+      "abstract": true,
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/Descriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Term",
+      "definition_uri": "https://w3id.org/culturemech/Term",
+      "description": "Base class for ontology term references. Subclasses specify id_prefixes for validation.",
+      "from_schema": "https://w3id.org/culturemech",
+      "abstract": true,
+      "slots": [
+        "term__id",
+        "term__label"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Ontology identifier (CURIE)",
+          "identifier": true,
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "label",
+          "description": "Ontology term label",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/Term",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MediaTypeDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/MediaTypeDescriptor",
+      "description": "Classification and authoritative database reference for the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Descriptor",
+      "slots": [
+        "mediaTypeDescriptor__preferred_term",
+        "mediaTypeDescriptor__term"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Medium designation in source database (e.g., \"DSMZ Medium 1\", \"LB\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "term",
+          "description": "Authoritative media database identifier",
+          "range": "MediaDatabaseTerm",
+          "recommended": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/MediaTypeDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IngredientDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/IngredientDescriptor",
+      "description": "Chemical or biological ingredient in a medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Descriptor",
+      "slots": [
+        "ingredientDescriptor__preferred_term",
+        "ingredientDescriptor__term",
+        "ingredientDescriptor__mediaingredientmech_term",
+        "ingredientDescriptor__parent_ingredient",
+        "ingredientDescriptor__variant_type",
+        "ingredientDescriptor__concentration",
+        "ingredientDescriptor__modifier",
+        "ingredientDescriptor__chemical_formula",
+        "ingredientDescriptor__molecular_weight",
+        "ingredientDescriptor__supplier_catalog",
+        "ingredientDescriptor__notes",
+        "ingredientDescriptor__role",
+        "ingredientDescriptor__cofactors_provided",
+        "ingredientDescriptor__evidence"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Human-readable ingredient name (e.g., \"Glucose\", \"Yeast Extract\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "term",
+          "description": "CHEBI term for the chemical entity",
+          "range": "ChemicalEntityTerm",
+          "recommended": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "mediaingredientmech_term",
+          "description": "MediaIngredientMech identifier for this ingredient",
+          "range": "MediaIngredientMechTerm",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "parent_ingredient",
+          "description": "Reference to parent chemical entity from MediaIngredientMech",
+          "comments": [
+            "Links to canonical parent in MediaIngredientMech hierarchy",
+            "Example CaCl2\u00b72H2O \u2192 parent is \"Calcium chloride\""
+          ],
+          "range": "IngredientReference",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "variant_type",
+          "description": "Type of chemical variant",
+          "comments": [
+            "Describes relationship to parent (HYDRATE, SALT_FORM, ANHYDROUS, etc.)",
+            "Populated from MediaIngredientMech metadata"
+          ],
+          "range": "VariantTypeEnum",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "concentration",
+          "description": "Amount of ingredient",
+          "range": "ConcentrationValue",
+          "required": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "modifier",
+          "description": "Modification in variants (INCREASED, DECREASED)",
+          "range": "ModifierEnum",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "chemical_formula",
+          "description": "Molecular formula (e.g., \"C6H12O6\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "molecular_weight",
+          "description": "Molecular weight in g/mol",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "supplier_catalog",
+          "description": "Supplier information for sourcing",
+          "range": "SupplierInfo",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Preparation notes specific to this ingredient",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "role",
+          "description": "Functional role(s) in the medium",
+          "range": "IngredientRoleEnum",
+          "recommended": true,
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "cofactors_provided",
+          "description": "Cofactors supplied by this ingredient",
+          "range": "CofactorDescriptor",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Evidence for this ingredient's role",
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/IngredientDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SolutionDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/SolutionDescriptor",
+      "description": "A pre-prepared stock solution used as an ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Descriptor",
+      "slots": [
+        "solutionDescriptor__preferred_term",
+        "solutionDescriptor__term",
+        "solutionDescriptor__mediaingredientmech_term",
+        "solutionDescriptor__composition",
+        "solutionDescriptor__concentration",
+        "solutionDescriptor__preparation_notes",
+        "solutionDescriptor__storage_conditions",
+        "solutionDescriptor__shelf_life"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Solution name (e.g., \"Trace Metal Solution\", \"Vitamin Stock\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "term",
+          "description": "Ontology term if available",
+          "range": "Term",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "mediaingredientmech_term",
+          "description": "MediaIngredientMech identifier for this solution component",
+          "range": "MediaIngredientMechTerm",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "composition",
+          "description": "Ingredients in the stock solution",
+          "range": "IngredientDescriptor",
+          "required": true,
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "concentration",
+          "description": "Working concentration when added to medium",
+          "range": "ConcentrationValue",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "preparation_notes",
+          "description": "How to prepare the stock solution",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "storage_conditions",
+          "description": "Storage requirements for the stock",
+          "range": "StorageConditions",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "shelf_life",
+          "description": "Stability duration (e.g., \"6 months at 4\u00b0C\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/SolutionDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OrganismDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/OrganismDescriptor",
+      "description": "Target organism for the medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Descriptor",
+      "slots": [
+        "organismDescriptor__preferred_term",
+        "organismDescriptor__term",
+        "organismDescriptor__gtdb_term",
+        "organismDescriptor__strain",
+        "organismDescriptor__growth_phase",
+        "organismDescriptor__community_role",
+        "organismDescriptor__target_abundance",
+        "organismDescriptor__community_function",
+        "organismDescriptor__cofactor_requirements",
+        "organismDescriptor__transporters",
+        "organismDescriptor__evidence"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Organism name (e.g., \"Escherichia coli\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "term",
+          "description": "NCBITaxon identifier",
+          "range": "OrganismTerm",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "gtdb_term",
+          "description": "GTDB genome or lineage identifier (alternative to NCBITaxon)",
+          "range": "GTDBTerm",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "strain",
+          "description": "Specific strain designation (e.g., \"K-12\", \"MG1655\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "growth_phase",
+          "description": "Target growth phase (e.g., \"exponential\", \"stationary\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "community_role",
+          "description": "Functional role in microbial community",
+          "range": "CellularRoleEnum",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "target_abundance",
+          "description": "Target relative abundance in community (0.0-1.0)",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "community_function",
+          "description": "Specific functional contribution to community",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "cofactor_requirements",
+          "description": "Cofactors required by this organism",
+          "range": "CofactorRequirement",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "transporters",
+          "description": "Annotated transport systems",
+          "range": "TransporterAnnotation",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Evidence supporting growth on this medium",
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/OrganismDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CofactorDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/CofactorDescriptor",
+      "description": "A cofactor or coenzyme required for enzymatic activity",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Descriptor",
+      "slots": [
+        "cofactorDescriptor__preferred_term",
+        "cofactorDescriptor__term",
+        "cofactorDescriptor__category",
+        "cofactorDescriptor__precursor",
+        "cofactorDescriptor__precursor_term",
+        "cofactorDescriptor__ec_associations",
+        "cofactorDescriptor__kegg_pathways",
+        "cofactorDescriptor__enzyme_examples",
+        "cofactorDescriptor__biosynthesis_genes",
+        "cofactorDescriptor__bioavailability",
+        "cofactorDescriptor__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Human-readable cofactor name (e.g., \"Thiamine pyrophosphate\", \"NAD\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "term",
+          "description": "CHEBI term for the cofactor",
+          "range": "ChemicalEntityTerm",
+          "recommended": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "category",
+          "description": "High-level classification",
+          "range": "CofactorCategoryEnum",
+          "recommended": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "precursor",
+          "description": "Precursor molecule (e.g., thiamine \u2192 TPP)",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "precursor_term",
+          "description": "CHEBI term for precursor",
+          "range": "ChemicalEntityTerm",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "ec_associations",
+          "description": "EC numbers of enzymes using this cofactor",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "kegg_pathways",
+          "description": "KEGG pathway IDs for biosynthesis",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "enzyme_examples",
+          "description": "Example enzymes requiring this cofactor",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "biosynthesis_genes",
+          "description": "Genes involved in cofactor biosynthesis",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "bioavailability",
+          "description": "Uptake and availability characteristics",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional information about the cofactor",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/CofactorDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "IngredientReference",
+      "definition_uri": "https://w3id.org/culturemech/IngredientReference",
+      "description": "Reference to canonical ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "ingredientReference__preferred_term",
+        "ingredientReference__mediaingredientmech_id"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "preferred_term",
+          "description": "Name of parent ingredient",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "mediaingredientmech_id",
+          "description": "MediaIngredientMech ID",
+          "range": "string",
+          "pattern": "^MediaIngredientMech:\\d{6}$",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/IngredientReference",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ConcentrationValue",
+      "definition_uri": "https://w3id.org/culturemech/ConcentrationValue",
+      "description": "Quantified concentration with units",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "concentrationValue__value",
+        "concentrationValue__unit",
+        "concentrationValue__per_volume"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "value",
+          "description": "Numeric value or range",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "unit",
+          "description": "Concentration unit",
+          "range": "ConcentrationUnitEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "per_volume",
+          "description": "Volume basis (e.g., \"per liter\", \"per 100 mL\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/ConcentrationValue",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TemperatureValue",
+      "definition_uri": "https://w3id.org/culturemech/TemperatureValue",
+      "description": "Temperature with units",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "temperatureValue__value",
+        "temperatureValue__unit"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "value",
+          "description": "Numeric temperature value",
+          "range": "float",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "unit",
+          "description": "Temperature unit",
+          "range": "TemperatureUnitEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/TemperatureValue",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PreparationStep",
+      "definition_uri": "https://w3id.org/culturemech/PreparationStep",
+      "description": "A step in medium preparation",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "preparationStep__step_number",
+        "preparationStep__action",
+        "preparationStep__description",
+        "preparationStep__temperature",
+        "preparationStep__duration",
+        "preparationStep__equipment",
+        "preparationStep__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "step_number",
+          "description": "Sequential order",
+          "range": "integer",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "action",
+          "description": "Action type",
+          "range": "PreparationActionEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "description",
+          "description": "Detailed instruction",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "temperature",
+          "description": "Temperature for this step",
+          "range": "TemperatureValue",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "duration",
+          "description": "Time duration (e.g., \"15 minutes\", \"overnight\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "equipment",
+          "description": "Required equipment (e.g., \"autoclave\", \"magnetic stirrer\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional tips or warnings",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/PreparationStep",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SterilizationDescriptor",
+      "definition_uri": "https://w3id.org/culturemech/SterilizationDescriptor",
+      "description": "Sterilization method and parameters",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "sterilizationDescriptor__method",
+        "sterilizationDescriptor__temperature",
+        "sterilizationDescriptor__pressure",
+        "sterilizationDescriptor__duration",
+        "sterilizationDescriptor__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "method",
+          "description": "Sterilization technique",
+          "range": "SterilizationMethodEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "temperature",
+          "description": "Temperature setting",
+          "range": "TemperatureValue",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "pressure",
+          "description": "Pressure in psi or kPa (for autoclaving)",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "duration",
+          "description": "Sterilization duration",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Special instructions (e.g., \"Filter-sterilize heat-labile components separately\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/SterilizationDescriptor",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "StorageConditions",
+      "definition_uri": "https://w3id.org/culturemech/StorageConditions",
+      "description": "Storage requirements for prepared medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "storageConditions__temperature",
+        "storageConditions__light_condition",
+        "storageConditions__shelf_life",
+        "storageConditions__container_type",
+        "storageConditions__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "temperature",
+          "description": "Storage temperature",
+          "range": "TemperatureValue",
+          "required": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "light_condition",
+          "description": "Light exposure requirement",
+          "range": "LightConditionEnum",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "shelf_life",
+          "description": "Duration of stability",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "container_type",
+          "description": "Recommended container (e.g., \"glass bottle\", \"polypropylene tube\")",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional storage tips",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/StorageConditions",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MediaVariant",
+      "definition_uri": "https://w3id.org/culturemech/MediaVariant",
+      "description": "A variant or modification of the base recipe",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "mediaVariant__name",
+        "mediaVariant__description",
+        "mediaVariant__modifications",
+        "mediaVariant__purpose",
+        "mediaVariant__supplier_info",
+        "mediaVariant__evidence"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Variant name (e.g., \"Low Salt LB\", \"LB + Ampicillin\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "description",
+          "description": "Purpose and context",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "modifications",
+          "description": "What differs from base recipe",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "purpose",
+          "description": "Why this variant exists",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "supplier_info",
+          "description": "Commercial supplier if premix",
+          "range": "SupplierInfo",
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Evidence supporting the variant",
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/MediaVariant",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SupplierInfo",
+      "definition_uri": "https://w3id.org/culturemech/SupplierInfo",
+      "description": "Commercial supplier information",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "supplierInfo__supplier_name",
+        "supplierInfo__catalog_number",
+        "supplierInfo__product_url",
+        "supplierInfo__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "supplier_name",
+          "description": "Vendor name (e.g., \"Sigma-Aldrich\", \"Thermo Fisher\")",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "catalog_number",
+          "description": "Product catalog number",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "product_url",
+          "description": "Direct product link",
+          "range": "uri",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional sourcing notes",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/SupplierInfo",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PublicationReference",
+      "definition_uri": "https://w3id.org/culturemech/PublicationReference",
+      "description": "Literature reference",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "publicationReference__reference",
+        "publicationReference__title",
+        "publicationReference__authors",
+        "publicationReference__year",
+        "publicationReference__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "reference",
+          "implements": [
+            "linkml:authoritative_reference"
+          ],
+          "description": "Citation (PMID, DOI, or historical reference)",
+          "comments": [
+            "Use format PMID:12345678 or doi:10.1038/... for automatic validation."
+          ],
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "title",
+          "description": "Publication title",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "authors",
+          "description": "Author list",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "year",
+          "description": "Publication year",
+          "range": "integer",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional context about the reference",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/PublicationReference",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "EvidenceItem",
+      "definition_uri": "https://w3id.org/culturemech/EvidenceItem",
+      "description": "Evidence supporting a claim about media formulation or performance",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "evidenceItem__reference",
+        "evidenceItem__supports",
+        "evidenceItem__snippet",
+        "evidenceItem__explanation"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "reference",
+          "implements": [
+            "linkml:authoritative_reference"
+          ],
+          "description": "Citation (PMID, DOI, or historical reference)",
+          "comments": [
+            "This is automatically validated by the linkml-reference-validator tool.",
+            "Use format PMID:12345678 or doi:10.1038/... for automatic validation."
+          ],
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "supports",
+          "description": "Level of support",
+          "range": "EvidenceItemSupportEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "snippet",
+          "implements": [
+            "linkml:excerpt"
+          ],
+          "description": "Exact quote from paper (if PMID/DOI available)",
+          "comments": [
+            "This is automatically validated by the linkml-reference-validator tool.",
+            "Must be an exact substring of the cited paper's text."
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "explanation",
+          "description": "Why this evidence supports the claim",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/EvidenceItem",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Dataset",
+      "definition_uri": "https://w3id.org/culturemech/Dataset",
+      "description": "Omics dataset generated using this medium",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "dataset__dataset_id",
+        "dataset__dataset_type",
+        "dataset__description",
+        "dataset__url"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "dataset_id",
+          "description": "Dataset identifier (GEO, SRA, etc.)",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "dataset_type",
+          "description": "Type of omics data (genomics, transcriptomics, metabolomics, etc.)",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "description",
+          "description": "Brief description of the dataset",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "url",
+          "description": "Direct link to dataset",
+          "range": "uri",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/Dataset",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CurationEvent",
+      "definition_uri": "https://w3id.org/culturemech/CurationEvent",
+      "description": "Audit trail entry for curation",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "curationEvent__timestamp",
+        "curationEvent__curator",
+        "curationEvent__action",
+        "curationEvent__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "timestamp",
+          "description": "ISO 8601 timestamp",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "curator",
+          "description": "Name or identifier of curator",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "action",
+          "description": "Action taken (created, updated, validated, etc.)",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional context",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/CurationEvent",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "SourceData",
+      "definition_uri": "https://w3id.org/culturemech/SourceData",
+      "description": "Provenance information for imported records",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "sourceData__origin",
+        "sourceData__community_ids",
+        "sourceData__import_date",
+        "sourceData__evidence",
+        "sourceData__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "origin",
+          "description": "Source repository name",
+          "comments": [
+            "Indicates which X-Mech repository this record was imported from"
+          ],
+          "examples": [
+            {
+              "value": "CommunityMech",
+              "@type": "Example"
+            }
+          ],
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "community_ids",
+          "description": "List of CommunityMech IDs this recipe was derived from",
+          "comments": [
+            "Enables bidirectional linking from CultureMech to CommunityMech",
+            "Format CommunityMech:NNNNNN"
+          ],
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "import_date",
+          "description": "Date of import (ISO 8601)",
+          "comments": [
+            "ISO 8601 date format YYYY-MM-DD"
+          ],
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Evidence records from source repository",
+          "comments": [
+            "Preserves evidence from original CommunityMech record",
+            "Maintains literature references and provenance"
+          ],
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Import notes and additional context",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/SourceData",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "CofactorRequirement",
+      "definition_uri": "https://w3id.org/culturemech/CofactorRequirement",
+      "description": "Cofactor requirement for an organism",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "cofactorRequirement__cofactor",
+        "cofactorRequirement__can_biosynthesize",
+        "cofactorRequirement__confidence",
+        "cofactorRequirement__evidence",
+        "cofactorRequirement__genes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "cofactor",
+          "description": "Required cofactor",
+          "range": "CofactorDescriptor",
+          "required": true,
+          "inlined": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "can_biosynthesize",
+          "description": "Whether organism can synthesize this cofactor",
+          "range": "boolean",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "confidence",
+          "description": "Confidence level (0.0-1.0) based on genome annotation",
+          "range": "float",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "evidence",
+          "description": "Supporting evidence for requirement",
+          "range": "EvidenceItem",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "genes",
+          "description": "Genes related to biosynthesis or utilization",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/CofactorRequirement",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TransporterAnnotation",
+      "definition_uri": "https://w3id.org/culturemech/TransporterAnnotation",
+      "description": "Annotation of a transporter or transport system",
+      "from_schema": "https://w3id.org/culturemech",
+      "slots": [
+        "transporterAnnotation__name",
+        "transporterAnnotation__transporter_type",
+        "transporterAnnotation__substrates",
+        "transporterAnnotation__substrate_terms",
+        "transporterAnnotation__direction",
+        "transporterAnnotation__genes",
+        "transporterAnnotation__ec_number",
+        "transporterAnnotation__notes"
+      ],
+      "slot_usage": {},
+      "attributes": [
+        {
+          "name": "name",
+          "description": "Transporter name or gene name",
+          "range": "string",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "transporter_type",
+          "description": "Classification of transporter",
+          "range": "TransporterTypeEnum",
+          "required": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "substrates",
+          "description": "Transported substrates",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "substrate_terms",
+          "description": "CHEBI terms for substrates",
+          "range": "ChemicalEntityTerm",
+          "multivalued": true,
+          "inlined_as_list": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "direction",
+          "description": "Transport direction (import, export, bidirectional)",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "genes",
+          "description": "Gene names or locus tags",
+          "range": "string",
+          "multivalued": true,
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "ec_number",
+          "description": "EC number if enzymatic",
+          "range": "string",
+          "@type": "SlotDefinition"
+        },
+        {
+          "name": "notes",
+          "description": "Additional functional notes",
+          "range": "string",
+          "@type": "SlotDefinition"
+        }
+      ],
+      "class_uri": "https://w3id.org/culturemech/TransporterAnnotation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ChemicalEntityTerm",
+      "id_prefixes": [
+        "CHEBI"
+      ],
+      "definition_uri": "https://w3id.org/culturemech/ChemicalEntityTerm",
+      "description": "A CHEBI term representing a chemical entity",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Term",
+      "slots": [
+        "term__label",
+        "ChemicalEntityTerm_id"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/ChemicalEntityTerm",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "OrganismTerm",
+      "id_prefixes": [
+        "NCBITaxon"
+      ],
+      "definition_uri": "https://w3id.org/culturemech/OrganismTerm",
+      "description": "An NCBITaxon term representing an organism",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Term",
+      "slots": [
+        "term__label",
+        "OrganismTerm_id"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/OrganismTerm",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "GTDBTerm",
+      "id_prefixes": [
+        "GTDB"
+      ],
+      "definition_uri": "https://w3id.org/culturemech/GTDBTerm",
+      "description": "A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2), label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Term",
+      "slots": [
+        "term__id",
+        "term__label"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/GTDBTerm",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MediaDatabaseTerm",
+      "id_prefixes": [
+        "mediadive.medium",
+        "komodo.medium",
+        "DSMZ",
+        "TOGO",
+        "ATCC",
+        "NCIT"
+      ],
+      "definition_uri": "https://w3id.org/culturemech/MediaDatabaseTerm",
+      "description": "Identifier from authoritative media database",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Term",
+      "slots": [
+        "term__id",
+        "term__label"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/MediaDatabaseTerm",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "MediaIngredientMechTerm",
+      "id_prefixes": [
+        "MediaIngredientMech"
+      ],
+      "definition_uri": "https://w3id.org/culturemech/MediaIngredientMechTerm",
+      "description": "A MediaIngredientMech identifier for a media ingredient",
+      "from_schema": "https://w3id.org/culturemech",
+      "is_a": "Term",
+      "slots": [
+        "term__label",
+        "MediaIngredientMechTerm_id"
+      ],
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/culturemech/MediaIngredientMechTerm",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "culturemech.yaml",
+  "source_file_date": "2026-03-14T22:10:07",
+  "source_file_size": 44878,
+  "generation_date": "2026-03-14T22:10:20",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "tmp/jsonld/culturemech.context.jsonld",
+    "https://w3id.org/linkml/types.context.jsonld",
+    {
+      "@base": "https://w3id.org/culturemech/"
+    }
+  ]
+}

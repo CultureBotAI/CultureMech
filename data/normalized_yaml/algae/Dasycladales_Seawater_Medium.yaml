@@ -1,6 +1,6 @@
 id: CultureMech:000161
-name: Dasycladales Seawater Medium
-category: algae
+name: dasycladales_seawater_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
@@ -77,6 +77,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000161'
+- timestamp: '2026-03-17T19:45:04.294707+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Dasycladales Seawater Medium" to "dasycladales_seawater_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:dasycladales-seawater-medium
 - reference_id: https://utex.org/products/dasycladales-seawater-medium
+original_name: Dasycladales Seawater Medium

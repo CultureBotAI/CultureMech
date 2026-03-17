@@ -1,6 +1,6 @@
 id: CultureMech:000162
-name: Desmid Medium
-category: algae
+name: desmid_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,11 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000162'
+- timestamp: '2026-03-17T19:45:04.299302+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desmid Medium" to "desmid_medium" for consistent matching
 references:
 - reference_id: UTEX:desmid-medium
 - reference_id: https://utex.org/products/desmid-medium
+original_name: Desmid Medium

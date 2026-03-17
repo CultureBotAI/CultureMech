@@ -1,4 +1,4 @@
-name: Modified DSM 120 Medium for DIET Coculture
+name: modified_dsm_120_medium_for_diet_coculture
 original_name: Modified DSM 120 Medium for DIET Coculture
 category: specialized
 medium_type: DEFINED
@@ -61,13 +61,16 @@ ingredients:
     label: sodium sulfide
 temperature_value: 37.0
 incubation_atmosphere: ANAEROBIC
-notes: "Headspace gas: N2/CO2 (80:20)\nVessel type: Anaerobic serum bottles with thick\
-  \ butyl rubber stoppers\n\nModified DSM 120 medium with no yeast extract, Casitone,\
-  \ or resazurin. Specific composition: 0.5 mM sulfide, 1 mM cysteine, 0.002 g/L CaCl2\xB7\
-  2H2O, 1 g/L NaCl, 2 g/L NaHCO3. Medium boiled to reduce oxygen, cooled under N2/CO2\
-  \ gas mixture. Sulfide and cysteine essential for long-term M. barkeri cultivation.\
-  \ Initial cocultures: 0.5 ml each organism in 9 ml medium; later transfers: 10%\
-  \ inocula in 45 ml medium."
+notes: 'Headspace gas: N2/CO2 (80:20)
+
+  Vessel type: Anaerobic serum bottles with thick butyl rubber stoppers
+
+
+  Modified DSM 120 medium with no yeast extract, Casitone, or resazurin. Specific
+  composition: 0.5 mM sulfide, 1 mM cysteine, 0.002 g/L CaCl2·2H2O, 1 g/L NaCl, 2
+  g/L NaHCO3. Medium boiled to reduce oxygen, cooled under N2/CO2 gas mixture. Sulfide
+  and cysteine essential for long-term M. barkeri cultivation. Initial cocultures:
+  0.5 ml each organism in 9 ml medium; later transfers: 10% inocula in 45 ml medium.'
 source_data:
   origin: CommunityMech
   community_ids:
@@ -85,3 +88,8 @@ curation_history:
   curator: communitymech-importer-v1.0
   action: Imported from CommunityMech
   notes: Created from CommunityMech:000033 growth_media record
+- timestamp: '2026-03-17T19:46:34.315506+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified DSM 120 Medium for DIET Coculture" to "modified_dsm_120_medium_for_diet_coculture"
+    for consistent matching

@@ -1,6 +1,6 @@
 id: CultureMech:000002
-name: 1/2 CHEV Diatom Medium
-category: algae
+name: 1_2_chev_diatom_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000002'
+- timestamp: '2026-03-17T19:45:03.780490+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "1/2 CHEV Diatom Medium" to "1_2_chev_diatom_medium"
+    for consistent matching
 references:
 - reference_id: UTEX:one-half-chev-diatom-medium
 - reference_id: https://utex.org/products/one-half-chev-diatom-medium
+original_name: 1/2 CHEV Diatom Medium

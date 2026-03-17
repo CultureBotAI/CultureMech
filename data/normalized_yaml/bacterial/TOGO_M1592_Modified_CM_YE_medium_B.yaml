@@ -1,5 +1,5 @@
 id: CultureMech:008143
-name: Modified CM + YE medium (B)
+name: modified_cm_ye_medium_b
 original_name: Modified CM + YE medium (B)
 category: bacterial
 medium_type: COMPLEX
@@ -132,6 +132,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:12.437288+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified CM + YE medium (B)" to "modified_cm_ye_medium_b"
+    for consistent matching
 solutions:
 - preferred_term: Fe2+ solution*
   composition: []

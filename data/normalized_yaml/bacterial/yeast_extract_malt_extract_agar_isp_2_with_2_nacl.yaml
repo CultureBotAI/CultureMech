@@ -1,0 +1,69 @@
+id: CultureMech:007763
+name: yeast_extract_malt_extract_agar_isp_2_with_2_nacl
+original_name: Yeast Extract-Malt Extract Agar (ISP-2) With 2% NaCl
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+media_term:
+  preferred_term: TOGO Medium M1234
+  term:
+    id: TOGO:M1234
+    label: Yeast Extract-Malt Extract Agar (ISP-2) With 2% NaCl
+notes: 'Source: https://togomedium.org/medium/M1234
+
+  Original source: JCM - JCM_M1152
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1152'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.189738Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1234'
+- timestamp: '2026-01-28T19:48:27.795766Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:45.962312+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:51.278946Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007763'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:47.622597'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:24.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.696611+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP-2) With 2% NaCl"
+    to "yeast_extract_malt_extract_agar_isp_2_with_2_nacl" for consistent matching
+solutions:
+- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
+  composition: []
+  notes: Cross-reference to Medium M35
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  name: Unknown solution

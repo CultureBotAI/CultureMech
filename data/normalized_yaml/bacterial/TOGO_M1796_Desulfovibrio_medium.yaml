@@ -1,5 +1,5 @@
 id: CultureMech:008364
-name: Desulfovibrio medium
+name: desulfovibrio_medium
 original_name: Desulfovibrio medium
 category: bacterial
 medium_type: COMPLEX
@@ -185,6 +185,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:14.699127+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfovibrio medium" to "desulfovibrio_medium" for
+    consistent matching
 solutions:
 - preferred_term: Thioglycolate solution*
   composition: []

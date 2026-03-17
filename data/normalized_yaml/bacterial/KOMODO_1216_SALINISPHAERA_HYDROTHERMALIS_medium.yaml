@@ -1,5 +1,5 @@
 id: CultureMech:003967
-name: SALINISPHAERA HYDROTHERMALIS medium
+name: salinisphaera_hydrothermalis_medium
 original_name: SALINISPHAERA HYDROTHERMALIS medium
 category: bacterial
 medium_type: COMPLEX
@@ -80,3 +80,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:38.344434+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SALINISPHAERA HYDROTHERMALIS medium" to "salinisphaera_hydrothermalis_medium"
+    for consistent matching

@@ -1,0 +1,101 @@
+id: CultureMech:005187
+name: THERMOPLASMA VOLCANIUM medium
+original_name: THERMOPLASMA VOLCANIUM medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 398 | DSMZ Medium: 398 (mediadive.medium:398)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 398
+  term:
+    id: komodo.medium:398
+    label: THERMOPLASMA VOLCANIUM medium
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: ' (for anaerobic media only)'
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 398'
+- timestamp: '2026-02-03T11:19:00.673982'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 398
+- timestamp: '2026-03-13T03:08:53.474385Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:30.939442Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005187'
+- timestamp: '2026-03-15T03:03:52.741930+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_398-2_Aerobic_version, KOMODO_398_THERMOPLASMA_VOLCANIUM_medium'
+synonyms:
+- name: Aerobic version
+  source: KOMODO
+  source_id: komodo.medium:398.2
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_398-2_Aerobic_version
+- KOMODO_398_THERMOPLASMA_VOLCANIUM_medium
+merge_fingerprint: 51732c4f8839169ba194197da1a4f16765362f5585449f6d12c13bc582183845

@@ -1,5 +1,5 @@
 id: CultureMech:009865
-name: Modified MMJHS Medium For GO25
+name: modified_mmjhs_medium_for_go25
 original_name: Modified MMJHS Medium For GO25
 category: bacterial
 medium_type: COMPLEX
@@ -230,6 +230,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.459045+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified MMJHS Medium For GO25" to "modified_mmjhs_medium_for_go25"
+    for consistent matching
 solutions:
 - preferred_term: Trace mineral solution (see Medium [M362])
   composition: []

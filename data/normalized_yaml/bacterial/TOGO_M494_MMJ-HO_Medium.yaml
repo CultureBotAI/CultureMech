@@ -1,5 +1,5 @@
 id: CultureMech:009882
-name: MMJ-HO Medium
+name: mmj_ho_medium
 original_name: MMJ-HO Medium
 category: bacterial
 medium_type: COMPLEX
@@ -105,6 +105,10 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.588637+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMJ-HO Medium" to "mmj_ho_medium" for consistent matching
 solutions:
 - preferred_term: Modified MJ synthetic seawater (see Medium [M493])
   composition: []

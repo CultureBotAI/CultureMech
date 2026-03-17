@@ -1,0 +1,134 @@
+id: CultureMech:003608
+name: PYG-MEDIUM (modified)
+original_name: PYG-MEDIUM (modified)
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 104 | DSMZ Medium: 104 (mediadive.medium:104)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 104
+  term:
+    id: komodo.medium:104
+    label: PYG-MEDIUM (modified)
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  notes: ' [Merged 2 duplicates: 8.0, 2.0]'
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 104'
+- timestamp: '2026-02-03T11:19:00.925352'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 104
+- timestamp: '2026-03-13T03:08:54.197974Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Merged 1 duplicate ingredient(s); Added pH buffer: NaOH'
+- timestamp: '2026-03-13T06:19:21.000720Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003608'
+- timestamp: '2026-03-15T03:03:51.976773+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_104_PYG-MEDIUM_modified, KOMODO_104b-13275_MEDIUM_104b_MODIFIED_FOR_DSM_13275'
+synonyms:
+- name: MEDIUM 104b MODIFIED FOR DSM 13275
+  source: KOMODO
+  source_id: komodo.medium:104b_13275
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_104_PYG-MEDIUM_modified
+- KOMODO_104b-13275_MEDIUM_104b_MODIFIED_FOR_DSM_13275
+merge_fingerprint: 615c37a77a794c1aa9d932cd1ce137342e28922fd44628dd0264f34afaa8088e

@@ -1,0 +1,46 @@
+id: CultureMech:010494
+name: yeast_extract_malt_extract_agar_ph_5_5
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
+category: fungal
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J1174
+  term:
+    id: mediadive.medium:J1174
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1174'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43)
+    and adjust pH to 5.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.900755Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1174'
+- timestamp: '2026-02-03T11:27:23.350470'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:20:14.059741Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010494'
+- timestamp: '2026-03-17T19:46:33.065926+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)" to "yeast_extract_malt_extract_agar_ph_5_5"
+    for consistent matching
+data_quality_flags:
+- incomplete_composition

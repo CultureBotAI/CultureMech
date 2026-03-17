@@ -1,5 +1,5 @@
 id: CultureMech:009604
-name: Clostridium Ljungdahlii Medium
+name: clostridium_ljungdahlii_medium
 original_name: Clostridium Ljungdahlii Medium
 category: bacterial
 medium_type: COMPLEX
@@ -444,6 +444,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.384456+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium Ljungdahlii Medium" to "clostridium_ljungdahlii_medium"
+    for consistent matching
 solutions:
 - preferred_term: Modified Wolin's mineral solution
   term:

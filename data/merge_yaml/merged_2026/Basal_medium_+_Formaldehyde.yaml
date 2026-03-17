@@ -1,0 +1,108 @@
+id: CultureMech:008615
+name: Basal medium + Formaldehyde
+original_name: Basal medium + Formaldehyde
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M2027
+  term:
+    id: TOGO:M2027
+    label: Basal medium + Formaldehyde
+notes: 'Source: https://togomedium.org/medium/M2027
+
+  Original source: NBRC - NBRC_M1318
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1318'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.901802Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2027'
+- timestamp: '2026-01-28T19:48:08.474841Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:13.713934+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:58.668882Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008615'
+- timestamp: '2026-03-15T03:04:05.953251+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M2025_Basal_medium_Acetaldehyde, TOGO_M2026_Basal_medium_Benzaldehyde,
+    TOGO_M2027_Basal_medium_Formaldehyde'
+solutions:
+- preferred_term: Formaldehyde**
+  composition: []
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Hipolypepton*
+  composition: []
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+synonyms:
+- name: Basal medium + Acetaldehyde
+  source: TOGO
+  source_id: TOGO:M2025
+  original_category: bacterial
+- name: Basal medium + Benzaldehyde
+  source: TOGO
+  source_id: TOGO:M2026
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- TOGO_M2025_Basal_medium_Acetaldehyde
+- TOGO_M2026_Basal_medium_Benzaldehyde
+- TOGO_M2027_Basal_medium_Formaldehyde
+merge_fingerprint: 290de9028fb3cf7075560b94df3c56dc4cd4edaab3b08dabbee808e6d7c49bc5

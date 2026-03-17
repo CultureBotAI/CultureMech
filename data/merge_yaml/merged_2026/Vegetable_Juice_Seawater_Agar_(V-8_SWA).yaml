@@ -1,0 +1,66 @@
+id: CultureMech:007955
+name: Vegetable Juice Seawater Agar (V-8 SWA)
+original_name: Vegetable Juice Seawater Agar (V-8 SWA)
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Seawater (2% salinity)
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M1418
+  term:
+    id: TOGO:M1418
+    label: Vegetable Juice Seawater Agar (V-8 SWA)
+notes: 'Source: https://togomedium.org/medium/M1418
+
+  Original source: NBRC - NBRC_M15
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=15'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.658506Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1418'
+- timestamp: '2026-01-28T19:48:08.131651Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:13.087803+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 2 solution(s) from ingredients
+- timestamp: '2026-03-13T06:19:52.713986Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:007955'
+solutions:
+- preferred_term: CaCO3*
+  composition: []
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
+    compound, Simple component'
+- preferred_term: Vegetable juice*
+  composition: []
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+merge_fingerprint: e0a4f828c25fd3f0f65db4a5ad57db61e50437244dba78c976e17ecf031cc027
+merged_from:
+- TOGO_M1418_Vegetable_Juice_Seawater_Agar_V-8_SWA

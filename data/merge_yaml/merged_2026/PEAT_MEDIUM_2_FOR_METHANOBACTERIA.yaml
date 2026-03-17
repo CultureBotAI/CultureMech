@@ -1,0 +1,147 @@
+id: CultureMech:010396
+name: Peat Medium 2 For Methanobacteria
+original_name: Peat Medium 2 For Methanobacteria
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 10 mM Sodium acetate
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: EDTA・2Na
+  concentration:
+    value: '37.23'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M970
+  term:
+    id: TOGO:M970
+    label: Peat Medium 2 For Methanobacteria
+notes: 'Source: https://togomedium.org/medium/M970
+
+  Original source: JCM - JCM_M924
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=924'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.057516Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M970'
+- timestamp: '2026-01-28T19:48:30.976622Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.519954'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas;
+    Added default concentration for ingredient: NaOH'
+- timestamp: '2026-03-09T08:04:51.533813+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 9 solution(s) from ingredients
+- timestamp: '2026-03-13T03:09:22.890268Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: Merged 1 duplicate ingredient(s)
+- timestamp: '2026-03-13T06:20:13.537981Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010396'
+solutions:
+- preferred_term: Major metals (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace metal 2 solution (see below)
+  composition: []
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 1% Yeast extract solution
+  composition: []
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 50 mM Coenzyme M solution
+  composition: []
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Solution'
+- preferred_term: 4 mM Na2S・9H2O solution*
+  composition: []
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
+- preferred_term: 1.0 M MES solution* (pH 7.45)
+  composition: []
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 83 mM TiNTA solution (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Trace metal 1 solution (see Medium [M969])
+  composition: []
+  notes: Cross-reference to Medium M969
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: 3ed035b1152d7ce4b2d414f516dc043b43597337a9c355e79a51410fcf6cefae
+merged_from:
+- TOGO_M970_Peat_Medium_2_For_Methanobacteria

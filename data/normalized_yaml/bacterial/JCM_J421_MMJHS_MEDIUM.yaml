@@ -1,5 +1,5 @@
 id: CultureMech:002774
-name: MMJHS MEDIUM
+name: mmjhs_medium
 original_name: MMJHS MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -273,3 +273,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:29.068950+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MMJHS MEDIUM" to "mmjhs_medium" for consistent matching

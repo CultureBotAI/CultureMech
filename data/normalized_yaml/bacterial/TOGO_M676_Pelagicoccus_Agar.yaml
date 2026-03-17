@@ -1,5 +1,5 @@
 id: CultureMech:010080
-name: Pelagicoccus Agar
+name: pelagicoccus_agar
 original_name: Pelagicoccus Agar
 category: bacterial
 medium_type: COMPLEX
@@ -64,6 +64,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:30.089725+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Pelagicoccus Agar" to "pelagicoccus_agar" for consistent
+    matching
 solutions:
 - preferred_term: Artificial seawater (see Medium [M675])
   composition: []

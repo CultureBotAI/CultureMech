@@ -1,5 +1,5 @@
 id: CultureMech:008885
-name: Thermotoga Medium
+name: thermotoga_medium
 original_name: Thermotoga Medium
 category: bacterial
 medium_type: COMPLEX
@@ -212,6 +212,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.730890+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Thermotoga Medium" to "thermotoga_medium" for consistent
+    matching
 solutions:
 - preferred_term: Trace minerals (see Medium [M142])
   composition: []

@@ -1,5 +1,5 @@
 id: CultureMech:005614
-name: CLOSTRIDIUM AEROTOLERANS medium
+name: clostridium_aerotolerans_medium
 original_name: CLOSTRIDIUM AEROTOLERANS medium
 category: bacterial
 medium_type: COMPLEX
@@ -130,3 +130,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:50.856972+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM AEROTOLERANS medium" to "clostridium_aerotolerans_medium"
+    for consistent matching

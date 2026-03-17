@@ -1,0 +1,100 @@
+id: CultureMech:000386
+name: pc
+original_name: PC
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C73
+  term:
+    id: mediadive.medium:C73
+    label: PC
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PC.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: CaHPO4
+  term:
+    id: CHEBI:32596
+    label: CaHPO4
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000876
+    label: CaHPO4
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: "Using aseptic technique, make up to 1 litre with sterile deionized\
+    \ water. It may be necessary\r\nto decant supernatant from precipitate in final\
+    \ medium."
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: "Alternatively, after autoclaving, it might be necessary to filter\
+    \ through 0.2 micron filter\r\n(removes precipitates etc)."
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
+    \ 10 ml aliquots\r\nand freeze."
+- step_number: 4
+  action: AUTOCLAVE
+  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
+    \ 10 ml aliquots\r\nand freeze."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.725970Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C73'
+- timestamp: '2026-03-13T06:18:54.888312Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000386'
+- timestamp: '2026-03-17T06:30:10.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.898328+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "PC" to "pc" for consistent matching

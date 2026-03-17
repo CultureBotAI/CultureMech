@@ -1,5 +1,5 @@
 id: CultureMech:010056
-name: Clostridium SW Medium
+name: clostridium_sw_medium
 original_name: Clostridium SW Medium
 category: bacterial
 medium_type: COMPLEX
@@ -187,6 +187,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.939085+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Clostridium SW Medium" to "clostridium_sw_medium" for
+    consistent matching
 solutions:
 - preferred_term: Solution A
   term:

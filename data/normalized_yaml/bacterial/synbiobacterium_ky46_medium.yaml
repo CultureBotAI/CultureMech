@@ -1,0 +1,92 @@
+id: CultureMech:003108
+name: synbiobacterium_ky46_medium
+original_name: SYNBIOBACTERIUM KY46 MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J766
+  term:
+    id: mediadive.medium:J766
+    label: SYNBIOBACTERIUM KY46 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=766'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.56863'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+- preferred_term: NH4HCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:184335
+    label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000412
+    label: NH4HCO3
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
+    into culture vessels, replace the gas phase with a N2 gas and autoclave. After
+    cooling, aseptically and anaerobically add per liter the following solution (filter-sterilized):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.536895Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J766'
+- timestamp: '2026-01-28T19:48:35.477923Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-13T06:19:17.877730Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:003108'
+- timestamp: '2026-03-17T06:30:40.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.656667+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "SYNBIOBACTERIUM KY46 MEDIUM" to "synbiobacterium_ky46_medium"
+    for consistent matching

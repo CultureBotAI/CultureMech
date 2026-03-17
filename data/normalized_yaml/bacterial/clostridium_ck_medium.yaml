@@ -1,0 +1,63 @@
+id: CultureMech:006700
+name: clostridium_ck_medium
+original_name: CLOSTRIDIUM CK medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: KOMODO Medium 869
+  term:
+    id: komodo.medium:869
+    label: CLOSTRIDIUM CK medium
+notes: 'Source: KOMODO ModelSEED | ID: 869 | DSMZ Medium: 869 (mediadive.medium:869)
+  | Aerobic: Yes'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D-Glucose
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 869'
+- timestamp: '2026-02-03T11:19:13.367356'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 869
+- timestamp: '2026-03-13T06:19:43.133438Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:006700'
+- timestamp: '2026-03-17T06:30:37.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:00.854338+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM CK medium" to "clostridium_ck_medium" for
+    consistent matching

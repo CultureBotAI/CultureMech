@@ -1,5 +1,5 @@
 id: CultureMech:007686
-name: Natronolimnobius AHT32 Medium (B)
+name: natronolimnobius_aht32_medium_b
 original_name: Natronolimnobius AHT32 Medium (B)
 category: bacterial
 medium_type: COMPLEX
@@ -80,6 +80,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.008596+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Natronolimnobius AHT32 Medium (B)" to "natronolimnobius_aht32_medium_b"
+    for consistent matching
 solutions:
 - preferred_term: Soda based mineral medium (see Medium [M1150])
   composition: []

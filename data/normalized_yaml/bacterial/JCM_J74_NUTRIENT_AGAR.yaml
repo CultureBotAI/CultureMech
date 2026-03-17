@@ -1,5 +1,5 @@
 id: CultureMech:003093
-name: NUTRIENT AGAR
+name: nutrient_agar
 original_name: NUTRIENT AGAR
 category: bacterial
 medium_type: COMPLEX
@@ -49,3 +49,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:31.511963+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "NUTRIENT AGAR" to "nutrient_agar" for consistent matching

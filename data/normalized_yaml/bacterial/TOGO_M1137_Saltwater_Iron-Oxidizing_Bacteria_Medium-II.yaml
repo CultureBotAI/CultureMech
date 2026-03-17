@@ -1,5 +1,5 @@
 id: CultureMech:007659
-name: Saltwater Iron-Oxidizing Bacteria  Medium-II
+name: saltwater_iron_oxidizing_bacteria_medium_ii
 original_name: Saltwater Iron-Oxidizing Bacteria  Medium-II
 category: bacterial
 medium_type: COMPLEX
@@ -56,6 +56,11 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name; Added default solution name
+- timestamp: '2026-03-17T19:46:08.774379+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Saltwater Iron-Oxidizing Bacteria  Medium-II" to "saltwater_iron_oxidizing_bacteria_medium_ii"
+    for consistent matching
 solutions:
 - preferred_term: Artificial saltwater (see Medium [M642])
   composition: []

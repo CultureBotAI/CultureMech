@@ -1,5 +1,5 @@
 id: CultureMech:003800
-name: DESULFACINUM medium
+name: desulfacinum_medium
 original_name: DESULFACINUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -279,3 +279,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:36.674674+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFACINUM medium" to "desulfacinum_medium" for consistent
+    matching

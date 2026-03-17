@@ -1,5 +1,5 @@
 id: CultureMech:009994
-name: Modified MMJS Medium (B)
+name: modified_mmjs_medium_b
 original_name: Modified MMJS Medium (B)
 category: bacterial
 medium_type: COMPLEX
@@ -230,6 +230,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:29.502467+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Modified MMJS Medium (B)" to "modified_mmjs_medium_b"
+    for consistent matching
 solutions:
 - preferred_term: Trace mineral solution (see Medium [M509])
   composition: []

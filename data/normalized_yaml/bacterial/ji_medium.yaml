@@ -1,0 +1,49 @@
+id: CultureMech:002747
+name: ji_medium
+original_name: JI MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J390
+  term:
+    id: mediadive.medium:J390
+    label: JI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=390'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract in Solution
+    A (per 900 ml), and with 0.332 g/L <I>o</I>-phthalic acid in Solution B (per 100
+    ml) instead of sodium pyruvate. Otherwise, prepare the medium as described in
+    the recipe of Medium No. 284.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 12282, incubate with a 15 - 20% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.483738Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J390'
+- timestamp: '2026-02-03T11:26:54.780423'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:19:15.454615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:002747'
+- timestamp: '2026-03-17T19:45:28.854928+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "JI MEDIUM" to "ji_medium" for consistent matching
+data_quality_flags:
+- incomplete_composition

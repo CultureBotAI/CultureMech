@@ -1,5 +1,5 @@
 id: CultureMech:004079
-name: METHYLOCAPSA AUREA MEDIUM
+name: methylocapsa_aurea_medium
 original_name: METHYLOCAPSA AUREA MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -167,3 +167,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:39.426718+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHYLOCAPSA AUREA MEDIUM" to "methylocapsa_aurea_medium"
+    for consistent matching

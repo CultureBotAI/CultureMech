@@ -1,0 +1,225 @@
+{
+  "parameters": {
+    "yaml_dir": "data/normalized_yaml",
+    "category": "bacterial",
+    "limit": 10,
+    "dry_run": true,
+    "fuzzy_threshold": 0.95
+  },
+  "statistics": {
+    "files_processed": 10,
+    "ingredients_matched": 159,
+    "solutions_matched": 0,
+    "no_match": 50,
+    "already_linked": 0,
+    "errors": 0,
+    "match_methods": {
+      "chebi_id": 154,
+      "exact_name": 3,
+      "fuzzy_0.97": 1,
+      "fuzzy_0.96": 1
+    }
+  },
+  "unmatched_ingredients": [
+    {
+      "name": "Bacto Yeast Extract (Difco)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Hipolypepton (Nihon seiyaku)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Carbon dioxide gas",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "N2",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Hydrogen gas",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnCl2·4H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "CoCl2·6H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Folate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Benzyl alcohol",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nicotinate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Lipoate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Calcium chloride anhydrous",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferric oxide",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Ferrous sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cobalt chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium molybdate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Nickel chloride",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Cupric sulfate",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "FeSO4·7H2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Fe2(SO4)3·xH2O",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Iron (powder, 20 - 60 mesh, Nacalai)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Carbon dioxide gas",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "N2",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Hydrogen gas",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "MnCl2",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Dibenzofuran",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Meat extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Casein peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Soy peptone",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Trypticase soy broth",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Brain Heart Infusion (BHI) (Difco)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "PPLO (Difco)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Pig serum (Invitrogen)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Horse serum (Invitrogen)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "100 mg/ml azlocillin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "100 mg/ml flucloxacillin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "1.0 M NaOH",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "0.1 M NaOH",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "azlocillin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "flucloxacillin",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Agar (if needed)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "N2",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Yeast extract",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Bacto agar (BD-Difco)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Tryptose phosphate broth (BD-Difco)",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "dehydrated Wilkins-Chalgren medium",
+      "chebi_id": "N/A"
+    },
+    {
+      "name": "Sodium resazurin",
+      "chebi_id": "N/A"
+    }
+  ]
+}

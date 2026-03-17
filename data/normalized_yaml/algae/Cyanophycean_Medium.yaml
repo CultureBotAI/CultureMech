@@ -1,6 +1,6 @@
 id: CultureMech:000158
-name: Cyanophycean Medium
-category: algae
+name: cyanophycean_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -71,6 +71,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000158'
+- timestamp: '2026-03-17T19:45:04.276213+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Cyanophycean Medium" to "cyanophycean_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:cyanophycean-medium
 - reference_id: https://utex.org/products/cyanophycean-medium
+original_name: Cyanophycean Medium

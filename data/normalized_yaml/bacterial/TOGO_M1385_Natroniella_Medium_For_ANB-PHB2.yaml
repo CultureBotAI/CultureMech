@@ -1,5 +1,5 @@
 id: CultureMech:007919
-name: Natroniella Medium For ANB-PHB2
+name: natroniella_medium_for_anb_phb2
 original_name: Natroniella Medium For ANB-PHB2
 category: bacterial
 medium_type: COMPLEX
@@ -121,6 +121,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:10.940196+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Natroniella Medium For ANB-PHB2" to "natroniella_medium_for_anb_phb2"
+    for consistent matching
 solutions:
 - preferred_term: 1 N NH4Cl solution
   composition: []

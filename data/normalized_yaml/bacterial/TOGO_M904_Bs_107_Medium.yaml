@@ -1,5 +1,5 @@
 id: CultureMech:010323
-name: Bs 107 Medium
+name: bs_107_medium
 original_name: Bs 107 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -35,5 +35,9 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010323'
+- timestamp: '2026-03-17T19:46:31.941261+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bs 107 Medium" to "bs_107_medium" for consistent matching
 data_quality_flags:
 - incomplete_composition

@@ -1,5 +1,5 @@
 id: CultureMech:005986
-name: DILUTED TRYPTONE SOYA BROTH (TSB)
+name: diluted_tryptone_soya_broth_tsb
 original_name: DILUTED TRYPTONE SOYA BROTH (TSB)
 category: bacterial
 medium_type: COMPLEX
@@ -93,4 +93,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:54.246702+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DILUTED TRYPTONE SOYA BROTH (TSB)" to "diluted_tryptone_soya_broth_tsb"
+    for consistent matching
 ph_value: 8.0

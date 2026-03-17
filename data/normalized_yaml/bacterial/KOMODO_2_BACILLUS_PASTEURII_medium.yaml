@@ -1,5 +1,5 @@
 id: CultureMech:004777
-name: BACILLUS PASTEURII medium
+name: bacillus_pasteurii_medium
 original_name: BACILLUS PASTEURII medium
 category: bacterial
 medium_type: COMPLEX
@@ -61,3 +61,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.236863+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "BACILLUS PASTEURII medium" to "bacillus_pasteurii_medium"
+    for consistent matching

@@ -1,0 +1,43 @@
+id: CultureMech:000411
+name: 2sna
+original_name: 2SNA
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C96
+  term:
+    id: mediadive.medium:C96
+    label: 2SNA
+notes: 'Source: CCAP | Link: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: This medium recipe is coming very soon!
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.797266Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C96'
+- timestamp: '2026-02-03T11:26:44.517650'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-03-13T06:18:55.023791Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:000411'
+- timestamp: '2026-03-17T19:45:06.040258+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2SNA" to "2sna" for consistent matching
+data_quality_flags:
+- incomplete_composition

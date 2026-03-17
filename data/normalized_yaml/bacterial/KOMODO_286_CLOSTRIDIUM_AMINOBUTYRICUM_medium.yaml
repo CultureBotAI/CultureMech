@@ -1,5 +1,5 @@
 id: CultureMech:004743
-name: CLOSTRIDIUM AMINOBUTYRICUM medium
+name: clostridium_aminobutyricum_medium
 original_name: CLOSTRIDIUM AMINOBUTYRICUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -130,3 +130,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:43.859743+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "CLOSTRIDIUM AMINOBUTYRICUM medium" to "clostridium_aminobutyricum_medium"
+    for consistent matching

@@ -1,5 +1,5 @@
 id: CultureMech:010542
-name: YEAST-STARCH AGAR (B)
+name: yeast_starch_agar_b
 original_name: YEAST-STARCH AGAR (B)
 category: fungal
 medium_type: COMPLEX
@@ -75,3 +75,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.319510+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "YEAST-STARCH AGAR (B)" to "yeast_starch_agar_b" for
+    consistent matching

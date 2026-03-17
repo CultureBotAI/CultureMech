@@ -1,5 +1,5 @@
 id: CultureMech:007749
-name: Longimonas Haloalkaliphila Medium
+name: longimonas_haloalkaliphila_medium
 original_name: Longimonas Haloalkaliphila Medium
 category: bacterial
 medium_type: COMPLEX
@@ -35,6 +35,11 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: Added default solution name; Added default solution name; Added default solution
     name; Added default solution name
+- timestamp: '2026-03-17T19:46:09.564069+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Longimonas Haloalkaliphila Medium" to "longimonas_haloalkaliphila_medium"
+    for consistent matching
 solutions:
 - preferred_term: 1.0% Yeast extract solution (autoclaved)
   composition: []

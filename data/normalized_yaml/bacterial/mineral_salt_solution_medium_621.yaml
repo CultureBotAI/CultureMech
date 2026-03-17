@@ -1,0 +1,49 @@
+id: CultureMech:004808
+name: mineral_salt_solution_medium_621
+original_name: Mineral salt solution (medium 621)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3029 | DSMZ Medium: 3029 (mediadive.medium:3029)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3029
+  term:
+    id: komodo.medium:3029
+    label: Mineral salt solution (medium 621)
+ingredients:
+- preferred_term: KOH
+  notes: Extracted from recipe notes (pH buffer)
+  data_quality_flags:
+  - extracted_from_notes
+  concentration:
+    value: variable
+    unit: VARIABLE
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000213
+    label: KOH
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3029'
+- timestamp: '2026-03-13T06:19:28.831767Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004808'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:34.378501'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+- timestamp: '2026-03-17T06:30:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:44.307295+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral salt solution (medium 621)" to "mineral_salt_solution_medium_621"
+    for consistent matching

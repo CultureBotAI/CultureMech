@@ -1,5 +1,5 @@
 id: CultureMech:007535
-name: Acidifferobacter Murciensis Medium
+name: acidifferobacter_murciensis_medium
 original_name: Acidifferobacter Murciensis Medium
 category: bacterial
 medium_type: COMPLEX
@@ -170,6 +170,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:07.814706+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Acidifferobacter Murciensis Medium" to "acidifferobacter_murciensis_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Iron(II) sulfate solution

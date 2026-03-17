@@ -1,0 +1,47 @@
+id: CultureMech:010531
+name: oatmeal_agar_isp_3_with_0_1_yeast_extract
+original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: JCM Medium J51
+  term:
+    id: mediadive.medium:J51
+    label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+ingredients:
+- preferred_term: Oatmeal agar
+  term:
+    id: CHEBI:2509
+    label: Oatmeal agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Oatmeal agar
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.647731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J51'
+- timestamp: '2026-03-13T06:20:14.247323Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010531'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:33.278196+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT" to "oatmeal_agar_isp_3_with_0_1_yeast_extract"
+    for consistent matching

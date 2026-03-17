@@ -1,0 +1,149 @@
+id: CultureMech:001774
+name: DESULFOTOMACULUM (14.5) MEDIUM
+original_name: DESULFOTOMACULUM (14.5) MEDIUM
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 63a
+  term:
+    id: mediadive.medium:63a
+    label: DESULFOTOMACULUM (14.5) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63a.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.510204'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.102041'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '5.10204'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A, bring to the boil, then cool to
+    room temperature while sparging with 100% N2 gas. Add solutions B and C, adjust
+    pH to 7.8 with NaOH, and distribute under 100% N2 gas atmospherer into anoxic
+    Hungate-type tubes. During distribution continuously swirl the medium to keep
+    the grey precipitate suspended. Autoclave 15 min at 121°C. Check medium pH after
+    autoclaving and adjust to 6.8 - 7.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.073201Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 63a'
+- timestamp: '2026-03-13T06:19:07.100832Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:001774'
+- timestamp: '2026-03-15T03:03:38.592294+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_63a_DESULFOTOMACULUM_14.5_MEDIUM, KOMODO_63-12838_MEDIUM_63_MODIFIED_FOR_DSM_12838,
+    KOMODO_63-21064_MEDIUM_63_MODIFIED_FOR_DSM_21064, KOMODO_63-6605_MEDIUM_63_MODIFIED_FOR_DSM_6605,
+    KOMODO_63a_DESULFOTOMACULUM_SP._medium_I, KOMODO_63b_medium_FOR_D._INDONESIENSIS'
+synonyms:
+- name: MEDIUM 63 MODIFIED FOR DSM 12838
+  source: KOMODO
+  source_id: komodo.medium:63_12838
+  original_category: bacterial
+- name: MEDIUM 63 MODIFIED FOR DSM 21064
+  source: KOMODO
+  source_id: komodo.medium:63_21064
+  original_category: bacterial
+- name: MEDIUM 63 MODIFIED FOR DSM 6605
+  source: KOMODO
+  source_id: komodo.medium:63_6605
+  original_category: bacterial
+- name: DESULFOTOMACULUM SP. medium I
+  source: KOMODO
+  source_id: komodo.medium:63a
+  original_category: bacterial
+- name: medium FOR D. INDONESIENSIS
+  source: KOMODO
+  source_id: komodo.medium:63b
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- DSMZ_63a_DESULFOTOMACULUM_14.5_MEDIUM
+- KOMODO_63-12838_MEDIUM_63_MODIFIED_FOR_DSM_12838
+- KOMODO_63-21064_MEDIUM_63_MODIFIED_FOR_DSM_21064
+- KOMODO_63-6605_MEDIUM_63_MODIFIED_FOR_DSM_6605
+- KOMODO_63a_DESULFOTOMACULUM_SP._medium_I
+- KOMODO_63b_medium_FOR_D._INDONESIENSIS
+merge_fingerprint: 200453f53789ad702c77893088109885b9d1000a2bc45bd65ca8fb2474ad89a7

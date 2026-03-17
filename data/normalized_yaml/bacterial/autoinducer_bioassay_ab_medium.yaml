@@ -1,0 +1,132 @@
+id: CultureMech:008854
+name: autoinducer_bioassay_ab_medium
+original_name: Autoinducer Bioassay (AB) Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Base Medium
+  concentration:
+    value: '970'
+    unit: G_PER_L
+- preferred_term: NaCl
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: MgSO4
+  concentration:
+    value: '12.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
+- preferred_term: DI Water
+  concentration:
+    value: '970'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Casamino Acids
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino Acids
+- preferred_term: 3N NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1M Potassium Phosphate (pH 7.0)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: 0.1M L-arginine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000588
+    label: Glycerol
+media_term:
+  preferred_term: TOGO Medium M2267
+  term:
+    id: TOGO:M2267
+    label: Autoinducer Bioassay (AB) Medium
+notes: 'Source: https://togomedium.org/medium/M2267
+
+  Original URL: https://www.atcc.org/~/media/F0C5AC9D96C345049F8AA78CCC2AB46A.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.247991Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2267'
+- timestamp: '2026-01-28T19:48:36.863041Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.967160'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 3N NaOH'
+- timestamp: '2026-03-09T08:05:01.544130+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:00.781723Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:008854'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:06:54.788513'
+  action: Applied schema defaults and normalizations
+  notes: Added default solution name
+- timestamp: '2026-03-17T06:30:44.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.466003+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Autoinducer Bioassay (AB) Medium" to "autoinducer_bioassay_ab_medium"
+    for consistent matching
+solutions:
+- preferred_term: Stock Solutions
+  composition: []
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  name: Unknown solution

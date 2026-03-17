@@ -1,5 +1,5 @@
 id: CultureMech:009988
-name: Columbia Blood Agar With 5% Rabbit Blood
+name: columbia_blood_agar_with_5_rabbit_blood
 original_name: Columbia Blood Agar With 5% Rabbit Blood
 category: bacterial
 medium_type: COMPLEX
@@ -41,3 +41,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009988'
+- timestamp: '2026-03-17T19:46:29.457632+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Columbia Blood Agar With 5% Rabbit Blood" to "columbia_blood_agar_with_5_rabbit_blood"
+    for consistent matching

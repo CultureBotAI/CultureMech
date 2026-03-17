@@ -1,5 +1,5 @@
 id: CultureMech:008931
-name: Tepidanaerobacter Acetatoxydans Medium
+name: tepidanaerobacter_acetatoxydans_medium
 original_name: Tepidanaerobacter Acetatoxydans Medium
 category: bacterial
 medium_type: COMPLEX
@@ -453,6 +453,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:20.080921+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Tepidanaerobacter Acetatoxydans Medium" to "tepidanaerobacter_acetatoxydans_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Na-resazurin solution (0.1% w/v)

@@ -1,5 +1,5 @@
 id: CultureMech:010402
-name: Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl
+name: leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl
 original_name: Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -56,3 +56,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.565100+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Leibovitz's L-15 Medium With 10% FBS And 1.5% NaCl"
+    to "leibovitzs_l_15_medium_with_10_fbs_and_1_5_nacl" for consistent matching

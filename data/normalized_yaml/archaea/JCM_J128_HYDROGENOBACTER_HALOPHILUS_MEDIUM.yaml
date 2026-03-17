@@ -1,5 +1,5 @@
 id: CultureMech:000292
-name: HYDROGENOBACTER HALOPHILUS MEDIUM
+name: hydrogenobacter_halophilus_medium
 original_name: HYDROGENOBACTER HALOPHILUS MEDIUM
 category: ARCHAEA
 medium_type: DEFINED
@@ -160,3 +160,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:05.154026+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "HYDROGENOBACTER HALOPHILUS MEDIUM" to "hydrogenobacter_halophilus_medium"
+    for consistent matching

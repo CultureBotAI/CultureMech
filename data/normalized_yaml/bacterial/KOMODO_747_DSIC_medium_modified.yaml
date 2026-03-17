@@ -1,5 +1,5 @@
 id: CultureMech:006398
-name: DSIC medium (modified)
+name: dsic_medium_modified
 original_name: DSIC medium (modified)
 category: bacterial
 medium_type: COMPLEX
@@ -236,4 +236,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.743787+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DSIC medium (modified)" to "dsic_medium_modified" for
+    consistent matching
 high_metal: true

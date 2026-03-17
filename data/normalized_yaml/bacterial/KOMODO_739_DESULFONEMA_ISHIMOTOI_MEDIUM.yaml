@@ -1,5 +1,5 @@
 id: CultureMech:006388
-name: DESULFONEMA ISHIMOTOI MEDIUM
+name: desulfonema_ishimotoi_medium
 original_name: DESULFONEMA ISHIMOTOI MEDIUM
 category: bacterial
 medium_type: DEFINED
@@ -379,4 +379,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:57.637219+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "DESULFONEMA ISHIMOTOI MEDIUM" to "desulfonema_ishimotoi_medium"
+    for consistent matching
 high_metal: true

@@ -1,0 +1,69 @@
+id: CultureMech:010458
+name: yeast_nitrogen_base_glucose_ynbg
+original_name: Yeast nitrogen base glucose (YNBG)
+category: fungal
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ph_value: 4.0
+media_term:
+  preferred_term: DSMZ Medium 1682
+  term:
+    id: mediadive.medium:1682
+    label: Yeast nitrogen base glucose (YNBG)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1682.pdf'
+ingredients:
+- preferred_term: Yeast Nitrogen Base
+  concentration:
+    value: '6.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to
+    4.0 and autoclave. Dissolve 20 g agar in 500 mL distilled water and autoclave.
+    Combine both after autoclavation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.225407Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1682'
+- timestamp: '2026-03-13T06:20:13.911278Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010458'
+- timestamp: '2026-03-17T17:06:07.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:32.900408+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Yeast nitrogen base glucose (YNBG)" to "yeast_nitrogen_base_glucose_ynbg"
+    for consistent matching

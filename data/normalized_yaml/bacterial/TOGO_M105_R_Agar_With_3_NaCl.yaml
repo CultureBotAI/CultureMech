@@ -1,5 +1,5 @@
 id: CultureMech:007576
-name: R Agar With 3% NaCl
+name: r_agar_with_3_nacl
 original_name: R Agar With 3% NaCl
 category: bacterial
 medium_type: COMPLEX
@@ -54,6 +54,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:08.140892+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "R Agar With 3% NaCl" to "r_agar_with_3_nacl" for consistent
+    matching
 solutions:
 - preferred_term: R agar (see Medium [M19])
   composition: []

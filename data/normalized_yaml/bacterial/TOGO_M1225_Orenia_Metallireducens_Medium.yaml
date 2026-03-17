@@ -1,5 +1,5 @@
 id: CultureMech:007753
-name: Orenia Metallireducens Medium
+name: orenia_metallireducens_medium
 original_name: Orenia Metallireducens Medium
 category: bacterial
 medium_type: COMPLEX
@@ -215,6 +215,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.597380+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Orenia Metallireducens Medium" to "orenia_metallireducens_medium"
+    for consistent matching
 solutions:
 - preferred_term: FeCl2 solution (see Medium [M180])
   composition: []

@@ -1,5 +1,5 @@
 id: CultureMech:007766
-name: Desulfoobulbus Oligotrophicus Medium
+name: desulfoobulbus_oligotrophicus_medium
 original_name: Desulfoobulbus Oligotrophicus Medium
 category: bacterial
 medium_type: COMPLEX
@@ -183,6 +183,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:09.713941+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Desulfoobulbus Oligotrophicus Medium" to "desulfoobulbus_oligotrophicus_medium"
+    for consistent matching
 solutions:
 - preferred_term: Trace metal solution (see Medium [M288])
   composition: []

@@ -1,5 +1,5 @@
 id: CultureMech:004379
-name: EUBACTERIUM LENTUM medium
+name: eubacterium_lentum_medium
 original_name: EUBACTERIUM LENTUM medium
 category: bacterial
 medium_type: COMPLEX
@@ -144,4 +144,9 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:41.837576+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "EUBACTERIUM LENTUM medium" to "eubacterium_lentum_medium"
+    for consistent matching
 ph_value: 7.0

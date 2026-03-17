@@ -1,0 +1,53 @@
+id: CultureMech:005914
+name: medium_535_modified_for_dsm_10248
+original_name: MEDIUM 535 MODIFIED FOR DSM 10248
+category: bacterial
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+media_term:
+  preferred_term: KOMODO Medium 535_10248
+  term:
+    id: komodo.medium:535_10248
+    label: MEDIUM 535 MODIFIED FOR DSM 10248
+notes: 'Source: KOMODO ModelSEED | ID: 535_10248 | DSMZ Medium: 535 (mediadive.medium:535)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 535_10248'
+- timestamp: '2026-02-03T11:18:59.563663'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 535
+- timestamp: '2026-03-13T06:19:37.226810Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005914'
+- timestamp: '2026-03-17T06:29:54.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:53.950371+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 535 MODIFIED FOR DSM 10248" to "medium_535_modified_for_dsm_10248"
+    for consistent matching
+ph_value: 7.3

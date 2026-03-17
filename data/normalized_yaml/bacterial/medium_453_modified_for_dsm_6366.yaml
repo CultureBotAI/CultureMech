@@ -1,0 +1,71 @@
+id: CultureMech:005296
+name: medium_453_modified_for_dsm_6366
+original_name: MEDIUM 453 MODIFIED FOR DSM 6366
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 453_6366
+  term:
+    id: komodo.medium:453_6366
+    label: MEDIUM 453 MODIFIED FOR DSM 6366
+notes: 'Source: KOMODO ModelSEED | ID: 453_6366 | DSMZ Medium: 453 (mediadive.medium:453)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Meat peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000163
+    label: D(+)-Glucose
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 453_6366'
+- timestamp: '2026-02-03T11:18:55.417346'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 453
+- timestamp: '2026-03-13T06:19:31.563879Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:005296'
+- timestamp: '2026-03-17T06:29:42.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:47.461556+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "MEDIUM 453 MODIFIED FOR DSM 6366" to "medium_453_modified_for_dsm_6366"
+    for consistent matching
+ph_value: 7.5

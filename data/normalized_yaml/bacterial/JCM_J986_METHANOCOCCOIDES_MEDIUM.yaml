@@ -1,5 +1,5 @@
 id: CultureMech:003335
-name: METHANOCOCCOIDES MEDIUM
+name: methanococcoides_medium
 original_name: METHANOCOCCOIDES MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -38,5 +38,10 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:003335'
+- timestamp: '2026-03-17T19:45:33.621383+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "METHANOCOCCOIDES MEDIUM" to "methanococcoides_medium"
+    for consistent matching
 data_quality_flags:
 - incomplete_composition

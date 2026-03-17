@@ -1,0 +1,100 @@
+id: CultureMech:004076
+name: For DSM 14174
+original_name: For DSM 14174
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 1.7
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1321.1 | DSMZ Medium: 1321
+  (mediadive.medium:1321) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1321.1
+  term:
+    id: komodo.medium:1321.1
+    label: For DSM 14174
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.111111'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '139'
+    unit: G_PER_L
+- preferred_term: K2S4O6
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86466
+    label: ''
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  notes: pH adjustment (extracted from notes)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1321.1'
+- timestamp: '2026-02-03T11:19:12.800597'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1321
+- timestamp: '2026-03-13T03:09:26.679553Z'
+  curator: data-quality-cleanup-v1.0
+  action: Data quality fixes
+  notes: 'Added pH buffer: H2SO4'
+- timestamp: '2026-03-13T06:19:24.629603Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004076'
+- timestamp: '2026-03-15T03:03:52.335376+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1321-1_For_DSM_14174, KOMODO_1321_ACIDIHALOBACTER_medium'
+synonyms:
+- name: ACIDIHALOBACTER medium
+  source: KOMODO
+  source_id: komodo.medium:1321
+  original_category: bacterial
+categories:
+- bacterial
+merged_from:
+- KOMODO_1321-1_For_DSM_14174
+- KOMODO_1321_ACIDIHALOBACTER_medium
+merge_fingerprint: a4c9937fda809db779dcbcf3d6a933f0490bc73b14675678b2be3cc2ec888b68

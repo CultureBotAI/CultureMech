@@ -1,5 +1,5 @@
 id: CultureMech:009079
-name: Columbia agar (with sheep blood)
+name: columbia_agar_with_sheep_blood
 original_name: Columbia agar (with sheep blood)
 category: bacterial
 medium_type: COMPLEX
@@ -36,3 +36,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:009079'
+- timestamp: '2026-03-17T19:46:21.168691+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Columbia agar (with sheep blood)" to "columbia_agar_with_sheep_blood"
+    for consistent matching

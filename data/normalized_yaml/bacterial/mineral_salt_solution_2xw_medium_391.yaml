@@ -1,0 +1,30 @@
+id: CultureMech:004806
+name: mineral_salt_solution_2xw_medium_391
+original_name: Mineral salt solution "2xW" (medium 391)
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3027
+  term:
+    id: komodo.medium:3027
+    label: Mineral salt solution "2xW" (medium 391)
+notes: 'Source: KOMODO ModelSEED | ID: 3027 | DSMZ Medium: 3027 (mediadive.medium:3027)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3027'
+- timestamp: '2026-03-13T06:19:28.828743Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:004806'
+- timestamp: '2026-03-17T19:45:44.302063+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Mineral salt solution "2xW" (medium 391)" to "mineral_salt_solution_2xw_medium_391"
+    for consistent matching

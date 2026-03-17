@@ -1,5 +1,5 @@
 id: CultureMech:009815
-name: Oatmeal Agar (ISP-3)
+name: oatmeal_agar_isp_3
 original_name: Oatmeal Agar (ISP-3)
 category: bacterial
 medium_type: COMPLEX
@@ -92,6 +92,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:28.070873+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Oatmeal Agar (ISP-3)" to "oatmeal_agar_isp_3" for consistent
+    matching
 solutions:
 - preferred_term: Trace salts solution (see below)
   composition: []

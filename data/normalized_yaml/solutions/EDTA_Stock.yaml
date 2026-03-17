@@ -11,6 +11,8 @@ composition:
   term:
     id: CHEBI:42191
     label: edetic acid
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001115
 - preferred_term: Potassium hydroxide
   concentration:
     value: '31.0'
@@ -18,21 +20,34 @@ composition:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
-notes: |
-  EDTA stock solution for Bold Basal Medium (BBM) and related algae culture media.
+notes: 'EDTA stock solution for Bold Basal Medium (BBM) and related algae culture
+  media.
+
   Provides chelating agent for metal micronutrients, improving metal bioavailability
+
   and preventing precipitation.
 
-  Preparation: Add components to approximately 900 mL deionized water in the order listed
-  while stirring continuously. The KOH helps dissolve the EDTA acid form by neutralizing it.
+
+  Preparation: Add components to approximately 900 mL deionized water in the order
+  listed
+
+  while stirring continuously. The KOH helps dissolve the EDTA acid form by neutralizing
+  it.
+
   Bring to 1 L total volume.
+
 
   Storage: Room temperature in darkness.
 
+
   Final stock concentration: EDTA (~8.5 µM)
 
+
   Note: KOH is used to dissolve EDTA (free acid form). The resulting solution contains
+
   primarily disodium EDTA salt.
+
+  '
 source_data:
   origin: MediaIngredientMech
   mediaingredientmech_id: UNMAPPED_0062

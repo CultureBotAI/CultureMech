@@ -1,5 +1,5 @@
 id: CultureMech:003239
-name: ACETOBACTER EUROPAEUS MEDIUM
+name: acetobacter_europaeus_medium
 original_name: ACETOBACTER EUROPAEUS MEDIUM
 category: bacterial
 medium_type: COMPLEX
@@ -79,3 +79,8 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:45:32.724431+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "ACETOBACTER EUROPAEUS MEDIUM" to "acetobacter_europaeus_medium"
+    for consistent matching

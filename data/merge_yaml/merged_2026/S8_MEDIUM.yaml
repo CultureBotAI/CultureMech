@@ -1,0 +1,64 @@
+id: CultureMech:010254
+name: S8 Medium
+original_name: S8 Medium
+category: bacterial
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: KNO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:17632
+    label: nitrate
+media_term:
+  preferred_term: TOGO Medium M83
+  term:
+    id: TOGO:M83
+    label: S8 Medium
+notes: 'Source: https://togomedium.org/medium/M83
+
+  Original source: JCM - JCM_M91
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=91'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.794306Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M83'
+- timestamp: '2026-01-28T19:48:13.101595Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-03-09T08:04:21.697169+00:00'
+  curator: solution-migrator-v1.0
+  action: Migrated solutions from ingredients to solutions array
+  notes: Moved 1 solution(s) from ingredients
+- timestamp: '2026-03-13T06:20:12.439727Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010254'
+solutions:
+- preferred_term: S6 medium (see Medium [M81])
+  composition: []
+  notes: Cross-reference to Medium M81
+  concentration:
+    value: '1'
+    unit: G_PER_L
+merge_fingerprint: 2a9f22f9d0f7247b632d5f41638c41c93ade061fc38fb66101250bfd71ccd978
+merged_from:
+- TOGO_M83_S8_Medium

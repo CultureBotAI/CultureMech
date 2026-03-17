@@ -1,5 +1,5 @@
 id: CultureMech:008799
-name: GC Agar/Broth Medium
+name: gc_agar_broth_medium
 original_name: GC Agar/Broth Medium
 category: bacterial
 medium_type: COMPLEX
@@ -111,6 +111,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:19.027541+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "GC Agar/Broth Medium" to "gc_agar_broth_medium" for
+    consistent matching
 solutions:
 - preferred_term: Solution A
   term:

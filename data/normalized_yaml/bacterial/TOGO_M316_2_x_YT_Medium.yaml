@@ -1,5 +1,5 @@
 id: CultureMech:009625
-name: 2 x YT Medium
+name: 2_x_yt_medium
 original_name: 2 x YT Medium
 category: bacterial
 medium_type: COMPLEX
@@ -83,3 +83,7 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:26.693616+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "2 x YT Medium" to "2_x_yt_medium" for consistent matching

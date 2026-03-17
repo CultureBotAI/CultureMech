@@ -1,6 +1,6 @@
 id: CultureMech:000032
-name: Bold 1NV Medium
-category: algae
+name: bold_1nv_medium
+category: ALGAE
 medium_type: COMPLEX
 physical_state: LIQUID
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
@@ -101,6 +101,12 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000032'
+- timestamp: '2026-03-17T19:45:03.923051+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Bold 1NV Medium" to "bold_1nv_medium" for consistent
+    matching
 references:
 - reference_id: UTEX:bold-1nv-medium
 - reference_id: https://utex.org/products/bold-1nv-medium
+original_name: Bold 1NV Medium

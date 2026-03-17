@@ -1,5 +1,5 @@
 id: CultureMech:007932
-name: Tepidanaerobacter GT38 Medium
+name: tepidanaerobacter_gt38_medium
 original_name: Tepidanaerobacter GT38 Medium
 category: bacterial
 medium_type: COMPLEX
@@ -160,6 +160,11 @@ curation_history:
   curator: mediaingredientmech-enrichment-v1.0
   action: Added MediaIngredientMech links
   notes: Linked ingredients to MediaIngredientMech identifiers
+- timestamp: '2026-03-17T19:46:11.054573+00:00'
+  curator: normalize_media_names_to_snake_case.py
+  action: NAME_NORMALIZED
+  notes: Normalized name from "Tepidanaerobacter GT38 Medium" to "tepidanaerobacter_gt38_medium"
+    for consistent matching
 high_metal: true
 solutions:
 - preferred_term: Mineral solution (see below)
