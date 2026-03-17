@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000661
+    label: Sucrose
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Fe SO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: Fe SO4 x 7 H2O
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '120'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +111,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010462'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

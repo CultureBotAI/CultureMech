@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '0.961538'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '19.2308'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '3.46154'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -48,6 +57,9 @@ ingredients:
   concentration:
     value: '4.13462'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -55,6 +67,9 @@ ingredients:
   concentration:
     value: '0.480769'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: Sodium thioglycolate
   term:
     id: CHEBI:86481
@@ -62,6 +77,9 @@ ingredients:
   concentration:
     value: '0.0961538'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000569
+    label: Sodium thioglycolate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -69,6 +87,9 @@ ingredients:
   concentration:
     value: '0.000480769'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
 - preferred_term: Cellobiose
   term:
     id: CHEBI:17057
@@ -76,6 +97,9 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -83,6 +107,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -107,3 +134,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010496'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

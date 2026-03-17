@@ -1,7 +1,7 @@
 id: CultureMech:000300
 name: MODIFIED BALCH'S METHANOGENS MEDIUM
 original_name: MODIFIED BALCH'S METHANOGENS MEDIUM
-category: archaea
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:

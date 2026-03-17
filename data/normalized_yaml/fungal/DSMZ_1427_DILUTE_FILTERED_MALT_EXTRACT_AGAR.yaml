@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -41,3 +44,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010452'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

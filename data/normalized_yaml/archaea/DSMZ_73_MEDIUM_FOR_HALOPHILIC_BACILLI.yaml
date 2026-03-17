@@ -1,7 +1,7 @@
 id: CultureMech:000280
 name: MEDIUM FOR HALOPHILIC BACILLI
 original_name: MEDIUM FOR HALOPHILIC BACILLI
-category: archaea
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -19,6 +19,9 @@ ingredients:
   term:
     id: CHEBI:78020
     label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -30,6 +33,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -49,3 +55,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000280'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

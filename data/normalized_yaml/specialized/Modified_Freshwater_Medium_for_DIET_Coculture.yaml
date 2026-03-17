@@ -1,0 +1,73 @@
+name: Modified Freshwater Medium for DIET Coculture
+original_name: Modified Freshwater Medium for DIET Coculture
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015435
+ingredients:
+- preferred_term: Ethanol
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000195
+  term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: L-Cysteine
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000277
+  term:
+    id: CHEBI:35235
+    label: L-cysteine
+- preferred_term: Sodium sulfide nonahydrate
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:85357
+    label: sodium sulfide
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000120
+    label: Sodium sulfide nonahydrate
+temperature_value: 37.0
+incubation_atmosphere: ANAEROBIC
+notes: 'Headspace gas: N2/CO2 (80:20)
+
+  Vessel type: Anaerobic pressure tubes or serum bottles (10 mL cultures); 160 mL
+  serum bottles with 50 mL medium for larger cultures
+
+
+  Modified freshwater medium boiled to reduce oxygen solubility, then cooled under
+  N2/CO2 (80:20) gas mixture. Ethanol (20 mM) and other additives added from anaerobic
+  sterile stocks: 1 mM cysteine and 0.5 mM Na2S·9H2O as reducing agents. Bicarbonate/CO2
+  serves as sole electron acceptor. Vitamins included per standard formulation. Cultures
+  grown in 10 mL anaerobic pressure tubes or serum bottles; larger studies used 50
+  mL medium in 160 mL serum bottles. Sampling performed with N2/CO2 (80:20) degassed
+  hypodermic syringes. Digesters operated at 37°C mesophilic conditions.'
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000032
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000032
+  evidence:
+  - reference: doi:10.1039/C3EE42189A
+    supports: SUPPORT
+    snippet: This possibility was further investigated in defined co-cultures of Geobacter
+      metallireducens and Methanosaeta harundinacea which stoichiometrically converted
+      ethanol to methane
+    explanation: Describes ethanol conversion to methane in defined coculture using
+      specialized medium
+curation_history:
+- timestamp: '2026-03-15T00:15:00.415624Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000032 growth_media record
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

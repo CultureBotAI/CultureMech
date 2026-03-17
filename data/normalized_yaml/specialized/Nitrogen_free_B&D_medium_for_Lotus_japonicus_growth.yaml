@@ -1,0 +1,71 @@
+name: Nitrogen-free B&D medium for Lotus japonicus growth
+original_name: Nitrogen-free B&D medium for Lotus japonicus growth
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015437
+ingredients:
+- preferred_term: Calcium chloride
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+  term:
+    id: CHEBI:3312
+    label: calcium chloride
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000174
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Potassium phosphate
+  concentration:
+    value: '0.7'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Iron-EDTA
+  concentration:
+    value: '50.0'
+    unit: MICROMOLAR
+ph_value: 6.5
+temperature_value: 21.0
+notes: 'Vessel type: growth pouches or square plates
+
+  Light regime: 16h light / 8h dark
+
+  Light intensity: 100
+
+
+  Modified Broughton and Dilworth nitrogen-free plant nutrient medium for studying
+  symbiotic nitrogen fixation and nodulation. Gnotobiotic system allowing visualization
+  of root colonization and nodule formation by Mesorhizobium strains. Medium supports
+  both nitrogen-fixing symbionts and non-nodulating commensal bacteria.
+
+  '
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000040
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000040
+  evidence:
+  - reference: PMID:34312531
+    supports: SUPPORT
+    snippet: Sequential inoculation experiments revealed priority effects during root
+      microbiota assembly, where established communities are resilient to invasion
+      by latecomers, and that host preference of commensal bacteria confers a competitive
+      advantage in their cognate host
+curation_history:
+- timestamp: '2026-03-15T00:15:00.465121Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000040 growth_media record

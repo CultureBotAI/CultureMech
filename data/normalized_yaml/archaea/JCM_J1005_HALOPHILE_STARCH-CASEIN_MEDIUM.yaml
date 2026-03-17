@@ -1,7 +1,7 @@
 id: CultureMech:000284
 name: HALOPHILE STARCH-CASEIN MEDIUM
 original_name: HALOPHILE STARCH-CASEIN MEDIUM
-category: archaea
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
 - preferred_term: Casein
   term:
     id: CHEBI:3448
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -47,6 +56,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -54,6 +66,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -61,6 +76,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -78,4 +96,8 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000284'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers
 high_metal: true

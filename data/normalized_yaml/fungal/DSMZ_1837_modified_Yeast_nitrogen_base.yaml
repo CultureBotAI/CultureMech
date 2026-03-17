@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
 - preferred_term: MES Hydrat
   concentration:
     value: '3.9'
@@ -33,6 +36,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: Gellan Gum
   term:
     id: CHEBI:85248
@@ -40,6 +46,9 @@ ingredients:
   concentration:
     value: '8'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000929
+    label: Gellan Gum
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -56,3 +65,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010461'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

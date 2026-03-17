@@ -1,7 +1,7 @@
 id: CultureMech:000257
 name: HALOACTINOMYCES HALOPHILUS MEDIUM
 original_name: HALOACTINOMYCES HALOPHILUS MEDIUM
-category: archaea
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 7.5
@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '48'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: MgCl2
   term:
     id: CHEBI:6636
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '73.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: MgCl2
 - preferred_term: CaCl2
   term:
     id: CHEBI:3312
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '21'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
 - preferred_term: MgSO4
   term:
     id: CHEBI:32599
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000167
+    label: MgSO4
 - preferred_term: Chitosan
   term:
     id: CHEBI:16261
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000841
+    label: Chitosan
 - preferred_term: Casein hydrolysate
   concentration:
     value: '2'
@@ -72,6 +93,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000907
+    label: Asparagine
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -79,6 +103,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -94,3 +121,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000257'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -1,7 +1,7 @@
 id: CultureMech:000248
 name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-category: archaea
+category: ARCHAEA
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7.5
@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
 - preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
@@ -33,6 +39,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4 x 2 H2O
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -40,6 +49,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
 - preferred_term: NaCl
   term:
     id: CHEBI:26710
@@ -47,6 +59,9 @@ ingredients:
   concentration:
     value: '65'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: CaCl2 x 6 H2O
   term:
     id: CHEBI:91243
@@ -54,6 +69,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000327
+    label: CaCl2 x 6 H2O
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
@@ -61,6 +79,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
@@ -68,6 +89,9 @@ ingredients:
   concentration:
     value: '0.44'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
 - preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
@@ -75,6 +99,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000284
+    label: CuSO4 x 5 H2O
 - preferred_term: MnSO4 x 2 H2O
   term:
     id: CHEBI:86356
@@ -82,6 +109,9 @@ ingredients:
   concentration:
     value: '0.17'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000436
+    label: MnSO4 x 2 H2O
 - preferred_term: Na2MoO4 x 2 H2O
   term:
     id: CHEBI:75213
@@ -89,6 +119,9 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000616
+    label: Na2MoO4 x 2 H2O
 - preferred_term: H3BO3
   term:
     id: CHEBI:33118
@@ -96,6 +129,9 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: H3BO3
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -103,6 +139,9 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000126
+    label: CoCl2 x 6 H2O
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -135,3 +174,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000248'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

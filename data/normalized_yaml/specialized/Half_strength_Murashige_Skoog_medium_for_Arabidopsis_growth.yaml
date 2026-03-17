@@ -1,0 +1,51 @@
+name: Half-strength Murashige-Skoog medium for Arabidopsis growth
+original_name: Half-strength Murashige-Skoog medium for Arabidopsis growth
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015433
+ingredients:
+- preferred_term: Murashige-Skoog basal salts
+  concentration:
+    value: '0.5'
+    unit: VARIABLE
+- preferred_term: Sucrose
+  concentration:
+    value: '1.0'
+    unit: PERCENT_W_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000214
+  term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: Agar
+  concentration:
+    value: '0.8'
+    unit: PERCENT_W_V
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000119
+ph_value: 5.7
+temperature_value: 22.0
+notes: "Vessel type: square petri plates (vertical orientation)\nLight regime: 16h\
+  \ light / 8h dark\nLight intensity: 120\n\nGnotobiotic plant growth system with\
+  \ 0.5\xD7 MS medium supplemented with 1% sucrose and 0.8% agar. Seeds surface-sterilized\
+  \ prior to inoculation. Plates oriented vertically to allow root observation and\
+  \ bacterial colonization tracking.\n"
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000003
+  - CommunityMech:000022
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000003, CommunityMech:000022
+  evidence:
+  - reference: doi:10.1038/nature16192
+    supports: SUPPORT
+    snippet: Using defined bacterial communities and a gnotobiotic Arabidopsis plant
+      system we show that the isolates form assemblies resembling natural microbiota
+      on their cognate host organs, but are also capable of ectopic leaf or root colonization
+curation_history:
+- timestamp: '2026-03-15T00:15:00.393357Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000003, CommunityMech:000022 growth_media record

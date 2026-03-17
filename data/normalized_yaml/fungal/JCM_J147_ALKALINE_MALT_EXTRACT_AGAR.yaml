@@ -27,6 +27,9 @@ ingredients:
   concentration:
     value: '22.2222'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -34,6 +37,9 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -55,3 +61,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:010507'
+- timestamp: '2026-03-17T17:06:08.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

@@ -1,0 +1,71 @@
+name: Nitrogen-free plant nutrient solution for soybean growth
+original_name: Nitrogen-free plant nutrient solution for soybean growth
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015438
+ingredients:
+- preferred_term: Potassium phosphate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000174
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Calcium chloride
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+  term:
+    id: CHEBI:3312
+    label: calcium chloride
+- preferred_term: Iron-EDTA
+  concentration:
+    value: '100.0'
+    unit: MICROMOLAR
+ph_value: 6.5
+temperature_value: 25.0
+notes: 'Vessel type: Leonard jars or pots with vermiculite
+
+  Light regime: 16h light / 8h dark
+
+  Light intensity: 250
+
+
+  Nitrogen-free growth medium for soybean to study symbiotic nitrogen fixation. Leonard
+  jar system or vermiculite substrate watered with nitrogen-free nutrient solution.
+  Plants inoculated with sfSynCom (Bradyrhizobium BXYD3 plus Pantoea helper strains)
+  to assess nodulation efficiency and nitrogen fixation capacity.
+
+  '
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000064
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000064
+  evidence:
+  - reference: PMID:40052412
+    supports: SUPPORT
+    snippet: This sfSynCom based on the core-helper strategy was more effective at
+      promoting nodulation than inoculation with BXYD3 alone and achieved effects
+      comparable to those of a complex elite SynCom previously constructed on the
+      basis of potential beneficial functions between microbes and plants alone
+curation_history:
+- timestamp: '2026-03-15T00:15:00.480042Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000064 growth_media record

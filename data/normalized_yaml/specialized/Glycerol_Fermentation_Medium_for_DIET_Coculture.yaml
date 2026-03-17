@@ -1,0 +1,138 @@
+name: Glycerol Fermentation Medium for DIET Coculture
+original_name: Glycerol Fermentation Medium for DIET Coculture
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015432
+ingredients:
+- preferred_term: Glycerol
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+  term:
+    id: CHEBI:17754
+    label: glycerol
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.82'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000175
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000178
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '2.45'
+    unit: G_PER_L
+  term:
+    id: CHEBI:37583
+    label: sodium dihydrogen phosphate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000117
+    label: Sodium dihydrogen phosphate
+- preferred_term: Disodium hydrogen phosphate
+  concentration:
+    value: '4.58'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000639
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogen phosphate
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000988
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '0.26'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000663
+    label: Magnesium chloride hexahydrate
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '2.9'
+    unit: MG_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: L-Cysteine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000277
+  term:
+    id: CHEBI:35235
+    label: L-cysteine
+ph_value: 6.9
+temperature_value: 35.0
+incubation_atmosphere: ANAEROBIC
+notes: 'Headspace gas: N2 (>99.995%)
+
+  Vessel type: 100 mL serum bottles with 50 mL working volume
+
+  Inoculum source: C. pasteurianum full grown pre-culture (1/50 dilution) and concentrated
+  G. sulfurreducens suspension
+
+
+  Medium supplemented with 10 mL vitamin solution (DSMZ medium 141), 10 mL trace element
+  solution (DSMZ medium 141), and 0.5 mL trace element solution SL-10 (DSMZ medium
+  320) per liter. Cultures maintained at 35°C with constant agitation under strict
+  anaerobic conditions using Hungate technique. Physical contact between bacteria
+  enables electron exchange either directly via interspecies wiring or indirectly
+  using soluble electron mediators like L-cysteine present in medium.'
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000031
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000031
+  evidence:
+  - reference: PMID:28287150
+    supports: SUPPORT
+    snippet: The present study deals with a co-culture of Geobacter sulfurreducens
+      and Clostridium pasteurianum during glycerol fermentation
+    explanation: Describes glycerol fermentation medium for coculture
+  - reference: PMID:28287150
+    supports: SUPPORT
+    snippet: The present study deals with a co-culture of Geobacter sulfurreducens
+      and Clostridium pasteurianum during glycerol fermentation
+    explanation: Confirms glycerol fermentation medium for DIET coculture
+  - reference: PMID:28287150
+    supports: SUPPORT
+    snippet: Using this mechanism could be an efficient and cost-effective way to
+      directly control redox balances in co-culture fermentation
+    explanation: Establishes anaerobic requirement maintained using Hungate technique
+curation_history:
+- timestamp: '2026-03-15T00:15:00.375852Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000031 growth_media record
+- timestamp: '2026-03-17T17:06:21.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

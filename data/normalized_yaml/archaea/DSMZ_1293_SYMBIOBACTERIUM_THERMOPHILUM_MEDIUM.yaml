@@ -1,7 +1,7 @@
 id: CultureMech:000251
 name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
 original_name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
-category: archaea
+category: ARCHAEA
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-7.8
@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148
@@ -26,6 +29,9 @@ ingredients:
   concentration:
     value: '1.7'
     unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -41,6 +47,9 @@ ingredients:
   term:
     id: CHEBI:184335
     label: ''
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000412
+    label: NH4HCO3
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -69,3 +78,7 @@ curation_history:
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:000251'
+- timestamp: '2026-03-17T17:06:12.000000Z'
+  curator: mediaingredientmech-enrichment-v1.0
+  action: Added MediaIngredientMech links
+  notes: Linked ingredients to MediaIngredientMech identifiers

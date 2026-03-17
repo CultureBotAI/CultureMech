@@ -1,0 +1,87 @@
+name: Modified DSM 120 Medium for DIET Coculture
+original_name: Modified DSM 120 Medium for DIET Coculture
+category: specialized
+medium_type: DEFINED
+physical_state: LIQUID
+id: CultureMech:015434
+ingredients:
+- preferred_term: Ethanol
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000195
+  term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000255
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Sodium chloride
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000187
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: L-Cysteine
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000277
+  term:
+    id: CHEBI:35235
+    label: L-cysteine
+- preferred_term: Sodium sulfide
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000988
+  term:
+    id: CHEBI:85357
+    label: sodium sulfide
+temperature_value: 37.0
+incubation_atmosphere: ANAEROBIC
+notes: "Headspace gas: N2/CO2 (80:20)\nVessel type: Anaerobic serum bottles with thick\
+  \ butyl rubber stoppers\n\nModified DSM 120 medium with no yeast extract, Casitone,\
+  \ or resazurin. Specific composition: 0.5 mM sulfide, 1 mM cysteine, 0.002 g/L CaCl2\xB7\
+  2H2O, 1 g/L NaCl, 2 g/L NaHCO3. Medium boiled to reduce oxygen, cooled under N2/CO2\
+  \ gas mixture. Sulfide and cysteine essential for long-term M. barkeri cultivation.\
+  \ Initial cocultures: 0.5 ml each organism in 9 ml medium; later transfers: 10%\
+  \ inocula in 45 ml medium."
+source_data:
+  origin: CommunityMech
+  community_ids:
+  - CommunityMech:000033
+  import_date: '2026-03-15'
+  notes: Imported from CommunityMech CommunityMech:000033
+  evidence:
+  - reference: PMID:24837373
+    supports: SUPPORT
+    snippet: Cocultures formed aggregates that shared electrons via DIET during the
+      stoichiometric conversion of ethanol to methane
+    explanation: Confirms ethanol as electron donor and DIET mechanism in coculture
+curation_history:
+- timestamp: '2026-03-15T00:15:00.404953Z'
+  curator: communitymech-importer-v1.0
+  action: Imported from CommunityMech
+  notes: Created from CommunityMech:000033 growth_media record
