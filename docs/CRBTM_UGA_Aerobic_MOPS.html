@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRBTM UGA Aerobic MOPS - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>CRBTM UGA Aerobic MOPS</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">SPECIALIZED</span>
+                    
+                    <span class="badge">DEFINED</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+                <p>UGA media for MT123 aerobic growth with MOPS buffer, for growth at pH7.5</p>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+                    <div class="info-item">
+                        <div class="info-label">CultureMech ID</div>
+                        <div class="info-value"><strong>CultureMech:015506</strong></div>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>Ammonium Chloride</td>
+                            <td>
+                                
+                                3.74E+00 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31206" class="external-link" target="_blank">
+                                    CHEBI:31206
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium Chloride</td>
+                            <td>
+                                
+                                1.34E+00 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32588" class="external-link" target="_blank">
+                                    CHEBI:32588
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7447-40-7; MW: 74.55</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Magnesium sulfate heptahydrate</td>
+                            <td>
+                                
+                                2 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium chloride dihydrate</td>
+                            <td>
+                                
+                                0.1 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86158" class="external-link" target="_blank">
+                                    CHEBI:86158
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW: 147.01</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Chloride</td>
+                            <td>
+                                
+                                0.17 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 7647-14-5; MW: 58.44</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>EDTA</td>
+                            <td>
+                                
+                                5.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64755" class="external-link" target="_blank">
+                                    CHEBI:64755
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Magnesium Sulfate Heptahydrate</td>
+                            <td>
+                                
+                                3.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86463" class="external-link" target="_blank">
+                                    CHEBI:86463
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10034-99-8; MW: 246.47; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Manganese (II) sulfate monohydrate</td>
+                            <td>
+                                
+                                5.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75219" class="external-link" target="_blank">
+                                    CHEBI:75219
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10034-96-5; MW: 169.02; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Chloride</td>
+                            <td>
+                                
+                                10.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 7647-14-5; MW: 58.44; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Iron (II) sulfate heptahydrate</td>
+                            <td>
+                                
+                                1.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cobalt(II) nitrate hexahydrate</td>
+                            <td>
+                                
+                                1.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium Chloride Dihydrate</td>
+                            <td>
+                                
+                                1.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86158" class="external-link" target="_blank">
+                                    CHEBI:86158
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Zinc sulfate heptahydrate</td>
+                            <td>
+                                
+                                1.0 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Copper (II) sulfate pentahydrate</td>
+                            <td>
+                                
+                                0.1 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Aluminum potassium sulfate dodecahydrate</td>
+                            <td>
+                                
+                                0.1 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Boric Acid</td>
+                            <td>
+                                
+                                0.1 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33134" class="external-link" target="_blank">
+                                    CHEBI:33134
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10043-35-3; MW: 61.83; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Molybdate Dihydrate</td>
+                            <td>
+                                
+                                0.1 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium selenite pentahydrate</td>
+                            <td>
+                                
+                                0.01 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium tungstate dihydrate</td>
+                            <td>
+                                
+                                0.1 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nickel (II) chloride hexahydrate</td>
+                            <td>
+                                
+                                0.2 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe&#39;s mineral mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Folic Acid</td>
+                            <td>
+                                
+                                20.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27470" class="external-link" target="_blank">
+                                    CHEBI:27470
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxine HCl</td>
+                            <td>
+                                
+                                100.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131531" class="external-link" target="_blank">
+                                    CHEBI:131531
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Riboflavin</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17015" class="external-link" target="_blank">
+                                    CHEBI:17015
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>biotin</td>
+                            <td>
+                                
+                                20.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine HCl</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49105" class="external-link" target="_blank">
+                                    CHEBI:49105
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinic Acid</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15940" class="external-link" target="_blank">
+                                    CHEBI:15940
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>calcium pantothenate</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31345" class="external-link" target="_blank">
+                                    CHEBI:31345
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cyanocobalamin</td>
+                            <td>
+                                
+                                1.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17439" class="external-link" target="_blank">
+                                    CHEBI:17439
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4-Aminobenzoic acid</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 150-13-0; MW: 137.14; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Lipoic acid</td>
+                            <td>
+                                
+                                50.0 UG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16494" class="external-link" target="_blank">
+                                    CHEBI:16494
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW: 206.33; From ATCC Wolfe&#39;s vitamin mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium D,L-Lactate</td>
+                            <td>
+                                
+                                20 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:232798" class="external-link" target="_blank">
+                                    CHEBI:232798
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-21-5; MW: 90.08</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3-(N-morpholino)propanesulfonic acid</td>
+                            <td>
+                                
+                                40 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 1132-61-2; MW: 209.2633</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: FEBA media definitions</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: crbtm_uga_aerobic_mops.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>

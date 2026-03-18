@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMB ALS GHP - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>ZMB ALS GHP</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">SPECIALIZED</span>
+                    
+                    <span class="badge">DEFINED</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+                <p>Media for culturing Bifidobacterium with 3 spiked in amino acids</p>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+                    <div class="info-item">
+                        <div class="info-label">CultureMech ID</div>
+                        <div class="info-value"><strong>CultureMech:015793</strong></div>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>D-Glucose</td>
+                            <td>
+                                
+                                2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:42758" class="external-link" target="_blank">
+                                    CHEBI:42758
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Histidine</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15971" class="external-link" target="_blank">
+                                    CHEBI:15971
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>m-Inositol</td>
+                            <td>
+                                
+                                0.002 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 87-89-8; MW: 180.16</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium phosphate dibasic</td>
+                            <td>
+                                
+                                4.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131527" class="external-link" target="_blank">
+                                    CHEBI:131527
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 7758-11-4; MW: 174.18</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium phosphate monobasic</td>
+                            <td>
+                                
+                                4.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63036" class="external-link" target="_blank">
+                                    CHEBI:63036
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW: 136.09</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Proline</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17203" class="external-link" target="_blank">
+                                    CHEBI:17203
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Glycine</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57305" class="external-link" target="_blank">
+                                    CHEBI:57305
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>biotin</td>
+                            <td>
+                                
+                                0.006 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>calcium pantothenate</td>
+                            <td>
+                                
+                                0.0012 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31345" class="external-link" target="_blank">
+                                    CHEBI:31345
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinic Acid</td>
+                            <td>
+                                
+                                0.0009 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15940" class="external-link" target="_blank">
+                                    CHEBI:15940
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxamine dihydrochloride</td>
+                            <td>
+                                
+                                0.0048 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131532" class="external-link" target="_blank">
+                                    CHEBI:131532
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 524-36-7; MW: 241.112</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Riboflavin</td>
+                            <td>
+                                
+                                0.0009 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17015" class="external-link" target="_blank">
+                                    CHEBI:17015
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cyanocobalamin</td>
+                            <td>
+                                
+                                0.00001 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17439" class="external-link" target="_blank">
+                                    CHEBI:17439
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Magnesium Sulfate Heptahydrate</td>
+                            <td>
+                                
+                                0.004 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86463" class="external-link" target="_blank">
+                                    CHEBI:86463
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10034-99-8; MW: 246.47</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Iron (II) sulfate heptahydrate</td>
+                            <td>
+                                
+                                0.004 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7782-63-0; MW: 278.01</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Zinc sulfate heptahydrate</td>
+                            <td>
+                                
+                                0.005 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7446-20-0; MW: 287.56</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Folic Acid</td>
+                            <td>
+                                
+                                0.00056 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27470" class="external-link" target="_blank">
+                                    CHEBI:27470
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4-Aminobenzoic acid</td>
+                            <td>
+                                
+                                0.000056 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 150-13-0; MW: 137.14</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine HCl</td>
+                            <td>
+                                
+                                0.00056 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49105" class="external-link" target="_blank">
+                                    CHEBI:49105
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium acetate</td>
+                            <td>
+                                
+                                0.9 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32029" class="external-link" target="_blank">
+                                    CHEBI:32029
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 127-08-2; MW: 98.14</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Lipoic acid</td>
+                            <td>
+                                
+                                0.001 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16494" class="external-link" target="_blank">
+                                    CHEBI:16494
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW: 206.33</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Tween 80</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:53426" class="external-link" target="_blank">
+                                    CHEBI:53426
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW: 1310.0</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Adenine hydrochloride hydrate</td>
+                            <td>
+                                
+                                0.0368 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 2922-28-3; MW: 171.59</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Guanine</td>
+                            <td>
+                                
+                                0.0376 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 73-40-5; MW: 151.13</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Uracil</td>
+                            <td>
+                                
+                                0.023 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17568" class="external-link" target="_blank">
+                                    CHEBI:17568
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 66-22-8; MW: 112.0868</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cytosine</td>
+                            <td>
+                                
+                                0.0222 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 71-30-7; MW: 111.1</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Xanthine</td>
+                            <td>
+                                
+                                0.0304 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 69-89-6; MW: 152.11</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ammonium heptamolybdate tetrahydrate</td>
+                            <td>
+                                
+                                0.00019 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 12027-67-7; MW: 1235.86</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Manganese (II) sulfate monohydrate</td>
+                            <td>
+                                
+                                0.00038 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75219" class="external-link" target="_blank">
+                                    CHEBI:75219
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10034-96-5; MW: 169.02</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium chloride dihydrate</td>
+                            <td>
+                                
+                                0.000012 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86158" class="external-link" target="_blank">
+                                    CHEBI:86158
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW: 147.01</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cobalt chloride hexahydrate</td>
+                            <td>
+                                
+                                0.00019 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7791-13-1; MW: 237.93</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Copper (II) sulfate pentahydrate</td>
+                            <td>
+                                
+                                0.000012 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7758-99-8; MW: 249.69</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Boric Acid</td>
+                            <td>
+                                
+                                0.00075 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33134" class="external-link" target="_blank">
+                                    CHEBI:33134
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10043-35-3; MW: 61.83</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium iodide</td>
+                            <td>
+                                
+                                0.00016 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7681-11-0; MW: 166.0</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>EDTA</td>
+                            <td>
+                                
+                                0.0075 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64755" class="external-link" target="_blank">
+                                    CHEBI:64755
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-glutathione reduced</td>
+                            <td>
+                                
+                                0.015 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:177535" class="external-link" target="_blank">
+                                    CHEBI:177535
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-18-8; MW: 307.32</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ammonium Sulfate</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:62946" class="external-link" target="_blank">
+                                    CHEBI:62946
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW: 132.14</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Chloride</td>
+                            <td>
+                                
+                                3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 7647-14-5; MW: 58.44</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MOPS</td>
+                            <td>
+                                
+                                15 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39074" class="external-link" target="_blank">
+                                    CHEBI:39074
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: FEBA media definitions</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: zmb_als_ghp.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>

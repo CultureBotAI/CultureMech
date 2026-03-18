@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCFM - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>SCFM</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">SPECIALIZED</span>
+                    
+                    <span class="badge">DEFINED</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+                <p>Lung Simulating Media for cultivation of lung pathogens and commensals</p>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+                    <div class="info-item">
+                        <div class="info-label">CultureMech ID</div>
+                        <div class="info-value"><strong>CultureMech:015737</strong></div>
+                    </div>
+                    
+
+                    
+
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>MOPS</td>
+                            <td>
+                                
+                                0.01 MOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39074" class="external-link" target="_blank">
+                                    CHEBI:39074
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>KCl</td>
+                            <td>
+                                
+                                1.114 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32588" class="external-link" target="_blank">
+                                    CHEBI:32588
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaCl</td>
+                            <td>
+                                
+                                4.7 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CaCl2*2H2O</td>
+                            <td>
+                                
+                                0.249917 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MgCl*6H2O</td>
+                            <td>
+                                
+                                0.12198 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>KNO3</td>
+                            <td>
+                                
+                                0.0351828 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17632" class="external-link" target="_blank">
+                                    CHEBI:17632
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FeCl2 tetrahydrate</td>
+                            <td>
+                                
+                                0.001 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2SO4</td>
+                            <td>
+                                
+                                0.038 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32149" class="external-link" target="_blank">
+                                    CHEBI:32149
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NH4Cl</td>
+                            <td>
+                                
+                                0.122 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31206" class="external-link" target="_blank">
+                                    CHEBI:31206
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaH2PO4</td>
+                            <td>
+                                
+                                0.35 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37585" class="external-link" target="_blank">
+                                    CHEBI:37585
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Glucose</td>
+                            <td>
+                                
+                                13.75 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:42758" class="external-link" target="_blank">
+                                    CHEBI:42758
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium lactate</td>
+                            <td>
+                                
+                                22.5 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75228" class="external-link" target="_blank">
+                                    CHEBI:75228
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Arginine</td>
+                            <td>
+                                
+                                12.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16467" class="external-link" target="_blank">
+                                    CHEBI:16467
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Histidine</td>
+                            <td>
+                                
+                                20.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15971" class="external-link" target="_blank">
+                                    CHEBI:15971
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Lysine</td>
+                            <td>
+                                
+                                84.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18019" class="external-link" target="_blank">
+                                    CHEBI:18019
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Aspartic Acid sodium salt monohydrate</td>
+                            <td>
+                                
+                                32.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Glutamic acid monopotassium salt monohydrate</td>
+                            <td>
+                                
+                                60.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 6382-01-0; MW: 203.24; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Serine</td>
+                            <td>
+                                
+                                56.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17115" class="external-link" target="_blank">
+                                    CHEBI:17115
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Threonine</td>
+                            <td>
+                                
+                                40.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16857" class="external-link" target="_blank">
+                                    CHEBI:16857
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Cysteine hydrochloride monohydrate</td>
+                            <td>
+                                
+                                8.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7048-04-6; MW: 175.63; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Glycine</td>
+                            <td>
+                                
+                                48.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57305" class="external-link" target="_blank">
+                                    CHEBI:57305
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Proline</td>
+                            <td>
+                                
+                                68.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17203" class="external-link" target="_blank">
+                                    CHEBI:17203
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Alanine</td>
+                            <td>
+                                
+                                72.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16977" class="external-link" target="_blank">
+                                    CHEBI:16977
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-41-7; MW: 89.09; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Valine</td>
+                            <td>
+                                
+                                44.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16414" class="external-link" target="_blank">
+                                    CHEBI:16414
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Isoleucine</td>
+                            <td>
+                                
+                                44.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17191" class="external-link" target="_blank">
+                                    CHEBI:17191
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Leucine</td>
+                            <td>
+                                
+                                64.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15603" class="external-link" target="_blank">
+                                    CHEBI:15603
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Methionine</td>
+                            <td>
+                                
+                                24.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16643" class="external-link" target="_blank">
+                                    CHEBI:16643
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Phenylalanine</td>
+                            <td>
+                                
+                                20.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17295" class="external-link" target="_blank">
+                                    CHEBI:17295
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-tyrosine disodium salt</td>
+                            <td>
+                                
+                                32.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 69847-45-6; MW: 225.15; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-ornithine monohydrochloride</td>
+                            <td>
+                                
+                                28.0 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 3184-13-2; MW: 168.62; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Tryptophan</td>
+                            <td>
+                                
+                                0.4 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16828" class="external-link" target="_blank">
+                                    CHEBI:16828
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23; From LCFM Carbon mix</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Magnesium chloride hexahydrate</td>
+                            <td>
+                                
+                                0.0003 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7791-18-6; MW: 203.3; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nitrilotriacetic acid disodium salt</td>
+                            <td>
+                                
+                                0.00015 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 15467-20-6; MW: 235.1; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Chloride</td>
+                            <td>
+                                
+                                0.0001 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 7647-14-5; MW: 58.44; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Manganese (II) chloride tetrahydrate</td>
+                            <td>
+                                
+                                5e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 13446-34-9; MW: 197.91; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cobalt chloride hexahydrate</td>
+                            <td>
+                                
+                                1e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7791-13-1; MW: 237.93; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Zinc chloride</td>
+                            <td>
+                                
+                                1.3e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7646-85-7; MW: 136.3; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium Chloride Dihydrate</td>
+                            <td>
+                                
+                                1e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86158" class="external-link" target="_blank">
+                                    CHEBI:86158
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Iron (II) chloride tetrahydrate</td>
+                            <td>
+                                
+                                1e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 13478-10-9; MW: 198.81; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nickel (II) chloride hexahydrate</td>
+                            <td>
+                                
+                                2.5e-06 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 7791-20-0; MW: 237.69; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Aluminum chloride hydrate</td>
+                            <td>
+                                
+                                2.0000000000000003e-06 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10124-27-3; MW: 133.34; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>copper (II) chloride dihydrate</td>
+                            <td>
+                                
+                                1.0000000000000002e-06 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Boric Acid</td>
+                            <td>
+                                
+                                1.0000000000000002e-06 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33134" class="external-link" target="_blank">
+                                    CHEBI:33134
+                                </a>
+                                
+                            </td>
+                            <td>CAS: 10043-35-3; MW: 61.83; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium Molybdate Dihydrate</td>
+                            <td>
+                                
+                                1.0000000000000002e-06 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10102-40-6; MW: 241.95; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium selenite pentahydrate</td>
+                            <td>
+                                
+                                3e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 26970-82-1; MW: 263.01; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium tungstate dihydrate</td>
+                            <td>
+                                
+                                2.5e-05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>CAS: 10213-10-2; MW: 329.85; From Sulfur-free DL minerals</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>d-Biotin</td>
+                            <td>
+                                
+                                0.0002 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Folic Acid</td>
+                            <td>
+                                
+                                0.0002 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27470" class="external-link" target="_blank">
+                                    CHEBI:27470
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4; From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxine HCl</td>
+                            <td>
+                                
+                                0.001 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131531" class="external-link" target="_blank">
+                                    CHEBI:131531
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64; From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Riboflavin</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17015" class="external-link" target="_blank">
+                                    CHEBI:17015
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36; From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26948" class="external-link" target="_blank">
+                                    CHEBI:26948
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinic Acid</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15940" class="external-link" target="_blank">
+                                    CHEBI:15940
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11; From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pantothenic Acid</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:7916" class="external-link" target="_blank">
+                                    CHEBI:7916
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Vitamin B12</td>
+                            <td>
+                                
+                                1e-05 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:176843" class="external-link" target="_blank">
+                                    CHEBI:176843
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>p-Amino Benzoic Acid</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>From DL vitamins</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D,L-6,8-Thioctic Acid</td>
+                            <td>
+                                
+                                0.0005 MG_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43796" class="external-link" target="_blank">
+                                    CHEBI:43796
+                                </a>
+                                
+                            </td>
+                            <td>Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: FEBA media definitions</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: scfm.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>
