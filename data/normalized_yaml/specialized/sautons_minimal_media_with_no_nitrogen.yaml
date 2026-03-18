@@ -1,0 +1,97 @@
+id: CultureMech:015736
+name: Sautons minimal media with no nitrogen
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '8.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '2.50E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '1.00E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '2.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '2.00E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '5.00E-04'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: zinc sulfate
+  concentration:
+    value: '1.00E-05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Ethanol
+  concentration:
+    value: '2.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16236
+    label: ethanol
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 64-17-5; MW: 46.07'
+- preferred_term: Tyloxapol
+  concentration:
+    value: '5.00E-02'
+    unit: G_PER_L
+  notes: 'CAS: 25301-02-4'
+description: Minimal media for Mycobacterium tuberculosis (H37Rv) with no nitrogen
+  source
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Sautons minimal media with no nitrogen
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.817750+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Sautons_minimal_media_with_no_nitrogen.yaml'
+- timestamp: '2026-03-18T04:34:00.930438Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015736'
+data_quality_flags:
+- has_unmapped_ingredients

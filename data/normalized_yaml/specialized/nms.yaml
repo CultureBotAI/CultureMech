@@ -1,0 +1,168 @@
+id: CultureMech:015673
+name: NMS
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: KNO3
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17632
+    label: nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.2144'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  notes: 'CAS: 6381-92-6; MW: 336.206'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Manganese(II) sulfate tetrahydrate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'CAS: 10101-68-5; MW: 223.06'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: KH2PO4
+  concentration:
+    value: '26'
+    unit: G_PER_L
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '33'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Folic Acid
+  concentration:
+    value: '20'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4'
+- preferred_term: Riboflavin
+  concentration:
+    value: '50'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36'
+- preferred_term: biotin
+  concentration:
+    value: '20'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '50'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '50'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '1'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37'
+- preferred_term: Nicotinamide
+  concentration:
+    value: '50'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17154
+    label: nicotinamide
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 98-92-0; MW: 122.12'
+description: Nitrate Mineral Salts medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: NMS
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.160979+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: NMS.yaml'
+- timestamp: '2026-03-18T04:34:00.390570Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015673'
+data_quality_flags:
+- has_unmapped_ingredients

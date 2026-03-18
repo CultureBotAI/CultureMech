@@ -1,0 +1,80 @@
+id: CultureMech:015544
+name: M9 2percentGlucose 100mMammonium
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Sodium phosphate dibasic heptahydrate
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+  notes: 'CAS: 7782-85-6; MW: 268.07'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '100'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+description: E. coli defined media
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: M9 2percentGlucose 100mMammonium
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.895230+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: M9_2percentGlucose_100mMammonium.yaml'
+- timestamp: '2026-03-18T04:33:59.000322Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015544'
+data_quality_flags:
+- has_unmapped_ingredients

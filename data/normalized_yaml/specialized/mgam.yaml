@@ -1,0 +1,126 @@
+id: CultureMech:015590
+name: mGAM
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Soya peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-46-8'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Proteose peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-38-8'
+- preferred_term: Digested serum
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  term:
+    id: UBERON:0001977
+    label: Serum
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: Meat extract
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315424
+    label: Meat extract
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Liver extract
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302129
+    label: Liver extract
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: D-Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7778-77-0; MW: 136.09'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+- preferred_term: 'Starch '
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: Starch
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: L-Cysteine HCL
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: L-cysteine hydrochloride
+  notes: 'Mapping: ols_exact (confidence: 0.92)'
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 367-51-1'
+description: Gifu Anaerobic Broth
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: mGAM
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.450402+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: mGAM.yaml'
+- timestamp: '2026-03-18T04:33:59.586822Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015590'
+data_quality_flags: []

@@ -1,0 +1,69 @@
+id: CultureMech:015602
+name: MMX dropout
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '60'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '33'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '7.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: D-Glucose
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Takara_DO_Supp_MinusHisLeuTrp
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+description: Defined media for Xanthomonas with dropout mix
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MMX dropout
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.055848+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MMX_dropout.yaml'
+- timestamp: '2026-03-18T04:33:59.632005Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015602'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,55 @@
+id: CultureMech:015675
+name: PBS
+medium_type: BUFFER
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '137'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '2.7'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7447-40-7; MW: 74.55'
+- preferred_term: Na2HPO4
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: ols_exact (confidence: 0.92)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.8'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: ols_exact (confidence: 0.92)'
+description: Phosphate-Buffered Saline - buffer solution used for baseline measurements,
+  not a growth medium
+notes: 'Source: FEBA media definitions; Control buffer for CultureBot experiments'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: PBS
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.175246+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: PBS.yaml'
+- timestamp: '2026-03-18T04:34:00.401957Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015675'
+data_quality_flags: []

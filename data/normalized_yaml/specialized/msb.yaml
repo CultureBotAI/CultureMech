@@ -1,0 +1,121 @@
+id: CultureMech:015644
+name: MSB
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '2.80E+01'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '1.20E+01'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '7.57E+00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '2.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '5.93E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '6.70E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Ammonium heptamolybdate tetrahydrate
+  concentration:
+    value: '1.85E-04'
+    unit: G_PER_L
+  notes: 'CAS: 12027-67-7; MW: 1235.86'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.98E-03'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: EDTA
+  concentration:
+    value: '2.50E-03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '1.10E-02'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '1.54E-03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '3.92E-04'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '2.50E-04'
+    unit: G_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03'
+- preferred_term: sodium tetraborate decahydrate
+  concentration:
+    value: '1.77E-04'
+    unit: G_PER_L
+  notes: 'CAS: 1303-96-4'
+description: A defined Ralstonia growth medium from Tiffany Lowe-Power lab (note,
+  no carbon is added)
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MSB
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.115457+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MSB.yaml'
+- timestamp: '2026-03-18T04:33:59.876905Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015644'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,86 @@
+id: CultureMech:015687
+name: R2A
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 65072-00-6'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: D-Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: Starch
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 9005-25-8'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 113-24-6; MW: 110.04'
+description: Reasoner's 2A media
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: R2A
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.245358+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: R2A.yaml'
+- timestamp: '2026-03-18T04:34:00.472973Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015687'
+data_quality_flags: []

@@ -1,0 +1,53 @@
+id: CultureMech:015534
+name: KB-half
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Bacto Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 51142-18-8'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Glycerol
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-81-5; MW: 92.09'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+description: King's medium B half strength
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: KB-half
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.826634+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: KB-half.yaml'
+- timestamp: '2026-03-18T04:33:58.951392Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015534'
+data_quality_flags:
+- has_unmapped_ingredients

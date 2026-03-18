@@ -1,0 +1,30 @@
+id: CultureMech:015786
+name: Water
+medium_type: NEGATIVE_CONTROL
+physical_state: LIQUID
+description: Sterile water negative control - no growth expected, used for contamination
+  detection
+ingredients:
+- preferred_term: Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15377
+    label: water
+notes: Negative control medium
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Water
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.246327+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Water.yaml'
+- timestamp: '2026-03-18T04:34:01.488065Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015786'
+data_quality_flags: []

@@ -1,0 +1,123 @@
+id: CultureMech:015479
+name: Vogels fungal media
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Trisodium citrate dihydrate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 6132-04-3; MW:
+    294.1'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ammonium Nitrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'CAS: 6484-52-2; MW: 80.04'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Citric Acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: ammonium iron(II) sulfate hexahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'CAS: 7783-85-9'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: biotin
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: D-Glucose
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+description: media for growing fungi
+notes: 'Source: FEBA media definitions'
+category: FUNGAL
+sources:
+- database: CultureBotHT
+  database_id: Vogels fungal media
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.242960+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Vogels_fungal_media.yaml'
+- timestamp: '2026-03-18T04:33:58.520296Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015479'
+data_quality_flags:
+- has_unmapped_ingredients

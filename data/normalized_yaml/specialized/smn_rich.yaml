@@ -1,0 +1,133 @@
+id: CultureMech:015747
+name: SMN rich
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.012'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: EDTA
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: D,L-Malic Acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:6650
+    label: malic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 6915-15-7; MW:
+    134.09'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: biotin
+  concentration:
+    value: '0.000015'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.0028'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Manganese(II) sulfate tetrahydrate
+  concentration:
+    value: '0.0021'
+    unit: MG_PER_L
+  notes: 'CAS: 10101-68-5; MW: 223.06'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.00075'
+    unit: MG_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.00024'
+    unit: MG_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Copper(II) Nitrate Trihydrate
+  concentration:
+    value: '0.00004'
+    unit: MG_PER_L
+  notes: 'CAS: 10031-43-3; MW: 241.6016'
+description: Rich medium for R. rubrum
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: SMN rich
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.805905+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: SMN_rich.yaml'
+- timestamp: '2026-03-18T04:34:01.115041Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015747'
+data_quality_flags:
+- has_unmapped_ingredients

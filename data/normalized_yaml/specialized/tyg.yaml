@@ -1,0 +1,135 @@
+id: CultureMech:015752
+name: TYG
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 91079-40-2'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+- preferred_term: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '6.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09; From Potassium phosphate buffer'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '17.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18; From Potassium phosphate buffer'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From TYG salts solution'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007;
+    From TYG salts solution'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From TYG salts solution'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Iron(II) Sulfate
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+description: Tryptone Yeast Extract Glucose medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: TYG
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.899302+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: TYG.yaml'
+- timestamp: '2026-03-18T04:34:01.145752Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015752'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,35 @@
+id: CultureMech:015615
+name: MoLS4 no Biotin
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: biotin
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no biotin
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no Biotin
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.576551+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_Biotin.yaml'
+- timestamp: '2026-03-18T04:33:59.725591Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015615'
+data_quality_flags:
+- has_unmapped_ingredients

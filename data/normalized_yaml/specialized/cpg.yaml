@@ -1,0 +1,48 @@
+id: CultureMech:015504
+name: CPG
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
+- preferred_term: Bacto Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'CAS: 51142-18-8'
+- preferred_term: D-Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+description: Casamino acid-Peptone-Glucose (CPG) medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: CPG
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.513490+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: CPG.yaml'
+- timestamp: '2026-03-18T04:33:58.715854Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015504'
+data_quality_flags:
+- has_unmapped_ingredients

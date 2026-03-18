@@ -1,0 +1,32 @@
+id: CultureMech:015525
+name: FilteredGW Cell lysate 1/2500
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Spring sampling GW821 filtered with 0.2uM filter
+  concentration:
+    value: '1.00'
+    unit: FOLD_DILUTION
+- preferred_term: 'Cell lysate '
+  concentration:
+    value: '0.0004'
+    unit: FOLD_DILUTION
+description: Incubation medium for isolation using ground water as base and Cell lysate
+  as additional carbon source
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: FilteredGW Cell lysate 1/2500
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.743153+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: FilteredGW_Cell_lysate_1_2500.yaml'
+- timestamp: '2026-03-18T04:33:58.874599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015525'
+data_quality_flags:
+- has_unmapped_ingredients

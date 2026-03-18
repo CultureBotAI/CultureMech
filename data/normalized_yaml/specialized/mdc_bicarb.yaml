@@ -1,0 +1,145 @@
+id: CultureMech:015581
+name: MDC bicarb
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '42.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '22'
+    unit: MILLIMOLAR
+- preferred_term: Sodium thiosulfate
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7772-98-7'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.0146'
+    unit: MILLIMOLAR
+  notes: 'CAS: 150-13-0; MW: 137.14'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
+    From UW concentrated base'
+- preferred_term: MgSO4
+  concentration:
+    value: '0.0289'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From UW concentrated
+    base'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '0.00667'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From UW concentrated
+    base'
+- preferred_term: ammonium molybdate tetrahydrate
+  concentration:
+    value: '1.85e-05'
+    unit: G_PER_L
+  notes: 'CAS: 12054-85-2; MW: 1235.86; From UW concentrated base'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.0006979999999999999'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01; From UW concentrated base'
+- preferred_term: EDTA
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
+    From UW concentrated base'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.001095'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From UW concentrated base'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.000154'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From UW concentrated base'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '3.92e-05'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From UW concentrated base'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '2.5e-05'
+    unit: G_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03; From UW concentrated base'
+- preferred_term: sodium tetraborate decahydrate
+  concentration:
+    value: '1.77e-05'
+    unit: G_PER_L
+  notes: 'CAS: 1303-96-4; From UW concentrated base'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+description: McKinlay Lab RPal media with 10 mM Sodium bicarbonate
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MDC bicarb
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.961400+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MDC_bicarb.yaml'
+- timestamp: '2026-03-18T04:33:59.498520Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015581'
+data_quality_flags:
+- has_unmapped_ingredients

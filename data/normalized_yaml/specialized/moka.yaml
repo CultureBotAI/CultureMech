@@ -1,0 +1,52 @@
+id: CultureMech:015606
+name: MOKA
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: casamino acids
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
+description: Rich medium for Xanthomonas
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MOKA
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.058385+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MOKA.yaml'
+- timestamp: '2026-03-18T04:33:59.676929Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015606'
+data_quality_flags:
+- has_unmapped_ingredients

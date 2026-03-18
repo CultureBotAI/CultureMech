@@ -1,0 +1,71 @@
+id: CultureMech:015499
+name: Brucella
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Sodium bisulfite
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'CAS: 7631-90-5'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+description: Brucella broth
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Brucella
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.504540+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Brucella.yaml'
+- timestamp: '2026-03-18T04:33:58.681438Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015499'
+data_quality_flags:
+- has_unmapped_ingredients

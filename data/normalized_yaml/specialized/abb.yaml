@@ -1,0 +1,123 @@
+id: CultureMech:015482
+name: ABB
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
+- preferred_term: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 113-24-6; MW: 110.04'
+- preferred_term: L-Arginine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2'
+- preferred_term: sodium succinate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: L-Cysteine HCL
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric pyrophosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'CAS: 10058-44-3; MW: 745.21'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+- preferred_term: dithiothreitol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 367-51-1'
+description: Anaerobic basal broth
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ABB
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.334989+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ABB.yaml'
+- timestamp: '2026-03-18T04:33:58.546371Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015482'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,225 @@
+id: CultureMech:015608
+name: MoLS4 no ammonia
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '30'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7757-82-6; MW: 142.04'
+- preferred_term: Sodium D,L-Lactate
+  concentration:
+    value: '60'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-21-5; MW: 90.08'
+- preferred_term: Tris hydrochloride
+  concentration:
+    value: '30'
+    unit: MILLIMOLAR
+  notes: 'CAS: 1185-53-1; MW: 157.6'
+- preferred_term: EDTA
+  concentration:
+    value: '0.12'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: Sodium sulfide nonahydrate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'CAS: 1313-82-2; MW: 240.18'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '8'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7791-18-6; MW: 203.3'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.6'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: '60'
+    unit: MICROMOLAR
+  notes: 'CAS: 13478-10-9; MW: 198.81'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '15'
+    unit: MICROMOLAR
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '7.8'
+    unit: MICROMOLAR
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '9'
+    unit: MICROMOLAR
+  notes: 'CAS: 7646-85-7; MW: 136.3'
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '1.26'
+    unit: MICROMOLAR
+  notes: 'CAS: 7631-95-0; MW: 205.92'
+- preferred_term: Boric Acid
+  concentration:
+    value: '1.92'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Nickel (II) sulfate hexahydrate
+  concentration:
+    value: '2.28'
+    unit: MICROMOLAR
+  notes: 'CAS: 10101-97-0; MW: 262.85'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '0.06'
+    unit: MICROMOLAR
+  notes: 'CAS: 10125-13-0; MW: 170.48'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.21'
+    unit: MICROMOLAR
+  notes: 'CAS: 26970-82-1; MW: 263.01'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '0.144'
+    unit: MICROMOLAR
+  notes: 'CAS: 10213-10-2; MW: 329.85'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
+    mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From Thauer''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From Thauer''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From Thauer''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From Thauer''s vitamin mix'
+- preferred_term: thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
+    mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From Thauer''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '0.002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Thauer''s vitamin mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From Thauer''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.0001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From Thauer''s vitamin mix'
+- preferred_term: Choline chloride
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62;
+    From Thauer''s vitamin mix'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonium,
+  pH should be 7.2
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no ammonia
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.593990+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_ammonia.yaml'
+- timestamp: '2026-03-18T04:33:59.696856Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015608'
+data_quality_flags:
+- has_unmapped_ingredients

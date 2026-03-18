@@ -1,0 +1,54 @@
+id: CultureMech:015685
+name: PYE
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7487-88-9; MW: 120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98'
+description: Rich media for Caulobacter
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: PYE
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.213293+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: PYE.yaml'
+- timestamp: '2026-03-18T04:34:00.467461Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015685'
+data_quality_flags: []

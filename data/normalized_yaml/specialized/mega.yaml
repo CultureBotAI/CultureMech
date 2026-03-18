@@ -1,0 +1,366 @@
+id: CultureMech:015582
+name: Mega
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '6.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09; From Potassium phosphate buffer'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '17.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18; From Potassium phosphate buffer'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From TYG salts solution'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007;
+    From TYG salts solution'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From TYG salts solution'
+- preferred_term: L-Cysteine HCL
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Iron(II) Sulfate
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: D-Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'CAS: 528-50-7; MW: 342.3'
+- preferred_term: D-Maltose monohydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'CAS: 6363-53-7; MW: 360.31'
+- preferred_term: D-Fructose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:48095
+    label: keto-D-fructose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-48-7; MW: 180.16'
+- preferred_term: 'Starch '
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+- preferred_term: Folic Acid
+  concentration:
+    value: '20.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '100.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '20.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '1.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From ATCC Wolfe''s vitamin mix'
+- preferred_term: EDTA
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
+    From ATCC Wolfe''s mineral mix'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '3.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From ATCC Wolfe''s mineral mix'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '10.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From ATCC Wolfe''s mineral mix'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From ATCC Wolfe''s mineral
+    mix'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix'
+- preferred_term: Acetic Acid
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15366
+    label: acetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 64-19-7; MW: 60.05'
+- preferred_term: Propionic Acid
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30768
+    label: propionic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 79-09-4; MW: 74.079'
+- preferred_term: Butyric Acid
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30772
+    label: butyric acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 107-92-6; MW: 88.106'
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:503742
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
+description: Mega medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Mega
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.556421+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Mega.yaml'
+- timestamp: '2026-03-18T04:33:59.512520Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015582'
+data_quality_flags:
+- has_unmapped_ingredients

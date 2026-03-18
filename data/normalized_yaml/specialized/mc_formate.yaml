@@ -1,0 +1,264 @@
+id: CultureMech:015557
+name: Mc formate
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NaCl
+  concentration:
+    value: '10.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KCl
+  concentration:
+    value: '0.335'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_general_salts_SO4free'
+- preferred_term: magnesium chloride hexahydrate
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+  notes: From Mc_general_salts_SO4free
+- preferred_term: calcium chloride
+  concentration:
+    value: '0.105'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_general_salts_SO4free'
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: FeCl2 4H2O
+  concentration:
+    value: '0.0095'
+    unit: G_PER_L
+- preferred_term: sodium citrate dihydrate
+  concentration:
+    value: '0.021'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: manganese(II) chloride tetrahydrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: cobalt chloride
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: zinc chloride
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48; From Mc_trace_minerals_SO4free'
+- preferred_term: aluminum chloride hydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: H3BO3
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_trace_minerals_SO4free'
+- preferred_term: sodium molybdate dihydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: sodium selenate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: vanadium chloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 7718-98-1; From Mc_trace_minerals_SO4free'
+- preferred_term: sodium tungstate dihydrate
+  concentration:
+    value: '3.3e-05'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals_SO4free
+- preferred_term: biotin
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Mc_vitamins'
+- preferred_term: folic acid
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: pyridoxine hydrochloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: thiamine HCl
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: riboflavin
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: nicotinic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: calcium D,L-pantothenate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  notes: From Mc_vitamins
+- preferred_term: vitamin B12
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: p-aminobenzoic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: lipoic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: resazurin sodium salt
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 62758-13-8; MW: 251.17'
+- preferred_term: 'sodium acetate '
+  concentration:
+    value: '0.84'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: sodium formate
+  concentration:
+    value: '13.60'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62965
+    label: sodium formate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: 3-(N-morpholino)propanesulfonic acid
+  concentration:
+    value: '0.002'
+    unit: MOLAR
+  notes: 'CAS: 1132-61-2; MW: 209.2633; From MOPS_2M_pH7'
+- preferred_term: NaOH
+  concentration:
+    value: '0.0005'
+    unit: MOLAR
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From MOPS_2M_pH7'
+- preferred_term: dithiothreitol
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+- preferred_term: Sodium sulfide nonahydrate
+  concentration:
+    value: '1.00E-03'
+    unit: G_PER_L
+  notes: 'CAS: 1313-82-2; MW: 240.18'
+description: McCas_formate without sulfate or casamino acids
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Mc formate
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.528752+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Mc_formate.yaml'
+- timestamp: '2026-03-18T04:33:59.095931Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015557'
+data_quality_flags:
+- has_unmapped_ingredients

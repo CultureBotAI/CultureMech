@@ -1,0 +1,258 @@
+id: CultureMech:015530
+name: Hans Basal Media bicarb nitrate
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '2.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7447-40-7; MW:
+    74.55'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  notes: 'CAS: 7791-18-6; MW: 203.3'
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  notes: 'CAS: 7757-82-6; MW: 142.04'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Sodium phosphate dibasic
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:37583
+    label: trisodium phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur-free DL minerals'
+- preferred_term: Nitrilotriacetic acid disodium salt
+  concentration:
+    value: '0.00015'
+    unit: G_PER_L
+  notes: 'CAS: 15467-20-6; MW: 235.1; From Sulfur-free DL minerals'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Sulfur-free DL minerals'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur-free DL minerals'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur-free DL minerals'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '1.3e-05'
+    unit: G_PER_L
+  notes: 'CAS: 7646-85-7; MW: 136.3; From Sulfur-free DL minerals'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Sulfur-free DL
+    minerals'
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur-free DL minerals'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '2.5e-06'
+    unit: G_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur-free DL minerals'
+- preferred_term: Aluminum chloride hydrate
+  concentration:
+    value: '2.0000000000000003e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10124-27-3; MW: 133.34; From Sulfur-free DL minerals'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals'
+- preferred_term: Boric Acid
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Sulfur-free DL minerals'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur-free DL minerals'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: 3e-05
+    unit: G_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur-free DL minerals'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '2.5e-05'
+    unit: G_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur-free DL minerals'
+- preferred_term: d-Biotin
+  concentration:
+    value: '0.0002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.0002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From DL vitamins'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
+    From DL vitamins'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From DL vitamins'
+- preferred_term: Thiamine
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From DL vitamins'
+- preferred_term: Pantothenic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:7916
+    label: pantothenic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: MG_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: p-Amino Benzoic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  notes: From DL vitamins
+- preferred_term: D,L-6,8-Thioctic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:43796
+    label: (S)-lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: sodium nitrate
+  concentration:
+    value: '1.00E+01'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+description: A bicarbonate buffered defined medium with nitrate from Hans
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Hans Basal Media bicarb nitrate
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.796520+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Hans_Basal_Media_bicarb_nitrate.yaml'
+- timestamp: '2026-03-18T04:33:58.916739Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015530'
+data_quality_flags:
+- has_unmapped_ingredients

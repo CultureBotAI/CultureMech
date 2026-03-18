@@ -1,0 +1,80 @@
+id: CultureMech:015537
+name: M2 noNitrogen
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '1.74'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '1.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: D-Glucose
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: EDTA
+  concentration:
+    value: '0.008'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+description: Defined minimal media for Caulobacter with no carbon
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: M2 noNitrogen
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.862352+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: M2_noNitrogen.yaml'
+- timestamp: '2026-03-18T04:33:58.969755Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015537'
+data_quality_flags:
+- has_unmapped_ingredients

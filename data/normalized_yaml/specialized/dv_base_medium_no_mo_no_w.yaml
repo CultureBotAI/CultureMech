@@ -1,0 +1,37 @@
+id: CultureMech:015518
+name: Dv base medium no Mo no W
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Dv_base_medium
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 7631-95-0; MW: 205.92'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85'
+description: Base medium for cultivating Desulfovibrio with no Mo or W
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Dv base medium no Mo no W
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.732337+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Dv_base_medium_no_Mo_no_W.yaml'
+- timestamp: '2026-03-18T04:33:58.857179Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015518'
+data_quality_flags:
+- has_unmapped_ingredients

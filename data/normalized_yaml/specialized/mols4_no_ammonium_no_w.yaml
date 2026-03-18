@@ -1,0 +1,42 @@
+id: CultureMech:015612
+name: MoLS4 no ammonium no W
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no ammonia or
+  W
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no ammonium no W
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.604407+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_ammonium_no_W.yaml'
+- timestamp: '2026-03-18T04:33:59.711117Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015612'
+data_quality_flags:
+- has_unmapped_ingredients

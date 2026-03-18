@@ -1,0 +1,41 @@
+id: CultureMech:015465
+name: LB_0.1x
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+description: 10x diluted Luria-Bertani broth
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: LB_0.1x
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.833538+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: LB_0.1x.yaml'
+- timestamp: '2026-03-18T04:33:58.471856Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015465'
+data_quality_flags:
+- has_unmapped_ingredients

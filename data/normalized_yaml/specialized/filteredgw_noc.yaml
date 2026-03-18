@@ -1,0 +1,27 @@
+id: CultureMech:015526
+name: FilteredGW noC
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Spring sampling GW821 filtered with 0.2uM filter
+  concentration:
+    value: '1.00'
+    unit: FOLD_DILUTION
+description: Incubation medium for isolation using ground water as base
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: FilteredGW noC
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.744264+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: FilteredGW_noC.yaml'
+- timestamp: '2026-03-18T04:33:58.876157Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015526'
+data_quality_flags:
+- has_unmapped_ingredients

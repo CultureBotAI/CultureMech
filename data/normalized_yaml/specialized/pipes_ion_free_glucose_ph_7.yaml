@@ -1,0 +1,62 @@
+id: CultureMech:015676
+name: PIPES ion free glucose ph 7
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: PIPES sesquisodium salt
+  concentration:
+    value: '30'
+    unit: MILLIMOLAR
+  notes: 'CAS: 100037-69-2; MW: 335.34'
+- preferred_term: D-Glucose
+  concentration:
+    value: '20.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '5.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '2.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '1.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
+description: Media for testing importance of ions for T4 phage infectivity against
+  E. coli
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: PIPES ion free glucose ph 7
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.177997+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: PIPES_ion_free_glucose_ph_7.yaml'
+- timestamp: '2026-03-18T04:34:00.404842Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015676'
+data_quality_flags:
+- has_unmapped_ingredients

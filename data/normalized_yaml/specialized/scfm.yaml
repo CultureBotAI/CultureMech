@@ -1,0 +1,424 @@
+id: CultureMech:015737
+name: SCFM
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MOPS
+  concentration:
+    value: '0.01'
+    unit: MOLAR
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KCl
+  concentration:
+    value: '1.114'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NaCl
+  concentration:
+    value: '4.7'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: CaCl2*2H2O
+  concentration:
+    value: '0.249917'
+    unit: G_PER_L
+- preferred_term: MgCl*6H2O
+  concentration:
+    value: '0.12198'
+    unit: G_PER_L
+- preferred_term: KNO3
+  concentration:
+    value: '0.0351828'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17632
+    label: nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: FeCl2 tetrahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.038'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.122'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NaH2PO4
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Glucose
+  concentration:
+    value: '13.75'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix'
+- preferred_term: Sodium lactate
+  concentration:
+    value: '22.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From LCFM Carbon mix'
+- preferred_term: L-Arginine
+  concentration:
+    value: '12.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2;
+    From LCFM Carbon mix'
+- preferred_term: L-Histidine
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:15971
+    label: L-histidine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16;
+    From LCFM Carbon mix'
+- preferred_term: L-Lysine
+  concentration:
+    value: '84.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:18019
+    label: L-lysine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19;
+    From LCFM Carbon mix'
+- preferred_term: L-Aspartic Acid sodium salt monohydrate
+  concentration:
+    value: '32.0'
+    unit: MILLIMOLAR
+  notes: From LCFM Carbon mix
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '60.0'
+    unit: MILLIMOLAR
+  notes: 'CAS: 6382-01-0; MW: 203.24; From LCFM Carbon mix'
+- preferred_term: L-Serine
+  concentration:
+    value: '56.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17115
+    label: L-serine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09;
+    From LCFM Carbon mix'
+- preferred_term: L-Threonine
+  concentration:
+    value: '40.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16857
+    label: L-threonine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12;
+    From LCFM Carbon mix'
+- preferred_term: L-Cysteine hydrochloride monohydrate
+  concentration:
+    value: '8.0'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7048-04-6; MW: 175.63; From LCFM Carbon mix'
+- preferred_term: Glycine
+  concentration:
+    value: '48.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07;
+    From LCFM Carbon mix'
+- preferred_term: L-Proline
+  concentration:
+    value: '68.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13;
+    From LCFM Carbon mix'
+- preferred_term: L-Alanine
+  concentration:
+    value: '72.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16977
+    label: L-alanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-41-7; MW: 89.09;
+    From LCFM Carbon mix'
+- preferred_term: L-Valine
+  concentration:
+    value: '44.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16414
+    label: L-valine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15;
+    From LCFM Carbon mix'
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '44.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17191
+    label: L-isoleucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17;
+    From LCFM Carbon mix'
+- preferred_term: L-Leucine
+  concentration:
+    value: '64.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:15603
+    label: L-leucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17;
+    From LCFM Carbon mix'
+- preferred_term: L-Methionine
+  concentration:
+    value: '24.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16643
+    label: L-methionine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21;
+    From LCFM Carbon mix'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19;
+    From LCFM Carbon mix'
+- preferred_term: L-tyrosine disodium salt
+  concentration:
+    value: '32.0'
+    unit: MILLIMOLAR
+  notes: 'CAS: 69847-45-6; MW: 225.15; From LCFM Carbon mix'
+- preferred_term: L-ornithine monohydrochloride
+  concentration:
+    value: '28.0'
+    unit: MILLIMOLAR
+  notes: 'CAS: 3184-13-2; MW: 168.62; From LCFM Carbon mix'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '0.4'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23;
+    From LCFM Carbon mix'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur-free DL minerals'
+- preferred_term: Nitrilotriacetic acid disodium salt
+  concentration:
+    value: '0.00015'
+    unit: G_PER_L
+  notes: 'CAS: 15467-20-6; MW: 235.1; From Sulfur-free DL minerals'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Sulfur-free DL minerals'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur-free DL minerals'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur-free DL minerals'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '1.3e-05'
+    unit: G_PER_L
+  notes: 'CAS: 7646-85-7; MW: 136.3; From Sulfur-free DL minerals'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Sulfur-free DL
+    minerals'
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur-free DL minerals'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '2.5e-06'
+    unit: G_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur-free DL minerals'
+- preferred_term: Aluminum chloride hydrate
+  concentration:
+    value: '2.0000000000000003e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10124-27-3; MW: 133.34; From Sulfur-free DL minerals'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48; From Sulfur-free DL minerals'
+- preferred_term: Boric Acid
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Sulfur-free DL minerals'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur-free DL minerals'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: 3e-05
+    unit: G_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur-free DL minerals'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '2.5e-05'
+    unit: G_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur-free DL minerals'
+- preferred_term: d-Biotin
+  concentration:
+    value: '0.0002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.0002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From DL vitamins'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
+    From DL vitamins'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From DL vitamins'
+- preferred_term: Thiamine
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From DL vitamins'
+- preferred_term: Pantothenic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:7916
+    label: pantothenic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: MG_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+- preferred_term: p-Amino Benzoic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  notes: From DL vitamins
+- preferred_term: D,L-6,8-Thioctic Acid
+  concentration:
+    value: '0.0005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:43796
+    label: (S)-lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From DL vitamins'
+description: Lung Simulating Media for cultivation of lung pathogens and commensals
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: SCFM
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.686499+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: SCFM.yaml'
+- timestamp: '2026-03-18T04:34:00.944548Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015737'
+data_quality_flags:
+- has_unmapped_ingredients

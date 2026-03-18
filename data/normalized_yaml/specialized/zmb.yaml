@@ -1,0 +1,421 @@
+id: CultureMech:015791
+name: ZMB
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: L-Histidine
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15971
+    label: L-histidine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16'
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17191
+    label: L-isoleucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17'
+- preferred_term: L-Leucine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15603
+    label: L-leucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17'
+- preferred_term: L-Methionine
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16643
+    label: L-methionine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21'
+- preferred_term: L-Valine
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16414
+    label: L-valine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15'
+- preferred_term: L-Arginine
+  concentration:
+    value: '0.72'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2'
+- preferred_term: m-Inositol
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 87-89-8; MW: 180.16'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '3.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '6.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'CAS: 6382-01-0; MW: 203.24'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19'
+- preferred_term: L-Proline
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12'
+- preferred_term: L-Aspartic Acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-84-8; MW: 133.1'
+- preferred_term: L-Glutamine
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-85-9; MW: 146.14'
+- preferred_term: L-Serine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17115
+    label: L-serine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09'
+- preferred_term: L-Threonine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16857
+    label: L-threonine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12'
+- preferred_term: L-Cysteine hydrochloride monohydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'CAS: 7048-04-6; MW: 175.63'
+- preferred_term: L-Alanine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16977
+    label: L-alanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-41-7; MW: 89.09'
+- preferred_term: Glycine
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07'
+- preferred_term: L-Lysine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:18019
+    label: L-lysine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23'
+- preferred_term: L-tyrosine
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17895
+    label: L-tyrosine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-18-4; MW: 181.19'
+- preferred_term: biotin
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.0009'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11'
+- preferred_term: Pyridoxamine dihydrochloride
+  concentration:
+    value: '0.0048'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131532
+    label: pyridoxamine dihydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 524-36-7; MW: 241.112'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0009'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.00056'
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.000056'
+    unit: G_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.00056'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27'
+- preferred_term: Potassium acetate
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32029
+    label: potassium acetate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 127-08-2; MW: 98.14'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33'
+- preferred_term: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+- preferred_term: Adenine hydrochloride hydrate
+  concentration:
+    value: '0.011'
+    unit: G_PER_L
+  notes: 'CAS: 2922-28-3; MW: 171.59'
+- preferred_term: Guanine
+  concentration:
+    value: '0.0056'
+    unit: G_PER_L
+  notes: 'CAS: 73-40-5; MW: 151.13'
+- preferred_term: Uracil
+  concentration:
+    value: '0.023'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17568
+    label: uracil
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 66-22-8; MW: 112.0868'
+- preferred_term: Xanthine
+  concentration:
+    value: '0.0038'
+    unit: G_PER_L
+  notes: 'CAS: 69-89-6; MW: 152.11'
+- preferred_term: Ammonium heptamolybdate tetrahydrate
+  concentration:
+    value: '0.00019'
+    unit: G_PER_L
+  notes: 'CAS: 12027-67-7; MW: 1235.86'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.00038'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.00019'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.00019'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Potassium iodide
+  concentration:
+    value: '0.00011'
+    unit: G_PER_L
+  notes: 'CAS: 7681-11-0; MW: 166.0'
+- preferred_term: EDTA
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: L-glutathione reduced
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:177535
+    label: L-Glutathione (reduced)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-18-8; MW: 307.32'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: MOPS
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+description: Media for culturing Bifidobacterium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.281130+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB.yaml'
+- timestamp: '2026-03-18T04:34:01.522232Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015791'
+data_quality_flags:
+- has_unmapped_ingredients

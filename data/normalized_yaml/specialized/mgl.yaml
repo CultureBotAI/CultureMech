@@ -1,0 +1,78 @@
+id: CultureMech:015592
+name: MGL
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Mannitol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16899
+    label: D-mannitol
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 69-65-8; MW: 182.17'
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'CAS: 6382-01-0; MW: 203.24'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+description: media for growing rhizosphere bacteria
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MGL
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.993176+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MGL.yaml'
+- timestamp: '2026-03-18T04:33:59.597137Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015592'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,257 @@
+id: CultureMech:015571
+name: McCas
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: KCl
+  concentration:
+    value: '0.335'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_general_salts'
+- preferred_term: magnesium chloride hexahydrate
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  notes: From Mc_general_salts
+- preferred_term: magnesium sulfate heptahydrate
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+  notes: From Mc_general_salts
+- preferred_term: calcium chloride
+  concentration:
+    value: '0.105'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_general_salts'
+- preferred_term: NaCl
+  concentration:
+    value: '22.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NaHCO3
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: NH4Cl
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: FeSO4 7H2O
+  concentration:
+    value: '0.0095'
+    unit: G_PER_L
+- preferred_term: sodium citrate dihydrate
+  concentration:
+    value: '0.021'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: manganese(II) sulfate dihydrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: cobalt chloride
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: zinc sulfate heptahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: copper sulfate pentahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: AlK(SO4)2 12H2O
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: H3BO3
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_trace_minerals'
+- preferred_term: sodium molybdate dihydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: sodium selenate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: vanadium chloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 7718-98-1; From Mc_trace_minerals'
+- preferred_term: sodium tungstate dihydrate
+  concentration:
+    value: '3.3e-05'
+    unit: G_PER_L
+  notes: From Mc_trace_minerals
+- preferred_term: biotin
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Mc_vitamins'
+- preferred_term: folic acid
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: pyridoxine hydrochloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: thiamine HCl
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: riboflavin
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: nicotinic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: calcium D,L-pantothenate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  notes: From Mc_vitamins
+- preferred_term: vitamin B12
+  concentration:
+    value: '1.0000000000000002e-06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: p-aminobenzoic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: lipoic acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Mc_vitamins'
+- preferred_term: resazurin sodium salt
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 62758-13-8; MW: 251.17'
+- preferred_term: 'sodium acetate '
+  concentration:
+    value: '0.84'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: CASamino acids
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: dithiothreitol
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+- preferred_term: Sodium sulfide nonahydrate
+  concentration:
+    value: '1.00E-03'
+    unit: G_PER_L
+  notes: 'CAS: 1313-82-2; MW: 240.18'
+description: Used for growing Methanococcus maripaludis with hydrogen as the electron
+  donor
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: McCas
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.390469+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: McCas.yaml'
+- timestamp: '2026-03-18T04:33:59.374101Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015571'
+data_quality_flags:
+- has_unmapped_ingredients

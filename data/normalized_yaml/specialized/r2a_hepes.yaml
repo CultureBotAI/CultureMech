@@ -1,0 +1,89 @@
+id: CultureMech:015690
+name: R2A_HEPES
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 65072-00-6'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: D-Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 113-24-6; MW: 110.04'
+- preferred_term: HEPES
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7365-45-9; MW:
+    238.3012'
+description: Reasoner's 2A media
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: R2A_HEPES
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.257108+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: R2A_HEPES.yaml'
+- timestamp: '2026-03-18T04:34:00.485529Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015690'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,32 @@
+id: CultureMech:015635
+name: MoYLS4 no iron
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoYLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81'
+description: Rich lactate-sulfate media for sulfate-reducing bacteria with no Fe
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoYLS4 no iron
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.650706+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoYLS4_no_iron.yaml'
+- timestamp: '2026-03-18T04:33:59.821784Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015635'
+data_quality_flags:
+- has_unmapped_ingredients

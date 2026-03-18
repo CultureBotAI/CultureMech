@@ -1,0 +1,54 @@
+id: CultureMech:015751
+name: terrific broth
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '11.8'
+    unit: G_PER_L
+  term:
+    id: FOODON:03310375
+    label: Tryptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '23.6'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: K2HPO4
+  concentration:
+    value: '9.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam (confidence: 0.95)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: ols_exact (confidence: 0.92)'
+description: Terrific broth medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: terrific broth
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.471278+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: terrific_broth.yaml'
+- timestamp: '2026-03-18T04:34:01.140665Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015751'
+data_quality_flags: []

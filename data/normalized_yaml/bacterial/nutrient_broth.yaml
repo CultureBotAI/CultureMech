@@ -1,42 +1,54 @@
-id: CultureMech:003009
-name: nutrient_broth
-original_name: NUTRIENT BROTH
-category: bacterial
+id: CultureMech:015471
+name: nutrient broth
 medium_type: COMPLEX
 physical_state: LIQUID
-ph_value: 7.0
-media_term:
-  preferred_term: JCM Medium J663
-  term:
-    id: mediadive.medium:J663
-    label: NUTRIENT BROTH
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=663'
 ingredients:
-- preferred_term: Peptone
+- preferred_term: Bacto Peptone
   concentration:
-    value: '5'
+    value: '15'
     unit: G_PER_L
-- preferred_term: Beef extract
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 51142-18-8'
+- preferred_term: Yeast Extract
   concentration:
     value: '3'
     unit: G_PER_L
-preparation_steps:
-- step_number: 1
-  action: ADJUST_PH
-  description: Adjust pH to 7.0.
-applications:
-- Microbial cultivation
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+description: Nutrient broth medium
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: nutrient broth
+  url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
-- timestamp: '2026-01-26T17:53:17.221525Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J663'
-- timestamp: '2026-03-13T06:19:17.120531Z'
+- timestamp: '2026-03-18T04:31:15.467479+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: nutrient_broth.yaml'
+- timestamp: '2026-03-18T04:33:58.487706Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:003009'
-- timestamp: '2026-03-17T19:45:30.771010+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "NUTRIENT BROTH" to "nutrient_broth" for consistent
-    matching
+  notes: 'Assigned stable identifier: CultureMech:015471'
+data_quality_flags: []

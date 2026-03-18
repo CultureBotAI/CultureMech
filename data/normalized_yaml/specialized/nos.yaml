@@ -1,0 +1,122 @@
+id: CultureMech:015674
+name: NoS
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na2HPO4
+  concentration:
+    value: '12.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '12.5'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
+    From UW concentrated base no sulfur'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '0.0289'
+    unit: G_PER_L
+  notes: 'CAS: 7791-18-6; MW: 203.3; From UW concentrated base no sulfur'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '0.00667'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From UW concentrated
+    base no sulfur'
+- preferred_term: ammonium molybdate tetrahydrate
+  concentration:
+    value: '1.85e-05'
+    unit: G_PER_L
+  notes: 'CAS: 12054-85-2; MW: 1235.86; From UW concentrated base no sulfur'
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: '0.0006979999999999999'
+    unit: G_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81; From UW concentrated base no sulfur'
+- preferred_term: EDTA
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
+    From UW concentrated base no sulfur'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '0.001095'
+    unit: G_PER_L
+  notes: 'CAS: 7646-85-7; MW: 136.3; From UW concentrated base no sulfur'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.000154'
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91; From UW concentrated base no sulfur'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '3.92e-05'
+    unit: G_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48; From UW concentrated base no sulfur'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '2.5e-05'
+    unit: G_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03; From UW concentrated base no sulfur'
+- preferred_term: sodium tetraborate decahydrate
+  concentration:
+    value: '1.77e-05'
+    unit: G_PER_L
+  notes: 'CAS: 1303-96-4; From UW concentrated base no sulfur'
+- preferred_term: Sodium thiosulfate pentahydrate
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  notes: 'CAS: 10102-17-7; MW: 248.18'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14'
+description: Harwood UW defined media for growing RPal; same as PM except all sulfate
+  salts replaced with chloride salts
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: NoS
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.171335+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: NoS.yaml'
+- timestamp: '2026-03-18T04:34:00.397700Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015674'
+data_quality_flags:
+- has_unmapped_ingredients

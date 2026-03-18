@@ -1,0 +1,50 @@
+id: CultureMech:015466
+name: LB_10mMNitrate
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Sodium nitrate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW:
+    84.99'
+description: Luria-Bertani broth
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: LB_10mMNitrate
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.835676+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: LB_10mMNitrate.yaml'
+- timestamp: '2026-03-18T04:33:58.474197Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015466'
+data_quality_flags:
+- has_unmapped_ingredients

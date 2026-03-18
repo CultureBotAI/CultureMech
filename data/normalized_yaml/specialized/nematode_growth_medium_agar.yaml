@@ -1,0 +1,75 @@
+id: CultureMech:015646
+name: Nematode growth medium agar
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Bacto Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'CAS: 51142-18-8'
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9002-18-0'
+- preferred_term: cholesterol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'CAS: 57-88-5; MW: 386.65'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '25'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+description: Used for growing C. elegans
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Nematode growth medium agar
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.166254+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Nematode_growth_medium_agar.yaml'
+- timestamp: '2026-03-18T04:33:59.887108Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015646'
+data_quality_flags:
+- has_unmapped_ingredients

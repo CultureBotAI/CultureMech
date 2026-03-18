@@ -1,0 +1,35 @@
+id: CultureMech:015626
+name: MoLS4 no thiamine
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: thiamine HCl
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no thiamine
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no thiamine
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.631259+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_thiamine.yaml'
+- timestamp: '2026-03-18T04:33:59.758263Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015626'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,141 @@
+id: CultureMech:015586
+name: MELiSSA defined noCarbon noNitrogen phosphatebuffered
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.051'
+    unit: MILLIMOLAR
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.0811'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '3.801'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7757-82-6; MW: 142.04'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.34'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: EDTA
+  concentration:
+    value: '0.068'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '3.601'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.072'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '2.985'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Nickel (II) sulfate hexahydrate
+  concentration:
+    value: '1.902'
+    unit: MICROMOLAR
+  notes: 'CAS: 10101-97-0; MW: 262.85'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.348'
+    unit: MICROMOLAR
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.02'
+    unit: MICROMOLAR
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Boric Acid
+  concentration:
+    value: '1.623'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.207'
+    unit: MICROMOLAR
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: biotin
+  concentration:
+    value: '0.06'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.597'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+description: Defined medium for R. rubrum with no ammonium, pH should be 6.9
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MELiSSA defined noCarbon noNitrogen phosphatebuffered
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.988316+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MELiSSA_defined_noCarbon_noNitrogen_phosphatebuffered.yaml'
+- timestamp: '2026-03-18T04:33:59.545651Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015586'
+data_quality_flags:
+- has_unmapped_ingredients

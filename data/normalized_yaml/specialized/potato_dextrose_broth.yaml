@@ -1,0 +1,38 @@
+id: CultureMech:015683
+name: Potato Dextrose Broth
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Infusion from Potatoes
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: FOODON:03316428
+    label: potato extract
+  notes: 'Mapping: manual (confidence: 0.85)'
+- preferred_term: D-Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+description: Growth media for for yeasts, for bacteria, for molds
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Potato Dextrose Broth
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.238177+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Potato_Dextrose_Broth.yaml'
+- timestamp: '2026-03-18T04:34:00.461089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015683'
+data_quality_flags: []

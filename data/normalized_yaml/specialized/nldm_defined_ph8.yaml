@@ -1,0 +1,694 @@
+id: CultureMech:015671
+name: NLDM_defined_pH8
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ammonium Chloride
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '3.3'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7447-40-7; MW:
+    74.55'
+- preferred_term: Magnesium sulfate heptahydrate
+  concentration:
+    value: '0.812'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.68'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: EDTA
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-00-4; MW: 292.24;
+    From ATCC Wolfe''s mineral mix'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '3.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From ATCC Wolfe''s mineral mix'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '5.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '10.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From ATCC Wolfe''s mineral mix'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From ATCC Wolfe''s mineral
+    mix'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '1.0'
+    unit: MG_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '20.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '100.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '20.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '1.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From ATCC Wolfe''s vitamin mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '50.0'
+    unit: UG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From ATCC Wolfe''s vitamin mix'
+- preferred_term: Sodium phosphate dibasic
+  concentration:
+    value: '4.735'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:37583
+    label: trisodium phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Sodium phosphate monobasic
+  concentration:
+    value: '0.265'
+    unit: MILLIMOLAR
+  notes: 'CAS: 558-80-7; MW: 119.98'
+- preferred_term: Sucrose
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17992
+    label: sucrose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-50-1; MW: 342.3;
+    From NLDM_metabolites'
+- preferred_term: D-Glucose
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16;
+    From NLDM_metabolites'
+- preferred_term: D-Trehalose dihydrate
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 6138-23-4; MW: 378.33; From NLDM_metabolites'
+- preferred_term: m-Inositol
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 87-89-8; MW: 180.16; From NLDM_metabolites'
+- preferred_term: D-Xylose
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:65327
+    label: D-xylose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-86-6; MW: 150.13;
+    From NLDM_metabolites'
+- preferred_term: D-Mannitol
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16899
+    label: D-mannitol
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 69-65-8; MW: 182.17;
+    From NLDM_metabolites'
+- preferred_term: N-Acetyl-D-Glucosamine
+  concentration:
+    value: '875.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7512-17-6; MW:
+    221.21; From NLDM_metabolites'
+- preferred_term: Sodium L-Lactate
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 867-56-1; MW: 112.06;
+    From NLDM_metabolites'
+- preferred_term: D,L-Malic Acid
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:6650
+    label: malic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 6915-15-7; MW:
+    134.09; From NLDM_metabolites'
+- preferred_term: Citric Acid
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12;
+    From NLDM_metabolites'
+- preferred_term: Sodium succinate dibasic hexahydrate
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 6106-21-4; MW: 270.14; From NLDM_metabolites'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 113-24-6; MW: 110.04;
+    From NLDM_metabolites'
+- preferred_term: a-Ketoglutaric acid disodium salt hydrate
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 305-72-6; MW: 190.06; From NLDM_metabolites'
+- preferred_term: L-Citrulline
+  concentration:
+    value: '525.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 372-75-8; MW: 175.19; From NLDM_metabolites'
+- preferred_term: L-Alanine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16977
+    label: L-alanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-41-7; MW: 89.09;
+    From NLDM_metabolites'
+- preferred_term: L-Arginine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2;
+    From NLDM_metabolites'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12;
+    From NLDM_metabolites'
+- preferred_term: L-Aspartic acid
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From NLDM_metabolites'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16;
+    From NLDM_metabolites'
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-86-0; MW: 147.13;
+    From NLDM_metabolites'
+- preferred_term: L-Glutamine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-85-9; MW: 146.14;
+    From NLDM_metabolites'
+- preferred_term: Glycine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07;
+    From NLDM_metabolites'
+- preferred_term: L-Histidine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:15971
+    label: L-histidine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16;
+    From NLDM_metabolites'
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17191
+    label: L-isoleucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17;
+    From NLDM_metabolites'
+- preferred_term: L-Leucine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:15603
+    label: L-leucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17;
+    From NLDM_metabolites'
+- preferred_term: L-Lysine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:18019
+    label: L-lysine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19;
+    From NLDM_metabolites'
+- preferred_term: L-Methionine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16643
+    label: L-methionine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21;
+    From NLDM_metabolites'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19;
+    From NLDM_metabolites'
+- preferred_term: L-Proline
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13;
+    From NLDM_metabolites'
+- preferred_term: L-Serine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17115
+    label: L-serine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09;
+    From NLDM_metabolites'
+- preferred_term: L-Threonine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16857
+    label: L-threonine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12;
+    From NLDM_metabolites'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23;
+    From NLDM_metabolites'
+- preferred_term: L-tyrosine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17895
+    label: L-tyrosine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-18-4; MW: 181.19;
+    From NLDM_metabolites'
+- preferred_term: L-Valine
+  concentration:
+    value: '175.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16414
+    label: L-valine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15;
+    From NLDM_metabolites'
+- preferred_term: 5-methyluridine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 1463-10-1; MW: 258.23; From NLDM_metabolites'
+- preferred_term: Adenine hydrochloride hydrate
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 2922-28-3; MW: 171.59; From NLDM_metabolites'
+- preferred_term: Adenosine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-61-7; MW: 267.241; From NLDM_metabolites'
+- preferred_term: Cytidine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 65-46-3; MW: 243.22; From NLDM_metabolites'
+- preferred_term: Cytosine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 71-30-7; MW: 111.1; From NLDM_metabolites'
+- preferred_term: Guanine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 73-40-5; MW: 151.13; From NLDM_metabolites'
+- preferred_term: Guanosine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 118-00-3; MW: 283.24; From NLDM_metabolites'
+- preferred_term: Hypoxanthine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 68-94-0; MW: 136.11; From NLDM_metabolites'
+- preferred_term: Inosine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-63-9; MW: 268.23; From NLDM_metabolites'
+- preferred_term: Thymine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 65-71-4; MW: 126.11; From NLDM_metabolites'
+- preferred_term: Uracil
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17568
+    label: uracil
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 66-22-8; MW: 112.0868;
+    From NLDM_metabolites'
+- preferred_term: Uridine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-96-8; MW: 244.2; From NLDM_metabolites'
+- preferred_term: Xanthine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 69-89-6; MW: 152.11; From NLDM_metabolites'
+- preferred_term: Xanthosine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 146-80-5; MW: 284.228; From NLDM_metabolites'
+- preferred_term: Gamma-Aminobutyric Acid Hydrochloride
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 5959-35-3; MW: 139.58; From NLDM_metabolites'
+- preferred_term: Ectoine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 96702-03-3; MW: 142.158; From NLDM_metabolites'
+- preferred_term: Trimethylglycine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: From NLDM_metabolites
+- preferred_term: N-Acetyl-glutamic acid
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 5817-08-3; MW: 189.167; From NLDM_metabolites'
+- preferred_term: Nicotinamide
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17154
+    label: nicotinamide
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 98-92-0; MW: 122.12;
+    From NLDM_metabolites'
+- preferred_term: L-Ornithine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 70-26-8; MW: 132.16; From NLDM_metabolites'
+- preferred_term: Shikimic Acid
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 138-59-0; From NLDM_metabolites'
+- preferred_term: spermidine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 124-20-9; MW: 145.25; From NLDM_metabolites'
+- preferred_term: Taurine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 107-35-7; MW: 125.14; From NLDM_metabolites'
+- preferred_term: Trigonelline HCl
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 6138-41-6; MW: 173.6; From NLDM_metabolites'
+- preferred_term: Carnitine Hydrochloride
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 461-05-2; MW: 197.66; From NLDM_metabolites'
+- preferred_term: Choline chloride
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62;
+    From NLDM_metabolites'
+- preferred_term: n-Acetyl-glutamine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 5817-09-4; MW: 188.183; From NLDM_metabolites'
+- preferred_term: n-Acetyl-lysine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 1946-82-3; MW: 188.227; From NLDM_metabolites'
+- preferred_term: n-Acetyl-muramic acid
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 10597-89-4; MW: 293.272; From NLDM_metabolites'
+- preferred_term: sn-glycero-3-phosphocholine
+  concentration:
+    value: '17.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 28319-77-9; MW: 257.2; From NLDM_metabolites'
+description: Northen lab metabolite media
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: NLDM_defined_pH8
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.138777+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: NLDM_defined_pH8.yaml'
+- timestamp: '2026-03-18T04:34:00.367887Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015671'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,231 @@
+id: CultureMech:015589
+name: MG minimal media noIron
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Ascorbic acid
+  concentration:
+    value: '0.035'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 127-09-3; MW: 82.03'
+- preferred_term: Sodium thiosulfate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'CAS: 7772-98-7'
+- preferred_term: Sodium nitrate
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW:
+    84.99'
+- preferred_term: Succinic acid
+  concentration:
+    value: '0.37'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15741
+    label: succinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: L-Tartaric acid
+  concentration:
+    value: '0.37'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
+    From Modified Wolfe''s Minerals'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.007325000000000001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37; From Modified Wolfe''s Minerals'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From Modified Wolfe''s Minerals'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Modified Wolfe''s Minerals'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Modified Wolfe''s Minerals'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Modified Wolfe''s
+    Minerals'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Modified Wolfe''s Minerals'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Modified Wolfe''s Minerals'
+- preferred_term: Boric Acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Modified Wolfe''s Minerals'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Modified Wolfe''s Minerals'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From Wolfe''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From Wolfe''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From Wolfe''s vitamin mix'
+- preferred_term: thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From Wolfe''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Wolfe''s vitamin mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From Wolfe''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From Wolfe''s vitamin mix'
+description: Defined media for AMB-1 with multiple carbon sources and no iron
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MG minimal media noIron
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.024003+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MG_minimal_media_noIron.yaml'
+- timestamp: '2026-03-18T04:33:59.578465Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015589'
+data_quality_flags:
+- has_unmapped_ingredients

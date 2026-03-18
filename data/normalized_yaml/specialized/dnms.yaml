@@ -1,0 +1,199 @@
+id: CultureMech:015515
+name: dNMS
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: KNO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17632
+    label: nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '4'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '0.07'
+    unit: MG_PER_L
+  notes: 'CAS: 7646-85-7; MW: 136.3'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.152'
+    unit: MG_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.036'
+    unit: MG_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '0.017'
+    unit: MG_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48'
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: '1.5'
+    unit: MG_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.19'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.062'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.024'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69'
+- preferred_term: HEPES
+  concentration:
+    value: '476.6'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7365-45-9; MW:
+    238.3012'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '3.6'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: KH2PO4
+  concentration:
+    value: '10.4'
+    unit: MG_PER_L
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36'
+- preferred_term: biotin
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33'
+description: Dilution Nitrate Mineral Salts medium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: dNMS
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.440585+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: dNMS.yaml'
+- timestamp: '2026-03-18T04:33:58.838601Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015515'
+data_quality_flags:
+- has_unmapped_ingredients

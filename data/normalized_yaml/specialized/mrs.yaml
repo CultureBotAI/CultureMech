@@ -1,0 +1,110 @@
+id: CultureMech:015636
+name: MRS
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '56'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Proteose peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-38-8'
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302088
+    label: Beef extract
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 9005-65-6; MW: 1310.0'
+- preferred_term: Triammonium citrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63037
+    label: triammonium citrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 3458-72-8; MW: 243.216'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 127-09-3; MW: 82.03'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7487-88-9; MW: 120.37'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-96-5; MW: 169.02'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '8.25'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 52-90-4; MW: 121.16'
+description: Media for culturing lactobacilli
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MRS
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.100275+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MRS.yaml'
+- timestamp: '2026-03-18T04:33:59.826463Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015636'
+data_quality_flags: []

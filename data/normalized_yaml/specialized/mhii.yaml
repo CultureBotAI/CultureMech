@@ -1,0 +1,40 @@
+id: CultureMech:015593
+name: MHII
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Starch
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
+description: Mueller Hinton II Broth for cultivation and antimicrobial susceptibility
+  testing
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MHII
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.028948+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MHII.yaml'
+- timestamp: '2026-03-18T04:33:59.600042Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015593'
+data_quality_flags:
+- has_unmapped_ingredients

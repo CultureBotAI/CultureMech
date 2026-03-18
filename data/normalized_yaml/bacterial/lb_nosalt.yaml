@@ -1,0 +1,38 @@
+id: CultureMech:015469
+name: LB_noSalt
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: FOODON:03310375
+    label: Tryptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-40-2'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+description: Luria-Bertani broth without salt
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: LB_noSalt
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.842107+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: LB_noSalt.yaml'
+- timestamp: '2026-03-18T04:33:58.481317Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015469'
+data_quality_flags: []

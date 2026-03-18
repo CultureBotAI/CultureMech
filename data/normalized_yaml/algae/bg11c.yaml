@@ -1,0 +1,119 @@
+id: CultureMech:015454
+name: BG11C
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium nitrate
+  concentration:
+    value: '17.6'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7631-99-4; MW:
+    84.99'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.3'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.24'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Citric Acid
+  concentration:
+    value: '28.5'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12'
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '2.4'
+    unit: MICROMOLAR
+  notes: 'CAS: 6381-92-6; MW: 336.206'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.00286'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Trace metal mix A5'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.0018100000000000002'
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.000222'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.00039000000000000005'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '7.9e-05'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '0.0494'
+    unit: MG_PER_L
+  notes: 'CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5'
+description: For growing cyanobacteria, from Luis
+notes: 'Source: FEBA media definitions'
+category: ALGAE
+sources:
+- database: CultureBotHT
+  database_id: BG11C
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.446002+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: BG11C.yaml'
+- timestamp: '2026-03-18T04:33:58.378055Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015454'
+data_quality_flags:
+- has_unmapped_ingredients

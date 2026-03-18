@@ -1,0 +1,35 @@
+id: CultureMech:015806
+name: ZMB ALS noGlutathione
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: L-glutathione reduced
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:177535
+    label: L-Glutathione (reduced)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-18-8; MW: 307.32'
+description: Media for culturing Bifidobacterium minus glutathione
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noGlutathione
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.358414+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noGlutathione.yaml'
+- timestamp: '2026-03-18T04:34:01.601474Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015806'
+data_quality_flags:
+- has_unmapped_ingredients

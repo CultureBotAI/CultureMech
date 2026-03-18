@@ -1,0 +1,97 @@
+id: CultureMech:015532
+name: JBEI Ralstonia defined
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '3.24'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.42'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Sodium phosphate monobasic
+  concentration:
+    value: '33.50'
+    unit: MILLIMOLAR
+  notes: 'CAS: 558-80-7; MW: 119.98'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '32.25'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Potassium sulfate
+  concentration:
+    value: '2.60'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7778-80-5; MW: 174.259'
+- preferred_term: Sodium Hydroxide
+  concentration:
+    value: '1.00'
+    unit: MILLIMOLAR
+  notes: 'CAS: 1310-73-2; MW: 40.0'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '1.87'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.00048'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+description: JBEI media for growing Ralstonia
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: JBEI Ralstonia defined
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.823451+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: JBEI_Ralstonia_defined.yaml'
+- timestamp: '2026-03-18T04:33:58.944919Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015532'
+data_quality_flags:
+- has_unmapped_ingredients

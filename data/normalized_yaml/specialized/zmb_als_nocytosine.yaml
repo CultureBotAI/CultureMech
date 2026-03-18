@@ -1,0 +1,32 @@
+id: CultureMech:015803
+name: ZMB ALS noCytosine
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Cytosine
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 71-30-7; MW: 111.1'
+description: Media for culturing Bifidobacterium minus cytosine
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noCytosine
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.354110+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noCytosine.yaml'
+- timestamp: '2026-03-18T04:34:01.596376Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015803'
+data_quality_flags:
+- has_unmapped_ingredients

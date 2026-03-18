@@ -1,0 +1,35 @@
+id: CultureMech:015818
+name: ZMB ALS noProline
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: L-Proline
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13'
+description: Media for culturing Bifidobacterium minus proline
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noProline
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.376627+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noProline.yaml'
+- timestamp: '2026-03-18T04:34:01.622705Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015818'
+data_quality_flags:
+- has_unmapped_ingredients

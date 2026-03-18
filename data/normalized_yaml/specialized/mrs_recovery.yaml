@@ -1,0 +1,118 @@
+id: CultureMech:015638
+name: MRS_recovery
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '56.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10.00'
+    unit: G_PER_L
+  notes: 'CAS: 91079-38-8'
+- preferred_term: Beef extract
+  concentration:
+    value: '10.00'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5.00'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Tween 80
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+- preferred_term: Triammonium citrate
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86469
+    label: triammonium citrate
+  notes: 'CAS: 3458-72-8; MW: 243.216'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 127-09-3; MW: 82.03'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.20'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '8.25'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.10'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.12'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+description: Media for culturing lactobacilli with some different additives relative
+  to MRS
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MRS_recovery
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.109943+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MRS_recovery.yaml'
+- timestamp: '2026-03-18T04:33:59.837160Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015638'
+data_quality_flags:
+- has_unmapped_ingredients

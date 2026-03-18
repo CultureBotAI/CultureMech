@@ -1,0 +1,46 @@
+id: CultureMech:015695
+name: R2A_Kan50_Tween01_Cycloheximide200
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: R2A
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Kanamycin sulfate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_ML
+  notes: 'CAS: 25839-94-0; MW: 582.58'
+- preferred_term: Tween 80
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+- preferred_term: Cycloheximide
+  concentration:
+    value: '0.2'
+    unit: MG_PER_ML
+  notes: 'CAS: 66-81-9; MW: 281.35'
+description: R2A media for outgrowth of bacteria after plant experiments
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: R2A_Kan50_Tween01_Cycloheximide200
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.267514+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: R2A_Kan50_Tween01_Cycloheximide200.yaml'
+- timestamp: '2026-03-18T04:34:00.500776Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015695'
+data_quality_flags:
+- has_unmapped_ingredients

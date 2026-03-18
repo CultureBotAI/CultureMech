@@ -1,0 +1,118 @@
+id: CultureMech:015780
+name: Varel Bryant medium Glucose noMET DTT NaS B12 noNitrogen
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '6.6'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '15.4'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '98.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '176.5'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '4.2'
+    unit: MICROMOLAR
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '50.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '1.75'
+    unit: MILLIMOLAR
+  notes: 'CAS: 7757-82-6; MW: 142.04; From Mineral 3B solution minus Nitrogen'
+- preferred_term: Hemin
+  concentration:
+    value: '15'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '15'
+    unit: MICROMOLAR
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Dithiothreitol
+  concentration:
+    value: '3'
+    unit: MILLIMOLAR
+  notes: 'CAS: 3483-12-3; MW: 154.253'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '23.8'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: D-Glucose
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium sulfide nonahydrate
+  concentration:
+    value: '3'
+    unit: MILLIMOLAR
+  notes: 'CAS: 1313-82-2; MW: 240.18'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37'
+description: Defined medium for B.theta with Glucose, and no Cysteine or methionine,
+  and with DTT, sodium sulfide, and Vitamin B12
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Varel Bryant medium Glucose noMET DTT NaS B12 noNitrogen
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.213432+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Varel_Bryant_medium_Glucose_noMET_DTT_NaS_B12_noNitrogen.yaml'
+- timestamp: '2026-03-18T04:34:01.454903Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015780'
+data_quality_flags:
+- has_unmapped_ingredients

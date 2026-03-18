@@ -1,0 +1,62 @@
+id: CultureMech:015472
+name: TSB
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: FOODON:03310375
+    label: Tryptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 91079-40-2'
+- preferred_term: soytone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8150
+    label: null
+  notes: 'Mapping: micromediaparam (confidence: 0.95)'
+- preferred_term: D-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam (confidence: 0.95)'
+description: Tryptic soy broth
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: TSB
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.887624+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: TSB.yaml'
+- timestamp: '2026-03-18T04:33:58.491466Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015472'
+data_quality_flags: []

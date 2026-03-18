@@ -1,0 +1,325 @@
+id: CultureMech:015483
+name: ACY
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5.375'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-25-8'
+- preferred_term: D-Glucose
+  concentration:
+    value: '2.375'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 113-24-6; MW: 110.04'
+- preferred_term: L-Arginine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2'
+- preferred_term: sodium succinate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: L-Cysteine HCL
+  concentration:
+    value: '1.275'
+    unit: G_PER_L
+- preferred_term: Ferric pyrophosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'CAS: 10058-44-3; MW: 745.21'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.000375'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+- preferred_term: dithiothreitol
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 367-51-1'
+- preferred_term: Casitone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '11.275'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '22.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.1125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.1125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.025'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From Wolfe''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From Wolfe''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From Wolfe''s vitamin mix'
+- preferred_term: thiamine HCl
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.0125'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From Wolfe''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Wolfe''s vitamin mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From Wolfe''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.00025'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From Wolfe''s vitamin mix'
+- preferred_term: Acetic Acid
+  concentration:
+    value: '0.475'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15366
+    label: acetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 64-19-7; MW: 60.05'
+- preferred_term: Propionic Acid
+  concentration:
+    value: '0.175'
+    unit: G_PER_L
+  term:
+    id: CHEBI:30768
+    label: propionic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 79-09-4; MW: 74.079'
+- preferred_term: Isobutyric acid
+  concentration:
+    value: '0.0225'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16135
+    label: isobutyric acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 79-31-2; MW: 88.11'
+- preferred_term: Valeric acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17418
+    label: valeric acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 109-52-4; MW: 102.13'
+- preferred_term: Isovaleric acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  term:
+    id: CHEBI:503742
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 503-74-2; MW: 102.13'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  notes: 'CAS: 91079-38-8'
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: 'Beef Heart Infusion '
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Sodium carbonate
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 497-19-8; MW: 105.9888'
+- preferred_term: Iron(II) Sulfate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Tris(hydroxymethyl)aminomethane
+  concentration:
+    value: '0.2075'
+    unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: tris
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-86-1; MW: 121.14'
+- preferred_term: Tris hydrochloride
+  concentration:
+    value: '0.715'
+    unit: G_PER_L
+  notes: 'CAS: 1185-53-1; MW: 157.6'
+description: 50% ABB, 25% Columbia, 25% YCFA
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ACY
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.347223+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ACY.yaml'
+- timestamp: '2026-03-18T04:33:58.558000Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015483'
+data_quality_flags:
+- has_unmapped_ingredients

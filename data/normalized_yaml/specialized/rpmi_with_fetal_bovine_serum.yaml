@@ -1,0 +1,327 @@
+id: CultureMech:015732
+name: RPMI with Fetal bovine serum
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Glycine
+  concentration:
+    value: '10'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07'
+- preferred_term: L-Arginine
+  concentration:
+    value: '200'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '50'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12'
+- preferred_term: L-Aspartic Acid
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-84-8; MW: 133.1'
+- preferred_term: L-Cysteine hydrochloride monohydrate
+  concentration:
+    value: '65'
+    unit: MG_PER_L
+  notes: 'CAS: 7048-04-6; MW: 175.63'
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  notes: 'CAS: 6382-01-0; MW: 203.24'
+- preferred_term: L-Glutamine
+  concentration:
+    value: '300'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-85-9; MW: 146.14'
+- preferred_term: L-Histidine
+  concentration:
+    value: '15'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15971
+    label: L-histidine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16'
+- preferred_term: Hydroxy-L-Proline
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  notes: 'CAS: 51-35-4; MW: 132.0'
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '50'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17191
+    label: L-isoleucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17'
+- preferred_term: L-Leucine
+  concentration:
+    value: '50'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15603
+    label: L-leucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17'
+- preferred_term: L-Lysine
+  concentration:
+    value: '40'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:18019
+    label: L-lysine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19'
+- preferred_term: L-Methionine
+  concentration:
+    value: '15'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16643
+    label: L-methionine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '15'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19'
+- preferred_term: L-Proline
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13'
+- preferred_term: L-Serine
+  concentration:
+    value: '30'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17115
+    label: L-serine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09'
+- preferred_term: L-Threonine
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16857
+    label: L-threonine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23'
+- preferred_term: L-tyrosine disodium salt
+  concentration:
+    value: '29'
+    unit: MG_PER_L
+  notes: 'CAS: 69847-45-6; MW: 225.15'
+- preferred_term: L-Valine
+  concentration:
+    value: '20'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16414
+    label: L-valine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15'
+- preferred_term: biotin
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Choline chloride
+  concentration:
+    value: '3'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.25'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27'
+- preferred_term: Folic Acid
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4'
+- preferred_term: m-Inositol
+  concentration:
+    value: '35'
+    unit: MG_PER_L
+  notes: 'CAS: 87-89-8; MW: 180.16'
+- preferred_term: Nicotinamide
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17154
+    label: nicotinamide
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 98-92-0; MW: 122.12'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.005'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37'
+- preferred_term: Calcium nitrate tetrahydrate
+  concentration:
+    value: '100'
+    unit: MG_PER_L
+  notes: 'CAS: 13477-34-4; MW: 236.15'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '48.84'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '400'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7447-40-7; MW:
+    74.55'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '2000'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '6000'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Sodium phosphate dibasic heptahydrate
+  concentration:
+    value: '800'
+    unit: MG_PER_L
+  notes: 'CAS: 7782-85-6; MW: 268.07'
+- preferred_term: D-Glucose
+  concentration:
+    value: '2000'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: L-glutathione reduced
+  concentration:
+    value: '1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:177535
+    label: L-Glutathione (reduced)
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-18-8; MW: 307.32'
+- preferred_term: Phenol red
+  concentration:
+    value: '5'
+    unit: MG_PER_L
+  notes: 'CAS: 143-74-8; MW: 354.38'
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Lipopolysaccharide
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+description: RPMI 1640 Medium was originally developed to culture human leukemic cells
+  in suspension
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: RPMI with Fetal bovine serum
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.618000+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: RPMI_with_Fetal_bovine_serum.yaml'
+- timestamp: '2026-03-18T04:34:00.887873Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015732'
+data_quality_flags:
+- has_unmapped_ingredients

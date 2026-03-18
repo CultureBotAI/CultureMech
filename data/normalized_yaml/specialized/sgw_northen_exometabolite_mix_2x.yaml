@@ -1,0 +1,543 @@
+id: CultureMech:015741
+name: SGW Northen Exometabolite mix 2x
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From Wolfe''s mineral mix'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
+    From Wolfe''s mineral mix'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Wolfe''s mineral mix'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From Wolfe''s mineral mix'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s mineral
+    mix'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Wolfe''s mineral mix'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.003'
+    unit: MG_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From Wolfe''s vitamin mix'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From Wolfe''s vitamin mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From Wolfe''s vitamin mix'
+- preferred_term: thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s vitamin
+    mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From Wolfe''s vitamin mix'
+- preferred_term: biotin
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31;
+    From Wolfe''s vitamin mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From Wolfe''s vitamin mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From Wolfe''s vitamin mix'
+- preferred_term: D-Mannitol
+  concentration:
+    value: '176.10000000000002'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16899
+    label: D-mannitol
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 69-65-8; MW: 182.17;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: D-Glucose
+  concentration:
+    value: '164.96'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: D-Fructose
+  concentration:
+    value: '161.3'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:48095
+    label: keto-D-fructose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-48-7; MW: 180.16;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: D-Trehalose dihydrate
+  concentration:
+    value: '112.36'
+    unit: MICROMOLAR
+  notes: 'CAS: 6138-23-4; MW: 378.33; From Northen_Exometabolite_mix_1'
+- preferred_term: D-Arabinose
+  concentration:
+    value: '41.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 10323-20-3; MW: 150.13; From Northen_Exometabolite_mix_1'
+- preferred_term: D-Maltose monohydrate
+  concentration:
+    value: '33.080000000000005'
+    unit: MICROMOLAR
+  notes: 'CAS: 6363-53-7; MW: 360.31; From Northen_Exometabolite_mix_1'
+- preferred_term: Arabitol
+  concentration:
+    value: '21.040000000000003'
+    unit: MICROMOLAR
+  notes: 'CAS: 7643-75-6; MW: 152.146; From Northen_Exometabolite_mix_1'
+- preferred_term: L-Leucine
+  concentration:
+    value: '12.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:15603
+    label: L-leucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 61-90-5; MW: 131.17;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Isoleucine
+  concentration:
+    value: '12.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17191
+    label: L-isoleucine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-32-5; MW: 131.17;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: Glycine
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Arginine
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 74-79-3; MW: 174.2;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Proline
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17203
+    label: L-proline
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 147-85-3; MW: 115.13;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Threonine
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16857
+    label: L-threonine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 72-19-5; MW: 119.12;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Lysine
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:18019
+    label: L-lysine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-87-1; MW: 146.19;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '8.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: D-Mannose
+  concentration:
+    value: '7.88'
+    unit: MICROMOLAR
+  notes: 'CAS: 3458-28-4; MW: 180.16; From Northen_Exometabolite_mix_1'
+- preferred_term: Uridine
+  concentration:
+    value: '4.5'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-96-8; MW: 244.2; From Northen_Exometabolite_mix_1'
+- preferred_term: Carnitine Hydrochloride
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 461-05-2; MW: 197.66; From Northen_Exometabolite_mix_1'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 70-47-3; MW: 132.12;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Serine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17115
+    label: L-serine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-45-1; MW: 105.09;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Valine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16414
+    label: L-valine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 75-18-4; MW: 117.15;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-tyrosine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17895
+    label: L-tyrosine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 60-18-4; MW: 181.19;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Methionine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16643
+    label: L-methionine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-68-3; MW: 149.21;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 6382-01-0; MW: 203.24; From Northen_Exometabolite_mix_1'
+- preferred_term: L-Citrulline
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  notes: 'CAS: 372-75-8; MW: 175.19; From Northen_Exometabolite_mix_1'
+- preferred_term: L-Aspartic Acid
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17053
+    label: L-aspartic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-84-8; MW: 133.1;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Alanine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:16977
+    label: L-alanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-41-7; MW: 89.09;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Histidine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:15971
+    label: L-histidine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 71-00-1; MW: 155.16;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: L-Glutamine
+  concentration:
+    value: '4.0'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:18050
+    label: L-glutamine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-85-9; MW: 146.14;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: 4-Guanidinobutyric acid
+  concentration:
+    value: '1.1800000000000002'
+    unit: MICROMOLAR
+  notes: 'CAS: 463-00-3; MW: 145.16; From Northen_Exometabolite_mix_1'
+- preferred_term: Hypoxanthine
+  concentration:
+    value: '0.8400000000000001'
+    unit: MICROMOLAR
+  notes: 'CAS: 68-94-0; MW: 136.11; From Northen_Exometabolite_mix_1'
+- preferred_term: Uracil
+  concentration:
+    value: '0.6400000000000001'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:17568
+    label: uracil
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 66-22-8; MW: 112.0868;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.6400000000000001'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: Guanine
+  concentration:
+    value: '0.6400000000000001'
+    unit: MICROMOLAR
+  notes: 'CAS: 73-40-5; MW: 151.13; From Northen_Exometabolite_mix_1'
+- preferred_term: Cytosine
+  concentration:
+    value: '0.6400000000000001'
+    unit: MICROMOLAR
+  notes: 'CAS: 71-30-7; MW: 111.1; From Northen_Exometabolite_mix_1'
+- preferred_term: Adenine hydrochloride hydrate
+  concentration:
+    value: '0.6400000000000001'
+    unit: MICROMOLAR
+  notes: 'CAS: 2922-28-3; MW: 171.59; From Northen_Exometabolite_mix_1'
+- preferred_term: Thymidine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 50-89-5; MW: 242.23; From Northen_Exometabolite_mix_1'
+- preferred_term: spermidine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 124-20-9; MW: 145.25; From Northen_Exometabolite_mix_1'
+- preferred_term: Orotic acid
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 65-86-1; MW: 156.1; From Northen_Exometabolite_mix_1'
+- preferred_term: Inosine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-63-9; MW: 268.23; From Northen_Exometabolite_mix_1'
+- preferred_term: 2'-Deoxyinosine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 890-38-0; MW: 252.23; From Northen_Exometabolite_mix_1'
+- preferred_term: Cytidine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 65-46-3; MW: 243.22; From Northen_Exometabolite_mix_1'
+- preferred_term: Choline chloride
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62;
+    From Northen_Exometabolite_mix_1'
+- preferred_term: Adenosine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 58-61-7; MW: 267.241; From Northen_Exometabolite_mix_1'
+- preferred_term: 2'-Deoxyuridine
+  concentration:
+    value: '0.52'
+    unit: MICROMOLAR
+  notes: 'CAS: 951-78-0; MW: 228.2; From Northen_Exometabolite_mix_1'
+description: SGW media with Northen lab exometabolite mix 1
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: SGW Northen Exometabolite mix 2x
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.766583+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: SGW_Northen_Exometabolite_mix_2x.yaml'
+- timestamp: '2026-03-18T04:34:01.026293Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015741'
+data_quality_flags:
+- has_unmapped_ingredients

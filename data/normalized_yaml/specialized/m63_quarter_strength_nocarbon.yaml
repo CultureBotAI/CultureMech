@@ -1,0 +1,55 @@
+id: CultureMech:015541
+name: M63 quarter strength noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '3.4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.25E-05'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.0517'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+description: Defined media with no carbon source; Used for Ralstonia
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: M63 quarter strength noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.880870+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: M63_quarter_strength_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:58.988289Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015541'
+data_quality_flags:
+- has_unmapped_ingredients

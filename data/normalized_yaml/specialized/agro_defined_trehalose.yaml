@@ -1,0 +1,80 @@
+id: CultureMech:015484
+name: Agro defined trehalose
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Urea
+  concentration:
+    value: '9.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16199
+    label: urea
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-13-6; MW: 60.06'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '1.50E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '2.50E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.00E-02'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Citric Acid
+  concentration:
+    value: '1.60E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 77-92-9; MW: 192.12'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '5.40E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Sodium phosphate dibasic heptahydrate
+  concentration:
+    value: '1.08E+01'
+    unit: G_PER_L
+  notes: 'CAS: 7782-85-6; MW: 268.07'
+- preferred_term: D-Trehalose dihydrate
+  concentration:
+    value: '2.00E+01'
+    unit: G_PER_L
+  notes: 'CAS: 6138-23-4; MW: 378.33'
+description: Defined minimal media for growing Agrobacterium
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Agro defined trehalose
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.434789+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Agro_defined_trehalose.yaml'
+- timestamp: '2026-03-18T04:33:58.566671Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015484'
+data_quality_flags:
+- has_unmapped_ingredients

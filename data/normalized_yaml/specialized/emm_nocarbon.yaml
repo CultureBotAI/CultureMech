@@ -1,0 +1,76 @@
+id: CultureMech:015523
+name: EMM noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: Sodium ferric EDTA
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  notes: 'CAS: 15708-41-5; MW: 367.05'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+description: Endophyte minimal media used by Doty lab at U. of Washington; no carbon
+  source
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: EMM noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.739861+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: EMM_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:58.870128Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015523'
+data_quality_flags:
+- has_unmapped_ingredients

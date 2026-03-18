@@ -1,0 +1,32 @@
+id: CultureMech:015808
+name: ZMB ALS noGuanine
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Guanine
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 73-40-5; MW: 151.13'
+description: Media for culturing Bifidobacterium minus guanine
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noGuanine
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.361360+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noGuanine.yaml'
+- timestamp: '2026-03-18T04:34:01.604809Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015808'
+data_quality_flags:
+- has_unmapped_ingredients

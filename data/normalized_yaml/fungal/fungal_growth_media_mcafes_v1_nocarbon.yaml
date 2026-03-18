@@ -1,0 +1,73 @@
+id: CultureMech:015476
+name: Fungal growth media mCAFEs v1 noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Potassium phosphate dibasic
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'CAS: 7758-11-4; MW: 174.18'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7447-40-7; MW:
+    74.55'
+- preferred_term: Ammonium Nitrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'CAS: 6484-52-2; MW: 80.04'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+description: Growth media for diverse fungi with no carbon
+notes: 'Source: FEBA media definitions'
+category: FUNGAL
+sources:
+- database: CultureBotHT
+  database_id: Fungal growth media mCAFEs v1 noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.750439+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Fungal_growth_media_mCAFEs_v1_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:58.506661Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015476'
+data_quality_flags:
+- has_unmapped_ingredients

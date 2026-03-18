@@ -1,33 +1,142 @@
-id: CultureMech:015406
-name: marine_broth_2216
-original_name: MARINE BROTH 2216
-category: specialized
+id: CultureMech:015554
+name: marine broth 2216
 medium_type: COMPLEX
 physical_state: LIQUID
-media_term:
-  preferred_term: JCM Medium J41
-  term:
-    id: mediadive.medium:J41
-    label: MARINE BROTH 2216
-notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=41'
 ingredients:
-- preferred_term: Marine broth 2216
+- preferred_term: Peptone
   concentration:
-    value: '37.4'
+    value: '5'
     unit: G_PER_L
-applications:
-- Microbial cultivation
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98)'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: Ferric citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 3522-50-7; MW: 244.94'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44'
+- preferred_term: magnesium chloride
+  concentration:
+    value: '5.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  notes: 'Mapping: micromediaparam (confidence: 0.95)'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7487-88-9; MW: 120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7447-40-7; MW: 74.55'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Potassium bromide
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-02-3; MW: 119.002'
+- preferred_term: Strontium chloride
+  concentration:
+    value: '34'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:36383
+    label: strontium dichloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10476-85-4; MW: 158.53'
+- preferred_term: Boric Acid
+  concentration:
+    value: '22'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Sodium silicate
+  concentration:
+    value: '4'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:60720
+    label: sodium silicate
+  notes: 'Mapping: micromediaparam (confidence: 0.95)'
+- preferred_term: sodium fluoride
+  concentration:
+    value: '2.4'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7681-49-4; MW: 41.99'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '8'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7558-79-4; MW: 141.96'
+description: rich media for marine bacteria; difco media 2216
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: marine broth 2216
+  url: https://github.com/CultureBotAI/CultureBotHT
 curation_history:
-- timestamp: '2026-01-26T17:53:15.630578Z'
-  curator: mediadive-import
-  action: Imported from MediaDive
-  notes: 'Source: JCM, ID: J41'
-- timestamp: '2026-03-13T06:20:42.493367Z'
+- timestamp: '2026-03-18T04:31:15.462377+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: marine_broth_2216.yaml'
+- timestamp: '2026-03-18T04:33:59.067977Z'
   curator: culturemech-id-assigner-v1.0
   action: Assigned CultureMech ID
-  notes: 'Assigned stable identifier: CultureMech:015406'
-- timestamp: '2026-03-17T19:46:34.142429+00:00'
-  curator: normalize_media_names_to_snake_case.py
-  action: NAME_NORMALIZED
-  notes: Normalized name from "MARINE BROTH 2216" to "marine_broth_2216" for consistent
-    matching
+  notes: 'Assigned stable identifier: CultureMech:015554'
+data_quality_flags: []

@@ -1,0 +1,98 @@
+id: CultureMech:015547
+name: M9 minimal media aromix noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Sodium phosphate dibasic heptahydrate
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+  notes: 'CAS: 7782-85-6; MW: 268.07'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: L-Phenylalanine
+  concentration:
+    value: '40'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17295
+    label: L-phenylalanine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 63-91-2; MW: 165.19'
+- preferred_term: L-Tryptophan
+  concentration:
+    value: '40'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 73-22-3; MW: 204.23'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '10'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14'
+- preferred_term: 2,3-dihydroxybenzoic acid
+  concentration:
+    value: '10'
+    unit: MG_PER_L
+  notes: 'CAS: 303-38-8; MW: 154.12'
+description: E. coli defined media no carbon
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: M9 minimal media aromix noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.918719+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: M9_minimal_media_aromix_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:59.012985Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015547'
+data_quality_flags:
+- has_unmapped_ingredients

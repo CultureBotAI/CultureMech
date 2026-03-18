@@ -1,0 +1,32 @@
+id: CultureMech:015521
+name: Dv base Y medium no Fe
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Dv_base_Y_medium
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Iron (II) chloride tetrahydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 13478-10-9; MW: 198.81'
+description: Rich base medium for cultivating Desulfovibrio with no Fe
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Dv base Y medium no Fe
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.719323+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Dv_base_Y_medium_no_Fe.yaml'
+- timestamp: '2026-03-18T04:33:58.863025Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015521'
+data_quality_flags:
+- has_unmapped_ingredients

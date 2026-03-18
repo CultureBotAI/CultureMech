@@ -1,0 +1,443 @@
+id: CultureMech:015677
+name: Planctomyces medium DSMZ1560
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Bacto Peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: FOODON:03302071
+    label: Peptone
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 51142-18-8'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  term:
+    id: FOODON:03315426
+    label: Yeast extract
+  notes: 'Mapping: curated_dict (confidence: 0.98); CAS: 232-387-9'
+- preferred_term: HEPES
+  concentration:
+    value: '2.38'
+    unit: G_PER_L
+  term:
+    id: CHEBI:143268
+    label: N-(2-hydroxyethyl)iminodiacetic acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7365-45-9; MW: 238.3012'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 139-13-9; MW: 191.14;
+    From Planctomyces_mineral_salts'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.594'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-99-8; MW: 246.47; From
+    Planctomyces_mineral_salts'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.0668'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10035-04-8; MW: 147.01;
+    From Planctomyces_mineral_salts'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.2534'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10102-40-6; MW: 241.95; From
+    Planctomyces_mineral_salts'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '1.98'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
+    Planctomyces_mineral_salts'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '0.25'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 6381-92-6; MW: 336.206; From
+    Planctomyces_mineral_salts'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '1.095'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7446-20-0; MW: 287.56; From
+    Planctomyces_mineral_salts'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
+    Planctomyces_mineral_salts'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.154'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-96-5; MW: 169.02; From
+    Planctomyces_mineral_salts'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.0392'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-99-8; MW: 249.69; From
+    Planctomyces_mineral_salts'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '0.0248'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10026-22-9; MW: 291.03; From
+    Planctomyces_mineral_salts'
+- preferred_term: sodium tetraborate decahydrate
+  concentration:
+    value: '0.0177'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86222
+    label: borax
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 1303-96-4; From Planctomyces_mineral_salts'
+- preferred_term: nitrilotriacetic acid trisodium salt
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:9754
+    label: tris
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 5064-31-3; MW: 257.08;
+    From Planctomyces_trace_element_solution'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10034-96-5; MW: 169.02; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7782-63-0; MW: 278.01; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Cobalt(II) nitrate hexahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10026-22-9; MW: 291.03; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7646-85-7; MW: 136.3; From Planctomyces_trace_element_solution'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:53542
+    label: nickel chloride hexahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7791-20-0; MW: 237.69; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Selenous acid
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:26642
+    label: selenous acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7783-00-8; MW: 128.97; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-99-8; MW: 249.69; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7784-24-9; MW: 474.39; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Boric Acid
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10043-35-3; MW: 61.83; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10102-40-6; MW: 241.95; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Sodium tungstate dihydrate
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+  term:
+    id: CHEBI:63939
+    label: sodium tungstate dihydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10213-10-2; MW: 329.85; From
+    Planctomyces_trace_element_solution'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '11.735'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7647-14-5; MW: 58.44; From Planctomyces_artificial_seawater'
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '1.96'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7757-82-6; MW: 142.04; From
+    Planctomyces_artificial_seawater'
+- preferred_term: Magnesium chloride hexahydrate
+  concentration:
+    value: '5.32'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7791-18-6; MW: 203.3; From Planctomyces_artificial_seawater'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.715'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 10043-52-4; MW: 110.98;
+    From Planctomyces_artificial_seawater'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '0.095'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 144-55-8; MW: 84.007;
+    From Planctomyces_artificial_seawater'
+- preferred_term: Potassium Chloride
+  concentration:
+    value: '0.345'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7447-40-7; MW: 74.55;
+    From Planctomyces_artificial_seawater'
+- preferred_term: Potassium bromide
+  concentration:
+    value: '0.048'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7758-02-3; MW: 119.002; From
+    Planctomyces_artificial_seawater'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.013'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33118
+    label: boric acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10043-35-3; MW: 61.83; From
+    Planctomyces_artificial_seawater'
+- preferred_term: Strontium chloride hexahydrate
+  concentration:
+    value: '0.03325'
+    unit: G_PER_L
+  term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 10025-70-4; MW: 266.62; From
+    Planctomyces_artificial_seawater'
+- preferred_term: sodium fluoride
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28741
+    label: sodium fluoride
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 7681-49-4; MW: 41.99; From Planctomyces_artificial_seawater'
+- preferred_term: biotin
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 58-85-5; MW: 244.31; From
+    Planctomyces_vitamin_mix'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 59-30-3; MW: 441.4; From
+    Planctomyces_vitamin_mix'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:30961
+    label: pyridoxine hydrochloride
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 58-56-0; MW: 205.64; From
+    Planctomyces_vitamin_mix'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 83-88-5; MW: 376.36; From
+    Planctomyces_vitamin_mix'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 67-03-8; MW: 337.27; From
+    Planctomyces_vitamin_mix'
+- preferred_term: Nicotinamide
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17154
+    label: nicotinamide
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 98-92-0; MW: 122.12; From
+    Planctomyces_vitamin_mix'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 137-08-6; MW: 238.27;
+    From Planctomyces_vitamin_mix'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.001'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 68-19-9; MW: 1355.37;
+    From Planctomyces_vitamin_mix'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+  notes: 'Mapping: ols_exact (confidence: 0.92); CAS: 150-13-0; MW: 137.14; From Planctomyces_vitamin_mix'
+- preferred_term: N-Acetyl-D-Glucosamine
+  concentration:
+    value: '3.616'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:8006
+    label: Peptidoglycan(N-acetyl-D-glucosamine)
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 7512-17-6; MW: 221.21'
+- preferred_term: D-Glucose
+  concentration:
+    value: '1.39'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam (confidence: 0.95); CAS: 50-99-7; MW: 180.16'
+description: Planctomyces medium AG Jogler; DSMZ 1560
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Planctomyces medium DSMZ1560
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.228818+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Planctomyces_medium_DSMZ1560.yaml'
+- timestamp: '2026-03-18T04:34:00.418788Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015677'
+data_quality_flags: []

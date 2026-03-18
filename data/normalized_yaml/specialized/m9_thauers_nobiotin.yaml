@@ -1,0 +1,166 @@
+id: CultureMech:015553
+name: M9 Thauers noBiotin
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Sodium phosphate dibasic heptahydrate
+  concentration:
+    value: '6.8'
+    unit: G_PER_L
+  notes: 'CAS: 7782-85-6; MW: 268.07'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: pyridoxine HCl
+  concentration:
+    value: '0.02'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
+    mix no Biotin'
+- preferred_term: 4-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  notes: 'CAS: 150-13-0; MW: 137.14; From Thauer''s vitamin mix no Biotin'
+- preferred_term: Lipoic acid
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33; From Thauer''s vitamin mix no Biotin'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11;
+    From Thauer''s vitamin mix no Biotin'
+- preferred_term: Riboflavin
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 83-88-5; MW: 376.36;
+    From Thauer''s vitamin mix no Biotin'
+- preferred_term: thiamine HCl
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Thauer''s vitamin
+    mix no Biotin'
+- preferred_term: calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 137-08-6; MW: 238.27;
+    From Thauer''s vitamin mix no Biotin'
+- preferred_term: Folic Acid
+  concentration:
+    value: '0.004'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-30-3; MW: 441.4;
+    From Thauer''s vitamin mix no Biotin'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '0.0002'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 68-19-9; MW: 1355.37;
+    From Thauer''s vitamin mix no Biotin'
+- preferred_term: Choline chloride
+  concentration:
+    value: '0.4'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62;
+    From Thauer''s vitamin mix no Biotin'
+description: E. coli defined media
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: M9 Thauers noBiotin
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.912989+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: M9_Thauers_noBiotin.yaml'
+- timestamp: '2026-03-18T04:33:59.060522Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015553'
+data_quality_flags:
+- has_unmapped_ingredients

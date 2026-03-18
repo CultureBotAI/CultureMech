@@ -1,0 +1,109 @@
+id: CultureMech:015600
+name: MME noNitrogen noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium phosphate dibasic trihydrate
+  concentration:
+    value: '9.10'
+    unit: MILLIMOLAR
+  notes: 'CAS: 16788-57-1; MW: 228.22'
+- preferred_term: MOPS
+  concentration:
+    value: '20.00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '4.30'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.41'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.07'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+- preferred_term: EDTA tetrasodium tetrahydrate salt
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  notes: 'CAS: 13235-36-4; MW: 452.23; From MME Trace Minerals'
+- preferred_term: Ferric chloride
+  concentration:
+    value: '2.0'
+    unit: MG_PER_L
+  notes: 'CAS: 10025-77-1; MW: 270.3; From MME Trace Minerals'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From MME Trace Minerals'
+- preferred_term: Zinc chloride
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 7646-85-7; MW: 136.3; From MME Trace Minerals'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48; From MME Trace Minerals'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91; From MME Trace Minerals'
+- preferred_term: Diammonium molybdate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 13106-76-8; MW: 196.02; From MME Trace Minerals'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From MME Trace Minerals'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From MME Trace Minerals'
+description: Defined media without C and N from PNNL with MOPS
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MME noNitrogen noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.048991+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MME_noNitrogen_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:59.624265Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015600'
+data_quality_flags:
+- has_unmapped_ingredients

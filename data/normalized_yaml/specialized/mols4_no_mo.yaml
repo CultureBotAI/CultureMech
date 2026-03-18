@@ -1,0 +1,32 @@
+id: CultureMech:015620
+name: MoLS4 no Mo
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 7631-95-0; MW: 205.92'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no Mo
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no Mo
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.580893+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_Mo.yaml'
+- timestamp: '2026-03-18T04:33:59.745241Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015620'
+data_quality_flags:
+- has_unmapped_ingredients

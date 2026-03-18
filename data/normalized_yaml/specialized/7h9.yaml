@@ -1,0 +1,151 @@
+id: CultureMech:015481
+name: 7H9
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '5.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: L-Glutamic acid
+  concentration:
+    value: '5.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-86-0; MW: 147.13'
+- preferred_term: Sodium citrate
+  concentration:
+    value: '1.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '1.00E-03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
+- preferred_term: biotin
+  concentration:
+    value: '5.00E-04'
+    unit: G_PER_L
+  term:
+    id: CHEBI:15956
+    label: biotin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-85-5; MW: 244.31'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '2.50E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '1.00E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '4.00E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1185-57-5'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '5.00E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '5.00E-04'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: zinc sulfate
+  concentration:
+    value: '1.00E-03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: copper (II) chloride dihydrate
+  concentration:
+    value: '1.00E-03'
+    unit: G_PER_L
+  notes: 'CAS: 10125-13-0; MW: 170.48'
+- preferred_term: bovine serum albumin
+  concentration:
+    value: '5.00E+00'
+    unit: G_PER_L
+  notes: 'CAS: 9048-46-8'
+- preferred_term: D-Glucose
+  concentration:
+    value: '2.00E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-99-7; MW: 180.16'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '4.25E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Tween 80
+  concentration:
+    value: '5.00E-01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 9005-65-6; MW:
+    1310.0'
+description: Complete media for Mycobacterium tuberculosis (H37Rv)
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: 7H9
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.328552+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: 7H9.yaml'
+- timestamp: '2026-03-18T04:33:58.539947Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015481'
+data_quality_flags:
+- has_unmapped_ingredients

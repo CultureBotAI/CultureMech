@@ -1,0 +1,144 @@
+id: CultureMech:015458
+name: DinoMM L lactateCarbon HighNutrient noVitamin
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sea salts
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47; From Wolfe''s mineral mix'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 139-13-9; MW: 191.14;
+    From Wolfe''s mineral mix'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44; From Wolfe''s mineral mix'
+- preferred_term: Manganese (II) sulfate monohydrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:75219
+    label: manganese(II) sulfate monohydrate
+  notes: 'CAS: 10034-96-5; MW: 169.02; From Wolfe''s mineral mix'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix'
+- preferred_term: Calcium Chloride Dihydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); From Wolfe''s mineral
+    mix'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix'
+- preferred_term: Aluminum potassium sulfate dodecahydrate
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix'
+- preferred_term: Boric Acid
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83; From Wolfe''s mineral mix'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.003'
+    unit: MG_PER_L
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix'
+- preferred_term: Sodium L-Lactate
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 867-56-1; MW: 112.06'
+description: Minimal media for marine bacteria with Sodium L-Lactate as the carbon
+  source and no vitamins
+notes: 'Source: FEBA media definitions'
+category: BACTERIAL
+sources:
+- database: CultureBotHT
+  database_id: DinoMM L lactateCarbon HighNutrient noVitamin
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.627925+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: DinoMM_L_lactateCarbon_HighNutrient_noVitamin.yaml'
+- timestamp: '2026-03-18T04:33:58.409582Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015458'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,148 @@
+id: CultureMech:015643
+name: MS media noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ammonium Nitrate
+  concentration:
+    value: '1650'
+    unit: MG_PER_L
+  notes: 'CAS: 6484-52-2; MW: 80.04'
+- preferred_term: Boric Acid
+  concentration:
+    value: '6.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Calcium chloride
+  concentration:
+    value: '332.2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10043-52-4; MW:
+    110.98'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.025'
+    unit: MG_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '0.025'
+    unit: MG_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '37.26'
+    unit: MG_PER_L
+  notes: 'CAS: 6381-92-6; MW: 336.206'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '27.8'
+    unit: MG_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: Glycine
+  concentration:
+    value: '2'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 56-40-6; MW: 75.07'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '180.7'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7487-88-9; MW:
+    120.37'
+- preferred_term: Manganese sulfate
+  concentration:
+    value: '16.9'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: m-Inositol
+  concentration:
+    value: '100'
+    unit: MG_PER_L
+  notes: 'CAS: 87-89-8; MW: 180.16'
+- preferred_term: Nicotinic Acid
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 59-67-6; MW: 123.11'
+- preferred_term: Potassium iodide
+  concentration:
+    value: '0.83'
+    unit: MG_PER_L
+  notes: 'CAS: 7681-11-0; MW: 166.0'
+- preferred_term: Potassium nitrate
+  concentration:
+    value: '1900'
+    unit: MG_PER_L
+  notes: 'CAS: 7757-79-1; MW: 101.1032'
+- preferred_term: Potassium phosphate monobasic
+  concentration:
+    value: '170'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7778-77-0; MW:
+    136.09'
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 58-56-0; MW: 205.64'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.25'
+    unit: MG_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: MG_PER_L
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-03-8; MW: 337.27'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '8.6'
+    unit: MG_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+description: Murashige and Skoog Basal Medium for growing plants with no Sucrose
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MS media noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.143901+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MS_media_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:59.870237Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015643'
+data_quality_flags:
+- has_unmapped_ingredients

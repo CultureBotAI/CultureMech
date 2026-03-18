@@ -1,0 +1,83 @@
+id: CultureMech:015497
+name: BHIS_K3_noGlucose
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Calf brains
+  concentration:
+    value: '7.7'
+    unit: G_PER_L
+- preferred_term: Beef heart
+  concentration:
+    value: '9.8'
+    unit: G_PER_L
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'CAS: 91079-38-8'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7558-79-4; MW:
+    141.96'
+- preferred_term: L-Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 52-90-4; MW: 121.16'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32139
+    label: null
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 144-55-8; MW: 84.007'
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:50385
+    label: hemin
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 16009-13-5; MW:
+    651.94'
+- preferred_term: Menadione
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'CAS: 58-27-5'
+description: Brain heart infusion salt broth with vitamin K3 and no glucose
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: BHIS_K3_noGlucose
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.497753+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: BHIS_K3_noGlucose.yaml'
+- timestamp: '2026-03-18T04:33:58.673473Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015497'
+data_quality_flags:
+- has_unmapped_ingredients

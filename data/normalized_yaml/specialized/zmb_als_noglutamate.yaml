@@ -1,0 +1,32 @@
+id: CultureMech:015804
+name: ZMB ALS noGlutamate
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ZMB_ALS
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: L-Glutamic acid monopotassium salt monohydrate
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  notes: 'CAS: 6382-01-0; MW: 203.24'
+description: Media for culturing Bifidobacterium minus glutamate
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: ZMB ALS noGlutamate
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:15.355513+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: ZMB_ALS_noGlutamate.yaml'
+- timestamp: '2026-03-18T04:34:01.597926Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015804'
+data_quality_flags:
+- has_unmapped_ingredients

@@ -1,0 +1,80 @@
+id: CultureMech:015684
+name: Pro99 seawater
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium phosphate monobasic monohydrate
+  concentration:
+    value: '50'
+    unit: MICROMOLAR
+  notes: 'CAS: 10049-21-5; MW: 137.99'
+- preferred_term: Ammonium chloride
+  concentration:
+    value: '800'
+    unit: MICROMOLAR
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 12125-02-9; MW:
+    53.49'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '1.17'
+    unit: MICROMOLAR
+  notes: 'CAS: 6381-92-6; MW: 336.206'
+- preferred_term: Iron (III) chloride hexahydrate
+  concentration:
+    value: '1.18'
+    unit: MICROMOLAR
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '0.008'
+    unit: MICROMOLAR
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '0.005'
+    unit: MICROMOLAR
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '0.09'
+    unit: MICROMOLAR
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.003'
+    unit: MICROMOLAR
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: Sodium selenite pentahydrate
+  concentration:
+    value: '0.01'
+    unit: MICROMOLAR
+  notes: 'CAS: 26970-82-1; MW: 263.01'
+- preferred_term: Nickel (II) chloride hexahydrate
+  concentration:
+    value: '0.01'
+    unit: MICROMOLAR
+  notes: 'CAS: 7791-20-0; MW: 237.69'
+- preferred_term: Filtered Seawater
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+description: Media from MIT for growing phototrophic bacteria
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: Pro99 seawater
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:14.241325+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: Pro99_seawater.yaml'
+- timestamp: '2026-03-18T04:34:00.464257Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015684'
+data_quality_flags:
+- has_unmapped_ingredients

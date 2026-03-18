@@ -1,0 +1,99 @@
+id: CultureMech:015653
+name: NL-CCM
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sucrose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:17992
+    label: sucrose
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 57-50-1; MW: 342.3'
+- preferred_term: D-Mannitol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16899
+    label: D-mannitol
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 69-65-8; MW: 182.17'
+- preferred_term: Sodium D,L-Lactate
+  concentration:
+    value: '3.51'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 50-21-5; MW: 90.08'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: 'CAS: 7647-14-5; MW: 58.44'
+- preferred_term: Sodium Molybdate Dihydrate
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: 'CAS: 10102-40-6; MW: 241.95'
+- preferred_term: EDTA (disodium salt)
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+  notes: 'CAS: 6381-92-6; MW: 336.206'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'CAS: 232-387-9'
+- preferred_term: Magnesium Sulfate Heptahydrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86463
+    label: magnesium sulfate heptahydrate
+  notes: 'CAS: 10034-99-8; MW: 246.47'
+- preferred_term: Calcium chloride dihydrate
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 10035-04-8; MW:
+    147.01'
+description: Nitrogen-limited combined carbon medium (UW)
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: NL-CCM
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.724416+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: NL-CCM.yaml'
+- timestamp: '2026-03-18T04:33:59.933514Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015653'
+data_quality_flags:
+- has_unmapped_ingredients

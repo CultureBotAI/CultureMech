@@ -1,0 +1,35 @@
+id: CultureMech:015616
+name: MoLS4 no Choline chloride
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Choline chloride
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 67-48-1; MW: 139.62'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no choline
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no Choline chloride
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.577994+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_Choline_chloride.yaml'
+- timestamp: '2026-03-18T04:33:59.727420Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015616'
+data_quality_flags:
+- has_unmapped_ingredients

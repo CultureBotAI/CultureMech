@@ -1,0 +1,36 @@
+id: CultureMech:015619
+name: MoLS4 no lipoic acid
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: MoLS4
+  concentration:
+    value: '1'
+    unit: FOLD_DILUTION
+- preferred_term: Lipoic acid
+  concentration:
+    value: '-'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 1077-28-7; MW:
+    206.33'
+description: Lactate-sulfate media for sulfate-reducing bacteria with no lipoic acid
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: MoLS4 no lipoic acid
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:13.626627+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: MoLS4_no_lipoic_acid.yaml'
+- timestamp: '2026-03-18T04:33:59.743417Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015619'
+data_quality_flags:
+- has_unmapped_ingredients

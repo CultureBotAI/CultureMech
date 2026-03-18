@@ -1,0 +1,103 @@
+id: CultureMech:015501
+name: CaMM noCarbon
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.05E+01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: KH2PO4
+  concentration:
+    value: '4.50E+00'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '1.00E+00'
+    unit: G_PER_L
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90); CAS: 7783-20-2; MW:
+    132.14'
+- preferred_term: CaCl2
+  concentration:
+    value: '1.00E-01'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: MgSO4
+  concentration:
+    value: '1.00E+00'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+  notes: 'Mapping: micromediaparam_legacy (confidence: 0.90)'
+- preferred_term: Iron (II) sulfate heptahydrate
+  concentration:
+    value: '6.25E-03'
+    unit: G_PER_L
+  notes: 'CAS: 7782-63-0; MW: 278.01'
+- preferred_term: EDTA disodium dihydrate
+  concentration:
+    value: '6.25E-02'
+    unit: G_PER_L
+  notes: 'CAS: 139-33-3; MW: 336.21'
+- preferred_term: Zinc sulfate heptahydrate
+  concentration:
+    value: '2.25E-02'
+    unit: G_PER_L
+  notes: 'CAS: 7446-20-0; MW: 287.56'
+- preferred_term: Boric Acid
+  concentration:
+    value: '1.43E-02'
+    unit: G_PER_L
+  term:
+    id: CHEBI:33134
+    label: boric acid
+  notes: 'CAS: 10043-35-3; MW: 61.83'
+- preferred_term: Manganese (II) chloride tetrahydrate
+  concentration:
+    value: '6.30E-03'
+    unit: G_PER_L
+  notes: 'CAS: 13446-34-9; MW: 197.91'
+- preferred_term: Cobalt chloride hexahydrate
+  concentration:
+    value: '2.00E-03'
+    unit: G_PER_L
+  notes: 'CAS: 7791-13-1; MW: 237.93'
+- preferred_term: Copper (II) sulfate pentahydrate
+  concentration:
+    value: '1.90E-03'
+    unit: G_PER_L
+  notes: 'CAS: 7758-99-8; MW: 249.69'
+- preferred_term: Ammonium heptamolybdate tetrahydrate
+  concentration:
+    value: '1.40E-03'
+    unit: G_PER_L
+  notes: 'CAS: 12027-67-7; MW: 1235.86'
+description: Used for growing Xanthomonas
+notes: 'Source: FEBA media definitions'
+category: SPECIALIZED
+sources:
+- database: CultureBotHT
+  database_id: CaMM noCarbon
+  url: https://github.com/CultureBotAI/CultureBotHT
+curation_history:
+- timestamp: '2026-03-18T04:31:12.566973+00:00'
+  curator: import_from_culturebotht.py
+  action: IMPORTED
+  notes: 'Imported from CultureBotHT repository: CaMM_noCarbon.yaml'
+- timestamp: '2026-03-18T04:33:58.693324Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015501'
+data_quality_flags:
+- has_unmapped_ingredients
