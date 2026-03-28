@@ -189,6 +189,21 @@ classes:
         multivalued: true
         recommended: true
 
+      source_environment:
+        description: >-
+          Environment(s) from which target organisms originate or for which
+          this medium is designed. Enables environment-based queries and linking
+          to CommunityMech environmental metadata.
+        range: SourceEnvironmentDescriptor
+        multivalued: true
+        required: false
+        inlined_as_list: true
+        comments:
+          - Optional field for backward compatibility
+          - Multivalued to support media used for multiple environments
+          - Use when environment is known or can be inferred from target organisms
+          - Enables queries like "find all media for marine organisms"
+
       organism_culture_type:
         description: >-
           Whether this medium targets a pure isolate culture or a
@@ -321,6 +336,18 @@ classes:
         range: Dataset
         multivalued: true
         inlined_as_list: true
+
+      import_metadata:
+        description: >-
+          Import tracking and versioning information.
+          Enables reproducible imports, provenance tracking, and update workflows.
+        range: ImportMetadata
+        inlined: true
+        recommended: true
+        comments:
+          - Populated for all imported media (excludes manually created recipes)
+          - Essential for tracking source database versions and updates
+          - Enables reproducibility and audit trails
 
       curation_history:
         description: Audit trail of curation events
@@ -485,6 +512,15 @@ classes:
         recommended: false
         inlined: true
 
+      culturemech_term:
+        description: Reference to another CultureMech media recipe used as component
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+        comments:
+          - Used when this ingredient is actually a complete medium or stock solution
+          - "Example: A medium that uses BG-11 as a base would reference CultureMech:009592"
+
       parent_ingredient:
         description: Reference to parent chemical entity from MediaIngredientMech
         range: IngredientReference
@@ -566,6 +602,15 @@ classes:
         range: MediaIngredientMechTerm
         recommended: false
         inlined: true
+
+      culturemech_term:
+        description: Reference to another CultureMech media recipe for this solution
+        range: CultureMechTerm
+        recommended: false
+        inlined: true
+        comments:
+          - Used when this solution is defined as a complete recipe in CultureMech
+          - "Example: Bold Trace Stock (CultureMech:015441)"
 
       composition:
         description: Ingredients in the stock solution
@@ -651,6 +696,37 @@ classes:
         range: EvidenceItem
         multivalued: true
         inlined_as_list: true
+
+  SourceEnvironmentDescriptor:
+    is_a: Descriptor
+    description: >-
+      Environment from which target organisms originate or for which
+      the medium is designed. Enables environment-based discovery and
+      cross-repository linking with CommunityMech.
+    attributes:
+      preferred_term:
+        description: Human-readable environment name (e.g., "peatland", "marine", "soil")
+        required: true
+        range: string
+
+      term:
+        description: ENVO ontology term for the environment
+        range: EnvironmentTerm
+        recommended: true
+        inlined: true
+        comments:
+          - Recommended but not required to allow media without known environment
+          - Use ENVO Browser to find appropriate terms
+
+      notes:
+        description: Additional environmental context, conditions, or specificity
+        range: string
+        required: false
+
+    comments:
+      - Follows dismech Descriptor pattern used throughout CultureMech
+      - Multivalued when added to MediaRecipe (media can serve multiple environments)
+      - Optional field - backward compatible with existing records
 
   CofactorDescriptor:
     is_a: Descriptor
@@ -1154,6 +1230,114 @@ classes:
     id_prefixes:
       - MediaIngredientMech
 
+  CultureMechTerm:
+    is_a: Term
+    description: A CultureMech identifier for a media recipe used as component
+    slot_usage:
+      id:
+        pattern: "^CultureMech:\\d{6}$"
+        description: CultureMech identifier (e.g., "CultureMech:009592")
+    id_prefixes:
+      - CultureMech
+    comments:
+      - Used when one medium references another medium as an ingredient or component
+      - "Example: BG-11 Trace Metals Solution (CultureMech:015441) used in BG-11 Medium"
+
+  EnvironmentTerm:
+    is_a: Term
+    description: An ENVO term representing an environmental system or biome
+    slot_usage:
+      id:
+        pattern: "^ENVO:\\d{7,8}$"
+        description: ENVO identifier (7-8 digit format)
+    id_prefixes:
+      - ENVO
+    comments:
+      - ENVO prefix already defined in schema prefixes
+      - Pattern allows both 7 and 8 digit ENVO IDs
+      - "Examples: ENVO:00000044 (peatland), ENVO:00002149 (sea water)"
+
+  ImportMetadata:
+    description: >-
+      Tracking information for imported media records.
+      Enables versioning, provenance tracking, and reproducible updates.
+    attributes:
+      source_database:
+        description: Source database from which this medium was imported
+        range: SourceDatabaseEnum
+        required: true
+
+      source_id:
+        description: >-
+          Original identifier in source database (e.g., "Medium 1234", "M3205").
+          Preserved for traceability and update tracking.
+        range: string
+        required: true
+
+      import_version:
+        description: >-
+          Import version following format vMAJOR.MINOR.PATCH_YYYY-MM-DD.
+          Example: v1.0.0_2026-01-27
+        range: string
+        required: true
+        pattern: "^v\\d+\\.\\d+\\.\\d+_\\d{4}-\\d{2}-\\d{2}$"
+
+      import_date:
+        description: ISO 8601 timestamp when this record was imported
+        range: string
+        required: true
+
+      import_skill:
+        description: >-
+          Name of the skill or script that performed the import.
+          Example: "import-mediadive", "import-togo-skill"
+        range: string
+
+      last_updated:
+        description: ISO 8601 timestamp of most recent update
+        range: string
+
+      update_history:
+        description: >-
+          Chronological log of all updates applied to this record.
+          Enables full audit trail from initial import to present.
+        range: UpdateEvent
+        multivalued: true
+        inlined_as_list: true
+
+  UpdateEvent:
+    description: >-
+      Record of a single update to an imported media recipe.
+      Captures what changed, when, and why.
+    attributes:
+      timestamp:
+        description: ISO 8601 timestamp when update was applied
+        range: string
+        required: true
+
+      import_version:
+        description: Import version that applied this update
+        range: string
+        required: true
+
+      action:
+        description: Type of update action performed
+        range: UpdateActionEnum
+        required: true
+
+      fields_changed:
+        description: >-
+          List of field names that were modified in this update.
+          Example: ["ingredients", "ph_value", "description"]
+        range: string
+        multivalued: true
+
+      notes:
+        description: >-
+          Human-readable explanation of the update.
+          Why was this change made? What was the context?
+        range: string
+
 # ================================================================
 # ENUMERATIONS
 # ================================================================
@@ -1456,3 +1640,57 @@ enums:
         description: Merged due to only hydration differences (variant-aware mode)
       NO_MATCH:
         description: Not merged - no matching criteria met
+
+  SourceDatabaseEnum:
+    description: External databases from which media recipes are imported
+    permissible_values:
+      MEDIADIVE:
+        description: MediaDive (DSMZ) media database
+        meaning: https://mediadive.dsmz.de/
+      TOGO:
+        description: TOGO Medium database (Japan)
+        meaning: http://togodb.org/db/medium/
+      KOMODO:
+        description: KOMODO media database (Korea)
+      MEDIADB:
+        description: MediaDB database
+      UTEX:
+        description: UTEX Culture Collection of Algae
+        meaning: https://utex.org/
+      CCAP:
+        description: Culture Collection of Algae and Protozoa
+        meaning: https://www.ccap.ac.uk/
+      SAG:
+        description: Culture Collection of Algae at Göttingen University
+        meaning: https://sagdb.uni-goettingen.de/
+      CULTUREBOTHT:
+        description: CultureBotHT repository
+      COMMUNITYMECH:
+        description: CommunityMech (X-Mech) integration
+      BACDIVE:
+        description: BacDive bacterial database
+        meaning: https://bacdive.dsmz.de/
+      NBRC:
+        description: NITE Biological Resource Center
+        meaning: https://www.nite.go.jp/nbrc/
+      ATCC:
+        description: American Type Culture Collection
+        meaning: https://www.atcc.org/
+      MANUAL:
+        description: Manually curated (not imported from external database)
+
+  UpdateActionEnum:
+    description: Type of update action applied to an imported record
+    permissible_values:
+      INITIAL_IMPORT:
+        description: First import from source database
+      ENRICHED:
+        description: Additional metadata or enrichment added
+      CORRECTED:
+        description: Errors or inconsistencies corrected
+      MERGED:
+        description: Merged with duplicate or related records
+      REFRESHED:
+        description: Updated from source database refresh
+      NORMALIZED:
+        description: Format or structure normalized to schema
