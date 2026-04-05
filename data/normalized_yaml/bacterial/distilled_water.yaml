@@ -11,11 +11,17 @@ media_term:
     label: DISTILLED WATER
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=664'
 ingredients:
-- preferred_term: See source for composition
-  concentration:
-    value: variable
-    unit: G_PER_L
-  notes: Full composition available at source database
+- preferred_term: water
+  term:
+    id: CHEBI:15377
+    label: water
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T20:22:34.385651'
+    ontology_source: CHEBI
+  notes: Autoclaved distilled water (trivial medium)
+  source: JCM Medium 664
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -40,5 +46,15 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DISTILLED WATER" to "distilled_water" for consistent
     matching
+- timestamp: '2026-04-04T20:22:34.393855'
+  curator: process_trivial_media
+  action: EXPANDED_TRIVIAL
+  changes: Replaced placeholder with trivial composition (1 ingredient)
+  notes: Trivial medium (simple composition) - manually curated
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: manual_trivial
+  trivial_medium: true
+description: Autoclaved distilled water
