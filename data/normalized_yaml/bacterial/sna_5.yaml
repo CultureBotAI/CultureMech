@@ -9,12 +9,91 @@ media_term:
   term:
     id: mediadive.medium:C97
     label: SNA/5
-notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SNA5.pdf'
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SNA5.pdf
+
+
+  Commercial Product: Nutrient Agar
+
+  Supplier: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia)
+
+  Catalog: TM Media, BD 213000
+
+  Source: https://microbenotes.com/nutrient-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 ingredients:
-- preferred_term: Nutrient agar
+- preferred_term: Peptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: '28'
+    value: '5.0'
     unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Enzymatic digest of protein, provides nitrogen, amino acids, and peptides;
+    Constituent of Nutrient Agar commercial product
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Provides B-complex vitamins and additional nutrients; Constituent of Nutrient
+    Agar commercial product
+- preferred_term: Beef extract
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Aqueous extract of beef tissue, provides organic compounds and minerals;
+    Constituent of Nutrient Agar commercial product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Maintains osmotic equilibrium; Constituent of Nutrient Agar commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (TM Media, BD, Sigma-Aldrich, HiMedia) Nutrient
+      Agar
+    catalog_number: TM Media, BD 213000
+    product_url: https://microbenotes.com/nutrient-agar/
+  notes: Solidifying agent. Omit for Nutrient Broth (liquid variant); Constituent
+    of Nutrient Agar commercial product
 - preferred_term: Natural sea water
   concentration:
     value: '200'

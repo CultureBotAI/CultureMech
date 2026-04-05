@@ -34,14 +34,116 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SBBM" to "sbbm" for consistent matching
+- timestamp: '2026-04-04T12:54:55.268145'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 9 curated ingredients from CCAP
+  source: CCAP Medium MR_SBBM.pdf
 references:
 - reference_id: CCAP:SBBM
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_SBBM.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Make up to 1 litre with distilled water. For agar add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '15'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+- preferred_term: Add to 1000 ml of distilled water
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+- preferred_term: FeCl .6H O
+  term:
+    id: CHEBI:30527
+    label: FeCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.268124'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: MnCl .4H O
+  term:
+    id: CHEBI:86457
+    label: MnCl .4H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268133'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.041'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: ZnCl .6H O
+  term:
+    id: CHEBI:86469
+    label: ZnCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.268135'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: CoCl .6H O
+  term:
+    id: CHEBI:35696
+    label: CoCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268137'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: Na MoO .2H O
+  term:
+    id: CHEBI:75216
+    label: Na MoO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.268139'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+  notes: From CCAP Medium MR_SBBM.pdf; Curated from CCAP Medium MR_SBBM.pdf specification
+- preferred_term: Make up to 1 litre with distilled water. For agar add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
+- preferred_term: Soil is prepared as above.
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SBBM.pdf; Curated
+    from CCAP Medium MR_SBBM.pdf specification
+  concentration:
+    value: '105'
+    unit: G_PER_L
+  source: CCAP Medium MR_SBBM.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: SBBM

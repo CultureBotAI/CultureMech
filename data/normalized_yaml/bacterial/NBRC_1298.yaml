@@ -6,12 +6,126 @@ description: 1298. NBRC 1296.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Nutrient Broth Powder (Kyokuto*)6gPyruvic acid sodium salt1gDistilled
-    water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical Industrial Co., LTD.,
-    Code; 551-02480-7
+- preferred_term: Peptone
+  term:
+    id: FOODON:03316428
+    label: tryptone
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Pancreatic digest of gelatin, provides nitrogen and amino acids; Constituent
+    of MacConkey Agar commercial product
+  synonyms:
+  - synonym_text:
+      synonym_text: pancreatic gelatin digest
+      synonym_type: EXACT
+    synonym_type: EXACT
+- preferred_term: Proteose peptone
+  term:
+    id: FOODON:03302071
+    label: proteose peptone
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Meat and casein digest, provides additional nutrients; Constituent of MacConkey
+    Agar commercial product
+- preferred_term: Lactose monohydrate
+  term:
+    id: CHEBI:17716
+    label: lactose
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Fermentable carbohydrate for differentiation. Fermentation produces acid
+    causing pH drop and color change; Constituent of MacConkey Agar commercial product
+  synonyms:
+  - synonym_text:
+      synonym_text: lactose
+      synonym_type: EXACT
+    synonym_type: EXACT
+- preferred_term: Bile salts
+  term:
+    id: CHEBI:22868
+    label: bile salt
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Selective agent - inhibits gram-positive bacteria; Constituent of MacConkey
+    Agar commercial product
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Maintains osmotic equilibrium; Constituent of MacConkey Agar commercial product
+- preferred_term: Neutral red
+  term:
+    id: CHEBI:86370
+    label: neutral red
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: pH indicator - turns red/pink below pH 6.8, absorbed by colonies of lactose
+    fermenters; Constituent of MacConkey Agar commercial product
+- preferred_term: Crystal violet
+  term:
+    id: CHEBI:41688
+    label: crystal violet
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Selective agent - inhibits gram-positive bacteria; Constituent of MacConkey
+    Agar commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo) MacConkey
+      Agar
+    catalog_number: BD 212123, Sigma 05465
+    product_url: https://microbenotes.com/macconkey-agar/
+  notes: Solidifying agent; Constituent of MacConkey Agar commercial product
 - preferred_term: ''
   concentration:
     value: Nutrient Broth Powder (Kyokuto*)
@@ -46,3 +160,15 @@ curation_history:
   notes: 'Added default concentration for ingredient: Nutrient Broth Powder (Kyokuto*)6gPyruvic
     acid sodium salt1gDistilled water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical
     Industrial Co., LTD., Code; 551-02480-7'
+notes: 'Commercial Product: MacConkey Agar
+
+  Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia, Thermo)
+
+  Catalog: BD 212123, Sigma 05465
+
+  Source: https://microbenotes.com/macconkey-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'

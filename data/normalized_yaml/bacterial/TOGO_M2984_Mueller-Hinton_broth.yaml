@@ -5,17 +5,91 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Mueller-Hinton broth (Becton, Dickinson)
+- preferred_term: Beef extract
+  term:
+    id: FOODON:03302088
+    label: beef extract
   concentration:
-    value: '1'
+    value: '2.0'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Aqueous beef extract providing nutrients and growth factors; Constituent
+    of Mueller-Hinton Agar commercial product
+- preferred_term: Acid hydrolysate of casein
+  term:
+    id: FOODON:03316428
+    label: tryptone
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Casein enzymatic hydrolysate, provides amino acids and peptides. Low PABA
+    and thymine content critical for sulfonamide/trimethoprim testing; Constituent
+    of Mueller-Hinton Agar commercial product
+  synonyms:
+  - synonym_text:
+      synonym_text: casein hydrolysate
+      synonym_type: EXACT
+    synonym_type: EXACT
+  - synonym_text:
+      synonym_text: acid casein hydrolysate
+      synonym_type: EXACT
+    synonym_type: EXACT
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: starch
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Acts as protective colloid and absorbs toxic metabolites released from bacteria;
+    Constituent of Mueller-Hinton Agar commercial product
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: '17.0'
+    unit: G_PER_L
+  supplier_catalog:
+    supplier_name: Multiple suppliers (BD, Sigma-Aldrich, HiMedia) Mueller-Hinton
+      Agar
+    catalog_number: BD 211443, Sigma 70191
+    product_url: https://microbenotes.com/mueller-hinton-agar/
+  notes: Solidifying agent; Constituent of Mueller-Hinton Agar commercial product
 media_term:
   preferred_term: TOGO Medium M2984
   term:
     id: TOGO:M2984
     label: Mueller-Hinton broth
-notes: 'Source: https://togomedium.org/medium/M2984'
+notes: 'Source: https://togomedium.org/medium/M2984
+
+
+  Commercial Product: Mueller-Hinton Agar
+
+  Supplier: Multiple suppliers (BD, Sigma-Aldrich, HiMedia)
+
+  Catalog: BD 211443, Sigma 70191
+
+  Source: https://microbenotes.com/mueller-hinton-agar/
+
+  Accessed: 2026-03-28
+
+
+  Constituent composition researched from product specification.'
 applications:
 - Microbial cultivation
 curation_history:
