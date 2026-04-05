@@ -34,14 +34,109 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "BG" to "bg" for consistent matching
+- timestamp: '2026-04-04T12:54:55.079242'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 8 curated ingredients from CCAP
+  source: CCAP Medium MR_BG11.pdf
 references:
 - reference_id: CCAP:BG11
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_BG11.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: H BO
+  term:
+    id: CHEBI:33141
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.079214'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '2.86'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+- preferred_term: MnCl .4H O
+  term:
+    id: CHEBI:86457
+    label: MnCl .4H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.079227'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+- preferred_term: ZnSO .7H O
+  term:
+    id: CHEBI:86463
+    label: ZnSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.079230'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+- preferred_term: Na MoO .2H O
+  term:
+    id: CHEBI:75216
+    label: Na MoO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.079232'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+- preferred_term: CuSO .5H O
+  term:
+    id: CHEBI:31440
+    label: CuSO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.079234'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+  notes: From CCAP Medium MR_BG11.pdf; Curated from CCAP Medium MR_BG11.pdf specification
+- preferred_term: Co(NO )2.6H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_BG11.pdf; Curated
+    from CCAP Medium MR_BG11.pdf specification
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
+- preferred_term: Make up to 1 litre with deionised water. Adjust pH to 7.1 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_BG11.pdf; Curated
+    from CCAP Medium MR_BG11.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_BG11.pdf
+- preferred_term: For agar, add
+  notes: Ontology mapping not yet available; From CCAP Medium MR_BG11.pdf; Curated
+    from CCAP Medium MR_BG11.pdf specification
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_BG11.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: BG

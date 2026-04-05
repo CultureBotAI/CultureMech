@@ -34,14 +34,340 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "SP" to "sp" for consistent matching
+- timestamp: '2026-04-04T12:54:55.116143'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 24 curated ingredients from CCAP
+  source: CCAP Medium MR_SP.pdf
 references:
 - reference_id: CCAP:SP
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_SP.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: ZnSO .7H O
+  term:
+    id: CHEBI:86463
+    label: ZnSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116081'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.001'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: MnSO .7H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SP.pdf; Curated from
+    CCAP Medium MR_SP.pdf specification
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+- preferred_term: H BO
+  term:
+    id: CHEBI:33141
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116094'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.010'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Na MoO .2H O
+  term:
+    id: CHEBI:75216
+    label: Na MoO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116097'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Co(NO ) .6H O
+  term:
+    id: CHEBI:78038
+    label: Co(NO ) .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116099'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: CuSO .5H O
+  term:
+    id: CHEBI:31440
+    label: CuSO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116101'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.00005'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: FeSO .7H O
+  term:
+    id: CHEBI:75832
+    label: FeSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116103'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.70'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: EDTANa
+  term:
+    id: CHEBI:64734
+    label: EDTANa
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116106'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.80'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116108'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:3374
+    label: Calcium pantothenate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116111'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116113'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116115'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Inositol
+  term:
+    id: CHEBI:17268
+    label: Inositol
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.116117'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116119'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116122'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.10'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Thymine
+  term:
+    id: CHEBI:17821
+    label: Thymine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116124'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.60'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: NaHCO
+  term:
+    id: CHEBI:32139
+    label: NaHCO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116126'
+    ontology_source: CHEBI
+  concentration:
+    value: '27.22'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: Na CO
+  term:
+    id: CHEBI:29377
+    label: Na CO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116128'
+    ontology_source: CHEBI
+  concentration:
+    value: '8.06'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: K HPO
+  term:
+    id: CHEBI:32030
+    label: K HPO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116130'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.00'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: K SO
+  notes: Ontology mapping not yet available; From CCAP Medium MR_SP.pdf; Curated from
+    CCAP Medium MR_SP.pdf specification
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116133'
+    ontology_source: CHEBI
+  concentration:
+    value: '2.00'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: MgSO .7H O
+  term:
+    id: CHEBI:32599
+    label: MgSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116135'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.40'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: FeSO .7H O
+  term:
+    id: CHEBI:75832
+    label: FeSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116136'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
+- preferred_term: EDTANa
+  term:
+    id: CHEBI:64734
+    label: EDTANa
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.116138'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  source: CCAP Medium MR_SP.pdf
+  notes: From CCAP Medium MR_SP.pdf; Curated from CCAP Medium MR_SP.pdf specification
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: SP

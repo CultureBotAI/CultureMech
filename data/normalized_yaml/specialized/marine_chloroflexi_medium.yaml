@@ -11,11 +11,153 @@ media_term:
     label: MARINE CHLOROFLEXI MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1188'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757835'
+    ontology_source: CHEBI
   concentration:
-    value: variable
+    value: '0.1'
     unit: G_PER_L
-  notes: Full composition available at source database
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: MgCl2·6H2O
+  term:
+    id: CHEBI:6635
+    label: MgCl2·6H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757846'
+    ontology_source: CHEBI
+  concentration:
+    value: '4.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: CaCl2·2H2O
+  term:
+    id: CHEBI:64183
+    label: CaCl2·2H2O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757849'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757851'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757853'
+    ontology_source: CHEBI
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002441
+    label: Yeast extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757855'
+    ontology_source: FOODON
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: Peptone
+  term:
+    id: FOODON:03310061
+    label: Peptone
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.757857'
+    ontology_source: FOODON
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: JCM Medium 1188
+  notes: From JCM Medium 1188; Curated from JCM Medium 1188 specification
+- preferred_term: Trace vitamins solution (see Medium No.284)
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '2.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: Trace mineral solution (see Medium No.852)
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: Se/W solution (Medium No.852)
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: 1 M Sodium pyruvate*
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '10.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: 8% NaHCO3solution*
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '25.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: 5% L-Cysteine·HCl·H2O solution
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
+- preferred_term: 5% Na2S·9H2O solution
+  notes: Ontology mapping not yet available; From JCM Medium 1188; Curated from JCM
+    Medium 1188 specification
+  concentration:
+    value: '6.0'
+    unit: ML_PER_L
+  source: JCM Medium 1188
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
@@ -41,5 +183,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE CHLOROFLEXI MEDIUM" to "marine_chloroflexi_medium"
     for consistent matching
+- timestamp: '2026-04-04T12:54:54.757874'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 14 curated ingredients from JCM
+  source: JCM Medium 1188
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping

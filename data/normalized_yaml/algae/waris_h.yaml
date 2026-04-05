@@ -34,14 +34,232 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "Waris-H" to "waris_h" for consistent matching
+- timestamp: '2026-04-04T12:54:55.039363'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 18 curated ingredients from CCAP
+  source: CCAP Medium MR_Waris_H.pdf
 references:
 - reference_id: CCAP:Waris_H
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Dissolve
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '1.04'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: Dissolve
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '2.74'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: KOH
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039322'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.04'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Na EDTA.2H2O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '4.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: FeSO .7H O
+  term:
+    id: CHEBI:75832
+    label: FeSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039334'
+    ontology_source: CHEBI
+  concentration:
+    value: '2.74'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Na EDTA
+  term:
+    id: CHEBI:64734
+    label: Na EDTA
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039337'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: H BO
+  term:
+    id: CHEBI:33141
+    label: H BO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039339'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.12'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: MnSO .H O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: ZnSO .7H O
+  term:
+    id: CHEBI:86463
+    label: ZnSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039342'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: CoSO .7H2O
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039345'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039347'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039349'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.00002'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Niacinamide
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '0.00001'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039351'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039353'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Niacin
+  term:
+    id: CHEBI:15940
+    label: Niacin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.039355'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  source: CCAP Medium MR_Waris_H.pdf
+  notes: From CCAP Medium MR_Waris_H.pdf; Curated from CCAP Medium MR_Waris_H.pdf
+    specification
+- preferred_term: Make up to 1 litre with deionised water and adjust pH to 7.0 with
+  notes: Ontology mapping not yet available; From CCAP Medium MR_Waris_H.pdf; Curated
+    from CCAP Medium MR_Waris_H.pdf specification
+  concentration:
+    value: '1'
+    unit: MOLAR
+  source: CCAP Medium MR_Waris_H.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: Waris-H

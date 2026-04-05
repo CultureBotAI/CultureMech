@@ -35,14 +35,198 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "ASW:SES" to "asw_ses" for consistent matching
+- timestamp: '2026-04-04T12:54:55.256359'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 12 curated ingredients from CCAP
+  source: CCAP Medium MR_ASW_SES.pdf
 references:
 - reference_id: CCAP:ASW_SES
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_SES.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: NaNO
+  term:
+    id: CHEBI:34545
+    label: NaNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256322'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '30.00'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Na HPO
+  term:
+    id: CHEBI:34683
+    label: Na HPO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256332'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.20'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: K HPO
+  term:
+    id: CHEBI:32030
+    label: K HPO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256335'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256338'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:3374
+    label: Calcium pantothenate
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256340'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256342'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Folic Acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256345'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Inositol
+  term:
+    id: CHEBI:17268
+    label: Inositol
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.256346'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Nicotinic Acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256348'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256350'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Thymine
+  term:
+    id: CHEBI:17821
+    label: Thymine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256353'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
+- preferred_term: Tricine
+  term:
+    id: CHEBI:35920
+    label: Tricine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.256355'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.50'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_SES.pdf
+  notes: From CCAP Medium MR_ASW_SES.pdf; Curated from CCAP Medium MR_ASW_SES.pdf
+    specification
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: ASW:SES

@@ -36,14 +36,228 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "E26 + Biotin:ANT" to "e26_biotin_ant" for consistent
     matching
+- timestamp: '2026-04-04T12:54:55.158038'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 14 curated ingredients from CCAP
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
 references:
 - reference_id: CCAP:E26_Biotin_ANT
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_E26_Biotin_ANT.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: KNO
+  term:
+    id: CHEBI:63043
+    label: KNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.157995'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.10'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: K HPO
+  term:
+    id: CHEBI:32030
+    label: K HPO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158007'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: MgSO .7H O
+  term:
+    id: CHEBI:32599
+    label: MgSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158010'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: Thiamine HCl (Vitamin B )
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl (vitamin B )
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158012'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: EDTA.Na .2H O
+  term:
+    id: CHEBI:64734
+    label: EDTA.Na .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.158014'
+    ontology_source: CHEBI
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: FeCl .6H O
+  term:
+    id: CHEBI:30527
+    label: FeCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:55.158016'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.08'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: MnSO .4H O
+  term:
+    id: CHEBI:75217
+    label: MnSO .4H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158019'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.450'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: ZnSO .7H O
+  term:
+    id: CHEBI:86463
+    label: ZnSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158021'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.230'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: Na MoO .2H O
+  term:
+    id: CHEBI:75216
+    label: Na MoO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158023'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: CuSO .5H O
+  term:
+    id: CHEBI:31440
+    label: CuSO .5H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158025'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: CoSO .7H O
+  term:
+    id: CHEBI:86455
+    label: CoSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158027'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0056'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: KNO
+  term:
+    id: CHEBI:63043
+    label: KNO
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158029'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: NaH PO .2H O
+  term:
+    id: CHEBI:37585
+    label: NaH PO .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158031'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.0078'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:55.158033'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  source: CCAP Medium MR_E26_Biotin_ANT.pdf
+  notes: From CCAP Medium MR_E26_Biotin_ANT.pdf; Curated from CCAP Medium MR_E26_Biotin_ANT.pdf
+    specification
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: E26 + Biotin:ANT

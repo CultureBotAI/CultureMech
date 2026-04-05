@@ -36,14 +36,78 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ASW 225 + barley" to "asw_225_barley" for consistent
     matching
+- timestamp: '2026-04-04T12:54:54.818073'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 4 curated ingredients from CCAP
+  source: CCAP Medium MR_ASW_225.pdf
 references:
 - reference_id: CCAP:ASW_225
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_225.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.818049'
+    ontology_source: CHEBI
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '3.8'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_225.pdf
+  notes: From CCAP Medium MR_ASW_225.pdf; Curated from CCAP Medium MR_ASW_225.pdf
+    specification
+- preferred_term: MgCl .6H O
+  term:
+    id: CHEBI:6635
+    label: MgCl .6H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.818061'
+    ontology_source: CHEBI
+  concentration:
+    value: '13.45'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_225.pdf
+  notes: From CCAP Medium MR_ASW_225.pdf; Curated from CCAP Medium MR_ASW_225.pdf
+    specification
+- preferred_term: MgSO .7H O
+  term:
+    id: CHEBI:32599
+    label: MgSO .7H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.818066'
+    ontology_source: CHEBI
+  concentration:
+    value: '1.65'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_225.pdf
+  notes: From CCAP Medium MR_ASW_225.pdf; Curated from CCAP Medium MR_ASW_225.pdf
+    specification
+- preferred_term: CaCl .2H O
+  term:
+    id: CHEBI:64183
+    label: CaCl .2H O
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.818068'
+    ontology_source: CHEBI
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+  source: CCAP Medium MR_ASW_225.pdf
+  notes: From CCAP Medium MR_ASW_225.pdf; Curated from CCAP Medium MR_ASW_225.pdf
+    specification
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: ASW 225 + barley

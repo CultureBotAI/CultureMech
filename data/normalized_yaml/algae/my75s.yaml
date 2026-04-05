@@ -35,14 +35,67 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MY75S" to "my75s" for consistent matching
+- timestamp: '2026-04-04T12:54:54.807263'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 4 curated ingredients from CCAP
+  source: CCAP Medium MR_MY75S.pdf
 references:
 - reference_id: CCAP:MY75S
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Malt extract
+  term:
+    id: FOODON:00001264
+    label: Malt extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.807245'
+    ontology_source: FOODON
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Yeast extract
+  term:
+    id: FOODON:00002441
+    label: Yeast extract
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 1.0
+    curation_date: '2026-04-04T12:54:54.807255'
+    ontology_source: FOODON
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Bacteriological agar
+  term:
+    id: CHEBI:2509
+    label: Bacteriological agar
+  curation_metadata:
+    mapping_quality: LLM_ASSISTED
+    confidence_score: 0.95
+    curation_date: '2026-04-04T12:54:54.807257'
+    ontology_source: CHEBI
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_MY75S.pdf
+  notes: From CCAP Medium MR_MY75S.pdf; Curated from CCAP Medium MR_MY75S.pdf specification
+- preferred_term: Make up the
+  notes: Ontology mapping not yet available; From CCAP Medium MR_MY75S.pdf; Curated
+    from CCAP Medium MR_MY75S.pdf specification
+  concentration:
+    value: '75'
+    unit: PERCENT
+  source: CCAP Medium MR_MY75S.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: MY75S

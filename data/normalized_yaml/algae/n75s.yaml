@@ -35,14 +35,25 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "N75S" to "n75s" for consistent matching
+- timestamp: '2026-04-04T12:54:55.094494'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 1 curated ingredients from CCAP
+  source: CCAP Medium MR_N75S.pdf
 references:
 - reference_id: CCAP:N75S
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Bring
+  notes: Ontology mapping not yet available; From CCAP Medium MR_N75S.pdf; Curated
+    from CCAP Medium MR_N75S.pdf specification
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '75'
+    unit: PERCENT
+  source: CCAP Medium MR_N75S.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: false
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: N75S
