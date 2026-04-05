@@ -11,11 +11,120 @@ media_term:
     label: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=282'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Pancreatic digest of casein
   concentration:
-    value: variable
+    value: '10.0'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: From Oxoid CM331 (Columbia Agar Base); Peptone source providing amino acids
+    and nitrogen
+  source: Oxoid CM331
+  term:
+    id: FOODON:03316427
+    label: casein hydrolysate
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919223'
+    ontology_source: FOODON
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Peptone providing nutrients
+  source: Oxoid CM331
+  term:
+    id: FOODON:03316428
+    label: peptone
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919234'
+    ontology_source: FOODON
+- preferred_term: Beef extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Provides vitamins, minerals, and growth
+    factors
+  source: Oxoid CM331
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919236'
+    ontology_source: FOODON
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Vitamin and amino acid source
+  source: Oxoid CM331
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919238'
+    ontology_source: FOODON
+- preferred_term: Corn starch
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Detoxifies metabolic byproducts
+  source: Oxoid CM331
+  term:
+    id: CHEBI:28017
+    label: starch
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919239'
+    ontology_source: CHEBI
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Maintains osmotic balance
+  source: Oxoid CM331
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919241'
+    ontology_source: CHEBI
+- preferred_term: Agar
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  notes: From Oxoid CM331 (Columbia Agar Base); Solidifying agent
+  source: Oxoid CM331
+  term:
+    id: CHEBI:2509
+    label: agar
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919242'
+    ontology_source: CHEBI
+- preferred_term: Defibrinated horse blood
+  term:
+    id: UBERON:0000178
+    label: blood
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-04T21:05:16.919244'
+    ontology_source: UBERON
+  notes: Added aseptically after autoclaving and cooling to 45-50°C; 5% final concentration
+  source: Blood additive to CM331 base
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
@@ -42,5 +151,14 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD" to "columbia_blood_agar_with_5_horse_blood"
     for consistent matching
+- timestamp: '2026-04-04T21:05:16.919246'
+  curator: expand_columbia_blood_agar
+  action: EXPANDED_COMMERCIAL_PRODUCT
+  changes: Replaced placeholder with Oxoid CM331 composition + 5% horse blood (8 ingredients)
+  source: Oxoid CM331 + blood additive
+  notes: 'Commercial product expansion: Columbia Agar Base (CM331) with horse blood'
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  commercial_product: true
