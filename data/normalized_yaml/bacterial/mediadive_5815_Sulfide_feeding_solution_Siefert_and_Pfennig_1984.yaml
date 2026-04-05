@@ -1,0 +1,79 @@
+id: CultureMech:014646
+preferred_term: Sulfide feeding solution (Siefert and Pfennig 1984)
+term:
+  id: mediadive.solution:5815
+  label: Sulfide feeding solution (Siefert and Pfennig 1984)
+composition:
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '28'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:54
+    label: Na2S x 9 H2O
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2CO3
+  concentration:
+    value: '10.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:32
+    label: Na2CO3
+  chebi_term:
+    id: CHEBI:29377
+    label: sodium carbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Sparge medium with 100% CO2 gas mixture.
+
+  Autoclave at 121 °C for 15 min.
+
+  Sterile solution is saturated with CO2 (0.8 bar) until pH is approx. 7.3.
+
+  1 ml is added to 100 ml of culture approx. every 3 days or when the sulfide is consumed.
+
+
+  Original volume: 250 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.837615Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014646'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:25.853878'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:44.786022'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:07.009575'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

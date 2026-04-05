@@ -1,0 +1,62 @@
+id: CultureMech:014349
+preferred_term: Main sol. J1293
+term:
+  id: mediadive.solution:5443
+  label: Main sol. J1293
+composition:
+- preferred_term: Ferrihydrite
+  concentration:
+    value: '1.97628'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2057
+    label: Ferrihydrite
+  chebi_term:
+    id: CHEBI:192761
+    label: ferrihydrite
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaHCO3
+  concentration:
+    value: '12.351778656126482'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: "Mix components and adjust pH to 6.5. Distribute the medium into\
+  \ culture vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber\
+  \ stoppers and autoclave. After cooling, aseptically and anaerobically add per liter\
+  \ the following solution (filter-sterilized): \nCheck final pH of the medium to\
+  \ be 6.5.\n\nOriginal volume: 1012 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:37.228148Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014349'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:24.331517'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:42.939923'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:03.188668'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,53 @@
+id: CultureMech:011573
+preferred_term: Hank's BSS
+term:
+  id: mediadive.solution:2183
+  label: Hank's BSS
+composition:
+- preferred_term: Water
+  concentration:
+    value: '900.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: '25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05
+  g MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2 added and
+  dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03 g KH2PO4 dissolved
+  in 25 ml distilled water) are autoclaved separately and then combined with 450 ml
+  sterile H2O.
+
+
+  Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.547379Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011573'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:09.884029'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:23.755135'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:10.573041'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

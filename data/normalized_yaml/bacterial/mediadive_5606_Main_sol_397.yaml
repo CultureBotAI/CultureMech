@@ -1,0 +1,67 @@
+id: CultureMech:014485
+preferred_term: Main sol. 397
+term:
+  id: mediadive.solution:5606
+  label: Main sol. 397
+composition:
+- preferred_term: Sodium ferulate
+  concentration:
+    value: '10.718113612004288'
+    unit: MILLIMOLAR
+  term:
+    id: mediadive.compound:2097
+    label: Sodium ferulate
+  chebi_term:
+    id: CHEBI:114954
+    label: sodium ferulate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Add and dissolve ingredients of solution A and sparge medium with
+  80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+  under the same gas atmosphere into anoxic Hungate-type tubes and autoclave. Solution
+  B is prepared under 80% N2 and 20% CO2 gas atmosphere and autoclaved. Solutions
+  E and F are autoclaved under 100% N2 gas atmosphere.
+
+  Solution D is prepared under 100% N2 gas and sterilized by filtration. To complete
+  the medium appropriate amounts of solutions B to F are added to the sterile solution
+  A in the sequence as indicated.
+
+  Note: Some cultures are shipped in semi-solid medium which stimulates growth at
+  the beginning. For agar stabs 3.00 g/l agar are added to the complete medium from
+  a sterile anoxic stock solution (2% w/v). Upon receipt add anoxically 1 - 2 ml of
+  the recommended freshly prepared liquid medium to the agar tube and incubate for
+  3 - 5 days . After incubation transfer 0.5 ml of the resulting cell suspension in
+  the liquid phase to tubes with liquid medium.
+
+  Add sodium ferulate to 10 mM final concentration from filter-sterilized anaerobic
+  stock solution.
+
+
+  Original volume: 933 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.050855Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014485'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:25.075557'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:43.909205'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:14.292435'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,71 @@
+id: CultureMech:011092
+preferred_term: Main sol. 804
+term:
+  id: mediadive.solution:1635
+  label: Main sol. 804
+composition:
+- preferred_term: Mueller-Hinton broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:748
+    label: Mueller-Hinton broth
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X
+  + V factors).
+
+  NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.
+
+  Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make up to 25 ml
+  with dist. water, filter sterilize.'
+curation_history:
+- timestamp: '2026-03-13T06:20:17.467380Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011092'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:07.371971'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:20.277297'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:57.007990'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,49 @@
+id: CultureMech:011678
+preferred_term: MS Buffer
+term:
+  id: mediadive.solution:2297
+  label: MS Buffer
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '3.9997'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: '100 mM NaOH saturated with CO2
+
+
+  Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:21.182707Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011678'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:10.412204'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:24.498650'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:01.034890'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,52 @@
+id: CultureMech:013172
+preferred_term: Main sol. J405
+term:
+  id: mediadive.solution:4136
+  label: Main sol. J405
+composition:
+- preferred_term: Sodium dithionite
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1676
+    label: Sodium dithionite
+  chebi_term:
+    id: CHEBI:66870
+    label: sodium dithionite
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Use Medium No. 344. Prior to inoculation, add per liter the following
+  solution (freshly prepared and filter-sterilized):
+
+  Pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+
+
+  Original volume: 25 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:29.853155Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013172'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:17.972969'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:34.623789'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:08.280380'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

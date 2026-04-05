@@ -1,0 +1,56 @@
+id: CultureMech:015247
+preferred_term: Main sol. 439
+term:
+  id: mediadive.solution:888
+  label: Main sol. 439
+composition:
+- preferred_term: Casman-Agar-Base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2099
+    label: Casman-Agar-Base
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+- preferred_term: Sheep blood
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+preparation_notes: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
+  water-lysed sheep blood.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.473089Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015247'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:28.803866'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:47.863292'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:00.865493'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

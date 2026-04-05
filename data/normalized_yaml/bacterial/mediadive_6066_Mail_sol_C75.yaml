@@ -1,0 +1,41 @@
+id: CultureMech:014784
+preferred_term: Mail sol. C75
+term:
+  id: mediadive.solution:6066
+  label: Mail sol. C75
+composition:
+- preferred_term: Complan
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2363
+    label: Complan
+preparation_notes: Autoclave at 15 psi for 15 minutes.
+curation_history:
+- timestamp: '2026-03-13T06:20:39.530444Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014784'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:26.606514'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:45.622776'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:19.706655'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

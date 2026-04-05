@@ -1,0 +1,73 @@
+id: CultureMech:014669
+preferred_term: Main sol. 1412
+term:
+  id: mediadive.solution:5852
+  label: Main sol. 1412
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '0.249686'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:121
+    label: CuSO4 x 5 H2O
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'or
+
+  Prepare the liquid medium. Adjust to pH 6.2 with HCl or NaOH. Dispense the medium
+  into serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute. 20% methane
+  and 5% air is added to the gas phase
+
+  Adjust pH to 6.2.
+
+  Dispense the medium into serum bottles under gassing with N2:CO2 (80:20 v/v) for
+  one minute.
+
+  20% methane and 5% air is added to the gas phase.
+
+  Autoclave at 121 °C for 20 min.
+
+  Before inoculation add from sterile stock solutions:'
+curation_history:
+- timestamp: '2026-03-13T06:20:38.975599Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014669'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:25.978962'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:44.990837'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:57.964934'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

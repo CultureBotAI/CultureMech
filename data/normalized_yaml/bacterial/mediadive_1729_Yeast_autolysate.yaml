@@ -1,0 +1,61 @@
+id: CultureMech:011179
+preferred_term: Yeast autolysate
+term:
+  id: mediadive.solution:1729
+  label: Yeast autolysate
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '280'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Suspend dry baker's yeast (SIGMA YSC-1) in distilled water and
+  allow cells to autolyse for 48 h at 55°C. Thereafter, cell debris are removed by
+  centrifugation (3.700 x g for 30 min) and the amber-colored supernatant is stored
+  in aliquots at -20°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.977685Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011179'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:07.801017'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:20.864999'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:59.269591'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

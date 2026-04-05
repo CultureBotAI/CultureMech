@@ -1,0 +1,73 @@
+id: CultureMech:012705
+preferred_term: Solution G
+term:
+  id: mediadive.solution:3625
+  label: Solution G
+composition:
+- preferred_term: Ammonium acetate
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:58
+    label: Ammonium acetate
+  chebi_term:
+    id: CHEBI:142832
+    label: chlorfenac-ammonium
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Magnesium acetate
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1598
+    label: Magnesium acetate
+  chebi_term:
+    id: CHEBI:62964
+    label: magnesium acetate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Autoclave at 121°C for 15 min.
+
+
+  Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:27.314720Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012705'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:15.735950'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:31.634545'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:19.535577'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

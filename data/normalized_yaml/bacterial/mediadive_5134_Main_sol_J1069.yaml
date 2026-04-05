@@ -1,0 +1,63 @@
+id: CultureMech:014046
+preferred_term: Main sol. J1069
+term:
+  id: mediadive.solution:5134
+  label: Main sol. J1069
+composition:
+- preferred_term: MES
+  concentration:
+    value: '1.92878'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:824
+    label: MES
+  chebi_term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tryptone
+  concentration:
+    value: '1.97824'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:71
+    label: Tryptone
+  chebi_term:
+    id: CHEBI:33118
+    label: boric acid
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Mix components and adjust pH to 6.2 to 6.5. Distribute the medium
+  into culture vessels, replace the gas phase with N2-CO2-O2 (90:10:2, v/v/v), seal
+  with butyl rubber stoppers and autoclave.
+
+
+  Original volume: 1011 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:35.235628Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014046'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:22.519690'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:40.702589'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:14.732659'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

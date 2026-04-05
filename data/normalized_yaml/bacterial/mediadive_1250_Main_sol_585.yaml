@@ -1,0 +1,49 @@
+id: CultureMech:010745
+preferred_term: Main sol. 585
+term:
+  id: mediadive.solution:1250
+  label: Main sol. 585
+composition:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2125
+    label: OXOID Legionella CYE-Agar base
+preparation_notes: 'Dehydrated media preparations are available from media distributors.
+
+  We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
+
+  For solubilization of the lyophilized pellet use standard liquid media. Although
+  Legionellae do not grow in those media they are suitable for resuspension and transfer
+  onto agar plates.
+
+  Note: Alternatively use CYE-ACES AGAR'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.298610Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010745'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:05.576468'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:17.966129'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:59.473671'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

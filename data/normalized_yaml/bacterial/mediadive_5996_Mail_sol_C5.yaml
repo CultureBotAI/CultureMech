@@ -1,0 +1,62 @@
+id: CultureMech:014732
+preferred_term: Mail sol. C5
+term:
+  id: mediadive.solution:5996
+  label: Mail sol. C5
+composition:
+- preferred_term: Tricine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2349
+    label: Tricine
+  chebi_term:
+    id: CHEBI:39063
+    label: N-tris(hydroxymethyl)methylglycine
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make up to 1 Litre with filtered natural seawater. Adjust pH to\
+  \ 7.6 – 7.8 with 1M NaOH or\r\n1M HCl. Add approximately 1 grain of barley to each\
+  \ 25ml of prepared medium prior to\r\nautoclaving. Autoclave at 15 psi for 15 minutes.\n\
+  Alternatively, use: Distilled water to 1 Litre and “Ultramarine Synthetica” sea\
+  \ salts 33.60g"
+curation_history:
+- timestamp: '2026-03-13T06:20:39.302652Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014732'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:26.384236'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:45.335245'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:14.002236'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

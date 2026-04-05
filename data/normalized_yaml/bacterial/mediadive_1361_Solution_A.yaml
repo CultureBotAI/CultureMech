@@ -1,0 +1,62 @@
+id: CultureMech:010844
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1361
+  label: Solution A
+composition:
+- preferred_term: Benzothiazole
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2128
+    label: Benzothiazole
+  chebi_term:
+    id: CHEBI:45993
+    label: benzothiazole
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: NaOH
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Dissolve 30.0 mg benzothiazole in 90 ml 10% NaOH, bring pH to
+  7.0 with concentrated HCl.
+
+
+  Original volume: 90 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.871503Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010844'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:06.056278'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:18.596449'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:16.879426'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

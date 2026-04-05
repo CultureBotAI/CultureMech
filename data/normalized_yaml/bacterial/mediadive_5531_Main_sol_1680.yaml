@@ -1,0 +1,51 @@
+id: CultureMech:014413
+preferred_term: Main sol. 1680
+term:
+  id: mediadive.solution:5531
+  label: Main sol. 1680
+composition:
+- preferred_term: Artificial Sea Salt
+  concentration:
+    value: '33'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2146
+    label: Artificial Sea Salt
+  chebi_term:
+    id: CHEBI:63005
+    label: sodium nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with MilliQ water.
+
+  Autoclave at 121 °C for 20 min.
+
+  After cooling add the following filter sterilized component under sterile conditions:'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.675157Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014413'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:24.737864'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:43.463595'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:21.521525'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

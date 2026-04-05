@@ -1,0 +1,61 @@
+id: CultureMech:010687
+preferred_term: Solution A
+term:
+  id: mediadive.solution:1192
+  label: Solution A
+composition:
+- preferred_term: Na-malate
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:477
+    label: Na-malate
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: H2O
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:56
+    label: H2O
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+preparation_notes: 'pH 7.0.
+
+
+  Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:15.030970Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010687'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:05.328213'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:17.541783'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:56.332263'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

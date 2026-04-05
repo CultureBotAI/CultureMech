@@ -1,0 +1,59 @@
+id: CultureMech:014502
+preferred_term: Pentachlorophenol solution
+term:
+  id: mediadive.solution:5631
+  label: Pentachlorophenol solution
+composition:
+- preferred_term: Pentachlorophenol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2115
+    label: Pentachlorophenol
+  chebi_term:
+    id: CHEBI:17642
+    label: pentachlorophenol
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: NaOH
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Dissolve 1 g pentachlorophenol in 1 litre 0.01 M NaOH and sterilize
+  by filtration.
+curation_history:
+- timestamp: '2026-03-13T06:20:38.131697Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014502'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:25.149523'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:43.987687'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:04.299310'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,53 @@
+id: CultureMech:014637
+preferred_term: Preparation of soil extract
+term:
+  id: mediadive.solution:5790
+  label: Preparation of soil extract
+composition:
+- preferred_term: Garden soil
+  concentration:
+    value: '428.57142857142856'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2159
+    label: Garden soil
+  chebi_term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
+  \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too much\
+  \ clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)\n\
+  Shake vigorously\nAutoclave for 1 h at 121 °C and let cool down\nAfter 24 h autoclave\
+  \ for a second time (for 1 h at 121 °C)\nRemove bigger particles and debris by centrifugation\n\
+  Filter through Whatmanfilter 595 (1/2, 320 mm) to remove residual particles\nFilter\
+  \ sterilize (PES membrane, pore size 0,22 µm)\nStore at 4°C – 10°C\n\nOriginal volume:\
+  \ 700 mL"
+curation_history:
+- timestamp: '2026-03-13T06:20:38.774871Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014637'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:25.798306'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:44.692922'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:05.632118'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

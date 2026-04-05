@@ -1,0 +1,67 @@
+id: CultureMech:014794
+preferred_term: Mail sol. C95
+term:
+  id: mediadive.solution:6086
+  label: Mail sol. C95
+composition:
+- preferred_term: Nutrient agar
+  concentration:
+    value: '28'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2364
+    label: Nutrient agar
+- preferred_term: Natural sea water
+  concentration:
+    value: '500'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2152
+    label: Natural sea water
+  chebi_term:
+    id: CHEBI:17632
+    label: nitrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Deionized water
+  concentration:
+    value: '500'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Make  up  to 1  litre  with deionized  water.  Steam  for  30\
+  \  minutes,  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at\
+  \ 15 psi and  slope  (tubes) \r\nprior to cooling."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.567291Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014794'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:26.643737'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:45.661714'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:59.938438'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

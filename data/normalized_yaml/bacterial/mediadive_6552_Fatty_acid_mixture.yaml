@@ -1,0 +1,97 @@
+id: CultureMech:015061
+preferred_term: Fatty acid mixture
+term:
+  id: mediadive.solution:6552
+  label: Fatty acid mixture
+composition:
+- preferred_term: n-Butyric acid
+  concentration:
+    value: '290.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:376
+    label: n-Butyric acid
+  chebi_term:
+    id: CHEBI:30772
+    label: butyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Butyric acid
+  concentration:
+    value: '275.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:377
+    label: iso-Butyric acid
+  chebi_term:
+    id: CHEBI:16135
+    label: isobutyric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: DL-2-Methylbutyric acid
+  concentration:
+    value: '140.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:223
+    label: DL-2-Methylbutyric acid
+  chebi_term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: n-Valeric acid
+  concentration:
+    value: '131.46'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:288
+    label: n-Valeric acid
+  chebi_term:
+    id: CHEBI:17418
+    label: valeric acid
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: iso-Valeric acid
+  concentration:
+    value: '130.34'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:378
+    label: iso-Valeric acid
+  chebi_term:
+    id: CHEBI:28484
+    label: isovaleric acid
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Store fatty acid mixture at -20°C.
+
+
+  Original volume: 20 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.584901Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015061'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:27.809419'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:46.856836'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:16.583605'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

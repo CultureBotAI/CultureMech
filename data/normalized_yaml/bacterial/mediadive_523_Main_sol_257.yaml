@@ -1,0 +1,79 @@
+id: CultureMech:014151
+preferred_term: Main sol. 257
+term:
+  id: mediadive.solution:523
+  label: Main sol. 257
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Peptone
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Preparation of double layered agar plates:<p>\r\n<b>Bottom layer:</b>\
+  \ Dissolve 12.0 g Bacto agar in 900 ml distilled water and autoclave. After cooling\
+  \ to 60°C add 100 ml of sterile YP medium (autoclaved at 121°C for 15 min) and pour\
+  \ plates. Dry plates at room temperature for 2 - 3 days .<p>\r\n<b>Top layer:</b>\
+  \ Grow prey bacterium on agar slants using medium 54. Prepare 5 ml aliquots of 0.6%\
+  \ Bacto agar in distilled water and autoclave in test tubes. After cooling to 45°C\
+  \ in a water bath add 0.5 ml sterile YP medium (autoclaved at 121°C for 15 min)\
+  \ and 0.5 ml cell suspension of host organism, mix and pour top layer. For the top\
+  \ layer of one plate use one 24 h old agar slant culture and wash off grown cells\
+  \ in 0.5 ml sterile water.<p>\nInoculate double layer plates the same day when prepared."
+curation_history:
+- timestamp: '2026-03-13T06:20:35.943211Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014151'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:23.103005'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:41.442558'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:15.666133'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

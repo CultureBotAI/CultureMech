@@ -1,0 +1,74 @@
+id: CultureMech:011059
+preferred_term: Main sol. 12
+term:
+  id: mediadive.solution:15
+  label: Main sol. 12
+composition:
+- preferred_term: air-dried garden soil
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2083
+    label: air-dried garden soil
+  chebi_term:
+    id: CHEBI:29864
+    label: mannitol
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:322
+    label: Tap water
+  chebi_term:
+    id: CHEBI:17992
+    label: sucrose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Sterilize 400.0 g of air-dried garden soil (with high content of
+  organic matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment
+  for a few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar
+  per 1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 -
+  7.0 and sterilize.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.272229Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011059'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:07.205451'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:20.082473'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:20.690398'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

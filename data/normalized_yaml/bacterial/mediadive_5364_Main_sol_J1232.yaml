@@ -1,0 +1,51 @@
+id: CultureMech:014276
+preferred_term: Main sol. J1232
+term:
+  id: mediadive.solution:5364
+  label: Main sol. J1232
+composition:
+- preferred_term: Sea water
+  concentration:
+    value: '909.0909090909091'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:286
+    label: Sea water
+  chebi_term:
+    id: CHEBI:75228
+    label: sodium lactate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Aseptically combine. Cultivate with shaking (150 - 200 rpm) for
+  16 - 24 hr. Separate from the prey bacteria physically (e.g., centrifugation), if
+  necessary.
+
+
+  Original volume: 110 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:36.756611Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014276'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:23.840884'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:42.343050'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:15.199334'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

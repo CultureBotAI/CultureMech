@@ -1,0 +1,65 @@
+id: CultureMech:015033
+preferred_term: Main sol. 1844
+term:
+  id: mediadive.solution:6445
+  label: Main sol. 1844
+composition:
+- preferred_term: MES Hydrat
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2394
+    label: MES Hydrat
+  chebi_term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Crucial: prepare all solutions in either clean glassware (incubated
+  in 0.1 % HCl and washed with double distilled water) or GREINER PS container (201172).
+  Do not use container with rubber stoppers or septum.
+
+  Add 100 mL of 10x FW basal salt solution to 800 mL sterile double distilled water
+  just before use.
+
+  Add per litre of 1x FW basalt solution: 0.5 mL NH4Cl (1 M), 2 mL NaHCO3 (1 M), 1
+  mL FeNaEDTA (7.5 mM), 1 mL trace elements solution, 1.95 g MES Hydrat.
+
+  Adjust pH to the specific pH for each strain.
+
+  Make up to <span class=''amount'' data-volume=''1000''>1000</span> ml with double
+  distilled water.
+
+  Filtrate with 0.2 µm Nalgene® bottle-top sterile filter units (e.g. ThermoFischer
+  597-4520) in a clean and sterile glass bottle.
+
+  Aliquote medium in GREINER PS containers. Final medium can be stored at 4 °C in
+  the dark for weeks.'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.457712Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015033'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:27.683447'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:46.733571'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:16.204540'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

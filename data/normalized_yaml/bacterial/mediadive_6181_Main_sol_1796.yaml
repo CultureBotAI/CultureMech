@@ -1,0 +1,53 @@
+id: CultureMech:014880
+preferred_term: Main sol. 1796
+term:
+  id: mediadive.solution:6181
+  label: Main sol. 1796
+composition:
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1249
+    label: Trisodium citrate x 2 H2O
+  chebi_term:
+    id: CHEBI:59640
+    label: N-acetylglucosamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Make up to <span class=''amount'' data-volume=''1000''>1000</span>
+  ml with MilliQ water.
+
+  Adjust pH to 7.0 with 1 N NaOH.
+
+  Autoclave at 121 °C for 20 min.
+
+  Store at room temperature.'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.890687Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014880'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:27.057425'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:46.083304'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:15.141384'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

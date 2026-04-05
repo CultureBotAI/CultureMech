@@ -1,0 +1,58 @@
+id: CultureMech:013373
+preferred_term: Na benzoate solution 72.0 g/L
+term:
+  id: mediadive.solution:4378
+  label: Na benzoate solution 72.0 g/L
+composition:
+- preferred_term: Sodium benzoate
+  concentration:
+    value: '72'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1631
+    label: Sodium benzoate
+  chebi_term:
+    id: CHEBI:113455
+    label: sodium benzoate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:30.967151Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013373'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:18.959101'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:35.924297'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:16.573805'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,81 @@
+id: CultureMech:011626
+preferred_term: Main sol. 1113
+term:
+  id: mediadive.solution:2234
+  label: Main sol. 1113
+composition:
+- preferred_term: Leptospira Medium Base EMJH
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:990
+    label: Leptospira Medium Base EMJH
+  chebi_term:
+    id: CHEBI:2511
+    label: agarose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agarose
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:991
+    label: Agarose
+  chebi_term:
+    id: CHEBI:2511
+    label: agarose
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:754
+    label: Water
+  chebi_term:
+    id: CHEBI:15377
+    label: water
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Leptospira Enrichment EMJH
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:992
+    label: Leptospira Enrichment EMJH
+preparation_notes: Dissolve the agarose in water by boiling. Add the Leptospira base
+  and dissolve completely. Autoclave at 121°C for 15 min. Allow the medium to cool
+  to 50-55°C. Warm the Leptospira Enrichment to approximately 25°C and add to the
+  warm medium. Mix uniformly and dispense aseptically into sterile tubes as requested.
+  Final pH is 7.5 at 25°C.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.882485Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011626'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:10.162241'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:24.196715'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:04.049685'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

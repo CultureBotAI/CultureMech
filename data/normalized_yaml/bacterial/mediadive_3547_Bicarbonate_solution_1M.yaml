@@ -1,0 +1,61 @@
+id: CultureMech:012649
+preferred_term: Bicarbonate solution (1M)
+term:
+  id: mediadive.solution:3547
+  label: Bicarbonate solution (1M)
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '84'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Double distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1021
+    label: Double distilled water
+  chebi_term:
+    id: CHEBI:18050
+    label: L-glutamine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: The solution was dispensed in the required portions (40 mL per
+  1 L medium). The head space of the bottles was flushed with CO2. Saturation of CO2
+  in the solution was achieved by repeated flushing and shaking of the bottles. Finally,
+  the bottles were sealed with rubber stoppers and aluminum crimps and autoclaved.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.063848Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012649'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:15.505139'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:31.249991'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:19.899127'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

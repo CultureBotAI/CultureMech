@@ -1,0 +1,62 @@
+id: CultureMech:014325
+preferred_term: Main sol. J1270
+term:
+  id: mediadive.solution:5412
+  label: Main sol. J1270
+composition:
+- preferred_term: Columbia blood agar base
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2046
+    label: Columbia blood agar base
+- preferred_term: Sheep blood
+  concentration:
+    value: '100'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2047
+    label: Sheep blood
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Mix ingredients except horse blood, autoclave and cool to about
+  70C. Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for
+  15 minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.
+curation_history:
+- timestamp: '2026-03-13T06:20:37.091679Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014325'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:24.148690'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:42.807290'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:01.184738'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

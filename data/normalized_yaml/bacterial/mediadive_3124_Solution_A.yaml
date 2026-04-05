@@ -1,0 +1,73 @@
+id: CultureMech:012342
+preferred_term: Solution A
+term:
+  id: mediadive.solution:3124
+  label: Solution A
+composition:
+- preferred_term: Casein
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1381
+    label: Casein
+  chebi_term:
+    id: CHEBI:3448
+    label: Casein
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.44375'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:753
+    label: Na2HPO4 x 7 H2O
+  chebi_term:
+    id: CHEBI:3448
+    label: Casein
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Adjust pH to > 8.0, autoclave at 110°C
+
+
+  Original volume: 800 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.304877Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012342'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:14.007053'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:29.269244'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:08.720775'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,50 @@
+id: CultureMech:014401
+preferred_term: Glucose stock 20%
+term:
+  id: mediadive.solution:5498
+  label: Glucose stock 20%
+composition:
+- preferred_term: alpha-D-Glucose
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: not required but growth enhancing
+  term:
+    id: mediadive.compound:1322
+    label: alpha-D-Glucose
+  chebi_term:
+    id: CHEBI:17925
+    label: alpha-D-glucose
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'steril filtration
+
+
+  Original volume: 500 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:37.592942Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014401'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:24.666591'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:43.391007'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:13.394631'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

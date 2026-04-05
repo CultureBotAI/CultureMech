@@ -1,0 +1,58 @@
+id: CultureMech:014810
+preferred_term: Solution 1
+term:
+  id: mediadive.solution:6108
+  label: Solution 1
+composition:
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1230
+    label: FeNa-EDTA
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 200 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:39.624282Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014810'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:26.701596'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:45.721791'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:09.762845'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

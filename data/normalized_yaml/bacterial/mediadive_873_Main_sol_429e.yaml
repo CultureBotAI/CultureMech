@@ -1,0 +1,61 @@
+id: CultureMech:015235
+preferred_term: Main sol. 429e
+term:
+  id: mediadive.solution:873
+  label: Main sol. 429e
+composition:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2110
+    label: Columbia agar base
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Horse blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:724
+    label: Horse blood
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Columbia agar base supplemented with 10% horse blood. Rehydrate
+  pellets of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below). For
+  rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain heart
+  infusion).
+curation_history:
+- timestamp: '2026-03-13T06:20:41.415742Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015235'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:28.752127'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:47.783835'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:18.550398'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,66 @@
+id: CultureMech:015021
+preferred_term: NaHCO3, 10%
+term:
+  id: mediadive.solution:6411
+  label: NaHCO3, 10%
+composition:
+- preferred_term: NaHCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:55
+    label: NaHCO3
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Deionized water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:418
+    label: Deionized water
+  chebi_term:
+    id: CHEBI:86249
+    label: iron dichloride tetrahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min,
+  then close tightly.
+
+  Autoclave in closed vessel under CO2 atmosphere.
+
+  Autoclave at 121 °C for 15 min.
+
+
+  Original volume: 50 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:40.404613Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015021'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:27.630614'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:46.679234'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:06.322954'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

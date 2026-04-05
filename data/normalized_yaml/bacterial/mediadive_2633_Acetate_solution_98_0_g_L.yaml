@@ -1,0 +1,63 @@
+id: CultureMech:011962
+preferred_term: Acetate solution 98.0 g/L
+term:
+  id: mediadive.solution:2633
+  label: Acetate solution 98.0 g/L
+composition:
+- preferred_term: K-acetate
+  concentration:
+    value: '98'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:86
+    label: K-acetate
+  chebi_term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Distilled water
+  concentration:
+    value: '1000.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Filter sterilize and gas with N2. For strains DSM 12141, DSM 12142,
+  DSM 11243 and DSM 12144, acetate may be replaced by Na-capronate (stock solution
+  2.76 g/100 ml).
+
+
+  Original volume: 100 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:23.025310Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011962'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:12.043070'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:26.514028'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:01.443454'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

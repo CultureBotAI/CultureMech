@@ -1,0 +1,46 @@
+id: CultureMech:013862
+preferred_term: Trace metal 2 solution
+term:
+  id: mediadive.solution:4934
+  label: Trace metal 2 solution
+composition:
+- preferred_term: Na2-EDTA
+  concentration:
+    value: '37.23'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:34
+    label: Na2-EDTA
+  chebi_term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Adjust pH to 7.0 with NaOH.
+curation_history:
+- timestamp: '2026-03-13T06:20:33.946801Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013862'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:21.462737'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:39.218491'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:17.666335'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

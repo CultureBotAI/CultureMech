@@ -1,0 +1,50 @@
+id: CultureMech:012295
+preferred_term: Solution G
+term:
+  id: mediadive.solution:3071
+  label: Solution G
+composition:
+- preferred_term: Asialofetuin
+  concentration:
+    value: '100.0'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2150
+    label: Asialofetuin
+  chebi_term:
+    id: CHEBI:16643
+    label: L-methionine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Prepare Solutions G, flush with nitrogen to make them anoxic,
+  filter-sterilize and store at -20°C
+
+
+  Original volume: 10 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:25.068023Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012295'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:13.804143'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:28.944493'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:07.208032'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

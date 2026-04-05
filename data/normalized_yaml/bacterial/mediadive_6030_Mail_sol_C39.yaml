@@ -1,0 +1,48 @@
+id: CultureMech:014760
+preferred_term: Mail sol. C39
+term:
+  id: mediadive.solution:6030
+  label: Mail sol. C39
+composition:
+- preferred_term: Horse serum
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:146
+    label: Horse serum
+  chebi_term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: "Aseptically add stock solutions (2), (3) and (4) in above amounts\
+  \ to each test tube.\r\nIncubate at room temperature for 3 days to check sterility\
+  \ prior to use."
+curation_history:
+- timestamp: '2026-03-13T06:20:39.440471Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:014760'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:26.515162'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:45.526913'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:20.757931'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

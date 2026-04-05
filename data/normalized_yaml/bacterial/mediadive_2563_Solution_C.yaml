@@ -1,0 +1,70 @@
+id: CultureMech:011904
+preferred_term: Solution C
+term:
+  id: mediadive.solution:2563
+  label: Solution C
+composition:
+- preferred_term: NaOH
+  concentration:
+    value: '0.109432'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:256
+    label: NaOH
+  chebi_term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Nitrilotriacetate
+  concentration:
+    value: '0.458736'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:499
+    label: Nitrilotriacetate
+  chebi_term:
+    id: CHEBI:25548
+    label: nitrilotriacetate(3-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: TiCl3
+  concentration:
+    value: '6.34615'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1142
+    label: TiCl3
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 13 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:22.698597Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011904'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:11.696385'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:26.078826'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:10.464847'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

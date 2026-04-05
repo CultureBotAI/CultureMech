@@ -1,0 +1,84 @@
+id: CultureMech:011123
+preferred_term: Main sol. 821
+term:
+  id: mediadive.solution:1668
+  label: Main sol. 821
+composition:
+- preferred_term: Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1
+    label: Peptone
+  chebi_term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Meat extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2
+    label: Meat extract
+  chebi_term:
+    id: CHEBI:78020
+    label: heptacosanoate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Hexadecane
+  concentration:
+    value: '2'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:687
+    label: Hexadecane
+  chebi_term:
+    id: CHEBI:45296
+    label: hexadecane
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Distilled water
+  concentration:
+    value: '810'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Sterilize the medium without the 4 times concentrated sea water.
+  Cool the artificial sea water and the medium to 60°C - 70°C after autoclaving and
+  mix. Hexadecane may be replaced by 1 g/l sodium acetate.
+curation_history:
+- timestamp: '2026-03-13T06:20:17.678003Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011123'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:07.549484'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:20.473138'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:58.463259'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

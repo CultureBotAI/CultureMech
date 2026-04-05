@@ -1,0 +1,51 @@
+id: CultureMech:013398
+preferred_term: Substrate
+term:
+  id: mediadive.solution:4410
+  label: Substrate
+composition:
+- preferred_term: Sodium palmitate
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1813
+    label: Sodium palmitate
+  chebi_term:
+    id: CHEBI:234557
+    label: sodium palmitate
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Autoclave in culture vessels.
+
+  To complete the medium, combine Solution A and substrate in the culture vessels
+  under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Finally,
+  reduce the medium with 0.01 volume of 5% Na2S x 9H2O solution (autoclaved and stored
+  under a N2 atmosphere).'
+curation_history:
+- timestamp: '2026-03-13T06:20:31.120223Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:013398'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:19.094314'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:36.074812'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:58.896364'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

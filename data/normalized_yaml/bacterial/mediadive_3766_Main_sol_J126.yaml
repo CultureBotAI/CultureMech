@@ -1,0 +1,41 @@
+id: CultureMech:012843
+preferred_term: Main sol. J126
+term:
+  id: mediadive.solution:3766
+  label: Main sol. J126
+composition:
+- preferred_term: Methanol-utilizing bacteria medium B
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:1633
+    label: Methanol-utilizing bacteria medium B
+preparation_notes: Adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.
+curation_history:
+- timestamp: '2026-03-13T06:20:27.907099Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:012843'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:16.274996'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:32.332746'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:11.707855'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

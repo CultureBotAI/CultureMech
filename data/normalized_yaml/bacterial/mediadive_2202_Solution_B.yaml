@@ -1,0 +1,70 @@
+id: CultureMech:011594
+preferred_term: Solution B
+term:
+  id: mediadive.solution:2202
+  label: Solution B
+composition:
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '553.8461538461538'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:285
+    label: Tris-HCl buffer
+  chebi_term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Nitrilotriacetate
+  concentration:
+    value: '0.458736'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:499
+    label: Nitrilotriacetate
+  chebi_term:
+    id: CHEBI:25548
+    label: nitrilotriacetate(3-)
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: TiCl3
+  concentration:
+    value: '6.34615'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:1142
+    label: TiCl3
+  chebi_term:
+    id: CHEBI:32588
+    label: potassium chloride
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Original volume: 13 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:20.661989Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011594'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:09.983034'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:23.865895'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:00.005500'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

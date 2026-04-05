@@ -1,0 +1,60 @@
+id: CultureMech:015289
+preferred_term: Main sol. 465d
+term:
+  id: mediadive.solution:951
+  label: Main sol. 465d
+composition:
+- preferred_term: Glucose
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:5
+    label: Glucose
+  chebi_term:
+    id: CHEBI:17234
+    label: D-glucose
+    confidence: 0.9
+    match_type: synonym_match_ambiguous
+- preferred_term: Benzylcyanide
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:2166
+    label: Benzylcyanide
+  chebi_term:
+    id: CHEBI:25979
+    label: phenylacetonitrile
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: Prepare and autoclave medium 465 without ammonium sulfate. Add
+  120 mg/l benzylcyanide (not sterilized) to the incubation atmosphere or directly
+  to the medium.
+curation_history:
+- timestamp: '2026-03-13T06:20:41.658657Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015289'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:28.978327'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:48.111110'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:17.129495'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

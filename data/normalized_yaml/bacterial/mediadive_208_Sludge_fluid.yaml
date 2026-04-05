@@ -1,0 +1,62 @@
+id: CultureMech:011489
+preferred_term: Sludge fluid
+term:
+  id: mediadive.solution:208
+  label: Sludge fluid
+composition:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: mediadive.compound:16
+    label: Yeast extract
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Sludge
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:2084
+    label: Sludge
+  chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: Add 0.4% yeast extract to sludge from an anaerobic digester, and
+  after gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
+  Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
+  in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at 8-12°C
+  in the dark.
+curation_history:
+- timestamp: '2026-03-13T06:20:20.027040Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011489'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:09.458058'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:23.176921'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:56.409087'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,58 @@
+id: CultureMech:010963
+preferred_term: Solution G
+term:
+  id: mediadive.solution:1493
+  label: Solution G
+composition:
+- preferred_term: Hexadecane
+  concentration:
+    value: '900.0000000000001'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:687
+    label: Hexadecane
+  chebi_term:
+    id: CHEBI:45296
+    label: hexadecane
+    confidence: 1.0
+    match_type: exact_match
+- preferred_term: Tetrachloroethene
+  concentration:
+    value: '100.0'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:688
+    label: Tetrachloroethene
+  chebi_term:
+    id: CHEBI:17300
+    label: tetrachloroethene
+    confidence: 1.0
+    match_type: exact_match
+preparation_notes: 'Original volume: 15 mL'
+curation_history:
+- timestamp: '2026-03-13T06:20:16.687547Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:010963'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:06.713597'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:19.355905'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:49:59.492106'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial

@@ -1,0 +1,70 @@
+id: CultureMech:011310
+preferred_term: Main sol. 921
+term:
+  id: mediadive.solution:1892
+  label: Main sol. 921
+composition:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: PERCENT_V_V
+  term:
+    id: mediadive.compound:4
+    label: Distilled water
+  chebi_term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+    confidence: 0.7
+    match_type: kg_fallback
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: for solid medium; optional
+  term:
+    id: mediadive.compound:3
+    label: Agar
+  chebi_term:
+    id: CHEBI:2509
+    label: agar
+    confidence: 0.7
+    match_type: kg_fallback
+preparation_notes: 'Combine Solutions 1-3 with Trace Elements and distilled water.
+  Then dispense into growth vessels and autoclave under 50% methane in air (or strain
+  specific other ratio) atmosphere (if not using agar).
+
+  Autoclave at 121 °C for 15 min.
+
+  Autoclave at 121 °C for 15 min.
+
+  Add separately autoclaved phosphate buffer (10 ml/L) to autoclaved and cooled medium.
+  If phosphate buffer is added to warm medium, it will precipitate.
+
+  Liquid cultures should be grown with shaking.'
+curation_history:
+- timestamp: '2026-03-13T06:20:18.824113Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:011310'
+- curator: schema-defaulter-v1.0
+  date: '2026-03-14T21:07:08.501647'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-03-14T21:09:21.886658'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+- timestamp: '2026-04-04T17:50:10.239233'
+  curator: categorize_unknown_media
+  action: CATEGORIZED
+  changes: 'Set category to ''bacterial'' (was: MISSING)'
+  notes: 'Automated categorization (confidence: 0.30). No clear match, defaulting
+    to bacterial'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition
+category: bacterial
