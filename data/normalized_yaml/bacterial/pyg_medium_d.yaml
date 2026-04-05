@@ -12,11 +12,98 @@ media_term:
     label: PYG MEDIUM (D)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=564'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Polypeptone
   concentration:
-    value: variable
+    value: '5'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001104
+    label: CaCl2
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+  notes: Copied from referenced JCM Medium 423
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 423
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +129,18 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "PYG MEDIUM (D)" to "pyg_medium_d" for consistent matching
+- timestamp: '2026-04-04T21:48:41.485354'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002776
+  notes: Resolved reference by copying from pyg_medium_b (CultureMech:002776)
+- timestamp: '2026-04-04T22:06:16.817187'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002776
+  notes: Resolved reference by copying from pyg_medium_b (CultureMech:002776)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

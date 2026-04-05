@@ -12,11 +12,33 @@ media_term:
     label: ACIDIC YEAST-STARCH AGAR (pH 5.0)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=800'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Yeast extract
   concentration:
-    value: variable
+    value: '2'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 42
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+  notes: Copied from referenced JCM Medium 42
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 42
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +64,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDIC YEAST-STARCH AGAR (pH 5.0)" to "acidic_yeast_starch_agar_ph_5_0"
     for consistent matching
+- timestamp: '2026-04-04T21:37:21.362193'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (3 ingredients)
+  source: CultureMech:010527
+  notes: Resolved reference by copying from yeast_starch_agar_a (CultureMech:010527)
+- timestamp: '2026-04-04T21:42:04.482366'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (3 ingredients)
+  source: CultureMech:010527
+  notes: Resolved reference by copying from yeast_starch_agar_a (CultureMech:010527)
+- timestamp: '2026-04-04T21:48:41.111847'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (3 ingredients)
+  source: CultureMech:010527
+  notes: Resolved reference by copying from yeast_starch_agar_a (CultureMech:010527)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

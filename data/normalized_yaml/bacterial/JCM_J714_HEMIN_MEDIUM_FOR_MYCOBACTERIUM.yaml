@@ -11,11 +11,28 @@ media_term:
     label: HEMIN MEDIUM FOR MYCOBACTERIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Middlebrook 7H10 agar
   concentration:
-    value: variable
+    value: '21.1111'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Middlebrook 7H10 agar
+  notes: Copied from referenced JCM Medium 386
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+  notes: Copied from referenced JCM Medium 386
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -41,5 +58,20 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HEMIN MEDIUM FOR MYCOBACTERIUM" to "hemin_medium_for_mycobacterium"
     for consistent matching
+- timestamp: '2026-04-04T21:48:41.473924'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (2 ingredients)
+  source: CultureMech:002743
+  notes: Resolved reference by copying from middlebrook_7h10_agar_with_oadc_enrichment
+    (CultureMech:002743)
+- timestamp: '2026-04-04T22:05:44.144884'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (2 ingredients)
+  source: CultureMech:002743
+  notes: Resolved reference by copying from middlebrook_7h10_agar_with_oadc_enrichment
+    (CultureMech:002743)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

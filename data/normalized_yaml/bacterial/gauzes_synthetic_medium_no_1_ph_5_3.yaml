@@ -12,11 +12,83 @@ media_term:
     label: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=949'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
   concentration:
-    value: variable
+    value: '20'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 81
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 81
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +114,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)" to "gauzes_synthetic_medium_no_1_ph_5_3"
     for consistent matching
+- timestamp: '2026-04-04T21:48:41.228043'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (7 ingredients)
+  source: CultureMech:003164
+  notes: Resolved reference by copying from gauzes_synthetic_medium_no_1 (CultureMech:003164)
+- timestamp: '2026-04-04T21:55:01.098716'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (7 ingredients)
+  source: CultureMech:003164
+  notes: Resolved reference by copying from gauzes_synthetic_medium_no_1 (CultureMech:003164)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

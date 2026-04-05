@@ -12,11 +12,83 @@ media_term:
     label: ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=422'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
   concentration:
-    value: variable
+    value: '0.999001'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000282
+    label: L-Asparagine
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.985'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000127
+    label: MnCl2 x 4 H2O
+  notes: Copied from referenced JCM Medium 60
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000229
+    label: ZnSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 60
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +114,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)" to "acidic_glycerol_asparagine_agar_ph_5_0"
     for consistent matching
+- timestamp: '2026-04-04T21:48:41.211245'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (7 ingredients)
+  source: CultureMech:002957
+  notes: Resolved reference by copying from glycerol_asparagine_agar_isp_5 (CultureMech:002957)
+- timestamp: '2026-04-04T21:54:30.554720'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (7 ingredients)
+  source: CultureMech:002957
+  notes: Resolved reference by copying from glycerol_asparagine_agar_isp_5 (CultureMech:002957)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

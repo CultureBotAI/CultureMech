@@ -12,11 +12,38 @@ media_term:
     label: YEAST EXTRACT-MALT EXTRACT AGAR (pH 6.0)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=613'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Yeast extract
   concentration:
-    value: variable
+    value: '4'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 43
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 43
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+  notes: Copied from referenced JCM Medium 43
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 43
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +69,20 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YEAST EXTRACT-MALT EXTRACT AGAR (pH 6.0)" to "yeast_extract_malt_extract_agar_ph_6_0"
     for consistent matching
+- timestamp: '2026-04-04T21:48:14.452303'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (4 ingredients)
+  source: CultureMech:010528
+  notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
+    (CultureMech:010528)
+- timestamp: '2026-04-04T21:48:41.151251'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (4 ingredients)
+  source: CultureMech:010528
+  notes: Resolved reference by copying from yeast_extract_malt_extract_agar_isp_2
+    (CultureMech:010528)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

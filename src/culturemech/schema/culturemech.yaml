@@ -178,6 +178,20 @@ classes:
         range: MediaTypeDescriptor
         recommended: true
 
+      kg_microbe_match:
+        description: >-
+          KG-Microbe mediadive.medium node ID for exact ingredient match.
+          Populated when this recipe's ingredients exactly match a medium in KG-Microbe
+          (ignoring concentrations, considering hierarchical ingredient resolution).
+        range: string
+        required: false
+        pattern: "^mediadive\\.medium:[0-9a-zA-Z_-]+$"
+        comments:
+          - Format mediadive.medium:514, mediadive.medium:693, mediadive.medium:92
+          - Match criteria same ingredient set (CHEBI/FOODON IDs) regardless of concentrations
+          - Handles hierarchical ingredients (commercial products vs constituent chemicals)
+          - Enables validation against authoritative DSMZ formulations
+
       description:
         description: Overview of the medium and its purpose
         range: string

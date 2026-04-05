@@ -12,11 +12,17 @@ media_term:
     label: MARINE AGAR 2216 (pH 9.0)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1016'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
   concentration:
-    value: variable
+    value: '55.1'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Marine agar 2216
+  notes: Copied from referenced JCM Medium 118
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +48,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE AGAR 2216 (pH 9.0)" to "marine_agar_2216_ph_9_0"
     for consistent matching
+- timestamp: '2026-04-04T21:48:41.244258'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (1 ingredients)
+  source: CultureMech:015393
+  notes: Resolved reference by copying from marine_agar_2216 (CultureMech:015393)
+- timestamp: '2026-04-04T21:57:43.660477'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (1 ingredients)
+  source: CultureMech:015393
+  notes: Resolved reference by copying from marine_agar_2216 (CultureMech:015393)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

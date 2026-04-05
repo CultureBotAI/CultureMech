@@ -12,11 +12,88 @@ media_term:
     label: CM+YE MEDIUM (pH 9)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1233'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Casamino acids
   concentration:
-    value: variable
+    value: '7.49251'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: ' ( vitamin assay) | Copied from referenced JCM Medium 59'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000776
+    label: Trisodium citrate x 2 H2O
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '199.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.985'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 59
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '49.8'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000445
+    label: FeSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 59
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +119,18 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CM+YE MEDIUM (pH 9)" to "cm_ye_medium_ph_9" for consistent
     matching
+- timestamp: '2026-04-04T21:48:41.192458'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (8 ingredients)
+  source: CultureMech:002947
+  notes: Resolved reference by copying from cm_ye_medium (CultureMech:002947)
+- timestamp: '2026-04-04T21:53:21.893906'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (8 ingredients)
+  source: CultureMech:002947
+  notes: Resolved reference by copying from cm_ye_medium (CultureMech:002947)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

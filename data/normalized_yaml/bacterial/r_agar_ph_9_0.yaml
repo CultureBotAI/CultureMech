@@ -12,11 +12,81 @@ media_term:
     label: R AGAR (pH 9.0)
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1089'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Bacto peptone
   concentration:
-    value: variable
+    value: '10'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Malt extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001071
+    label: Casamino acids
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Beef extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000201
+    label: Glycerol
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000190
+    label: Tween 80
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 26
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 26
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +112,24 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R AGAR (pH 9.0)" to "r_agar_ph_9_0" for consistent
     matching
+- timestamp: '2026-04-04T21:34:20.692015'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
+- timestamp: '2026-04-04T21:40:32.859003'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
+- timestamp: '2026-04-04T21:48:41.096300'
+  curator: resolve_option_c_references
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (9 ingredients)
+  source: CultureMech:002627
+  notes: Resolved reference by copying from r_agar (CultureMech:002627)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true
