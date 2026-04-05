@@ -12,11 +12,104 @@ media_term:
     label: MICROAEROPHILIC THERMUS MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=894'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Tryptone
   concentration:
-    value: variable
+    value: '1'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000233
+    label: Nitrilotriacetic acid
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.588235'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000465
+    label: CaSO4 x 2 H2O
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0784314'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1.0098'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000170
+    label: KNO3
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '6.7549'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.08824'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000644
+    label: Na2HPO4
+  notes: Copied from referenced JCM Medium 276
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000218
+    label: FeCl3 x 6 H2O
+  notes: Copied from referenced JCM Medium 276
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +135,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MICROAEROPHILIC THERMUS MEDIUM" to "microaerophilic_thermus_medium"
     for consistent matching
+- timestamp: '2026-04-04T18:49:19.340542'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002633
+  notes: Resolved reference by copying from castenholz_medium (CultureMech:002633)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

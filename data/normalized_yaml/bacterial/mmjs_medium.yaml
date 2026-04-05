@@ -11,11 +11,259 @@ media_term:
     label: MMJS MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=413'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: variable
+    value: '29.6736'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.138477'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.24728'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000171
+    label: NaNO3
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.36301'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4 x 7 H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.13452'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.326409'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.0049456'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000202
+    label: NiCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.00049456'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000144
+    label: Na2SeO3 x 5 H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Fe2(SO4)3 x n H2O
+  term:
+    id: CHEBI:53438
+    label: Fe2(SO4)3 x n H2O
+  concentration:
+    value: '0.049456'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000409
+    label: Fe2(SO4)3 x n H2O
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: H2WO4
+  term:
+    id: CHEBI:36272
+    label: H2WO4
+  concentration:
+    value: '0.0049456'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000397
+    label: H2WO4
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000830
+    label: NaHCO3
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000917
+    label: Biotin
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000823
+    label: Folic acid
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001016
+    label: Pyridoxine hydrochloride
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000770
+    label: Thiamine HCl
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000345
+    label: Riboflavin
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000730
+    label: Nicotinic acid
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000926
+    label: Calcium pantothenate
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000502
+    label: p-Aminobenzoic acid
+  notes: Copied from referenced JCM Medium 369
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000166
+    label: Lipoic acid
+  notes: Copied from referenced JCM Medium 369
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -42,5 +290,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "MMJS MEDIUM" to "mmjs_medium" for consistent matching
+- timestamp: '2026-04-04T18:49:19.554871'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (23 ingredients)
+  source: CultureMech:002728
+  notes: Resolved reference by copying from mmjh_medium (CultureMech:002728)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

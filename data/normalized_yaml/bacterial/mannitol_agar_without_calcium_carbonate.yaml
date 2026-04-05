@@ -11,11 +11,49 @@ media_term:
     label: MANNITOL AGAR WITHOUT CALCIUM CARBONATE
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=746'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Yeast extract
   concentration:
-    value: variable
+    value: '5'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 598
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 598
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001010
+    label: Mannitol
+  notes: Copied from referenced JCM Medium 598
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001099
+    label: CaCO3
+  notes: Copied from referenced JCM Medium 598
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 598
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -40,5 +78,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MANNITOL AGAR WITHOUT CALCIUM CARBONATE" to "mannitol_agar_without_calcium_carbonate"
     for consistent matching
+- timestamp: '2026-04-04T18:49:19.871953'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (5 ingredients)
+  source: CultureMech:002946
+  notes: Resolved reference by copying from mannitol_agar (CultureMech:002946)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

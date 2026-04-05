@@ -12,11 +12,33 @@ media_term:
     label: VY/2 AGAR
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=436'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
-    value: variable
+    value: '0.0005'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000125
+    label: Vitamin B12
+  notes: Copied from referenced JCM Medium 341
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 341
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 341
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -45,5 +67,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VY/2 AGAR" to "vy_2_agar" for consistent matching
+- timestamp: '2026-04-04T18:49:19.497546'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (3 ingredients)
+  source: CultureMech:002701
+  notes: Resolved reference by copying from vy_2_asw_agar (CultureMech:002701)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

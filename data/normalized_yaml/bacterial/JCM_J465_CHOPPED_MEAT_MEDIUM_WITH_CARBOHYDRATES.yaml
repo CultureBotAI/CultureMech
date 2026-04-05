@@ -11,11 +11,54 @@ media_term:
     label: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=465'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Ground beef
   concentration:
-    value: variable
+    value: '487.805'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 461
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000148
+    label: NaOH
+  notes: Copied from referenced JCM Medium 461
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 461
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 461
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 461
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+  notes: Copied from referenced JCM Medium 461
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -41,5 +84,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CHOPPED MEAT MEDIUM WITH CARBOHYDRATES" to "chopped_meat_medium_with_carbohydrates"
     for consistent matching
+- timestamp: '2026-04-04T18:49:19.700673'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (6 ingredients)
+  source: CultureMech:002810
+  notes: Resolved reference by copying from chopped_meat_medium (CultureMech:002810)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

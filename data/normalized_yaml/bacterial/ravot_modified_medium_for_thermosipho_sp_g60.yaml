@@ -12,11 +12,131 @@ media_term:
     label: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
   concentration:
-    value: variable
+    value: '0.981354'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000121
+    label: NH4Cl
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.196271'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0981354'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2 x 2 H2O
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.0981354'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '0.814524'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.90677'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.90677'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '3.38567'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000276
+    label: PIPES
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4.90677'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000927
+    label: Sulfur
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000981354'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000813
+    label: Resazurin
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000231
+    label: K2HPO4
+  notes: Copied from referenced JCM Medium 725
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000216
+    label: Na2S x 9 H2O
+  notes: Copied from referenced JCM Medium 725
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -41,5 +161,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60" to "ravot_modified_medium_for_thermosipho_sp_g60"
     for consistent matching
+- timestamp: '2026-04-04T18:49:19.962983'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (13 ingredients)
+  source: CultureMech:003069
+  notes: Resolved reference by copying from ravot_modified_medium_for_thermoanaerovibrio_sp_r101
+    (CultureMech:003069)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

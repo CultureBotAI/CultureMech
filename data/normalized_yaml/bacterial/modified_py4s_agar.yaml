@@ -12,11 +12,98 @@ media_term:
     label: MODIFIED PY4S AGAR
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=617'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Trypticase peptone
   concentration:
-    value: variable
+    value: '9.96016'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000138
+    label: Glucose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001069
+    label: Cellobiose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000591
+    label: Maltose
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000169
+    label: Starch
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000659
+    label: Na2CO3
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.298805'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000153
+    label: L-Cysteine HCl x H2O
+  notes: Copied from referenced JCM Medium 363
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.9402'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000543
+    label: Agar
+  notes: Copied from referenced JCM Medium 363
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -42,5 +129,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED PY4S AGAR" to "modified_py4s_agar" for consistent
     matching
+- timestamp: '2026-04-04T18:49:19.523325'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (10 ingredients)
+  source: CultureMech:002722
+  notes: Resolved reference by copying from py4s_agar (CultureMech:002722)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

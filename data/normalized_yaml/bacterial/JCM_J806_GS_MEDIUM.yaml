@@ -15,7 +15,7 @@ ingredients:
   concentration:
     value: variable
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: Full composition available at source database | Copied from JCM Medium 262
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -40,5 +40,12 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GS MEDIUM" to "gs_medium" for consistent matching
+- timestamp: '2026-04-04T18:49:19.293538'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (1 ingredients)
+  source: CultureMech:002620
+  notes: Resolved reference by copying from methanoculleus_medium (CultureMech:002620)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true

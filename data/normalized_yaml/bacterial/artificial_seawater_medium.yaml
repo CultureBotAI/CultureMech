@@ -12,11 +12,49 @@ media_term:
     label: ARTIFICIAL SEAWATER MEDIUM
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=972'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: variable
+    value: '24'
     unit: G_PER_L
-  notes: Full composition available at source database
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000858
+    label: KCl
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000199
+    label: MgCl2 x 6 H2O
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 701
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: Copied from referenced JCM Medium 701
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -45,5 +83,13 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ARTIFICIAL SEAWATER MEDIUM" to "artificial_seawater_medium"
     for consistent matching
+- timestamp: '2026-04-04T18:49:19.936468'
+  curator: copy_referenced_compositions
+  action: RESOLVED_REFERENCE
+  changes: Copied composition from referenced medium (5 ingredients)
+  source: CultureMech:003047
+  notes: Resolved reference by copying from low_strength_artificial_seawater_medium
+    (CultureMech:003047)
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  resolved_reference: true
