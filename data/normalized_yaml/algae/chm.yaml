@@ -34,14 +34,32 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "CHM" to "chm" for consistent matching
+- timestamp: '2026-04-04T20:18:55.071821'
+  curator: batch_process_collection_media
+  action: EXPANDED_INGREDIENTS
+  changes: Replaced placeholder with 2 curated ingredients from CCAP
+  source: CCAP Medium MR_CHM.pdf
 references:
 - reference_id: CCAP:CHM
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_CHM.pdf
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Sodium acetate trihydrate
+  notes: Ontology mapping not yet available; From CCAP Medium MR_CHM.pdf; Curated
+    from CCAP Medium MR_CHM.pdf specification
   concentration:
-    value: variable
-    unit: VARIABLE
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_CHM.pdf
+- preferred_term: Lab-Lemco powder
+  notes: Ontology mapping not yet available; From CCAP Medium MR_CHM.pdf; Curated
+    from CCAP Medium MR_CHM.pdf specification
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  source: CCAP Medium MR_CHM.pdf
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: false
+  ingredients_curated: true
+  curation_method: automated_expert_mapping
 original_name: CHM
