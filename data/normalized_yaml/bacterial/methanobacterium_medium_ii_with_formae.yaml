@@ -41,5 +41,12 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "METHANOBACTERIUM MEDIUM (II) WITH FORMAE" to "methanobacterium_medium_ii_with_formae"
     for consistent matching
+- timestamp: '2026-04-05T17:20:25.524547'
+  curator: mark_unavailable_media
+  action: MARKED_UNAVAILABLE
+  changes: Marked as source_information_unavailable
+  notes: 'Source database has no composition data. Category: EMPTY. JCM page returns
+    "Nothing found"'
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: true
+  source_information_unavailable: true
