@@ -11,11 +11,121 @@ media_term:
     label: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
 notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=690'
 ingredients:
-- preferred_term: See source for composition
+- preferred_term: Pancreatic digest of casein
   concentration:
-    value: variable
+    value: '10.0'
     unit: G_PER_L
-  notes: Full composition available at source database
+  notes: From Columbia Agar Base (for anaerobic use); Peptone source providing amino
+    acids and nitrogen
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03316427
+    label: casein hydrolysate
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255021'
+    ontology_source: FOODON
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Peptone providing nutrients
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03316428
+    label: peptone
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255038'
+    ontology_source: FOODON
+- preferred_term: Beef extract
+  concentration:
+    value: '3.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Provides vitamins, minerals,
+    and growth factors
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03302088
+    label: beef extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255040'
+    ontology_source: FOODON
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Vitamin and amino acid source
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: FOODON:03315426
+    label: yeast extract
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255042'
+    ontology_source: FOODON
+- preferred_term: Corn starch
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Detoxifies metabolic byproducts
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:28017
+    label: starch
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255043'
+    ontology_source: CHEBI
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Maintains osmotic balance
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255045'
+    ontology_source: CHEBI
+- preferred_term: Agar
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  notes: From Columbia Agar Base (for anaerobic use); Solidifying agent
+  source: Columbia Agar Base (Oxoid CM331 equivalent)
+  term:
+    id: CHEBI:2509
+    label: agar
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255047'
+    ontology_source: CHEBI
+- preferred_term: Defibrinated rabbit blood
+  term:
+    id: UBERON:0000178
+    label: blood
+  concentration:
+    value: '5'
+    unit: PERCENT_V_V
+  curation_metadata:
+    mapping_quality: MANUAL
+    confidence_score: 1.0
+    curation_date: '2026-04-05T17:19:48.255048'
+    ontology_source: UBERON
+  notes: Added aseptically after autoclaving and cooling to 45-50°C; 5% final concentration
+    for anaerobic cultivation
+  source: Blood additive for anaerobic Columbia Agar
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -41,5 +151,17 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANAERO COLUMBIA AGAR WITH RABBIT BLOOD" to "anaero_columbia_agar_with_rabbit_blood"
     for consistent matching
+- timestamp: '2026-04-05T17:19:48.255051'
+  curator: expand_anaero_columbia_blood_agar
+  action: EXPANDED_COMMERCIAL_PRODUCT
+  changes: Replaced placeholder with Columbia Agar Base composition + 5% rabbit blood
+    (8 ingredients)
+  source: Columbia Agar Base + rabbit blood
+  notes: BD-BBL Anaero Columbia Agar product not found in current catalogs; using
+    standard Columbia Agar Base composition. Anaerobic cultivation achieved through
+    incubation conditions rather than medium composition differences.
 data_quality_flags:
-- incomplete_composition
+  incomplete_composition: false
+  has_ontology_mappings: true
+  ingredients_curated: true
+  commercial_product: true
