@@ -25,7 +25,10 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  notes: 'CAS: 7791-18-6; MW: 203.3'
+  notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Thiamine HCl
   concentration:
     value: '0.3'
@@ -46,7 +49,11 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur free mineral mix'
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Nitrilotriacetic acid disodium salt
   concentration:
     value: '0.015'
@@ -64,12 +71,20 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur free mineral mix'
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur free mineral mix'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Zinc chloride
   concentration:
     value: '0.0013000000000000002'
@@ -88,12 +103,20 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur free mineral mix'
+  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86249
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
     unit: G_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur free mineral mix'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Potassium aluminum chloride
   concentration:
     value: '0.0002'
@@ -116,17 +139,29 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur free mineral mix'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.003'
     unit: MG_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur free mineral mix'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.0025'
     unit: MG_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur free mineral mix'
+  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur free mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:63939
+    label: ''
 description: E. coli defined media with no sulfur
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

@@ -15,12 +15,18 @@ ingredients:
   concentration:
     value: '40'
     unit: MILLIMOLAR
-  notes: 'CAS: 1132-61-2; MW: 209.2633'
+  notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:44115
+    label: ''
 - preferred_term: Tricine
   concentration:
     value: '4'
     unit: MILLIMOLAR
-  notes: 'CAS: 5704-04-1; MW: 179.17'
+  notes: 'CAS: 5704-04-1; MW: 179.17; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:39063
+    label: ''
 - preferred_term: Potassium phosphate dibasic
   concentration:
     value: '1.32'
@@ -33,12 +39,18 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
-  notes: 'CAS: 7784-24-9; MW: 474.39'
+  notes: 'CAS: 7784-24-9; MW: 474.39; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Calcium chloride
   concentration:
     value: '0.0005'
@@ -52,7 +64,10 @@ ingredients:
   concentration:
     value: '0.525'
     unit: MILLIMOLAR
-  notes: 'CAS: 7791-18-6; MW: 203.3'
+  notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Sodium Chloride
   concentration:
     value: '50'
@@ -78,22 +93,34 @@ ingredients:
   concentration:
     value: '3.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7791-13-1; MW: 237.93'
+  notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '1.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '8.00E-08'
     unit: MOLAR
-  notes: 'CAS: 13446-34-9; MW: 197.91'
+  notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '1.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 description: MOPS minimal media with Glucose and no nitrogen source
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

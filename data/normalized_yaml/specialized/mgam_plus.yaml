@@ -92,7 +92,10 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 58-27-5'
+  notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:28869
+    label: ''
 description: Gifu Anaerobic Broth, with added Hemin and Menadione
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

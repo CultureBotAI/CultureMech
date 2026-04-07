@@ -73,7 +73,11 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; From Thauer''s vitamin mix'
+  notes: 'CAS: 150-13-0; MW: 137.14; From Thauer''s vitamin mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '0.01'

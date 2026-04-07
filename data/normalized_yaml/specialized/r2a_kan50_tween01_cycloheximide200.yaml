@@ -25,7 +25,10 @@ ingredients:
   concentration:
     value: '0.2'
     unit: MG_PER_ML
-  notes: 'CAS: 66-81-9; MW: 281.35'
+  notes: 'CAS: 66-81-9; MW: 281.35; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:27641
+    label: ''
 description: R2A media for outgrowth of bacteria after plant experiments
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

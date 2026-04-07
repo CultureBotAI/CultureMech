@@ -32,7 +32,10 @@ ingredients:
   concentration:
     value: '1.00E-02'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Citric Acid
   concentration:
     value: '1.60E-01'
@@ -59,7 +62,10 @@ ingredients:
   concentration:
     value: '2.00E+01'
     unit: G_PER_L
-  notes: 'CAS: 6138-23-4; MW: 378.33'
+  notes: 'CAS: 6138-23-4; MW: 378.33; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:232797
+    label: ''
 description: Defined minimal media for growing Agrobacterium
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

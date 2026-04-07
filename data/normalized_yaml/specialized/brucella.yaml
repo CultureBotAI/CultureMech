@@ -36,7 +36,10 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'CAS: 7631-90-5'
+  notes: 'CAS: 7631-90-5; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:26709
+    label: ''
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -50,7 +53,10 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 58-27-5'
+  notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:28869
+    label: ''
 description: Brucella broth
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

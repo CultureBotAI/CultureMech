@@ -76,7 +76,10 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'CAS: 10058-44-3; MW: 745.21'
+  notes: 'CAS: 10058-44-3; MW: 745.21; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:132767
+    label: ''
 - preferred_term: Hemin
   concentration:
     value: '0.005'
@@ -90,7 +93,10 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  notes: 'CAS: 58-27-5'
+  notes: 'CAS: 58-27-5; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:28869
+    label: ''
 - preferred_term: dithiothreitol
   concentration:
     value: '1'

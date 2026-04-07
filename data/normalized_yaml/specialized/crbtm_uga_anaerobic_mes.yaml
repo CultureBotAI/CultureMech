@@ -78,12 +78,20 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86214
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -97,17 +105,29 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -120,22 +140,38 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
     unit: MG_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
     unit: MG_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Folic Acid
   concentration:
     value: '20.0'
@@ -212,7 +248,11 @@ ingredients:
   concentration:
     value: '50.0'
     unit: UG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix'
+  notes: 'CAS: 150-13-0; MW: 137.14; From ATCC Wolfe''s vitamin mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '50.0'
@@ -234,7 +274,10 @@ ingredients:
   concentration:
     value: '40'
     unit: MILLIMOLAR
-  notes: 'CAS: 71119-23-8; MW: 217.22'
+  notes: 'CAS: 71119-23-8; MW: 217.22; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:62955
+    label: ''
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'

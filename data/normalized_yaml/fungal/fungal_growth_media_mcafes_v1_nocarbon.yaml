@@ -32,27 +32,42 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'CAS: 6484-52-2; MW: 80.04'
+  notes: 'CAS: 6484-52-2; MW: 80.04; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:63038
+    label: ''
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91'
+  notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93'
+  notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 description: Growth media for diverse fungi with no carbon
 notes: 'Source: FEBA media definitions'
 category: FUNGAL

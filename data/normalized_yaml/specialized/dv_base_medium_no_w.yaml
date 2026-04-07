@@ -11,7 +11,10 @@ ingredients:
   concentration:
     value: '-'
     unit: G_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85'
+  notes: 'CAS: 10213-10-2; MW: 329.85; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:63939
+    label: ''
 description: Base medium for cultivating Desulfovibrio with no W
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

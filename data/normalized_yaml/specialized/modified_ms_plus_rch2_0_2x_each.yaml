@@ -7,7 +7,10 @@ ingredients:
   concentration:
     value: '900'
     unit: MG_PER_L
-  notes: 'CAS: 6484-52-2; MW: 80.04'
+  notes: 'CAS: 6484-52-2; MW: 80.04; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:63038
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '1.55'
@@ -29,12 +32,18 @@ ingredients:
   concentration:
     value: '0.00625'
     unit: MG_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93'
+  notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.00625'
     unit: MG_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: EDTA (disodium salt)
   concentration:
     value: '9.315'
@@ -44,7 +53,10 @@ ingredients:
   concentration:
     value: '6.95'
     unit: MG_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Magnesium sulfate
   concentration:
     value: '45.175'
@@ -66,12 +78,18 @@ ingredients:
   concentration:
     value: '0.2075'
     unit: MG_PER_L
-  notes: 'CAS: 7681-11-0; MW: 166.0'
+  notes: 'CAS: 7681-11-0; MW: 166.0; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:8346
+    label: ''
 - preferred_term: Potassium nitrate
   concentration:
     value: '975'
     unit: MG_PER_L
-  notes: 'CAS: 7757-79-1; MW: 101.1032'
+  notes: 'CAS: 7757-79-1; MW: 101.1032; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:63043
+    label: ''
 - preferred_term: Potassium phosphate monobasic
   concentration:
     value: '42.5'
@@ -85,12 +103,18 @@ ingredients:
   concentration:
     value: '0.0625'
     unit: MG_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95'
+  notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '2.15'
     unit: MG_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '5'
@@ -113,7 +137,10 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'CAS: 10049-21-5; MW: 137.99'
+  notes: 'CAS: 10049-21-5; MW: 137.99; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:114249
+    label: ''
 - preferred_term: PIPES sesquisodium salt
   concentration:
     value: '6'
@@ -156,12 +183,20 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.0002'
@@ -175,22 +210,38 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix'
+  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: 5e-05
     unit: G_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: 4e-05
     unit: G_PER_L
-  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix'
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: 2e-05
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: 2e-05
@@ -203,12 +254,20 @@ ingredients:
   concentration:
     value: 2e-05
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.0006'
     unit: MG_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.02'
@@ -222,7 +281,11 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '0.01'

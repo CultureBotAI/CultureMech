@@ -41,7 +41,10 @@ ingredients:
   concentration:
     value: '0.012'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: EDTA
   concentration:
     value: '0.02'
@@ -97,17 +100,26 @@ ingredients:
   concentration:
     value: '0.0021'
     unit: MG_PER_L
-  notes: 'CAS: 10101-68-5; MW: 223.06'
+  notes: 'CAS: 10101-68-5; MW: 223.06; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.00075'
     unit: MG_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95'
+  notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.00024'
     unit: MG_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Copper(II) Nitrate Trihydrate
   concentration:
     value: '0.00004'

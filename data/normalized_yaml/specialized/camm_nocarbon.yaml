@@ -44,7 +44,10 @@ ingredients:
   concentration:
     value: '6.25E-03'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: EDTA disodium dihydrate
   concentration:
     value: '6.25E-02'
@@ -54,7 +57,10 @@ ingredients:
   concentration:
     value: '2.25E-02'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '1.43E-02'
@@ -67,17 +73,26 @@ ingredients:
   concentration:
     value: '6.30E-03'
     unit: G_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91'
+  notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '2.00E-03'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93'
+  notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '1.90E-03'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Ammonium heptamolybdate tetrahydrate
   concentration:
     value: '1.40E-03'

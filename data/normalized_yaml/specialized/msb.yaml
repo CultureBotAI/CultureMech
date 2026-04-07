@@ -63,7 +63,10 @@ ingredients:
   concentration:
     value: '1.98E-03'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: EDTA
   concentration:
     value: '2.50E-03'
@@ -76,7 +79,10 @@ ingredients:
   concentration:
     value: '1.10E-02'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '1.54E-03'
@@ -89,12 +95,18 @@ ingredients:
   concentration:
     value: '3.92E-04'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.50E-04'
     unit: G_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03'
+  notes: 'CAS: 10026-22-9; MW: 291.03; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86214
+    label: ''
 - preferred_term: sodium tetraborate decahydrate
   concentration:
     value: '1.77E-04'

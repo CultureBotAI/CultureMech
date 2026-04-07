@@ -36,7 +36,10 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'CAS: 9005-84-9'
+  notes: 'CAS: 9005-84-9; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:18167
+    label: ''
 - preferred_term: L-Cysteine HCL
   concentration:
     value: '0.5'

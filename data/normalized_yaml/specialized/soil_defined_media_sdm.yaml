@@ -38,12 +38,20 @@ ingredients:
   concentration:
     value: '192.3'
     unit: MG_PER_L
-  notes: 'CAS: 6138-23-4; MW: 378.33; From Soil Defined Carbon Mix'
+  notes: 'CAS: 6138-23-4; MW: 378.33; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:232797
+    label: ''
 - preferred_term: D-Arabinose
   concentration:
     value: '31.200000000000003'
     unit: MG_PER_L
-  notes: 'CAS: 10323-20-3; MW: 150.13; From Soil Defined Carbon Mix'
+  notes: 'CAS: 10323-20-3; MW: 150.13; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:46983
+    label: ''
 - preferred_term: D-Maltose monohydrate
   concentration:
     value: '56.6'
@@ -53,7 +61,11 @@ ingredients:
   concentration:
     value: '16.0'
     unit: MG_PER_L
-  notes: 'CAS: 7643-75-6; MW: 152.146; From Soil Defined Carbon Mix'
+  notes: 'CAS: 7643-75-6; MW: 152.146; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:18403
+    label: ''
 - preferred_term: L-Leucine
   concentration:
     value: '7.9'
@@ -130,12 +142,20 @@ ingredients:
   concentration:
     value: '7.1000000000000005'
     unit: MG_PER_L
-  notes: 'CAS: 3458-28-4; MW: 180.16; From Soil Defined Carbon Mix'
+  notes: 'CAS: 3458-28-4; MW: 180.16; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:37675
+    label: ''
 - preferred_term: Uridine
   concentration:
     value: '5.2'
     unit: MG_PER_L
-  notes: 'CAS: 58-96-8; MW: 244.2; From Soil Defined Carbon Mix'
+  notes: 'CAS: 58-96-8; MW: 244.2; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16704
+    label: ''
 - preferred_term: Carnitine Hydrochloride
   concentration:
     value: '3.2'
@@ -208,7 +228,11 @@ ingredients:
   concentration:
     value: '3.5'
     unit: MG_PER_L
-  notes: 'CAS: 372-75-8; MW: 175.19; From Soil Defined Carbon Mix'
+  notes: 'CAS: 372-75-8; MW: 175.19; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16349
+    label: ''
 - preferred_term: L-Aspartic acid
   concentration:
     value: '2.7'
@@ -249,12 +273,20 @@ ingredients:
   concentration:
     value: '0.9'
     unit: MG_PER_L
-  notes: 'CAS: 463-00-3; MW: 145.16; From Soil Defined Carbon Mix'
+  notes: 'CAS: 463-00-3; MW: 145.16; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:15728
+    label: ''
 - preferred_term: Hypoxanthine
   concentration:
     value: '0.6000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 68-94-0; MW: 136.11; From Soil Defined Carbon Mix'
+  notes: 'CAS: 68-94-0; MW: 136.11; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17368
+    label: ''
 - preferred_term: Uracil
   concentration:
     value: '0.4'
@@ -268,17 +300,29 @@ ingredients:
   concentration:
     value: '0.4'
     unit: MG_PER_L
-  notes: 'CAS: 65-71-4; MW: 126.11; From Soil Defined Carbon Mix'
+  notes: 'CAS: 65-71-4; MW: 126.11; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17821
+    label: ''
 - preferred_term: Guanine
   concentration:
     value: '0.5'
     unit: MG_PER_L
-  notes: 'CAS: 73-40-5; MW: 151.13; From Soil Defined Carbon Mix'
+  notes: 'CAS: 73-40-5; MW: 151.13; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Cytosine
   concentration:
     value: '0.4'
     unit: MG_PER_L
-  notes: 'CAS: 71-30-7; MW: 111.1; From Soil Defined Carbon Mix'
+  notes: 'CAS: 71-30-7; MW: 111.1; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16040
+    label: ''
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '0.4'
@@ -288,32 +332,56 @@ ingredients:
   concentration:
     value: '0.6000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 50-89-5; MW: 242.23; From Soil Defined Carbon Mix'
+  notes: 'CAS: 50-89-5; MW: 242.23; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17748
+    label: ''
 - preferred_term: spermidine
   concentration:
     value: '0.4'
     unit: MG_PER_L
-  notes: 'CAS: 124-20-9; MW: 145.25; From Soil Defined Carbon Mix'
+  notes: 'CAS: 124-20-9; MW: 145.25; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16610
+    label: ''
 - preferred_term: Orotic acid
   concentration:
     value: '0.4'
     unit: MG_PER_L
-  notes: 'CAS: 65-86-1; MW: 156.1; From Soil Defined Carbon Mix'
+  notes: 'CAS: 65-86-1; MW: 156.1; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16742
+    label: ''
 - preferred_term: Inosine
   concentration:
     value: '0.7000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 58-63-9; MW: 268.23; From Soil Defined Carbon Mix'
+  notes: 'CAS: 58-63-9; MW: 268.23; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: 2'-Deoxyinosine
   concentration:
     value: '0.7000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 890-38-0; MW: 252.23; From Soil Defined Carbon Mix'
+  notes: 'CAS: 890-38-0; MW: 252.23; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:28997
+    label: ''
 - preferred_term: Cytidine
   concentration:
     value: '0.6000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 65-46-3; MW: 243.22; From Soil Defined Carbon Mix'
+  notes: 'CAS: 65-46-3; MW: 243.22; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17562
+    label: ''
 - preferred_term: Choline chloride
   concentration:
     value: '0.30000000000000004'
@@ -327,12 +395,20 @@ ingredients:
   concentration:
     value: '0.7000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 58-61-7; MW: 267.241; From Soil Defined Carbon Mix'
+  notes: 'CAS: 58-61-7; MW: 267.241; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16335
+    label: ''
 - preferred_term: 2'-Deoxyuridine
   concentration:
     value: '0.6000000000000001'
     unit: MG_PER_L
-  notes: 'CAS: 951-78-0; MW: 228.2; From Soil Defined Carbon Mix'
+  notes: 'CAS: 951-78-0; MW: 228.2; From Soil Defined Carbon Mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16450
+    label: ''
 description: Northen lab media based on carbon sources found in soil extracts,  precurser
   to NLDM
 notes: 'Source: FEBA media definitions'

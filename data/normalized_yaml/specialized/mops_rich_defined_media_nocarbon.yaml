@@ -7,17 +7,26 @@ ingredients:
   concentration:
     value: '40'
     unit: MILLIMOLAR
-  notes: 'CAS: 1132-61-2; MW: 209.2633'
+  notes: 'CAS: 1132-61-2; MW: 209.2633; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:44115
+    label: ''
 - preferred_term: Tricine
   concentration:
     value: '4'
     unit: MILLIMOLAR
-  notes: 'CAS: 5704-04-1; MW: 179.17'
+  notes: 'CAS: 5704-04-1; MW: 179.17; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:39063
+    label: ''
 - preferred_term: Iron (II) sulfate heptahydrate
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '9.5'
@@ -31,7 +40,10 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
-  notes: 'CAS: 7784-24-9; MW: 474.39'
+  notes: 'CAS: 7784-24-9; MW: 474.39; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Calcium chloride
   concentration:
     value: '0.0005'
@@ -45,7 +57,10 @@ ingredients:
   concentration:
     value: '0.525'
     unit: MILLIMOLAR
-  notes: 'CAS: 7791-18-6; MW: 203.3'
+  notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Sodium Chloride
   concentration:
     value: '50'
@@ -71,22 +86,34 @@ ingredients:
   concentration:
     value: '3.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7791-13-1; MW: 237.93'
+  notes: 'CAS: 7791-13-1; MW: 237.93; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '1.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '8.00E-08'
     unit: MOLAR
-  notes: 'CAS: 13446-34-9; MW: 197.91'
+  notes: 'CAS: 13446-34-9; MW: 197.91; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '1.00E-08'
     unit: MOLAR
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Potassium phosphate dibasic
   concentration:
     value: '1.32'
@@ -99,7 +126,10 @@ ingredients:
   concentration:
     value: '1.5'
     unit: MILLIMOLAR
-  notes: 'CAS: 1310-58-3; MW: 56.11'
+  notes: 'CAS: 1310-58-3; MW: 56.11; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32035
+    label: ''
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '0.2'
@@ -109,7 +139,10 @@ ingredients:
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
-  notes: 'CAS: 71-30-7; MW: 111.1'
+  notes: 'CAS: 71-30-7; MW: 111.1; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:16040
+    label: ''
 - preferred_term: Uracil
   concentration:
     value: '0.2'
@@ -122,7 +155,10 @@ ingredients:
   concentration:
     value: '0.2'
     unit: MILLIMOLAR
-  notes: 'CAS: 73-40-5; MW: 151.13'
+  notes: 'CAS: 73-40-5; MW: 151.13; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: L-Alanine
   concentration:
     value: '0.8'
@@ -265,7 +301,10 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  notes: 'CAS: 7048-04-6; MW: 175.63'
+  notes: 'CAS: 7048-04-6; MW: 175.63; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:91248
+    label: ''
 - preferred_term: L-tyrosine
   concentration:
     value: '0.2'
@@ -294,17 +333,26 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 150-13-0; MW: 137.14'
+  notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: 4-Hydroxybenzoic Acid
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 99-96-7; MW: 138.12'
+  notes: 'CAS: 99-96-7; MW: 138.12; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:30763
+    label: ''
 - preferred_term: 2,3-dihydroxybenzoic acid
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 303-38-8; MW: 154.12'
+  notes: 'CAS: 303-38-8; MW: 154.12; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:18026
+    label: ''
 description: MOPS rich media with no carbon source
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

@@ -40,7 +40,10 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95'
+  notes: 'CAS: 10102-40-6; MW: 241.95; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium ferric EDTA
   concentration:
     value: '0.028'

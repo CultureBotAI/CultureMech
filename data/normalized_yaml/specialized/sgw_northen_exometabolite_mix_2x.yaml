@@ -58,12 +58,20 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.001'
@@ -77,22 +85,38 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix'
+  notes: 'CAS: 7782-63-0; MW: 278.01; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
     unit: G_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.0002'
     unit: G_PER_L
-  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix'
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.0001'
@@ -105,12 +129,20 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.003'
     unit: MG_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.1'
@@ -124,7 +156,11 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '0.05'
@@ -228,12 +264,20 @@ ingredients:
   concentration:
     value: '112.36'
     unit: MICROMOLAR
-  notes: 'CAS: 6138-23-4; MW: 378.33; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 6138-23-4; MW: 378.33; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:232797
+    label: ''
 - preferred_term: D-Arabinose
   concentration:
     value: '41.52'
     unit: MICROMOLAR
-  notes: 'CAS: 10323-20-3; MW: 150.13; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 10323-20-3; MW: 150.13; From Northen_Exometabolite_mix_1; Ontology
+    enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:46983
+    label: ''
 - preferred_term: D-Maltose monohydrate
   concentration:
     value: '33.080000000000005'
@@ -243,7 +287,11 @@ ingredients:
   concentration:
     value: '21.040000000000003'
     unit: MICROMOLAR
-  notes: 'CAS: 7643-75-6; MW: 152.146; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 7643-75-6; MW: 152.146; From Northen_Exometabolite_mix_1; Ontology
+    enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:18403
+    label: ''
 - preferred_term: L-Leucine
   concentration:
     value: '12.0'
@@ -320,12 +368,20 @@ ingredients:
   concentration:
     value: '7.88'
     unit: MICROMOLAR
-  notes: 'CAS: 3458-28-4; MW: 180.16; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 3458-28-4; MW: 180.16; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:37675
+    label: ''
 - preferred_term: Uridine
   concentration:
     value: '4.5'
     unit: MICROMOLAR
-  notes: 'CAS: 58-96-8; MW: 244.2; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 58-96-8; MW: 244.2; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16704
+    label: ''
 - preferred_term: Carnitine Hydrochloride
   concentration:
     value: '4.0'
@@ -394,7 +450,11 @@ ingredients:
   concentration:
     value: '4.0'
     unit: MICROMOLAR
-  notes: 'CAS: 372-75-8; MW: 175.19; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 372-75-8; MW: 175.19; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16349
+    label: ''
 - preferred_term: L-Aspartic Acid
   concentration:
     value: '4.0'
@@ -435,12 +495,20 @@ ingredients:
   concentration:
     value: '1.1800000000000002'
     unit: MICROMOLAR
-  notes: 'CAS: 463-00-3; MW: 145.16; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 463-00-3; MW: 145.16; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:15728
+    label: ''
 - preferred_term: Hypoxanthine
   concentration:
     value: '0.8400000000000001'
     unit: MICROMOLAR
-  notes: 'CAS: 68-94-0; MW: 136.11; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 68-94-0; MW: 136.11; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17368
+    label: ''
 - preferred_term: Uracil
   concentration:
     value: '0.6400000000000001'
@@ -463,12 +531,20 @@ ingredients:
   concentration:
     value: '0.6400000000000001'
     unit: MICROMOLAR
-  notes: 'CAS: 73-40-5; MW: 151.13; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 73-40-5; MW: 151.13; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Cytosine
   concentration:
     value: '0.6400000000000001'
     unit: MICROMOLAR
-  notes: 'CAS: 71-30-7; MW: 111.1; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 71-30-7; MW: 111.1; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16040
+    label: ''
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '0.6400000000000001'
@@ -478,32 +554,56 @@ ingredients:
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 50-89-5; MW: 242.23; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 50-89-5; MW: 242.23; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17748
+    label: ''
 - preferred_term: spermidine
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 124-20-9; MW: 145.25; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 124-20-9; MW: 145.25; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16610
+    label: ''
 - preferred_term: Orotic acid
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 65-86-1; MW: 156.1; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 65-86-1; MW: 156.1; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16742
+    label: ''
 - preferred_term: Inosine
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 58-63-9; MW: 268.23; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 58-63-9; MW: 268.23; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: 2'-Deoxyinosine
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 890-38-0; MW: 252.23; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 890-38-0; MW: 252.23; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:28997
+    label: ''
 - preferred_term: Cytidine
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 65-46-3; MW: 243.22; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 65-46-3; MW: 243.22; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:17562
+    label: ''
 - preferred_term: Choline chloride
   concentration:
     value: '0.52'
@@ -517,12 +617,20 @@ ingredients:
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 58-61-7; MW: 267.241; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 58-61-7; MW: 267.241; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16335
+    label: ''
 - preferred_term: 2'-Deoxyuridine
   concentration:
     value: '0.52'
     unit: MICROMOLAR
-  notes: 'CAS: 951-78-0; MW: 228.2; From Northen_Exometabolite_mix_1'
+  notes: 'CAS: 951-78-0; MW: 228.2; From Northen_Exometabolite_mix_1; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:16450
+    label: ''
 description: SGW media with Northen lab exometabolite mix 1
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

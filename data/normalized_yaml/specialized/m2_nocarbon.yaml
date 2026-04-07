@@ -52,7 +52,10 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: EDTA
   concentration:
     value: '0.008'

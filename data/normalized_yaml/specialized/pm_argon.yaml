@@ -60,7 +60,11 @@ ingredients:
   concentration:
     value: '0.0006979999999999999'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From UW concentrated base'
+  notes: 'CAS: 7782-63-0; MW: 278.01; From UW concentrated base; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: EDTA
   concentration:
     value: '0.00025'
@@ -74,7 +78,11 @@ ingredients:
   concentration:
     value: '0.001095'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From UW concentrated base'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From UW concentrated base; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.000154'
@@ -87,12 +95,20 @@ ingredients:
   concentration:
     value: '3.92e-05'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From UW concentrated base'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From UW concentrated base; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '2.5e-05'
     unit: G_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03; From UW concentrated base'
+  notes: 'CAS: 10026-22-9; MW: 291.03; From UW concentrated base; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86214
+    label: ''
 - preferred_term: sodium tetraborate decahydrate
   concentration:
     value: '1.77e-05'
@@ -102,12 +118,18 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MILLIMOLAR
-  notes: 'CAS: 10102-17-7; MW: 248.18'
+  notes: 'CAS: 10102-17-7; MW: 248.18; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: 4-Aminobenzoic acid
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14'
+  notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: '#argon'
   concentration:
     value: '100'

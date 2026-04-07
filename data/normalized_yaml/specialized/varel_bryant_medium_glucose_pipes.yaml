@@ -24,7 +24,11 @@ ingredients:
   concentration:
     value: '98.0'
     unit: MICROMOLAR
-  notes: 'CAS: 7791-18-6; MW: 203.3; From Mineral 3B solution'
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Mineral 3B solution; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '176.5'
@@ -38,12 +42,20 @@ ingredients:
   concentration:
     value: '4.2'
     unit: MICROMOLAR
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Mineral 3B solution'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Mineral 3B solution; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '50.5'
     unit: MICROMOLAR
-  notes: 'CAS: 13446-34-9; MW: 197.91; From Mineral 3B solution'
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Mineral 3B solution; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '9.3'
@@ -57,7 +69,11 @@ ingredients:
   concentration:
     value: '1.75'
     unit: MILLIMOLAR
-  notes: 'CAS: 7757-82-6; MW: 142.04; From Mineral 3B solution'
+  notes: 'CAS: 7757-82-6; MW: 142.04; From Mineral 3B solution; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Hemin
   concentration:
     value: '15'
@@ -79,7 +95,10 @@ ingredients:
   concentration:
     value: '15'
     unit: MICROMOLAR
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: L-Cysteine
   concentration:
     value: '8.25'

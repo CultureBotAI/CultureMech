@@ -72,12 +72,18 @@ ingredients:
   concentration:
     value: '10'
     unit: MG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14'
+  notes: 'CAS: 150-13-0; MW: 137.14; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: 2,3-dihydroxybenzoic acid
   concentration:
     value: '10'
     unit: MG_PER_L
-  notes: 'CAS: 303-38-8; MW: 154.12'
+  notes: 'CAS: 303-38-8; MW: 154.12; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:18026
+    label: ''
 description: E. coli defined media no carbon
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

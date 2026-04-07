@@ -70,22 +70,38 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91; From MME Trace Minerals'
+  notes: 'CAS: 13446-34-9; MW: 197.91; From MME Trace Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Diammonium molybdate
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 13106-76-8; MW: 196.02; From MME Trace Minerals'
+  notes: 'CAS: 13106-76-8; MW: 196.02; From MME Trace Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:91249
+    label: ''
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From MME Trace Minerals'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From MME Trace Minerals; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From MME Trace Minerals'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From MME Trace Minerals; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 description: Defined media without C and N from PNNL with TAPS
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

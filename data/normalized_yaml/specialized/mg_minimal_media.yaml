@@ -23,7 +23,10 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'CAS: 7772-98-7'
+  notes: 'CAS: 7772-98-7; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:132112
+    label: ''
 - preferred_term: Sodium nitrate
   concentration:
     value: '0.12'
@@ -110,7 +113,11 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Modified Wolfe''s Minerals'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Modified Wolfe''s Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.0005'
@@ -124,12 +131,20 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From Modified Wolfe''s Minerals'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Modified Wolfe''s Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.0001'
     unit: G_PER_L
-  notes: 'CAS: 7784-24-9; MW: 474.39; From Modified Wolfe''s Minerals'
+  notes: 'CAS: 7784-24-9; MW: 474.39; From Modified Wolfe''s Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: 5e-05
@@ -142,7 +157,11 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Modified Wolfe''s Minerals'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Modified Wolfe''s Minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: pyridoxine HCl
   concentration:
     value: '0.1'
@@ -156,7 +175,11 @@ ingredients:
   concentration:
     value: '0.05'
     unit: MG_PER_L
-  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix'
+  notes: 'CAS: 150-13-0; MW: 137.14; From Wolfe''s vitamin mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '0.05'

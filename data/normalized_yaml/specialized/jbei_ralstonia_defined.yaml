@@ -39,12 +39,18 @@ ingredients:
   concentration:
     value: '2.60'
     unit: MILLIMOLAR
-  notes: 'CAS: 7778-80-5; MW: 174.259'
+  notes: 'CAS: 7778-80-5; MW: 174.259; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Sodium Hydroxide
   concentration:
     value: '1.00'
     unit: MILLIMOLAR
-  notes: 'CAS: 1310-73-2; MW: 40.0'
+  notes: 'CAS: 1310-73-2; MW: 40.0; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32145
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '1.87'
@@ -58,12 +64,18 @@ ingredients:
   concentration:
     value: '0.00048'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69'
+  notes: 'CAS: 7758-99-8; MW: 249.69; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.0024'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56'
+  notes: 'CAS: 7446-20-0; MW: 287.56; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Manganese (II) sulfate monohydrate
   concentration:
     value: '0.0024'
@@ -76,7 +88,10 @@ ingredients:
   concentration:
     value: '0.015'
     unit: G_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01'
+  notes: 'CAS: 7782-63-0; MW: 278.01; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 description: JBEI media for growing Ralstonia
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

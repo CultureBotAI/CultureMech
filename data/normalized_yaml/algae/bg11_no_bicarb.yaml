@@ -70,27 +70,47 @@ ingredients:
   concentration:
     value: '0.0018100000000000002'
     unit: G_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5'
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Trace metal mix A5; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Zinc sulfate heptahydrate
   concentration:
     value: '0.000222'
     unit: G_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From Trace metal mix A5; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.00039000000000000005'
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Trace metal mix A5; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '7.9e-05'
     unit: G_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From Trace metal mix A5; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '0.0494'
     unit: MG_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5'
+  notes: 'CAS: 10026-22-9; MW: 291.03; From Trace metal mix A5; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86214
+    label: ''
 description: For growing cyanobacteria, from Luis; no sodium bicarbonate
 notes: 'Source: FEBA media definitions'
 category: ALGAE

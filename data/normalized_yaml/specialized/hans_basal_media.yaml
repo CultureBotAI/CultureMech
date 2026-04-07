@@ -38,12 +38,18 @@ ingredients:
   concentration:
     value: '0.10'
     unit: G_PER_L
-  notes: 'CAS: 7791-18-6; MW: 203.3'
+  notes: 'CAS: 7791-18-6; MW: 203.3; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Sodium sulfate
   concentration:
     value: '0.10'
     unit: G_PER_L
-  notes: 'CAS: 7757-82-6; MW: 142.04'
+  notes: 'CAS: 7757-82-6; MW: 142.04; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '0.25'
@@ -65,7 +71,11 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: G_PER_L
-  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur-free DL minerals'
+  notes: 'CAS: 7791-18-6; MW: 203.3; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Nitrilotriacetic acid disodium salt
   concentration:
     value: '0.00015'
@@ -83,12 +93,20 @@ ingredients:
   concentration:
     value: 5e-05
     unit: G_PER_L
-  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur-free DL minerals'
+  notes: 'CAS: 13446-34-9; MW: 197.91; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Cobalt chloride hexahydrate
   concentration:
     value: 1e-05
     unit: G_PER_L
-  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur-free DL minerals'
+  notes: 'CAS: 7791-13-1; MW: 237.93; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53503
+    label: ''
 - preferred_term: Zinc chloride
   concentration:
     value: '1.3e-05'
@@ -107,12 +125,20 @@ ingredients:
   concentration:
     value: 1e-05
     unit: G_PER_L
-  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur-free DL minerals'
+  notes: 'CAS: 13478-10-9; MW: 198.81; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86249
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '2.5e-06'
     unit: G_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur-free DL minerals'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Aluminum chloride hydrate
   concentration:
     value: '2.0000000000000003e-06'
@@ -135,17 +161,29 @@ ingredients:
   concentration:
     value: '1.0000000000000002e-06'
     unit: G_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur-free DL minerals'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: 3e-05
     unit: G_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur-free DL minerals'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '2.5e-05'
     unit: G_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur-free DL minerals'
+  notes: 'CAS: 10213-10-2; MW: 329.85; From Sulfur-free DL minerals; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: d-Biotin
   concentration:
     value: '0.0002'

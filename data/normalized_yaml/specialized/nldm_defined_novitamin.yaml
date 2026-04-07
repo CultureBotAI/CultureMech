@@ -70,12 +70,20 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7782-63-0; MW: 278.01; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Cobalt(II) nitrate hexahydrate
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10026-22-9; MW: 291.03; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86214
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '1.0'
@@ -89,17 +97,29 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MG_PER_L
-  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7446-20-0; MW: 287.56; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Copper (II) sulfate pentahydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7758-99-8; MW: 249.69; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Aluminum potassium sulfate dodecahydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7784-24-9; MW: 474.39; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.1'
@@ -112,22 +132,38 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10102-40-6; MW: 241.95; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: Sodium selenite pentahydrate
   concentration:
     value: '0.01'
     unit: MG_PER_L
-  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 26970-82-1; MW: 263.01; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:131361
+    label: ''
 - preferred_term: Sodium tungstate dihydrate
   concentration:
     value: '0.1'
     unit: MG_PER_L
-  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 10213-10-2; MW: 329.85; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: Nickel (II) chloride hexahydrate
   concentration:
     value: '0.2'
     unit: MG_PER_L
-  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix'
+  notes: 'CAS: 7791-20-0; MW: 237.69; From ATCC Wolfe''s mineral mix; Ontology enriched
+    via CAS-RN lookup'
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: Sodium phosphate dibasic
   concentration:
     value: '3.05'
@@ -163,12 +199,20 @@ ingredients:
   concentration:
     value: '875.0'
     unit: MICROMOLAR
-  notes: 'CAS: 6138-23-4; MW: 378.33; From NLDM_metabolites'
+  notes: 'CAS: 6138-23-4; MW: 378.33; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:232797
+    label: ''
 - preferred_term: m-Inositol
   concentration:
     value: '875.0'
     unit: MICROMOLAR
-  notes: 'CAS: 87-89-8; MW: 180.16; From NLDM_metabolites'
+  notes: 'CAS: 87-89-8; MW: 180.16; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:10642
+    label: ''
 - preferred_term: D-Xylose
   concentration:
     value: '875.0'
@@ -227,7 +271,11 @@ ingredients:
   concentration:
     value: '525.0'
     unit: MICROMOLAR
-  notes: 'CAS: 6106-21-4; MW: 270.14; From NLDM_metabolites'
+  notes: 'CAS: 6106-21-4; MW: 270.14; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:63686
+    label: ''
 - preferred_term: Sodium pyruvate
   concentration:
     value: '525.0'
@@ -246,7 +294,11 @@ ingredients:
   concentration:
     value: '525.0'
     unit: MICROMOLAR
-  notes: 'CAS: 372-75-8; MW: 175.19; From NLDM_metabolites'
+  notes: 'CAS: 372-75-8; MW: 175.19; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:16349
+    label: ''
 - preferred_term: L-Alanine
   concentration:
     value: '175.0'
@@ -430,7 +482,11 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 1463-10-1; MW: 258.23; From NLDM_metabolites'
+  notes: 'CAS: 1463-10-1; MW: 258.23; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:45996
+    label: ''
 - preferred_term: Adenine hydrochloride hydrate
   concentration:
     value: '17.5'
@@ -440,42 +496,74 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 58-61-7; MW: 267.241; From NLDM_metabolites'
+  notes: 'CAS: 58-61-7; MW: 267.241; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:16335
+    label: ''
 - preferred_term: Cytidine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 65-46-3; MW: 243.22; From NLDM_metabolites'
+  notes: 'CAS: 65-46-3; MW: 243.22; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:17562
+    label: ''
 - preferred_term: Cytosine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 71-30-7; MW: 111.1; From NLDM_metabolites'
+  notes: 'CAS: 71-30-7; MW: 111.1; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:16040
+    label: ''
 - preferred_term: Guanine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 73-40-5; MW: 151.13; From NLDM_metabolites'
+  notes: 'CAS: 73-40-5; MW: 151.13; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Guanosine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 118-00-3; MW: 283.24; From NLDM_metabolites'
+  notes: 'CAS: 118-00-3; MW: 283.24; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:16750
+    label: ''
 - preferred_term: Hypoxanthine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 68-94-0; MW: 136.11; From NLDM_metabolites'
+  notes: 'CAS: 68-94-0; MW: 136.11; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:17368
+    label: ''
 - preferred_term: Inosine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 58-63-9; MW: 268.23; From NLDM_metabolites'
+  notes: 'CAS: 58-63-9; MW: 268.23; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Thymine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 65-71-4; MW: 126.11; From NLDM_metabolites'
+  notes: 'CAS: 65-71-4; MW: 126.11; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:17821
+    label: ''
 - preferred_term: Uracil
   concentration:
     value: '17.5'
@@ -489,17 +577,29 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 58-96-8; MW: 244.2; From NLDM_metabolites'
+  notes: 'CAS: 58-96-8; MW: 244.2; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:16704
+    label: ''
 - preferred_term: Xanthine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 69-89-6; MW: 152.11; From NLDM_metabolites'
+  notes: 'CAS: 69-89-6; MW: 152.11; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:17712
+    label: ''
 - preferred_term: Xanthosine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 146-80-5; MW: 284.228; From NLDM_metabolites'
+  notes: 'CAS: 146-80-5; MW: 284.228; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:18107
+    label: ''
 - preferred_term: Gamma-Aminobutyric Acid Hydrochloride
   concentration:
     value: '17.5'
@@ -509,7 +609,11 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 96702-03-3; MW: 142.158; From NLDM_metabolites'
+  notes: 'CAS: 96702-03-3; MW: 142.158; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:27592
+    label: ''
 - preferred_term: Trimethylglycine
   concentration:
     value: '17.5'
@@ -522,7 +626,11 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 5817-08-3; MW: 189.167; From NLDM_metabolites'
+  notes: 'CAS: 5817-08-3; MW: 189.167; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:172431
+    label: ''
 - preferred_term: Nicotinamide
   concentration:
     value: '17.5'
@@ -536,27 +644,46 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 70-26-8; MW: 132.16; From NLDM_metabolites'
+  notes: 'CAS: 70-26-8; MW: 132.16; From NLDM_metabolites; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:15729
+    label: ''
 - preferred_term: Shikimic Acid
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 138-59-0; From NLDM_metabolites'
+  notes: 'CAS: 138-59-0; From NLDM_metabolites; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:16119
+    label: ''
 - preferred_term: spermidine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 124-20-9; MW: 145.25; From NLDM_metabolites'
+  notes: 'CAS: 124-20-9; MW: 145.25; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:16610
+    label: ''
 - preferred_term: Taurine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 107-35-7; MW: 125.14; From NLDM_metabolites'
+  notes: 'CAS: 107-35-7; MW: 125.14; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:15891
+    label: ''
 - preferred_term: Trigonelline HCl
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 6138-41-6; MW: 173.6; From NLDM_metabolites'
+  notes: 'CAS: 6138-41-6; MW: 173.6; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:229203
+    label: ''
 - preferred_term: Carnitine Hydrochloride
   concentration:
     value: '17.5'
@@ -575,22 +702,38 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 5817-09-4; MW: 188.183; From NLDM_metabolites'
+  notes: 'CAS: 5817-09-4; MW: 188.183; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:73685
+    label: ''
 - preferred_term: n-Acetyl-lysine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 1946-82-3; MW: 188.227; From NLDM_metabolites'
+  notes: 'CAS: 1946-82-3; MW: 188.227; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:35704
+    label: ''
 - preferred_term: n-Acetyl-muramic acid
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 10597-89-4; MW: 293.272; From NLDM_metabolites'
+  notes: 'CAS: 10597-89-4; MW: 293.272; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:47966
+    label: ''
 - preferred_term: sn-glycero-3-phosphocholine
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: 'CAS: 28319-77-9; MW: 257.2; From NLDM_metabolites'
+  notes: 'CAS: 28319-77-9; MW: 257.2; From NLDM_metabolites; Ontology enriched via
+    CAS-RN lookup'
+  term:
+    id: CHEBI:16870
+    label: ''
 description: Northen lab metabolite media
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

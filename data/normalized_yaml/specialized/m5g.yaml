@@ -74,7 +74,10 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
-  notes: 'CAS: 15275-07-7; MW: 344.057'
+  notes: 'CAS: 15275-07-7; MW: 344.057; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:30729
+    label: ''
 - preferred_term: D-Glucose
   concentration:
     value: '11.1'

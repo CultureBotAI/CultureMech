@@ -11,7 +11,10 @@ ingredients:
   concentration:
     value: '-'
     unit: G_PER_L
-  notes: 'CAS: 73-40-5; MW: 151.13'
+  notes: 'CAS: 73-40-5; MW: 151.13; Ontology enriched via CAS-RN lookup'
+  term:
+    id: CHEBI:16235
+    label: ''
 description: Media for culturing Bifidobacterium minus guanine
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

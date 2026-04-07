@@ -262,7 +262,11 @@ ingredients:
   concentration:
     value: '0.002'
     unit: MOLAR
-  notes: 'CAS: 1132-61-2; MW: 209.2633; From MOPS_2M_pH7'
+  notes: 'CAS: 1132-61-2; MW: 209.2633; From MOPS_2M_pH7; Ontology enriched via CAS-RN
+    lookup'
+  term:
+    id: CHEBI:44115
+    label: ''
 - preferred_term: NaOH
   concentration:
     value: '0.0005'
