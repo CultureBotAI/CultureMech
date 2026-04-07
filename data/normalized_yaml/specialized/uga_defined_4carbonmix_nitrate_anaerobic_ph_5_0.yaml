@@ -252,7 +252,10 @@ ingredients:
   concentration:
     value: '2.5'
     unit: MILLIMOLAR
-  notes: From 4 Carbon Mix
+  notes: From 4 Carbon Mix; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:30746
+    label: ''
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'

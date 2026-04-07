@@ -112,10 +112,18 @@ ingredients:
   concentration:
     value: '25'
     unit: PERCENT_W_V
+  term:
+    id: CHEBI:17045
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: '#Ar'
   concentration:
     value: '75'
     unit: PERCENT_W_V
+  term:
+    id: CHEBI:49474
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 description: Harwood UW defined media for growing RPal in presence of 75% argon and
   25% N2O
 notes: 'Source: FEBA media definitions'

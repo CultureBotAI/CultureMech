@@ -45,6 +45,10 @@ ingredients:
   concentration:
     value: '0.37'
     unit: G_PER_L
+  term:
+    id: CHEBI:15671
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Potassium phosphate monobasic
   concentration:
     value: '0.68'

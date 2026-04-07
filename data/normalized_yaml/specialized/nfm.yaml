@@ -103,6 +103,10 @@ ingredients:
   concentration:
     value: in headspace
     unit: G_PER_L
+  term:
+    id: CHEBI:17997
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 description: Harwood UW defined media for growing RPal, N2 is nitrogen source
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

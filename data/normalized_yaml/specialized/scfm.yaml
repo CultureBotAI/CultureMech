@@ -31,10 +31,18 @@ ingredients:
   concentration:
     value: '0.249917'
     unit: G_PER_L
+  term:
+    id: CHEBI:86158
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: MgCl*6H2O
   concentration:
     value: '0.12198'
     unit: G_PER_L
+  term:
+    id: CHEBI:86345
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: KNO3
   concentration:
     value: '0.0351828'
@@ -47,6 +55,10 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
+  term:
+    id: CHEBI:86249
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Na2SO4
   concentration:
     value: '0.038'
@@ -395,7 +407,10 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: MG_PER_L
-  notes: From DL vitamins
+  notes: From DL vitamins; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:194474
+    label: ''
 - preferred_term: D,L-6,8-Thioctic Acid
   concentration:
     value: '0.0005'

@@ -71,6 +71,10 @@ ingredients:
   concentration:
     value: '0.0004'
     unit: G_PER_L
+  term:
+    id: CHEBI:75832
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Tryptone
   concentration:
     value: '10'

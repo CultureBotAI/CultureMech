@@ -238,6 +238,10 @@ ingredients:
   concentration:
     value: '10'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:65242
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 description: Defined media for Dechlorosoma suillum PS, pH should be 7.2
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

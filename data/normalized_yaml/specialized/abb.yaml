@@ -95,6 +95,10 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:42106
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.5'

@@ -604,7 +604,10 @@ ingredients:
   concentration:
     value: '17.5'
     unit: MICROMOLAR
-  notes: From NLDM_metabolites
+  notes: From NLDM_metabolites; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:17750
+    label: ''
 - preferred_term: N-Acetyl-glutamic acid
   concentration:
     value: '17.5'

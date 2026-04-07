@@ -23,7 +23,10 @@ ingredients:
   concentration:
     value: '5.6'
     unit: G_PER_L
-  notes: From Mc_general_salts_SO4free
+  notes: From Mc_general_salts_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: calcium chloride
   concentration:
     value: '0.105'
@@ -60,21 +63,34 @@ ingredients:
   concentration:
     value: '0.0095'
     unit: G_PER_L
+  term:
+    id: CHEBI:86249
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: sodium citrate dihydrate
   concentration:
     value: '0.021'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:32142
+    label: ''
 - preferred_term: manganese(II) chloride tetrahydrate
   concentration:
     value: '0.005'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: cobalt chloride
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: zinc chloride
   concentration:
     value: '0.001'
@@ -102,7 +118,10 @@ ingredients:
   concentration:
     value: '0.001'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:75213
+    label: ''
 - preferred_term: nickel (II) chloride hexahydrate
   concentration:
     value: '0.00025'
@@ -112,7 +131,10 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:77775
+    label: ''
 - preferred_term: vanadium chloride
   concentration:
     value: '0.0001'
@@ -122,7 +144,10 @@ ingredients:
   concentration:
     value: '3.3e-05'
     unit: G_PER_L
-  notes: From Mc_trace_minerals_SO4free
+  notes: From Mc_trace_minerals_SO4free; Ontology enriched via CAS-RN lookup
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: resazurin sodium salt
   concentration:
     value: '0.001'
@@ -153,6 +178,10 @@ ingredients:
   concentration:
     value: '0.50'
     unit: G_PER_L
+  term:
+    id: CHEBI:42106
+    label: ''
+  notes: Ontology enriched via CAS-RN lookup
 - preferred_term: Sodium sulfide nonahydrate
   concentration:
     value: '1.00E-03'
