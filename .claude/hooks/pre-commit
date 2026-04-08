@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Claude Code Pre-Commit Hook
+# Checks if repo is locked before allowing commits
+#
+# This hook is called before Claude creates a commit.
+# If it exits with non-zero, the commit is blocked.
+#
+
+# Configuration
+ORCHESTRATION_ROOT="/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe-orchestration"
+REPO_NAME="culturemech"  # Will be replaced during installation
+
+# Check lock
+python3 "$ORCHESTRATION_ROOT/scripts/check_lock.py" "$REPO_NAME" "commit changes"
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -eq 0 ]; then
+    # No lock, proceed with commit
+    exit 0
+elif [ $EXIT_CODE -eq 1 ]; then
+    # Locked, block commit
+    echo ""
+    echo "✋ Commit blocked by lock system"
+    echo ""
+    exit 1
+else
+    # Error
+    echo "⚠️  Lock check failed, allowing commit (fail-open)"
+    exit 0
+fi

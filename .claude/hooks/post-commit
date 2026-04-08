@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+# Claude Code Post-Commit Hook
+# Updates status file after successful commit
+#
+# This hook is called after Claude successfully creates a commit.
+#
+
+# Configuration
+ORCHESTRATION_ROOT="/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/kg-microbe-orchestration"
+REPO_NAME="culturemech"  # Will be replaced during installation
+STATUS_DIR="$ORCHESTRATION_ROOT/status"
+CLAUDE_ID="${REPO_NAME}_claude"
+
+# Get commit message (first line)
+COMMIT_MSG=$(git log -1 --pretty=%s 2>/dev/null || echo "unknown")
+
+# Update status
+cat > "$STATUS_DIR/${CLAUDE_ID}_status.yaml" <<EOF
+last_updated: '$(date -u +%Y-%m-%dT%H:%M:%SZ)'
+status: idle
+current_operation: null
+last_completed_operation:
+  type: commit
+  timestamp: '$(date -u +%Y-%m-%dT%H:%M:%SZ)'
+  result: success
+  details:
+    commit_message: '$COMMIT_MSG'
+next_available_at: '$(date -u +%Y-%m-%dT%H:%M:%SZ)'
+EOF
+
+# Always succeed
+exit 0
