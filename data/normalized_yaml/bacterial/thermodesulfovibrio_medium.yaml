@@ -73,3 +73,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "THERMODESULFOVIBRIO MEDIUM" to "thermodesulfovibrio_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:J479

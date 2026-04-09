@@ -49,3 +49,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DILUTED MARINE AGAR" to "diluted_marine_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

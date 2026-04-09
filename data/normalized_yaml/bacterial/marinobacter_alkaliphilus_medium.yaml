@@ -60,3 +60,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINOBACTER ALKALIPHILUS MEDIUM" to "marinobacter_alkaliphilus_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:634c

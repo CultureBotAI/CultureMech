@@ -101,3 +101,4 @@ curation_history:
   notes: Normalized name from "Luria Broth (LB) medium supplemented with the appropriate
     antibiotics" to "luria_broth_lb_medium_supplemented_with_the_appropriate_antibiotics"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

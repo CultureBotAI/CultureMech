@@ -68,3 +68,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ENRICHED CYTOPHAGA AGAR" to "enriched_cytophaga_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:1133

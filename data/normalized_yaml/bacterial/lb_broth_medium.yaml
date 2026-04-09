@@ -94,3 +94,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB broth medium" to "lb_broth_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:74

@@ -58,3 +58,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB (LURIA-BERTANI) BROTH WITH 1 mM DTT" to "lb_luria_bertani_broth_with_1_mm_dtt"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

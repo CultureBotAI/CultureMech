@@ -46,3 +46,4 @@ curation_history:
   notes: Normalized name from "JCM MEDIUM No. 69" to "jcm_medium_no_69" for consistent
     matching
 high_metal: true
+kg_microbe_match: mediadive.medium:74

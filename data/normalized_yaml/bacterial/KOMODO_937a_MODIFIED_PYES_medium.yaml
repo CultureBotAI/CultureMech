@@ -66,3 +66,4 @@ curation_history:
   notes: Normalized name from "MODIFIED PYES medium" to "modified_pyes_medium" for
     consistent matching
 ph_value: 7.2
+kg_microbe_match: mediadive.medium:937

@@ -51,3 +51,4 @@ curation_history:
   notes: Normalized name from "OAT FLAKE medium" to "oat_flake_medium" for consistent
     matching
 ph_value: 6.0
+kg_microbe_match: mediadive.medium:12

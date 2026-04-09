@@ -55,3 +55,4 @@ curation_history:
   notes: Normalized name from "RCM medium (halophilic clostridia)" to "rcm_medium_halophilic_clostridia"
     for consistent matching
 ph_value: 6.8
+kg_microbe_match: mediadive.medium:634c

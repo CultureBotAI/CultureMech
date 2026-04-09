@@ -72,3 +72,4 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "VY/2-ASW Agar" to "vy_2_asw_agar" for consistent matching
+kg_microbe_match: mediadive.medium:J341

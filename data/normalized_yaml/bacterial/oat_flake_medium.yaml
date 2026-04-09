@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "OAT FLAKE MEDIUM" to "oat_flake_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

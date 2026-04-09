@@ -73,3 +73,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CYC AGAR (pH 8.0)" to "cyc_agar_ph_8_0" for consistent
     matching
+kg_microbe_match: mediadive.medium:550

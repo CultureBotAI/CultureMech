@@ -100,3 +100,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Rhizobium medium for isolation" to "rhizobium_medium_for_isolation"
     for consistent matching
+kg_microbe_match: mediadive.medium:1848

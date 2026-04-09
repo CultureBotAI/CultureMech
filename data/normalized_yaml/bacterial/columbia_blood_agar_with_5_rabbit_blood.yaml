@@ -163,3 +163,4 @@ data_quality_flags:
   has_ontology_mappings: true
   ingredients_curated: true
   commercial_product: true
+kg_microbe_match: mediadive.medium:687

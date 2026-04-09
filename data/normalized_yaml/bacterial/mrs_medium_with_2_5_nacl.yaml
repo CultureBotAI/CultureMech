@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM WITH 2.5% NaCl" to "mrs_medium_with_2_5_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

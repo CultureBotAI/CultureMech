@@ -60,3 +60,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT AGAR or BROTH WITH NaCl" to "nutrient_agar_or_broth_with_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

@@ -111,3 +111,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "COLUMBIA AGAR WITH 5% SHEEP BLOOD" to "columbia_agar_with_5_sheep_blood"
     for consistent matching
+kg_microbe_match: mediadive.medium:687

@@ -67,3 +67,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TOGO Medium M1447" to "togo_medium_m1447" for consistent
     matching
+kg_microbe_match: mediadive.medium:790

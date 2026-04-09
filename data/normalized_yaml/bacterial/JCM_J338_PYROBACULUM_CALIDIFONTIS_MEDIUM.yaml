@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PYROBACULUM CALIDIFONTIS MEDIUM" to "pyrobaculum_calidifontis_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:1090

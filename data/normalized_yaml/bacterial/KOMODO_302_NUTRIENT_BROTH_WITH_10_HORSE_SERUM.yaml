@@ -60,3 +60,4 @@ curation_history:
   notes: Normalized name from "NUTRIENT BROTH WITH 10% HORSE SERUM" to "nutrient_broth_with_10_horse_serum"
     for consistent matching
 ph_value: 7.0
+kg_microbe_match: mediadive.medium:12

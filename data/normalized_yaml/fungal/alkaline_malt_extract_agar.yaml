@@ -70,3 +70,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALKALINE MALT EXTRACT AGAR" to "alkaline_malt_extract_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:J147

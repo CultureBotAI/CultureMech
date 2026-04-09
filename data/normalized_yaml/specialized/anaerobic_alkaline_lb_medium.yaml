@@ -73,3 +73,4 @@ curation_history:
   notes: Normalized name from "ANAEROBIC ALKALINE LB MEDIUM" to "anaerobic_alkaline_lb_medium"
     for consistent matching
 high_metal: true
+kg_microbe_match: mediadive.medium:J1111

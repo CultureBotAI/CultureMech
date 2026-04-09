@@ -92,3 +92,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BME/CTVM2 cell line medium (Occidentia massiliensis)"
     to "bme_ctvm2_cell_line_medium_occidentia_massiliensis" for consistent matching
+kg_microbe_match: mediadive.medium:1670

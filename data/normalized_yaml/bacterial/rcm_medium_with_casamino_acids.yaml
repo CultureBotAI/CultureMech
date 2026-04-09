@@ -63,3 +63,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (with Casamino acids)" to "rcm_medium_with_casamino_acids"
     for consistent matching
+kg_microbe_match: mediadive.medium:634a

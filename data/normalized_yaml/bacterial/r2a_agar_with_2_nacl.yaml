@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "R2A AGAR WITH 2% NaCl" to "r2a_agar_with_2_nacl" for
     consistent matching
+kg_microbe_match: mediadive.medium:101

@@ -45,3 +45,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE BROTH 2216 WITH CELLOBIOSE" to "marine_broth_2216_with_cellobiose"
     for consistent matching
+kg_microbe_match: mediadive.medium:J1127

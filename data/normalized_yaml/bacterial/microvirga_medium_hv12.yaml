@@ -58,3 +58,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MICROVIRGA MEDIUM (HV12)" to "microvirga_medium_hv12"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

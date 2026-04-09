@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE BROTH 2216 WITH PYRUVATE" to "marine_broth_2216_with_pyruvate"
     for consistent matching
+kg_microbe_match: mediadive.medium:J1244

@@ -63,3 +63,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT BROTH WITH 10% HORSE SERUM" to "nutrient_broth_with_10_horse_serum"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

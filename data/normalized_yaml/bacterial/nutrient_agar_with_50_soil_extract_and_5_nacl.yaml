@@ -69,3 +69,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl" to
     "nutrient_agar_with_50_soil_extract_and_5_nacl" for consistent matching
+kg_microbe_match: mediadive.medium:101

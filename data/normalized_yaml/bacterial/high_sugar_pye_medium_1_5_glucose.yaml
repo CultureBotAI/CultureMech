@@ -81,3 +81,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "High-sugar PYE medium (1.5% glucose)" to "high_sugar_pye_medium_1_5_glucose"
     for consistent matching
+kg_microbe_match: mediadive.medium:914

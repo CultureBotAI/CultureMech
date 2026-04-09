@@ -52,3 +52,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SPHAEROTILUS medium" to "sphaerotilus_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

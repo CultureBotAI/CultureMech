@@ -45,3 +45,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HORIKOSHI-1 MEDIUM WITH 10% NaCl" to "horikoshi_1_medium_with_10_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

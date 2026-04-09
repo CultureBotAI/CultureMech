@@ -41,3 +41,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PATEL LABORATORY MEDIUM WITH GLYCERIN" to "patel_laboratory_medium_with_glycerin"
     for consistent matching
+kg_microbe_match: mediadive.medium:J780

@@ -49,3 +49,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MRS MEDIUM WITH SOYBEAN PEPTONE" to "mrs_medium_with_soybean_peptone"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

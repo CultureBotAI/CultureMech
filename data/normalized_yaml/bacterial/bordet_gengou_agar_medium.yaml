@@ -69,3 +69,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Bordet Gengou Agar Medium" to "bordet_gengou_agar_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:780

@@ -80,3 +80,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM 884 MODIFIED FOR DSM 13023" to "medium_884_modified_for_dsm_13023"
     for consistent matching
+kg_microbe_match: mediadive.medium:884

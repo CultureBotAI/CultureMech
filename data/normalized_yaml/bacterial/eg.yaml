@@ -73,3 +73,4 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "EG" to "eg" for consistent matching
+kg_microbe_match: mediadive.medium:C26

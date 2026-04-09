@@ -47,3 +47,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ALKALI-REINFORCED CLOSTRIDIAL AGAR" to "alkali_reinforced_clostridial_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

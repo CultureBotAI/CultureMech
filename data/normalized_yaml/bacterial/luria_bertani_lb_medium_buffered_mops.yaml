@@ -99,3 +99,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Luria Bertani (LB) medium (buffered MOPS)" to "luria_bertani_lb_medium_buffered_mops"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

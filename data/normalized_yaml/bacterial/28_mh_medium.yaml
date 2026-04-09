@@ -126,3 +126,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "28% MH MEDIUM" to "28_mh_medium" for consistent matching
 high_metal: true
+kg_microbe_match: mediadive.medium:1460

@@ -65,3 +65,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VIBRIO NATRIEGENS medium" to "vibrio_natriegens_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

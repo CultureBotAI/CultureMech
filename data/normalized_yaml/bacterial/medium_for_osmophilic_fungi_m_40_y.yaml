@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)" to "medium_for_osmophilic_fungi_m_40_y"
     for consistent matching
+kg_microbe_match: mediadive.medium:187

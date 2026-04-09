@@ -50,3 +50,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE" to "brucella_blood_agar_with_hemin_menadione"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

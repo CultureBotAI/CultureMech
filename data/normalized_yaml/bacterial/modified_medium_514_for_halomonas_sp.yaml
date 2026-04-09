@@ -62,3 +62,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED MEDIUM 514 FOR HALOMONAS SP." to "modified_medium_514_for_halomonas_sp"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

@@ -52,3 +52,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "brain-heart infusion broth (with glucose)" to "brain_heart_infusion_broth_with_glucose"
     for consistent matching
+kg_microbe_match: mediadive.medium:21

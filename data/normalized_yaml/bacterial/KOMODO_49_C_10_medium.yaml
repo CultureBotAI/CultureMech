@@ -60,3 +60,4 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "C/10 medium" to "c_10_medium" for consistent matching
+kg_microbe_match: mediadive.medium:49

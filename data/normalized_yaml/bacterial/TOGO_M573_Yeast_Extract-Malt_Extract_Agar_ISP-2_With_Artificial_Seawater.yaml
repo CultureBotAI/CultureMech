@@ -79,3 +79,4 @@ curation_history:
   notes: Normalized name from "Yeast Extract-Malt Extract Agar (ISP-2) With Artificial
     Seawater" to "yeast_extract_malt_extract_agar_isp_2_with_artificial_seawater"
     for consistent matching
+kg_microbe_match: mediadive.medium:7

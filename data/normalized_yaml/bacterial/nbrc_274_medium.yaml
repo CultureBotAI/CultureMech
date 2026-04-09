@@ -69,3 +69,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NBRC 274 MEDIUM" to "nbrc_274_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:1133

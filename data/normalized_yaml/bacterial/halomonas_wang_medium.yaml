@@ -76,3 +76,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOMONAS WANG MEDIUM" to "halomonas_wang_medium" for
     consistent matching
+kg_microbe_match: mediadive.medium:1393

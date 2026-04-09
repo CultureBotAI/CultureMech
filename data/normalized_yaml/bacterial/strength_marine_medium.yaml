@@ -59,3 +59,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "½ Strength Marine Medium" to "strength_marine_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

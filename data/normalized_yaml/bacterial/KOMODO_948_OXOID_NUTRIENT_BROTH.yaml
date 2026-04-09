@@ -63,3 +63,4 @@ curation_history:
   notes: Normalized name from "OXOID NUTRIENT BROTH" to "oxoid_nutrient_broth" for
     consistent matching
 ph_value: 7.2
+kg_microbe_match: mediadive.medium:74

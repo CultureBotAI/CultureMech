@@ -66,3 +66,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "PARACOCCUS HALODENITRIFICANS MEDIUM" to "paracoccus_halodenitrificans_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

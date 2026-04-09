@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 5% NaCl" to
     "inorganic_salts_starch_agar_isp_4_with_5_nacl" for consistent matching
+kg_microbe_match: mediadive.medium:101

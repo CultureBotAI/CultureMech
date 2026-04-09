@@ -68,3 +68,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB AGAR WITH MnSO<sub>4</sub>" to "lb_agar_with_mnso_sub_4_sub"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

@@ -58,3 +58,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTONE-YEAST EXTRACT (ISP-1) AGAR" to "tryptone_yeast_extract_isp_1_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

@@ -114,3 +114,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB + glucose (10 g/L) medium" to "lb_glucose_10_g_l_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:681

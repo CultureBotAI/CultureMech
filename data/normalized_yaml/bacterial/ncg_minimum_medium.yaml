@@ -57,3 +57,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NCG (minimum medium)" to "ncg_minimum_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:780

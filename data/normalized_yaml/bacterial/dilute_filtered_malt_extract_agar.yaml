@@ -50,3 +50,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "DILUTE FILTERED MALT EXTRACT AGAR" to "dilute_filtered_malt_extract_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

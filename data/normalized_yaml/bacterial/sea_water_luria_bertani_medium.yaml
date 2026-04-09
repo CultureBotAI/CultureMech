@@ -58,3 +58,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "SEA WATER LURIA BERTANI MEDIUM" to "sea_water_luria_bertani_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

@@ -82,3 +82,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Modified CSY-3 Agar" to "modified_csy_3_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:J802

@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl"
     to "nutrient_agar_with_0_05_yeast_extract_and_3_nacl" for consistent matching
+kg_microbe_match: mediadive.medium:101

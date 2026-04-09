@@ -53,3 +53,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LACTOBACILLUS SAKEI MEDIUM" to "lactobacillus_sakei_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

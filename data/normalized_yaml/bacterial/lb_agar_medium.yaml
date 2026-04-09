@@ -113,3 +113,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB agar medium" to "lb_agar_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:101

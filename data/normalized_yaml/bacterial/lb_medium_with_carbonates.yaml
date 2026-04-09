@@ -89,3 +89,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB MEDIUM WITH CARBONATES" to "lb_medium_with_carbonates"
     for consistent matching
+kg_microbe_match: mediadive.medium:1338

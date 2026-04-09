@@ -105,3 +105,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINOBACTER medium" to "marinobacter_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:970

@@ -65,3 +65,4 @@ curation_history:
   notes: Normalized name from "medium FOR OSMOPHILIC FUNGI (M 40 Y)" to "medium_for_osmophilic_fungi_m_40_y"
     for consistent matching
 ph_value: 5.4
+kg_microbe_match: mediadive.medium:187

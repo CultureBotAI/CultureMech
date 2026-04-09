@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HEART INFUSION AGAR WITH 5% HORSE BLOOD" to "heart_infusion_agar_with_5_horse_blood"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

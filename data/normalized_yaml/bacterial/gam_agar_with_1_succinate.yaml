@@ -60,3 +60,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM AGAR WITH 1% SUCCINATE" to "gam_agar_with_1_succinate"
     for consistent matching
+kg_microbe_match: mediadive.medium:J1234

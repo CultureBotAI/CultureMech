@@ -63,3 +63,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED BACTO MARINE BROTH" to "modified_bacto_marine_broth"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

@@ -66,3 +66,4 @@ curation_history:
   notes: Normalized name from "PARACOCCUS HALODENITRIFICANS medium" to "paracoccus_halodenitrificans_medium"
     for consistent matching
 ph_value: 7.0
+kg_microbe_match: mediadive.medium:101

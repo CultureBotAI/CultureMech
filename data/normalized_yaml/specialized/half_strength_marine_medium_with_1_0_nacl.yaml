@@ -45,3 +45,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF STRENGTH MARINE MEDIUM WITH 1.0% NaCl" to "half_strength_marine_medium_with_1_0_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

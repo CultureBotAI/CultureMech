@@ -49,3 +49,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT" to
     "reinforced_clostridial_medium_with_4_sea_salt" for consistent matching
+kg_microbe_match: mediadive.medium:12

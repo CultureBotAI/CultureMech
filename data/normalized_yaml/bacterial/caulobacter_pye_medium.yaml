@@ -71,3 +71,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CAULOBACTER PYE MEDIUM" to "caulobacter_pye_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:49

@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STAPPIA QUADRATIBRACATA MEDIUM (28M-7)" to "stappia_quadratibracata_medium_28m_7"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

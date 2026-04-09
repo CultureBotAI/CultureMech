@@ -51,3 +51,4 @@ curation_history:
   notes: Normalized name from "CORN MEAL AGAR" to "corn_meal_agar" for consistent
     matching
 ph_value: 6.0
+kg_microbe_match: mediadive.medium:12

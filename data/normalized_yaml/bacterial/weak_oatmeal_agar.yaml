@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "WEAK OATMEAL AGAR" to "weak_oatmeal_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

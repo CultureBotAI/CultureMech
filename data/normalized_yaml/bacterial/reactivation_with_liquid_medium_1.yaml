@@ -61,3 +61,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "REACTIVATION WITH LIQUID MEDIUM 1" to "reactivation_with_liquid_medium_1"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

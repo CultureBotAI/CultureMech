@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ANTARCTIC BACTERIAL MEDIUM" to "antarctic_bacterial_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

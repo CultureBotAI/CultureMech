@@ -65,3 +65,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT" to
     "948_oxoid_nutrient_broth_with_additonal_salt" for consistent matching
+kg_microbe_match: mediadive.medium:74

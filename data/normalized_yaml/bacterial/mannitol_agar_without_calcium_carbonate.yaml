@@ -87,3 +87,4 @@ curation_history:
 data_quality_flags:
   incomplete_composition: false
   resolved_reference: true
+kg_microbe_match: mediadive.medium:J598

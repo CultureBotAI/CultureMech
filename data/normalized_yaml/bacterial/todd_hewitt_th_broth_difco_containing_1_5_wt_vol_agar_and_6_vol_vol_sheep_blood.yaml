@@ -59,3 +59,4 @@ curation_history:
   notes: Normalized name from "Todd–Hewitt (TH) broth (Difco) containing 1.5% (wt/vol)
     agar and 6% (vol/vol) sheep blood" to "todd_hewitt_th_broth_difco_containing_1_5_wt_vol_agar_and_6_vol_vol_sheep_blood"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

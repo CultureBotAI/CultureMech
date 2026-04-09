@@ -83,3 +83,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Van Niel's Yeast Agar" to "van_niels_yeast_agar" for
     consistent matching
+kg_microbe_match: mediadive.medium:192

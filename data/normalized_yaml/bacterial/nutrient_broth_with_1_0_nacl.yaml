@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT BROTH WITH 1.0% NaCl" to "nutrient_broth_with_1_0_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

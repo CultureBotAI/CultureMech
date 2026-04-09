@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Yeast extract - SKIM MILK medium" to "yeast_extract_skim_milk_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

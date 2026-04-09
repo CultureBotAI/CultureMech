@@ -70,3 +70,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FLAVOBACTERIUM TIRRENICUM medium" to "flavobacterium_tirrenicum_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

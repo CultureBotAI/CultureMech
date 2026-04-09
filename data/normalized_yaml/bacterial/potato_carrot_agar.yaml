@@ -56,3 +56,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Potato Carrot Agar" to "potato_carrot_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

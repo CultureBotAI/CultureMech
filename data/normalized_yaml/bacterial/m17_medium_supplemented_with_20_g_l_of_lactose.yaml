@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M17 medium supplemented with 20 g/L of lactose" to
     "m17_medium_supplemented_with_20_g_l_of_lactose" for consistent matching
+kg_microbe_match: mediadive.medium:J697

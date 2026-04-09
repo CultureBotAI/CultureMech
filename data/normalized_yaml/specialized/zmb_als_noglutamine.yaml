@@ -33,3 +33,4 @@ curation_history:
   notes: 'Assigned stable identifier: CultureMech:015805'
 data_quality_flags:
 - has_unmapped_ingredients
+kg_microbe_match: mediadive.medium:1670

@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB (LURIA-BERTANI) MEDIUM (LENNOX)" to "lb_luria_bertani_medium_lennox"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

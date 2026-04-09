@@ -66,3 +66,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YEAST-Peptone-SUCCINATE medium" to "yeast_peptone_succinate_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:937

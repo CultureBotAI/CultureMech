@@ -67,3 +67,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YPG Medium" to "ypg_medium" for consistent matching
 notes: General purpose medium for yeasts
+kg_microbe_match: mediadive.medium:7

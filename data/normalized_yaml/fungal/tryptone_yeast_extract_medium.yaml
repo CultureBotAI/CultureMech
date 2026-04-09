@@ -54,3 +54,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTONE-YEAST EXTRACT MEDIUM" to "tryptone_yeast_extract_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:74

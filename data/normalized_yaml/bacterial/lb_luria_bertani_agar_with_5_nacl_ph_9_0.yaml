@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB (LURIA-BERTANI) AGAR WITH 5% NaCl (pH 9.0)" to "lb_luria_bertani_agar_with_5_nacl_ph_9_0"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

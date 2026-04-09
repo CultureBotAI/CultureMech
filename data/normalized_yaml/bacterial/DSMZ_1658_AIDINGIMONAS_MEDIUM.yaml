@@ -65,3 +65,4 @@ curation_history:
   notes: Normalized name from "AIDINGIMONAS MEDIUM" to "aidingimonas_medium" for consistent
     matching
 high_metal: true
+kg_microbe_match: mediadive.medium:101

@@ -69,3 +69,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YPGD (rich medium)" to "ypgd_rich_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:J505

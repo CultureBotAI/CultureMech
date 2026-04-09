@@ -81,3 +81,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED M1 AGAR" to "modified_m1_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:687

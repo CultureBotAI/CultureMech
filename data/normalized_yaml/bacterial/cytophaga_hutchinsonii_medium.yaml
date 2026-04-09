@@ -82,3 +82,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CYTOPHAGA HUTCHINSONII MEDIUM" to "cytophaga_hutchinsonii_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:160

@@ -60,3 +60,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/2 YTSS medium" to "1_2_ytss_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

@@ -63,3 +63,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MYCOPLASMA MEDIUM" to "mycoplasma_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

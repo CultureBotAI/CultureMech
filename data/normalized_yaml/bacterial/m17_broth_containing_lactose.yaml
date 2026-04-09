@@ -50,3 +50,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "M17 broth (containing lactose)" to "m17_broth_containing_lactose"
     for consistent matching
+kg_microbe_match: mediadive.medium:J697

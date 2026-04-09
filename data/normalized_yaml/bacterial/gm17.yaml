@@ -51,3 +51,4 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "GM17" to "gm17" for consistent matching
+kg_microbe_match: mediadive.medium:21

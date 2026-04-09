@@ -67,3 +67,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "POTATO-SUCROSE AGAR" to "potato_sucrose_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:187

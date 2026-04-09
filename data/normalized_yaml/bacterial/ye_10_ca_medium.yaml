@@ -68,3 +68,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "YE/10 + Ca MEDIUM" to "ye_10_ca_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:1143

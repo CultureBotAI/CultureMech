@@ -45,3 +45,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "REINFORCED CLOSTRIDIAL MEDIUM" to "reinforced_clostridial_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

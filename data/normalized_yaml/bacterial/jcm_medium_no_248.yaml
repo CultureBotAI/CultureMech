@@ -51,3 +51,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "JCM MEDIUM No. 248" to "jcm_medium_no_248" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

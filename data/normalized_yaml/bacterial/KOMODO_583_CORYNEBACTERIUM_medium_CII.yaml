@@ -71,3 +71,4 @@ curation_history:
   notes: Normalized name from "CORYNEBACTERIUM medium CII" to "corynebacterium_medium_cii"
     for consistent matching
 ph_value: 7.0
+kg_microbe_match: mediadive.medium:583

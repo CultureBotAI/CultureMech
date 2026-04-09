@@ -55,3 +55,4 @@ curation_history:
   notes: Normalized name from "MEDIUM 1143 MODIFIED FOR DSM 23293" to "medium_1143_modified_for_dsm_23293"
     for consistent matching
 ph_value: 6.8
+kg_microbe_match: mediadive.medium:1143

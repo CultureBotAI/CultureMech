@@ -92,3 +92,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALOFERAX SULFURIFONTIS medium" to "haloferax_sulfurifontis_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:1018

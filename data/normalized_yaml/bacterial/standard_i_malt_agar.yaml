@@ -65,3 +65,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "STANDARD I + MALT AGAR" to "standard_i_malt_agar" for
     consistent matching
+kg_microbe_match: mediadive.medium:310

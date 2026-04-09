@@ -59,3 +59,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NY-AGAR" to "ny_agar" for consistent matching
 ph_value: 7.0
+kg_microbe_match: mediadive.medium:12

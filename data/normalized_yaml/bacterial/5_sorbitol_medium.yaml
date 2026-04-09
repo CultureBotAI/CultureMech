@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "5% SORBITOL MEDIUM" to "5_sorbitol_medium" for consistent
     matching
+kg_microbe_match: mediadive.medium:626

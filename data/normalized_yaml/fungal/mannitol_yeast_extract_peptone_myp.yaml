@@ -59,3 +59,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MANNITOL-YEAST EXTRACT-PEPTONE (MYP)" to "mannitol_yeast_extract_peptone_myp"
     for consistent matching
+kg_microbe_match: mediadive.medium:1087

@@ -57,3 +57,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "LB medium (Difco)" to "lb_medium_difco" for consistent
     matching
+kg_microbe_match: mediadive.medium:74

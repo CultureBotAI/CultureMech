@@ -46,3 +46,4 @@ curation_history:
   notes: Normalized name from "INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST
     EXTRACT" to "inorganic_salts_starch_agar_isp_4_with_0_05_yeast_extract" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

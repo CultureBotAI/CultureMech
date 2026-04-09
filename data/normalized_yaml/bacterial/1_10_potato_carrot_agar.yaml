@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "1/10 POTATO-CARROT AGAR" to "1_10_potato_carrot_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

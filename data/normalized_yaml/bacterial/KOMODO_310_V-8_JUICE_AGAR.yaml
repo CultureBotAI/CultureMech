@@ -62,3 +62,4 @@ curation_history:
   notes: Normalized name from "V-8 JUICE AGAR" to "v_8_juice_agar" for consistent
     matching
 high_metal: true
+kg_microbe_match: mediadive.medium:310

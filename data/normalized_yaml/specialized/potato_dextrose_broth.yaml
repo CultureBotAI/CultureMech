@@ -36,3 +36,4 @@ curation_history:
   action: Assigned CultureMech ID
   notes: 'Assigned stable identifier: CultureMech:015683'
 data_quality_flags: []
+kg_microbe_match: mediadive.medium:21

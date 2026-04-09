@@ -63,3 +63,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "ACETOBACTER PEROXYDANS MEDIUM" to "acetobacter_peroxydans_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:254

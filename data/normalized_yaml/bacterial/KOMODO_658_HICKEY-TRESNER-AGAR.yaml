@@ -79,3 +79,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HICKEY-TRESNER-AGAR" to "hickey_tresner_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:658

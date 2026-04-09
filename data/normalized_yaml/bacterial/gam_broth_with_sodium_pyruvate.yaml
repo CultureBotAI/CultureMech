@@ -50,3 +50,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "GAM BROTH WITH SODIUM PYRUVATE" to "gam_broth_with_sodium_pyruvate"
     for consistent matching
+kg_microbe_match: mediadive.medium:J1244

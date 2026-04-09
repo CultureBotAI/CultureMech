@@ -86,3 +86,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MEIOTHERMUS MEDIUM R8" to "meiothermus_medium_r8" for
     consistent matching
+kg_microbe_match: mediadive.medium:1402

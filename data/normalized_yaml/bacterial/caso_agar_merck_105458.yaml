@@ -65,3 +65,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "CASO AGAR (Merck 105458)" to "caso_agar_merck_105458"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

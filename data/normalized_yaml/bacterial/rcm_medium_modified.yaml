@@ -55,3 +55,4 @@ curation_history:
   notes: Normalized name from "RCM medium (modified)" to "rcm_medium_modified" for
     consistent matching
 ph_value: 6.8
+kg_microbe_match: mediadive.medium:634c

@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "Sucrose-Bennett's Agar" to "sucrose_bennetts_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:187

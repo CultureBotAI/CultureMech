@@ -45,3 +45,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "TRYPTOSE PHOSPHATE AGAR" to "tryptose_phosphate_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

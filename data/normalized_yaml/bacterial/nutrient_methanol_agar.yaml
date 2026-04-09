@@ -74,3 +74,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIENT-METHANOL AGAR" to "nutrient_methanol_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:J281

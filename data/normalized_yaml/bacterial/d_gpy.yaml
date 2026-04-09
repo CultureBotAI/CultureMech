@@ -76,3 +76,4 @@ curation_history:
   curator: normalize_media_names_to_snake_case.py
   action: NAME_NORMALIZED
   notes: Normalized name from "d-GPY" to "d_gpy" for consistent matching
+kg_microbe_match: mediadive.medium:7

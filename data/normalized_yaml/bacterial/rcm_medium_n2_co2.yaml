@@ -65,3 +65,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "RCM MEDIUM (N2/CO2)" to "rcm_medium_n2_co2" for consistent
     matching
+kg_microbe_match: mediadive.medium:634c

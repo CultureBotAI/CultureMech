@@ -55,3 +55,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MODIFIED THERMUS MEDIUM" to "modified_thermus_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:12

@@ -86,3 +86,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "yeast extract broth (containing 2.5% NaCl)" to "yeast_extract_broth_containing_2_5_nacl"
     for consistent matching
+kg_microbe_match: mediadive.medium:1336

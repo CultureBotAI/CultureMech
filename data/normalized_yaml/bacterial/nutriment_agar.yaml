@@ -71,3 +71,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "NUTRIMENT AGAR" to "nutriment_agar" for consistent
     matching
+kg_microbe_match: mediadive.medium:101

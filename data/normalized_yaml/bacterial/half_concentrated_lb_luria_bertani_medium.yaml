@@ -64,3 +64,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "HALF-CONCENTRATED LB (Luria-Bertani) MEDIUM" to "half_concentrated_lb_luria_bertani_medium"
     for consistent matching
+kg_microbe_match: mediadive.medium:101

@@ -66,3 +66,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "VOLCANOBACTER MEDIUM" to "volcanobacter_medium" for
     consistent matching
+kg_microbe_match: mediadive.medium:101

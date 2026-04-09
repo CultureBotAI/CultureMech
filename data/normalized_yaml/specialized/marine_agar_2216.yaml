@@ -41,3 +41,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "MARINE AGAR 2216" to "marine_agar_2216" for consistent
     matching
+kg_microbe_match: mediadive.medium:12

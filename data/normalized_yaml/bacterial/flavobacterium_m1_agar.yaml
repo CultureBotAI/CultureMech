@@ -68,3 +68,4 @@ curation_history:
   action: NAME_NORMALIZED
   notes: Normalized name from "FLAVOBACTERIUM M1 AGAR" to "flavobacterium_m1_agar"
     for consistent matching
+kg_microbe_match: mediadive.medium:101
