@@ -108,6 +108,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: Bacto Tryptone (Difco)
   concentration:
     value: '10'

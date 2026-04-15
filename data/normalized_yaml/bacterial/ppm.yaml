@@ -66,6 +66,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000731
     label: Cycloheximide
+  term:
+    id: CHEBI:27641
+    label: ''
 - preferred_term: Pectin
   concentration:
     value: '0.05'

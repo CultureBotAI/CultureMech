@@ -23,6 +23,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000213
     label: KOH
+  term:
+    id: CHEBI:32035
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

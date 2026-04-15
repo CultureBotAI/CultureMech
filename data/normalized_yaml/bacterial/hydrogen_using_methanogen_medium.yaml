@@ -161,6 +161,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: Hipolypepton (Nihon seiyaku)
   concentration:
     value: '2'

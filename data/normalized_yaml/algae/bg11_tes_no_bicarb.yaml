@@ -58,6 +58,9 @@ ingredients:
     value: '2.4'
     unit: MICROMOLAR
   notes: 'CAS: 6381-92-6; MW: 336.206'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: Boric Acid
   concentration:
     value: '0.00286'

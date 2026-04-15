@@ -54,6 +54,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000470
     label: Ca(NO3)2
+  term:
+    id: CHEBI:77732
+    label: ''
 - preferred_term: KCl
   term:
     id: CHEBI:32588

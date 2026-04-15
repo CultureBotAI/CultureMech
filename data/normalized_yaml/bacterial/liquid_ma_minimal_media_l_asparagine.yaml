@@ -56,6 +56,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -80,6 +83,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.001'
@@ -100,6 +106,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: '''Chromium(III'
   concentration:
     value: '0.0003'

@@ -191,6 +191,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000269
     label: MES
+  term:
+    id: CHEBI:39010
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

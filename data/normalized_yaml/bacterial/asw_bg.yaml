@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: NaNO3
   term:
     id: CHEBI:59148

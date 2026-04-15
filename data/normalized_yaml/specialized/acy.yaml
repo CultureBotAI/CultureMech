@@ -72,6 +72,9 @@ ingredients:
   concentration:
     value: '1.275'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: ''
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.5'
@@ -323,6 +326,9 @@ ingredients:
     value: '0.715'
     unit: G_PER_L
   notes: 'CAS: 1185-53-1; MW: 157.6'
+  term:
+    id: CHEBI:9754
+    label: ''
 description: 50% ABB, 25% Columbia, 25% YCFA
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

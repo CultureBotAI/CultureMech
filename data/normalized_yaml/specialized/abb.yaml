@@ -72,6 +72,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: ''
 - preferred_term: Ferric pyrophosphate
   concentration:
     value: '0.5'

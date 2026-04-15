@@ -12,6 +12,9 @@ ingredients:
     value: '-'
     unit: G_PER_L
   notes: 'CAS: 2922-28-3; MW: 171.59'
+  term:
+    id: CHEBI:64139
+    label: ''
 description: Media for culturing Bifidobacterium minus adenine
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

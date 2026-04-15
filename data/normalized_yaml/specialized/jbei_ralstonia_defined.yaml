@@ -26,6 +26,9 @@ ingredients:
     value: '33.50'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
+  term:
+    id: CHEBI:37585
+    label: ''
 - preferred_term: Disodium phosphate
   concentration:
     value: '32.25'

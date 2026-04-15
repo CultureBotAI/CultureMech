@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '1'
@@ -114,6 +117,9 @@ ingredients:
     value: '1.77e-05'
     unit: G_PER_L
   notes: 'CAS: 1303-96-4; From UW concentrated base'
+  term:
+    id: CHEBI:86222
+    label: ''
 - preferred_term: Sodium thiosulfate pentahydrate
   concentration:
     value: '0.1'

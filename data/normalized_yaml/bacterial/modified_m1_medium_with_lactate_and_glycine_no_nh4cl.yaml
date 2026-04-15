@@ -148,6 +148,9 @@ ingredients:
   concentration:
     value: '0.00437084'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -186,6 +189,9 @@ ingredients:
   concentration:
     value: '0.0114981'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -208,6 +214,9 @@ ingredients:
   concentration:
     value: '0.001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:77775
+    label: ''
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.000105399'

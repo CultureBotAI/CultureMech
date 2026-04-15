@@ -58,6 +58,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: 'CAS: 6381-92-6; MW: 336.206'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: Sodium carbonate
   concentration:
     value: '0.02'

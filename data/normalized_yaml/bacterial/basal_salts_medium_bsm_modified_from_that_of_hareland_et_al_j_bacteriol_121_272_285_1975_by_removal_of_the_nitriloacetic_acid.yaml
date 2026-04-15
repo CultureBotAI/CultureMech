@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Cobalt sulfate heptahydrate
   concentration:
     value: '0.1'

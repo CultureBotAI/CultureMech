@@ -475,24 +475,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Xanthine
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:15318
+    label: ''
 - preferred_term: Inosine
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Orotic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:16742
+    label: ''
 - preferred_term: Cystine
   concentration:
     value: '50'

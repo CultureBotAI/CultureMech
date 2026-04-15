@@ -55,6 +55,9 @@ ingredients:
   concentration:
     value: '0.003802'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '12.072'
@@ -93,6 +96,9 @@ ingredients:
   concentration:
     value: '0.017714'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.11054'
@@ -101,6 +107,9 @@ ingredients:
   concentration:
     value: '0.6749'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '95.414'

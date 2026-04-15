@@ -129,6 +129,9 @@ ingredients:
   concentration:
     value: 3e-07
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -157,6 +160,9 @@ ingredients:
   concentration:
     value: 5e-07
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'

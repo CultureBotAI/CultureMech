@@ -88,6 +88,9 @@ ingredients:
     value: '0.001'
     unit: G_PER_L
   notes: From Mc_trace_minerals_SO4free
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: copper (II) chloride dihydrate
   concentration:
     value: '0.0001'
@@ -119,6 +122,9 @@ ingredients:
     value: '0.00025'
     unit: G_PER_L
   notes: From Mc_trace_minerals_SO4free
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: sodium selenate
   concentration:
     value: '0.002'
@@ -280,6 +286,9 @@ ingredients:
     value: '1.00E-03'
     unit: G_PER_L
   notes: 'CAS: 1313-82-2; MW: 240.18'
+  term:
+    id: CHEBI:85357
+    label: ''
 description: McCas_formate with sulfate removed, no FeCl2
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

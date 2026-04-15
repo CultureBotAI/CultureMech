@@ -77,6 +77,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium Sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Calcium Chloride
   concentration:
     value: '1.8'
@@ -119,6 +122,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:28741
+    label: ''
 - preferred_term: Potassium Bromide
   concentration:
     value: '0.08'
@@ -128,6 +134,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001123
     label: Potassium Bromide
+  term:
+    id: CHEBI:32030
+    label: ''
 - preferred_term: Ferric Citrate
   concentration:
     value: '0.1'
@@ -137,12 +146,18 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000281
     label: Ferric Citrate
+  term:
+    id: CHEBI:144421
+    label: ''
 - preferred_term: Strontium Chloride
   concentration:
     value: '0.034'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:36383
+    label: ''
 - preferred_term: Magnesium Chloride
   concentration:
     value: '8.8'

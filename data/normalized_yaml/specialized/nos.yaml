@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '12.5'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium chloride
   concentration:
     value: '1'
@@ -79,6 +82,9 @@ ingredients:
     value: '0.001095'
     unit: G_PER_L
   notes: 'CAS: 7646-85-7; MW: 136.3; From UW concentrated base no sulfur'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.000154'
@@ -107,6 +113,9 @@ ingredients:
     value: '1.77e-05'
     unit: G_PER_L
   notes: 'CAS: 1303-96-4; From UW concentrated base no sulfur'
+  term:
+    id: CHEBI:86222
+    label: ''
 - preferred_term: Sodium thiosulfate pentahydrate
   concentration:
     value: '0.1'

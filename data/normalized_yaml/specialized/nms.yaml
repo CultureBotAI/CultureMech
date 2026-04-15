@@ -33,6 +33,9 @@ ingredients:
     value: '0.028'
     unit: G_PER_L
   notes: 'CAS: 6381-92-6; MW: 336.206'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: Sodium Molybdate Dihydrate
   concentration:
     value: '0.025'
@@ -101,6 +104,9 @@ ingredients:
   concentration:
     value: '26'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Disodium phosphate
   concentration:
     value: '33'

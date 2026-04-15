@@ -48,6 +48,9 @@ ingredients:
   concentration:
     value: '0.00031'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -82,6 +85,9 @@ ingredients:
   concentration:
     value: '0.0039'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Sodium dihydrogen phosphate
   concentration:
     value: '194.0'
@@ -89,6 +95,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Cupric chloride
   concentration:
     value: '0.00015'
@@ -97,6 +106,9 @@ ingredients:
   concentration:
     value: '0.00092'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

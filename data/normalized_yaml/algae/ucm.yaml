@@ -64,6 +64,9 @@ ingredients:
     value: '10.0'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -407,6 +410,9 @@ ingredients:
     value: '0.52'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:16742
+    label: ''
 - preferred_term: Thiamine HCL
   term:
     id: CHEBI:49105
@@ -456,6 +462,9 @@ ingredients:
     value: '0.08'
     unit: G_PER_L
   source: CCAP Medium MR_UCM.pdf
+  term:
+    id: CHEBI:17148
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

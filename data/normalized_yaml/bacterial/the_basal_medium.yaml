@@ -159,6 +159,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'

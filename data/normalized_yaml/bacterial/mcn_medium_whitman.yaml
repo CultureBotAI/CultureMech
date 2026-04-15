@@ -68,6 +68,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891
@@ -198,6 +201,9 @@ ingredients:
   concentration:
     value: '0.004133'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '13.53'
@@ -212,6 +218,9 @@ ingredients:
   concentration:
     value: '0.004203'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Pentanoate
   concentration:
     value: '0.04896'

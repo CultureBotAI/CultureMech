@@ -304,6 +304,9 @@ ingredients:
     value: '0.011'
     unit: G_PER_L
   notes: 'CAS: 2922-28-3; MW: 171.59'
+  term:
+    id: CHEBI:64139
+    label: ''
 - preferred_term: Guanine
   concentration:
     value: '0.0056'

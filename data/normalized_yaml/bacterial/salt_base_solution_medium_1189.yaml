@@ -23,6 +23,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000181
     label: H2SO4
+  term:
+    id: CHEBI:26836
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

@@ -50,6 +50,9 @@ ingredients:
     value: '2.0'
     unit: G_PER_L
   source: CCAP Medium MR_PM.pdf
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Yeast extract
   term:
     id: FOODON:00002441

@@ -19,11 +19,17 @@ ingredients:
   concentration:
     value: '0.0002066'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Uridine
   concentration:
     value: '9.992'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:uri'
+  term:
+    id: CHEBI:16704
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001002'

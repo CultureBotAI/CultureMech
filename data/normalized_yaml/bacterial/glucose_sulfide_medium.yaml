@@ -59,6 +59,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000470
     label: Ca(NO3)2
+  term:
+    id: CHEBI:77732
+    label: ''
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527

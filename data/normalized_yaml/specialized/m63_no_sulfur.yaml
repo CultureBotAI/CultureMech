@@ -90,6 +90,9 @@ ingredients:
     value: '0.0013000000000000002'
     unit: G_PER_L
   notes: 'CAS: 7646-85-7; MW: 136.3; From Sulfur free mineral mix'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: '0.001'

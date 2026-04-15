@@ -24,6 +24,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -58,6 +61,9 @@ ingredients:
   concentration:
     value: '0.00227'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -75,6 +81,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

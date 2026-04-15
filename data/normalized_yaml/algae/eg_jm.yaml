@@ -50,6 +50,9 @@ ingredients:
     value: '1.0'
     unit: G_PER_L
   source: CCAP Medium MR_EG_JM.pdf
+  term:
+    id: CHEBI:32138
+    label: ''
 - preferred_term: Lab-Lemco powder
   notes: Ontology mapping not yet available; From CCAP Medium MR_EG_JM.pdf; Curated
     from CCAP Medium MR_EG_JM.pdf specification

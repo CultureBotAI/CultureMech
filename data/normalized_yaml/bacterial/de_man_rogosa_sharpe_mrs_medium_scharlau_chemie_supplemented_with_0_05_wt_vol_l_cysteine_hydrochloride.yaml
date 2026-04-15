@@ -109,6 +109,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:63037
+    label: ''
 - preferred_term: Manganese sulfate
   concentration:
     value: '0.05'

@@ -119,6 +119,9 @@ ingredients:
     value: '3'
     unit: MILLIMOLAR
   notes: 'CAS: 1313-82-2; MW: 240.18'
+  term:
+    id: CHEBI:85357
+    label: ''
 description: Defined medium for B.theta with Glucose, and no Cysteine and with DTT
   and sodium sulfide
 notes: 'Source: FEBA media definitions'

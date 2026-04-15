@@ -145,6 +145,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Sodium tungstate
   concentration:
     value: '0.009095'
@@ -156,6 +159,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -188,6 +194,9 @@ ingredients:
   concentration:
     value: '0.03751'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:36383
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '4.695'

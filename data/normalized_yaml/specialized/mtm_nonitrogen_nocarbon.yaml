@@ -61,6 +61,9 @@ ingredients:
     value: '0.05'
     unit: MG_PER_L
   notes: 'CAS: 7646-85-7; MW: 136.3; From MME Trace Minerals'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: copper (II) chloride dihydrate
   concentration:
     value: '0.03'

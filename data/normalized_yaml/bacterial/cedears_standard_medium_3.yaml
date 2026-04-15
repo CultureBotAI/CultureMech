@@ -93,6 +93,9 @@ ingredients:
     value: '3.32'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:191088
+    label: ''
 - preferred_term: Ca3(PO4)2
   concentration:
     value: '0.372'

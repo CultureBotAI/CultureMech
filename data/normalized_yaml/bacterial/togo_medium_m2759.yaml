@@ -117,6 +117,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'

@@ -44,6 +44,9 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.64'
@@ -76,6 +79,9 @@ ingredients:
   concentration:
     value: 6e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -112,6 +118,9 @@ ingredients:
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

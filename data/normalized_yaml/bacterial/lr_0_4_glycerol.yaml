@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '2.5006'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32145
+    label: ''
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '17.6359'

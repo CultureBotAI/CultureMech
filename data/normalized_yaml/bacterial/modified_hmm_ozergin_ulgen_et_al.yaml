@@ -45,10 +45,16 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0010002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -95,6 +101,9 @@ ingredients:
   concentration:
     value: '0.0149653'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Sodium iodide
   concentration:
     value: '0.0027687'

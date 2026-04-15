@@ -152,6 +152,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000281
     label: ferric citrate
+  term:
+    id: CHEBI:144421
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'

@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -45,6 +48,9 @@ ingredients:
   concentration:
     value: '0.00016'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium thiosulfate
   term:
     id: CHEBI:132112

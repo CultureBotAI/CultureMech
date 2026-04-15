@@ -154,6 +154,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32035
+    label: ''
 - preferred_term: Sodium bicarbonate
   concentration:
     value: '0.5'
@@ -186,6 +189,9 @@ ingredients:
   concentration:
     value: '0.00202'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

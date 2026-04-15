@@ -174,6 +174,9 @@ ingredients:
   concentration:
     value: '0.01284'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015

@@ -1951,3 +1951,49 @@ aggregate-all-ingredients: (aggregate-mapped-ingredients) (aggregate-unmapped-in
     @echo "✓ Ingredient aggregation complete!"
     @echo "  Mapped:   output/mapped_ingredients.yaml"
     @echo "  Unmapped: output/unmapped_ingredients.yaml"
+
+# =============================================================================
+# INGREDIENT UMAP VISUALIZATION
+# =============================================================================
+
+# Generate ingredient-level UMAP (each point = one CHEBI ingredient in embedding space)
+[group('Visualization')]
+gen-ingredient-umap embeddings_path=kg_microbe_embeddings:
+    #!/usr/bin/env bash
+    echo "Generating ingredient UMAP visualization..."
+    echo "  Embeddings: {{embeddings_path}}"
+    echo ""
+    uv run python scripts/generate_ingredient_umap.py \
+        --embeddings-path {{embeddings_path}} \
+        --media-dir {{normalized_yaml_dir}} \
+        --output app/ingredient_umap.html \
+        --cache-dir .umap_cache
+    echo ""
+    echo "✓ Ingredient UMAP generated: app/ingredient_umap.html"
+    echo "  Open: open app/ingredient_umap.html"
+
+# Generate ingredient UMAP dry-run (count ingredients, skip embedding)
+[group('Visualization')]
+gen-ingredient-umap-dry embeddings_path=kg_microbe_embeddings:
+    #!/usr/bin/env bash
+    echo "Ingredient UMAP dry-run (counts only)..."
+    echo ""
+    uv run python scripts/generate_ingredient_umap.py \
+        --media-dir {{normalized_yaml_dir}} \
+        --embeddings-path {{embeddings_path}} \
+        --dry-run
+
+# Generate ingredient UMAP forcing cache reload
+[group('Visualization')]
+gen-ingredient-umap-force-reload embeddings_path=kg_microbe_embeddings:
+    #!/usr/bin/env bash
+    echo "Generating ingredient UMAP (forcing cache reload)..."
+    echo ""
+    uv run python scripts/generate_ingredient_umap.py \
+        --embeddings-path {{embeddings_path}} \
+        --media-dir {{normalized_yaml_dir}} \
+        --output app/ingredient_umap.html \
+        --cache-dir .umap_cache \
+        --force-reload
+    echo ""
+    echo "✓ Ingredient UMAP regenerated: app/ingredient_umap.html"

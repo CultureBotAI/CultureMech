@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '0.812'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.68'
@@ -267,6 +270,9 @@ ingredients:
     value: '4.41'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
+  term:
+    id: CHEBI:37585
+    label: ''
 - preferred_term: Sucrose
   concentration:
     value: '875.0'
@@ -380,6 +386,9 @@ ingredients:
     value: '525.0'
     unit: MICROMOLAR
   notes: 'CAS: 305-72-6; MW: 190.06; From NLDM_metabolites'
+  term:
+    id: CHEBI:16810
+    label: ''
 - preferred_term: L-Citrulline
   concentration:
     value: '525.0'
@@ -582,6 +591,9 @@ ingredients:
     value: '17.5'
     unit: MICROMOLAR
   notes: 'CAS: 2922-28-3; MW: 171.59; From NLDM_metabolites'
+  term:
+    id: CHEBI:64139
+    label: ''
 - preferred_term: Adenosine
   concentration:
     value: '17.5'
@@ -695,6 +707,9 @@ ingredients:
     value: '17.5'
     unit: MICROMOLAR
   notes: 'CAS: 5959-35-3; MW: 139.58; From NLDM_metabolites'
+  term:
+    id: CHEBI:16865
+    label: ''
 - preferred_term: Ectoine
   concentration:
     value: '17.5'
@@ -779,6 +794,9 @@ ingredients:
     value: '17.5'
     unit: MICROMOLAR
   notes: 'CAS: 461-05-2; MW: 197.66; From NLDM_metabolites'
+  term:
+    id: CHEBI:91318
+    label: ''
 - preferred_term: Choline chloride
   concentration:
     value: '17.5'

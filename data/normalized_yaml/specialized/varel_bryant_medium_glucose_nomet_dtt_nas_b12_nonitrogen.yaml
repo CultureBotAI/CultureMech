@@ -111,6 +111,9 @@ ingredients:
     value: '3'
     unit: MILLIMOLAR
   notes: 'CAS: 1313-82-2; MW: 240.18'
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Cyanocobalamin
   concentration:
     value: '0.1'

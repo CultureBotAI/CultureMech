@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '4.50E+00'
     unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Ammonium Sulfate
   concentration:
     value: '1.00E+00'

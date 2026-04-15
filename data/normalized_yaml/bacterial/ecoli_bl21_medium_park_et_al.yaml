@@ -33,6 +33,9 @@ ingredients:
   concentration:
     value: '0.10333'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -61,6 +64,9 @@ ingredients:
   concentration:
     value: '0.019254'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.08875'

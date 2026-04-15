@@ -29,10 +29,16 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32145
+    label: ''
 - preferred_term: Potassium hydroxide
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32035
+    label: ''
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.0005'
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.276'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.528'
@@ -69,6 +78,9 @@ ingredients:
   concentration:
     value: 3e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: 1e-05

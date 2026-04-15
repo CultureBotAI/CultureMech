@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureMech Ingredient UMAP</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a7a4a 0%, #2d9665 100%);
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.4em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.2s;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .plot-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .plot-panel h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #1a7a4a;
+        }
+
+        .plot-panel .subtitle {
+            color: #666;
+            margin-bottom: 16px;
+            font-size: 0.9em;
+        }
+
+        svg {
+            background: #f8f9fa;
+            border-radius: 8px;
+            cursor: crosshair;
+            width: 100%;
+            height: 700px;
+        }
+
+        .tooltip {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.92);
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+            max-width: 320px;
+            z-index: 1000;
+            line-height: 1.6;
+        }
+
+        .tooltip strong {
+            color: #7fffb3;
+            font-size: 14px;
+        }
+
+        .tooltip .chebi-id {
+            color: #90caf9;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .tooltip .cas-rn {
+            color: #ffcc80;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .tooltip .example-media {
+            color: #b0bec5;
+            font-size: 11px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-container {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .search-container input:focus {
+            outline: none;
+            border-color: #1a7a4a;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            border-color: #1a7a4a;
+        }
+
+        .filter-btn.active {
+            background: #1a7a4a;
+            color: white;
+            border-color: #1a7a4a;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 14px;
+            font-size: 13px;
+            color: #555;
+            flex-wrap: wrap;
+        }
+
+        .stat-item strong {
+            color: #1a7a4a;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .legend-size-hint {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #888;
+            margin-top: 6px;
+        }
+
+        circle {
+            transition: opacity 0.15s;
+        }
+
+        circle:hover {
+            stroke: #333;
+            stroke-width: 1.5px;
+            opacity: 1 !important;
+        }
+
+        .reset-zoom {
+            padding: 8px 14px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            color: #555;
+            transition: all 0.2s;
+        }
+
+        .reset-zoom:hover {
+            background: #e8e8e8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CultureMech Ingredient UMAP</h1>
+        <p>
+            {{ total_count }} CHEBI ingredients &mdash;
+            top100: {{ tier_counts.top100 }} &nbsp;|&nbsp;
+            top500: {{ tier_counts.top500 }} &nbsp;|&nbsp;
+            other: {{ tier_counts.other }}
+        </p>
+        <a href="../index.html" class="nav-link">&larr; Back to Media Browser</a>
+    </header>
+
+    <div class="container">
+        <div class="plot-panel">
+            <h2>Ingredient Embedding Space</h2>
+            <p class="subtitle">
+                Each point = one CHEBI ingredient in KG-Microbe (512-dim DeepWalk, UMAP 2D).
+                Size = occurrence frequency (log scale). Color = occurrence tier.
+                Scroll to zoom &bull; Drag to pan &bull; Hover for details.
+            </p>
+
+            <div class="stats-bar">
+                <div class="stat-item">Total: <strong id="total-count">{{ total_count }}</strong></div>
+                <div class="stat-item">Visible: <strong id="visible-count">{{ total_count }}</strong></div>
+            </div>
+
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search by ingredient name or CHEBI ID..." />
+                </div>
+                <div class="filter-group" id="tier-filters">
+                    <button class="filter-btn active" data-tier="all">All</button>
+                    <button class="filter-btn" data-tier="top100" style="border-color: #e74c3c; color: #e74c3c;">Top 100</button>
+                    <button class="filter-btn" data-tier="top500" style="border-color: #e67e22; color: #e67e22;">Top 500</button>
+                    <button class="filter-btn" data-tier="other" style="border-color: #3498db; color: #3498db;">Other</button>
+                </div>
+                <button class="reset-zoom" id="reset-zoom">Reset zoom</button>
+            </div>
+
+            <svg id="umap-svg"></svg>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #e74c3c;"></div>
+                    <span>Top 100 (most frequent)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #e67e22;"></div>
+                    <span>Top 500</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #3498db;"></div>
+                    <span>Other</span>
+                </div>
+            </div>
+            <div class="legend-size-hint">
+                Point size reflects log-scale occurrence frequency across CultureMech media.
+            </div>
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        // ---- Data (injected by Jinja2) ----
+        const ingredientData = {{ ingredient_data_json | safe }};
+
+        // ---- Color by tier ----
+        const tierColors = {
+            "top100": "#e74c3c",
+            "top500": "#e67e22",
+            "other":  "#3498db"
+        };
+        const tierOpacity = {
+            "top100": 0.85,
+            "top500": 0.70,
+            "other":  0.55
+        };
+
+        // ---- SVG setup ----
+        const svgEl = document.getElementById("umap-svg");
+        const svgRect = svgEl.getBoundingClientRect();
+        const width = svgEl.clientWidth || 1200;
+        const height = 700;
+        const margin = { top: 20, right: 20, bottom: 20, left: 20 };
+        const innerW = width - margin.left - margin.right;
+        const innerH = height - margin.top - margin.bottom;
+
+        const svg = d3.select("#umap-svg")
+            .attr("viewBox", `0 0 ${width} ${height}`)
+            .attr("preserveAspectRatio", "xMidYMid meet");
+
+        const g = svg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // ---- Scales ----
+        const xExtent = d3.extent(ingredientData, d => d.x);
+        const yExtent = d3.extent(ingredientData, d => d.y);
+        const xPad = (xExtent[1] - xExtent[0]) * 0.07;
+        const yPad = (yExtent[1] - yExtent[0]) * 0.07;
+
+        const xScale = d3.scaleLinear()
+            .domain([xExtent[0] - xPad, xExtent[1] + xPad])
+            .range([0, innerW]);
+
+        const yScale = d3.scaleLinear()
+            .domain([yExtent[0] - yPad, yExtent[1] + yPad])
+            .range([innerH, 0]);
+
+        // ---- Tooltip ----
+        const tooltip = d3.select("#tooltip");
+
+        function showTooltip(event, d) {
+            const mediaStr = d.example_media && d.example_media.length
+                ? d.example_media.join(", ")
+                : "—";
+            tooltip
+                .style("opacity", 1)
+                .html(`
+                    <strong>${d.name}</strong><br/>
+                    <span class="chebi-id">${d.chebi_id}</span><br/>
+                    ${d.cas_rn ? `<span class="cas-rn">CAS-RN: ${d.cas_rn}</span><br/>` : ""}
+                    ${d.kg_node_id ? `KG node: <code style="font-size:11px">${d.kg_node_id}</code><br/>` : ""}
+                    Occurrences: <strong style="color:white">${d.count}</strong> &nbsp; Tier: ${d.tier}<br/>
+                    <span class="example-media">e.g. ${mediaStr}</span>
+                `)
+                .style("left", (event.clientX + 16) + "px")
+                .style("top",  (event.clientY - 10) + "px");
+        }
+
+        function hideTooltip() {
+            tooltip.style("opacity", 0);
+        }
+
+        // ---- Circles ----
+        const circles = g.selectAll("circle")
+            .data(ingredientData)
+            .join("circle")
+            .attr("cx", d => xScale(d.x))
+            .attr("cy", d => yScale(d.y))
+            .attr("r",  d => d.radius)
+            .attr("fill", d => tierColors[d.tier] || "#999")
+            .attr("opacity", d => tierOpacity[d.tier] || 0.5)
+            .style("cursor", "pointer")
+            .on("mouseover", showTooltip)
+            .on("mousemove", showTooltip)
+            .on("mouseout", hideTooltip);
+
+        // ---- Zoom / pan ----
+        const zoom = d3.zoom()
+            .scaleExtent([0.3, 20])
+            .on("zoom", event => {
+                g.attr("transform", event.transform);
+            });
+
+        svg.call(zoom);
+
+        document.getElementById("reset-zoom").addEventListener("click", () => {
+            svg.transition().duration(400).call(
+                zoom.transform,
+                d3.zoomIdentity.translate(margin.left, margin.top)
+            );
+        });
+
+        // ---- Filtering / search ----
+        let activeTier = "all";
+        let searchTerm = "";
+
+        function applyFilters() {
+            let visible = 0;
+            circles.each(function(d) {
+                const tierMatch = activeTier === "all" || d.tier === activeTier;
+                const searchMatch = !searchTerm
+                    || d.name.toLowerCase().includes(searchTerm)
+                    || d.chebi_id.toLowerCase().includes(searchTerm);
+                const show = tierMatch && searchMatch;
+                d3.select(this)
+                    .style("opacity", show ? (tierOpacity[d.tier] || 0.5) : 0.05)
+                    .style("pointer-events", show ? "all" : "none");
+                if (show) visible++;
+            });
+            document.getElementById("visible-count").textContent = visible;
+        }
+
+        // Tier filter buttons
+        document.querySelectorAll("#tier-filters .filter-btn").forEach(btn => {
+            btn.addEventListener("click", function() {
+                document.querySelectorAll("#tier-filters .filter-btn").forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+                activeTier = this.getAttribute("data-tier");
+                applyFilters();
+            });
+        });
+
+        // Search
+        document.getElementById("search-input").addEventListener("input", function() {
+            searchTerm = this.value.toLowerCase().trim();
+            applyFilters();
+        });
+    </script>
+</body>
+</html>

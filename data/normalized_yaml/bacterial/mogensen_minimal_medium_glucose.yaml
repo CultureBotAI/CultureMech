@@ -33,6 +33,9 @@ ingredients:
   concentration:
     value: '0.006199'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.006408'
@@ -56,6 +59,9 @@ ingredients:
   concentration:
     value: '0.007145'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.01798'

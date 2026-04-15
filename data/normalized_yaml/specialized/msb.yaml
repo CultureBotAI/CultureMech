@@ -112,6 +112,9 @@ ingredients:
     value: '1.77E-04'
     unit: G_PER_L
   notes: 'CAS: 1303-96-4'
+  term:
+    id: CHEBI:86222
+    label: ''
 description: A defined Ralstonia growth medium from Tiffany Lowe-Power lab (note,
   no carbon is added)
 notes: 'Source: FEBA media definitions'

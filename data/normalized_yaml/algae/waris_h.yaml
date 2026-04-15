@@ -205,6 +205,9 @@ ingredients:
     value: '0.00001'
     unit: G_PER_L
   source: CCAP Medium MR_Waris_H.pdf
+  term:
+    id: CHEBI:17154
+    label: ''
 - preferred_term: Biotin
   term:
     id: CHEBI:15956

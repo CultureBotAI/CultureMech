@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '2'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.1'
@@ -318,6 +321,9 @@ ingredients:
     value: '36.8'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
+  term:
+    id: CHEBI:37585
+    label: ''
 description: Defined minimal media for 4CarbonMix Nitrate reducing for pH 5.0
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

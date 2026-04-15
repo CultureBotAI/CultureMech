@@ -166,6 +166,9 @@ ingredients:
     value: '7.45434'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ins'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Thiamine
   term:
     id: CHEBI:26948
@@ -219,6 +222,9 @@ ingredients:
   concentration:
     value: '5.73858'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '20.0918'

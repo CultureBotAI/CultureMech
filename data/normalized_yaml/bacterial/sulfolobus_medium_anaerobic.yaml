@@ -141,6 +141,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '22'

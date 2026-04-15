@@ -228,6 +228,9 @@ ingredients:
     value: '0.06617'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gua'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Nicotinate
   concentration:
     value: '0.00812'
@@ -249,6 +252,9 @@ ingredients:
     value: '0.01864'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ins'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Orotate
   concentration:
     value: '0.03203'
@@ -259,6 +265,9 @@ ingredients:
     value: '0.06574'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:xan'
+  term:
+    id: CHEBI:15318
+    label: ''
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191

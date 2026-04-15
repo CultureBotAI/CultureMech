@@ -47,10 +47,16 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Sodium hydroxide
   concentration:
     value: '75.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32145
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

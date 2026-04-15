@@ -33,6 +33,9 @@ ingredients:
     value: '30'
     unit: MILLIMOLAR
   notes: 'CAS: 100037-69-2; MW: 335.34'
+  term:
+    id: CHEBI:63055
+    label: ''
 - preferred_term: Magnesium chloride hexahydrate
   concentration:
     value: '8'
@@ -95,6 +98,9 @@ ingredients:
     value: '9'
     unit: MICROMOLAR
   notes: 'CAS: 7646-85-7; MW: 136.3'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '1.3'

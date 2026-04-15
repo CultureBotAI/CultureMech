@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.28'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -65,6 +68,9 @@ ingredients:
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: L-Aspartate
   concentration:
     value: '1.0'
@@ -198,6 +204,9 @@ ingredients:
   concentration:
     value: 3e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

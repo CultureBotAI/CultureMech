@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '0.812'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.68'
@@ -267,6 +270,9 @@ ingredients:
     value: '4.385'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
+  term:
+    id: CHEBI:37585
+    label: ''
 description: Northen lab metabolite media
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

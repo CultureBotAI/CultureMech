@@ -52,6 +52,9 @@ ingredients:
     value: '5.74373'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ins'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '4.51628'

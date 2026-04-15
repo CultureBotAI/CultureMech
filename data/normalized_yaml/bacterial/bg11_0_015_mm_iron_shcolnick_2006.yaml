@@ -41,6 +41,9 @@ ingredients:
   concentration:
     value: '0.001616'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

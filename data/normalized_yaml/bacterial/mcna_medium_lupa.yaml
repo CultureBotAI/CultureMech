@@ -135,6 +135,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - *id001
 - *id002
 - *id003
@@ -184,10 +187,16 @@ ingredients:
   concentration:
     value: '0.004133'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.004203'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '4.493'

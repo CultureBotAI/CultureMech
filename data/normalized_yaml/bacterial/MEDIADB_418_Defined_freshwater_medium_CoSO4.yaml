@@ -118,6 +118,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -216,6 +219,9 @@ ingredients:
   concentration:
     value: '0.001627'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.00101'

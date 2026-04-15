@@ -41,6 +41,9 @@ ingredients:
     value: '0.07'
     unit: MG_PER_L
   notes: 'CAS: 7646-85-7; MW: 136.3'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Manganese (II) chloride tetrahydrate
   concentration:
     value: '0.152'
@@ -116,6 +119,9 @@ ingredients:
   concentration:
     value: '10.4'
     unit: MG_PER_L
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: Folic Acid
   concentration:
     value: '0.02'

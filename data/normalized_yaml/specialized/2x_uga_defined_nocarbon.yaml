@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '4.00'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.20'
@@ -274,6 +277,9 @@ ingredients:
     value: '1.90'
     unit: MILLIMOLAR
   notes: 'CAS: 558-80-7; MW: 119.98'
+  term:
+    id: CHEBI:37585
+    label: ''
 description: Variation of ENIGMA denitrification media for aerobic growth
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

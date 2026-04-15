@@ -21,6 +21,9 @@ ingredients:
   concentration:
     value: '0.00248'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -59,6 +62,9 @@ ingredients:
   concentration:
     value: '0.00252'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -85,6 +91,9 @@ ingredients:
   concentration:
     value: '0.01247'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

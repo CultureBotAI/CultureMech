@@ -23,6 +23,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000149
     label: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

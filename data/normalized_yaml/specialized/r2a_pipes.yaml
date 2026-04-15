@@ -65,6 +65,9 @@ ingredients:
     value: '30'
     unit: MILLIMOLAR
   notes: 'CAS: 100037-69-2; MW: 335.34'
+  term:
+    id: CHEBI:63055
+    label: ''
 description: Reasoner's 2A media with PIPES buffer
 notes: 'Source: FEBA media definitions'
 category: SPECIALIZED

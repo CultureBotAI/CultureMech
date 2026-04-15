@@ -58,6 +58,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Cysteine-HCl
   term:
     id: CHEBI:52891

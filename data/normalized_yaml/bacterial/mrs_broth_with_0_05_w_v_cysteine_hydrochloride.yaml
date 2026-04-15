@@ -73,6 +73,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63037
+    label: ''
 - preferred_term: Sodium acetate 3H2O
   concentration:
     value: '5'

@@ -134,6 +134,9 @@ ingredients:
     value: '1.0'
     unit: G_PER_L
   source: CCAP Medium MR_MASM.pdf
+  term:
+    id: CHEBI:9754
+    label: ''
 - preferred_term: Make up to 1 litre with deionised water and adjust to pH 8.0 with
   notes: Ontology mapping not yet available; From CCAP Medium MR_MASM.pdf; Curated
     from CCAP Medium MR_MASM.pdf specification

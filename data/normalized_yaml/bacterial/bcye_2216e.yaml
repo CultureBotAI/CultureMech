@@ -63,6 +63,9 @@ ingredients:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source'
+  term:
+    id: CHEBI:132767
+    label: ''
 - preferred_term: α-Ketoglutarate
   concentration:
     value: '1'

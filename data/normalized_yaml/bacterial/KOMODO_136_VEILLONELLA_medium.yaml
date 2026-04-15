@@ -97,6 +97,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000596
     label: K2CO3
+  term:
+    id: CHEBI:131526
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

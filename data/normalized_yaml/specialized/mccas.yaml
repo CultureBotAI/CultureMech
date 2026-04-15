@@ -141,6 +141,9 @@ ingredients:
     value: '0.00025'
     unit: G_PER_L
   notes: From Mc_trace_minerals
+  term:
+    id: CHEBI:53542
+    label: ''
 - preferred_term: sodium selenate
   concentration:
     value: '0.002'
@@ -277,6 +280,9 @@ ingredients:
     value: '1.00E-03'
     unit: G_PER_L
   notes: 'CAS: 1313-82-2; MW: 240.18'
+  term:
+    id: CHEBI:85357
+    label: ''
 description: Used for growing Methanococcus maripaludis with hydrogen as the electron
   donor
 notes: 'Source: FEBA media definitions'

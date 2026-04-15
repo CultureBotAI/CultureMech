@@ -196,6 +196,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '190'

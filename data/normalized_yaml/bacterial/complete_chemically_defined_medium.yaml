@@ -24,6 +24,9 @@ ingredients:
     value: '0.06574'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:xan'
+  term:
+    id: CHEBI:15318
+    label: ''
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -76,6 +79,9 @@ ingredients:
     value: '0.01864'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ins'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Aspartate
   concentration:
     value: '3.456'
@@ -184,6 +190,9 @@ ingredients:
   concentration:
     value: '0.01051'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Phenylalanine
   concentration:
     value: '1.695'
@@ -249,6 +258,9 @@ ingredients:
     value: '0.06617'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gua'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836

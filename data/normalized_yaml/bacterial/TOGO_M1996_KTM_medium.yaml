@@ -149,6 +149,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:

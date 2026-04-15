@@ -60,6 +60,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000470
     label: Ca(NO3)2
+  term:
+    id: CHEBI:77732
+    label: ''
 - preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836

@@ -8,6 +8,9 @@ ingredients:
     value: '10'
     unit: MILLIMOLAR
   notes: 'CAS: 100037-69-2; MW: 335.34'
+  term:
+    id: CHEBI:63055
+    label: ''
 - preferred_term: Sodium Chloride
   concentration:
     value: '1'

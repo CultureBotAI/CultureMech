@@ -25,6 +25,9 @@ ingredients:
     value: '1.17'
     unit: MICROMOLAR
   notes: 'CAS: 6381-92-6; MW: 336.206'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: Iron (III) chloride hexahydrate
   concentration:
     value: '1.18'

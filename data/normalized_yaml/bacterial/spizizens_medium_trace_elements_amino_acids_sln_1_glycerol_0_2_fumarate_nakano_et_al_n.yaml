@@ -119,6 +119,9 @@ ingredients:
   concentration:
     value: '0.00247985'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Aspartate
   concentration:
     value: '0.375657'
@@ -187,6 +190,9 @@ ingredients:
   concentration:
     value: '0.0046211'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946
@@ -205,6 +211,9 @@ ingredients:
   concentration:
     value: '0.00248756'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:77775
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258
@@ -223,6 +232,9 @@ ingredients:
   concentration:
     value: '0.012471'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Threonine
   concentration:
     value: '0.419745'

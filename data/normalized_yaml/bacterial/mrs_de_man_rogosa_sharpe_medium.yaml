@@ -53,6 +53,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Organic compound'
+  term:
+    id: CHEBI:63037
+    label: ''
 - preferred_term: CH3COONa.3H2O
   concentration:
     value: '5'

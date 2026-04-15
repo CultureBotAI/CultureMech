@@ -12,6 +12,9 @@ ingredients:
     value: '0.01'
     unit: MG_PER_ML
   notes: 'CAS: 25839-94-0; MW: 582.58'
+  term:
+    id: CHEBI:6109
+    label: ''
 - preferred_term: Sodium D,L-Lactate
   concentration:
     value: '10'

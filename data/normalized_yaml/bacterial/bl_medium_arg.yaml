@@ -165,6 +165,9 @@ ingredients:
   concentration:
     value: '4.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -211,6 +214,9 @@ ingredients:
   concentration:
     value: 3e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.52'
@@ -253,6 +259,9 @@ ingredients:
   concentration:
     value: '0.28'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32036
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: 3e-06

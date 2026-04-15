@@ -71,6 +71,9 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
+  term:
+    id: CHEBI:91247
+    label: ''
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.3'

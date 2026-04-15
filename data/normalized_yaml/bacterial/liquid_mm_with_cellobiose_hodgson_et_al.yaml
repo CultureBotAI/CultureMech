@@ -40,6 +40,9 @@ ingredients:
   concentration:
     value: '5.34706'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32035
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.87026'

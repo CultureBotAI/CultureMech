@@ -137,6 +137,9 @@ ingredients:
   concentration:
     value: '0.03751'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:36383
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -173,6 +176,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -208,6 +214,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

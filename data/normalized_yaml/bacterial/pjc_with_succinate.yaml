@@ -85,6 +85,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

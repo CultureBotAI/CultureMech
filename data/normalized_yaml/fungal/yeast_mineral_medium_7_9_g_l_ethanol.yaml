@@ -126,6 +126,9 @@ ingredients:
   concentration:
     value: '0.001261'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -140,6 +143,9 @@ ingredients:
   concentration:
     value: '0.001653'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.001201'

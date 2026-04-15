@@ -133,6 +133,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -147,6 +150,9 @@ ingredients:
   concentration:
     value: '0.001627'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Ferric oxide
   concentration:
     value: '100.0'
@@ -155,6 +161,9 @@ ingredients:
   concentration:
     value: '0.007702'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0004005'

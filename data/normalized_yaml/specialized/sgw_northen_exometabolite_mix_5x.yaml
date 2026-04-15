@@ -387,6 +387,9 @@ ingredients:
     value: '10.0'
     unit: MICROMOLAR
   notes: 'CAS: 461-05-2; MW: 197.66; From Northen_Exometabolite_mix_1'
+  term:
+    id: CHEBI:91318
+    label: ''
 - preferred_term: L-Asparagine
   concentration:
     value: '10.0'
@@ -550,6 +553,9 @@ ingredients:
     value: '1.6'
     unit: MICROMOLAR
   notes: 'CAS: 2922-28-3; MW: 171.59; From Northen_Exometabolite_mix_1'
+  term:
+    id: CHEBI:64139
+    label: ''
 - preferred_term: Thymidine
   concentration:
     value: '1.3'

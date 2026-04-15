@@ -162,6 +162,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000389
     label: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: ''
 - preferred_term: Na2S2O3·5H2O
   concentration:
     value: '5'

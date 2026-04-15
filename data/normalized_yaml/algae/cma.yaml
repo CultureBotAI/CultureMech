@@ -50,6 +50,9 @@ ingredients:
     value: '17.0'
     unit: G_PER_L
   source: CCAP Medium MR_CMA.pdf
+  term:
+    id: CHEBI:2509
+    label: ''
 - preferred_term: D-glucose
   term:
     id: CHEBI:17634

@@ -33,6 +33,9 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63036
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '1'

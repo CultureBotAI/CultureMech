@@ -112,6 +112,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:63043
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '27.0'
@@ -263,6 +266,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

@@ -73,6 +73,9 @@ ingredients:
   concentration:
     value: '0.000619963'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -125,6 +128,9 @@ ingredients:
   concentration:
     value: '0.0115527'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -157,6 +163,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000119
     label: Sodium sulfide
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: '''Nickel(II'
   concentration:
     value: '0.00697114'
@@ -165,6 +174,9 @@ ingredients:
   concentration:
     value: '0.0142524'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:36383
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

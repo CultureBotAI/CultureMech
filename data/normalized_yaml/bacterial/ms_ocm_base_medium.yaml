@@ -69,6 +69,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000116
     label: Magnesium chloride hexahydrate
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Calcium chloride dehydrate
   concentration:
     value: '40'
@@ -244,6 +247,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000120
     label: Sodium sulfide nonahydrate
+  term:
+    id: CHEBI:85357
+    label: ''
 - preferred_term: Cysteine
   concentration:
     value: '3'

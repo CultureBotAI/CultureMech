@@ -24,6 +24,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000150
     label: HCl
+  term:
+    id: CHEBI:17883
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

@@ -109,6 +109,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000281
     label: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: ''
 media_term:
   preferred_term: TOGO Medium M70
   term:

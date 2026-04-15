@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '2'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:31795
+    label: ''
 - preferred_term: Calcium chloride dihydrate
   concentration:
     value: '0.1'

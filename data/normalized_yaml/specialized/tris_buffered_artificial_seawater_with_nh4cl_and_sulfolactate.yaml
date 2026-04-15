@@ -98,6 +98,9 @@ ingredients:
   concentration:
     value: '0.0123992'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: 3-Sulfolactate
   concentration:
     value: '10.0'
@@ -160,6 +163,9 @@ ingredients:
   concentration:
     value: '0.084058'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

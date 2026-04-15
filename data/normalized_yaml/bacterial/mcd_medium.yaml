@@ -108,6 +108,9 @@ ingredients:
     value: '0.006617'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:gua'
+  term:
+    id: CHEBI:16235
+    label: ''
 - preferred_term: Uracil
   term:
     id: CHEBI:17568
@@ -134,6 +137,9 @@ ingredients:
     value: '0.03287'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:xan'
+  term:
+    id: CHEBI:15318
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -198,6 +204,9 @@ ingredients:
     value: '0.01864'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ins'
+  term:
+    id: CHEBI:17596
+    label: ''
 - preferred_term: Valine
   concentration:
     value: '2.817'
@@ -290,6 +299,9 @@ ingredients:
   concentration:
     value: '0.01051'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.04911'

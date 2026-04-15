@@ -24,6 +24,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001049
     label: amphotericin  B
+  term:
+    id: CHEBI:2682
+    label: ''
 - preferred_term: Eagle's  minimum  essential  medium  (MEM) (Nissui  Co.,  Tokyo)
   concentration:
     value: '1'

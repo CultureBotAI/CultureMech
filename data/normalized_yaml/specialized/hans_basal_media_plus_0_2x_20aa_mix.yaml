@@ -8,6 +8,9 @@ ingredients:
     value: '0.03'
     unit: MOLAR
   notes: 'CAS: 100037-69-2; MW: 335.34'
+  term:
+    id: CHEBI:63055
+    label: ''
 - preferred_term: Potassium Chloride
   concentration:
     value: '0.10'
@@ -112,6 +115,9 @@ ingredients:
     value: '1.3e-05'
     unit: G_PER_L
   notes: 'CAS: 7646-85-7; MW: 136.3; From Sulfur-free DL minerals'
+  term:
+    id: CHEBI:49976
+    label: ''
 - preferred_term: Calcium Chloride Dihydrate
   concentration:
     value: 1e-05

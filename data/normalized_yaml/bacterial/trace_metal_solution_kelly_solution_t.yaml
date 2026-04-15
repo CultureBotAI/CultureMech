@@ -23,6 +23,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000148
     label: NaOH
+  term:
+    id: CHEBI:32145
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:

@@ -47,6 +47,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000118
     label: Sodium sulfate
+  term:
+    id: CHEBI:32149
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '1.006'

@@ -81,6 +81,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:63037
+    label: ''
 - preferred_term: glucose
   concentration:
     value: '20'

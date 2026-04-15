@@ -75,6 +75,9 @@ ingredients:
   concentration:
     value: 3e-07
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -113,6 +116,9 @@ ingredients:
   concentration:
     value: 5e-07
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -130,6 +136,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 - preferred_term: Ammonium sulfate
   term:
     id: CHEBI:62946

@@ -93,6 +93,9 @@ ingredients:
     value: '4'
     unit: MILLIMOLAR
   notes: 'Properties: Buffer'
+  term:
+    id: CHEBI:35920
+    label: ''
 - preferred_term: CaCl2
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'

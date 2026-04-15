@@ -158,10 +158,16 @@ ingredients:
   concentration:
     value: '0.007702'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '1.341'
@@ -237,6 +243,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000117
     label: Sodium dihydrogen phosphate
+  term:
+    id: CHEBI:37583
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

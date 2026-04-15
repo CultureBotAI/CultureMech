@@ -248,6 +248,9 @@ ingredients:
     value: '0.0001'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:chsterol'
+  term:
+    id: CHEBI:140435
+    label: ''
 - preferred_term: L-Threonine
   term:
     id: CHEBI:16857
@@ -291,6 +294,9 @@ ingredients:
     value: '0.0005'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:xan'
+  term:
+    id: CHEBI:15318
+    label: ''
 - preferred_term: L-Isoleucine
   term:
     id: CHEBI:17191

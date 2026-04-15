@@ -135,6 +135,9 @@ ingredients:
     value: '0.2'
     unit: MILLIMOLAR
   notes: 'CAS: 2922-28-3; MW: 171.59'
+  term:
+    id: CHEBI:64139
+    label: ''
 - preferred_term: Cytosine
   concentration:
     value: '0.2'
