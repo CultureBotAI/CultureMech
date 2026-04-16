@@ -1865,8 +1865,8 @@ help:
 # UMAP VISUALIZATION
 # ================================================================
 
-# Default path to KG-Microbe embeddings
-kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz"
+# Default path to KG-Microbe embeddings (local copy in data/embeddings/)
+kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CultureMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz"
 
 [group('Visualization')]
 gen-media-umap embeddings_path=kg_microbe_embeddings:
@@ -1876,11 +1876,11 @@ gen-media-umap embeddings_path=kg_microbe_embeddings:
     uv run culturemech umap generate \
         --embeddings-path {{embeddings_path}} \
         --media-dir {{normalized_yaml_dir}} \
-        --output docs/media_umap.html \
+        --output app/umap.html \
         --cache-dir .umap_cache
     echo ""
     echo "✓ UMAP visualization generated!"
-    echo "  Output: docs/media_umap.html"
+    echo "  Output: app/umap.html"
     echo ""
     echo "To view locally: just serve-browser"
     echo "Or open: open docs/media_umap.html"
@@ -1896,7 +1896,7 @@ gen-media-umap-custom embeddings_path n_neighbors="15" min_dist="0.1" min_covera
     uv run culturemech umap generate \
         --embeddings-path {{embeddings_path}} \
         --media-dir {{normalized_yaml_dir}} \
-        --output docs/media_umap.html \
+        --output app/umap.html \
         --cache-dir .umap_cache \
         --n-neighbors {{n_neighbors}} \
         --min-dist {{min_dist}} \
@@ -1912,7 +1912,7 @@ gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
     uv run culturemech umap generate \
         --embeddings-path {{embeddings_path}} \
         --media-dir {{normalized_yaml_dir}} \
-        --output docs/media_umap.html \
+        --output app/umap.html \
         --cache-dir .umap_cache \
         --force-reload
     echo ""

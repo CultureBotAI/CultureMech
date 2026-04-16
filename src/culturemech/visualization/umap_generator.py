@@ -147,12 +147,18 @@ class UMAPVisualizationGenerator:
         env = Environment(loader=FileSystemLoader(template_dir))
         template = env.get_template("media_umap.html")
 
+        # Unique media count: IDs present in either panel (no double-counting)
+        derived_ids = {d["id"] for d in derived_data}
+        direct_ids = {d["id"] for d in direct_data}
+        unique_count = len(derived_ids | direct_ids)
+
         # Render template
         html_content = template.render(
             derived_data_json=json.dumps(derived_data),
             direct_data_json=json.dumps(direct_data),
             derived_count=len(derived_data),
             direct_count=len(direct_data),
+            unique_count=unique_count,
         )
 
         # Write output
