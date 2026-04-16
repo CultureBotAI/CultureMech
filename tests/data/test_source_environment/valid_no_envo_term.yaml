@@ -1,0 +1,5 @@
+name: Mystery Marine Medium
+category: bacterial
+source_environment:
+  - preferred_term: unspecified marine environment
+    notes: "Isolated from marine sample, specific habitat unknown"

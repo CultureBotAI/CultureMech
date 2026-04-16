@@ -1,0 +1,8 @@
+name: Acidic Peatland Medium
+category: bacterial
+source_environment:
+  - preferred_term: peatland
+    term:
+      id: ENVO:00000044
+      label: peatland
+    notes: "Designed for acidophilic bacteria from northern boreal peatlands"

@@ -1,0 +1,245 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://w3id.org/culturemech/import-manifest/v1",
+  "title": "CultureMech Import Manifest Schema",
+  "description": "Schema for versioning and tracking media imports from external databases",
+  "type": "object",
+  "required": [
+    "import_version",
+    "source_database",
+    "import_date",
+    "curator",
+    "schema_version",
+    "import_statistics"
+  ],
+  "properties": {
+    "import_version": {
+      "type": "string",
+      "description": "Import version (vMAJOR.MINOR.PATCH_YYYY-MM-DD)",
+      "pattern": "^v\\d+\\.\\d+\\.\\d+_\\d{4}-\\d{2}-\\d{2}$",
+      "examples": ["v1.0.0_2026-01-27", "v1.1.0_2026-03-15"]
+    },
+    "source_database": {
+      "type": "string",
+      "description": "Source database identifier",
+      "enum": [
+        "MEDIADIVE",
+        "TOGO",
+        "KOMODO",
+        "MEDIADB",
+        "UTEX",
+        "CCAP",
+        "SAG",
+        "CULTUREBOTHT",
+        "COMMUNITYMECH",
+        "BACDIVE",
+        "NBRC",
+        "ATCC",
+        "MANUAL"
+      ]
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL of source database or API endpoint",
+      "format": "uri"
+    },
+    "import_date": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when import was executed",
+      "format": "date-time",
+      "examples": ["2026-01-27T06:35:57Z"]
+    },
+    "curator": {
+      "type": "string",
+      "description": "Name of skill, script, or person who performed import",
+      "examples": ["import-mediadive-skill", "scripts/import_from_togo.py"]
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "CultureMech schema version used for import",
+      "pattern": "^culturemech-v\\d+\\.\\d+\\.\\d+$",
+      "examples": ["culturemech-v1.2.0"]
+    },
+    "source_metadata": {
+      "type": "object",
+      "description": "Metadata about the source database state",
+      "properties": {
+        "database_version": {
+          "type": "string",
+          "description": "Version of source database if available"
+        },
+        "database_date": {
+          "type": "string",
+          "description": "Last updated date of source database",
+          "format": "date"
+        },
+        "access_method": {
+          "type": "string",
+          "description": "How source data was accessed",
+          "enum": ["API", "FILE_DOWNLOAD", "DATABASE_DUMP", "WEB_SCRAPING", "MANUAL"]
+        },
+        "api_version": {
+          "type": "string",
+          "description": "API version if accessed via API"
+        }
+      }
+    },
+    "import_statistics": {
+      "type": "object",
+      "description": "Statistics about the import operation",
+      "required": ["media_imported"],
+      "properties": {
+        "media_imported": {
+          "type": "integer",
+          "description": "Number of media successfully imported",
+          "minimum": 0
+        },
+        "media_skipped": {
+          "type": "integer",
+          "description": "Number of media skipped (duplicates, invalid, etc.)",
+          "minimum": 0,
+          "default": 0
+        },
+        "media_updated": {
+          "type": "integer",
+          "description": "Number of existing media updated (for refresh imports)",
+          "minimum": 0,
+          "default": 0
+        },
+        "new_media": {
+          "type": "integer",
+          "description": "Number of new media added (for refresh imports)",
+          "minimum": 0,
+          "default": 0
+        },
+        "errors": {
+          "type": "integer",
+          "description": "Number of errors encountered",
+          "minimum": 0,
+          "default": 0
+        }
+      }
+    },
+    "category_breakdown": {
+      "type": "object",
+      "description": "Count of media by category",
+      "properties": {
+        "bacterial": {"type": "integer", "minimum": 0},
+        "fungal": {"type": "integer", "minimum": 0},
+        "archaea": {"type": "integer", "minimum": 0},
+        "algae": {"type": "integer", "minimum": 0},
+        "general": {"type": "integer", "minimum": 0},
+        "other": {"type": "integer", "minimum": 0}
+      }
+    },
+    "ids_assigned": {
+      "type": "object",
+      "description": "Range of CultureMech IDs assigned in this import",
+      "properties": {
+        "start_id": {
+          "type": "string",
+          "description": "First CultureMech ID assigned",
+          "pattern": "^CultureMech:\\d{6}$",
+          "examples": ["CultureMech:000001"]
+        },
+        "end_id": {
+          "type": "string",
+          "description": "Last CultureMech ID assigned",
+          "pattern": "^CultureMech:\\d{6}$",
+          "examples": ["CultureMech:003327"]
+        }
+      }
+    },
+    "validation_status": {
+      "type": "string",
+      "description": "Overall validation status of import",
+      "enum": ["PASSED", "PASSED_WITH_WARNINGS", "FAILED"],
+      "default": "PASSED"
+    },
+    "validation_errors": {
+      "type": "array",
+      "description": "List of validation errors encountered",
+      "items": {
+        "type": "object",
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["ERROR", "WARNING", "INFO"]
+          },
+          "message": {
+            "type": "string"
+          },
+          "file": {
+            "type": "string",
+            "description": "File where error occurred"
+          }
+        }
+      }
+    },
+    "data_quality_metrics": {
+      "type": "object",
+      "description": "Data quality metrics for imported media",
+      "properties": {
+        "completeness_score": {
+          "type": "number",
+          "description": "Average completeness score (0-100)",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "ingredient_mapping_rate": {
+          "type": "number",
+          "description": "Percentage of ingredients mapped to CHEBI (0-100)",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "missing_fields": {
+          "type": "object",
+          "description": "Count of records missing key fields",
+          "properties": {
+            "missing_ph": {"type": "integer", "minimum": 0},
+            "missing_ingredients": {"type": "integer", "minimum": 0},
+            "missing_description": {"type": "integer", "minimum": 0},
+            "missing_target_organisms": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    },
+    "files_created": {
+      "type": "array",
+      "description": "List of YAML files created in this import",
+      "items": {
+        "type": "string"
+      }
+    },
+    "files_updated": {
+      "type": "array",
+      "description": "List of YAML files updated in this import (for refresh imports)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "previous_version": {
+      "type": "string",
+      "description": "Previous import version (for update tracking)",
+      "pattern": "^v\\d+\\.\\d+\\.\\d+_\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "changes_from_previous": {
+      "type": "object",
+      "description": "Summary of changes from previous version",
+      "properties": {
+        "new_records": {"type": "integer", "minimum": 0},
+        "updated_records": {"type": "integer", "minimum": 0},
+        "deprecated_records": {"type": "integer", "minimum": 0},
+        "field_changes": {
+          "type": "object",
+          "description": "Count of changes by field",
+          "additionalProperties": {"type": "integer"}
+        }
+      }
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes about this import"
+    }
+  }
+}

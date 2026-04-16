@@ -1,0 +1,7 @@
+name: Bad ENVO Medium
+category: bacterial
+source_environment:
+  - preferred_term: unknown
+    term:
+      id: ENVO:123
+      label: invalid

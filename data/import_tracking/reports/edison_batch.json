@@ -1,0 +1,2402 @@
+[
+  {
+    "recipe_name": "dehalospirillum_medium",
+    "file_path": "bacterial/TOGO_M2455_Dehalospirillum_Medium.yaml",
+    "completeness_score": 0,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is dehalospirillum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of dehalospirillum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using dehalospirillum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in dehalospirillum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanosphaerula_peat_medium_for_dsm_25616",
+    "file_path": "bacterial/methanosphaerula_peat_medium_for_dsm_25616.yaml",
+    "completeness_score": 0,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanosphaerula_peat_medium_for_dsm_25616 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanosphaerula_peat_medium_for_dsm_25616 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanosphaerula_peat_medium_for_dsm_25616 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanosphaerula_peat_medium_for_dsm_25616 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanosphaerula_peat_medium",
+    "file_path": "bacterial/TOGO_M2655_Methanosphaerula_Peat_Medium.yaml",
+    "completeness_score": 0,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanosphaerula_peat_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanosphaerula_peat_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanosphaerula_peat_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanosphaerula_peat_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "artficial_freshwater_medium_ii",
+    "file_path": "bacterial/TOGO_M1203_Artficial_Freshwater_Medium_II.yaml",
+    "completeness_score": 5,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is artficial_freshwater_medium_ii culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of artficial_freshwater_medium_ii culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using artficial_freshwater_medium_ii medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in artficial_freshwater_medium_ii medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "endomicrobium_proavitum_rsa_medium",
+    "file_path": "bacterial/TOGO_M1118_Endomicrobium_Proavitum_RSA_Medium.yaml",
+    "completeness_score": 5,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is endomicrobium_proavitum_rsa_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of endomicrobium_proavitum_rsa_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using endomicrobium_proavitum_rsa_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in endomicrobium_proavitum_rsa_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "tmbs4_medium",
+    "file_path": "bacterial/TOGO_M3270_Tmbs4_Medium.yaml",
+    "completeness_score": 5,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is tmbs4_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of tmbs4_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using tmbs4_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in tmbs4_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "artficial_freshwater_medium_ii",
+    "file_path": "bacterial/TOGO_M1204_Artficial_Freshwater_Medium_II.yaml",
+    "completeness_score": 5,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is artficial_freshwater_medium_ii culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of artficial_freshwater_medium_ii culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using artficial_freshwater_medium_ii medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in artficial_freshwater_medium_ii medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "artficial_brackish_water_medium",
+    "file_path": "bacterial/TOGO_M1200_Artficial_Brackish_Water_Medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is artficial_brackish_water_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of artficial_brackish_water_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using artficial_brackish_water_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in artficial_brackish_water_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanoregula_peat_medium",
+    "file_path": "bacterial/TOGO_M2654_Methanoregula_Peat_Medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanoregula_peat_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanoregula_peat_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanoregula_peat_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanoregula_peat_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_am5_medium",
+    "file_path": "bacterial/TOGO_M679_Modified_AM5_Medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_am5_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_am5_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_am5_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_am5_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "artficial_freshwater_medium_i",
+    "file_path": "bacterial/TOGO_M1202_Artficial_Freshwater_Medium_I.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is artficial_freshwater_medium_i culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of artficial_freshwater_medium_i culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using artficial_freshwater_medium_i medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in artficial_freshwater_medium_i medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "ctm_medium",
+    "file_path": "bacterial/TOGO_M1173_CTM_Medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is ctm_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of ctm_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using ctm_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in ctm_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "sporomusa_acidovorans_medium",
+    "file_path": "bacterial/TOGO_M1290_Sporomusa_Acidovorans_Medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is sporomusa_acidovorans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of sporomusa_acidovorans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using sporomusa_acidovorans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in sporomusa_acidovorans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "artficial_marine_water_medium",
+    "file_path": "bacterial/artficial_marine_water_medium.yaml",
+    "completeness_score": 10,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is artficial_marine_water_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of artficial_marine_water_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using artficial_marine_water_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in artficial_marine_water_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M1168_Bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_marine_medium_for_dethiosulfobacter",
+    "file_path": "bacterial/modified_marine_medium_for_dethiosulfobacter.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_marine_medium_for_dethiosulfobacter culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_marine_medium_for_dethiosulfobacter culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_marine_medium_for_dethiosulfobacter medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_marine_medium_for_dethiosulfobacter medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "alicycliphilus_denitrificans_medium",
+    "file_path": "bacterial/TOGO_M599_Alicycliphilus_Denitrificans_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is alicycliphilus_denitrificans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of alicycliphilus_denitrificans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using alicycliphilus_denitrificans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in alicycliphilus_denitrificans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "chromatium_medium",
+    "file_path": "bacterial/chromatium_medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is chromatium_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of chromatium_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using chromatium_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in chromatium_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfobulbus_sp_medium_freshwater_for_dsm_14880",
+    "file_path": "bacterial/desulfobulbus_sp_medium_freshwater_for_dsm_14880.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfobulbus_sp_medium_freshwater_for_dsm_14880 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfobulbus_sp_medium_freshwater_for_dsm_14880 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfobulbus_sp_medium_freshwater_for_dsm_14880 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfobulbus_sp_medium_freshwater_for_dsm_14880 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfatiferula_berrense_medium",
+    "file_path": "bacterial/TOGO_M973_Desulfatiferula_Berrense_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfatiferula_berrense_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfatiferula_berrense_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfatiferula_berrense_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfatiferula_berrense_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M1167_Bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "spirochaeta_ri_19_b1_medium",
+    "file_path": "bacterial/TOGO_M2768_Spirochaeta_RI_19.B1_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is spirochaeta_ri_19_b1_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of spirochaeta_ri_19_b1_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using spirochaeta_ri_19_b1_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in spirochaeta_ri_19_b1_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "dehalococcoides_medium",
+    "file_path": "bacterial/TOGO_M862_Dehalococcoides_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is dehalococcoides_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of dehalococcoides_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using dehalococcoides_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in dehalococcoides_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "alicycliphilus_denitrificans_medium",
+    "file_path": "bacterial/TOGO_M600_Alicycliphilus_Denitrificans_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is alicycliphilus_denitrificans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of alicycliphilus_denitrificans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using alicycliphilus_denitrificans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in alicycliphilus_denitrificans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M1165_Bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "dehalobacter_restrictus_medium_tce",
+    "file_path": "bacterial/TOGO_M2745_Dehalobacter_Restrictus_Medium_TCE.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is dehalobacter_restrictus_medium_tce culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of dehalobacter_restrictus_medium_tce culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using dehalobacter_restrictus_medium_tce medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in dehalobacter_restrictus_medium_tce medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "saltwater_medium_with_acetate_and_ferric_citrate",
+    "file_path": "bacterial/TOGO_M464_Saltwater_Medium_With_Acetate_And_Ferric_Citrate.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is saltwater_medium_with_acetate_and_ferric_citrate culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of saltwater_medium_with_acetate_and_ferric_citrate culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using saltwater_medium_with_acetate_and_ferric_citrate medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in saltwater_medium_with_acetate_and_ferric_citrate medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "phe91_medium",
+    "file_path": "bacterial/TOGO_M538_PHE91_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is phe91_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of phe91_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using phe91_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in phe91_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M1166_Bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 15,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "geobacter_daltonii_medium",
+    "file_path": "bacterial/TOGO_M781_Geobacter_Daltonii_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is geobacter_daltonii_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of geobacter_daltonii_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using geobacter_daltonii_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in geobacter_daltonii_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "pfennigs_medium_ii_with_salt",
+    "file_path": "bacterial/TOGO_M2258_Pfennig_s_Medium_II_With_Salt.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is pfennigs_medium_ii_with_salt culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of pfennigs_medium_ii_with_salt culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using pfennigs_medium_ii_with_salt medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in pfennigs_medium_ii_with_salt medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_marine_medium_for_desulfovibrio_tokyoensis",
+    "file_path": "bacterial/modified_marine_medium_for_desulfovibrio_tokyoensis.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_marine_medium_for_desulfovibrio_tokyoensis culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_marine_medium_for_desulfovibrio_tokyoensis culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_marine_medium_for_desulfovibrio_tokyoensis medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_marine_medium_for_desulfovibrio_tokyoensis medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfovibrio_oceani_medium",
+    "file_path": "bacterial/TOGO_M792_Desulfovibrio_Oceani_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfovibrio_oceani_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfovibrio_oceani_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfovibrio_oceani_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfovibrio_oceani_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "g5g6_medium",
+    "file_path": "bacterial/TOGO_M607_G5G6_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is g5g6_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of g5g6_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using g5g6_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in g5g6_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "anaerobic_bicarbonate_buffered_medium_with_phenol",
+    "file_path": "bacterial/anaerobic_bicarbonate_buffered_medium_with_phenol.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is anaerobic_bicarbonate_buffered_medium_with_phenol culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of anaerobic_bicarbonate_buffered_medium_with_phenol culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using anaerobic_bicarbonate_buffered_medium_with_phenol medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in anaerobic_bicarbonate_buffered_medium_with_phenol medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfobacterium_oleovorans_medium",
+    "file_path": "bacterial/TOGO_M1354_Desulfobacterium_Oleovorans_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfobacterium_oleovorans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfobacterium_oleovorans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfobacterium_oleovorans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfobacterium_oleovorans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "medium_10",
+    "file_path": "bacterial/TOGO_M124_Medium_10.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is medium_10 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of medium_10 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using medium_10 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in medium_10 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "syntrophomonas_medium_for_syntrophospora_cellicola_19j_3",
+    "file_path": "bacterial/TOGO_M520_Syntrophomonas_Medium_for_Syntrophospora_cellicola_19J-3.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is syntrophomonas_medium_for_syntrophospora_cellicola_19j_3 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of syntrophomonas_medium_for_syntrophospora_cellicola_19j_3 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using syntrophomonas_medium_for_syntrophospora_cellicola_19j_3 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in syntrophomonas_medium_for_syntrophospora_cellicola_19j_3 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_synthrophomonas_medium",
+    "file_path": "bacterial/TOGO_M541_Modified_Synthrophomonas_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_synthrophomonas_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_synthrophomonas_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_synthrophomonas_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_synthrophomonas_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "sporomusa_medium",
+    "file_path": "bacterial/TOGO_M754_Sporomusa_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is sporomusa_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of sporomusa_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using sporomusa_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in sporomusa_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose",
+    "file_path": "bacterial/methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanobacteria_medium_atcc_medium_1045_with_0_2_yeast_extract_and_0_5_glucose medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfovibrio_arsenicitolerans_medium",
+    "file_path": "bacterial/TOGO_M867_Desulfovibrio_Arsenicitolerans_Medium.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfovibrio_arsenicitolerans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfovibrio_arsenicitolerans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfovibrio_arsenicitolerans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfovibrio_arsenicitolerans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "freshwater_medium_with_toluene",
+    "file_path": "bacterial/TOGO_M772_Freshwater_Medium_With_Toluene.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is freshwater_medium_with_toluene culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of freshwater_medium_with_toluene culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using freshwater_medium_with_toluene medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in freshwater_medium_with_toluene medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "pfennigs_medium_ii",
+    "file_path": "bacterial/TOGO_M2595_Pfennig_s_Medium_II.yaml",
+    "completeness_score": 20,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is pfennigs_medium_ii culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of pfennigs_medium_ii culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using pfennigs_medium_ii medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in pfennigs_medium_ii medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "peat_medium_2_for_methanobacteria",
+    "file_path": "bacterial/TOGO_M970_Peat_Medium_2_For_Methanobacteria.yaml",
+    "completeness_score": 21,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is peat_medium_2_for_methanobacteria culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of peat_medium_2_for_methanobacteria culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using peat_medium_2_for_methanobacteria medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in peat_medium_2_for_methanobacteria medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "natroniella_medium_for_anb_phb2",
+    "file_path": "bacterial/TOGO_M1385_Natroniella_Medium_For_ANB-PHB2.yaml",
+    "completeness_score": 23,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is natroniella_medium_for_anb_phb2 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of natroniella_medium_for_anb_phb2 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using natroniella_medium_for_anb_phb2 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in natroniella_medium_for_anb_phb2 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "clostridium_swellfunianum_medium",
+    "file_path": "bacterial/TOGO_M1066_Clostridium_Swellfunianum_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is clostridium_swellfunianum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of clostridium_swellfunianum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using clostridium_swellfunianum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in clostridium_swellfunianum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "halophilic_sob_medium",
+    "file_path": "bacterial/halophilic_sob_medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is halophilic_sob_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of halophilic_sob_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using halophilic_sob_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in halophilic_sob_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "natronospira_proteinivora_medium",
+    "file_path": "bacterial/TOGO_M1220_Natronospira_Proteinivora_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is natronospira_proteinivora_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of natronospira_proteinivora_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using natronospira_proteinivora_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in natronospira_proteinivora_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "synthrophomonas_medium_sulfate_free",
+    "file_path": "bacterial/TOGO_M2695_Synthrophomonas_Medium_Sulfate_Free.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is synthrophomonas_medium_sulfate_free culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of synthrophomonas_medium_sulfate_free culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using synthrophomonas_medium_sulfate_free medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in synthrophomonas_medium_sulfate_free medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "ip3_3_medium",
+    "file_path": "bacterial/TOGO_M869_IP3-3_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is ip3_3_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of ip3_3_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using ip3_3_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in ip3_3_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "lactate_bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M893_Lactate_bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is lactate_bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of lactate_bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using lactate_bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in lactate_bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfovibrio_aerotolerans_dvo5_medium",
+    "file_path": "bacterial/TOGO_M439_Desulfovibrio_Aerotolerans_DVO5_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfovibrio_aerotolerans_dvo5_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfovibrio_aerotolerans_dvo5_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfovibrio_aerotolerans_dvo5_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfovibrio_aerotolerans_dvo5_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanimicrococcus_medium",
+    "file_path": "bacterial/TOGO_M1228_Methanimicrococcus_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanimicrococcus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanimicrococcus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanimicrococcus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanimicrococcus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "sulfate_free_syntrophomonus_medium",
+    "file_path": "bacterial/TOGO_M500_Sulfate-Free_Syntrophomonus_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is sulfate_free_syntrophomonus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of sulfate_free_syntrophomonus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using sulfate_free_syntrophomonus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in sulfate_free_syntrophomonus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "halanaerobium_hydrogeniformans_medium",
+    "file_path": "bacterial/TOGO_M1296_Halanaerobium_Hydrogeniformans_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is halanaerobium_hydrogeniformans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of halanaerobium_hydrogeniformans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using halanaerobium_hydrogeniformans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in halanaerobium_hydrogeniformans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "marine_desulfosarcina_medium",
+    "file_path": "bacterial/marine_desulfosarcina_medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is marine_desulfosarcina_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of marine_desulfosarcina_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using marine_desulfosarcina_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in marine_desulfosarcina_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "anaerobic_freshwater_fwm_medium_for_dsm_15978",
+    "file_path": "bacterial/anaerobic_freshwater_fwm_medium_for_dsm_15978.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is anaerobic_freshwater_fwm_medium_for_dsm_15978 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of anaerobic_freshwater_fwm_medium_for_dsm_15978 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using anaerobic_freshwater_fwm_medium_for_dsm_15978 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in anaerobic_freshwater_fwm_medium_for_dsm_15978 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfobacterium_medium_for_dsm_17291",
+    "file_path": "bacterial/desulfobacterium_medium_for_dsm_17291.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfobacterium_medium_for_dsm_17291 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfobacterium_medium_for_dsm_17291 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfobacterium_medium_for_dsm_17291 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfobacterium_medium_for_dsm_17291 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfonema_magnum_medium",
+    "file_path": "bacterial/TOGO_M915_Desulfonema_Magnum_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfonema_magnum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfonema_magnum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfonema_magnum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfonema_magnum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "glucose_bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M1377_Glucose_bicarbonate-Buffered_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is glucose_bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of glucose_bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using glucose_bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in glucose_bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "tepidibacillus_marianaensis_medium",
+    "file_path": "bacterial/tepidibacillus_marianaensis_medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is tepidibacillus_marianaensis_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of tepidibacillus_marianaensis_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using tepidibacillus_marianaensis_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in tepidibacillus_marianaensis_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "ppll_medium",
+    "file_path": "bacterial/TOGO_M1404_PPLL_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is ppll_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of ppll_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using ppll_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in ppll_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfobacter_medium_for_dsm_10631",
+    "file_path": "bacterial/desulfobacter_medium_for_dsm_10631.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfobacter_medium_for_dsm_10631 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfobacter_medium_for_dsm_10631 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfobacter_medium_for_dsm_10631 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfobacter_medium_for_dsm_10631 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "dehalogenimonas_medium",
+    "file_path": "bacterial/TOGO_M698_Dehalogenimonas_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is dehalogenimonas_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of dehalogenimonas_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using dehalogenimonas_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in dehalogenimonas_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "saltwater_medium_with_lactate",
+    "file_path": "bacterial/TOGO_M463_Saltwater_Medium_With_Lactate.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is saltwater_medium_with_lactate culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of saltwater_medium_with_lactate culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using saltwater_medium_with_lactate medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in saltwater_medium_with_lactate medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "pyrolobus_fumarii_medium",
+    "file_path": "bacterial/TOGO_M2683_Pyrolobus_Fumarii_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is pyrolobus_fumarii_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of pyrolobus_fumarii_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using pyrolobus_fumarii_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in pyrolobus_fumarii_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfobacterium_catecholicum_medium",
+    "file_path": "bacterial/TOGO_M1353_Desulfobacterium_Catecholicum_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfobacterium_catecholicum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfobacterium_catecholicum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfobacterium_catecholicum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfobacterium_catecholicum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "dehalospirillum_medium",
+    "file_path": "bacterial/TOGO_M778_Dehalospirillum_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is dehalospirillum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of dehalospirillum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using dehalospirillum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in dehalospirillum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanothermus_medium",
+    "file_path": "bacterial/TOGO_M2662_Methanothermus_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanothermus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanothermus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanothermus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanothermus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "orenia_metallireducens_medium",
+    "file_path": "bacterial/TOGO_M1225_Orenia_Metallireducens_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is orenia_metallireducens_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of orenia_metallireducens_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using orenia_metallireducens_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in orenia_metallireducens_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "betaine_bicarbonate_buffered_medium",
+    "file_path": "bacterial/TOGO_M798_Betaine_bicarbonate_Buffered_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is betaine_bicarbonate_buffered_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of betaine_bicarbonate_buffered_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using betaine_bicarbonate_buffered_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in betaine_bicarbonate_buffered_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "deferrisoma_paleochrorii_medium",
+    "file_path": "bacterial/TOGO_M1120_Deferrisoma_Paleochrorii_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is deferrisoma_paleochrorii_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of deferrisoma_paleochrorii_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using deferrisoma_paleochrorii_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in deferrisoma_paleochrorii_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "aminobacterium_shuijingfangii_medium",
+    "file_path": "bacterial/TOGO_M1067_Aminobacterium_Shuijingfangii_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is aminobacterium_shuijingfangii_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of aminobacterium_shuijingfangii_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using aminobacterium_shuijingfangii_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in aminobacterium_shuijingfangii_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "togo_medium_m1902",
+    "file_path": "bacterial/togo_medium_m1902.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is togo_medium_m1902 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of togo_medium_m1902 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using togo_medium_m1902 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in togo_medium_m1902 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfatibacillus_olefinivorans_medium",
+    "file_path": "bacterial/TOGO_M581_Desulfatibacillus_Olefinivorans_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfatibacillus_olefinivorans_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfatibacillus_olefinivorans_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfatibacillus_olefinivorans_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfatibacillus_olefinivorans_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "hyperthermus_butylicus_medium",
+    "file_path": "bacterial/TOGO_M2675_Hyperthermus_Butylicus_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is hyperthermus_butylicus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of hyperthermus_butylicus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using hyperthermus_butylicus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in hyperthermus_butylicus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanopyrus_medium",
+    "file_path": "bacterial/TOGO_M2663_Methanopyrus_Medium.yaml",
+    "completeness_score": 25,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanopyrus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanopyrus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanopyrus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanopyrus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "natranaeroarchaeum_medium",
+    "file_path": "bacterial/TOGO_M1150_Natranaeroarchaeum_Medium.yaml",
+    "completeness_score": 26,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is natranaeroarchaeum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of natranaeroarchaeum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using natranaeroarchaeum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in natranaeroarchaeum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_medium_10",
+    "file_path": "bacterial/TOGO_M203_Modified_Medium_10.yaml",
+    "completeness_score": 26,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_medium_10 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_medium_10 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_medium_10 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_medium_10 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "medium_10_broth",
+    "file_path": "bacterial/TOGO_M172_Medium_10_Broth.yaml",
+    "completeness_score": 28,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is medium_10_broth culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of medium_10_broth culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using medium_10_broth medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in medium_10_broth medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "clostridium_sw_medium",
+    "file_path": "bacterial/TOGO_M654_Clostridium_SW_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is clostridium_sw_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of clostridium_sw_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using clostridium_sw_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in clostridium_sw_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "halanaeroarchaeum_medium",
+    "file_path": "bacterial/TOGO_M1148_Halanaeroarchaeum_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is halanaeroarchaeum_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of halanaeroarchaeum_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using halanaeroarchaeum_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in halanaeroarchaeum_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "atalassotoga_azc2201_medium",
+    "file_path": "bacterial/TOGO_M1269_Atalassotoga_AZC2201_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is atalassotoga_azc2201_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of atalassotoga_azc2201_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using atalassotoga_azc2201_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in atalassotoga_azc2201_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "widdel_freshwater_medium_with_glycerin",
+    "file_path": "bacterial/TOGO_M1316_Widdel_Freshwater_Medium_With_Glycerin.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is widdel_freshwater_medium_with_glycerin culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of widdel_freshwater_medium_with_glycerin culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using widdel_freshwater_medium_with_glycerin medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in widdel_freshwater_medium_with_glycerin medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "saltwater_medium_with_hydrogen",
+    "file_path": "bacterial/TOGO_M801_Saltwater_Medium_With_Hydrogen.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is saltwater_medium_with_hydrogen culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of saltwater_medium_with_hydrogen culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using saltwater_medium_with_hydrogen medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in saltwater_medium_with_hydrogen medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "pfennigs_medium_ii_with_salt",
+    "file_path": "bacterial/TOGO_M2477_Pfennig_s_Medium_II_With_Salt.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is pfennigs_medium_ii_with_salt culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of pfennigs_medium_ii_with_salt culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using pfennigs_medium_ii_with_salt medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in pfennigs_medium_ii_with_salt medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "thermovorax_subterraneus_medium",
+    "file_path": "bacterial/TOGO_M736_Thermovorax_Subterraneus_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is thermovorax_subterraneus_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of thermovorax_subterraneus_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using thermovorax_subterraneus_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in thermovorax_subterraneus_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "moorella_an10_medium",
+    "file_path": "bacterial/TOGO_M656_Moorella_AN10_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is moorella_an10_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of moorella_an10_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using moorella_an10_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in moorella_an10_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "mineral_salts_medium_with_tce",
+    "file_path": "bacterial/TOGO_M1342_Mineral_Salts_Medium_With_TCE.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is mineral_salts_medium_with_tce culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of mineral_salts_medium_with_tce culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using mineral_salts_medium_with_tce medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in mineral_salts_medium_with_tce medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "medium_for_strain_skb26",
+    "file_path": "bacterial/medium_for_strain_skb26.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is medium_for_strain_skb26 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of medium_for_strain_skb26 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using medium_for_strain_skb26 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in medium_for_strain_skb26 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "syntrophomonas_medium_without_sulfate",
+    "file_path": "bacterial/TOGO_M559_Syntrophomonas_Medium_Without_Sulfate.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is syntrophomonas_medium_without_sulfate culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of syntrophomonas_medium_without_sulfate culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using syntrophomonas_medium_without_sulfate medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in syntrophomonas_medium_without_sulfate medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "medium_for_strain_pf12b",
+    "file_path": "bacterial/medium_for_strain_pf12b.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is medium_for_strain_pf12b culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of medium_for_strain_pf12b culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using medium_for_strain_pf12b medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in medium_for_strain_pf12b medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "medium_for_strain_bsn1",
+    "file_path": "bacterial/medium_for_strain_bsn1.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is medium_for_strain_bsn1 culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of medium_for_strain_bsn1 culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using medium_for_strain_bsn1 medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in medium_for_strain_bsn1 medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "desulfosporomusa_medium",
+    "file_path": "bacterial/TOGO_M430_Desulfosporomusa_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is desulfosporomusa_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of desulfosporomusa_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using desulfosporomusa_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in desulfosporomusa_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanolobus_r15_medium",
+    "file_path": "bacterial/TOGO_M650_Methanolobus_R15_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanolobus_r15_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanolobus_r15_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanolobus_r15_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanolobus_r15_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "nrmbb1_medium",
+    "file_path": "bacterial/TOGO_M1386_NRmbB1_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is nrmbb1_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of nrmbb1_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using nrmbb1_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in nrmbb1_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "mmj_kt2_medium",
+    "file_path": "bacterial/TOGO_M1390_MMJ_KT2_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is mmj_kt2_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of mmj_kt2_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using mmj_kt2_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in mmj_kt2_medium medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "methanobacterum_medium_ix",
+    "file_path": "bacterial/TOGO_M1229_Methanobacterum_Medium_IX.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is methanobacterum_medium_ix culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of methanobacterum_medium_ix culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using methanobacterum_medium_ix medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in methanobacterum_medium_ix medium?"
+      }
+    ]
+  },
+  {
+    "recipe_name": "modified_sporomusa_medium",
+    "file_path": "bacterial/TOGO_M481_Modified_Sporomusa_Medium.yaml",
+    "completeness_score": 30,
+    "priority": "HIGH",
+    "queries": [
+      {
+        "field": "description",
+        "query": "What is modified_sporomusa_medium culture medium? What is its composition and what organisms does it cultivate? Provide a concise 2-3 sentence description."
+      },
+      {
+        "field": "ph_value",
+        "query": "What is the pH value of modified_sporomusa_medium culture medium? Provide numeric value."
+      },
+      {
+        "field": "target_organisms",
+        "query": "What microorganisms are commonly cultivated using modified_sporomusa_medium medium? Provide species names and NCBITaxon IDs if possible."
+      },
+      {
+        "field": "ingredient_mapping",
+        "query": "What are the chemical identities (CHEBI IDs) and exact compositions of ingredients in modified_sporomusa_medium medium?"
+      }
+    ]
+  }
+]

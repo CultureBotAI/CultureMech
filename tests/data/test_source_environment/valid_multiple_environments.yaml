@@ -1,0 +1,12 @@
+name: Universal Marine Medium
+category: bacterial
+source_environment:
+  - preferred_term: sea water
+    term:
+      id: ENVO:00002149
+      label: sea water
+  - preferred_term: marine sediment
+    term:
+      id: ENVO:03000003
+      label: marine sediment
+    notes: "Versatile medium for diverse marine bacteria"
