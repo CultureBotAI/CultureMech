@@ -34,6 +34,30 @@
             opacity: 0.9;
         }
 
+        .header-nav {
+            margin-top: 1rem;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .header-nav a {
+            display: inline-block;
+            padding: 8px 18px;
+            background: rgba(255,255,255,0.18);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.2s;
+            backdrop-filter: blur(6px);
+        }
+
+        .header-nav a:hover {
+            background: rgba(255,255,255,0.32);
+        }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -248,6 +272,10 @@
     <div class="header">
         <h1>🧫 CultureMech</h1>
         <p>Microbial Growth Media Knowledge Base</p>
+        <nav class="header-nav">
+            <a href="umap.html">📊 Media UMAP</a>
+            <a href="ingredient_umap.html">🔬 Ingredient UMAP</a>
+        </nav>
     </div>
 
     <div class="container">
