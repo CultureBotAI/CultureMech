@@ -80,6 +80,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '0.2'
@@ -98,6 +101,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.2'

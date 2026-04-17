@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '0.9'
@@ -41,6 +44,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.45'
@@ -181,11 +187,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1289
   term:

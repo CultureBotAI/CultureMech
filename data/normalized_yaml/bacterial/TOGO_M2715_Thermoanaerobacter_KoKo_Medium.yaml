@@ -26,6 +26,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000115
     label: CaCl2 x 2H2O
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
@@ -71,6 +74,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000140
     label: Na2S x 9H2O
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '1'

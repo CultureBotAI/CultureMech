@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -58,12 +61,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: CaSO4・2H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32583
+    label: ''
 - preferred_term: Sodium lactate
   concentration:
     value: '3.5'

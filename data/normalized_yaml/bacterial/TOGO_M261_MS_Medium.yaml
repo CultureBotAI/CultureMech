@@ -10,6 +10,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:

@@ -140,6 +140,9 @@ ingredients:
   concentration:
     value: '0.00374'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Tween 80
   term:
     id: CHEBI:53426
@@ -210,6 +213,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: ACES
   term:
     id: CHEBI:65994

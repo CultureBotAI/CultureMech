@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaNO3
   concentration:
     value: '2'

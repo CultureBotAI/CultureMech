@@ -97,6 +97,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 media_term:
   preferred_term: TOGO Medium M993
   term:

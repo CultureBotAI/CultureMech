@@ -79,6 +79,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '10.0'
@@ -133,6 +136,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.025'
@@ -187,6 +193,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: KAl(SO4)2·12H2O
   concentration:
     value: '4'
@@ -217,6 +226,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86356
+    label: ''
 - preferred_term: Na2WO4
   concentration:
     value: '0.8'

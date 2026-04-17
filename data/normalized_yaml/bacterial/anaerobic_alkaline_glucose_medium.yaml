@@ -58,6 +58,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -93,6 +96,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '3'

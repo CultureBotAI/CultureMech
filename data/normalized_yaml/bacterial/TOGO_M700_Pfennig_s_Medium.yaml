@@ -23,12 +23,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.34'
@@ -71,6 +77,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '1.5'

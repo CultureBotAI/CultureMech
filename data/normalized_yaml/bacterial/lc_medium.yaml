@@ -95,18 +95,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.6'
@@ -221,6 +230,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: ''
 media_term:
   preferred_term: TOGO Medium M3166
   term:

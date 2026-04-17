@@ -11,6 +11,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: L--cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -21,6 +24,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -92,6 +98,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.1'

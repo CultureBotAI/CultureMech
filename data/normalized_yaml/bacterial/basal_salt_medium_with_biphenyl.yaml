@@ -116,6 +116,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CaCl2
   concentration:
     value: '2.65'

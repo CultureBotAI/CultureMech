@@ -36,6 +36,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '2270.0'
@@ -71,11 +74,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Na2S x 9 H2O
   concentration:
     value: '5.0'
@@ -93,6 +102,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: H2O
   concentration:
     value: '50'

@@ -104,6 +104,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86254
+    label: ''
 - preferred_term: Quinic acid
   concentration:
     value: '0.19'

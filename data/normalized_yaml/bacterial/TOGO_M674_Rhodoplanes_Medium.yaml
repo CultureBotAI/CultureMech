@@ -28,6 +28,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -51,6 +54,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.38'

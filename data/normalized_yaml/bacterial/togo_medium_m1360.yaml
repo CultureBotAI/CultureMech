@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -41,6 +44,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '5.4'
@@ -108,6 +114,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000776
     label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: Fumaric acid
   concentration:
     value: '0.2'

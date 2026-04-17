@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '1'
@@ -53,6 +56,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'

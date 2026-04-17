@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -119,6 +125,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '300'
@@ -137,30 +146,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '190'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '24'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: ZnCl2
   concentration:
     value: '70'

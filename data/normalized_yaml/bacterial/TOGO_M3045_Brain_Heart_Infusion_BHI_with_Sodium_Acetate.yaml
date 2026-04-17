@@ -129,6 +129,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Antifoam SI (Wako)
   concentration:
     value: '1'

@@ -41,6 +41,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Methane gas
   notes: 'Properties: ガス'
   concentration:
@@ -104,18 +107,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.01'

@@ -71,6 +71,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '200'

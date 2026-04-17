@@ -82,18 +82,27 @@ ingredients:
     value: '1.55'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '7.3999999999999995'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 0.1, 7.3]'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '2.7'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 0.2, 2.5]'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '2'
@@ -112,24 +121,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '2.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: (NH4)Mo7O24・4H2O
   concentration:
     value: '0.5'
@@ -141,6 +162,9 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: NaOH
   concentration:
     value: '11'

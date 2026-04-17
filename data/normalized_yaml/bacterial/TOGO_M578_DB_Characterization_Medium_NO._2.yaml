@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '240'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '7'

@@ -146,6 +146,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '0.267'
@@ -188,6 +191,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:30812
+    label: ''
 - preferred_term: Na2B4O7·10H2O
   concentration:
     value: '0.177'

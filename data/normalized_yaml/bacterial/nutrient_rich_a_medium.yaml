@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: yeast extract
   concentration:
     value: '2'
@@ -58,6 +61,9 @@ ingredients:
     unit: MG_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: biotin
   concentration:
     value: '0.2'
@@ -87,6 +93,9 @@ ingredients:
     unit: MG_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: thiamine
   concentration:
     value: '0.2'

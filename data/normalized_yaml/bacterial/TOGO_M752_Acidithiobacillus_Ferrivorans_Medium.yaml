@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -89,6 +92,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86159
+    label: ''
 media_term:
   preferred_term: TOGO Medium M752
   term:

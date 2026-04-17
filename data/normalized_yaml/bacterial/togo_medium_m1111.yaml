@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '80'
@@ -41,6 +44,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.85'
@@ -71,6 +77,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '4.2'
@@ -129,6 +138,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '10'
@@ -147,12 +159,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Thiamine・HCl
   concentration:
     value: '5'
@@ -169,12 +187,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: KAl(SO4)2・12H2O
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '500'

@@ -90,11 +90,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Valeric acid
   concentration:
     value: '5'

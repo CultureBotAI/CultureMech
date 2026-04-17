@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '1.26'
@@ -88,6 +91,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: Methanol
   concentration:
     value: '5'
@@ -150,16 +156,25 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Biotin
   concentration:
     value: '1'

@@ -23,12 +23,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KNO3
   concentration:
     value: '1'
@@ -64,6 +70,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '30'
@@ -82,41 +91,62 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: EDTA・2Na
   concentration:
     value: '500'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '5.44'
@@ -135,6 +165,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 media_term:
   preferred_term: TOGO Medium M511
   term:

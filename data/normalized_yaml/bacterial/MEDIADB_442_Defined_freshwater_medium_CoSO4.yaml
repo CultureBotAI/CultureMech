@@ -46,6 +46,9 @@ ingredients:
   concentration:
     value: '0.687'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -199,6 +202,9 @@ ingredients:
   concentration:
     value: '0.00101'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -237,10 +243,16 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

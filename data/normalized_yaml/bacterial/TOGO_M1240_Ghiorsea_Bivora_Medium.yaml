@@ -22,11 +22,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Modified trace vitamins (see below)
   concentration:
     value: '1'
@@ -36,6 +42,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: air
   notes: 'Properties: ガス'
   concentration:

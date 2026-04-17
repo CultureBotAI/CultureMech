@@ -87,6 +87,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000776
     label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '2.5'

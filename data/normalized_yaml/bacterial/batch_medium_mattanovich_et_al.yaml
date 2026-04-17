@@ -41,6 +41,9 @@ ingredients:
   concentration:
     value: '0.1496'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -103,6 +106,9 @@ ingredients:
   concentration:
     value: '0.11054'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc Chloride
   concentration:
     value: '0.6749'

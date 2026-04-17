@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 0.05, 61.0]'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
@@ -97,12 +100,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '39'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '6'

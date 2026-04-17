@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -90,6 +93,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000644
     label: Na2HPO4·12H2O
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '1.3'
@@ -120,18 +126,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '0.05'
@@ -173,6 +188,9 @@ ingredients:
     value: '1.25'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1984
   term:

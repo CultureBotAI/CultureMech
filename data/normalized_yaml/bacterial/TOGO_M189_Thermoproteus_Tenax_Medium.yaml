@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Na2MoO7・2H2O
   concentration:
     value: '3'
@@ -47,30 +50,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.556'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.18'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '22'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.264'
@@ -89,6 +107,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: Sulfur (powder)
   concentration:
     value: '10'
@@ -107,6 +128,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32583
+    label: ''
 - preferred_term: NaF
   concentration:
     value: '0.84'
@@ -158,6 +182,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M189
   term:

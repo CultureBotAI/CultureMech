@@ -98,6 +98,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000231
     label: K2HPO4x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Na2S2O3 x 5 H2O
   concentration:
     value: '2'
@@ -137,6 +140,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: O2
   notes: 'Properties: ガス'
   concentration:
@@ -147,6 +153,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '10'

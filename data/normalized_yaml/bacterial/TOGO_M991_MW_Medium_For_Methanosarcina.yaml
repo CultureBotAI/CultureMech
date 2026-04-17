@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -82,27 +88,42 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -121,36 +142,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.002'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -169,12 +208,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

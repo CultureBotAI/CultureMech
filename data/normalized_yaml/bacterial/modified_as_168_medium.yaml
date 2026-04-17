@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '2'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.1'

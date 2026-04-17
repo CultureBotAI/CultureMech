@@ -10,11 +10,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: N2
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '1000.0'
@@ -57,11 +63,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium acetate・3H2O
   concentration:
     value: '0.136'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: CaCl22H2O
   concentration:
     value: '0.11'
@@ -80,6 +92,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '3.73'

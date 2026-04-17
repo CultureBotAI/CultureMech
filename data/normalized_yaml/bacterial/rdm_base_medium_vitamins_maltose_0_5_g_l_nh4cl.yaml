@@ -176,6 +176,9 @@ ingredients:
   concentration:
     value: '0.5102'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium bromide
   concentration:
     value: '0.486'

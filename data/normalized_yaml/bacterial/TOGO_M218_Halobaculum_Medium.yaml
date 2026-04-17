@@ -35,12 +35,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '160'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '5'

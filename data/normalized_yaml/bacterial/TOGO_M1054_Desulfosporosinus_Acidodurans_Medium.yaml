@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.41'
@@ -77,6 +80,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Na2SO4
   concentration:
     value: '1.42'
@@ -95,6 +101,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.2'
@@ -105,11 +114,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: iron powder
   concentration:
     value: '10'

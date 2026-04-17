@@ -23,12 +23,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2 · 2H2O
   concentration:
     value: '0.036'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.04'
@@ -100,6 +106,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -118,6 +127,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.222'
@@ -142,6 +154,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86214
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2499
   term:

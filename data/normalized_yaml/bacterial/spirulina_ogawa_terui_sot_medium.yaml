@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '1000'
@@ -41,6 +44,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '500'
@@ -83,6 +89,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaHCO3
   concentration:
     value: '16800'
@@ -101,6 +110,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '0.08'
@@ -131,6 +143,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131524
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '1000'
@@ -148,6 +163,9 @@ ingredients:
     value: '80'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64758
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2202
   term:

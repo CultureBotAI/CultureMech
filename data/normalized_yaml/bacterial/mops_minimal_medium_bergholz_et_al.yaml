@@ -30,6 +30,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -100,6 +103,9 @@ ingredients:
   concentration:
     value: '0.0002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: 6e-05

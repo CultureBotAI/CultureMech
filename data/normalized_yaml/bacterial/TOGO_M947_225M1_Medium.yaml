@@ -35,12 +35,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '300'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.13'

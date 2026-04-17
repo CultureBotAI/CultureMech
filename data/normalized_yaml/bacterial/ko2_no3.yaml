@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: NaNO3
   concentration:
     value: '1.7'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:91243
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '20'
@@ -75,6 +81,9 @@ ingredients:
     value: '0.03'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
@@ -93,6 +102,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'

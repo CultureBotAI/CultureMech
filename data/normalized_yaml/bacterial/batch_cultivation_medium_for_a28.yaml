@@ -29,6 +29,9 @@ ingredients:
   concentration:
     value: '0.002104'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -47,6 +50,9 @@ ingredients:
   concentration:
     value: '1.36'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Ferrous sulfate
   concentration:
     value: '0.08122'
@@ -75,6 +81,9 @@ ingredients:
   concentration:
     value: '0.01001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836

@@ -72,6 +72,9 @@ ingredients:
   concentration:
     value: '1.0203'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

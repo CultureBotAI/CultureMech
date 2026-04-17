@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -58,18 +61,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86254
+    label: ''
 - preferred_term: CaSO4・2H2O
   concentration:
     value: '1.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32583
+    label: ''
 - preferred_term: Ca(NO3)2・4H2O
   concentration:
     value: '0.49'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86159
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '25'

@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '0.01'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -100,6 +103,9 @@ ingredients:
   concentration:
     value: '0.0001253'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258

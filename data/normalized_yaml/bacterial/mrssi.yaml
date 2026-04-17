@@ -38,6 +38,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: yeast extract
   concentration:
     value: '5'
@@ -49,6 +52,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: sodium acetate
   concentration:
     value: '5'
@@ -78,6 +84,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: casamino acids
   concentration:
     value: '5'

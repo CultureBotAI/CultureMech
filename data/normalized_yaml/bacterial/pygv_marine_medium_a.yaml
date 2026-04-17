@@ -59,24 +59,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '4.442'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 3.34, 1.102]'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '99'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '10'
@@ -192,6 +204,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '26'
@@ -246,6 +261,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:36385
+    label: ''
 - preferred_term: NaF
   concentration:
     value: '3'

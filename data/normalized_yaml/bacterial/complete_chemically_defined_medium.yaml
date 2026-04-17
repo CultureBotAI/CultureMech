@@ -320,6 +320,9 @@ ingredients:
   concentration:
     value: '0.3401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -345,6 +348,9 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: DL-Serine
   concentration:
     value: '3.235'

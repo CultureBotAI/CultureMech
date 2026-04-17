@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '3'

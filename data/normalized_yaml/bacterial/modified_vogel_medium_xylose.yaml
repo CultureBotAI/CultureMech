@@ -34,6 +34,9 @@ ingredients:
   concentration:
     value: '0.001002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Ferrous ammonium sulfate
   concentration:
     value: '0.00255'
@@ -97,6 +100,9 @@ ingredients:
   concentration:
     value: '0.68'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Ammonium nitrate
   term:
     id: CHEBI:63038

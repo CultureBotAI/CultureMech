@@ -67,6 +67,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '27.0'
@@ -81,6 +84,9 @@ ingredients:
   concentration:
     value: 1e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '9.0'

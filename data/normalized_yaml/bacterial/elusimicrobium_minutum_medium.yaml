@@ -112,12 +112,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:131378
+    label: ''
 - preferred_term: MgCl2x7H2O
   concentration:
     value: '2.75'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:6636
+    label: ''
 - preferred_term: DI Water
   concentration:
     value: '1980.0'
@@ -163,11 +169,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Dithiothreitol (DTT)
   concentration:
     value: '0.368'
@@ -179,6 +191,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '0.3'
@@ -200,6 +215,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2 x 6H2O
   concentration:
     value: '0.2'
@@ -209,12 +227,18 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000126
     label: CoCl2 x 6H2O
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2x6H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.1'
@@ -224,6 +248,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000135
     label: ZnSO4 x 7H2O
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuCl2 x 2H2O
   concentration:
     value: '0.01'
@@ -233,6 +260,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000133
     label: CuCl2 x 2H2O
+  term:
+    id: CHEBI:86318
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2604
   term:

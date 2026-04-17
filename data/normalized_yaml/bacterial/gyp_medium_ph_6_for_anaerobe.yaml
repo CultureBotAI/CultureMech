@@ -62,11 +62,17 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:17561
+    label: ''
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Tween 80
   concentration:
     value: '50'
@@ -109,12 +115,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'

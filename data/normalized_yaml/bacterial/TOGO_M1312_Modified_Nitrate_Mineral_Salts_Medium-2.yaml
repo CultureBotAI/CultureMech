@@ -23,12 +23,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KNO3
   concentration:
     value: '0.25'
@@ -81,6 +87,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Vitamin B12
   concentration:
     value: '20'

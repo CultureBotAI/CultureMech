@@ -23,12 +23,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
@@ -59,6 +65,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Sodium alginate
   concentration:
     value: '10'

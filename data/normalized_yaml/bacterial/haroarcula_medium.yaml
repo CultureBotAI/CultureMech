@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Sodium glutamate
   concentration:
     value: '1'

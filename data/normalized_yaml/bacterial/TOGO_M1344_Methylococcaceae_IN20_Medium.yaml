@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -41,6 +44,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.1'
@@ -71,6 +77,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -124,6 +133,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
@@ -142,18 +154,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CoSO4・7H2O
   concentration:
     value: '0.18'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: AlK(SO4)2・12H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86465
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
@@ -172,6 +193,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '1'
@@ -196,6 +220,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:

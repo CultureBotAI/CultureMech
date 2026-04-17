@@ -11,18 +11,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2∙2H2O
   concentration:
     value: '0.044'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: Na2HPO4∙12H2O
   concentration:
     value: '0.076'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: HEPES
   concentration:
     value: '2.38'
@@ -40,6 +49,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:132108
+    label: ''
 - preferred_term: KH2PO4∙2H2O
   concentration:
     value: '0.02'

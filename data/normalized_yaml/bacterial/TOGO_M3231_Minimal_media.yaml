@@ -83,6 +83,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: FeCl3
   concentration:
     value: '0.03'
@@ -100,6 +103,9 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Gas'
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: NH4NO3
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'

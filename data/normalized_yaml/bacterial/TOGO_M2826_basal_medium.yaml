@@ -94,6 +94,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: ZnCl2
   concentration:
     value: '1'
@@ -112,6 +115,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: FeSO4·4H2O
   concentration:
     value: '1'

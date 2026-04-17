@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 media_term:
   preferred_term: TOGO Medium M926
   term:

@@ -83,6 +83,9 @@ ingredients:
   concentration:
     value: '6.8e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -117,6 +120,9 @@ ingredients:
   concentration:
     value: '1.0097e-06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '1.0333e-06'
@@ -246,6 +252,9 @@ ingredients:
   concentration:
     value: '4.005e-07'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '3.873e-07'
@@ -253,6 +262,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

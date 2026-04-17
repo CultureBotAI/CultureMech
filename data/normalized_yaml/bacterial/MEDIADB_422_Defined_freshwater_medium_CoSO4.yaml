@@ -98,6 +98,9 @@ ingredients:
   concentration:
     value: '0.687'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: '''Manganese(IV'
   concentration:
     value: '15.0'
@@ -165,6 +168,9 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '1.341'
@@ -209,6 +215,9 @@ ingredients:
   concentration:
     value: '0.00101'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -246,6 +255,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

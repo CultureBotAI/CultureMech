@@ -171,6 +171,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'

@@ -58,6 +58,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Trisodium citrate
   concentration:
     value: '3'
@@ -75,6 +78,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:30808
+    label: ''
 - preferred_term: Agar* (if needed)
   concentration:
     value: '20'

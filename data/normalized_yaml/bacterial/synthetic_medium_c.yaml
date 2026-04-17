@@ -113,6 +113,9 @@ ingredients:
   concentration:
     value: '0.1567'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Cysteine
   term:
     id: CHEBI:15356

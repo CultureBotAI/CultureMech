@@ -52,6 +52,9 @@ ingredients:
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.02526'

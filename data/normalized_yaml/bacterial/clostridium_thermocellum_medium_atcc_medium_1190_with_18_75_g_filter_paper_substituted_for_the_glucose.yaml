@@ -47,12 +47,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Na2HPO4 . 12H2O
   concentration:
     value: '4.2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Yeast Extract (BD 212750)
   concentration:
     value: '2'
@@ -71,11 +77,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:18276
+    label: ''
 - preferred_term: 0.2 N NaOH
   concentration:
     value: '200'
@@ -87,6 +99,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: L-Cysteine . HCl
   concentration:
     value: '2.5'
@@ -209,6 +224,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '1'
@@ -227,6 +245,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: Boric acid
   concentration:
     value: '10'
@@ -245,12 +266,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: ZnSO4 . 7H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4 . 5H2O
   concentration:
     value: '10'
@@ -293,6 +320,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: AlK(SO4)2
   concentration:
     value: '10'
@@ -323,6 +353,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86214
+    label: ''
 - preferred_term: 2-3 N KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   concentration:

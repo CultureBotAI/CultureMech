@@ -13,6 +13,9 @@ ingredients:
   concentration:
     value: '0.002104'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Xylose
   term:
     id: CHEBI:18222
@@ -27,6 +30,9 @@ ingredients:
   concentration:
     value: '1.36'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -41,6 +47,9 @@ ingredients:
   concentration:
     value: '0.01001'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

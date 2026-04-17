@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:132108
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '0.2'
@@ -57,6 +60,9 @@ ingredients:
     value: '2.48'
     unit: G_PER_L
   notes: 'Properties: Inorganic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '1'
@@ -72,6 +78,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: NaCl
   concentration:
     value: '30'
@@ -90,6 +99,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.14'
@@ -108,6 +120,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.33'
@@ -126,18 +141,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Na2SeO3・5H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:48843
+    label: ''
 - preferred_term: Fe(NH4)2(SO4)2・6H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:76181
+    label: ''
 media_term:
   preferred_term: TOGO Medium M260
   term:

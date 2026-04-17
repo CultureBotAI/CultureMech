@@ -28,6 +28,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: Dextrin
   concentration:
     value: '10'

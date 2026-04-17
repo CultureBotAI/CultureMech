@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.2433'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Citrate
   concentration:
     value: '0.03123'
@@ -132,6 +135,9 @@ ingredients:
   concentration:
     value: '0.0003164'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

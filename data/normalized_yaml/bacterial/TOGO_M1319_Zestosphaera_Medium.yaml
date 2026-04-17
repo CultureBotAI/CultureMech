@@ -34,6 +34,9 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: NaOH
   concentration:
     value: '0.16'
@@ -50,11 +53,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: L-Cysteine・HCl・H2O
   concentration:
     value: '0.0625'

@@ -63,6 +63,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Sterile air
   notes: 'Properties: Gas'
   concentration:
@@ -86,12 +89,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.002'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: ZnCl2
   concentration:
     value: '0.005'
@@ -186,6 +195,9 @@ ingredients:
     value: '4.8'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:31404
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2231
   term:

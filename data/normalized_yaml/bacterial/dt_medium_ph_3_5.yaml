@@ -11,6 +11,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: MgSO4
   concentration:
     value: '0.145'
@@ -69,18 +72,27 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2 · 6H2O
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: CuCl2 · 2H2O
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: ZnCl2
   concentration:
     value: '0.5'

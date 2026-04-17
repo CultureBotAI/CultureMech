@@ -310,6 +310,9 @@ ingredients:
   concentration:
     value: '0.3401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Pyridoxine
   term:
     id: CHEBI:16709

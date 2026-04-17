@@ -40,6 +40,9 @@ ingredients:
   concentration:
     value: '0.006408'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836

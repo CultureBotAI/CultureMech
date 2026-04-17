@@ -92,12 +92,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'

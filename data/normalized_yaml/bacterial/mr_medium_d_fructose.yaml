@@ -38,10 +38,16 @@ ingredients:
   concentration:
     value: '0.09011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Cupric sulfate
   concentration:
     value: '0.02002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364

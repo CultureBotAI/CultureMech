@@ -26,6 +26,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000115
     label: CaCl2 x 2H2O
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: K2HPO4
   concentration:
     value: '0.04'
@@ -150,6 +153,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.222'
@@ -159,6 +165,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000135
     label: ZnSO4 x 7H2O
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4 x 5H2O
   concentration:
     value: '0.079'
@@ -168,6 +177,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000152
     label: CuSO4 x 5H2O
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: Co(NO3)2 x 6H2O
   concentration:
     value: '49.4'

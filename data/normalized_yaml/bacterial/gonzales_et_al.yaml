@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '2.0'
@@ -95,6 +98,9 @@ ingredients:
   concentration:
     value: '0.004'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium carbonate
   concentration:
     value: '175.0'

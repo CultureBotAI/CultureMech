@@ -55,6 +55,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000644
     label: Na2HPO4·12H2O
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '5'

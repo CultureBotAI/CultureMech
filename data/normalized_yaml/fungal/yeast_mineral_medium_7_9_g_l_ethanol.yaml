@@ -67,6 +67,9 @@ ingredients:
   concentration:
     value: '0.03061'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -150,6 +153,9 @@ ingredients:
   concentration:
     value: '0.001201'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599

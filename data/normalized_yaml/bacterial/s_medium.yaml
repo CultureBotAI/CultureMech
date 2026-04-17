@@ -185,6 +185,9 @@ ingredients:
     value: '1000'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64734
+    label: ''
 - preferred_term: biotin
   concentration:
     value: '5'

@@ -112,12 +112,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 1.8, 0.1]'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4·H2O
   concentration:
     value: '4.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: NH4NO3
   concentration:
     value: '50'
@@ -194,12 +200,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '7'
@@ -254,6 +266,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53001
+    label: ''
 - preferred_term: Na3-NTA
   concentration:
     value: '1.63'

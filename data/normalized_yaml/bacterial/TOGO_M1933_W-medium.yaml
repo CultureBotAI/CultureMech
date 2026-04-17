@@ -53,6 +53,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '1.44'
@@ -101,6 +104,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: CaCO3
   concentration:
     value: '2'
@@ -119,6 +125,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86358
+    label: ''
 - preferred_term: Na2HPO4
   concentration:
     value: '9.8'

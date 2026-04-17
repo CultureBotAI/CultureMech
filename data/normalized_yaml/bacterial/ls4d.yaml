@@ -233,6 +233,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '50'
@@ -263,12 +266,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2.6H2O
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: ZnCl2
   concentration:
     value: '0.2'
@@ -299,6 +308,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86249
+    label: ''
 - preferred_term: 8% (wt/vol) Na2CO3
   concentration:
     value: '100'
@@ -319,6 +331,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2809
   term:

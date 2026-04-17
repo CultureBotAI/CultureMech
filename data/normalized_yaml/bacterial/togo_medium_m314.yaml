@@ -51,6 +51,9 @@ ingredients:
     value: '2.48'
     unit: G_PER_L
   notes: 'Properties: Inorganic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '2'

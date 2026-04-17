@@ -25,6 +25,9 @@ ingredients:
   concentration:
     value: '0.00450512'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '80.3673'
@@ -58,6 +61,9 @@ ingredients:
   concentration:
     value: '4.00481e-05'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258

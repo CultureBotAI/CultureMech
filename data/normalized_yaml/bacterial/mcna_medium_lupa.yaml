@@ -54,6 +54,9 @@ ingredients:
   concentration:
     value: '1.085'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: 2-Methylpropanoate
   concentration:
     value: '0.05675'
@@ -159,10 +162,16 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Nickel chloride
   concentration:
     value: '0.001052'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206

@@ -70,6 +70,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'

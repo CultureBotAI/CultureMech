@@ -62,6 +62,9 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:31404
+    label: ''
 - preferred_term: Peptone
   concentration:
     value: '10'

@@ -96,6 +96,9 @@ ingredients:
   concentration:
     value: '4.90196'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806

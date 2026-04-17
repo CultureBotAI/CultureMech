@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: FeSO4
   concentration:
     value: '0.016'
@@ -93,36 +96,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: ''
 - preferred_term: FeSO4 ⋅ 7H2O
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: ZnSO4 ⋅ 7H2O
   concentration:
     value: '2.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuSO4 ⋅ 5H2O
   concentration:
     value: '0.48'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: ''
 - preferred_term: CoSO4 ⋅ 7H2O
   concentration:
     value: '4.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: MnSO4 ⋅ H2O
   concentration:
     value: '2.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: Ni2SO4 ⋅ 6H2O
   concentration:
     value: '1.5'

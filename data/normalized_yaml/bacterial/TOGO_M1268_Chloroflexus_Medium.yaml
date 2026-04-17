@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.5'
@@ -92,6 +95,9 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: Biotin
   concentration:
     value: '2'

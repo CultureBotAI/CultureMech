@@ -59,12 +59,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: MnCl2・4H2O
   concentration:
     value: '0.36'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '20'
@@ -83,6 +89,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86249
+    label: ''
 - preferred_term: Trisodium citrate・2H2O
   concentration:
     value: '1'
@@ -91,6 +100,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000776
     label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: Tryptone (BD-Difco)
   concentration:
     value: '2'

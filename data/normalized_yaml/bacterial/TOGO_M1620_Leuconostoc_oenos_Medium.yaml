@@ -52,6 +52,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: Diammonium hydrogencitrate
   concentration:
     value: '3.5'

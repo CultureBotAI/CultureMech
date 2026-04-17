@@ -85,6 +85,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:17561
+    label: ''
 - preferred_term: Bacto Beef Extract (Difco)
   concentration:
     value: '5'

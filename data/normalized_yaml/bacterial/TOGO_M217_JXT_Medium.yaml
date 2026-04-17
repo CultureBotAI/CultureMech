@@ -20,6 +20,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Inorganic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '1'

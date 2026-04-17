@@ -40,12 +40,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: Na2HPO4・12H2O
   concentration:
     value: '4.2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Skim milk
   concentration:
     value: '10'

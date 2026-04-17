@@ -34,6 +34,9 @@ ingredients:
   concentration:
     value: '3.06'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -69,6 +72,9 @@ ingredients:
   concentration:
     value: '0.00401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Ammonium phosphate
   concentration:
     value: '121.2'

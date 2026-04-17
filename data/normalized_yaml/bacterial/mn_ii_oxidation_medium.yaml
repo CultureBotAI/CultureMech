@@ -28,6 +28,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'

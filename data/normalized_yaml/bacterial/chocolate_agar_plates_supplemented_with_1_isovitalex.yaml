@@ -14,6 +14,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: chocolate agar plates
   concentration:
     value: variable

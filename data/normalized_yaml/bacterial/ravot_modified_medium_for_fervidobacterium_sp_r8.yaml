@@ -61,6 +61,9 @@ ingredients:
     value: '0.814524'
     unit: G_PER_L
   notes: Copied from referenced JCM Medium 725
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '4.90677'

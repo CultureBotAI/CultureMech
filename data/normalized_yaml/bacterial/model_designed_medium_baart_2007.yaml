@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: 8e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Cobalt chloride
   concentration:
     value: 8e-05
@@ -40,6 +43,9 @@ ingredients:
   concentration:
     value: '0.136'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Manganese chloride
   concentration:
     value: '0.0008'

@@ -29,6 +29,9 @@ ingredients:
   concentration:
     value: '3.43424'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium iodide
   term:
     id: CHEBI:8346
@@ -145,6 +148,9 @@ ingredients:
   concentration:
     value: '0.00060072'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.000581057'
@@ -152,6 +158,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 - preferred_term: Sodium bromide
   concentration:
     value: '0.242968'

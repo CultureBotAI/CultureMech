@@ -56,12 +56,18 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000644
     label: Na2HPO4·12H2O
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: CaCl2·6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:91243
+    label: ''
 - preferred_term: Purified Agar (e.g., Oxoid L28)
   concentration:
     value: '12.5'
@@ -147,18 +153,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2·6H2O
   concentration:
     value: '2'

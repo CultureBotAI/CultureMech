@@ -104,11 +104,17 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000140
     label: Na2S x 9H2O
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: N2
   notes: 'Properties: Gas'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: FeSO4 x 7H2O
   concentration:
     value: '0.2'
@@ -130,6 +136,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.1'
@@ -139,6 +148,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000135
     label: ZnSO4 x 7H2O
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: Ethlyene Diamine Tetraacetate
   concentration:
     value: '1.5'
@@ -302,6 +314,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000849
     label: SnCl2 x 2H2O
+  term:
+    id: CHEBI:78074
+    label: ''
 - preferred_term: LiCl
   concentration:
     value: '0.5'

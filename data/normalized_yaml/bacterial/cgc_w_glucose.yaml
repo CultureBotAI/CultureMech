@@ -42,6 +42,9 @@ ingredients:
   concentration:
     value: '0.0775'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '2.87'
@@ -98,6 +101,9 @@ ingredients:
   concentration:
     value: '0.00125'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: MOPS
   term:
     id: CHEBI:39074

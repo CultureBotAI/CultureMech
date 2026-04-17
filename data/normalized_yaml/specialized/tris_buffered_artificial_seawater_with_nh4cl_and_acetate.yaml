@@ -87,6 +87,9 @@ ingredients:
   concentration:
     value: '10.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -105,6 +108,9 @@ ingredients:
   concentration:
     value: '0.00841432'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.0123992'

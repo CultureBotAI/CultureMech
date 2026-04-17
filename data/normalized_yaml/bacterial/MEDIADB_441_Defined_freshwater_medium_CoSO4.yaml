@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Riboflavin
   term:
     id: CHEBI:17015
@@ -75,6 +78,9 @@ ingredients:
   concentration:
     value: '0.687'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0003873'
@@ -82,6 +88,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -120,6 +129,9 @@ ingredients:
   concentration:
     value: '0.00101'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'

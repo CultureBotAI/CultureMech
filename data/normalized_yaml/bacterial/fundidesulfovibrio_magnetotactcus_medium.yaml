@@ -68,6 +68,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: 0.25 M Potassium phosphate buffer (pH 7.0)
   concentration:
     value: '5.6'

@@ -36,6 +36,9 @@ ingredients:
   concentration:
     value: '0.2433'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: EDTA
   term:
     id: CHEBI:64755
@@ -78,6 +81,9 @@ ingredients:
   concentration:
     value: '0.0003164'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Cobalt nitrate
   concentration:
     value: '0.0001697'

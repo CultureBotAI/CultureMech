@@ -49,6 +49,9 @@ ingredients:
   concentration:
     value: '0.0401'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

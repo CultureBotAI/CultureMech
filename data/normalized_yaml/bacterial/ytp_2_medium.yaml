@@ -88,6 +88,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: Clarified tomato juice
   concentration:
     value: '2'

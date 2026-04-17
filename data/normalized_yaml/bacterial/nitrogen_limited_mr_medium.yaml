@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '0.09011'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -67,6 +70,9 @@ ingredients:
   concentration:
     value: '0.02002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium borate
   concentration:
     value: '0.0002622'

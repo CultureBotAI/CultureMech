@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.68'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Citrate
   concentration:
     value: '0.02379'
@@ -92,6 +95,9 @@ ingredients:
   concentration:
     value: '0.001002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium citrate
   term:
     id: CHEBI:53258

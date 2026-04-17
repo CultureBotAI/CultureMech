@@ -111,6 +111,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: NaOH (1N)
   concentration:
     value: '25'

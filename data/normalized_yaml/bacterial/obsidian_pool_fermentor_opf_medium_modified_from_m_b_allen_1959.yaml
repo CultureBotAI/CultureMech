@@ -62,6 +62,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000815
     label: MgSO4 x7H2O
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: Yeast Extract
   concentration:
     value: '0.1'
@@ -115,6 +118,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86254
+    label: ''
 - preferred_term: Na2SO4
   concentration:
     value: '0.07'
@@ -145,6 +151,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32583
+    label: ''
 - preferred_term: Na2S2O3
   concentration:
     value: '0.78'
@@ -169,11 +178,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '1'

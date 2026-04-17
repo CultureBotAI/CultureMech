@@ -106,6 +106,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: KOH
   concentration:
     value: '4.5'

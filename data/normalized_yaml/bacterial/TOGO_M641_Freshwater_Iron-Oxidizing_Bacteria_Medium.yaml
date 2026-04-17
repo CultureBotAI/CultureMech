@@ -52,11 +52,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Oxygen gas
   notes: 'Properties: ガス'
   concentration:
@@ -80,24 +86,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '46.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '0.05'

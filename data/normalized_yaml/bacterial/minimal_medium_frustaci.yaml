@@ -31,6 +31,9 @@ ingredients:
   concentration:
     value: '0.34'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -94,6 +97,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.0037'

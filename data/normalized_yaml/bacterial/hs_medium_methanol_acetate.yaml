@@ -51,6 +51,9 @@ ingredients:
   concentration:
     value: '2.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Sodium sulfide
   concentration:
     value: '0.4'

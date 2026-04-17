@@ -43,6 +43,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000115
     label: CaCl2 x 2H2O
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
@@ -88,6 +91,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000140
     label: Na2S x 9H2O
+  term:
+    id: CHEBI:76209
+    label: ''
 - preferred_term: KCl
   concentration:
     value: '0.335'
@@ -132,6 +138,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000427
     label: Fe(NH4)2(SO4)2 x 7H2O
+  term:
+    id: CHEBI:131378
+    label: ''
 - preferred_term: MgCl2 x 7H2O
   concentration:
     value: '2.75'
@@ -141,6 +150,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000490
     label: MgCl2 x 7H2O
+  term:
+    id: CHEBI:6636
+    label: ''
 - preferred_term: DI Water
   concentration:
     value: '3000.0'
@@ -168,11 +180,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Biotin
   concentration:
     value: '2'
@@ -299,6 +317,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000127
     label: MnCl2 x 4H2O
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: CoCl2 x 6H2O
   concentration:
     value: '0.2'
@@ -308,6 +329,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000126
     label: CoCl2 x 6H2O
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: NiCl2 x 6H2O
   concentration:
     value: '0.02'
@@ -317,6 +341,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000124
     label: NiCl2 x 6H2O
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: ZnSO4 x 7H2O
   concentration:
     value: '0.1'
@@ -326,6 +353,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000135
     label: ZnSO4 x 7H2O
+  term:
+    id: CHEBI:32312
+    label: ''
 - preferred_term: CuCl2 x 2H2O
   concentration:
     value: '0.01'
@@ -335,6 +365,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000133
     label: CuCl2 x 2H2O
+  term:
+    id: CHEBI:86318
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2598
   term:

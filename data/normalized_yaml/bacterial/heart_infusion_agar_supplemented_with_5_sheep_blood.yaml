@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Heart Infusion Agar (Difco)
   notes: 'Properties: Undefined component, Complex component'
   concentration:

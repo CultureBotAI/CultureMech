@@ -10,6 +10,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Distilled water
   concentration:
     value: '881.0'
@@ -88,6 +91,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: MnSO4·xH2O
   concentration:
     value: '4.5'

@@ -39,6 +39,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: ''
 - preferred_term: N--Acetyl--D--glucosamine (Sigma)
   concentration:
     value: '2'

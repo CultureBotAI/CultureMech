@@ -135,6 +135,9 @@ ingredients:
   concentration:
     value: 1e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: MOPS
   term:
     id: CHEBI:39074
@@ -251,6 +254,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: 3e-06

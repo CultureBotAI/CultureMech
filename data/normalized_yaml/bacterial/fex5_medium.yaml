@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.27'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -89,6 +92,9 @@ ingredients:
   concentration:
     value: 4e-06
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Molybdenum trioxide
   concentration:
     value: '1.4e-05'

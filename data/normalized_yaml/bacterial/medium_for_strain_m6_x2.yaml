@@ -88,6 +88,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -129,6 +132,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:17561
+    label: ''
 - preferred_term: Casein peptone, tryptic digest
   concentration:
     value: '10'
@@ -150,11 +156,17 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.25'
@@ -273,6 +285,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:132751
+    label: ''
 - preferred_term: Lipoic acid
   concentration:
     value: '5'

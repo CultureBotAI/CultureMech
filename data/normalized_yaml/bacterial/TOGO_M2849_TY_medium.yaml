@@ -23,6 +23,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:91243
+    label: ''
 - preferred_term: Difco Bacto-yeast extract
   concentration:
     value: '3'

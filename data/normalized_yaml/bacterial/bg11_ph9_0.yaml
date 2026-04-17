@@ -88,6 +88,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component [Merged
     2 duplicates: 6.0, 0.3]'
+  term:
+    id: CHEBI:31404
+    label: ''
 - preferred_term: Ferric ammonium citrate
   concentration:
     value: '0.3'
@@ -141,6 +144,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '22.2'

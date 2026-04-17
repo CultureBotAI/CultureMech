@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: Corn steep liquor
   concentration:
     value: '5'

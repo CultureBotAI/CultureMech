@@ -40,6 +40,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Agar
   concentration:
     value: '15'

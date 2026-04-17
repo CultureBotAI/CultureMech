@@ -213,6 +213,9 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.52'
@@ -241,6 +244,9 @@ ingredients:
   concentration:
     value: 1e-05
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176

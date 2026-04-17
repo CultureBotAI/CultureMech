@@ -59,6 +59,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: ''
 - preferred_term: K2SO4
   concentration:
     value: '5'
@@ -88,6 +91,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:000776
     label: Trisodium citrate・2H2O
+  term:
+    id: CHEBI:53258
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'

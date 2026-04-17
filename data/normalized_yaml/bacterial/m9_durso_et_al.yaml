@@ -20,6 +20,9 @@ ingredients:
   concentration:
     value: '0.13245'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Dibasic sodium phosphate
   concentration:
     value: '42.2654'

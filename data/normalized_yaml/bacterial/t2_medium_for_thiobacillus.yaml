@@ -46,6 +46,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: KH2PO4
   concentration:
     value: '2'
@@ -76,6 +79,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: ''
 - preferred_term: FeSO4 . 7H2O (2%, w/v, in N HCl)
   concentration:
     value: '1'

@@ -46,16 +46,25 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: ''
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:16526
+    label: ''
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 media_term:
   preferred_term: TOGO Medium M1244
   term:

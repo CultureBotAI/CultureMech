@@ -91,6 +91,9 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
+  term:
+    id: CHEBI:17997
+    label: ''
 - preferred_term: Soluble starch
   concentration:
     value: '5'

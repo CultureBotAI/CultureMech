@@ -9,6 +9,9 @@ ingredients:
   concentration:
     value: '0.687'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '0.0004863'
@@ -147,6 +150,9 @@ ingredients:
   concentration:
     value: '0.00101'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:34887
+    label: ''
 - preferred_term: Aluminum potassium sulfate
   concentration:
     value: '0.0003873'
@@ -154,6 +160,9 @@ ingredients:
   mediaingredientmech_term:
     id: MediaIngredientMech:001109
     label: Aluminum potassium sulfate
+  term:
+    id: CHEBI:86463
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'
@@ -243,6 +252,9 @@ ingredients:
   concentration:
     value: '0.0004005'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 preparation_steps:
 - step_number: 1
   action: DISSOLVE

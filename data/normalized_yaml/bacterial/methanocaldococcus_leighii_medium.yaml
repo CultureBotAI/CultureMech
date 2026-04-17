@@ -97,6 +97,9 @@ ingredients:
   concentration:
     value: '0.689655'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: PIPES
   term:
     id: CHEBI:39033

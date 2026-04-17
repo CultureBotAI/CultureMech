@@ -71,6 +71,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86368
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
@@ -125,6 +128,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: ''
 - preferred_term: VOSO4·nH2O
   concentration:
     value: '0.03'

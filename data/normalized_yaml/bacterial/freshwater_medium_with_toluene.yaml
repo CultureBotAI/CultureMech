@@ -96,6 +96,9 @@ ingredients:
   concentration:
     value: '37.7778'
     unit: G_PER_L
+  term:
+    id: CHEBI:32954
+    label: ''
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139

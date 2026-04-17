@@ -47,6 +47,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: ''
 - preferred_term: Nicotine (Fluka)
   concentration:
     value: '3'
@@ -65,6 +68,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: ''
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '0.1'
@@ -95,18 +101,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86318
+    label: ''
 - preferred_term: Na2WO4.2H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:63939
+    label: ''
 - preferred_term: MnSO4.H2O
   concentration:
     value: '0.008'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86364
+    label: ''
 - preferred_term: ZnSO4
   concentration:
     value: '0.1'

@@ -288,6 +288,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component [Merged 2 duplicates: 99.0, 5.0]'
+  term:
+    id: CHEBI:75836
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '10'
@@ -317,6 +320,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: ''
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '10.95'

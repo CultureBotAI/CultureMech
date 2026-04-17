@@ -39,6 +39,9 @@ ingredients:
   concentration:
     value: '0.2449'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Zinc sulfate
   term:
     id: CHEBI:35176
@@ -63,6 +66,9 @@ ingredients:
   concentration:
     value: '0.0003'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005

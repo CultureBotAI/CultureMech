@@ -30,6 +30,9 @@ ingredients:
   concentration:
     value: '0.603712'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:3312
+    label: ''
 - preferred_term: Potassium dibasic phosphate
   concentration:
     value: '50.0'
@@ -96,6 +99,9 @@ ingredients:
   concentration:
     value: '0.0015698'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:23414
+    label: ''
 - preferred_term: Sodium borate
   concentration:
     value: '0.0004641'
